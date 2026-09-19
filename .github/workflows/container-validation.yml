@@ -1,0 +1,81 @@
+name: Validate published container
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [.github/workflows/container-validation.yml]
+permissions:
+  contents: read
+  packages: read
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - name: Start released image
+        run: |
+          docker pull ghcr.io/edwardofclt/nourish:1.0.0
+          docker volume create nourish-validation
+          docker run -d --name nourish-validation -p 127.0.0.1:3000:3000 -v nourish-validation:/data ghcr.io/edwardofclt/nourish:1.0.0
+      - name: Validate startup, diary, goals, trends and persistence
+        run: |
+          python3 - <<'PY'
+          import json, time, urllib.request, datetime, subprocess
+          base = "http://127.0.0.1:3000"
+          def request(path, method="GET", body=None):
+              data = None if body is None else json.dumps(body).encode()
+              req = urllib.request.Request(base + path, data=data, method=method, headers={"Content-Type": "application/json"})
+              with urllib.request.urlopen(req, timeout=20) as response:
+                  return json.load(response)
+          def ready():
+              for attempt in range(60):
+                  try:
+                      request("/api/day")
+                      return
+                  except Exception:
+                      if subprocess.check_output(["docker", "inspect", "-f", "{{.State.Running}}", "nourish-validation"], text=True).strip() != "true":
+                          raise RuntimeError("Container exited during startup")
+                      time.sleep(2)
+              raise RuntimeError("Container did not become ready")
+          ready()
+          with urllib.request.urlopen(base, timeout=20) as response:
+              assert response.status == 200
+              assert "Nourish" in response.read().decode()
+          today = datetime.date.today().isoformat()
+          goals = {"calories": 2200, "protein": 165, "carbs": 220, "fat": 73}
+          assert request("/api/goals", "PUT", goals) == goals
+          food = {"date": today, "meal": "breakfast", "name": "Container validation oats", "source": "custom", "quantity": 1.5, "unit": "serving", "grams": 60, "calories": 228, "protein": 8, "carbs": 40, "fat": 4}
+          entry = request("/api/entries", "POST", food)
+          def verify():
+              day = request("/api/day?date=" + today)
+              assert day["goals"] == goals
+              saved = next(item for item in day["entries"] if item["id"] == entry["id"])
+              for key in ("name", "quantity", "grams", "calories", "protein", "carbs", "fat"):
+                  assert saved[key] == food[key], (key, saved)
+              for days in (7, 30, 183):
+                  trend = request("/api/trends?days=" + str(days))["days"]
+                  assert next(row for row in trend if row["date"] == today)["calories"] == 228
+          verify()
+          print("PASS: startup, homepage, serving data, diary, goals and 7/30/183-day trends")
+          subprocess.run(["docker", "rm", "-f", "nourish-validation"], check=True)
+          subprocess.run(["docker", "run", "-d", "--name", "nourish-validation", "-p", "127.0.0.1:3000:3000", "-v", "nourish-validation:/data", "ghcr.io/edwardofclt/nourish:1.0.0"], check=True)
+          ready()
+          verify()
+          print("PASS: data persists after container replacement")
+          request("/api/entries?id=" + entry["id"], "DELETE")
+          assert request("/api/day?date=" + today)["entries"] == []
+          print("PASS: entry deletion")
+          PY
+      - name: Container logs
+        if: always()
+        run: docker logs nourish-validation
+      - name: Cleanup
+        if: always()
+        run: |
+          docker rm -f nourish-validation || true
+          docker volume rm nourish-validation || true
