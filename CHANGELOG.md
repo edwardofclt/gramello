@@ -1,3 +1,9 @@
+## [1.1.0](https://github.com/edwardofclt/nourish/compare/v1.0.0...v1.1.0) (2026-09-19)
+
+### Features
+
+* add Auth0 authentication and profile menu ([46b91ad](https://github.com/edwardofclt/nourish/commit/46b91adc8485b72cd3ac0ecb21be8fd4d70b0e8b))
+
 ## 1.0.0 (2026-09-19)
 
 ### Features
