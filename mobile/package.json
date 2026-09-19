@@ -1,0 +1,34 @@
+{
+  "name": "@nourish/mobile",
+  "version": "0.1.0",
+  "private": true,
+  "main": "index.ts",
+  "scripts": {
+    "start": "expo start --dev-client",
+    "ios": "expo run:ios",
+    "android": "expo run:android",
+    "web": "expo start --web",
+    "typecheck": "tsc --noEmit",
+    "export": "expo export --platform ios --platform android"
+  },
+  "dependencies": {
+    "@expo/metro-runtime": "~57.0.15",
+    "@gluestack-ui/core": "5.0.15",
+    "@gluestack-ui/utils": "5.0.6",
+    "expo": "57.0.22",
+    "expo-dev-client": "~57.0.19",
+    "expo-status-bar": "~57.0.1",
+    "lucide-react-native": "^0.577.0",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "react-native": "0.86.3",
+    "react-native-auth0": "5.11.1",
+    "react-native-safe-area-context": "~5.7.0",
+    "react-native-svg": "15.15.4",
+    "react-native-web": "~0.21.0"
+  },
+  "devDependencies": {
+    "@types/react": "~19.2.14",
+    "typescript": "6.0.3"
+  }
+}

@@ -25,6 +25,8 @@ try {
     "AUTH0_CLIENT_SECRET=smoke-test-secret",
     `AUTH0_SECRET=${secret}`,
     `APP_BASE_URL=${base}`,
+    "AUTH0_AUDIENCE=https://nourish-api",
+    "AUTH0_MOBILE_CLIENT_ID=smoke-native-client",
   ].join("\n"), { mode: 0o600 });
   for (const migration of (await readdir("drizzle")).filter((name) => name.endsWith(".sql")).sort()) {
     const result = spawnSync(process.execPath, [...cli, "d1", "execute", "DB", "--local",
@@ -71,6 +73,9 @@ try {
     assert.match(response.headers.get("cache-control"), /no-store/);
   }
   assert.equal((await request("/api/day", { headers: { Cookie: "__session=invalid" } })).status, 401);
+  // Also verifies the compiled Worker loads the native configuration bindings.
+  // Missing native configuration would yield 503 instead of invalid-token 401.
+  assert.equal((await request("/api/day", { headers: { Authorization: "Bearer invalid-token", Cookie: alice } })).status, 401);
   const callback = await request("/auth/callback?error=access_denied&error_description=PRIVATE_ERROR");
   assert.equal(callback.status, 307);
   assert.equal(new URL(callback.headers.get("location"), base).href, `${base}/?auth_error=1`);

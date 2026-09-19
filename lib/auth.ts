@@ -1,4 +1,10 @@
 import { getAuth0, getAuthConfiguration } from "./auth0";
+import {
+  authenticateMobileBearer,
+  InvalidMobileTokenError,
+  MobileAuthConfigurationError,
+  MobileAuthUnavailableError,
+} from "./mobile-auth";
 
 export type AuthUser = { userId: string; displayName: string; email: string | null };
 
@@ -12,7 +18,7 @@ export async function getCurrentUser(): Promise<AuthUser | null> {
 
 export function privateResponse(response: Response) {
   response.headers.set("Cache-Control", "private, no-store");
-  response.headers.set("Vary", "Cookie");
+  response.headers.set("Vary", "Cookie, Authorization");
   return response;
 }
 
@@ -20,6 +26,21 @@ export async function withAuthenticatedUser(
   request: Request,
   handler: (user: AuthUser) => Promise<Response>,
 ): Promise<Response> {
+  const authorization = request.headers.get("authorization");
+  if (authorization !== null) {
+    try {
+      const user = await authenticateMobileBearer(authorization);
+      return privateResponse(await handler(user));
+    } catch (error) {
+      if (error instanceof MobileAuthConfigurationError || error instanceof MobileAuthUnavailableError) {
+        return privateResponse(Response.json({ error: "Sign-in is temporarily unavailable." }, { status: 503 }));
+      }
+      if (error instanceof InvalidMobileTokenError) {
+        return privateResponse(Response.json({ error: "Please sign in to continue." }, { status: 401 }));
+      }
+      return privateResponse(Response.json({ error: "Sign-in is temporarily unavailable." }, { status: 503 }));
+    }
+  }
   let user: AuthUser | null;
   try {
     user = await getCurrentUser();

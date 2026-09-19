@@ -1,9 +1,12 @@
+packages:
+  - mobile
 # Copied Sites are standalone projects and cannot inherit the monorepo policy.
 minimumReleaseAge: 10080
 minimumReleaseAgeIgnoreMissingTime: false
 trustLockfile: false
 strictDepBuilds: true
 allowBuilds:
+  browser-tabs-lock: false
   esbuild: true
   fsevents: true
   sharp: true

@@ -15,7 +15,12 @@
     "start": "node --import ./scripts/sites-env.mjs ./node_modules/wrangler/bin/wrangler.js dev --config dist/server/wrangler.json --local --persist-to .wrangler/state --ip 127.0.0.1 --inspector-port 0",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
     "db:generate": "drizzle-kit generate",
-    "release": "semantic-release"
+    "release": "semantic-release",
+    "mobile": "pnpm --filter @nourish/mobile start",
+    "mobile:ios": "pnpm --filter @nourish/mobile ios",
+    "mobile:android": "pnpm --filter @nourish/mobile android",
+    "lint:mobile": "eslint mobile lib/mobile-auth.ts lib/auth.ts tests/mobile-*.test.ts playwright.mobile.config.ts",
+    "test:mobile:ui": "playwright test --config playwright.mobile.config.ts"
   },
   "dependencies": {
     "@auth0/nextjs-auth0": "^4.29.0",
@@ -29,6 +34,7 @@
     "drizzle-orm": "0.45.2",
     "embla-carousel-react": "^8.6.0",
     "input-otp": "^1.4.2",
+    "jose": "^6.2.12",
     "lucide-react": "^1.31.0",
     "next": "16.3.4",
     "next-themes": "^0.4.6",

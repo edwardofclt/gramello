@@ -8,6 +8,12 @@ Food search combines:
 - [Open Food Facts](https://world.openfoodfacts.org/) for its open, community-maintained product database and images
 - A small built-in USDA reference fallback for common staples
 
+## Mobile app
+
+The React Native app in [`mobile/`](mobile/README.md) uses Expo, gluestack-ui,
+and the same Auth0 tenant and diary API. See its setup guide for native Auth0
+registration, environment values, and iOS/Android run commands.
+
 ## Run with Docker Compose
 
 Configure Auth0 using the steps below, then:
@@ -58,19 +64,51 @@ relative to `dist/server/wrangler.json`).
    in the Compose environment and register that host's `/auth/callback` and root
    URL in Auth0. Use a single canonical origin, with no path or query string.
 
-All five settings are server-only. The Docker image builds without credentials;
+### Native API authentication
+
+The iOS and Android app uses a separate Auth0 **Native Application** and the
+same tenant and enabled connections as the web application. In Auth0:
+
+1. Create an API for the Nourish server. Use a stable URL-style identifier such
+   as `https://api.nourish.example` (it need not resolve on the public internet),
+   select RS256 signing, and enable offline access for the API.
+2. Create a Native Application. Enable Refresh Token Rotation with reuse
+   detection, and enable the same database, social, or enterprise connections
+   used by the Regular Web Application. Register the native callback and logout
+   URLs documented in `mobile/README.md` for the `nourish` scheme.
+3. Set server bindings `AUTH0_AUDIENCE` to the API identifier and
+   `AUTH0_MOBILE_CLIENT_ID` to the Native Application client ID. The server uses
+   these values to accept only access tokens issued for this API and native app.
+4. Give the mobile app the Auth0 domain, Native Application client ID, API
+   audience, and Nourish API base URL. Request `openid profile email
+   offline_access`. These are public identifiers. Never put
+   `AUTH0_CLIENT_SECRET`, `AUTH0_SECRET`, or any other client secret in the app.
+
+Both Auth0 applications must use the same tenant connections so the same person
+receives the same Auth0 `sub` on web and mobile. Nourish uses that exact verified
+subject as the database owner; changing tenants, connections, or account-linking
+behavior can produce a different subject and therefore a separate diary.
+
+The five web settings and two optional native API settings are server-side
+bindings. The Docker image builds without credentials;
 Compose supplies them at runtime. Do not prefix these variables with
 `NEXT_PUBLIC_` or include them in build arguments. For a hosted Cloudflare Worker,
-set the same five values as runtime secret bindings. The generated Wrangler
-configuration declares their names without embedding their values.
+set the applicable values as runtime bindings. The generated Wrangler
+configuration declares all seven names without embedding their values, so
+Wrangler loads them from local environment files as well as runtime bindings.
+For web-only use, leave `AUTH0_AUDIENCE` and `AUTH0_MOBILE_CLIENT_ID` empty in
+the environment file (or define empty runtime bindings). Bearer requests then
+receive `503` while cookie sessions continue to work.
 
 The app uses the [official Auth0 Next.js SDK](https://auth0.github.io/nextjs-auth0/)
 for authorization-code login, callback validation, encrypted HTTP-only cookies,
 and logout. HTTPS enables secure cookies. Sessions expire after one day of
 inactivity or seven days in total. The app does not expose access tokens to the
 browser. APIs return JSON `401` when the session expires and `503` if sign-in
-configuration is unavailable. Authenticated writes require an `Origin` matching
-`APP_BASE_URL`.
+configuration is unavailable. Cookie-authenticated writes require an `Origin`
+matching `APP_BASE_URL`. Native writes authenticate with the bearer token and do
+not require a browser Origin header. Responses vary by both Cookie and
+Authorization so caches cannot mix identities.
 
 Each user's data belongs to their verified Auth0 `sub`. Incoming
 `oai-authenticated-user-*` headers and client-supplied user IDs cannot select a
