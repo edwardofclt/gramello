@@ -48,7 +48,9 @@ test('generic and branded foods scale by servings and grams and survive reload',
   await expect(page.locator('.nutrition-preview')).toContainText('300');
   const branded = page.waitForResponse(r => r.url().endsWith('/api/entries') && r.request().method() === 'POST');
   await page.getByRole('button', { name: 'Add to Breakfast', exact: true }).click();
-  expect(await (await branded).json()).toMatchObject({ grams: 60, calories: 300, protein: 7.2, carbs: 39, fat: 12 });
+  const brandedEntry = await (await branded).json();
+  expect(brandedEntry).toMatchObject({ grams: 60, calories: 300, carbs: 39, fat: 12 });
+  expect(brandedEntry.protein).toBeCloseTo(7.2, 6);
   await openDiary(page);
   await expect(page.locator('.food-row')).toHaveCount(2);
   await expect(page.locator('.calorie-focus h2')).toContainText('620');
