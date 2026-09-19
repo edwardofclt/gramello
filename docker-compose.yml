@@ -1,0 +1,12 @@
+services:
+  nourish:
+    build: .
+    image: nourish:local
+    ports:
+      - "3000:3000"
+    volumes:
+      - nourish-data:/data
+    restart: unless-stopped
+
+volumes:
+  nourish-data:

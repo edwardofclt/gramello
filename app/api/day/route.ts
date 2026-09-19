@@ -1,0 +1,2 @@
+import { getDay } from "@/db/store";
+export async function GET(request: Request) { try { const u = new URL(request.url); const date = u.searchParams.get("date") ?? new Date().toISOString().slice(0, 10); const userId = request.headers.get("oai-authenticated-user-id") ?? "site-owner"; return Response.json(await getDay(userId, date)); } catch (error) { console.error(error); return Response.json({ error: "Your diary could not be loaded right now." }, { status: 503 }); } }
