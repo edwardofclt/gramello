@@ -6,6 +6,8 @@
     "node": ">=22.13.0"
   },
   "scripts": {
+    "test": "vitest run",
+    "test:smoke": "node scripts/smoke-auth.mjs",
     "test:e2e": "playwright test",
     "install:ci": "bash scripts/install-pnpm.sh",
     "dev": "node scripts/run-framework.mjs dev",
@@ -16,6 +18,7 @@
     "release": "semantic-release"
   },
   "dependencies": {
+    "@auth0/nextjs-auth0": "^4.29.0",
     "@base-ui/react": "^1.7.0",
     "@hookform/resolvers": "^5.7.1",
     "@shadcn/react": "^0.3.0",
@@ -67,6 +70,7 @@
     "typescript": "5.9.3",
     "vinext": "1.0.0-beta.5",
     "vite": "8.0.13",
+    "vitest": "^5.0.0",
     "wrangler": "4.92.0"
   },
   "type": "module",

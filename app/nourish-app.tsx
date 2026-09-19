@@ -6,10 +6,13 @@ import { Activity, CalendarDays, ChevronLeft, ChevronRight, Flame, LayoutDashboa
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
+import { ProfileMenu } from "@/components/profile-menu";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Toaster, toast } from "sonner";
 import { changeGoal, macroPercent } from "./goal-math";
+import type { AuthUser } from "@/lib/auth";
+import SignIn from "./sign-in";
 
 type Goals={calories:number;protein:number;carbs:number;fat:number};
 type Entry={id:string;meal:string;name:string;brand?:string;source:string;sourceId?:string;quantity:number;unit:string;grams:number;calories:number;protein:number;carbs:number;fat:number};
@@ -35,7 +38,16 @@ function MacroProgress({label,current,target,color}:{label:string;current:number
   return <div className="macro-progress"><div className="macro-progress-top"><span><i style={{background:color}}/>{label}</span><strong>{round(current)} <small>/ {target}g</small></strong></div><div className="track"><span style={{width:`${clamp(pct)}%`,background:color}}/></div></div>;
 }
 
-export default function NourishApp(){
+export default function NourishApp({ user }: { user: AuthUser }){
+  const [sessionExpired, setSessionExpired] = useState(false);
+  const authFetch = useCallback(async (input: RequestInfo | URL, init?: RequestInit) => {
+    const response = await fetch(input, { ...init, cache: "no-store" });
+    if (response.status === 401) {
+      setSessionExpired(true);
+      throw new Error("Your session has expired. Please sign in again.");
+    }
+    return response;
+  }, []);
   const [view,setView]=useState<"today"|"trends">("today");
   const [date,setDate]=useState(today());
   const [goals,setGoals]=useState<Goals>(defaultGoals);
@@ -56,12 +68,12 @@ export default function NourishApp(){
   const [trends,setTrends]=useState<Trend[]>([]);
   const [trendLoading,setTrendLoading]=useState(false);
 
-  const loadDay=useCallback(async()=>{setLoading(true);try{const r=await fetch(`/api/day?date=${date}`);const data=await r.json();if(!r.ok)throw new Error(data.error);setEntries(data.entries);setGoals(data.goals);setDraftGoals(data.goals)}catch(e){toast.error(e instanceof Error?e.message:"Could not load diary")}finally{setLoading(false)}},[date]);
+  const loadDay=useCallback(async()=>{setLoading(true);try{const r=await authFetch(`/api/day?date=${date}`);const data=await r.json() as { error?: string; entries: Entry[]; goals: Goals };if(!r.ok)throw new Error(data.error);setEntries(data.entries);setGoals(data.goals);setDraftGoals(data.goals)}catch(e){toast.error(e instanceof Error?e.message:"Could not load diary")}finally{setLoading(false)}},[date,authFetch]);
   useEffect(()=>{void loadDay()},[loadDay]);
 
-  useEffect(()=>{if(view!=="trends")return;setTrendLoading(true);fetch(`/api/trends?days=${range}`).then(async r=>{const d=await r.json();if(!r.ok)throw new Error(d.error);setTrends(d.days)}).catch(e=>toast.error(e.message)).finally(()=>setTrendLoading(false))},[view,range]);
+  useEffect(()=>{if(view!=="trends")return;setTrendLoading(true);authFetch(`/api/trends?days=${range}`).then(async r=>{const d=await r.json() as { error?: string; days: Trend[] };if(!r.ok)throw new Error(d.error);setTrends(d.days)}).catch(e=>toast.error(e.message)).finally(()=>setTrendLoading(false))},[view,range,authFetch]);
 
-  useEffect(()=>{if(query.trim().length<2){setResults([]);return}const abort=new AbortController();const timer=setTimeout(async()=>{setSearching(true);try{const r=await fetch(`/api/foods/search?q=${encodeURIComponent(query)}`,{signal:abort.signal});const d=await r.json();setResults(d.foods??[])}catch(e){if((e as Error).name!=="AbortError")toast.error("Food search is unavailable")}finally{setSearching(false)}},350);return()=>{clearTimeout(timer);abort.abort()}},[query]);
+  useEffect(()=>{if(query.trim().length<2){setResults([]);return}const abort=new AbortController();const timer=setTimeout(async()=>{setSearching(true);try{const r=await authFetch(`/api/foods/search?q=${encodeURIComponent(query)}`,{signal:abort.signal});const d=await r.json() as { error?: string; foods: Food[] };if(!r.ok)throw new Error(d.error);setResults(d.foods??[])}catch(e){if((e as Error).name!=="AbortError")toast.error("Food search is unavailable")}finally{setSearching(false)}},350);return()=>{clearTimeout(timer);abort.abort()}},[query,authFetch]);
 
   const total=useMemo(()=>entries.reduce((a,e)=>({calories:a.calories+e.calories,protein:a.protein+e.protein,carbs:a.carbs+e.carbs,fat:a.fat+e.fat}),{calories:0,protein:0,carbs:0,fat:0}),[entries]);
   const remaining=Math.max(0,goals.calories-total.calories);
@@ -70,15 +82,17 @@ export default function NourishApp(){
   const shiftDate=(days:number)=>{const d=new Date(`${date}T12:00:00Z`);d.setUTCDate(d.getUTCDate()+days);setDate(d.toISOString().slice(0,10))};
   const openFood=()=>{setSelected(null);setQuery("");setResults([]);setQuantity(1);setUnit("serving");setAddOpen(true)};
   const scaled=selected?(()=>{const grams=unit==="grams"?quantity:selected.servingGrams*quantity;const factor=grams/100;return{grams,calories:selected.calories*factor,protein:selected.protein*factor,carbs:selected.carbs*factor,fat:selected.fat*factor}})():null;
-  const addFood=async()=>{if(!selected||!scaled)return;setSaving(true);try{const body={date,meal,name:selected.name,brand:selected.brand,source:selected.source,sourceId:selected.id,quantity,unit,grams:scaled.grams,calories:scaled.calories,protein:scaled.protein,carbs:scaled.carbs,fat:scaled.fat};const r=await fetch("/api/entries",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify(body)});const d=await r.json();if(!r.ok)throw new Error(d.error);setEntries(prev=>[...prev,d]);setAddOpen(false);toast.success(`${selected.name} added to ${meal.toLowerCase()}`)}catch(e){toast.error(e instanceof Error?e.message:"Could not add food")}finally{setSaving(false)}};
-  const deleteEntry=async(id:string)=>{const previous=entries;setEntries(x=>x.filter(e=>e.id!==id));const r=await fetch(`/api/entries?id=${id}`,{method:"DELETE"});if(!r.ok){setEntries(previous);toast.error("Could not remove food")}else toast.success("Food removed")};
-  const updateGoals=async()=>{setSaving(true);try{const r=await fetch("/api/goals",{method:"PUT",headers:{"content-type":"application/json"},body:JSON.stringify(draftGoals)});const d=await r.json();if(!r.ok)throw new Error(d.error);setGoals(d);setGoalOpen(false);toast.success("Daily goals updated")}catch(e){toast.error(e instanceof Error?e.message:"Could not save goals")}finally{setSaving(false)}};
+  const addFood=async()=>{if(!selected||!scaled)return;setSaving(true);try{const body={date,meal,name:selected.name,brand:selected.brand,source:selected.source,sourceId:selected.id,quantity,unit,grams:scaled.grams,calories:scaled.calories,protein:scaled.protein,carbs:scaled.carbs,fat:scaled.fat};const r=await authFetch("/api/entries",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify(body)});const d=await r.json() as Entry & { error?: string };if(!r.ok)throw new Error(d.error);setEntries(prev=>[...prev,d]);setAddOpen(false);toast.success(`${selected.name} added to ${meal.toLowerCase()}`)}catch(e){toast.error(e instanceof Error?e.message:"Could not add food")}finally{setSaving(false)}};
+  const deleteEntry=async(id:string)=>{const previous=entries;setEntries(x=>x.filter(e=>e.id!==id));try{const r=await authFetch(`/api/entries?id=${id}`,{method:"DELETE"});if(!r.ok)throw new Error("Could not remove food");toast.success("Food removed")}catch{setEntries(previous);toast.error("Could not remove food")}};
+  const updateGoals=async()=>{setSaving(true);try{const r=await authFetch("/api/goals",{method:"PUT",headers:{"content-type":"application/json"},body:JSON.stringify(draftGoals)});const d=await r.json() as Goals & { error?: string };if(!r.ok)throw new Error(d.error);setGoals(d);setGoalOpen(false);toast.success("Daily goals updated")}catch(e){toast.error(e instanceof Error?e.message:"Could not save goals")}finally{setSaving(false)}};
 
   useEffect(()=>{
     const ctx=(document as Document & {modelContext?:{registerTool:(tool:unknown,opts:{signal:AbortSignal})=>void}}).modelContext;if(!ctx?.registerTool)return;const c=new AbortController();
     ctx.registerTool({name:"open_food_search",title:"Open food search",description:"Open the food search so the user can find and add a food to today's diary.",inputSchema:{type:"object",properties:{},additionalProperties:false},annotations:{readOnlyHint:false,untrustedContentHint:false},execute:()=>{setView("today");openFood();return{opened:true,date}}},{signal:c.signal});
     ctx.registerTool({name:"show_nutrition_trends",title:"Show nutrition trends",description:"Open nutrition trend charts for 7, 30, or 183 days.",inputSchema:{type:"object",properties:{days:{type:"number",enum:[7,30,183]}},required:["days"],additionalProperties:false},annotations:{readOnlyHint:true,untrustedContentHint:false},execute:(input:unknown)=>{const days=(input as {days:number}).days;if(![7,30,183].includes(days))throw new Error("Days must be 7, 30, or 183");setRange(days);setView("trends");return{opened:true,days}}},{signal:c.signal});return()=>c.abort();
   },[date]);
+
+  if (sessionExpired) return <SignIn expired />;
 
   return <div className="app-shell">
     <aside className="sidebar">
@@ -92,7 +106,14 @@ export default function NourishApp(){
     </aside>
 
     <main>
-      <header className="topbar"><div className="mobile-brand"><Logo/><span>Nourish</span></div><div><p>{view==="today"?"DAILY DIARY":"NUTRITION ANALYTICS"}</p><h1>{view==="today"?"Today’s fuel":"Your progress"}</h1></div><Button onClick={openFood} className="add-food"><Plus/>Add food</Button></header>
+      <header className="topbar">
+        <div className="mobile-brand"><Logo/><span>Nourish</span></div>
+        <div><p>{view==="today"?"DAILY DIARY":"NUTRITION ANALYTICS"}</p><h1>{view==="today"?"Today’s fuel":"Your progress"}</h1></div>
+        <div className="topbar-actions">
+          <Button onClick={openFood} className="add-food" aria-label="Add food"><Plus/><span>Add food</span></Button>
+          <ProfileMenu displayName={user.displayName} email={user.email}/>
+        </div>
+      </header>
 
       <div className="mobile-tabs"><button className={view==="today"?"active":""} onClick={()=>setView("today")}><LayoutDashboard/>Today</button><button className={view==="trends"?"active":""} onClick={()=>setView("trends")}><TrendingUp/>Trends</button></div>
 

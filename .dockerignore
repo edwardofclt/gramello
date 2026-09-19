@@ -6,3 +6,5 @@ dist
 .wrangler
 .sites-runtime
 npm-debug.log
+.env*
+.dev.vars*

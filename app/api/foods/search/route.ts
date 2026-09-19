@@ -1,3 +1,4 @@
+import { withAuthenticatedUser } from "@/lib/auth";
 type Food = { id:string; name:string; brand?:string; source:string; calories:number; protein:number; carbs:number; fat:number; servingGrams:number; servingLabel:string; image?:string };
 const genericFoods: Food[] = [
   { id:"generic-chicken",name:"Chicken breast, cooked",source:"USDA reference",calories:165,protein:31,carbs:0,fat:3.6,servingGrams:100,servingLabel:"100 g" },
@@ -7,7 +8,11 @@ const genericFoods: Food[] = [
   { id:"generic-oats",name:"Rolled oats, dry",source:"USDA reference",calories:379,protein:13.2,carbs:67.7,fat:6.5,servingGrams:100,servingLabel:"100 g" },
 ];
 const n=(v:unknown)=>Number.isFinite(Number(v))?Number(v):0;
-export async function GET(request:Request) {
+export async function GET(request: Request) {
+  return withAuthenticatedUser(request, () => searchFoods(request));
+}
+
+async function searchFoods(request: Request) {
   const q=new URL(request.url).searchParams.get("q")?.trim()??""; if(q.length<2)return Response.json({foods:[]});
   const local=genericFoods.filter(f=>`${f.name} ${f.brand??""}`.toLowerCase().includes(q.toLowerCase()));
   const off=async()=>{const p=new URLSearchParams({search_terms:q,search_simple:"1",action:"process",json:"1",page_size:"12",fields:"code,product_name,brands,nutriments,serving_size,serving_quantity,image_front_small_url"});const r=await fetch(`https://world.openfoodfacts.org/cgi/search.pl?${p}`,{headers:{"User-Agent":"NourishTracker/1.0 (personal food diary)"}});if(!r.ok)throw new Error(`Open Food Facts ${r.status}`);const d=await r.json() as {products?:Array<Record<string,any>>};return(d.products??[]).flatMap((x):Food[]=>{if(!x.product_name||!x.nutriments)return[];const sg=n(x.serving_quantity)||100;return[{id:`off-${x.code}`,name:String(x.product_name),brand:x.brands?String(x.brands).split(",")[0]:undefined,source:"Open Food Facts",calories:n(x.nutriments["energy-kcal_100g"]),protein:n(x.nutriments.proteins_100g),carbs:n(x.nutriments.carbohydrates_100g),fat:n(x.nutriments.fat_100g),servingGrams:sg,servingLabel:x.serving_size?String(x.serving_size):`${sg} g`,image:x.image_front_small_url?String(x.image_front_small_url):undefined}]}).filter(f=>f.calories>0)};

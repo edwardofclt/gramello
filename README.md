@@ -10,6 +10,8 @@ Food search combines:
 
 ## Run with Docker Compose
 
+Configure Auth0 using the steps below, then:
+
 ```bash
 docker compose up --build
 ```
@@ -23,10 +25,76 @@ Requires Node.js 22+ and pnpm.
 ```bash
 corepack enable
 pnpm install
-pnpm run db:generate
 pnpm run build
-pnpm start
+for migration in drizzle/*.sql; do
+  pnpm exec wrangler d1 execute DB --local --config dist/server/wrangler.json --file "$migration"
+done
+pnpm dev
 ```
+
+Open [http://localhost:5173](http://localhost:5173). The build creates the Wrangler
+configuration used to initialize a new local database; run the migration loop
+only once per database. `pnpm dev` loads `.env.local` at runtime.
+To serve a production build locally instead, run
+`pnpm start --env-file ../../.env.local --port 5173` (Wrangler resolves env files
+relative to `dist/server/wrangler.json`).
+
+## Auth0 setup
+
+1. In the [Auth0 dashboard](https://manage.auth0.com/), create or select a
+   **Regular Web Application**. Enable the login connections you want to offer
+   through Universal Login, such as email/password or Google.
+2. Add these **Allowed Callback URLs**:
+   `http://localhost:5173/auth/callback, http://localhost:3000/auth/callback`.
+   Add these **Allowed Logout URLs**:
+   `http://localhost:5173, http://localhost:3000`.
+3. Copy `.env.example` to `.env.local`. Set `AUTH0_DOMAIN`, `AUTH0_CLIENT_ID`, and
+   `AUTH0_CLIENT_SECRET` from the application's settings. Generate `AUTH0_SECRET`
+   with `openssl rand -hex 32`. Keep this key stable across restarts and replicas;
+   replacing it signs everyone out. Never commit `.env.local`.
+4. Set `APP_BASE_URL=http://localhost:5173` for development. Docker Compose reads
+   `.env.local` and overrides the base URL to `http://localhost:3000`. For a
+   deployment behind an HTTPS reverse proxy, set `APP_BASE_URL=https://your-host`
+   in the Compose environment and register that host's `/auth/callback` and root
+   URL in Auth0. Use a single canonical origin, with no path or query string.
+
+All five settings are server-only. The Docker image builds without credentials;
+Compose supplies them at runtime. Do not prefix these variables with
+`NEXT_PUBLIC_` or include them in build arguments. For a hosted Cloudflare Worker,
+set the same five values as runtime secret bindings. The generated Wrangler
+configuration declares their names without embedding their values.
+
+The app uses the [official Auth0 Next.js SDK](https://auth0.github.io/nextjs-auth0/)
+for authorization-code login, callback validation, encrypted HTTP-only cookies,
+and logout. HTTPS enables secure cookies. Sessions expire after one day of
+inactivity or seven days in total. The app does not expose access tokens to the
+browser. APIs return JSON `401` when the session expires and `503` if sign-in
+configuration is unavailable. Authenticated writes require an `Origin` matching
+`APP_BASE_URL`.
+
+Each user's data belongs to their verified Auth0 `sub`. Incoming
+`oai-authenticated-user-*` headers and client-supplied user IDs cannot select a
+diary. Existing `site-owner` or ChatGPT data stays in the database, but is not
+automatically assigned to an Auth0 user. To migrate it, back up the database,
+verify the intended owner's Auth0 subject, and deliberately reassign that user's
+rows in both `goals` and `entries`; resolve any existing goal row first.
+
+## Verification
+
+```bash
+pnpm test
+pnpm exec tsc --noEmit
+pnpm lint
+pnpm build
+pnpm test:smoke
+```
+
+Tests exercise the real Auth0 cookie/session code and database queries with two
+users, including anonymous requests, spoofed headers, expired cookies, CSRF, and
+deletion ownership. The smoke check runs the built Worker with temporary
+credentials and an isolated local database; it does not modify your diary or
+contact Auth0. Complete a real login and logout with your configured tenant
+before deploying.
 
 ## Releases
 
