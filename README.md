@@ -24,6 +24,38 @@ docker compose up --build
 
 Open [http://localhost:3000](http://localhost:3000). Diary data is stored in the named `nourish-data` volume and survives container restarts.
 
+## Fly.io deployment
+
+The API and web app run at [https://nourish-api.fly.dev](https://nourish-api.fly.dev).
+`fly.toml` deploys the existing Docker image in `iad` with the SQLite database
+and migration markers stored on the encrypted `nourish_data` volume at `/data`.
+Daily volume snapshots are retained for 14 days. This is a single-Machine
+deployment: do not scale horizontally without adding database replication,
+because Fly volumes do not share data between Machines. Deploys and restarts
+briefly interrupt service. Keep separate database exports for long-term backups.
+
+The four web-authentication `AUTH0_*` settings are runtime Fly secrets.
+`APP_BASE_URL` is set in `fly.toml`. The optional `AUTH0_AUDIENCE` and
+`AUTH0_MOBILE_CLIENT_ID` bindings default to empty strings; set Fly secrets with
+the configured API audience and Native Application client ID to enable mobile
+authentication on the next deployment. The Auth0 web application must allow
+`https://nourish-api.fly.dev/auth/callback` as a callback URL and
+`https://nourish-api.fly.dev` as a logout URL.
+
+To deploy changes from this checkout:
+
+```bash
+fly deploy --ha=false
+fly status
+fly checks list
+```
+
+Migrations run on the mounted volume before the HTTP server starts. Keep exactly
+one Machine attached to the existing volume; do not delete the volume when
+replacing the application container. To roll back application code, redeploy a
+previous image with `fly deploy --ha=false --image <previous-image>`; this does
+not reverse database migrations, so check schema compatibility first.
+
 ## Local development
 
 Requires Node.js 22+ and pnpm.
