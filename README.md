@@ -176,3 +176,8 @@ ghcr.io/<owner>/<repository>:<version>
 ```
 
 Use `fix:` for patch releases, `feat:` for minor releases, and a `BREAKING CHANGE:` footer for major releases.
+
+Stable releases also build the iOS app on Expo EAS and submit it to TestFlight.
+The build uses the release tag's code and version; EAS increments the build number.
+The repository's `EXPO_TOKEN` Actions secret authenticates the build robot.
+See [mobile TestFlight setup](mobile/README.md#testflight) for credentials and manual reruns.

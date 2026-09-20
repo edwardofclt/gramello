@@ -1,9 +1,12 @@
 import type { ExpoConfig } from 'expo/config';
+import mobilePackage from './package.json';
 
 const config: ExpoConfig = {
   name: 'Nourish',
   slug: 'nourish-mobile',
-  version: '0.1.0',
+  owner: 'edwardofclt',
+  version: mobilePackage.version,
+  icon: './assets/icon.png',
   scheme: 'nourish',
   orientation: 'portrait',
   userInterfaceStyle: 'dark',
@@ -11,9 +14,11 @@ const config: ExpoConfig = {
   ios: {
     bundleIdentifier: 'com.edwardofclt.nourish',
     appleTeamId: '6SHL6PHRS9',
+    config: { usesNonExemptEncryption: false },
     supportsTablet: true,
   },
   android: { package: 'com.nourish.tracker' },
+  extra: { eas: { projectId: 'c23e01dd-d5d1-4f70-8786-e63e2f04a888' } },
   plugins: [
     ['react-native-auth0', {
       domain: process.env.EXPO_PUBLIC_AUTH0_DOMAIN || 'configure-auth0.invalid',
