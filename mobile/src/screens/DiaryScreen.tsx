@@ -1,3 +1,5 @@
+import { FoodVerification } from '../components/FoodVerification';
+import { entryAmount } from '../../../lib/food';
 import { useRef, useState } from 'react';
 import { RefreshControl, ScrollView, Text, View } from 'react-native';
 import { CalendarDays, ChevronLeft, ChevronRight, Coffee, Moon, Plus, Sun, Target, Trash2, Utensils } from 'lucide-react-native';
@@ -85,7 +87,7 @@ export function DiaryScreen({ date, onDate, onAdd, onGoals }: {
               </View>
               {items.map(entry => <View key={entry.id} style={[styles.row, { paddingVertical: 13, paddingHorizontal: 14, gap: 10, borderTopWidth: 1, borderColor: colors.border }]}>
                 <View style={{ width: 36, height: 36, borderRadius: 10, backgroundColor: '#19394b', alignItems: 'center', justifyContent: 'center' }}><Text style={{ color: colors.mint, fontWeight: '800' }}>{entry.name.charAt(0)}</Text></View>
-                <View style={{ flex: 1, minWidth: 0, gap: 3 }}><Text numberOfLines={1} style={{ color: colors.text, fontWeight: '600', fontSize: 13 }}>{entry.name}</Text><Text numberOfLines={1} style={{ color: colors.muted, fontSize: 11 }}>{entry.brand ? `${entry.brand} · ` : ''}{Math.round(entry.grams)} g · {entry.source}</Text></View>
+                <View style={{ flex: 1, minWidth: 0, gap: 3 }}><Text numberOfLines={1} style={{ color: colors.text, fontWeight: '600', fontSize: 13 }}>{entry.name}</Text><Text numberOfLines={1} style={{ color: colors.muted, fontSize: 11 }}>{entry.brand ? `${entry.brand} · ` : ''}{entryAmount(entry)} · {entry.source}</Text><FoodVerification verified={entry.verified}/></View>
                 {wide && <View style={[styles.row, { gap: 8 }]}>{macros.map(({ key }) => <View key={key} style={{ alignItems: 'center' }}><Text style={{ color: colors.text, fontSize: 11 }}>{Math.round(entry[key])}g</Text><Text style={{ color: colors.muted, fontSize: 9 }}>{key[0].toUpperCase()}</Text></View>)}</View>}
                 <Text style={{ color: colors.text, fontWeight: '700', fontSize: 13 }}>{Math.round(entry.calories)}</Text>
                 <Action quiet secondary compact label={`Remove ${entry.name}`} style={{ paddingHorizontal: 4, minHeight: 34 }} onPress={() => { setWriteError(null); setRemoving(entry); }}><Trash2 color={colors.muted} size={15} /></Action>

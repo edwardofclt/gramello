@@ -1,0 +1,1682 @@
+{
+  "chain": "LongHorn Steakhouse",
+  "sourceUrl": "https://media.longhornsteakhouse.com/en_us/pdf/nutrition_allergen_guide.pdf",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "id": "texas-margarita-1-menu-serving-see-item-description",
+      "name": "Texas Margarita",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 28,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "watermelon-margarita-1-menu-serving-see-item-description",
+      "name": "Watermelon Margarita",
+      "calories": 460,
+      "protein": 0,
+      "carbs": 89,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "watermelon-margaritalong-pour-1-menu-serving-see-item-description",
+      "name": "Watermelon MargaritaLong Pour",
+      "calories": 680,
+      "protein": 0,
+      "carbs": 131,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "the-perfect-long-pour-1-menu-serving-see-item-description",
+      "name": "The Perfect Long Pour",
+      "calories": 410,
+      "protein": 0,
+      "carbs": 64,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "strawberry-1-menu-serving-see-item-description",
+      "name": "Strawberry",
+      "calories": 310,
+      "protein": 0,
+      "carbs": 52,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "strawberry-long-pour-1-menu-serving-see-item-description",
+      "name": "Strawberry Long Pour",
+      "calories": 460,
+      "protein": 0,
+      "carbs": 76,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "mango-1-menu-serving-see-item-description",
+      "name": "Mango",
+      "calories": 410,
+      "protein": 0,
+      "carbs": 74,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "mango-long-pour-1-menu-serving-see-item-description",
+      "name": "Mango Long Pour",
+      "calories": 630,
+      "protein": 0,
+      "carbs": 118,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "lemondrop-martini-1-menu-serving-see-item-description",
+      "name": "Lemondrop Martini",
+      "calories": 250,
+      "protein": 0,
+      "carbs": 36,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "hurricane-where-available-1-menu-serving-see-item-description",
+      "name": "Hurricane (where available)",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 26,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "blazing-berry-sangria-1-menu-serving-see-item-description",
+      "name": "Blazing Berry Sangria",
+      "calories": 240,
+      "protein": 0,
+      "carbs": 34,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "texas-tea-1-menu-serving-see-item-description",
+      "name": "Texas Tea",
+      "calories": 240,
+      "protein": 0,
+      "carbs": 35,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "spiked-strawberry-lemonade-1-menu-serving-see-item-description",
+      "name": "Spiked Strawberry Lemonade",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 27,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "longhorn-old-fashioned-with-small-batch-9-yr-bourbon-by-knob-creek-1-menu-serving-see-item-description",
+      "name": "LongHorn Old Fashioned (with Small Batch 9 yr. Bourbon by Knob Creek)",
+      "calories": 250,
+      "protein": 0,
+      "carbs": 19,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "jack-coke-1-menu-serving-see-item-description",
+      "name": "Jack & Coke",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 13,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "moscow-mule-1-menu-serving-see-item-description",
+      "name": "Moscow Mule",
+      "calories": 220,
+      "protein": 0,
+      "carbs": 34,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "regular-bottle-beer-12-oz-1-menu-serving-see-item-description",
+      "name": "Regular Bottle Beer 12 oz.",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 12,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "light-draft-bottle-beer-12-oz-1-menu-serving-see-item-description",
+      "name": "Light Draft/Bottle Beer 12 oz.",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 6,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "michelob-ultra-16-oz-1-menu-serving-see-item-description",
+      "name": "Michelob Ultra 16 oz.",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "michelob-ultra-20-oz-1-menu-serving-see-item-description",
+      "name": "Michelob Ultra 20 oz.",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "regular-draft-beer-16-oz-1-menu-serving-see-item-description",
+      "name": "Regular Draft Beer 16 oz.",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 16,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "regular-draft-beer-20-oz-1-menu-serving-see-item-description",
+      "name": "Regular Draft Beer 20 oz.",
+      "calories": 250,
+      "protein": 0,
+      "carbs": 20,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "light-draft-beer-16-oz-1-menu-serving-see-item-description",
+      "name": "Light Draft Beer 16 oz.",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 8,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "light-draft-beer-20-oz-1-menu-serving-see-item-description",
+      "name": "Light Draft Beer 20 oz.",
+      "calories": 170,
+      "protein": 1,
+      "carbs": 10,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "cider-bottle-1-menu-serving-see-item-description",
+      "name": "Cider Bottle",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 21,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "white-glass-1-menu-serving-see-item-description",
+      "name": "White - Glass",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "white-longpour-1-menu-serving-see-item-description",
+      "name": "White - LongPour",
+      "calories": 220,
+      "protein": 0,
+      "carbs": 6,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "red-glass-1-menu-serving-see-item-description",
+      "name": "Red - Glass",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "red-longpour-1-menu-serving-see-item-description",
+      "name": "Red - LongPour",
+      "calories": 230,
+      "protein": 0,
+      "carbs": 8,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "raspberry-iced-tea-1-menu-serving-see-item-description",
+      "name": "Raspberry Iced Tea",
+      "calories": 50,
+      "protein": 0,
+      "carbs": 13,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "peach-iced-tea-1-menu-serving-see-item-description",
+      "name": "Peach Iced Tea",
+      "calories": 50,
+      "protein": 0,
+      "carbs": 14,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "half-lemonade-half-tea-sweetened-1-menu-serving-see-item-description",
+      "name": "Half Lemonade & Half Tea (Sweetened)",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 32,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "half-lemonade-half-tea-unsweetened-1-menu-serving-see-item-description",
+      "name": "Half Lemonade & Half Tea (Unsweetened)",
+      "calories": 70,
+      "protein": 0,
+      "carbs": 19,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "sweet-tea-1-menu-serving-see-item-description",
+      "name": "Sweet Tea",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 33,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "unsweetened-tea-1-menu-serving-see-item-description",
+      "name": "Unsweetened Tea",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "strawberry-lemonade-1-menu-serving-see-item-description",
+      "name": "Strawberry Lemonade",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 50,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "raspberry-lemonade-1-menu-serving-see-item-description",
+      "name": "Raspberry Lemonade",
+      "calories": 170,
+      "protein": 10,
+      "carbs": 41,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "mango-lemonade-1-menu-serving-see-item-description",
+      "name": "Mango Lemonade",
+      "calories": 240,
+      "protein": 0,
+      "carbs": 60,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "watermelon-lemonade-1-menu-serving-see-item-description",
+      "name": "Watermelon Lemonade",
+      "calories": 210,
+      "protein": 0,
+      "carbs": 55,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "diet-coke-coke-zero-sugar-1-menu-serving-see-item-description",
+      "name": "Diet Coke/Coke Zero Sugar",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "dr-pepper-where-available-1-menu-serving-see-item-description",
+      "name": "Dr Pepper (where available)",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 27,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "juices-orange-apple-1-menu-serving-see-item-description",
+      "name": "Juices (Orange, Apple)",
+      "calories": 110,
+      "protein": 2,
+      "carbs": 27,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "juices-cranberry-1-menu-serving-see-item-description",
+      "name": "Juices (Cranberry)",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 30,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "milk-1-menu-serving-see-item-description",
+      "name": "Milk",
+      "calories": 150,
+      "protein": 10,
+      "carbs": 15,
+      "fat": 6,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "chocolate-milk-1-menu-serving-see-item-description",
+      "name": "Chocolate Milk",
+      "calories": 220,
+      "protein": 10,
+      "carbs": 38,
+      "fat": 3.5,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "minute-maid-lemonade-1-menu-serving-see-item-description",
+      "name": "Minute Maid Lemonade",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 26,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "coffee-1-menu-serving-see-item-description",
+      "name": "Coffee",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "bottled-water-1-menu-serving-see-item-description",
+      "name": "Bottled Water",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "spicy-chicken-bites-where-available-1-menu-serving-see-item-description",
+      "name": "Spicy Chicken Bites (where available)",
+      "calories": 740,
+      "protein": 43,
+      "carbs": 53,
+      "fat": 39,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "parmesan-crusted-fries-1-menu-serving-see-item-description",
+      "name": "Parmesan Crusted Fries",
+      "calories": 2070,
+      "protein": 72,
+      "carbs": 155,
+      "fat": 130,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "texas-tonion-1-menu-serving-see-item-description",
+      "name": "Texas Tonion",
+      "calories": 1180,
+      "protein": 15,
+      "carbs": 126,
+      "fat": 69,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "parmesan-cheese-fries-1-menu-serving-see-item-description",
+      "name": "Parmesan Cheese Fries",
+      "calories": 2340,
+      "protein": 65,
+      "carbs": 143,
+      "fat": 167,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "white-cheddar-stuffed-mushrooms-1-menu-serving-see-item-description",
+      "name": "White Cheddar Stuffed Mushrooms",
+      "calories": 730,
+      "protein": 33,
+      "carbs": 14,
+      "fat": 60,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "firecracker-chicken-wraps-1-menu-serving-see-item-description",
+      "name": "Firecracker Chicken Wraps",
+      "calories": 720,
+      "protein": 28,
+      "carbs": 62,
+      "fat": 42,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "avocado-lime-sauce-1-menu-serving-see-item-description",
+      "name": "+ Avocado-Lime Sauce",
+      "calories": 170,
+      "protein": 1,
+      "carbs": 3,
+      "fat": 23,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "wild-west-shrimp-1-menu-serving-see-item-description",
+      "name": "Wild West Shrimp",
+      "calories": 970,
+      "protein": 39,
+      "carbs": 65,
+      "fat": 62,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "seasoned-steakhouse-wings-1-menu-serving-see-item-description",
+      "name": "Seasoned Steakhouse Wings",
+      "calories": 460,
+      "protein": 53,
+      "carbs": 0,
+      "fat": 28,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "blue-cheese-dressing-1-menu-serving-see-item-description",
+      "name": "+ Blue Cheese Dressing",
+      "calories": 180,
+      "protein": 2,
+      "carbs": 3,
+      "fat": 17,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "buffalo-sauce-1-menu-serving-see-item-description",
+      "name": "+ Buffalo Sauce",
+      "calories": 90,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 8,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "surf-surf-dip-where-available-1-menu-serving-see-item-description",
+      "name": "Surf & Surf Dip (where available)",
+      "calories": 730,
+      "protein": 35,
+      "carbs": 12,
+      "fat": 60,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "flatbread-where-available-1-menu-serving-see-item-description",
+      "name": "+ Flatbread (where available)",
+      "calories": 920,
+      "protein": 19,
+      "carbs": 99,
+      "fat": 49,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "texas-brisket-nachos-where-available-1-menu-serving-see-item-description",
+      "name": "Texas Brisket Nachos (where available)",
+      "calories": 2040,
+      "protein": 64,
+      "carbs": 149,
+      "fat": 130,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "parmesan-crusted-spinach-dip-where-available-1-menu-serving-see-item-description",
+      "name": "Parmesan Crusted Spinach Dip (where available)",
+      "calories": 770,
+      "protein": 28,
+      "carbs": 21,
+      "fat": 62,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "flatbread-chips-where-available-1-menu-serving-see-item-description",
+      "name": "+ Flatbread Chips (where available)",
+      "calories": 710,
+      "protein": 15,
+      "carbs": 76,
+      "fat": 38,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "spicy-chicken-bites-larger-portion-where-available-1-menu-serving-see-item-description",
+      "name": "Spicy Chicken Bites - Larger Portion (where available)",
+      "calories": 920,
+      "protein": 54,
+      "carbs": 66,
+      "fat": 49,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "sweet-chili-ginger-sauce-1-menu-serving-see-item-description",
+      "name": "+ Sweet Chili Ginger Sauce",
+      "calories": 430,
+      "protein": 1,
+      "carbs": 32,
+      "fat": 33,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "texas-brisket-queso-where-available-1-menu-serving-see-item-description",
+      "name": "Texas Brisket Queso (where available)",
+      "calories": 1070,
+      "protein": 50,
+      "carbs": 19,
+      "fat": 89,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "chips-where-available-1-menu-serving-see-item-description",
+      "name": "+ Chips (where available)",
+      "calories": 600,
+      "protein": 8,
+      "carbs": 76,
+      "fat": 30,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "loaded-potato-soup-cup-1-menu-serving-see-item-description",
+      "name": "Loaded Potato Soup - Cup",
+      "calories": 270,
+      "protein": 10,
+      "carbs": 16,
+      "fat": 19,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "loaded-potato-soup-bowl-1-menu-serving-see-item-description",
+      "name": "Loaded Potato Soup - Bowl",
+      "calories": 380,
+      "protein": 15,
+      "carbs": 21,
+      "fat": 27,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "shrimp-lobster-chowder-cup-1-menu-serving-see-item-description",
+      "name": "Shrimp & Lobster Chowder - Cup",
+      "calories": 190,
+      "protein": 8,
+      "carbs": 17,
+      "fat": 11,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "shrimp-lobster-chowder-bowl-1-menu-serving-see-item-description",
+      "name": "Shrimp & Lobster Chowder - Bowl",
+      "calories": 250,
+      "protein": 10,
+      "carbs": 23,
+      "fat": 15,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "french-onion-soup-cup-1-menu-serving-see-item-description",
+      "name": "French Onion Soup - Cup",
+      "calories": 170,
+      "protein": 8,
+      "carbs": 13,
+      "fat": 10,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "french-onion-soup-bowl-1-menu-serving-see-item-description",
+      "name": "French Onion Soup - Bowl",
+      "calories": 480,
+      "protein": 30,
+      "carbs": 20,
+      "fat": 31,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "southwest-chicken-tortilla-cup-where-available-1-menu-serving-see-item-description",
+      "name": "Southwest Chicken Tortilla - Cup (where available)",
+      "calories": 250,
+      "protein": 12,
+      "carbs": 17,
+      "fat": 14,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "southwest-chicken-tortilla-bowl-where-available-1-menu-serving-see-item-description",
+      "name": "Southwest Chicken Tortilla - Bowl (where available)",
+      "calories": 330,
+      "protein": 16,
+      "carbs": 22,
+      "fat": 18,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "mixed-greens-salad-1-menu-serving-see-item-description",
+      "name": "Mixed Greens Salad",
+      "calories": 140,
+      "protein": 6,
+      "carbs": 13,
+      "fat": 8,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "caesar-side-salad-with-caesar-dressing-1-menu-serving-see-item-description",
+      "name": "Caesar Side Salad with Caesar Dressing",
+      "calories": 250,
+      "protein": 6,
+      "carbs": 12,
+      "fat": 19,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "strawberry-pecan-salad-with-dressing-1-menu-serving-see-item-description",
+      "name": "Strawberry & Pecan Salad with dressing",
+      "calories": 190,
+      "protein": 4,
+      "carbs": 28,
+      "fat": 8,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "grilled-chicken-strawberry-salad-with-vinaigrette-1-menu-serving-see-item-description",
+      "name": "Grilled Chicken & Strawberry Salad with Vinaigrette",
+      "calories": 530,
+      "protein": 43,
+      "carbs": 52,
+      "fat": 19,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "farm-fresh-field-greens-with-crispy-chicken-tenders-1-menu-serving-see-item-description",
+      "name": "Farm Fresh Field Greens with Crispy Chicken Tenders",
+      "calories": 650,
+      "protein": 46,
+      "carbs": 41,
+      "fat": 35,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "farm-fresh-field-greens-with-salmon-1-menu-serving-see-item-description",
+      "name": "Farm Fresh Field Greens with Salmon",
+      "calories": 530,
+      "protein": 43,
+      "carbs": 23,
+      "fat": 29,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "7-pepper-sirloin-salad-1-menu-serving-see-item-description",
+      "name": "7-Pepper Sirloin Salad",
+      "calories": 490,
+      "protein": 45,
+      "carbs": 22,
+      "fat": 26,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "blue-cheese-1-5-oz-1-menu-serving-see-item-description",
+      "name": "Blue Cheese 1.5 oz.",
+      "calories": 180,
+      "protein": 2,
+      "carbs": 3,
+      "fat": 17,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "blue-cheese-3-oz-1-menu-serving-see-item-description",
+      "name": "Blue Cheese 3 oz.",
+      "calories": 350,
+      "protein": 4,
+      "carbs": 6,
+      "fat": 34,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "honey-mustard-1-5-oz-1-menu-serving-see-item-description",
+      "name": "Honey Mustard 1.5 oz.",
+      "calories": 240,
+      "protein": 0,
+      "carbs": 8,
+      "fat": 23,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "honey-mustard-3-oz-1-menu-serving-see-item-description",
+      "name": "Honey Mustard 3 oz.",
+      "calories": 480,
+      "protein": 0,
+      "carbs": 15,
+      "fat": 45,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "ranch-3-oz-1-menu-serving-see-item-description",
+      "name": "Ranch 3 oz.",
+      "calories": 460,
+      "protein": 2,
+      "carbs": 4,
+      "fat": 49,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "raspberry-vinaigrette-1-5-oz-1-menu-serving-see-item-description",
+      "name": "Raspberry Vinaigrette 1.5 oz.",
+      "calories": 60,
+      "protein": 0,
+      "carbs": 14,
+      "fat": 0.5,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "raspberry-vinaigrette-3-oz-1-menu-serving-see-item-description",
+      "name": "Raspberry Vinaigrette 3 oz.",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 27,
+      "fat": 1,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "thousand-island-1-5-oz-1-menu-serving-see-item-description",
+      "name": "Thousand Island 1.5 oz.",
+      "calories": 190,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 19,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "white-balsamic-vinaigrette-1-5-oz-1-menu-serving-see-item-description",
+      "name": "White Balsamic Vinaigrette 1.5 oz.",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 6,
+      "fat": 20,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "white-balsamic-vinaigrette-3-oz-1-menu-serving-see-item-description",
+      "name": "White Balsamic Vinaigrette 3 oz.",
+      "calories": 390,
+      "protein": 0,
+      "carbs": 12,
+      "fat": 39,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "steakhouse-lunch-plates-crispy-buttermilk-chicken-sandwich-6-oz-1-menu-serving-see-item-description",
+      "name": "Steakhouse Lunch Plates - Crispy Buttermilk Chicken Sandwich 6 oz",
+      "calories": 1080,
+      "protein": 44,
+      "carbs": 67,
+      "fat": 72,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "steakhouse-lunch-plates-half-pound-steakhouse-cheeseburger-1-menu-serving-see-item-description",
+      "name": "Steakhouse Lunch Plates - Half-Pound Steakhouse Cheeseburger",
+      "calories": 850,
+      "protein": 48,
+      "carbs": 45,
+      "fat": 51,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "steakhouse-lunch-plates-grilled-chicken-strawberry-lunch-salad-with-vinaigrette-1-menu-serving-see-item-description",
+      "name": "Steakhouse Lunch Plates - Grilled Chicken & Strawberry Lunch Salad with Vinaigrette",
+      "calories": 280,
+      "protein": 20,
+      "carbs": 28,
+      "fat": 11,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "steakhouse-lunch-plates-7-pepper-sirloin-lunch-salad-1-menu-serving-see-item-description",
+      "name": "Steakhouse Lunch Plates - 7-Pepper Sirloin Lunch Salad",
+      "calories": 250,
+      "protein": 23,
+      "carbs": 11,
+      "fat": 13,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "steakhouse-lunch-plates-loaded-potato-soup-bowl-1-menu-serving-see-item-description",
+      "name": "Steakhouse Lunch Plates - Loaded Potato Soup (bowl)",
+      "calories": 380,
+      "protein": 15,
+      "carbs": 21,
+      "fat": 27,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "steakhouse-lunch-plates-shrimp-lobster-chowder-bowl-1-menu-serving-see-item-description",
+      "name": "Steakhouse Lunch Plates - Shrimp & Lobster Chowder (bowl)",
+      "calories": 250,
+      "protein": 10,
+      "carbs": 23,
+      "fat": 15,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "grilled-lamb-chops-1-menu-serving-see-item-description",
+      "name": "Grilled Lamb Chops",
+      "calories": 1120,
+      "protein": 63,
+      "carbs": 42,
+      "fat": 79,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "hand-breaded-chicken-tenders-6-tenders-1-menu-serving-see-item-description",
+      "name": "Hand-Breaded Chicken Tenders (6 tenders)",
+      "calories": 420,
+      "protein": 36,
+      "carbs": 19,
+      "fat": 22,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "honey-mustard-1-menu-serving-see-item-description",
+      "name": "+ Honey Mustard",
+      "calories": 240,
+      "protein": 0,
+      "carbs": 8,
+      "fat": 23,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "seasoned-french-fries-1-menu-serving-see-item-description",
+      "name": "+ Seasoned French Fries",
+      "calories": 500,
+      "protein": 6,
+      "carbs": 67,
+      "fat": 23,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "hand-breaded-chicken-tenders-9-tenders-1-menu-serving-see-item-description",
+      "name": "Hand-Breaded Chicken Tenders (9 tenders)",
+      "calories": 620,
+      "protein": 53,
+      "carbs": 28,
+      "fat": 33,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "parmesan-crusted-chicken-6-oz-1-menu-serving-see-item-description",
+      "name": "Parmesan Crusted Chicken 6 oz",
+      "calories": 560,
+      "protein": 51,
+      "carbs": 12,
+      "fat": 34,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "parmesan-crusted-chicken-9-oz-1-menu-serving-see-item-description",
+      "name": "Parmesan Crusted Chicken 9 oz",
+      "calories": 650,
+      "protein": 68,
+      "carbs": 12,
+      "fat": 36,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "parmesan-crusted-chicken-12-oz-1-menu-serving-see-item-description",
+      "name": "Parmesan Crusted Chicken 12 oz",
+      "calories": 1120,
+      "protein": 102,
+      "carbs": 24,
+      "fat": 69,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "redrock-grilled-shrimp-8-ct-1-menu-serving-see-item-description",
+      "name": "Redrock Grilled Shrimp 8 ct.",
+      "calories": 160,
+      "protein": 30,
+      "carbs": 2,
+      "fat": 3,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "rice-1-menu-serving-see-item-description",
+      "name": "+ Rice",
+      "calories": 230,
+      "protein": 3,
+      "carbs": 41,
+      "fat": 6,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "baby-back-ribs-half-rack-1-menu-serving-see-item-description",
+      "name": "Baby Back Ribs Half-Rack",
+      "calories": 820,
+      "protein": 62,
+      "carbs": 16,
+      "fat": 56,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "bbq-sauce-1-menu-serving-see-item-description",
+      "name": "+ BBQ Sauce",
+      "calories": 110,
+      "protein": 0,
+      "carbs": 26,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "baby-back-ribs-full-rack-1-menu-serving-see-item-description",
+      "name": "Baby Back Ribs Full-Rack",
+      "calories": 1270,
+      "protein": 96,
+      "carbs": 25,
+      "fat": 87,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "longhorn-salmon-7-oz-1-menu-serving-see-item-description",
+      "name": "LongHorn Salmon 7 oz.",
+      "calories": 300,
+      "protein": 33,
+      "carbs": 2,
+      "fat": 16,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "longhorn-salmon-10-oz-1-menu-serving-see-item-description",
+      "name": "LongHorn Salmon 10 oz.",
+      "calories": 430,
+      "protein": 47,
+      "carbs": 3,
+      "fat": 23,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "chop-steak-1-menu-serving-see-item-description",
+      "name": "Chop Steak",
+      "calories": 640,
+      "protein": 44,
+      "carbs": 13,
+      "fat": 46,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "chicken-fried-chicken-where-available-1-menu-serving-see-item-description",
+      "name": "Chicken Fried Chicken (where available)",
+      "calories": 400,
+      "protein": 35,
+      "carbs": 21,
+      "fat": 20,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "mashed-potatoes-1-menu-serving-see-item-description",
+      "name": "+ Mashed Potatoes",
+      "calories": 340,
+      "protein": 5,
+      "carbs": 37,
+      "fat": 19,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "gravy-1-menu-serving-see-item-description",
+      "name": "+ Gravy",
+      "calories": 160,
+      "protein": 1,
+      "carbs": 18,
+      "fat": 9,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "cowboy-pork-chops-where-available-1-menu-serving-see-item-description",
+      "name": "Cowboy Pork Chops (where available)",
+      "calories": 400,
+      "protein": 44,
+      "carbs": 2,
+      "fat": 25,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "lemon-garlic-chicken-6-oz-1-menu-serving-see-item-description",
+      "name": "Lemon Garlic Chicken 6 oz.",
+      "calories": 240,
+      "protein": 36,
+      "carbs": 2,
+      "fat": 10,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "lemon-garlic-chicken-9-oz-1-menu-serving-see-item-description",
+      "name": "Lemon Garlic Chicken 9 oz.",
+      "calories": 330,
+      "protein": 53,
+      "carbs": 2,
+      "fat": 12,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "lemon-garlic-chicken-12-oz-1-menu-serving-see-item-description",
+      "name": "Lemon Garlic Chicken 12 oz.",
+      "calories": 420,
+      "protein": 70,
+      "carbs": 2,
+      "fat": 15,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "legendary-steaks-flo-s-filet-6-oz-1-menu-serving-see-item-description",
+      "name": "Legendary Steaks - Flo's Filet 6 oz.",
+      "calories": 330,
+      "protein": 37,
+      "carbs": 2,
+      "fat": 15,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "legendary-steaks-flo-s-filet-9-oz-1-menu-serving-see-item-description",
+      "name": "Legendary Steaks - Flo's Filet 9 oz.",
+      "calories": 450,
+      "protein": 56,
+      "carbs": 3,
+      "fat": 19,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "legendary-steaks-outlaw-ribeye-20-oz-1-menu-serving-see-item-description",
+      "name": "Legendary Steaks - Outlaw Ribeye 20 oz.",
+      "calories": 1250,
+      "protein": 94,
+      "carbs": 2,
+      "fat": 87,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "legendary-steaks-renegade-sirloin-6-oz-1-menu-serving-see-item-description",
+      "name": "Legendary Steaks - Renegade Sirloin 6 oz.",
+      "calories": 320,
+      "protein": 36,
+      "carbs": 2,
+      "fat": 15,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "legendary-steaks-renegade-sirloin-8-oz-1-menu-serving-see-item-description",
+      "name": "Legendary Steaks - Renegade Sirloin 8 oz.",
+      "calories": 390,
+      "protein": 51,
+      "carbs": 2,
+      "fat": 16,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "legendary-steaks-ribeye-12-oz-1-menu-serving-see-item-description",
+      "name": "Legendary Steaks - Ribeye 12 oz.",
+      "calories": 810,
+      "protein": 66,
+      "carbs": 4,
+      "fat": 54,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "legendary-steaks-new-york-strip-kansas-city-strip-12-oz-1-menu-serving-see-item-description",
+      "name": "Legendary Steaks - New York Strip/Kansas City Strip 12 oz.",
+      "calories": 630,
+      "protein": 72,
+      "carbs": 1,
+      "fat": 33,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "legendary-steaks-fire-grilled-t-bone-18-oz-1-menu-serving-see-item-description",
+      "name": "Legendary Steaks - Fire-Grilled T-Bone 18 oz.",
+      "calories": 1130,
+      "protein": 123,
+      "carbs": 1,
+      "fat": 62,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "legendary-steaks-the-longhorn-22-oz-1-menu-serving-see-item-description",
+      "name": "Legendary Steaks - The LongHorn 22 oz.",
+      "calories": 1280,
+      "protein": 150,
+      "carbs": 1,
+      "fat": 67,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "legendary-steaks-chicken-fried-steak-where-available-1-menu-serving-see-item-description",
+      "name": "Legendary Steaks - Chicken Fried Steak (where available)",
+      "calories": 730,
+      "protein": 30,
+      "carbs": 24,
+      "fat": 26,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "legendary-steaks-mashed-potatoes-1-menu-serving-see-item-description",
+      "name": "Legendary Steaks - + Mashed Potatoes",
+      "calories": 340,
+      "protein": 5,
+      "carbs": 37,
+      "fat": 19,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "legendary-steaks-gravy-1-menu-serving-see-item-description",
+      "name": "Legendary Steaks - + Gravy",
+      "calories": 160,
+      "protein": 1,
+      "carbs": 18,
+      "fat": 9,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "legendary-steaks-longhorn-steak-tips-where-available-1-menu-serving-see-item-description",
+      "name": "Legendary Steaks - LongHorn Steak Tips (where available)",
+      "calories": 610,
+      "protein": 74,
+      "carbs": 14,
+      "fat": 29,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "legendary-steaks-longhorn-churrasco-steak-w-plantains-where-available-1-menu-serving-see-item-description",
+      "name": "Legendary Steaks - LongHorn Churrasco Steak w/ Plantains (where available)",
+      "calories": 840,
+      "protein": 49,
+      "carbs": 47,
+      "fat": 52,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "legendary-steaks-chicken-fried-steak-where-available-1-menu-serving-see-item-description-2",
+      "name": "Legendary Steaks - Chicken Fried Steak (where available)",
+      "calories": 730,
+      "protein": 60,
+      "carbs": 48,
+      "fat": 51,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "renegade-sirloin-6-oz-with-redrock-grilled-shrimp-1-menu-serving-see-item-description",
+      "name": "Renegade Sirloin 6 oz. with Redrock Grilled Shrimp",
+      "calories": 480,
+      "protein": 66,
+      "carbs": 4,
+      "fat": 18,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "9-oz-parmesan-crusted-chicken-with-half-rack-baby-back-ribs-1-menu-serving-see-item-description",
+      "name": "9 oz. Parmesan Crusted Chicken with Half-Rack Baby Back Ribs",
+      "calories": 1470,
+      "protein": 130,
+      "carbs": 28,
+      "fat": 92,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "flo-s-filet-6-oz-with-lobster-tail-1-menu-serving-see-item-description",
+      "name": "Flo's Filet 6 oz. with Lobster Tail",
+      "calories": 420,
+      "protein": 51,
+      "carbs": 2,
+      "fat": 18,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "butter-sauce-1-menu-serving-see-item-description",
+      "name": "+ Butter Sauce",
+      "calories": 210,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 22,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "7-oz-longhorn-salmon-with-8-ct-redrock-grilled-shrimp-1-menu-serving-see-item-description",
+      "name": "7 oz. Longhorn Salmon* with 8 ct. Redrock Grilled Shrimp",
+      "calories": 460,
+      "protein": 63,
+      "carbs": 4,
+      "fat": 19,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "parmesan-cheese-crust-1-menu-serving-see-item-description",
+      "name": "Parmesan Cheese Crust",
+      "calories": 390,
+      "protein": 17,
+      "carbs": 12,
+      "fat": 30,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "grilled-mushrooms-only-1-menu-serving-see-item-description",
+      "name": "Grilled Mushrooms Only",
+      "calories": 150,
+      "protein": 6,
+      "carbs": 9,
+      "fat": 12,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "redrock-grilled-shrimp-1-menu-serving-see-item-description",
+      "name": "Redrock Grilled Shrimp",
+      "calories": 80,
+      "protein": 15,
+      "carbs": 1,
+      "fat": 1.5,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "lobster-tail-where-available-1-menu-serving-see-item-description",
+      "name": "Lobster Tail (where available)",
+      "calories": 90,
+      "protein": 14,
+      "carbs": 0,
+      "fat": 3,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "grilled-jalapenos-where-available-1-menu-serving-see-item-description",
+      "name": "Grilled Jalapeños (where available)",
+      "calories": 15,
+      "protein": 14,
+      "carbs": 0,
+      "fat": 3,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "hand-breaded-chicken-tenders-6-tenders-1-menu-serving-see-item-description-2",
+      "name": "Hand-Breaded Chicken Tenders 6 Tenders",
+      "calories": 420,
+      "protein": 36,
+      "carbs": 19,
+      "fat": 22,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "hand-breaded-chicken-tenders-9-tenders-1-menu-serving-see-item-description-2",
+      "name": "Hand-Breaded Chicken Tenders 9 Tenders",
+      "calories": 620,
+      "protein": 53,
+      "carbs": 28,
+      "fat": 33,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "parmesan-crusted-chicken-9-oz-1-menu-serving-see-item-description-2",
+      "name": "Parmesan Crusted Chicken 9 oz.",
+      "calories": 650,
+      "protein": 68,
+      "carbs": 12,
+      "fat": 36,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "parmesan-crusted-chicken-12-oz-1-menu-serving-see-item-description-2",
+      "name": "Parmesan Crusted Chicken 12 oz.",
+      "calories": 1120,
+      "protein": 102,
+      "carbs": 24,
+      "fat": 69,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "baby-back-ribs-half-rack-1-menu-serving-see-item-description-2",
+      "name": "Baby Back Ribs - Half-Rack",
+      "calories": 820,
+      "protein": 62,
+      "carbs": 16,
+      "fat": 56,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "baby-back-ribs-full-rack-1-menu-serving-see-item-description-2",
+      "name": "Baby Back Ribs - Full-Rack",
+      "calories": 1270,
+      "protein": 96,
+      "carbs": 25,
+      "fat": 87,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "half-pound-steakhouse-cheeseburger-1-menu-serving-see-item-description",
+      "name": "Half-Pound Steakhouse Cheeseburger",
+      "calories": 850,
+      "protein": 48,
+      "carbs": 45,
+      "fat": 51,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "bacon-strip-1-menu-serving-see-item-description",
+      "name": "+ Bacon (Strip)",
+      "calories": 130,
+      "protein": 7,
+      "carbs": 0,
+      "fat": 12,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "redrock-grilled-shrimp-12-ct-1-menu-serving-see-item-description",
+      "name": "Redrock Grilled Shrimp 12 ct.",
+      "calories": 240,
+      "protein": 46,
+      "carbs": 3,
+      "fat": 4.5,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "chicken-fried-chicken-where-available-1-menu-serving-see-item-description-2",
+      "name": "Chicken Fried Chicken (where available)",
+      "calories": 800,
+      "protein": 70,
+      "carbs": 42,
+      "fat": 39,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "fire-grilled-corn-on-the-cob-1-menu-serving-see-item-description",
+      "name": "Fire-Grilled Corn On The Cob",
+      "calories": 200,
+      "protein": 7,
+      "carbs": 28,
+      "fat": 9,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "fresh-steamed-asparagus-1-menu-serving-see-item-description",
+      "name": "Fresh Steamed Asparagus",
+      "calories": 130,
+      "protein": 8,
+      "carbs": 9,
+      "fat": 7,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "steakhouse-mac-cheese-1-menu-serving-see-item-description",
+      "name": "Steakhouse Mac & Cheese",
+      "calories": 610,
+      "protein": 26,
+      "carbs": 43,
+      "fat": 37,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "crispy-brussels-sprouts-1-menu-serving-see-item-description",
+      "name": "Crispy Brussels Sprouts",
+      "calories": 310,
+      "protein": 5,
+      "carbs": 27,
+      "fat": 23,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "plain-idaho-baked-potato-1-menu-serving-see-item-description",
+      "name": "Plain Idaho Baked Potato",
+      "calories": 290,
+      "protein": 8,
+      "carbs": 64,
+      "fat": 2,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "loaded-idaho-baked-potato-1-menu-serving-see-item-description",
+      "name": "Loaded Idaho Baked Potato",
+      "calories": 470,
+      "protein": 11,
+      "carbs": 65,
+      "fat": 20,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "plain-sweet-potato-1-menu-serving-see-item-description",
+      "name": "Plain Sweet Potato",
+      "calories": 240,
+      "protein": 5,
+      "carbs": 55,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "sweet-potato-with-cinnamon-sugar-butter-1-menu-serving-see-item-description",
+      "name": "Sweet Potato with Cinnamon Sugar & Butter",
+      "calories": 380,
+      "protein": 5,
+      "carbs": 62,
+      "fat": 14,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "mashed-potatoes-1-menu-serving-see-item-description-2",
+      "name": "Mashed Potatoes",
+      "calories": 340,
+      "protein": 5,
+      "carbs": 37,
+      "fat": 19,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "seasoned-rice-pilaf-1-menu-serving-see-item-description",
+      "name": "Seasoned Rice Pilaf",
+      "calories": 230,
+      "protein": 3,
+      "carbs": 41,
+      "fat": 6,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "fresh-steamed-broccoli-1-menu-serving-see-item-description",
+      "name": "Fresh Steamed Broccoli",
+      "calories": 90,
+      "protein": 4,
+      "carbs": 7,
+      "fat": 4,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "seasoned-french-fries-1-menu-serving-see-item-description-2",
+      "name": "Seasoned French Fries",
+      "calories": 500,
+      "protein": 6,
+      "carbs": 67,
+      "fat": 23,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "crispy-texas-okra-where-available-1-menu-serving-see-item-description",
+      "name": "Crispy Texas Okra (where available)",
+      "calories": 310,
+      "protein": 5,
+      "carbs": 28,
+      "fat": 19,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "fried-okra-where-available-1-menu-serving-see-item-description",
+      "name": "Fried Okra (where available)",
+      "calories": 310,
+      "protein": 5,
+      "carbs": 28,
+      "fat": 19,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "honey-wheat-bread-full-loaf-1-menu-serving-see-item-description",
+      "name": "Honey Wheat Bread (Full Loaf)",
+      "calories": 480,
+      "protein": 16,
+      "carbs": 88,
+      "fat": 7,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "add-butter-1-menu-serving-see-item-description",
+      "name": "+ Add Butter",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 13,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "bacon-strip-1-menu-serving-see-item-description-2",
+      "name": "Bacon (Strip)",
+      "calories": 130,
+      "protein": 7,
+      "carbs": 0,
+      "fat": 12,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "chocolate-stampede-1-menu-serving-see-item-description",
+      "name": "Chocolate Stampede",
+      "calories": 2460,
+      "protein": 28,
+      "carbs": 289,
+      "fat": 132,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "molten-lava-cake-1-menu-serving-see-item-description",
+      "name": "Molten Lava Cake",
+      "calories": 1150,
+      "protein": 15,
+      "carbs": 157,
+      "fat": 53,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "strawberries-cream-shortcake-1-menu-serving-see-item-description",
+      "name": "Strawberries & Cream Shortcake",
+      "calories": 640,
+      "protein": 7,
+      "carbs": 74,
+      "fat": 37,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "the-cheesecake-with-pecans-1-menu-serving-see-item-description",
+      "name": "THE Cheesecake with Pecans",
+      "calories": 1370,
+      "protein": 18,
+      "carbs": 117,
+      "fat": 82,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "the-cheesecake-with-strawberry-1-menu-serving-see-item-description",
+      "name": "THE Cheesecake with Strawberry",
+      "calories": 1090,
+      "protein": 18,
+      "carbs": 94,
+      "fat": 70,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "grilled-chicken-tenders-1-menu-serving-see-item-description",
+      "name": "Grilled Chicken Tenders",
+      "calories": 140,
+      "protein": 26,
+      "carbs": 0,
+      "fat": 3.5,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "kid-s-sirloin-steak-1-menu-serving-see-item-description",
+      "name": "Kid's Sirloin Steak",
+      "calories": 240,
+      "protein": 24,
+      "carbs": 1,
+      "fat": 16,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "kraft-macaroni-cheese-1-menu-serving-see-item-description",
+      "name": "Kraft Macaroni & Cheese",
+      "calories": 310,
+      "protein": 11,
+      "carbs": 45,
+      "fat": 9,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "cheeseburger-1-menu-serving-see-item-description",
+      "name": "Cheeseburger",
+      "calories": 490,
+      "protein": 29,
+      "carbs": 41,
+      "fat": 24,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "chicken-tenders-1-menu-serving-see-item-description",
+      "name": "Chicken Tenders",
+      "calories": 270,
+      "protein": 23,
+      "carbs": 12,
+      "fat": 14,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "fresh-fruit-oranges-1-menu-serving-see-item-description",
+      "name": "Fresh Fruit - Oranges",
+      "calories": 20,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "1-milk-chug-1-menu-serving-see-item-description",
+      "name": "1% Milk Chug",
+      "calories": 110,
+      "protein": 9,
+      "carbs": 13,
+      "fat": 2.5,
+      "servingLabel": "1 menu serving (see item description)"
+    }
+  ],
+  "sourceDate": "2026-08-10"
+}

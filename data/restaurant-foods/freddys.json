@@ -1,0 +1,2761 @@
+{
+  "chain": "Freddy's Frozen Custard & Steakburgers",
+  "sourceUrl": "https://www.freddys.com/nutrition-and-allergens",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "id": "grilled-chicken-club-1-menu-serving-size-in-item-name",
+      "name": "Grilled Chicken Club",
+      "calories": 530,
+      "protein": 35,
+      "carbs": 31,
+      "fat": 29,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "crispy-chicken-club-1-menu-serving-size-in-item-name",
+      "name": "Crispy Chicken Club",
+      "calories": 720,
+      "protein": 42,
+      "carbs": 44,
+      "fat": 41,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "spicy-chicken-sandwich-1-menu-serving-size-in-item-name",
+      "name": "Spicy Chicken Sandwich",
+      "calories": 570,
+      "protein": 32,
+      "carbs": 44,
+      "fat": 29,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "chicken-tenders-regular-3-piece-1-menu-serving-size-in-item-name",
+      "name": "Chicken Tenders - Regular (3-Piece)",
+      "calories": 420,
+      "protein": 35,
+      "carbs": 29,
+      "fat": 17,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "chicken-tenders-large-5-piece-1-menu-serving-size-in-item-name",
+      "name": "Chicken Tenders - Large (5-Piece)",
+      "calories": 690,
+      "protein": 58,
+      "carbs": 49,
+      "fat": 29,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "hot-dog-1-menu-serving-size-in-item-name",
+      "name": "Hot Dog",
+      "calories": 420,
+      "protein": 15,
+      "carbs": 35,
+      "fat": 24,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "chili-cheese-dog-1-menu-serving-size-in-item-name",
+      "name": "Chili Cheese Dog",
+      "calories": 540,
+      "protein": 23,
+      "carbs": 41,
+      "fat": 31,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "banana-1-menu-serving-size-in-item-name",
+      "name": "Banana",
+      "calories": 20,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "brownie-1-menu-serving-size-in-item-name",
+      "name": "Brownie",
+      "calories": 170,
+      "protein": 2,
+      "carbs": 26,
+      "fat": 6,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "butterfinger-1-menu-serving-size-in-item-name",
+      "name": "Butterfinger",
+      "calories": 120,
+      "protein": 1,
+      "carbs": 19,
+      "fat": 4.5,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "cheesecake-1-menu-serving-size-in-item-name",
+      "name": "Cheesecake",
+      "calories": 60,
+      "protein": 1,
+      "carbs": 6,
+      "fat": 3.5,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "cherry-syrup-1-menu-serving-size-in-item-name",
+      "name": "Cherry Syrup",
+      "calories": 60,
+      "protein": 0,
+      "carbs": 15,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "chocolate-chips-1-menu-serving-size-in-item-name",
+      "name": "Chocolate Chips",
+      "calories": 130,
+      "protein": 2,
+      "carbs": 19,
+      "fat": 8,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "chocolate-syrup-1-menu-serving-size-in-item-name",
+      "name": "Chocolate Syrup",
+      "calories": 80,
+      "protein": 1,
+      "carbs": 21,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "cookie-dough-1-menu-serving-size-in-item-name",
+      "name": "Cookie Dough",
+      "calories": 100,
+      "protein": 1,
+      "carbs": 16,
+      "fat": 4.5,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "gummy-worm-1-menu-serving-size-in-item-name",
+      "name": "Gummy Worm",
+      "calories": 100,
+      "protein": 2,
+      "carbs": 23,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "heath-toffee-bar-1-menu-serving-size-in-item-name",
+      "name": "Heath Toffee Bar",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 14,
+      "fat": 8,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "hot-caramel-1-menu-serving-size-in-item-name",
+      "name": "Hot Caramel",
+      "calories": 150,
+      "protein": 1,
+      "carbs": 33,
+      "fat": 1.5,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "hot-fudge-1-menu-serving-size-in-item-name",
+      "name": "Hot Fudge",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 25,
+      "fat": 5,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "maraschino-cherry-1-menu-serving-size-in-item-name",
+      "name": "Maraschino Cherry",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "marshmallow-1-menu-serving-size-in-item-name",
+      "name": "Marshmallow",
+      "calories": 70,
+      "protein": 0,
+      "carbs": 18,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "m-m-candies-1-menu-serving-size-in-item-name",
+      "name": "M&M Candies",
+      "calories": 160,
+      "protein": 1,
+      "carbs": 21,
+      "fat": 7,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "oreo-cookie-pieces-1-menu-serving-size-in-item-name",
+      "name": "OREO Cookie Pieces",
+      "calories": 80,
+      "protein": 1,
+      "carbs": 12,
+      "fat": 3,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "pecans-1-menu-serving-size-in-item-name",
+      "name": "Pecans",
+      "calories": 120,
+      "protein": 2,
+      "carbs": 2,
+      "fat": 12,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "reese-s-peanut-butter-cup-1-menu-serving-size-in-item-name",
+      "name": "Reese's Peanut Butter Cup",
+      "calories": 160,
+      "protein": 3,
+      "carbs": 18,
+      "fat": 9,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "reese-s-peanut-butter-sauce-1-menu-serving-size-in-item-name",
+      "name": "Reese's Peanut Butter Sauce",
+      "calories": 120,
+      "protein": 4,
+      "carbs": 4,
+      "fat": 11,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "sprinkles-1-menu-serving-size-in-item-name",
+      "name": "Sprinkles",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 21,
+      "fat": 4,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "strawberry-1-menu-serving-size-in-item-name",
+      "name": "Strawberry",
+      "calories": 60,
+      "protein": 0,
+      "carbs": 15,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "whipped-cream-1-menu-serving-size-in-item-name",
+      "name": "Whipped Cream",
+      "calories": 30,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 2.5,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "applesauce-1-menu-serving-size-in-item-name",
+      "name": "Applesauce",
+      "calories": 50,
+      "protein": 0,
+      "carbs": 13,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "cheese-fries-large-1-menu-serving-size-in-item-name",
+      "name": "Cheese Fries - Large",
+      "calories": 710,
+      "protein": 20,
+      "carbs": 78,
+      "fat": 36,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "cheese-fries-regular-1-menu-serving-size-in-item-name",
+      "name": "Cheese Fries - Regular",
+      "calories": 470,
+      "protein": 6,
+      "carbs": 53,
+      "fat": 26,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "cheese-curds-large-1-menu-serving-size-in-item-name",
+      "name": "Cheese Curds - Large",
+      "calories": 1110,
+      "protein": 52,
+      "carbs": 43,
+      "fat": 81,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "cheese-curds-regular-1-menu-serving-size-in-item-name",
+      "name": "Cheese Curds - Regular",
+      "calories": 520,
+      "protein": 24,
+      "carbs": 20,
+      "fat": 38,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "chili-bowl-w-cheese-1-menu-serving-size-in-item-name",
+      "name": "Chili - Bowl (w/ Cheese)",
+      "calories": 390,
+      "protein": 31,
+      "carbs": 28,
+      "fat": 19,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "chili-cup-w-cheese-1-menu-serving-size-in-item-name",
+      "name": "Chili - Cup (w/ Cheese)",
+      "calories": 270,
+      "protein": 21,
+      "carbs": 18,
+      "fat": 14,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "chili-cheese-fries-large-1-menu-serving-size-in-item-name",
+      "name": "Chili Cheese Fries - Large",
+      "calories": 710,
+      "protein": 20,
+      "carbs": 78,
+      "fat": 36,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "chili-cheese-fries-regular-1-menu-serving-size-in-item-name",
+      "name": "Chili Cheese Fries - Regular",
+      "calories": 520,
+      "protein": 12,
+      "carbs": 58,
+      "fat": 27,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "freddy-s-fries-kid-s-1-menu-serving-size-in-item-name",
+      "name": "Freddy's Fries - Kid's",
+      "calories": 230,
+      "protein": 3,
+      "carbs": 27,
+      "fat": 12,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "freddy-s-fries-large-1-menu-serving-size-in-item-name",
+      "name": "Freddy's Fries - Large",
+      "calories": 520,
+      "protein": 7,
+      "carbs": 62,
+      "fat": 27,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "freddy-s-fries-regular-1-menu-serving-size-in-item-name",
+      "name": "Freddy's Fries - Regular",
+      "calories": 400,
+      "protein": 7,
+      "carbs": 48,
+      "fat": 21,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "freddy-s-kettle-cooked-potato-chips-1-menu-serving-size-in-item-name",
+      "name": "Freddy's Kettle Cooked Potato Chips",
+      "calories": 200,
+      "protein": 2,
+      "carbs": 23,
+      "fat": 12,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "freddy-s-tots-kid-s-1-menu-serving-size-in-item-name",
+      "name": "Freddy's Tots - Kid's",
+      "calories": 300,
+      "protein": 2,
+      "carbs": 23,
+      "fat": 23,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "freddy-s-tots-large-1-menu-serving-size-in-item-name",
+      "name": "Freddy's Tots - Large",
+      "calories": 680,
+      "protein": 4,
+      "carbs": 51,
+      "fat": 52,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "freddy-s-tots-regular-1-menu-serving-size-in-item-name",
+      "name": "Freddy's Tots - Regular",
+      "calories": 530,
+      "protein": 3,
+      "carbs": 39,
+      "fat": 40,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "onion-rings-regular-1-menu-serving-size-in-item-name",
+      "name": "Onion Rings - Regular",
+      "calories": 380,
+      "protein": 4,
+      "carbs": 49,
+      "fat": 19,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "onion-rings-large-1-menu-serving-size-in-item-name",
+      "name": "Onion Rings - Large",
+      "calories": 770,
+      "protein": 9,
+      "carbs": 98,
+      "fat": 38,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "single-steakburger-no-cheese-1-menu-serving-size-in-item-name",
+      "name": "Single Steakburger (No Cheese)",
+      "calories": 380,
+      "protein": 24,
+      "carbs": 30,
+      "fat": 12,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "double-steakburger-no-cheese-1-menu-serving-size-in-item-name",
+      "name": "Double Steakburger (No Cheese)",
+      "calories": 570,
+      "protein": 43,
+      "carbs": 30,
+      "fat": 29,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "triple-steakburger-no-cheese-1-menu-serving-size-in-item-name",
+      "name": "Triple Steakburger (No Cheese)",
+      "calories": 760,
+      "protein": 63,
+      "carbs": 30,
+      "fat": 41,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "bacon-cheese-single-patty-1-menu-serving-size-in-item-name",
+      "name": "Bacon & Cheese - Single Patty",
+      "calories": 520,
+      "protein": 33,
+      "carbs": 32,
+      "fat": 28,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "bacon-cheese-double-patty-1-menu-serving-size-in-item-name",
+      "name": "Bacon & Cheese - Double Patty",
+      "calories": 760,
+      "protein": 55,
+      "carbs": 33,
+      "fat": 44,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "bacon-cheese-triple-patty-1-menu-serving-size-in-item-name",
+      "name": "Bacon & Cheese - Triple Patty",
+      "calories": 990,
+      "protein": 77,
+      "carbs": 34,
+      "fat": 60,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "california-style-single-patty-1-menu-serving-size-in-item-name",
+      "name": "California Style - Single Patty",
+      "calories": 510,
+      "protein": 27,
+      "carbs": 35,
+      "fat": 29,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "california-style-double-patty-1-menu-serving-size-in-item-name",
+      "name": "California Style - Double Patty",
+      "calories": 750,
+      "protein": 49,
+      "carbs": 36,
+      "fat": 45,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "california-style-triple-patty-1-menu-serving-size-in-item-name",
+      "name": "California Style - Triple Patty",
+      "calories": 980,
+      "protein": 71,
+      "carbs": 37,
+      "fat": 61,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "cheeseburger-single-patty-1-menu-serving-size-in-item-name",
+      "name": "Cheeseburger - Single Patty",
+      "calories": 430,
+      "protein": 26,
+      "carbs": 31,
+      "fat": 22,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "cheeseburger-double-patty-1-menu-serving-size-in-item-name",
+      "name": "Cheeseburger - Double Patty",
+      "calories": 670,
+      "protein": 48,
+      "carbs": 32,
+      "fat": 38,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "cheeseburger-triple-patty-1-menu-serving-size-in-item-name",
+      "name": "Cheeseburger - Triple Patty",
+      "calories": 910,
+      "protein": 70,
+      "carbs": 33,
+      "fat": 54,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "patty-melt-single-patty-1-menu-serving-size-in-item-name",
+      "name": "Patty Melt - Single Patty",
+      "calories": 540,
+      "protein": 30,
+      "carbs": 39,
+      "fat": 28,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "patty-melt-double-patty-1-menu-serving-size-in-item-name",
+      "name": "Patty Melt - Double Patty",
+      "calories": 780,
+      "protein": 52,
+      "carbs": 40,
+      "fat": 44,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "patty-melt-triple-patty-1-menu-serving-size-in-item-name",
+      "name": "Patty Melt - Triple Patty",
+      "calories": 1020,
+      "protein": 74,
+      "carbs": 41,
+      "fat": 60,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "jalapeno-pepper-jack-single-patty-1-menu-serving-size-in-item-name",
+      "name": "Jalapeño Pepper Jack - Single Patty",
+      "calories": 530,
+      "protein": 27,
+      "carbs": 31,
+      "fat": 33,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "jalapeno-pepper-jack-double-patty-1-menu-serving-size-in-item-name",
+      "name": "Jalapeño Pepper Jack - Double Patty",
+      "calories": 790,
+      "protein": 49,
+      "carbs": 32,
+      "fat": 50,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "jalapeno-pepper-jack-triple-patty-1-menu-serving-size-in-item-name",
+      "name": "Jalapeño Pepper Jack - Triple Patty",
+      "calories": 1050,
+      "protein": 72,
+      "carbs": 33,
+      "fat": 68,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "prime-steakburger-single-patty-1-menu-serving-size-in-item-name",
+      "name": "Prime Steakburger - Single Patty",
+      "calories": 770,
+      "protein": 34,
+      "carbs": 33,
+      "fat": 54,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "prime-steakburger-double-patty-1-menu-serving-size-in-item-name",
+      "name": "Prime Steakburger - Double Patty",
+      "calories": 1000,
+      "protein": 56,
+      "carbs": 34,
+      "fat": 70,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "prime-steakburger-triple-patty-1-menu-serving-size-in-item-name",
+      "name": "Prime Steakburger - Triple Patty",
+      "calories": 1240,
+      "protein": 78,
+      "carbs": 35,
+      "fat": 86,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "grilled-cheese-steakburger-double-patty-1-menu-serving-size-in-item-name",
+      "name": "Grilled Cheese Steakburger - Double Patty",
+      "calories": 1050,
+      "protein": 64,
+      "carbs": 52,
+      "fat": 67,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "veggie-burger-1-menu-serving-size-in-item-name",
+      "name": "Veggie Burger",
+      "calories": 510,
+      "protein": 22,
+      "carbs": 52,
+      "fat": 24,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "crispy-chicken-bowl-excludes-dressing-1-menu-serving-size-in-item-name",
+      "name": "Crispy Chicken Bowl (Excludes Dressing)",
+      "calories": 610,
+      "protein": 43,
+      "carbs": 24,
+      "fat": 38,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "grilled-chicken-bowl-excludes-dressing-1-menu-serving-size-in-item-name",
+      "name": "Grilled Chicken Bowl (Excludes Dressing)",
+      "calories": 420,
+      "protein": 37,
+      "carbs": 10,
+      "fat": 27,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "steakburger-bowl-excludes-dressing-1-menu-serving-size-in-item-name",
+      "name": "Steakburger Bowl (Excludes Dressing)",
+      "calories": 660,
+      "protein": 55,
+      "carbs": 9,
+      "fat": 45,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "veggie-burger-bowl-excludes-dressing-1-menu-serving-size-in-item-name",
+      "name": "Veggie Burger Bowl (Excludes Dressing)",
+      "calories": 370,
+      "protein": 22,
+      "carbs": 26,
+      "fat": 20,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "pepsi-small-1-menu-serving-size-in-item-name",
+      "name": "Pepsi Small",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 41,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "pepsi-medium-1-menu-serving-size-in-item-name",
+      "name": "Pepsi Medium",
+      "calories": 260,
+      "protein": 0,
+      "carbs": 69,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "pepsi-large-1-menu-serving-size-in-item-name",
+      "name": "Pepsi Large",
+      "calories": 410,
+      "protein": 0,
+      "carbs": 110,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "diet-pepsi-small-1-menu-serving-size-in-item-name",
+      "name": "Diet Pepsi Small",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "diet-pepsi-medium-1-menu-serving-size-in-item-name",
+      "name": "Diet Pepsi Medium",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "diet-pepsi-large-1-menu-serving-size-in-item-name",
+      "name": "Diet Pepsi Large",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "dr-pepper-small-1-menu-serving-size-in-item-name",
+      "name": "Dr. Pepper️ Small",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 40,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "dr-pepper-medium-1-menu-serving-size-in-item-name",
+      "name": "Dr. Pepper️ Medium",
+      "calories": 260,
+      "protein": 0,
+      "carbs": 66,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "dr-pepper-large-1-menu-serving-size-in-item-name",
+      "name": "Dr. Pepper️ Large",
+      "calories": 410,
+      "protein": 0,
+      "carbs": 105,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "diet-dr-pepper-small-1-menu-serving-size-in-item-name",
+      "name": "Diet Dr. Pepper️ Small",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "diet-dr-pepper-medium-1-menu-serving-size-in-item-name",
+      "name": "Diet Dr. Pepper️ Medium",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "diet-dr-pepper-large-1-menu-serving-size-in-item-name",
+      "name": "Diet Dr. Pepper️ Large",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "mug-root-beer-small-1-menu-serving-size-in-item-name",
+      "name": "MUG️ Root Beer Small",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 39,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "mug-root-beer-medium-1-menu-serving-size-in-item-name",
+      "name": "MUG️ Root Beer Medium",
+      "calories": 260,
+      "protein": 0,
+      "carbs": 65,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "mug-root-beer-large-1-menu-serving-size-in-item-name",
+      "name": "MUG️ Root Beer Large",
+      "calories": 410,
+      "protein": 0,
+      "carbs": 104,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "mountain-dew-small-1-menu-serving-size-in-item-name",
+      "name": "Mountain Dew️ Small",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 44,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "mountain-dew-medium-1-menu-serving-size-in-item-name",
+      "name": "Mountain Dew️ Medium",
+      "calories": 290,
+      "protein": 0,
+      "carbs": 65,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "mountain-dew-large-1-menu-serving-size-in-item-name",
+      "name": "Mountain Dew️ Large",
+      "calories": 460,
+      "protein": 0,
+      "carbs": 117,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "diet-mountain-dew-small-1-menu-serving-size-in-item-name",
+      "name": "Diet Mountain Dew️ Small",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "diet-mountain-dew-medium-1-menu-serving-size-in-item-name",
+      "name": "Diet Mountain Dew️ Medium",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "diet-mountain-dew-large-1-menu-serving-size-in-item-name",
+      "name": "Diet Mountain Dew️ Large",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "mist-twist-small-1-menu-serving-size-in-item-name",
+      "name": "Mist Twist️ Small",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 40,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "mist-twist-medium-1-menu-serving-size-in-item-name",
+      "name": "Mist Twist️ Medium",
+      "calories": 260,
+      "protein": 0,
+      "carbs": 68,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "mist-twist-large-1-menu-serving-size-in-item-name",
+      "name": "Mist Twist️ Large",
+      "calories": 410,
+      "protein": 0,
+      "carbs": 108,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "tropicana-pink-lemonade-small-1-menu-serving-size-in-item-name",
+      "name": "Tropicana️ Pink Lemonade Small",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 40,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "tropicana-pink-lemonade-medium-1-menu-serving-size-in-item-name",
+      "name": "Tropicana️ Pink Lemonade Medium",
+      "calories": 260,
+      "protein": 0,
+      "carbs": 67,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "tropicana-pink-lemonade-large-1-menu-serving-size-in-item-name",
+      "name": "Tropicana️ Pink Lemonade Large",
+      "calories": 410,
+      "protein": 0,
+      "carbs": 107,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "tropicana-lemonade-small-1-menu-serving-size-in-item-name",
+      "name": "Tropicana️ Lemonade Small",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 40,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "tropicana-lemonade-medium-1-menu-serving-size-in-item-name",
+      "name": "Tropicana️ Lemonade Medium",
+      "calories": 260,
+      "protein": 0,
+      "carbs": 67,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "tropicana-lemonade-large-1-menu-serving-size-in-item-name",
+      "name": "Tropicana️ Lemonade Large",
+      "calories": 410,
+      "protein": 0,
+      "carbs": 107,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "tropicana-light-lemonade-small-1-menu-serving-size-in-item-name",
+      "name": "Tropicana️ Light Lemonade Small",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "tropicana-light-lemonade-medium-1-menu-serving-size-in-item-name",
+      "name": "Tropicana️ Light Lemonade Medium",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "tropicana-light-lemonade-large-1-menu-serving-size-in-item-name",
+      "name": "Tropicana️ Light Lemonade Large",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "tropicana-fruit-punch-small-1-menu-serving-size-in-item-name",
+      "name": "Tropicana️ Fruit Punch Small",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 45,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "tropicana-fruit-punch-medium-1-menu-serving-size-in-item-name",
+      "name": "Tropicana️ Fruit Punch Medium",
+      "calories": 290,
+      "protein": 0,
+      "carbs": 75,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "tropicana-fruit-punch-large-1-menu-serving-size-in-item-name",
+      "name": "Tropicana️ Fruit Punch Large",
+      "calories": 460,
+      "protein": 0,
+      "carbs": 120,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "pepsi-wild-cherry-small-1-menu-serving-size-in-item-name",
+      "name": "Pepsi️ Wild Cherry Small",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 42,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "pepsi-wild-cherry-medium-1-menu-serving-size-in-item-name",
+      "name": "Pepsi️ Wild Cherry Medium",
+      "calories": 260,
+      "protein": 0,
+      "carbs": 70,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "pepsi-wild-cherry-large-1-menu-serving-size-in-item-name",
+      "name": "Pepsi️ Wild Cherry Large",
+      "calories": 410,
+      "protein": 0,
+      "carbs": 112,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "luzianne-iced-tea-unsweet-small-1-menu-serving-size-in-item-name",
+      "name": "Luzianne️ Iced Tea Unsweet Small",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "luzianne-iced-tea-unsweet-medium-1-menu-serving-size-in-item-name",
+      "name": "Luzianne️ Iced Tea Unsweet Medium",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "luzianne-iced-tea-unsweet-large-1-menu-serving-size-in-item-name",
+      "name": "Luzianne️ Iced Tea Unsweet Large",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "luzianne-iced-tea-small-1-menu-serving-size-in-item-name",
+      "name": "Luzianne️ Iced Tea Small",
+      "calories": 110,
+      "protein": 0,
+      "carbs": 27,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "luzianne-iced-tea-medium-1-menu-serving-size-in-item-name",
+      "name": "Luzianne️ Iced Tea Medium",
+      "calories": 180,
+      "protein": 0,
+      "carbs": 46,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "luzianne-iced-tea-large-1-menu-serving-size-in-item-name",
+      "name": "Luzianne️ Iced Tea Large",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 73,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "lipton-brisk-raspberry-small-1-menu-serving-size-in-item-name",
+      "name": "Lipton Brisk️ Raspberry Small",
+      "calories": 80,
+      "protein": 0,
+      "carbs": 20,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "lipton-brisk-raspberry-medium-1-menu-serving-size-in-item-name",
+      "name": "Lipton Brisk️ Raspberry Medium",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 33,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "lipton-brisk-raspberry-large-1-menu-serving-size-in-item-name",
+      "name": "Lipton Brisk️ Raspberry Large",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 52,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "lipton-brisk-peach-small-1-menu-serving-size-in-item-name",
+      "name": "Lipton Brisk️ Peach Small",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "lipton-brisk-peach-medium-1-menu-serving-size-in-item-name",
+      "name": "Lipton Brisk️ Peach Medium",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "lipton-brisk-peach-large-1-menu-serving-size-in-item-name",
+      "name": "Lipton Brisk️ Peach Large",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "moutain-dew-code-red-small-1-menu-serving-size-in-item-name",
+      "name": "Moutain Dew CODE RED️ Small",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 46,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "moutain-dew-code-red-medium-1-menu-serving-size-in-item-name",
+      "name": "Moutain Dew CODE RED️ Medium",
+      "calories": 290,
+      "protein": 0,
+      "carbs": 77,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "moutain-dew-code-red-large-1-menu-serving-size-in-item-name",
+      "name": "Moutain Dew CODE RED️ Large",
+      "calories": 460,
+      "protein": 0,
+      "carbs": 123,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "sobe-lifewater-yumberry-pomegranate-small-1-menu-serving-size-in-item-name",
+      "name": "Sobe️ Lifewater Yumberry Pomegranate Small",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "sobe-lifewater-yumberry-pomegranate-medium-1-menu-serving-size-in-item-name",
+      "name": "Sobe️ Lifewater Yumberry Pomegranate Medium",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "sobe-lifewater-yumberry-pomegranate-large-1-menu-serving-size-in-item-name",
+      "name": "Sobe️ Lifewater Yumberry Pomegranate Large",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "freddy-s-bevies-blue-rizzberry-custard-cream-soda-regular-1-menu-serving-size-in-item-name",
+      "name": "Freddy's Bevies - Blue Rizzberry Custard Cream Soda - Regular",
+      "calories": 250,
+      "protein": 2,
+      "carbs": 53,
+      "fat": 3.5,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "freddy-s-bevies-blue-rizzberry-custard-cream-soda-large-1-menu-serving-size-in-item-name",
+      "name": "Freddy's Bevies - Blue Rizzberry Custard Cream Soda - Large",
+      "calories": 430,
+      "protein": 3,
+      "carbs": 87,
+      "fat": 7,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "freddy-s-bevies-coco-loco-custard-cream-soda-regular-1-menu-serving-size-in-item-name",
+      "name": "Freddy's Bevies - Coco Loco Custard Cream Soda - Regular",
+      "calories": 270,
+      "protein": 2,
+      "carbs": 58,
+      "fat": 3.5,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "freddy-s-bevies-coco-loco-custard-cream-soda-large-1-menu-serving-size-in-item-name",
+      "name": "Freddy's Bevies - Coco Loco Custard Cream Soda - Large",
+      "calories": 460,
+      "protein": 3,
+      "carbs": 95,
+      "fat": 7,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "freddy-s-bevies-golden-hour-orange-custard-cream-soda-regular-1-menu-serving-size-in-item-name",
+      "name": "Freddy's Bevies - Golden Hour Orange Custard Cream Soda - Regular",
+      "calories": 260,
+      "protein": 2,
+      "carbs": 58,
+      "fat": 3.5,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "freddy-s-bevies-golden-hour-orange-custard-cream-soda-large-1-menu-serving-size-in-item-name",
+      "name": "Freddy's Bevies - Golden Hour Orange Custard Cream Soda - Large",
+      "calories": 450,
+      "protein": 3,
+      "carbs": 96,
+      "fat": 7,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "freddy-s-bevies-mango-magic-custard-cream-soda-regular-1-menu-serving-size-in-item-name",
+      "name": "Freddy's Bevies - Mango Magic Custard Cream Soda - Regular",
+      "calories": 270,
+      "protein": 2,
+      "carbs": 59,
+      "fat": 3.5,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "freddy-s-bevies-mango-magic-custard-cream-soda-large-1-menu-serving-size-in-item-name",
+      "name": "Freddy's Bevies - Mango Magic Custard Cream Soda - Large",
+      "calories": 460,
+      "protein": 3,
+      "carbs": 98,
+      "fat": 7,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "freddy-s-bevies-mango-sunrise-lemonade-regular-1-menu-serving-size-in-item-name",
+      "name": "Freddy's Bevies - Mango Sunrise Lemonade - Regular",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 51,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "freddy-s-bevies-mango-sunrise-lemonade-large-1-menu-serving-size-in-item-name",
+      "name": "Freddy's Bevies - Mango Sunrise Lemonade - Large",
+      "calories": 330,
+      "protein": 0,
+      "carbs": 86,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "freddy-s-bevies-mango-sunrise-tea-regular-1-menu-serving-size-in-item-name",
+      "name": "Freddy's Bevies - Mango Sunrise Tea - Regular",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 26,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "freddy-s-bevies-mango-sunrise-tea-large-1-menu-serving-size-in-item-name",
+      "name": "Freddy's Bevies - Mango Sunrise Tea - Large",
+      "calories": 180,
+      "protein": 0,
+      "carbs": 45,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "freddy-s-bevies-peachy-keen-lemonade-regular-1-menu-serving-size-in-item-name",
+      "name": "Freddy's Bevies -Peachy Keen Lemonade - Regular",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 51,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "freddy-s-bevies-peachy-keen-lemonade-large-1-menu-serving-size-in-item-name",
+      "name": "Freddy's Bevies - Peachy Keen Lemonade - Large",
+      "calories": 330,
+      "protein": 0,
+      "carbs": 85,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "freddy-s-bevies-peachy-keen-tea-regular-1-menu-serving-size-in-item-name",
+      "name": "Freddy's Bevies - Peachy Keen Tea - Regular",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 25,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "freddy-s-bevies-peachy-keen-tea-large-1-menu-serving-size-in-item-name",
+      "name": "Freddy's Bevies - Peachy Keen Tea - Large",
+      "calories": 180,
+      "protein": 0,
+      "carbs": 43,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "freddy-s-bevies-peach-peach-baby-custard-cream-soda-regular-1-menu-serving-size-in-item-name",
+      "name": "Freddy's Bevies - Peach Peach Baby Custard Cream Soda - Regular",
+      "calories": 270,
+      "protein": 2,
+      "carbs": 58,
+      "fat": 3.5,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "freddy-s-bevies-peach-peach-baby-custard-cream-soda-large-1-menu-serving-size-in-item-name",
+      "name": "Freddy's Bevies - Peach Peach Baby Custard Cream Soda - Large",
+      "calories": 460,
+      "protein": 3,
+      "carbs": 96,
+      "fat": 7,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "freddy-s-bevies-strawberry-sunset-lemonade-regular-1-menu-serving-size-in-item-name",
+      "name": "Freddy's Bevies - Strawberry Sunset Lemonade - Regular",
+      "calories": 190,
+      "protein": 0,
+      "carbs": 50,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "freddy-s-bevies-strawberry-sunset-lemonade-large-1-menu-serving-size-in-item-name",
+      "name": "Freddy's Bevies - Strawberry Sunset Lemonade - Large",
+      "calories": 320,
+      "protein": 0,
+      "carbs": 83,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "freddy-s-bevies-strawberry-sunset-tea-regular-1-menu-serving-size-in-item-name",
+      "name": "Freddy's Bevies - Strawberry Sunset Tea - Regular",
+      "calories": 90,
+      "protein": 0,
+      "carbs": 24,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "freddy-s-bevies-strawberry-sunset-tea-large-1-menu-serving-size-in-item-name",
+      "name": "Freddy's Bevies - Strawberry Sunset Tea - Large",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 42,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "chocolate-brownie-delight-concrete-mini-1-menu-serving-size-in-item-name",
+      "name": "Chocolate Brownie Delight - Concrete - Mini",
+      "calories": 700,
+      "protein": 10,
+      "carbs": 96,
+      "fat": 31,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "chocolate-brownie-delight-concrete-regular-1-menu-serving-size-in-item-name",
+      "name": "Chocolate Brownie Delight - Concrete - Regular",
+      "calories": 1040,
+      "protein": 19,
+      "carbs": 132,
+      "fat": 47,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "chocolate-brownie-delight-concrete-large-1-menu-serving-size-in-item-name",
+      "name": "Chocolate Brownie Delight - Concrete - Large",
+      "calories": 1710,
+      "protein": 28,
+      "carbs": 224,
+      "fat": 77,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "chocolate-brownie-delight-shake-mini-1-menu-serving-size-in-item-name",
+      "name": "Chocolate Brownie Delight - Shake - Mini",
+      "calories": 930,
+      "protein": 17,
+      "carbs": 118,
+      "fat": 42,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "chocolate-brownie-delight-shake-regular-1-menu-serving-size-in-item-name",
+      "name": "Chocolate Brownie Delight - Shake - Regular",
+      "calories": 1280,
+      "protein": 27,
+      "carbs": 156,
+      "fat": 60,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "chocolate-brownie-delight-shake-large-1-menu-serving-size-in-item-name",
+      "name": "Chocolate Brownie Delight - Shake - Large",
+      "calories": 1990,
+      "protein": 39,
+      "carbs": 251,
+      "fat": 91,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "chocolate-brownie-delight-sundae-mini-1-menu-serving-size-in-item-name",
+      "name": "Chocolate Brownie Delight - Sundae - Mini",
+      "calories": 700,
+      "protein": 10,
+      "carbs": 96,
+      "fat": 31,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "chocolate-brownie-delight-sundae-regular-1-menu-serving-size-in-item-name",
+      "name": "Chocolate Brownie Delight - Sundae - Regular",
+      "calories": 1040,
+      "protein": 19,
+      "carbs": 132,
+      "fat": 47,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "chocolate-brownie-delight-sundae-large-1-menu-serving-size-in-item-name",
+      "name": "Chocolate Brownie Delight - Sundae - Large",
+      "calories": 1710,
+      "protein": 28,
+      "carbs": 224,
+      "fat": 77,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "chocolate-chip-frozen-custard-sandwich-each-1-menu-serving-size-in-item-name",
+      "name": "Chocolate Chip Frozen Custard Sandwich (Each)",
+      "calories": 300,
+      "protein": 4,
+      "carbs": 43,
+      "fat": 14,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "cold-brew-caramel-crunch-concrete-mini-1-menu-serving-size-in-item-name",
+      "name": "Cold Brew Caramel Crunch - Concrete - Mini",
+      "calories": 790,
+      "protein": 13,
+      "carbs": 95,
+      "fat": 36,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "cold-brew-caramel-crunch-concrete-regular-1-menu-serving-size-in-item-name",
+      "name": "Cold Brew Caramel Crunch - Concrete - Regular",
+      "calories": 1120,
+      "protein": 20,
+      "carbs": 129,
+      "fat": 53,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "cold-brew-caramel-crunch-concrete-large-1-menu-serving-size-in-item-name",
+      "name": "Cold Brew Caramel Crunch - Concrete - Large",
+      "calories": 1720,
+      "protein": 29,
+      "carbs": 206,
+      "fat": 79,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "cold-brew-caramel-crunch-shake-mini-1-menu-serving-size-in-item-name",
+      "name": "Cold Brew Caramel Crunch - Shake - Mini",
+      "calories": 830,
+      "protein": 15,
+      "carbs": 99,
+      "fat": 38,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "cold-brew-caramel-crunch-shake-regular-1-menu-serving-size-in-item-name",
+      "name": "Cold Brew Caramel Crunch - Shake - Regular",
+      "calories": 1180,
+      "protein": 23,
+      "carbs": 133,
+      "fat": 56,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "cold-brew-caramel-crunch-shake-large-1-menu-serving-size-in-item-name",
+      "name": "Cold Brew Caramel Crunch - Shake - Large",
+      "calories": 1810,
+      "protein": 34,
+      "carbs": 213,
+      "fat": 84,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "cone-chocolate-single-scoop-1-menu-serving-size-in-item-name",
+      "name": "Cone - Chocolate - Single Scoop",
+      "calories": 360,
+      "protein": 10,
+      "carbs": 42,
+      "fat": 17,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "cone-chocolate-double-scoop-1-menu-serving-size-in-item-name",
+      "name": "Cone - Chocolate - Double Scoop",
+      "calories": 690,
+      "protein": 19,
+      "carbs": 79,
+      "fat": 33,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "cone-chocolate-triple-scoop-1-menu-serving-size-in-item-name",
+      "name": "Cone - Chocolate - Triple Scoop",
+      "calories": 1020,
+      "protein": 28,
+      "carbs": 115,
+      "fat": 50,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "cone-vanilla-single-scoop-1-menu-serving-size-in-item-name",
+      "name": "Cone - Vanilla - Single Scoop",
+      "calories": 360,
+      "protein": 9,
+      "carbs": 39,
+      "fat": 17,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "cone-vanilla-double-scoop-1-menu-serving-size-in-item-name",
+      "name": "Cone - Vanilla - Double Scoop",
+      "calories": 690,
+      "protein": 16,
+      "carbs": 73,
+      "fat": 33,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "cone-vanilla-triple-scoop-1-menu-serving-size-in-item-name",
+      "name": "Cone - Vanilla - Triple Scoop",
+      "calories": 1020,
+      "protein": 24,
+      "carbs": 106,
+      "fat": 50,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "cyo-concrete-chocolate-mini-1-menu-serving-size-in-item-name",
+      "name": "CYO Concrete - Chocolate - Mini",
+      "calories": 500,
+      "protein": 14,
+      "carbs": 55,
+      "fat": 25,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "cyo-concrete-chocolate-regular-1-menu-serving-size-in-item-name",
+      "name": "CYO Concrete - Chocolate - Regular",
+      "calories": 830,
+      "protein": 23,
+      "carbs": 91,
+      "fat": 42,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "cyo-concrete-chocolate-large-1-menu-serving-size-in-item-name",
+      "name": "CYO Concrete - Chocolate - Large",
+      "calories": 1170,
+      "protein": 32,
+      "carbs": 127,
+      "fat": 58,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "cyo-concrete-vanilla-mini-1-menu-serving-size-in-item-name",
+      "name": "CYO Concrete - Vanilla - Mini",
+      "calories": 500,
+      "protein": 11,
+      "carbs": 50,
+      "fat": 25,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "cyo-concrete-vanilla-regular-1-menu-serving-size-in-item-name",
+      "name": "CYO Concrete - Vanilla - Regular",
+      "calories": 830,
+      "protein": 19,
+      "carbs": 83,
+      "fat": 42,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "cyo-concrete-vanilla-large-1-menu-serving-size-in-item-name",
+      "name": "CYO Concrete - Vanilla - Large",
+      "calories": 1170,
+      "protein": 26,
+      "carbs": 117,
+      "fat": 58,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "cyo-malt-chocolate-mini-1-menu-serving-size-in-item-name",
+      "name": "CYO Malt - Chocolate - Mini",
+      "calories": 630,
+      "protein": 17,
+      "carbs": 76,
+      "fat": 28,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "cyo-malt-chocolate-regular-1-menu-serving-size-in-item-name",
+      "name": "CYO Malt - Chocolate - Regular",
+      "calories": 1020,
+      "protein": 27,
+      "carbs": 123,
+      "fat": 46,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "cyo-malt-chocolate-large-1-menu-serving-size-in-item-name",
+      "name": "CYO Malt - Chocolate - Large",
+      "calories": 1420,
+      "protein": 38,
+      "carbs": 171,
+      "fat": 64,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "cyo-malt-vanilla-mini-1-menu-serving-size-in-item-name",
+      "name": "CYO Malt - Vanilla - Mini",
+      "calories": 630,
+      "protein": 14,
+      "carbs": 72,
+      "fat": 28,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "cyo-malt-vanilla-regular-1-menu-serving-size-in-item-name",
+      "name": "CYO Malt - Vanilla - Regular",
+      "calories": 1020,
+      "protein": 23,
+      "carbs": 115,
+      "fat": 46,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "cyo-malt-vanilla-large-1-menu-serving-size-in-item-name",
+      "name": "CYO Malt - Vanilla - Large",
+      "calories": 1420,
+      "protein": 32,
+      "carbs": 160,
+      "fat": 64,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "cyo-shake-chocolate-mini-1-menu-serving-size-in-item-name",
+      "name": "CYO Shake - Chocolate - Mini",
+      "calories": 560,
+      "protein": 17,
+      "carbs": 59,
+      "fat": 28,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "cyo-shake-chocolate-regular-1-menu-serving-size-in-item-name",
+      "name": "CYO Shake - Chocolate - Regular",
+      "calories": 910,
+      "protein": 27,
+      "carbs": 97,
+      "fat": 46,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "cyo-shake-chocolate-large-1-menu-serving-size-in-item-name",
+      "name": "CYO Shake - Chocolate - Large",
+      "calories": 1280,
+      "protein": 38,
+      "carbs": 136,
+      "fat": 64,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "cyo-shake-vanilla-mini-1-menu-serving-size-in-item-name",
+      "name": "CYO Shake - Vanilla - Mini",
+      "calories": 560,
+      "protein": 14,
+      "carbs": 54,
+      "fat": 28,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "cyo-shake-vanilla-regular-1-menu-serving-size-in-item-name",
+      "name": "CYO Shake - Vanilla - Regular",
+      "calories": 910,
+      "protein": 23,
+      "carbs": 89,
+      "fat": 46,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "cyo-shake-vanilla-large-1-menu-serving-size-in-item-name",
+      "name": "CYO Shake - Vanilla - Large",
+      "calories": 1280,
+      "protein": 32,
+      "carbs": 125,
+      "fat": 64,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "cyo-sundae-chocolate-mini-1-menu-serving-size-in-item-name",
+      "name": "CYO Sundae - Chocolate - Mini",
+      "calories": 330,
+      "protein": 9,
+      "carbs": 36,
+      "fat": 17,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "cyo-sundae-chocolate-regular-1-menu-serving-size-in-item-name",
+      "name": "CYO Sundae - Chocolate - Regular",
+      "calories": 670,
+      "protein": 18,
+      "carbs": 73,
+      "fat": 33,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "cyo-sundae-chocolate-large-1-menu-serving-size-in-item-name",
+      "name": "CYO Sundae - Chocolate - Large",
+      "calories": 1000,
+      "protein": 27,
+      "carbs": 109,
+      "fat": 50,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "cyo-sundae-vanilla-mini-1-menu-serving-size-in-item-name",
+      "name": "CYO Sundae - Vanilla - Mini",
+      "calories": 330,
+      "protein": 8,
+      "carbs": 33,
+      "fat": 17,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "cyo-sundae-vanilla-regular-1-menu-serving-size-in-item-name",
+      "name": "CYO Sundae - Vanilla - Regular",
+      "calories": 670,
+      "protein": 15,
+      "carbs": 67,
+      "fat": 33,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "cyo-sundae-vanilla-large-1-menu-serving-size-in-item-name",
+      "name": "CYO Sundae - Vanilla - Large",
+      "calories": 1000,
+      "protein": 23,
+      "carbs": 100,
+      "fat": 50,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "dirt-n-worms-concrete-mini-1-menu-serving-size-in-item-name",
+      "name": "Dirt n' Worms - Concrete - Mini",
+      "calories": 530,
+      "protein": 9,
+      "carbs": 69,
+      "fat": 21,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "dirt-n-worms-concrete-regular-1-menu-serving-size-in-item-name",
+      "name": "Dirt n' Worms - Concrete - Regular",
+      "calories": 860,
+      "protein": 17,
+      "carbs": 102,
+      "fat": 37,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "dirt-n-worms-concrete-large-1-menu-serving-size-in-item-name",
+      "name": "Dirt n' Worms - Concrete - Large",
+      "calories": 1360,
+      "protein": 26,
+      "carbs": 168,
+      "fat": 57,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "dirt-n-worms-sundae-mini-1-menu-serving-size-in-item-name",
+      "name": "Dirt n' Worms - Sundae - Mini",
+      "calories": 530,
+      "protein": 9,
+      "carbs": 69,
+      "fat": 21,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "dirt-n-worms-sundae-regular-1-menu-serving-size-in-item-name",
+      "name": "Dirt n' Worms - Sundae - Regular",
+      "calories": 860,
+      "protein": 17,
+      "carbs": 102,
+      "fat": 37,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "dirt-n-worms-sundae-large-1-menu-serving-size-in-item-name",
+      "name": "Dirt n' Worms - Sundae - Large",
+      "calories": 1360,
+      "protein": 26,
+      "carbs": 168,
+      "fat": 57,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "freddy-s-frost-lemon-cream-mini-1-menu-serving-size-in-item-name",
+      "name": "Freddy's Frost - Lemon Cream - Mini",
+      "calories": 450,
+      "protein": 8,
+      "carbs": 58,
+      "fat": 18,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "freddy-s-frost-lemon-cream-regular-1-menu-serving-size-in-item-name",
+      "name": "Freddy's Frost - Lemon Cream - Regular",
+      "calories": 810,
+      "protein": 15,
+      "carbs": 99,
+      "fat": 35,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "freddy-s-frost-lemon-cream-large-1-menu-serving-size-in-item-name",
+      "name": "Freddy's Frost - Lemon Cream - Large",
+      "calories": 1210,
+      "protein": 23,
+      "carbs": 148,
+      "fat": 51,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "freddy-s-frost-orange-cream-mini-1-menu-serving-size-in-item-name",
+      "name": "Freddy's Frost - Orange Cream - Mini",
+      "calories": 540,
+      "protein": 8,
+      "carbs": 83,
+      "fat": 18,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "freddy-s-frost-orange-cream-regular-1-menu-serving-size-in-item-name",
+      "name": "Freddy's Frost - Orange Cream - Regular",
+      "calories": 1010,
+      "protein": 15,
+      "carbs": 149,
+      "fat": 35,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "freddy-s-frost-orange-cream-large-1-menu-serving-size-in-item-name",
+      "name": "Freddy's Frost - Orange Cream - Large",
+      "calories": 1500,
+      "protein": 23,
+      "carbs": 222,
+      "fat": 51,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "oreo-custard-cookie-chocolate-1-menu-serving-size-in-item-name",
+      "name": "OREO Custard Cookie - Chocolate",
+      "calories": 310,
+      "protein": 6,
+      "carbs": 41,
+      "fat": 14,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "oreo-custard-cookie-vanilla-1-menu-serving-size-in-item-name",
+      "name": "OREO Custard Cookie - Vanilla",
+      "calories": 310,
+      "protein": 5,
+      "carbs": 39,
+      "fat": 14,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "oreo-double-trouble-concrete-mini-1-menu-serving-size-in-item-name",
+      "name": "OREO Double Trouble - Concrete - Mini",
+      "calories": 700,
+      "protein": 13,
+      "carbs": 80,
+      "fat": 33,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "oreo-double-trouble-concrete-regular-1-menu-serving-size-in-item-name",
+      "name": "OREO Double Trouble - Concrete - Regular",
+      "calories": 1040,
+      "protein": 20,
+      "carbs": 113,
+      "fat": 50,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "oreo-double-trouble-concrete-large-1-menu-serving-size-in-item-name",
+      "name": "OREO Double Trouble - Concrete - Large",
+      "calories": 1520,
+      "protein": 29,
+      "carbs": 169,
+      "fat": 72,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "oreo-double-trouble-shake-mini-1-menu-serving-size-in-item-name",
+      "name": "OREO Double Trouble - Shake - Mini",
+      "calories": 760,
+      "protein": 16,
+      "carbs": 84,
+      "fat": 36,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "oreo-double-trouble-shake-regular-1-menu-serving-size-in-item-name",
+      "name": "OREO Double Trouble - Shake - Regular",
+      "calories": 1110,
+      "protein": 24,
+      "carbs": 119,
+      "fat": 54,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "oreo-double-trouble-shake-large-1-menu-serving-size-in-item-name",
+      "name": "OREO Double Trouble - Shake - Large",
+      "calories": 1630,
+      "protein": 35,
+      "carbs": 178,
+      "fat": 78,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "oreo-double-trouble-sundae-mini-1-menu-serving-size-in-item-name",
+      "name": "OREO Double Trouble - Sundae - Mini",
+      "calories": 540,
+      "protein": 9,
+      "carbs": 63,
+      "fat": 25,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "oreo-double-trouble-sundae-regular-1-menu-serving-size-in-item-name",
+      "name": "OREO Double Trouble - Sundae - Regular",
+      "calories": 870,
+      "protein": 17,
+      "carbs": 96,
+      "fat": 42,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "oreo-double-trouble-sundae-large-1-menu-serving-size-in-item-name",
+      "name": "OREO Double Trouble - Sundae - Large",
+      "calories": 1350,
+      "protein": 25,
+      "carbs": 152,
+      "fat": 64,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "peanut-butter-bananza-concrete-mini-1-menu-serving-size-in-item-name",
+      "name": "Peanut Butter Bananza - Concrete - Mini",
+      "calories": 560,
+      "protein": 12,
+      "carbs": 65,
+      "fat": 27,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "peanut-butter-bananza-concrete-regular-1-menu-serving-size-in-item-name",
+      "name": "Peanut Butter Bananza - Concrete - Regular",
+      "calories": 890,
+      "protein": 19,
+      "carbs": 98,
+      "fat": 43,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "peanut-butter-bananza-concrete-large-1-menu-serving-size-in-item-name",
+      "name": "Peanut Butter Bananza - Concrete - Large",
+      "calories": 1420,
+      "protein": 31,
+      "carbs": 160,
+      "fat": 69,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "peanut-butter-bananza-sundae-mini-1-menu-serving-size-in-item-name",
+      "name": "Peanut Butter Bananza - Sundae - Mini",
+      "calories": 530,
+      "protein": 12,
+      "carbs": 58,
+      "fat": 27,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "peanut-butter-bananza-sundae-regular-1-menu-serving-size-in-item-name",
+      "name": "Peanut Butter Bananza - Sundae - Regular",
+      "calories": 860,
+      "protein": 19,
+      "carbs": 91,
+      "fat": 43,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "peanut-butter-bananza-sundae-large-1-menu-serving-size-in-item-name",
+      "name": "Peanut Butter Bananza - Sundae - Large",
+      "calories": 1360,
+      "protein": 31,
+      "carbs": 146,
+      "fat": 69,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "pint-chocolate-1-menu-serving-size-in-item-name",
+      "name": "Pint - Chocolate",
+      "calories": 1150,
+      "protein": 31,
+      "carbs": 125,
+      "fat": 57,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "pint-vanilla-1-menu-serving-size-in-item-name",
+      "name": "Pint - Vanilla",
+      "calories": 1150,
+      "protein": 26,
+      "carbs": 115,
+      "fat": 57,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "quart-chocolate-1-menu-serving-size-in-item-name",
+      "name": "Quart - Chocolate",
+      "calories": 2300,
+      "protein": 63,
+      "carbs": 250,
+      "fat": 115,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "quart-vanilla-1-menu-serving-size-in-item-name",
+      "name": "Quart - Vanilla",
+      "calories": 2300,
+      "protein": 52,
+      "carbs": 230,
+      "fat": 115,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "reese-s-royale-concrete-mini-1-menu-serving-size-in-item-name",
+      "name": "Reese's Royale - Concrete - Mini",
+      "calories": 860,
+      "protein": 21,
+      "carbs": 76,
+      "fat": 51,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "reese-s-royale-concrete-regular-1-menu-serving-size-in-item-name",
+      "name": "Reese's Royale - Concrete - Regular",
+      "calories": 1200,
+      "protein": 29,
+      "carbs": 109,
+      "fat": 68,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "reese-s-royale-concrete-large-1-menu-serving-size-in-item-name",
+      "name": "Reese's Royale - Concrete - Large",
+      "calories": 1870,
+      "protein": 46,
+      "carbs": 164,
+      "fat": 109,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "reese-s-royale-shake-mini-1-menu-serving-size-in-item-name",
+      "name": "Reese's Royale - Shake - Mini",
+      "calories": 920,
+      "protein": 24,
+      "carbs": 80,
+      "fat": 54,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "reese-s-royale-shake-regular-1-menu-serving-size-in-item-name",
+      "name": "Reese's Royale - Shake - Regular",
+      "calories": 1270,
+      "protein": 33,
+      "carbs": 115,
+      "fat": 72,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "reese-s-royale-shake-large-1-menu-serving-size-in-item-name",
+      "name": "Reese's Royale - Shake - Large",
+      "calories": 1980,
+      "protein": 52,
+      "carbs": 173,
+      "fat": 115,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "reese-s-royale-sundae-mini-1-menu-serving-size-in-item-name",
+      "name": "Reese's Royale - Sundae - Mini",
+      "calories": 700,
+      "protein": 18,
+      "carbs": 59,
+      "fat": 43,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "reese-s-royale-sundae-regular-1-menu-serving-size-in-item-name",
+      "name": "Reese's Royale - Sundae - Regular",
+      "calories": 1030,
+      "protein": 25,
+      "carbs": 92,
+      "fat": 59,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "reese-s-royale-sundae-large-1-menu-serving-size-in-item-name",
+      "name": "Reese's Royale - Sundae - Large",
+      "calories": 1700,
+      "protein": 43,
+      "carbs": 148,
+      "fat": 101,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "signature-turtle-concrete-mini-1-menu-serving-size-in-item-name",
+      "name": "Signature Turtle - Concrete - Mini",
+      "calories": 730,
+      "protein": 10,
+      "carbs": 91,
+      "fat": 34,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "signature-turtle-concrete-regular-1-menu-serving-size-in-item-name",
+      "name": "Signature Turtle - Concrete - Regular",
+      "calories": 1070,
+      "protein": 18,
+      "carbs": 124,
+      "fat": 51,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "signature-turtle-concrete-large-1-menu-serving-size-in-item-name",
+      "name": "Signature Turtle - Concrete - Large",
+      "calories": 1770,
+      "protein": 28,
+      "carbs": 211,
+      "fat": 84,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "signature-turtle-shake-mini-1-menu-serving-size-in-item-name",
+      "name": "Signature Turtle - Shake - Mini",
+      "calories": 960,
+      "protein": 17,
+      "carbs": 112,
+      "fat": 46,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "signature-turtle-shake-regular-1-menu-serving-size-in-item-name",
+      "name": "Signature Turtle - Shake - Regular",
+      "calories": 1310,
+      "protein": 25,
+      "carbs": 146,
+      "fat": 63,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "signature-turtle-shake-large-1-menu-serving-size-in-item-name",
+      "name": "Signature Turtle - Shake - Large",
+      "calories": 2050,
+      "protein": 37,
+      "carbs": 237,
+      "fat": 98,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "signature-turtle-sundae-mini-1-menu-serving-size-in-item-name",
+      "name": "Signature Turtle - Sundae - Mini",
+      "calories": 750,
+      "protein": 10,
+      "carbs": 91,
+      "fat": 36,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "signature-turtle-sundae-regular-1-menu-serving-size-in-item-name",
+      "name": "Signature Turtle - Sundae - Regular",
+      "calories": 1080,
+      "protein": 18,
+      "carbs": 124,
+      "fat": 53,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "signature-turtle-sundae-large-1-menu-serving-size-in-item-name",
+      "name": "Signature Turtle - Sundae - Large",
+      "calories": 1800,
+      "protein": 28,
+      "carbs": 212,
+      "fat": 87,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "strawberry-dreamcake-concrete-mini-1-menu-serving-size-in-item-name",
+      "name": "Strawberry Dreamcake - Concrete - Mini",
+      "calories": 860,
+      "protein": 14,
+      "carbs": 102,
+      "fat": 40,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "strawberry-dreamcake-concrete-regular-1-menu-serving-size-in-item-name",
+      "name": "Strawberry Dreamcake - Concrete - Regular",
+      "calories": 1190,
+      "protein": 22,
+      "carbs": 135,
+      "fat": 57,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "strawberry-dreamcake-concrete-large-1-menu-serving-size-in-item-name",
+      "name": "Strawberry Dreamcake - Concrete - Large",
+      "calories": 1850,
+      "protein": 32,
+      "carbs": 218,
+      "fat": 87,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "strawberry-dreamcake-shake-mini-1-menu-serving-size-in-item-name",
+      "name": "Strawberry Dreamcake - Shake - Mini",
+      "calories": 920,
+      "protein": 17,
+      "carbs": 106,
+      "fat": 43,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "strawberry-dreamcake-shake-regular-1-menu-serving-size-in-item-name",
+      "name": "Strawberry Dreamcake - Shake - Regular",
+      "calories": 1270,
+      "protein": 25,
+      "carbs": 141,
+      "fat": 61,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "strawberry-dreamcake-shake-large-1-menu-serving-size-in-item-name",
+      "name": "Strawberry Dreamcake - Shake - Large",
+      "calories": 1960,
+      "protein": 37,
+      "carbs": 226,
+      "fat": 93,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "strawberry-dreamcake-sundae-mini-1-menu-serving-size-in-item-name",
+      "name": "Strawberry Dreamcake - Sundae - Mini",
+      "calories": 690,
+      "protein": 10,
+      "carbs": 85,
+      "fat": 32,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "strawberry-dreamcake-sundae-regular-1-menu-serving-size-in-item-name",
+      "name": "Strawberry Dreamcake - Sundae - Regular",
+      "calories": 1030,
+      "protein": 18,
+      "carbs": 119,
+      "fat": 49,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "strawberry-dreamcake-sundae-large-1-menu-serving-size-in-item-name",
+      "name": "Strawberry Dreamcake - Sundae - Large",
+      "calories": 1690,
+      "protein": 28,
+      "carbs": 201,
+      "fat": 79,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "bacon-1-menu-serving-size-in-item-name",
+      "name": "Bacon",
+      "calories": 80,
+      "protein": 7,
+      "carbs": 1,
+      "fat": 6,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "cheese-american-1-menu-serving-size-in-item-name",
+      "name": "Cheese - American",
+      "calories": 50,
+      "protein": 3,
+      "carbs": 1,
+      "fat": 4.5,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "cheese-pepperjack-1-menu-serving-size-in-item-name",
+      "name": "Cheese - Pepperjack",
+      "calories": 70,
+      "protein": 3,
+      "carbs": 1,
+      "fat": 6,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "cheese-shredded-monterey-jack-cheddar-1-menu-serving-size-in-item-name",
+      "name": "Cheese - Shredded Monterey Jack & Cheddar",
+      "calories": 50,
+      "protein": 3,
+      "carbs": 0,
+      "fat": 4.5,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "cheese-swiss-1-menu-serving-size-in-item-name",
+      "name": "Cheese - Swiss",
+      "calories": 50,
+      "protein": 3,
+      "carbs": 1,
+      "fat": 4,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "freddy-s-smoky-fry-sauce-1-oz-cup-1-menu-serving-size-in-item-name",
+      "name": "Freddy's Smoky Fry Sauce (1 oz cup)",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 13,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "freddy-s-buttermilk-ranch-1-oz-cup-1-menu-serving-size-in-item-name",
+      "name": "Freddy's Buttermilk Ranch (1 oz cup)",
+      "calories": 140,
+      "protein": 0.5,
+      "carbs": 2,
+      "fat": 15,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "freddy-s-famous-fry-sauce-1-oz-cup-1-menu-serving-size-in-item-name",
+      "name": "Freddy's Famous Fry Sauce (1 oz cup)",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 12,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "freddy-s-famous-steakburger-fry-seasoning-1g-packet-1-menu-serving-size-in-item-name",
+      "name": "Freddy's Famous Steakburger & Fry Seasoning (1g packet)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "freddy-s-famous-steakburger-fry-seasoning-portion-per-steakburger-patty-1-menu-serving-size-in-item-name",
+      "name": "Freddy's Famous Steakburger & Fry Seasoning (Portion per Steakburger patty)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "freddy-s-famous-steakburger-fry-seasoning-portion-per-regular-fries-1-menu-serving-size-in-item-name",
+      "name": "Freddy's Famous Steakburger & Fry Seasoning (Portion per regular fries)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "freddy-s-hickory-bbq-sauce-1-oz-cup-1-menu-serving-size-in-item-name",
+      "name": "Freddy's Hickory BBQ Sauce (1 oz cup)",
+      "calories": 35,
+      "protein": 0,
+      "carbs": 9,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "freddy-s-honey-mustard-1-oz-cup-1-menu-serving-size-in-item-name",
+      "name": "Freddy's Honey Mustard (1 oz cup)",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 7,
+      "fat": 8,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "freddy-s-jalapeno-fry-sauce-1-oz-cup-1-menu-serving-size-in-item-name",
+      "name": "Freddy's Jalapeño Fry Sauce (1 oz cup)",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 12,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "jalapenos-raw-1-menu-serving-size-in-item-name",
+      "name": "Jalapeños - Raw",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "jalapenos-sauteed-1-menu-serving-size-in-item-name",
+      "name": "Jalapeños - Sautéed",
+      "calories": 35,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 3,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "ketchup-1-menu-serving-size-in-item-name",
+      "name": "Ketchup",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "ketchup-0-95-oz-cup-1-menu-serving-size-in-item-name",
+      "name": "Ketchup (0.95 oz Cup)",
+      "calories": 30,
+      "protein": 0,
+      "carbs": 8,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "marinara-2-oz-cup-1-menu-serving-size-in-item-name",
+      "name": "Marinara (2 oz cup)",
+      "calories": 30,
+      "protein": 1,
+      "carbs": 6,
+      "fat": 0.5,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "mayonnaise-1-menu-serving-size-in-item-name",
+      "name": "Mayonnaise",
+      "calories": 70,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 8,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "mayonnaise-packet-1-menu-serving-size-in-item-name",
+      "name": "Mayonnaise (Packet)",
+      "calories": 80,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 8,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "mustard-1-menu-serving-size-in-item-name",
+      "name": "Mustard",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "mustard-packet-1-menu-serving-size-in-item-name",
+      "name": "Mustard (Packet)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "onion-diced-1-menu-serving-size-in-item-name",
+      "name": "Onion - Diced",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "onion-grilled-1-menu-serving-size-in-item-name",
+      "name": "Onion - Grilled",
+      "calories": 30,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 2,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "onion-sliced-1-menu-serving-size-in-item-name",
+      "name": "Onion - Sliced",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "pickles-2-slices-1-menu-serving-size-in-item-name",
+      "name": "Pickles (2 Slices)",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "relish-1-menu-serving-size-in-item-name",
+      "name": "Relish",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "relish-packet-1-menu-serving-size-in-item-name",
+      "name": "Relish (Packet)",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "sauerkraut-1-menu-serving-size-in-item-name",
+      "name": "Sauerkraut",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "thousand-island-1-menu-serving-size-in-item-name",
+      "name": "Thousand Island",
+      "calories": 70,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 7,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "tomato-1-menu-serving-size-in-item-name",
+      "name": "Tomato",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "kids-meal-chicken-tenders-1-menu-serving-size-in-item-name",
+      "name": "Kids Meal - Chicken Tenders",
+      "calories": 280,
+      "protein": 23,
+      "carbs": 20,
+      "fat": 12,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "kid-s-meal-hot-dog-1-menu-serving-size-in-item-name",
+      "name": "Kid's Meal - Hot Dog",
+      "calories": 420,
+      "protein": 15,
+      "carbs": 35,
+      "fat": 24,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "kids-meal-cheeseburger-1-menu-serving-size-in-item-name",
+      "name": "Kids Meal - Cheeseburger",
+      "calories": 430,
+      "protein": 26,
+      "carbs": 30,
+      "fat": 22,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "kids-meal-steakburger-no-cheese-1-menu-serving-size-in-item-name",
+      "name": "Kids Meal - Steakburger (No Cheese)",
+      "calories": 380,
+      "protein": 23,
+      "carbs": 29,
+      "fat": 18,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "steakburger-taco-1-menu-serving-size-in-item-name",
+      "name": "Steakburger Taco",
+      "calories": 360,
+      "protein": 25,
+      "carbs": 17,
+      "fat": 21,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "smoky-bacon-cheddar-stack-1-menu-serving-size-in-item-name",
+      "name": "Smoky Bacon Cheddar Stack",
+      "calories": 1090,
+      "protein": 70,
+      "carbs": 48,
+      "fat": 67,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "bacon-loaded-tots-regular-1-menu-serving-size-in-item-name",
+      "name": "Bacon Loaded Tots - Regular",
+      "calories": 750,
+      "protein": 15,
+      "carbs": 46,
+      "fat": 56,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "bacon-loaded-tots-large-1-menu-serving-size-in-item-name",
+      "name": "Bacon Loaded Tots - Large",
+      "calories": 970,
+      "protein": 18,
+      "carbs": 60,
+      "fat": 72,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "maple-pecan-concrete-mini-1-menu-serving-size-in-item-name",
+      "name": "Maple Pecan Concrete - Mini",
+      "calories": 680,
+      "protein": 13,
+      "carbs": 66,
+      "fat": 38,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "maple-pecan-concrete-regular-1-menu-serving-size-in-item-name",
+      "name": "Maple Pecan Concrete - Regular",
+      "calories": 1040,
+      "protein": 21,
+      "carbs": 105,
+      "fat": 55,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "maple-pecan-concrete-large-1-menu-serving-size-in-item-name",
+      "name": "Maple Pecan Concrete - Large",
+      "calories": 1440,
+      "protein": 28,
+      "carbs": 152,
+      "fat": 73,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "maple-pecan-concrete-w-bacon-mini-1-menu-serving-size-in-item-name",
+      "name": "Maple Pecan Concrete w/ Bacon - Mini",
+      "calories": 770,
+      "protein": 20,
+      "carbs": 66,
+      "fat": 45,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "maple-pecan-concrete-w-bacon-regular-1-menu-serving-size-in-item-name",
+      "name": "Maple Pecan Concrete w/ Bacon - Regular",
+      "calories": 1130,
+      "protein": 28,
+      "carbs": 106,
+      "fat": 62,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "maple-pecan-concrete-w-bacon-large-1-menu-serving-size-in-item-name",
+      "name": "Maple Pecan Concrete w/ Bacon - Large",
+      "calories": 1700,
+      "protein": 42,
+      "carbs": 154,
+      "fat": 95,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "smoky-bacon-steakburger-taco-1-menu-serving-size-in-item-name",
+      "name": "Smoky Bacon Steakburger Taco",
+      "calories": 440,
+      "protein": 31,
+      "carbs": 17,
+      "fat": 27,
+      "servingLabel": "1 menu serving (size in item name)"
+    }
+  ]
+}

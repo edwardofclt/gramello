@@ -1,0 +1,1900 @@
+{
+  "chain": "Burger King",
+  "sourceUrl": "https://www.nutritionix.com/burger-king/menu/premium",
+  "source": "Nutritionix",
+  "sourceKind": "database",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "id": "nutritionix-1153352",
+      "name": "3 Piece French Toast Sticks",
+      "calories": 340,
+      "protein": 4,
+      "carbs": 52,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153351",
+      "name": "5 Piece French Toast Sticks",
+      "calories": 500,
+      "protein": 6,
+      "carbs": 71,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153343",
+      "name": "Bacon, Egg, & Cheese Biscuit",
+      "calories": 420,
+      "protein": 16,
+      "carbs": 31,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153336",
+      "name": "Bacon, Egg, & Cheese Croissan'wich",
+      "calories": 360,
+      "protein": 15,
+      "carbs": 28,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153341",
+      "name": "Bacon, Sausage, Egg & Cheese Biscuit",
+      "calories": 650,
+      "protein": 25,
+      "carbs": 33,
+      "fat": 46,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153334",
+      "name": "Bacon, Sausage, Egg, & Cheese Croissan'wich",
+      "calories": 580,
+      "protein": 24,
+      "carbs": 29,
+      "fat": 41,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153348",
+      "name": "Breakfast Burrito Jr.",
+      "calories": 420,
+      "protein": 16,
+      "carbs": 29,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153340",
+      "name": "Double Sausage, Egg, & Cheese Biscuit",
+      "calories": 790,
+      "protein": 29,
+      "carbs": 33,
+      "fat": 59,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153333",
+      "name": "Double Sausage, Egg, & Cheese Croissan'wich",
+      "calories": 730,
+      "protein": 28,
+      "carbs": 30,
+      "fat": 55,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153345",
+      "name": "Egg & Cheese Biscuit",
+      "calories": 380,
+      "protein": 13,
+      "carbs": 31,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153338",
+      "name": "Egg & Cheese Croissan'wich",
+      "calories": 310,
+      "protein": 12,
+      "carbs": 28,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153347",
+      "name": "Egg-Normous Burrito",
+      "calories": 800,
+      "protein": 35,
+      "carbs": 67,
+      "fat": 44,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153339",
+      "name": "Fully Loaded Biscuit",
+      "calories": 660,
+      "protein": 31,
+      "carbs": 34,
+      "fat": 45,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153332",
+      "name": "Fully Loaded Croissan'wich",
+      "calories": 620,
+      "protein": 30,
+      "carbs": 31,
+      "fat": 43,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153344",
+      "name": "Ham, Egg, & Cheese Biscuit",
+      "calories": 420,
+      "protein": 19,
+      "carbs": 32,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153337",
+      "name": "Ham, Egg, & Cheese Croissan'wich",
+      "calories": 350,
+      "protein": 18,
+      "carbs": 29,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153355",
+      "name": "Large Hash Browns",
+      "calories": 700,
+      "protein": 6,
+      "carbs": 76,
+      "fat": 42,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153354",
+      "name": "Medium Hash Browns",
+      "calories": 510,
+      "protein": 4,
+      "carbs": 55,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153349",
+      "name": "Pancake & Sausage Platter",
+      "calories": 580,
+      "protein": 12,
+      "carbs": 75,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153350",
+      "name": "Pancake Platter",
+      "calories": 400,
+      "protein": 5,
+      "carbs": 74,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153342",
+      "name": "Sausage, Egg, & Cheese Biscuit",
+      "calories": 560,
+      "protein": 20,
+      "carbs": 32,
+      "fat": 39,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153335",
+      "name": "Sausage, Egg, & Cheese Croissan'wich",
+      "calories": 500,
+      "protein": 19,
+      "carbs": 28,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153346",
+      "name": "Sausage Biscuit",
+      "calories": 440,
+      "protein": 12,
+      "carbs": 30,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153353",
+      "name": "Small Hash Browns",
+      "calories": 270,
+      "protein": 2,
+      "carbs": 29,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153381",
+      "name": "Bacon Cheeseburger",
+      "calories": 350,
+      "protein": 19,
+      "carbs": 30,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Flame Grilled Burgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153380",
+      "name": "Bacon Double Cheeseburger",
+      "calories": 500,
+      "protein": 30,
+      "carbs": 31,
+      "fat": 29,
+      "servingLabel": "1 listed serving (Flame Grilled Burgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153374",
+      "name": "Bacon King",
+      "calories": 1260,
+      "protein": 69,
+      "carbs": 58,
+      "fat": 84,
+      "servingLabel": "1 listed serving (Flame Grilled Burgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153359",
+      "name": "Bacon Swiss BBQ Whopper",
+      "calories": 920,
+      "protein": 44,
+      "carbs": 71,
+      "fat": 55,
+      "servingLabel": "1 listed serving (Flame Grilled Burgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153375",
+      "name": "BBQ Bacon Whopper Jr.",
+      "calories": 390,
+      "protein": 19,
+      "carbs": 32,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Flame Grilled Burgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153383",
+      "name": "Cheeseburger",
+      "calories": 300,
+      "protein": 16,
+      "carbs": 30,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Flame Grilled Burgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153382",
+      "name": "Double Cheeseburger",
+      "calories": 460,
+      "protein": 27,
+      "carbs": 31,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Flame Grilled Burgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153366",
+      "name": "Double Whopper",
+      "calories": 980,
+      "protein": 56,
+      "carbs": 57,
+      "fat": 62,
+      "servingLabel": "1 listed serving (Flame Grilled Burgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153367",
+      "name": "Double Whopper with Bacon",
+      "calories": 1040,
+      "protein": 60,
+      "carbs": 57,
+      "fat": 67,
+      "servingLabel": "1 listed serving (Flame Grilled Burgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153369",
+      "name": "Double Whopper with Bacon & Cheese",
+      "calories": 1120,
+      "protein": 64,
+      "carbs": 59,
+      "fat": 74,
+      "servingLabel": "1 listed serving (Flame Grilled Burgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153368",
+      "name": "Double Whopper with Cheese",
+      "calories": 1060,
+      "protein": 60,
+      "carbs": 59,
+      "fat": 69,
+      "servingLabel": "1 listed serving (Flame Grilled Burgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153387",
+      "name": "Hamburger",
+      "calories": 260,
+      "protein": 14,
+      "carbs": 29,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Flame Grilled Burgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153356",
+      "name": "Impossible Loaded Jalapeno Whopper",
+      "calories": 810,
+      "protein": 37,
+      "carbs": 75,
+      "fat": 44,
+      "servingLabel": "1 listed serving (Flame Grilled Burgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153364",
+      "name": "Impossible Whopper",
+      "calories": 670,
+      "protein": 32,
+      "carbs": 64,
+      "fat": 35,
+      "servingLabel": "1 listed serving (Flame Grilled Burgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153389",
+      "name": "Kid's Cheeseburger",
+      "calories": 300,
+      "protein": 16,
+      "carbs": 29,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Flame Grilled Burgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153388",
+      "name": "Kid's Hamburger",
+      "calories": 260,
+      "protein": 14,
+      "carbs": 29,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Flame Grilled Burgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153358",
+      "name": "Loaded Jalapeno Whopper",
+      "calories": 820,
+      "protein": 38,
+      "carbs": 65,
+      "fat": 49,
+      "servingLabel": "1 listed serving (Flame Grilled Burgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153357",
+      "name": "Loaded Jalapeno Whopper Jr.",
+      "calories": 410,
+      "protein": 18,
+      "carbs": 35,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Flame Grilled Burgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153384",
+      "name": "Rodeo Burger",
+      "calories": 340,
+      "protein": 15,
+      "carbs": 40,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Flame Grilled Burgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153385",
+      "name": "Rodeo Cheeseburger",
+      "calories": 380,
+      "protein": 17,
+      "carbs": 41,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Flame Grilled Burgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153386",
+      "name": "Rodeo Double Cheeseburger",
+      "calories": 530,
+      "protein": 28,
+      "carbs": 41,
+      "fat": 29,
+      "servingLabel": "1 listed serving (Flame Grilled Burgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153365",
+      "name": "Texas Double Whopper",
+      "calories": 1120,
+      "protein": 64,
+      "carbs": 56,
+      "fat": 74,
+      "servingLabel": "1 listed serving (Flame Grilled Burgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153370",
+      "name": "Triple Whopper",
+      "calories": 1250,
+      "protein": 78,
+      "carbs": 57,
+      "fat": 82,
+      "servingLabel": "1 listed serving (Flame Grilled Burgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153371",
+      "name": "Triple Whopper with Bacon",
+      "calories": 1310,
+      "protein": 83,
+      "carbs": 58,
+      "fat": 87,
+      "servingLabel": "1 listed serving (Flame Grilled Burgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153373",
+      "name": "Triple Whopper with Bacon & Cheese",
+      "calories": 1390,
+      "protein": 87,
+      "carbs": 59,
+      "fat": 94,
+      "servingLabel": "1 listed serving (Flame Grilled Burgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153372",
+      "name": "Triple Whopper with Cheese",
+      "calories": 1330,
+      "protein": 82,
+      "carbs": 59,
+      "fat": 89,
+      "servingLabel": "1 listed serving (Flame Grilled Burgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153360",
+      "name": "Whopper",
+      "calories": 710,
+      "protein": 34,
+      "carbs": 57,
+      "fat": 42,
+      "servingLabel": "1 listed serving (Flame Grilled Burgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153376",
+      "name": "Whopper Jr.",
+      "calories": 340,
+      "protein": 15,
+      "carbs": 30,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Flame Grilled Burgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153377",
+      "name": "Whopper Jr. with Bacon",
+      "calories": 380,
+      "protein": 19,
+      "carbs": 30,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Flame Grilled Burgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153379",
+      "name": "Whopper Jr. with Bacon & Cheese",
+      "calories": 430,
+      "protein": 20,
+      "carbs": 31,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Flame Grilled Burgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153378",
+      "name": "Whopper Jr. with Cheese",
+      "calories": 380,
+      "protein": 17,
+      "carbs": 31,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Flame Grilled Burgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153361",
+      "name": "Whopper with Bacon",
+      "calories": 770,
+      "protein": 38,
+      "carbs": 57,
+      "fat": 47,
+      "servingLabel": "1 listed serving (Flame Grilled Burgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153363",
+      "name": "Whopper with Bacon & Cheese",
+      "calories": 860,
+      "protein": 42,
+      "carbs": 58,
+      "fat": 54,
+      "servingLabel": "1 listed serving (Flame Grilled Burgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153362",
+      "name": "Whopper with Cheese",
+      "calories": 790,
+      "protein": 37,
+      "carbs": 58,
+      "fat": 49,
+      "servingLabel": "1 listed serving (Flame Grilled Burgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153405",
+      "name": "4 Piece Chicken Fries",
+      "calories": 110,
+      "protein": 7,
+      "carbs": 8,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Chicken & Fish; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153397",
+      "name": "4 Piece Crown Nuggets",
+      "calories": 220,
+      "protein": 9,
+      "carbs": 12,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Chicken & Fish; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153404",
+      "name": "8 Piece Chicken Fries",
+      "calories": 220,
+      "protein": 13,
+      "carbs": 16,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Chicken & Fish; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153396",
+      "name": "8 Piece Crown Nuggets",
+      "calories": 440,
+      "protein": 18,
+      "carbs": 23,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Chicken & Fish; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153403",
+      "name": "12 Piece Chicken Fries",
+      "calories": 340,
+      "protein": 20,
+      "carbs": 25,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Chicken & Fish; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153395",
+      "name": "16 Piece Crown Nuggets",
+      "calories": 870,
+      "protein": 35,
+      "carbs": 46,
+      "fat": 61,
+      "servingLabel": "1 listed serving (Chicken & Fish; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153393",
+      "name": "Bacon and Swiss Royal Crispy Chicken",
+      "calories": 740,
+      "protein": 39,
+      "carbs": 56,
+      "fat": 43,
+      "servingLabel": "1 listed serving (Chicken & Fish; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153399",
+      "name": "Big Fish",
+      "calories": 570,
+      "protein": 19,
+      "carbs": 58,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Chicken & Fish; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153394",
+      "name": "Chicken Jr.",
+      "calories": 440,
+      "protein": 13,
+      "carbs": 39,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Chicken & Fish; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153402",
+      "name": "Honey Mustard Royal Crispy Wrap",
+      "calories": 290,
+      "protein": 15,
+      "carbs": 30,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Chicken & Fish; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153390",
+      "name": "Original Chicken Sandwich",
+      "calories": 680,
+      "protein": 23,
+      "carbs": 63,
+      "fat": 39,
+      "servingLabel": "1 listed serving (Chicken & Fish; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153391",
+      "name": "Royal Crispy Chicken",
+      "calories": 600,
+      "protein": 31,
+      "carbs": 54,
+      "fat": 31,
+      "servingLabel": "1 listed serving (Chicken & Fish; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153400",
+      "name": "Royal Crispy Wrap",
+      "calories": 310,
+      "protein": 15,
+      "carbs": 28,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Chicken & Fish; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153398",
+      "name": "Spicy Big Fish",
+      "calories": 730,
+      "protein": 19,
+      "carbs": 61,
+      "fat": 46,
+      "servingLabel": "1 listed serving (Chicken & Fish; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153392",
+      "name": "Spicy Royal Crispy Chicken",
+      "calories": 760,
+      "protein": 31,
+      "carbs": 58,
+      "fat": 47,
+      "servingLabel": "1 listed serving (Chicken & Fish; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153401",
+      "name": "Spicy Royal Crispy Wrap",
+      "calories": 390,
+      "protein": 15,
+      "carbs": 30,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Chicken & Fish; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153426",
+      "name": "4 Piece Cheddar Ranch Tots",
+      "calories": 140,
+      "protein": 3,
+      "carbs": 17,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153406",
+      "name": "4 Piece Jalapeno Cheddar Bites",
+      "calories": 230,
+      "protein": 6,
+      "carbs": 27,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153425",
+      "name": "4 Piece Mozzarella Fries",
+      "calories": 220,
+      "protein": 10,
+      "carbs": 24,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153427",
+      "name": "8 Piece Cheddar Ranch Tots",
+      "calories": 270,
+      "protein": 6,
+      "carbs": 34,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153424",
+      "name": "8 Piece Mozzarella Fries",
+      "calories": 440,
+      "protein": 19,
+      "carbs": 48,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153423",
+      "name": "12 Piece Mozzarella Fries",
+      "calories": 660,
+      "protein": 29,
+      "carbs": 71,
+      "fat": 36,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153408",
+      "name": "Kid's French Fries",
+      "calories": 140,
+      "protein": 2,
+      "carbs": 18,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153411",
+      "name": "Large French Fries",
+      "calories": 440,
+      "protein": 6,
+      "carbs": 60,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153419",
+      "name": "Large Have-sies",
+      "calories": 490,
+      "protein": 6,
+      "carbs": 67,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153415",
+      "name": "Large Onion Rings",
+      "calories": 430,
+      "protein": 5,
+      "carbs": 57,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153410",
+      "name": "Medium French Fries",
+      "calories": 370,
+      "protein": 5,
+      "carbs": 50,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153418",
+      "name": "Medium Have-sies",
+      "calories": 350,
+      "protein": 4,
+      "carbs": 47,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153414",
+      "name": "Medium Onion Rings",
+      "calories": 290,
+      "protein": 4,
+      "carbs": 39,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153422",
+      "name": "Mott's Applesauce",
+      "calories": 50,
+      "protein": 0,
+      "carbs": 13,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153421",
+      "name": "Side, 4 Piece Crown Nuggets",
+      "calories": 220,
+      "protein": 9,
+      "carbs": 12,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153420",
+      "name": "Side, 8 Piece Crown Nuggets",
+      "calories": 440,
+      "protein": 18,
+      "carbs": 23,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153409",
+      "name": "Small French Fries",
+      "calories": 300,
+      "protein": 4,
+      "carbs": 40,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153417",
+      "name": "Small Have-sies",
+      "calories": 280,
+      "protein": 4,
+      "carbs": 38,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153413",
+      "name": "Small Onion Rings",
+      "calories": 230,
+      "protein": 3,
+      "carbs": 31,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153407",
+      "name": "Value French Fries",
+      "calories": 230,
+      "protein": 3,
+      "carbs": 31,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153416",
+      "name": "Value Have-sies",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 27,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153412",
+      "name": "Value Onion Rings",
+      "calories": 170,
+      "protein": 2,
+      "carbs": 22,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153500",
+      "name": "Chocolate Oreo Shake",
+      "calories": 670,
+      "protein": 13,
+      "carbs": 116,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153501",
+      "name": "Chocolate Shake",
+      "calories": 590,
+      "protein": 13,
+      "carbs": 103,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153499",
+      "name": "Classic Oreo Shake",
+      "calories": 640,
+      "protein": 13,
+      "carbs": 109,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153536",
+      "name": "Extra Large Mocha Iced Coffee",
+      "calories": 400,
+      "protein": 4,
+      "carbs": 52,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153532",
+      "name": "Extra Large Plain Iced Coffee",
+      "calories": 390,
+      "protein": 3,
+      "carbs": 53,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153540",
+      "name": "Extra Large Vanilla Iced Coffee",
+      "calories": 390,
+      "protein": 3,
+      "carbs": 51,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153541",
+      "name": "Fat Free Milk",
+      "calories": 100,
+      "protein": 10,
+      "carbs": 15,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153498",
+      "name": "Honest Kids Apple Juice Drink",
+      "calories": 35,
+      "protein": 0,
+      "carbs": 9,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153492",
+      "name": "Kids Signature Strawberry Lemonade",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 38,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153488",
+      "name": "Kids Signature Watermelon Lemonade",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 39,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153459",
+      "name": "Large Barq's Root Beer",
+      "calories": 350,
+      "protein": 0,
+      "carbs": 96,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153431",
+      "name": "Large Coca-Cola",
+      "calories": 320,
+      "protein": 0,
+      "carbs": 88,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153439",
+      "name": "Large Coca-Cola Zero",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153509",
+      "name": "Large Coke Freezee King",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 44,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153463",
+      "name": "Large Diet Barq's Root Beer",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153435",
+      "name": "Large Diet Coke",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153467",
+      "name": "Large Dr Pepper",
+      "calories": 310,
+      "protein": 0,
+      "carbs": 82,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153512",
+      "name": "Large Fanta Blue Raspberry Freezee King",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 43,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153471",
+      "name": "Large Fanta Orange",
+      "calories": 330,
+      "protein": 0,
+      "carbs": 88,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153506",
+      "name": "Large Fanta Strawberry Freezee King",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 43,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153483",
+      "name": "Large Hi-C Fruit Punch",
+      "calories": 370,
+      "protein": 0,
+      "carbs": 94,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153518",
+      "name": "Large Hi-C Orange Freezee King",
+      "calories": 230,
+      "protein": 0,
+      "carbs": 63,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153487",
+      "name": "Large Hi-C Pink Lemonade",
+      "calories": 300,
+      "protein": 0,
+      "carbs": 82,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153475",
+      "name": "Large Mello Yello",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 76,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153497",
+      "name": "Large Minute Maid Lemonade",
+      "calories": 340,
+      "protein": 0,
+      "carbs": 90,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153535",
+      "name": "Large Mocha Iced Coffee",
+      "calories": 260,
+      "protein": 3,
+      "carbs": 34,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153515",
+      "name": "Large Orange Dreamsicle Freezee King",
+      "calories": 400,
+      "protein": 0,
+      "carbs": 84,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153531",
+      "name": "Large Plain Iced Coffee",
+      "calories": 260,
+      "protein": 2,
+      "carbs": 35,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153479",
+      "name": "Large Powerade Zero",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153491",
+      "name": "Large Signature Watermelon Lemonade",
+      "calories": 380,
+      "protein": 0,
+      "carbs": 96,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153451",
+      "name": "Large Sprite",
+      "calories": 310,
+      "protein": 0,
+      "carbs": 81,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153455",
+      "name": "Large Sprite Zero",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153443",
+      "name": "Large Sweetened Iced Tea",
+      "calories": 240,
+      "protein": 0,
+      "carbs": 59,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153539",
+      "name": "Large Vanilla Iced Coffee",
+      "calories": 250,
+      "protein": 2,
+      "carbs": 34,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153458",
+      "name": "Medium Barq's Root Beer",
+      "calories": 300,
+      "protein": 0,
+      "carbs": 81,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153430",
+      "name": "Medium Coca-Cola",
+      "calories": 270,
+      "protein": 0,
+      "carbs": 70,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153438",
+      "name": "Medium Coca-Cola Zero",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153508",
+      "name": "Medium Coke Freezee King",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 35,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153462",
+      "name": "Medium Diet Barq's Root Beer",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153434",
+      "name": "Medium Diet Coke",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153466",
+      "name": "Medium Dr Pepper",
+      "calories": 260,
+      "protein": 0,
+      "carbs": 70,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153511",
+      "name": "Medium Fanta Blue Raspberry Freezee King",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 34,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153470",
+      "name": "Medium Fanta Orange",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 74,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153505",
+      "name": "Medium Fanta Strawberry Freezee King",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 34,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153482",
+      "name": "Medium Hi-C Fruit Punch",
+      "calories": 310,
+      "protein": 0,
+      "carbs": 79,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153517",
+      "name": "Medium Hi-C Orange Freezee King",
+      "calories": 190,
+      "protein": 0,
+      "carbs": 50,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153486",
+      "name": "Medium Hi-C Pink Lemonade",
+      "calories": 250,
+      "protein": 0,
+      "carbs": 69,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153474",
+      "name": "Medium Mello Yello",
+      "calories": 240,
+      "protein": 0,
+      "carbs": 64,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153496",
+      "name": "Medium Minute Maid Lemonade",
+      "calories": 290,
+      "protein": 0,
+      "carbs": 76,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153534",
+      "name": "Medium Mocha Iced Coffee",
+      "calories": 200,
+      "protein": 2,
+      "carbs": 27,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153514",
+      "name": "Medium Orange Dreamsicle Freezee King",
+      "calories": 340,
+      "protein": 0,
+      "carbs": 68,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153530",
+      "name": "Medium Plain Iced Coffee",
+      "calories": 200,
+      "protein": 2,
+      "carbs": 27,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153478",
+      "name": "Medium Powerade Zero",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153494",
+      "name": "Medium Signature Strawberry Lemonade",
+      "calories": 250,
+      "protein": 0,
+      "carbs": 63,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153490",
+      "name": "Medium Signature Watermelon Lemonade",
+      "calories": 260,
+      "protein": 0,
+      "carbs": 66,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153450",
+      "name": "Medium Sprite",
+      "calories": 260,
+      "protein": 0,
+      "carbs": 68,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153454",
+      "name": "Medium Sprite Zero",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153442",
+      "name": "Medium Sweetened Iced Tea",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 44,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153538",
+      "name": "Medium Vanilla Iced Coffee",
+      "calories": 200,
+      "protein": 2,
+      "carbs": 27,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153542",
+      "name": "Simply Orange Juice",
+      "calories": 160,
+      "protein": 2,
+      "carbs": 35,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153457",
+      "name": "Small Barqs Root Beer",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 54,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153429",
+      "name": "Small Coca-Cola",
+      "calories": 180,
+      "protein": 0,
+      "carbs": 50,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153437",
+      "name": "Small Coca-Cola Zero",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153507",
+      "name": "Small Coke Freezee King",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 26,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153461",
+      "name": "Small Diet Barqs Root Beer",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153433",
+      "name": "Small Diet Coke",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153465",
+      "name": "Small Dr Pepper",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 46,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153510",
+      "name": "Small Fanta Blue Raspberry Freezee King",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 26,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153469",
+      "name": "Small Fanta Orange",
+      "calories": 180,
+      "protein": 0,
+      "carbs": 49,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153504",
+      "name": "Small Fanta Strawberry Freezee King",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 26,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153481",
+      "name": "Small Hi-C Fruit Punch",
+      "calories": 210,
+      "protein": 0,
+      "carbs": 53,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153516",
+      "name": "Small Hi-C Orange Freezee King",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 38,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153485",
+      "name": "Small Hi-C Pink Lemonade",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 46,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153473",
+      "name": "Small Mello Yello",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 43,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153495",
+      "name": "Small Minute Maid Lemonade",
+      "calories": 190,
+      "protein": 0,
+      "carbs": 50,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153533",
+      "name": "Small Mocha Iced Coffee",
+      "calories": 160,
+      "protein": 2,
+      "carbs": 21,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153513",
+      "name": "Small Orange Dreamsicle Freezee King",
+      "calories": 300,
+      "protein": 0,
+      "carbs": 56,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153529",
+      "name": "Small Plain Iced Coffee",
+      "calories": 150,
+      "protein": 1,
+      "carbs": 21,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153477",
+      "name": "Small Powerade Zero",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153493",
+      "name": "Small Signature Strawberry Lemonade",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 50,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153489",
+      "name": "Small Signature Watermelon Lemonade",
+      "calories": 210,
+      "protein": 0,
+      "carbs": 52,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153449",
+      "name": "Small Sprite",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 45,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153453",
+      "name": "Small Sprite Zero",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153441",
+      "name": "Small Sweetened Iced Tea",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 32,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153537",
+      "name": "Small Vanilla Iced Coffee",
+      "calories": 150,
+      "protein": 1,
+      "carbs": 20,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153503",
+      "name": "Strawberry Shake",
+      "calories": 610,
+      "protein": 12,
+      "carbs": 110,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153456",
+      "name": "Value Barqs Root Beer",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 42,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153428",
+      "name": "Value Coca-Cola",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 39,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153436",
+      "name": "Value Coca-Cola Zero",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153460",
+      "name": "Value Diet Barqs Root Beer",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153432",
+      "name": "Value Diet Coke",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153464",
+      "name": "Value Dr Pepper",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 36,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153468",
+      "name": "Value Fanta Orange",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 38,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153480",
+      "name": "Value Hi-C Fruit Punch",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 41,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153484",
+      "name": "Value Hi-C Pink Lemonade",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 36,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153472",
+      "name": "Value Mello Yello",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 33,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153476",
+      "name": "Value Powerade Zero",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153448",
+      "name": "Value Sprite",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 35,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153452",
+      "name": "Value Sprite Zero",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153440",
+      "name": "Value Sweetened Iced Tea",
+      "calories": 90,
+      "protein": 0,
+      "carbs": 22,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153502",
+      "name": "Vanilla Shake",
+      "calories": 560,
+      "protein": 12,
+      "carbs": 96,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Drinks & Coffee; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153555",
+      "name": "2 Chocolate Chip Cookies",
+      "calories": 320,
+      "protein": 4,
+      "carbs": 46,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Sweets; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153544",
+      "name": "Cinnamon Apple Pie",
+      "calories": 270,
+      "protein": 4,
+      "carbs": 36,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Sweets; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153543",
+      "name": "Firecracker Cookie Pie",
+      "calories": 250,
+      "protein": 3,
+      "carbs": 33,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Sweets; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153546",
+      "name": "HERSHEY'S Sundae",
+      "calories": 230,
+      "protein": 5,
+      "carbs": 38,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Sweets; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153547",
+      "name": "HERSHEY'S Sundae Pie",
+      "calories": 310,
+      "protein": 3,
+      "carbs": 32,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Sweets; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153545",
+      "name": "OREO Sundae",
+      "calories": 310,
+      "protein": 6,
+      "carbs": 51,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Sweets; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153554",
+      "name": "Soft Serve Cone",
+      "calories": 200,
+      "protein": 5,
+      "carbs": 33,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Sweets; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153553",
+      "name": "Soft Serve Cup",
+      "calories": 180,
+      "protein": 4,
+      "carbs": 28,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Sweets; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153549",
+      "name": "Sweets, Chocolate Oreo Shake",
+      "calories": 670,
+      "protein": 13,
+      "carbs": 116,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Sweets; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153550",
+      "name": "Sweets, Chocolate Shake",
+      "calories": 590,
+      "protein": 13,
+      "carbs": 103,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Sweets; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153548",
+      "name": "Sweets, Classic Oreo Shake",
+      "calories": 640,
+      "protein": 13,
+      "carbs": 109,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Sweets; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153552",
+      "name": "Sweets, Strawberry Shake",
+      "calories": 610,
+      "protein": 12,
+      "carbs": 110,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Sweets; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153551",
+      "name": "Sweets, Vanilla Shake",
+      "calories": 560,
+      "protein": 12,
+      "carbs": 96,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Sweets; size in item name)"
+    }
+  ],
+  "sourceDate": "2026-07-20"
+}

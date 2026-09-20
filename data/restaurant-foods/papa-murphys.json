@@ -1,0 +1,1594 @@
+{
+  "chain": "Papa Murphy's",
+  "sourceUrl": "https://www.nutritionix.com/papa-murphys/menu/premium",
+  "source": "Nutritionix",
+  "sourceKind": "database",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "id": "nutritionix-166085",
+      "name": "All Meat - Family Slice",
+      "calories": 340,
+      "protein": 12,
+      "carbs": 30,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Family Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-167606",
+      "name": "Bacon Cheeseburger (Limited Availability) - Family Slice",
+      "calories": 360,
+      "protein": 13,
+      "carbs": 32,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Family Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-167603",
+      "name": "BBQ Chicken - Family Slice",
+      "calories": 330,
+      "protein": 14,
+      "carbs": 36,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Family Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-166098",
+      "name": "C.Y.O. Multi Topping - Family Slice",
+      "calories": 270,
+      "protein": 9,
+      "carbs": 29,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Family Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-166103",
+      "name": "C.Y.O. Single Topping - Family Slice",
+      "calories": 270,
+      "protein": 9,
+      "carbs": 29,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Family Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-167002",
+      "name": "Chicken Bacon Artichoke - Family Slice",
+      "calories": 330,
+      "protein": 15,
+      "carbs": 30,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Family Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-166137",
+      "name": "Chicken Garlic - Family Slice",
+      "calories": 310,
+      "protein": 13,
+      "carbs": 29,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Family Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-1171486",
+      "name": "Classic Italian - Family Slice",
+      "calories": 340,
+      "protein": 11,
+      "carbs": 29,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Family Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-166129",
+      "name": "Cowboy - Family Slice",
+      "calories": 350,
+      "protein": 12,
+      "carbs": 31,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Family Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-389710",
+      "name": "Double Bacon Cheddar Pizza (Limited Availability) - Family Slice",
+      "calories": 320,
+      "protein": 13,
+      "carbs": 28,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Family Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-166708",
+      "name": "Garden Veggie - Family Slice",
+      "calories": 260,
+      "protein": 7,
+      "carbs": 31,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Family Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-167009",
+      "name": "Gourmet Vegetarian - Family Slice",
+      "calories": 300,
+      "protein": 10,
+      "carbs": 30,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Family Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-167602",
+      "name": "Hawaiian - Family Slice",
+      "calories": 270,
+      "protein": 9,
+      "carbs": 32,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Family Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-166151",
+      "name": "Herb Chicken Mediterranean - Family Slice",
+      "calories": 330,
+      "protein": 12,
+      "carbs": 34,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Family Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-166169",
+      "name": "Murphy's Combo - Family Slice",
+      "calories": 330,
+      "protein": 11,
+      "carbs": 31,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Family Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-166175",
+      "name": "Papa's Favorite - Family Slice",
+      "calories": 330,
+      "protein": 11,
+      "carbs": 31,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Family Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-167605",
+      "name": "Pepperoni - Family Slice",
+      "calories": 290,
+      "protein": 9,
+      "carbs": 29,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Family Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-167601",
+      "name": "Rancher - Family Slice",
+      "calories": 310,
+      "protein": 11,
+      "carbs": 30,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Family Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-167600",
+      "name": "Taco Grande (Beef) - Family Slice",
+      "calories": 340,
+      "protein": 12,
+      "carbs": 32,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Family Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-167604",
+      "name": "Taco Grande (Chicken) - Family Slice",
+      "calories": 310,
+      "protein": 13,
+      "carbs": 33,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Family Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-167018",
+      "name": "Thai Chicken - Family Slice",
+      "calories": 330,
+      "protein": 13,
+      "carbs": 39,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Family Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-416624",
+      "name": "Triple Pepp (Limited Availability) - Family Slice",
+      "calories": 350,
+      "protein": 11,
+      "carbs": 29,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Family Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-166086",
+      "name": "All Meat - Large Slice",
+      "calories": 390,
+      "protein": 14,
+      "carbs": 33,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Large Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-167620",
+      "name": "Bacon Cheeseburger (Limited Availability) - Large Slice",
+      "calories": 410,
+      "protein": 15,
+      "carbs": 35,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Large Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-167617",
+      "name": "BBQ Chicken - Large Slice",
+      "calories": 370,
+      "protein": 16,
+      "carbs": 40,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Large Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-166099",
+      "name": "C.Y.O. Multi Topping - Large Slice",
+      "calories": 310,
+      "protein": 10,
+      "carbs": 33,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Large Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-166104",
+      "name": "C.Y.O. Single Topping - Large Slice",
+      "calories": 310,
+      "protein": 10,
+      "carbs": 33,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Large Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-167001",
+      "name": "Chicken Bacon Artichoke - Large Slice",
+      "calories": 380,
+      "protein": 17,
+      "carbs": 34,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Large Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-166138",
+      "name": "Chicken Garlic - Large Slice",
+      "calories": 350,
+      "protein": 15,
+      "carbs": 33,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Large Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-1171487",
+      "name": "Classic Italian - Large Slice",
+      "calories": 380,
+      "protein": 13,
+      "carbs": 33,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Large Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-166130",
+      "name": "Cowboy - Large Slice",
+      "calories": 390,
+      "protein": 14,
+      "carbs": 34,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Large Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-389709",
+      "name": "Double Bacon Cheddar Pizza (Limited Availability) - Large Slice",
+      "calories": 350,
+      "protein": 14,
+      "carbs": 32,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Large Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-166709",
+      "name": "Garden Veggie - Large Slice",
+      "calories": 300,
+      "protein": 9,
+      "carbs": 35,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Large Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-167008",
+      "name": "Gourmet Vegetarian - Large Slice",
+      "calories": 340,
+      "protein": 11,
+      "carbs": 34,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Large Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-167616",
+      "name": "Hawaiian - Large Slice",
+      "calories": 300,
+      "protein": 10,
+      "carbs": 36,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Large Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-166152",
+      "name": "Herb Chicken Mediterranean - Large Slice",
+      "calories": 370,
+      "protein": 14,
+      "carbs": 38,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Large Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-166170",
+      "name": "Murphy's Combo - Large Slice",
+      "calories": 380,
+      "protein": 13,
+      "carbs": 35,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Large Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-166176",
+      "name": "Papa's Favorite - Large Slice",
+      "calories": 380,
+      "protein": 12,
+      "carbs": 35,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Large Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-167619",
+      "name": "Pepperoni - Large Slice",
+      "calories": 330,
+      "protein": 10,
+      "carbs": 33,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Large Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-167615",
+      "name": "Rancher - Large Slice",
+      "calories": 350,
+      "protein": 12,
+      "carbs": 34,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Large Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-167614",
+      "name": "Taco Grande (Beef) - Large Slice",
+      "calories": 380,
+      "protein": 14,
+      "carbs": 36,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Large Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-167618",
+      "name": "Taco Grande (Chicken) - Large Slice",
+      "calories": 350,
+      "protein": 15,
+      "carbs": 37,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Large Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-167019",
+      "name": "Thai Chicken - Large Slice",
+      "calories": 370,
+      "protein": 14,
+      "carbs": 43,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Large Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-416623",
+      "name": "Triple Pepp (Limited Availability) - Large Slice",
+      "calories": 320,
+      "protein": 9,
+      "carbs": 32,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Large Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-166087",
+      "name": "All Meat - Medium Slice",
+      "calories": 270,
+      "protein": 10,
+      "carbs": 24,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Medium Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-167634",
+      "name": "Bacon Cheeseburger (Limited Availability) - Medium Slice",
+      "calories": 290,
+      "protein": 11,
+      "carbs": 26,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Medium Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-167631",
+      "name": "BBQ Chicken - Medium Slice",
+      "calories": 270,
+      "protein": 11,
+      "carbs": 29,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Medium Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-166100",
+      "name": "C.Y.O. Multi Topping - Medium Slice",
+      "calories": 230,
+      "protein": 7,
+      "carbs": 24,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Medium Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-166105",
+      "name": "C.Y.O. Single Topping - Medium Slice",
+      "calories": 230,
+      "protein": 7,
+      "carbs": 24,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Medium Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-167000",
+      "name": "Chicken Bacon Artichoke - Medium Slice",
+      "calories": 270,
+      "protein": 12,
+      "carbs": 25,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Medium Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-166139",
+      "name": "Chicken Garlic - Medium Slice",
+      "calories": 260,
+      "protein": 11,
+      "carbs": 24,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Medium Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-1171488",
+      "name": "Classic Italian - Medium Slice",
+      "calories": 280,
+      "protein": 9,
+      "carbs": 24,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Medium Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-166131",
+      "name": "Cowboy - Medium Slice",
+      "calories": 280,
+      "protein": 10,
+      "carbs": 25,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Medium Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-389711",
+      "name": "Double Bacon Cheddar Pizza (Limited Availability) - Medium Slice",
+      "calories": 260,
+      "protein": 10,
+      "carbs": 23,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Medium Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-166710",
+      "name": "Garden Veggie - Medium Slice",
+      "calories": 220,
+      "protein": 6,
+      "carbs": 26,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Medium Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-166147",
+      "name": "Gourmet Vegetarian - Medium Slice",
+      "calories": 250,
+      "protein": 8,
+      "carbs": 25,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Medium Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-167630",
+      "name": "Hawaiian - Medium Slice",
+      "calories": 220,
+      "protein": 7,
+      "carbs": 26,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Medium Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-166153",
+      "name": "Herb Chicken Mediterranean - Medium Slice",
+      "calories": 270,
+      "protein": 10,
+      "carbs": 27,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Medium Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-166171",
+      "name": "Murphy's Combo - Medium Slice",
+      "calories": 270,
+      "protein": 9,
+      "carbs": 25,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Medium Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-166177",
+      "name": "Papa's Favorite - Medium Slice",
+      "calories": 270,
+      "protein": 9,
+      "carbs": 25,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Medium Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-167633",
+      "name": "Pepperoni - Medium Slice",
+      "calories": 240,
+      "protein": 7,
+      "carbs": 24,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Medium Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-167629",
+      "name": "Rancher - Medium Slice",
+      "calories": 250,
+      "protein": 9,
+      "carbs": 25,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Medium Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-167628",
+      "name": "Taco Grande (Beef) - Medium Slice",
+      "calories": 280,
+      "protein": 10,
+      "carbs": 26,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Medium Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-167632",
+      "name": "Taco Grande (Chicken) - Medium Slice",
+      "calories": 250,
+      "protein": 11,
+      "carbs": 26,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Medium Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-166203",
+      "name": "Thai Chicken - Medium Slice",
+      "calories": 270,
+      "protein": 10,
+      "carbs": 32,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Medium Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-416625",
+      "name": "Triple Pepp (Limited Availability) - Medium Slice",
+      "calories": 290,
+      "protein": 9,
+      "carbs": 24,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Medium Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-308147",
+      "name": "All Meat - Crustless Slice",
+      "calories": 160,
+      "protein": 10,
+      "carbs": 3,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Crustless Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-308163",
+      "name": "Bacon Cheeseburger (Limited Availability) - Crustless Slice",
+      "calories": 180,
+      "protein": 11,
+      "carbs": 4,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Crustless Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-308161",
+      "name": "BBQ Chicken - Crustless Slice",
+      "calories": 150,
+      "protein": 11,
+      "carbs": 7,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Crustless Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-308158",
+      "name": "Chicken Bacon Artichoke - Crustless Slice",
+      "calories": 150,
+      "protein": 11,
+      "carbs": 3,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Crustless Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-308152",
+      "name": "Chicken Garlic - Crustless Slice",
+      "calories": 140,
+      "protein": 10,
+      "carbs": 3,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Crustless Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-1171491",
+      "name": "Classic Italian - Crustless Slice",
+      "calories": 160,
+      "protein": 9,
+      "carbs": 3,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Crustless Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-308151",
+      "name": "Cowboy - Crustless Slice",
+      "calories": 170,
+      "protein": 10,
+      "carbs": 4,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Crustless Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-389713",
+      "name": "Double Bacon Cheddar Pizza (Limited Availability) - Crustless Slice",
+      "calories": 140,
+      "protein": 10,
+      "carbs": 2,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Crustless Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-308157",
+      "name": "Garden Veggie - Crustless Slice",
+      "calories": 100,
+      "protein": 6,
+      "carbs": 4,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Crustless Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-308146",
+      "name": "Gourmet Vegetarian - Crustless Slice",
+      "calories": 130,
+      "protein": 8,
+      "carbs": 3,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Crustless Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-308160",
+      "name": "Hawaiian - Crustless Slice",
+      "calories": 110,
+      "protein": 7,
+      "carbs": 5,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Crustless Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-308153",
+      "name": "Herb Chicken Mediterranean - Crustless Slice",
+      "calories": 150,
+      "protein": 10,
+      "carbs": 6,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Crustless Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-308154",
+      "name": "Murphy's Combo - Crustless Slice",
+      "calories": 160,
+      "protein": 9,
+      "carbs": 4,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Crustless Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-308155",
+      "name": "Papa's Favorite - Crustless Slice",
+      "calories": 150,
+      "protein": 9,
+      "carbs": 4,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Crustless Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-308162",
+      "name": "Pepperoni - Crustless Slice",
+      "calories": 110,
+      "protein": 7,
+      "carbs": 2,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Crustless Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-308159",
+      "name": "Rancher - Crustless Slice",
+      "calories": 140,
+      "protein": 9,
+      "carbs": 3,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Crustless Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-429609",
+      "name": "Taco Grande (Beef) - Crustless Slice",
+      "calories": 160,
+      "protein": 10,
+      "carbs": 5,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Crustless Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-429610",
+      "name": "Taco Grande (Chicken) - Crustless Slice",
+      "calories": 140,
+      "protein": 11,
+      "carbs": 5,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Crustless Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-308156",
+      "name": "Thai Chicken - Crustless Slice",
+      "calories": 150,
+      "protein": 10,
+      "carbs": 11,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Crustless Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-416627",
+      "name": "Triple Pepp (Limited Availability) - Crustless Slice",
+      "calories": 180,
+      "protein": 9,
+      "carbs": 2,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Crustless Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-166987",
+      "name": "All Meat - Thin Family Slice",
+      "calories": 230,
+      "protein": 9,
+      "carbs": 17,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Thin Family Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-167613",
+      "name": "Bacon Cheeseburger (Limited Availability) - Thin Family Slice",
+      "calories": 240,
+      "protein": 10,
+      "carbs": 18,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Thin Family Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-167610",
+      "name": "BBQ Chicken - Thin Family Slice",
+      "calories": 220,
+      "protein": 10,
+      "carbs": 21,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Thin Family Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-166094",
+      "name": "C.Y.O. Multi Topping - Thin Family Slice",
+      "calories": 190,
+      "protein": 7,
+      "carbs": 17,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Thin Family Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-166096",
+      "name": "C.Y.O. Single Topping - Thin Family Slice",
+      "calories": 190,
+      "protein": 7,
+      "carbs": 17,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Thin Family Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-166135",
+      "name": "Chicken Bacon Artichoke - Thin Family Slice",
+      "calories": 220,
+      "protein": 11,
+      "carbs": 17,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Thin Family Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-167024",
+      "name": "Chicken Garlic - Thin Family Slice",
+      "calories": 200,
+      "protein": 10,
+      "carbs": 16,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Thin Family Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-1171489",
+      "name": "Classic Italian - Thin Family Slice",
+      "calories": 220,
+      "protein": 8,
+      "carbs": 16,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Thin Family Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-166984",
+      "name": "Cowboy - Thin Family Slice",
+      "calories": 230,
+      "protein": 9,
+      "carbs": 18,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Thin Family Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-389708",
+      "name": "Double Bacon Cheddar Pizza (Limited Availability) - Thin Family Slice",
+      "calories": 200,
+      "protein": 9,
+      "carbs": 16,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Thin Family Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-167021",
+      "name": "Garden Veggie - Thin Family Slice",
+      "calories": 170,
+      "protein": 6,
+      "carbs": 19,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Thin Family Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-166145",
+      "name": "Gourmet Vegetarian - Thin Family Slice",
+      "calories": 200,
+      "protein": 7,
+      "carbs": 17,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Thin Family Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-167609",
+      "name": "Hawaiian - Thin Family Slice",
+      "calories": 180,
+      "protein": 7,
+      "carbs": 19,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Thin Family Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-166154",
+      "name": "Herb Chicken Mediterranean - Thin Family Slice",
+      "calories": 220,
+      "protein": 9,
+      "carbs": 20,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Thin Family Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-167012",
+      "name": "Murphy's Combo - Thin Family Slice",
+      "calories": 220,
+      "protein": 8,
+      "carbs": 18,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Thin Family Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-167015",
+      "name": "Papa's Favorite - Thin Family Slice",
+      "calories": 220,
+      "protein": 8,
+      "carbs": 19,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Thin Family Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-167612",
+      "name": "Pepperoni - Thin Family Slice",
+      "calories": 210,
+      "protein": 8,
+      "carbs": 17,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Thin Family Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-167608",
+      "name": "Rancher - Thin Family Slice",
+      "calories": 210,
+      "protein": 8,
+      "carbs": 18,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Thin Family Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-167607",
+      "name": "Taco Grande (Beef) - Thin Family Slice",
+      "calories": 230,
+      "protein": 9,
+      "carbs": 19,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Thin Family Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-167611",
+      "name": "Taco Grande (Chicken) - Thin Family Slice",
+      "calories": 200,
+      "protein": 10,
+      "carbs": 19,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Thin Family Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-166201",
+      "name": "Thai Chicken - Thin Family Slice",
+      "calories": 220,
+      "protein": 9,
+      "carbs": 23,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Thin Family Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-416622",
+      "name": "Triple Pepp (Limited Availability) - Thin Family Slice",
+      "calories": 230,
+      "protein": 8,
+      "carbs": 16,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Thin Family Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-166988",
+      "name": "All Meat - Thin Large Slice",
+      "calories": 230,
+      "protein": 10,
+      "carbs": 16,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Thin Large Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-167627",
+      "name": "Bacon Cheeseburger (Limited Availability) - Thin Large Slice",
+      "calories": 250,
+      "protein": 11,
+      "carbs": 18,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Thin Large Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-167624",
+      "name": "BBQ Chicken - Thin Large Slice",
+      "calories": 230,
+      "protein": 11,
+      "carbs": 20,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Thin Large Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-166095",
+      "name": "C.Y.O. Multi Topping - Thin Large Slice",
+      "calories": 180,
+      "protein": 7,
+      "carbs": 15,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Thin Large Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-166097",
+      "name": "C.Y.O. Single Topping - Thin Large Slice",
+      "calories": 180,
+      "protein": 7,
+      "carbs": 15,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Thin Large Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-166136",
+      "name": "Chicken Bacon Artichoke - Thin Large Slice",
+      "calories": 230,
+      "protein": 12,
+      "carbs": 17,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Thin Large Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-167025",
+      "name": "Chicken Garlic - Thin Large Slice",
+      "calories": 210,
+      "protein": 10,
+      "carbs": 16,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Thin Large Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-1171490",
+      "name": "Classic Italian - Thin Large Slice",
+      "calories": 240,
+      "protein": 9,
+      "carbs": 16,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Thin Large Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-166983",
+      "name": "Cowboy - Thin Large Slice",
+      "calories": 240,
+      "protein": 10,
+      "carbs": 17,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Thin Large Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-389712",
+      "name": "Double Bacon Cheddar Pizza (Limited Availability) - Thin Large Slice",
+      "calories": 210,
+      "protein": 10,
+      "carbs": 15,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Thin Large Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-167022",
+      "name": "Garden Veggie - Thin Large Slice",
+      "calories": 170,
+      "protein": 6,
+      "carbs": 17,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Thin Large Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-166146",
+      "name": "Gourmet Vegetarian - Thin Large Slice",
+      "calories": 200,
+      "protein": 8,
+      "carbs": 16,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Thin Large Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-167623",
+      "name": "Hawaiian - Thin Large Slice",
+      "calories": 180,
+      "protein": 7,
+      "carbs": 18,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Thin Large Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-166155",
+      "name": "Herb Chicken Mediterranean - Thin Large Slice",
+      "calories": 220,
+      "protein": 10,
+      "carbs": 19,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Thin Large Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-167013",
+      "name": "Murphy's Combo - Thin Large Slice",
+      "calories": 220,
+      "protein": 9,
+      "carbs": 17,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Thin Large Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-167016",
+      "name": "Papa's Favorite - Thin Large Slice",
+      "calories": 220,
+      "protein": 9,
+      "carbs": 17,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Thin Large Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-167626",
+      "name": "Pepperoni - Thin Large Slice",
+      "calories": 190,
+      "protein": 7,
+      "carbs": 15,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Thin Large Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-167622",
+      "name": "Rancher - Thin Large Slice",
+      "calories": 210,
+      "protein": 9,
+      "carbs": 16,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Thin Large Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-167621",
+      "name": "Taco Grande (Beef) - Thin Large Slice",
+      "calories": 230,
+      "protein": 10,
+      "carbs": 18,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Thin Large Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-167625",
+      "name": "Taco Grande (Chicken) - Thin Large Slice",
+      "calories": 210,
+      "protein": 11,
+      "carbs": 18,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Thin Large Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-166202",
+      "name": "Thai Chicken - Thin Large Slice",
+      "calories": 230,
+      "protein": 10,
+      "carbs": 24,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Thin Large Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-416626",
+      "name": "Triple Pepp (Limited Availability) - Thin Large Slice",
+      "calories": 250,
+      "protein": 9,
+      "carbs": 16,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Thin Large Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-166083",
+      "name": "5-Meat Stuffed Pizza - Family Slice",
+      "calories": 450,
+      "protein": 13,
+      "carbs": 49,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Stuffed Family Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-166092",
+      "name": "Big Murphy's Stuffed Pizza - Family Slice",
+      "calories": 430,
+      "protein": 11,
+      "carbs": 50,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Stuffed Family Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-166101",
+      "name": "C.Y.O. Stuffed - Family Slice",
+      "calories": 380,
+      "protein": 9,
+      "carbs": 49,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Stuffed Family Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-166113",
+      "name": "Chicago-Style Stuffed Pizza - Family Slice",
+      "calories": 450,
+      "protein": 12,
+      "carbs": 50,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Stuffed Family Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-166115",
+      "name": "Chicken Bacon Stuffed Pizza - Family Slice",
+      "calories": 420,
+      "protein": 13,
+      "carbs": 49,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Stuffed Family Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-166084",
+      "name": "5-Meat Stuffed Pizza - Large Slice",
+      "calories": 490,
+      "protein": 13,
+      "carbs": 56,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Stuffed Large Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-166093",
+      "name": "Big Murphy's Stuffed Pizza - Large Slice",
+      "calories": 460,
+      "protein": 11,
+      "carbs": 56,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Stuffed Large Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-166107",
+      "name": "C.Y.O. Stuffed - Large Slice",
+      "calories": 420,
+      "protein": 9,
+      "carbs": 55,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Stuffed Large Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-166114",
+      "name": "Chicago-Style Stuffed Pizza - Large Slice",
+      "calories": 480,
+      "protein": 12,
+      "carbs": 56,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Stuffed Large Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-166116",
+      "name": "Chicken Bacon Stuffed Pizza - Large Slice",
+      "calories": 460,
+      "protein": 13,
+      "carbs": 55,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Stuffed Large Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-1154755",
+      "name": "C.Y.O. Multi Topping - Grandma's Pizza Slice",
+      "calories": 190,
+      "protein": 4,
+      "carbs": 23,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Specials & New Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-410811",
+      "name": "C.Y.O. Multi Topping Calzone (Limited Availability)",
+      "calories": 600,
+      "protein": 20,
+      "carbs": 67,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Specials & New Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-415169",
+      "name": "C.Y.O. Single Topping Calzone (Limited Availability)",
+      "calories": 600,
+      "protein": 20,
+      "carbs": 67,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Specials & New Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-216478",
+      "name": "Giant Pepperoni & Sausage XLNY - Family Slice",
+      "calories": 210,
+      "protein": 11,
+      "carbs": 21,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Specials & New Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-393238",
+      "name": "Giant Pepperoni XLNY - Family Slice",
+      "calories": 200,
+      "protein": 10,
+      "carbs": 21,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Specials & New Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-1154754",
+      "name": "Italian Sausage - Grandma's Pizza Slice",
+      "calories": 220,
+      "protein": 6,
+      "carbs": 23,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Specials & New Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-410810",
+      "name": "Pepperoni & Mozzarella Calzone (Limited Availability)",
+      "calories": 780,
+      "protein": 28,
+      "carbs": 67,
+      "fat": 41,
+      "servingLabel": "1 listed serving (Specials & New Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-393239",
+      "name": "Three Cheese XLNY - Family Slice",
+      "calories": 180,
+      "protein": 9,
+      "carbs": 21,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Specials & New Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-105694",
+      "name": "Buttermilk Ranch Dipping Sauce Cup",
+      "calories": 160,
+      "protein": 1,
+      "carbs": 2,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Dipping Sauces; size in item name)"
+    },
+    {
+      "id": "nutritionix-278342",
+      "name": "Garlic Butter Dipping Sauce Cup",
+      "calories": 260,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 28,
+      "servingLabel": "1 listed serving (Dipping Sauces; size in item name)"
+    },
+    {
+      "id": "nutritionix-1089895",
+      "name": "Marinara Sauce",
+      "calories": 60,
+      "protein": 1,
+      "carbs": 11,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Dipping Sauces; size in item name)"
+    },
+    {
+      "id": "nutritionix-278343",
+      "name": "Mike's Hot Honey Dipping Sauce Cup",
+      "calories": 70,
+      "protein": 0,
+      "carbs": 17,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Dipping Sauces; size in item name)"
+    },
+    {
+      "id": "nutritionix-21399",
+      "name": "Mini Murph - Cheese",
+      "calories": 510,
+      "protein": 22,
+      "carbs": 63,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Mini Murph's; size in item name)"
+    },
+    {
+      "id": "nutritionix-21400",
+      "name": "Mini Murph - Pepperoni",
+      "calories": 590,
+      "protein": 26,
+      "carbs": 63,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Mini Murph's; size in item name)"
+    },
+    {
+      "id": "nutritionix-166108",
+      "name": "Caesar Salad",
+      "calories": 90,
+      "protein": 7,
+      "carbs": 7,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Salads & Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-218154",
+      "name": "Chicken Bacon Artichoke Salad",
+      "calories": 330,
+      "protein": 34,
+      "carbs": 11,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Salads & Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-166121",
+      "name": "Chicken Caesar Salad",
+      "calories": 180,
+      "protein": 24,
+      "carbs": 7,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Salads & Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-21075",
+      "name": "Classic Cheesy Bread",
+      "calories": 1760,
+      "protein": 54,
+      "carbs": 252,
+      "fat": 57,
+      "servingLabel": "1 listed serving (Salads & Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-167156",
+      "name": "Classic Cheesy Bread (2 slices of 16)",
+      "calories": 220,
+      "protein": 7,
+      "carbs": 32,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Salads & Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-166126",
+      "name": "Club Salad",
+      "calories": 260,
+      "protein": 22,
+      "carbs": 11,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Salads & Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-166132",
+      "name": "Garden Salad",
+      "calories": 200,
+      "protein": 10,
+      "carbs": 13,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Salads & Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-1089773",
+      "name": "Garlic Knots",
+      "calories": 910,
+      "protein": 20,
+      "carbs": 120,
+      "fat": 43,
+      "servingLabel": "1 listed serving (Salads & Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-166158",
+      "name": "Italian Salad",
+      "calories": 280,
+      "protein": 13,
+      "carbs": 11,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Salads & Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-166163",
+      "name": "Mediterranean Salad",
+      "calories": 310,
+      "protein": 19,
+      "carbs": 21,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Salads & Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-21076",
+      "name": "Scratch-Made 5 Cheese Bread",
+      "calories": 1670,
+      "protein": 61,
+      "carbs": 184,
+      "fat": 75,
+      "servingLabel": "1 listed serving (Salads & Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-167157",
+      "name": "Scratch-Made 5 Cheese Bread (1 slice of 8)",
+      "calories": 210,
+      "protein": 8,
+      "carbs": 23,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Salads & Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-21061",
+      "name": "Balsamic Vinaigrette",
+      "calories": 110,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Salad Dressing & Croutons; size in item name)"
+    },
+    {
+      "id": "nutritionix-21062",
+      "name": "Bleu Cheese Dressing",
+      "calories": 230,
+      "protein": 1,
+      "carbs": 2,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Salad Dressing & Croutons; size in item name)"
+    },
+    {
+      "id": "nutritionix-21064",
+      "name": "Caesar Salad Dressing",
+      "calories": 210,
+      "protein": 2,
+      "carbs": 2,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Salad Dressing & Croutons; size in item name)"
+    },
+    {
+      "id": "nutritionix-21023",
+      "name": "Croutons",
+      "calories": 90,
+      "protein": 2,
+      "carbs": 11,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Salad Dressing & Croutons; size in item name)"
+    },
+    {
+      "id": "nutritionix-537989",
+      "name": "Homestyle Ranch Dressing",
+      "calories": 170,
+      "protein": 1,
+      "carbs": 3,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Salad Dressing & Croutons; size in item name)"
+    },
+    {
+      "id": "nutritionix-21065",
+      "name": "Italian Vinaigrette",
+      "calories": 20,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Salad Dressing & Croutons; size in item name)"
+    },
+    {
+      "id": "nutritionix-21063",
+      "name": "Ranch Dressing",
+      "calories": 160,
+      "protein": 1,
+      "carbs": 2,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Salad Dressing & Croutons; size in item name)"
+    },
+    {
+      "id": "nutritionix-130264",
+      "name": "Cookie Dough - Chocolate Chip",
+      "calories": 120,
+      "protein": 1,
+      "carbs": 17,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-21036",
+      "name": "Cream Cheese Frosting",
+      "calories": 370,
+      "protein": 3,
+      "carbs": 35,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-167159",
+      "name": "Cream Cheese Frosting (1/8th of cup)",
+      "calories": 45,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    }
+  ],
+  "sourceDate": "2026-08-17"
+}

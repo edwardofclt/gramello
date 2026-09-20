@@ -50,7 +50,7 @@ export async function lookupBarcode(input: string, signal?: AbortSignal): Promis
     const servingGrams = serving && hasServingWeight ? serving : 100;
     return { status: 200, food: {
       id: `off-${product.code || code}`, name: product.product_name.trim(),
-      brand: product.brands?.split(',')[0]?.trim() || undefined, source: 'Open Food Facts',
+      brand: product.brands?.split(',')[0]?.trim() || undefined, source: 'Open Food Facts', sourceKind: 'database', verified: true, nutritionBasis: '100g', sourceUrl: `https://world.openfoodfacts.org/product/${encodeURIComponent(product.code || code)}`, checkedAt: new Date().toISOString(),
       calories, protein, carbs, fat, servingGrams,
       servingLabel: serving && hasServingWeight ? product.serving_size || `${servingGrams} g` : '100 g',
       image: product.image_front_small_url?.startsWith('https://') ? product.image_front_small_url : undefined,

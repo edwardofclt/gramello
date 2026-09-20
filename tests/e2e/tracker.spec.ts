@@ -4,9 +4,9 @@ import { execFileSync } from 'node:child_process';
 
 // Separate real database records for every test; never alter the owner's diary.
 const test = base.extend<{ userId: string }>({
-  userId: async ({}, use) => { await use(`playwright-${randomUUID()}`); },
-  extraHTTPHeaders: async ({ userId }, use) => {
-    await use({ 'oai-authenticated-user-id': userId });
+  userId: async ({}, provideFixture) => { await provideFixture(`playwright-${randomUUID()}`); },
+  extraHTTPHeaders: async ({ userId }, provideFixture) => {
+    await provideFixture({ 'oai-authenticated-user-id': userId });
   },
 });
 

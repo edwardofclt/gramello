@@ -1,0 +1,727 @@
+{
+  "chain": "Little Caesars",
+  "sourceUrl": "https://littlecaesars.com/static/usnutritionguide.pdf",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "id": "pepperoni-1-whole-menu-item-order-size-in-name",
+      "name": "- Pepperoni",
+      "calories": 2500,
+      "protein": 122,
+      "carbs": 252,
+      "fat": 113,
+      "servingLabel": "1 whole menu item/order (size in name)"
+    },
+    {
+      "id": "cheese-1-whole-menu-item-order-size-in-name",
+      "name": "- Cheese",
+      "calories": 2220,
+      "protein": 117,
+      "carbs": 252,
+      "fat": 84,
+      "servingLabel": "1 whole menu item/order (size in name)"
+    },
+    {
+      "id": "italian-sausage-1-whole-menu-item-order-size-in-name",
+      "name": "- Italian Sausage",
+      "calories": 2660,
+      "protein": 129,
+      "carbs": 252,
+      "fat": 128,
+      "servingLabel": "1 whole menu item/order (size in name)"
+    },
+    {
+      "id": "large-specialty-pizzas-5-meat-feast-1-whole-pizza",
+      "name": "Large Specialty Pizzas - 5 Meat Feast",
+      "calories": 2830,
+      "protein": 139,
+      "carbs": 252,
+      "fat": 142,
+      "servingLabel": "1 whole pizza"
+    },
+    {
+      "id": "large-specialty-pizzas-ultimate-supreme-1-whole-pizza",
+      "name": "Large Specialty Pizzas - Ultimate Supreme",
+      "calories": 2500,
+      "protein": 118,
+      "carbs": 259,
+      "fat": 112,
+      "servingLabel": "1 whole pizza"
+    },
+    {
+      "id": "large-specialty-pizzas-3-meat-treat-1-whole-pizza",
+      "name": "Large Specialty Pizzas - 3 Meat Treat",
+      "calories": 2860,
+      "protein": 135,
+      "carbs": 252,
+      "fat": 147,
+      "servingLabel": "1 whole pizza"
+    },
+    {
+      "id": "large-specialty-pizzas-hula-hawaiian-1-whole-pizza",
+      "name": "Large Specialty Pizzas - Hula Hawaiian",
+      "calories": 2180,
+      "protein": 121,
+      "carbs": 272,
+      "fat": 70,
+      "servingLabel": "1 whole pizza"
+    },
+    {
+      "id": "large-specialty-pizzas-veggie-1-whole-pizza",
+      "name": "Large Specialty Pizzas - Veggie",
+      "calories": 2240,
+      "protein": 100,
+      "carbs": 266,
+      "fat": 84,
+      "servingLabel": "1 whole pizza"
+    },
+    {
+      "id": "large-specialty-pizzas-slices-n-stix-1-whole-pizza",
+      "name": "Large Specialty Pizzas - Slices-N-Stix",
+      "calories": 2300,
+      "protein": 107,
+      "carbs": 253,
+      "fat": 97,
+      "servingLabel": "1 whole pizza"
+    },
+    {
+      "id": "large-specialty-pizzas-slices-n-stix-bacon-1-whole-pizza",
+      "name": "Large Specialty Pizzas - Slices-N-Stix Bacon",
+      "calories": 2980,
+      "protein": 116,
+      "carbs": 252,
+      "fat": 115,
+      "servingLabel": "1 whole pizza"
+    },
+    {
+      "id": "large-specialty-pizzas-slices-n-stix-jalapeno-1-whole-pizza",
+      "name": "Large Specialty Pizzas - Slices-N-Stix Jalapeño",
+      "calories": 2330,
+      "protein": 107,
+      "carbs": 255,
+      "fat": 99,
+      "servingLabel": "1 whole pizza"
+    },
+    {
+      "id": "large-specialty-pizzas-stuffed-crust-pepperoni-1-whole-pizza",
+      "name": "Large Specialty Pizzas - Stuffed Crust Pepperoni",
+      "calories": 2980,
+      "protein": 144,
+      "carbs": 259,
+      "fat": 153,
+      "servingLabel": "1 whole pizza"
+    },
+    {
+      "id": "large-specialty-pizzas-pretzel-crust-pizza-with-pizza-sauce-1-whole-pizza",
+      "name": "Large Specialty Pizzas - Pretzel Crust Pizza with Pizza Sauce",
+      "calories": 2080,
+      "protein": 91,
+      "carbs": 240,
+      "fat": 85,
+      "servingLabel": "1 whole pizza"
+    },
+    {
+      "id": "large-specialty-pizzas-cheese-pretzel-crust-pizza-with-cheese-sauce-1-whole-pizza",
+      "name": "Large Specialty Pizzas - Cheese Pretzel Crust Pizza with Cheese Sauce",
+      "calories": 1940,
+      "protein": 85,
+      "carbs": 243,
+      "fat": 71,
+      "servingLabel": "1 whole pizza"
+    },
+    {
+      "id": "large-specialty-pizzas-pretzel-crust-pizza-with-cheese-sauce-1-whole-pizza",
+      "name": "Large Specialty Pizzas - Pretzel Crust Pizza with Cheese Sauce",
+      "calories": 2190,
+      "protein": 94,
+      "carbs": 244,
+      "fat": 93,
+      "servingLabel": "1 whole pizza"
+    },
+    {
+      "id": "large-classic-pizzas-pepperoni-1-whole-pizza",
+      "name": "Large Classic Pizzas - Pepperoni",
+      "calories": 2300,
+      "protein": 109,
+      "carbs": 250,
+      "fat": 97,
+      "servingLabel": "1 whole pizza"
+    },
+    {
+      "id": "large-classic-pizzas-cheese-1-whole-pizza",
+      "name": "Large Classic Pizzas - Cheese",
+      "calories": 1950,
+      "protein": 95,
+      "carbs": 248,
+      "fat": 65,
+      "servingLabel": "1 whole pizza"
+    },
+    {
+      "id": "large-classic-pizzas-italian-sausage-1-whole-pizza",
+      "name": "Large Classic Pizzas - Italian Sausage",
+      "calories": 2270,
+      "protein": 111,
+      "carbs": 255,
+      "fat": 91,
+      "servingLabel": "1 whole pizza"
+    },
+    {
+      "id": "detroit-style-deep-dish-pizzas-pepperoni-1-whole-pizza",
+      "name": "Detroit-Style Deep Dish Pizzas - Pepperoni",
+      "calories": 2770,
+      "protein": 129,
+      "carbs": 319,
+      "fat": 111,
+      "servingLabel": "1 whole pizza"
+    },
+    {
+      "id": "detroit-style-deep-dish-pizzas-cheese-1-whole-pizza",
+      "name": "Detroit-Style Deep Dish Pizzas - Cheese",
+      "calories": 2500,
+      "protein": 118,
+      "carbs": 317,
+      "fat": 85,
+      "servingLabel": "1 whole pizza"
+    },
+    {
+      "id": "detroit-style-deep-dish-pizzas-italian-sausage-1-whole-pizza",
+      "name": "Detroit-Style Deep Dish Pizzas - Italian Sausage",
+      "calories": 2820,
+      "protein": 133,
+      "carbs": 319,
+      "fat": 114,
+      "servingLabel": "1 whole pizza"
+    },
+    {
+      "id": "detroit-style-deep-dish-pizzas-specialty-ultimate-supreme-1-whole-pizza",
+      "name": "Detroit-Style Deep Dish Pizzas Specialty - Ultimate Supreme",
+      "calories": 3050,
+      "protein": 141,
+      "carbs": 332,
+      "fat": 130,
+      "servingLabel": "1 whole pizza"
+    },
+    {
+      "id": "detroit-style-deep-dish-pizzas-specialty-3-meat-treat-1-whole-pizza",
+      "name": "Detroit-Style Deep Dish Pizzas Specialty - 3 Meat Treat",
+      "calories": 3480,
+      "protein": 159,
+      "carbs": 321,
+      "fat": 175,
+      "servingLabel": "1 whole pizza"
+    },
+    {
+      "id": "detroit-style-deep-dish-pizzas-specialty-hula-hawaiian-1-whole-pizza",
+      "name": "Detroit-Style Deep Dish Pizzas Specialty - Hula Hawaiian",
+      "calories": 2690,
+      "protein": 137,
+      "carbs": 341,
+      "fat": 88,
+      "servingLabel": "1 whole pizza"
+    },
+    {
+      "id": "detroit-style-deep-dish-pizzas-specialty-veggie-1-whole-pizza",
+      "name": "Detroit-Style Deep Dish Pizzas Specialty - Veggie",
+      "calories": 2730,
+      "protein": 123,
+      "carbs": 333,
+      "fat": 99,
+      "servingLabel": "1 whole pizza"
+    },
+    {
+      "id": "detroit-style-deep-dish-pizzas-specialty-5-meat-feast-1-whole-pizza",
+      "name": "Detroit-Style Deep Dish Pizzas Specialty - 5 Meat Feast",
+      "calories": 3500,
+      "protein": 171,
+      "carbs": 322,
+      "fat": 172,
+      "servingLabel": "1 whole pizza"
+    },
+    {
+      "id": "detroit-style-deep-dish-pizzas-specialty-crazy-combo-1-whole-pizza",
+      "name": "Detroit-Style Deep Dish Pizzas Specialty - Crazy Combo",
+      "calories": 840,
+      "protein": 26,
+      "carbs": 135,
+      "fat": 22,
+      "servingLabel": "1 whole pizza"
+    },
+    {
+      "id": "detroit-style-deep-dish-pizzas-specialty-crazy-bread-8-bread-sticks-1-whole-pizza",
+      "name": "Detroit-Style Deep Dish Pizzas Specialty - Crazy Bread (8 bread sticks)",
+      "calories": 800,
+      "protein": 25,
+      "carbs": 128,
+      "fat": 22,
+      "servingLabel": "1 whole pizza"
+    },
+    {
+      "id": "detroit-style-deep-dish-pizzas-specialty-crazy-sauce-1-sauce-cup-1-whole-pizza",
+      "name": "Detroit-Style Deep Dish Pizzas Specialty - Crazy Sauce (1 sauce cup)",
+      "calories": 30,
+      "protein": 1,
+      "carbs": 7,
+      "fat": 0,
+      "servingLabel": "1 whole pizza"
+    },
+    {
+      "id": "detroit-style-deep-dish-pizzas-specialty-italian-cheese-bread-10-bread-sticks-1-whole-pizza",
+      "name": "Detroit-Style Deep Dish Pizzas Specialty - Italian Cheese Bread (10 bread sticks)",
+      "calories": 1340,
+      "protein": 59,
+      "carbs": 156,
+      "fat": 54,
+      "servingLabel": "1 whole pizza"
+    },
+    {
+      "id": "detroit-style-deep-dish-pizzas-specialty-pepperoni-cheese-bread-10-bread-sticks-1-whole-pizza",
+      "name": "Detroit-Style Deep Dish Pizzas Specialty - Pepperoni Cheese Bread (10 bread sticks)",
+      "calories": 1520,
+      "protein": 66,
+      "carbs": 155,
+      "fat": 71,
+      "servingLabel": "1 whole pizza"
+    },
+    {
+      "id": "detroit-style-deep-dish-pizzas-specialty-zesty-cheese-bread-10-bread-sticks-at-participating-locations-1-whole-pizza",
+      "name": "Detroit-Style Deep Dish Pizzas Specialty - Zesty Cheese Bread (10 bread sticks) — at participating locations",
+      "calories": 1490,
+      "protein": 55,
+      "carbs": 158,
+      "fat": 71,
+      "servingLabel": "1 whole pizza"
+    },
+    {
+      "id": "detroit-style-deep-dish-pizzas-specialty-stuffed-crazy-bread-3-bread-sticks-crazy-sauce-1-whole-pizza",
+      "name": "Detroit-Style Deep Dish Pizzas Specialty - Stuffed Crazy Bread (3 bread sticks & Crazy Sauce)",
+      "calories": 980,
+      "protein": 36,
+      "carbs": 126,
+      "fat": 38,
+      "servingLabel": "1 whole pizza"
+    },
+    {
+      "id": "detroit-style-deep-dish-pizzas-specialty-pepperoni-crazy-puffs-1-whole-pizza",
+      "name": "Detroit-Style Deep Dish Pizzas Specialty - Pepperoni Crazy Puffs",
+      "calories": 680,
+      "protein": 34,
+      "carbs": 56,
+      "fat": 36,
+      "servingLabel": "1 whole pizza"
+    },
+    {
+      "id": "detroit-style-deep-dish-pizzas-specialty-4-cheese-crazy-puffs-1-whole-pizza",
+      "name": "Detroit-Style Deep Dish Pizzas Specialty - 4 Cheese Crazy Puffs",
+      "calories": 580,
+      "protein": 30,
+      "carbs": 56,
+      "fat": 26,
+      "servingLabel": "1 whole pizza"
+    },
+    {
+      "id": "caesar-wings-oven-roasted-1-whole-menu-item-order-size-in-name",
+      "name": "Caesar Wings - Oven Roasted",
+      "calories": 510,
+      "protein": 47,
+      "carbs": 3,
+      "fat": 35,
+      "servingLabel": "1 whole menu item/order (size in name)"
+    },
+    {
+      "id": "caesar-wings-buffalo-1-whole-menu-item-order-size-in-name",
+      "name": "Caesar Wings - Buffalo",
+      "calories": 520,
+      "protein": 47,
+      "carbs": 7,
+      "fat": 35,
+      "servingLabel": "1 whole menu item/order (size in name)"
+    },
+    {
+      "id": "caesar-wings-bbq-1-whole-menu-item-order-size-in-name",
+      "name": "Caesar Wings - BBQ",
+      "calories": 620,
+      "protein": 48,
+      "carbs": 32,
+      "fat": 35,
+      "servingLabel": "1 whole menu item/order (size in name)"
+    },
+    {
+      "id": "caesar-wings-garlic-parmesan-1-whole-menu-item-order-size-in-name",
+      "name": "Caesar Wings - Garlic Parmesan",
+      "calories": 670,
+      "protein": 49,
+      "carbs": 5,
+      "fat": 51,
+      "servingLabel": "1 whole menu item/order (size in name)"
+    },
+    {
+      "id": "caesar-wings-cheezy-jalapeno-1-whole-menu-item-order-size-in-name",
+      "name": "Caesar Wings - Cheezy Jalapeño",
+      "calories": 210,
+      "protein": 1,
+      "carbs": 3,
+      "fat": 21,
+      "servingLabel": "1 whole menu item/order (size in name)"
+    },
+    {
+      "id": "caesar-wings-ranch-1-whole-menu-item-order-size-in-name",
+      "name": "Caesar Wings - Ranch",
+      "calories": 230,
+      "protein": 2,
+      "carbs": 4,
+      "fat": 23,
+      "servingLabel": "1 whole menu item/order (size in name)"
+    },
+    {
+      "id": "caesar-wings-buffalo-ranch-1-whole-menu-item-order-size-in-name",
+      "name": "Caesar Wings - Buffalo Ranch",
+      "calories": 230,
+      "protein": 1,
+      "carbs": 4,
+      "fat": 23,
+      "servingLabel": "1 whole menu item/order (size in name)"
+    },
+    {
+      "id": "caesar-wings-butter-garlic-flavor-1-whole-menu-item-order-size-in-name",
+      "name": "Caesar Wings - Butter Garlic Flavor",
+      "calories": 370,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 42,
+      "servingLabel": "1 whole menu item/order (size in name)"
+    },
+    {
+      "id": "caesar-wings-cheddar-cheese-sauce-at-participating-locations-1-whole-menu-item-order-size-in-name",
+      "name": "Caesar Wings - Cheddar Cheese Sauce — at participating locations",
+      "calories": 110,
+      "protein": 4,
+      "carbs": 7,
+      "fat": 8,
+      "servingLabel": "1 whole menu item/order (size in name)"
+    },
+    {
+      "id": "thin-crust-pizzas-pepperoni-1-whole-pizza",
+      "name": "Thin Crust Pizzas - Pepperoni",
+      "calories": 2130,
+      "protein": 94,
+      "carbs": 148,
+      "fat": 128,
+      "servingLabel": "1 whole pizza"
+    },
+    {
+      "id": "thin-crust-pizzas-cheese-1-whole-pizza",
+      "name": "Thin Crust Pizzas - Cheese",
+      "calories": 1980,
+      "protein": 99,
+      "carbs": 150,
+      "fat": 109,
+      "servingLabel": "1 whole pizza"
+    },
+    {
+      "id": "make-it-stuffed-crust-add-stuffed-crust-to-any-round-pizza-1-whole-menu-item-order-size-in-name",
+      "name": "Make It Stuffed Crust - Add Stuffed Crust to any round pizza",
+      "calories": 560,
+      "protein": 29,
+      "carbs": 8,
+      "fat": 46,
+      "servingLabel": "1 whole menu item/order (size in name)"
+    },
+    {
+      "id": "make-it-stuffed-crust-add-stuffed-crust-to-any-detroit-style-deep-dish-1-whole-menu-item-order-size-in-name",
+      "name": "Make It Stuffed Crust - Add Stuffed Crust to any Detroit-Style Deep Dish",
+      "calories": 530,
+      "protein": 33,
+      "carbs": 9,
+      "fat": 40,
+      "servingLabel": "1 whole menu item/order (size in name)"
+    },
+    {
+      "id": "toppings-base-pizza-1-whole-menu-item-order-size-in-name",
+      "name": "Toppings - Base Pizza",
+      "calories": 1950,
+      "protein": 95,
+      "carbs": 248,
+      "fat": 65,
+      "servingLabel": "1 whole menu item/order (size in name)"
+    },
+    {
+      "id": "toppings-pepperoni-1-whole-menu-item-order-size-in-name",
+      "name": "Toppings - Pepperoni",
+      "calories": 350,
+      "protein": 13,
+      "carbs": 2,
+      "fat": 32,
+      "servingLabel": "1 whole menu item/order (size in name)"
+    },
+    {
+      "id": "toppings-bacon-1-whole-menu-item-order-size-in-name",
+      "name": "Toppings - Bacon",
+      "calories": 380,
+      "protein": 16,
+      "carbs": 0,
+      "fat": 35,
+      "servingLabel": "1 whole menu item/order (size in name)"
+    },
+    {
+      "id": "toppings-seasoned-beef-1-whole-menu-item-order-size-in-name",
+      "name": "Toppings - Seasoned Beef",
+      "calories": 330,
+      "protein": 16,
+      "carbs": 1,
+      "fat": 28,
+      "servingLabel": "1 whole menu item/order (size in name)"
+    },
+    {
+      "id": "toppings-italian-sausage-1-whole-menu-item-order-size-in-name",
+      "name": "Toppings - Italian Sausage",
+      "calories": 430,
+      "protein": 19,
+      "carbs": 2,
+      "fat": 38,
+      "servingLabel": "1 whole menu item/order (size in name)"
+    },
+    {
+      "id": "toppings-smoky-ham-1-whole-menu-item-order-size-in-name",
+      "name": "Toppings - Smoky Ham",
+      "calories": 140,
+      "protein": 26,
+      "carbs": 3,
+      "fat": 4.5,
+      "servingLabel": "1 whole menu item/order (size in name)"
+    },
+    {
+      "id": "toppings-green-peppers-1-whole-menu-item-order-size-in-name",
+      "name": "Toppings - Green Peppers",
+      "calories": 20,
+      "protein": 1,
+      "carbs": 4,
+      "fat": 0,
+      "servingLabel": "1 whole menu item/order (size in name)"
+    },
+    {
+      "id": "toppings-onions-1-whole-menu-item-order-size-in-name",
+      "name": "Toppings - Onions",
+      "calories": 35,
+      "protein": 1,
+      "carbs": 8,
+      "fat": 0,
+      "servingLabel": "1 whole menu item/order (size in name)"
+    },
+    {
+      "id": "toppings-mushrooms-canned-1-whole-menu-item-order-size-in-name",
+      "name": "Toppings - Mushrooms, canned",
+      "calories": 40,
+      "protein": 2,
+      "carbs": 7,
+      "fat": 0,
+      "servingLabel": "1 whole menu item/order (size in name)"
+    },
+    {
+      "id": "toppings-mushrooms-fresh-1-whole-menu-item-order-size-in-name",
+      "name": "Toppings - Mushrooms, fresh",
+      "calories": 35,
+      "protein": 5,
+      "carbs": 5,
+      "fat": 0.5,
+      "servingLabel": "1 whole menu item/order (size in name)"
+    },
+    {
+      "id": "toppings-black-olives-1-whole-menu-item-order-size-in-name",
+      "name": "Toppings - Black Olives",
+      "calories": 280,
+      "protein": 1,
+      "carbs": 4,
+      "fat": 24,
+      "servingLabel": "1 whole menu item/order (size in name)"
+    },
+    {
+      "id": "toppings-jalapeno-peppers-1-whole-menu-item-order-size-in-name",
+      "name": "Toppings - Jalapeño Peppers",
+      "calories": 80,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 6,
+      "servingLabel": "1 whole menu item/order (size in name)"
+    },
+    {
+      "id": "toppings-mild-banana-peppers-1-whole-menu-item-order-size-in-name",
+      "name": "Toppings - Mild Banana Peppers",
+      "calories": 50,
+      "protein": 0,
+      "carbs": 7,
+      "fat": 0,
+      "servingLabel": "1 whole menu item/order (size in name)"
+    },
+    {
+      "id": "toppings-pineapple-1-whole-menu-item-order-size-in-name",
+      "name": "Toppings - Pineapple",
+      "calories": 90,
+      "protein": 0,
+      "carbs": 22,
+      "fat": 0,
+      "servingLabel": "1 whole menu item/order (size in name)"
+    },
+    {
+      "id": "toppings-extra-cheese-1-whole-menu-item-order-size-in-name",
+      "name": "Toppings - Extra Cheese",
+      "calories": 270,
+      "protein": 21,
+      "carbs": 4,
+      "fat": 19,
+      "servingLabel": "1 whole menu item/order (size in name)"
+    },
+    {
+      "id": "toppings-fresh-mozzarella-1-whole-menu-item-order-size-in-name",
+      "name": "Toppings - Fresh Mozzarella",
+      "calories": 200,
+      "protein": 15,
+      "carbs": 2,
+      "fat": 15,
+      "servingLabel": "1 whole menu item/order (size in name)"
+    },
+    {
+      "id": "custom-detroit-style-deep-dish-1-3-toppings-add-calories-to-base-pizza-base-pizza-1-whole-menu-item-order-size-in-name",
+      "name": "Custom Detroit-Style Deep Dish (1-3 Toppings). Add Calories To Base Pizza - Base Pizza",
+      "calories": 2500,
+      "protein": 118,
+      "carbs": 317,
+      "fat": 85,
+      "servingLabel": "1 whole menu item/order (size in name)"
+    },
+    {
+      "id": "custom-detroit-style-deep-dish-1-3-toppings-add-calories-to-base-pizza-pepperoni-1-whole-menu-item-order-size-in-name",
+      "name": "Custom Detroit-Style Deep Dish (1-3 Toppings). Add Calories To Base Pizza - Pepperoni",
+      "calories": 280,
+      "protein": 11,
+      "carbs": 2,
+      "fat": 26,
+      "servingLabel": "1 whole menu item/order (size in name)"
+    },
+    {
+      "id": "custom-detroit-style-deep-dish-1-3-toppings-add-calories-to-base-pizza-bacon-1-whole-menu-item-order-size-in-name",
+      "name": "Custom Detroit-Style Deep Dish (1-3 Toppings). Add Calories To Base Pizza - Bacon",
+      "calories": 380,
+      "protein": 16,
+      "carbs": 0,
+      "fat": 35,
+      "servingLabel": "1 whole menu item/order (size in name)"
+    },
+    {
+      "id": "custom-detroit-style-deep-dish-1-3-toppings-add-calories-to-base-pizza-seasoned-beef-1-whole-menu-item-order-size-in-name",
+      "name": "Custom Detroit-Style Deep Dish (1-3 Toppings). Add Calories To Base Pizza - Seasoned Beef",
+      "calories": 250,
+      "protein": 12,
+      "carbs": 1,
+      "fat": 22,
+      "servingLabel": "1 whole menu item/order (size in name)"
+    },
+    {
+      "id": "custom-detroit-style-deep-dish-1-3-toppings-add-calories-to-base-pizza-italian-sausage-1-whole-menu-item-order-size-in-name",
+      "name": "Custom Detroit-Style Deep Dish (1-3 Toppings). Add Calories To Base Pizza - Italian Sausage",
+      "calories": 330,
+      "protein": 15,
+      "carbs": 2,
+      "fat": 29,
+      "servingLabel": "1 whole menu item/order (size in name)"
+    },
+    {
+      "id": "custom-detroit-style-deep-dish-1-3-toppings-add-calories-to-base-pizza-smoky-ham-1-whole-menu-item-order-size-in-name",
+      "name": "Custom Detroit-Style Deep Dish (1-3 Toppings). Add Calories To Base Pizza - Smoky Ham",
+      "calories": 110,
+      "protein": 19,
+      "carbs": 2,
+      "fat": 3,
+      "servingLabel": "1 whole menu item/order (size in name)"
+    },
+    {
+      "id": "custom-detroit-style-deep-dish-1-3-toppings-add-calories-to-base-pizza-green-peppers-1-whole-menu-item-order-size-in-name",
+      "name": "Custom Detroit-Style Deep Dish (1-3 Toppings). Add Calories To Base Pizza - Green Peppers",
+      "calories": 15,
+      "protein": 1,
+      "carbs": 3,
+      "fat": 0,
+      "servingLabel": "1 whole menu item/order (size in name)"
+    },
+    {
+      "id": "custom-detroit-style-deep-dish-1-3-toppings-add-calories-to-base-pizza-onions-1-whole-menu-item-order-size-in-name",
+      "name": "Custom Detroit-Style Deep Dish (1-3 Toppings). Add Calories To Base Pizza - Onions",
+      "calories": 25,
+      "protein": 1,
+      "carbs": 6,
+      "fat": 0,
+      "servingLabel": "1 whole menu item/order (size in name)"
+    },
+    {
+      "id": "custom-detroit-style-deep-dish-1-3-toppings-add-calories-to-base-pizza-mushrooms-canned-1-whole-menu-item-order-size-in-name",
+      "name": "Custom Detroit-Style Deep Dish (1-3 Toppings). Add Calories To Base Pizza - Mushrooms, canned",
+      "calories": 40,
+      "protein": 2,
+      "carbs": 7,
+      "fat": 0,
+      "servingLabel": "1 whole menu item/order (size in name)"
+    },
+    {
+      "id": "custom-detroit-style-deep-dish-1-3-toppings-add-calories-to-base-pizza-mushrooms-fresh-1-whole-menu-item-order-size-in-name",
+      "name": "Custom Detroit-Style Deep Dish (1-3 Toppings). Add Calories To Base Pizza - Mushrooms, fresh",
+      "calories": 35,
+      "protein": 5,
+      "carbs": 5,
+      "fat": 0.5,
+      "servingLabel": "1 whole menu item/order (size in name)"
+    },
+    {
+      "id": "custom-detroit-style-deep-dish-1-3-toppings-add-calories-to-base-pizza-black-olives-1-whole-menu-item-order-size-in-name",
+      "name": "Custom Detroit-Style Deep Dish (1-3 Toppings). Add Calories To Base Pizza - Black Olives",
+      "calories": 210,
+      "protein": 1,
+      "carbs": 3,
+      "fat": 17,
+      "servingLabel": "1 whole menu item/order (size in name)"
+    },
+    {
+      "id": "custom-detroit-style-deep-dish-1-3-toppings-add-calories-to-base-pizza-jalapeno-peppers-1-whole-menu-item-order-size-in-name",
+      "name": "Custom Detroit-Style Deep Dish (1-3 Toppings). Add Calories To Base Pizza - Jalapeño Peppers",
+      "calories": 60,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 4.5,
+      "servingLabel": "1 whole menu item/order (size in name)"
+    },
+    {
+      "id": "custom-detroit-style-deep-dish-1-3-toppings-add-calories-to-base-pizza-mild-banana-peppers-1-whole-menu-item-order-size-in-name",
+      "name": "Custom Detroit-Style Deep Dish (1-3 Toppings). Add Calories To Base Pizza - Mild Banana Peppers",
+      "calories": 35,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 0,
+      "servingLabel": "1 whole menu item/order (size in name)"
+    },
+    {
+      "id": "custom-detroit-style-deep-dish-1-3-toppings-add-calories-to-base-pizza-pineapple-1-whole-menu-item-order-size-in-name",
+      "name": "Custom Detroit-Style Deep Dish (1-3 Toppings). Add Calories To Base Pizza - Pineapple",
+      "calories": 90,
+      "protein": 0,
+      "carbs": 22,
+      "fat": 0,
+      "servingLabel": "1 whole menu item/order (size in name)"
+    },
+    {
+      "id": "custom-detroit-style-deep-dish-1-3-toppings-add-calories-to-base-pizza-extra-cheese-1-whole-menu-item-order-size-in-name",
+      "name": "Custom Detroit-Style Deep Dish (1-3 Toppings). Add Calories To Base Pizza - Extra Cheese",
+      "calories": 270,
+      "protein": 21,
+      "carbs": 4,
+      "fat": 19,
+      "servingLabel": "1 whole menu item/order (size in name)"
+    },
+    {
+      "id": "custom-detroit-style-deep-dish-1-3-toppings-add-calories-to-base-pizza-fresh-mozzarella-1-whole-menu-item-order-size-in-name",
+      "name": "Custom Detroit-Style Deep Dish (1-3 Toppings). Add Calories To Base Pizza - Fresh Mozzarella",
+      "calories": 200,
+      "protein": 15,
+      "carbs": 2,
+      "fat": 15,
+      "servingLabel": "1 whole menu item/order (size in name)"
+    }
+  ]
+}

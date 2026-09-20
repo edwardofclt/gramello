@@ -1,0 +1,1302 @@
+{
+  "chain": "Cinnabon",
+  "sourceUrl": "https://assets.ctfassets.net/zqt8tllj2cy0/4CpaeuI6NC7VIT1noT7k78/3ea53d856d3d85ac02833bad8cde8fae/Nutritional_Guide_DOMESTIC_W2_2026_rev_7.2.pdf",
+  "sourceKind": "restaurant",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "name": "Classic Roll",
+      "calories": 880,
+      "fat": 37,
+      "carbs": 129,
+      "protein": 12,
+      "servingLabel": "1 Roll",
+      "id": "classic-roll-1-roll"
+    },
+    {
+      "name": "Caramel Pecanbon®",
+      "calories": 1090,
+      "fat": 51,
+      "carbs": 149,
+      "protein": 14,
+      "servingLabel": "1 Roll",
+      "id": "caramel-pecanbon-1-roll"
+    },
+    {
+      "name": "TurtleBon Classic Roll",
+      "calories": 1100,
+      "fat": 53,
+      "carbs": 149,
+      "protein": 15,
+      "servingLabel": "1 Roll",
+      "id": "turtlebon-classic-roll-1-roll"
+    },
+    {
+      "name": "Caramel Lover's Classic Roll",
+      "calories": 1000,
+      "fat": 41,
+      "carbs": 147,
+      "protein": 13,
+      "servingLabel": "1 Roll",
+      "id": "caramel-lovers-classic-roll-1-roll"
+    },
+    {
+      "name": "OREO®Bon Classic Roll",
+      "calories": 1080,
+      "fat": 44,
+      "carbs": 162,
+      "protein": 14,
+      "servingLabel": "1 Roll",
+      "id": "oreobon-classic-roll-1-roll"
+    },
+    {
+      "name": "Cotton Candy Crunch Topped Classic Roll",
+      "calories": 1010,
+      "fat": 43,
+      "carbs": 145,
+      "protein": 13,
+      "servingLabel": "1 Roll",
+      "id": "cotton-candy-crunch-topped-classic-roll-1-roll"
+    },
+    {
+      "name": "Minibon® Roll",
+      "calories": 350,
+      "fat": 15,
+      "carbs": 52,
+      "protein": 5,
+      "servingLabel": "1 Roll",
+      "id": "minibon-roll-1-roll"
+    },
+    {
+      "name": "Caramel Pecanbon MiniBon® Roll",
+      "calories": 460,
+      "fat": 22,
+      "carbs": 62,
+      "protein": 6,
+      "servingLabel": "1 Roll",
+      "id": "caramel-pecanbon-minibon-roll-1-roll"
+    },
+    {
+      "name": "TurtleBon MiniBon® Roll",
+      "calories": 470,
+      "fat": 23,
+      "carbs": 62,
+      "protein": 7,
+      "servingLabel": "1 Roll",
+      "id": "turtlebon-minibon-roll-1-roll"
+    },
+    {
+      "name": "Caramel Lover's MiniBon® Roll",
+      "calories": 410,
+      "fat": 17,
+      "carbs": 61,
+      "protein": 5,
+      "servingLabel": "1 Roll",
+      "id": "caramel-lovers-minibon-roll-1-roll"
+    },
+    {
+      "name": "OREO®Bon MiniBon® Roll",
+      "calories": 450,
+      "fat": 18,
+      "carbs": 68,
+      "protein": 6,
+      "servingLabel": "1 Roll",
+      "id": "oreobon-minibon-roll-1-roll"
+    },
+    {
+      "name": "Cotton Candy Crunch Topped MiniBon® Roll",
+      "calories": 440,
+      "fat": 19,
+      "carbs": 62,
+      "protein": 5,
+      "servingLabel": "1 Roll",
+      "id": "cotton-candy-crunch-topped-minibon-roll-1-roll"
+    },
+    {
+      "name": "BonBites™, 4ct",
+      "calories": 410,
+      "fat": 17,
+      "carbs": 58,
+      "protein": 5,
+      "servingLabel": "4 Rolls",
+      "id": "bonbitestm-4ct-4-rolls"
+    },
+    {
+      "name": "Caramel Pecanbon® BonBites™, 4ct",
+      "calories": 560,
+      "fat": 30,
+      "carbs": 67,
+      "protein": 7,
+      "servingLabel": "4 Rolls",
+      "id": "caramel-pecanbon-bonbitestm-4ct-4-rolls"
+    },
+    {
+      "name": "TurtleBon BonBites™, 4ct",
+      "calories": 590,
+      "fat": 33,
+      "carbs": 69,
+      "protein": 7,
+      "servingLabel": "4 Rolls",
+      "id": "turtlebon-bonbitestm-4ct-4-rolls"
+    },
+    {
+      "name": "Caramel Lover's BonBites™, 4ct",
+      "calories": 470,
+      "fat": 20,
+      "carbs": 67,
+      "protein": 5,
+      "servingLabel": "4 Rolls",
+      "id": "caramel-lovers-bonbitestm-4ct-4-rolls"
+    },
+    {
+      "name": "OREOBon BonBites™, 4ct",
+      "calories": 530,
+      "fat": 22,
+      "carbs": 78,
+      "protein": 7,
+      "servingLabel": "4 Rolls",
+      "id": "oreobon-bonbitestm-4ct-4-rolls"
+    },
+    {
+      "name": "Cotton Candy Crunch Topped BonBites™, 4ct",
+      "calories": 510,
+      "fat": 22,
+      "carbs": 71,
+      "protein": 6,
+      "servingLabel": "4 Rolls",
+      "id": "cotton-candy-crunch-topped-bonbitestm-4ct-4-rolls"
+    },
+    {
+      "name": "Center of the Roll - Classic",
+      "calories": 760,
+      "fat": 34,
+      "carbs": 106,
+      "protein": 9,
+      "servingLabel": "1 Bowl",
+      "id": "center-of-the-roll-classic-1-bowl"
+    },
+    {
+      "name": "Center of the Roll - Caramel Pecanbon®",
+      "calories": 860,
+      "fat": 44,
+      "carbs": 108,
+      "protein": 10,
+      "servingLabel": "1 Bowl",
+      "id": "center-of-the-roll-caramel-pecanbon-1-bowl"
+    },
+    {
+      "name": "Center of the Roll - TurtleBon",
+      "calories": 990,
+      "fat": 51,
+      "carbs": 126,
+      "protein": 11,
+      "servingLabel": "1 Bowl",
+      "id": "center-of-the-roll-turtlebon-1-bowl"
+    },
+    {
+      "name": "Center of the Roll - Caramel Lover's",
+      "calories": 870,
+      "fat": 38,
+      "carbs": 124,
+      "protein": 9,
+      "servingLabel": "1 Bowl",
+      "id": "center-of-the-roll-caramel-lovers-1-bowl"
+    },
+    {
+      "name": "Center of the Roll - OREO®Bon",
+      "calories": 950,
+      "fat": 41,
+      "carbs": 137,
+      "protein": 11,
+      "servingLabel": "1 Bowl",
+      "id": "center-of-the-roll-oreobon-1-bowl"
+    },
+    {
+      "name": "Center of the Roll - Cotton Candy Crunch Topped",
+      "calories": 890,
+      "fat": 40,
+      "carbs": 122,
+      "protein": 9,
+      "servingLabel": "1 Bowl",
+      "id": "center-of-the-roll-cotton-candy-crunch-topped-1-bowl"
+    },
+    {
+      "name": "Churro Stick, unfilled, 1 ct",
+      "calories": 210,
+      "fat": 9,
+      "carbs": 27,
+      "protein": 4,
+      "servingLabel": "1 Stick",
+      "id": "churro-stick-unfilled-1-ct-1-stick"
+    },
+    {
+      "name": "CinnaSweeties™ 5 ct",
+      "calories": 250,
+      "fat": 13,
+      "carbs": 32,
+      "protein": 3,
+      "servingLabel": "5 Sweeties",
+      "id": "cinnasweetiestm-5-ct-5-sweeties"
+    },
+    {
+      "name": "CinnaSweeties™ 5 ct - Cotton Candy Crunch Topped",
+      "calories": 360,
+      "fat": 17,
+      "carbs": 48,
+      "protein": 4,
+      "servingLabel": "5 Sweeties",
+      "id": "cinnasweetiestm-5-ct-cotton-candy-crunch-topped-5-sweeties"
+    },
+    {
+      "name": "CinnaSweeties™ 10 ct",
+      "calories": 500,
+      "fat": 25,
+      "carbs": 63,
+      "protein": 7,
+      "servingLabel": "10 Sweeties",
+      "id": "cinnasweetiestm-10-ct-10-sweeties"
+    },
+    {
+      "name": "Cookie Bonbite, 1 ct",
+      "calories": 260,
+      "fat": 12,
+      "carbs": 38,
+      "protein": 3,
+      "servingLabel": "1 Cookie",
+      "id": "cookie-bonbite-1-ct-1-cookie"
+    },
+    {
+      "name": "Cookie BonBite Frosting Sandwich",
+      "calories": 590,
+      "fat": 27,
+      "carbs": 83,
+      "protein": 7,
+      "servingLabel": "1 Sandwich",
+      "id": "cookie-bonbite-frosting-sandwich-1-sandwich"
+    },
+    {
+      "name": "Frosting pint",
+      "calories": 110,
+      "fat": 7,
+      "carbs": 12,
+      "protein": 0,
+      "servingLabel": "1 fl. oz",
+      "id": "frosting-pint-1-fl-oz"
+    },
+    {
+      "name": "Topping Cup ,Cinnabon® Cream Cheese Frosting",
+      "calories": 220,
+      "fat": 14,
+      "carbs": 24,
+      "protein": 1,
+      "servingLabel": "1 Container",
+      "id": "topping-cup-cinnabon-cream-cheese-frosting-1-container"
+    },
+    {
+      "name": "Topping Cup, Cinnabon® Caramel Frosting",
+      "calories": 210,
+      "fat": 9,
+      "carbs": 31,
+      "protein": 1,
+      "servingLabel": "1 Container",
+      "id": "topping-cup-cinnabon-caramel-frosting-1-container"
+    },
+    {
+      "name": "Topping Cup, Cinnabon® Caramel Topping",
+      "calories": 240,
+      "fat": 8,
+      "carbs": 42,
+      "protein": 1,
+      "servingLabel": "1 Container",
+      "id": "topping-cup-cinnabon-caramel-topping-1-container"
+    },
+    {
+      "name": "Topping Cup, Cinnabon® Chocolate Sauce",
+      "calories": 130,
+      "fat": 1,
+      "carbs": 33,
+      "protein": 2,
+      "servingLabel": "1 Container",
+      "id": "topping-cup-cinnabon-chocolate-sauce-1-container"
+    },
+    {
+      "name": "Topping Cup, Cinnabon® Pecans",
+      "calories": 170,
+      "fat": 17,
+      "carbs": 3,
+      "protein": 2,
+      "servingLabel": "1 Container",
+      "id": "topping-cup-cinnabon-pecans-1-container"
+    },
+    {
+      "name": "Topping Cup, OREO® Cookie Pieces",
+      "calories": 110,
+      "fat": 5,
+      "carbs": 17,
+      "protein": 1,
+      "servingLabel": "1 Container",
+      "id": "topping-cup-oreo-cookie-pieces-1-container"
+    },
+    {
+      "name": "Topping Cup, Strawberry Puree",
+      "calories": 170,
+      "fat": 0,
+      "carbs": 41,
+      "protein": 0,
+      "servingLabel": "1 Container",
+      "id": "topping-cup-strawberry-puree-1-container"
+    },
+    {
+      "name": "Classic CinnaPack®",
+      "calories": 940,
+      "fat": 41,
+      "carbs": 136,
+      "protein": 13,
+      "servingLabel": "1 Roll",
+      "id": "classic-cinnapack-1-roll"
+    },
+    {
+      "name": "Caramel Pecanbon® Classic CinnaPack®",
+      "calories": 1160,
+      "fat": 55,
+      "carbs": 156,
+      "protein": 14,
+      "servingLabel": "1 Roll",
+      "id": "caramel-pecanbon-classic-cinnapack-1-roll"
+    },
+    {
+      "name": "TurtleBon Classic CinnaPack®",
+      "calories": 1160,
+      "fat": 55,
+      "carbs": 156,
+      "protein": 15,
+      "servingLabel": "1 Roll",
+      "id": "turtlebon-classic-cinnapack-1-roll"
+    },
+    {
+      "name": "Caramel Lover's Classic CinnaPack®",
+      "calories": 1050,
+      "fat": 43,
+      "carbs": 154,
+      "protein": 13,
+      "servingLabel": "1 Roll",
+      "id": "caramel-lovers-classic-cinnapack-1-roll"
+    },
+    {
+      "name": "Oreo®Bon Classic CinnaPack®",
+      "calories": 1130,
+      "fat": 45,
+      "carbs": 169,
+      "protein": 15,
+      "servingLabel": "1 Roll",
+      "id": "oreobon-classic-cinnapack-1-roll"
+    },
+    {
+      "name": "Minibon® CinnaPack®",
+      "calories": 380,
+      "fat": 17,
+      "carbs": 55,
+      "protein": 5,
+      "servingLabel": "1 Roll",
+      "id": "minibon-cinnapack-1-roll"
+    },
+    {
+      "name": "Caramel Pecanbon® MiniBon® CinnaPack®",
+      "calories": 490,
+      "fat": 24,
+      "carbs": 65,
+      "protein": 6,
+      "servingLabel": "1 Roll",
+      "id": "caramel-pecanbon-minibon-cinnapack-1-roll"
+    },
+    {
+      "name": "TurtleBon MiniBon® CinnaPack®",
+      "calories": 490,
+      "fat": 24,
+      "carbs": 65,
+      "protein": 6,
+      "servingLabel": "1 Roll",
+      "id": "turtlebon-minibon-cinnapack-1-roll"
+    },
+    {
+      "name": "Caramel Lover's MiniBon® CinnaPack®",
+      "calories": 440,
+      "fat": 18,
+      "carbs": 64,
+      "protein": 5,
+      "servingLabel": "1 Roll",
+      "id": "caramel-lovers-minibon-cinnapack-1-roll"
+    },
+    {
+      "name": "Oreo®Bon MiniBon® CinnaPack®",
+      "calories": 480,
+      "fat": 19,
+      "carbs": 71,
+      "protein": 6,
+      "servingLabel": "1 Roll",
+      "id": "oreobon-minibon-cinnapack-1-roll"
+    },
+    {
+      "name": "BonBites™ CinnaPack®",
+      "calories": 460,
+      "fat": 21,
+      "carbs": 63,
+      "protein": 5,
+      "servingLabel": "4 Rolls",
+      "id": "bonbitestm-cinnapack-4-rolls"
+    },
+    {
+      "name": "Caramel Pecanbon® BonBites™ CinnaPack®",
+      "calories": 600,
+      "fat": 32,
+      "carbs": 73,
+      "protein": 7,
+      "servingLabel": "4 Rolls",
+      "id": "caramel-pecanbon-bonbitestm-cinnapack-4-rolls"
+    },
+    {
+      "name": "TurtleBon BonBites™ CinnaPack®",
+      "calories": 640,
+      "fat": 36,
+      "carbs": 74,
+      "protein": 9,
+      "servingLabel": "4 Rolls",
+      "id": "turtlebon-bonbitestm-cinnapack-4-rolls"
+    },
+    {
+      "name": "Caramel Lover's BonBites™ CinnaPack®",
+      "calories": 510,
+      "fat": 22,
+      "carbs": 72,
+      "protein": 7,
+      "servingLabel": "4 Rolls",
+      "id": "caramel-lovers-bonbitestm-cinnapack-4-rolls"
+    },
+    {
+      "name": "Oreo®Bon BonBites™ CinnaPack®",
+      "calories": 630,
+      "fat": 27,
+      "carbs": 92,
+      "protein": 8,
+      "servingLabel": "4 Rolls",
+      "id": "oreobon-bonbitestm-cinnapack-4-rolls"
+    },
+    {
+      "name": "CinnaSweeties™ 1 ct",
+      "calories": 50,
+      "fat": 3,
+      "carbs": 7,
+      "protein": 1,
+      "servingLabel": "1 Sweetie",
+      "id": "cinnasweetiestm-1-ct-1-sweetie"
+    },
+    {
+      "name": "Churro Stick, unfilled, 1/2 ct",
+      "calories": 105,
+      "fat": 5,
+      "carbs": 14,
+      "protein": 2,
+      "servingLabel": "1/2 Stick",
+      "id": "churro-stick-unfilled-1-2-ct-1-2-stick"
+    },
+    {
+      "name": "BonBites™, 1ct",
+      "calories": 103,
+      "fat": 4,
+      "carbs": 15,
+      "protein": 1,
+      "servingLabel": "1 Roll",
+      "id": "bonbitestm-1ct-1-roll"
+    },
+    {
+      "name": "Classic MegaBon™",
+      "calories": 520,
+      "fat": 23,
+      "carbs": 73,
+      "protein": 6,
+      "servingLabel": "1/6th Roll",
+      "id": "classic-megabontm-1-6th-roll"
+    },
+    {
+      "name": "Turtle MegaBon™",
+      "calories": 590,
+      "fat": 27,
+      "carbs": 80,
+      "protein": 7,
+      "servingLabel": "1/6th Roll",
+      "id": "turtle-megabontm-1-6th-roll"
+    },
+    {
+      "name": "Caramel Lover's MegaBon™",
+      "calories": 550,
+      "fat": 23,
+      "carbs": 79,
+      "protein": 7,
+      "servingLabel": "1/6th Roll",
+      "id": "caramel-lovers-megabontm-1-6th-roll"
+    },
+    {
+      "name": "OREO® MegaBon™",
+      "calories": 560,
+      "fat": 23,
+      "carbs": 81,
+      "protein": 7,
+      "servingLabel": "1/6th Roll",
+      "id": "oreo-megabontm-1-6th-roll"
+    },
+    {
+      "name": "Caramel Pecan MegaBon™",
+      "calories": 600,
+      "fat": 28,
+      "carbs": 80,
+      "protein": 7,
+      "servingLabel": "1/6th Roll",
+      "id": "caramel-pecan-megabontm-1-6th-roll"
+    },
+    {
+      "name": "Birthday MegaBon™",
+      "calories": 520,
+      "fat": 23,
+      "carbs": 74,
+      "protein": 6,
+      "servingLabel": "1/6th Roll",
+      "id": "birthday-megabontm-1-6th-roll"
+    },
+    {
+      "name": "MochaLatta Chill®, 16 oz",
+      "calories": 340,
+      "fat": 13,
+      "carbs": 50,
+      "protein": 7,
+      "servingLabel": "16 fl. oz (Small)",
+      "id": "mochalatta-chill-16-oz-16-fl-oz-small"
+    },
+    {
+      "name": "MochaLatta Chill®, 24 oz",
+      "calories": 450,
+      "fat": 16,
+      "carbs": 69,
+      "protein": 10,
+      "servingLabel": "24 fl. oz (Reg)",
+      "id": "mochalatta-chill-24-oz-24-fl-oz-reg"
+    },
+    {
+      "name": "Classic Iced Lemonade, 16 oz",
+      "calories": 100,
+      "fat": 0,
+      "carbs": 25,
+      "protein": 0,
+      "servingLabel": "16 fl. oz (Small)",
+      "id": "classic-iced-lemonade-16-oz-16-fl-oz-small"
+    },
+    {
+      "name": "Classic Iced Lemonade, 24 oz",
+      "calories": 150,
+      "fat": 0,
+      "carbs": 37,
+      "protein": 0,
+      "servingLabel": "24 fl. oz (Reg)",
+      "id": "classic-iced-lemonade-24-oz-24-fl-oz-reg"
+    },
+    {
+      "name": "Raspberry Iced Lemonade, 16 oz",
+      "calories": 160,
+      "fat": 0,
+      "carbs": 38,
+      "protein": 0,
+      "servingLabel": "16 fl. oz (Small)",
+      "id": "raspberry-iced-lemonade-16-oz-16-fl-oz-small"
+    },
+    {
+      "name": "Raspberry Iced Lemonade, 24 oz",
+      "calories": 220,
+      "fat": 0,
+      "carbs": 54,
+      "protein": 0,
+      "servingLabel": "24 fl. oz (Reg)",
+      "id": "raspberry-iced-lemonade-24-oz-24-fl-oz-reg"
+    },
+    {
+      "name": "Cotton Candy Iced Lemonade, 16 oz",
+      "calories": 260,
+      "fat": 3,
+      "carbs": 57,
+      "protein": 1,
+      "servingLabel": "16 fl. oz (Small)",
+      "id": "cotton-candy-iced-lemonade-16-oz-16-fl-oz-small"
+    },
+    {
+      "name": "Cotton Candy Iced Lemonade, 24 oz",
+      "calories": 320,
+      "fat": 4,
+      "carbs": 74,
+      "protein": 1,
+      "servingLabel": "24 fl. oz (Reg)",
+      "id": "cotton-candy-iced-lemonade-24-oz-24-fl-oz-reg"
+    },
+    {
+      "name": "Classic Sparkling Lemonade, 16 oz",
+      "calories": 120,
+      "fat": 0,
+      "carbs": 31,
+      "protein": 0,
+      "servingLabel": "16 fl. oz (Small)",
+      "id": "classic-sparkling-lemonade-16-oz-16-fl-oz-small"
+    },
+    {
+      "name": "Classic Sparkling Lemonade, 24 oz",
+      "calories": 140,
+      "fat": 0,
+      "carbs": 37,
+      "protein": 0,
+      "servingLabel": "24 fl. oz (Reg)",
+      "id": "classic-sparkling-lemonade-24-oz-24-fl-oz-reg"
+    },
+    {
+      "name": "Raspberry Sparkling Lemonade, 16 oz",
+      "calories": 160,
+      "fat": 0,
+      "carbs": 41,
+      "protein": 0,
+      "servingLabel": "16 fl. oz (Small)",
+      "id": "raspberry-sparkling-lemonade-16-oz-16-fl-oz-small"
+    },
+    {
+      "name": "Raspberry Sparkling Lemonade, 24 oz",
+      "calories": 200,
+      "fat": 0,
+      "carbs": 51,
+      "protein": 0,
+      "servingLabel": "24 fl. oz (Reg)",
+      "id": "raspberry-sparkling-lemonade-24-oz-24-fl-oz-reg"
+    },
+    {
+      "name": "Vanilla Iced Cold Brew, 16 oz",
+      "calories": 110,
+      "fat": 2,
+      "carbs": 22,
+      "protein": 2,
+      "servingLabel": "16 fl. oz (Small)",
+      "id": "vanilla-iced-cold-brew-16-oz-16-fl-oz-small"
+    },
+    {
+      "name": "Vanilla Iced Cold Brew, 24 oz",
+      "calories": 170,
+      "fat": 3,
+      "carbs": 33,
+      "protein": 3,
+      "servingLabel": "24 fl. oz (Reg)",
+      "id": "vanilla-iced-cold-brew-24-oz-24-fl-oz-reg"
+    },
+    {
+      "name": "Cinnamon Roll Iced Cold Brew, 16 oz",
+      "calories": 120,
+      "fat": 2,
+      "carbs": 22,
+      "protein": 2,
+      "servingLabel": "16 fl. oz (Small)",
+      "id": "cinnamon-roll-iced-cold-brew-16-oz-16-fl-oz-small"
+    },
+    {
+      "name": "Cinnamon Roll Iced Cold Brew, 24 oz",
+      "calories": 170,
+      "fat": 3,
+      "carbs": 33,
+      "protein": 3,
+      "servingLabel": "24 fl. oz (Reg)",
+      "id": "cinnamon-roll-iced-cold-brew-24-oz-24-fl-oz-reg"
+    },
+    {
+      "name": "Cold Foam Topping",
+      "calories": 60,
+      "fat": 2.5,
+      "carbs": 9,
+      "protein": 0,
+      "servingLabel": "1 Serving",
+      "id": "cold-foam-topping-1-serving"
+    },
+    {
+      "name": "Classic Frozen Lemonade, 16 oz",
+      "calories": 250,
+      "fat": 0,
+      "carbs": 62,
+      "protein": 0,
+      "servingLabel": "16 fl. oz (Small)",
+      "id": "classic-frozen-lemonade-16-oz-16-fl-oz-small"
+    },
+    {
+      "name": "Classic Frozen Lemonade, 24 oz",
+      "calories": 310,
+      "fat": 0,
+      "carbs": 77,
+      "protein": 0,
+      "servingLabel": "24 fl. oz (Reg)",
+      "id": "classic-frozen-lemonade-24-oz-24-fl-oz-reg"
+    },
+    {
+      "name": "Raspberry Frozen Lemonade, 16 oz",
+      "calories": 290,
+      "fat": 0,
+      "carbs": 71,
+      "protein": 0,
+      "servingLabel": "16 fl. oz (Small)",
+      "id": "raspberry-frozen-lemonade-16-oz-16-fl-oz-small"
+    },
+    {
+      "name": "Raspberry Frozen Lemonade, 24 oz",
+      "calories": 390,
+      "fat": 0,
+      "carbs": 96,
+      "protein": 0,
+      "servingLabel": "24 fl. oz (Reg)",
+      "id": "raspberry-frozen-lemonade-24-oz-24-fl-oz-reg"
+    },
+    {
+      "name": "Vanilla Frozen Cold Brew, 16 oz",
+      "calories": 450,
+      "fat": 15,
+      "carbs": 73,
+      "protein": 6,
+      "servingLabel": "16 fl. oz (Small)",
+      "id": "vanilla-frozen-cold-brew-16-oz-16-fl-oz-small"
+    },
+    {
+      "name": "Vanilla Frozen Cold Brew, 24 oz",
+      "calories": 620,
+      "fat": 19,
+      "carbs": 105,
+      "protein": 9,
+      "servingLabel": "24 fl. oz (Reg)",
+      "id": "vanilla-frozen-cold-brew-24-oz-24-fl-oz-reg"
+    },
+    {
+      "name": "Cinnamon Roll Frozen Cold Brew, 16 oz",
+      "calories": 450,
+      "fat": 15,
+      "carbs": 73,
+      "protein": 6,
+      "servingLabel": "16 fl. oz (Small)",
+      "id": "cinnamon-roll-frozen-cold-brew-16-oz-16-fl-oz-small"
+    },
+    {
+      "name": "Cinnamon Roll Frozen Cold Brew, 24 oz",
+      "calories": 630,
+      "fat": 19,
+      "carbs": 105,
+      "protein": 9,
+      "servingLabel": "24 fl. oz (Reg)",
+      "id": "cinnamon-roll-frozen-cold-brew-24-oz-24-fl-oz-reg"
+    },
+    {
+      "name": "Strawberries & Cream Chillattas®, 16 oz",
+      "calories": 570,
+      "fat": 16,
+      "carbs": 101,
+      "protein": 8,
+      "servingLabel": "16 fl. oz (Small)",
+      "id": "strawberries-cream-chillattas-16-oz-16-fl-oz-small"
+    },
+    {
+      "name": "Strawberries & Cream Chillattas®, 24 oz",
+      "calories": 770,
+      "fat": 21,
+      "carbs": 137,
+      "protein": 11,
+      "servingLabel": "24 fl. oz (Reg)",
+      "id": "strawberries-cream-chillattas-24-oz-24-fl-oz-reg"
+    },
+    {
+      "name": "Double Chocolate Mocha Chilllattas®, 16 oz",
+      "calories": 350,
+      "fat": 13,
+      "carbs": 55,
+      "protein": 8,
+      "servingLabel": "16 fl. oz (Small)",
+      "id": "double-chocolate-mocha-chilllattas-16-oz-16-fl-oz-small"
+    },
+    {
+      "name": "Double Chocolate Mocha Chillattas®, 24 oz",
+      "calories": 460,
+      "fat": 15,
+      "carbs": 77,
+      "protein": 10,
+      "servingLabel": "24 fl. oz (Reg)",
+      "id": "double-chocolate-mocha-chillattas-24-oz-24-fl-oz-reg"
+    },
+    {
+      "name": "OREO® Cookies & Cream Chilllattas®, 16 oz",
+      "calories": 640,
+      "fat": 25,
+      "carbs": 96,
+      "protein": 9,
+      "servingLabel": "16 fl. oz (Small)",
+      "id": "oreo-cookies-cream-chilllattas-16-oz-16-fl-oz-small"
+    },
+    {
+      "name": "OREO® Cookies & Cream Chilllattas®, 24 oz",
+      "calories": 850,
+      "fat": 32,
+      "carbs": 130,
+      "protein": 13,
+      "servingLabel": "24 fl. oz (Reg)",
+      "id": "oreo-cookies-cream-chilllattas-24-oz-24-fl-oz-reg"
+    },
+    {
+      "name": "Cotton Candy Chilllattas®, 16 oz",
+      "calories": 650,
+      "fat": 25,
+      "carbs": 96,
+      "protein": 8,
+      "servingLabel": "16 fl. oz (Small)",
+      "id": "cotton-candy-chilllattas-16-oz-16-fl-oz-small"
+    },
+    {
+      "name": "Cotton Candy Chilllattas®, 24 oz",
+      "calories": 800,
+      "fat": 29,
+      "carbs": 121,
+      "protein": 10,
+      "servingLabel": "24 fl. oz (Reg)",
+      "id": "cotton-candy-chilllattas-24-oz-24-fl-oz-reg"
+    },
+    {
+      "name": "Coffee, 12 oz",
+      "calories": 5,
+      "fat": 0,
+      "carbs": 0,
+      "protein": 0,
+      "servingLabel": "12 fl. oz (Small)",
+      "id": "coffee-12-oz-12-fl-oz-small"
+    },
+    {
+      "name": "Coffee, 16 oz",
+      "calories": 5,
+      "fat": 0,
+      "carbs": 0,
+      "protein": 0,
+      "servingLabel": "16 fl. oz (Reg)",
+      "id": "coffee-16-oz-16-fl-oz-reg"
+    },
+    {
+      "name": "Coffee, 20 oz",
+      "calories": 5,
+      "fat": 0,
+      "carbs": 0,
+      "protein": 0,
+      "servingLabel": "20 fl. oz (Large)",
+      "id": "coffee-20-oz-20-fl-oz-large"
+    },
+    {
+      "name": "Hot Cocoa, 12 oz with Whipped Cream",
+      "calories": 290,
+      "fat": 11,
+      "carbs": 54,
+      "protein": 3,
+      "servingLabel": "12 fl. oz (Small)",
+      "id": "hot-cocoa-12-oz-with-whipped-cream-12-fl-oz-small"
+    },
+    {
+      "name": "Hot Cocoa, 16 oz with Whipped Cream",
+      "calories": 310,
+      "fat": 12,
+      "carbs": 55,
+      "protein": 3,
+      "servingLabel": "16 fl. oz (Reg)",
+      "id": "hot-cocoa-16-oz-with-whipped-cream-16-fl-oz-reg"
+    },
+    {
+      "name": "Americano, 12 oz",
+      "calories": 5,
+      "fat": 0,
+      "carbs": 1,
+      "protein": 0,
+      "servingLabel": "12 fl. oz (Small)",
+      "id": "americano-12-oz-12-fl-oz-small"
+    },
+    {
+      "name": "Americano, 16 oz",
+      "calories": 10,
+      "fat": 0,
+      "carbs": 2,
+      "protein": 0,
+      "servingLabel": "16 fl. oz (Reg)",
+      "id": "americano-16-oz-16-fl-oz-reg"
+    },
+    {
+      "name": "Americano, 20 oz",
+      "calories": 15,
+      "fat": 0,
+      "carbs": 3,
+      "protein": 0,
+      "servingLabel": "20 fl. oz (Large)",
+      "id": "americano-20-oz-20-fl-oz-large"
+    },
+    {
+      "name": "Cappuccino, 12 oz",
+      "calories": 110,
+      "fat": 6,
+      "carbs": 9,
+      "protein": 6,
+      "servingLabel": "12 fl. oz (Small)",
+      "id": "cappuccino-12-oz-12-fl-oz-small"
+    },
+    {
+      "name": "Cappuccino, 16 oz",
+      "calories": 140,
+      "fat": 7,
+      "carbs": 11,
+      "protein": 7,
+      "servingLabel": "16 fl. oz (Reg)",
+      "id": "cappuccino-16-oz-16-fl-oz-reg"
+    },
+    {
+      "name": "Cappuccino, 20 oz",
+      "calories": 160,
+      "fat": 8,
+      "carbs": 13,
+      "protein": 8,
+      "servingLabel": "20 fl. oz (Large)",
+      "id": "cappuccino-20-oz-20-fl-oz-large"
+    },
+    {
+      "name": "Cinnamon Roll Latte, 12 oz",
+      "calories": 170,
+      "fat": 6,
+      "carbs": 23,
+      "protein": 6,
+      "servingLabel": "12 fl. oz (Small)",
+      "id": "cinnamon-roll-latte-12-oz-12-fl-oz-small"
+    },
+    {
+      "name": "Cinnamon Roll Latte, 16 oz",
+      "calories": 200,
+      "fat": 7,
+      "carbs": 29,
+      "protein": 7,
+      "servingLabel": "16 fl. oz (Reg)",
+      "id": "cinnamon-roll-latte-16-oz-16-fl-oz-reg"
+    },
+    {
+      "name": "Cinnamon Roll Latte, 20 oz",
+      "calories": 240,
+      "fat": 8,
+      "carbs": 36,
+      "protein": 8,
+      "servingLabel": "20 fl. oz (Large)",
+      "id": "cinnamon-roll-latte-20-oz-20-fl-oz-large"
+    },
+    {
+      "name": "Latte, 12 oz",
+      "calories": 110,
+      "fat": 6,
+      "carbs": 9,
+      "protein": 6,
+      "servingLabel": "12 fl. oz (Small)",
+      "id": "latte-12-oz-12-fl-oz-small"
+    },
+    {
+      "name": "Latte, 16 oz",
+      "calories": 140,
+      "fat": 7,
+      "carbs": 11,
+      "protein": 7,
+      "servingLabel": "16 fl. oz (Reg)",
+      "id": "latte-16-oz-16-fl-oz-reg"
+    },
+    {
+      "name": "Latte, 20 oz",
+      "calories": 160,
+      "fat": 8,
+      "carbs": 13,
+      "protein": 8,
+      "servingLabel": "20 fl. oz (Large)",
+      "id": "latte-20-oz-20-fl-oz-large"
+    },
+    {
+      "name": "Macchiato, 12 oz",
+      "calories": 110,
+      "fat": 6,
+      "carbs": 9,
+      "protein": 6,
+      "servingLabel": "12 fl. oz (Small)",
+      "id": "macchiato-12-oz-12-fl-oz-small"
+    },
+    {
+      "name": "Macchiato, 16 oz",
+      "calories": 140,
+      "fat": 7,
+      "carbs": 11,
+      "protein": 7,
+      "servingLabel": "16 fl. oz (Reg)",
+      "id": "macchiato-16-oz-16-fl-oz-reg"
+    },
+    {
+      "name": "Macchiato, 20 oz",
+      "calories": 160,
+      "fat": 8,
+      "carbs": 13,
+      "protein": 8,
+      "servingLabel": "20 fl. oz (Large)",
+      "id": "macchiato-20-oz-20-fl-oz-large"
+    },
+    {
+      "name": "Mocha, 12 oz",
+      "calories": 250,
+      "fat": 7,
+      "carbs": 44,
+      "protein": 8,
+      "servingLabel": "12 fl. oz (Small)",
+      "id": "mocha-12-oz-12-fl-oz-small"
+    },
+    {
+      "name": "Mocha, 16 oz",
+      "calories": 320,
+      "fat": 9,
+      "carbs": 57,
+      "protein": 10,
+      "servingLabel": "16 fl. oz (Reg)",
+      "id": "mocha-16-oz-16-fl-oz-reg"
+    },
+    {
+      "name": "Mocha, 20 oz",
+      "calories": 380,
+      "fat": 10,
+      "carbs": 71,
+      "protein": 12,
+      "servingLabel": "20 fl. oz (Large)",
+      "id": "mocha-20-oz-20-fl-oz-large"
+    },
+    {
+      "name": "Iced Americano, 16 oz",
+      "calories": 10,
+      "fat": 0,
+      "carbs": 2,
+      "protein": 0,
+      "servingLabel": "16 fl. oz (Small)",
+      "id": "iced-americano-16-oz-16-fl-oz-small"
+    },
+    {
+      "name": "Iced Americano, 24 oz",
+      "calories": 15,
+      "fat": 0,
+      "carbs": 2,
+      "protein": 0,
+      "servingLabel": "24 fl. oz (Reg)",
+      "id": "iced-americano-24-oz-24-fl-oz-reg"
+    },
+    {
+      "name": "Iced Latte, 16 oz",
+      "calories": 100,
+      "fat": 5,
+      "carbs": 8,
+      "protein": 5,
+      "servingLabel": "16 fl. oz (Small)",
+      "id": "iced-latte-16-oz-16-fl-oz-small"
+    },
+    {
+      "name": "Iced Latte, 24 oz",
+      "calories": 160,
+      "fat": 8,
+      "carbs": 13,
+      "protein": 8,
+      "servingLabel": "24 fl. oz (Reg)",
+      "id": "iced-latte-24-oz-24-fl-oz-reg"
+    },
+    {
+      "name": "Iced Macchiato, 16 oz",
+      "calories": 100,
+      "fat": 5,
+      "carbs": 8,
+      "protein": 5,
+      "servingLabel": "16 fl. oz (Small)",
+      "id": "iced-macchiato-16-oz-16-fl-oz-small"
+    },
+    {
+      "name": "Iced Macchiato, 24 oz",
+      "calories": 160,
+      "fat": 8,
+      "carbs": 13,
+      "protein": 8,
+      "servingLabel": "24 fl. oz (Reg)",
+      "id": "iced-macchiato-24-oz-24-fl-oz-reg"
+    },
+    {
+      "name": "Iced Mocha, 16 oz",
+      "calories": 210,
+      "fat": 5,
+      "carbs": 41,
+      "protein": 6,
+      "servingLabel": "16 fl. oz (Small)",
+      "id": "iced-mocha-16-oz-16-fl-oz-small"
+    },
+    {
+      "name": "Iced Mocha, 24 oz",
+      "calories": 300,
+      "fat": 8,
+      "carbs": 56,
+      "protein": 9,
+      "servingLabel": "24 fl. oz (Reg)",
+      "id": "iced-mocha-24-oz-24-fl-oz-reg"
+    },
+    {
+      "name": "Egg & Cheese Sandwich-with Cheese Roll",
+      "calories": 380,
+      "fat": 15,
+      "carbs": 42,
+      "protein": 17,
+      "servingLabel": "1 Sandwich",
+      "id": "egg-cheese-sandwich-with-cheese-roll-1-sandwich"
+    },
+    {
+      "name": "Sausage, Egg & Cheese Sandwich-with Cheese Roll",
+      "calories": 560,
+      "fat": 33,
+      "carbs": 42,
+      "protein": 21,
+      "servingLabel": "1 Sandwich",
+      "id": "sausage-egg-cheese-sandwich-with-cheese-roll-1-sandwich"
+    },
+    {
+      "name": "Bacon, Egg & Cheese Sandwich-with Cheese Roll",
+      "calories": 460,
+      "fat": 21,
+      "carbs": 42,
+      "protein": 23,
+      "servingLabel": "1 Sandwich",
+      "id": "bacon-egg-cheese-sandwich-with-cheese-roll-1-sandwich"
+    },
+    {
+      "name": "Egg & Cheese Sandwich-on Croissant",
+      "calories": 410,
+      "fat": 28,
+      "carbs": 27,
+      "protein": 11,
+      "servingLabel": "1 Sandwich",
+      "id": "egg-cheese-sandwich-on-croissant-1-sandwich"
+    },
+    {
+      "name": "Sausage, Egg & Cheese Sandwich-On Croissant",
+      "calories": 590,
+      "fat": 46,
+      "carbs": 27,
+      "protein": 15,
+      "servingLabel": "1 Sandwich",
+      "id": "sausage-egg-cheese-sandwich-on-croissant-1-sandwich"
+    },
+    {
+      "name": "Bacon, Egg & Cheese Sandwich-on Croissant",
+      "calories": 460,
+      "fat": 32,
+      "carbs": 27,
+      "protein": 14,
+      "servingLabel": "1 Sandwich",
+      "id": "bacon-egg-cheese-sandwich-on-croissant-1-sandwich"
+    },
+    {
+      "name": "Smoked Turkey Panini Sandwich -with Cheese Roll",
+      "calories": 530,
+      "fat": 24,
+      "carbs": 49,
+      "protein": 29,
+      "servingLabel": "1 Sandwich",
+      "id": "smoked-turkey-panini-sandwich-with-cheese-roll-1-sandwich"
+    },
+    {
+      "name": "Black Forest Ham Panini Sandwich -with Cheese Roll",
+      "calories": 540,
+      "fat": 25,
+      "carbs": 48,
+      "protein": 28,
+      "servingLabel": "1 Sandwich",
+      "id": "black-forest-ham-panini-sandwich-with-cheese-roll-1-sandwich"
+    },
+    {
+      "name": "Smoked Turkey Club Panini Sandwich -with Cheese Roll",
+      "calories": 530,
+      "fat": 24,
+      "carbs": 49,
+      "protein": 28,
+      "servingLabel": "1 Sandwich",
+      "id": "smoked-turkey-club-panini-sandwich-with-cheese-roll-1-sandwich"
+    },
+    {
+      "name": "Smoked Turkey Panini Sandwich -with Croissant",
+      "calories": 510,
+      "fat": 30,
+      "carbs": 35,
+      "protein": 24,
+      "servingLabel": "1 Sandwich",
+      "id": "smoked-turkey-panini-sandwich-with-croissant-1-sandwich"
+    },
+    {
+      "name": "Black Forest Ham Panini Sandwich -with Croissant",
+      "calories": 510,
+      "fat": 31,
+      "carbs": 34,
+      "protein": 23,
+      "servingLabel": "1 Sandwich",
+      "id": "black-forest-ham-panini-sandwich-with-croissant-1-sandwich"
+    },
+    {
+      "name": "Smoked Turkey Club Panini Sandwich -with Croissant",
+      "calories": 530,
+      "fat": 33,
+      "carbs": 35,
+      "protein": 24,
+      "servingLabel": "1 Sandwich",
+      "id": "smoked-turkey-club-panini-sandwich-with-croissant-1-sandwich"
+    },
+    {
+      "name": "Grilled Cheese Panini Sandwich -with Croissant",
+      "calories": 520,
+      "fat": 36,
+      "carbs": 29,
+      "protein": 18,
+      "servingLabel": "1 Sandwich",
+      "id": "grilled-cheese-panini-sandwich-with-croissant-1-sandwich"
+    },
+    {
+      "name": "Grilled Cheese Panini Sandwich -with Cheese Roll",
+      "calories": 480,
+      "fat": 24,
+      "carbs": 46,
+      "protein": 21,
+      "servingLabel": "1 Sandwich",
+      "id": "grilled-cheese-panini-sandwich-with-cheese-roll-1-sandwich"
+    },
+    {
+      "name": "Maple Sausage Bites, 3 ct",
+      "calories": 480,
+      "fat": 35,
+      "carbs": 29,
+      "protein": 11,
+      "servingLabel": "3 Bites",
+      "id": "maple-sausage-bites-3-ct-3-bites"
+    },
+    {
+      "name": "Maple Sausage Bites, 5 ct",
+      "calories": 800,
+      "fat": 58,
+      "carbs": 48,
+      "protein": 19,
+      "servingLabel": "5 Bites",
+      "id": "maple-sausage-bites-5-ct-5-bites"
+    },
+    {
+      "name": "Maple Syrup",
+      "calories": 100,
+      "fat": 0,
+      "carbs": 27,
+      "protein": 0,
+      "servingLabel": "1.5 fl. oz.",
+      "id": "maple-syrup-1-5-fl-oz"
+    }
+  ],
+  "sourceDate": "2026",
+  "coverageNotes": {
+    "method": "Official linked US nutrition PDF; publisher serving and calories retained.",
+    "skippedNonExactRows": [],
+    "sourceLandingUrl": "https://www.cinnabon.com/",
+    "excludedSection": "Carvel co-branded location variants, because qualifying local store is Cinnabon/Jamba."
+  }
+}

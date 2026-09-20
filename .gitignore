@@ -56,3 +56,7 @@ mobile/.expo/
 mobile/ios/
 mobile/android/
 mobile/dist/
+
+# Python extraction script bytecode.
+__pycache__/
+*.pyc

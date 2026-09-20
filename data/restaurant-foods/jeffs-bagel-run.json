@@ -1,0 +1,2211 @@
+{
+  "chain": "Jeff's Bagel Run",
+  "sourceUrl": "https://d3i6xtoh90ar7z.cloudfront.net/website/JBR_Nutritional%20Information_120125.pdf",
+  "sourceKind": "restaurant",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "name": "Plain Bagel",
+      "servingLabel": "1 Bagel",
+      "calories": 310.0,
+      "fat": 1.5,
+      "carbs": 64.0,
+      "protein": 13.0,
+      "id": "plain-bagel-1-bagel"
+    },
+    {
+      "name": "Asiago Cheese Bagel",
+      "servingLabel": "1 Bagel",
+      "calories": 350.0,
+      "fat": 4.5,
+      "carbs": 64.0,
+      "protein": 15.0,
+      "id": "asiago-cheese-bagel-1-bagel"
+    },
+    {
+      "name": "Asiago Everything Bagel",
+      "servingLabel": "1 Bagel",
+      "calories": 360.0,
+      "fat": 5.0,
+      "carbs": 65.0,
+      "protein": 16.0,
+      "id": "asiago-everything-bagel-1-bagel"
+    },
+    {
+      "name": "Blueberry Bagel",
+      "servingLabel": "1 Bagel",
+      "calories": 320.0,
+      "fat": 1.5,
+      "carbs": 66.0,
+      "protein": 12.0,
+      "id": "blueberry-bagel-1-bagel"
+    },
+    {
+      "name": "Cacio E Pepe Bagel",
+      "servingLabel": "1 Bagel",
+      "calories": 350.0,
+      "fat": 4.0,
+      "carbs": 64.0,
+      "protein": 15.0,
+      "id": "cacio-e-pepe-bagel-1-bagel"
+    },
+    {
+      "name": "Cinnamon Raisin Bagel",
+      "servingLabel": "1 Bagel",
+      "calories": 320.0,
+      "fat": 1.0,
+      "carbs": 66.0,
+      "protein": 12.0,
+      "id": "cinnamon-raisin-bagel-1-bagel"
+    },
+    {
+      "name": "Cinnamon Sugar Bagel",
+      "servingLabel": "1 Bagel",
+      "calories": 350.0,
+      "fat": 1.5,
+      "carbs": 74.0,
+      "protein": 13.0,
+      "id": "cinnamon-sugar-bagel-1-bagel"
+    },
+    {
+      "name": "Everything Bagel",
+      "servingLabel": "1 Bagel",
+      "calories": 350.0,
+      "fat": 6.0,
+      "carbs": 69.0,
+      "protein": 15.0,
+      "id": "everything-bagel-1-bagel"
+    },
+    {
+      "name": "Garlic Bagel",
+      "servingLabel": "1 Bagel",
+      "calories": 340.0,
+      "fat": 1.5,
+      "carbs": 69.0,
+      "protein": 14.0,
+      "id": "garlic-bagel-1-bagel"
+    },
+    {
+      "name": "Jalapeno Cheddar Bagel",
+      "servingLabel": "1 Bagel",
+      "calories": 390.0,
+      "fat": 8.0,
+      "carbs": 62.0,
+      "protein": 18.0,
+      "id": "jalapeno-cheddar-bagel-1-bagel"
+    },
+    {
+      "name": "Rosemary Salt Bagel",
+      "servingLabel": "1 Bagel",
+      "calories": 320.0,
+      "fat": 1.5,
+      "carbs": 64.0,
+      "protein": 13.0,
+      "id": "rosemary-salt-bagel-1-bagel"
+    },
+    {
+      "name": "Salt Bagel",
+      "servingLabel": "1 Bagel",
+      "calories": 310.0,
+      "fat": 1.5,
+      "carbs": 64.0,
+      "protein": 13.0,
+      "id": "salt-bagel-1-bagel"
+    },
+    {
+      "name": "Sesame Seed Bagel",
+      "servingLabel": "1 Bagel",
+      "calories": 370.0,
+      "fat": 6.0,
+      "carbs": 66.0,
+      "protein": 15.0,
+      "id": "sesame-seed-bagel-1-bagel"
+    },
+    {
+      "name": "Sprinkles Bagel",
+      "servingLabel": "1 Bagel",
+      "calories": 330.0,
+      "fat": 2.0,
+      "carbs": 63.0,
+      "protein": 12.0,
+      "id": "sprinkles-bagel-1-bagel"
+    },
+    {
+      "name": "Cinnamon Honey Butter (200g)",
+      "servingLabel": "1 Tub",
+      "calories": 1270.0,
+      "fat": 128.0,
+      "carbs": 39.0,
+      "protein": 1.0,
+      "servingGrams": 200,
+      "id": "cinnamon-honey-butter-200g-1-tub"
+    },
+    {
+      "name": "Cinnamon Honey Butter (50g)",
+      "servingLabel": "1 Side",
+      "calories": 320.0,
+      "fat": 32.0,
+      "carbs": 10.0,
+      "protein": 0.0,
+      "servingGrams": 50,
+      "id": "cinnamon-honey-butter-50g-1-side"
+    },
+    {
+      "name": "Garlic Herb Butter (200g)",
+      "servingLabel": "1 Tub",
+      "calories": 1360.0,
+      "fat": 152.0,
+      "carbs": 2.0,
+      "protein": 2.0,
+      "servingGrams": 200,
+      "id": "garlic-herb-butter-200g-1-tub"
+    },
+    {
+      "name": "Garlic Herb Butter (50g)",
+      "servingLabel": "1 Side",
+      "calories": 340.0,
+      "fat": 38.0,
+      "carbs": 1.0,
+      "protein": 0.0,
+      "servingGrams": 50,
+      "id": "garlic-herb-butter-50g-1-side"
+    },
+    {
+      "name": "Whipped Butter (200g)",
+      "servingLabel": "1 Tub",
+      "calories": 1440.0,
+      "fat": 157.0,
+      "carbs": 6.0,
+      "protein": 1.0,
+      "servingGrams": 200,
+      "id": "whipped-butter-200g-1-tub"
+    },
+    {
+      "name": "Whipped Butter (50g)",
+      "servingLabel": "1 Side",
+      "calories": 360.0,
+      "fat": 39.0,
+      "carbs": 1.0,
+      "protein": 0.0,
+      "servingGrams": 50,
+      "id": "whipped-butter-50g-1-side"
+    },
+    {
+      "name": "Banana Pudding Cream Cheese",
+      "servingLabel": "1 Side",
+      "calories": 220.0,
+      "fat": 16.0,
+      "carbs": 18.0,
+      "protein": 3.0,
+      "id": "banana-pudding-cream-cheese-1-side"
+    },
+    {
+      "name": "Brown Sugar Cinnamon Cream Cheese",
+      "servingLabel": "1 Side",
+      "calories": 250.0,
+      "fat": 21.0,
+      "carbs": 13.0,
+      "protein": 4.0,
+      "id": "brown-sugar-cinnamon-cream-cheese-1-side"
+    },
+    {
+      "name": "Cake Batter Cream Cheese",
+      "servingLabel": "1 Side",
+      "calories": 270.0,
+      "fat": 18.0,
+      "carbs": 25.0,
+      "protein": 3.0,
+      "id": "cake-batter-cream-cheese-1-side"
+    },
+    {
+      "name": "Cannoli Cream Cheese",
+      "servingLabel": "1 Side",
+      "calories": 230.0,
+      "fat": 18.0,
+      "carbs": 15.0,
+      "protein": 5.0,
+      "id": "cannoli-cream-cheese-1-side"
+    },
+    {
+      "name": "Chive And Onion Cream Cheese",
+      "servingLabel": "1 Side",
+      "calories": 220.0,
+      "fat": 22.0,
+      "carbs": 4.0,
+      "protein": 4.0,
+      "id": "chive-and-onion-cream-cheese-1-side"
+    },
+    {
+      "name": "Cookies And Cream Cream Cheese",
+      "servingLabel": "1 Side",
+      "calories": 270.0,
+      "fat": 19.0,
+      "carbs": 24.0,
+      "protein": 4.0,
+      "id": "cookies-and-cream-cream-cheese-1-side"
+    },
+    {
+      "name": "Hot Sauce Cream Cheese",
+      "servingLabel": "1 Side",
+      "calories": 220.0,
+      "fat": 22.0,
+      "carbs": 4.0,
+      "protein": 4.0,
+      "id": "hot-sauce-cream-cheese-1-side"
+    },
+    {
+      "name": "Plain Cream Cheese",
+      "servingLabel": "1 Side",
+      "calories": 250.0,
+      "fat": 24.0,
+      "carbs": 4.0,
+      "protein": 4.0,
+      "id": "plain-cream-cheese-1-side"
+    },
+    {
+      "name": "Roasted Jalapeno Cream Cheese",
+      "servingLabel": "1 Side",
+      "calories": 220.0,
+      "fat": 22.0,
+      "carbs": 4.0,
+      "protein": 4.0,
+      "id": "roasted-jalapeno-cream-cheese-1-side"
+    },
+    {
+      "name": "Strawberry Cream Cheese",
+      "servingLabel": "1 Side",
+      "calories": 200.0,
+      "fat": 16.0,
+      "carbs": 14.0,
+      "protein": 3.0,
+      "id": "strawberry-cream-cheese-1-side"
+    },
+    {
+      "name": "Veggie Cream Cheese",
+      "servingLabel": "1 Side",
+      "calories": 210.0,
+      "fat": 21.0,
+      "carbs": 4.0,
+      "protein": 4.0,
+      "id": "veggie-cream-cheese-1-side"
+    },
+    {
+      "name": "Vegan Brown Sugar Cinnamon Cream Cheese",
+      "servingLabel": "1 Side",
+      "calories": 230.0,
+      "fat": 17.0,
+      "carbs": 17.0,
+      "protein": 4.0,
+      "id": "vegan-brown-sugar-cinnamon-cream-cheese-1-side"
+    },
+    {
+      "name": "Vegan Chive And Onion Cream Cheese",
+      "servingLabel": "1 Side",
+      "calories": 210.0,
+      "fat": 18.0,
+      "carbs": 9.0,
+      "protein": 4.0,
+      "id": "vegan-chive-and-onion-cream-cheese-1-side"
+    },
+    {
+      "name": "Vegan Plain Cream Cheese",
+      "servingLabel": "1 Side",
+      "calories": 230.0,
+      "fat": 20.0,
+      "carbs": 9.0,
+      "protein": 5.0,
+      "id": "vegan-plain-cream-cheese-1-side"
+    },
+    {
+      "name": "Cappuccino - 2% Milk",
+      "servingLabel": "1 Serving",
+      "calories": 100.0,
+      "fat": 4.0,
+      "carbs": 10.0,
+      "protein": 6.0,
+      "id": "cappuccino-2-milk-1-serving"
+    },
+    {
+      "name": "Cappuccino - Oat Milk",
+      "servingLabel": "1 Serving",
+      "calories": 130.0,
+      "fat": 7.0,
+      "carbs": 14.0,
+      "protein": 2.0,
+      "id": "cappuccino-oat-milk-1-serving"
+    },
+    {
+      "name": "- Cappuccino Whole Milk",
+      "servingLabel": "1 Serving",
+      "calories": 120.0,
+      "fat": 6.0,
+      "carbs": 10.0,
+      "protein": 6.0,
+      "id": "cappuccino-whole-milk-1-serving"
+    },
+    {
+      "name": "Cappuccino - Almond Milk",
+      "servingLabel": "1 Serving",
+      "calories": 55.0,
+      "fat": 3.0,
+      "carbs": 5.0,
+      "protein": 2.0,
+      "id": "cappuccino-almond-milk-1-serving"
+    },
+    {
+      "name": "Cappuccino - Skim Milk",
+      "servingLabel": "1 Serving",
+      "calories": 62.0,
+      "fat": 0.0,
+      "carbs": 9.0,
+      "protein": 6.0,
+      "id": "cappuccino-skim-milk-1-serving"
+    },
+    {
+      "name": "Banana Bread Oat Milk Cold Brew, Iced, Small",
+      "servingLabel": "1 16oz",
+      "calories": 200.0,
+      "fat": 4.0,
+      "carbs": 40.0,
+      "protein": 1.0,
+      "id": "banana-bread-oat-milk-cold-brew-iced-small-1-16oz"
+    },
+    {
+      "name": "Banana Bread Oat Milk Cold Brew, Iced, Large",
+      "servingLabel": "1 24oz",
+      "calories": 260.0,
+      "fat": 6.0,
+      "carbs": 52.0,
+      "protein": 2.0,
+      "id": "banana-bread-oat-milk-cold-brew-iced-large-1-24oz"
+    },
+    {
+      "name": "Cinnamon Vanilla Oat Milk Cold Brew, Iced, Small",
+      "servingLabel": "1 16oz",
+      "calories": 170.0,
+      "fat": 4.0,
+      "carbs": 33.0,
+      "protein": 1.0,
+      "id": "cinnamon-vanilla-oat-milk-cold-brew-iced-small-1-16oz"
+    },
+    {
+      "name": "Cinnamon Vanilla Oat Milk Cold Brew, Iced, Large",
+      "servingLabel": "1 24oz",
+      "calories": 240.0,
+      "fat": 6.0,
+      "carbs": 45.0,
+      "protein": 2.0,
+      "id": "cinnamon-vanilla-oat-milk-cold-brew-iced-large-1-24oz"
+    },
+    {
+      "name": "Coffee, Hot, Small",
+      "servingLabel": "1 12oz",
+      "calories": 5.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "coffee-hot-small-1-12oz"
+    },
+    {
+      "name": "Coffee, Hot, Large",
+      "servingLabel": "1 16oz",
+      "calories": 5.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 1.0,
+      "id": "coffee-hot-large-1-16oz"
+    },
+    {
+      "name": "Coffee, Iced, Small",
+      "servingLabel": "1 16oz",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "coffee-iced-small-1-16oz"
+    },
+    {
+      "name": "Coffee, Iced, Large",
+      "servingLabel": "1 24oz",
+      "calories": 5.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "coffee-iced-large-1-24oz"
+    },
+    {
+      "name": "Coffee, Nitro Cold Brew, Small",
+      "servingLabel": "1 16oz",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "coffee-nitro-cold-brew-small-1-16oz"
+    },
+    {
+      "name": "Coffee, Nitro Cold Brew, Large",
+      "servingLabel": "1 24oz",
+      "calories": 5.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "coffee-nitro-cold-brew-large-1-24oz"
+    },
+    {
+      "name": "Lavender Honey Oat Milk Cold Brew, Small",
+      "servingLabel": "1 16oz",
+      "calories": 210.0,
+      "fat": 4.0,
+      "carbs": 44.0,
+      "protein": 1.0,
+      "id": "lavender-honey-oat-milk-cold-brew-small-1-16oz"
+    },
+    {
+      "name": "Lavender Honey Oat Milk Cold Brew, Large",
+      "servingLabel": "1 24oz",
+      "calories": 270.0,
+      "fat": 6.0,
+      "carbs": 56.0,
+      "protein": 1.0,
+      "id": "lavender-honey-oat-milk-cold-brew-large-1-24oz"
+    },
+    {
+      "name": "Pumpkin Spice Oat Milk Cold Brew, Small",
+      "servingLabel": "1 16oz",
+      "calories": 150.0,
+      "fat": 4.0,
+      "carbs": 26.0,
+      "protein": 1.0,
+      "id": "pumpkin-spice-oat-milk-cold-brew-small-1-16oz"
+    },
+    {
+      "name": "Pumpkin Spice Oat Milk Cold Brew, Large",
+      "servingLabel": "1 24oz",
+      "calories": 200.0,
+      "fat": 6.0,
+      "carbs": 35.0,
+      "protein": 1.0,
+      "id": "pumpkin-spice-oat-milk-cold-brew-large-1-24oz"
+    },
+    {
+      "name": "Espresso Americano, Hot, Small",
+      "servingLabel": "1 12oz",
+      "calories": 5.0,
+      "fat": 0.0,
+      "carbs": 1.0,
+      "protein": 0.0,
+      "id": "espresso-americano-hot-small-1-12oz"
+    },
+    {
+      "name": "Espresso Americano, Hot, Large",
+      "servingLabel": "1 16oz",
+      "calories": 5.0,
+      "fat": 0.0,
+      "carbs": 1.0,
+      "protein": 0.0,
+      "id": "espresso-americano-hot-large-1-16oz"
+    },
+    {
+      "name": "Espresso Americano, Iced, Small",
+      "servingLabel": "1 16oz",
+      "calories": 5.0,
+      "fat": 0.0,
+      "carbs": 1.0,
+      "protein": 0.0,
+      "id": "espresso-americano-iced-small-1-16oz"
+    },
+    {
+      "name": "Espresso Americano, Iced, Large",
+      "servingLabel": "1 24oz",
+      "calories": 5.0,
+      "fat": 0.0,
+      "carbs": 1.0,
+      "protein": 0.0,
+      "id": "espresso-americano-iced-large-1-24oz"
+    },
+    {
+      "name": "Espresso, Double",
+      "servingLabel": "1 3oz",
+      "calories": 5.0,
+      "fat": 0.0,
+      "carbs": 1.0,
+      "protein": 0.0,
+      "id": "espresso-double-1-3oz"
+    },
+    {
+      "name": "Espresso, Triple",
+      "servingLabel": "1 4.5oz",
+      "calories": 5.0,
+      "fat": 0.0,
+      "carbs": 1.0,
+      "protein": 0.0,
+      "id": "espresso-triple-1-4-5oz"
+    },
+    {
+      "name": "Iced Banana Bread Latte, Small, Whole",
+      "servingLabel": "1 16oz",
+      "calories": 268.0,
+      "fat": 7.0,
+      "carbs": 46.0,
+      "protein": 7.0,
+      "id": "iced-banana-bread-latte-small-whole-1-16oz"
+    },
+    {
+      "name": "Iced Banana Bread Latte, Small, 2%",
+      "servingLabel": "1 16oz",
+      "calories": 244.0,
+      "fat": 4.0,
+      "carbs": 47.0,
+      "protein": 8.0,
+      "id": "iced-banana-bread-latte-small-2-1-16oz"
+    },
+    {
+      "name": "Iced Banana Bread Latte, Small, Skim",
+      "servingLabel": "1 16oz",
+      "calories": 214.0,
+      "fat": 0.0,
+      "carbs": 47.0,
+      "protein": 8.0,
+      "id": "iced-banana-bread-latte-small-skim-1-16oz"
+    },
+    {
+      "name": "Iced Banana Bread Latte, Small, Oat",
+      "servingLabel": "1 16oz",
+      "calories": 248.0,
+      "fat": 5.0,
+      "carbs": 52.0,
+      "protein": 3.0,
+      "id": "iced-banana-bread-latte-small-oat-1-16oz"
+    },
+    {
+      "name": "Iced Banana Bread Latte, Small, Al- Mond",
+      "servingLabel": "1 16oz",
+      "calories": 212.0,
+      "fat": 4.0,
+      "carbs": 41.0,
+      "protein": 2.0,
+      "id": "iced-banana-bread-latte-small-al-mond-1-16oz"
+    },
+    {
+      "name": "Iced Banana Bread Latte, Large, Whole",
+      "servingLabel": "1 24oz",
+      "calories": 305.0,
+      "fat": 7.0,
+      "carbs": 56.0,
+      "protein": 8.0,
+      "id": "iced-banana-bread-latte-large-whole-1-24oz"
+    },
+    {
+      "name": "Iced Banana Bread Latte, Large, 2%",
+      "servingLabel": "1 24oz",
+      "calories": 281.0,
+      "fat": 4.0,
+      "carbs": 56.0,
+      "protein": 8.0,
+      "id": "iced-banana-bread-latte-large-2-1-24oz"
+    },
+    {
+      "name": "Iced Banana Bread Latte, Large, Skim",
+      "servingLabel": "1 24oz",
+      "calories": 251.0,
+      "fat": 0.0,
+      "carbs": 56.0,
+      "protein": 8.0,
+      "id": "iced-banana-bread-latte-large-skim-1-24oz"
+    },
+    {
+      "name": "Iced Banana Bread Latte, Large, Oat",
+      "servingLabel": "1 24oz",
+      "calories": 285.0,
+      "fat": 5.0,
+      "carbs": 61.0,
+      "protein": 3.0,
+      "id": "iced-banana-bread-latte-large-oat-1-24oz"
+    },
+    {
+      "name": "Iced Banana Bread Latte, Large, Al- Mond",
+      "servingLabel": "1 24oz",
+      "calories": 249.0,
+      "fat": 4.0,
+      "carbs": 50.0,
+      "protein": 2.0,
+      "id": "iced-banana-bread-latte-large-al-mond-1-24oz"
+    },
+    {
+      "name": "Banana Bread Latte, Small, Whole",
+      "servingLabel": "1 16oz",
+      "calories": 299.0,
+      "fat": 8.0,
+      "carbs": 49.0,
+      "protein": 9.0,
+      "id": "banana-bread-latte-small-whole-1-16oz"
+    },
+    {
+      "name": "Banana Bread Latte, Small, 2%",
+      "servingLabel": "1 16oz",
+      "calories": 269.0,
+      "fat": 5.0,
+      "carbs": 49.0,
+      "protein": 9.0,
+      "id": "banana-bread-latte-small-2-1-16oz"
+    },
+    {
+      "name": "Banana Bread Latte, Small, Skim",
+      "servingLabel": "1 16oz",
+      "calories": 232.0,
+      "fat": 0.0,
+      "carbs": 49.0,
+      "protein": 9.0,
+      "id": "banana-bread-latte-small-skim-1-16oz"
+    },
+    {
+      "name": "Banana Bread Latte, Small, Oat",
+      "servingLabel": "1 16oz",
+      "calories": 274.0,
+      "fat": 6.0,
+      "carbs": 56.0,
+      "protein": 3.0,
+      "id": "banana-bread-latte-small-oat-1-16oz"
+    },
+    {
+      "name": "Banana Bread Latte, Small, Almond",
+      "servingLabel": "1 16oz",
+      "calories": 229.0,
+      "fat": 5.0,
+      "carbs": 42.0,
+      "protein": 2.0,
+      "id": "banana-bread-latte-small-almond-1-16oz"
+    },
+    {
+      "name": "Banana Bread Latte, Large, Whole",
+      "servingLabel": "1 24oz",
+      "calories": 398.0,
+      "fat": 12.0,
+      "carbs": 63.0,
+      "protein": 12.0,
+      "id": "banana-bread-latte-large-whole-1-24oz"
+    },
+    {
+      "name": "Banana Bread Latte, Large, 2%",
+      "servingLabel": "1 24oz",
+      "calories": 356.0,
+      "fat": 7.0,
+      "carbs": 64.0,
+      "protein": 13.0,
+      "id": "banana-bread-latte-large-2-1-24oz"
+    },
+    {
+      "name": "Banana Bread Latte, Large, Skim",
+      "servingLabel": "1 24oz",
+      "calories": 304.0,
+      "fat": 0.0,
+      "carbs": 64.0,
+      "protein": 13.0,
+      "id": "banana-bread-latte-large-skim-1-24oz"
+    },
+    {
+      "name": "Banana Bread Latte, Large, Oat",
+      "servingLabel": "1 24oz",
+      "calories": 363.0,
+      "fat": 8.0,
+      "carbs": 73.0,
+      "protein": 4.0,
+      "id": "banana-bread-latte-large-oat-1-24oz"
+    },
+    {
+      "name": "Banana Bread Latte, Large, Almond",
+      "servingLabel": "1 24oz",
+      "calories": 300.0,
+      "fat": 7.0,
+      "carbs": 53.0,
+      "protein": 3.0,
+      "id": "banana-bread-latte-large-almond-1-24oz"
+    },
+    {
+      "name": "Iced Chai Latte, Small, Whole",
+      "servingLabel": "1 16oz",
+      "calories": 97.0,
+      "fat": 3.0,
+      "carbs": 14.0,
+      "protein": 3.0,
+      "id": "iced-chai-latte-small-whole-1-16oz"
+    },
+    {
+      "name": "Iced Chai Latte, Small, 2%",
+      "servingLabel": "1 16oz",
+      "calories": 85.0,
+      "fat": 2.0,
+      "carbs": 14.0,
+      "protein": 4.0,
+      "id": "iced-chai-latte-small-2-1-16oz"
+    },
+    {
+      "name": "Iced Chai Latte, Small, Skim",
+      "servingLabel": "1 16oz",
+      "calories": 70.0,
+      "fat": 0.0,
+      "carbs": 14.0,
+      "protein": 4.0,
+      "id": "iced-chai-latte-small-skim-1-16oz"
+    },
+    {
+      "name": "Iced Chai Latte, Small, Oat",
+      "servingLabel": "1 16oz",
+      "calories": 87.0,
+      "fat": 2.0,
+      "carbs": 17.0,
+      "protein": 1.0,
+      "id": "iced-chai-latte-small-oat-1-16oz"
+    },
+    {
+      "name": "Iced Chai Latte, Small, Almond",
+      "servingLabel": "1 16oz",
+      "calories": 69.0,
+      "fat": 2.0,
+      "carbs": 11.0,
+      "protein": 1.0,
+      "id": "iced-chai-latte-small-almond-1-16oz"
+    },
+    {
+      "name": "Iced Chai Latte, Large, Whole",
+      "servingLabel": "1 24oz",
+      "calories": 146.0,
+      "fat": 5.0,
+      "carbs": 21.0,
+      "protein": 5.0,
+      "id": "iced-chai-latte-large-whole-1-24oz"
+    },
+    {
+      "name": "Iced Chai Latte, Large, 2%",
+      "servingLabel": "1 24oz",
+      "calories": 128.0,
+      "fat": 3.0,
+      "carbs": 21.0,
+      "protein": 5.0,
+      "id": "iced-chai-latte-large-2-1-24oz"
+    },
+    {
+      "name": "Iced Chai Latte, Large, Skim",
+      "servingLabel": "1 24oz",
+      "calories": 70.0,
+      "fat": 0.0,
+      "carbs": 14.0,
+      "protein": 4.0,
+      "id": "iced-chai-latte-large-skim-1-24oz"
+    },
+    {
+      "name": "Iced Chai Latte, Large, Oat",
+      "servingLabel": "1 24oz",
+      "calories": 130.0,
+      "fat": 3.0,
+      "carbs": 25.0,
+      "protein": 2.0,
+      "id": "iced-chai-latte-large-oat-1-24oz"
+    },
+    {
+      "name": "Iced Chai Latte, Large, Almond",
+      "servingLabel": "1 24oz",
+      "calories": 103.0,
+      "fat": 3.0,
+      "carbs": 17.0,
+      "protein": 1.0,
+      "id": "iced-chai-latte-large-almond-1-24oz"
+    },
+    {
+      "name": "Chai Latte, Small, Whole",
+      "servingLabel": "1 16oz",
+      "calories": 120.0,
+      "fat": 2.0,
+      "carbs": 17.0,
+      "protein": 4.0,
+      "id": "chai-latte-small-whole-1-16oz"
+    },
+    {
+      "name": "Chai Latte, Small, 2%",
+      "servingLabel": "1 16oz",
+      "calories": 106.0,
+      "fat": 2.0,
+      "carbs": 18.0,
+      "protein": 4.0,
+      "id": "chai-latte-small-2-1-16oz"
+    },
+    {
+      "name": "Chai Latte, Small, Skim",
+      "servingLabel": "1 16oz",
+      "calories": 88.0,
+      "fat": 0.0,
+      "carbs": 18.0,
+      "protein": 4.0,
+      "id": "chai-latte-small-skim-1-16oz"
+    },
+    {
+      "name": "Chai Latte, Small, Oat",
+      "servingLabel": "1 16oz",
+      "calories": 119.0,
+      "fat": 0.0,
+      "carbs": 20.0,
+      "protein": 1.0,
+      "id": "chai-latte-small-oat-1-16oz"
+    },
+    {
+      "name": "Chai Latte, Small, Almond",
+      "servingLabel": "1 16oz",
+      "calories": 71.0,
+      "fat": 0.0,
+      "carbs": 13.0,
+      "protein": 1.0,
+      "id": "chai-latte-small-almond-1-16oz"
+    },
+    {
+      "name": "Chai Latte, Large Whole",
+      "servingLabel": "1 24oz",
+      "calories": 168.0,
+      "fat": 3.0,
+      "carbs": 24.0,
+      "protein": 6.0,
+      "id": "chai-latte-large-whole-1-24oz"
+    },
+    {
+      "name": "Chai Latte, Large, 2%",
+      "servingLabel": "1 24oz",
+      "calories": 149.0,
+      "fat": 2.0,
+      "carbs": 25.0,
+      "protein": 6.0,
+      "id": "chai-latte-large-2-1-24oz"
+    },
+    {
+      "name": "Chai Latte, Large, Skim",
+      "servingLabel": "1 24oz",
+      "calories": 123.0,
+      "fat": 0.0,
+      "carbs": 25.0,
+      "protein": 6.0,
+      "id": "chai-latte-large-skim-1-24oz"
+    },
+    {
+      "name": "Chai Latte, Large, Oat",
+      "servingLabel": "1 24oz",
+      "calories": 166.0,
+      "fat": 1.0,
+      "carbs": 28.0,
+      "protein": 2.0,
+      "id": "chai-latte-large-oat-1-24oz"
+    },
+    {
+      "name": "Chai Latte, Large, Almond",
+      "servingLabel": "1 24oz",
+      "calories": 100.0,
+      "fat": 0.0,
+      "carbs": 18.0,
+      "protein": 1.0,
+      "id": "chai-latte-large-almond-1-24oz"
+    },
+    {
+      "name": "Iced Cinnamon Vanilla Latte, Small, Whole",
+      "servingLabel": "1 16oz",
+      "calories": 237.0,
+      "fat": 4.0,
+      "carbs": 39.0,
+      "protein": 8.0,
+      "id": "iced-cinnamon-vanilla-latte-small-whole-1-16oz"
+    },
+    {
+      "name": "Iced Cinnamon Vanilla Latte, Small 2%",
+      "servingLabel": "1 16oz",
+      "calories": 215.0,
+      "fat": 2.0,
+      "carbs": 39.0,
+      "protein": 9.0,
+      "id": "iced-cinnamon-vanilla-latte-small-2-1-16oz"
+    },
+    {
+      "name": "Icedcinnamon Vanilla Latte Small, Skim",
+      "servingLabel": "1 16oz",
+      "calories": 185.0,
+      "fat": 0.0,
+      "carbs": 39.0,
+      "protein": 9.0,
+      "id": "icedcinnamon-vanilla-latte-small-skim-1-16oz"
+    },
+    {
+      "name": "Iced Cinnamon Vanilla Latte, Small, Oat",
+      "servingLabel": "1 16oz",
+      "calories": 235.0,
+      "fat": 1.0,
+      "carbs": 43.0,
+      "protein": 4.0,
+      "id": "iced-cinnamon-vanilla-latte-small-oat-1-16oz"
+    },
+    {
+      "name": "Iced Cinnamon Vanilla Latte, Small, Almond",
+      "servingLabel": "1 16oz",
+      "calories": 159.0,
+      "fat": 0.0,
+      "carbs": 31.0,
+      "protein": 3.0,
+      "id": "iced-cinnamon-vanilla-latte-small-almond-1-16oz"
+    },
+    {
+      "name": "Iced Cinnamon Vanilla Latte, Large, Whole",
+      "servingLabel": "1 24oz",
+      "calories": 277.0,
+      "fat": 4.0,
+      "carbs": 49.0,
+      "protein": 9.0,
+      "id": "iced-cinnamon-vanilla-latte-large-whole-1-24oz"
+    },
+    {
+      "name": "Iced Cinnamon Vanilla Latte, Large, 2%",
+      "servingLabel": "1 24oz",
+      "calories": 255.0,
+      "fat": 2.0,
+      "carbs": 49.0,
+      "protein": 10.0,
+      "id": "iced-cinnamon-vanilla-latte-large-2-1-24oz"
+    },
+    {
+      "name": "Icedcinnamon Vanilla Latte, Large, Skim",
+      "servingLabel": "1 24oz",
+      "calories": 225.0,
+      "fat": 0.0,
+      "carbs": 49.0,
+      "protein": 10.0,
+      "id": "icedcinnamon-vanilla-latte-large-skim-1-24oz"
+    },
+    {
+      "name": "Iced Cinnamon Vanilla Latte, Large, Oat",
+      "servingLabel": "1 24oz",
+      "calories": 275.0,
+      "fat": 1.0,
+      "carbs": 53.0,
+      "protein": 5.0,
+      "id": "iced-cinnamon-vanilla-latte-large-oat-1-24oz"
+    },
+    {
+      "name": "Iced Cinnamon Vanilla Latte, Large, Almond",
+      "servingLabel": "1 24oz",
+      "calories": 199.0,
+      "fat": 0.0,
+      "carbs": 41.0,
+      "protein": 4.0,
+      "id": "iced-cinnamon-vanilla-latte-large-almond-1-24oz"
+    },
+    {
+      "name": "Hot Cinnamon Vanilla Latte, Small, Whole",
+      "servingLabel": "1 16oz",
+      "calories": 268.0,
+      "fat": 5.0,
+      "carbs": 41.0,
+      "protein": 10.0,
+      "id": "hot-cinnamon-vanilla-latte-small-whole-1-16oz"
+    },
+    {
+      "name": "Hot Cinnamon Vanilla Latte, Small 2%",
+      "servingLabel": "1 16oz",
+      "calories": 240.0,
+      "fat": 3.0,
+      "carbs": 42.0,
+      "protein": 11.0,
+      "id": "hot-cinnamon-vanilla-latte-small-2-1-16oz"
+    },
+    {
+      "name": "Hot Cinnamon Vanilla Latte Small, Skim",
+      "servingLabel": "1 16oz",
+      "calories": 203.0,
+      "fat": 0.0,
+      "carbs": 42.0,
+      "protein": 11.0,
+      "id": "hot-cinnamon-vanilla-latte-small-skim-1-16oz"
+    },
+    {
+      "name": "Hot Cinnamon Vanilla Latte, Small, Oat",
+      "servingLabel": "1 16oz",
+      "calories": 265.0,
+      "fat": 1.0,
+      "carbs": 47.0,
+      "protein": 5.0,
+      "id": "hot-cinnamon-vanilla-latte-small-oat-1-16oz"
+    },
+    {
+      "name": "Hot Cinnamon Vanilla Latte, Small, Almond",
+      "servingLabel": "1 16oz",
+      "calories": 170.0,
+      "fat": 0.0,
+      "carbs": 32.0,
+      "protein": 3.0,
+      "id": "hot-cinnamon-vanilla-latte-small-almond-1-16oz"
+    },
+    {
+      "name": "Hot Cinnamon Vanilla Latte, Large, Whole",
+      "servingLabel": "1 24oz",
+      "calories": 369.0,
+      "fat": 7.0,
+      "carbs": 56.0,
+      "protein": 14.0,
+      "id": "hot-cinnamon-vanilla-latte-large-whole-1-24oz"
+    },
+    {
+      "name": "Hot Cinnamon Vanilla Latte, Large, 2%",
+      "servingLabel": "1 24oz",
+      "calories": 330.0,
+      "fat": 4.0,
+      "carbs": 57.0,
+      "protein": 15.0,
+      "id": "hot-cinnamon-vanilla-latte-large-2-1-24oz"
+    },
+    {
+      "name": "Hot Cinnamon Vanilla Latte , Large, Skim",
+      "servingLabel": "1 24oz",
+      "calories": 278.0,
+      "fat": 0.0,
+      "carbs": 57.0,
+      "protein": 15.0,
+      "id": "hot-cinnamon-vanilla-latte-large-skim-1-24oz"
+    },
+    {
+      "name": "Hot Cinnamon Vanilla Latte, Large, Oat",
+      "servingLabel": "1 24oz",
+      "calories": 365.0,
+      "fat": 1.0,
+      "carbs": 64.0,
+      "protein": 7.0,
+      "id": "hot-cinnamon-vanilla-latte-large-oat-1-24oz"
+    },
+    {
+      "name": "Hot Cinnamon Vanilla Latte, Large, Almond",
+      "servingLabel": "1 24oz",
+      "calories": 232.0,
+      "fat": 0.0,
+      "carbs": 43.0,
+      "protein": 5.0,
+      "id": "hot-cinnamon-vanilla-latte-large-almond-1-24oz"
+    },
+    {
+      "name": "Iced Mocha Latte, Small, Whole",
+      "servingLabel": "1 16oz",
+      "calories": 278.0,
+      "fat": 12.0,
+      "carbs": 34.0,
+      "protein": 9.0,
+      "id": "iced-mocha-latte-small-whole-1-16oz"
+    },
+    {
+      "name": "Iced Mocha Latte, Small, 2%",
+      "servingLabel": "1 16oz",
+      "calories": 254.0,
+      "fat": 10.0,
+      "carbs": 35.0,
+      "protein": 10.0,
+      "id": "iced-mocha-latte-small-2-1-16oz"
+    },
+    {
+      "name": "Iced Mocha Latte, Small, Skim",
+      "servingLabel": "1 16oz",
+      "calories": 224.0,
+      "fat": 6.0,
+      "carbs": 35.0,
+      "protein": 10.0,
+      "id": "iced-mocha-latte-small-skim-1-16oz"
+    },
+    {
+      "name": "Iced Mocha Latte, Small, Oat",
+      "servingLabel": "1 16oz",
+      "calories": 274.0,
+      "fat": 9.0,
+      "carbs": 39.0,
+      "protein": 5.0,
+      "id": "iced-mocha-latte-small-oat-1-16oz"
+    },
+    {
+      "name": "Iced Mocha Latte, Small, Almond",
+      "servingLabel": "1 16oz",
+      "calories": 188.0,
+      "fat": 7.0,
+      "carbs": 26.0,
+      "protein": 4.0,
+      "id": "iced-mocha-latte-small-almond-1-16oz"
+    },
+    {
+      "name": "Iced Mocha Latte, Large, Whole",
+      "servingLabel": "1 24oz",
+      "calories": 412.0,
+      "fat": 18.0,
+      "carbs": 51.0,
+      "protein": 14.0,
+      "id": "iced-mocha-latte-large-whole-1-24oz"
+    },
+    {
+      "name": "Iced Mocha Latte, Large, 2%",
+      "servingLabel": "1 24oz",
+      "calories": 376.0,
+      "fat": 14.0,
+      "carbs": 51.0,
+      "protein": 14.0,
+      "id": "iced-mocha-latte-large-2-1-24oz"
+    },
+    {
+      "name": "Iced Mocha Latte, Large, Skim",
+      "servingLabel": "1 24oz",
+      "calories": 331.0,
+      "fat": 8.0,
+      "carbs": 51.0,
+      "protein": 14.0,
+      "id": "iced-mocha-latte-large-skim-1-24oz"
+    },
+    {
+      "name": "Iced Mocha Latte, Large, Oat",
+      "servingLabel": "1 24oz",
+      "calories": 406.0,
+      "fat": 13.0,
+      "carbs": 57.0,
+      "protein": 7.0,
+      "id": "iced-mocha-latte-large-oat-1-24oz"
+    },
+    {
+      "name": "Iced Mocha Latte, Large, Almond",
+      "servingLabel": "1 24oz",
+      "calories": 277.0,
+      "fat": 11.0,
+      "carbs": 37.0,
+      "protein": 5.0,
+      "id": "iced-mocha-latte-large-almond-1-24oz"
+    },
+    {
+      "name": "Hot Mocha Latte, Small, Whole",
+      "servingLabel": "1 16oz",
+      "calories": 237.0,
+      "fat": 11.0,
+      "carbs": 24.0,
+      "protein": 7.0,
+      "id": "hot-mocha-latte-small-whole-1-16oz"
+    },
+    {
+      "name": "Hot Mocha Latte, Small, 2%",
+      "servingLabel": "1 16oz",
+      "calories": 214.0,
+      "fat": 8.0,
+      "carbs": 24.0,
+      "protein": 8.0,
+      "id": "hot-mocha-latte-small-2-1-16oz"
+    },
+    {
+      "name": "Hot Mocha Latte, Small, Skim",
+      "servingLabel": "1 16oz",
+      "calories": 181.0,
+      "fat": 5.0,
+      "carbs": 24.0,
+      "protein": 8.0,
+      "id": "hot-mocha-latte-small-skim-1-16oz"
+    },
+    {
+      "name": "Hot Mocha Latte, Small, Oat",
+      "servingLabel": "1 16oz",
+      "calories": 228.0,
+      "fat": 9.0,
+      "carbs": 28.0,
+      "protein": 2.0,
+      "id": "hot-mocha-latte-small-oat-1-16oz"
+    },
+    {
+      "name": "Hot Mocha Latte, Small, Almond",
+      "servingLabel": "1 16oz",
+      "calories": 195.0,
+      "fat": 7.0,
+      "carbs": 21.0,
+      "protein": 1.0,
+      "id": "hot-mocha-latte-small-almond-1-16oz"
+    },
+    {
+      "name": "Hot Mocha Latte, Large, Whole",
+      "servingLabel": "1 24oz",
+      "calories": 387.0,
+      "fat": 18.0,
+      "carbs": 46.0,
+      "protein": 14.0,
+      "id": "hot-mocha-latte-large-whole-1-24oz"
+    },
+    {
+      "name": "Hot Mocha Latte, Large, 2%",
+      "servingLabel": "1 24oz",
+      "calories": 344.0,
+      "fat": 13.0,
+      "carbs": 46.0,
+      "protein": 14.0,
+      "id": "hot-mocha-latte-large-2-1-24oz"
+    },
+    {
+      "name": "Hot Mocha Latte, Large, Skim",
+      "servingLabel": "1 24oz",
+      "calories": 285.0,
+      "fat": 6.0,
+      "carbs": 46.0,
+      "protein": 14.0,
+      "id": "hot-mocha-latte-large-skim-1-24oz"
+    },
+    {
+      "name": "Hot Mocha Latte, Large, Oat",
+      "servingLabel": "1 24oz",
+      "calories": 344.0,
+      "fat": 13.0,
+      "carbs": 51.0,
+      "protein": 7.0,
+      "id": "hot-mocha-latte-large-oat-1-24oz"
+    },
+    {
+      "name": "Hot Mocha Latte, Large, Almond",
+      "servingLabel": "1 24oz",
+      "calories": 256.0,
+      "fat": 10.0,
+      "carbs": 40.0,
+      "protein": 6.0,
+      "id": "hot-mocha-latte-large-almond-1-24oz"
+    },
+    {
+      "name": "Iced Latte, Small, Whole",
+      "servingLabel": "1 16oz",
+      "calories": 126.0,
+      "fat": 7.0,
+      "carbs": 10.0,
+      "protein": 7.0,
+      "id": "iced-latte-small-whole-1-16oz"
+    },
+    {
+      "name": "Iced Latte, Small, 2%",
+      "servingLabel": "1 16oz",
+      "calories": 102.0,
+      "fat": 4.0,
+      "carbs": 10.0,
+      "protein": 7.0,
+      "id": "iced-latte-small-2-1-16oz"
+    },
+    {
+      "name": "Iced Latte, Small, Skim",
+      "servingLabel": "1 16oz",
+      "calories": 72.0,
+      "fat": 0.0,
+      "carbs": 10.0,
+      "protein": 7.0,
+      "id": "iced-latte-small-skim-1-16oz"
+    },
+    {
+      "name": "Iced Latte, Small, Oat",
+      "servingLabel": "1 16oz",
+      "calories": 106.0,
+      "fat": 4.0,
+      "carbs": 14.0,
+      "protein": 2.0,
+      "id": "iced-latte-small-oat-1-16oz"
+    },
+    {
+      "name": "Iced Latte, Small, Almond",
+      "servingLabel": "1 16oz",
+      "calories": 36.0,
+      "fat": 2.0,
+      "carbs": 1.0,
+      "protein": 1.0,
+      "id": "iced-latte-small-almond-1-16oz"
+    },
+    {
+      "name": "Iced Latte, Large, Whole",
+      "servingLabel": "1 24oz",
+      "calories": 174.0,
+      "fat": 10.0,
+      "carbs": 15.0,
+      "protein": 10.0,
+      "id": "iced-latte-large-whole-1-24oz"
+    },
+    {
+      "name": "Iced Latte, Large, 2%",
+      "servingLabel": "1 24oz",
+      "calories": 141.0,
+      "fat": 6.0,
+      "carbs": 16.0,
+      "protein": 11.0,
+      "id": "iced-latte-large-2-1-24oz"
+    },
+    {
+      "name": "Iced Latte, Large, Skim",
+      "servingLabel": "1 24oz",
+      "calories": 99.0,
+      "fat": 0.0,
+      "carbs": 16.0,
+      "protein": 11.0,
+      "id": "iced-latte-large-skim-1-24oz"
+    },
+    {
+      "name": "Iced Latte, Large, Oat",
+      "servingLabel": "1 24oz",
+      "calories": 147.0,
+      "fat": 6.0,
+      "carbs": 21.0,
+      "protein": 3.0,
+      "id": "iced-latte-large-oat-1-24oz"
+    },
+    {
+      "name": "Iced Latte, Large, Almond",
+      "servingLabel": "1 24oz",
+      "calories": 54.0,
+      "fat": 3.0,
+      "carbs": 2.0,
+      "protein": 2.0,
+      "id": "iced-latte-large-almond-1-24oz"
+    },
+    {
+      "name": "Hot Latte, Small, Whole",
+      "servingLabel": "1 12oz",
+      "calories": 161.0,
+      "fat": 8.0,
+      "carbs": 13.0,
+      "protein": 8.0,
+      "id": "hot-latte-small-whole-1-12oz"
+    },
+    {
+      "name": "Hot Latte, Small, 2%",
+      "servingLabel": "1 12oz",
+      "calories": 130.0,
+      "fat": 5.0,
+      "carbs": 13.0,
+      "protein": 8.0,
+      "id": "hot-latte-small-2-1-12oz"
+    },
+    {
+      "name": "Hot Latte, Small, Skim",
+      "servingLabel": "1 12oz",
+      "calories": 88.0,
+      "fat": 0.0,
+      "carbs": 13.0,
+      "protein": 8.0,
+      "id": "hot-latte-small-skim-1-12oz"
+    },
+    {
+      "name": "Hot Latte, Small, Oat",
+      "servingLabel": "1 12oz",
+      "calories": 130.0,
+      "fat": 5.0,
+      "carbs": 17.0,
+      "protein": 3.0,
+      "id": "hot-latte-small-oat-1-12oz"
+    },
+    {
+      "name": "Hot Latte, Small, Almond",
+      "servingLabel": "1 12oz",
+      "calories": 68.0,
+      "fat": 3.0,
+      "carbs": 8.0,
+      "protein": 1.0,
+      "id": "hot-latte-small-almond-1-12oz"
+    },
+    {
+      "name": "Hot Latte, Large, Whole",
+      "servingLabel": "1 16oz",
+      "calories": 226.0,
+      "fat": 12.0,
+      "carbs": 18.0,
+      "protein": 14.0,
+      "id": "hot-latte-large-whole-1-16oz"
+    },
+    {
+      "name": "Hot Latte, Large, 2%",
+      "servingLabel": "1 16oz",
+      "calories": 183.0,
+      "fat": 7.0,
+      "carbs": 18.0,
+      "protein": 15.0,
+      "id": "hot-latte-large-2-1-16oz"
+    },
+    {
+      "name": "Hot Latte, Large, Skim",
+      "servingLabel": "1 16oz",
+      "calories": 124.0,
+      "fat": 0.0,
+      "carbs": 18.0,
+      "protein": 16.0,
+      "id": "hot-latte-large-skim-1-16oz"
+    },
+    {
+      "name": "Hot Latte, Large, Oat",
+      "servingLabel": "1 16oz",
+      "calories": 183.0,
+      "fat": 7.0,
+      "carbs": 23.0,
+      "protein": 4.0,
+      "id": "hot-latte-large-oat-1-16oz"
+    },
+    {
+      "name": "Hot Latte, Large, Almond",
+      "servingLabel": "1 16oz",
+      "calories": 95.0,
+      "fat": 4.0,
+      "carbs": 12.0,
+      "protein": 1.0,
+      "id": "hot-latte-large-almond-1-16oz"
+    },
+    {
+      "name": "Iced Skinny Caramel Latte, Small",
+      "servingLabel": "1 16oz",
+      "calories": 80.0,
+      "fat": 0.0,
+      "carbs": 12.0,
+      "protein": 9.0,
+      "id": "iced-skinny-caramel-latte-small-1-16oz"
+    },
+    {
+      "name": "Iced Skinny Caramel Latte, Large",
+      "servingLabel": "1 24oz",
+      "calories": 120.0,
+      "fat": 1.0,
+      "carbs": 18.0,
+      "protein": 13.0,
+      "id": "iced-skinny-caramel-latte-large-1-24oz"
+    },
+    {
+      "name": "Hot Skinny Caramel Latte, Small",
+      "servingLabel": "1 12oz",
+      "calories": 98.0,
+      "fat": 1.0,
+      "carbs": 14.0,
+      "protein": 11.0,
+      "id": "hot-skinny-caramel-latte-small-1-12oz"
+    },
+    {
+      "name": "Hot Skinny Caramel Latte, Large",
+      "servingLabel": "1 16oz",
+      "calories": 132.0,
+      "fat": 1.0,
+      "carbs": 18.0,
+      "protein": 15.0,
+      "id": "hot-skinny-caramel-latte-large-1-16oz"
+    },
+    {
+      "name": "Iced Pumpkin Spice Latte, Small, Whole",
+      "servingLabel": "1 16oz",
+      "calories": 248.0,
+      "fat": 9.0,
+      "carbs": 34.0,
+      "protein": 7.0,
+      "id": "iced-pumpkin-spice-latte-small-whole-1-16oz"
+    },
+    {
+      "name": "Iced Pumpkin Spice Latte, Small, 2%",
+      "servingLabel": "1 16oz",
+      "calories": 229.0,
+      "fat": 7.0,
+      "carbs": 34.0,
+      "protein": 8.0,
+      "id": "iced-pumpkin-spice-latte-small-2-1-16oz"
+    },
+    {
+      "name": "Iced Pumpkin Spice Latte, Small, Skim",
+      "servingLabel": "1 16oz",
+      "calories": 199.0,
+      "fat": 3.0,
+      "carbs": 34.0,
+      "protein": 8.0,
+      "id": "iced-pumpkin-spice-latte-small-skim-1-16oz"
+    },
+    {
+      "name": "Iced Pumpkin Spice Latte, Small, Oat",
+      "servingLabel": "1 16oz",
+      "calories": 232.0,
+      "fat": 8.0,
+      "carbs": 38.0,
+      "protein": 3.0,
+      "id": "iced-pumpkin-spice-latte-small-oat-1-16oz"
+    },
+    {
+      "name": "Iced Pumpkin Spice Latte, Small, Almond",
+      "servingLabel": "1 16oz",
+      "calories": 196.0,
+      "fat": 7.0,
+      "carbs": 31.0,
+      "protein": 2.0,
+      "id": "iced-pumpkin-spice-latte-small-almond-1-16oz"
+    },
+    {
+      "name": "Iced Pumpkin Spice Latte, Large, Whole",
+      "servingLabel": "1 24oz",
+      "calories": 343.0,
+      "fat": 13.0,
+      "carbs": 44.0,
+      "protein": 12.0,
+      "id": "iced-pumpkin-spice-latte-large-whole-1-24oz"
+    },
+    {
+      "name": "Iced Pumpkin Spice Latte, Large, 2%",
+      "servingLabel": "1 24oz",
+      "calories": 305.0,
+      "fat": 10.0,
+      "carbs": 44.0,
+      "protein": 12.0,
+      "id": "iced-pumpkin-spice-latte-large-2-1-24oz"
+    },
+    {
+      "name": "Iced Pumpkin Spice Latte, Large, Skim",
+      "servingLabel": "1 24oz",
+      "calories": 238.0,
+      "fat": 2.0,
+      "carbs": 44.0,
+      "protein": 12.0,
+      "id": "iced-pumpkin-spice-latte-large-skim-1-24oz"
+    },
+    {
+      "name": "Iced Pumpkin Spice Latte, Large, Oat",
+      "servingLabel": "1 24oz",
+      "calories": 308.0,
+      "fat": 10.0,
+      "carbs": 49.0,
+      "protein": 5.0,
+      "id": "iced-pumpkin-spice-latte-large-oat-1-24oz"
+    },
+    {
+      "name": "Iced Pumpkin Spice Latte, Large, Almond",
+      "servingLabel": "1 24oz",
+      "calories": 249.0,
+      "fat": 8.0,
+      "carbs": 37.0,
+      "protein": 3.0,
+      "id": "iced-pumpkin-spice-latte-large-almond-1-24oz"
+    },
+    {
+      "name": "Sunrise Charge, Small",
+      "servingLabel": "1 16oz",
+      "calories": 260.0,
+      "fat": 18.0,
+      "carbs": 27.0,
+      "protein": 0.0,
+      "id": "sunrise-charge-small-1-16oz"
+    },
+    {
+      "name": "Sunrise Charge, Large",
+      "servingLabel": "1 24oz",
+      "calories": 380.0,
+      "fat": 26.0,
+      "carbs": 37.0,
+      "protein": 0.0,
+      "id": "sunrise-charge-large-1-24oz"
+    },
+    {
+      "name": "Paradise Surge, Small Redbull",
+      "servingLabel": "1 16oz",
+      "calories": 140.0,
+      "fat": 0.0,
+      "carbs": 36.0,
+      "protein": 0.0,
+      "id": "paradise-surge-small-redbull-1-16oz"
+    },
+    {
+      "name": "Paradise Surge, Large Redbull",
+      "servingLabel": "1 24oz",
+      "calories": 200.0,
+      "fat": 0.0,
+      "carbs": 50.0,
+      "protein": 0.0,
+      "id": "paradise-surge-large-redbull-1-24oz"
+    },
+    {
+      "name": "Paradise Surge, Small Sugar Free Redbull",
+      "servingLabel": "1 16oz",
+      "calories": 81.0,
+      "fat": 0.0,
+      "carbs": 21.0,
+      "protein": 0.0,
+      "id": "paradise-surge-small-sugar-free-redbull-1-16oz"
+    },
+    {
+      "name": "Paradise Surge, Large Sugar] Free Redbull",
+      "servingLabel": "1 24oz",
+      "calories": 121.0,
+      "fat": 0.0,
+      "carbs": 31.0,
+      "protein": 0.0,
+      "id": "paradise-surge-large-sugar-free-redbull-1-24oz"
+    },
+    {
+      "name": "Tropical Thunder, Small",
+      "servingLabel": "1 16oz",
+      "calories": 288.0,
+      "fat": 18.0,
+      "carbs": 34.0,
+      "protein": 0.0,
+      "id": "tropical-thunder-small-1-16oz"
+    },
+    {
+      "name": "Tropical Thunder, Large",
+      "servingLabel": "1 24oz",
+      "calories": 432.0,
+      "fat": 26.0,
+      "carbs": 51.0,
+      "protein": 0.0,
+      "id": "tropical-thunder-large-1-24oz"
+    },
+    {
+      "name": "Tea, Hot",
+      "servingLabel": "1 16oz",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "tea-hot-1-16oz"
+    },
+    {
+      "name": "Tea, Iced, Small, Black",
+      "servingLabel": "1 16oz",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "tea-iced-small-black-1-16oz"
+    },
+    {
+      "name": "Tea, Iced, Large, Black",
+      "servingLabel": "1 24oz",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "tea-iced-large-black-1-24oz"
+    },
+    {
+      "name": "Tea, Iced, Small, Peach",
+      "servingLabel": "1 16oz",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "tea-iced-small-peach-1-16oz"
+    },
+    {
+      "name": "Tea, Iced, Large, Peach",
+      "servingLabel": "1 24oz",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "tea-iced-large-peach-1-24oz"
+    },
+    {
+      "name": "Tea, Caddy, Small",
+      "servingLabel": "1 16oz",
+      "calories": 165.0,
+      "fat": 0.0,
+      "carbs": 41.0,
+      "protein": 0.0,
+      "id": "tea-caddy-small-1-16oz"
+    },
+    {
+      "name": "Tea, Caddy, Large",
+      "servingLabel": "1 24oz",
+      "calories": 237.0,
+      "fat": 0.0,
+      "carbs": 59.0,
+      "protein": 0.0,
+      "id": "tea-caddy-large-1-24oz"
+    },
+    {
+      "name": "Tea, Peachberry, Small",
+      "servingLabel": "1 16oz",
+      "calories": 130.0,
+      "fat": 0.0,
+      "carbs": 35.0,
+      "protein": 0.0,
+      "id": "tea-peachberry-small-1-16oz"
+    },
+    {
+      "name": "Tea, Peachberry, Large",
+      "servingLabel": "1 24oz",
+      "calories": 160.0,
+      "fat": 0.0,
+      "carbs": 43.0,
+      "protein": 0.0,
+      "id": "tea-peachberry-large-1-24oz"
+    },
+    {
+      "name": "Tea, Blueberry Lavender Small",
+      "servingLabel": "1 16oz",
+      "calories": 100.0,
+      "fat": 0.0,
+      "carbs": 26.0,
+      "protein": 0.0,
+      "id": "tea-blueberry-lavender-small-1-16oz"
+    },
+    {
+      "name": "Tea, Blueberry Lavender, Large",
+      "servingLabel": "1 24oz",
+      "calories": 130.0,
+      "fat": 0.0,
+      "carbs": 35.0,
+      "protein": 0.0,
+      "id": "tea-blueberry-lavender-large-1-24oz"
+    },
+    {
+      "name": "Lavender Lemonade, Small",
+      "servingLabel": "1 16oz",
+      "calories": 196.0,
+      "fat": 0.0,
+      "carbs": 50.0,
+      "protein": 0.0,
+      "id": "lavender-lemonade-small-1-16oz"
+    },
+    {
+      "name": "Lavender Lemonade, Large",
+      "servingLabel": "1 24oz",
+      "calories": 183.0,
+      "fat": 0.0,
+      "carbs": 47.0,
+      "protein": 0.0,
+      "id": "lavender-lemonade-large-1-24oz"
+    },
+    {
+      "name": "Blue Raspberry Lemonade, Small",
+      "servingLabel": "1 16oz",
+      "calories": 158.0,
+      "fat": 0.0,
+      "carbs": 40.0,
+      "protein": 0.0,
+      "id": "blue-raspberry-lemonade-small-1-16oz"
+    },
+    {
+      "name": "Blue Raspberry Lemonade, Large",
+      "servingLabel": "1 24oz",
+      "calories": 214.0,
+      "fat": 0.0,
+      "carbs": 54.0,
+      "protein": 0.0,
+      "id": "blue-raspberry-lemonade-large-1-24oz"
+    },
+    {
+      "name": "Strawberry Lemonade, Small",
+      "servingLabel": "1 16oz",
+      "calories": 173.0,
+      "fat": 0.0,
+      "carbs": 44.0,
+      "protein": 0.0,
+      "id": "strawberry-lemonade-small-1-16oz"
+    },
+    {
+      "name": "Strawberry Lemonade, Large",
+      "servingLabel": "1 24oz",
+      "calories": 214.0,
+      "fat": 0.0,
+      "carbs": 54.0,
+      "protein": 0.0,
+      "id": "strawberry-lemonade-large-1-24oz"
+    },
+    {
+      "name": "Banana Syrup .75 Fl Oz",
+      "servingLabel": "1 Serving",
+      "calories": 90.0,
+      "fat": 0.0,
+      "carbs": 25.0,
+      "protein": 0.0,
+      "id": "banana-syrup-75-fl-oz-1-serving"
+    },
+    {
+      "name": "Banana Syrup 1 Fl Oz",
+      "servingLabel": "1 Serving",
+      "calories": 130.0,
+      "fat": 0.0,
+      "carbs": 33.0,
+      "protein": 0.0,
+      "id": "banana-syrup-1-fl-oz-1-serving"
+    },
+    {
+      "name": "Caramel Syrup .75 Fl Oz",
+      "servingLabel": "1 Serving",
+      "calories": 90.0,
+      "fat": 0.0,
+      "carbs": 25.0,
+      "protein": 0.0,
+      "id": "caramel-syrup-75-fl-oz-1-serving"
+    },
+    {
+      "name": "Caramel Syrup 1 Fl Oz",
+      "servingLabel": "1 Serving",
+      "calories": 130.0,
+      "fat": 0.0,
+      "carbs": 33.0,
+      "protein": 0.0,
+      "id": "caramel-syrup-1-fl-oz-1-serving"
+    },
+    {
+      "name": "Dark Chocolate Sauce .75 Fl Oz",
+      "servingLabel": "1 Serving",
+      "calories": 75.0,
+      "fat": 0.0,
+      "carbs": 25.0,
+      "protein": 0.0,
+      "id": "dark-chocolate-sauce-75-fl-oz-1-serving"
+    },
+    {
+      "name": "Dark Chocolate Sauce 1 Fl",
+      "servingLabel": "1 Serving",
+      "calories": 110.0,
+      "fat": 0.0,
+      "carbs": 45.0,
+      "protein": 0.0,
+      "id": "dark-chocolate-sauce-1-fl-1-serving"
+    },
+    {
+      "name": "Hazelnut Syrup .75 Fl Oz",
+      "servingLabel": "1 Serving",
+      "calories": 90.0,
+      "fat": 0.0,
+      "carbs": 22.0,
+      "protein": 0.0,
+      "id": "hazelnut-syrup-75-fl-oz-1-serving"
+    },
+    {
+      "name": "Hazelnut Syrup 1 Fl Oz",
+      "servingLabel": "1 Serving",
+      "calories": 120.0,
+      "fat": 0.0,
+      "carbs": 30.0,
+      "protein": 0.0,
+      "id": "hazelnut-syrup-1-fl-oz-1-serving"
+    },
+    {
+      "name": "Lavender Syrup .75 Fl Oz",
+      "servingLabel": "1 Serving",
+      "calories": 90.0,
+      "fat": 0.0,
+      "carbs": 25.0,
+      "protein": 0.0,
+      "id": "lavender-syrup-75-fl-oz-1-serving"
+    },
+    {
+      "name": "Lavender Syrup 1 Fl Oz",
+      "servingLabel": "1 Serving",
+      "calories": 130.0,
+      "fat": 0.0,
+      "carbs": 33.0,
+      "protein": 0.0,
+      "id": "lavender-syrup-1-fl-oz-1-serving"
+    },
+    {
+      "name": "Pumpkin Spice Syrup .75 Fl Oz",
+      "servingLabel": "1 Serving",
+      "calories": 60.0,
+      "fat": 0.0,
+      "carbs": 15.0,
+      "protein": 0.0,
+      "id": "pumpkin-spice-syrup-75-fl-oz-1-serving"
+    },
+    {
+      "name": "Pumpkin Spice Syrup 1 Fl Oz",
+      "servingLabel": "1 Serving",
+      "calories": 80.0,
+      "fat": 0.0,
+      "carbs": 20.0,
+      "protein": 0.0,
+      "id": "pumpkin-spice-syrup-1-fl-oz-1-serving"
+    },
+    {
+      "name": "Sugar Free Caramel Syrup .75 Fl Oz",
+      "servingLabel": "1 Serving",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 5.0,
+      "protein": 0.0,
+      "id": "sugar-free-caramel-syrup-75-fl-oz-1-serving"
+    },
+    {
+      "name": "Sugar Free Caramel Syrup 1 Fl Oz",
+      "servingLabel": "1 Serving",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 6.0,
+      "protein": 0.0,
+      "id": "sugar-free-caramel-syrup-1-fl-oz-1-serving"
+    },
+    {
+      "name": "Sugar Free Vanilla Syrup .75 Fl Oz",
+      "servingLabel": "1 Serving",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 4.0,
+      "protein": 0.0,
+      "id": "sugar-free-vanilla-syrup-75-fl-oz-1-serving"
+    },
+    {
+      "name": "Sugar Free Vanilla Syrup 1 Fl Oz",
+      "servingLabel": "1 Serving",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 5.0,
+      "protein": 0.0,
+      "id": "sugar-free-vanilla-syrup-1-fl-oz-1-serving"
+    },
+    {
+      "name": "Vanilla Syrup .75 Fl Oz",
+      "servingLabel": "1 Serving",
+      "calories": 100.0,
+      "fat": 0.0,
+      "carbs": 25.0,
+      "protein": 0.0,
+      "id": "vanilla-syrup-75-fl-oz-1-serving"
+    },
+    {
+      "name": "Vanilla Syrup 1 Fl Oz",
+      "servingLabel": "1 Serving",
+      "calories": 130.0,
+      "fat": 0.0,
+      "carbs": 33.0,
+      "protein": 0.0,
+      "id": "vanilla-syrup-1-fl-oz-1-serving"
+    },
+    {
+      "name": "2% Milk 50G",
+      "servingLabel": "1 Serving",
+      "calories": 25.0,
+      "fat": 1.0,
+      "carbs": 2.0,
+      "protein": 2.0,
+      "id": "2-milk-50g-1-serving"
+    },
+    {
+      "name": "2% Milk 70G",
+      "servingLabel": "1 Serving",
+      "calories": 35.0,
+      "fat": 1.5,
+      "carbs": 3.0,
+      "protein": 2.0,
+      "id": "2-milk-70g-1-serving"
+    },
+    {
+      "name": "Half & Half 50G",
+      "servingLabel": "1 Serving",
+      "calories": 60.0,
+      "fat": 5.0,
+      "carbs": 2.0,
+      "protein": 2.0,
+      "id": "half-half-50g-1-serving"
+    },
+    {
+      "name": "Half & Half 70G",
+      "servingLabel": "1 Serving",
+      "calories": 90.0,
+      "fat": 7.0,
+      "carbs": 3.0,
+      "protein": 2.0,
+      "id": "half-half-70g-1-serving"
+    },
+    {
+      "name": "Oat Milk 50G",
+      "servingLabel": "1 Serving",
+      "calories": 35.0,
+      "fat": 2.0,
+      "carbs": 4.0,
+      "protein": 0.0,
+      "id": "oat-milk-50g-1-serving"
+    },
+    {
+      "name": "Oat Milk 70G",
+      "servingLabel": "1 Serving",
+      "calories": 45.0,
+      "fat": 2.5,
+      "carbs": 5.0,
+      "protein": 1.0,
+      "id": "oat-milk-70g-1-serving"
+    },
+    {
+      "name": "Whole Milk 50G",
+      "servingLabel": "1 Serving",
+      "calories": 30.0,
+      "fat": 1.5,
+      "carbs": 2.0,
+      "protein": 2.0,
+      "id": "whole-milk-50g-1-serving"
+    },
+    {
+      "name": "Whole Milk 70G",
+      "servingLabel": "1 Serving",
+      "calories": 45.0,
+      "fat": 2.5,
+      "carbs": 3.0,
+      "protein": 2.0,
+      "id": "whole-milk-70g-1-serving"
+    },
+    {
+      "name": "Almond Milk 50G",
+      "servingLabel": "1 Serving",
+      "calories": 17.0,
+      "fat": 1.0,
+      "carbs": 1.0,
+      "protein": 0.0,
+      "id": "almond-milk-50g-1-serving"
+    },
+    {
+      "name": "Almond Milk 70G",
+      "servingLabel": "1 Serving",
+      "calories": 23.0,
+      "fat": 1.0,
+      "carbs": 2.0,
+      "protein": 0.5,
+      "id": "almond-milk-70g-1-serving"
+    },
+    {
+      "name": "Skim Milk 50G",
+      "servingLabel": "1 Serving",
+      "calories": 17.0,
+      "fat": 0.0,
+      "carbs": 2.5,
+      "protein": 1.7,
+      "id": "skim-milk-50g-1-serving"
+    },
+    {
+      "name": "Skim Milk 70G",
+      "servingLabel": "1 Serving",
+      "calories": 24.0,
+      "fat": 0.0,
+      "carbs": 3.5,
+      "protein": 2.4,
+      "id": "skim-milk-70g-1-serving"
+    },
+    {
+      "name": "Cookie Bar",
+      "servingLabel": "1 Serving",
+      "calories": 720.0,
+      "fat": 35.0,
+      "carbs": 99.0,
+      "protein": 8.0,
+      "id": "cookie-bar-1-serving"
+    },
+    {
+      "name": "Fruity Cereal Treat",
+      "servingLabel": "1 Serving",
+      "calories": 430.0,
+      "fat": 7.0,
+      "carbs": 88.0,
+      "protein": 3.0,
+      "id": "fruity-cereal-treat-1-serving"
+    },
+    {
+      "name": "S'Mores Bar",
+      "servingLabel": "1 Serving",
+      "calories": 600.0,
+      "fat": 26.0,
+      "carbs": 88.0,
+      "protein": 7.0,
+      "id": "smores-bar-1-serving"
+    }
+  ],
+  "coverageNotes": {
+    "method": "Fixed-coordinate text extraction of all 27 pages; wrapped names kept in their numeric row bands. Column headings and sample rows visually inspected.",
+    "sourceLandingUrl": "https://www.jeffsbagelrun.com/menu/other",
+    "scope": "All complete numeric rows except internally inconsistent Hot Pumpkin Spice Latte group. Calories and macros per listed serving; ounces are not converted into grams.",
+    "quarantinedRows": [
+      {
+        "food": {
+          "name": "Hot Pumpkin Spice Latte, Small, Whole",
+          "servingLabel": "1 12oz",
+          "calories": 285.0,
+          "fat": 9.0,
+          "carbs": 27.0,
+          "protein": 9.0
+        },
+        "reason": "Hot pumpkin-spice section has published sugar counts above total carbs and/or large calorie-to-macro discrepancies. Not repaired or imported pending publisher clarification."
+      },
+      {
+        "food": {
+          "name": "Hot Pumpkin Spice Latte, Small, 2%",
+          "servingLabel": "1 12oz",
+          "calories": 253.0,
+          "fat": 5.0,
+          "carbs": 28.0,
+          "protein": 9.0
+        },
+        "reason": "Hot pumpkin-spice section has published sugar counts above total carbs and/or large calorie-to-macro discrepancies. Not repaired or imported pending publisher clarification."
+      },
+      {
+        "food": {
+          "name": "Hot Pumpkin Spice Latte, Small, Skim",
+          "servingLabel": "1 12oz",
+          "calories": 205.0,
+          "fat": 0.0,
+          "carbs": 28.0,
+          "protein": 9.0
+        },
+        "reason": "Hot pumpkin-spice section has published sugar counts above total carbs and/or large calorie-to-macro discrepancies. Not repaired or imported pending publisher clarification."
+      },
+      {
+        "food": {
+          "name": "Hot Pumpkin Spice Latte, Small, Oat",
+          "servingLabel": "1 12oz",
+          "calories": 244.0,
+          "fat": 4.0,
+          "carbs": 32.0,
+          "protein": 2.0
+        },
+        "reason": "Hot pumpkin-spice section has published sugar counts above total carbs and/or large calorie-to-macro discrepancies. Not repaired or imported pending publisher clarification."
+      },
+      {
+        "food": {
+          "name": "Hot Pumpkin Spice Latte, Small, Almond",
+          "servingLabel": "1 12oz",
+          "calories": 175.0,
+          "fat": 4.0,
+          "carbs": 14.0,
+          "protein": 1.0
+        },
+        "reason": "Hot pumpkin-spice section has published sugar counts above total carbs and/or large calorie-to-macro discrepancies. Not repaired or imported pending publisher clarification."
+      },
+      {
+        "food": {
+          "name": "Hot Pumpkin Spice Latte, Large, Whole",
+          "servingLabel": "1 16oz",
+          "calories": 368.0,
+          "fat": 11.0,
+          "carbs": 31.0,
+          "protein": 11.0
+        },
+        "reason": "Hot pumpkin-spice section has published sugar counts above total carbs and/or large calorie-to-macro discrepancies. Not repaired or imported pending publisher clarification."
+      },
+      {
+        "food": {
+          "name": "Hot Pumpkin Spice Latte, Large, 2%",
+          "servingLabel": "1 16oz",
+          "calories": 329.0,
+          "fat": 7.0,
+          "carbs": 32.0,
+          "protein": 12.0
+        },
+        "reason": "Hot pumpkin-spice section has published sugar counts above total carbs and/or large calorie-to-macro discrepancies. Not repaired or imported pending publisher clarification."
+      },
+      {
+        "food": {
+          "name": "Hot Pumpkin Spice Latte, Large, Skim",
+          "servingLabel": "1 16oz",
+          "calories": 273.0,
+          "fat": 0.0,
+          "carbs": 32.0,
+          "protein": 12.0
+        },
+        "reason": "Hot pumpkin-spice section has published sugar counts above total carbs and/or large calorie-to-macro discrepancies. Not repaired or imported pending publisher clarification."
+      },
+      {
+        "food": {
+          "name": "Hot Pumpkin Spice Latte, Large, Oat",
+          "servingLabel": "1 16oz",
+          "calories": 319.0,
+          "fat": 5.0,
+          "carbs": 38.0,
+          "protein": 2.0
+        },
+        "reason": "Hot pumpkin-spice section has published sugar counts above total carbs and/or large calorie-to-macro discrepancies. Not repaired or imported pending publisher clarification."
+      },
+      {
+        "food": {
+          "name": "Hot Pumpkin Spice Latte, Large, Almond",
+          "servingLabel": "1 16oz",
+          "calories": 207.0,
+          "fat": 4.0,
+          "carbs": 16.0,
+          "protein": 1.0
+        },
+        "reason": "Hot pumpkin-spice section has published sugar counts above total carbs and/or large calorie-to-macro discrepancies. Not repaired or imported pending publisher clarification."
+      }
+    ]
+  },
+  "sourceDate": "2025-12-01"
+}

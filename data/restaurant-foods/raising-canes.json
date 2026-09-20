@@ -1,0 +1,982 @@
+{
+  "chain": "Raising Cane's",
+  "sourceUrl": "https://www.nutritionix.com/raising-canes/menu/premium",
+  "source": "Nutritionix",
+  "sourceKind": "database",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "id": "nutritionix-946218",
+      "name": "Cane's Sauce",
+      "calories": 190,
+      "protein": 0,
+      "carbs": 6,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Individual Items; size in item name)"
+    },
+    {
+      "id": "nutritionix-946214",
+      "name": "Chicken Finger",
+      "calories": 130,
+      "protein": 13,
+      "carbs": 5,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Individual Items; size in item name)"
+    },
+    {
+      "id": "nutritionix-946219",
+      "name": "Chicken Sandwich",
+      "calories": 830,
+      "protein": 47,
+      "carbs": 69,
+      "fat": 41,
+      "servingLabel": "1 listed serving (Individual Items; size in item name)"
+    },
+    {
+      "id": "nutritionix-946217",
+      "name": "Coleslaw",
+      "calories": 100,
+      "protein": 1,
+      "carbs": 10,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Individual Items; size in item name)"
+    },
+    {
+      "id": "nutritionix-946215",
+      "name": "Crinkle-Cut Fries",
+      "calories": 400,
+      "protein": 5,
+      "carbs": 50,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Individual Items; size in item name)"
+    },
+    {
+      "id": "nutritionix-946216",
+      "name": "Texas Toast",
+      "calories": 150,
+      "protein": 4,
+      "carbs": 23,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Individual Items; size in item name)"
+    },
+    {
+      "id": "nutritionix-946220",
+      "name": "3 Finger Combo",
+      "calories": 1050,
+      "protein": 48,
+      "carbs": 83,
+      "fat": 59,
+      "servingLabel": "1 listed serving (Combination Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-946221",
+      "name": "Box Combo",
+      "calories": 1290,
+      "protein": 62,
+      "carbs": 98,
+      "fat": 72,
+      "servingLabel": "1 listed serving (Combination Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-946224",
+      "name": "Box Combo, The Posty Way",
+      "calories": 1740,
+      "protein": 66,
+      "carbs": 173,
+      "fat": 89,
+      "servingLabel": "1 listed serving (Combination Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-946222",
+      "name": "Caniac Combo",
+      "calories": 1840,
+      "protein": 90,
+      "carbs": 125,
+      "fat": 108,
+      "servingLabel": "1 listed serving (Combination Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-946225",
+      "name": "Kid's Combo",
+      "calories": 650,
+      "protein": 29,
+      "carbs": 39,
+      "fat": 41,
+      "servingLabel": "1 listed serving (Combination Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-946226",
+      "name": "Kid's Combo (Louisville, KY)",
+      "calories": 610,
+      "protein": 34,
+      "carbs": 39,
+      "fat": 35,
+      "servingLabel": "1 listed serving (Combination Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-946227",
+      "name": "Kid's Combo (Maryland)",
+      "calories": 420,
+      "protein": 34,
+      "carbs": 33,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Combination Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-946223",
+      "name": "Sandwich Combo",
+      "calories": 1140,
+      "protein": 51,
+      "carbs": 108,
+      "fat": 56,
+      "servingLabel": "1 listed serving (Combination Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-946318",
+      "name": "Apple Juice Drink Pouch",
+      "calories": 35,
+      "protein": 0,
+      "carbs": 9,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946249",
+      "name": "Barq's Root Beer, Kid's",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 42,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946251",
+      "name": "Barq's Root Beer, Large",
+      "calories": 410,
+      "protein": 0,
+      "carbs": 112,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946250",
+      "name": "Barq's Root Beer, Regular",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 77,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946255",
+      "name": "Coca-Cola, Kid's",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 42,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946257",
+      "name": "Coca-Cola, Large",
+      "calories": 410,
+      "protein": 0,
+      "carbs": 111,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946256",
+      "name": "Coca-Cola, Regular",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 77,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946252",
+      "name": "Coca-Cola Cherry, Kid's",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 44,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946254",
+      "name": "Coca-Cola Cherry, Large",
+      "calories": 430,
+      "protein": 0,
+      "carbs": 116,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946253",
+      "name": "Coca-Cola Cherry, Regular",
+      "calories": 290,
+      "protein": 0,
+      "carbs": 80,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946258",
+      "name": "Coca-Cola Zero, Kid's",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946260",
+      "name": "Coca-Cola Zero, Large",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946259",
+      "name": "Coca-Cola Zero, Regular",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946261",
+      "name": "Diet Coke, Kid's",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946263",
+      "name": "Diet Coke, Large",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946262",
+      "name": "Diet Coke, Regular",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946266",
+      "name": "Diet Mountain Dew, Large",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946267",
+      "name": "Diet Pepsi, Kid's",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946269",
+      "name": "Diet Pepsi, Large",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946268",
+      "name": "Diet Pepsi, Regular",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946270",
+      "name": "Dr Pepper, Kid's",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 39,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946272",
+      "name": "Dr Pepper, Large",
+      "calories": 380,
+      "protein": 0,
+      "carbs": 104,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946271",
+      "name": "Dr Pepper, Regular",
+      "calories": 260,
+      "protein": 0,
+      "carbs": 72,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946273",
+      "name": "Fanta Fruit Punch, Kid's",
+      "calories": 230,
+      "protein": 0,
+      "carbs": 63,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946275",
+      "name": "Fanta Fruit Punch, Large",
+      "calories": 630,
+      "protein": 0,
+      "carbs": 168,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946274",
+      "name": "Fanta Fruit Punch, Regular",
+      "calories": 430,
+      "protein": 0,
+      "carbs": 116,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946276",
+      "name": "Fanta Orange, Kid's",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 41,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946278",
+      "name": "Fanta Orange, Large",
+      "calories": 410,
+      "protein": 0,
+      "carbs": 111,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946277",
+      "name": "Fanta Orange, Regular",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 76,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946279",
+      "name": "Gatorade Fruit Punch, Kid's",
+      "calories": 80,
+      "protein": 0,
+      "carbs": 22,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946281",
+      "name": "Gatorade Fruit Punch, Large",
+      "calories": 220,
+      "protein": 0,
+      "carbs": 58,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946280",
+      "name": "Gatorade Fruit Punch, Regular",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 40,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946240",
+      "name": "Half Sweet/Half Lemonade, Kid's",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 37,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946242",
+      "name": "Half Sweet/Half Lemonade, Large",
+      "calories": 380,
+      "protein": 0,
+      "carbs": 99,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946241",
+      "name": "Half Sweet/Half Lemonade, Regular",
+      "calories": 260,
+      "protein": 0,
+      "carbs": 68,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946246",
+      "name": "Half Sweet/Half Unsweet, Kid's",
+      "calories": 60,
+      "protein": 0,
+      "carbs": 16,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946248",
+      "name": "Half Sweet/Half Unsweet, Large",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 44,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946247",
+      "name": "Half Sweet/Half Unsweet, Regular",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 30,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946243",
+      "name": "Half Unsweet/Half Lemonade, Kid's",
+      "calories": 80,
+      "protein": 0,
+      "carbs": 20,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946245",
+      "name": "Half Unsweet/Half Lemonade, Large",
+      "calories": 210,
+      "protein": 0,
+      "carbs": 55,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946244",
+      "name": "Half Unsweet/Half Lemonade, Regular",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 38,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946282",
+      "name": "Hi-C Flashin Fruit Punch, Kid's",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 44,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946284",
+      "name": "Hi-C Flashin Fruit Punch, Large",
+      "calories": 430,
+      "protein": 0,
+      "carbs": 118,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946283",
+      "name": "Hi-C Flashin Fruit Punch, Regular",
+      "calories": 300,
+      "protein": 0,
+      "carbs": 81,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946239",
+      "name": "Lemonade, Jug",
+      "calories": 1700,
+      "protein": 1,
+      "carbs": 442,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946236",
+      "name": "Lemonade, Kid's",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 41,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946238",
+      "name": "Lemonade, Large",
+      "calories": 420,
+      "protein": 0,
+      "carbs": 111,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946237",
+      "name": "Lemonade, Regular",
+      "calories": 290,
+      "protein": 0,
+      "carbs": 76,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946285",
+      "name": "Mello Yello, Kid's",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 45,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946287",
+      "name": "Mello Yello, Large",
+      "calories": 440,
+      "protein": 0,
+      "carbs": 121,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946286",
+      "name": "Mello Yello, Regular",
+      "calories": 300,
+      "protein": 0,
+      "carbs": 83,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946319",
+      "name": "Milk 1% Box",
+      "calories": 110,
+      "protein": 8,
+      "carbs": 13,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946288",
+      "name": "Mountain Dew, Kid's",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 44,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946290",
+      "name": "Mountain Dew, Large",
+      "calories": 450,
+      "protein": 0,
+      "carbs": 117,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946289",
+      "name": "Mountain Dew, Regular",
+      "calories": 310,
+      "protein": 0,
+      "carbs": 81,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946291",
+      "name": "Mug Root Beer, Kid's",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 38,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946293",
+      "name": "Mug Root Beer, Large",
+      "calories": 380,
+      "protein": 0,
+      "carbs": 102,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946292",
+      "name": "Mug Root Beer, Regular",
+      "calories": 260,
+      "protein": 0,
+      "carbs": 70,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946294",
+      "name": "Orange Crush, Kid's",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 44,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946296",
+      "name": "Orange Crush, Large",
+      "calories": 440,
+      "protein": 0,
+      "carbs": 117,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946295",
+      "name": "Orange Crush, Regular",
+      "calories": 300,
+      "protein": 0,
+      "carbs": 81,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946297",
+      "name": "Pepsi, Kid's",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 41,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946299",
+      "name": "Pepsi, Large",
+      "calories": 410,
+      "protein": 0,
+      "carbs": 110,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946298",
+      "name": "Pepsi, Regular",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 76,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946300",
+      "name": "Pepsi Zero, Kid's",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946301",
+      "name": "Pepsi Zero, Regular",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946303",
+      "name": "Pibb Xtra, Kid's",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 38,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946305",
+      "name": "Pibb Xtra, Large",
+      "calories": 380,
+      "protein": 0,
+      "carbs": 102,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946304",
+      "name": "Pibb Xtra, Regular",
+      "calories": 260,
+      "protein": 0,
+      "carbs": 70,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946306",
+      "name": "Powerade Mtn Berry Blast, Kid's",
+      "calories": 90,
+      "protein": 0,
+      "carbs": 23,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946308",
+      "name": "Powerade Mtn Berry Blast, Large",
+      "calories": 230,
+      "protein": 0,
+      "carbs": 61,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946307",
+      "name": "Powerade Mtn Berry Blast, Regular",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 42,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946309",
+      "name": "Sprite, Kid's",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 38,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946311",
+      "name": "Sprite, Large",
+      "calories": 380,
+      "protein": 0,
+      "carbs": 101,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946310",
+      "name": "Sprite, Regular",
+      "calories": 260,
+      "protein": 0,
+      "carbs": 70,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946312",
+      "name": "Starry, Kid's",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 39,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946314",
+      "name": "Starry, Large",
+      "calories": 390,
+      "protein": 0,
+      "carbs": 104,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946313",
+      "name": "Starry, Regular",
+      "calories": 270,
+      "protein": 0,
+      "carbs": 71,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946231",
+      "name": "Sweet Tea, Jug",
+      "calories": 1360,
+      "protein": 0,
+      "carbs": 352,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946228",
+      "name": "Sweet Tea, Kid's",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 33,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946230",
+      "name": "Sweet Tea, Large",
+      "calories": 340,
+      "protein": 0,
+      "carbs": 88,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946229",
+      "name": "Sweet Tea, Regular",
+      "calories": 230,
+      "protein": 0,
+      "carbs": 60,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946315",
+      "name": "Tropicana Fruit Punch, Kid's",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 45,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946317",
+      "name": "Tropicana Fruit Punch, Large",
+      "calories": 450,
+      "protein": 0,
+      "carbs": 120,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946316",
+      "name": "Tropicana Fruit Punch, Regular",
+      "calories": 310,
+      "protein": 0,
+      "carbs": 83,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946235",
+      "name": "Unsweet Tea, Jug",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946232",
+      "name": "Unsweet Tea, Kid's",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946234",
+      "name": "Unsweet Tea, Large",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946233",
+      "name": "Unsweet Tea, Regular",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-946328",
+      "name": "Iodized Salt Packet",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Condiments; size in item name)"
+    },
+    {
+      "id": "nutritionix-946321",
+      "name": "Ketchup (Dip N Squeeze Cup)",
+      "calories": 35,
+      "protein": 0,
+      "carbs": 8,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Condiments; size in item name)"
+    },
+    {
+      "id": "nutritionix-946323",
+      "name": "Kraft Mayonnaise Packet",
+      "calories": 90,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Condiments; size in item name)"
+    },
+    {
+      "id": "nutritionix-946322",
+      "name": "Louisiana Hot Sauce Packet",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Condiments; size in item name)"
+    },
+    {
+      "id": "nutritionix-946324",
+      "name": "Sugar Packet",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Condiments; size in item name)"
+    }
+  ],
+  "sourceDate": "2025-10-14"
+}

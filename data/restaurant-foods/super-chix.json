@@ -1,0 +1,890 @@
+{
+  "chain": "Super Chix",
+  "sourceUrl": "https://nutrition.superchix.com/menu",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "name": "The Simple — Breaded",
+      "calories": 510.0,
+      "fat": 15.0,
+      "carbs": 43.0,
+      "protein": 49.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "the-simple-breaded-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "The Simple — Grilled",
+      "calories": 451.0,
+      "fat": 15.0,
+      "carbs": 27.0,
+      "protein": 48.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "the-simple-grilled-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "The Deluxe — Breaded",
+      "calories": 580.0,
+      "fat": 23.0,
+      "carbs": 43.0,
+      "protein": 49.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "the-deluxe-breaded-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "The Deluxe — Grilled",
+      "calories": 520.0,
+      "fat": 23.0,
+      "carbs": 28.0,
+      "protein": 49.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "the-deluxe-grilled-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Bacavo Ranch — Breaded",
+      "calories": 760.0,
+      "fat": 35.0,
+      "carbs": 46.0,
+      "protein": 63.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "bacavo-ranch-breaded-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Bacavo Ranch — Grilled",
+      "calories": 700.0,
+      "fat": 35.0,
+      "carbs": 31.0,
+      "protein": 63.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "bacavo-ranch-grilled-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Cordon Bleu — Breaded",
+      "calories": 800.0,
+      "fat": 37.0,
+      "carbs": 49.0,
+      "protein": 66.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "cordon-bleu-breaded-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Cordon Bleu — Grilled",
+      "calories": 740.0,
+      "fat": 37.0,
+      "carbs": 34.0,
+      "protein": 66.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "cordon-bleu-grilled-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Cheesy BBQ — Breaded",
+      "calories": 950.0,
+      "fat": 40.0,
+      "carbs": 83.0,
+      "protein": 63.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "cheesy-bbq-breaded-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Cheesy BBQ — Grilled",
+      "calories": 890.0,
+      "fat": 40.0,
+      "carbs": 68.0,
+      "protein": 62.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "cheesy-bbq-grilled-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Buffalo Ranch — Breaded",
+      "calories": 560.0,
+      "fat": 21.0,
+      "carbs": 44.0,
+      "protein": 49.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "buffalo-ranch-breaded-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Buffalo Ranch — Grilled",
+      "calories": 500.0,
+      "fat": 21.0,
+      "carbs": 29.0,
+      "protein": 48.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "buffalo-ranch-grilled-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Nashville Hot — Breaded",
+      "calories": 630.0,
+      "fat": 27.0,
+      "carbs": 44.0,
+      "protein": 50.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "nashville-hot-breaded-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Nashville Hot — Grilled",
+      "calories": 570.0,
+      "fat": 27.0,
+      "carbs": 29.0,
+      "protein": 50.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "nashville-hot-grilled-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Chicken Slider — Breaded",
+      "calories": 490.0,
+      "fat": 21.0,
+      "carbs": 47.0,
+      "protein": 29.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "chicken-slider-breaded-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Chicken Slider — Grilled",
+      "calories": 420.0,
+      "fat": 20.0,
+      "carbs": 33.0,
+      "protein": 27.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "chicken-slider-grilled-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Blackened Cajun — Grilled",
+      "calories": 500.0,
+      "fat": 21.0,
+      "carbs": 27.0,
+      "protein": 48.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "blackened-cajun-grilled-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Crispy Avocado",
+      "calories": 640.0,
+      "fat": 40.0,
+      "carbs": 56.0,
+      "protein": 18.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "crispy-avocado-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Hot Honey — Breaded",
+      "calories": 740.0,
+      "fat": 27.0,
+      "carbs": 68.0,
+      "protein": 55.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "hot-honey-breaded-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Hot Honey — Grilled",
+      "calories": 710.0,
+      "fat": 28.0,
+      "carbs": 54.0,
+      "protein": 59.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "hot-honey-grilled-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Super Parm — Breaded",
+      "calories": 670.0,
+      "fat": 28.0,
+      "carbs": 45.0,
+      "protein": 59.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "super-parm-breaded-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Super Parm — Grilled",
+      "calories": 640.0,
+      "fat": 29.0,
+      "carbs": 31.0,
+      "protein": 52.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "super-parm-grilled-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Korean BBQ — Breaded",
+      "calories": 610.0,
+      "fat": 17.0,
+      "carbs": 64.0,
+      "protein": 44.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "korean-bbq-breaded-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Korean BBQ — Grilled",
+      "calories": 580.0,
+      "fat": 18.0,
+      "carbs": 51.0,
+      "protein": 48.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "korean-bbq-grilled-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Caesar Wrap — Breaded",
+      "calories": 1360.0,
+      "fat": 54.0,
+      "carbs": 134.0,
+      "protein": 88.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "caesar-wrap-breaded-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Caesar Wrap — Grilled",
+      "calories": 1240.0,
+      "fat": 53.0,
+      "carbs": 107.0,
+      "protein": 86.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "caesar-wrap-grilled-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Chicken Tenders — 1 Piece Breaded",
+      "calories": 190.0,
+      "fat": 4.0,
+      "carbs": 14.0,
+      "protein": 23.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "chicken-tenders-1-piece-breaded-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Chicken Tenders — 1 Piece Grilled",
+      "calories": 130.0,
+      "fat": 4.0,
+      "carbs": 0.0,
+      "protein": 22.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "chicken-tenders-1-piece-grilled-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Chicken Tenders — 2 Piece Breaded",
+      "calories": 380.0,
+      "fat": 8.0,
+      "carbs": 29.0,
+      "protein": 47.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "chicken-tenders-2-piece-breaded-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Chicken Tenders — 3 Piece Breaded",
+      "calories": 570.0,
+      "fat": 12.0,
+      "carbs": 43.0,
+      "protein": 70.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "chicken-tenders-3-piece-breaded-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Chicken Tenders — 3 Piece Grilled",
+      "calories": 380.0,
+      "fat": 11.0,
+      "carbs": 1.0,
+      "protein": 66.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "chicken-tenders-3-piece-grilled-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Chicken Tenders — 4 Piece Breaded",
+      "calories": 760.0,
+      "fat": 16.0,
+      "carbs": 57.0,
+      "protein": 93.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "chicken-tenders-4-piece-breaded-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Chicken Tenders — 4 Piece Grilled",
+      "calories": 510.0,
+      "fat": 15.0,
+      "carbs": 2.0,
+      "protein": 89.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "chicken-tenders-4-piece-grilled-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Chicken Tenders — 5 Piece Breaded",
+      "calories": 950.0,
+      "fat": 19.0,
+      "carbs": 71.0,
+      "protein": 116.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "chicken-tenders-5-piece-breaded-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Chicken Tenders — 5 Piece Grilled",
+      "calories": 640.0,
+      "fat": 19.0,
+      "carbs": 2.0,
+      "protein": 111.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "chicken-tenders-5-piece-grilled-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Chicken Tenders — 6 Piece Breaded",
+      "calories": 1140.0,
+      "fat": 23.0,
+      "carbs": 86.0,
+      "protein": 140.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "chicken-tenders-6-piece-breaded-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Chicken Tenders — 6 Piece Grilled",
+      "calories": 770.0,
+      "fat": 22.0,
+      "carbs": 3.0,
+      "protein": 133.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "chicken-tenders-6-piece-grilled-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "10 Nuggets — Breaded",
+      "calories": 470.0,
+      "fat": 10.0,
+      "carbs": 36.0,
+      "protein": 58.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "10-nuggets-breaded-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "10 Nuggets — Grilled",
+      "calories": 320.0,
+      "fat": 9.0,
+      "carbs": 1.0,
+      "protein": 55.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "10-nuggets-grilled-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Southwest Salad — Breaded",
+      "calories": 700.0,
+      "fat": 37.0,
+      "carbs": 46.0,
+      "protein": 49.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "southwest-salad-breaded-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Southwest Salad — Grilled",
+      "calories": 640.0,
+      "fat": 36.0,
+      "carbs": 31.0,
+      "protein": 48.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "southwest-salad-grilled-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Southwest Salad — No Chicken",
+      "calories": 400.0,
+      "fat": 30.0,
+      "carbs": 30.0,
+      "protein": 8.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "southwest-salad-no-chicken-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "House Salad — Breaded",
+      "calories": 820.0,
+      "fat": 45.0,
+      "carbs": 46.0,
+      "protein": 61.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "house-salad-breaded-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "House Salad — Grilled",
+      "calories": 760.0,
+      "fat": 46.0,
+      "carbs": 31.0,
+      "protein": 60.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "house-salad-grilled-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "House Salad — No Chicken",
+      "calories": 520.0,
+      "fat": 39.0,
+      "carbs": 30.0,
+      "protein": 20.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "house-salad-no-chicken-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Buffalo Ranch Salad — Breaded",
+      "calories": 700.0,
+      "fat": 39.0,
+      "carbs": 37.0,
+      "protein": 53.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "buffalo-ranch-salad-breaded-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Buffalo Ranch Salad — Grilled",
+      "calories": 630.0,
+      "fat": 39.0,
+      "carbs": 21.0,
+      "protein": 51.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "buffalo-ranch-salad-grilled-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Buffalo Ranch Salad — No Chicken",
+      "calories": 370.0,
+      "fat": 31.0,
+      "carbs": 19.0,
+      "protein": 11.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "buffalo-ranch-salad-no-chicken-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Nashville Hot Salad — Breaded",
+      "calories": 780.0,
+      "fat": 49.0,
+      "carbs": 34.0,
+      "protein": 53.8,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "nashville-hot-salad-breaded-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Nashville Hot Salad — Grilled",
+      "calories": 710.0,
+      "fat": 49.0,
+      "carbs": 19.0,
+      "protein": 53.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "nashville-hot-salad-grilled-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Nashville Hot Salad — No Chicken",
+      "calories": 480.0,
+      "fat": 42.0,
+      "carbs": 18.0,
+      "protein": 13.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "nashville-hot-salad-no-chicken-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Asian Sesame Salad — Breaded",
+      "calories": 710.0,
+      "fat": 28.0,
+      "carbs": 68.0,
+      "protein": 51.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "asian-sesame-salad-breaded-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Asian Sesame Salad — Grilled",
+      "calories": 650.0,
+      "fat": 28.0,
+      "carbs": 54.0,
+      "protein": 50.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "asian-sesame-salad-grilled-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Asian Sesame Salad — No Chicken",
+      "calories": 410.0,
+      "fat": 21.0,
+      "carbs": 53.0,
+      "protein": 9.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "asian-sesame-salad-no-chicken-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Crispy Avo Salad",
+      "calories": 1100.0,
+      "fat": 77.0,
+      "carbs": 76.0,
+      "protein": 34.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "crispy-avo-salad-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Fries — Regular",
+      "calories": 570.0,
+      "fat": 34.0,
+      "carbs": 66.0,
+      "protein": 8.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "fries-regular-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Fries — Large",
+      "calories": 1150.0,
+      "fat": 68.0,
+      "carbs": 131.0,
+      "protein": 16.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "fries-large-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Cheese Fry — Regular",
+      "calories": 690.0,
+      "fat": 42.0,
+      "carbs": 71.0,
+      "protein": 9.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "cheese-fry-regular-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Cheese Fry — Large",
+      "calories": 1260.0,
+      "fat": 76.0,
+      "carbs": 137.0,
+      "protein": 17.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "cheese-fry-large-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Loaded Fry — Regular",
+      "calories": 790.0,
+      "fat": 50.0,
+      "carbs": 73.0,
+      "protein": 17.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "loaded-fry-regular-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Loaded Fry — Large",
+      "calories": 1370.0,
+      "fat": 84.0,
+      "carbs": 138.0,
+      "protein": 24.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "loaded-fry-large-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Fried Pickle — Regular",
+      "calories": 890.0,
+      "fat": 53.0,
+      "carbs": 99.0,
+      "protein": 7.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "fried-pickle-regular-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Fried Pickle — Large",
+      "calories": 1790.0,
+      "fat": 106.0,
+      "carbs": 198.0,
+      "protein": 15.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "fried-pickle-large-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Single Chicken Filet — Breaded",
+      "calories": 300.0,
+      "fat": 7.0,
+      "carbs": 16.0,
+      "protein": 42.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "single-chicken-filet-breaded-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Single Chicken Filet — Grilled",
+      "calories": 230.0,
+      "fat": 7.0,
+      "carbs": 1.0,
+      "protein": 40.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "single-chicken-filet-grilled-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Coleslaw — Regular",
+      "calories": 180.0,
+      "fat": 13.0,
+      "carbs": 15.0,
+      "protein": 2.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "coleslaw-regular-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Coleslaw — Large",
+      "calories": 360.0,
+      "fat": 26.0,
+      "carbs": 30.0,
+      "protein": 3.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "coleslaw-large-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Kids — Chicken Slider — Breaded",
+      "calories": 450.0,
+      "fat": 20.0,
+      "carbs": 44.0,
+      "protein": 24.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "kids-chicken-slider-breaded-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Kids — Chicken Slider — Grilled",
+      "calories": 420.0,
+      "fat": 20.0,
+      "carbs": 33.0,
+      "protein": 27.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "kids-chicken-slider-grilled-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Kids — Nuggets — 6 Piece Breaded",
+      "calories": 290.0,
+      "fat": 6.0,
+      "carbs": 23.0,
+      "protein": 35.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "kids-nuggets-6-piece-breaded-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Kids — Grilled Cheese",
+      "calories": 390.0,
+      "fat": 24.0,
+      "carbs": 26.0,
+      "protein": 17.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "kids-grilled-cheese-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Kids — Kid Fries — Kids",
+      "calories": 290.0,
+      "fat": 17.0,
+      "carbs": 33.0,
+      "protein": 4.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "kids-kid-fries-kids-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Kids — Mandarin Oranges",
+      "calories": 45.0,
+      "fat": 0.0,
+      "carbs": 11.0,
+      "protein": 0.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "kids-mandarin-oranges-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Kids — Fudge Brownie",
+      "calories": 350.0,
+      "fat": 19.0,
+      "carbs": 42.0,
+      "protein": 5.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "kids-fudge-brownie-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Kids — Rice Crispy Square",
+      "calories": 220.0,
+      "fat": 4.5,
+      "carbs": 42.0,
+      "protein": 2.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "kids-rice-crispy-square-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Vanilla Custard — Single",
+      "calories": 260.0,
+      "fat": 13.0,
+      "carbs": 26.0,
+      "protein": 6.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "vanilla-custard-single-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Vanilla Custard — Double",
+      "calories": 510.0,
+      "fat": 26.0,
+      "carbs": 51.0,
+      "protein": 12.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "vanilla-custard-double-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Vanilla Custard — Pint",
+      "calories": 770.0,
+      "fat": 38.0,
+      "carbs": 77.0,
+      "protein": 17.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "vanilla-custard-pint-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Chocolate Custard — Single",
+      "calories": 270.0,
+      "fat": 14.0,
+      "carbs": 28.0,
+      "protein": 6.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "chocolate-custard-single-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Chocolate Custard — Double",
+      "calories": 540.0,
+      "fat": 28.0,
+      "carbs": 56.0,
+      "protein": 13.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "chocolate-custard-double-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Chocolate Custard — Pint",
+      "calories": 800.0,
+      "fat": 42.0,
+      "carbs": 84.0,
+      "protein": 19.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "chocolate-custard-pint-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Shake — Vanilla",
+      "calories": 830.0,
+      "fat": 42.0,
+      "carbs": 82.0,
+      "protein": 21.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "shake-vanilla-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Shake — Chocolate",
+      "calories": 870.0,
+      "fat": 46.0,
+      "carbs": 90.0,
+      "protein": 23.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "shake-chocolate-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Shake — Strawberry",
+      "calories": 900.0,
+      "fat": 42.0,
+      "carbs": 98.0,
+      "protein": 21.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "shake-strawberry-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Shake — Mint Oreo",
+      "calories": 900.0,
+      "fat": 42.0,
+      "carbs": 98.0,
+      "protein": 21.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "shake-mint-oreo-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Shake — Cookies 'N Cream",
+      "calories": 1080.0,
+      "fat": 53.0,
+      "carbs": 118.0,
+      "protein": 23.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "shake-cookies-n-cream-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Cold Fusion — Mint Oreo",
+      "calories": 1070.0,
+      "fat": 49.0,
+      "carbs": 128.0,
+      "protein": 20.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "cold-fusion-mint-oreo-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Cold Fusion — Pretzel M&M's",
+      "calories": 1160.0,
+      "fat": 51.0,
+      "carbs": 142.0,
+      "protein": 23.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "cold-fusion-pretzel-m-m-s-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Cold Fusion — Reese's",
+      "calories": 1220.0,
+      "fat": 65.0,
+      "carbs": 125.0,
+      "protein": 26.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "cold-fusion-reese-s-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Korean BBQ Sauce",
+      "calories": 110.0,
+      "fat": 1.5,
+      "carbs": 22.0,
+      "protein": 0.0,
+      "servingLabel": "2 oz portion",
+      "id": "korean-bbq-sauce-2-oz-portion"
+    },
+    {
+      "name": "BBQ Sauce",
+      "calories": 110.0,
+      "fat": 0.0,
+      "carbs": 28.0,
+      "protein": 0.0,
+      "servingLabel": "2 oz portion",
+      "id": "bbq-sauce-2-oz-portion"
+    },
+    {
+      "name": "Buffalo Sauce",
+      "calories": 35.0,
+      "fat": 4.0,
+      "carbs": 4.0,
+      "protein": 0.0,
+      "servingLabel": "2 oz portion",
+      "id": "buffalo-sauce-2-oz-portion"
+    },
+    {
+      "name": "Honey Mustard",
+      "calories": 240.0,
+      "fat": 22.0,
+      "carbs": 13.0,
+      "protein": 0.0,
+      "servingLabel": "2 oz portion",
+      "id": "honey-mustard-2-oz-portion"
+    },
+    {
+      "name": "Asian Sesame Dressing",
+      "calories": 160.0,
+      "fat": 8.0,
+      "carbs": 23.0,
+      "protein": 0.0,
+      "servingLabel": "2 oz portion",
+      "id": "asian-sesame-dressing-2-oz-portion"
+    },
+    {
+      "name": "Buttermilk Ranch",
+      "calories": 270.0,
+      "fat": 29.0,
+      "carbs": 4.0,
+      "protein": 0.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "buttermilk-ranch-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Jalapeno Ranch",
+      "calories": 200.0,
+      "fat": 20.0,
+      "carbs": 2.0,
+      "protein": 2.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "jalapeno-ranch-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Nashville Hot Sauce",
+      "calories": 250.0,
+      "fat": 27.0,
+      "carbs": 2.0,
+      "protein": 0.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "nashville-hot-sauce-1-listed-menu-portion-size-in-name"
+    },
+    {
+      "name": "Signature Sauce",
+      "calories": 240.0,
+      "fat": 21.0,
+      "carbs": 15.0,
+      "protein": 0.0,
+      "servingLabel": "1 listed menu portion (size in name)",
+      "id": "signature-sauce-1-listed-menu-portion-size-in-name"
+    }
+  ],
+  "sourceDate": "2026-09-16"
+}

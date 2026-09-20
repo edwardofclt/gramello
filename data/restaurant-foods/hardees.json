@@ -1,0 +1,613 @@
+{
+  "chain": "Hardee's",
+  "sourceUrl": "https://www.nutritionix.com/hardees/menu/premium",
+  "source": "Nutritionix",
+  "sourceKind": "database",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "id": "nutritionix-635442",
+      "name": "Bacon, Egg & Cheese Biscuit",
+      "calories": 520,
+      "protein": 20,
+      "carbs": 44,
+      "fat": 29,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-635446",
+      "name": "Biscuit 'N' Gravy",
+      "calories": 500,
+      "protein": 10,
+      "carbs": 54,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-635459",
+      "name": "Breakfast Cinnamon Roll",
+      "calories": 520,
+      "protein": 6,
+      "carbs": 89,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-635441",
+      "name": "Country-Fried Steak Biscuit",
+      "calories": 550,
+      "protein": 14,
+      "carbs": 49,
+      "fat": 33,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-635439",
+      "name": "Country Ham Biscuit",
+      "calories": 410,
+      "protein": 16,
+      "carbs": 42,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-635455",
+      "name": "French Toast Dips Entree",
+      "calories": 620,
+      "protein": 9,
+      "carbs": 106,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-635447",
+      "name": "Frisco Breakfast Sandwich",
+      "calories": 450,
+      "protein": 24,
+      "carbs": 42,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-635458",
+      "name": "Grits",
+      "calories": 100,
+      "protein": 2,
+      "carbs": 17,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-635440",
+      "name": "Hand-Breaded Chicken Biscuit",
+      "calories": 610,
+      "protein": 30,
+      "carbs": 52,
+      "fat": 31,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-635449",
+      "name": "Hardee Breakfast Platter with Bacon",
+      "calories": 950,
+      "protein": 31,
+      "carbs": 76,
+      "fat": 56,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-635450",
+      "name": "Hardee Breakfast Platter with Ham",
+      "calories": 860,
+      "protein": 28,
+      "carbs": 75,
+      "fat": 48,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-635451",
+      "name": "Hardee Breakfast Platter with Sausage",
+      "calories": 1050,
+      "protein": 30,
+      "carbs": 76,
+      "fat": 68,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-635454",
+      "name": "Hash Rounds, Large",
+      "calories": 450,
+      "protein": 4,
+      "carbs": 40,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-635453",
+      "name": "Hash Rounds, Medium",
+      "calories": 320,
+      "protein": 3,
+      "carbs": 28,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-635448",
+      "name": "Loaded Breakfast Burrito",
+      "calories": 580,
+      "protein": 30,
+      "carbs": 46,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-635443",
+      "name": "Loaded Omelet Biscuit",
+      "calories": 520,
+      "protein": 19,
+      "carbs": 46,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-635444",
+      "name": "Monster Biscuit",
+      "calories": 790,
+      "protein": 35,
+      "carbs": 45,
+      "fat": 52,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-635456",
+      "name": "Plain Biscuit",
+      "calories": 340,
+      "protein": 6,
+      "carbs": 41,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-635445",
+      "name": "Pork Chop 'N' Gravy Biscuit",
+      "calories": 600,
+      "protein": 24,
+      "carbs": 56,
+      "fat": 31,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-635438",
+      "name": "Sausage & Egg Biscuit",
+      "calories": 600,
+      "protein": 19,
+      "carbs": 44,
+      "fat": 39,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-635457",
+      "name": "Sausage Biscuit",
+      "calories": 530,
+      "protein": 13,
+      "carbs": 42,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-635465",
+      "name": "Bacon Cheeseburger, Double",
+      "calories": 1020,
+      "protein": 58,
+      "carbs": 50,
+      "fat": 68,
+      "servingLabel": "1 listed serving (Burgers & Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-635464",
+      "name": "Bacon Cheeseburger, Single",
+      "calories": 740,
+      "protein": 36,
+      "carbs": 49,
+      "fat": 48,
+      "servingLabel": "1 listed serving (Burgers & Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-635469",
+      "name": "Big Cheeseburger, Double",
+      "calories": 760,
+      "protein": 46,
+      "carbs": 53,
+      "fat": 42,
+      "servingLabel": "1 listed serving (Burgers & Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-635468",
+      "name": "Big Cheeseburger, Single",
+      "calories": 540,
+      "protein": 28,
+      "carbs": 53,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Burgers & Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-635471",
+      "name": "Big Hot Ham 'N' Cheese Sandwich",
+      "calories": 460,
+      "protein": 31,
+      "carbs": 50,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Burgers & Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-635473",
+      "name": "Big Roast Beef Sandwich",
+      "calories": 520,
+      "protein": 29,
+      "carbs": 48,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Burgers & Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-635460",
+      "name": "Famous Star with Cheese",
+      "calories": 670,
+      "protein": 28,
+      "carbs": 52,
+      "fat": 40,
+      "servingLabel": "1 listed serving (Burgers & Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-635463",
+      "name": "Frisco Burger, Double",
+      "calories": 1130,
+      "protein": 61,
+      "carbs": 44,
+      "fat": 81,
+      "servingLabel": "1 listed serving (Burgers & Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-635462",
+      "name": "Frisco Burger, Single",
+      "calories": 850,
+      "protein": 40,
+      "carbs": 43,
+      "fat": 59,
+      "servingLabel": "1 listed serving (Burgers & Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-635475",
+      "name": "Jumbo Chili Dog",
+      "calories": 400,
+      "protein": 16,
+      "carbs": 24,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Burgers & Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-635470",
+      "name": "Monster Burger",
+      "calories": 1160,
+      "protein": 68,
+      "carbs": 49,
+      "fat": 79,
+      "servingLabel": "1 listed serving (Burgers & Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-635467",
+      "name": "Mushroom & Swiss Burger, Double",
+      "calories": 790,
+      "protein": 49,
+      "carbs": 49,
+      "fat": 46,
+      "servingLabel": "1 listed serving (Burgers & Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-635466",
+      "name": "Mushroom & Swiss Burger, Single",
+      "calories": 560,
+      "protein": 30,
+      "carbs": 49,
+      "fat": 29,
+      "servingLabel": "1 listed serving (Burgers & Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-635472",
+      "name": "Original Hot Ham 'N' Cheese Sandwich",
+      "calories": 360,
+      "protein": 21,
+      "carbs": 51,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Burgers & Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-635461",
+      "name": "Super Star with Cheese",
+      "calories": 950,
+      "protein": 50,
+      "carbs": 54,
+      "fat": 62,
+      "servingLabel": "1 listed serving (Burgers & Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-635478",
+      "name": "3-Piece Hand-Breaded Chicken Tenders",
+      "calories": 260,
+      "protein": 25,
+      "carbs": 13,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Chicken & More; size in item name)"
+    },
+    {
+      "id": "nutritionix-635479",
+      "name": "5-Piece Hand-Breaded Chicken Tenders",
+      "calories": 440,
+      "protein": 41,
+      "carbs": 21,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Chicken & More; size in item name)"
+    },
+    {
+      "id": "nutritionix-635480",
+      "name": "10-Piece Hand-Breaded Chicken Tenders",
+      "calories": 880,
+      "protein": 82,
+      "carbs": 43,
+      "fat": 43,
+      "servingLabel": "1 listed serving (Chicken & More; size in item name)"
+    },
+    {
+      "id": "nutritionix-635477",
+      "name": "Hand-Breaded Chicken BLT",
+      "calories": 730,
+      "protein": 39,
+      "carbs": 59,
+      "fat": 38,
+      "servingLabel": "1 listed serving (Chicken & More; size in item name)"
+    },
+    {
+      "id": "nutritionix-635476",
+      "name": "Hand-Breaded Chicken Sandwich",
+      "calories": 650,
+      "protein": 30,
+      "carbs": 59,
+      "fat": 32,
+      "servingLabel": "1 listed serving (Chicken & More; size in item name)"
+    },
+    {
+      "id": "nutritionix-635481",
+      "name": "Kids Meal, 2-Piece Chicken Tenders",
+      "calories": 410,
+      "protein": 19,
+      "carbs": 39,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Star Pals Kids Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-635482",
+      "name": "Kids Meal, Cheeseburger",
+      "calories": 620,
+      "protein": 18,
+      "carbs": 84,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Star Pals Kids Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-635484",
+      "name": "Kids Meal, Grilled Cheese",
+      "calories": 600,
+      "protein": 16,
+      "carbs": 71,
+      "fat": 28,
+      "servingLabel": "1 listed serving (Star Pals Kids Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-635483",
+      "name": "Kids Meal, Hamburger",
+      "calories": 580,
+      "protein": 16,
+      "carbs": 84,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Star Pals Kids Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-635485",
+      "name": "Kids Meal, Hot Dog",
+      "calories": 580,
+      "protein": 15,
+      "carbs": 52,
+      "fat": 35,
+      "servingLabel": "1 listed serving (Star Pals Kids Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-635492",
+      "name": "Crispy Curls, Large",
+      "calories": 420,
+      "protein": 5,
+      "carbs": 53,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-635491",
+      "name": "Crispy Curls, Medium",
+      "calories": 340,
+      "protein": 4,
+      "carbs": 43,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-635490",
+      "name": "Crispy Curls, Small",
+      "calories": 240,
+      "protein": 3,
+      "carbs": 31,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-635486",
+      "name": "Fries, Kids",
+      "calories": 240,
+      "protein": 3,
+      "carbs": 31,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-635489",
+      "name": "Fries, Large",
+      "calories": 470,
+      "protein": 5,
+      "carbs": 61,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-635488",
+      "name": "Fries, Medium",
+      "calories": 420,
+      "protein": 5,
+      "carbs": 55,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-635487",
+      "name": "Fries, Small",
+      "calories": 300,
+      "protein": 3,
+      "carbs": 39,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-635494",
+      "name": "Apple Turnover",
+      "calories": 270,
+      "protein": 3,
+      "carbs": 35,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-635493",
+      "name": "Cinnamon Roll",
+      "calories": 520,
+      "protein": 6,
+      "carbs": 89,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-635496",
+      "name": "Hand-Scooped Ice-Cream Shake, Chocolate",
+      "calories": 710,
+      "protein": 13,
+      "carbs": 86,
+      "fat": 36,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-635497",
+      "name": "Hand-Scooped Ice-Cream Shake, Strawberry",
+      "calories": 710,
+      "protein": 13,
+      "carbs": 85,
+      "fat": 36,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-635495",
+      "name": "Hand-Scooped Ice-Cream Shake, Vanilla",
+      "calories": 740,
+      "protein": 13,
+      "carbs": 87,
+      "fat": 36,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-635506",
+      "name": "Dasani Water, 16.9 fl oz",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-635501",
+      "name": "Decaffeinated Coffee, 12 fl oz",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-635502",
+      "name": "Decaffeinated Coffee, 16 fl oz",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-635503",
+      "name": "Decaffeinated Coffee, 20 fl oz",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0.5,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-635498",
+      "name": "Regular Coffee, 12 fl oz",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-635499",
+      "name": "Regular Coffee, 16 fl oz",
+      "calories": 15,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-635500",
+      "name": "Regular Coffee, 20 fl oz",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0.5,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-635504",
+      "name": "Regular Milk, 1%, 7 fl oz",
+      "calories": 90,
+      "protein": 7,
+      "carbs": 10,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-635505",
+      "name": "Simply Orange Juice, 11.5 fl oz",
+      "calories": 160,
+      "protein": 2,
+      "carbs": 37,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    }
+  ],
+  "sourceDate": "2024-09-13"
+}

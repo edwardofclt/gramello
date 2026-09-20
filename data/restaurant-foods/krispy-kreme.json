@@ -1,0 +1,1297 @@
+{
+  "chain": "Krispy Kreme",
+  "sourceUrl": "https://www.nutritionix.com/krispy-kreme/menu/premium",
+  "source": "Nutritionix",
+  "sourceKind": "database",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "id": "nutritionix-721933",
+      "name": "Assorted Doughnut Dots, 24 ct",
+      "calories": 1110,
+      "protein": 13,
+      "carbs": 140,
+      "fat": 56,
+      "servingLabel": "1 listed serving (Doughnuts; size in item name)"
+    },
+    {
+      "id": "nutritionix-721929",
+      "name": "Blue Raspberry Slush Doughnut",
+      "calories": 250,
+      "protein": 3,
+      "carbs": 37,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Doughnuts; size in item name)"
+    },
+    {
+      "id": "nutritionix-721941",
+      "name": "Cake Batter Doughnut",
+      "calories": 350,
+      "protein": 4,
+      "carbs": 45,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Doughnuts; size in item name)"
+    },
+    {
+      "id": "nutritionix-721943",
+      "name": "Candy Double Feature Doughnut",
+      "calories": 310,
+      "protein": 3,
+      "carbs": 44,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Doughnuts; size in item name)"
+    },
+    {
+      "id": "nutritionix-721938",
+      "name": "Caramel Popcorn Doughnut",
+      "calories": 390,
+      "protein": 4,
+      "carbs": 50,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Doughnuts; size in item name)"
+    },
+    {
+      "id": "nutritionix-721947",
+      "name": "Chocolate Iced Custard Filled Doughnut",
+      "calories": 300,
+      "protein": 4,
+      "carbs": 37,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Doughnuts; size in item name)"
+    },
+    {
+      "id": "nutritionix-721948",
+      "name": "Chocolate Iced Doughnut with Kreme Filling",
+      "calories": 350,
+      "protein": 4,
+      "carbs": 41,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Doughnuts; size in item name)"
+    },
+    {
+      "id": "nutritionix-721945",
+      "name": "Chocolate Iced Glazed Doughnut",
+      "calories": 240,
+      "protein": 3,
+      "carbs": 33,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Doughnuts; size in item name)"
+    },
+    {
+      "id": "nutritionix-721946",
+      "name": "Chocolate Iced Glazed Doughnut with Sprinkles",
+      "calories": 250,
+      "protein": 3,
+      "carbs": 34,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Doughnuts; size in item name)"
+    },
+    {
+      "id": "nutritionix-721944",
+      "name": "Cookie Dough Superstar Doughnut",
+      "calories": 400,
+      "protein": 4,
+      "carbs": 48,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Doughnuts; size in item name)"
+    },
+    {
+      "id": "nutritionix-721942",
+      "name": "Glazed Blueberry Cake Doughnut",
+      "calories": 300,
+      "protein": 2,
+      "carbs": 40,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Doughnuts; size in item name)"
+    },
+    {
+      "id": "nutritionix-721940",
+      "name": "Glazed Lemon Filled Doughnut",
+      "calories": 290,
+      "protein": 4,
+      "carbs": 37,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Doughnuts; size in item name)"
+    },
+    {
+      "id": "nutritionix-721939",
+      "name": "Glazed Raspberry Filled Doughnut",
+      "calories": 300,
+      "protein": 4,
+      "carbs": 38,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Doughnuts; size in item name)"
+    },
+    {
+      "id": "nutritionix-721950",
+      "name": "Mini Chocolate Iced Doughnuts with Sprinkles",
+      "calories": 130,
+      "protein": 1,
+      "carbs": 19,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Doughnuts; size in item name)"
+    },
+    {
+      "id": "nutritionix-721949",
+      "name": "Mini Chocolate Iced Glazed Doughnut",
+      "calories": 120,
+      "protein": 2,
+      "carbs": 17,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Doughnuts; size in item name)"
+    },
+    {
+      "id": "nutritionix-721936",
+      "name": "Mini Original Glazed Doughnuts",
+      "calories": 90,
+      "protein": 1,
+      "carbs": 11,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Doughnuts; size in item name)"
+    },
+    {
+      "id": "nutritionix-721937",
+      "name": "Mini Strawberry Iced Doughnuts with Sprinkles",
+      "calories": 130,
+      "protein": 1,
+      "carbs": 19,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Doughnuts; size in item name)"
+    },
+    {
+      "id": "nutritionix-721934",
+      "name": "Original Glazed Doughnut",
+      "calories": 190,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Doughnuts; size in item name)"
+    },
+    {
+      "id": "nutritionix-721931",
+      "name": "Original Glazed Doughnut Dots, 10 ct",
+      "calories": 430,
+      "protein": 5,
+      "carbs": 51,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Doughnuts; size in item name)"
+    },
+    {
+      "id": "nutritionix-721932",
+      "name": "Original Glazed Doughnut Dots, 24 ct",
+      "calories": 1040,
+      "protein": 12,
+      "carbs": 123,
+      "fat": 56,
+      "servingLabel": "1 listed serving (Doughnuts; size in item name)"
+    },
+    {
+      "id": "nutritionix-721935",
+      "name": "Original Glazed Cinnamon Roll",
+      "calories": 280,
+      "protein": 4,
+      "carbs": 42,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Doughnuts; size in item name)"
+    },
+    {
+      "id": "nutritionix-721988",
+      "name": "Americano, 12 fl oz",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Hot Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-721989",
+      "name": "Americano, 16 fl oz",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Hot Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-721990",
+      "name": "Americano, 20 fl oz",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Hot Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-721981",
+      "name": "Cappuccino, 12 fl oz",
+      "calories": 110,
+      "protein": 8,
+      "carbs": 10,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Hot Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-721982",
+      "name": "Cappuccino, 16 fl oz",
+      "calories": 130,
+      "protein": 9,
+      "carbs": 13,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Hot Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-721983",
+      "name": "Cappuccino, 20 fl oz",
+      "calories": 160,
+      "protein": 11,
+      "carbs": 15,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Hot Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-721972",
+      "name": "Caramel Latte, 12 fl oz",
+      "calories": 330,
+      "protein": 10,
+      "carbs": 46,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Hot Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-721973",
+      "name": "Caramel Latte, 16 fl oz",
+      "calories": 400,
+      "protein": 12,
+      "carbs": 62,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Hot Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-721974",
+      "name": "Caramel Latte, 20 fl oz",
+      "calories": 520,
+      "protein": 16,
+      "carbs": 82,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Hot Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-721975",
+      "name": "Caramel Mocha Latte, 12 fl oz",
+      "calories": 320,
+      "protein": 10,
+      "carbs": 45,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Hot Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-721976",
+      "name": "Caramel Mocha Latte, 16 fl oz",
+      "calories": 390,
+      "protein": 12,
+      "carbs": 59,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Hot Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-721977",
+      "name": "Caramel Mocha Latte, 20 fl oz",
+      "calories": 510,
+      "protein": 16,
+      "carbs": 78,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Hot Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-721951",
+      "name": "Caramel Vanilla Latte, 12 fl oz",
+      "calories": 300,
+      "protein": 10,
+      "carbs": 41,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Hot Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-721952",
+      "name": "Caramel Vanilla Latte, 16 fl oz",
+      "calories": 420,
+      "protein": 11,
+      "carbs": 66,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Hot Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-721953",
+      "name": "Caramel Vanilla Latte, 20 fl oz",
+      "calories": 500,
+      "protein": 16,
+      "carbs": 77,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Hot Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-721954",
+      "name": "Classic Brewed Coffee, 12 fl oz",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Hot Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-721957",
+      "name": "Classic Brewed Coffee, Brew Box, 12 fl oz",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Hot Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-721958",
+      "name": "Classic Decaf Brewed Coffee, 12 fl oz",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Hot Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-721961",
+      "name": "Classic Decaf Brewed Coffee, Brew Box, 12 fl oz",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Hot Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-721997",
+      "name": "Classic Decaf Ground Coffee, 12 fl oz",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Hot Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-722000",
+      "name": "Classic Decaf Ground Coffee, Brew Box, 12 fl oz",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Hot Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-721993",
+      "name": "Classic Ground Coffee, 12 fl oz",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Hot Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-721985",
+      "name": "Espresso, Double, 2 fl oz",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Hot Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-721987",
+      "name": "Espresso, Quad, 4 fl oz",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Hot Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-721984",
+      "name": "Espresso, Single, 1 fl oz",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Hot Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-721986",
+      "name": "Espresso, Triple, 3 fl oz",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Hot Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-721992",
+      "name": "Krispy Kreme Classic Decaf K-Cup, 8 fl oz",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Hot Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-721991",
+      "name": "Krispy Kreme Classic K-Cup, 8 fl oz",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Hot Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-721962",
+      "name": "Latte, 12 fl oz",
+      "calories": 140,
+      "protein": 10,
+      "carbs": 14,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Hot Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-721963",
+      "name": "Latte, 16 fl oz",
+      "calories": 180,
+      "protein": 12,
+      "carbs": 17,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Hot Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-721964",
+      "name": "Latte, 20 fl oz",
+      "calories": 230,
+      "protein": 16,
+      "carbs": 22,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Hot Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-721978",
+      "name": "Mocha Latte, 12 fl oz",
+      "calories": 320,
+      "protein": 11,
+      "carbs": 46,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Hot Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-721979",
+      "name": "Mocha Latte, 16 fl oz",
+      "calories": 390,
+      "protein": 13,
+      "carbs": 61,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Hot Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-721980",
+      "name": "Mocha Latte, 20 fl oz",
+      "calories": 500,
+      "protein": 17,
+      "carbs": 80,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Hot Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-721968",
+      "name": "Original Glazed Latte, 12 fl oz",
+      "calories": 100,
+      "protein": 2,
+      "carbs": 20,
+      "fat": 0.5,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Hot Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-721969",
+      "name": "Original Glazed Latte, 16 fl oz",
+      "calories": 140,
+      "protein": 2,
+      "carbs": 30,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Hot Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-721970",
+      "name": "Original Glazed Latte, 20 fl oz",
+      "calories": 180,
+      "protein": 3,
+      "carbs": 40,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Hot Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-721971",
+      "name": "Original Glazed Latte, 32 fl oz",
+      "calories": 270,
+      "protein": 4,
+      "carbs": 58,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Hot Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-721965",
+      "name": "Vanilla Latte, 12 fl oz",
+      "calories": 220,
+      "protein": 10,
+      "carbs": 32,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Hot Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-721966",
+      "name": "Vanilla Latte, 16 fl oz",
+      "calories": 290,
+      "protein": 12,
+      "carbs": 44,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Hot Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-721967",
+      "name": "Vanilla Latte, 20 fl oz",
+      "calories": 380,
+      "protein": 16,
+      "carbs": 59,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Hot Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-722016",
+      "name": "Caramel Iced Coffee, 12 fl oz",
+      "calories": 140,
+      "protein": 2,
+      "carbs": 30,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Iced Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-722017",
+      "name": "Caramel Iced Coffee, 16 fl oz",
+      "calories": 200,
+      "protein": 2,
+      "carbs": 45,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Iced Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-722018",
+      "name": "Caramel Iced Coffee, 20 fl oz",
+      "calories": 270,
+      "protein": 3,
+      "carbs": 60,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Iced Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-722019",
+      "name": "Caramel Iced Coffee, 32 fl oz",
+      "calories": 410,
+      "protein": 5,
+      "carbs": 89,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Iced Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-722020",
+      "name": "Caramel Mocha Iced Coffee, 12 fl oz",
+      "calories": 130,
+      "protein": 2,
+      "carbs": 27,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Iced Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-722021",
+      "name": "Caramel Mocha Iced Coffee, 16 fl oz",
+      "calories": 190,
+      "protein": 3,
+      "carbs": 40,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Iced Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-722022",
+      "name": "Caramel Mocha Iced Coffee, 20 fl oz",
+      "calories": 250,
+      "protein": 3,
+      "carbs": 54,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Iced Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-722023",
+      "name": "Caramel Mocha Iced Coffee, 32 fl oz",
+      "calories": 380,
+      "protein": 5,
+      "carbs": 81,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Iced Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-722001",
+      "name": "Caramel Vanilla Iced Latte, 12 fl oz",
+      "calories": 230,
+      "protein": 5,
+      "carbs": 34,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Iced Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-722002",
+      "name": "Caramel Vanilla Iced Latte, 16 fl oz",
+      "calories": 330,
+      "protein": 5,
+      "carbs": 58,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Iced Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-722003",
+      "name": "Caramel Vanilla Iced Latte, 20 fl oz",
+      "calories": 450,
+      "protein": 7,
+      "carbs": 83,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Iced Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-722033",
+      "name": "Iced Caramel Latte, 12 fl oz",
+      "calories": 250,
+      "protein": 5,
+      "carbs": 39,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Iced Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-722034",
+      "name": "Iced Caramel Latte, 16 fl oz",
+      "calories": 320,
+      "protein": 6,
+      "carbs": 54,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Iced Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-722035",
+      "name": "Iced Caramel Latte, 20 fl oz",
+      "calories": 400,
+      "protein": 7,
+      "carbs": 70,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Iced Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-722036",
+      "name": "Iced Caramel Mocha Specialty Latte, 12 fl oz",
+      "calories": 250,
+      "protein": 5,
+      "carbs": 37,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Iced Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-722037",
+      "name": "Iced Caramel Mocha Specialty Latte, 16 fl oz",
+      "calories": 310,
+      "protein": 6,
+      "carbs": 51,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Iced Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-722038",
+      "name": "Iced Caramel Mocha Specialty Latte, 20 fl oz",
+      "calories": 380,
+      "protein": 7,
+      "carbs": 66,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Iced Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-722004",
+      "name": "Iced Coffee, 12 fl oz",
+      "calories": 20,
+      "protein": 2,
+      "carbs": 2,
+      "fat": 0.5,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Iced Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-722005",
+      "name": "Iced Coffee, 16 fl oz",
+      "calories": 25,
+      "protein": 2,
+      "carbs": 2,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Iced Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-722006",
+      "name": "Iced Coffee, 20 fl oz",
+      "calories": 35,
+      "protein": 3,
+      "carbs": 3,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Iced Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-722007",
+      "name": "Iced Coffee, 32 fl oz",
+      "calories": 60,
+      "protein": 4,
+      "carbs": 5,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Iced Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-722024",
+      "name": "Iced Latte, 12 fl oz",
+      "calories": 80,
+      "protein": 6,
+      "carbs": 8,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Iced Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-722025",
+      "name": "Iced Latte, 16 fl oz",
+      "calories": 90,
+      "protein": 7,
+      "carbs": 9,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Iced Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-722026",
+      "name": "Iced Latte, 20 fl oz",
+      "calories": 110,
+      "protein": 8,
+      "carbs": 11,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Iced Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-722039",
+      "name": "Iced Mocha Latte, 12 fl oz",
+      "calories": 250,
+      "protein": 6,
+      "carbs": 39,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Iced Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-722040",
+      "name": "Iced Mocha Latte, 16 fl oz",
+      "calories": 310,
+      "protein": 7,
+      "carbs": 53,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Iced Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-722041",
+      "name": "Iced Mocha Latte, 20 fl oz",
+      "calories": 380,
+      "protein": 9,
+      "carbs": 68,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Iced Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-722030",
+      "name": "Iced Original Glazed Latte, 12 fl oz",
+      "calories": 160,
+      "protein": 6,
+      "carbs": 26,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Iced Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-722031",
+      "name": "Iced Original Glazed Latte, 16 fl oz",
+      "calories": 200,
+      "protein": 7,
+      "carbs": 36,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Iced Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-722032",
+      "name": "Iced Original Glazed Latte, 20 fl oz",
+      "calories": 250,
+      "protein": 8,
+      "carbs": 47,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Iced Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-722027",
+      "name": "Iced Vanilla Latte, 12 fl oz",
+      "calories": 160,
+      "protein": 6,
+      "carbs": 26,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Iced Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-722028",
+      "name": "Iced Vanilla Latte, 16 fl oz",
+      "calories": 200,
+      "protein": 7,
+      "carbs": 36,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Iced Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-722029",
+      "name": "Iced Vanilla Latte, 20 fl oz",
+      "calories": 260,
+      "protein": 8,
+      "carbs": 47,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Iced Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-722012",
+      "name": "Original Glazed Iced Coffee, 12 fl oz",
+      "calories": 80,
+      "protein": 2,
+      "carbs": 15,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Iced Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-722013",
+      "name": "Original Glazed Iced Coffee, 16 fl oz",
+      "calories": 110,
+      "protein": 2,
+      "carbs": 21,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Iced Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-722014",
+      "name": "Original Glazed Iced Coffee, 20 fl oz",
+      "calories": 140,
+      "protein": 3,
+      "carbs": 28,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Iced Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-722015",
+      "name": "Original Glazed Iced Coffee, 32 fl oz",
+      "calories": 220,
+      "protein": 5,
+      "carbs": 44,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Iced Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-722008",
+      "name": "Vanilla Iced Coffee, 12 fl oz",
+      "calories": 90,
+      "protein": 2,
+      "carbs": 19,
+      "fat": 0.5,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Iced Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-722009",
+      "name": "Vanilla Iced Coffee, 16 fl oz",
+      "calories": 130,
+      "protein": 2,
+      "carbs": 29,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Iced Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-722010",
+      "name": "Vanilla Iced Coffee, 20 fl oz",
+      "calories": 180,
+      "protein": 3,
+      "carbs": 38,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Iced Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-722011",
+      "name": "Vanilla Iced Coffee, 32 fl oz",
+      "calories": 270,
+      "protein": 4,
+      "carbs": 59,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Iced Coffee & Espresso; size in item name)"
+    },
+    {
+      "id": "nutritionix-722054",
+      "name": "Frozen Caramel Latte, 12 fl oz",
+      "calories": 470,
+      "protein": 5,
+      "carbs": 63,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Frozen Coffees; size in item name)"
+    },
+    {
+      "id": "nutritionix-722055",
+      "name": "Frozen Caramel Latte, 16 fl oz",
+      "calories": 580,
+      "protein": 6,
+      "carbs": 81,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Frozen Coffees; size in item name)"
+    },
+    {
+      "id": "nutritionix-722056",
+      "name": "Frozen Caramel Latte, 20 fl oz",
+      "calories": 780,
+      "protein": 9,
+      "carbs": 112,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Frozen Coffees; size in item name)"
+    },
+    {
+      "id": "nutritionix-722057",
+      "name": "Frozen Caramel Mocha Latte, 12 fl oz",
+      "calories": 460,
+      "protein": 5,
+      "carbs": 62,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Frozen Coffees; size in item name)"
+    },
+    {
+      "id": "nutritionix-722058",
+      "name": "Frozen Caramel Mocha Latte, 16 fl oz",
+      "calories": 570,
+      "protein": 6,
+      "carbs": 78,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Frozen Coffees; size in item name)"
+    },
+    {
+      "id": "nutritionix-722059",
+      "name": "Frozen Caramel Mocha Latte, 20 fl oz",
+      "calories": 770,
+      "protein": 9,
+      "carbs": 108,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Frozen Coffees; size in item name)"
+    },
+    {
+      "id": "nutritionix-722042",
+      "name": "Frozen Caramel Vanilla Latte, 12 fl oz",
+      "calories": 470,
+      "protein": 5,
+      "carbs": 71,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Frozen Coffees; size in item name)"
+    },
+    {
+      "id": "nutritionix-722043",
+      "name": "Frozen Caramel Vanilla Latte, 16 fl oz",
+      "calories": 620,
+      "protein": 6,
+      "carbs": 100,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Frozen Coffees; size in item name)"
+    },
+    {
+      "id": "nutritionix-722044",
+      "name": "Frozen Caramel Vanilla Latte, 20 fl oz",
+      "calories": 870,
+      "protein": 9,
+      "carbs": 144,
+      "fat": 29,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Frozen Coffees; size in item name)"
+    },
+    {
+      "id": "nutritionix-722060",
+      "name": "Frozen Mocha Latte, 12 fl oz",
+      "calories": 470,
+      "protein": 6,
+      "carbs": 64,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Frozen Coffees; size in item name)"
+    },
+    {
+      "id": "nutritionix-722061",
+      "name": "Frozen Mocha Latte, 16 fl oz",
+      "calories": 570,
+      "protein": 7,
+      "carbs": 81,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Frozen Coffees; size in item name)"
+    },
+    {
+      "id": "nutritionix-722062",
+      "name": "Frozen Mocha Latte, 20 fl oz",
+      "calories": 780,
+      "protein": 10,
+      "carbs": 111,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Frozen Coffees; size in item name)"
+    },
+    {
+      "id": "nutritionix-722051",
+      "name": "Frozen Original Glazed Specialty Latte, 12 fl oz",
+      "calories": 450,
+      "protein": 5,
+      "carbs": 60,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Frozen Coffees; size in item name)"
+    },
+    {
+      "id": "nutritionix-722052",
+      "name": "Frozen Original Glazed Specialty Latte, 16 fl oz",
+      "calories": 560,
+      "protein": 6,
+      "carbs": 77,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Frozen Coffees; size in item name)"
+    },
+    {
+      "id": "nutritionix-722053",
+      "name": "Frozen Original Glazed Specialty Latte, 20 fl oz",
+      "calories": 760,
+      "protein": 8,
+      "carbs": 107,
+      "fat": 33,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Frozen Coffees; size in item name)"
+    },
+    {
+      "id": "nutritionix-722045",
+      "name": "Frozen Specialty Latte, 12 fl oz",
+      "calories": 380,
+      "protein": 5,
+      "carbs": 42,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Frozen Coffees; size in item name)"
+    },
+    {
+      "id": "nutritionix-722046",
+      "name": "Frozen Specialty Latte, 16 fl oz",
+      "calories": 450,
+      "protein": 6,
+      "carbs": 51,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Frozen Coffees; size in item name)"
+    },
+    {
+      "id": "nutritionix-722047",
+      "name": "Frozen Specialty Latte, 20 fl oz",
+      "calories": 620,
+      "protein": 8,
+      "carbs": 72,
+      "fat": 33,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Frozen Coffees; size in item name)"
+    },
+    {
+      "id": "nutritionix-722048",
+      "name": "Frozen Vanilla Latte, 12 fl oz",
+      "calories": 460,
+      "protein": 5,
+      "carbs": 60,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Frozen Coffees; size in item name)"
+    },
+    {
+      "id": "nutritionix-722049",
+      "name": "Frozen Vanilla Latte, 16 fl oz",
+      "calories": 560,
+      "protein": 6,
+      "carbs": 78,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Frozen Coffees; size in item name)"
+    },
+    {
+      "id": "nutritionix-722050",
+      "name": "Frozen Vanilla Latte, 20 fl oz",
+      "calories": 760,
+      "protein": 8,
+      "carbs": 108,
+      "fat": 33,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Frozen Coffees; size in item name)"
+    },
+    {
+      "id": "nutritionix-722072",
+      "name": "Blended Lemonade Chiller, 12 fl oz",
+      "calories": 320,
+      "protein": 0,
+      "carbs": 83,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Chillers; size in item name)"
+    },
+    {
+      "id": "nutritionix-722073",
+      "name": "Blended Lemonade Chiller, 16 fl oz",
+      "calories": 410,
+      "protein": 0,
+      "carbs": 106,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Chillers; size in item name)"
+    },
+    {
+      "id": "nutritionix-722074",
+      "name": "Blended Lemonade Chiller, 20 fl oz",
+      "calories": 470,
+      "protein": 0,
+      "carbs": 122,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Chillers; size in item name)"
+    },
+    {
+      "id": "nutritionix-722066",
+      "name": "Blended Strawberry Chiller, 12 fl oz",
+      "calories": 300,
+      "protein": 0,
+      "carbs": 78,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Chillers; size in item name)"
+    },
+    {
+      "id": "nutritionix-722067",
+      "name": "Blended Strawberry Chiller, 16 fl oz",
+      "calories": 390,
+      "protein": 0,
+      "carbs": 100,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Chillers; size in item name)"
+    },
+    {
+      "id": "nutritionix-722068",
+      "name": "Blended Strawberry Chiller, 20 fl oz",
+      "calories": 450,
+      "protein": 0,
+      "carbs": 115,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Chillers; size in item name)"
+    },
+    {
+      "id": "nutritionix-722069",
+      "name": "Lemonade Chiller, 12 fl oz",
+      "calories": 210,
+      "protein": 0,
+      "carbs": 54,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Chillers; size in item name)"
+    },
+    {
+      "id": "nutritionix-722070",
+      "name": "Lemonade Chiller, 16 fl oz",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 73,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Chillers; size in item name)"
+    },
+    {
+      "id": "nutritionix-722071",
+      "name": "Lemonade Chiller, 20 fl oz",
+      "calories": 350,
+      "protein": 0,
+      "carbs": 91,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Chillers; size in item name)"
+    },
+    {
+      "id": "nutritionix-722063",
+      "name": "Strawberry Chiller, 12 fl oz",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 51,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Chillers; size in item name)"
+    },
+    {
+      "id": "nutritionix-722064",
+      "name": "Strawberry Chiller, 16 fl oz",
+      "calories": 270,
+      "protein": 0,
+      "carbs": 69,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Chillers; size in item name)"
+    },
+    {
+      "id": "nutritionix-722065",
+      "name": "Strawberry Chiller, 20 fl oz",
+      "calories": 330,
+      "protein": 0,
+      "carbs": 85,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Chillers; size in item name)"
+    },
+    {
+      "id": "nutritionix-722075",
+      "name": "Ghirardelli Hot Chocolate, 12 fl oz",
+      "calories": 410,
+      "protein": 15,
+      "carbs": 63,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Hot Chocolate; size in item name)"
+    },
+    {
+      "id": "nutritionix-722076",
+      "name": "Ghirardelli Hot Chocolate, 16 fl oz",
+      "calories": 490,
+      "protein": 18,
+      "carbs": 76,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Hot Chocolate; size in item name)"
+    },
+    {
+      "id": "nutritionix-722077",
+      "name": "Ghirardelli Hot Chocolate, 20 fl oz",
+      "calories": 610,
+      "protein": 22,
+      "carbs": 99,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Hot Chocolate; size in item name)"
+    },
+    {
+      "id": "nutritionix-722078",
+      "name": "Classic Brewed Coffee Box, 12 fl oz",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Brew Box; size in item name)"
+    },
+    {
+      "id": "nutritionix-722081",
+      "name": "Classic Brewed Coffee Box, Brew Box, 12 fl oz",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Brew Box; size in item name)"
+    },
+    {
+      "id": "nutritionix-722082",
+      "name": "Classic Decaf Brewed Coffee Box, 12 fl oz",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Brew Box; size in item name)"
+    },
+    {
+      "id": "nutritionix-722085",
+      "name": "Classic Decaf Brewed Coffee Box, Brew Box, 12 fl oz",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Coffee & Drinks - Brew Box; size in item name)"
+    }
+  ],
+  "sourceDate": "2025-03-07"
+}

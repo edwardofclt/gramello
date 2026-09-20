@@ -1,0 +1,1414 @@
+{
+  "chain": "Cook Out",
+  "sourceUrl": "https://cookout.com/wp-content/uploads/Cook-Out-Nutrition1.pdf",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "id": "fresh-homemade-char-grilled-hamburgers-small-1-8-lb-3-2-oz-90-4-g",
+      "name": "Fresh Homemade Char-Grilled Hamburgers - Small 1/8 lb",
+      "calories": 245,
+      "protein": 14,
+      "carbs": 27,
+      "fat": 8,
+      "servingLabel": "3.2 oz (90.4 g)",
+      "servingGrams": 90.4
+    },
+    {
+      "id": "fresh-homemade-char-grilled-hamburgers-regular-1-4-lb-4-4-oz-125-g",
+      "name": "Fresh Homemade Char-Grilled Hamburgers - Regular 1/4 lb",
+      "calories": 328,
+      "protein": 22,
+      "carbs": 27,
+      "fat": 14,
+      "servingLabel": "4.4 oz (125 g)",
+      "servingGrams": 125
+    },
+    {
+      "id": "fresh-homemade-char-grilled-hamburgers-huge-1-2-lb-7-2-oz-202-6-g",
+      "name": "Fresh Homemade Char-Grilled Hamburgers - Huge 1/2 lb",
+      "calories": 516,
+      "protein": 40,
+      "carbs": 27,
+      "fat": 26,
+      "servingLabel": "7.2 oz (202.6 g)",
+      "servingGrams": 202.6
+    },
+    {
+      "id": "fresh-homemade-char-grilled-hamburgers-big-double-6-5-oz-184-5-g",
+      "name": "Fresh Homemade Char-Grilled Hamburgers - Big Double",
+      "calories": 311,
+      "protein": 20,
+      "carbs": 27,
+      "fat": 13,
+      "servingLabel": "6.5 oz (184.5 g)",
+      "servingGrams": 184.5
+    },
+    {
+      "id": "fresh-homemade-char-grilled-hamburgers-everything-add-2-oz-56-6-g",
+      "name": "Fresh Homemade Char-Grilled Hamburgers - Everything Add",
+      "calories": 91,
+      "protein": 1,
+      "carbs": 5,
+      "fat": 8,
+      "servingLabel": "2 oz (56.6 g)",
+      "servingGrams": 56.6
+    },
+    {
+      "id": "fresh-homemade-char-grilled-hamburgers-cook-out-style-add-4-5-oz-126-8-g",
+      "name": "Fresh Homemade Char-Grilled Hamburgers - Cook Out Style Add",
+      "calories": 123,
+      "protein": 3,
+      "carbs": 7,
+      "fat": 5,
+      "servingLabel": "4.5 oz (126.8 g)",
+      "servingGrams": 126.8
+    },
+    {
+      "id": "fresh-homemade-char-grilled-hamburgers-out-west-style-add-2-46-oz-69-6-g",
+      "name": "Fresh Homemade Char-Grilled Hamburgers - Out West Style Add",
+      "calories": 202,
+      "protein": 8,
+      "carbs": 4,
+      "fat": 18,
+      "servingLabel": "2.46 oz (69.6 g)",
+      "servingGrams": 69.6
+    },
+    {
+      "id": "fresh-homemade-char-grilled-hamburgers-steak-style-add-2-6-oz-73-5-g",
+      "name": "Fresh Homemade Char-Grilled Hamburgers - Steak Style Add",
+      "calories": 91,
+      "protein": 1,
+      "carbs": 5,
+      "fat": 8,
+      "servingLabel": "2.6 oz (73.5 g)",
+      "servingGrams": 73.5
+    },
+    {
+      "id": "fresh-homemade-char-grilled-hamburgers-cheddar-style-add-3-oz-85-5-g",
+      "name": "Fresh Homemade Char-Grilled Hamburgers - Cheddar Style Add",
+      "calories": 233,
+      "protein": 8,
+      "carbs": 5,
+      "fat": 20,
+      "servingLabel": "3 oz ( 85.5 g)",
+      "servingGrams": 85.5
+    },
+    {
+      "id": "char-grilled-chicken-breast-6-67-oz-189-2-g",
+      "name": "Char-Grilled Chicken Breast",
+      "calories": 377,
+      "protein": 25,
+      "carbs": 29,
+      "fat": 17,
+      "servingLabel": "6.67 oz (189.2 g)",
+      "servingGrams": 189.2
+    },
+    {
+      "id": "spicy-chicken-breast-5-61-oz-159-g",
+      "name": "Spicy Chicken Breast",
+      "calories": 446,
+      "protein": 21,
+      "carbs": 45,
+      "fat": 18,
+      "servingLabel": "5.61 oz (159 g)",
+      "servingGrams": 159
+    },
+    {
+      "id": "reg-bbq-sandwich-8-8-oz-249-5-g",
+      "name": "Reg BBQ Sandwich",
+      "calories": 368,
+      "protein": 29,
+      "carbs": 35,
+      "fat": 12,
+      "servingLabel": "8.8 oz (249.5 g)",
+      "servingGrams": 249.5
+    },
+    {
+      "id": "bbq-plate-17-3-oz-491-6-g",
+      "name": "BBQ Plate",
+      "calories": 976,
+      "protein": 35,
+      "carbs": 105,
+      "fat": 43,
+      "servingLabel": "17.3 oz (491.6 g)",
+      "servingGrams": 491.6
+    },
+    {
+      "id": "hot-dog-2-9-oz-81-g",
+      "name": "Hot Dog",
+      "calories": 260,
+      "protein": 8,
+      "carbs": 22,
+      "fat": 15,
+      "servingLabel": "2.9 oz (81 g)",
+      "servingGrams": 81
+    },
+    {
+      "id": "cook-out-style-hot-dog-6-2-oz-176-g",
+      "name": "Cook Out Style Hot Dog",
+      "calories": 383,
+      "protein": 11,
+      "carbs": 29,
+      "fat": 20,
+      "servingLabel": "6.2 oz (176 g)",
+      "servingGrams": 176
+    },
+    {
+      "id": "mexi-hot-dog-7-3-oz-207-8-g",
+      "name": "Mexi Hot Dog",
+      "calories": 385,
+      "protein": 12,
+      "carbs": 29,
+      "fat": 19,
+      "servingLabel": "7.3 oz (207.8 g)",
+      "servingGrams": 207.8
+    },
+    {
+      "id": "bacon-cheddar-hot-dog-4-62-oz-131-g",
+      "name": "Bacon Cheddar Hot Dog",
+      "calories": 523,
+      "protein": 19,
+      "carbs": 47,
+      "fat": 29,
+      "servingLabel": "4.62 oz (131 g)",
+      "servingGrams": 131
+    },
+    {
+      "id": "cajun-wrap-6-oz-170-g",
+      "name": "Cajun Wrap",
+      "calories": 501,
+      "protein": 25,
+      "carbs": 44,
+      "fat": 27,
+      "servingLabel": "6 oz (170 g)",
+      "servingGrams": 170
+    },
+    {
+      "id": "ranch-wrap-6-1-oz-174-2-g",
+      "name": "Ranch Wrap",
+      "calories": 522,
+      "protein": 25,
+      "carbs": 44,
+      "fat": 29,
+      "servingLabel": "6.1 oz (174.2 g)",
+      "servingGrams": 174.2
+    },
+    {
+      "id": "honey-mustard-wrap-6-2-oz-175-2-g",
+      "name": "Honey Mustard Wrap",
+      "calories": 517,
+      "protein": 25,
+      "carbs": 46,
+      "fat": 28,
+      "servingLabel": "6.2 oz (175.2 g)",
+      "servingGrams": 175.2
+    },
+    {
+      "id": "chicken-strips-3-8-25-oz-234-g",
+      "name": "Chicken Strips (3)",
+      "calories": 660,
+      "protein": 36,
+      "carbs": 60,
+      "fat": 33,
+      "servingLabel": "8.25 oz (234 g)",
+      "servingGrams": 234
+    },
+    {
+      "id": "chicken-strip-sandwich-11-6-oz-330-g",
+      "name": "Chicken Strip Sandwich",
+      "calories": 674,
+      "protein": 28,
+      "carbs": 71,
+      "fat": 32,
+      "servingLabel": "11.6 oz (330 g)",
+      "servingGrams": 330
+    },
+    {
+      "id": "homemade-style-chicken-strips-chicken-strip-club-add-1-45-oz-41-g",
+      "name": "Homemade Style Chicken Strips - Chicken Strip Club Add",
+      "calories": 846,
+      "protein": 39,
+      "carbs": 70,
+      "fat": 48,
+      "servingLabel": "1.45 oz (41 g)",
+      "servingGrams": 41
+    },
+    {
+      "id": "cheese-3-5-oz-98-2-g",
+      "name": "Cheese",
+      "calories": 355,
+      "protein": 13,
+      "carbs": 24,
+      "fat": 23,
+      "servingLabel": "3.5 oz (98.2 g)",
+      "servingGrams": 98.2
+    },
+    {
+      "id": "chicken-4-3-oz-123-g",
+      "name": "Chicken",
+      "calories": 449,
+      "protein": 19,
+      "carbs": 31,
+      "fat": 28,
+      "servingLabel": "4.3 oz (123 g)",
+      "servingGrams": 123
+    },
+    {
+      "id": "beef-4-5-oz-126-5-g",
+      "name": "Beef",
+      "calories": 514,
+      "protein": 22,
+      "carbs": 42,
+      "fat": 29,
+      "servingLabel": "4.5 oz (126.5 g)",
+      "servingGrams": 126.5
+    },
+    {
+      "id": "onion-rings-full-order-4-9-oz-138-g",
+      "name": "Onion Rings Full Order",
+      "calories": 256,
+      "protein": 6,
+      "carbs": 56,
+      "fat": 2,
+      "servingLabel": "4.9 oz (138 g)",
+      "servingGrams": 138
+    },
+    {
+      "id": "onion-rings-side-2-4-oz-69-g",
+      "name": "Onion Rings Side",
+      "calories": 128,
+      "protein": 3,
+      "carbs": 28,
+      "fat": 1,
+      "servingLabel": "2.4 oz (69 g)",
+      "servingGrams": 69
+    },
+    {
+      "id": "chicken-nuggets-full-order-2-9-oz-81-7-g",
+      "name": "Chicken Nuggets Full Order",
+      "calories": 240,
+      "protein": 16,
+      "carbs": 12,
+      "fat": 18,
+      "servingLabel": "2.9 oz (81.7 g)",
+      "servingGrams": 81.7
+    },
+    {
+      "id": "chicken-nuggets-side-1-7-oz-49-g",
+      "name": "Chicken Nuggets Side",
+      "calories": 144,
+      "protein": 10,
+      "carbs": 7,
+      "fat": 11,
+      "servingLabel": "1.7 oz (49 g)",
+      "servingGrams": 49
+    },
+    {
+      "id": "blt-sandwich-4-3-oz-123-g",
+      "name": "BLT Sandwich",
+      "calories": 392,
+      "protein": 15,
+      "carbs": 29,
+      "fat": 25,
+      "servingLabel": "4.3 oz (123 g)",
+      "servingGrams": 123
+    },
+    {
+      "id": "bacon-ranch-wrap-2-62-oz-41-g",
+      "name": "Bacon Ranch Wrap",
+      "calories": 419,
+      "protein": 20,
+      "carbs": 24,
+      "fat": 28,
+      "servingLabel": "2.62 oz (41 g)",
+      "servingGrams": 41
+    },
+    {
+      "id": "corn-dog-2-7-oz-76-g",
+      "name": "Corn Dog",
+      "calories": 220,
+      "protein": 5,
+      "carbs": 26,
+      "fat": 11,
+      "servingLabel": "2.7 oz (76 g)",
+      "servingGrams": 76
+    },
+    {
+      "id": "cheese-dog-2-3-oz-66-g",
+      "name": "Cheese Dog",
+      "calories": 146,
+      "protein": 3,
+      "carbs": 25,
+      "fat": 3,
+      "servingLabel": "2.3 oz (66 g)",
+      "servingGrams": 66
+    },
+    {
+      "id": "mustard-relish-hot-dog-3-6-oz-102-g",
+      "name": "Mustard Relish Hot Dog",
+      "calories": 394,
+      "protein": 11,
+      "carbs": 50,
+      "fat": 16,
+      "servingLabel": "3.6 oz (102 g)",
+      "servingGrams": 102
+    },
+    {
+      "id": "side-of-chili-3-5-oz-98-g",
+      "name": "Side of Chili",
+      "calories": 164,
+      "protein": 5,
+      "carbs": 4,
+      "fat": 3,
+      "servingLabel": "3.5 oz (98 g)",
+      "servingGrams": 98
+    },
+    {
+      "id": "side-of-slaw-4-oz-113-4-g",
+      "name": "Side of Slaw",
+      "calories": 405,
+      "protein": 0,
+      "carbs": 30,
+      "fat": 32,
+      "servingLabel": "4 oz (113.4 g)",
+      "servingGrams": 113.4
+    },
+    {
+      "id": "hushpuppies-full-order-6-oz-170-2-g",
+      "name": "Hushpuppies Full Order",
+      "calories": 600,
+      "protein": 3,
+      "carbs": 93,
+      "fat": 18,
+      "servingLabel": "6 oz (170.2 g)",
+      "servingGrams": 170.2
+    },
+    {
+      "id": "hushpuppies-side-3-oz-85-1-g",
+      "name": "Hushpuppies Side",
+      "calories": 300,
+      "protein": 2,
+      "carbs": 47,
+      "fat": 9,
+      "servingLabel": "3 oz (85.1 g)",
+      "servingGrams": 85.1
+    },
+    {
+      "id": "large-fries-8-4-oz-238-1-g",
+      "name": "Large Fries",
+      "calories": 694,
+      "protein": 7,
+      "carbs": 89,
+      "fat": 34,
+      "servingLabel": "8.4 oz (238.1 g)",
+      "servingGrams": 238.1
+    },
+    {
+      "id": "sides-other-menu-items-regular-fries-4-2-oz-119-8-g",
+      "name": "Sides/Other Menu Items - Regular Fries",
+      "calories": 347,
+      "protein": 4,
+      "carbs": 45,
+      "fat": 17,
+      "servingLabel": "4.2 oz (119.8 g)",
+      "servingGrams": 119.8
+    },
+    {
+      "id": "cook-out-fries-6-9-oz-195-8-g",
+      "name": "Cook Out Fries",
+      "calories": 465,
+      "protein": 7,
+      "carbs": 49,
+      "fat": 21,
+      "servingLabel": "6.9 oz (195.8 g)",
+      "servingGrams": 195.8
+    },
+    {
+      "id": "okra-2-95-oz-84-g",
+      "name": "Okra",
+      "calories": 228,
+      "protein": 3,
+      "carbs": 26,
+      "fat": 13,
+      "servingLabel": "2.95 oz (84 g)",
+      "servingGrams": 84
+    },
+    {
+      "id": "cook-out-rounds-full-order-4-90-oz-139-g",
+      "name": "Cook Out Rounds Full Order",
+      "calories": 298,
+      "protein": 8,
+      "carbs": 30,
+      "fat": 17,
+      "servingLabel": "4.90 oz (139 g)",
+      "servingGrams": 139
+    },
+    {
+      "id": "cook-out-rounds-side-2-45-oz-69-50-g",
+      "name": "Cook Out Rounds Side",
+      "calories": 149,
+      "protein": 4,
+      "carbs": 15,
+      "fat": 8,
+      "servingLabel": "2.45 oz (69.50 g)",
+      "servingGrams": 69.5
+    },
+    {
+      "id": "cheese-curds-full-order-3-00-oz-85-g",
+      "name": "Cheese Curds Full Order",
+      "calories": 299,
+      "protein": 16,
+      "carbs": 14,
+      "fat": 19,
+      "servingLabel": "3.00 oz (85 g)",
+      "servingGrams": 85
+    },
+    {
+      "id": "cheese-curds-side-1-50-oz-42-50-g",
+      "name": "Cheese Curds Side",
+      "calories": 150,
+      "protein": 8,
+      "carbs": 7,
+      "fat": 10,
+      "servingLabel": "1.50 oz (42.50 g)",
+      "servingGrams": 42.5
+    },
+    {
+      "id": "coca-cola-huge-32-oz-907-2-g",
+      "name": "Coca-Cola Huge",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 78,
+      "fat": 0,
+      "servingLabel": "32 oz (907.2 g)",
+      "servingGrams": 907.2
+    },
+    {
+      "id": "large-24-oz-680-4-g",
+      "name": "Large",
+      "calories": 210,
+      "protein": 0,
+      "carbs": 59,
+      "fat": 0,
+      "servingLabel": "24 oz (680.4 g)",
+      "servingGrams": 680.4
+    },
+    {
+      "id": "sides-other-menu-items-regular-16-oz-453-6-g",
+      "name": "Sides/Other Menu Items - Regular",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 39,
+      "fat": 0,
+      "servingLabel": "16 oz (453.6 g)",
+      "servingGrams": 453.6
+    },
+    {
+      "id": "sides-other-menu-items-small-12-oz-340-19-g",
+      "name": "Sides/Other Menu Items - Small",
+      "calories": 105,
+      "protein": 0,
+      "carbs": 29,
+      "fat": 0,
+      "servingLabel": "12 oz (340.19 g)",
+      "servingGrams": 340.19
+    },
+    {
+      "id": "diet-coke-huge-32-oz-907-2-g",
+      "name": "Diet Coke Huge",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "32 oz (907.2 g)",
+      "servingGrams": 907.2
+    },
+    {
+      "id": "large-24-oz-680-4-g-2",
+      "name": "Large",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "24 oz (680.4 g)",
+      "servingGrams": 680.4
+    },
+    {
+      "id": "sides-other-menu-items-regular-16-oz-453-6-g-2",
+      "name": "Sides/Other Menu Items - Regular",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "16 oz (453.6 g)",
+      "servingGrams": 453.6
+    },
+    {
+      "id": "sides-other-menu-items-small-12-oz-340-19-g-2",
+      "name": "Sides/Other Menu Items - Small",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "12 oz (340.19 g)",
+      "servingGrams": 340.19
+    },
+    {
+      "id": "coca-cola-zero-huge-32-oz-907-2-g",
+      "name": "Coca-Cola Zero Huge",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "32 oz (907.2 g)",
+      "servingGrams": 907.2
+    },
+    {
+      "id": "sprite-huge-32-oz-907-2-g",
+      "name": "Sprite Huge",
+      "calories": 289,
+      "protein": 0,
+      "carbs": 65,
+      "fat": 0,
+      "servingLabel": "32 oz (907.2 g)",
+      "servingGrams": 907.2
+    },
+    {
+      "id": "large-24-oz-680-4-g-3",
+      "name": "Large",
+      "calories": 222,
+      "protein": 0,
+      "carbs": 50,
+      "fat": 0,
+      "servingLabel": "24 oz (680.4 g)",
+      "servingGrams": 680.4
+    },
+    {
+      "id": "sides-other-menu-items-regular-16-oz-453-6-g-3",
+      "name": "Sides/Other Menu Items - Regular",
+      "calories": 139,
+      "protein": 0,
+      "carbs": 31,
+      "fat": 0,
+      "servingLabel": "16 oz (453.6 g)",
+      "servingGrams": 453.6
+    },
+    {
+      "id": "sides-other-menu-items-small-12-oz-340-19-g-3",
+      "name": "Sides/Other Menu Items - Small",
+      "calories": 104,
+      "protein": 0,
+      "carbs": 23,
+      "fat": 0,
+      "servingLabel": "12 oz (340.19 g)",
+      "servingGrams": 340.19
+    },
+    {
+      "id": "pibb-xtra-huge-32-oz-907-2-g",
+      "name": "Pibb Xtra Huge",
+      "calories": 290,
+      "protein": 0,
+      "carbs": 79,
+      "fat": 0,
+      "servingLabel": "32 oz (907.2 g)",
+      "servingGrams": 907.2
+    },
+    {
+      "id": "large-24-oz-680-4-g-4",
+      "name": "Large",
+      "calories": 218,
+      "protein": 0,
+      "carbs": 59,
+      "fat": 0,
+      "servingLabel": "24 oz (680.4 g)",
+      "servingGrams": 680.4
+    },
+    {
+      "id": "sides-other-menu-items-regular-16-oz-453-6-g-4",
+      "name": "Sides/Other Menu Items - Regular",
+      "calories": 145,
+      "protein": 0,
+      "carbs": 40,
+      "fat": 0,
+      "servingLabel": "16 oz (453.6 g)",
+      "servingGrams": 453.6
+    },
+    {
+      "id": "sides-other-menu-items-small-12-oz-340-19-g-4",
+      "name": "Sides/Other Menu Items - Small",
+      "calories": 109,
+      "protein": 0,
+      "carbs": 30,
+      "fat": 0,
+      "servingLabel": "12 oz (340.19 g)",
+      "servingGrams": 340.19
+    },
+    {
+      "id": "mellow-yellow-huge-32-oz-907-2-g",
+      "name": "Mellow Yellow Huge",
+      "calories": 288,
+      "protein": 0,
+      "carbs": 77,
+      "fat": 0,
+      "servingLabel": "32 oz (907.2 g)",
+      "servingGrams": 907.2
+    },
+    {
+      "id": "large-24-oz-680-4-g-5",
+      "name": "Large",
+      "calories": 209,
+      "protein": 0,
+      "carbs": 56,
+      "fat": 0,
+      "servingLabel": "24 oz (680.4 g)",
+      "servingGrams": 680.4
+    },
+    {
+      "id": "sides-other-menu-items-regular-16-oz-453-6-g-5",
+      "name": "Sides/Other Menu Items - Regular",
+      "calories": 144,
+      "protein": 0,
+      "carbs": 38,
+      "fat": 0,
+      "servingLabel": "16 oz (453.6 g)",
+      "servingGrams": 453.6
+    },
+    {
+      "id": "sides-other-menu-items-small-12-oz-340-19-g-5",
+      "name": "Sides/Other Menu Items - Small",
+      "calories": 108,
+      "protein": 0,
+      "carbs": 29,
+      "fat": 0,
+      "servingLabel": "12 oz (340.19 g)",
+      "servingGrams": 340.19
+    },
+    {
+      "id": "fanta-orange-huge-32-oz-907-2-g",
+      "name": "Fanta Orange Huge",
+      "calories": 302,
+      "protein": 0,
+      "carbs": 89,
+      "fat": 0,
+      "servingLabel": "32 oz (907.2 g)",
+      "servingGrams": 907.2
+    },
+    {
+      "id": "large-24-oz-680-4-g-6",
+      "name": "Large",
+      "calories": 227,
+      "protein": 0,
+      "carbs": 67,
+      "fat": 0,
+      "servingLabel": "24 oz (680.4 g)",
+      "servingGrams": 680.4
+    },
+    {
+      "id": "sides-other-menu-items-regular-16-oz-453-6-g-6",
+      "name": "Sides/Other Menu Items - Regular",
+      "calories": 151,
+      "protein": 0,
+      "carbs": 45,
+      "fat": 0,
+      "servingLabel": "16 oz (453.6 g)",
+      "servingGrams": 453.6
+    },
+    {
+      "id": "sides-other-menu-items-small-12-oz-340-19-g-6",
+      "name": "Sides/Other Menu Items - Small",
+      "calories": 113,
+      "protein": 0,
+      "carbs": 33,
+      "fat": 0,
+      "servingLabel": "12 oz (340.19 g)",
+      "servingGrams": 340.19
+    },
+    {
+      "id": "hi-c-poppin-pink-lemonade-huge-32-oz-907-2-g",
+      "name": "Hi-C Poppin' Pink Lemonade Huge",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 73,
+      "fat": 0,
+      "servingLabel": "32 oz (907.2 g)",
+      "servingGrams": 907.2
+    },
+    {
+      "id": "large-24-oz-680-4-g-7",
+      "name": "Large",
+      "calories": 210,
+      "protein": 0,
+      "carbs": 55,
+      "fat": 0,
+      "servingLabel": "24 oz (680.4 g)",
+      "servingGrams": 680.4
+    },
+    {
+      "id": "sides-other-menu-items-regular-16-oz-453-6-g-7",
+      "name": "Sides/Other Menu Items - Regular",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 37,
+      "fat": 0,
+      "servingLabel": "16 oz (453.6 g)",
+      "servingGrams": 453.6
+    },
+    {
+      "id": "sides-other-menu-items-small-12-oz-340-19-g-7",
+      "name": "Sides/Other Menu Items - Small",
+      "calories": 105,
+      "protein": 0,
+      "carbs": 27,
+      "fat": 0,
+      "servingLabel": "12 oz (340.19 g)",
+      "servingGrams": 340.19
+    },
+    {
+      "id": "hi-c-fruit-punch-huge-32-oz-907-2-g",
+      "name": "Hi-C Fruit Punch Huge",
+      "calories": 317,
+      "protein": 0,
+      "carbs": 89,
+      "fat": 0,
+      "servingLabel": "32 oz (907.2 g)",
+      "servingGrams": 907.2
+    },
+    {
+      "id": "large-24-oz-680-4-g-8",
+      "name": "Large",
+      "calories": 238,
+      "protein": 0,
+      "carbs": 67,
+      "fat": 0,
+      "servingLabel": "24 oz (680.4 g)",
+      "servingGrams": 680.4
+    },
+    {
+      "id": "sides-other-menu-items-regular-16-oz-453-6-g-8",
+      "name": "Sides/Other Menu Items - Regular",
+      "calories": 158,
+      "protein": 0,
+      "carbs": 45,
+      "fat": 0,
+      "servingLabel": "16 oz (453.6 g)",
+      "servingGrams": 453.6
+    },
+    {
+      "id": "sides-other-menu-items-small-12-oz-340-19-g-8",
+      "name": "Sides/Other Menu Items - Small",
+      "calories": 119,
+      "protein": 0,
+      "carbs": 33,
+      "fat": 0,
+      "servingLabel": "12 oz (340.19 g)",
+      "servingGrams": 340.19
+    },
+    {
+      "id": "fresh-brewed-sweet-tea-huge-32-oz-907-2-g",
+      "name": "Fresh Brewed Sweet Tea Huge",
+      "calories": 330,
+      "protein": 0,
+      "carbs": 148,
+      "fat": 0,
+      "servingLabel": "32 oz (907.2 g)",
+      "servingGrams": 907.2
+    },
+    {
+      "id": "large-24-oz-680-4-g-9",
+      "name": "Large",
+      "calories": 248,
+      "protein": 0,
+      "carbs": 111,
+      "fat": 0,
+      "servingLabel": "24 oz (680.4 g)",
+      "servingGrams": 680.4
+    },
+    {
+      "id": "sides-other-menu-items-regular-16-oz-453-6-g-9",
+      "name": "Sides/Other Menu Items - Regular",
+      "calories": 236,
+      "protein": 0,
+      "carbs": 74,
+      "fat": 0,
+      "servingLabel": "16 oz (453.6 g)",
+      "servingGrams": 453.6
+    },
+    {
+      "id": "sides-other-menu-items-small-12-oz-340-19-g-9",
+      "name": "Sides/Other Menu Items - Small",
+      "calories": 177,
+      "protein": 0,
+      "carbs": 56,
+      "fat": 0,
+      "servingLabel": "12 oz (340.19 g)",
+      "servingGrams": 340.19
+    },
+    {
+      "id": "fresh-brewed-tea-huge-32-oz-907-2-g",
+      "name": "Fresh Brewed Tea Huge",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "32 oz (907.2 g)",
+      "servingGrams": 907.2
+    },
+    {
+      "id": "dr-pepper-huge-32-oz-907-2-g",
+      "name": "Dr. Pepper Huge",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 74,
+      "fat": 0,
+      "servingLabel": "32 oz (907.2 g)",
+      "servingGrams": 907.2
+    },
+    {
+      "id": "large-24-oz-680-4-g-10",
+      "name": "Large",
+      "calories": 210,
+      "protein": 0,
+      "carbs": 56,
+      "fat": 0,
+      "servingLabel": "24 oz (680.4 g)",
+      "servingGrams": 680.4
+    },
+    {
+      "id": "sides-other-menu-items-small-12-oz-340-19-g-10",
+      "name": "Sides/Other Menu Items - Small",
+      "calories": 105,
+      "protein": 0,
+      "carbs": 28,
+      "fat": 0,
+      "servingLabel": "12 oz (340.19 g)",
+      "servingGrams": 340.19
+    },
+    {
+      "id": "cheerwine-huge-32-oz-907-2-g",
+      "name": "Cheerwine Huge",
+      "calories": 288,
+      "protein": 0,
+      "carbs": 81,
+      "fat": 0,
+      "servingLabel": "32 oz (907.2 g)",
+      "servingGrams": 907.2
+    },
+    {
+      "id": "large-24-oz-680-4-g-11",
+      "name": "Large",
+      "calories": 216,
+      "protein": 0,
+      "carbs": 60,
+      "fat": 0,
+      "servingLabel": "24 oz (680.4 g)",
+      "servingGrams": 680.4
+    },
+    {
+      "id": "sides-other-menu-items-regular-16-oz-453-6-g-10",
+      "name": "Sides/Other Menu Items - Regular",
+      "calories": 144,
+      "protein": 0,
+      "carbs": 40,
+      "fat": 0,
+      "servingLabel": "16 oz (453.6 g)",
+      "servingGrams": 453.6
+    },
+    {
+      "id": "sides-other-menu-items-small-12-oz-340-19-g-11",
+      "name": "Sides/Other Menu Items - Small",
+      "calories": 108,
+      "protein": 0,
+      "carbs": 30,
+      "fat": 0,
+      "servingLabel": "12 oz (340.19 g)",
+      "servingGrams": 340.19
+    },
+    {
+      "id": "powerade-mountain-blast-huge-32-oz-907-2-g",
+      "name": "Powerade Mountain Blast Huge",
+      "calories": 149,
+      "protein": 0,
+      "carbs": 40.5,
+      "fat": 0,
+      "servingLabel": "32 oz (907.2 g)",
+      "servingGrams": 907.2
+    },
+    {
+      "id": "large-24-oz-680-4-g-12",
+      "name": "Large",
+      "calories": 109,
+      "protein": 0,
+      "carbs": 29.5,
+      "fat": 0,
+      "servingLabel": "24 oz (680.4 g)",
+      "servingGrams": 680.4
+    },
+    {
+      "id": "sides-other-menu-items-regular-16-oz-453-6-g-11",
+      "name": "Sides/Other Menu Items - Regular",
+      "calories": 74.7,
+      "protein": 0,
+      "carbs": 20.3,
+      "fat": 0,
+      "servingLabel": "16 oz (453.6 g)",
+      "servingGrams": 453.6
+    },
+    {
+      "id": "sides-other-menu-items-small-12-oz-340-19-g-12",
+      "name": "Sides/Other Menu Items - Small",
+      "calories": 56,
+      "protein": 0,
+      "carbs": 15.2,
+      "fat": 0,
+      "servingLabel": "12 oz (340.19 g)",
+      "servingGrams": 340.19
+    },
+    {
+      "id": "coke-float-16-oz-453-59-g",
+      "name": "Coke Float",
+      "calories": 399,
+      "protein": 10,
+      "carbs": 69,
+      "fat": 11,
+      "servingLabel": "16 oz (453.59 g)",
+      "servingGrams": 453.59
+    },
+    {
+      "id": "cheerwine-float-16-oz-453-59-g",
+      "name": "Cheerwine Float",
+      "calories": 401,
+      "protein": 10,
+      "carbs": 69,
+      "fat": 11,
+      "servingLabel": "16 oz (453.59 g)",
+      "servingGrams": 453.59
+    },
+    {
+      "id": "vanilla-32-9-oz-934g",
+      "name": "Vanilla",
+      "calories": 555,
+      "protein": 16,
+      "carbs": 86,
+      "fat": 18,
+      "servingLabel": "32.9 oz (934g)"
+    },
+    {
+      "id": "hershey-s-chocolate-32-9-oz-934g",
+      "name": "Hershey's Chocolate",
+      "calories": 620,
+      "protein": 16,
+      "carbs": 110,
+      "fat": 18,
+      "servingLabel": "32.9 oz (934g)"
+    },
+    {
+      "id": "strawberry-32-8oz-929-6-g",
+      "name": "Strawberry",
+      "calories": 610,
+      "protein": 15,
+      "carbs": 105,
+      "fat": 17,
+      "servingLabel": "32.8oz (929.6 g)",
+      "servingGrams": 929.6
+    },
+    {
+      "id": "fresh-banana-30-9-oz-876-3-g",
+      "name": "Fresh Banana",
+      "calories": 538,
+      "protein": 15,
+      "carbs": 89,
+      "fat": 16,
+      "servingLabel": "30.9 oz (876.3 g)",
+      "servingGrams": 876.3
+    },
+    {
+      "id": "banana-berry-33-6-oz-952-8-g",
+      "name": "Banana Berry",
+      "calories": 671,
+      "protein": 15,
+      "carbs": 123,
+      "fat": 16,
+      "servingLabel": "33.6 oz (952.8 g)",
+      "servingGrams": 952.8
+    },
+    {
+      "id": "banana-nut-32-1-oz-907-8-g",
+      "name": "Banana Nut",
+      "calories": 704,
+      "protein": 15,
+      "carbs": 103,
+      "fat": 27,
+      "servingLabel": "32.1 oz (907.8 g)",
+      "servingGrams": 907.8
+    },
+    {
+      "id": "banana-fudge-33-5-oz-950-3-g",
+      "name": "Banana Fudge",
+      "calories": 772,
+      "protein": 17,
+      "carbs": 130,
+      "fat": 24,
+      "servingLabel": "33.5 oz (950.3 g)",
+      "servingGrams": 950.3
+    },
+    {
+      "id": "banana-pineapple-32-oz-907-3-g",
+      "name": "Banana Pineapple",
+      "calories": 566,
+      "protein": 15,
+      "carbs": 96,
+      "fat": 16,
+      "servingLabel": "32 oz (907.3 g)",
+      "servingGrams": 907.3
+    },
+    {
+      "id": "banana-pudding-34-7-oz-928-3-g",
+      "name": "Banana Pudding",
+      "calories": 781,
+      "protein": 16,
+      "carbs": 126,
+      "fat": 26,
+      "servingLabel": "34.7 oz (928.3 g)",
+      "servingGrams": 928.3
+    },
+    {
+      "id": "blueberry-32-9-oz-933-6-g",
+      "name": "Blueberry",
+      "calories": 617,
+      "protein": 15,
+      "carbs": 107,
+      "fat": 17,
+      "servingLabel": "32.9 oz (933.6 g)",
+      "servingGrams": 933.6
+    },
+    {
+      "id": "chocolate-cherry-32-3-oz-914-6-g",
+      "name": "Chocolate Cherry",
+      "calories": 665,
+      "protein": 15,
+      "carbs": 123,
+      "fat": 17,
+      "servingLabel": "32.3 oz (914.6 g)",
+      "servingGrams": 914.6
+    },
+    {
+      "id": "red-cherry-32-3-oz-916-6-g",
+      "name": "Red Cherry",
+      "calories": 600,
+      "protein": 15,
+      "carbs": 99,
+      "fat": 17,
+      "servingLabel": "32.3 oz (916.6 g)",
+      "servingGrams": 916.6
+    },
+    {
+      "id": "fresh-peanut-butter-32-8-oz-930-6-g",
+      "name": "Fresh Peanut Butter",
+      "calories": 847,
+      "protein": 27,
+      "carbs": 91,
+      "fat": 45,
+      "servingLabel": "32.8 oz (930.6 g)",
+      "servingGrams": 930.6
+    },
+    {
+      "id": "peanut-butter-banana-32-8-oz-931-3-g",
+      "name": "Peanut Butter Banana",
+      "calories": 864,
+      "protein": 27,
+      "carbs": 99,
+      "fat": 43,
+      "servingLabel": "32.8 oz (931.3 g)",
+      "servingGrams": 931.3
+    },
+    {
+      "id": "peanut-butter-fudge-33-2-oz-940-6-g",
+      "name": "Peanut Butter Fudge",
+      "calories": 765,
+      "protein": 21,
+      "carbs": 101,
+      "fat": 34,
+      "servingLabel": "33.2 oz (940.6 g)",
+      "servingGrams": 940.6
+    },
+    {
+      "id": "cappuccino-31-9-oz-904-g",
+      "name": "Cappuccino",
+      "calories": 555,
+      "protein": 16,
+      "carbs": 86,
+      "fat": 18,
+      "servingLabel": "31.9 oz (904 g)",
+      "servingGrams": 904
+    },
+    {
+      "id": "caramel-fudge-32-8-oz-928-6-g",
+      "name": "Caramel Fudge",
+      "calories": 677,
+      "protein": 16,
+      "carbs": 111,
+      "fat": 21,
+      "servingLabel": "32.8 oz (928.6 g)",
+      "servingGrams": 928.6
+    },
+    {
+      "id": "caramel-33-51-oz-950-g",
+      "name": "Caramel",
+      "calories": 560,
+      "protein": 15,
+      "carbs": 91,
+      "fat": 17,
+      "servingLabel": "33.51 oz (950 g)",
+      "servingGrams": 950
+    },
+    {
+      "id": "pineapple-33-oz-937-6-g",
+      "name": "Pineapple",
+      "calories": 575,
+      "protein": 16,
+      "carbs": 94,
+      "fat": 17,
+      "servingLabel": "33 oz (937.6 g)",
+      "servingGrams": 937.6
+    },
+    {
+      "id": "snickers-32-4-oz-917-6-g",
+      "name": "Snickers",
+      "calories": 720,
+      "protein": 19,
+      "carbs": 107,
+      "fat": 27,
+      "servingLabel": "32.4 oz (917.6 g)",
+      "servingGrams": 917.6
+    },
+    {
+      "id": "hi-c-punch-31-9-oz-904-g",
+      "name": "Hi-C Punch",
+      "calories": 598,
+      "protein": 15,
+      "carbs": 102,
+      "fat": 17,
+      "servingLabel": "31.9 oz (904 g)",
+      "servingGrams": 904
+    },
+    {
+      "id": "walnut-33-1-oz-938-6-g",
+      "name": "Walnut",
+      "calories": 853,
+      "protein": 15,
+      "carbs": 109,
+      "fat": 40,
+      "servingLabel": "33.1 oz (938.6 g)",
+      "servingGrams": 938.6
+    },
+    {
+      "id": "oreo-33-oz-935-6-g",
+      "name": "Oreo",
+      "calories": 802,
+      "protein": 17,
+      "carbs": 125,
+      "fat": 29,
+      "servingLabel": "33 oz (935.6 g)",
+      "servingGrams": 935.6
+    },
+    {
+      "id": "m-m-32-6-oz-924-6-g",
+      "name": "M&M",
+      "calories": 755,
+      "protein": 17,
+      "carbs": 114,
+      "fat": 27,
+      "servingLabel": "32.6 oz (924.6 g)",
+      "servingGrams": 924.6
+    },
+    {
+      "id": "oreo-mint-33-oz-935-6-g",
+      "name": "Oreo Mint",
+      "calories": 853,
+      "protein": 17,
+      "carbs": 138,
+      "fat": 29,
+      "servingLabel": "33 oz (935.6 g)",
+      "servingGrams": 935.6
+    },
+    {
+      "id": "peach-32-7-oz-925-6-g",
+      "name": "Peach",
+      "calories": 547,
+      "protein": 15,
+      "carbs": 91,
+      "fat": 17,
+      "servingLabel": "32.7 oz (925.6 g)",
+      "servingGrams": 925.6
+    },
+    {
+      "id": "chocolate-chip-34-46-oz-977-g",
+      "name": "Chocolate Chip",
+      "calories": 783,
+      "protein": 18,
+      "carbs": 107,
+      "fat": 32,
+      "servingLabel": "34.46 oz (977 g)",
+      "servingGrams": 977
+    },
+    {
+      "id": "chocolate-chip-mint-35-oz-993-g",
+      "name": "Chocolate Chip Mint",
+      "calories": 834,
+      "protein": 18,
+      "carbs": 120,
+      "fat": 32,
+      "servingLabel": "35 oz (993 g)",
+      "servingGrams": 993
+    },
+    {
+      "id": "chocolate-nut-33-4-oz-946-1-g",
+      "name": "Chocolate Nut",
+      "calories": 752,
+      "protein": 15,
+      "carbs": 119,
+      "fat": 28,
+      "servingLabel": "33.4 oz (946.1 g)",
+      "servingGrams": 946.1
+    },
+    {
+      "id": "mocha-35-32oz-1001-4-g",
+      "name": "Mocha",
+      "calories": 620,
+      "protein": 16,
+      "carbs": 110,
+      "fat": 18,
+      "servingLabel": "35.32oz (1001.4 g)",
+      "servingGrams": 1001.4
+    },
+    {
+      "id": "reese-s-cup-33-4-oz-947-6-g",
+      "name": "Reese's Cup",
+      "calories": 894,
+      "protein": 24,
+      "carbs": 121,
+      "fat": 37,
+      "servingLabel": "33.4 oz (947.6 g)",
+      "servingGrams": 947.6
+    },
+    {
+      "id": "orange-push-up-33-95-oz-962-4-g",
+      "name": "Orange Push Up",
+      "calories": 638,
+      "protein": 16,
+      "carbs": 109,
+      "fat": 18,
+      "servingLabel": "33.95 oz (962.4 g)",
+      "servingGrams": 962.4
+    },
+    {
+      "id": "cherry-cobbler-34-2-oz-968-6-g",
+      "name": "Cherry Cobbler",
+      "calories": 842,
+      "protein": 17,
+      "carbs": 135,
+      "fat": 27,
+      "servingLabel": "34.2 oz (968.6 g)",
+      "servingGrams": 968.6
+    },
+    {
+      "id": "chocolate-malt-34-7-oz-985-g",
+      "name": "Chocolate Malt",
+      "calories": 671,
+      "protein": 17,
+      "carbs": 119,
+      "fat": 19,
+      "servingLabel": "34.7 oz (985 g)",
+      "servingGrams": 985
+    },
+    {
+      "id": "heath-toffee-32-1-oz-909-6-g",
+      "name": "Heath Toffee",
+      "calories": 701,
+      "protein": 15,
+      "carbs": 101,
+      "fat": 28,
+      "servingLabel": "32.1 oz (909.6 g)",
+      "servingGrams": 909.6
+    },
+    {
+      "id": "cherry-cheesecake-34-oz-964-3-g",
+      "name": "Cherry Cheesecake",
+      "calories": 925,
+      "protein": 21,
+      "carbs": 119,
+      "fat": 42,
+      "servingLabel": "34 oz (964.3 g)",
+      "servingGrams": 964.3
+    },
+    {
+      "id": "double-chocolate-33-6-oz-953-6-g",
+      "name": "Double Chocolate",
+      "calories": 651,
+      "protein": 15,
+      "carbs": 129,
+      "fat": 17,
+      "servingLabel": "33.6 oz (953.6 g)",
+      "servingGrams": 953.6
+    },
+    {
+      "id": "fresh-watermelon-35-oz-992-3-g",
+      "name": "Fresh Watermelon",
+      "calories": 645,
+      "protein": 15,
+      "carbs": 89,
+      "fat": 16,
+      "servingLabel": "35 oz (992.3 g)",
+      "servingGrams": 992.3
+    },
+    {
+      "id": "philadelphia-cheesecake-32-6-oz-923-3-g",
+      "name": "Philadelphia Cheesecake",
+      "calories": 845,
+      "protein": 21,
+      "carbs": 101,
+      "fat": 42,
+      "servingLabel": "32.6 oz (923.3 g)",
+      "servingGrams": 923.3
+    },
+    {
+      "id": "nilla-wafers-32-7-oz-927-6-g",
+      "name": "Nilla Wafers",
+      "calories": 763,
+      "protein": 17,
+      "carbs": 117,
+      "fat": 27,
+      "servingLabel": "32.7 oz (927.6 g)",
+      "servingGrams": 927.6
+    },
+    {
+      "id": "mint-33-5-oz-950-g",
+      "name": "Mint",
+      "calories": 605,
+      "protein": 16,
+      "carbs": 99,
+      "fat": 18,
+      "servingLabel": "33.5 oz (950 g)",
+      "servingGrams": 950
+    },
+    {
+      "id": "malted-milk-33-4-oz-946-g",
+      "name": "Malted Milk",
+      "calories": 606,
+      "protein": 17,
+      "carbs": 95,
+      "fat": 19,
+      "servingLabel": "33.4 oz (946 g)",
+      "servingGrams": 946
+    },
+    {
+      "id": "fudge-33-5-oz949-6-g",
+      "name": "Fudge",
+      "calories": 754,
+      "protein": 17,
+      "carbs": 122,
+      "fat": 25,
+      "servingLabel": "33.5 oz949.6 g)"
+    }
+  ]
+}

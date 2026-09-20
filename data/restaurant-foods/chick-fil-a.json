@@ -1,0 +1,3727 @@
+{
+  "chain": "Chick-fil-A",
+  "sourceUrl": "https://www.chick-fil-a.com/nutrition-allergens",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "name": "Waffle",
+      "calories": 380.0,
+      "fat": 18.0,
+      "carbs": 52.0,
+      "protein": 5.0,
+      "servingLabel": "1 serving (83 g)",
+      "servingGrams": 83.0,
+      "id": "waffle-1-serving-83-g"
+    },
+    {
+      "name": "Breakfast Breads",
+      "calories": 350.0,
+      "fat": 15.0,
+      "carbs": 53.0,
+      "protein": 4.0,
+      "servingLabel": "1 serving (81 g)",
+      "servingGrams": 81.0,
+      "id": "breakfast-breads-1-serving-81-g"
+    },
+    {
+      "name": "4 ct Mini Yeast Rolls",
+      "calories": 300.0,
+      "fat": 8.0,
+      "carbs": 52.0,
+      "protein": 6.0,
+      "servingLabel": "1 serving (70 g)",
+      "servingGrams": 70.0,
+      "id": "4-ct-mini-yeast-rolls-1-serving-70-g"
+    },
+    {
+      "name": "English Muffin",
+      "calories": 200.0,
+      "fat": 1.0,
+      "carbs": 43.0,
+      "protein": 5.0,
+      "servingLabel": "1 serving (58 g)",
+      "servingGrams": 58.0,
+      "id": "english-muffin-1-serving-58-g"
+    },
+    {
+      "name": "Buttery Biscuit",
+      "calories": 350.0,
+      "fat": 15.0,
+      "carbs": 53.0,
+      "protein": 4.0,
+      "servingLabel": "1 serving (81 g)",
+      "servingGrams": 81.0,
+      "id": "buttery-biscuit-1-serving-81-g"
+    },
+    {
+      "name": "Breakfast Waffle",
+      "calories": 320.0,
+      "fat": 15.0,
+      "carbs": 46.0,
+      "protein": 4.0,
+      "servingLabel": "1 serving (68 g)",
+      "servingGrams": 68.0,
+      "id": "breakfast-waffle-1-serving-68-g"
+    },
+    {
+      "name": "Fruit Cup",
+      "calories": 70.0,
+      "fat": 0.0,
+      "carbs": 16.0,
+      "protein": 1.0,
+      "servingLabel": "1 serving (125 g)",
+      "servingGrams": 125.0,
+      "id": "fruit-cup-1-serving-125-g"
+    },
+    {
+      "name": "Large Fruit Cup",
+      "calories": 120.0,
+      "fat": 0.0,
+      "carbs": 28.0,
+      "protein": 1.0,
+      "servingLabel": "1 serving (215 g)",
+      "servingGrams": 215.0,
+      "id": "large-fruit-cup-1-serving-215-g"
+    },
+    {
+      "name": "Small Fruit Cup",
+      "calories": 60.0,
+      "fat": 0.0,
+      "carbs": 14.0,
+      "protein": 1.0,
+      "servingLabel": "1 serving (107 g)",
+      "servingGrams": 107.0,
+      "id": "small-fruit-cup-1-serving-107-g"
+    },
+    {
+      "name": "Medium Fruit Cup",
+      "calories": 70.0,
+      "fat": 0.0,
+      "carbs": 16.0,
+      "protein": 1.0,
+      "servingLabel": "1 serving (125 g)",
+      "servingGrams": 125.0,
+      "id": "medium-fruit-cup-1-serving-125-g"
+    },
+    {
+      "name": "Hash Brown Scramble Bowl",
+      "calories": 470.0,
+      "fat": 30.0,
+      "carbs": 19.0,
+      "protein": 29.0,
+      "servingLabel": "1 serving (233 g)",
+      "servingGrams": 233.0,
+      "id": "hash-brown-scramble-bowl-1-serving-233-g"
+    },
+    {
+      "name": "Hash Brown Scramble Bowl w/ No Meat – no hash browns",
+      "calories": 200.0,
+      "fat": 14.0,
+      "carbs": 3.0,
+      "protein": 16.0,
+      "servingLabel": "1 serving (137 g)",
+      "servingGrams": 137.0,
+      "id": "hash-brown-scramble-bowl-w-no-meat-no-hash-browns-1-serving-137-g"
+    },
+    {
+      "name": "Hash Brown Scramble Bowl w/ Bacon – no hash browns",
+      "calories": 300.0,
+      "fat": 22.0,
+      "carbs": 2.0,
+      "protein": 22.0,
+      "servingLabel": "1 serving (158 g)",
+      "servingGrams": 158.0,
+      "id": "hash-brown-scramble-bowl-w-bacon-no-hash-browns-1-serving-158-g"
+    },
+    {
+      "name": "Hash Brown Scramble Bowl w/ Spicy Chicken – no hash browns",
+      "calories": 350.0,
+      "fat": 22.0,
+      "carbs": 9.0,
+      "protein": 31.0,
+      "servingLabel": "1 serving (208 g)",
+      "servingGrams": 208.0,
+      "id": "hash-brown-scramble-bowl-w-spicy-chicken-no-hash-browns-1-serving-208-g"
+    },
+    {
+      "name": "Hash Brown Scramble Bowl w/ Grilled Filet – no hash browns",
+      "calories": 270.0,
+      "fat": 16.0,
+      "carbs": 2.0,
+      "protein": 29.0,
+      "servingLabel": "1 serving (187 g)",
+      "servingGrams": 187.0,
+      "id": "hash-brown-scramble-bowl-w-grilled-filet-no-hash-browns-1-serving-187-g"
+    },
+    {
+      "name": "Hash Brown Scramble Bowl w/ Sausage – no hash browns",
+      "calories": 340.0,
+      "fat": 27.0,
+      "carbs": 2.0,
+      "protein": 21.0,
+      "servingLabel": "1 serving (169 g)",
+      "servingGrams": 169.0,
+      "id": "hash-brown-scramble-bowl-w-sausage-no-hash-browns-1-serving-169-g"
+    },
+    {
+      "name": "Hash Brown Scramble Bowl w/ Nuggets – no hash browns",
+      "calories": 320.0,
+      "fat": 20.0,
+      "carbs": 7.0,
+      "protein": 28.0,
+      "servingLabel": "1 serving (190 g)",
+      "servingGrams": 190.0,
+      "id": "hash-brown-scramble-bowl-w-nuggets-no-hash-browns-1-serving-190-g"
+    },
+    {
+      "name": "Hash Brown Scramble Bowl w/ No Meat",
+      "calories": 350.0,
+      "fat": 24.0,
+      "carbs": 16.0,
+      "protein": 17.0,
+      "servingLabel": "1 serving (180 g)",
+      "servingGrams": 180.0,
+      "id": "hash-brown-scramble-bowl-w-no-meat-1-serving-180-g"
+    },
+    {
+      "name": "Hash Brown Scramble Bowl w/ Bacon",
+      "calories": 450.0,
+      "fat": 32.0,
+      "carbs": 15.0,
+      "protein": 23.0,
+      "servingLabel": "1 serving (200 g)",
+      "servingGrams": 200.0,
+      "id": "hash-brown-scramble-bowl-w-bacon-1-serving-200-g"
+    },
+    {
+      "name": "Hash Brown Scramble Bowl w/ Spicy Chicken",
+      "calories": 500.0,
+      "fat": 32.0,
+      "carbs": 21.0,
+      "protein": 32.0,
+      "servingLabel": "1 serving (251 g)",
+      "servingGrams": 251.0,
+      "id": "hash-brown-scramble-bowl-w-spicy-chicken-1-serving-251-g"
+    },
+    {
+      "name": "Hash Brown Scramble Bowl w/ Grilled Filet",
+      "calories": 410.0,
+      "fat": 26.0,
+      "carbs": 15.0,
+      "protein": 30.0,
+      "servingLabel": "1 serving (230 g)",
+      "servingGrams": 230.0,
+      "id": "hash-brown-scramble-bowl-w-grilled-filet-1-serving-230-g"
+    },
+    {
+      "name": "Hash Brown Scramble Bowl w/ Sausage",
+      "calories": 480.0,
+      "fat": 37.0,
+      "carbs": 15.0,
+      "protein": 23.0,
+      "servingLabel": "1 serving (212 g)",
+      "servingGrams": 212.0,
+      "id": "hash-brown-scramble-bowl-w-sausage-1-serving-212-g"
+    },
+    {
+      "name": "Hash Brown Scramble Bowl w/ Nuggets",
+      "calories": 470.0,
+      "fat": 30.0,
+      "carbs": 19.0,
+      "protein": 29.0,
+      "servingLabel": "1 serving (233 g)",
+      "servingGrams": 233.0,
+      "id": "hash-brown-scramble-bowl-w-nuggets-1-serving-233-g"
+    },
+    {
+      "name": "Hash Brown Scramble Burrito",
+      "calories": 700.0,
+      "fat": 40.0,
+      "carbs": 51.0,
+      "protein": 34.0,
+      "servingLabel": "1 serving (304 g)",
+      "servingGrams": 304.0,
+      "id": "hash-brown-scramble-burrito-1-serving-304-g"
+    },
+    {
+      "name": "Hash Brown Scramble Burrito w/ No Meat – no hash browns",
+      "calories": 440.0,
+      "fat": 24.0,
+      "carbs": 35.0,
+      "protein": 21.0,
+      "servingLabel": "1 serving (208 g)",
+      "servingGrams": 208.0,
+      "id": "hash-brown-scramble-burrito-w-no-meat-no-hash-browns-1-serving-208-g"
+    },
+    {
+      "name": "Hash Brown Scramble Burrito w/ Bacon – no hash browns",
+      "calories": 540.0,
+      "fat": 32.0,
+      "carbs": 34.0,
+      "protein": 27.0,
+      "servingLabel": "1 serving (228 g)",
+      "servingGrams": 228.0,
+      "id": "hash-brown-scramble-burrito-w-bacon-no-hash-browns-1-serving-228-g"
+    },
+    {
+      "name": "Hash Brown Scramble Burrito w/ Spicy Chicken – no hash browns",
+      "calories": 590.0,
+      "fat": 32.0,
+      "carbs": 40.0,
+      "protein": 36.0,
+      "servingLabel": "1 serving (279 g)",
+      "servingGrams": 279.0,
+      "id": "hash-brown-scramble-burrito-w-spicy-chicken-no-hash-browns-1-serving-279-g"
+    },
+    {
+      "name": "Hash Brown Scramble Burrito w/ Grilled Filet – no hash brown",
+      "calories": 500.0,
+      "fat": 26.0,
+      "carbs": 34.0,
+      "protein": 34.0,
+      "servingLabel": "1 serving (258 g)",
+      "servingGrams": 258.0,
+      "id": "hash-brown-scramble-burrito-w-grilled-filet-no-hash-brown-1-serving-258-g"
+    },
+    {
+      "name": "Hash Brown Scramble Burrito w/ Sausage – no hash browns",
+      "calories": 570.0,
+      "fat": 37.0,
+      "carbs": 34.0,
+      "protein": 26.0,
+      "servingLabel": "1 serving (240 g)",
+      "servingGrams": 240.0,
+      "id": "hash-brown-scramble-burrito-w-sausage-no-hash-browns-1-serving-240-g"
+    },
+    {
+      "name": "Hash Brown Scramble Burrito w/ Nuggets – no hash browns",
+      "calories": 550.0,
+      "fat": 30.0,
+      "carbs": 38.0,
+      "protein": 33.0,
+      "servingLabel": "1 serving (261 g)",
+      "servingGrams": 261.0,
+      "id": "hash-brown-scramble-burrito-w-nuggets-no-hash-browns-1-serving-261-g"
+    },
+    {
+      "name": "Hash Brown Scramble Burrito w/ No Meat",
+      "calories": 580.0,
+      "fat": 34.0,
+      "carbs": 47.0,
+      "protein": 22.0,
+      "servingLabel": "1 serving (251 g)",
+      "servingGrams": 251.0,
+      "id": "hash-brown-scramble-burrito-w-no-meat-1-serving-251-g"
+    },
+    {
+      "name": "Hash Brown Scramble Burrito w/ Bacon",
+      "calories": 680.0,
+      "fat": 42.0,
+      "carbs": 46.0,
+      "protein": 30.0,
+      "servingLabel": "1 serving (271 g)",
+      "servingGrams": 271.0,
+      "id": "hash-brown-scramble-burrito-w-bacon-1-serving-271-g"
+    },
+    {
+      "name": "Hash Brown Scramble Burrito w/ Spicy Chicken",
+      "calories": 740.0,
+      "fat": 42.0,
+      "carbs": 53.0,
+      "protein": 37.0,
+      "servingLabel": "1 serving (322 g)",
+      "servingGrams": 322.0,
+      "id": "hash-brown-scramble-burrito-w-spicy-chicken-1-serving-322-g"
+    },
+    {
+      "name": "Hash Brown Scramble Burrito w/ Grilled Filet",
+      "calories": 650.0,
+      "fat": 36.0,
+      "carbs": 46.0,
+      "protein": 35.0,
+      "servingLabel": "1 serving (301 g)",
+      "servingGrams": 301.0,
+      "id": "hash-brown-scramble-burrito-w-grilled-filet-1-serving-301-g"
+    },
+    {
+      "name": "Hash Brown Scramble Burrito w/ Sausage",
+      "calories": 720.0,
+      "fat": 47.0,
+      "carbs": 46.0,
+      "protein": 28.0,
+      "servingLabel": "1 serving (283 g)",
+      "servingGrams": 283.0,
+      "id": "hash-brown-scramble-burrito-w-sausage-1-serving-283-g"
+    },
+    {
+      "name": "Hash Brown Scramble Burrito w/ Nuggets",
+      "calories": 700.0,
+      "fat": 40.0,
+      "carbs": 51.0,
+      "protein": 34.0,
+      "servingLabel": "1 serving (304 g)",
+      "servingGrams": 304.0,
+      "id": "hash-brown-scramble-burrito-w-nuggets-1-serving-304-g"
+    },
+    {
+      "name": "Chick-fil-A Chick-n-Minis",
+      "calories": 360.0,
+      "fat": 13.0,
+      "carbs": 41.0,
+      "protein": 20.0,
+      "servingLabel": "1 serving (127 g)",
+      "servingGrams": 127.0,
+      "id": "chick-fil-a-chick-n-minis-1-serving-127-g"
+    },
+    {
+      "name": "10 ct Chick-fil-A Chick-n-Minis",
+      "calories": 910.0,
+      "fat": 34.0,
+      "carbs": 103.0,
+      "protein": 49.0,
+      "servingLabel": "1 serving (318 g)",
+      "servingGrams": 318.0,
+      "id": "10-ct-chick-fil-a-chick-n-minis-1-serving-318-g"
+    },
+    {
+      "name": "4 ct Chick-fil-A Chick-n-Minis",
+      "calories": 360.0,
+      "fat": 13.0,
+      "carbs": 41.0,
+      "protein": 20.0,
+      "servingLabel": "1 serving (127 g)",
+      "servingGrams": 127.0,
+      "id": "4-ct-chick-fil-a-chick-n-minis-1-serving-127-g"
+    },
+    {
+      "name": "Sausage, Egg & Cheese Muffin",
+      "calories": 490.0,
+      "fat": 32.0,
+      "carbs": 29.0,
+      "protein": 23.0,
+      "servingLabel": "1 serving (173 g)",
+      "servingGrams": 173.0,
+      "id": "sausage-egg-cheese-muffin-1-serving-173-g"
+    },
+    {
+      "name": "Bacon, Egg & Cheese Muffin",
+      "calories": 300.0,
+      "fat": 13.0,
+      "carbs": 28.0,
+      "protein": 16.0,
+      "servingLabel": "1 serving (126 g)",
+      "servingGrams": 126.0,
+      "id": "bacon-egg-cheese-muffin-1-serving-126-g"
+    },
+    {
+      "name": "Chicken, Egg & Cheese Muffin",
+      "calories": 410.0,
+      "fat": 18.0,
+      "carbs": 36.0,
+      "protein": 27.0,
+      "servingLabel": "1 serving (187 g)",
+      "servingGrams": 187.0,
+      "id": "chicken-egg-cheese-muffin-1-serving-187-g"
+    },
+    {
+      "name": "Sausage, Egg & Cheese Biscuit",
+      "calories": 620.0,
+      "fat": 42.0,
+      "carbs": 38.0,
+      "protein": 22.0,
+      "servingLabel": "1 serving (192 g)",
+      "servingGrams": 192.0,
+      "id": "sausage-egg-cheese-biscuit-1-serving-192-g"
+    },
+    {
+      "name": "Bacon, Egg & Cheese Biscuit",
+      "calories": 420.0,
+      "fat": 23.0,
+      "carbs": 38.0,
+      "protein": 15.0,
+      "servingLabel": "1 serving (145 g)",
+      "servingGrams": 145.0,
+      "id": "bacon-egg-cheese-biscuit-1-serving-145-g"
+    },
+    {
+      "name": "Chicken, Egg & Cheese Biscuit",
+      "calories": 550.0,
+      "fat": 28.0,
+      "carbs": 48.0,
+      "protein": 27.0,
+      "servingLabel": "1 serving (211 g)",
+      "servingGrams": 211.0,
+      "id": "chicken-egg-cheese-biscuit-1-serving-211-g"
+    },
+    {
+      "name": "Egg White Grill",
+      "calories": 300.0,
+      "fat": 8.0,
+      "carbs": 29.0,
+      "protein": 27.0,
+      "servingLabel": "1 serving (172 g)",
+      "servingGrams": 172.0,
+      "id": "egg-white-grill-1-serving-172-g"
+    },
+    {
+      "name": "Spicy Chicken Biscuit",
+      "calories": 450.0,
+      "fat": 22.0,
+      "carbs": 44.0,
+      "protein": 19.0,
+      "servingLabel": "1 serving (153 g)",
+      "servingGrams": 153.0,
+      "id": "spicy-chicken-biscuit-1-serving-153-g"
+    },
+    {
+      "name": "Chick-fil-A Chicken Biscuit",
+      "calories": 460.0,
+      "fat": 23.0,
+      "carbs": 45.0,
+      "protein": 19.0,
+      "servingLabel": "1 serving (153 g)",
+      "servingGrams": 153.0,
+      "id": "chick-fil-a-chicken-biscuit-1-serving-153-g"
+    },
+    {
+      "name": "Chicken & Waffles Breakfast Sandwich w/ Grilled Filet",
+      "calories": 440.0,
+      "fat": 19.0,
+      "carbs": 47.0,
+      "protein": 20.0,
+      "servingLabel": "1 serving (129 g)",
+      "servingGrams": 129.0,
+      "id": "chicken-waffles-breakfast-sandwich-w-grilled-filet-1-serving-129-g"
+    },
+    {
+      "name": "Chicken & Waffles Breakfast Sandwich w/ Spicy Filet",
+      "calories": 530.0,
+      "fat": 25.0,
+      "carbs": 54.0,
+      "protein": 23.0,
+      "servingLabel": "1 serving (150 g)",
+      "servingGrams": 150.0,
+      "id": "chicken-waffles-breakfast-sandwich-w-spicy-filet-1-serving-150-g"
+    },
+    {
+      "name": "Berry Parfait",
+      "calories": 270.0,
+      "fat": 9.0,
+      "carbs": 35.0,
+      "protein": 13.0,
+      "servingLabel": "1 serving (206 g)",
+      "servingGrams": 206.0,
+      "id": "berry-parfait-1-serving-206-g"
+    },
+    {
+      "name": "Berry Parfait w/ Cookie Crumbs",
+      "calories": 240.0,
+      "fat": 8.0,
+      "carbs": 31.0,
+      "protein": 12.0,
+      "servingLabel": "1 serving (195 g)",
+      "servingGrams": 195.0,
+      "id": "berry-parfait-w-cookie-crumbs-1-serving-195-g"
+    },
+    {
+      "name": "Berry Parfait w/ Granola",
+      "calories": 270.0,
+      "fat": 9.0,
+      "carbs": 35.0,
+      "protein": 13.0,
+      "servingLabel": "1 serving (206 g)",
+      "servingGrams": 206.0,
+      "id": "berry-parfait-w-granola-1-serving-206-g"
+    },
+    {
+      "name": "Hash Browns",
+      "calories": 270.0,
+      "fat": 18.0,
+      "carbs": 23.0,
+      "protein": 3.0,
+      "servingLabel": "1 serving (77 g)",
+      "servingGrams": 77.0,
+      "id": "hash-browns-1-serving-77-g"
+    },
+    {
+      "name": "Large Hash Browns",
+      "calories": 420.0,
+      "fat": 29.0,
+      "carbs": 35.0,
+      "protein": 4.0,
+      "servingLabel": "1 serving (121 g)",
+      "servingGrams": 121.0,
+      "id": "large-hash-browns-1-serving-121-g"
+    },
+    {
+      "name": "Small Hash Browns",
+      "calories": 270.0,
+      "fat": 18.0,
+      "carbs": 23.0,
+      "protein": 3.0,
+      "servingLabel": "1 serving (77 g)",
+      "servingGrams": 77.0,
+      "id": "small-hash-browns-1-serving-77-g"
+    },
+    {
+      "name": "Chicken & Waffles Breakfast Sandwich w/ Chick-fil-A Filet",
+      "calories": 530.0,
+      "fat": 26.0,
+      "carbs": 55.0,
+      "protein": 22.0,
+      "servingLabel": "1 serving (150 g)",
+      "servingGrams": 150.0,
+      "id": "chicken-waffles-breakfast-sandwich-w-chick-fil-a-filet-1-serving-150-g"
+    },
+    {
+      "name": "Chick-fil-A Chick-n-Strips",
+      "calories": 310.0,
+      "fat": 14.0,
+      "carbs": 16.0,
+      "protein": 29.0,
+      "servingLabel": "1 serving (136 g)",
+      "servingGrams": 136.0,
+      "id": "chick-fil-a-chick-n-strips-1-serving-136-g"
+    },
+    {
+      "name": "2 ct Chick-fil-A Chick-n-Strips",
+      "calories": 200.0,
+      "fat": 9.0,
+      "carbs": 11.0,
+      "protein": 19.0,
+      "servingLabel": "1 serving (91 g)",
+      "servingGrams": 91.0,
+      "id": "2-ct-chick-fil-a-chick-n-strips-1-serving-91-g"
+    },
+    {
+      "name": "10 ct Chick-fil-A Chick-n-Strips",
+      "calories": 1020.0,
+      "fat": 46.0,
+      "carbs": 54.0,
+      "protein": 96.0,
+      "servingLabel": "1 serving (452 g)",
+      "servingGrams": 452.0,
+      "id": "10-ct-chick-fil-a-chick-n-strips-1-serving-452-g"
+    },
+    {
+      "name": "4 ct Chick-fil-A Chick-n-Strips",
+      "calories": 410.0,
+      "fat": 19.0,
+      "carbs": 22.0,
+      "protein": 39.0,
+      "servingLabel": "1 serving (181 g)",
+      "servingGrams": 181.0,
+      "id": "4-ct-chick-fil-a-chick-n-strips-1-serving-181-g"
+    },
+    {
+      "name": "3 ct Chick-fil-A Chick-n-Strips",
+      "calories": 310.0,
+      "fat": 14.0,
+      "carbs": 16.0,
+      "protein": 29.0,
+      "servingLabel": "1 serving (136 g)",
+      "servingGrams": 136.0,
+      "id": "3-ct-chick-fil-a-chick-n-strips-1-serving-136-g"
+    },
+    {
+      "name": "Grilled Nuggets",
+      "calories": 130.0,
+      "fat": 3.0,
+      "carbs": 1.0,
+      "protein": 25.0,
+      "servingLabel": "1 serving (95 g)",
+      "servingGrams": 95.0,
+      "id": "grilled-nuggets-1-serving-95-g"
+    },
+    {
+      "name": "30 ct Grilled Nuggets",
+      "calories": 510.0,
+      "fat": 11.0,
+      "carbs": 4.0,
+      "protein": 98.0,
+      "servingLabel": "1 serving (369 g)",
+      "servingGrams": 369.0,
+      "id": "30-ct-grilled-nuggets-1-serving-369-g"
+    },
+    {
+      "name": "12 ct Grilled Nuggets",
+      "calories": 200.0,
+      "fat": 4.5,
+      "carbs": 2.0,
+      "protein": 38.0,
+      "servingLabel": "1 serving (142 g)",
+      "servingGrams": 142.0,
+      "id": "12-ct-grilled-nuggets-1-serving-142-g"
+    },
+    {
+      "name": "8 ct Grilled Nuggets",
+      "calories": 130.0,
+      "fat": 3.0,
+      "carbs": 1.0,
+      "protein": 25.0,
+      "servingLabel": "1 serving (95 g)",
+      "servingGrams": 95.0,
+      "id": "8-ct-grilled-nuggets-1-serving-95-g"
+    },
+    {
+      "name": "Chick-fil-A Nuggets",
+      "calories": 250.0,
+      "fat": 11.0,
+      "carbs": 11.0,
+      "protein": 27.0,
+      "servingLabel": "1 serving (113 g)",
+      "servingGrams": 113.0,
+      "id": "chick-fil-a-nuggets-1-serving-113-g"
+    },
+    {
+      "name": "30 ct Chick-fil-A Nuggets",
+      "calories": 950.0,
+      "fat": 43.0,
+      "carbs": 41.0,
+      "protein": 100.0,
+      "servingLabel": "1 serving (425 g)",
+      "servingGrams": 425.0,
+      "id": "30-ct-chick-fil-a-nuggets-1-serving-425-g"
+    },
+    {
+      "name": "12 ct Chick-fil-A Nuggets",
+      "calories": 380.0,
+      "fat": 17.0,
+      "carbs": 16.0,
+      "protein": 40.0,
+      "servingLabel": "1 serving (170 g)",
+      "servingGrams": 170.0,
+      "id": "12-ct-chick-fil-a-nuggets-1-serving-170-g"
+    },
+    {
+      "name": "8 ct Chick-fil-A Nuggets",
+      "calories": 250.0,
+      "fat": 11.0,
+      "carbs": 11.0,
+      "protein": 27.0,
+      "servingLabel": "1 serving (113 g)",
+      "servingGrams": 113.0,
+      "id": "8-ct-chick-fil-a-nuggets-1-serving-113-g"
+    },
+    {
+      "name": "Chick-fil-A Grilled Chicken Club Sandwich",
+      "calories": 520.0,
+      "fat": 22.0,
+      "carbs": 45.0,
+      "protein": 37.0,
+      "servingLabel": "1 serving (237 g)",
+      "servingGrams": 237.0,
+      "id": "chick-fil-a-grilled-chicken-club-sandwich-1-serving-237-g"
+    },
+    {
+      "name": "Grilled Chicken Club w/ No Cheese",
+      "calories": 440.0,
+      "fat": 15.0,
+      "carbs": 45.0,
+      "protein": 31.0,
+      "servingLabel": "1 serving (216 g)",
+      "servingGrams": 216.0,
+      "id": "grilled-chicken-club-w-no-cheese-1-serving-216-g"
+    },
+    {
+      "name": "Grilled Chicken Club w/ American",
+      "calories": 490.0,
+      "fat": 19.0,
+      "carbs": 45.0,
+      "protein": 34.0,
+      "servingLabel": "1 serving (230 g)",
+      "servingGrams": 230.0,
+      "id": "grilled-chicken-club-w-american-1-serving-230-g"
+    },
+    {
+      "name": "Grilled Chicken Club w/ Pepper Jack",
+      "calories": 520.0,
+      "fat": 22.0,
+      "carbs": 45.0,
+      "protein": 37.0,
+      "servingLabel": "1 serving (237 g)",
+      "servingGrams": 237.0,
+      "id": "grilled-chicken-club-w-pepper-jack-1-serving-237-g"
+    },
+    {
+      "name": "Grilled Chicken Club w/ Colby Jack",
+      "calories": 520.0,
+      "fat": 22.0,
+      "carbs": 45.0,
+      "protein": 37.0,
+      "servingLabel": "1 serving (237 g)",
+      "servingGrams": 237.0,
+      "id": "grilled-chicken-club-w-colby-jack-1-serving-237-g"
+    },
+    {
+      "name": "Spicy Deluxe Sandwich",
+      "calories": 540.0,
+      "fat": 26.0,
+      "carbs": 47.0,
+      "protein": 34.0,
+      "servingLabel": "1 serving (259 g)",
+      "servingGrams": 259.0,
+      "id": "spicy-deluxe-sandwich-1-serving-259-g"
+    },
+    {
+      "name": "Spicy Deluxe Sandwich w/ No Cheese",
+      "calories": 460.0,
+      "fat": 19.0,
+      "carbs": 46.0,
+      "protein": 28.0,
+      "servingLabel": "1 serving (238 g)",
+      "servingGrams": 238.0,
+      "id": "spicy-deluxe-sandwich-w-no-cheese-1-serving-238-g"
+    },
+    {
+      "name": "Spicy Deluxe Sandwich w/ American",
+      "calories": 510.0,
+      "fat": 23.0,
+      "carbs": 47.0,
+      "protein": 31.0,
+      "servingLabel": "1 serving (252 g)",
+      "servingGrams": 252.0,
+      "id": "spicy-deluxe-sandwich-w-american-1-serving-252-g"
+    },
+    {
+      "name": "Spicy Deluxe Sandwich w/ Colby Jack",
+      "calories": 540.0,
+      "fat": 26.0,
+      "carbs": 47.0,
+      "protein": 34.0,
+      "servingLabel": "1 serving (259 g)",
+      "servingGrams": 259.0,
+      "id": "spicy-deluxe-sandwich-w-colby-jack-1-serving-259-g"
+    },
+    {
+      "name": "Spicy Deluxe Sandwich w/ Pepper Jack",
+      "calories": 540.0,
+      "fat": 26.0,
+      "carbs": 47.0,
+      "protein": 34.0,
+      "servingLabel": "1 serving (259 g)",
+      "servingGrams": 259.0,
+      "id": "spicy-deluxe-sandwich-w-pepper-jack-1-serving-259-g"
+    },
+    {
+      "name": "Chick-fil-A Deluxe Sandwich",
+      "calories": 490.0,
+      "fat": 22.0,
+      "carbs": 43.0,
+      "protein": 32.0,
+      "servingLabel": "1 serving (247 g)",
+      "servingGrams": 247.0,
+      "id": "chick-fil-a-deluxe-sandwich-1-serving-247-g"
+    },
+    {
+      "name": "Chick-fil-A Deluxe Sandwich w/ No Cheese",
+      "calories": 430.0,
+      "fat": 18.0,
+      "carbs": 43.0,
+      "protein": 29.0,
+      "servingLabel": "1 serving (233 g)",
+      "servingGrams": 233.0,
+      "id": "chick-fil-a-deluxe-sandwich-w-no-cheese-1-serving-233-g"
+    },
+    {
+      "name": "Chick-fil-A Deluxe Sandwich w/ Pepper Jack",
+      "calories": 520.0,
+      "fat": 24.0,
+      "carbs": 43.0,
+      "protein": 35.0,
+      "servingLabel": "1 serving (254 g)",
+      "servingGrams": 254.0,
+      "id": "chick-fil-a-deluxe-sandwich-w-pepper-jack-1-serving-254-g"
+    },
+    {
+      "name": "Chick-fil-A Deluxe Sandwich w/ Colby Jack",
+      "calories": 510.0,
+      "fat": 24.0,
+      "carbs": 43.0,
+      "protein": 34.0,
+      "servingLabel": "1 serving (254 g)",
+      "servingGrams": 254.0,
+      "id": "chick-fil-a-deluxe-sandwich-w-colby-jack-1-serving-254-g"
+    },
+    {
+      "name": "Chick-fil-A Deluxe Sandwich w/ American",
+      "calories": 490.0,
+      "fat": 22.0,
+      "carbs": 43.0,
+      "protein": 32.0,
+      "servingLabel": "1 serving (247 g)",
+      "servingGrams": 247.0,
+      "id": "chick-fil-a-deluxe-sandwich-w-american-1-serving-247-g"
+    },
+    {
+      "name": "Chick-fil-A Cool Wrap",
+      "calories": 660.0,
+      "fat": 45.0,
+      "carbs": 32.0,
+      "protein": 43.0,
+      "servingLabel": "1 serving (231 g)",
+      "servingGrams": 231.0,
+      "id": "chick-fil-a-cool-wrap-1-serving-231-g"
+    },
+    {
+      "name": "Grilled Chicken Sandwich",
+      "calories": 390.0,
+      "fat": 11.0,
+      "carbs": 45.0,
+      "protein": 28.0,
+      "servingLabel": "1 serving (206 g)",
+      "servingGrams": 206.0,
+      "id": "grilled-chicken-sandwich-1-serving-206-g"
+    },
+    {
+      "name": "Spicy Chicken Sandwich",
+      "calories": 450.0,
+      "fat": 19.0,
+      "carbs": 45.0,
+      "protein": 28.0,
+      "servingLabel": "1 serving (188 g)",
+      "servingGrams": 188.0,
+      "id": "spicy-chicken-sandwich-1-serving-188-g"
+    },
+    {
+      "name": "Chick-fil-A Chicken Sandwich",
+      "calories": 420.0,
+      "fat": 18.0,
+      "carbs": 41.0,
+      "protein": 29.0,
+      "servingLabel": "1 serving (183 g)",
+      "servingGrams": 183.0,
+      "id": "chick-fil-a-chicken-sandwich-1-serving-183-g"
+    },
+    {
+      "name": "Chicken & Waffles Sandwich w/ Grilled Filet",
+      "calories": 540.0,
+      "fat": 24.0,
+      "carbs": 55.0,
+      "protein": 29.0,
+      "servingLabel": "1 serving (179 g)",
+      "servingGrams": 179.0,
+      "id": "chicken-waffles-sandwich-w-grilled-filet-1-serving-179-g"
+    },
+    {
+      "name": "Chicken & Waffles Sandwich w/ Spicy Filet",
+      "calories": 710.0,
+      "fat": 35.0,
+      "carbs": 70.0,
+      "protein": 31.0,
+      "servingLabel": "1 serving (215 g)",
+      "servingGrams": 215.0,
+      "id": "chicken-waffles-sandwich-w-spicy-filet-1-serving-215-g"
+    },
+    {
+      "name": "Chicken & Waffles Sandwich w/ Chick-fil-A Filet",
+      "calories": 690.0,
+      "fat": 34.0,
+      "carbs": 66.0,
+      "protein": 32.0,
+      "servingLabel": "1 serving (210 g)",
+      "servingGrams": 210.0,
+      "id": "chicken-waffles-sandwich-w-chick-fil-a-filet-1-serving-210-g"
+    },
+    {
+      "name": "Market Salad",
+      "calories": 550.0,
+      "fat": 31.0,
+      "carbs": 42.0,
+      "protein": 28.0,
+      "servingLabel": "1 serving (326 g)",
+      "servingGrams": 326.0,
+      "id": "market-salad-1-serving-326-g"
+    },
+    {
+      "name": "Market Salad w/ No Chicken",
+      "calories": 440.0,
+      "fat": 29.0,
+      "carbs": 40.0,
+      "protein": 7.0,
+      "servingLabel": "1 serving (241 g)",
+      "servingGrams": 241.0,
+      "id": "market-salad-w-no-chicken-1-serving-241-g"
+    },
+    {
+      "name": "Market Salad w/ Grilled Filet (Warm)",
+      "calories": 550.0,
+      "fat": 31.0,
+      "carbs": 42.0,
+      "protein": 28.0,
+      "servingLabel": "1 serving (325 g)",
+      "servingGrams": 325.0,
+      "id": "market-salad-w-grilled-filet-warm-1-serving-325-g"
+    },
+    {
+      "name": "Market Salad w/ Grilled Nuggets",
+      "calories": 570.0,
+      "fat": 32.0,
+      "carbs": 41.0,
+      "protein": 32.0,
+      "servingLabel": "1 serving (335 g)",
+      "servingGrams": 335.0,
+      "id": "market-salad-w-grilled-nuggets-1-serving-335-g"
+    },
+    {
+      "name": "Market Salad w/ Nuggets",
+      "calories": 700.0,
+      "fat": 40.0,
+      "carbs": 51.0,
+      "protein": 34.0,
+      "servingLabel": "1 serving (354 g)",
+      "servingGrams": 354.0,
+      "id": "market-salad-w-nuggets-1-serving-354-g"
+    },
+    {
+      "name": "Market Salad w/ Chick-fil-A Chick-n-Strips",
+      "calories": 750.0,
+      "fat": 43.0,
+      "carbs": 57.0,
+      "protein": 36.0,
+      "servingLabel": "1 serving (377 g)",
+      "servingGrams": 377.0,
+      "id": "market-salad-w-chick-fil-a-chick-n-strips-1-serving-377-g"
+    },
+    {
+      "name": "Market Salad w/ Spicy Grilled Filet (Cold)",
+      "calories": 540.0,
+      "fat": 31.0,
+      "carbs": 42.0,
+      "protein": 26.0,
+      "servingLabel": "1 serving (326 g)",
+      "servingGrams": 326.0,
+      "id": "market-salad-w-spicy-grilled-filet-cold-1-serving-326-g"
+    },
+    {
+      "name": "Market Salad w/ Grilled Filet (Cold)",
+      "calories": 550.0,
+      "fat": 31.0,
+      "carbs": 42.0,
+      "protein": 28.0,
+      "servingLabel": "1 serving (326 g)",
+      "servingGrams": 326.0,
+      "id": "market-salad-w-grilled-filet-cold-1-serving-326-g"
+    },
+    {
+      "name": "Spicy Southwest Salad",
+      "calories": 680.0,
+      "fat": 49.0,
+      "carbs": 27.0,
+      "protein": 33.0,
+      "servingLabel": "1 serving (424 g)",
+      "servingGrams": 424.0,
+      "id": "spicy-southwest-salad-1-serving-424-g"
+    },
+    {
+      "name": "Spicy Southwest Salad w/ No Chicken",
+      "calories": 570.0,
+      "fat": 47.0,
+      "carbs": 25.0,
+      "protein": 14.0,
+      "servingLabel": "1 serving (339 g)",
+      "servingGrams": 339.0,
+      "id": "spicy-southwest-salad-w-no-chicken-1-serving-339-g"
+    },
+    {
+      "name": "Spicy Southwest Salad w/ Grilled Filet (Warm)",
+      "calories": 680.0,
+      "fat": 48.0,
+      "carbs": 26.0,
+      "protein": 35.0,
+      "servingLabel": "1 serving (423 g)",
+      "servingGrams": 423.0,
+      "id": "spicy-southwest-salad-w-grilled-filet-warm-1-serving-423-g"
+    },
+    {
+      "name": "Spicy Southwest Salad w/ Chick-fil-A Chick-n-Strips",
+      "calories": 880.0,
+      "fat": 60.0,
+      "carbs": 41.0,
+      "protein": 43.0,
+      "servingLabel": "1 serving (475 g)",
+      "servingGrams": 475.0,
+      "id": "spicy-southwest-salad-w-chick-fil-a-chick-n-strips-1-serving-475-g"
+    },
+    {
+      "name": "Spicy Southwest Salad w/ Grilled Nuggets",
+      "calories": 700.0,
+      "fat": 49.0,
+      "carbs": 26.0,
+      "protein": 39.0,
+      "servingLabel": "1 serving (434 g)",
+      "servingGrams": 434.0,
+      "id": "spicy-southwest-salad-w-grilled-nuggets-1-serving-434-g"
+    },
+    {
+      "name": "Spicy Southwest Salad w/ Nuggets",
+      "calories": 800.0,
+      "fat": 56.0,
+      "carbs": 35.0,
+      "protein": 39.0,
+      "servingLabel": "1 serving (448 g)",
+      "servingGrams": 448.0,
+      "id": "spicy-southwest-salad-w-nuggets-1-serving-448-g"
+    },
+    {
+      "name": "Spicy Southwest Salad w/ Grilled Filet (Cold)",
+      "calories": 680.0,
+      "fat": 48.0,
+      "carbs": 26.0,
+      "protein": 35.0,
+      "servingLabel": "1 serving (424 g)",
+      "servingGrams": 424.0,
+      "id": "spicy-southwest-salad-w-grilled-filet-cold-1-serving-424-g"
+    },
+    {
+      "name": "Spicy Southwest Salad w/ Spicy Grilled Filet (Cold)",
+      "calories": 680.0,
+      "fat": 49.0,
+      "carbs": 27.0,
+      "protein": 33.0,
+      "servingLabel": "1 serving (424 g)",
+      "servingGrams": 424.0,
+      "id": "spicy-southwest-salad-w-spicy-grilled-filet-cold-1-serving-424-g"
+    },
+    {
+      "name": "Cobb Salad",
+      "calories": 830.0,
+      "fat": 60.0,
+      "carbs": 31.0,
+      "protein": 41.0,
+      "servingLabel": "1 serving (411 g)",
+      "servingGrams": 411.0,
+      "id": "cobb-salad-1-serving-411-g"
+    },
+    {
+      "name": "Cobb Salad w/ No Chicken",
+      "calories": 500.0,
+      "fat": 42.0,
+      "carbs": 15.0,
+      "protein": 14.0,
+      "servingLabel": "1 serving (284 g)",
+      "servingGrams": 284.0,
+      "id": "cobb-salad-w-no-chicken-1-serving-284-g"
+    },
+    {
+      "name": "Cobb Salad w/ Grilled Filet (Warm)",
+      "calories": 600.0,
+      "fat": 44.0,
+      "carbs": 16.0,
+      "protein": 35.0,
+      "servingLabel": "1 serving (368 g)",
+      "servingGrams": 368.0,
+      "id": "cobb-salad-w-grilled-filet-warm-1-serving-368-g"
+    },
+    {
+      "name": "Cobb Salad w/ Grilled Filet (Cold)",
+      "calories": 610.0,
+      "fat": 44.0,
+      "carbs": 16.0,
+      "protein": 35.0,
+      "servingLabel": "1 serving (369 g)",
+      "servingGrams": 369.0,
+      "id": "cobb-salad-w-grilled-filet-cold-1-serving-369-g"
+    },
+    {
+      "name": "Cobb Salad w/ Chick-fil-A Chick-n-Strips",
+      "calories": 810.0,
+      "fat": 56.0,
+      "carbs": 31.0,
+      "protein": 43.0,
+      "servingLabel": "1 serving (420 g)",
+      "servingGrams": 420.0,
+      "id": "cobb-salad-w-chick-fil-a-chick-n-strips-1-serving-420-g"
+    },
+    {
+      "name": "Cobb Salad w/ Grilled Nuggets",
+      "calories": 630.0,
+      "fat": 45.0,
+      "carbs": 16.0,
+      "protein": 39.0,
+      "servingLabel": "1 serving (378 g)",
+      "servingGrams": 378.0,
+      "id": "cobb-salad-w-grilled-nuggets-1-serving-378-g"
+    },
+    {
+      "name": "Cobb Salad w/ Spicy Grilled Filet (Cold)",
+      "calories": 600.0,
+      "fat": 45.0,
+      "carbs": 16.0,
+      "protein": 33.0,
+      "servingLabel": "1 serving (369 g)",
+      "servingGrams": 369.0,
+      "id": "cobb-salad-w-spicy-grilled-filet-cold-1-serving-369-g"
+    },
+    {
+      "name": "Cobb Salad w/ Nuggets",
+      "calories": 830.0,
+      "fat": 60.0,
+      "carbs": 31.0,
+      "protein": 41.0,
+      "servingLabel": "1 serving (411 g)",
+      "servingGrams": 411.0,
+      "id": "cobb-salad-w-nuggets-1-serving-411-g"
+    },
+    {
+      "name": "Mac & Cheese",
+      "calories": 450.0,
+      "fat": 29.0,
+      "carbs": 28.0,
+      "protein": 20.0,
+      "servingLabel": "1 serving (227 g)",
+      "servingGrams": 227.0,
+      "id": "mac-cheese-1-serving-227-g"
+    },
+    {
+      "name": "Small Mac & Cheese",
+      "calories": 270.0,
+      "fat": 17.0,
+      "carbs": 17.0,
+      "protein": 12.0,
+      "servingLabel": "1 serving (136 g)",
+      "servingGrams": 136.0,
+      "id": "small-mac-cheese-1-serving-136-g"
+    },
+    {
+      "name": "Medium Mac & Cheese",
+      "calories": 450.0,
+      "fat": 29.0,
+      "carbs": 28.0,
+      "protein": 20.0,
+      "servingLabel": "1 serving (227 g)",
+      "servingGrams": 227.0,
+      "id": "medium-mac-cheese-1-serving-227-g"
+    },
+    {
+      "name": "Chick-fil-A Waffle Potato Fries",
+      "calories": 420.0,
+      "fat": 24.0,
+      "carbs": 45.0,
+      "protein": 5.0,
+      "servingLabel": "1 serving (125 g)",
+      "servingGrams": 125.0,
+      "id": "chick-fil-a-waffle-potato-fries-1-serving-125-g"
+    },
+    {
+      "name": "Small Chick-fil-A Waffle Potato Fries",
+      "calories": 320.0,
+      "fat": 19.0,
+      "carbs": 35.0,
+      "protein": 4.0,
+      "servingLabel": "1 serving (96 g)",
+      "servingGrams": 96.0,
+      "id": "small-chick-fil-a-waffle-potato-fries-1-serving-96-g"
+    },
+    {
+      "name": "Large Chick-fil-A Waffle Potato Fries",
+      "calories": 600.0,
+      "fat": 35.0,
+      "carbs": 65.0,
+      "protein": 7.0,
+      "servingLabel": "1 serving (179 g)",
+      "servingGrams": 179.0,
+      "id": "large-chick-fil-a-waffle-potato-fries-1-serving-179-g"
+    },
+    {
+      "name": "Medium Chick-fil-A Waffle Potato Fries",
+      "calories": 420.0,
+      "fat": 24.0,
+      "carbs": 45.0,
+      "protein": 5.0,
+      "servingLabel": "1 serving (125 g)",
+      "servingGrams": 125.0,
+      "id": "medium-chick-fil-a-waffle-potato-fries-1-serving-125-g"
+    },
+    {
+      "name": "Side Salad",
+      "calories": 470.0,
+      "fat": 42.0,
+      "carbs": 14.0,
+      "protein": 6.0,
+      "servingLabel": "1 serving (166 g)",
+      "servingGrams": 166.0,
+      "id": "side-salad-1-serving-166-g"
+    },
+    {
+      "name": "Chicken Noodle Soup",
+      "calories": 190.0,
+      "fat": 4.5,
+      "carbs": 27.0,
+      "protein": 11.0,
+      "servingLabel": "1 serving (252 g)",
+      "servingGrams": 252.0,
+      "id": "chicken-noodle-soup-1-serving-252-g"
+    },
+    {
+      "name": "Bowl of Chicken Noodle Soup",
+      "calories": 320.0,
+      "fat": 8.0,
+      "carbs": 42.0,
+      "protein": 20.0,
+      "servingLabel": "1 serving (476 g)",
+      "servingGrams": 476.0,
+      "id": "bowl-of-chicken-noodle-soup-1-serving-476-g"
+    },
+    {
+      "name": "Cup of Chicken Noodle Soup",
+      "calories": 190.0,
+      "fat": 4.5,
+      "carbs": 27.0,
+      "protein": 11.0,
+      "servingLabel": "1 serving (252 g)",
+      "servingGrams": 252.0,
+      "id": "cup-of-chicken-noodle-soup-1-serving-252-g"
+    },
+    {
+      "name": "Kale Crunch Side",
+      "calories": 170.0,
+      "fat": 12.0,
+      "carbs": 13.0,
+      "protein": 4.0,
+      "servingLabel": "1 serving (112 g)",
+      "servingGrams": 112.0,
+      "id": "kale-crunch-side-1-serving-112-g"
+    },
+    {
+      "name": "Chicken Tortilla Soup",
+      "calories": 280.0,
+      "fat": 7.0,
+      "carbs": 31.0,
+      "protein": 24.0,
+      "servingLabel": "1 serving (265 g)",
+      "servingGrams": 265.0,
+      "id": "chicken-tortilla-soup-1-serving-265-g"
+    },
+    {
+      "name": "Buddy Fruits Apple Sauce",
+      "calories": 45.0,
+      "fat": 0.0,
+      "carbs": 12.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (90 g)",
+      "servingGrams": 90.0,
+      "id": "buddy-fruits-apple-sauce-1-serving-90-g"
+    },
+    {
+      "name": "Chick-fil-A Sauce Flavored Waffle Potato Chips",
+      "calories": 210.0,
+      "fat": 12.0,
+      "carbs": 26.0,
+      "protein": 3.0,
+      "servingLabel": "1 serving (43 g)",
+      "servingGrams": 43.0,
+      "id": "chick-fil-a-sauce-flavored-waffle-potato-chips-1-serving-43-g"
+    },
+    {
+      "name": "Original Flavor Waffle Potato Chips",
+      "calories": 220.0,
+      "fat": 13.0,
+      "carbs": 25.0,
+      "protein": 3.0,
+      "servingLabel": "1 serving (43 g)",
+      "servingGrams": 43.0,
+      "id": "original-flavor-waffle-potato-chips-1-serving-43-g"
+    },
+    {
+      "name": "Mac & Cheese Kid’s Meal",
+      "calories": 450.0,
+      "fat": 29.0,
+      "carbs": 28.0,
+      "protein": 20.0,
+      "servingLabel": "1 serving (227 g)",
+      "servingGrams": 227.0,
+      "id": "mac-cheese-kids-meal-1-serving-227-g"
+    },
+    {
+      "name": "5 Ct Grilled Nuggets Kid's Meal",
+      "calories": 80.0,
+      "fat": 2.0,
+      "carbs": 1.0,
+      "protein": 16.0,
+      "servingLabel": "1 serving (59 g)",
+      "servingGrams": 59.0,
+      "id": "5-ct-grilled-nuggets-kid-s-meal-1-serving-59-g"
+    },
+    {
+      "name": "2 Ct Chick-n-Strips Kid's Meal",
+      "calories": 200.0,
+      "fat": 9.0,
+      "carbs": 11.0,
+      "protein": 19.0,
+      "servingLabel": "1 serving (91 g)",
+      "servingGrams": 91.0,
+      "id": "2-ct-chick-n-strips-kid-s-meal-1-serving-91-g"
+    },
+    {
+      "name": "5 Ct Nuggets Kid's Meal",
+      "calories": 160.0,
+      "fat": 7.0,
+      "carbs": 7.0,
+      "protein": 17.0,
+      "servingLabel": "1 serving (71 g)",
+      "servingGrams": 71.0,
+      "id": "5-ct-nuggets-kid-s-meal-1-serving-71-g"
+    },
+    {
+      "name": "Chocolate Fudge Brownie",
+      "calories": 370.0,
+      "fat": 21.0,
+      "carbs": 47.0,
+      "protein": 4.0,
+      "servingLabel": "1 serving (85 g)",
+      "servingGrams": 85.0,
+      "id": "chocolate-fudge-brownie-1-serving-85-g"
+    },
+    {
+      "name": "Chocolate Chunk Cookie",
+      "calories": 370.0,
+      "fat": 17.0,
+      "carbs": 49.0,
+      "protein": 5.0,
+      "servingLabel": "1 serving (78 g)",
+      "servingGrams": 78.0,
+      "id": "chocolate-chunk-cookie-1-serving-78-g"
+    },
+    {
+      "name": "6 pack Chocolate Chunk Cookie",
+      "calories": 370.0,
+      "fat": 17.0,
+      "carbs": 49.0,
+      "protein": 5.0,
+      "servingLabel": "1 serving (78 g)",
+      "servingGrams": 78.0,
+      "id": "6-pack-chocolate-chunk-cookie-1-serving-78-g"
+    },
+    {
+      "name": "Frosted Sodas",
+      "calories": 320.0,
+      "fat": 7.0,
+      "carbs": 60.0,
+      "protein": 7.0,
+      "servingLabel": "1 serving (369 g)",
+      "servingGrams": 369.0,
+      "id": "frosted-sodas-1-serving-369-g"
+    },
+    {
+      "name": "Frosted Powerade Mountain Berry Blast",
+      "calories": 290.0,
+      "fat": 7.0,
+      "carbs": 53.0,
+      "protein": 7.0,
+      "servingLabel": "1 serving (369 g)",
+      "servingGrams": 369.0,
+      "id": "frosted-powerade-mountain-berry-blast-1-serving-369-g"
+    },
+    {
+      "name": "Frosted Barq’s Red Flash",
+      "calories": 320.0,
+      "fat": 7.0,
+      "carbs": 61.0,
+      "protein": 7.0,
+      "servingLabel": "1 serving (369 g)",
+      "servingGrams": 369.0,
+      "id": "frosted-barqs-red-flash-1-serving-369-g"
+    },
+    {
+      "name": "Frosted Fanta Strawberry",
+      "calories": 320.0,
+      "fat": 7.0,
+      "carbs": 61.0,
+      "protein": 7.0,
+      "servingLabel": "1 serving (369 g)",
+      "servingGrams": 369.0,
+      "id": "frosted-fanta-strawberry-1-serving-369-g"
+    },
+    {
+      "name": "Frosted Fanta Orange",
+      "calories": 320.0,
+      "fat": 7.0,
+      "carbs": 60.0,
+      "protein": 7.0,
+      "servingLabel": "1 serving (369 g)",
+      "servingGrams": 369.0,
+      "id": "frosted-fanta-orange-1-serving-369-g"
+    },
+    {
+      "name": "Frosted Mello Yello",
+      "calories": 320.0,
+      "fat": 7.0,
+      "carbs": 62.0,
+      "protein": 7.0,
+      "servingLabel": "1 serving (369 g)",
+      "servingGrams": 369.0,
+      "id": "frosted-mello-yello-1-serving-369-g"
+    },
+    {
+      "name": "Frosted Caffeine Free Barq’s Root Beer",
+      "calories": 320.0,
+      "fat": 7.0,
+      "carbs": 62.0,
+      "protein": 7.0,
+      "servingLabel": "1 serving (369 g)",
+      "servingGrams": 369.0,
+      "id": "frosted-caffeine-free-barqs-root-beer-1-serving-369-g"
+    },
+    {
+      "name": "Frosted Sprite",
+      "calories": 320.0,
+      "fat": 7.0,
+      "carbs": 59.0,
+      "protein": 7.0,
+      "servingLabel": "1 serving (369 g)",
+      "servingGrams": 369.0,
+      "id": "frosted-sprite-1-serving-369-g"
+    },
+    {
+      "name": "Frosted Hi-C Orange",
+      "calories": 310.0,
+      "fat": 7.0,
+      "carbs": 58.0,
+      "protein": 7.0,
+      "servingLabel": "1 serving (369 g)",
+      "servingGrams": 369.0,
+      "id": "frosted-hi-c-orange-1-serving-369-g"
+    },
+    {
+      "name": "Frosted Hi-C Fruit Punch",
+      "calories": 320.0,
+      "fat": 7.0,
+      "carbs": 61.0,
+      "protein": 7.0,
+      "servingLabel": "1 serving (369 g)",
+      "servingGrams": 369.0,
+      "id": "frosted-hi-c-fruit-punch-1-serving-369-g"
+    },
+    {
+      "name": "Frosted Coca-Cola Cherry",
+      "calories": 320.0,
+      "fat": 7.0,
+      "carbs": 61.0,
+      "protein": 7.0,
+      "servingLabel": "1 serving (369 g)",
+      "servingGrams": 369.0,
+      "id": "frosted-coca-cola-cherry-1-serving-369-g"
+    },
+    {
+      "name": "Frosted Caffeine Free Diet Coke",
+      "calories": 260.0,
+      "fat": 7.0,
+      "carbs": 45.0,
+      "protein": 7.0,
+      "servingLabel": "1 serving (369 g)",
+      "servingGrams": 369.0,
+      "id": "frosted-caffeine-free-diet-coke-1-serving-369-g"
+    },
+    {
+      "name": "Frosted Coke Zero Sugar",
+      "calories": 260.0,
+      "fat": 7.0,
+      "carbs": 45.0,
+      "protein": 7.0,
+      "servingLabel": "1 serving (369 g)",
+      "servingGrams": 369.0,
+      "id": "frosted-coke-zero-sugar-1-serving-369-g"
+    },
+    {
+      "name": "Frosted Diet Coke",
+      "calories": 260.0,
+      "fat": 7.0,
+      "carbs": 45.0,
+      "protein": 7.0,
+      "servingLabel": "1 serving (369 g)",
+      "servingGrams": 369.0,
+      "id": "frosted-diet-coke-1-serving-369-g"
+    },
+    {
+      "name": "Frosted Coke",
+      "calories": 320.0,
+      "fat": 7.0,
+      "carbs": 60.0,
+      "protein": 7.0,
+      "servingLabel": "1 serving (369 g)",
+      "servingGrams": 369.0,
+      "id": "frosted-coke-1-serving-369-g"
+    },
+    {
+      "name": "Frosted Barq’s Root Beer",
+      "calories": 320.0,
+      "fat": 7.0,
+      "carbs": 61.0,
+      "protein": 7.0,
+      "servingLabel": "1 serving (369 g)",
+      "servingGrams": 369.0,
+      "id": "frosted-barqs-root-beer-1-serving-369-g"
+    },
+    {
+      "name": "Frosted Diet Dr Pepper",
+      "calories": 260.0,
+      "fat": 7.0,
+      "carbs": 45.0,
+      "protein": 7.0,
+      "servingLabel": "1 serving (369 g)",
+      "servingGrams": 369.0,
+      "id": "frosted-diet-dr-pepper-1-serving-369-g"
+    },
+    {
+      "name": "Frosted Dr Pepper",
+      "calories": 320.0,
+      "fat": 7.0,
+      "carbs": 60.0,
+      "protein": 7.0,
+      "servingLabel": "1 serving (369 g)",
+      "servingGrams": 369.0,
+      "id": "frosted-dr-pepper-1-serving-369-g"
+    },
+    {
+      "name": "Frosted Lemonade",
+      "calories": 350.0,
+      "fat": 7.0,
+      "carbs": 67.0,
+      "protein": 7.0,
+      "servingLabel": "1 serving (383 g)",
+      "servingGrams": 383.0,
+      "id": "frosted-lemonade-1-serving-383-g"
+    },
+    {
+      "name": "Frosted Lemonade w/ Diet Lemonade",
+      "calories": 280.0,
+      "fat": 7.0,
+      "carbs": 50.0,
+      "protein": 7.0,
+      "servingLabel": "1 serving (383 g)",
+      "servingGrams": 383.0,
+      "id": "frosted-lemonade-w-diet-lemonade-1-serving-383-g"
+    },
+    {
+      "name": "Pineapple Dragonfruit Frosted Lemonade",
+      "calories": 360.0,
+      "fat": 7.0,
+      "carbs": 70.0,
+      "protein": 7.0,
+      "servingLabel": "1 serving (375 g)",
+      "servingGrams": 375.0,
+      "id": "pineapple-dragonfruit-frosted-lemonade-1-serving-375-g"
+    },
+    {
+      "name": "Pineapple Dragonfruit Frosted Lemonade w/ Diet Lemonade",
+      "calories": 300.0,
+      "fat": 7.0,
+      "carbs": 54.0,
+      "protein": 7.0,
+      "servingLabel": "1 serving (375 g)",
+      "servingGrams": 375.0,
+      "id": "pineapple-dragonfruit-frosted-lemonade-w-diet-lemonade-1-serving-375-g"
+    },
+    {
+      "name": "S’mores Frosted Coffee",
+      "calories": 400.0,
+      "fat": 8.0,
+      "carbs": 77.0,
+      "protein": 7.0,
+      "servingLabel": "1 serving (382 g)",
+      "servingGrams": 382.0,
+      "id": "smores-frosted-coffee-1-serving-382-g"
+    },
+    {
+      "name": "S’mores Milkshake",
+      "calories": 650.0,
+      "fat": 19.0,
+      "carbs": 109.0,
+      "protein": 12.0,
+      "servingLabel": "1 serving (411 g)",
+      "servingGrams": 411.0,
+      "id": "smores-milkshake-1-serving-411-g"
+    },
+    {
+      "name": "Toasted Marshmallow Whipped Topping",
+      "calories": 60.0,
+      "fat": 3.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 serving (23 g)",
+      "servingGrams": 23.0,
+      "id": "toasted-marshmallow-whipped-topping-1-serving-23-g"
+    },
+    {
+      "name": "Chick-fil-A Icedream Cone",
+      "calories": 180.0,
+      "fat": 4.0,
+      "carbs": 32.0,
+      "protein": 4.0,
+      "servingLabel": "1 serving (135 g)",
+      "servingGrams": 135.0,
+      "id": "chick-fil-a-icedream-cone-1-serving-135-g"
+    },
+    {
+      "name": "Chick-fil-A Icedream Cup",
+      "calories": 140.0,
+      "fat": 3.5,
+      "carbs": 24.0,
+      "protein": 4.0,
+      "servingLabel": "1 serving (122 g)",
+      "servingGrams": 122.0,
+      "id": "chick-fil-a-icedream-cup-1-serving-122-g"
+    },
+    {
+      "name": "Vanilla Milkshake",
+      "calories": 580.0,
+      "fat": 23.0,
+      "carbs": 82.0,
+      "protein": 13.0,
+      "servingLabel": "1 serving (409 g)",
+      "servingGrams": 409.0,
+      "id": "vanilla-milkshake-1-serving-409-g"
+    },
+    {
+      "name": "Strawberry Milkshake",
+      "calories": 560.0,
+      "fat": 18.0,
+      "carbs": 92.0,
+      "protein": 10.0,
+      "servingLabel": "1 serving (409 g)",
+      "servingGrams": 409.0,
+      "id": "strawberry-milkshake-1-serving-409-g"
+    },
+    {
+      "name": "Chocolate Milkshake",
+      "calories": 600.0,
+      "fat": 22.0,
+      "carbs": 93.0,
+      "protein": 12.0,
+      "servingLabel": "1 serving (409 g)",
+      "servingGrams": 409.0,
+      "id": "chocolate-milkshake-1-serving-409-g"
+    },
+    {
+      "name": "Cookies & Cream Milkshake",
+      "calories": 630.0,
+      "fat": 25.0,
+      "carbs": 91.0,
+      "protein": 13.0,
+      "servingLabel": "1 serving (409 g)",
+      "servingGrams": 409.0,
+      "id": "cookies-cream-milkshake-1-serving-409-g"
+    },
+    {
+      "name": "Vanilla Frosted Coffee",
+      "calories": 330.0,
+      "fat": 7.0,
+      "carbs": 62.0,
+      "protein": 7.0,
+      "servingLabel": "1 serving (400 g)",
+      "servingGrams": 400.0,
+      "id": "vanilla-frosted-coffee-1-serving-400-g"
+    },
+    {
+      "name": "Mocha Frosted Coffee",
+      "calories": 330.0,
+      "fat": 7.0,
+      "carbs": 61.0,
+      "protein": 7.0,
+      "servingLabel": "1 serving (400 g)",
+      "servingGrams": 400.0,
+      "id": "mocha-frosted-coffee-1-serving-400-g"
+    },
+    {
+      "name": "Caramel Frosted Coffee",
+      "calories": 370.0,
+      "fat": 10.0,
+      "carbs": 63.0,
+      "protein": 7.0,
+      "servingLabel": "1 serving (406 g)",
+      "servingGrams": 406.0,
+      "id": "caramel-frosted-coffee-1-serving-406-g"
+    },
+    {
+      "name": "Frosted Coffee",
+      "calories": 260.0,
+      "fat": 7.0,
+      "carbs": 45.0,
+      "protein": 7.0,
+      "servingLabel": "1 serving (374 g)",
+      "servingGrams": 374.0,
+      "id": "frosted-coffee-1-serving-374-g"
+    },
+    {
+      "name": "Dr Pepper Float",
+      "calories": 320.0,
+      "fat": 7.0,
+      "carbs": 60.0,
+      "protein": 7.0,
+      "servingLabel": "1 serving (369 g)",
+      "servingGrams": 369.0,
+      "id": "dr-pepper-float-1-serving-369-g"
+    },
+    {
+      "name": "Seasonal Gallon Beverages",
+      "calories": 210.0,
+      "fat": 0.0,
+      "carbs": 53.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (340 g)",
+      "servingGrams": 340.0,
+      "id": "seasonal-gallon-beverages-1-serving-340-g"
+    },
+    {
+      "name": "Gallon Pineapple Dragonfruit Unsweet Tea",
+      "calories": 25.0,
+      "fat": 0.0,
+      "carbs": 5.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (340 g)",
+      "servingGrams": 340.0,
+      "id": "gallon-pineapple-dragonfruit-unsweet-tea-1-serving-340-g"
+    },
+    {
+      "name": "Gallon Pineapple Dragonfruit Sweet Tea",
+      "calories": 150.0,
+      "fat": 0.0,
+      "carbs": 37.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (340 g)",
+      "servingGrams": 340.0,
+      "id": "gallon-pineapple-dragonfruit-sweet-tea-1-serving-340-g"
+    },
+    {
+      "name": "Gallon Pineapple Dragonfruit Sunjoy (1/2 Unsweet Tea, 1/2 Diet Lemonade)",
+      "calories": 45.0,
+      "fat": 0.0,
+      "carbs": 10.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (340 g)",
+      "servingGrams": 340.0,
+      "id": "gallon-pineapple-dragonfruit-sunjoy-1-2-unsweet-tea-1-2-diet-lemonade-1-serving-340-g"
+    },
+    {
+      "name": "Gallon Pineapple Dragonfruit Sunjoy (1/2 Sweet Tea, 1/2 Diet Lemonade)",
+      "calories": 110.0,
+      "fat": 0.0,
+      "carbs": 28.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (340 g)",
+      "servingGrams": 340.0,
+      "id": "gallon-pineapple-dragonfruit-sunjoy-1-2-sweet-tea-1-2-diet-lemonade-1-serving-340-g"
+    },
+    {
+      "name": "Gallon Pineapple Dragonfruit Sunjoy (1/2 Unsweet Tea, 1/2 Lemonade)",
+      "calories": 110.0,
+      "fat": 0.0,
+      "carbs": 27.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (340 g)",
+      "servingGrams": 340.0,
+      "id": "gallon-pineapple-dragonfruit-sunjoy-1-2-unsweet-tea-1-2-lemonade-1-serving-340-g"
+    },
+    {
+      "name": "Gallon Pineapple Dragonfruit Sunjoy (1/2 Sweet Tea, 1/2 Lemonade)",
+      "calories": 180.0,
+      "fat": 0.0,
+      "carbs": 44.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (340 g)",
+      "servingGrams": 340.0,
+      "id": "gallon-pineapple-dragonfruit-sunjoy-1-2-sweet-tea-1-2-lemonade-1-serving-340-g"
+    },
+    {
+      "name": "Gallon Pineapple Dragonfruit Diet Lemonade",
+      "calories": 70.0,
+      "fat": 0.0,
+      "carbs": 16.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (340 g)",
+      "servingGrams": 340.0,
+      "id": "gallon-pineapple-dragonfruit-diet-lemonade-1-serving-340-g"
+    },
+    {
+      "name": "Gallon Pineapple Dragonfruit Lemonade",
+      "calories": 210.0,
+      "fat": 0.0,
+      "carbs": 53.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (340 g)",
+      "servingGrams": 340.0,
+      "id": "gallon-pineapple-dragonfruit-lemonade-1-serving-340-g"
+    },
+    {
+      "name": "Gallon Beverages",
+      "calories": 190.0,
+      "fat": 0.0,
+      "carbs": 49.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (340 g)",
+      "servingGrams": 340.0,
+      "id": "gallon-beverages-1-serving-340-g"
+    },
+    {
+      "name": "Bag of Ice",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (28 g)",
+      "servingGrams": 28.0,
+      "id": "bag-of-ice-1-serving-28-g"
+    },
+    {
+      "name": "Gallon Sunjoy (1/2 Unsweet Tea, 1/2 Diet Lemonade)",
+      "calories": 20.0,
+      "fat": 0.0,
+      "carbs": 6.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (340 g)",
+      "servingGrams": 340.0,
+      "id": "gallon-sunjoy-1-2-unsweet-tea-1-2-diet-lemonade-1-serving-340-g"
+    },
+    {
+      "name": "Gallon Sunjoy (1/2 Unsweet Tea, 1/2 Lemonade)",
+      "calories": 100.0,
+      "fat": 0.0,
+      "carbs": 26.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (340 g)",
+      "servingGrams": 340.0,
+      "id": "gallon-sunjoy-1-2-unsweet-tea-1-2-lemonade-1-serving-340-g"
+    },
+    {
+      "name": "Gallon Sunjoy (1/2 Sweet Tea, 1/2 Diet Lemonade)",
+      "calories": 90.0,
+      "fat": 0.0,
+      "carbs": 23.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (340 g)",
+      "servingGrams": 340.0,
+      "id": "gallon-sunjoy-1-2-sweet-tea-1-2-diet-lemonade-1-serving-340-g"
+    },
+    {
+      "name": "Gallon Sunjoy (1/2 Sweet Tea, 1/2 Lemonade)",
+      "calories": 160.0,
+      "fat": 0.0,
+      "carbs": 41.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (340 g)",
+      "servingGrams": 340.0,
+      "id": "gallon-sunjoy-1-2-sweet-tea-1-2-lemonade-1-serving-340-g"
+    },
+    {
+      "name": "Gallon Chick-fil-A Iced Tea (1/2 Sweet Tea, 1/2 Unsweet Tea)",
+      "calories": 70.0,
+      "fat": 0.0,
+      "carbs": 18.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (340 g)",
+      "servingGrams": 340.0,
+      "id": "gallon-chick-fil-a-iced-tea-1-2-sweet-tea-1-2-unsweet-tea-1-serving-340-g"
+    },
+    {
+      "name": "Gallon Freshly-Brewed Iced Tea Unsweetened",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (340 g)",
+      "servingGrams": 340.0,
+      "id": "gallon-freshly-brewed-iced-tea-unsweetened-1-serving-340-g"
+    },
+    {
+      "name": "Gallon Freshly-Brewed Iced Tea Sweetened",
+      "calories": 130.0,
+      "fat": 0.0,
+      "carbs": 33.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (340 g)",
+      "servingGrams": 340.0,
+      "id": "gallon-freshly-brewed-iced-tea-sweetened-1-serving-340-g"
+    },
+    {
+      "name": "Gallon Chick-fil-A Lemonade (1/2 Lemonade, 1/2 Diet Lemonade)",
+      "calories": 120.0,
+      "fat": 0.0,
+      "carbs": 33.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (340 g)",
+      "servingGrams": 340.0,
+      "id": "gallon-chick-fil-a-lemonade-1-2-lemonade-1-2-diet-lemonade-1-serving-340-g"
+    },
+    {
+      "name": "Gallon Chick-fil-A Diet Lemonade",
+      "calories": 40.0,
+      "fat": 0.0,
+      "carbs": 12.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (340 g)",
+      "servingGrams": 340.0,
+      "id": "gallon-chick-fil-a-diet-lemonade-1-serving-340-g"
+    },
+    {
+      "name": "Gallon Chick-fil-A Lemonade",
+      "calories": 190.0,
+      "fat": 0.0,
+      "carbs": 49.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (340 g)",
+      "servingGrams": 340.0,
+      "id": "gallon-chick-fil-a-lemonade-1-serving-340-g"
+    },
+    {
+      "name": "Freshly-Brewed Sweetened Iced Tea",
+      "calories": 120.0,
+      "fat": 0.0,
+      "carbs": 31.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (604 g)",
+      "servingGrams": 604.0,
+      "id": "freshly-brewed-sweetened-iced-tea-1-serving-604-g"
+    },
+    {
+      "name": "Large Freshly-Brewed Sweetened Iced Tea",
+      "calories": 170.0,
+      "fat": 0.0,
+      "carbs": 44.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (893 g)",
+      "servingGrams": 893.0,
+      "id": "large-freshly-brewed-sweetened-iced-tea-1-serving-893-g"
+    },
+    {
+      "name": "Medium Freshly-Brewed Sweetened Iced Tea",
+      "calories": 120.0,
+      "fat": 0.0,
+      "carbs": 31.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (604 g)",
+      "servingGrams": 604.0,
+      "id": "medium-freshly-brewed-sweetened-iced-tea-1-serving-604-g"
+    },
+    {
+      "name": "Small Freshly-Brewed Sweetened Iced Tea",
+      "calories": 90.0,
+      "fat": 0.0,
+      "carbs": 22.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (451 g)",
+      "servingGrams": 451.0,
+      "id": "small-freshly-brewed-sweetened-iced-tea-1-serving-451-g"
+    },
+    {
+      "name": "Toasted Marshmallow Hot Coffee",
+      "calories": 110.0,
+      "fat": 0.0,
+      "carbs": 26.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (380 g)",
+      "servingGrams": 380.0,
+      "id": "toasted-marshmallow-hot-coffee-1-serving-380-g"
+    },
+    {
+      "name": "Dr Pepper",
+      "calories": 170.0,
+      "fat": 0.0,
+      "carbs": 44.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (584 g)",
+      "servingGrams": 584.0,
+      "id": "dr-pepper-1-serving-584-g"
+    },
+    {
+      "name": "Large Dr Pepper",
+      "calories": 250.0,
+      "fat": 0.0,
+      "carbs": 64.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (859 g)",
+      "servingGrams": 859.0,
+      "id": "large-dr-pepper-1-serving-859-g"
+    },
+    {
+      "name": "Medium Dr Pepper",
+      "calories": 170.0,
+      "fat": 0.0,
+      "carbs": 44.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (584 g)",
+      "servingGrams": 584.0,
+      "id": "medium-dr-pepper-1-serving-584-g"
+    },
+    {
+      "name": "Small Dr Pepper",
+      "calories": 130.0,
+      "fat": 0.0,
+      "carbs": 34.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (451 g)",
+      "servingGrams": 451.0,
+      "id": "small-dr-pepper-1-serving-451-g"
+    },
+    {
+      "name": "Coca-Cola",
+      "calories": 170.0,
+      "fat": 0.0,
+      "carbs": 46.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (584 g)",
+      "servingGrams": 584.0,
+      "id": "coca-cola-1-serving-584-g"
+    },
+    {
+      "name": "Large Coca-Cola",
+      "calories": 250.0,
+      "fat": 0.0,
+      "carbs": 68.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (859 g)",
+      "servingGrams": 859.0,
+      "id": "large-coca-cola-1-serving-859-g"
+    },
+    {
+      "name": "Medium Coca-Cola",
+      "calories": 170.0,
+      "fat": 0.0,
+      "carbs": 46.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (584 g)",
+      "servingGrams": 584.0,
+      "id": "medium-coca-cola-1-serving-584-g"
+    },
+    {
+      "name": "Small Coca-Cola",
+      "calories": 130.0,
+      "fat": 0.0,
+      "carbs": 35.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (451 g)",
+      "servingGrams": 451.0,
+      "id": "small-coca-cola-1-serving-451-g"
+    },
+    {
+      "name": "Sunjoy (1/2 Sweet Tea, 1/2 Diet Lemonade)",
+      "calories": 110.0,
+      "fat": 0.0,
+      "carbs": 29.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (641 g)",
+      "servingGrams": 641.0,
+      "id": "sunjoy-1-2-sweet-tea-1-2-diet-lemonade-1-serving-641-g"
+    },
+    {
+      "name": "Large Sunjoy (1/2 Sweet Tea, 1/2 Diet Lemonade)",
+      "calories": 150.0,
+      "fat": 0.0,
+      "carbs": 40.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (944 g)",
+      "servingGrams": 944.0,
+      "id": "large-sunjoy-1-2-sweet-tea-1-2-diet-lemonade-1-serving-944-g"
+    },
+    {
+      "name": "Medium Sunjoy (1/2 Sweet Tea, 1/2 Diet Lemonade)",
+      "calories": 110.0,
+      "fat": 0.0,
+      "carbs": 29.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (641 g)",
+      "servingGrams": 641.0,
+      "id": "medium-sunjoy-1-2-sweet-tea-1-2-diet-lemonade-1-serving-641-g"
+    },
+    {
+      "name": "Small Sunjoy (1/2 Sweet Tea, 1/2 Diet Lemonade)",
+      "calories": 80.0,
+      "fat": 0.0,
+      "carbs": 20.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (479 g)",
+      "servingGrams": 479.0,
+      "id": "small-sunjoy-1-2-sweet-tea-1-2-diet-lemonade-1-serving-479-g"
+    },
+    {
+      "name": "Sunjoy (1/2 Unsweet Tea, 1/2 Lemonade)",
+      "calories": 160.0,
+      "fat": 0.0,
+      "carbs": 41.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (641 g)",
+      "servingGrams": 641.0,
+      "id": "sunjoy-1-2-unsweet-tea-1-2-lemonade-1-serving-641-g"
+    },
+    {
+      "name": "Large Sunjoy (1/2 Unsweet Tea, 1/2 Lemonade)",
+      "calories": 260.0,
+      "fat": 0.0,
+      "carbs": 66.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (944 g)",
+      "servingGrams": 944.0,
+      "id": "large-sunjoy-1-2-unsweet-tea-1-2-lemonade-1-serving-944-g"
+    },
+    {
+      "name": "Medium Sunjoy (1/2 Unsweet Tea, 1/2 Lemonade)",
+      "calories": 160.0,
+      "fat": 0.0,
+      "carbs": 41.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (641 g)",
+      "servingGrams": 641.0,
+      "id": "medium-sunjoy-1-2-unsweet-tea-1-2-lemonade-1-serving-641-g"
+    },
+    {
+      "name": "Small Sunjoy (1/2 Unsweet Tea, 1/2 Lemonade)",
+      "calories": 130.0,
+      "fat": 0.0,
+      "carbs": 33.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (479 g)",
+      "servingGrams": 479.0,
+      "id": "small-sunjoy-1-2-unsweet-tea-1-2-lemonade-1-serving-479-g"
+    },
+    {
+      "name": "Sunjoy (1/2 Unsweet Tea, 1/2 Diet Lemonade)",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 10.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (641 g)",
+      "servingGrams": 641.0,
+      "id": "sunjoy-1-2-unsweet-tea-1-2-diet-lemonade-1-serving-641-g"
+    },
+    {
+      "name": "Large Sunjoy (1/2 Unsweet Tea, 1/2 Diet Lemonade)",
+      "calories": 60.0,
+      "fat": 0.0,
+      "carbs": 15.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (944 g)",
+      "servingGrams": 944.0,
+      "id": "large-sunjoy-1-2-unsweet-tea-1-2-diet-lemonade-1-serving-944-g"
+    },
+    {
+      "name": "Medium Sunjoy (1/2 Unsweet Tea, 1/2 Diet Lemonade)",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 10.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (641 g)",
+      "servingGrams": 641.0,
+      "id": "medium-sunjoy-1-2-unsweet-tea-1-2-diet-lemonade-1-serving-641-g"
+    },
+    {
+      "name": "Small Sunjoy (1/2 Unsweet Tea, 1/2 Diet Lemonade)",
+      "calories": 30.0,
+      "fat": 0.0,
+      "carbs": 8.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (479 g)",
+      "servingGrams": 479.0,
+      "id": "small-sunjoy-1-2-unsweet-tea-1-2-diet-lemonade-1-serving-479-g"
+    },
+    {
+      "name": "Sunjoy (1/2 Sweet Tea, 1/2 Lemonade)",
+      "calories": 240.0,
+      "fat": 0.0,
+      "carbs": 60.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (641 g)",
+      "servingGrams": 641.0,
+      "id": "sunjoy-1-2-sweet-tea-1-2-lemonade-1-serving-641-g"
+    },
+    {
+      "name": "Large Sunjoy (1/2 Sweet Tea, 1/2 Lemonade)",
+      "calories": 350.0,
+      "fat": 0.0,
+      "carbs": 91.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (944 g)",
+      "servingGrams": 944.0,
+      "id": "large-sunjoy-1-2-sweet-tea-1-2-lemonade-1-serving-944-g"
+    },
+    {
+      "name": "Medium Sunjoy (1/2 Sweet Tea, 1/2 Lemonade)",
+      "calories": 240.0,
+      "fat": 0.0,
+      "carbs": 60.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (641 g)",
+      "servingGrams": 641.0,
+      "id": "medium-sunjoy-1-2-sweet-tea-1-2-lemonade-1-serving-641-g"
+    },
+    {
+      "name": "Small Sunjoy (1/2 Sweet Tea, 1/2 Lemonade)",
+      "calories": 180.0,
+      "fat": 0.0,
+      "carbs": 45.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (479 g)",
+      "servingGrams": 479.0,
+      "id": "small-sunjoy-1-2-sweet-tea-1-2-lemonade-1-serving-479-g"
+    },
+    {
+      "name": "Chick-fil-A Diet Lemonade",
+      "calories": 60.0,
+      "fat": 0.0,
+      "carbs": 15.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (612 g)",
+      "servingGrams": 612.0,
+      "id": "chick-fil-a-diet-lemonade-1-serving-612-g"
+    },
+    {
+      "name": "Large Chick-fil-A Diet Lemonade",
+      "calories": 80.0,
+      "fat": 0.0,
+      "carbs": 23.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (916 g)",
+      "servingGrams": 916.0,
+      "id": "large-chick-fil-a-diet-lemonade-1-serving-916-g"
+    },
+    {
+      "name": "Medium Chick-fil-A Diet Lemonade",
+      "calories": 60.0,
+      "fat": 0.0,
+      "carbs": 15.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (612 g)",
+      "servingGrams": 612.0,
+      "id": "medium-chick-fil-a-diet-lemonade-1-serving-612-g"
+    },
+    {
+      "name": "Small Chick-fil-A Diet Lemonade",
+      "calories": 40.0,
+      "fat": 0.0,
+      "carbs": 12.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (465 g)",
+      "servingGrams": 465.0,
+      "id": "small-chick-fil-a-diet-lemonade-1-serving-465-g"
+    },
+    {
+      "name": "Chick-fil-A Lemonade",
+      "calories": 260.0,
+      "fat": 0.0,
+      "carbs": 66.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (612 g)",
+      "servingGrams": 612.0,
+      "id": "chick-fil-a-lemonade-1-serving-612-g"
+    },
+    {
+      "name": "Large Chick-fil-A Lemonade",
+      "calories": 380.0,
+      "fat": 0.0,
+      "carbs": 98.0,
+      "protein": 1.0,
+      "servingLabel": "1 serving (916 g)",
+      "servingGrams": 916.0,
+      "id": "large-chick-fil-a-lemonade-1-serving-916-g"
+    },
+    {
+      "name": "Medium Chick-fil-A Lemonade",
+      "calories": 260.0,
+      "fat": 0.0,
+      "carbs": 66.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (612 g)",
+      "servingGrams": 612.0,
+      "id": "medium-chick-fil-a-lemonade-1-serving-612-g"
+    },
+    {
+      "name": "Small Chick-fil-A Lemonade",
+      "calories": 190.0,
+      "fat": 0.0,
+      "carbs": 49.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (465 g)",
+      "servingGrams": 465.0,
+      "id": "small-chick-fil-a-lemonade-1-serving-465-g"
+    },
+    {
+      "name": "Freshly-Brewed Unsweetened Iced Tea",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (604 g)",
+      "servingGrams": 604.0,
+      "id": "freshly-brewed-unsweetened-iced-tea-1-serving-604-g"
+    },
+    {
+      "name": "Large Freshly-Brewed Unsweetened Iced Tea",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (893 g)",
+      "servingGrams": 893.0,
+      "id": "large-freshly-brewed-unsweetened-iced-tea-1-serving-893-g"
+    },
+    {
+      "name": "Medium Freshly-Brewed Unsweetened Iced Tea",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (604 g)",
+      "servingGrams": 604.0,
+      "id": "medium-freshly-brewed-unsweetened-iced-tea-1-serving-604-g"
+    },
+    {
+      "name": "Small Freshly-Brewed Unsweetened Iced Tea",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (451 g)",
+      "servingGrams": 451.0,
+      "id": "small-freshly-brewed-unsweetened-iced-tea-1-serving-451-g"
+    },
+    {
+      "name": "Pineapple Dragonfruit Lemonade",
+      "calories": 290.0,
+      "fat": 0.0,
+      "carbs": 72.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (691 g)",
+      "servingGrams": 691.0,
+      "id": "pineapple-dragonfruit-lemonade-1-serving-691-g"
+    },
+    {
+      "name": "Pineapple Dragonfruit Diet Lemonade",
+      "calories": 90.0,
+      "fat": 0.0,
+      "carbs": 21.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (662 g)",
+      "servingGrams": 662.0,
+      "id": "pineapple-dragonfruit-diet-lemonade-1-serving-662-g"
+    },
+    {
+      "name": "Iced Coffee",
+      "calories": 200.0,
+      "fat": 4.0,
+      "carbs": 34.0,
+      "protein": 7.0,
+      "servingLabel": "1 serving (661 g)",
+      "servingGrams": 661.0,
+      "id": "iced-coffee-1-serving-661-g"
+    },
+    {
+      "name": "Honest Kids Apple Juice",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 9.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (170 g)",
+      "servingGrams": 170.0,
+      "id": "honest-kids-apple-juice-1-serving-170-g"
+    },
+    {
+      "name": "1% Chocolate Milk",
+      "calories": 140.0,
+      "fat": 2.0,
+      "carbs": 23.0,
+      "protein": 7.0,
+      "servingLabel": "1 serving (198 g)",
+      "servingGrams": 198.0,
+      "id": "1-chocolate-milk-1-serving-198-g"
+    },
+    {
+      "name": "1% Milk",
+      "calories": 90.0,
+      "fat": 2.0,
+      "carbs": 10.0,
+      "protein": 7.0,
+      "servingLabel": "1 serving (213 g)",
+      "servingGrams": 213.0,
+      "id": "1-milk-1-serving-213-g"
+    },
+    {
+      "name": "Simply Orange",
+      "calories": 160.0,
+      "fat": 0.0,
+      "carbs": 34.0,
+      "protein": 2.0,
+      "servingLabel": "1 serving (326 g)",
+      "servingGrams": 326.0,
+      "id": "simply-orange-1-serving-326-g"
+    },
+    {
+      "name": "DASANI Bottled Water",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (479 g)",
+      "servingGrams": 479.0,
+      "id": "dasani-bottled-water-1-serving-479-g"
+    },
+    {
+      "name": "Toasted Marshmallow Cream Cold Brew",
+      "calories": 530.0,
+      "fat": 17.0,
+      "carbs": 87.0,
+      "protein": 8.0,
+      "servingLabel": "1 serving (712 g)",
+      "servingGrams": 712.0,
+      "id": "toasted-marshmallow-cream-cold-brew-1-serving-712-g"
+    },
+    {
+      "name": "Toasted Marshmallow Iced Coffee",
+      "calories": 270.0,
+      "fat": 4.0,
+      "carbs": 50.0,
+      "protein": 7.0,
+      "servingLabel": "1 serving (683 g)",
+      "servingGrams": 683.0,
+      "id": "toasted-marshmallow-iced-coffee-1-serving-683-g"
+    },
+    {
+      "name": "Pineapple Dragonfruit Unsweet Tea",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 7.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (662 g)",
+      "servingGrams": 662.0,
+      "id": "pineapple-dragonfruit-unsweet-tea-1-serving-662-g"
+    },
+    {
+      "name": "Pineapple Dragonfruit Sweet Tea",
+      "calories": 150.0,
+      "fat": 0.0,
+      "carbs": 37.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (662 g)",
+      "servingGrams": 662.0,
+      "id": "pineapple-dragonfruit-sweet-tea-1-serving-662-g"
+    },
+    {
+      "name": "Pineapple Dragonfruit Sunjoy (Unsweet Tea, Diet Lemonade)",
+      "calories": 60.0,
+      "fat": 0.0,
+      "carbs": 14.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (662 g)",
+      "servingGrams": 662.0,
+      "id": "pineapple-dragonfruit-sunjoy-unsweet-tea-diet-lemonade-1-serving-662-g"
+    },
+    {
+      "name": "Pineapple Dragonfruit Sunjoy (Unsweet Tea, Lemonade)",
+      "calories": 160.0,
+      "fat": 0.0,
+      "carbs": 39.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (662 g)",
+      "servingGrams": 662.0,
+      "id": "pineapple-dragonfruit-sunjoy-unsweet-tea-lemonade-1-serving-662-g"
+    },
+    {
+      "name": "Pineapple Dragonfruit Sunjoy (Sweet Tea, Diet Lemonade)",
+      "calories": 140.0,
+      "fat": 0.0,
+      "carbs": 34.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (662 g)",
+      "servingGrams": 662.0,
+      "id": "pineapple-dragonfruit-sunjoy-sweet-tea-diet-lemonade-1-serving-662-g"
+    },
+    {
+      "name": "Pineapple Dragonfruit Sunjoy (Sweet Tea, Lemonade)",
+      "calories": 240.0,
+      "fat": 0.0,
+      "carbs": 59.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (662 g)",
+      "servingGrams": 662.0,
+      "id": "pineapple-dragonfruit-sunjoy-sweet-tea-lemonade-1-serving-662-g"
+    },
+    {
+      "name": "Pineapple Dragonfruit & Sprite",
+      "calories": 190.0,
+      "fat": 0.0,
+      "carbs": 50.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (662 g)",
+      "servingGrams": 662.0,
+      "id": "pineapple-dragonfruit-sprite-1-serving-662-g"
+    },
+    {
+      "name": "Hot Coffee",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (340 g)",
+      "servingGrams": 340.0,
+      "id": "hot-coffee-1-serving-340-g"
+    },
+    {
+      "name": "Cream Cold Brew",
+      "calories": 520.0,
+      "fat": 22.0,
+      "carbs": 75.0,
+      "protein": 9.0,
+      "servingLabel": "1 serving (700 g)",
+      "servingGrams": 700.0,
+      "id": "cream-cold-brew-1-serving-700-g"
+    },
+    {
+      "name": "Cream Cold Brew",
+      "calories": 370.0,
+      "fat": 17.0,
+      "carbs": 48.0,
+      "protein": 8.0,
+      "servingLabel": "1 serving (652 g)",
+      "servingGrams": 652.0,
+      "id": "cream-cold-brew-1-serving-652-g"
+    },
+    {
+      "name": "Vanilla Cream Cold Brew",
+      "calories": 470.0,
+      "fat": 17.0,
+      "carbs": 72.0,
+      "protein": 8.0,
+      "servingLabel": "1 serving (689 g)",
+      "servingGrams": 689.0,
+      "id": "vanilla-cream-cold-brew-1-serving-689-g"
+    },
+    {
+      "name": "Mocha Cream Cold Brew",
+      "calories": 460.0,
+      "fat": 17.0,
+      "carbs": 71.0,
+      "protein": 9.0,
+      "servingLabel": "1 serving (689 g)",
+      "servingGrams": 689.0,
+      "id": "mocha-cream-cold-brew-1-serving-689-g"
+    },
+    {
+      "name": "Caramel Cream Cold Brew",
+      "calories": 520.0,
+      "fat": 22.0,
+      "carbs": 75.0,
+      "protein": 9.0,
+      "servingLabel": "1 serving (700 g)",
+      "servingGrams": 700.0,
+      "id": "caramel-cream-cold-brew-1-serving-700-g"
+    },
+    {
+      "name": "Iced Coffee",
+      "calories": 260.0,
+      "fat": 9.0,
+      "carbs": 38.0,
+      "protein": 8.0,
+      "servingLabel": "1 serving (672 g)",
+      "servingGrams": 672.0,
+      "id": "iced-coffee-1-serving-672-g"
+    },
+    {
+      "name": "Iced Coffee",
+      "calories": 110.0,
+      "fat": 4.0,
+      "carbs": 11.0,
+      "protein": 7.0,
+      "servingLabel": "1 serving (624 g)",
+      "servingGrams": 624.0,
+      "id": "iced-coffee-1-serving-624-g"
+    },
+    {
+      "name": "Vanilla Iced Coffee",
+      "calories": 210.0,
+      "fat": 4.0,
+      "carbs": 35.0,
+      "protein": 7.0,
+      "servingLabel": "1 serving (661 g)",
+      "servingGrams": 661.0,
+      "id": "vanilla-iced-coffee-1-serving-661-g"
+    },
+    {
+      "name": "Mocha Iced Coffee",
+      "calories": 200.0,
+      "fat": 4.5,
+      "carbs": 34.0,
+      "protein": 8.0,
+      "servingLabel": "1 serving (661 g)",
+      "servingGrams": 661.0,
+      "id": "mocha-iced-coffee-1-serving-661-g"
+    },
+    {
+      "name": "Caramel Iced Coffee",
+      "calories": 260.0,
+      "fat": 9.0,
+      "carbs": 38.0,
+      "protein": 8.0,
+      "servingLabel": "1 serving (672 g)",
+      "servingGrams": 672.0,
+      "id": "caramel-iced-coffee-1-serving-672-g"
+    },
+    {
+      "name": "Honey Roasted BBQ Sauce",
+      "calories": 60.0,
+      "fat": 5.0,
+      "carbs": 3.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (12 g)",
+      "servingGrams": 12.0,
+      "id": "honey-roasted-bbq-sauce-1-serving-12-g"
+    },
+    {
+      "name": "Zesty Buffalo Sauce",
+      "calories": 25.0,
+      "fat": 2.5,
+      "carbs": 1.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (21 g)",
+      "servingGrams": 21.0,
+      "id": "zesty-buffalo-sauce-1-serving-21-g"
+    },
+    {
+      "name": "Sweet & Spicy Sriracha Sauce",
+      "calories": 45.0,
+      "fat": 0.0,
+      "carbs": 11.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (28 g)",
+      "servingGrams": 28.0,
+      "id": "sweet-spicy-sriracha-sauce-1-serving-28-g"
+    },
+    {
+      "name": "Polynesian Sauce",
+      "calories": 110.0,
+      "fat": 6.0,
+      "carbs": 14.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (28 g)",
+      "servingGrams": 28.0,
+      "id": "polynesian-sauce-1-serving-28-g"
+    },
+    {
+      "name": "Honey Mustard Sauce",
+      "calories": 50.0,
+      "fat": 0.0,
+      "carbs": 11.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (28 g)",
+      "servingGrams": 28.0,
+      "id": "honey-mustard-sauce-1-serving-28-g"
+    },
+    {
+      "name": "Garden Herb Ranch Sauce",
+      "calories": 100.0,
+      "fat": 11.0,
+      "carbs": 1.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (21 g)",
+      "servingGrams": 21.0,
+      "id": "garden-herb-ranch-sauce-1-serving-21-g"
+    },
+    {
+      "name": "Chick-fil-A Sauce",
+      "calories": 140.0,
+      "fat": 13.0,
+      "carbs": 6.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (28 g)",
+      "servingGrams": 28.0,
+      "id": "chick-fil-a-sauce-1-serving-28-g"
+    },
+    {
+      "name": "Barbeque Sauce",
+      "calories": 45.0,
+      "fat": 0.0,
+      "carbs": 11.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (28 g)",
+      "servingGrams": 28.0,
+      "id": "barbeque-sauce-1-serving-28-g"
+    },
+    {
+      "name": "Classic Syrup",
+      "calories": 60.0,
+      "fat": 0.0,
+      "carbs": 16.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (23 g)",
+      "servingGrams": 23.0,
+      "id": "classic-syrup-1-serving-23-g"
+    },
+    {
+      "name": "Zesty Apple Cider Vinaigrette Dressing",
+      "calories": 230.0,
+      "fat": 19.0,
+      "carbs": 16.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (56 g)",
+      "servingGrams": 56.0,
+      "id": "zesty-apple-cider-vinaigrette-dressing-1-serving-56-g"
+    },
+    {
+      "name": "Light Italian Dressing",
+      "calories": 25.0,
+      "fat": 1.0,
+      "carbs": 3.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (57 g)",
+      "servingGrams": 57.0,
+      "id": "light-italian-dressing-1-serving-57-g"
+    },
+    {
+      "name": "Light Balsamic Vinaigrette Dressing",
+      "calories": 80.0,
+      "fat": 4.0,
+      "carbs": 10.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (57 g)",
+      "servingGrams": 57.0,
+      "id": "light-balsamic-vinaigrette-dressing-1-serving-57-g"
+    },
+    {
+      "name": "Garden Herb Ranch Dressing",
+      "calories": 280.0,
+      "fat": 29.0,
+      "carbs": 2.0,
+      "protein": 1.0,
+      "servingLabel": "1 serving (57 g)",
+      "servingGrams": 57.0,
+      "id": "garden-herb-ranch-dressing-1-serving-57-g"
+    },
+    {
+      "name": "Fat-Free Honey Mustard Dressing",
+      "calories": 90.0,
+      "fat": 0.0,
+      "carbs": 22.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (57 g)",
+      "servingGrams": 57.0,
+      "id": "fat-free-honey-mustard-dressing-1-serving-57-g"
+    },
+    {
+      "name": "Creamy Salsa Dressing",
+      "calories": 290.0,
+      "fat": 31.0,
+      "carbs": 2.0,
+      "protein": 1.0,
+      "servingLabel": "1 serving (57 g)",
+      "servingGrams": 57.0,
+      "id": "creamy-salsa-dressing-1-serving-57-g"
+    },
+    {
+      "name": "Avocado Lime Ranch Dressing",
+      "calories": 310.0,
+      "fat": 32.0,
+      "carbs": 3.0,
+      "protein": 1.0,
+      "servingLabel": "1 serving (57 g)",
+      "servingGrams": 57.0,
+      "id": "avocado-lime-ranch-dressing-1-serving-57-g"
+    },
+    {
+      "name": "Multigrain Brioche Bun",
+      "calories": 210.0,
+      "fat": 4.5,
+      "carbs": 38.0,
+      "protein": 7.0,
+      "servingLabel": "1 serving (71 g)",
+      "servingGrams": 71.0,
+      "id": "multigrain-brioche-bun-1-serving-71-g"
+    },
+    {
+      "name": "Buttery White Bun",
+      "calories": 180.0,
+      "fat": 6.0,
+      "carbs": 29.0,
+      "protein": 5.0,
+      "servingLabel": "1 serving (60 g)",
+      "servingGrams": 60.0,
+      "id": "buttery-white-bun-1-serving-60-g"
+    },
+    {
+      "name": "Gluten Free Bun",
+      "calories": 180.0,
+      "fat": 3.5,
+      "carbs": 37.0,
+      "protein": 3.0,
+      "servingLabel": "1 serving (79 g)",
+      "servingGrams": 79.0,
+      "id": "gluten-free-bun-1-serving-79-g"
+    },
+    {
+      "name": "White Bun (Unbuttered)",
+      "calories": 150.0,
+      "fat": 1.0,
+      "carbs": 28.0,
+      "protein": 5.0,
+      "servingLabel": "1 serving (54 g)",
+      "servingGrams": 54.0,
+      "id": "white-bun-unbuttered-1-serving-54-g"
+    },
+    {
+      "name": "Chick-fil-A Filet",
+      "calories": 250.0,
+      "fat": 12.0,
+      "carbs": 12.0,
+      "protein": 24.0,
+      "servingLabel": "1 serving (115 g)",
+      "servingGrams": 115.0,
+      "id": "chick-fil-a-filet-1-serving-115-g"
+    },
+    {
+      "name": "Spicy Filet",
+      "calories": 280.0,
+      "fat": 13.0,
+      "carbs": 16.0,
+      "protein": 23.0,
+      "servingLabel": "1 serving (120 g)",
+      "servingGrams": 120.0,
+      "id": "spicy-filet-1-serving-120-g"
+    },
+    {
+      "name": "Grilled Filet",
+      "calories": 110.0,
+      "fat": 2.0,
+      "carbs": 1.0,
+      "protein": 21.0,
+      "servingLabel": "1 serving (84 g)",
+      "servingGrams": 84.0,
+      "id": "grilled-filet-1-serving-84-g"
+    },
+    {
+      "name": "Spicy Breakfast Filet",
+      "calories": 150.0,
+      "fat": 7.0,
+      "carbs": 7.0,
+      "protein": 15.0,
+      "servingLabel": "1 serving (71 g)",
+      "servingGrams": 71.0,
+      "id": "spicy-breakfast-filet-1-serving-71-g"
+    },
+    {
+      "name": "Chick-fil-A Breakfast Filet",
+      "calories": 160.0,
+      "fat": 8.0,
+      "carbs": 8.0,
+      "protein": 15.0,
+      "servingLabel": "1 serving (71 g)",
+      "servingGrams": 71.0,
+      "id": "chick-fil-a-breakfast-filet-1-serving-71-g"
+    },
+    {
+      "name": "Grilled Breakfast Filet",
+      "calories": 60.0,
+      "fat": 1.0,
+      "carbs": 0.0,
+      "protein": 13.0,
+      "servingLabel": "1 serving (50 g)",
+      "servingGrams": 50.0,
+      "id": "grilled-breakfast-filet-1-serving-50-g"
+    },
+    {
+      "name": "Sausage",
+      "calories": 240.0,
+      "fat": 22.0,
+      "carbs": 1.0,
+      "protein": 11.0,
+      "servingLabel": "1 serving (57 g)",
+      "servingGrams": 57.0,
+      "id": "sausage-1-serving-57-g"
+    },
+    {
+      "name": "Bacon",
+      "calories": 50.0,
+      "fat": 3.5,
+      "carbs": 0.0,
+      "protein": 4.0,
+      "servingLabel": "1 serving (10 g)",
+      "servingGrams": 10.0,
+      "id": "bacon-1-serving-10-g"
+    },
+    {
+      "name": "Roasted Nut Blend",
+      "calories": 70.0,
+      "fat": 6.0,
+      "carbs": 2.0,
+      "protein": 1.0,
+      "servingLabel": "1 serving (10 g)",
+      "servingGrams": 10.0,
+      "id": "roasted-nut-blend-1-serving-10-g"
+    },
+    {
+      "name": "Seasoned Tortilla Strips",
+      "calories": 70.0,
+      "fat": 4.0,
+      "carbs": 8.0,
+      "protein": 1.0,
+      "servingLabel": "1 serving (14 g)",
+      "servingGrams": 14.0,
+      "id": "seasoned-tortilla-strips-1-serving-14-g"
+    },
+    {
+      "name": "Harvest Nut Granola",
+      "calories": 70.0,
+      "fat": 2.0,
+      "carbs": 10.0,
+      "protein": 1.0,
+      "servingLabel": "1 serving (14 g)",
+      "servingGrams": 14.0,
+      "id": "harvest-nut-granola-1-serving-14-g"
+    },
+    {
+      "name": "Crispy Bell Peppers",
+      "calories": 80.0,
+      "fat": 6.0,
+      "carbs": 6.0,
+      "protein": 1.0,
+      "servingLabel": "1 serving (14 g)",
+      "servingGrams": 14.0,
+      "id": "crispy-bell-peppers-1-serving-14-g"
+    },
+    {
+      "name": "Chili Lime Pepitas",
+      "calories": 80.0,
+      "fat": 7.0,
+      "carbs": 2.0,
+      "protein": 4.0,
+      "servingLabel": "1 serving (14 g)",
+      "servingGrams": 14.0,
+      "id": "chili-lime-pepitas-1-serving-14-g"
+    },
+    {
+      "name": "Blue Cheese Crumbles",
+      "calories": 30.0,
+      "fat": 2.5,
+      "carbs": 0.0,
+      "protein": 2.0,
+      "servingLabel": "1 serving (9 g)",
+      "servingGrams": 9.0,
+      "id": "blue-cheese-crumbles-1-serving-9-g"
+    },
+    {
+      "name": "Pepper Jack Cheese",
+      "calories": 80.0,
+      "fat": 6.0,
+      "carbs": 0.0,
+      "protein": 4.0,
+      "servingLabel": "1 serving (21 g)",
+      "servingGrams": 21.0,
+      "id": "pepper-jack-cheese-1-serving-21-g"
+    },
+    {
+      "name": "Colby Jack Cheese",
+      "calories": 80.0,
+      "fat": 7.0,
+      "carbs": 0.0,
+      "protein": 5.0,
+      "servingLabel": "1 serving (21 g)",
+      "servingGrams": 21.0,
+      "id": "colby-jack-cheese-1-serving-21-g"
+    },
+    {
+      "name": "American Cheese",
+      "calories": 50.0,
+      "fat": 4.5,
+      "carbs": 1.0,
+      "protein": 3.0,
+      "servingLabel": "1 serving (14 g)",
+      "servingGrams": 14.0,
+      "id": "american-cheese-1-serving-14-g"
+    },
+    {
+      "name": "Tomato",
+      "calories": 5.0,
+      "fat": 0.0,
+      "carbs": 1.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (30 g)",
+      "servingGrams": 30.0,
+      "id": "tomato-1-serving-30-g"
+    },
+    {
+      "name": "Lettuce",
+      "calories": 5.0,
+      "fat": 0.0,
+      "carbs": 1.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (20 g)",
+      "servingGrams": 20.0,
+      "id": "lettuce-1-serving-20-g"
+    },
+    {
+      "name": "Saltines",
+      "calories": 50.0,
+      "fat": 1.0,
+      "carbs": 9.0,
+      "protein": 1.0,
+      "servingLabel": "1 serving (12 g)",
+      "servingGrams": 12.0,
+      "id": "saltines-1-serving-12-g"
+    },
+    {
+      "name": "Chick-n-Strips Trays",
+      "calories": 110.0,
+      "fat": 5.0,
+      "carbs": 6.0,
+      "protein": 10.0,
+      "servingLabel": "1 serving (47 g)",
+      "servingGrams": 47.0,
+      "id": "chick-n-strips-trays-1-serving-47-g"
+    },
+    {
+      "name": "Large Chick-n-Strips Tray",
+      "calories": 110.0,
+      "fat": 5.0,
+      "carbs": 6.0,
+      "protein": 10.0,
+      "servingLabel": "1 serving (47 g)",
+      "servingGrams": 47.0,
+      "id": "large-chick-n-strips-tray-1-serving-47-g"
+    },
+    {
+      "name": "Medium Chick-n-Strips Tray",
+      "calories": 110.0,
+      "fat": 5.0,
+      "carbs": 6.0,
+      "protein": 10.0,
+      "servingLabel": "1 serving (47 g)",
+      "servingGrams": 47.0,
+      "id": "medium-chick-n-strips-tray-1-serving-47-g"
+    },
+    {
+      "name": "Small Chick-n-Strips Tray",
+      "calories": 110.0,
+      "fat": 5.0,
+      "carbs": 6.0,
+      "protein": 10.0,
+      "servingLabel": "1 serving (47 g)",
+      "servingGrams": 47.0,
+      "id": "small-chick-n-strips-tray-1-serving-47-g"
+    },
+    {
+      "name": "Chick-fil-A Nugget Trays",
+      "calories": 30.0,
+      "fat": 1.5,
+      "carbs": 1.0,
+      "protein": 3.0,
+      "servingLabel": "1 serving (14 g)",
+      "servingGrams": 14.0,
+      "id": "chick-fil-a-nugget-trays-1-serving-14-g"
+    },
+    {
+      "name": "Large Chick-fil-A Nuggets Tray",
+      "calories": 30.0,
+      "fat": 1.5,
+      "carbs": 1.0,
+      "protein": 3.0,
+      "servingLabel": "1 serving (14 g)",
+      "servingGrams": 14.0,
+      "id": "large-chick-fil-a-nuggets-tray-1-serving-14-g"
+    },
+    {
+      "name": "Medium Chick-fil-ANuggets Tray",
+      "calories": 30.0,
+      "fat": 1.5,
+      "carbs": 1.0,
+      "protein": 3.0,
+      "servingLabel": "1 serving (14 g)",
+      "servingGrams": 14.0,
+      "id": "medium-chick-fil-anuggets-tray-1-serving-14-g"
+    },
+    {
+      "name": "Small Chick-fil-A Nuggets Tray",
+      "calories": 30.0,
+      "fat": 1.5,
+      "carbs": 1.0,
+      "protein": 3.0,
+      "servingLabel": "1 serving (14 g)",
+      "servingGrams": 14.0,
+      "id": "small-chick-fil-a-nuggets-tray-1-serving-14-g"
+    },
+    {
+      "name": "30 ct Chick-fil-A Nuggets Football-Shaped Tray",
+      "calories": 950.0,
+      "fat": 43.0,
+      "carbs": 41.0,
+      "protein": 100.0,
+      "servingLabel": "1 serving (425 g)",
+      "servingGrams": 425.0,
+      "id": "30-ct-chick-fil-a-nuggets-football-shaped-tray-1-serving-425-g"
+    },
+    {
+      "name": "10 ct Chick-fil-A Chick-n-Minis Football-Shaped Tray",
+      "calories": 910.0,
+      "fat": 34.0,
+      "carbs": 103.0,
+      "protein": 49.0,
+      "servingLabel": "1 serving (318 g)",
+      "servingGrams": 318.0,
+      "id": "10-ct-chick-fil-a-chick-n-minis-football-shaped-tray-1-serving-318-g"
+    },
+    {
+      "name": "Cookie & Brownie Tray",
+      "calories": 280.0,
+      "fat": 14.0,
+      "carbs": 36.0,
+      "protein": 3.0,
+      "servingLabel": "1 serving (60 g)",
+      "servingGrams": 60.0,
+      "id": "cookie-brownie-tray-1-serving-60-g"
+    },
+    {
+      "name": "Large Chocolate Chunk Cookie and Chocolate Fudge Brownie Tray",
+      "calories": 280.0,
+      "fat": 14.0,
+      "carbs": 36.0,
+      "protein": 3.0,
+      "servingLabel": "1 serving (60 g)",
+      "servingGrams": 60.0,
+      "id": "large-chocolate-chunk-cookie-and-chocolate-fudge-brownie-tray-1-serving-60-g"
+    },
+    {
+      "name": "Small Chocolate Chunk Cookie and Chocolate Fudge Brownie Tray",
+      "calories": 280.0,
+      "fat": 14.0,
+      "carbs": 36.0,
+      "protein": 3.0,
+      "servingLabel": "1 serving (60 g)",
+      "servingGrams": 60.0,
+      "id": "small-chocolate-chunk-cookie-and-chocolate-fudge-brownie-tray-1-serving-60-g"
+    },
+    {
+      "name": "Chocolate Fudge Brownie Tray",
+      "calories": 190.0,
+      "fat": 10.0,
+      "carbs": 23.0,
+      "protein": 2.0,
+      "servingLabel": "1 serving (43 g)",
+      "servingGrams": 43.0,
+      "id": "chocolate-fudge-brownie-tray-1-serving-43-g"
+    },
+    {
+      "name": "Large Chocolate Fudge Brownie Tray",
+      "calories": 190.0,
+      "fat": 10.0,
+      "carbs": 23.0,
+      "protein": 2.0,
+      "servingLabel": "1 serving (43 g)",
+      "servingGrams": 43.0,
+      "id": "large-chocolate-fudge-brownie-tray-1-serving-43-g"
+    },
+    {
+      "name": "Small Chocolate Fudge Brownie Tray",
+      "calories": 190.0,
+      "fat": 10.0,
+      "carbs": 23.0,
+      "protein": 2.0,
+      "servingLabel": "1 serving (43 g)",
+      "servingGrams": 43.0,
+      "id": "small-chocolate-fudge-brownie-tray-1-serving-43-g"
+    },
+    {
+      "name": "Chocolate Chunk Cookie Tray",
+      "calories": 370.0,
+      "fat": 17.0,
+      "carbs": 49.0,
+      "protein": 5.0,
+      "servingLabel": "1 serving (78 g)",
+      "servingGrams": 78.0,
+      "id": "chocolate-chunk-cookie-tray-1-serving-78-g"
+    },
+    {
+      "name": "Large Chocolate Chunk Cookie Tray",
+      "calories": 370.0,
+      "fat": 17.0,
+      "carbs": 49.0,
+      "protein": 5.0,
+      "servingLabel": "1 serving (78 g)",
+      "servingGrams": 78.0,
+      "id": "large-chocolate-chunk-cookie-tray-1-serving-78-g"
+    },
+    {
+      "name": "Small Chocolate Chunk Cookie Tray",
+      "calories": 370.0,
+      "fat": 17.0,
+      "carbs": 49.0,
+      "protein": 5.0,
+      "servingLabel": "1 serving (78 g)",
+      "servingGrams": 78.0,
+      "id": "small-chocolate-chunk-cookie-tray-1-serving-78-g"
+    },
+    {
+      "name": "Kale Crunch Side Tray",
+      "calories": 1160.0,
+      "fat": 87.0,
+      "carbs": 77.0,
+      "protein": 30.0,
+      "servingLabel": "1 serving (610 g)",
+      "servingGrams": 610.0,
+      "id": "kale-crunch-side-tray-1-serving-610-g"
+    },
+    {
+      "name": "Large Kale Crunch Side Tray",
+      "calories": 2440.0,
+      "fat": 182.0,
+      "carbs": 166.0,
+      "protein": 63.0,
+      "servingLabel": "1 serving (1332 g)",
+      "servingGrams": 1332.0,
+      "id": "large-kale-crunch-side-tray-1-serving-1332-g"
+    },
+    {
+      "name": "Small Kale Crunch Side Tray",
+      "calories": 1160.0,
+      "fat": 87.0,
+      "carbs": 77.0,
+      "protein": 30.0,
+      "servingLabel": "1 serving (610 g)",
+      "servingGrams": 610.0,
+      "id": "small-kale-crunch-side-tray-1-serving-610-g"
+    },
+    {
+      "name": "Garden Salad Tray",
+      "calories": 310.0,
+      "fat": 18.0,
+      "carbs": 20.0,
+      "protein": 19.0,
+      "servingLabel": "1 serving (595 g)",
+      "servingGrams": 595.0,
+      "id": "garden-salad-tray-1-serving-595-g"
+    },
+    {
+      "name": "Large Garden Salad Tray",
+      "calories": 630.0,
+      "fat": 36.0,
+      "carbs": 41.0,
+      "protein": 38.0,
+      "servingLabel": "1 serving (1191 g)",
+      "servingGrams": 1191.0,
+      "id": "large-garden-salad-tray-1-serving-1191-g"
+    },
+    {
+      "name": "Small Garden Salad Tray",
+      "calories": 310.0,
+      "fat": 18.0,
+      "carbs": 20.0,
+      "protein": 19.0,
+      "servingLabel": "1 serving (595 g)",
+      "servingGrams": 595.0,
+      "id": "small-garden-salad-tray-1-serving-595-g"
+    },
+    {
+      "name": "Mac & Cheese Tray",
+      "calories": 4930.0,
+      "fat": 312.0,
+      "carbs": 308.0,
+      "protein": 221.0,
+      "servingLabel": "1 serving (2482 g)",
+      "servingGrams": 2482.0,
+      "id": "mac-cheese-tray-1-serving-2482-g"
+    },
+    {
+      "name": "Large Mac & Cheese Tray",
+      "calories": 9850.0,
+      "fat": 625.0,
+      "carbs": 616.0,
+      "protein": 442.0,
+      "servingLabel": "1 serving (4964 g)",
+      "servingGrams": 4964.0,
+      "id": "large-mac-cheese-tray-1-serving-4964-g"
+    },
+    {
+      "name": "Small Mac & Cheese Tray",
+      "calories": 4930.0,
+      "fat": 312.0,
+      "carbs": 308.0,
+      "protein": 221.0,
+      "servingLabel": "1 serving (2482 g)",
+      "servingGrams": 2482.0,
+      "id": "small-mac-cheese-tray-1-serving-2482-g"
+    },
+    {
+      "name": "Fruit Tray",
+      "calories": 780.0,
+      "fat": 0.0,
+      "carbs": 182.0,
+      "protein": 8.0,
+      "servingLabel": "1 serving (1446 g)",
+      "servingGrams": 1446.0,
+      "id": "fruit-tray-1-serving-1446-g"
+    },
+    {
+      "name": "Large Fruit Tray",
+      "calories": 1580.0,
+      "fat": 0.0,
+      "carbs": 369.0,
+      "protein": 16.0,
+      "servingLabel": "1 serving (2948 g)",
+      "servingGrams": 2948.0,
+      "id": "large-fruit-tray-1-serving-2948-g"
+    },
+    {
+      "name": "Small Fruit Tray",
+      "calories": 780.0,
+      "fat": 0.0,
+      "carbs": 182.0,
+      "protein": 8.0,
+      "servingLabel": "1 serving (1446 g)",
+      "servingGrams": 1446.0,
+      "id": "small-fruit-tray-1-serving-1446-g"
+    },
+    {
+      "name": "Spicy Cool Wrap Trays",
+      "calories": 480.0,
+      "fat": 39.0,
+      "carbs": 18.0,
+      "protein": 21.0,
+      "servingLabel": "1 serving (116 g)",
+      "servingGrams": 116.0,
+      "id": "spicy-cool-wrap-trays-1-serving-116-g"
+    },
+    {
+      "name": "Large Spicy Cool Wrap Tray",
+      "calories": 480.0,
+      "fat": 39.0,
+      "carbs": 18.0,
+      "protein": 21.0,
+      "servingLabel": "1 serving (116 g)",
+      "servingGrams": 116.0,
+      "id": "large-spicy-cool-wrap-tray-1-serving-116-g"
+    },
+    {
+      "name": "Medium Spicy Cool Wrap Tray",
+      "calories": 480.0,
+      "fat": 39.0,
+      "carbs": 18.0,
+      "protein": 21.0,
+      "servingLabel": "1 serving (116 g)",
+      "servingGrams": 116.0,
+      "id": "medium-spicy-cool-wrap-tray-1-serving-116-g"
+    },
+    {
+      "name": "Small Spicy Cool Wrap Tray",
+      "calories": 480.0,
+      "fat": 39.0,
+      "carbs": 18.0,
+      "protein": 21.0,
+      "servingLabel": "1 serving (116 g)",
+      "servingGrams": 116.0,
+      "id": "small-spicy-cool-wrap-tray-1-serving-116-g"
+    },
+    {
+      "name": "Southwest Veggie Wrap Trays",
+      "calories": 460.0,
+      "fat": 39.0,
+      "carbs": 19.0,
+      "protein": 14.0,
+      "servingLabel": "1 serving (128 g)",
+      "servingGrams": 128.0,
+      "id": "southwest-veggie-wrap-trays-1-serving-128-g"
+    },
+    {
+      "name": "Large Southwest Veggie Wrap Tray",
+      "calories": 460.0,
+      "fat": 39.0,
+      "carbs": 19.0,
+      "protein": 14.0,
+      "servingLabel": "1 serving (128 g)",
+      "servingGrams": 128.0,
+      "id": "large-southwest-veggie-wrap-tray-1-serving-128-g"
+    },
+    {
+      "name": "Medium Southwest Veggie Wrap Tray",
+      "calories": 460.0,
+      "fat": 39.0,
+      "carbs": 19.0,
+      "protein": 14.0,
+      "servingLabel": "1 serving (128 g)",
+      "servingGrams": 128.0,
+      "id": "medium-southwest-veggie-wrap-tray-1-serving-128-g"
+    },
+    {
+      "name": "Small Southwest Veggie Wrap Tray",
+      "calories": 460.0,
+      "fat": 39.0,
+      "carbs": 19.0,
+      "protein": 14.0,
+      "servingLabel": "1 serving (128 g)",
+      "servingGrams": 128.0,
+      "id": "small-southwest-veggie-wrap-tray-1-serving-128-g"
+    },
+    {
+      "name": "Chick-fil-A Cool Wrap Trays",
+      "calories": 480.0,
+      "fat": 39.0,
+      "carbs": 18.0,
+      "protein": 22.0,
+      "servingLabel": "1 serving (116 g)",
+      "servingGrams": 116.0,
+      "id": "chick-fil-a-cool-wrap-trays-1-serving-116-g"
+    },
+    {
+      "name": "Large Chick-fil-A Cool Wrap Tray",
+      "calories": 480.0,
+      "fat": 39.0,
+      "carbs": 18.0,
+      "protein": 22.0,
+      "servingLabel": "1 serving (116 g)",
+      "servingGrams": 116.0,
+      "id": "large-chick-fil-a-cool-wrap-tray-1-serving-116-g"
+    },
+    {
+      "name": "Medium Chick-fil-A Cool Wrap Tray",
+      "calories": 480.0,
+      "fat": 39.0,
+      "carbs": 18.0,
+      "protein": 22.0,
+      "servingLabel": "1 serving (116 g)",
+      "servingGrams": 116.0,
+      "id": "medium-chick-fil-a-cool-wrap-tray-1-serving-116-g"
+    },
+    {
+      "name": "Small Chick-fil-A Cool Wrap Tray",
+      "calories": 480.0,
+      "fat": 39.0,
+      "carbs": 18.0,
+      "protein": 22.0,
+      "servingLabel": "1 serving (116 g)",
+      "servingGrams": 116.0,
+      "id": "small-chick-fil-a-cool-wrap-tray-1-serving-116-g"
+    },
+    {
+      "name": "Spicy Chilled Grilled Chicken Sub Sandwich Tray",
+      "calories": 220.0,
+      "fat": 6.0,
+      "carbs": 25.0,
+      "protein": 16.0,
+      "servingLabel": "1 serving (115 g)",
+      "servingGrams": 115.0,
+      "id": "spicy-chilled-grilled-chicken-sub-sandwich-tray-1-serving-115-g"
+    },
+    {
+      "name": "Large Spicy Chilled Grilled Chicken Sub Sandwich Tray",
+      "calories": 220.0,
+      "fat": 6.0,
+      "carbs": 25.0,
+      "protein": 16.0,
+      "servingLabel": "1 serving (115 g)",
+      "servingGrams": 115.0,
+      "id": "large-spicy-chilled-grilled-chicken-sub-sandwich-tray-1-serving-115-g"
+    },
+    {
+      "name": "Medium Spicy Chilled Grilled Chicken Sub Sandwich Tray",
+      "calories": 220.0,
+      "fat": 6.0,
+      "carbs": 25.0,
+      "protein": 16.0,
+      "servingLabel": "1 serving (115 g)",
+      "servingGrams": 115.0,
+      "id": "medium-spicy-chilled-grilled-chicken-sub-sandwich-tray-1-serving-115-g"
+    },
+    {
+      "name": "Small Spicy Chilled Grilled Chicken Sub Sandwich Tray",
+      "calories": 220.0,
+      "fat": 6.0,
+      "carbs": 25.0,
+      "protein": 16.0,
+      "servingLabel": "1 serving (115 g)",
+      "servingGrams": 115.0,
+      "id": "small-spicy-chilled-grilled-chicken-sub-sandwich-tray-1-serving-115-g"
+    },
+    {
+      "name": "Chilled Grilled Chicken Sub Sandwich Tray",
+      "calories": 220.0,
+      "fat": 6.0,
+      "carbs": 25.0,
+      "protein": 18.0,
+      "servingLabel": "1 serving (115 g)",
+      "servingGrams": 115.0,
+      "id": "chilled-grilled-chicken-sub-sandwich-tray-1-serving-115-g"
+    },
+    {
+      "name": "Large Chilled Grilled Chicken Sub Sandwich Tray",
+      "calories": 220.0,
+      "fat": 6.0,
+      "carbs": 25.0,
+      "protein": 18.0,
+      "servingLabel": "1 serving (115 g)",
+      "servingGrams": 115.0,
+      "id": "large-chilled-grilled-chicken-sub-sandwich-tray-1-serving-115-g"
+    },
+    {
+      "name": "Medium Chilled Grilled Chicken Sub Sandwich Tray",
+      "calories": 220.0,
+      "fat": 6.0,
+      "carbs": 25.0,
+      "protein": 18.0,
+      "servingLabel": "1 serving (115 g)",
+      "servingGrams": 115.0,
+      "id": "medium-chilled-grilled-chicken-sub-sandwich-tray-1-serving-115-g"
+    },
+    {
+      "name": "Small Chilled Grilled Chicken Sub Sandwich Tray",
+      "calories": 220.0,
+      "fat": 6.0,
+      "carbs": 25.0,
+      "protein": 18.0,
+      "servingLabel": "1 serving (115 g)",
+      "servingGrams": 115.0,
+      "id": "small-chilled-grilled-chicken-sub-sandwich-tray-1-serving-115-g"
+    },
+    {
+      "name": "Chilled Chick-n-Strips Trays",
+      "calories": 110.0,
+      "fat": 5.0,
+      "carbs": 6.0,
+      "protein": 10.0,
+      "servingLabel": "1 serving (47 g)",
+      "servingGrams": 47.0,
+      "id": "chilled-chick-n-strips-trays-1-serving-47-g"
+    },
+    {
+      "name": "Large Chilled Chick-n-Strips (Cooked & Chilled for Later) Tray",
+      "calories": 110.0,
+      "fat": 5.0,
+      "carbs": 6.0,
+      "protein": 10.0,
+      "servingLabel": "1 serving (47 g)",
+      "servingGrams": 47.0,
+      "id": "large-chilled-chick-n-strips-cooked-chilled-for-later-tray-1-serving-47-g"
+    },
+    {
+      "name": "Medium Chilled Chick-n-Strips (Cooked & Chilled for Later) Tray",
+      "calories": 110.0,
+      "fat": 5.0,
+      "carbs": 6.0,
+      "protein": 10.0,
+      "servingLabel": "1 serving (47 g)",
+      "servingGrams": 47.0,
+      "id": "medium-chilled-chick-n-strips-cooked-chilled-for-later-tray-1-serving-47-g"
+    },
+    {
+      "name": "Small Chilled Chick-n-Strips (Cooked & Chilled for Later) Tray",
+      "calories": 110.0,
+      "fat": 5.0,
+      "carbs": 6.0,
+      "protein": 10.0,
+      "servingLabel": "1 serving (47 g)",
+      "servingGrams": 47.0,
+      "id": "small-chilled-chick-n-strips-cooked-chilled-for-later-tray-1-serving-47-g"
+    },
+    {
+      "name": "Chilled Chick-fil-A Nugget Trays",
+      "calories": 30.0,
+      "fat": 1.5,
+      "carbs": 1.0,
+      "protein": 3.0,
+      "servingLabel": "1 serving (14 g)",
+      "servingGrams": 14.0,
+      "id": "chilled-chick-fil-a-nugget-trays-1-serving-14-g"
+    },
+    {
+      "name": "Large Chilled Chick-fil-A Nuggets Tray",
+      "calories": 30.0,
+      "fat": 1.5,
+      "carbs": 1.0,
+      "protein": 3.0,
+      "servingLabel": "1 serving (14 g)",
+      "servingGrams": 14.0,
+      "id": "large-chilled-chick-fil-a-nuggets-tray-1-serving-14-g"
+    },
+    {
+      "name": "Medium Chilled Chick-fil-A Nuggets Tray",
+      "calories": 30.0,
+      "fat": 1.5,
+      "carbs": 1.0,
+      "protein": 3.0,
+      "servingLabel": "1 serving (14 g)",
+      "servingGrams": 14.0,
+      "id": "medium-chilled-chick-fil-a-nuggets-tray-1-serving-14-g"
+    },
+    {
+      "name": "Small Chilled Chick-fil-A Nuggets Tray",
+      "calories": 30.0,
+      "fat": 1.5,
+      "carbs": 1.0,
+      "protein": 3.0,
+      "servingLabel": "1 serving (14 g)",
+      "servingGrams": 14.0,
+      "id": "small-chilled-chick-fil-a-nuggets-tray-1-serving-14-g"
+    },
+    {
+      "name": "Grilled Chicken Bundle",
+      "calories": 460.0,
+      "fat": 19.0,
+      "carbs": 35.0,
+      "protein": 37.0,
+      "servingLabel": "1 serving (224 g)",
+      "servingGrams": 224.0,
+      "id": "grilled-chicken-bundle-1-serving-224-g"
+    },
+    {
+      "name": "Spicy Chilled Grilled Chicken Sub Sandwich",
+      "calories": 500.0,
+      "fat": 17.0,
+      "carbs": 53.0,
+      "protein": 34.0,
+      "servingLabel": "1 serving (230 g)",
+      "servingGrams": 230.0,
+      "id": "spicy-chilled-grilled-chicken-sub-sandwich-1-serving-230-g"
+    },
+    {
+      "name": "Chilled Grilled Chicken Sub Sandwich",
+      "calories": 500.0,
+      "fat": 17.0,
+      "carbs": 52.0,
+      "protein": 36.0,
+      "servingLabel": "1 serving (230 g)",
+      "servingGrams": 230.0,
+      "id": "chilled-grilled-chicken-sub-sandwich-1-serving-230-g"
+    },
+    {
+      "name": "Catering Coffee",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (2722 g)",
+      "servingGrams": 2722.0,
+      "id": "catering-coffee-1-serving-2722-g"
+    },
+    {
+      "name": "Bottled Diet Lemonade",
+      "calories": 60.0,
+      "fat": 0.0,
+      "carbs": 17.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (492 g)",
+      "servingGrams": 492.0,
+      "id": "bottled-diet-lemonade-1-serving-492-g"
+    },
+    {
+      "name": "Bottled Lemonade",
+      "calories": 280.0,
+      "fat": 0.0,
+      "carbs": 73.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (520 g)",
+      "servingGrams": 520.0,
+      "id": "bottled-lemonade-1-serving-520-g"
+    },
+    {
+      "name": "Bottled Unsweet Tea",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (486 g)",
+      "servingGrams": 486.0,
+      "id": "bottled-unsweet-tea-1-serving-486-g"
+    },
+    {
+      "name": "Bottled Sweet Tea",
+      "calories": 190.0,
+      "fat": 0.0,
+      "carbs": 50.0,
+      "protein": 0.0,
+      "servingLabel": "1 serving (506 g)",
+      "servingGrams": 506.0,
+      "id": "bottled-sweet-tea-1-serving-506-g"
+    }
+  ]
+}

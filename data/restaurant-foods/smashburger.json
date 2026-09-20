@@ -1,0 +1,415 @@
+{
+  "chain": "Smashburger",
+  "sourceUrl": "https://www.nutritionix.com/smashburger/menu/premium",
+  "source": "Nutritionix",
+  "sourceKind": "database",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "id": "nutritionix-781628",
+      "name": "All-American Smash",
+      "calories": 550,
+      "protein": 30,
+      "carbs": 40,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Burger; size in item name)"
+    },
+    {
+      "id": "nutritionix-781630",
+      "name": "Bacon Stack Smash",
+      "calories": 730,
+      "protein": 36,
+      "carbs": 34,
+      "fat": 49,
+      "servingLabel": "1 listed serving (Burger; size in item name)"
+    },
+    {
+      "id": "nutritionix-781635",
+      "name": "BBQ Bacon Smash",
+      "calories": 690,
+      "protein": 35,
+      "carbs": 46,
+      "fat": 42,
+      "servingLabel": "1 listed serving (Burger; size in item name)"
+    },
+    {
+      "id": "nutritionix-781626",
+      "name": "Classic Smash",
+      "calories": 630,
+      "protein": 30,
+      "carbs": 41,
+      "fat": 37,
+      "servingLabel": "1 listed serving (Burger; size in item name)"
+    },
+    {
+      "id": "nutritionix-781627",
+      "name": "Double All-American Smash",
+      "calories": 890,
+      "protein": 54,
+      "carbs": 41,
+      "fat": 55,
+      "servingLabel": "1 listed serving (Burger; size in item name)"
+    },
+    {
+      "id": "nutritionix-781629",
+      "name": "Double Bacon Stack Smash",
+      "calories": 1110,
+      "protein": 63,
+      "carbs": 35,
+      "fat": 77,
+      "servingLabel": "1 listed serving (Burger; size in item name)"
+    },
+    {
+      "id": "nutritionix-781634",
+      "name": "Double BBQ Bacon Smash",
+      "calories": 1060,
+      "protein": 61,
+      "carbs": 55,
+      "fat": 68,
+      "servingLabel": "1 listed serving (Burger; size in item name)"
+    },
+    {
+      "id": "nutritionix-781625",
+      "name": "Double Classic Smash",
+      "calories": 970,
+      "protein": 54,
+      "carbs": 42,
+      "fat": 62,
+      "servingLabel": "1 listed serving (Burger; size in item name)"
+    },
+    {
+      "id": "nutritionix-781631",
+      "name": "Double Spicy Jalapeno Smash",
+      "calories": 1060,
+      "protein": 63,
+      "carbs": 34,
+      "fat": 77,
+      "servingLabel": "1 listed serving (Burger; size in item name)"
+    },
+    {
+      "id": "nutritionix-781636",
+      "name": "Double Truffle Mushroom Swiss",
+      "calories": 980,
+      "protein": 60,
+      "carbs": 32,
+      "fat": 68,
+      "servingLabel": "1 listed serving (Burger; size in item name)"
+    },
+    {
+      "id": "nutritionix-781624",
+      "name": "Jalapeno BBQ Bacon Stack Smash, Double",
+      "calories": 1090,
+      "protein": 63,
+      "carbs": 53,
+      "fat": 66,
+      "servingLabel": "1 listed serving (Burger; size in item name)"
+    },
+    {
+      "id": "nutritionix-781623",
+      "name": "Jalapeno BBQ Bacon Stack Smash, Single",
+      "calories": 670,
+      "protein": 36,
+      "carbs": 43,
+      "fat": 38,
+      "servingLabel": "1 listed serving (Burger; size in item name)"
+    },
+    {
+      "id": "nutritionix-781632",
+      "name": "Spicy Jalapeno Smash",
+      "calories": 710,
+      "protein": 37,
+      "carbs": 35,
+      "fat": 48,
+      "servingLabel": "1 listed serving (Burger; size in item name)"
+    },
+    {
+      "id": "nutritionix-781637",
+      "name": "Truffle Mushroom Swiss",
+      "calories": 650,
+      "protein": 33,
+      "carbs": 32,
+      "fat": 43,
+      "servingLabel": "1 listed serving (Burger; size in item name)"
+    },
+    {
+      "id": "nutritionix-781633",
+      "name": "Veggie Smash",
+      "calories": 480,
+      "protein": 13,
+      "carbs": 56,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Burger; size in item name)"
+    },
+    {
+      "id": "nutritionix-781641",
+      "name": "3 Chicken Tenders",
+      "calories": 570,
+      "protein": 44,
+      "carbs": 28,
+      "fat": 32,
+      "servingLabel": "1 listed serving (Chicken; size in item name)"
+    },
+    {
+      "id": "nutritionix-781643",
+      "name": "3 Scorchin' Hot Chicken Tenders",
+      "calories": 870,
+      "protein": 44,
+      "carbs": 29,
+      "fat": 64,
+      "servingLabel": "1 listed serving (Chicken; size in item name)"
+    },
+    {
+      "id": "nutritionix-781642",
+      "name": "5 Chicken Tenders",
+      "calories": 960,
+      "protein": 73,
+      "carbs": 40,
+      "fat": 53,
+      "servingLabel": "1 listed serving (Chicken; size in item name)"
+    },
+    {
+      "id": "nutritionix-781644",
+      "name": "5 Scorchin' Hot Chicken Tenders",
+      "calories": 1450,
+      "protein": 73,
+      "carbs": 48,
+      "fat": 107,
+      "servingLabel": "1 listed serving (Chicken; size in item name)"
+    },
+    {
+      "id": "nutritionix-781639",
+      "name": "Chicken Smash Burger",
+      "calories": 460,
+      "protein": 26,
+      "carbs": 33,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Chicken; size in item name)"
+    },
+    {
+      "id": "nutritionix-781638",
+      "name": "Crispy Chicken Sandwich",
+      "calories": 680,
+      "protein": 35,
+      "carbs": 52,
+      "fat": 37,
+      "servingLabel": "1 listed serving (Chicken; size in item name)"
+    },
+    {
+      "id": "nutritionix-781640",
+      "name": "Double Chicken Smash Burger",
+      "calories": 620,
+      "protein": 46,
+      "carbs": 33,
+      "fat": 32,
+      "servingLabel": "1 listed serving (Chicken; size in item name)"
+    },
+    {
+      "id": "nutritionix-781656",
+      "name": "Crispy Brussels Sprouts",
+      "calories": 450,
+      "protein": 5,
+      "carbs": 14,
+      "fat": 44,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-781649",
+      "name": "French Fries, Large",
+      "calories": 560,
+      "protein": 6,
+      "carbs": 84,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-781648",
+      "name": "French Fries, Regular",
+      "calories": 370,
+      "protein": 4,
+      "carbs": 56,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-781655",
+      "name": "Scorchin' Hot Tots",
+      "calories": 640,
+      "protein": 4,
+      "carbs": 36,
+      "fat": 51,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-781654",
+      "name": "Scorchin' Hot Fries, Large",
+      "calories": 770,
+      "protein": 6,
+      "carbs": 84,
+      "fat": 45,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-781653",
+      "name": "Scorchin' Hot Fries, Regular",
+      "calories": 550,
+      "protein": 4,
+      "carbs": 60,
+      "fat": 32,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-781646",
+      "name": "Smash Fries, Large",
+      "calories": 630,
+      "protein": 6,
+      "carbs": 80,
+      "fat": 32,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-781645",
+      "name": "Smash Fries, Regular",
+      "calories": 420,
+      "protein": 4,
+      "carbs": 53,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-781647",
+      "name": "Smash Tots",
+      "calories": 350,
+      "protein": 3,
+      "carbs": 29,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-781652",
+      "name": "Sweet Potato Waffle Fries, Large",
+      "calories": 390,
+      "protein": 4,
+      "carbs": 53,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-781651",
+      "name": "Sweet Potato Waffle Fries, Regular",
+      "calories": 310,
+      "protein": 3,
+      "carbs": 42,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-781650",
+      "name": "Tots",
+      "calories": 240,
+      "protein": 3,
+      "carbs": 29,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-781658",
+      "name": "Banana Chocolate Shake",
+      "calories": 1060,
+      "protein": 16,
+      "carbs": 122,
+      "fat": 59,
+      "servingLabel": "1 listed serving (Shakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-781657",
+      "name": "Banana Shake",
+      "calories": 920,
+      "protein": 14,
+      "carbs": 106,
+      "fat": 49,
+      "servingLabel": "1 listed serving (Shakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-781661",
+      "name": "Chocolate Shake",
+      "calories": 780,
+      "protein": 14,
+      "carbs": 73,
+      "fat": 49,
+      "servingLabel": "1 listed serving (Shakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-781660",
+      "name": "Oreo Cookies & Cream Shake",
+      "calories": 850,
+      "protein": 15,
+      "carbs": 78,
+      "fat": 55,
+      "servingLabel": "1 listed serving (Shakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-781659",
+      "name": "Peanut Butter Cookie Shake",
+      "calories": 860,
+      "protein": 16,
+      "carbs": 80,
+      "fat": 55,
+      "servingLabel": "1 listed serving (Shakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-781664",
+      "name": "Salted Caramel Shake",
+      "calories": 800,
+      "protein": 14,
+      "carbs": 76,
+      "fat": 49,
+      "servingLabel": "1 listed serving (Shakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-781663",
+      "name": "Strawberry Shake",
+      "calories": 770,
+      "protein": 14,
+      "carbs": 71,
+      "fat": 49,
+      "servingLabel": "1 listed serving (Shakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-781662",
+      "name": "Vanilla Shake",
+      "calories": 790,
+      "protein": 14,
+      "carbs": 74,
+      "fat": 49,
+      "servingLabel": "1 listed serving (Shakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-781665",
+      "name": "Kids Smashburger with Fries",
+      "calories": 810,
+      "protein": 31,
+      "carbs": 87,
+      "fat": 38,
+      "servingLabel": "1 listed serving (Kids Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-781666",
+      "name": "Kids Smash Cheeseburger with Fries",
+      "calories": 900,
+      "protein": 34,
+      "carbs": 88,
+      "fat": 44,
+      "servingLabel": "1 listed serving (Kids Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-781667",
+      "name": "Kids Tenders",
+      "calories": 750,
+      "protein": 33,
+      "carbs": 75,
+      "fat": 35,
+      "servingLabel": "1 listed serving (Kids Meals; size in item name)"
+    }
+  ],
+  "sourceDate": "2025-05-15"
+}

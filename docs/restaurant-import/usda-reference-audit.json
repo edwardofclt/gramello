@@ -1,0 +1,397 @@
+[
+  {
+    "fdcId": 171477,
+    "description": "Chicken, broilers or fryers, breast, meat only, cooked, roasted",
+    "sourceUrl": "https://api.nal.usda.gov/fdc/v1/food/171477",
+    "retrievedAt": "2026-09-20",
+    "basis": "100 g",
+    "nutrients": [
+      {
+        "name": "Energy",
+        "amount": 165.0,
+        "unit": "kcal"
+      },
+      {
+        "name": "Protein",
+        "amount": 31.02,
+        "unit": "g"
+      },
+      {
+        "name": "Total lipid (fat)",
+        "amount": 3.57,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrate, by difference",
+        "amount": 0.0,
+        "unit": "g"
+      }
+    ],
+    "publishedPortions": [
+      {
+        "id": 88817,
+        "gramWeight": 140.0,
+        "sequenceNumber": 1,
+        "amount": 1.0,
+        "modifier": "cup, chopped or diced",
+        "measureUnit": {
+          "id": 9999,
+          "name": "undetermined",
+          "abbreviation": "undetermined"
+        }
+      },
+      {
+        "id": 88818,
+        "gramWeight": 52.0,
+        "sequenceNumber": 2,
+        "amount": 1.0,
+        "modifier": "unit (yield from 1 lb ready-to-cook chicken)",
+        "measureUnit": {
+          "id": 9999,
+          "name": "undetermined",
+          "abbreviation": "undetermined"
+        }
+      },
+      {
+        "id": 88819,
+        "gramWeight": 86.0,
+        "sequenceNumber": 3,
+        "amount": 0.5,
+        "modifier": "breast, bone and skin removed",
+        "measureUnit": {
+          "id": 9999,
+          "name": "undetermined",
+          "abbreviation": "undetermined"
+        }
+      }
+    ]
+  },
+  {
+    "fdcId": 168878,
+    "description": "Rice, white, long-grain, regular, enriched, cooked",
+    "sourceUrl": "https://api.nal.usda.gov/fdc/v1/food/168878",
+    "retrievedAt": "2026-09-20",
+    "basis": "100 g",
+    "nutrients": [
+      {
+        "name": "Energy",
+        "amount": 130.0,
+        "unit": "kcal"
+      },
+      {
+        "name": "Protein",
+        "amount": 2.69,
+        "unit": "g"
+      },
+      {
+        "name": "Total lipid (fat)",
+        "amount": 0.28,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrate, by difference",
+        "amount": 28.17,
+        "unit": "g"
+      }
+    ],
+    "publishedPortions": [
+      {
+        "id": 83928,
+        "gramWeight": 158.0,
+        "sequenceNumber": 1,
+        "amount": 1.0,
+        "modifier": "cup",
+        "measureUnit": {
+          "id": 9999,
+          "name": "undetermined",
+          "abbreviation": "undetermined"
+        }
+      }
+    ]
+  },
+  {
+    "fdcId": 171287,
+    "description": "Egg, whole, raw, fresh",
+    "sourceUrl": "https://api.nal.usda.gov/fdc/v1/food/171287",
+    "retrievedAt": "2026-09-20",
+    "basis": "100 g",
+    "nutrients": [
+      {
+        "name": "Energy",
+        "amount": 143.0,
+        "unit": "kcal"
+      },
+      {
+        "name": "Protein",
+        "amount": 12.56,
+        "unit": "g"
+      },
+      {
+        "name": "Total lipid (fat)",
+        "amount": 9.51,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrate, by difference",
+        "amount": 0.72,
+        "unit": "g"
+      }
+    ],
+    "publishedPortions": [
+      {
+        "id": 88377,
+        "gramWeight": 243.0,
+        "sequenceNumber": 5,
+        "amount": 1.0,
+        "modifier": "cup (4.86 large eggs)",
+        "measureUnit": {
+          "id": 9999,
+          "name": "undetermined",
+          "abbreviation": "undetermined"
+        }
+      },
+      {
+        "id": 88378,
+        "gramWeight": 44.0,
+        "sequenceNumber": 6,
+        "amount": 1.0,
+        "modifier": "medium",
+        "measureUnit": {
+          "id": 9999,
+          "name": "undetermined",
+          "abbreviation": "undetermined"
+        }
+      },
+      {
+        "id": 88375,
+        "gramWeight": 56.0,
+        "sequenceNumber": 2,
+        "amount": 1.0,
+        "modifier": "extra large",
+        "measureUnit": {
+          "id": 9999,
+          "name": "undetermined",
+          "abbreviation": "undetermined"
+        }
+      },
+      {
+        "id": 88379,
+        "gramWeight": 38.0,
+        "sequenceNumber": 7,
+        "amount": 1.0,
+        "modifier": "small",
+        "measureUnit": {
+          "id": 9999,
+          "name": "undetermined",
+          "abbreviation": "undetermined"
+        }
+      },
+      {
+        "id": 88376,
+        "gramWeight": 63.0,
+        "sequenceNumber": 3,
+        "amount": 1.0,
+        "modifier": "jumbo",
+        "measureUnit": {
+          "id": 9999,
+          "name": "undetermined",
+          "abbreviation": "undetermined"
+        }
+      },
+      {
+        "id": 88374,
+        "gramWeight": 50.0,
+        "sequenceNumber": 1,
+        "amount": 1.0,
+        "modifier": "large",
+        "measureUnit": {
+          "id": 9999,
+          "name": "undetermined",
+          "abbreviation": "undetermined"
+        }
+      }
+    ]
+  },
+  {
+    "fdcId": 173944,
+    "description": "Bananas, raw",
+    "sourceUrl": "https://api.nal.usda.gov/fdc/v1/food/173944",
+    "retrievedAt": "2026-09-20",
+    "basis": "100 g",
+    "nutrients": [
+      {
+        "name": "Energy",
+        "amount": 89.0,
+        "unit": "kcal"
+      },
+      {
+        "name": "Protein",
+        "amount": 1.09,
+        "unit": "g"
+      },
+      {
+        "name": "Total lipid (fat)",
+        "amount": 0.33,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrate, by difference",
+        "amount": 22.84,
+        "unit": "g"
+      }
+    ],
+    "publishedPortions": [
+      {
+        "id": 93518,
+        "gramWeight": 126.0,
+        "sequenceNumber": 8,
+        "amount": 1.0,
+        "modifier": "NLEA serving",
+        "measureUnit": {
+          "id": 9999,
+          "name": "undetermined",
+          "abbreviation": "undetermined"
+        }
+      },
+      {
+        "id": 93517,
+        "gramWeight": 152.0,
+        "sequenceNumber": 7,
+        "amount": 1.0,
+        "modifier": "extra large (9\" or longer)",
+        "measureUnit": {
+          "id": 9999,
+          "name": "undetermined",
+          "abbreviation": "undetermined"
+        }
+      },
+      {
+        "id": 93516,
+        "gramWeight": 136.0,
+        "sequenceNumber": 6,
+        "amount": 1.0,
+        "modifier": "large (8\" to 8-7/8\" long)",
+        "measureUnit": {
+          "id": 9999,
+          "name": "undetermined",
+          "abbreviation": "undetermined"
+        }
+      },
+      {
+        "id": 93512,
+        "gramWeight": 150.0,
+        "sequenceNumber": 2,
+        "amount": 1.0,
+        "modifier": "cup, sliced",
+        "measureUnit": {
+          "id": 9999,
+          "name": "undetermined",
+          "abbreviation": "undetermined"
+        }
+      },
+      {
+        "id": 93514,
+        "gramWeight": 101.0,
+        "sequenceNumber": 4,
+        "amount": 1.0,
+        "modifier": "small (6\" to 6-7/8\" long)",
+        "measureUnit": {
+          "id": 9999,
+          "name": "undetermined",
+          "abbreviation": "undetermined"
+        }
+      },
+      {
+        "id": 93513,
+        "gramWeight": 81.0,
+        "sequenceNumber": 3,
+        "amount": 1.0,
+        "modifier": "extra small (less than 6\" long)",
+        "measureUnit": {
+          "id": 9999,
+          "name": "undetermined",
+          "abbreviation": "undetermined"
+        }
+      },
+      {
+        "id": 93515,
+        "gramWeight": 118.0,
+        "sequenceNumber": 5,
+        "amount": 1.0,
+        "modifier": "medium (7\" to 7-7/8\" long)",
+        "measureUnit": {
+          "id": 9999,
+          "name": "undetermined",
+          "abbreviation": "undetermined"
+        }
+      },
+      {
+        "id": 93511,
+        "gramWeight": 225.0,
+        "sequenceNumber": 1,
+        "amount": 1.0,
+        "modifier": "cup, mashed",
+        "measureUnit": {
+          "id": 9999,
+          "name": "undetermined",
+          "abbreviation": "undetermined"
+        }
+      }
+    ]
+  },
+  {
+    "fdcId": 173904,
+    "description": "Cereals, oats, regular and quick, not fortified, dry",
+    "sourceUrl": "https://api.nal.usda.gov/fdc/v1/food/173904",
+    "retrievedAt": "2026-09-20",
+    "basis": "100 g",
+    "nutrients": [
+      {
+        "name": "Energy",
+        "amount": 379.0,
+        "unit": "kcal"
+      },
+      {
+        "name": "Protein",
+        "amount": 13.15,
+        "unit": "g"
+      },
+      {
+        "name": "Total lipid (fat)",
+        "amount": 6.52,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrate, by difference",
+        "amount": 67.7,
+        "unit": "g"
+      }
+    ],
+    "publishedPortions": [
+      {
+        "id": 93454,
+        "gramWeight": 81.0,
+        "sequenceNumber": 1,
+        "amount": 1.0,
+        "modifier": "cup",
+        "measureUnit": {
+          "id": 9999,
+          "name": "undetermined",
+          "abbreviation": "undetermined"
+        }
+      },
+      {
+        "id": 93455,
+        "gramWeight": 27.0,
+        "sequenceNumber": 2,
+        "amount": 0.33,
+        "modifier": "cup",
+        "measureUnit": {
+          "id": 9999,
+          "name": "undetermined",
+          "abbreviation": "undetermined"
+        }
+      }
+    ]
+  }
+]

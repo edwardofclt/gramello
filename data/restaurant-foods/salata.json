@@ -1,0 +1,2377 @@
+{
+  "chain": "Salata",
+  "sourceUrl": "https://www.nutritionix.com/salata/menu/premium",
+  "source": "Nutritionix",
+  "sourceKind": "database",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "id": "nutritionix-544591",
+      "name": "Regular Salad, Almonds",
+      "calories": 40,
+      "protein": 2,
+      "carbs": 2,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544554",
+      "name": "Regular Salad, Apple",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544535",
+      "name": "Regular Salad, Arcadian Mix",
+      "calories": 20,
+      "protein": 1,
+      "carbs": 3,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544599",
+      "name": "Regular Salad, Artichoke",
+      "calories": 40,
+      "protein": 2,
+      "carbs": 4,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544595",
+      "name": "Regular Salad, Artichoke Hearts",
+      "calories": 40,
+      "protein": 2,
+      "carbs": 4,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544538",
+      "name": "Regular Salad, Arugula",
+      "calories": 15,
+      "protein": 1,
+      "carbs": 2,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544594",
+      "name": "Regular Salad, Avocado",
+      "calories": 140,
+      "protein": 2,
+      "carbs": 6,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544596",
+      "name": "Regular Salad, Baked Pita Strips",
+      "calories": 70,
+      "protein": 2,
+      "carbs": 10,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544546",
+      "name": "Regular Salad, Balsamic Vinaigrette",
+      "calories": 290,
+      "protein": 0,
+      "carbs": 6,
+      "fat": 29,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544552",
+      "name": "Regular Salad, Balsamic Vinegar",
+      "calories": 20,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544560",
+      "name": "Regular Salad, Banana Peppers",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544561",
+      "name": "Regular Salad, Bean Sprouts",
+      "calories": 5,
+      "protein": 1,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544562",
+      "name": "Regular Salad, Beets",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544563",
+      "name": "Regular Salad, Bell Peppers",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544581",
+      "name": "Regular Salad, Black Beans",
+      "calories": 20,
+      "protein": 1,
+      "carbs": 4,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544564",
+      "name": "Regular Salad, Broccoli",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544541",
+      "name": "Regular Salad, Buttermilk Ranch",
+      "calories": 230,
+      "protein": 1,
+      "carbs": 2,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544565",
+      "name": "Regular Salad, Cabbage",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544566",
+      "name": "Regular Salad, Carrots",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544603",
+      "name": "Regular Salad, Celery",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544582",
+      "name": "Regular Salad, Chick Peas",
+      "calories": 20,
+      "protein": 1,
+      "carbs": 3,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544550",
+      "name": "Regular Salad, Chipotle Ranch",
+      "calories": 220,
+      "protein": 1,
+      "carbs": 2,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544584",
+      "name": "Regular Salad, Chopped Bacon",
+      "calories": 45,
+      "protein": 3,
+      "carbs": 0,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544583",
+      "name": "Regular Salad, Chopped Egg",
+      "calories": 40,
+      "protein": 3,
+      "carbs": 0,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544543",
+      "name": "Regular Salad, Classic Caesar",
+      "calories": 290,
+      "protein": 4,
+      "carbs": 1,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544567",
+      "name": "Regular Salad, Corn",
+      "calories": 20,
+      "protein": 1,
+      "carbs": 4,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544585",
+      "name": "Regular Salad, Croutons",
+      "calories": 60,
+      "protein": 1,
+      "carbs": 5,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544568",
+      "name": "Regular Salad, Cucumber",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544555",
+      "name": "Regular Salad, Dried Cranberries",
+      "calories": 70,
+      "protein": 0,
+      "carbs": 16,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544569",
+      "name": "Regular Salad, Edamame",
+      "calories": 25,
+      "protein": 3,
+      "carbs": 2,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544597",
+      "name": "Regular Salad, Extra Croissant",
+      "calories": 100,
+      "protein": 3,
+      "carbs": 14,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544530",
+      "name": "Regular Salad, Falafel",
+      "calories": 130,
+      "protein": 7,
+      "carbs": 21,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544547",
+      "name": "Regular Salad, Fat-Free Mango",
+      "calories": 40,
+      "protein": 1,
+      "carbs": 9,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544544",
+      "name": "Regular Salad, Fat-Free Sun-Dried Tomato",
+      "calories": 10,
+      "protein": 1,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544588",
+      "name": "Regular Salad, Feta Cheese",
+      "calories": 45,
+      "protein": 3,
+      "carbs": 1,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544540",
+      "name": "Regular Salad, Fresh Herb Vinaigrette",
+      "calories": 290,
+      "protein": 1,
+      "carbs": 6,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544542",
+      "name": "Regular Salad, Ginger Lime",
+      "calories": 300,
+      "protein": 1,
+      "carbs": 8,
+      "fat": 29,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544556",
+      "name": "Regular Salad, Grapes",
+      "calories": 20,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544570",
+      "name": "Regular Salad, Green Peas",
+      "calories": 15,
+      "protein": 1,
+      "carbs": 3,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544523",
+      "name": "Regular Salad, Grilled Chicken",
+      "calories": 190,
+      "protein": 35,
+      "carbs": 0,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544545",
+      "name": "Regular Salad, Honey Mustard",
+      "calories": 270,
+      "protein": 0,
+      "carbs": 9,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544539",
+      "name": "Regular Salad, Iceberg",
+      "calories": 35,
+      "protein": 2,
+      "carbs": 8,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544580",
+      "name": "Regular Salad, Jalapeno",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544553",
+      "name": "Regular Salad, Jalapeno Avocado",
+      "calories": 160,
+      "protein": 1,
+      "carbs": 2,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544571",
+      "name": "Regular Salad, Jalepeno",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544572",
+      "name": "Regular Salad, Jicama",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544536",
+      "name": "Regular Salad, Kale",
+      "calories": 30,
+      "protein": 3,
+      "carbs": 6,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544528",
+      "name": "Regular Salad, Krabmeat",
+      "calories": 170,
+      "protein": 9,
+      "carbs": 19,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544548",
+      "name": "Regular Salad, Lemon Vinaigrette",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544557",
+      "name": "Regular Salad, Mandarin Orange",
+      "calories": 20,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544589",
+      "name": "Regular Salad, Mixed Cheese",
+      "calories": 40,
+      "protein": 3,
+      "carbs": 0,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544573",
+      "name": "Regular Salad, Mushroom",
+      "calories": 5,
+      "protein": 1,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544549",
+      "name": "Regular Salad, Oil & Vinegar",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544551",
+      "name": "Regular Salad, Olive Oil",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544574",
+      "name": "Regular Salad, Olives - Black",
+      "calories": 35,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544575",
+      "name": "Regular Salad, Olives - Green",
+      "calories": 40,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544590",
+      "name": "Regular Salad, Parmesan Cheese",
+      "calories": 50,
+      "protein": 4,
+      "carbs": 0,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544586",
+      "name": "Regular Salad, Pasta",
+      "calories": 60,
+      "protein": 2,
+      "carbs": 9,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544601",
+      "name": "Regular Salad, Pickled Okra",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544602",
+      "name": "Regular Salad, Pickles",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544558",
+      "name": "Regular Salad, Pineapple",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544592",
+      "name": "Regular Salad, Pumpkin Seed",
+      "calories": 45,
+      "protein": 2,
+      "carbs": 1,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544531",
+      "name": "Regular Salad, Quinoa",
+      "calories": 100,
+      "protein": 4,
+      "carbs": 18,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544576",
+      "name": "Regular Salad, Radish",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544577",
+      "name": "Regular Salad, Red Onion",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544534",
+      "name": "Regular Salad, Romaine Hearts",
+      "calories": 30,
+      "protein": 2,
+      "carbs": 6,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544533",
+      "name": "Regular Salad, Salata Mix",
+      "calories": 40,
+      "protein": 2,
+      "carbs": 8,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544527",
+      "name": "Regular Salad, Salmon",
+      "calories": 190,
+      "protein": 14,
+      "carbs": 0,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544529",
+      "name": "Regular Salad, Seafood Mix",
+      "calories": 150,
+      "protein": 10,
+      "carbs": 14,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544587",
+      "name": "Regular Salad, Sesame Sticks",
+      "calories": 70,
+      "protein": 1,
+      "carbs": 6,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544526",
+      "name": "Regular Salad, Shrimp",
+      "calories": 100,
+      "protein": 16,
+      "carbs": 1,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544524",
+      "name": "Regular Salad, Spicy Chipotle Chicken",
+      "calories": 190,
+      "protein": 32,
+      "carbs": 1,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544600",
+      "name": "Regular Salad, Spicy Giardiniera",
+      "calories": 30,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544537",
+      "name": "Regular Salad, Spinach",
+      "calories": 20,
+      "protein": 2,
+      "carbs": 3,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544532",
+      "name": "Regular Salad, Steak",
+      "calories": 190,
+      "protein": 17,
+      "carbs": 2,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544559",
+      "name": "Regular Salad, Strawberry",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544578",
+      "name": "Regular Salad, Sun-Dried Tomatoes",
+      "calories": 30,
+      "protein": 1,
+      "carbs": 6,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544579",
+      "name": "Regular Salad, Tomato",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544598",
+      "name": "Regular Salad, Tortilla Strips",
+      "calories": 100,
+      "protein": 2,
+      "carbs": 17,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544525",
+      "name": "Regular Salad, Turkey",
+      "calories": 90,
+      "protein": 20,
+      "carbs": 1,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544593",
+      "name": "Regular Salad, Walnuts",
+      "calories": 50,
+      "protein": 1,
+      "carbs": 1,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Regular Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544672",
+      "name": "Small Salad, Almonds",
+      "calories": 40,
+      "protein": 2,
+      "carbs": 2,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544635",
+      "name": "Small Salad, Apple",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544616",
+      "name": "Small Salad, Arcadian Mix",
+      "calories": 10,
+      "protein": 1,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544680",
+      "name": "Small Salad, Artichoke",
+      "calories": 40,
+      "protein": 2,
+      "carbs": 4,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544676",
+      "name": "Small Salad, Artichoke Hearts",
+      "calories": 40,
+      "protein": 2,
+      "carbs": 4,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544619",
+      "name": "Small Salad, Arugula",
+      "calories": 15,
+      "protein": 1,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544675",
+      "name": "Small Salad, Avocado",
+      "calories": 140,
+      "protein": 2,
+      "carbs": 6,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544677",
+      "name": "Small Salad, Baked Pita Strips",
+      "calories": 70,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544627",
+      "name": "Small Salad, Balsamic Vinaigrette",
+      "calories": 290,
+      "protein": 0,
+      "carbs": 6,
+      "fat": 29,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544633",
+      "name": "Small Salad, Balsamic Vinegar",
+      "calories": 20,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544641",
+      "name": "Small Salad, Banana Peppers",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544642",
+      "name": "Small Salad, Bean Sprouts",
+      "calories": 5,
+      "protein": 1,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544643",
+      "name": "Small Salad, Beets",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544644",
+      "name": "Small Salad, Bell Peppers",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544662",
+      "name": "Small Salad, Black Beans",
+      "calories": 20,
+      "protein": 1,
+      "carbs": 4,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544645",
+      "name": "Small Salad, Broccoli",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544622",
+      "name": "Small Salad, Buttermilk Ranch",
+      "calories": 230,
+      "protein": 1,
+      "carbs": 2,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544646",
+      "name": "Small Salad, Cabbage",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544647",
+      "name": "Small Salad, Carrots",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544684",
+      "name": "Small Salad, Celery",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544663",
+      "name": "Small Salad, Chick Peas",
+      "calories": 20,
+      "protein": 1,
+      "carbs": 3,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544631",
+      "name": "Small Salad, Chipotle Ranch",
+      "calories": 220,
+      "protein": 1,
+      "carbs": 2,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544665",
+      "name": "Small Salad, Chopped Bacon",
+      "calories": 45,
+      "protein": 3,
+      "carbs": 0,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544664",
+      "name": "Small Salad, Chopped Egg",
+      "calories": 40,
+      "protein": 3,
+      "carbs": 0,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544624",
+      "name": "Small Salad, Classic Caesar",
+      "calories": 290,
+      "protein": 4,
+      "carbs": 1,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544648",
+      "name": "Small Salad, Corn",
+      "calories": 20,
+      "protein": 1,
+      "carbs": 4,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544666",
+      "name": "Small Salad, Croutons",
+      "calories": 60,
+      "protein": 1,
+      "carbs": 5,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544649",
+      "name": "Small Salad, Cucumber",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544636",
+      "name": "Small Salad, Dried Cranberries",
+      "calories": 70,
+      "protein": 0,
+      "carbs": 16,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544650",
+      "name": "Small Salad, Edamame",
+      "calories": 25,
+      "protein": 3,
+      "carbs": 2,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544678",
+      "name": "Small Salad, Extra Croissant",
+      "calories": 100,
+      "protein": 3,
+      "carbs": 14,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544611",
+      "name": "Small Salad, Falafel",
+      "calories": 130,
+      "protein": 7,
+      "carbs": 21,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544628",
+      "name": "Small Salad, Fat-Free Mango",
+      "calories": 40,
+      "protein": 1,
+      "carbs": 9,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544625",
+      "name": "Small Salad, Fat-Free Sun-Dried Tomato",
+      "calories": 10,
+      "protein": 1,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544669",
+      "name": "Small Salad, Feta Cheese",
+      "calories": 45,
+      "protein": 3,
+      "carbs": 1,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544621",
+      "name": "Small Salad, Fresh Herb Vinaigrette",
+      "calories": 290,
+      "protein": 1,
+      "carbs": 6,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544623",
+      "name": "Small Salad, Ginger Lime",
+      "calories": 300,
+      "protein": 1,
+      "carbs": 8,
+      "fat": 29,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544637",
+      "name": "Small Salad, Grapes",
+      "calories": 20,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544651",
+      "name": "Small Salad, Green Peas",
+      "calories": 15,
+      "protein": 1,
+      "carbs": 3,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544604",
+      "name": "Small Salad, Grilled Chicken",
+      "calories": 190,
+      "protein": 35,
+      "carbs": 0,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544626",
+      "name": "Small Salad, Honey Mustard",
+      "calories": 270,
+      "protein": 0,
+      "carbs": 9,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544620",
+      "name": "Small Salad, Iceberg",
+      "calories": 20,
+      "protein": 1,
+      "carbs": 4,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544661",
+      "name": "Small Salad, Jalapeno",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544634",
+      "name": "Small Salad, Jalapeno Avocado",
+      "calories": 160,
+      "protein": 1,
+      "carbs": 2,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544652",
+      "name": "Small Salad, Jalepeno",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544653",
+      "name": "Small Salad, Jicama",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544617",
+      "name": "Small Salad, Kale",
+      "calories": 20,
+      "protein": 2,
+      "carbs": 4,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544609",
+      "name": "Small Salad, Krabmeat",
+      "calories": 170,
+      "protein": 9,
+      "carbs": 19,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544629",
+      "name": "Small Salad, Lemon Vinaigrette",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544638",
+      "name": "Small Salad, Mandarin Orange",
+      "calories": 20,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544670",
+      "name": "Small Salad, Mixed Cheese",
+      "calories": 40,
+      "protein": 3,
+      "carbs": 0,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544654",
+      "name": "Small Salad, Mushroom",
+      "calories": 5,
+      "protein": 1,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544630",
+      "name": "Small Salad, Oil & Vinegar",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544632",
+      "name": "Small Salad, Olive Oil",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544655",
+      "name": "Small Salad, Olives - Black",
+      "calories": 35,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544656",
+      "name": "Small Salad, Olives - Green",
+      "calories": 40,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544671",
+      "name": "Small Salad, Parmesan Cheese",
+      "calories": 50,
+      "protein": 4,
+      "carbs": 0,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544667",
+      "name": "Small Salad, Pasta",
+      "calories": 60,
+      "protein": 2,
+      "carbs": 9,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544682",
+      "name": "Small Salad, Pickled Okra",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544683",
+      "name": "Small Salad, Pickles",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544639",
+      "name": "Small Salad, Pineapple",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544673",
+      "name": "Small Salad, Pumpkin Seed",
+      "calories": 45,
+      "protein": 2,
+      "carbs": 1,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544612",
+      "name": "Small Salad, Quinoa",
+      "calories": 100,
+      "protein": 4,
+      "carbs": 18,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544657",
+      "name": "Small Salad, Radish",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544658",
+      "name": "Small Salad, Red Onion",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544615",
+      "name": "Small Salad, Romaine Hearts",
+      "calories": 15,
+      "protein": 1,
+      "carbs": 3,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544614",
+      "name": "Small Salad, Salata Mix",
+      "calories": 20,
+      "protein": 1,
+      "carbs": 4,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544608",
+      "name": "Small Salad, Salmon",
+      "calories": 190,
+      "protein": 14,
+      "carbs": 0,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544610",
+      "name": "Small Salad, Seafood Mix",
+      "calories": 150,
+      "protein": 10,
+      "carbs": 14,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544668",
+      "name": "Small Salad, Sesame Sticks",
+      "calories": 70,
+      "protein": 1,
+      "carbs": 6,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544607",
+      "name": "Small Salad, Shrimp",
+      "calories": 100,
+      "protein": 16,
+      "carbs": 1,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544605",
+      "name": "Small Salad, Spicy Chipotle Chicken",
+      "calories": 190,
+      "protein": 32,
+      "carbs": 1,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544681",
+      "name": "Small Salad, Spicy Giardiniera",
+      "calories": 30,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544618",
+      "name": "Small Salad, Spinach",
+      "calories": 10,
+      "protein": 2,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544613",
+      "name": "Small Salad, Steak",
+      "calories": 190,
+      "protein": 17,
+      "carbs": 2,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544640",
+      "name": "Small Salad, Strawberry",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544659",
+      "name": "Small Salad, Sun-Dried Tomatoes",
+      "calories": 30,
+      "protein": 1,
+      "carbs": 6,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544660",
+      "name": "Small Salad, Tomato",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544679",
+      "name": "Small Salad, Tortilla Strips",
+      "calories": 100,
+      "protein": 2,
+      "carbs": 17,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544606",
+      "name": "Small Salad, Turkey",
+      "calories": 90,
+      "protein": 20,
+      "carbs": 1,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544674",
+      "name": "Small Salad, Walnuts",
+      "calories": 50,
+      "protein": 1,
+      "carbs": 1,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Small Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-544753",
+      "name": "Wrap, Almonds",
+      "calories": 40,
+      "protein": 2,
+      "carbs": 2,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544716",
+      "name": "Wrap, Apple",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544697",
+      "name": "Wrap, Arcadian Mix",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544767",
+      "name": "Wrap, Artichoke",
+      "calories": 40,
+      "protein": 2,
+      "carbs": 4,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544757",
+      "name": "Wrap, Artichoke Hearts",
+      "calories": 40,
+      "protein": 2,
+      "carbs": 4,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544700",
+      "name": "Wrap, Arugula",
+      "calories": 5,
+      "protein": 1,
+      "carbs": 1,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544756",
+      "name": "Wrap, Avocado",
+      "calories": 140,
+      "protein": 2,
+      "carbs": 6,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544764",
+      "name": "Wrap, Baked Pita Strips",
+      "calories": 70,
+      "protein": 2,
+      "carbs": 10,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544708",
+      "name": "Wrap, Balsamic Vinaigrette",
+      "calories": 290,
+      "protein": 0,
+      "carbs": 6,
+      "fat": 29,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544714",
+      "name": "Wrap, Balsamic Vinegar",
+      "calories": 20,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544722",
+      "name": "Wrap, Banana Peppers",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544723",
+      "name": "Wrap, Bean Sprouts",
+      "calories": 5,
+      "protein": 1,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544724",
+      "name": "Wrap, Beets",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544725",
+      "name": "Wrap, Bell Peppers",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544743",
+      "name": "Wrap, Black Beans",
+      "calories": 20,
+      "protein": 1,
+      "carbs": 4,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544726",
+      "name": "Wrap, Broccoli",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544703",
+      "name": "Wrap, Buttermilk Ranch",
+      "calories": 230,
+      "protein": 1,
+      "carbs": 2,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544727",
+      "name": "Wrap, Cabbage",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544728",
+      "name": "Wrap, Carrots",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544771",
+      "name": "Wrap, Celery",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544744",
+      "name": "Wrap, Chick Peas",
+      "calories": 20,
+      "protein": 1,
+      "carbs": 3,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544712",
+      "name": "Wrap, Chipotle Ranch",
+      "calories": 220,
+      "protein": 1,
+      "carbs": 2,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544746",
+      "name": "Wrap, Chopped Bacon",
+      "calories": 45,
+      "protein": 3,
+      "carbs": 0,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544745",
+      "name": "Wrap, Chopped Egg",
+      "calories": 40,
+      "protein": 3,
+      "carbs": 0,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544705",
+      "name": "Wrap, Classic Caesar",
+      "calories": 290,
+      "protein": 4,
+      "carbs": 1,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544758",
+      "name": "Wrap, Cool Cucumber",
+      "calories": 280,
+      "protein": 10,
+      "carbs": 55,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544729",
+      "name": "Wrap, Corn",
+      "calories": 20,
+      "protein": 1,
+      "carbs": 4,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544763",
+      "name": "Wrap, Croissant",
+      "calories": 100,
+      "protein": 2,
+      "carbs": 12,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544747",
+      "name": "Wrap, Croutons",
+      "calories": 60,
+      "protein": 1,
+      "carbs": 5,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544730",
+      "name": "Wrap, Cucumber",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544717",
+      "name": "Wrap, Dried Cranberries",
+      "calories": 50,
+      "protein": 0,
+      "carbs": 12,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544731",
+      "name": "Wrap, Edamame",
+      "calories": 25,
+      "protein": 2,
+      "carbs": 2,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544765",
+      "name": "Wrap, Extra Croissant",
+      "calories": 100,
+      "protein": 3,
+      "carbs": 14,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544692",
+      "name": "Wrap, Falafel",
+      "calories": 130,
+      "protein": 7,
+      "carbs": 21,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544709",
+      "name": "Wrap, Fat-Free Mango",
+      "calories": 40,
+      "protein": 1,
+      "carbs": 9,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544706",
+      "name": "Wrap, Fat-Free Sun-Dried Tomato",
+      "calories": 10,
+      "protein": 1,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544750",
+      "name": "Wrap, Feta Cheese",
+      "calories": 45,
+      "protein": 3,
+      "carbs": 1,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544702",
+      "name": "Wrap, Fresh Herb Vinaigrette",
+      "calories": 290,
+      "protein": 1,
+      "carbs": 6,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544704",
+      "name": "Wrap, Ginger Lime",
+      "calories": 300,
+      "protein": 1,
+      "carbs": 8,
+      "fat": 29,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544718",
+      "name": "Wrap, Grapes",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544732",
+      "name": "Wrap, Green Peas",
+      "calories": 15,
+      "protein": 1,
+      "carbs": 3,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544685",
+      "name": "Wrap, Grilled Chicken",
+      "calories": 190,
+      "protein": 35,
+      "carbs": 0,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544707",
+      "name": "Wrap, Honey Mustard",
+      "calories": 270,
+      "protein": 0,
+      "carbs": 9,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544701",
+      "name": "Wrap, Iceberg",
+      "calories": 35,
+      "protein": 2,
+      "carbs": 8,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544742",
+      "name": "Wrap, Jalapeno",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544715",
+      "name": "Wrap, Jalapeno Avocado",
+      "calories": 160,
+      "protein": 1,
+      "carbs": 2,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544733",
+      "name": "Wrap, Jalepeno",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544734",
+      "name": "Wrap, Jicama",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544698",
+      "name": "Wrap, Kale",
+      "calories": 10,
+      "protein": 1,
+      "carbs": 1,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544690",
+      "name": "Wrap, Krabmeat",
+      "calories": 170,
+      "protein": 9,
+      "carbs": 19,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544710",
+      "name": "Wrap, Lemon Vinaigrette",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544719",
+      "name": "Wrap, Mandarin Orange",
+      "calories": 20,
+      "protein": 0,
+      "carbs": 6,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544751",
+      "name": "Wrap, Mixed Cheese",
+      "calories": 40,
+      "protein": 3,
+      "carbs": 0,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544735",
+      "name": "Wrap, Mushroom",
+      "calories": 5,
+      "protein": 1,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544711",
+      "name": "Wrap, Oil & Vinegar",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544713",
+      "name": "Wrap, Olive Oil",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544736",
+      "name": "Wrap, Olives - Black",
+      "calories": 35,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544737",
+      "name": "Wrap, Olives - Green",
+      "calories": 40,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544752",
+      "name": "Wrap, Parmesan Cheese",
+      "calories": 50,
+      "protein": 4,
+      "carbs": 0,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544748",
+      "name": "Wrap, Pasta",
+      "calories": 60,
+      "protein": 2,
+      "carbs": 9,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544769",
+      "name": "Wrap, Pickled Okra",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544770",
+      "name": "Wrap, Pickles",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544720",
+      "name": "Wrap, Pineapple",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544754",
+      "name": "Wrap, Pumpkin Seed",
+      "calories": 45,
+      "protein": 2,
+      "carbs": 1,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544693",
+      "name": "Wrap, Quinoa",
+      "calories": 100,
+      "protein": 4,
+      "carbs": 18,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544738",
+      "name": "Wrap, Radish",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544739",
+      "name": "Wrap, Red Onion",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544696",
+      "name": "Wrap, Romaine Hearts",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544695",
+      "name": "Wrap, Salata Mix",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544689",
+      "name": "Wrap, Salmon",
+      "calories": 190,
+      "protein": 14,
+      "carbs": 0,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544691",
+      "name": "Wrap, Seafood Mix",
+      "calories": 150,
+      "protein": 10,
+      "carbs": 14,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544749",
+      "name": "Wrap, Sesame Sticks",
+      "calories": 60,
+      "protein": 1,
+      "carbs": 6,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544688",
+      "name": "Wrap, Shrimp",
+      "calories": 100,
+      "protein": 16,
+      "carbs": 1,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544761",
+      "name": "Wrap, Southwest",
+      "calories": 310,
+      "protein": 9,
+      "carbs": 50,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544686",
+      "name": "Wrap, Spicy Chipotle Chicken",
+      "calories": 190,
+      "protein": 32,
+      "carbs": 1,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544768",
+      "name": "Wrap, Spicy Giardiniera",
+      "calories": 30,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544699",
+      "name": "Wrap, Spinach",
+      "calories": 5,
+      "protein": 1,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544694",
+      "name": "Wrap, Steak",
+      "calories": 190,
+      "protein": 17,
+      "carbs": 2,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544721",
+      "name": "Wrap, Strawberry",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544740",
+      "name": "Wrap, Sun-Dried Tomatoes",
+      "calories": 30,
+      "protein": 1,
+      "carbs": 6,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544762",
+      "name": "Wrap, Texas BBQ",
+      "calories": 310,
+      "protein": 9,
+      "carbs": 50,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544759",
+      "name": "Wrap, Thai Ginger",
+      "calories": 310,
+      "protein": 9,
+      "carbs": 50,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544741",
+      "name": "Wrap, Tomato",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544766",
+      "name": "Wrap, Tortilla Strips",
+      "calories": 100,
+      "protein": 2,
+      "carbs": 17,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544687",
+      "name": "Wrap, Turkey",
+      "calories": 90,
+      "protein": 20,
+      "carbs": 1,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544755",
+      "name": "Wrap, Walnuts",
+      "calories": 50,
+      "protein": 1,
+      "carbs": 1,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544760",
+      "name": "Wrap, Wheat",
+      "calories": 310,
+      "protein": 9,
+      "carbs": 50,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-544773",
+      "name": "Oatmeal Raisin Cookie",
+      "calories": 170,
+      "protein": 3,
+      "carbs": 24,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-544772",
+      "name": "Peanut Butter Cookie",
+      "calories": 200,
+      "protein": 4,
+      "carbs": 21,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-544775",
+      "name": "Pumpkin Puff Cookie",
+      "calories": 230,
+      "protein": 3,
+      "carbs": 25,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-544774",
+      "name": "White Chocolate Macadamia Cookie",
+      "calories": 200,
+      "protein": 2,
+      "carbs": 22,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-544781",
+      "name": "Low Sugar Lemonade",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-544782",
+      "name": "Mango Habanero Lemonade",
+      "calories": 110,
+      "protein": 0,
+      "carbs": 27,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-544777",
+      "name": "Peach Lemonade",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 38,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-544780",
+      "name": "Pomegranate Tea",
+      "calories": 5,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-544779",
+      "name": "Prickly Pear Limeade",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 38,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-544778",
+      "name": "Raspberry Lemonade",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 38,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-544783",
+      "name": "Sangria Lemonade",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 29,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-544785",
+      "name": "Artichoke Heart",
+      "calories": 40,
+      "protein": 2,
+      "carbs": 4,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Extras; size in item name)"
+    },
+    {
+      "id": "nutritionix-544784",
+      "name": "Avocado",
+      "calories": 80,
+      "protein": 1,
+      "carbs": 4,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Extras; size in item name)"
+    },
+    {
+      "id": "nutritionix-544786",
+      "name": "Bread",
+      "calories": 120,
+      "protein": 3,
+      "carbs": 14,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Extras; size in item name)"
+    }
+  ],
+  "sourceDate": "2024-07-02"
+}

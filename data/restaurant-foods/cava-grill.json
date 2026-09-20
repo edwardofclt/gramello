@@ -1,0 +1,1099 @@
+{
+  "chain": "CAVA",
+  "sourceUrl": "https://www.nutritionix.com/cava-grill/menu/premium",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "name": "Chicken & Rice Bowl",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 710.0,
+      "fat": 42.0,
+      "carbs": 43.0,
+      "protein": 40.0,
+      "id": "chicken-rice-bowl-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Falafel Crunch Bowl",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 860.0,
+      "fat": 56.0,
+      "carbs": 88.0,
+      "protein": 24.0,
+      "id": "falafel-crunch-bowl-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Garlicky Chicken Shawarma Bowl",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 600.0,
+      "fat": 34.0,
+      "carbs": 50.0,
+      "protein": 27.0,
+      "id": "garlicky-chicken-shawarma-bowl-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Greek Salad Bowl",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 590.0,
+      "fat": 40.0,
+      "carbs": 19.0,
+      "protein": 37.0,
+      "id": "greek-salad-bowl-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Harissa Avocado Bowl",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 840.0,
+      "fat": 50.0,
+      "carbs": 63.0,
+      "protein": 42.0,
+      "id": "harissa-avocado-bowl-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Spicy Lamb & Avocado Bowl",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 800.0,
+      "fat": 53.0,
+      "carbs": 50.0,
+      "protein": 43.0,
+      "id": "spicy-lamb-avocado-bowl-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Steak & Harissa Bowl",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 620.0,
+      "fat": 36.0,
+      "carbs": 39.0,
+      "protein": 36.0,
+      "id": "steak-harissa-bowl-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chicken Shawarma Pita",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 630.0,
+      "fat": 26.0,
+      "carbs": 69.0,
+      "protein": 33.0,
+      "id": "chicken-shawarma-pita-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Crispy Falafel Pita",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 950.0,
+      "fat": 58.0,
+      "carbs": 88.0,
+      "protein": 22.0,
+      "id": "crispy-falafel-pita-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Garlic Chicken & Veggie Pita",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 790.0,
+      "fat": 44.0,
+      "carbs": 68.0,
+      "protein": 35.0,
+      "id": "garlic-chicken-veggie-pita-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Greek Chicken Pita",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 870.0,
+      "fat": 45.0,
+      "carbs": 68.0,
+      "protein": 48.0,
+      "id": "greek-chicken-pita-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Spicy Chicken & Avocado Pita",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 970.0,
+      "fat": 52.0,
+      "carbs": 84.0,
+      "protein": 51.0,
+      "id": "spicy-chicken-avocado-pita-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Steak & Feta Pita",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 810.0,
+      "fat": 40.0,
+      "carbs": 66.0,
+      "protein": 45.0,
+      "id": "steak-feta-pita-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Arugula Base",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 20.0,
+      "fat": 0.5,
+      "carbs": 3.0,
+      "protein": 2.0,
+      "id": "arugula-base-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Baby Spinach Base",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 20.0,
+      "fat": 0.0,
+      "carbs": 3.0,
+      "protein": 3.0,
+      "id": "baby-spinach-base-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Black Lentils Base",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 270.0,
+      "fat": 7.0,
+      "carbs": 37.0,
+      "protein": 18.0,
+      "id": "black-lentils-base-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Brown Rice Base",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 310.0,
+      "fat": 10.0,
+      "carbs": 48.0,
+      "protein": 7.0,
+      "id": "brown-rice-base-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Romaine Base",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 20.0,
+      "fat": 0.0,
+      "carbs": 4.0,
+      "protein": 1.0,
+      "id": "romaine-base-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Saffron Basmati Rice Base",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 290.0,
+      "fat": 7.0,
+      "carbs": 54.0,
+      "protein": 5.0,
+      "id": "saffron-basmati-rice-base-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "SplendidGreens Base",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 20.0,
+      "fat": 0.0,
+      "carbs": 4.0,
+      "protein": 1.0,
+      "id": "splendidgreens-base-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "SuperGreens Base",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 40.0,
+      "fat": 0.5,
+      "carbs": 8.0,
+      "protein": 3.0,
+      "id": "supergreens-base-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Braised Lamb Protein",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 210.0,
+      "fat": 12.0,
+      "carbs": 2.0,
+      "protein": 24.0,
+      "id": "braised-lamb-protein-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chicken Shawarma Protein",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 100.0,
+      "fat": 3.0,
+      "carbs": 1.0,
+      "protein": 16.0,
+      "id": "chicken-shawarma-protein-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Falafel Protein",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 350.0,
+      "fat": 26.0,
+      "carbs": 24.0,
+      "protein": 6.0,
+      "id": "falafel-protein-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Glazed Salmon Protein",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 320.0,
+      "fat": 23.0,
+      "carbs": 5.0,
+      "protein": 23.0,
+      "id": "glazed-salmon-protein-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Grilled Chicken Protein",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 250.0,
+      "fat": 13.0,
+      "carbs": 3.0,
+      "protein": 28.0,
+      "id": "grilled-chicken-protein-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Grilled Steak Protein",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 170.0,
+      "fat": 9.0,
+      "carbs": 1.0,
+      "protein": 23.0,
+      "id": "grilled-steak-protein-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Harissa Honey Chicken Protein",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 260.0,
+      "fat": 14.0,
+      "carbs": 7.0,
+      "protein": 26.0,
+      "id": "harissa-honey-chicken-protein-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Roasted Vegetables Protein",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 100.0,
+      "fat": 4.5,
+      "carbs": 14.0,
+      "protein": 3.0,
+      "id": "roasted-vegetables-protein-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Spicy Lamb Meatballs Protein",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 300.0,
+      "fat": 21.0,
+      "carbs": 3.0,
+      "protein": 24.0,
+      "id": "spicy-lamb-meatballs-protein-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Carrot Sticks",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 40.0,
+      "fat": 0.0,
+      "carbs": 10.0,
+      "protein": 1.0,
+      "id": "carrot-sticks-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Black Lentils",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 130.0,
+      "fat": 3.5,
+      "carbs": 18.0,
+      "protein": 9.0,
+      "id": "kids-black-lentils-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Braised Lamb",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 110.0,
+      "fat": 6.0,
+      "carbs": 1.0,
+      "protein": 12.0,
+      "id": "kids-braised-lamb-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Brown Rice",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 150.0,
+      "fat": 5.0,
+      "carbs": 24.0,
+      "protein": 3.0,
+      "id": "kids-brown-rice-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Chicken",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 120.0,
+      "fat": 7.0,
+      "carbs": 1.0,
+      "protein": 14.0,
+      "id": "kids-chicken-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Chicken Shawarma",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 50.0,
+      "fat": 1.5,
+      "carbs": 1.0,
+      "protein": 8.0,
+      "id": "kids-chicken-shawarma-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Falafel",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 170.0,
+      "fat": 13.0,
+      "carbs": 12.0,
+      "protein": 3.0,
+      "id": "kids-falafel-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Grilled Steak",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 90.0,
+      "fat": 4.5,
+      "carbs": 0.0,
+      "protein": 11.0,
+      "id": "kids-grilled-steak-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Harissa Honey Chicken",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 130.0,
+      "fat": 7.0,
+      "carbs": 4.0,
+      "protein": 13.0,
+      "id": "kids-harissa-honey-chicken-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Hot Harissa Pita Chips",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 140.0,
+      "fat": 4.5,
+      "carbs": 20.0,
+      "protein": 5.0,
+      "id": "kids-hot-harissa-pita-chips-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Mini Pita",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 160.0,
+      "fat": 3.0,
+      "carbs": 27.0,
+      "protein": 7.0,
+      "id": "kids-mini-pita-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Pita Chips",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 130.0,
+      "fat": 4.0,
+      "carbs": 20.0,
+      "protein": 5.0,
+      "id": "kids-pita-chips-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Roasted Vegetables",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 50.0,
+      "fat": 2.0,
+      "carbs": 7.0,
+      "protein": 2.0,
+      "id": "kids-roasted-vegetables-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Saffron Basmati Rice",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 150.0,
+      "fat": 3.5,
+      "carbs": 27.0,
+      "protein": 3.0,
+      "id": "kids-saffron-basmati-rice-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Spicy Lamb Meatballs",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 150.0,
+      "fat": 11.0,
+      "carbs": 2.0,
+      "protein": 12.0,
+      "id": "kids-spicy-lamb-meatballs-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Avocado Topping",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 110.0,
+      "fat": 11.0,
+      "carbs": 7.0,
+      "protein": 2.0,
+      "id": "avocado-topping-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Cabbage Slaw Topping",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 35.0,
+      "fat": 3.0,
+      "carbs": 2.0,
+      "protein": 0.0,
+      "id": "cabbage-slaw-topping-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Crumbled Feta Topping",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 35.0,
+      "fat": 2.5,
+      "carbs": 0.0,
+      "protein": 3.0,
+      "id": "crumbled-feta-topping-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Fiery Broccoli Topping",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 35.0,
+      "fat": 2.5,
+      "carbs": 2.0,
+      "protein": 1.0,
+      "id": "fiery-broccoli-topping-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Fire-Roasted Corn Topping",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 45.0,
+      "fat": 2.5,
+      "carbs": 5.0,
+      "protein": 1.0,
+      "id": "fire-roasted-corn-topping-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kalamata Olives Topping",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 35.0,
+      "fat": 3.0,
+      "carbs": 2.0,
+      "protein": 0.0,
+      "id": "kalamata-olives-topping-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Persian Cucumber Topping",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 15.0,
+      "fat": 1.0,
+      "carbs": 1.0,
+      "protein": 0.0,
+      "id": "persian-cucumber-topping-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Pickled Onions Topping",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 20.0,
+      "fat": 0.0,
+      "carbs": 5.0,
+      "protein": 0.0,
+      "id": "pickled-onions-topping-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Pita Crisps Topping",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 70.0,
+      "fat": 11.0,
+      "carbs": 6.0,
+      "protein": 1.0,
+      "id": "pita-crisps-topping-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Salt-Brined Pickles Topping",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 5.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "salt-brined-pickles-topping-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Shredded Romaine Topping",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 5.0,
+      "fat": 0.0,
+      "carbs": 1.0,
+      "protein": 0.0,
+      "id": "shredded-romaine-topping-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Tomato & Cucumber Topping",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 5.0,
+      "fat": 0.0,
+      "carbs": 1.0,
+      "protein": 0.0,
+      "id": "tomato-cucumber-topping-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Tomato & Onion Topping",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 20.0,
+      "fat": 1.5,
+      "carbs": 2.0,
+      "protein": 0.0,
+      "id": "tomato-onion-topping-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Crazy Feta Dip & Spread",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 70.0,
+      "fat": 6.0,
+      "carbs": 1.0,
+      "protein": 4.0,
+      "id": "crazy-feta-dip-spread-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Harissa Dip & Spread",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 70.0,
+      "fat": 6.0,
+      "carbs": 5.0,
+      "protein": 1.0,
+      "id": "harissa-dip-spread-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Hummus Dip & Spread",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 45.0,
+      "fat": 2.5,
+      "carbs": 4.0,
+      "protein": 2.0,
+      "id": "hummus-dip-spread-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Red Pepper Hummus Dip & Spread",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 40.0,
+      "fat": 1.5,
+      "carbs": 5.0,
+      "protein": 2.0,
+      "id": "red-pepper-hummus-dip-spread-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Roasted Eggplant Dip & Spread",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 50.0,
+      "fat": 5.0,
+      "carbs": 2.0,
+      "protein": 0.0,
+      "id": "roasted-eggplant-dip-spread-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Tzatziki Dip & Spread",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 35.0,
+      "fat": 2.5,
+      "carbs": 1.0,
+      "protein": 2.0,
+      "id": "tzatziki-dip-spread-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Balsamic Date Vinaigrette Dressing",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 60.0,
+      "fat": 4.0,
+      "carbs": 7.0,
+      "protein": 0.0,
+      "id": "balsamic-date-vinaigrette-dressing-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Garlic Dressing",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 180.0,
+      "fat": 20.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "garlic-dressing-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Greek Vinaigrette Dressing",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 130.0,
+      "fat": 14.0,
+      "carbs": 1.0,
+      "protein": 0.0,
+      "id": "greek-vinaigrette-dressing-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Hot Harissa Vinaigrette Dressing",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 70.0,
+      "fat": 7.0,
+      "carbs": 1.0,
+      "protein": 0.0,
+      "id": "hot-harissa-vinaigrette-dressing-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Lemon-Herb Tahini Dressing",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 70.0,
+      "fat": 6.0,
+      "carbs": 4.0,
+      "protein": 2.0,
+      "id": "lemon-herb-tahini-dressing-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Skhug Dressing",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 80.0,
+      "fat": 9.0,
+      "carbs": 1.0,
+      "protein": 0.0,
+      "id": "skhug-dressing-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Tahini Caesar Dressing",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 90.0,
+      "fat": 8.0,
+      "carbs": 3.0,
+      "protein": 2.0,
+      "id": "tahini-caesar-dressing-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Yogurt Dill Dressing",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 30.0,
+      "fat": 2.0,
+      "carbs": 1.0,
+      "protein": 2.0,
+      "id": "yogurt-dill-dressing-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Greyston Brownie",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 150.0,
+      "fat": 9.0,
+      "carbs": 17.0,
+      "protein": 2.0,
+      "id": "greyston-brownie-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Greyston Chocolate Chip Blondie",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 140.0,
+      "fat": 5.0,
+      "carbs": 22.0,
+      "protein": 2.0,
+      "id": "greyston-chocolate-chip-blondie-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Pita Chips",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 270.0,
+      "fat": 8.0,
+      "carbs": 40.0,
+      "protein": 10.0,
+      "id": "pita-chips-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Side Pita",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 80.0,
+      "fat": 1.5,
+      "carbs": 13.0,
+      "protein": 3.0,
+      "id": "side-pita-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Whisked! Apricot Honey",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 270.0,
+      "fat": 11.0,
+      "carbs": 42.0,
+      "protein": 3.0,
+      "id": "whisked-apricot-honey-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Whisked! Salted Dark Chocolate Oat Cookie (DMV)",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 290.0,
+      "fat": 15.0,
+      "carbs": 37.0,
+      "protein": 4.0,
+      "id": "whisked-salted-dark-chocolate-oat-cookie-dmv-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Whole Pita",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 310.0,
+      "fat": 6.0,
+      "carbs": 53.0,
+      "protein": 13.0,
+      "id": "whole-pita-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Black Tea Unsweetened, Kids (12 oz)",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "black-tea-unsweetened-kids-12-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Black Tea Unsweetened, Large (22 oz)",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "black-tea-unsweetened-large-22-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Black Tea Unsweetened, Small (16 oz)",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "black-tea-unsweetened-small-16-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Blueberry Lavender, Kids (12 oz)",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 110.0,
+      "fat": 0.0,
+      "carbs": 27.0,
+      "protein": 0.0,
+      "id": "blueberry-lavender-kids-12-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Blueberry Lavender, Large (22 oz)",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 190.0,
+      "fat": 0.0,
+      "carbs": 50.0,
+      "protein": 0.0,
+      "id": "blueberry-lavender-large-22-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Blueberry Lavender, Small (16 oz)",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 140.0,
+      "fat": 0.0,
+      "carbs": 36.0,
+      "protein": 0.0,
+      "id": "blueberry-lavender-small-16-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Classic Lemonade (CA), Kids (12 oz)",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 160.0,
+      "fat": 0.0,
+      "carbs": 41.0,
+      "protein": 0.0,
+      "id": "classic-lemonade-ca-kids-12-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Classic Lemonade (CA), Large (22 oz)",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 290.0,
+      "fat": 0.0,
+      "carbs": 75.0,
+      "protein": 0.0,
+      "id": "classic-lemonade-ca-large-22-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Classic Lemonade (CA), Small (16 oz)",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 210.0,
+      "fat": 0.0,
+      "carbs": 55.0,
+      "protein": 0.0,
+      "id": "classic-lemonade-ca-small-16-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Classic Lemonade, Kids (12 oz)",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 200.0,
+      "fat": 0.0,
+      "carbs": 52.0,
+      "protein": 0.0,
+      "id": "classic-lemonade-kids-12-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Classic Lemonade, Large (22 oz)",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 360.0,
+      "fat": 0.0,
+      "carbs": 95.0,
+      "protein": 0.0,
+      "id": "classic-lemonade-large-22-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Classic Lemonade, Small (16 oz)",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 260.0,
+      "fat": 0.0,
+      "carbs": 69.0,
+      "protein": 0.0,
+      "id": "classic-lemonade-small-16-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Cucumber Mint Lime, Kids (12 oz)",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 130.0,
+      "fat": 0.0,
+      "carbs": 33.0,
+      "protein": 0.0,
+      "id": "cucumber-mint-lime-kids-12-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Cucumber Mint Lime, Large (22 oz)",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 240.0,
+      "fat": 0.0,
+      "carbs": 61.0,
+      "protein": 1.0,
+      "id": "cucumber-mint-lime-large-22-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Cucumber Mint Lime, Small (16 oz)",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 180.0,
+      "fat": 0.0,
+      "carbs": 44.0,
+      "protein": 1.0,
+      "id": "cucumber-mint-lime-small-16-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Honest Apple Juice",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 9.0,
+      "protein": 0.0,
+      "id": "honest-apple-juice-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Horizon 1% Milk",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 110.0,
+      "fat": 2.5,
+      "carbs": 12.0,
+      "protein": 8.0,
+      "id": "horizon-1-milk-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Horizon Chocolate Milk",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 150.0,
+      "fat": 3.0,
+      "carbs": 24.0,
+      "protein": 9.0,
+      "id": "horizon-chocolate-milk-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Jasmine Tea, Kids (12 oz)",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "jasmine-tea-kids-12-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Jasmine Tea, Large (22 oz)",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "jasmine-tea-large-22-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Jasmine Tea, Small (16 oz)",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "jasmine-tea-small-16-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Maine Root Diet Soda (Fountain), Kids (12 oz)",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "maine-root-diet-soda-fountain-kids-12-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Maine Root Diet Soda (Fountain), Large (22 oz)",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "maine-root-diet-soda-fountain-large-22-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Maine Root Diet Soda (Fountain), Small (16 oz)",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "maine-root-diet-soda-fountain-small-16-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Maine Root Soda (Bottled)",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 150.0,
+      "fat": 0.0,
+      "carbs": 35.0,
+      "protein": 0.0,
+      "id": "maine-root-soda-bottled-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Maine Root Soda (Fountain), Kids (12 oz)",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 150.0,
+      "fat": 0.0,
+      "carbs": 35.0,
+      "protein": 0.0,
+      "id": "maine-root-soda-fountain-kids-12-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Maine Root Soda (Fountain), Large (22 oz)",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 270.0,
+      "fat": 0.0,
+      "carbs": 60.0,
+      "protein": 0.0,
+      "id": "maine-root-soda-fountain-large-22-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Maine Root Soda (Fountain), Small (16 oz)",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 190.0,
+      "fat": 0.0,
+      "carbs": 50.0,
+      "protein": 0.0,
+      "id": "maine-root-soda-fountain-small-16-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Pineapple Apple Mint Juice, Kids (12 oz)",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 80.0,
+      "fat": 0.0,
+      "carbs": 22.0,
+      "protein": 0.0,
+      "id": "pineapple-apple-mint-juice-kids-12-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Pineapple Apple Mint Juice, Large (22 oz)",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 160.0,
+      "fat": 0.5,
+      "carbs": 39.0,
+      "protein": 1.0,
+      "id": "pineapple-apple-mint-juice-large-22-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Pineapple Apple Mint Juice, Small (16 oz)",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 110.0,
+      "fat": 0.5,
+      "carbs": 29.0,
+      "protein": 0.0,
+      "id": "pineapple-apple-mint-juice-small-16-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Spindrift Cucumber",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "spindrift-cucumber-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Spindrift Grapefruit",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 15.0,
+      "fat": 0.0,
+      "carbs": 4.0,
+      "protein": 0.0,
+      "id": "spindrift-grapefruit-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Spindrift Lemon",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 1.0,
+      "protein": 0.0,
+      "id": "spindrift-lemon-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Spindrift Raspberry Lime",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 5.0,
+      "fat": 0.0,
+      "carbs": 1.0,
+      "protein": 0.0,
+      "id": "spindrift-raspberry-lime-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Sprindrift Half Tea & Half Lemon",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 5.0,
+      "fat": 0.0,
+      "carbs": 1.0,
+      "protein": 0.0,
+      "id": "sprindrift-half-tea-half-lemon-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Strawberry Citrus, Kids (12 oz)",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 100.0,
+      "fat": 0.0,
+      "carbs": 26.0,
+      "protein": 0.0,
+      "id": "strawberry-citrus-kids-12-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Strawberry Citrus, Large (22 oz)",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 190.0,
+      "fat": 0.0,
+      "carbs": 48.0,
+      "protein": 1.0,
+      "id": "strawberry-citrus-large-22-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Strawberry Citrus, Small (16 oz)",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 140.0,
+      "fat": 0.0,
+      "carbs": 35.0,
+      "protein": 0.0,
+      "id": "strawberry-citrus-small-16-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Sweet Tea, Kids (12 oz)",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 110.0,
+      "fat": 0.0,
+      "carbs": 28.0,
+      "protein": 0.0,
+      "id": "sweet-tea-kids-12-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Sweet Tea, Large (22 oz)",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 200.0,
+      "fat": 0.0,
+      "carbs": 51.0,
+      "protein": 0.0,
+      "id": "sweet-tea-large-22-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Sweet Tea, Small (16 oz)",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 150.0,
+      "fat": 0.0,
+      "carbs": 37.0,
+      "protein": 0.0,
+      "id": "sweet-tea-small-16-oz-1-menu-serving-size-in-name"
+    }
+  ],
+  "source": "Nutritionix",
+  "sourceKind": "database",
+  "sourceDate": "2025-11-13"
+}

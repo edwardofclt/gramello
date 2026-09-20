@@ -1,0 +1,550 @@
+{
+  "chain": "Pei Wei",
+  "sourceUrl": "https://www.nutritionix.com/pei-wei-asian-diner/menu/premium",
+  "source": "Nutritionix",
+  "sourceKind": "database",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "id": "nutritionix-777564",
+      "name": "Chicken Dumplings",
+      "calories": 30,
+      "protein": 1,
+      "carbs": 4,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Appetizers; size in item name)"
+    },
+    {
+      "id": "nutritionix-777563",
+      "name": "Chicken Egg Rolls, 1 Piece",
+      "calories": 220,
+      "protein": 10,
+      "carbs": 24,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Appetizers; size in item name)"
+    },
+    {
+      "id": "nutritionix-777562",
+      "name": "Crab Wontons, 1 Piece",
+      "calories": 100,
+      "protein": 2,
+      "carbs": 9,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Appetizers; size in item name)"
+    },
+    {
+      "id": "nutritionix-777561",
+      "name": "Edamame",
+      "calories": 270,
+      "protein": 27,
+      "carbs": 20,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Appetizers; size in item name)"
+    },
+    {
+      "id": "nutritionix-777556",
+      "name": "Honey Sriracha Wings, 6 Count",
+      "calories": 810,
+      "protein": 31,
+      "carbs": 57,
+      "fat": 46,
+      "servingLabel": "1 listed serving (Appetizers; size in item name)"
+    },
+    {
+      "id": "nutritionix-777555",
+      "name": "Hot And Sour Soup",
+      "calories": 410,
+      "protein": 36,
+      "carbs": 20,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Appetizers; size in item name)"
+    },
+    {
+      "id": "nutritionix-777558",
+      "name": "Mongolian Green Beans",
+      "calories": 300,
+      "protein": 6,
+      "carbs": 38,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Appetizers; size in item name)"
+    },
+    {
+      "id": "nutritionix-777560",
+      "name": "Pork Egg Rolls",
+      "calories": 190,
+      "protein": 6,
+      "carbs": 19,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Appetizers; size in item name)"
+    },
+    {
+      "id": "nutritionix-777559",
+      "name": "Signature Chicken Lettuce Wraps",
+      "calories": 670,
+      "protein": 28,
+      "carbs": 58,
+      "fat": 36,
+      "servingLabel": "1 listed serving (Appetizers; size in item name)"
+    },
+    {
+      "id": "nutritionix-777553",
+      "name": "Spicy Korean BBQ Wings, 6 Count",
+      "calories": 750,
+      "protein": 34,
+      "carbs": 29,
+      "fat": 53,
+      "servingLabel": "1 listed serving (Appetizers; size in item name)"
+    },
+    {
+      "id": "nutritionix-777554",
+      "name": "Sticky Wings, 6 Count",
+      "calories": 840,
+      "protein": 33,
+      "carbs": 68,
+      "fat": 46,
+      "servingLabel": "1 listed serving (Appetizers; size in item name)"
+    },
+    {
+      "id": "nutritionix-105578",
+      "name": "Thai Wonton Soup, Bowl",
+      "calories": 230,
+      "protein": 16,
+      "carbs": 17,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Appetizers; size in item name)"
+    },
+    {
+      "id": "nutritionix-777557",
+      "name": "Vegetable Spring Rolls, 1 Piece",
+      "calories": 110,
+      "protein": 3,
+      "carbs": 16,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Appetizers; size in item name)"
+    },
+    {
+      "id": "nutritionix-777540",
+      "name": "Beef & Broccoli (1 of 2 Servings)",
+      "calories": 480,
+      "protein": 21,
+      "carbs": 21,
+      "fat": 35,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-777543",
+      "name": "Chicken & Broccoli (1 of 2 Servings)",
+      "calories": 220,
+      "protein": 9,
+      "carbs": 21,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-777541",
+      "name": "Firecracker Chicken (1 of 2 Servings)",
+      "calories": 620,
+      "protein": 25,
+      "carbs": 54,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-777523",
+      "name": "Firecracker Shrimp (1 of 2 Servings)",
+      "calories": 340,
+      "protein": 9,
+      "carbs": 45,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-777542",
+      "name": "Firecracker Tofu (1 of 2 Servings)",
+      "calories": 330,
+      "protein": 8,
+      "carbs": 48,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-777524",
+      "name": "Grilled Bourbon Chicken (1 of 2 Servings)",
+      "calories": 390,
+      "protein": 28,
+      "carbs": 32,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-777544",
+      "name": "Honey-Seared Chicken (1 of 2 Servings)",
+      "calories": 640,
+      "protein": 24,
+      "carbs": 48,
+      "fat": 38,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-777526",
+      "name": "Honey-Seared Crispy Tofu (1 of 2 Servings)",
+      "calories": 360,
+      "protein": 7,
+      "carbs": 42,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-777522",
+      "name": "Hot Honey Chicken (1 of 2 Servings)",
+      "calories": 600,
+      "protein": 23,
+      "carbs": 44,
+      "fat": 35,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-777539",
+      "name": "Kung Pao Chicken (1 of 2 Servings)",
+      "calories": 420,
+      "protein": 21,
+      "carbs": 35,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-777537",
+      "name": "Kung Pao Shrimp (1 of 2 Servings)",
+      "calories": 390,
+      "protein": 14,
+      "carbs": 34,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-777538",
+      "name": "Mongolian Chicken (1 of 2 Servings)",
+      "calories": 210,
+      "protein": 8,
+      "carbs": 18,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-777536",
+      "name": "Mongolian Steak (1 of 2 Servings)",
+      "calories": 470,
+      "protein": 20,
+      "carbs": 19,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-777535",
+      "name": "Orange Chicken (1 of 2 Servings)",
+      "calories": 610,
+      "protein": 24,
+      "carbs": 48,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-777534",
+      "name": "Pei Wei Original Shrimp (1 of 2 Servings)",
+      "calories": 430,
+      "protein": 17,
+      "carbs": 57,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-777533",
+      "name": "Sesame Chicken (1 of 2 Servings)",
+      "calories": 640,
+      "protein": 27,
+      "carbs": 55,
+      "fat": 37,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-777532",
+      "name": "Spicy General Tso's Chicken (1 of 2 Servings)",
+      "calories": 620,
+      "protein": 27,
+      "carbs": 51,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-777527",
+      "name": "Spicy General Tso's Crispy Tofu (1 of 2 Servings)",
+      "calories": 300,
+      "protein": 10,
+      "carbs": 46,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-777531",
+      "name": "Spicy Korean BBQ Steak (1 of 2 Servings)",
+      "calories": 460,
+      "protein": 20,
+      "carbs": 17,
+      "fat": 36,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-777530",
+      "name": "Teriyaki Chicken (1 of 2 Servings)",
+      "calories": 390,
+      "protein": 18,
+      "carbs": 45,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-777529",
+      "name": "Teriyaki Crispy Tofu (1 of 2 Servings)",
+      "calories": 340,
+      "protein": 9,
+      "carbs": 49,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-777521",
+      "name": "Thai Basil Chicken (1 of 2 Servings)",
+      "calories": 230,
+      "protein": 8,
+      "carbs": 23,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-777525",
+      "name": "Thai Coconut Crispy Tofu (1 of 2 Servings)",
+      "calories": 410,
+      "protein": 11,
+      "carbs": 41,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-777528",
+      "name": "Thai Coconut Curry Chicken (1 of 2 Servings)",
+      "calories": 310,
+      "protein": 10,
+      "carbs": 24,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-777549",
+      "name": "Chicken Fried Rice (1 of 2 Servings)",
+      "calories": 470,
+      "protein": 17,
+      "carbs": 71,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Rice & Noodle Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-777548",
+      "name": "Chicken Lo Mein (1 of 2 Servings)",
+      "calories": 430,
+      "protein": 16,
+      "carbs": 62,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Rice & Noodle Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-777547",
+      "name": "Chicken Pad Thai (1 of 2 Servings)",
+      "calories": 720,
+      "protein": 27,
+      "carbs": 114,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Rice & Noodle Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-777546",
+      "name": "Dan Dan Chicken Noodles (1 of 2 Servings)",
+      "calories": 480,
+      "protein": 20,
+      "carbs": 62,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Rice & Noodle Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-777545",
+      "name": "Spicy Drunken Chicken Noodles (1 of 2 Servings)",
+      "calories": 600,
+      "protein": 19,
+      "carbs": 109,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Rice & Noodle Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-777552",
+      "name": "Asian Chopped Chicken Salad (without Dressing) (1 of 2 Servings)",
+      "calories": 420,
+      "protein": 16,
+      "carbs": 28,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Salads & Poke; size in item name)"
+    },
+    {
+      "id": "nutritionix-777551",
+      "name": "Salmon Poke Bowl (1 of 2 Servings)",
+      "calories": 380,
+      "protein": 13,
+      "carbs": 43,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Salads & Poke; size in item name)"
+    },
+    {
+      "id": "nutritionix-777550",
+      "name": "Signature Grilled Chicken Salad (1 of 2 Servings)",
+      "calories": 360,
+      "protein": 16,
+      "carbs": 25,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Salads & Poke; size in item name)"
+    },
+    {
+      "id": "nutritionix-777572",
+      "name": "Brown Rice, Regular (1 of 2 Servings)",
+      "calories": 190,
+      "protein": 4,
+      "carbs": 40,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Grains; size in item name)"
+    },
+    {
+      "id": "nutritionix-777573",
+      "name": "Fried Rice, Regular (1 of 2 Servings)",
+      "calories": 390,
+      "protein": 11,
+      "carbs": 64,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Grains; size in item name)"
+    },
+    {
+      "id": "nutritionix-777574",
+      "name": "White Rice, Regular (1 of 2 Servings)",
+      "calories": 200,
+      "protein": 4,
+      "carbs": 44,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Grains; size in item name)"
+    },
+    {
+      "id": "nutritionix-777575",
+      "name": "Lettuce Cups",
+      "calories": 25,
+      "protein": 2,
+      "carbs": 5,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Greens; size in item name)"
+    },
+    {
+      "id": "nutritionix-777576",
+      "name": "Mixed Salad Greens",
+      "calories": 150,
+      "protein": 5,
+      "carbs": 22,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Greens; size in item name)"
+    },
+    {
+      "id": "nutritionix-777577",
+      "name": "Noodles, Regular (1 of 2 Servings)",
+      "calories": 230,
+      "protein": 7,
+      "carbs": 42,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Noodles; size in item name)"
+    },
+    {
+      "id": "nutritionix-777571",
+      "name": "Kid's Chicken Lo Mein",
+      "calories": 490,
+      "protein": 16,
+      "carbs": 61,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Kids Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-777567",
+      "name": "Kid's Firecracker Chicken",
+      "calories": 760,
+      "protein": 25,
+      "carbs": 69,
+      "fat": 43,
+      "servingLabel": "1 listed serving (Kids Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-777570",
+      "name": "Kid's Honey-Seared Chicken",
+      "calories": 710,
+      "protein": 23,
+      "carbs": 54,
+      "fat": 43,
+      "servingLabel": "1 listed serving (Kids Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-777569",
+      "name": "Kid's Orange Chicken",
+      "calories": 750,
+      "protein": 24,
+      "carbs": 61,
+      "fat": 43,
+      "servingLabel": "1 listed serving (Kids Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-777568",
+      "name": "Kid's Teriyaki Chicken",
+      "calories": 510,
+      "protein": 18,
+      "carbs": 54,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Kids Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-777565",
+      "name": "Fudge Brownie",
+      "calories": 310,
+      "protein": 4,
+      "carbs": 36,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-777566",
+      "name": "Thai Donuts, 6 Count",
+      "calories": 280,
+      "protein": 9,
+      "carbs": 43,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-777519",
+      "name": "Chicken, Avocado & Broccoli Protein Bowl (1 of 2 Servings)",
+      "calories": 490,
+      "protein": 19,
+      "carbs": 53,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Protein Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-777520",
+      "name": "Chicken, Shrimp & Veggies Protein Bowl (1 of 2 Servings)",
+      "calories": 410,
+      "protein": 21,
+      "carbs": 52,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Protein Bowls; size in item name)"
+    }
+  ],
+  "sourceDate": "2025-05-05"
+}

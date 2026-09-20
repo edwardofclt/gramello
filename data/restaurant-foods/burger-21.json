@@ -1,0 +1,892 @@
+{
+  "chain": "Burger 21",
+  "sourceUrl": "https://www.nutritionix.com/burger-21/menu/premium",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "id": "101-burger-1-menu-serving-size-in-item-name",
+      "name": "101 Burger",
+      "calories": 720,
+      "protein": 35,
+      "carbs": 28,
+      "fat": 43,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "bacon-cheesy-burger-1-menu-serving-size-in-item-name",
+      "name": "Bacon Cheesy Burger",
+      "calories": 850,
+      "protein": 49,
+      "carbs": 29,
+      "fat": 55,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "bbq-bacon-burger-1-menu-serving-size-in-item-name",
+      "name": "BBQ Bacon Burger",
+      "calories": 900,
+      "protein": 47,
+      "carbs": 49,
+      "fat": 55,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "black-bleu-burger-1-menu-serving-size-in-item-name",
+      "name": "Black + Bleu Burger",
+      "calories": 880,
+      "protein": 43,
+      "carbs": 30,
+      "fat": 62,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "cheesy-burger-1-menu-serving-size-in-item-name",
+      "name": "Cheesy Burger",
+      "calories": 780,
+      "protein": 46,
+      "carbs": 29,
+      "fat": 50,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "omg-burger-1-menu-serving-size-in-item-name",
+      "name": "OMG! Burger",
+      "calories": 1260,
+      "protein": 75,
+      "carbs": 30,
+      "fat": 76,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "shroom-burger-1-menu-serving-size-in-item-name",
+      "name": "Shroom Burger",
+      "calories": 850,
+      "protein": 44,
+      "carbs": 32,
+      "fat": 56,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "southern-fried-pickle-burger-1-menu-serving-size-in-item-name",
+      "name": "Southern Fried Pickle Burger",
+      "calories": 1080,
+      "protein": 36,
+      "carbs": 57,
+      "fat": 73,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "tex-mex-haystack-burger-1-menu-serving-size-in-item-name",
+      "name": "Tex-Mex Haystack Burger",
+      "calories": 940,
+      "protein": 45,
+      "carbs": 36,
+      "fat": 66,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "american-yellow-cheese-1-menu-serving-size-in-item-name",
+      "name": "American Yellow Cheese",
+      "calories": 70,
+      "protein": 4,
+      "carbs": 1,
+      "fat": 6,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "cheddar-cheese-1-menu-serving-size-in-item-name",
+      "name": "Cheddar Cheese",
+      "calories": 80,
+      "protein": 5,
+      "carbs": 0,
+      "fat": 7,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "goat-cheese-1-menu-serving-size-in-item-name",
+      "name": "Goat Cheese",
+      "calories": 70,
+      "protein": 4,
+      "carbs": 1,
+      "fat": 4,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "gorgonzola-cheese-1-menu-serving-size-in-item-name",
+      "name": "Gorgonzola Cheese",
+      "calories": 25,
+      "protein": 2,
+      "carbs": 0,
+      "fat": 2,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "pepper-jack-cheese-1-menu-serving-size-in-item-name",
+      "name": "Pepper Jack Cheese",
+      "calories": 80,
+      "protein": 5,
+      "carbs": 1,
+      "fat": 6,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "swiss-cheese-1-menu-serving-size-in-item-name",
+      "name": "Swiss Cheese",
+      "calories": 90,
+      "protein": 6,
+      "carbs": 1,
+      "fat": 6,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "add-bacon-1-menu-serving-size-in-item-name",
+      "name": "Add Bacon",
+      "calories": 70,
+      "protein": 5,
+      "carbs": 0,
+      "fat": 5,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "add-beef-patty-1-menu-serving-size-in-item-name",
+      "name": "Add Beef Patty",
+      "calories": 430,
+      "protein": 29,
+      "carbs": 0,
+      "fat": 33,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "add-fried-egg-1-menu-serving-size-in-item-name",
+      "name": "Add Fried Egg",
+      "calories": 90,
+      "protein": 6,
+      "carbs": 0,
+      "fat": 7,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "spicy-thai-shrimp-burger-1-menu-serving-size-in-item-name",
+      "name": "Spicy Thai Shrimp Burger",
+      "calories": 630,
+      "protein": 29,
+      "carbs": 55,
+      "fat": 31,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "black-bean-burger-1-menu-serving-size-in-item-name",
+      "name": "Black Bean Burger",
+      "calories": 720,
+      "protein": 24,
+      "carbs": 65,
+      "fat": 41,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "impossible-burger-1-menu-serving-size-in-item-name",
+      "name": "Impossible Burger",
+      "calories": 470,
+      "protein": 27,
+      "carbs": 9,
+      "fat": 17,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "buffalo-chicken-burger-1-menu-serving-size-in-item-name",
+      "name": "Buffalo Chicken Burger",
+      "calories": 560,
+      "protein": 26,
+      "carbs": 46,
+      "fat": 29,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "chicken-skinny-burger-1-menu-serving-size-in-item-name",
+      "name": "Chicken Skinny Burger",
+      "calories": 400,
+      "protein": 19,
+      "carbs": 16,
+      "fat": 29,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "monterey-burger-1-menu-serving-size-in-item-name",
+      "name": "Monterey Burger",
+      "calories": 820,
+      "protein": 34,
+      "carbs": 45,
+      "fat": 55,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "101-dog-combo-1-menu-serving-size-in-item-name",
+      "name": "101 Dog Combo",
+      "calories": 1010,
+      "protein": 28,
+      "carbs": 92,
+      "fat": 58,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "additional-chicken-tender-1-menu-serving-size-in-item-name",
+      "name": "Additional Chicken Tender",
+      "calories": 80,
+      "protein": 10,
+      "carbs": 3,
+      "fat": 2.5,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "chicken-tender-basket-1-menu-serving-size-in-item-name",
+      "name": "Chicken Tender Basket",
+      "calories": 730,
+      "protein": 35,
+      "carbs": 88,
+      "fat": 29,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "bacon-cheesy-sliders-1-menu-serving-size-in-item-name",
+      "name": "Bacon Cheesy Sliders",
+      "calories": 790,
+      "protein": 47,
+      "carbs": 51,
+      "fat": 41,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "black-bleu-sliders-1-menu-serving-size-in-item-name",
+      "name": "Black + Bleu Sliders",
+      "calories": 980,
+      "protein": 47,
+      "carbs": 54,
+      "fat": 63,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "cheesy-sliders-1-menu-serving-size-in-item-name",
+      "name": "Cheesy Sliders",
+      "calories": 740,
+      "protein": 41,
+      "carbs": 51,
+      "fat": 34,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "brioche-bun-1-menu-serving-size-in-item-name",
+      "name": "Brioche Bun",
+      "calories": 230,
+      "protein": 6,
+      "carbs": 27,
+      "fat": 10,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "lettuce-bun-1-menu-serving-size-in-item-name",
+      "name": "Lettuce Bun",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "wheat-bun-1-menu-serving-size-in-item-name",
+      "name": "Wheat Bun",
+      "calories": 250,
+      "protein": 5,
+      "carbs": 34,
+      "fat": 10,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "french-fries-shareable-1-menu-serving-size-in-item-name",
+      "name": "French Fries, Shareable",
+      "calories": 740,
+      "protein": 8,
+      "carbs": 112,
+      "fat": 23,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "french-fries-side-1-menu-serving-size-in-item-name",
+      "name": "French Fries, Side",
+      "calories": 340,
+      "protein": 3,
+      "carbs": 49,
+      "fat": 13,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "fried-pickles-shareable-1-menu-serving-size-in-item-name",
+      "name": "Fried Pickles Shareable",
+      "calories": 670,
+      "protein": 16,
+      "carbs": 92,
+      "fat": 25,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "half-half-side-1-menu-serving-size-in-item-name",
+      "name": "Half + Half, Side",
+      "calories": 440,
+      "protein": 2,
+      "carbs": 65,
+      "fat": 18,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "onion-strings-shareable-1-menu-serving-size-in-item-name",
+      "name": "Onion Strings, Shareable",
+      "calories": 230,
+      "protein": 5,
+      "carbs": 39,
+      "fat": 5,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "onion-strings-side-1-menu-serving-size-in-item-name",
+      "name": "Onion Strings, Side",
+      "calories": 100,
+      "protein": 2,
+      "carbs": 17,
+      "fat": 2,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "sweet-potato-fries-shareable-1-menu-serving-size-in-item-name",
+      "name": "Sweet Potato Fries, Shareable",
+      "calories": 1120,
+      "protein": 4,
+      "carbs": 181,
+      "fat": 46,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "sweet-potato-fries-side-1-menu-serving-size-in-item-name",
+      "name": "Sweet Potato Fries, Side",
+      "calories": 490,
+      "protein": 1,
+      "carbs": 79,
+      "fat": 22,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "three-cheese-sauce-shareable-1-menu-serving-size-in-item-name",
+      "name": "Three Cheese Sauce, Shareable",
+      "calories": 310,
+      "protein": 6,
+      "carbs": 12,
+      "fat": 16,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "three-cheese-sauce-side-1-menu-serving-size-in-item-name",
+      "name": "Three Cheese Sauce, Side",
+      "calories": 150,
+      "protein": 3,
+      "carbs": 6,
+      "fat": 8,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "buffalo-chopped-cobb-salad-1-menu-serving-size-in-item-name",
+      "name": "Buffalo Chopped Cobb Salad",
+      "calories": 640,
+      "protein": 36,
+      "carbs": 17,
+      "fat": 48,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "farm-to-bowl-salad-1-menu-serving-size-in-item-name",
+      "name": "Farm to Bowl Salad",
+      "calories": 470,
+      "protein": 23,
+      "carbs": 20,
+      "fat": 32,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "santa-fe-salad-1-menu-serving-size-in-item-name",
+      "name": "Santa Fe Salad",
+      "calories": 700,
+      "protein": 31,
+      "carbs": 14,
+      "fat": 37,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "sonoma-valley-salad-1-menu-serving-size-in-item-name",
+      "name": "Sonoma Valley Salad",
+      "calories": 560,
+      "protein": 6,
+      "carbs": 21,
+      "fat": 50,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "super-burger-bowl-with-beef-patty-add-dressing-1-menu-serving-size-in-item-name",
+      "name": "Super Burger Bowl with Beef Patty (add dressing)",
+      "calories": 380,
+      "protein": 32,
+      "carbs": 11,
+      "fat": 22,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "super-burger-bowl-with-black-bean-add-dressing-1-menu-serving-size-in-item-name",
+      "name": "Super Burger Bowl with Black Bean (add dressing)",
+      "calories": 270,
+      "protein": 24,
+      "carbs": 44,
+      "fat": 14,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "super-burger-bowl-with-chicken-patty-add-dressing-1-menu-serving-size-in-item-name",
+      "name": "Super Burger Bowl with Chicken Patty (add dressing)",
+      "calories": 380,
+      "protein": 22,
+      "carbs": 22,
+      "fat": 22,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "super-burger-bowl-with-impossible-add-dressing-1-menu-serving-size-in-item-name",
+      "name": "Super Burger Bowl with ImpossiBle (add dressing)",
+      "calories": 480,
+      "protein": 27,
+      "carbs": 11,
+      "fat": 24,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "super-burger-bowl-with-shrimp-patty-add-dressing-1-menu-serving-size-in-item-name",
+      "name": "Super Burger Bowl with Shrimp Patty (add dressing)",
+      "calories": 340,
+      "protein": 27,
+      "carbs": 28,
+      "fat": 14,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "add-black-bean-patty-to-salad-1-menu-serving-size-in-item-name",
+      "name": "Add Black Bean Patty to Salad",
+      "calories": 280,
+      "protein": 17,
+      "carbs": 24,
+      "fat": 14,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "add-fried-chicken-tender-to-salad-1-menu-serving-size-in-item-name",
+      "name": "Add Fried Chicken Tender to Salad",
+      "calories": 160,
+      "protein": 20,
+      "carbs": 6,
+      "fat": 5,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "add-grilled-chicken-tender-to-salad-1-menu-serving-size-in-item-name",
+      "name": "Add Grilled Chicken Tender to Salad",
+      "calories": 90,
+      "protein": 16,
+      "carbs": 0,
+      "fat": 2.5,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "add-impossible-patty-to-salad-1-menu-serving-size-in-item-name",
+      "name": "Add Impossible Patty to Salad",
+      "calories": 240,
+      "protein": 19,
+      "carbs": 9,
+      "fat": 14,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "add-shrimp-patty-to-salad-1-menu-serving-size-in-item-name",
+      "name": "Add Shrimp Patty to Salad",
+      "calories": 250,
+      "protein": 21,
+      "carbs": 17,
+      "fat": 11,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "avocado-ranch-dressing-1-menu-serving-size-in-item-name",
+      "name": "Avocado Ranch Dressing",
+      "calories": 250,
+      "protein": 2,
+      "carbs": 6,
+      "fat": 25,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "fat-free-balsamic-dressing-1-menu-serving-size-in-item-name",
+      "name": "Fat-Free Balsamic Dressing",
+      "calories": 40,
+      "protein": 0,
+      "carbs": 10,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "honey-mustard-dressing-1-menu-serving-size-in-item-name",
+      "name": "Honey Mustard Dressing",
+      "calories": 320,
+      "protein": 0,
+      "carbs": 16,
+      "fat": 28,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "ranch-dressing-1-menu-serving-size-in-item-name",
+      "name": "Ranch Dressing",
+      "calories": 260,
+      "protein": 2,
+      "carbs": 6,
+      "fat": 26,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "santafe-dressing-1-menu-serving-size-in-item-name",
+      "name": "SantaFe Dressing",
+      "calories": 250,
+      "protein": 0,
+      "carbs": 10,
+      "fat": 22,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "sweet-creamy-balsamic-dressing-1-menu-serving-size-in-item-name",
+      "name": "Sweet+Creamy Balsamic Dressing",
+      "calories": 220,
+      "protein": 0,
+      "carbs": 11,
+      "fat": 19,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "kids-burger-meal-1-menu-serving-size-in-item-name",
+      "name": "Kids Burger Meal",
+      "calories": 990,
+      "protein": 39,
+      "carbs": 90,
+      "fat": 41,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "kids-grilled-cheese-meal-1-menu-serving-size-in-item-name",
+      "name": "Kids Grilled Cheese Meal",
+      "calories": 940,
+      "protein": 25,
+      "carbs": 97,
+      "fat": 41,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "kids-hot-dog-meal-1-menu-serving-size-in-item-name",
+      "name": "Kids Hot Dog Meal",
+      "calories": 840,
+      "protein": 26,
+      "carbs": 83,
+      "fat": 40,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "kids-salad-meal-1-menu-serving-size-in-item-name",
+      "name": "Kids Salad Meal",
+      "calories": 670,
+      "protein": 34,
+      "carbs": 69,
+      "fat": 25,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "kids-chocolate-shake-1-menu-serving-size-in-item-name",
+      "name": "Kids Chocolate Shake",
+      "calories": 480,
+      "protein": 10,
+      "carbs": 56,
+      "fat": 24,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "kids-cookies-cream-shake-1-menu-serving-size-in-item-name",
+      "name": "Kids Cookies + Cream Shake",
+      "calories": 580,
+      "protein": 12,
+      "carbs": 76,
+      "fat": 32,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "kids-strawberry-shake-1-menu-serving-size-in-item-name",
+      "name": "Kids Strawberry Shake",
+      "calories": 460,
+      "protein": 9,
+      "carbs": 56,
+      "fat": 23,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "kids-vanilla-shake-1-menu-serving-size-in-item-name",
+      "name": "Kids Vanilla Shake",
+      "calories": 440,
+      "protein": 10,
+      "carbs": 47,
+      "fat": 24,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "21-sauce-1-menu-serving-size-in-item-name",
+      "name": "21 Sauce",
+      "calories": 70,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 8,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "apple-cider-1-menu-serving-size-in-item-name",
+      "name": "Apple Cider",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 6,
+      "fat": 14,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "bbq-sauce-1-menu-serving-size-in-item-name",
+      "name": "BBQ Sauce",
+      "calories": 50,
+      "protein": 0,
+      "carbs": 14,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "bleu-cheese-spread-1-menu-serving-size-in-item-name",
+      "name": "Bleu Cheese Spread",
+      "calories": 290,
+      "protein": 6,
+      "carbs": 1,
+      "fat": 28,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "chipotle-mayo-1-menu-serving-size-in-item-name",
+      "name": "Chipotle Mayo",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 17,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "cilantro-sour-cream-1-menu-serving-size-in-item-name",
+      "name": "Cilantro Sour Cream",
+      "calories": 60,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 5,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "honey-mustard-sauce-1-menu-serving-size-in-item-name",
+      "name": "Honey Mustard Sauce",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 8,
+      "fat": 13,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "ketchup-1-menu-serving-size-in-item-name",
+      "name": "Ketchup",
+      "calories": 35,
+      "protein": 0,
+      "carbs": 8,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "ragin-cajun-sauce-1-menu-serving-size-in-item-name",
+      "name": "Ragin Cajun Sauce",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 15,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "ranch-dressing-sauce-1-menu-serving-size-in-item-name",
+      "name": "Ranch Dressing Sauce",
+      "calories": 130,
+      "protein": 1,
+      "carbs": 3,
+      "fat": 13,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "roasted-garlic-aioli-1-menu-serving-size-in-item-name",
+      "name": "Roasted Garlic Aioli",
+      "calories": 190,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 22,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "sriracha-aioli-1-menu-serving-size-in-item-name",
+      "name": "Sriracha Aioli",
+      "calories": 190,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 20,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "sun-dried-tomato-aioli-1-menu-serving-size-in-item-name",
+      "name": "Sun-dried Tomato Aioli",
+      "calories": 190,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 21,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "thai-ketchup-1-menu-serving-size-in-item-name",
+      "name": "Thai Ketchup",
+      "calories": 40,
+      "protein": 0,
+      "carbs": 10,
+      "fat": 0,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "toasted-marshmallow-sauce-1-menu-serving-size-in-item-name",
+      "name": "Toasted Marshmallow Sauce",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 18,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "yellow-mustard-1-menu-serving-size-in-item-name",
+      "name": "Yellow Mustard",
+      "calories": 0,
+      "protein": 1,
+      "carbs": 2,
+      "fat": 1,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "bananas-foster-shake-1-menu-serving-size-in-item-name",
+      "name": "Bananas Foster Shake",
+      "calories": 820,
+      "protein": 15,
+      "carbs": 112,
+      "fat": 36,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "butterfinger-caramel-crunch-1-menu-serving-size-in-item-name",
+      "name": "Butterfinger Caramel Crunch",
+      "calories": 700,
+      "protein": 17,
+      "carbs": 76,
+      "fat": 37,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "chocolate-chunk-cookie-1-menu-serving-size-in-item-name",
+      "name": "Chocolate Chunk Cookie",
+      "calories": 350,
+      "protein": 4,
+      "carbs": 46,
+      "fat": 18,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "chocolate-fudge-brownie-shake-1-menu-serving-size-in-item-name",
+      "name": "Chocolate Fudge Brownie Shake",
+      "calories": 880,
+      "protein": 20,
+      "carbs": 135,
+      "fat": 46,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "chocolate-peanut-butter-shake-1-menu-serving-size-in-item-name",
+      "name": "Chocolate Peanut Butter Shake",
+      "calories": 930,
+      "protein": 25,
+      "carbs": 89,
+      "fat": 55,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "chocolate-shake-1-menu-serving-size-in-item-name",
+      "name": "Chocolate Shake",
+      "calories": 720,
+      "protein": 16,
+      "carbs": 87,
+      "fat": 35,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "cookies-cream-shake-1-menu-serving-size-in-item-name",
+      "name": "Cookies + Cream Shake",
+      "calories": 820,
+      "protein": 18,
+      "carbs": 99,
+      "fat": 40,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "heath-toffee-crunch-shake-1-menu-serving-size-in-item-name",
+      "name": "Heath Toffee Crunch Shake",
+      "calories": 880,
+      "protein": 17,
+      "carbs": 147,
+      "fat": 36,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "strawberry-shake-1-menu-serving-size-in-item-name",
+      "name": "Strawberry Shake",
+      "calories": 740,
+      "protein": 15,
+      "carbs": 95,
+      "fat": 35,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "triple-espresso-shake-1-menu-serving-size-in-item-name",
+      "name": "Triple Espresso Shake",
+      "calories": 680,
+      "protein": 15,
+      "carbs": 84,
+      "fat": 37,
+      "servingLabel": "1 menu serving (size in item name)"
+    },
+    {
+      "id": "vanilla-bean-shake-1-menu-serving-size-in-item-name",
+      "name": "Vanilla Bean Shake",
+      "calories": 670,
+      "protein": 16,
+      "carbs": 73,
+      "fat": 36,
+      "servingLabel": "1 menu serving (size in item name)"
+    }
+  ],
+  "sourceDate": "2024-06-13",
+  "source": "Nutritionix",
+  "sourceKind": "database"
+}

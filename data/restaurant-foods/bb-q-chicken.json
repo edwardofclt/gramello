@@ -1,0 +1,451 @@
+{
+  "chain": "bb.q Chicken",
+  "sourceUrl": "https://www.nutritionix.com/bb-q-chicken/menu/premium",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "name": "Golden Original Half",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 970.0,
+      "fat": 58.0,
+      "carbs": 28.0,
+      "protein": 83.0,
+      "id": "golden-original-half-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Small Wings, Caribbean Spice",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 850.0,
+      "fat": 29.0,
+      "carbs": 90.0,
+      "protein": 57.0,
+      "id": "small-wings-caribbean-spice-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Small Wings, Cheesling",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 920.0,
+      "fat": 58.0,
+      "carbs": 44.0,
+      "protein": 54.0,
+      "id": "small-wings-cheesling-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Small Wings, Galbi",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 980.0,
+      "fat": 60.0,
+      "carbs": 56.0,
+      "protein": 54.0,
+      "id": "small-wings-galbi-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Small Wings, Gangnam Style",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 890.0,
+      "fat": 57.0,
+      "carbs": 40.0,
+      "protein": 54.0,
+      "id": "small-wings-gangnam-style-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Small Wings, Golden Original",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 640.0,
+      "fat": 24.0,
+      "carbs": 51.0,
+      "protein": 56.0,
+      "id": "small-wings-golden-original-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Small Wings, Honey Garlic",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 900.0,
+      "fat": 57.0,
+      "carbs": 43.0,
+      "protein": 53.0,
+      "id": "small-wings-honey-garlic-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Small Wings, Hot Mala",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 950.0,
+      "fat": 59.0,
+      "carbs": 51.0,
+      "protein": 54.0,
+      "id": "small-wings-hot-mala-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Small Wings, Hot Spicy",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 770.0,
+      "fat": 24.0,
+      "carbs": 84.0,
+      "protein": 57.0,
+      "id": "small-wings-hot-spicy-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Small Wings, Secret Sauce",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 840.0,
+      "fat": 24.0,
+      "carbs": 100.0,
+      "protein": 57.0,
+      "id": "small-wings-secret-sauce-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Small Wings, Soy Garlic",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 890.0,
+      "fat": 57.0,
+      "carbs": 40.0,
+      "protein": 54.0,
+      "id": "small-wings-soy-garlic-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Small Wings, Spicy Galbi",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 980.0,
+      "fat": 58.0,
+      "carbs": 59.0,
+      "protein": 54.0,
+      "id": "small-wings-spicy-galbi-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Small Wings, Spicy Original",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 760.0,
+      "fat": 46.0,
+      "carbs": 42.0,
+      "protein": 45.0,
+      "id": "small-wings-spicy-original-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Small Wings, Wings Of Fire",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 850.0,
+      "fat": 47.0,
+      "carbs": 66.0,
+      "protein": 45.0,
+      "id": "small-wings-wings-of-fire-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Small Boneless Wings, Caribbean Spice",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 820.0,
+      "fat": 23.0,
+      "carbs": 81.0,
+      "protein": 72.0,
+      "id": "small-boneless-wings-caribbean-spice-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Small Boneless Wings, Cheesling",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 700.0,
+      "fat": 23.0,
+      "carbs": 50.0,
+      "protein": 73.0,
+      "id": "small-boneless-wings-cheesling-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Small Boneless Wings, Galbi",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 770.0,
+      "fat": 25.0,
+      "carbs": 62.0,
+      "protein": 72.0,
+      "id": "small-boneless-wings-galbi-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Small Boneless Wings, Gangjeong",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 810.0,
+      "fat": 22.0,
+      "carbs": 80.0,
+      "protein": 72.0,
+      "id": "small-boneless-wings-gangjeong-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Small Boneless Wings, Gangnam Style",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 670.0,
+      "fat": 22.0,
+      "carbs": 45.0,
+      "protein": 72.0,
+      "id": "small-boneless-wings-gangnam-style-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Small Boneless Wings, Golden Original",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 850.0,
+      "fat": 54.0,
+      "carbs": 40.0,
+      "protein": 52.0,
+      "id": "small-boneless-wings-golden-original-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Small Boneless Wings, Honey Garlic",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 680.0,
+      "fat": 22.0,
+      "carbs": 49.0,
+      "protein": 72.0,
+      "id": "small-boneless-wings-honey-garlic-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Small Boneless Wings, Hot Mala",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 740.0,
+      "fat": 24.0,
+      "carbs": 57.0,
+      "protein": 72.0,
+      "id": "small-boneless-wings-hot-mala-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Small Boneless Wings, Hot Spicy",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 980.0,
+      "fat": 54.0,
+      "carbs": 74.0,
+      "protein": 53.0,
+      "id": "small-boneless-wings-hot-spicy-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Small Boneless Wings, Soy Garlic",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 670.0,
+      "fat": 22.0,
+      "carbs": 45.0,
+      "protein": 72.0,
+      "id": "small-boneless-wings-soy-garlic-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Small Boneless Wings, Spicy Galbi",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 770.0,
+      "fat": 25.0,
+      "carbs": 62.0,
+      "protein": 72.0,
+      "id": "small-boneless-wings-spicy-galbi-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Buldak Rice Bowl",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 860.0,
+      "fat": 13.0,
+      "carbs": 114.0,
+      "protein": 69.0,
+      "id": "buldak-rice-bowl-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Bulgogi Rice Bowl",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 640.0,
+      "fat": 12.0,
+      "carbs": 83.0,
+      "protein": 46.0,
+      "id": "bulgogi-rice-bowl-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chicken Fried Rice",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 440.0,
+      "fat": 10.0,
+      "carbs": 68.0,
+      "protein": 16.0,
+      "id": "chicken-fried-rice-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kimchicken Rice Bowl",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 540.0,
+      "fat": 13.0,
+      "carbs": 61.0,
+      "protein": 42.0,
+      "id": "kimchicken-rice-bowl-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kimchi Ramen",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 460.0,
+      "fat": 17.0,
+      "carbs": 61.0,
+      "protein": 13.0,
+      "id": "kimchi-ramen-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Caesar Salad",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 580.0,
+      "fat": 46.0,
+      "carbs": 18.0,
+      "protein": 25.0,
+      "id": "caesar-salad-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chicken Alfredo Pasta",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 850.0,
+      "fat": 47.0,
+      "carbs": 59.0,
+      "protein": 49.0,
+      "id": "chicken-alfredo-pasta-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Golden Original Sandwich",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 830.0,
+      "fat": 41.0,
+      "carbs": 87.0,
+      "protein": 29.0,
+      "id": "golden-original-sandwich-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Grilled Chicken Salad",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 340.0,
+      "fat": 20.0,
+      "carbs": 15.0,
+      "protein": 24.0,
+      "id": "grilled-chicken-salad-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kimchicken Pasta",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 590.0,
+      "fat": 24.0,
+      "carbs": 55.0,
+      "protein": 35.0,
+      "id": "kimchicken-pasta-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kimchicken Quesadilla",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 880.0,
+      "fat": 35.0,
+      "carbs": 115.0,
+      "protein": 28.0,
+      "id": "kimchicken-quesadilla-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Mustard Chicken Salad",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 460.0,
+      "fat": 27.0,
+      "carbs": 30.0,
+      "protein": 21.0,
+      "id": "mustard-chicken-salad-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Rose Pasta",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 680.0,
+      "fat": 27.0,
+      "carbs": 70.0,
+      "protein": 37.0,
+      "id": "rose-pasta-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Spicy Original Sandwich",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 750.0,
+      "fat": 33.0,
+      "carbs": 78.0,
+      "protein": 37.0,
+      "id": "spicy-original-sandwich-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Yuzu Cobb Salad",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 280.0,
+      "fat": 14.0,
+      "carbs": 28.0,
+      "protein": 11.0,
+      "id": "yuzu-cobb-salad-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Cheesling Fries",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 850.0,
+      "fat": 34.0,
+      "carbs": 125.0,
+      "protein": 13.0,
+      "id": "cheesling-fries-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chicken Cheese Ball",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 480.0,
+      "fat": 19.0,
+      "carbs": 38.0,
+      "protein": 39.0,
+      "id": "chicken-cheese-ball-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Coleslaw",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 390.0,
+      "fat": 26.0,
+      "carbs": 36.0,
+      "protein": 0.0,
+      "id": "coleslaw-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Corn Salad",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 380.0,
+      "fat": 25.0,
+      "carbs": 35.0,
+      "protein": 0.0,
+      "id": "corn-salad-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Fried Dumplings",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 660.0,
+      "fat": 36.0,
+      "carbs": 58.0,
+      "protein": 22.0,
+      "id": "fried-dumplings-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Hot Spicy Sauce",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 260.0,
+      "fat": 0.0,
+      "carbs": 69.0,
+      "protein": 0.0,
+      "id": "hot-spicy-sauce-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Pickled Radish",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 15.0,
+      "fat": 0.0,
+      "carbs": 2.0,
+      "protein": 0.0,
+      "id": "pickled-radish-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Secret Sauce",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 280.0,
+      "fat": 0.0,
+      "carbs": 69.0,
+      "protein": 0.0,
+      "id": "secret-sauce-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "So Ddeok So Ddeok",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 460.0,
+      "fat": 30.0,
+      "carbs": 34.0,
+      "protein": 13.0,
+      "id": "so-ddeok-so-ddeok-1-menu-serving-size-in-name"
+    }
+  ],
+  "source": "Nutritionix",
+  "sourceKind": "database",
+  "sourceDate": "2024-07-12"
+}

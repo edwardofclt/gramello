@@ -1,0 +1,1945 @@
+{
+  "chain": "Carolina Ale House",
+  "sourceUrl": "https://www.nutritionix.com/carolina-ale-house/menu/premium",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "name": "Bar Cheeseburger",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 640.0,
+      "fat": 38.0,
+      "carbs": 36.0,
+      "protein": 37.0,
+      "id": "bar-cheeseburger-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Beer Battered Cheese Curds",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 960.0,
+      "fat": 58.0,
+      "carbs": 58.0,
+      "protein": 48.0,
+      "id": "beer-battered-cheese-curds-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Buffalo Chicken Bites",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 580.0,
+      "fat": 34.0,
+      "carbs": 33.0,
+      "protein": 32.0,
+      "id": "buffalo-chicken-bites-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chili Tostada",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 320.0,
+      "fat": 17.0,
+      "carbs": 25.0,
+      "protein": 15.0,
+      "id": "chili-tostada-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chips and Salsa",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 620.0,
+      "fat": 4.0,
+      "carbs": 136.0,
+      "protein": 8.0,
+      "id": "chips-and-salsa-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Classic Burger Sliders",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 890.0,
+      "fat": 53.0,
+      "carbs": 51.0,
+      "protein": 47.0,
+      "id": "classic-burger-sliders-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Crispy Ribs",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 970.0,
+      "fat": 49.0,
+      "carbs": 96.0,
+      "protein": 32.0,
+      "id": "crispy-ribs-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Frickles",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 680.0,
+      "fat": 47.0,
+      "carbs": 57.0,
+      "protein": 9.0,
+      "id": "frickles-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Fried Chicken Taco",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 490.0,
+      "fat": 19.0,
+      "carbs": 43.0,
+      "protein": 32.0,
+      "id": "fried-chicken-taco-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Parmesan Chicken Flatbread",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 980.0,
+      "fat": 44.0,
+      "carbs": 77.0,
+      "protein": 67.0,
+      "id": "parmesan-chicken-flatbread-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Popcorn Chicken",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 930.0,
+      "fat": 48.0,
+      "carbs": 59.0,
+      "protein": 60.0,
+      "id": "popcorn-chicken-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Pretzels with Queso",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 860.0,
+      "fat": 30.0,
+      "carbs": 127.0,
+      "protein": 21.0,
+      "id": "pretzels-with-queso-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Southern Fried Chicken Sliders",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 940.0,
+      "fat": 39.0,
+      "carbs": 96.0,
+      "protein": 48.0,
+      "id": "southern-fried-chicken-sliders-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Add On for Salads, Grilled Chicken",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 270.0,
+      "fat": 11.0,
+      "carbs": 1.0,
+      "protein": 39.0,
+      "id": "add-on-for-salads-grilled-chicken-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Add On for Salads, Grilled Tuna",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 170.0,
+      "fat": 4.0,
+      "carbs": 0.0,
+      "protein": 33.0,
+      "id": "add-on-for-salads-grilled-tuna-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Asian Grilled Chicken Salad",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 540.0,
+      "fat": 11.0,
+      "carbs": 56.0,
+      "protein": 50.0,
+      "id": "asian-grilled-chicken-salad-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Asian Grilled Chicken Salad with Peanut Dressing",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 840.0,
+      "fat": 33.0,
+      "carbs": 76.0,
+      "protein": 53.0,
+      "id": "asian-grilled-chicken-salad-with-peanut-dressing-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Blackened Salmon Caesar Salad",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 860.0,
+      "fat": 69.0,
+      "carbs": 22.0,
+      "protein": 41.0,
+      "id": "blackened-salmon-caesar-salad-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Buffalo Shrimp Salad",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 500.0,
+      "fat": 22.0,
+      "carbs": 42.0,
+      "protein": 34.0,
+      "id": "buffalo-shrimp-salad-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Buffalo Shrimp Salad with Chipotle Ranch Dressing Dressing",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 880.0,
+      "fat": 61.0,
+      "carbs": 49.0,
+      "protein": 36.0,
+      "id": "buffalo-shrimp-salad-with-chipotle-ranch-dressing-dressing-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Buffalo Shrimp Salad with Honey Mustard Dressing",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 960.0,
+      "fat": 69.0,
+      "carbs": 53.0,
+      "protein": 35.0,
+      "id": "buffalo-shrimp-salad-with-honey-mustard-dressing-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Buffalo Shrimp Salad with Ranch Dressing",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 880.0,
+      "fat": 61.0,
+      "carbs": 48.0,
+      "protein": 36.0,
+      "id": "buffalo-shrimp-salad-with-ranch-dressing-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chili, Bowl",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 310.0,
+      "fat": 11.0,
+      "carbs": 32.0,
+      "protein": 18.0,
+      "id": "chili-bowl-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chili, Cup",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 210.0,
+      "fat": 7.0,
+      "carbs": 22.0,
+      "protein": 12.0,
+      "id": "chili-cup-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Crock of French Onion Soup",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 290.0,
+      "fat": 18.0,
+      "carbs": 20.0,
+      "protein": 15.0,
+      "id": "crock-of-french-onion-soup-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "House Garden Salad",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 160.0,
+      "fat": 8.0,
+      "carbs": 13.0,
+      "protein": 7.0,
+      "id": "house-garden-salad-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "House Garden Salad with Add Blackened Tuna",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 370.0,
+      "fat": 14.0,
+      "carbs": 13.0,
+      "protein": 47.0,
+      "id": "house-garden-salad-with-add-blackened-tuna-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "House Garden Salad with Add Grilled Chicken",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 380.0,
+      "fat": 14.0,
+      "carbs": 13.0,
+      "protein": 47.0,
+      "id": "house-garden-salad-with-add-grilled-chicken-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "House Garden Salad with Balsamic Vinaigrette",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 690.0,
+      "fat": 62.0,
+      "carbs": 25.0,
+      "protein": 8.0,
+      "id": "house-garden-salad-with-balsamic-vinaigrette-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "House Garden Salad with Blue Cheese",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 660.0,
+      "fat": 62.0,
+      "carbs": 19.0,
+      "protein": 10.0,
+      "id": "house-garden-salad-with-blue-cheese-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "House Garden Salad with Chipotle Ranch Dressing Dressing",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 540.0,
+      "fat": 48.0,
+      "carbs": 20.0,
+      "protein": 9.0,
+      "id": "house-garden-salad-with-chipotle-ranch-dressing-dressing-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "House Garden Salad with Honey Mustard Dressing",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 620.0,
+      "fat": 55.0,
+      "carbs": 24.0,
+      "protein": 8.0,
+      "id": "house-garden-salad-with-honey-mustard-dressing-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "House Garden Salad with Ranch Dressing",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 530.0,
+      "fat": 47.0,
+      "carbs": 19.0,
+      "protein": 9.0,
+      "id": "house-garden-salad-with-ranch-dressing-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Balsamic Vinaigrette",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 530.0,
+      "fat": 53.0,
+      "carbs": 13.0,
+      "protein": 0.0,
+      "id": "balsamic-vinaigrette-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Blue Cheese Dressing",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 510.0,
+      "fat": 54.0,
+      "carbs": 6.0,
+      "protein": 3.0,
+      "id": "blue-cheese-dressing-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Caesar Dressing",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 410.0,
+      "fat": 41.0,
+      "carbs": 6.0,
+      "protein": 6.0,
+      "id": "caesar-dressing-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "CAH Ranch Dressing",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 370.0,
+      "fat": 39.0,
+      "carbs": 6.0,
+      "protein": 2.0,
+      "id": "cah-ranch-dressing-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chipotle Ranch Dressing",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 380.0,
+      "fat": 39.0,
+      "carbs": 7.0,
+      "protein": 2.0,
+      "id": "chipotle-ranch-dressing-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Creamy Poppyseed Dressing",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 360.0,
+      "fat": 30.0,
+      "carbs": 23.0,
+      "protein": 0.0,
+      "id": "creamy-poppyseed-dressing-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Honey Mustard Dressing",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 460.0,
+      "fat": 47.0,
+      "carbs": 12.0,
+      "protein": 1.0,
+      "id": "honey-mustard-dressing-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Low Fat Italian Dressing",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 30.0,
+      "fat": 0.0,
+      "carbs": 10.0,
+      "protein": 0.0,
+      "id": "low-fat-italian-dressing-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Southern Fried Chicken Salad",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 750.0,
+      "fat": 23.0,
+      "carbs": 59.0,
+      "protein": 76.0,
+      "id": "southern-fried-chicken-salad-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Thousand Island Dressing",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 300.0,
+      "fat": 24.0,
+      "carbs": 18.0,
+      "protein": 0.0,
+      "id": "thousand-island-dressing-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Add On, Bacon (2 slices)",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 60.0,
+      "fat": 6.0,
+      "carbs": 0.0,
+      "protein": 2.0,
+      "id": "add-on-bacon-2-slices-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Add On, Fried Shrimp",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 320.0,
+      "fat": 5.0,
+      "carbs": 40.0,
+      "protein": 29.0,
+      "id": "add-on-fried-shrimp-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Angus Top Sirloin",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 750.0,
+      "fat": 45.0,
+      "carbs": 34.0,
+      "protein": 49.0,
+      "id": "angus-top-sirloin-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "BBQ Baby Back Pork Ribs, Half Rack",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 890.0,
+      "fat": 56.0,
+      "carbs": 74.0,
+      "protein": 23.0,
+      "id": "bbq-baby-back-pork-ribs-half-rack-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Simply Grilled Salmon",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 540.0,
+      "fat": 30.0,
+      "carbs": 26.0,
+      "protein": 41.0,
+      "id": "simply-grilled-salmon-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Ahi Tuna Wrap",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 700.0,
+      "fat": 28.0,
+      "carbs": 62.0,
+      "protein": 49.0,
+      "id": "ahi-tuna-wrap-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Carolina Dipper",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 930.0,
+      "fat": 49.0,
+      "carbs": 71.0,
+      "protein": 49.0,
+      "id": "carolina-dipper-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Classic Philly Cheesesteak",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 980.0,
+      "fat": 48.0,
+      "carbs": 74.0,
+      "protein": 63.0,
+      "id": "classic-philly-cheesesteak-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Classic Reuben",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 770.0,
+      "fat": 44.0,
+      "carbs": 52.0,
+      "protein": 44.0,
+      "id": "classic-reuben-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Pulled Pork Sandwich",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 850.0,
+      "fat": 43.0,
+      "carbs": 80.0,
+      "protein": 32.0,
+      "id": "pulled-pork-sandwich-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Southern Grilled Chicken Club",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 870.0,
+      "fat": 49.0,
+      "carbs": 52.0,
+      "protein": 52.0,
+      "id": "southern-grilled-chicken-club-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Turkey Pita Club",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 770.0,
+      "fat": 48.0,
+      "carbs": 51.0,
+      "protein": 35.0,
+      "id": "turkey-pita-club-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Beyond Burger Patty (1 patty)",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 420.0,
+      "fat": 30.0,
+      "carbs": 9.0,
+      "protein": 30.0,
+      "id": "beyond-burger-patty-1-patty-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Frickle Burger",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 670.0,
+      "fat": 38.0,
+      "carbs": 59.0,
+      "protein": 24.0,
+      "id": "frickle-burger-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Pimento Cheese and Bacon Burger",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 620.0,
+      "fat": 38.0,
+      "carbs": 51.0,
+      "protein": 19.0,
+      "id": "pimento-cheese-and-bacon-burger-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Pub Burger",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 920.0,
+      "fat": 58.0,
+      "carbs": 77.0,
+      "protein": 24.0,
+      "id": "pub-burger-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Steakhouse Burger",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 760.0,
+      "fat": 38.0,
+      "carbs": 76.0,
+      "protein": 26.0,
+      "id": "steakhouse-burger-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Varsity Cheeseburger",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 490.0,
+      "fat": 24.0,
+      "carbs": 48.0,
+      "protein": 18.0,
+      "id": "the-varsity-cheeseburger-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Varsity Cheeseburger with Bacon",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 550.0,
+      "fat": 30.0,
+      "carbs": 48.0,
+      "protein": 20.0,
+      "id": "the-varsity-cheeseburger-with-bacon-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Varsity Cheeseburger with Beef Burger Patty",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 900.0,
+      "fat": 53.0,
+      "carbs": 48.0,
+      "protein": 53.0,
+      "id": "the-varsity-cheeseburger-with-beef-burger-patty-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Varsity Cheeseburger with Beyond Burger Patty",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 910.0,
+      "fat": 54.0,
+      "carbs": 57.0,
+      "protein": 48.0,
+      "id": "the-varsity-cheeseburger-with-beyond-burger-patty-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Ahi Tuna Tacos",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 780.0,
+      "fat": 26.0,
+      "carbs": 94.0,
+      "protein": 43.0,
+      "id": "ahi-tuna-tacos-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Blackened Tuna Taco",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 290.0,
+      "fat": 13.0,
+      "carbs": 21.0,
+      "protein": 23.0,
+      "id": "blackened-tuna-taco-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Caribbean Fish Tacos, Grilled",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 740.0,
+      "fat": 26.0,
+      "carbs": 92.0,
+      "protein": 35.0,
+      "id": "caribbean-fish-tacos-grilled-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Caribbean Fish Tacos, Hand Battered",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 920.0,
+      "fat": 26.0,
+      "carbs": 126.0,
+      "protein": 39.0,
+      "id": "caribbean-fish-tacos-hand-battered-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chargrilled Chicken Tacos",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 820.0,
+      "fat": 27.0,
+      "carbs": 92.0,
+      "protein": 49.0,
+      "id": "chargrilled-chicken-tacos-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Fried Fish Taco",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 290.0,
+      "fat": 12.0,
+      "carbs": 32.0,
+      "protein": 12.0,
+      "id": "fried-fish-taco-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Fried Shrimp Taco",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 320.0,
+      "fat": 13.0,
+      "carbs": 33.0,
+      "protein": 17.0,
+      "id": "fried-shrimp-taco-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Grilled Chicken Taco",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 320.0,
+      "fat": 16.0,
+      "carbs": 20.0,
+      "protein": 23.0,
+      "id": "grilled-chicken-taco-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Grilled Fish Taco",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 320.0,
+      "fat": 14.0,
+      "carbs": 30.0,
+      "protein": 17.0,
+      "id": "grilled-fish-taco-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Island-Style Shrimp Tacos",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 850.0,
+      "fat": 26.0,
+      "carbs": 117.0,
+      "protein": 37.0,
+      "id": "island-style-shrimp-tacos-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "BBQ Wing Sauce",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 40.0,
+      "fat": 0.0,
+      "carbs": 10.0,
+      "protein": 0.0,
+      "id": "bbq-wing-sauce-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Boneless Chicken Zingers, Grilled, 5 pieces",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 380.0,
+      "fat": 9.0,
+      "carbs": 4.0,
+      "protein": 66.0,
+      "id": "boneless-chicken-zingers-grilled-5-pieces-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Boneless Chicken Zingers, Grilled, 5 pieces with BBQ Wing Sauce",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 470.0,
+      "fat": 9.0,
+      "carbs": 25.0,
+      "protein": 66.0,
+      "id": "boneless-chicken-zingers-grilled-5-pieces-with-bbq-wing-sauce-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Boneless Chicken Zingers, Grilled, 5 pieces with Blue Cheese Dressing",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 890.0,
+      "fat": 63.0,
+      "carbs": 10.0,
+      "protein": 69.0,
+      "id": "boneless-chicken-zingers-grilled-5-pieces-with-blue-cheese-dressing-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Boneless Chicken Zingers, Grilled, 5 pieces with Buffalo Wing Sauce",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 540.0,
+      "fat": 23.0,
+      "carbs": 11.0,
+      "protein": 68.0,
+      "id": "boneless-chicken-zingers-grilled-5-pieces-with-buffalo-wing-sauce-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Boneless Chicken Zingers, Grilled, 5 pieces with CAH Ranch Dressing",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 760.0,
+      "fat": 48.0,
+      "carbs": 10.0,
+      "protein": 68.0,
+      "id": "boneless-chicken-zingers-grilled-5-pieces-with-cah-ranch-dressing-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Boneless Chicken Zingers, Grilled, 5 pieces with Garlic Parmesan Wing Sauce",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 670.0,
+      "fat": 38.0,
+      "carbs": 10.0,
+      "protein": 69.0,
+      "id": "boneless-chicken-zingers-grilled-5-pieces-with-garlic-parmesan-wing-sauce-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Boneless Chicken Zingers, Grilled, 5 pieces with Honey Buffalo Wing Sauce",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 580.0,
+      "fat": 19.0,
+      "carbs": 28.0,
+      "protein": 68.0,
+      "id": "boneless-chicken-zingers-grilled-5-pieces-with-honey-buffalo-wing-sauce-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Boneless Chicken Zingers, Grilled, 5 pieces with Korean BBQ Wing Sauce",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 500.0,
+      "fat": 10.0,
+      "carbs": 30.0,
+      "protein": 67.0,
+      "id": "boneless-chicken-zingers-grilled-5-pieces-with-korean-bbq-wing-sauce-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Boneless Chicken Zingers, Grilled, 5 pieces with Sesame Peanut Wing Sauce",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 570.0,
+      "fat": 23.0,
+      "carbs": 17.0,
+      "protein": 68.0,
+      "id": "boneless-chicken-zingers-grilled-5-pieces-with-sesame-peanut-wing-sauce-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Boneless Chicken Zingers, Grilled, 5 pieces with Sriracha Wing Sauce",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 450.0,
+      "fat": 12.0,
+      "carbs": 14.0,
+      "protein": 68.0,
+      "id": "boneless-chicken-zingers-grilled-5-pieces-with-sriracha-wing-sauce-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Boneless Chicken Zingers, Grilled, 10 pieces",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 750.0,
+      "fat": 18.0,
+      "carbs": 5.0,
+      "protein": 133.0,
+      "id": "boneless-chicken-zingers-grilled-10-pieces-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Boneless Chicken Zingers, Grilled, 10 pieces with BBQ Wing Sauce",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 920.0,
+      "fat": 19.0,
+      "carbs": 47.0,
+      "protein": 133.0,
+      "id": "boneless-chicken-zingers-grilled-10-pieces-with-bbq-wing-sauce-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Boneless Chicken Zingers, Grilled, 10 pieces with Korean BBQ Wing Sauce",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 990.0,
+      "fat": 19.0,
+      "carbs": 58.0,
+      "protein": 133.0,
+      "id": "boneless-chicken-zingers-grilled-10-pieces-with-korean-bbq-wing-sauce-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Boneless Chicken Zingers, Grilled, 10 pieces with Sriracha Wing Sauce",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 890.0,
+      "fat": 23.0,
+      "carbs": 26.0,
+      "protein": 135.0,
+      "id": "boneless-chicken-zingers-grilled-10-pieces-with-sriracha-wing-sauce-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Boneless Chicken Zingers, Hand Battered, 5 pieces",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 500.0,
+      "fat": 10.0,
+      "carbs": 28.0,
+      "protein": 71.0,
+      "id": "boneless-chicken-zingers-hand-battered-5-pieces-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Boneless Chicken Zingers, Hand Battered, 5 pieces with BBQ Wing Sauce",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 580.0,
+      "fat": 10.0,
+      "carbs": 49.0,
+      "protein": 71.0,
+      "id": "boneless-chicken-zingers-hand-battered-5-pieces-with-bbq-wing-sauce-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Boneless Chicken Zingers, Hand Battered, 5 pieces with Buffalo Wing Sauce",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 660.0,
+      "fat": 24.0,
+      "carbs": 35.0,
+      "protein": 72.0,
+      "id": "boneless-chicken-zingers-hand-battered-5-pieces-with-buffalo-wing-sauce-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Boneless Chicken Zingers, Hand Battered, 5 pieces with CAH Ranch Dressing",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 870.0,
+      "fat": 49.0,
+      "carbs": 34.0,
+      "protein": 72.0,
+      "id": "boneless-chicken-zingers-hand-battered-5-pieces-with-cah-ranch-dressing-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Boneless Chicken Zingers, Hand Battered, 5 pieces with Garlic Parmesan Wing Sauce",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 790.0,
+      "fat": 38.0,
+      "carbs": 34.0,
+      "protein": 73.0,
+      "id": "boneless-chicken-zingers-hand-battered-5-pieces-with-garlic-parmesan-wing-sauce-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Boneless Chicken Zingers, Hand Battered, 5 pieces with Honey Buffalo Wing Sauce",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 700.0,
+      "fat": 20.0,
+      "carbs": 52.0,
+      "protein": 72.0,
+      "id": "boneless-chicken-zingers-hand-battered-5-pieces-with-honey-buffalo-wing-sauce-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Boneless Chicken Zingers, Hand Battered, 5 pieces with Korean BBQ Wing Sauce",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 620.0,
+      "fat": 10.0,
+      "carbs": 54.0,
+      "protein": 71.0,
+      "id": "boneless-chicken-zingers-hand-battered-5-pieces-with-korean-bbq-wing-sauce-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Boneless Chicken Zingers, Hand Battered, 5 pieces with Sesame Peanut Wing Sauce",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 690.0,
+      "fat": 23.0,
+      "carbs": 40.0,
+      "protein": 73.0,
+      "id": "boneless-chicken-zingers-hand-battered-5-pieces-with-sesame-peanut-wing-sauce-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Boneless Chicken Zingers, Hand Battered, 5 pieces with Sriracha Wing Sauce",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 570.0,
+      "fat": 12.0,
+      "carbs": 38.0,
+      "protein": 72.0,
+      "id": "boneless-chicken-zingers-hand-battered-5-pieces-with-sriracha-wing-sauce-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Boneless Chicken Zingers, Hand Battered, 10 pieces",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 990.0,
+      "fat": 19.0,
+      "carbs": 52.0,
+      "protein": 141.0,
+      "id": "boneless-chicken-zingers-hand-battered-10-pieces-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Buffalo Wing Sauce",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 80.0,
+      "fat": 7.0,
+      "carbs": 4.0,
+      "protein": 1.0,
+      "id": "buffalo-wing-sauce-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Carolina Spiced Chicken Wings, 6 pieces",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 540.0,
+      "fat": 30.0,
+      "carbs": 30.0,
+      "protein": 36.0,
+      "id": "carolina-spiced-chicken-wings-6-pieces-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Carolina Spiced Chicken Wings, 6 pieces with CAH Ranch Dressing",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 910.0,
+      "fat": 69.0,
+      "carbs": 36.0,
+      "protein": 37.0,
+      "id": "carolina-spiced-chicken-wings-6-pieces-with-cah-ranch-dressing-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chicken Wings, Dry Rub, 6 pieces",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 460.0,
+      "fat": 30.0,
+      "carbs": 9.0,
+      "protein": 36.0,
+      "id": "chicken-wings-dry-rub-6-pieces-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chicken Wings, Dry Rub, 6 pieces with Blue Cheese Dressing",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 960.0,
+      "fat": 83.0,
+      "carbs": 15.0,
+      "protein": 38.0,
+      "id": "chicken-wings-dry-rub-6-pieces-with-blue-cheese-dressing-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chicken Wings, Dry Rub, 6 pieces with CAH Ranch Dressing",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 830.0,
+      "fat": 69.0,
+      "carbs": 15.0,
+      "protein": 37.0,
+      "id": "chicken-wings-dry-rub-6-pieces-with-cah-ranch-dressing-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chicken Wings, Dry Rub, 12 pieces",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 900.0,
+      "fat": 59.0,
+      "carbs": 16.0,
+      "protein": 71.0,
+      "id": "chicken-wings-dry-rub-12-pieces-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chicken Wings, Fried, 6 pieces",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 640.0,
+      "fat": 37.0,
+      "carbs": 37.0,
+      "protein": 39.0,
+      "id": "chicken-wings-fried-6-pieces-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chicken Wings, Fried, 6 pieces with BBQ Wing Sauce",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 730.0,
+      "fat": 37.0,
+      "carbs": 58.0,
+      "protein": 39.0,
+      "id": "chicken-wings-fried-6-pieces-with-bbq-wing-sauce-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chicken Wings, Fried, 6 pieces with Buffalo Wing Sauce",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 800.0,
+      "fat": 51.0,
+      "carbs": 44.0,
+      "protein": 40.0,
+      "id": "chicken-wings-fried-6-pieces-with-buffalo-wing-sauce-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chicken Wings, Fried, 6 pieces with Garlic Parmesan Wing Sauce",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 930.0,
+      "fat": 65.0,
+      "carbs": 43.0,
+      "protein": 41.0,
+      "id": "chicken-wings-fried-6-pieces-with-garlic-parmesan-wing-sauce-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chicken Wings, Fried, 6 pieces with Honey Buffalo Wing Sauce",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 840.0,
+      "fat": 47.0,
+      "carbs": 61.0,
+      "protein": 40.0,
+      "id": "chicken-wings-fried-6-pieces-with-honey-buffalo-wing-sauce-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chicken Wings, Fried, 6 pieces with Korean BBQ Wing Sauce",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 760.0,
+      "fat": 37.0,
+      "carbs": 63.0,
+      "protein": 39.0,
+      "id": "chicken-wings-fried-6-pieces-with-korean-bbq-wing-sauce-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chicken Wings, Fried, 6 pieces with Sesame Peanut Wing Sauce",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 830.0,
+      "fat": 50.0,
+      "carbs": 50.0,
+      "protein": 41.0,
+      "id": "chicken-wings-fried-6-pieces-with-sesame-peanut-wing-sauce-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chicken Wings, Fried, 6 pieces with Sriracha Wing Sauce",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 710.0,
+      "fat": 39.0,
+      "carbs": 47.0,
+      "protein": 40.0,
+      "id": "chicken-wings-fried-6-pieces-with-sriracha-wing-sauce-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chicken Wings, Grilled, 6 pieces",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 420.0,
+      "fat": 29.0,
+      "carbs": 3.0,
+      "protein": 34.0,
+      "id": "chicken-wings-grilled-6-pieces-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chicken Wings, Grilled, 6 pieces with BBQ Wing Sauce",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 510.0,
+      "fat": 29.0,
+      "carbs": 24.0,
+      "protein": 34.0,
+      "id": "chicken-wings-grilled-6-pieces-with-bbq-wing-sauce-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chicken Wings, Grilled, 6 pieces with Blue Cheese Dressing",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 930.0,
+      "fat": 83.0,
+      "carbs": 9.0,
+      "protein": 37.0,
+      "id": "chicken-wings-grilled-6-pieces-with-blue-cheese-dressing-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chicken Wings, Grilled, 6 pieces with Buffalo Wing Sauce",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 580.0,
+      "fat": 43.0,
+      "carbs": 10.0,
+      "protein": 36.0,
+      "id": "chicken-wings-grilled-6-pieces-with-buffalo-wing-sauce-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chicken Wings, Grilled, 6 pieces with CAH Ranch Dressing",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 800.0,
+      "fat": 68.0,
+      "carbs": 9.0,
+      "protein": 36.0,
+      "id": "chicken-wings-grilled-6-pieces-with-cah-ranch-dressing-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chicken Wings, Grilled, 6 pieces with Garlic Parmesan Wing Sauce",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 710.0,
+      "fat": 58.0,
+      "carbs": 9.0,
+      "protein": 36.0,
+      "id": "chicken-wings-grilled-6-pieces-with-garlic-parmesan-wing-sauce-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chicken Wings, Grilled, 6 pieces with Honey Buffalo Wing Sauce",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 620.0,
+      "fat": 40.0,
+      "carbs": 28.0,
+      "protein": 35.0,
+      "id": "chicken-wings-grilled-6-pieces-with-honey-buffalo-wing-sauce-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chicken Wings, Grilled, 6 pieces with Korean BBQ Wing Sauce",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 540.0,
+      "fat": 30.0,
+      "carbs": 30.0,
+      "protein": 34.0,
+      "id": "chicken-wings-grilled-6-pieces-with-korean-bbq-wing-sauce-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chicken Wings, Grilled, 6 pieces with Sesame Peanut Wing Sauce",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 620.0,
+      "fat": 43.0,
+      "carbs": 16.0,
+      "protein": 36.0,
+      "id": "chicken-wings-grilled-6-pieces-with-sesame-peanut-wing-sauce-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chicken Wings, Grilled, 6 pieces with Sriracha Wing Sauce",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 490.0,
+      "fat": 32.0,
+      "carbs": 14.0,
+      "protein": 35.0,
+      "id": "chicken-wings-grilled-6-pieces-with-sriracha-wing-sauce-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chicken Wings, Grilled, 12 pieces",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 830.0,
+      "fat": 59.0,
+      "carbs": 4.0,
+      "protein": 68.0,
+      "id": "chicken-wings-grilled-12-pieces-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chicken Wings, Grilled, 12 pieces with Sriracha Wing Sauce",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 970.0,
+      "fat": 64.0,
+      "carbs": 25.0,
+      "protein": 70.0,
+      "id": "chicken-wings-grilled-12-pieces-with-sriracha-wing-sauce-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Garlic Parmesan Wing Sauce",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 140.0,
+      "fat": 14.0,
+      "carbs": 3.0,
+      "protein": 1.0,
+      "id": "garlic-parmesan-wing-sauce-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Honey Buffalo Wing Sauce",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 100.0,
+      "fat": 5.0,
+      "carbs": 12.0,
+      "protein": 1.0,
+      "id": "honey-buffalo-wing-sauce-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Korean BBQ Wing Sauce",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 60.0,
+      "fat": 0.0,
+      "carbs": 13.0,
+      "protein": 0.0,
+      "id": "korean-bbq-wing-sauce-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Sesame Peanut Wing Sauce",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 100.0,
+      "fat": 7.0,
+      "carbs": 6.0,
+      "protein": 1.0,
+      "id": "sesame-peanut-wing-sauce-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Sriracha Wing Sauce",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 35.0,
+      "fat": 1.0,
+      "carbs": 5.0,
+      "protein": 1.0,
+      "id": "sriracha-wing-sauce-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Beer-Battered French Fries",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 260.0,
+      "fat": 15.0,
+      "carbs": 30.0,
+      "protein": 3.0,
+      "id": "beer-battered-french-fries-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Fresh Fruit",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 80.0,
+      "fat": 0.0,
+      "carbs": 19.0,
+      "protein": 1.0,
+      "id": "fresh-fruit-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Loaded Mashed Potatoes",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 220.0,
+      "fat": 12.0,
+      "carbs": 21.0,
+      "protein": 8.0,
+      "id": "loaded-mashed-potatoes-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Mashed Potatoes",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 140.0,
+      "fat": 5.0,
+      "carbs": 20.0,
+      "protein": 2.0,
+      "id": "mashed-potatoes-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Quinoa & Brown Rice blend",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 100.0,
+      "fat": 3.0,
+      "carbs": 17.0,
+      "protein": 2.0,
+      "id": "quinoa-brown-rice-blend-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Seasonal Vegetables",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 40.0,
+      "fat": 0.0,
+      "carbs": 7.0,
+      "protein": 2.0,
+      "id": "seasonal-vegetables-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Side Salad",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 90.0,
+      "fat": 4.0,
+      "carbs": 9.0,
+      "protein": 4.0,
+      "id": "side-salad-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Side Salad with Balsamic Vinaigrette Dressing",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 620.0,
+      "fat": 57.0,
+      "carbs": 21.0,
+      "protein": 5.0,
+      "id": "side-salad-with-balsamic-vinaigrette-dressing-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Side Salad with Blue Cheese Dressing",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 600.0,
+      "fat": 58.0,
+      "carbs": 15.0,
+      "protein": 7.0,
+      "id": "side-salad-with-blue-cheese-dressing-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Side Salad with Chipotle Ranch Dressing",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 470.0,
+      "fat": 43.0,
+      "carbs": 16.0,
+      "protein": 6.0,
+      "id": "side-salad-with-chipotle-ranch-dressing-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Side Salad with Greek Dressing",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 580.0,
+      "fat": 57.0,
+      "carbs": 12.0,
+      "protein": 5.0,
+      "id": "side-salad-with-greek-dressing-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Side Salad with Honey Mustard",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 550.0,
+      "fat": 51.0,
+      "carbs": 20.0,
+      "protein": 5.0,
+      "id": "side-salad-with-honey-mustard-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Side Salad with Ranch Dressing",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 460.0,
+      "fat": 43.0,
+      "carbs": 15.0,
+      "protein": 6.0,
+      "id": "side-salad-with-ranch-dressing-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Side Salad with Raspberry Poppyseed Dressing",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 180.0,
+      "fat": 5.0,
+      "carbs": 27.0,
+      "protein": 4.0,
+      "id": "side-salad-with-raspberry-poppyseed-dressing-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Steamed Broccoli",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 30.0,
+      "fat": 0.0,
+      "carbs": 4.0,
+      "protein": 3.0,
+      "id": "steamed-broccoli-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Sweet Potato Fries",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 320.0,
+      "fat": 20.0,
+      "carbs": 33.0,
+      "protein": 2.0,
+      "id": "sweet-potato-fries-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Doughnuts",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 940.0,
+      "fat": 42.0,
+      "carbs": 127.0,
+      "protein": 12.0,
+      "id": "doughnuts-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Strawberry Cheesecake",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 880.0,
+      "fat": 46.0,
+      "carbs": 104.0,
+      "protein": 10.0,
+      "id": "strawberry-cheesecake-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Brewed Sweetened Iced Tea",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 140.0,
+      "fat": 0.0,
+      "carbs": 34.0,
+      "protein": 0.0,
+      "id": "brewed-sweetened-iced-tea-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Brewed Unsweetend Iced Tea",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "brewed-unsweetend-iced-tea-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Cheerwine",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 170.0,
+      "fat": 0.0,
+      "carbs": 42.0,
+      "protein": 0.0,
+      "id": "cheerwine-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Coffee",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "coffee-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Cranberry Juice",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 200.0,
+      "fat": 0.0,
+      "carbs": 50.0,
+      "protein": 0.0,
+      "id": "cranberry-juice-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Diet Pepsi",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "diet-pepsi-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Grapefruit Juice",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 140.0,
+      "fat": 0.0,
+      "carbs": 32.0,
+      "protein": 3.0,
+      "id": "grapefruit-juice-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Hot Tea",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "hot-tea-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Mountain Dew",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 170.0,
+      "fat": 0.0,
+      "carbs": 47.0,
+      "protein": 0.0,
+      "id": "mountain-dew-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Orange Juice",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 170.0,
+      "fat": 0.0,
+      "carbs": 41.0,
+      "protein": 0.0,
+      "id": "orange-juice-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Pepsi",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 150.0,
+      "fat": 0.0,
+      "carbs": 41.0,
+      "protein": 0.0,
+      "id": "pepsi-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Pineapple Juice",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 210.0,
+      "fat": 0.0,
+      "carbs": 53.0,
+      "protein": 0.0,
+      "id": "pineapple-juice-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Sierra Mist",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 150.0,
+      "fat": 0.0,
+      "carbs": 39.0,
+      "protein": 0.0,
+      "id": "sierra-mist-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Tropicana Pink Lemonade",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 170.0,
+      "fat": 0.0,
+      "carbs": 41.0,
+      "protein": 0.0,
+      "id": "tropicana-pink-lemonade-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Whole Milk",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 230.0,
+      "fat": 12.0,
+      "carbs": 18.0,
+      "protein": 12.0,
+      "id": "whole-milk-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Apple Juice",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 180.0,
+      "fat": 0.0,
+      "carbs": 42.0,
+      "protein": 0.0,
+      "id": "kids-apple-juice-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Applesauce",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 70.0,
+      "fat": 0.0,
+      "carbs": 17.0,
+      "protein": 0.0,
+      "id": "kids-applesauce-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Broccoli",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 30.0,
+      "fat": 0.0,
+      "carbs": 4.0,
+      "protein": 3.0,
+      "id": "kids-broccoli-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Caribbean Grilled Chicken",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 270.0,
+      "fat": 6.0,
+      "carbs": 12.0,
+      "protein": 40.0,
+      "id": "kids-caribbean-grilled-chicken-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Caribbean Grilled Chicken with Fruit Cup",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 320.0,
+      "fat": 6.0,
+      "carbs": 25.0,
+      "protein": 40.0,
+      "id": "kids-caribbean-grilled-chicken-with-fruit-cup-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Cheerwine",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 100.0,
+      "fat": 0.0,
+      "carbs": 25.0,
+      "protein": 0.0,
+      "id": "kids-cheerwine-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Cheeseburger Quesadilla",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 580.0,
+      "fat": 35.0,
+      "carbs": 26.0,
+      "protein": 37.0,
+      "id": "kids-cheeseburger-quesadilla-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Cheeseburger Quesadilla with Fruit Cup",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 630.0,
+      "fat": 35.0,
+      "carbs": 38.0,
+      "protein": 38.0,
+      "id": "kids-cheeseburger-quesadilla-with-fruit-cup-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Cheese Pizza",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 410.0,
+      "fat": 15.0,
+      "carbs": 47.0,
+      "protein": 21.0,
+      "id": "kids-cheese-pizza-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Cheese Pizza with Fruit Cup",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 460.0,
+      "fat": 15.0,
+      "carbs": 59.0,
+      "protein": 22.0,
+      "id": "kids-cheese-pizza-with-fruit-cup-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Cookie Madness Parfait",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 340.0,
+      "fat": 11.0,
+      "carbs": 51.0,
+      "protein": 5.0,
+      "id": "kids-cookie-madness-parfait-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Diet Dr Pepper",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "kids-diet-dr-pepper-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Diet Pepsi",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "kids-diet-pepsi-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Dr Pepper",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 100.0,
+      "fat": 0.0,
+      "carbs": 24.0,
+      "protein": 0.0,
+      "id": "kids-dr-pepper-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Fish and Chips",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 930.0,
+      "fat": 59.0,
+      "carbs": 65.0,
+      "protein": 31.0,
+      "id": "kids-fish-and-chips-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Fish and Chips with Fruit Cup",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 980.0,
+      "fat": 59.0,
+      "carbs": 78.0,
+      "protein": 32.0,
+      "id": "kids-fish-and-chips-with-fruit-cup-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Fresh Fruit",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 50.0,
+      "fat": 0.0,
+      "carbs": 12.0,
+      "protein": 1.0,
+      "id": "kids-fresh-fruit-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Fried Chicken Tenders",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 390.0,
+      "fat": 6.0,
+      "carbs": 35.0,
+      "protein": 45.0,
+      "id": "kids-fried-chicken-tenders-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Fried Chicken Tenders with Fruit Cup",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 440.0,
+      "fat": 6.0,
+      "carbs": 47.0,
+      "protein": 46.0,
+      "id": "kids-fried-chicken-tenders-with-fruit-cup-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Fried Chicken Tenders with Honey Mustard Dressing",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 850.0,
+      "fat": 53.0,
+      "carbs": 47.0,
+      "protein": 46.0,
+      "id": "kids-fried-chicken-tenders-with-honey-mustard-dressing-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Fries",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 160.0,
+      "fat": 9.0,
+      "carbs": 18.0,
+      "protein": 2.0,
+      "id": "kids-fries-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Grilled Cheese Sandwich",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 510.0,
+      "fat": 27.0,
+      "carbs": 44.0,
+      "protein": 20.0,
+      "id": "kids-grilled-cheese-sandwich-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Grilled Cheese Sandwich with Dill Pickle Slices",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 510.0,
+      "fat": 27.0,
+      "carbs": 44.0,
+      "protein": 20.0,
+      "id": "kids-grilled-cheese-sandwich-with-dill-pickle-slices-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Grilled Cheese Sandwich with Fruit Cup",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 570.0,
+      "fat": 27.0,
+      "carbs": 56.0,
+      "protein": 21.0,
+      "id": "kids-grilled-cheese-sandwich-with-fruit-cup-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Grilled Chicken Tenders",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 220.0,
+      "fat": 6.0,
+      "carbs": 1.0,
+      "protein": 40.0,
+      "id": "kids-grilled-chicken-tenders-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Grilled Chicken Tenders with Fruit Cup",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 280.0,
+      "fat": 6.0,
+      "carbs": 13.0,
+      "protein": 40.0,
+      "id": "kids-grilled-chicken-tenders-with-fruit-cup-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Little Burgers",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 530.0,
+      "fat": 29.0,
+      "carbs": 32.0,
+      "protein": 31.0,
+      "id": "kids-little-burgers-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Little Burgers with Fruit Cup",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 580.0,
+      "fat": 29.0,
+      "carbs": 44.0,
+      "protein": 32.0,
+      "id": "kids-little-burgers-with-fruit-cup-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Little Mac and Cheese",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 530.0,
+      "fat": 18.0,
+      "carbs": 70.0,
+      "protein": 21.0,
+      "id": "kids-little-mac-and-cheese-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Milk",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 230.0,
+      "fat": 12.0,
+      "carbs": 18.0,
+      "protein": 12.0,
+      "id": "kids-milk-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Mountain Dew",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 100.0,
+      "fat": 0.0,
+      "carbs": 28.0,
+      "protein": 0.0,
+      "id": "kids-mountain-dew-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Pasta with Butter",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 820.0,
+      "fat": 58.0,
+      "carbs": 64.0,
+      "protein": 11.0,
+      "id": "kids-pasta-with-butter-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Pasta with Butter with Fruit Cup",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 880.0,
+      "fat": 58.0,
+      "carbs": 76.0,
+      "protein": 11.0,
+      "id": "kids-pasta-with-butter-with-fruit-cup-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Pasta with Cheese Sauce",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 530.0,
+      "fat": 18.0,
+      "carbs": 71.0,
+      "protein": 21.0,
+      "id": "kids-pasta-with-cheese-sauce-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Pasta with Cheese Sauce with Fruit Cup",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 590.0,
+      "fat": 18.0,
+      "carbs": 83.0,
+      "protein": 22.0,
+      "id": "kids-pasta-with-cheese-sauce-with-fruit-cup-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Pasta with Marinara Sauce",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 380.0,
+      "fat": 2.0,
+      "carbs": 74.0,
+      "protein": 13.0,
+      "id": "kids-pasta-with-marinara-sauce-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Pasta with Marinara Sauce with Fruit Cup",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 430.0,
+      "fat": 2.0,
+      "carbs": 86.0,
+      "protein": 14.0,
+      "id": "kids-pasta-with-marinara-sauce-with-fruit-cup-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Penne Marinara",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 380.0,
+      "fat": 4.0,
+      "carbs": 73.0,
+      "protein": 13.0,
+      "id": "kids-penne-marinara-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Pepperoni Pizza",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 470.0,
+      "fat": 21.0,
+      "carbs": 47.0,
+      "protein": 23.0,
+      "id": "kids-pepperoni-pizza-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Pepperoni Pizza with Fruit Cup",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 520.0,
+      "fat": 21.0,
+      "carbs": 59.0,
+      "protein": 24.0,
+      "id": "kids-pepperoni-pizza-with-fruit-cup-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Pepsi",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 90.0,
+      "fat": 0.0,
+      "carbs": 24.0,
+      "protein": 0.0,
+      "id": "kids-pepsi-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Popcorn Shrimp",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 780.0,
+      "fat": 59.0,
+      "carbs": 37.0,
+      "protein": 28.0,
+      "id": "kids-popcorn-shrimp-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Popcorn Shrimp with Fruit Cup",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 830.0,
+      "fat": 59.0,
+      "carbs": 49.0,
+      "protein": 29.0,
+      "id": "kids-popcorn-shrimp-with-fruit-cup-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Rice",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 100.0,
+      "fat": 3.0,
+      "carbs": 17.0,
+      "protein": 2.0,
+      "id": "kids-rice-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Salad",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 80.0,
+      "fat": 5.0,
+      "carbs": 5.0,
+      "protein": 5.0,
+      "id": "kids-salad-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Sierra Mist",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 90.0,
+      "fat": 0.0,
+      "carbs": 23.0,
+      "protein": 0.0,
+      "id": "kids-sierra-mist-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Stix and Dip",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 390.0,
+      "fat": 39.0,
+      "carbs": 10.0,
+      "protein": 2.0,
+      "id": "kids-stix-and-dip-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Sundae",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 260.0,
+      "fat": 7.0,
+      "carbs": 43.0,
+      "protein": 3.0,
+      "id": "kids-sundae-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Tropicana Pink Lemonade",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 100.0,
+      "fat": 0.0,
+      "carbs": 24.0,
+      "protein": 0.0,
+      "id": "kids-tropicana-pink-lemonade-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Wings",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 420.0,
+      "fat": 24.0,
+      "carbs": 23.0,
+      "protein": 26.0,
+      "id": "kids-wings-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Wings with Fruit Cup",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 470.0,
+      "fat": 25.0,
+      "carbs": 35.0,
+      "protein": 26.0,
+      "id": "kids-wings-with-fruit-cup-1-menu-serving-size-in-name"
+    }
+  ],
+  "source": "Nutritionix",
+  "sourceKind": "database",
+  "sourceDate": "2019-09-10"
+}

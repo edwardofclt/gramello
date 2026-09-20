@@ -1,0 +1,802 @@
+{
+  "chain": "Habit Burger & Grill",
+  "sourceUrl": "https://www.nutritionix.com/the-habit-burger-grill/menu/premium",
+  "source": "Nutritionix",
+  "sourceKind": "database",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "id": "nutritionix-776387",
+      "name": "BBQ Bacon Charburger On Seeded Bun",
+      "calories": 630,
+      "protein": 27,
+      "carbs": 44,
+      "fat": 37,
+      "servingLabel": "1 listed serving (Charburgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-776385",
+      "name": "Charburger On Seeded Bun",
+      "calories": 500,
+      "protein": 21,
+      "carbs": 32,
+      "fat": 31,
+      "servingLabel": "1 listed serving (Charburgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-776386",
+      "name": "Double Charburger On Seeded Bun",
+      "calories": 730,
+      "protein": 37,
+      "carbs": 32,
+      "fat": 49,
+      "servingLabel": "1 listed serving (Charburgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-776391",
+      "name": "Lettuce Wrap Charburger",
+      "calories": 350,
+      "protein": 17,
+      "carbs": 6,
+      "fat": 29,
+      "servingLabel": "1 listed serving (Charburgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-776392",
+      "name": "Original Impossible Burger",
+      "calories": 520,
+      "protein": 24,
+      "carbs": 43,
+      "fat": 28,
+      "servingLabel": "1 listed serving (Charburgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-776389",
+      "name": "Portabella Charburger On Seeded Bun",
+      "calories": 760,
+      "protein": 24,
+      "carbs": 36,
+      "fat": 63,
+      "servingLabel": "1 listed serving (Charburgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-776390",
+      "name": "Santa Barbara Charburger On Sourdough",
+      "calories": 1210,
+      "protein": 48,
+      "carbs": 48,
+      "fat": 93,
+      "servingLabel": "1 listed serving (Charburgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-776388",
+      "name": "Teriyaki Charburger On Seeded Bun",
+      "calories": 570,
+      "protein": 22,
+      "carbs": 47,
+      "fat": 31,
+      "servingLabel": "1 listed serving (Charburgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-776394",
+      "name": "Chargrilled Ahi Tuna Sandwich On Seeded Bun",
+      "calories": 430,
+      "protein": 32,
+      "carbs": 45,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-776393",
+      "name": "Chicken Club On Sourdough",
+      "calories": 880,
+      "protein": 47,
+      "carbs": 43,
+      "fat": 59,
+      "servingLabel": "1 listed serving (Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-776397",
+      "name": "Chicken Sandwich On Ciabatta",
+      "calories": 910,
+      "protein": 45,
+      "carbs": 59,
+      "fat": 57,
+      "servingLabel": "1 listed serving (Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-776395",
+      "name": "Spicy Crispy Chicken Sandwich",
+      "calories": 960,
+      "protein": 38,
+      "carbs": 103,
+      "fat": 44,
+      "servingLabel": "1 listed serving (Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-776396",
+      "name": "Veggie Burger On Wheat Bun (Vegan)",
+      "calories": 620,
+      "protein": 23,
+      "carbs": 69,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-776401",
+      "name": "BBQ Chicken Salad, No Dressing",
+      "calories": 340,
+      "protein": 37,
+      "carbs": 11,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-776403",
+      "name": "Caesar Salad, With Dressing",
+      "calories": 520,
+      "protein": 10,
+      "carbs": 19,
+      "fat": 45,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-776402",
+      "name": "Garden Salad, No Dressing",
+      "calories": 130,
+      "protein": 5,
+      "carbs": 21,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-776400",
+      "name": "Grilled Chicken Caesar Salad, With Dressing",
+      "calories": 790,
+      "protein": 41,
+      "carbs": 28,
+      "fat": 56,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-776398",
+      "name": "Grilled Chicken Salad, No Dressing",
+      "calories": 350,
+      "protein": 35,
+      "carbs": 24,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-776399",
+      "name": "Santa Barbara Cobb, With Dressing",
+      "calories": 900,
+      "protein": 51,
+      "carbs": 16,
+      "fat": 71,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-776404",
+      "name": "Crispy Chicken Bites 5 Pieces",
+      "calories": 160,
+      "protein": 14,
+      "carbs": 15,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Sides & Snacks; size in item name)"
+    },
+    {
+      "id": "nutritionix-776405",
+      "name": "Crispy Chicken Bites 10 Pieces",
+      "calories": 310,
+      "protein": 28,
+      "carbs": 30,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Sides & Snacks; size in item name)"
+    },
+    {
+      "id": "nutritionix-776406",
+      "name": "French Fries, Salt Added",
+      "calories": 440,
+      "protein": 4,
+      "carbs": 60,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Sides & Snacks; size in item name)"
+    },
+    {
+      "id": "nutritionix-776407",
+      "name": "Onion Rings, Salt Added",
+      "calories": 500,
+      "protein": 10,
+      "carbs": 62,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Sides & Snacks; size in item name)"
+    },
+    {
+      "id": "nutritionix-776411",
+      "name": "Side Caesar Salad",
+      "calories": 280,
+      "protein": 6,
+      "carbs": 12,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Sides & Snacks; size in item name)"
+    },
+    {
+      "id": "nutritionix-776410",
+      "name": "Side Salad",
+      "calories": 50,
+      "protein": 2,
+      "carbs": 8,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sides & Snacks; size in item name)"
+    },
+    {
+      "id": "nutritionix-776408",
+      "name": "Sweet Potato Fries",
+      "calories": 370,
+      "protein": 3,
+      "carbs": 50,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Sides & Snacks; size in item name)"
+    },
+    {
+      "id": "nutritionix-776409",
+      "name": "Tempura Green Beans, Salt Added",
+      "calories": 250,
+      "protein": 3,
+      "carbs": 34,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Sides & Snacks; size in item name)"
+    },
+    {
+      "id": "nutritionix-776416",
+      "name": "Buttered Ciabatta",
+      "calories": 460,
+      "protein": 9,
+      "carbs": 53,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Bread Options; size in item name)"
+    },
+    {
+      "id": "nutritionix-776417",
+      "name": "Flaxseed Brioche",
+      "calories": 380,
+      "protein": 11,
+      "carbs": 62,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Bread Options; size in item name)"
+    },
+    {
+      "id": "nutritionix-776415",
+      "name": "Plain Bun",
+      "calories": 160,
+      "protein": 4,
+      "carbs": 29,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Bread Options; size in item name)"
+    },
+    {
+      "id": "nutritionix-776412",
+      "name": "Seeded Bun",
+      "calories": 160,
+      "protein": 4,
+      "carbs": 29,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Bread Options; size in item name)"
+    },
+    {
+      "id": "nutritionix-776413",
+      "name": "Sourdough With Butter",
+      "calories": 370,
+      "protein": 8,
+      "carbs": 36,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Bread Options; size in item name)"
+    },
+    {
+      "id": "nutritionix-776414",
+      "name": "Wheat Bun",
+      "calories": 240,
+      "protein": 8,
+      "carbs": 44,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Bread Options; size in item name)"
+    },
+    {
+      "id": "nutritionix-776419",
+      "name": "Charburger With 2.4 Oz. Fries",
+      "calories": 620,
+      "protein": 22,
+      "carbs": 59,
+      "fat": 32,
+      "servingLabel": "1 listed serving (Kid Favorites; size in item name)"
+    },
+    {
+      "id": "nutritionix-776420",
+      "name": "Crispy Chicken Bites With 2.4 Oz Fries",
+      "calories": 380,
+      "protein": 17,
+      "carbs": 51,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Kid Favorites; size in item name)"
+    },
+    {
+      "id": "nutritionix-776421",
+      "name": "Grilled Cheese With 2.4 Oz. Fries",
+      "calories": 690,
+      "protein": 16,
+      "carbs": 58,
+      "fat": 45,
+      "servingLabel": "1 listed serving (Kid Favorites; size in item name)"
+    },
+    {
+      "id": "nutritionix-776429",
+      "name": "Brisk Rasberry Ice Tea",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 30,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-776423",
+      "name": "Diet Pepsi",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-776426",
+      "name": "Dr. Pepper",
+      "calories": 240,
+      "protein": 0,
+      "carbs": 66,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-776425",
+      "name": "Mountain Dew",
+      "calories": 290,
+      "protein": 0,
+      "carbs": 77,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-776422",
+      "name": "Pepsi",
+      "calories": 250,
+      "protein": 0,
+      "carbs": 69,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-776424",
+      "name": "Starry",
+      "calories": 240,
+      "protein": 0,
+      "carbs": 65,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-776431",
+      "name": "Strawberry Limeade",
+      "calories": 50,
+      "protein": 0,
+      "carbs": 12,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-776432",
+      "name": "Tropical Tea",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-776427",
+      "name": "Tropicana Lemonade",
+      "calories": 250,
+      "protein": 0,
+      "carbs": 67,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-776428",
+      "name": "Tropicanca Fruit Punch",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 75,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-776434",
+      "name": "Chocolate Shake",
+      "calories": 690,
+      "protein": 11,
+      "carbs": 96,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-776439",
+      "name": "Chocolate Sundae",
+      "calories": 860,
+      "protein": 12,
+      "carbs": 123,
+      "fat": 33,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-776437",
+      "name": "Coffee Shake",
+      "calories": 610,
+      "protein": 10,
+      "carbs": 77,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-776442",
+      "name": "Cone",
+      "calories": 370,
+      "protein": 9,
+      "carbs": 61,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-776438",
+      "name": "Cookies & Cream Shake",
+      "calories": 800,
+      "protein": 11,
+      "carbs": 107,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-776436",
+      "name": "Mocha Shake",
+      "calories": 650,
+      "protein": 11,
+      "carbs": 87,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-776435",
+      "name": "Strawberry Shake",
+      "calories": 670,
+      "protein": 21,
+      "carbs": 95,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-776440",
+      "name": "Strawberry Sundae",
+      "calories": 810,
+      "protein": 11,
+      "carbs": 116,
+      "fat": 32,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-776433",
+      "name": "Vanilla Shake",
+      "calories": 640,
+      "protein": 12,
+      "carbs": 79,
+      "fat": 28,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-776441",
+      "name": "Vanilla Sundae",
+      "calories": 750,
+      "protein": 11,
+      "carbs": 99,
+      "fat": 32,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-776443",
+      "name": "American Cheese (1 Slice)",
+      "calories": 70,
+      "protein": 3,
+      "carbs": 1,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Optional Items, Sauces, and Dressings; size in item name)"
+    },
+    {
+      "id": "nutritionix-776444",
+      "name": "Apple Juice",
+      "calories": 80,
+      "protein": 0,
+      "carbs": 21,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Optional Items, Sauces, and Dressings; size in item name)"
+    },
+    {
+      "id": "nutritionix-776445",
+      "name": "Applesauce Cup, Unsweetened",
+      "calories": 50,
+      "protein": 0,
+      "carbs": 13,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Optional Items, Sauces, and Dressings; size in item name)"
+    },
+    {
+      "id": "nutritionix-776446",
+      "name": "Avocado (1 Scoop)",
+      "calories": 100,
+      "protein": 1,
+      "carbs": 5,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Optional Items, Sauces, and Dressings; size in item name)"
+    },
+    {
+      "id": "nutritionix-776447",
+      "name": "Bacon (2 Strips)",
+      "calories": 80,
+      "protein": 6,
+      "carbs": 0,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Optional Items, Sauces, and Dressings; size in item name)"
+    },
+    {
+      "id": "nutritionix-776448",
+      "name": "BBQ Sauce",
+      "calories": 35,
+      "protein": 0,
+      "carbs": 15,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Optional Items, Sauces, and Dressings; size in item name)"
+    },
+    {
+      "id": "nutritionix-776449",
+      "name": "Blue Cheese Dressing",
+      "calories": 80,
+      "protein": 1,
+      "carbs": 1,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Optional Items, Sauces, and Dressings; size in item name)"
+    },
+    {
+      "id": "nutritionix-776450",
+      "name": "Caesar Salad Dressing",
+      "calories": 170,
+      "protein": 1,
+      "carbs": 1,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Optional Items, Sauces, and Dressings; size in item name)"
+    },
+    {
+      "id": "nutritionix-776451",
+      "name": "Caramelized Onions",
+      "calories": 35,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Optional Items, Sauces, and Dressings; size in item name)"
+    },
+    {
+      "id": "nutritionix-776453",
+      "name": "Crispy Chicken Filet",
+      "calories": 300,
+      "protein": 23,
+      "carbs": 34,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Optional Items, Sauces, and Dressings; size in item name)"
+    },
+    {
+      "id": "nutritionix-776454",
+      "name": "Croutons",
+      "calories": 30,
+      "protein": 1,
+      "carbs": 4,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Optional Items, Sauces, and Dressings; size in item name)"
+    },
+    {
+      "id": "nutritionix-776455",
+      "name": "Crumbled Blue Cheese",
+      "calories": 100,
+      "protein": 6,
+      "carbs": 1,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Optional Items, Sauces, and Dressings; size in item name)"
+    },
+    {
+      "id": "nutritionix-776456",
+      "name": "Fat Free Italian Dressing (Select Locations)",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Optional Items, Sauces, and Dressings; size in item name)"
+    },
+    {
+      "id": "nutritionix-776457",
+      "name": "House Dressing (Balsamic & Olive Oil)",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Optional Items, Sauces, and Dressings; size in item name)"
+    },
+    {
+      "id": "nutritionix-776458",
+      "name": "Impossible Patty",
+      "calories": 210,
+      "protein": 17,
+      "carbs": 8,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Optional Items, Sauces, and Dressings; size in item name)"
+    },
+    {
+      "id": "nutritionix-776459",
+      "name": "Italian (Select Locations)",
+      "calories": 110,
+      "protein": 0,
+      "carbs": 7,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Optional Items, Sauces, and Dressings; size in item name)"
+    },
+    {
+      "id": "nutritionix-776460",
+      "name": "Margarine",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Optional Items, Sauces, and Dressings; size in item name)"
+    },
+    {
+      "id": "nutritionix-776461",
+      "name": "Mayonnaise",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Optional Items, Sauces, and Dressings; size in item name)"
+    },
+    {
+      "id": "nutritionix-776462",
+      "name": "Pineapple Slice",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Optional Items, Sauces, and Dressings; size in item name)"
+    },
+    {
+      "id": "nutritionix-776464",
+      "name": "Red Wine Vinaigrette",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Optional Items, Sauces, and Dressings; size in item name)"
+    },
+    {
+      "id": "nutritionix-776465",
+      "name": "Roasted Garlic Aioli",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Optional Items, Sauces, and Dressings; size in item name)"
+    },
+    {
+      "id": "nutritionix-776467",
+      "name": "Seasoned, Chargrilled Ahi Tuna",
+      "calories": 120,
+      "protein": 26,
+      "carbs": 0,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Optional Items, Sauces, and Dressings; size in item name)"
+    },
+    {
+      "id": "nutritionix-776468",
+      "name": "Seasoned, Grilled Beef Patty",
+      "calories": 230,
+      "protein": 16,
+      "carbs": 0,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Optional Items, Sauces, and Dressings; size in item name)"
+    },
+    {
+      "id": "nutritionix-776469",
+      "name": "Seasoned, Grilled Chicken Breast",
+      "calories": 220,
+      "protein": 29,
+      "carbs": 2,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Optional Items, Sauces, and Dressings; size in item name)"
+    },
+    {
+      "id": "nutritionix-776470",
+      "name": "Spicy Red Pepper Sauce",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Optional Items, Sauces, and Dressings; size in item name)"
+    },
+    {
+      "id": "nutritionix-776471",
+      "name": "Sweet Mustard Dressing (Vegan)",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 7,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Optional Items, Sauces, and Dressings; size in item name)"
+    },
+    {
+      "id": "nutritionix-776472",
+      "name": "Tartar Sauce",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Optional Items, Sauces, and Dressings; size in item name)"
+    },
+    {
+      "id": "nutritionix-776473",
+      "name": "Teriyaki Sauce",
+      "calories": 70,
+      "protein": 2,
+      "carbs": 16,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Optional Items, Sauces, and Dressings; size in item name)"
+    },
+    {
+      "id": "nutritionix-776474",
+      "name": "Thousand Island Dressing",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Optional Items, Sauces, and Dressings; size in item name)"
+    },
+    {
+      "id": "nutritionix-776475",
+      "name": "Veggie Burger Patty",
+      "calories": 170,
+      "protein": 14,
+      "carbs": 16,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Optional Items, Sauces, and Dressings; size in item name)"
+    },
+    {
+      "id": "nutritionix-776476",
+      "name": "Whipped Cream",
+      "calories": 20,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Optional Items, Sauces, and Dressings; size in item name)"
+    },
+    {
+      "id": "nutritionix-776477",
+      "name": "White American Cheese (1 Slice)",
+      "calories": 70,
+      "protein": 3,
+      "carbs": 1,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Optional Items, Sauces, and Dressings; size in item name)"
+    }
+  ],
+  "sourceDate": "2025-05-02"
+}

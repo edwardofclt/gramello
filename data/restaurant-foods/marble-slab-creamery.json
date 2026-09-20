@@ -1,0 +1,5995 @@
+{
+  "chain": "Marble Slab Creamery",
+  "sourceUrl": "https://www.nutritionix.com/marble-slab-creamery/menu/premium",
+  "source": "Nutritionix",
+  "sourceKind": "database",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "id": "nutritionix-509801",
+      "name": "Mix-In's, Almonds",
+      "calories": 5,
+      "protein": 2,
+      "carbs": 2,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Mix-In's; size in item name)"
+    },
+    {
+      "id": "nutritionix-509802",
+      "name": "Mix-In's, Andes Candies",
+      "calories": 80,
+      "protein": 0,
+      "carbs": 8,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Mix-In's; size in item name)"
+    },
+    {
+      "id": "nutritionix-509845",
+      "name": "Mix-In's, Average",
+      "calories": 45,
+      "protein": 1,
+      "carbs": 6,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Mix-In's; size in item name)"
+    },
+    {
+      "id": "nutritionix-509803",
+      "name": "Mix-In's, Bananas, Fresh",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Mix-In's; size in item name)"
+    },
+    {
+      "id": "nutritionix-509804",
+      "name": "Mix-In's, Blueberries",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Mix-In's; size in item name)"
+    },
+    {
+      "id": "nutritionix-509805",
+      "name": "Mix-In's, Brownie",
+      "calories": 110,
+      "protein": 2,
+      "carbs": 13,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Mix-In's; size in item name)"
+    },
+    {
+      "id": "nutritionix-509806",
+      "name": "Mix-In's, Butterfinger",
+      "calories": 60,
+      "protein": 1,
+      "carbs": 8,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Mix-In's; size in item name)"
+    },
+    {
+      "id": "nutritionix-509807",
+      "name": "Mix-In's, Cake, Yellow",
+      "calories": 45,
+      "protein": 1,
+      "carbs": 6,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Mix-In's; size in item name)"
+    },
+    {
+      "id": "nutritionix-509808",
+      "name": "Mix-In's, Caramel Topping",
+      "calories": 60,
+      "protein": 1,
+      "carbs": 14,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Mix-In's; size in item name)"
+    },
+    {
+      "id": "nutritionix-509809",
+      "name": "Mix-In's, Chocolate Chips",
+      "calories": 20,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Mix-In's; size in item name)"
+    },
+    {
+      "id": "nutritionix-509810",
+      "name": "Mix-In's, Chocolate Covered",
+      "calories": 50,
+      "protein": 1,
+      "carbs": 7,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Mix-In's; size in item name)"
+    },
+    {
+      "id": "nutritionix-509811",
+      "name": "Mix-In's, Coconut Flakes",
+      "calories": 45,
+      "protein": 1,
+      "carbs": 4,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Mix-In's; size in item name)"
+    },
+    {
+      "id": "nutritionix-509812",
+      "name": "Mix-In's, Cookie Dough",
+      "calories": 60,
+      "protein": 1,
+      "carbs": 8,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Mix-In's; size in item name)"
+    },
+    {
+      "id": "nutritionix-509813",
+      "name": "Mix-In's, Fruity Pebbles",
+      "calories": 35,
+      "protein": 1,
+      "carbs": 6,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Mix-In's; size in item name)"
+    },
+    {
+      "id": "nutritionix-509814",
+      "name": "Mix-In's, Fudge Topping",
+      "calories": 70,
+      "protein": 0,
+      "carbs": 11,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Mix-In's; size in item name)"
+    },
+    {
+      "id": "nutritionix-509815",
+      "name": "Mix-In's, Gummy Bears",
+      "calories": 45,
+      "protein": 0,
+      "carbs": 11,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Mix-In's; size in item name)"
+    },
+    {
+      "id": "nutritionix-509816",
+      "name": "Mix-In's, Heath Bar",
+      "calories": 70,
+      "protein": 1,
+      "carbs": 7,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Mix-In's; size in item name)"
+    },
+    {
+      "id": "nutritionix-509817",
+      "name": "Mix-In's, Kit Kat",
+      "calories": 70,
+      "protein": 1,
+      "carbs": 7,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Mix-In's; size in item name)"
+    },
+    {
+      "id": "nutritionix-509818",
+      "name": "Mix-In's, M&Ms",
+      "calories": 60,
+      "protein": 1,
+      "carbs": 8,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Mix-In's; size in item name)"
+    },
+    {
+      "id": "nutritionix-509819",
+      "name": "Mix-In's, M&Ms (Mini)",
+      "calories": 70,
+      "protein": 1,
+      "carbs": 9,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Mix-In's; size in item name)"
+    },
+    {
+      "id": "nutritionix-509820",
+      "name": "Mix-In's, Mallo Cream Topping",
+      "calories": 70,
+      "protein": 0,
+      "carbs": 17,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Mix-In's; size in item name)"
+    },
+    {
+      "id": "nutritionix-509821",
+      "name": "Mix-In's, Malt Powder",
+      "calories": 40,
+      "protein": 1,
+      "carbs": 7,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Mix-In's; size in item name)"
+    },
+    {
+      "id": "nutritionix-509822",
+      "name": "Mix-In's, Maraschino Cherries",
+      "calories": 25,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Mix-In's; size in item name)"
+    },
+    {
+      "id": "nutritionix-509823",
+      "name": "Mix-In's, Marshmallows (Mini)",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Mix-In's; size in item name)"
+    },
+    {
+      "id": "nutritionix-509824",
+      "name": "Mix-In's, Mixed Nuts",
+      "calories": 60,
+      "protein": 2,
+      "carbs": 2,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Mix-In's; size in item name)"
+    },
+    {
+      "id": "nutritionix-509825",
+      "name": "Mix-In's, Oreos (Crushed)",
+      "calories": 35,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Mix-In's; size in item name)"
+    },
+    {
+      "id": "nutritionix-509826",
+      "name": "Mix-In's, Peanut Butter Topping",
+      "calories": 100,
+      "protein": 2,
+      "carbs": 9,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Mix-In's; size in item name)"
+    },
+    {
+      "id": "nutritionix-509827",
+      "name": "Mix-In's, Peanuts",
+      "calories": 60,
+      "protein": 2,
+      "carbs": 2,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Mix-In's; size in item name)"
+    },
+    {
+      "id": "nutritionix-509828",
+      "name": "Mix-In's, Pecans",
+      "calories": 70,
+      "protein": 1,
+      "carbs": 1,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Mix-In's; size in item name)"
+    },
+    {
+      "id": "nutritionix-509829",
+      "name": "Mix-In's, Pineapple",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Mix-In's; size in item name)"
+    },
+    {
+      "id": "nutritionix-509830",
+      "name": "Mix-In's, Raspberrie Topping",
+      "calories": 20,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Mix-In's; size in item name)"
+    },
+    {
+      "id": "nutritionix-509831",
+      "name": "Mix-In's, Reese's Peanut Butter",
+      "calories": 50,
+      "protein": 1,
+      "carbs": 5,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Mix-In's; size in item name)"
+    },
+    {
+      "id": "nutritionix-509832",
+      "name": "Mix-In's, Reese's Pieces (Mini)",
+      "calories": 30,
+      "protein": 1,
+      "carbs": 3,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Mix-In's; size in item name)"
+    },
+    {
+      "id": "nutritionix-509833",
+      "name": "Mix-In's, Snickers",
+      "calories": 110,
+      "protein": 2,
+      "carbs": 13,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Mix-In's; size in item name)"
+    },
+    {
+      "id": "nutritionix-509834",
+      "name": "Mix-In's, Sno Caps",
+      "calories": 50,
+      "protein": 0,
+      "carbs": 8,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Mix-In's; size in item name)"
+    },
+    {
+      "id": "nutritionix-509835",
+      "name": "Mix-In's, Sprinkles, Chocolate",
+      "calories": 50,
+      "protein": 0,
+      "carbs": 9,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Mix-In's; size in item name)"
+    },
+    {
+      "id": "nutritionix-509836",
+      "name": "Mix-In's, Sprinkles, Rainbow",
+      "calories": 50,
+      "protein": 0,
+      "carbs": 9,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Mix-In's; size in item name)"
+    },
+    {
+      "id": "nutritionix-509837",
+      "name": "Mix-In's, Strawberries",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Mix-In's; size in item name)"
+    },
+    {
+      "id": "nutritionix-509838",
+      "name": "Mix-In's, Strawberry Topping",
+      "calories": 20,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Mix-In's; size in item name)"
+    },
+    {
+      "id": "nutritionix-509839",
+      "name": "Mix-In's, Teddy Grahams",
+      "calories": 20,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0.5,
+      "servingLabel": "1 listed serving (Mix-In's; size in item name)"
+    },
+    {
+      "id": "nutritionix-509840",
+      "name": "Mix-In's, Twix",
+      "calories": 60,
+      "protein": 1,
+      "carbs": 7,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Mix-In's; size in item name)"
+    },
+    {
+      "id": "nutritionix-509841",
+      "name": "Mix-In's, Walnuts",
+      "calories": 60,
+      "protein": 1,
+      "carbs": 1,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Mix-In's; size in item name)"
+    },
+    {
+      "id": "nutritionix-509842",
+      "name": "Mix-In's, Whipped Cream",
+      "calories": 20,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Mix-In's; size in item name)"
+    },
+    {
+      "id": "nutritionix-509843",
+      "name": "Mix-In's, White Chocolate Chips",
+      "calories": 60,
+      "protein": 1,
+      "carbs": 7,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Mix-In's; size in item name)"
+    },
+    {
+      "id": "nutritionix-509844",
+      "name": "Mix-In's, York Peppermint",
+      "calories": 15,
+      "protein": 1,
+      "carbs": 1,
+      "fat": 0.5,
+      "servingLabel": "1 listed serving (Mix-In's; size in item name)"
+    },
+    {
+      "id": "nutritionix-509849",
+      "name": "Amaretto Ice Cream, Best Value",
+      "calories": 800,
+      "protein": 12,
+      "carbs": 80,
+      "fat": 48,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509846",
+      "name": "Amaretto Ice Cream, Child",
+      "calories": 200,
+      "protein": 3,
+      "carbs": 20,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509850",
+      "name": "Amaretto Ice Cream, Pint",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509851",
+      "name": "Amaretto Ice Cream, Quart",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509848",
+      "name": "Amaretto Ice Cream, Regular",
+      "calories": 610,
+      "protein": 9,
+      "carbs": 66,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509847",
+      "name": "Amaretto Ice Cream, Small",
+      "calories": 400,
+      "protein": 6,
+      "carbs": 40,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509855",
+      "name": "Banana Ice Cream, Best Value",
+      "calories": 700,
+      "protein": 9,
+      "carbs": 78,
+      "fat": 39,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509852",
+      "name": "Banana Ice Cream, Child",
+      "calories": 180,
+      "protein": 3,
+      "carbs": 20,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509856",
+      "name": "Banana Ice Cream, Pint",
+      "calories": 190,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509857",
+      "name": "Banana Ice Cream, Quart",
+      "calories": 190,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509854",
+      "name": "Banana Ice Cream, Regular",
+      "calories": 540,
+      "protein": 7,
+      "carbs": 60,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509853",
+      "name": "Banana Ice Cream, Small",
+      "calories": 350,
+      "protein": 5,
+      "carbs": 38,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509861",
+      "name": "Banana Pudding Ice Cream, Best Value",
+      "calories": 740,
+      "protein": 9,
+      "carbs": 89,
+      "fat": 39,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509858",
+      "name": "Banana Pudding Ice Cream, Child",
+      "calories": 190,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509862",
+      "name": "Banana Pudding Ice Cream, Pint",
+      "calories": 210,
+      "protein": 3,
+      "carbs": 24,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509863",
+      "name": "Banana Pudding Ice Cream, Quart",
+      "calories": 210,
+      "protein": 3,
+      "carbs": 24,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509860",
+      "name": "Banana Pudding Ice Cream, Regular",
+      "calories": 570,
+      "protein": 8,
+      "carbs": 67,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509859",
+      "name": "Banana Pudding Ice Cream, Small",
+      "calories": 380,
+      "protein": 5,
+      "carbs": 45,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509867",
+      "name": "Birthday Cake Ice Cream, Best Value",
+      "calories": 840,
+      "protein": 11,
+      "carbs": 96,
+      "fat": 45,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509864",
+      "name": "Birthday Cake Ice Cream, Child",
+      "calories": 210,
+      "protein": 3,
+      "carbs": 24,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509868",
+      "name": "Birthday Cake Ice Cream, Pint",
+      "calories": 230,
+      "protein": 3,
+      "carbs": 26,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509869",
+      "name": "Birthday Cake Ice Cream, Quart",
+      "calories": 230,
+      "protein": 3,
+      "carbs": 26,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509866",
+      "name": "Birthday Cake Ice Cream, Regular",
+      "calories": 630,
+      "protein": 8,
+      "carbs": 72,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509865",
+      "name": "Birthday Cake Ice Cream, Small",
+      "calories": 420,
+      "protein": 5,
+      "carbs": 48,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509873",
+      "name": "Black Cherry Ice Cream, Best Value",
+      "calories": 790,
+      "protein": 10,
+      "carbs": 80,
+      "fat": 46,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509870",
+      "name": "Black Cherry Ice Cream, Child",
+      "calories": 200,
+      "protein": 3,
+      "carbs": 20,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509874",
+      "name": "Black Cherry Ice Cream, Pint",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509875",
+      "name": "Black Cherry Ice Cream, Quart",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509872",
+      "name": "Black Cherry Ice Cream, Regular",
+      "calories": 590,
+      "protein": 8,
+      "carbs": 60,
+      "fat": 35,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509871",
+      "name": "Black Cherry Ice Cream, Small",
+      "calories": 390,
+      "protein": 5,
+      "carbs": 40,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509879",
+      "name": "Black Walnut Ice Cream, Best Value",
+      "calories": 780,
+      "protein": 10,
+      "carbs": 81,
+      "fat": 46,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509876",
+      "name": "Black Walnut Ice Cream, Child",
+      "calories": 200,
+      "protein": 3,
+      "carbs": 20,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509880",
+      "name": "Black Walnut Ice Cream, Pint",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509881",
+      "name": "Black Walnut Ice Cream, Quart",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509878",
+      "name": "Black Walnut Ice Cream, Regular",
+      "calories": 590,
+      "protein": 8,
+      "carbs": 61,
+      "fat": 35,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509877",
+      "name": "Black Walnut Ice Cream, Small",
+      "calories": 390,
+      "protein": 5,
+      "carbs": 40,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509891",
+      "name": "Blueberry Ice Cream, Best Value",
+      "calories": 750,
+      "protein": 10,
+      "carbs": 83,
+      "fat": 42,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509888",
+      "name": "Blueberry Ice Cream, Child",
+      "calories": 190,
+      "protein": 2,
+      "carbs": 21,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509892",
+      "name": "Blueberry Ice Cream, Pint",
+      "calories": 210,
+      "protein": 3,
+      "carbs": 23,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509893",
+      "name": "Blueberry Ice Cream, Quart",
+      "calories": 210,
+      "protein": 3,
+      "carbs": 23,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509890",
+      "name": "Blueberry Ice Cream, Regular",
+      "calories": 560,
+      "protein": 7,
+      "carbs": 62,
+      "fat": 31,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509889",
+      "name": "Blueberry Ice Cream, Small",
+      "calories": 370,
+      "protein": 5,
+      "carbs": 41,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509885",
+      "name": "Blue Cotton Candy Ice Cream, Best Value",
+      "calories": 790,
+      "protein": 12,
+      "carbs": 78,
+      "fat": 48,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509882",
+      "name": "Blue Cotton Candy Ice Cream, Child",
+      "calories": 200,
+      "protein": 3,
+      "carbs": 20,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509886",
+      "name": "Blue Cotton Candy Ice Cream, Pint",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509887",
+      "name": "Blue Cotton Candy Ice Cream, Quart",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509884",
+      "name": "Blue Cotton Candy Ice Cream, Regular",
+      "calories": 600,
+      "protein": 9,
+      "carbs": 60,
+      "fat": 36,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509883",
+      "name": "Blue Cotton Candy Ice Cream, Small",
+      "calories": 400,
+      "protein": 6,
+      "carbs": 40,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509897",
+      "name": "Butter Pecan Ice Cream, Best Value",
+      "calories": 780,
+      "protein": 10,
+      "carbs": 89,
+      "fat": 43,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509894",
+      "name": "Butter Pecan Ice Cream, Child",
+      "calories": 200,
+      "protein": 2,
+      "carbs": 22,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509898",
+      "name": "Butter Pecan Ice Cream, Pint",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 24,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509899",
+      "name": "Butter Pecan Ice Cream, Quart",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 24,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509896",
+      "name": "Butter Pecan Ice Cream, Regular",
+      "calories": 590,
+      "protein": 7,
+      "carbs": 67,
+      "fat": 32,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509895",
+      "name": "Butter Pecan Ice Cream, Small",
+      "calories": 390,
+      "protein": 5,
+      "carbs": 44,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509903",
+      "name": "Cappuccino Ice Cream, Best Value",
+      "calories": 780,
+      "protein": 11,
+      "carbs": 79,
+      "fat": 46,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509900",
+      "name": "Cappuccino Ice Cream, Child",
+      "calories": 190,
+      "protein": 3,
+      "carbs": 20,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509904",
+      "name": "Cappuccino Ice Cream, Pint",
+      "calories": 210,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509905",
+      "name": "Cappuccino Ice Cream, Quart",
+      "calories": 210,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509902",
+      "name": "Cappuccino Ice Cream, Regular",
+      "calories": 580,
+      "protein": 8,
+      "carbs": 59,
+      "fat": 35,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509901",
+      "name": "Cappuccino Ice Cream, Small",
+      "calories": 390,
+      "protein": 5,
+      "carbs": 40,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509909",
+      "name": "Caramel Ice Cream, Best Value",
+      "calories": 780,
+      "protein": 10,
+      "carbs": 82,
+      "fat": 45,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509906",
+      "name": "Caramel Ice Cream, Child",
+      "calories": 200,
+      "protein": 3,
+      "carbs": 21,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509910",
+      "name": "Caramel Ice Cream, Pint",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 26,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509911",
+      "name": "Caramel Ice Cream, Quart",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 26,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509908",
+      "name": "Caramel Ice Cream, Regular",
+      "calories": 590,
+      "protein": 8,
+      "carbs": 62,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509907",
+      "name": "Caramel Ice Cream, Small",
+      "calories": 390,
+      "protein": 5,
+      "carbs": 41,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509915",
+      "name": "Carrot Cake Ice Cream, Best Value",
+      "calories": 850,
+      "protein": 12,
+      "carbs": 100,
+      "fat": 44,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509912",
+      "name": "Carrot Cake Ice Cream, Child",
+      "calories": 210,
+      "protein": 3,
+      "carbs": 25,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509916",
+      "name": "Carrot Cake Ice Cream, Pint",
+      "calories": 230,
+      "protein": 3,
+      "carbs": 27,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509917",
+      "name": "Carrot Cake Ice Cream, Quart",
+      "calories": 230,
+      "protein": 3,
+      "carbs": 27,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509914",
+      "name": "Carrot Cake Ice Cream, Regular",
+      "calories": 630,
+      "protein": 9,
+      "carbs": 75,
+      "fat": 33,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509913",
+      "name": "Carrot Cake Ice Cream, Small",
+      "calories": 420,
+      "protein": 6,
+      "carbs": 50,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509921",
+      "name": "Cheesecake Ice Cream, Best Value",
+      "calories": 780,
+      "protein": 10,
+      "carbs": 87,
+      "fat": 43,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509918",
+      "name": "Cheesecake Ice Cream, Child",
+      "calories": 200,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509922",
+      "name": "Cheesecake Ice Cream, Pint",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 24,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509923",
+      "name": "Cheesecake Ice Cream, Quart",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 24,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509920",
+      "name": "Cheesecake Ice Cream, Regular",
+      "calories": 590,
+      "protein": 8,
+      "carbs": 65,
+      "fat": 33,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509919",
+      "name": "Cheesecake Ice Cream, Small",
+      "calories": 390,
+      "protein": 5,
+      "carbs": 43,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509933",
+      "name": "Chocolate Amaretto Ice Cream, Best Value",
+      "calories": 800,
+      "protein": 11,
+      "carbs": 85,
+      "fat": 46,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509930",
+      "name": "Chocolate Amaretto Ice Cream, Child",
+      "calories": 200,
+      "protein": 3,
+      "carbs": 21,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509934",
+      "name": "Chocolate Amaretto Ice Cream, Pint",
+      "calories": 220,
+      "protein": 4,
+      "carbs": 23,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509935",
+      "name": "Chocolate Amaretto Ice Cream, Quart",
+      "calories": 220,
+      "protein": 4,
+      "carbs": 23,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509932",
+      "name": "Chocolate Amaretto Ice Cream, Regular",
+      "calories": 600,
+      "protein": 9,
+      "carbs": 64,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509931",
+      "name": "Chocolate Amaretto Ice Cream, Small",
+      "calories": 400,
+      "protein": 6,
+      "carbs": 42,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509939",
+      "name": "Chocolate Banana Ice Cream, Best Value",
+      "calories": 760,
+      "protein": 11,
+      "carbs": 86,
+      "fat": 42,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509936",
+      "name": "Chocolate Banana Ice Cream, Child",
+      "calories": 190,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509940",
+      "name": "Chocolate Banana Ice Cream, Pint",
+      "calories": 210,
+      "protein": 3,
+      "carbs": 24,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509941",
+      "name": "Chocolate Banana Ice Cream, Quart",
+      "calories": 210,
+      "protein": 3,
+      "carbs": 24,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509938",
+      "name": "Chocolate Banana Ice Cream, Regular",
+      "calories": 570,
+      "protein": 8,
+      "carbs": 65,
+      "fat": 32,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509937",
+      "name": "Chocolate Banana Ice Cream, Small",
+      "calories": 380,
+      "protein": 6,
+      "carbs": 43,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509945",
+      "name": "Chocolate Birthday Ice Cream, Best Value",
+      "calories": 860,
+      "protein": 14,
+      "carbs": 104,
+      "fat": 44,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509942",
+      "name": "Chocolate Birthday Ice Cream, Child",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 25,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509946",
+      "name": "Chocolate Birthday Ice Cream, Pint",
+      "calories": 230,
+      "protein": 4,
+      "carbs": 28,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509947",
+      "name": "Chocolate Birthday Ice Cream, Quart",
+      "calories": 230,
+      "protein": 4,
+      "carbs": 28,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509944",
+      "name": "Chocolate Birthday Ice Cream, Regular",
+      "calories": 650,
+      "protein": 10,
+      "carbs": 78,
+      "fat": 33,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509943",
+      "name": "Chocolate Birthday Ice Cream, Small",
+      "calories": 430,
+      "protein": 7,
+      "carbs": 52,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509927",
+      "name": "Chocolate Ice Cream, Best Value",
+      "calories": 800,
+      "protein": 12,
+      "carbs": 89,
+      "fat": 45,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509924",
+      "name": "Chocolate Ice Cream, Child",
+      "calories": 200,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509928",
+      "name": "Chocolate Ice Cream, Pint",
+      "calories": 220,
+      "protein": 4,
+      "carbs": 24,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509929",
+      "name": "Chocolate Ice Cream, Quart",
+      "calories": 220,
+      "protein": 4,
+      "carbs": 24,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509926",
+      "name": "Chocolate Ice Cream, Regular",
+      "calories": 600,
+      "protein": 9,
+      "carbs": 67,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509925",
+      "name": "Chocolate Ice Cream, Small",
+      "calories": 400,
+      "protein": 6,
+      "carbs": 44,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509951",
+      "name": "Chocolate Mallo Ice Cream, Best Value",
+      "calories": 730,
+      "protein": 10,
+      "carbs": 86,
+      "fat": 39,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509948",
+      "name": "Chocolate Mallo Ice Cream, Child",
+      "calories": 180,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509952",
+      "name": "Chocolate Mallo Ice Cream, Pint",
+      "calories": 200,
+      "protein": 3,
+      "carbs": 24,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509953",
+      "name": "Chocolate Mallo Ice Cream, Quart",
+      "calories": 200,
+      "protein": 3,
+      "carbs": 24,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509950",
+      "name": "Chocolate Mallo Ice Cream, Regular",
+      "calories": 550,
+      "protein": 8,
+      "carbs": 65,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509949",
+      "name": "Chocolate Mallo Ice Cream, Small",
+      "calories": 370,
+      "protein": 5,
+      "carbs": 43,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509957",
+      "name": "Chocolate Mint Ice Cream, Best Value",
+      "calories": 800,
+      "protein": 12,
+      "carbs": 89,
+      "fat": 45,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509954",
+      "name": "Chocolate Mint Ice Cream, Child",
+      "calories": 200,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509958",
+      "name": "Chocolate Mint Ice Cream, Pint",
+      "calories": 220,
+      "protein": 4,
+      "carbs": 24,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509959",
+      "name": "Chocolate Mint Ice Cream, Quart",
+      "calories": 220,
+      "protein": 4,
+      "carbs": 24,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509956",
+      "name": "Chocolate Mint Ice Cream, Regular",
+      "calories": 600,
+      "protein": 9,
+      "carbs": 67,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509955",
+      "name": "Chocolate Mint Ice Cream, Small",
+      "calories": 400,
+      "protein": 6,
+      "carbs": 44,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509963",
+      "name": "Chocolate Peanut Ice Cream, Best Value",
+      "calories": 850,
+      "protein": 15,
+      "carbs": 88,
+      "fat": 50,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509960",
+      "name": "Chocolate Peanut Ice Cream, Child",
+      "calories": 210,
+      "protein": 4,
+      "carbs": 22,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509964",
+      "name": "Chocolate Peanut Ice Cream, Pint",
+      "calories": 230,
+      "protein": 4,
+      "carbs": 24,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509965",
+      "name": "Chocolate Peanut Ice Cream, Quart",
+      "calories": 230,
+      "protein": 4,
+      "carbs": 24,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509962",
+      "name": "Chocolate Peanut Ice Cream, Regular",
+      "calories": 640,
+      "protein": 11,
+      "carbs": 66,
+      "fat": 38,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509961",
+      "name": "Chocolate Peanut Ice Cream, Small",
+      "calories": 430,
+      "protein": 8,
+      "carbs": 44,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509969",
+      "name": "Chocolate Raspberry Ice Cream, Best Value",
+      "calories": 780,
+      "protein": 11,
+      "carbs": 92,
+      "fat": 41,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509966",
+      "name": "Chocolate Raspberry Ice Cream, Child",
+      "calories": 190,
+      "protein": 3,
+      "carbs": 23,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509970",
+      "name": "Chocolate Raspberry Ice Cream, Pint",
+      "calories": 210,
+      "protein": 3,
+      "carbs": 25,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509971",
+      "name": "Chocolate Raspberry Ice Cream, Quart",
+      "calories": 210,
+      "protein": 3,
+      "carbs": 25,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509968",
+      "name": "Chocolate Raspberry Ice Cream, Regular",
+      "calories": 580,
+      "protein": 8,
+      "carbs": 69,
+      "fat": 31,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509967",
+      "name": "Chocolate Raspberry Ice Cream, Small",
+      "calories": 390,
+      "protein": 5,
+      "carbs": 46,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509975",
+      "name": "Chocolate Rum Ice Cream, Best Value",
+      "calories": 790,
+      "protein": 10,
+      "carbs": 89,
+      "fat": 43,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509972",
+      "name": "Chocolate Rum Ice Cream, Child",
+      "calories": 200,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509976",
+      "name": "Chocolate Rum Ice Cream, Pint",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 24,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509977",
+      "name": "Chocolate Rum Ice Cream, Quart",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 24,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509974",
+      "name": "Chocolate Rum Ice Cream, Regular",
+      "calories": 590,
+      "protein": 8,
+      "carbs": 67,
+      "fat": 32,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509973",
+      "name": "Chocolate Rum Ice Cream, Small",
+      "calories": 400,
+      "protein": 5,
+      "carbs": 44,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509981",
+      "name": "Chocolate Swiss Ice Cream, Best Value",
+      "calories": 790,
+      "protein": 11,
+      "carbs": 91,
+      "fat": 43,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509978",
+      "name": "Chocolate Swiss Ice Cream, Child",
+      "calories": 200,
+      "protein": 3,
+      "carbs": 23,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509982",
+      "name": "Chocolate Swiss Ice Cream, Pint",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 25,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509983",
+      "name": "Chocolate Swiss Ice Cream, Quart",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 25,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509980",
+      "name": "Chocolate Swiss Ice Cream, Regular",
+      "calories": 590,
+      "protein": 8,
+      "carbs": 68,
+      "fat": 32,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509979",
+      "name": "Chocolate Swiss Ice Cream, Small",
+      "calories": 390,
+      "protein": 5,
+      "carbs": 45,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509993",
+      "name": "Cinamoo Bun Ice Cream, Best Value",
+      "calories": 810,
+      "protein": 11,
+      "carbs": 87,
+      "fat": 44,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509990",
+      "name": "Cinamoo Bun Ice Cream, Child",
+      "calories": 200,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509994",
+      "name": "Cinamoo Bun Ice Cream, Pint",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 27,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509995",
+      "name": "Cinamoo Bun Ice Cream, Quart",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 27,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509992",
+      "name": "Cinamoo Bun Ice Cream, Regular",
+      "calories": 610,
+      "protein": 8,
+      "carbs": 67,
+      "fat": 33,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509991",
+      "name": "Cinamoo Bun Ice Cream, Small",
+      "calories": 410,
+      "protein": 5,
+      "carbs": 45,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509987",
+      "name": "Cinnamon Ice Cream, Best Value",
+      "calories": 790,
+      "protein": 10,
+      "carbs": 80,
+      "fat": 47,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509984",
+      "name": "Cinnamon Ice Cream, Child",
+      "calories": 200,
+      "protein": 3,
+      "carbs": 20,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509988",
+      "name": "Cinnamon Ice Cream, Pint",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509989",
+      "name": "Cinnamon Ice Cream, Quart",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509986",
+      "name": "Cinnamon Ice Cream, Regular",
+      "calories": 590,
+      "protein": 8,
+      "carbs": 60,
+      "fat": 35,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509985",
+      "name": "Cinnamon Ice Cream, Small",
+      "calories": 390,
+      "protein": 5,
+      "carbs": 40,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509999",
+      "name": "Coconut Ice Cream, Best Value",
+      "calories": 790,
+      "protein": 10,
+      "carbs": 78,
+      "fat": 46,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509996",
+      "name": "Coconut Ice Cream, Child",
+      "calories": 200,
+      "protein": 3,
+      "carbs": 19,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510000",
+      "name": "Coconut Ice Cream, Pint",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 21,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510001",
+      "name": "Coconut Ice Cream, Quart",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 21,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509998",
+      "name": "Coconut Ice Cream, Regular",
+      "calories": 590,
+      "protein": 8,
+      "carbs": 57,
+      "fat": 35,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-509997",
+      "name": "Coconut Ice Cream, Small",
+      "calories": 390,
+      "protein": 5,
+      "carbs": 38,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510005",
+      "name": "Coffee Ice Cream, Best Value",
+      "calories": 780,
+      "protein": 11,
+      "carbs": 78,
+      "fat": 46,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510002",
+      "name": "Coffee Ice Cream, Child",
+      "calories": 190,
+      "protein": 3,
+      "carbs": 20,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510006",
+      "name": "Coffee Ice Cream, Pint",
+      "calories": 210,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510007",
+      "name": "Coffee Ice Cream, Quart",
+      "calories": 210,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510004",
+      "name": "Coffee Ice Cream, Regular",
+      "calories": 580,
+      "protein": 8,
+      "carbs": 59,
+      "fat": 35,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510003",
+      "name": "Coffee Ice Cream, Small",
+      "calories": 390,
+      "protein": 5,
+      "carbs": 39,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510011",
+      "name": "Cool Mint Ice Cream, Best Value",
+      "calories": 790,
+      "protein": 10,
+      "carbs": 78,
+      "fat": 47,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510008",
+      "name": "Cool Mint Ice Cream, Child",
+      "calories": 200,
+      "protein": 3,
+      "carbs": 20,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510012",
+      "name": "Cool Mint Ice Cream, Pint",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510013",
+      "name": "Cool Mint Ice Cream, Quart",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510010",
+      "name": "Cool Mint Ice Cream, Regular",
+      "calories": 590,
+      "protein": 8,
+      "carbs": 59,
+      "fat": 35,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510009",
+      "name": "Cool Mint Ice Cream, Small",
+      "calories": 390,
+      "protein": 5,
+      "carbs": 39,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510017",
+      "name": "Dark Chocolate Ice Cream, Best Value",
+      "calories": 810,
+      "protein": 13,
+      "carbs": 86,
+      "fat": 46,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510014",
+      "name": "Dark Chocolate Ice Cream, Child",
+      "calories": 200,
+      "protein": 3,
+      "carbs": 21,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510018",
+      "name": "Dark Chocolate Ice Cream, Pint",
+      "calories": 220,
+      "protein": 4,
+      "carbs": 24,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510019",
+      "name": "Dark Chocolate Ice Cream, Quart",
+      "calories": 220,
+      "protein": 4,
+      "carbs": 24,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510016",
+      "name": "Dark Chocolate Ice Cream, Regular",
+      "calories": 600,
+      "protein": 9,
+      "carbs": 64,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510015",
+      "name": "Dark Chocolate Ice Cream, Small",
+      "calories": 400,
+      "protein": 6,
+      "carbs": 43,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510023",
+      "name": "Double Dark Chocolate Ice Cream, Best Value",
+      "calories": 800,
+      "protein": 12,
+      "carbs": 89,
+      "fat": 44,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510020",
+      "name": "Double Dark Chocolate Ice Cream, Child",
+      "calories": 200,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510024",
+      "name": "Double Dark Chocolate Ice Cream, Pint",
+      "calories": 220,
+      "protein": 4,
+      "carbs": 25,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510025",
+      "name": "Double Dark Chocolate Ice Cream, Quart",
+      "calories": 220,
+      "protein": 4,
+      "carbs": 25,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510022",
+      "name": "Double Dark Chocolate Ice Cream, Regular",
+      "calories": 600,
+      "protein": 9,
+      "carbs": 67,
+      "fat": 33,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510021",
+      "name": "Double Dark Chocolate Ice Cream, Small",
+      "calories": 400,
+      "protein": 6,
+      "carbs": 45,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510029",
+      "name": "Egg Nog Ice Cream, Best Value",
+      "calories": 810,
+      "protein": 9,
+      "carbs": 97,
+      "fat": 42,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510026",
+      "name": "Egg Nog Ice Cream, Child",
+      "calories": 200,
+      "protein": 2,
+      "carbs": 24,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510030",
+      "name": "Egg Nog Ice Cream, Pint",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 27,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510031",
+      "name": "Egg Nog Ice Cream, Quart",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 27,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510028",
+      "name": "Egg Nog Ice Cream, Regular",
+      "calories": 610,
+      "protein": 7,
+      "carbs": 73,
+      "fat": 31,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510027",
+      "name": "Egg Nog Ice Cream, Small",
+      "calories": 400,
+      "protein": 5,
+      "carbs": 49,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510035",
+      "name": "Fudge Ice Cream, Best Value",
+      "calories": 840,
+      "protein": 11,
+      "carbs": 104,
+      "fat": 43,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510032",
+      "name": "Fudge Ice Cream, Child",
+      "calories": 210,
+      "protein": 3,
+      "carbs": 26,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510036",
+      "name": "Fudge Ice Cream, Pint",
+      "calories": 230,
+      "protein": 3,
+      "carbs": 28,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510037",
+      "name": "Fudge Ice Cream, Quart",
+      "calories": 230,
+      "protein": 3,
+      "carbs": 28,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510034",
+      "name": "Fudge Ice Cream, Regular",
+      "calories": 630,
+      "protein": 8,
+      "carbs": 78,
+      "fat": 33,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510033",
+      "name": "Fudge Ice Cream, Small",
+      "calories": 420,
+      "protein": 5,
+      "carbs": 52,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510041",
+      "name": "Key Lime Ice Cream, Best Value",
+      "calories": 770,
+      "protein": 8,
+      "carbs": 108,
+      "fat": 36,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510038",
+      "name": "Key Lime Ice Cream, Child",
+      "calories": 190,
+      "protein": 2,
+      "carbs": 27,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510042",
+      "name": "Key Lime Ice Cream, Pint",
+      "calories": 200,
+      "protein": 3,
+      "carbs": 30,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510043",
+      "name": "Key Lime Ice Cream, Quart",
+      "calories": 200,
+      "protein": 3,
+      "carbs": 30,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510040",
+      "name": "Key Lime Ice Cream, Regular",
+      "calories": 580,
+      "protein": 6,
+      "carbs": 81,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510039",
+      "name": "Key Lime Ice Cream, Small",
+      "calories": 390,
+      "protein": 4,
+      "carbs": 54,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510047",
+      "name": "Let's Get Cereal Ice Cream, Best Value",
+      "calories": 820,
+      "protein": 11,
+      "carbs": 99,
+      "fat": 43,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510044",
+      "name": "Let's Get Cereal Ice Cream, Child",
+      "calories": 210,
+      "protein": 3,
+      "carbs": 25,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510048",
+      "name": "Let's Get Cereal Ice Cream, Pint",
+      "calories": 270,
+      "protein": 4,
+      "carbs": 33,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510049",
+      "name": "Let's Get Cereal Ice Cream, Quart",
+      "calories": 270,
+      "protein": 4,
+      "carbs": 33,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510046",
+      "name": "Let's Get Cereal Ice Cream, Regular",
+      "calories": 620,
+      "protein": 8,
+      "carbs": 75,
+      "fat": 32,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510053",
+      "name": "Mango Ice Cream, Best Value",
+      "calories": 780,
+      "protein": 10,
+      "carbs": 79,
+      "fat": 46,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510050",
+      "name": "Mango Ice Cream, Child",
+      "calories": 200,
+      "protein": 3,
+      "carbs": 20,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510054",
+      "name": "Mango Ice Cream, Pint",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510055",
+      "name": "Mango Ice Cream, Quart",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510052",
+      "name": "Mango Ice Cream, Regular",
+      "calories": 590,
+      "protein": 8,
+      "carbs": 59,
+      "fat": 35,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510051",
+      "name": "Mango Ice Cream, Small",
+      "calories": 390,
+      "protein": 5,
+      "carbs": 39,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510059",
+      "name": "Mocha Ice Cream, Best Value",
+      "calories": 800,
+      "protein": 12,
+      "carbs": 87,
+      "fat": 45,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510056",
+      "name": "Mocha Ice Cream, Child",
+      "calories": 200,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510060",
+      "name": "Mocha Ice Cream, Pint",
+      "calories": 220,
+      "protein": 4,
+      "carbs": 24,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510061",
+      "name": "Mocha Ice Cream, Quart",
+      "calories": 220,
+      "protein": 4,
+      "carbs": 24,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510058",
+      "name": "Mocha Ice Cream, Regular",
+      "calories": 600,
+      "protein": 9,
+      "carbs": 65,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510057",
+      "name": "Mocha Ice Cream, Small",
+      "calories": 400,
+      "protein": 6,
+      "carbs": 43,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510065",
+      "name": "Peach Ice Cream, Best Value",
+      "calories": 780,
+      "protein": 9,
+      "carbs": 88,
+      "fat": 43,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510062",
+      "name": "Peach Ice Cream, Child",
+      "calories": 190,
+      "protein": 2,
+      "carbs": 22,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510066",
+      "name": "Peach Ice Cream, Pint",
+      "calories": 210,
+      "protein": 3,
+      "carbs": 24,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510067",
+      "name": "Peach Ice Cream, Quart",
+      "calories": 210,
+      "protein": 3,
+      "carbs": 24,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510064",
+      "name": "Peach Ice Cream, Regular",
+      "calories": 580,
+      "protein": 7,
+      "carbs": 66,
+      "fat": 32,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510063",
+      "name": "Peach Ice Cream, Small",
+      "calories": 390,
+      "protein": 5,
+      "carbs": 44,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510077",
+      "name": "Peanut Butter Banana Ice Cream, Best Value",
+      "calories": 830,
+      "protein": 14,
+      "carbs": 78,
+      "fat": 52,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510074",
+      "name": "Peanut Butter Banana Ice Cream, Child",
+      "calories": 210,
+      "protein": 4,
+      "carbs": 20,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510078",
+      "name": "Peanut Butter Banana Ice Cream, Pint",
+      "calories": 230,
+      "protein": 4,
+      "carbs": 23,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510079",
+      "name": "Peanut Butter Banana Ice Cream, Quart",
+      "calories": 230,
+      "protein": 4,
+      "carbs": 23,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510076",
+      "name": "Peanut Butter Banana Ice Cream, Regular",
+      "calories": 620,
+      "protein": 11,
+      "carbs": 59,
+      "fat": 39,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510075",
+      "name": "Peanut Butter Banana Ice Cream, Small",
+      "calories": 420,
+      "protein": 7,
+      "carbs": 39,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510071",
+      "name": "Peanut Butter Ice Cream, Best Value",
+      "calories": 890,
+      "protein": 17,
+      "carbs": 78,
+      "fat": 57,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510068",
+      "name": "Peanut Butter Ice Cream, Child",
+      "calories": 220,
+      "protein": 4,
+      "carbs": 20,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510072",
+      "name": "Peanut Butter Ice Cream, Pint",
+      "calories": 240,
+      "protein": 5,
+      "carbs": 25,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510073",
+      "name": "Peanut Butter Ice Cream, Quart",
+      "calories": 240,
+      "protein": 5,
+      "carbs": 25,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510070",
+      "name": "Peanut Butter Ice Cream, Regular",
+      "calories": 660,
+      "protein": 12,
+      "carbs": 59,
+      "fat": 43,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510069",
+      "name": "Peanut Butter Ice Cream, Small",
+      "calories": 440,
+      "protein": 8,
+      "carbs": 39,
+      "fat": 29,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510083",
+      "name": "Peppermint Ice Cream, Best Value",
+      "calories": 820,
+      "protein": 10,
+      "carbs": 87,
+      "fat": 46,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510080",
+      "name": "Peppermint Ice Cream, Child",
+      "calories": 200,
+      "protein": 2,
+      "carbs": 22,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510084",
+      "name": "Peppermint Ice Cream, Pint",
+      "calories": 230,
+      "protein": 3,
+      "carbs": 24,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510085",
+      "name": "Peppermint Ice Cream, Quart",
+      "calories": 230,
+      "protein": 3,
+      "carbs": 24,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510082",
+      "name": "Peppermint Ice Cream, Regular",
+      "calories": 610,
+      "protein": 7,
+      "carbs": 66,
+      "fat": 35,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510081",
+      "name": "Peppermint Ice Cream, Small",
+      "calories": 410,
+      "protein": 5,
+      "carbs": 44,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510089",
+      "name": "Pina Colada Ice Cream, Best Value",
+      "calories": 740,
+      "protein": 10,
+      "carbs": 76,
+      "fat": 43,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510086",
+      "name": "Pina Colada Ice Cream, Child",
+      "calories": 180,
+      "protein": 2,
+      "carbs": 19,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510090",
+      "name": "Pina Colada Ice Cream, Pint",
+      "calories": 200,
+      "protein": 3,
+      "carbs": 21,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510091",
+      "name": "Pina Colada Ice Cream, Quart",
+      "calories": 200,
+      "protein": 3,
+      "carbs": 21,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510088",
+      "name": "Pina Colada Ice Cream, Regular",
+      "calories": 550,
+      "protein": 7,
+      "carbs": 57,
+      "fat": 32,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510087",
+      "name": "Pina Colada Ice Cream, Small",
+      "calories": 370,
+      "protein": 5,
+      "carbs": 38,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510095",
+      "name": "Pistachio Ice Cream, Best Value",
+      "calories": 790,
+      "protein": 10,
+      "carbs": 79,
+      "fat": 47,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510092",
+      "name": "Pistachio Ice Cream, Child",
+      "calories": 200,
+      "protein": 3,
+      "carbs": 20,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510096",
+      "name": "Pistachio Ice Cream, Pint",
+      "calories": 210,
+      "protein": 3,
+      "carbs": 21,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510097",
+      "name": "Pistachio Ice Cream, Quart",
+      "calories": 210,
+      "protein": 3,
+      "carbs": 21,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510094",
+      "name": "Pistachio Ice Cream, Regular",
+      "calories": 590,
+      "protein": 8,
+      "carbs": 59,
+      "fat": 35,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510093",
+      "name": "Pistachio Ice Cream, Small",
+      "calories": 390,
+      "protein": 5,
+      "carbs": 40,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510101",
+      "name": "Praline Ice Cream, Best Value",
+      "calories": 840,
+      "protein": 10,
+      "carbs": 106,
+      "fat": 41,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510098",
+      "name": "Praline Ice Cream, Child",
+      "calories": 210,
+      "protein": 3,
+      "carbs": 27,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510102",
+      "name": "Praline Ice Cream, Pint",
+      "calories": 230,
+      "protein": 3,
+      "carbs": 29,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510103",
+      "name": "Praline Ice Cream, Quart",
+      "calories": 230,
+      "protein": 3,
+      "carbs": 29,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510100",
+      "name": "Praline Ice Cream, Regular",
+      "calories": 630,
+      "protein": 8,
+      "carbs": 80,
+      "fat": 31,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510099",
+      "name": "Praline Ice Cream, Small",
+      "calories": 420,
+      "protein": 5,
+      "carbs": 53,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510113",
+      "name": "Pumpkin Cheesecake Ice Cream, Best Value",
+      "calories": 700,
+      "protein": 9,
+      "carbs": 83,
+      "fat": 36,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510110",
+      "name": "Pumpkin Cheesecake Ice Cream, Child",
+      "calories": 180,
+      "protein": 2,
+      "carbs": 21,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510114",
+      "name": "Pumpkin Cheesecake Ice Cream, Pint",
+      "calories": 190,
+      "protein": 3,
+      "carbs": 23,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510115",
+      "name": "Pumpkin Cheesecake Ice Cream, Quart",
+      "calories": 190,
+      "protein": 3,
+      "carbs": 23,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510112",
+      "name": "Pumpkin Cheesecake Ice Cream, Regular",
+      "calories": 530,
+      "protein": 7,
+      "carbs": 62,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510111",
+      "name": "Pumpkin Cheesecake Ice Cream, Small",
+      "calories": 350,
+      "protein": 5,
+      "carbs": 41,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510107",
+      "name": "Pumpkin Ice Cream, Best Value",
+      "calories": 700,
+      "protein": 9,
+      "carbs": 78,
+      "fat": 38,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510104",
+      "name": "Pumpkin Ice Cream, Child",
+      "calories": 170,
+      "protein": 2,
+      "carbs": 20,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510108",
+      "name": "Pumpkin Ice Cream, Pint",
+      "calories": 190,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510109",
+      "name": "Pumpkin Ice Cream, Quart",
+      "calories": 190,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510106",
+      "name": "Pumpkin Ice Cream, Regular",
+      "calories": 520,
+      "protein": 7,
+      "carbs": 59,
+      "fat": 29,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510105",
+      "name": "Pumpkin Ice Cream, Small",
+      "calories": 340,
+      "protein": 5,
+      "carbs": 39,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510119",
+      "name": "Raspberry Ice Cream, Best Value",
+      "calories": 760,
+      "protein": 9,
+      "carbs": 85,
+      "fat": 42,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510116",
+      "name": "Raspberry Ice Cream, Child",
+      "calories": 190,
+      "protein": 2,
+      "carbs": 21,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510120",
+      "name": "Raspberry Ice Cream, Pint",
+      "calories": 210,
+      "protein": 3,
+      "carbs": 23,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510121",
+      "name": "Raspberry Ice Cream, Quart",
+      "calories": 210,
+      "protein": 3,
+      "carbs": 23,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510118",
+      "name": "Raspberry Ice Cream, Regular",
+      "calories": 570,
+      "protein": 7,
+      "carbs": 64,
+      "fat": 31,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510117",
+      "name": "Raspberry Ice Cream, Small",
+      "calories": 380,
+      "protein": 5,
+      "carbs": 43,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510125",
+      "name": "Red Velvet Ice Cream, Best Value",
+      "calories": 840,
+      "protein": 12,
+      "carbs": 104,
+      "fat": 43,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510122",
+      "name": "Red Velvet Ice Cream, Child",
+      "calories": 210,
+      "protein": 3,
+      "carbs": 26,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510126",
+      "name": "Red Velvet Ice Cream, Pint",
+      "calories": 230,
+      "protein": 4,
+      "carbs": 28,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510127",
+      "name": "Red Velvet Ice Cream, Quart",
+      "calories": 230,
+      "protein": 4,
+      "carbs": 28,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510124",
+      "name": "Red Velvet Ice Cream, Regular",
+      "calories": 630,
+      "protein": 9,
+      "carbs": 78,
+      "fat": 32,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510123",
+      "name": "Red Velvet Ice Cream, Small",
+      "calories": 420,
+      "protein": 6,
+      "carbs": 52,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510131",
+      "name": "Red Velvet S'Mores Ice Cream, Best Value",
+      "calories": 820,
+      "protein": 12,
+      "carbs": 94,
+      "fat": 45,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510128",
+      "name": "Red Velvet S'Mores Ice Cream, Child",
+      "calories": 260,
+      "protein": 4,
+      "carbs": 29,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510132",
+      "name": "Red Velvet S'Mores Ice Cream, Pint",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 25,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510133",
+      "name": "Red Velvet S'Mores Ice Cream, Quart",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 25,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510130",
+      "name": "Red Velvet S'Mores Ice Cream, Regular",
+      "calories": 620,
+      "protein": 9,
+      "carbs": 70,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510129",
+      "name": "Red Velvet S'Mores Ice Cream, Small",
+      "calories": 410,
+      "protein": 6,
+      "carbs": 47,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510137",
+      "name": "Rum Ice Cream, Best Value",
+      "calories": 790,
+      "protein": 10,
+      "carbs": 79,
+      "fat": 46,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510134",
+      "name": "Rum Ice Cream, Child",
+      "calories": 200,
+      "protein": 3,
+      "carbs": 20,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510138",
+      "name": "Rum Ice Cream, Pint",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510139",
+      "name": "Rum Ice Cream, Quart",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510136",
+      "name": "Rum Ice Cream, Regular",
+      "calories": 590,
+      "protein": 8,
+      "carbs": 60,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510135",
+      "name": "Rum Ice Cream, Small",
+      "calories": 400,
+      "protein": 6,
+      "carbs": 40,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510143",
+      "name": "Salted Caramel Ice Cream, Best Value",
+      "calories": 840,
+      "protein": 11,
+      "carbs": 108,
+      "fat": 41,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510140",
+      "name": "Salted Caramel Ice Cream, Child",
+      "calories": 210,
+      "protein": 3,
+      "carbs": 27,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510144",
+      "name": "Salted Caramel Ice Cream, Pint",
+      "calories": 200,
+      "protein": 3,
+      "carbs": 21,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510145",
+      "name": "Salted Caramel Ice Cream, Quart",
+      "calories": 200,
+      "protein": 3,
+      "carbs": 21,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510142",
+      "name": "Salted Caramel Ice Cream, Regular",
+      "calories": 630,
+      "protein": 8,
+      "carbs": 81,
+      "fat": 31,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510141",
+      "name": "Salted Caramel Ice Cream, Small",
+      "calories": 420,
+      "protein": 5,
+      "carbs": 54,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510155",
+      "name": "Strawberry Bubble Gum Ice Cream, Best Value",
+      "calories": 780,
+      "protein": 10,
+      "carbs": 79,
+      "fat": 46,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510152",
+      "name": "Strawberry Bubble Gum Ice Cream, Child",
+      "calories": 200,
+      "protein": 3,
+      "carbs": 20,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510156",
+      "name": "Strawberry Bubble Gum Ice Cream, Pint",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510157",
+      "name": "Strawberry Bubble Gum Ice Cream, Quart",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510154",
+      "name": "Strawberry Bubble Gum Ice Cream, Regular",
+      "calories": 590,
+      "protein": 8,
+      "carbs": 59,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510153",
+      "name": "Strawberry Bubble Gum Ice Cream, Small",
+      "calories": 390,
+      "protein": 5,
+      "carbs": 40,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510161",
+      "name": "Strawberry Cotton Ice Cream, Best Value",
+      "calories": 780,
+      "protein": 9,
+      "carbs": 90,
+      "fat": 42,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510158",
+      "name": "Strawberry Cotton Ice Cream, Child",
+      "calories": 200,
+      "protein": 2,
+      "carbs": 22,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510162",
+      "name": "Strawberry Cotton Ice Cream, Pint",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 25,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510163",
+      "name": "Strawberry Cotton Ice Cream, Quart",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 25,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510160",
+      "name": "Strawberry Cotton Ice Cream, Regular",
+      "calories": 590,
+      "protein": 7,
+      "carbs": 67,
+      "fat": 32,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510159",
+      "name": "Strawberry Cotton Ice Cream, Small",
+      "calories": 390,
+      "protein": 5,
+      "carbs": 45,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510149",
+      "name": "Strawberry Ice Cream, Best Value",
+      "calories": 720,
+      "protein": 9,
+      "carbs": 76,
+      "fat": 42,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510146",
+      "name": "Strawberry Ice Cream, Child",
+      "calories": 180,
+      "protein": 2,
+      "carbs": 19,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510150",
+      "name": "Strawberry Ice Cream, Pint",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 28,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510151",
+      "name": "Strawberry Ice Cream, Quart",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 28,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510148",
+      "name": "Strawberry Ice Cream, Regular",
+      "calories": 540,
+      "protein": 7,
+      "carbs": 57,
+      "fat": 31,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510147",
+      "name": "Strawberry Ice Cream, Small",
+      "calories": 360,
+      "protein": 5,
+      "carbs": 38,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510167",
+      "name": "Sweet Cream Ice Cream, Best Value",
+      "calories": 790,
+      "protein": 10,
+      "carbs": 79,
+      "fat": 47,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510164",
+      "name": "Sweet Cream Ice Cream, Child",
+      "calories": 200,
+      "protein": 3,
+      "carbs": 20,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510168",
+      "name": "Sweet Cream Ice Cream, Pint",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510169",
+      "name": "Sweet Cream Ice Cream, Quart",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510166",
+      "name": "Sweet Cream Ice Cream, Regular",
+      "calories": 590,
+      "protein": 8,
+      "carbs": 59,
+      "fat": 35,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510165",
+      "name": "Sweet Cream Ice Cream, Small",
+      "calories": 390,
+      "protein": 5,
+      "carbs": 39,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510173",
+      "name": "Tiramisu Ice Cream, Best Value",
+      "calories": 790,
+      "protein": 10,
+      "carbs": 77,
+      "fat": 46,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510170",
+      "name": "Tiramisu Ice Cream, Child",
+      "calories": 200,
+      "protein": 3,
+      "carbs": 19,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510174",
+      "name": "Tiramisu Ice Cream, Pint",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 21,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510175",
+      "name": "Tiramisu Ice Cream, Quart",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 21,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510172",
+      "name": "Tiramisu Ice Cream, Regular",
+      "calories": 600,
+      "protein": 8,
+      "carbs": 58,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510171",
+      "name": "Tiramisu Ice Cream, Small",
+      "calories": 400,
+      "protein": 5,
+      "carbs": 39,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510185",
+      "name": "Vanilla Bean Ice Cream, Best Value",
+      "calories": 790,
+      "protein": 10,
+      "carbs": 78,
+      "fat": 46,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510182",
+      "name": "Vanilla Bean Ice Cream, Child",
+      "calories": 200,
+      "protein": 3,
+      "carbs": 19,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510186",
+      "name": "Vanilla Bean Ice Cream, Pint",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510187",
+      "name": "Vanilla Bean Ice Cream, Quart",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510184",
+      "name": "Vanilla Bean Ice Cream, Regular",
+      "calories": 590,
+      "protein": 8,
+      "carbs": 58,
+      "fat": 35,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510183",
+      "name": "Vanilla Bean Ice Cream, Small",
+      "calories": 400,
+      "protein": 5,
+      "carbs": 39,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510191",
+      "name": "Vanilla Cinnamon Ice Cream, Best Value",
+      "calories": 800,
+      "protein": 12,
+      "carbs": 79,
+      "fat": 47,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510188",
+      "name": "Vanilla Cinnamon Ice Cream, Child",
+      "calories": 200,
+      "protein": 3,
+      "carbs": 20,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510192",
+      "name": "Vanilla Cinnamon Ice Cream, Pint",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 21,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510193",
+      "name": "Vanilla Cinnamon Ice Cream, Quart",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 21,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510190",
+      "name": "Vanilla Cinnamon Ice Cream, Regular",
+      "calories": 600,
+      "protein": 9,
+      "carbs": 59,
+      "fat": 35,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510189",
+      "name": "Vanilla Cinnamon Ice Cream, Small",
+      "calories": 400,
+      "protein": 6,
+      "carbs": 40,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510179",
+      "name": "Vanilla Ice Cream, Best Value",
+      "calories": 790,
+      "protein": 10,
+      "carbs": 77,
+      "fat": 46,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510176",
+      "name": "Vanilla Ice Cream, Child",
+      "calories": 200,
+      "protein": 3,
+      "carbs": 19,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510180",
+      "name": "Vanilla Ice Cream, Pint",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 21,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510181",
+      "name": "Vanilla Ice Cream, Quart",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 21,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510178",
+      "name": "Vanilla Ice Cream, Regular",
+      "calories": 590,
+      "protein": 8,
+      "carbs": 58,
+      "fat": 35,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510177",
+      "name": "Vanilla Ice Cream, Small",
+      "calories": 390,
+      "protein": 5,
+      "carbs": 39,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510197",
+      "name": "Very Yellow Ice Cream, Best Value",
+      "calories": 720,
+      "protein": 9,
+      "carbs": 79,
+      "fat": 40,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510194",
+      "name": "Very Yellow Ice Cream, Child",
+      "calories": 180,
+      "protein": 2,
+      "carbs": 20,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510198",
+      "name": "Very Yellow Ice Cream, Pint",
+      "calories": 200,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510199",
+      "name": "Very Yellow Ice Cream, Quart",
+      "calories": 200,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510196",
+      "name": "Very Yellow Ice Cream, Regular",
+      "calories": 540,
+      "protein": 7,
+      "carbs": 59,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510195",
+      "name": "Very Yellow Ice Cream, Small",
+      "calories": 360,
+      "protein": 4,
+      "carbs": 39,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510203",
+      "name": "White Chocolate Ice Cream, Best Value",
+      "calories": 810,
+      "protein": 11,
+      "carbs": 88,
+      "fat": 46,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510200",
+      "name": "White Chocolate Ice Cream, Child",
+      "calories": 200,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510204",
+      "name": "White Chocolate Ice Cream, Pint",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 24,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510205",
+      "name": "White Chocolate Ice Cream, Quart",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 24,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510202",
+      "name": "White Chocolate Ice Cream, Regular",
+      "calories": 610,
+      "protein": 8,
+      "carbs": 66,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510201",
+      "name": "White Chocolate Ice Cream, Small",
+      "calories": 400,
+      "protein": 5,
+      "carbs": 44,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-510229",
+      "name": "Average Sorbet, Best Value",
+      "calories": 410,
+      "protein": 0,
+      "carbs": 99,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sorbet; size in item name)"
+    },
+    {
+      "id": "nutritionix-510226",
+      "name": "Average Sorbet, Child",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 24,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sorbet; size in item name)"
+    },
+    {
+      "id": "nutritionix-510228",
+      "name": "Average Sorbet, Regular",
+      "calories": 310,
+      "protein": 0,
+      "carbs": 74,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sorbet; size in item name)"
+    },
+    {
+      "id": "nutritionix-510227",
+      "name": "Average Sorbet, Small",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 50,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sorbet; size in item name)"
+    },
+    {
+      "id": "nutritionix-510209",
+      "name": "Grapefruit Sorbet, Best Value",
+      "calories": 410,
+      "protein": 0,
+      "carbs": 98,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sorbet; size in item name)"
+    },
+    {
+      "id": "nutritionix-510206",
+      "name": "Grapefruit Sorbet, Child",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 25,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sorbet; size in item name)"
+    },
+    {
+      "id": "nutritionix-510208",
+      "name": "Grapefruit Sorbet, Regular",
+      "calories": 310,
+      "protein": 0,
+      "carbs": 74,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sorbet; size in item name)"
+    },
+    {
+      "id": "nutritionix-510207",
+      "name": "Grapefruit Sorbet, Small",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 49,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sorbet; size in item name)"
+    },
+    {
+      "id": "nutritionix-510213",
+      "name": "Mango Sorbet, Best Value",
+      "calories": 420,
+      "protein": 0,
+      "carbs": 101,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sorbet; size in item name)"
+    },
+    {
+      "id": "nutritionix-510210",
+      "name": "Mango Sorbet, Child",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 21,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sorbet; size in item name)"
+    },
+    {
+      "id": "nutritionix-510212",
+      "name": "Mango Sorbet, Regular",
+      "calories": 310,
+      "protein": 0,
+      "carbs": 74,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sorbet; size in item name)"
+    },
+    {
+      "id": "nutritionix-510211",
+      "name": "Mango Sorbet, Small",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 51,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sorbet; size in item name)"
+    },
+    {
+      "id": "nutritionix-510217",
+      "name": "Raspberry Sorbet, Best Value",
+      "calories": 420,
+      "protein": 0,
+      "carbs": 101,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sorbet; size in item name)"
+    },
+    {
+      "id": "nutritionix-510214",
+      "name": "Raspberry Sorbet, Child",
+      "calories": 110,
+      "protein": 0,
+      "carbs": 25,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sorbet; size in item name)"
+    },
+    {
+      "id": "nutritionix-510216",
+      "name": "Raspberry Sorbet, Regular",
+      "calories": 310,
+      "protein": 0,
+      "carbs": 75,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sorbet; size in item name)"
+    },
+    {
+      "id": "nutritionix-510215",
+      "name": "Raspberry Sorbet, Small",
+      "calories": 210,
+      "protein": 0,
+      "carbs": 50,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sorbet; size in item name)"
+    },
+    {
+      "id": "nutritionix-510221",
+      "name": "Sweet Orange Sorbet, Best Value",
+      "calories": 410,
+      "protein": 0,
+      "carbs": 98,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sorbet; size in item name)"
+    },
+    {
+      "id": "nutritionix-510218",
+      "name": "Sweet Orange Sorbet, Child",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 25,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sorbet; size in item name)"
+    },
+    {
+      "id": "nutritionix-510220",
+      "name": "Sweet Orange Sorbet, Regular",
+      "calories": 310,
+      "protein": 0,
+      "carbs": 74,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sorbet; size in item name)"
+    },
+    {
+      "id": "nutritionix-510219",
+      "name": "Sweet Orange Sorbet, Small",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 49,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sorbet; size in item name)"
+    },
+    {
+      "id": "nutritionix-510225",
+      "name": "Watermellon Sorbet, Best Value",
+      "calories": 400,
+      "protein": 0,
+      "carbs": 98,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sorbet; size in item name)"
+    },
+    {
+      "id": "nutritionix-510222",
+      "name": "Watermellon Sorbet, Child",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 25,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sorbet; size in item name)"
+    },
+    {
+      "id": "nutritionix-510224",
+      "name": "Watermellon Sorbet, Regular",
+      "calories": 300,
+      "protein": 0,
+      "carbs": 74,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sorbet; size in item name)"
+    },
+    {
+      "id": "nutritionix-510223",
+      "name": "Watermellon Sorbet, Small",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 49,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sorbet; size in item name)"
+    },
+    {
+      "id": "nutritionix-510233",
+      "name": "Birthday Cake Yogurt, Best Value",
+      "calories": 550,
+      "protein": 15,
+      "carbs": 97,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Yogurt; size in item name)"
+    },
+    {
+      "id": "nutritionix-510230",
+      "name": "Birthday Cake Yogurt, Child",
+      "calories": 140,
+      "protein": 4,
+      "carbs": 24,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Yogurt; size in item name)"
+    },
+    {
+      "id": "nutritionix-510232",
+      "name": "Birthday Cake Yogurt, Regular",
+      "calories": 420,
+      "protein": 11,
+      "carbs": 73,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Yogurt; size in item name)"
+    },
+    {
+      "id": "nutritionix-510231",
+      "name": "Birthday Cake Yogurt, Small",
+      "calories": 280,
+      "protein": 8,
+      "carbs": 49,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Yogurt; size in item name)"
+    },
+    {
+      "id": "nutritionix-510237",
+      "name": "Chocolate Fudge Yogurt, Best Value",
+      "calories": 530,
+      "protein": 18,
+      "carbs": 96,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Yogurt; size in item name)"
+    },
+    {
+      "id": "nutritionix-510234",
+      "name": "Chocolate Fudge Yogurt, Child",
+      "calories": 130,
+      "protein": 4,
+      "carbs": 24,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Yogurt; size in item name)"
+    },
+    {
+      "id": "nutritionix-510236",
+      "name": "Chocolate Fudge Yogurt, Regular",
+      "calories": 390,
+      "protein": 13,
+      "carbs": 72,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Yogurt; size in item name)"
+    },
+    {
+      "id": "nutritionix-510235",
+      "name": "Chocolate Fudge Yogurt, Small",
+      "calories": 260,
+      "protein": 9,
+      "carbs": 48,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Yogurt; size in item name)"
+    },
+    {
+      "id": "nutritionix-510241",
+      "name": "Forest Berry Yogurt, Best Value",
+      "calories": 490,
+      "protein": 14,
+      "carbs": 85,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Yogurt; size in item name)"
+    },
+    {
+      "id": "nutritionix-510238",
+      "name": "Forest Berry Yogurt, Child",
+      "calories": 130,
+      "protein": 4,
+      "carbs": 22,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Yogurt; size in item name)"
+    },
+    {
+      "id": "nutritionix-510240",
+      "name": "Forest Berry Yogurt, Regular",
+      "calories": 370,
+      "protein": 11,
+      "carbs": 63,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Yogurt; size in item name)"
+    },
+    {
+      "id": "nutritionix-510239",
+      "name": "Forest Berry Yogurt, Small",
+      "calories": 250,
+      "protein": 7,
+      "carbs": 42,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Yogurt; size in item name)"
+    },
+    {
+      "id": "nutritionix-510245",
+      "name": "Vanilla Yogurt, Best Value",
+      "calories": 460,
+      "protein": 15,
+      "carbs": 74,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Yogurt; size in item name)"
+    },
+    {
+      "id": "nutritionix-510242",
+      "name": "Vanilla Yogurt, Child",
+      "calories": 120,
+      "protein": 4,
+      "carbs": 19,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Yogurt; size in item name)"
+    },
+    {
+      "id": "nutritionix-510244",
+      "name": "Vanilla Yogurt, Regular",
+      "calories": 350,
+      "protein": 11,
+      "carbs": 56,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Yogurt; size in item name)"
+    },
+    {
+      "id": "nutritionix-510243",
+      "name": "Vanilla Yogurt, Small",
+      "calories": 230,
+      "protein": 7,
+      "carbs": 37,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Yogurt; size in item name)"
+    },
+    {
+      "id": "nutritionix-510247",
+      "name": "Raspberry Smoothie, Regular",
+      "calories": 480,
+      "protein": 7,
+      "carbs": 99,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-510246",
+      "name": "Raspberry Smoothie, Small",
+      "calories": 290,
+      "protein": 4,
+      "carbs": 61,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-510251",
+      "name": "Strawberry Banana Smoothie, Regular",
+      "calories": 550,
+      "protein": 14,
+      "carbs": 102,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-510250",
+      "name": "Strawberry Banana Smoothie, Small",
+      "calories": 320,
+      "protein": 8,
+      "carbs": 60,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-510249",
+      "name": "Strawberry Smoothie, Regular",
+      "calories": 490,
+      "protein": 13,
+      "carbs": 89,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-510248",
+      "name": "Strawberry Smoothie, Small",
+      "calories": 300,
+      "protein": 8,
+      "carbs": 56,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-510252",
+      "name": "Golden Malted Cone, Child's Cone",
+      "calories": 40,
+      "protein": 0,
+      "carbs": 7,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Cones; size in item name)"
+    },
+    {
+      "id": "nutritionix-510253",
+      "name": "Golden Malted Cone, Child's Cone Dipped",
+      "calories": 120,
+      "protein": 1,
+      "carbs": 15,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Cones; size in item name)"
+    },
+    {
+      "id": "nutritionix-510255",
+      "name": "Golden Malted Cone, Child's Cone Dipped & Rolled",
+      "calories": 210,
+      "protein": 5,
+      "carbs": 17,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Cones; size in item name)"
+    },
+    {
+      "id": "nutritionix-510254",
+      "name": "Golden Malted Cone, Child's Cone Dipped Dark",
+      "calories": 110,
+      "protein": 1,
+      "carbs": 14,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Cones; size in item name)"
+    },
+    {
+      "id": "nutritionix-510259",
+      "name": "Golden Malted Cone, Cone Dipped & Rolled",
+      "calories": 250,
+      "protein": 5,
+      "carbs": 24,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Cones; size in item name)"
+    },
+    {
+      "id": "nutritionix-510258",
+      "name": "Golden Malted Cone, Cone Dipped Dark",
+      "calories": 150,
+      "protein": 1,
+      "carbs": 21,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Cones; size in item name)"
+    },
+    {
+      "id": "nutritionix-510257",
+      "name": "Golden Malted Cone, Cone Dipped White",
+      "calories": 150,
+      "protein": 1,
+      "carbs": 22,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Cones; size in item name)"
+    },
+    {
+      "id": "nutritionix-510256",
+      "name": "Golden Malted Cone, Regular Cone",
+      "calories": 80,
+      "protein": 1,
+      "carbs": 14,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Cones; size in item name)"
+    },
+    {
+      "id": "nutritionix-510260",
+      "name": "Scratch Batter Cone, Child's Cone",
+      "calories": 30,
+      "protein": 1,
+      "carbs": 6,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Cones; size in item name)"
+    },
+    {
+      "id": "nutritionix-510261",
+      "name": "Scratch Batter Cone, Child's Cone Dipped",
+      "calories": 110,
+      "protein": 1,
+      "carbs": 14,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Cones; size in item name)"
+    },
+    {
+      "id": "nutritionix-510263",
+      "name": "Scratch Batter Cone, Child's Cone Dipped & Rolled",
+      "calories": 190,
+      "protein": 2,
+      "carbs": 22,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Cones; size in item name)"
+    },
+    {
+      "id": "nutritionix-510262",
+      "name": "Scratch Batter Cone, Child's Cone Dipped Dark",
+      "calories": 110,
+      "protein": 1,
+      "carbs": 13,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Cones; size in item name)"
+    },
+    {
+      "id": "nutritionix-510267",
+      "name": "Scratch Batter Cone, Cone Dipped & Rolled",
+      "calories": 230,
+      "protein": 5,
+      "carbs": 22,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Cones; size in item name)"
+    },
+    {
+      "id": "nutritionix-510266",
+      "name": "Scratch Batter Cone, Cone Dipped Dark",
+      "calories": 140,
+      "protein": 2,
+      "carbs": 19,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Cones; size in item name)"
+    },
+    {
+      "id": "nutritionix-510265",
+      "name": "Scratch Batter Cone, Cone Dipped White",
+      "calories": 140,
+      "protein": 1,
+      "carbs": 20,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Cones; size in item name)"
+    },
+    {
+      "id": "nutritionix-510264",
+      "name": "Scratch Batter Cone, Regular Cone",
+      "calories": 60,
+      "protein": 1,
+      "carbs": 12,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Cones; size in item name)"
+    },
+    {
+      "id": "nutritionix-510275",
+      "name": "Golden Malted Bowl, Bowl Dipped & Rolled",
+      "calories": 270,
+      "protein": 2,
+      "carbs": 37,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-510274",
+      "name": "Golden Malted Bowl, Bowl Dipped Dark",
+      "calories": 190,
+      "protein": 2,
+      "carbs": 28,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-510273",
+      "name": "Golden Malted Bowl, Bowl Dipped White",
+      "calories": 200,
+      "protein": 2,
+      "carbs": 29,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-510268",
+      "name": "Golden Malted Bowl, Child's Bowl",
+      "calories": 80,
+      "protein": 1,
+      "carbs": 14,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-510269",
+      "name": "Golden Malted Bowl, Child's Bowl Dipped",
+      "calories": 150,
+      "protein": 1,
+      "carbs": 22,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-510271",
+      "name": "Golden Malted Bowl, Child's Bowl Dipped & Rolled",
+      "calories": 250,
+      "protein": 5,
+      "carbs": 24,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-510270",
+      "name": "Golden Malted Bowl, Child's Bowl Dipped Dark",
+      "calories": 150,
+      "protein": 1,
+      "carbs": 21,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-510272",
+      "name": "Golden Malted Bowl, Regular Bowl",
+      "calories": 110,
+      "protein": 1,
+      "carbs": 20,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-510283",
+      "name": "Scratch Batter Bowl, Bowl Dipped & Rolled",
+      "calories": 260,
+      "protein": 6,
+      "carbs": 27,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-510282",
+      "name": "Scratch Batter Bowl, Bowl Dipped Dark",
+      "calories": 170,
+      "protein": 2,
+      "carbs": 25,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-510281",
+      "name": "Scratch Batter Bowl, Bowl Dipped White",
+      "calories": 170,
+      "protein": 2,
+      "carbs": 26,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-510276",
+      "name": "Scratch Batter Bowl, Child's Bowl",
+      "calories": 60,
+      "protein": 1,
+      "carbs": 12,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-510277",
+      "name": "Scratch Batter Bowl, Child's Bowl Dipped",
+      "calories": 140,
+      "protein": 1,
+      "carbs": 20,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-510279",
+      "name": "Scratch Batter Bowl, Child's Bowl Dipped & Rolled",
+      "calories": 230,
+      "protein": 5,
+      "carbs": 22,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-510278",
+      "name": "Scratch Batter Bowl, Child's Bowl Dipped Dark",
+      "calories": 140,
+      "protein": 2,
+      "carbs": 19,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-510280",
+      "name": "Scratch Batter Bowl, Regular Bowl",
+      "calories": 100,
+      "protein": 2,
+      "carbs": 17,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-510287",
+      "name": "Chocolate Malt, Regular",
+      "calories": 980,
+      "protein": 16,
+      "carbs": 109,
+      "fat": 53,
+      "servingLabel": "1 listed serving (Hand-Scooped Shakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510286",
+      "name": "Chocolate Malt, Small",
+      "calories": 760,
+      "protein": 12,
+      "carbs": 84,
+      "fat": 42,
+      "servingLabel": "1 listed serving (Hand-Scooped Shakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510285",
+      "name": "Chocolate Shake, Regular",
+      "calories": 870,
+      "protein": 18,
+      "carbs": 94,
+      "fat": 53,
+      "servingLabel": "1 listed serving (Hand-Scooped Shakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510284",
+      "name": "Chocolate Shake, Small",
+      "calories": 690,
+      "protein": 14,
+      "carbs": 75,
+      "fat": 42,
+      "servingLabel": "1 listed serving (Hand-Scooped Shakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510289",
+      "name": "Coffee Shake, Regular",
+      "calories": 940,
+      "protein": 14,
+      "carbs": 98,
+      "fat": 57,
+      "servingLabel": "1 listed serving (Hand-Scooped Shakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510288",
+      "name": "Coffee Shake, Small",
+      "calories": 700,
+      "protein": 10,
+      "carbs": 74,
+      "fat": 42,
+      "servingLabel": "1 listed serving (Hand-Scooped Shakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510291",
+      "name": "Cookie's N' Cream Shake, Regular",
+      "calories": 1260,
+      "protein": 16,
+      "carbs": 141,
+      "fat": 71,
+      "servingLabel": "1 listed serving (Hand-Scooped Shakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510290",
+      "name": "Cookie's N' Cream Shake, Small",
+      "calories": 940,
+      "protein": 12,
+      "carbs": 106,
+      "fat": 53,
+      "servingLabel": "1 listed serving (Hand-Scooped Shakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510293",
+      "name": "Cotton Candy Shake, Regular",
+      "calories": 960,
+      "protein": 13,
+      "carbs": 103,
+      "fat": 56,
+      "servingLabel": "1 listed serving (Hand-Scooped Shakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510292",
+      "name": "Cotton Candy Shake, Small",
+      "calories": 720,
+      "protein": 9,
+      "carbs": 77,
+      "fat": 42,
+      "servingLabel": "1 listed serving (Hand-Scooped Shakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510295",
+      "name": "Snicker Shake, Regular",
+      "calories": 1270,
+      "protein": 18,
+      "carbs": 143,
+      "fat": 70,
+      "servingLabel": "1 listed serving (Hand-Scooped Shakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510294",
+      "name": "Snicker Shake, Small",
+      "calories": 950,
+      "protein": 14,
+      "carbs": 108,
+      "fat": 52,
+      "servingLabel": "1 listed serving (Hand-Scooped Shakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510299",
+      "name": "Strawberry Malt, Regular",
+      "calories": 880,
+      "protein": 13,
+      "carbs": 97,
+      "fat": 49,
+      "servingLabel": "1 listed serving (Hand-Scooped Shakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510298",
+      "name": "Strawberry Malt, Small",
+      "calories": 680,
+      "protein": 10,
+      "carbs": 74,
+      "fat": 38,
+      "servingLabel": "1 listed serving (Hand-Scooped Shakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510297",
+      "name": "Strawberry Shake, Regular",
+      "calories": 860,
+      "protein": 12,
+      "carbs": 98,
+      "fat": 49,
+      "servingLabel": "1 listed serving (Hand-Scooped Shakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510296",
+      "name": "Strawberry Shake, Small",
+      "calories": 680,
+      "protein": 9,
+      "carbs": 77,
+      "fat": 38,
+      "servingLabel": "1 listed serving (Hand-Scooped Shakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510303",
+      "name": "Vanilla Malt, Regular",
+      "calories": 920,
+      "protein": 15,
+      "carbs": 98,
+      "fat": 54,
+      "servingLabel": "1 listed serving (Hand-Scooped Shakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510302",
+      "name": "Vanilla Malt, Small",
+      "calories": 710,
+      "protein": 11,
+      "carbs": 75,
+      "fat": 43,
+      "servingLabel": "1 listed serving (Hand-Scooped Shakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510301",
+      "name": "Vanilla Shake, Regular",
+      "calories": 880,
+      "protein": 13,
+      "carbs": 89,
+      "fat": 55,
+      "servingLabel": "1 listed serving (Hand-Scooped Shakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510300",
+      "name": "Vanilla Shake, Small",
+      "calories": 670,
+      "protein": 10,
+      "carbs": 68,
+      "fat": 42,
+      "servingLabel": "1 listed serving (Hand-Scooped Shakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510305",
+      "name": "Coke Float, Regular",
+      "calories": 570,
+      "protein": 6,
+      "carbs": 85,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Floats; size in item name)"
+    },
+    {
+      "id": "nutritionix-510304",
+      "name": "Coke Float, Small",
+      "calories": 310,
+      "protein": 3,
+      "carbs": 49,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Floats; size in item name)"
+    },
+    {
+      "id": "nutritionix-510306",
+      "name": "Banana Split",
+      "calories": 1290,
+      "protein": 21,
+      "carbs": 153,
+      "fat": 73,
+      "servingLabel": "1 listed serving (Sundaes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510308",
+      "name": "Classic Sundae, Caramel",
+      "calories": 530,
+      "protein": 8,
+      "carbs": 62,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Sundaes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510307",
+      "name": "Classic Sundae, Fudge",
+      "calories": 530,
+      "protein": 8,
+      "carbs": 59,
+      "fat": 31,
+      "servingLabel": "1 listed serving (Sundaes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510309",
+      "name": "Fudge Brownie Delight",
+      "calories": 730,
+      "protein": 10,
+      "carbs": 84,
+      "fat": 41,
+      "servingLabel": "1 listed serving (Sundaes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510310",
+      "name": "Strawberry Short Cake",
+      "calories": 590,
+      "protein": 8,
+      "carbs": 72,
+      "fat": 31,
+      "servingLabel": "1 listed serving (Sundaes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510314",
+      "name": "Better Batter Boogie, Best Value",
+      "calories": 1350,
+      "protein": 18,
+      "carbs": 178,
+      "fat": 64,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510311",
+      "name": "Better Batter Boogie, Child",
+      "calories": 380,
+      "protein": 5,
+      "carbs": 51,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510313",
+      "name": "Better Batter Boogie, Regular",
+      "calories": 1030,
+      "protein": 14,
+      "carbs": 136,
+      "fat": 49,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510312",
+      "name": "Better Batter Boogie, Small",
+      "calories": 700,
+      "protein": 9,
+      "carbs": 93,
+      "fat": 33,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510318",
+      "name": "Better Batter Cake, Best Value",
+      "calories": 1580,
+      "protein": 19,
+      "carbs": 210,
+      "fat": 75,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510315",
+      "name": "Better Batter Cake, Child",
+      "calories": 410,
+      "protein": 5,
+      "carbs": 55,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510317",
+      "name": "Better Batter Cake, Regular",
+      "calories": 1190,
+      "protein": 14,
+      "carbs": 158,
+      "fat": 57,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510316",
+      "name": "Better Batter Cake, Small",
+      "calories": 800,
+      "protein": 10,
+      "carbs": 107,
+      "fat": 38,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510322",
+      "name": "Birthday Bonanza, Best Value",
+      "calories": 1130,
+      "protein": 12,
+      "carbs": 166,
+      "fat": 46,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510319",
+      "name": "Birthday Bonanza, Child",
+      "calories": 280,
+      "protein": 3,
+      "carbs": 41,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510321",
+      "name": "Birthday Bonanza, Regular",
+      "calories": 840,
+      "protein": 9,
+      "carbs": 124,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510320",
+      "name": "Birthday Bonanza, Small",
+      "calories": 560,
+      "protein": 6,
+      "carbs": 83,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510326",
+      "name": "Butter Pecan Port Of, Best Value",
+      "calories": 1670,
+      "protein": 21,
+      "carbs": 174,
+      "fat": 107,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510323",
+      "name": "Butter Pecan Port Of, Child",
+      "calories": 440,
+      "protein": 5,
+      "carbs": 47,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510325",
+      "name": "Butter Pecan Port Of, Regular",
+      "calories": 1260,
+      "protein": 16,
+      "carbs": 132,
+      "fat": 81,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510324",
+      "name": "Butter Pecan Port Of, Small",
+      "calories": 850,
+      "protein": 10,
+      "carbs": 89,
+      "fat": 54,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510330",
+      "name": "Caramel Fudge, Best Value",
+      "calories": 1270,
+      "protein": 18,
+      "carbs": 152,
+      "fat": 67,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510327",
+      "name": "Caramel Fudge, Child",
+      "calories": 330,
+      "protein": 5,
+      "carbs": 41,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510329",
+      "name": "Caramel Fudge, Regular",
+      "calories": 960,
+      "protein": 14,
+      "carbs": 115,
+      "fat": 50,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510328",
+      "name": "Caramel Fudge, Small",
+      "calories": 650,
+      "protein": 9,
+      "carbs": 78,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510334",
+      "name": "Cherry Vanilla, Best Value",
+      "calories": 1330,
+      "protein": 17,
+      "carbs": 172,
+      "fat": 63,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510331",
+      "name": "Cherry Vanilla, Child",
+      "calories": 360,
+      "protein": 5,
+      "carbs": 48,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510333",
+      "name": "Cherry Vanilla, Regular",
+      "calories": 1000,
+      "protein": 13,
+      "carbs": 129,
+      "fat": 47,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510332",
+      "name": "Cherry Vanilla, Small",
+      "calories": 680,
+      "protein": 9,
+      "carbs": 87,
+      "fat": 32,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510338",
+      "name": "Chocolate 2 The Xtreme, Best Value",
+      "calories": 1570,
+      "protein": 22,
+      "carbs": 201,
+      "fat": 78,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510335",
+      "name": "Chocolate 2 The Xtreme, Child",
+      "calories": 410,
+      "protein": 6,
+      "carbs": 53,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510337",
+      "name": "Chocolate 2 The Xtreme, Regular",
+      "calories": 1190,
+      "protein": 16,
+      "carbs": 152,
+      "fat": 59,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510336",
+      "name": "Chocolate 2 The Xtreme, Small",
+      "calories": 800,
+      "protein": 11,
+      "carbs": 103,
+      "fat": 39,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510342",
+      "name": "Cookie Dough Drizzle, Best Value",
+      "calories": 1560,
+      "protein": 19,
+      "carbs": 213,
+      "fat": 73,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510339",
+      "name": "Cookie Dough Drizzle, Child",
+      "calories": 410,
+      "protein": 5,
+      "carbs": 56,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510341",
+      "name": "Cookie Dough Drizzle, Regular",
+      "calories": 1180,
+      "protein": 14,
+      "carbs": 160,
+      "fat": 55,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510340",
+      "name": "Cookie Dough Drizzle, Small",
+      "calories": 790,
+      "protein": 10,
+      "carbs": 108,
+      "fat": 37,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510346",
+      "name": "Cookies & Cake, Best Value",
+      "calories": 1370,
+      "protein": 17,
+      "carbs": 176,
+      "fat": 68,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510343",
+      "name": "Cookies & Cake, Child",
+      "calories": 340,
+      "protein": 4,
+      "carbs": 44,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510345",
+      "name": "Cookies & Cake, Regular",
+      "calories": 1030,
+      "protein": 13,
+      "carbs": 132,
+      "fat": 51,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510344",
+      "name": "Cookies & Cake, Small",
+      "calories": 680,
+      "protein": 8,
+      "carbs": 88,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510350",
+      "name": "Cotton Candy Ski Jump, Best Value",
+      "calories": 1320,
+      "protein": 16,
+      "carbs": 176,
+      "fat": 52,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510347",
+      "name": "Cotton Candy Ski Jump, Child",
+      "calories": 310,
+      "protein": 4,
+      "carbs": 41,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510349",
+      "name": "Cotton Candy Ski Jump, Regular",
+      "calories": 980,
+      "protein": 12,
+      "carbs": 131,
+      "fat": 46,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510348",
+      "name": "Cotton Candy Ski Jump, Small",
+      "calories": 650,
+      "protein": 8,
+      "carbs": 86,
+      "fat": 31,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510354",
+      "name": "Peanut Butter Galaxy, Best Value",
+      "calories": 1780,
+      "protein": 42,
+      "carbs": 170,
+      "fat": 110,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510351",
+      "name": "Peanut Butter Galaxy, Child",
+      "calories": 480,
+      "protein": 12,
+      "carbs": 44,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510353",
+      "name": "Peanut Butter Galaxy, Regular",
+      "calories": 1340,
+      "protein": 32,
+      "carbs": 120,
+      "fat": 83,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510352",
+      "name": "Peanut Butter Galaxy, Small",
+      "calories": 910,
+      "protein": 22,
+      "carbs": 86,
+      "fat": 57,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510358",
+      "name": "Rainbow-Nanza, Best Value",
+      "calories": 1210,
+      "protein": 15,
+      "carbs": 149,
+      "fat": 61,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510355",
+      "name": "Rainbow-Nanza, Child",
+      "calories": 300,
+      "protein": 4,
+      "carbs": 38,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510357",
+      "name": "Rainbow-Nanza, Regular",
+      "calories": 910,
+      "protein": 11,
+      "carbs": 113,
+      "fat": 46,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510356",
+      "name": "Rainbow-Nanza, Small",
+      "calories": 600,
+      "protein": 7,
+      "carbs": 74,
+      "fat": 31,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510362",
+      "name": "S'more, Best Value",
+      "calories": 1440,
+      "protein": 18,
+      "carbs": 190,
+      "fat": 71,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510359",
+      "name": "S'more, Child",
+      "calories": 360,
+      "protein": 5,
+      "carbs": 48,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510361",
+      "name": "S'more, Regular",
+      "calories": 1080,
+      "protein": 14,
+      "carbs": 143,
+      "fat": 53,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510360",
+      "name": "S'more, Small",
+      "calories": 720,
+      "protein": 9,
+      "carbs": 95,
+      "fat": 35,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510366",
+      "name": "Snickerdoodle, Best Value",
+      "calories": 1280,
+      "protein": 18,
+      "carbs": 156,
+      "fat": 64,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510363",
+      "name": "Snickerdoodle, Child",
+      "calories": 340,
+      "protein": 5,
+      "carbs": 43,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510365",
+      "name": "Snickerdoodle, Regular",
+      "calories": 960,
+      "protein": 13,
+      "carbs": 119,
+      "fat": 48,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510364",
+      "name": "Snickerdoodle, Small",
+      "calories": 650,
+      "protein": 9,
+      "carbs": 81,
+      "fat": 32,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510370",
+      "name": "Strawberry Skydive, Best Value",
+      "calories": 1200,
+      "protein": 16,
+      "carbs": 154,
+      "fat": 60,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510367",
+      "name": "Strawberry Skydive, Child",
+      "calories": 340,
+      "protein": 4,
+      "carbs": 47,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510369",
+      "name": "Strawberry Skydive, Regular",
+      "calories": 900,
+      "protein": 12,
+      "carbs": 117,
+      "fat": 45,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510368",
+      "name": "Strawberry Skydive, Small",
+      "calories": 650,
+      "protein": 8,
+      "carbs": 89,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510374",
+      "name": "Vanilla Cookie Dough Yo-, Best Value",
+      "calories": 1510,
+      "protein": 17,
+      "carbs": 194,
+      "fat": 74,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510371",
+      "name": "Vanilla Cookie Dough Yo-, Child",
+      "calories": 390,
+      "protein": 4,
+      "carbs": 52,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510373",
+      "name": "Vanilla Cookie Dough Yo-, Regular",
+      "calories": 1140,
+      "protein": 13,
+      "carbs": 147,
+      "fat": 56,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510372",
+      "name": "Vanilla Cookie Dough Yo-, Small",
+      "calories": 770,
+      "protein": 9,
+      "carbs": 99,
+      "fat": 37,
+      "servingLabel": "1 listed serving (Unlimited Combinations; size in item name)"
+    },
+    {
+      "id": "nutritionix-510375",
+      "name": "Basic Ice Cream Pizza",
+      "calories": 490,
+      "protein": 7,
+      "carbs": 56,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Ice Cream Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-510376",
+      "name": "Chocolate Lovers Ice Cream Pizza",
+      "calories": 400,
+      "protein": 6,
+      "carbs": 45,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Ice Cream Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-510377",
+      "name": "Supreme Ice Cream Pizza",
+      "calories": 450,
+      "protein": 6,
+      "carbs": 53,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Ice Cream Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-510380",
+      "name": "Birthday Cake Cookie, 1/4 Sheet Cake",
+      "calories": 490,
+      "protein": 5,
+      "carbs": 63,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510378",
+      "name": "Birthday Cake Cookie, 6\" Cake",
+      "calories": 520,
+      "protein": 5,
+      "carbs": 66,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510379",
+      "name": "Birthday Cake Cookie, 8\" Cake",
+      "calories": 490,
+      "protein": 5,
+      "carbs": 63,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510383",
+      "name": "Caramel Drizzle Cake, 1/4 Sheet Cake",
+      "calories": 560,
+      "protein": 6,
+      "carbs": 58,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510381",
+      "name": "Caramel Drizzle Cake, 6\" Cake",
+      "calories": 630,
+      "protein": 7,
+      "carbs": 67,
+      "fat": 38,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510382",
+      "name": "Caramel Drizzle Cake, 8\" Cake",
+      "calories": 560,
+      "protein": 6,
+      "carbs": 58,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510386",
+      "name": "Chocolate Heaven Cake, 1/4 Sheet Cake",
+      "calories": 420,
+      "protein": 6,
+      "carbs": 47,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510384",
+      "name": "Chocolate Heaven Cake, 6\" Cake",
+      "calories": 430,
+      "protein": 6,
+      "carbs": 48,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510385",
+      "name": "Chocolate Heaven Cake, 8\" Cake",
+      "calories": 420,
+      "protein": 6,
+      "carbs": 47,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510389",
+      "name": "Chocolate Rocky Road, 1/4 Sheet Cake",
+      "calories": 470,
+      "protein": 7,
+      "carbs": 60,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510387",
+      "name": "Chocolate Rocky Road, 6\" Cake",
+      "calories": 510,
+      "protein": 7,
+      "carbs": 65,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510388",
+      "name": "Chocolate Rocky Road, 8\" Cake",
+      "calories": 490,
+      "protein": 7,
+      "carbs": 62,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510392",
+      "name": "Cookie Jar Chaos Cake, 1/4 Sheet Cake",
+      "calories": 510,
+      "protein": 6,
+      "carbs": 66,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510390",
+      "name": "Cookie Jar Chaos Cake, 6\" Cake",
+      "calories": 520,
+      "protein": 6,
+      "carbs": 66,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510391",
+      "name": "Cookie Jar Chaos Cake, 8\" Cake",
+      "calories": 510,
+      "protein": 6,
+      "carbs": 66,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510395",
+      "name": "Cookies 'N' Cream Cake, 1/4 Sheet Cake",
+      "calories": 430,
+      "protein": 5,
+      "carbs": 50,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510393",
+      "name": "Cookies 'N' Cream Cake, 6\" Cake",
+      "calories": 470,
+      "protein": 5,
+      "carbs": 55,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510394",
+      "name": "Cookies 'N' Cream Cake, 8\" Cake",
+      "calories": 430,
+      "protein": 5,
+      "carbs": 50,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510398",
+      "name": "Cotton Candy Carnival Cake, 1/4 Sheet Cake",
+      "calories": 530,
+      "protein": 6,
+      "carbs": 67,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510396",
+      "name": "Cotton Candy Carnival Cake, 6\" Cake",
+      "calories": 540,
+      "protein": 6,
+      "carbs": 68,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510397",
+      "name": "Cotton Candy Carnival Cake, 8\" Cake",
+      "calories": 530,
+      "protein": 6,
+      "carbs": 67,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510401",
+      "name": "Father's Day Argyle Cake, 1/4 Sheet Cake",
+      "calories": 410,
+      "protein": 5,
+      "carbs": 47,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510399",
+      "name": "Father's Day Argyle Cake, 6\" Cake",
+      "calories": 420,
+      "protein": 5,
+      "carbs": 47,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510400",
+      "name": "Father's Day Argyle Cake, 8\" Cake",
+      "calories": 410,
+      "protein": 5,
+      "carbs": 47,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510404",
+      "name": "Gift Cake, 1/4 Sheet Cake",
+      "calories": 360,
+      "protein": 4,
+      "carbs": 39,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510402",
+      "name": "Gift Cake, 6\" Cake",
+      "calories": 380,
+      "protein": 4,
+      "carbs": 41,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510403",
+      "name": "Gift Cake, 8\" Cake",
+      "calories": 370,
+      "protein": 4,
+      "carbs": 39,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510407",
+      "name": "Graduation Cap Cake, 1/4 Sheet Cake",
+      "calories": 460,
+      "protein": 6,
+      "carbs": 52,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510405",
+      "name": "Graduation Cap Cake, 6\" Cake",
+      "calories": 540,
+      "protein": 8,
+      "carbs": 62,
+      "fat": 29,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510406",
+      "name": "Graduation Cap Cake, 8\" Cake",
+      "calories": 460,
+      "protein": 6,
+      "carbs": 52,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510410",
+      "name": "Maggie's Mud Cake, 1/4 Sheet Cake",
+      "calories": 450,
+      "protein": 7,
+      "carbs": 50,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510408",
+      "name": "Maggie's Mud Cake, 6\" Cake",
+      "calories": 490,
+      "protein": 8,
+      "carbs": 55,
+      "fat": 28,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510409",
+      "name": "Maggie's Mud Cake, 8\" Cake",
+      "calories": 450,
+      "protein": 7,
+      "carbs": 50,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510413",
+      "name": "Mint Chocolate Cake, 1/4 Sheet Cake",
+      "calories": 500,
+      "protein": 6,
+      "carbs": 57,
+      "fat": 29,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510411",
+      "name": "Mint Chocolate Cake, 6\" Cake",
+      "calories": 500,
+      "protein": 6,
+      "carbs": 57,
+      "fat": 28,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510412",
+      "name": "Mint Chocolate Cake, 8\" Cake",
+      "calories": 500,
+      "protein": 6,
+      "carbs": 57,
+      "fat": 29,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510416",
+      "name": "Mocha Cappuccino Fudge Cake, 1/4 Sheet Cake",
+      "calories": 440,
+      "protein": 6,
+      "carbs": 51,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510414",
+      "name": "Mocha Cappuccino Fudge Cake, 6\" Cake",
+      "calories": 420,
+      "protein": 5,
+      "carbs": 49,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510415",
+      "name": "Mocha Cappuccino Fudge Cake, 8\" Cake",
+      "calories": 420,
+      "protein": 6,
+      "carbs": 48,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510419",
+      "name": "Mother's Day Polka Dot Cake, 1/4 Sheet Cake",
+      "calories": 500,
+      "protein": 7,
+      "carbs": 58,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510417",
+      "name": "Mother's Day Polka Dot Cake, 6\" Cake",
+      "calories": 430,
+      "protein": 6,
+      "carbs": 48,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510418",
+      "name": "Mother's Day Polka Dot Cake, 8\" Cake",
+      "calories": 500,
+      "protein": 7,
+      "carbs": 58,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510422",
+      "name": "Peanut Butter Cake, 1/4 Sheet Cake",
+      "calories": 540,
+      "protein": 8,
+      "carbs": 63,
+      "fat": 29,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510420",
+      "name": "Peanut Butter Cake, 6\" Cake",
+      "calories": 590,
+      "protein": 9,
+      "carbs": 70,
+      "fat": 31,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510421",
+      "name": "Peanut Butter Cake, 8\" Cake",
+      "calories": 550,
+      "protein": 8,
+      "carbs": 66,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510425",
+      "name": "Pecan Perfection Cake, 1/4 Sheet Cake",
+      "calories": 550,
+      "protein": 7,
+      "carbs": 53,
+      "fat": 35,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510423",
+      "name": "Pecan Perfection Cake, 6\" Cake",
+      "calories": 550,
+      "protein": 7,
+      "carbs": 54,
+      "fat": 36,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510424",
+      "name": "Pecan Perfection Cake, 8\" Cake",
+      "calories": 550,
+      "protein": 7,
+      "carbs": 53,
+      "fat": 35,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510428",
+      "name": "Raving Craving Sprinkle Cake, 1/4 Sheet Cake",
+      "calories": 520,
+      "protein": 6,
+      "carbs": 65,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510426",
+      "name": "Raving Craving Sprinkle Cake, 6\" Cake",
+      "calories": 520,
+      "protein": 6,
+      "carbs": 66,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510427",
+      "name": "Raving Craving Sprinkle Cake, 8\" Cake",
+      "calories": 520,
+      "protein": 6,
+      "carbs": 65,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510431",
+      "name": "Savannah Banana Fudge Cake, 1/4 Sheet Cake",
+      "calories": 530,
+      "protein": 5,
+      "carbs": 64,
+      "fat": 29,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510429",
+      "name": "Savannah Banana Fudge Cake, 6\" Cake",
+      "calories": 560,
+      "protein": 6,
+      "carbs": 67,
+      "fat": 31,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510430",
+      "name": "Savannah Banana Fudge Cake, 8\" Cake",
+      "calories": 510,
+      "protein": 5,
+      "carbs": 61,
+      "fat": 28,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510434",
+      "name": "Snickers Snackers Cake, 1/4 Sheet Cake",
+      "calories": 570,
+      "protein": 7,
+      "carbs": 75,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510432",
+      "name": "Snickers Snackers Cake, 6\" Cake",
+      "calories": 570,
+      "protein": 7,
+      "carbs": 76,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510433",
+      "name": "Snickers Snackers Cake, 8\" Cake",
+      "calories": 570,
+      "protein": 7,
+      "carbs": 75,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510437",
+      "name": "Sprinkles Cake, 1/4 Sheet Cake",
+      "calories": 380,
+      "protein": 4,
+      "carbs": 47,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510435",
+      "name": "Sprinkles Cake, 6\" Cake",
+      "calories": 410,
+      "protein": 4,
+      "carbs": 52,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510436",
+      "name": "Sprinkles Cake, 8\" Cake",
+      "calories": 380,
+      "protein": 4,
+      "carbs": 47,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510440",
+      "name": "Strawberry Shortcake, 1/4 Sheet Cake",
+      "calories": 570,
+      "protein": 8,
+      "carbs": 71,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510438",
+      "name": "Strawberry Shortcake, 6\" Cake",
+      "calories": 560,
+      "protein": 8,
+      "carbs": 70,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510439",
+      "name": "Strawberry Shortcake, 8\" Cake",
+      "calories": 570,
+      "protein": 8,
+      "carbs": 71,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510443",
+      "name": "Turtle Cake, 1/4 Sheet Cake",
+      "calories": 630,
+      "protein": 8,
+      "carbs": 63,
+      "fat": 41,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510441",
+      "name": "Turtle Cake, 6\" Cake",
+      "calories": 650,
+      "protein": 8,
+      "carbs": 65,
+      "fat": 42,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510442",
+      "name": "Turtle Cake, 8\" Cake",
+      "calories": 630,
+      "protein": 8,
+      "carbs": 63,
+      "fat": 41,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510446",
+      "name": "Visit To The Candy Cake, 1/4 Sheet Cake",
+      "calories": 590,
+      "protein": 8,
+      "carbs": 78,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510444",
+      "name": "Visit To The Candy Cake, 6\" Cake",
+      "calories": 630,
+      "protein": 8,
+      "carbs": 87,
+      "fat": 28,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510445",
+      "name": "Visit To The Candy Cake, 8\" Cake",
+      "calories": 590,
+      "protein": 8,
+      "carbs": 78,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Ice Cream Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510447",
+      "name": "Slabwich",
+      "calories": 370,
+      "protein": 6,
+      "carbs": 46,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Oreo Cookie; size in item name)"
+    },
+    {
+      "id": "nutritionix-510448",
+      "name": "Basketball Cupcake",
+      "calories": 340,
+      "protein": 4,
+      "carbs": 44,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Cupcakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510449",
+      "name": "Bithday Cupcake",
+      "calories": 440,
+      "protein": 5,
+      "carbs": 57,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Cupcakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510450",
+      "name": "Carrot Cupcake",
+      "calories": 440,
+      "protein": 4,
+      "carbs": 50,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Cupcakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510451",
+      "name": "Cherry Chocolate",
+      "calories": 300,
+      "protein": 5,
+      "carbs": 39,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Cupcakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510452",
+      "name": "Chocolate Heaven",
+      "calories": 340,
+      "protein": 5,
+      "carbs": 41,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Cupcakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510453",
+      "name": "Cool Swirl Cupcake",
+      "calories": 370,
+      "protein": 4,
+      "carbs": 46,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Cupcakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510454",
+      "name": "Cotton Candy Carnival",
+      "calories": 340,
+      "protein": 4,
+      "carbs": 41,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Cupcakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510455",
+      "name": "Eyeball Cupcake",
+      "calories": 260,
+      "protein": 4,
+      "carbs": 31,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Cupcakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510456",
+      "name": "Football Cupcake",
+      "calories": 340,
+      "protein": 4,
+      "carbs": 44,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Cupcakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510457",
+      "name": "Frankenstein Cupcake",
+      "calories": 300,
+      "protein": 4,
+      "carbs": 35,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Cupcakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510458",
+      "name": "Gummy Graveyard",
+      "calories": 420,
+      "protein": 5,
+      "carbs": 57,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Cupcakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510459",
+      "name": "Heart Cupcake",
+      "calories": 440,
+      "protein": 4,
+      "carbs": 53,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Cupcakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510460",
+      "name": "Ho Ho Ho Cupcakes",
+      "calories": 390,
+      "protein": 3,
+      "carbs": 54,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Cupcakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510461",
+      "name": "Jack-O-Lantern Cupcake",
+      "calories": 290,
+      "protein": 4,
+      "carbs": 36,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Cupcakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510462",
+      "name": "Mummy Cupcake",
+      "calories": 260,
+      "protein": 4,
+      "carbs": 30,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Cupcakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510463",
+      "name": "Pink Flower Cupcake",
+      "calories": 390,
+      "protein": 4,
+      "carbs": 46,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Cupcakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510464",
+      "name": "Snowcap Blush Cupcake",
+      "calories": 370,
+      "protein": 4,
+      "carbs": 45,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Cupcakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510465",
+      "name": "Sprinkle Cupcake",
+      "calories": 340,
+      "protein": 4,
+      "carbs": 42,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Cupcakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-510466",
+      "name": "Sunflower Cupcake",
+      "calories": 460,
+      "protein": 5,
+      "carbs": 53,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Cupcakes; size in item name)"
+    }
+  ],
+  "sourceDate": "2024-05-31"
+}

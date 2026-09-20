@@ -1,0 +1,532 @@
+{
+  "chain": "Noodles & Company",
+  "sourceUrl": "https://www.nutritionix.com/noodles-company/menu/premium",
+  "source": "Nutritionix",
+  "sourceKind": "database",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "id": "nutritionix-771969",
+      "name": "Basil Pesto Cavatappi, Regular",
+      "calories": 860,
+      "protein": 24,
+      "carbs": 103,
+      "fat": 41,
+      "servingLabel": "1 listed serving (Classic Noodles; size in item name)"
+    },
+    {
+      "id": "nutritionix-771970",
+      "name": "Basil Pesto Cavatappi, Small",
+      "calories": 360,
+      "protein": 11,
+      "carbs": 48,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Classic Noodles; size in item name)"
+    },
+    {
+      "id": "nutritionix-771971",
+      "name": "Buttery Parmesan Noodles, Regular",
+      "calories": 760,
+      "protein": 22,
+      "carbs": 98,
+      "fat": 35,
+      "servingLabel": "1 listed serving (Classic Noodles; size in item name)"
+    },
+    {
+      "id": "nutritionix-771972",
+      "name": "Buttery Parmesan Noodles, Small",
+      "calories": 380,
+      "protein": 11,
+      "carbs": 49,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Classic Noodles; size in item name)"
+    },
+    {
+      "id": "nutritionix-771973",
+      "name": "Cajun Shrimp Fettucine, Regular",
+      "calories": 1050,
+      "protein": 36,
+      "carbs": 98,
+      "fat": 57,
+      "servingLabel": "1 listed serving (Classic Noodles; size in item name)"
+    },
+    {
+      "id": "nutritionix-771975",
+      "name": "Cheese Tortelloni in Roasted Garlic Cream Sauce, Regular",
+      "calories": 770,
+      "protein": 36,
+      "carbs": 72,
+      "fat": 38,
+      "servingLabel": "1 listed serving (Classic Noodles; size in item name)"
+    },
+    {
+      "id": "nutritionix-771977",
+      "name": "Chicken Parmesan",
+      "calories": 940,
+      "protein": 51,
+      "carbs": 115,
+      "fat": 32,
+      "servingLabel": "1 listed serving (Classic Noodles; size in item name)"
+    },
+    {
+      "id": "nutritionix-771978",
+      "name": "Chipotle Chicken Cavatappi, Regular",
+      "calories": 1170,
+      "protein": 53,
+      "carbs": 108,
+      "fat": 58,
+      "servingLabel": "1 listed serving (Classic Noodles; size in item name)"
+    },
+    {
+      "id": "nutritionix-771979",
+      "name": "Chipotle Chicken Cavatappi, Small",
+      "calories": 670,
+      "protein": 40,
+      "carbs": 54,
+      "fat": 54,
+      "servingLabel": "1 listed serving (Classic Noodles; size in item name)"
+    },
+    {
+      "id": "nutritionix-771980",
+      "name": "Crispy Chicken Bacon Alfredo, Regular",
+      "calories": 1240,
+      "protein": 52,
+      "carbs": 108,
+      "fat": 67,
+      "servingLabel": "1 listed serving (Classic Noodles; size in item name)"
+    },
+    {
+      "id": "nutritionix-771981",
+      "name": "Crispy Chicken Bacon Alfredo, Small",
+      "calories": 720,
+      "protein": 37,
+      "carbs": 58,
+      "fat": 38,
+      "servingLabel": "1 listed serving (Classic Noodles; size in item name)"
+    },
+    {
+      "id": "nutritionix-771982",
+      "name": "Lemon Garlic Shrimp Scampi, Regular",
+      "calories": 1070,
+      "protein": 33,
+      "carbs": 104,
+      "fat": 60,
+      "servingLabel": "1 listed serving (Classic Noodles; size in item name)"
+    },
+    {
+      "id": "nutritionix-771983",
+      "name": "Lemon Garlic Shrimp Scampi, Small",
+      "calories": 560,
+      "protein": 21,
+      "carbs": 52,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Classic Noodles; size in item name)"
+    },
+    {
+      "id": "nutritionix-771984",
+      "name": "Pasta Fresca, Regular",
+      "calories": 660,
+      "protein": 21,
+      "carbs": 103,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Classic Noodles; size in item name)"
+    },
+    {
+      "id": "nutritionix-771985",
+      "name": "Pasta Fresca, Small",
+      "calories": 330,
+      "protein": 10,
+      "carbs": 52,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Classic Noodles; size in item name)"
+    },
+    {
+      "id": "nutritionix-771986",
+      "name": "Rigatoni Rosa, Regular",
+      "calories": 690,
+      "protein": 23,
+      "carbs": 105,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Classic Noodles; size in item name)"
+    },
+    {
+      "id": "nutritionix-771987",
+      "name": "Rigatoni Rosa, Small",
+      "calories": 350,
+      "protein": 11,
+      "carbs": 52,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Classic Noodles; size in item name)"
+    },
+    {
+      "id": "nutritionix-771976",
+      "name": "Roasted Garlic Cream Tortelloni, Small",
+      "calories": 380,
+      "protein": 18,
+      "carbs": 36,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Classic Noodles; size in item name)"
+    },
+    {
+      "id": "nutritionix-771988",
+      "name": "Spaghetti & Meatballs, Regular",
+      "calories": 960,
+      "protein": 34,
+      "carbs": 102,
+      "fat": 46,
+      "servingLabel": "1 listed serving (Classic Noodles; size in item name)"
+    },
+    {
+      "id": "nutritionix-771989",
+      "name": "Spaghetti & Meatballs, Small",
+      "calories": 670,
+      "protein": 25,
+      "carbs": 53,
+      "fat": 38,
+      "servingLabel": "1 listed serving (Classic Noodles; size in item name)"
+    },
+    {
+      "id": "nutritionix-771990",
+      "name": "Buffalo Chicken Ranch Mac, Regular",
+      "calories": 1380,
+      "protein": 66,
+      "carbs": 136,
+      "fat": 64,
+      "servingLabel": "1 listed serving (World Famous Macs; size in item name)"
+    },
+    {
+      "id": "nutritionix-771991",
+      "name": "Buffalo Chicken Ranch Mac, Small",
+      "calories": 790,
+      "protein": 44,
+      "carbs": 72,
+      "fat": 36,
+      "servingLabel": "1 listed serving (World Famous Macs; size in item name)"
+    },
+    {
+      "id": "nutritionix-771992",
+      "name": "Creamy Cheddar Mac, Regular",
+      "calories": 1050,
+      "protein": 46,
+      "carbs": 120,
+      "fat": 43,
+      "servingLabel": "1 listed serving (World Famous Macs; size in item name)"
+    },
+    {
+      "id": "nutritionix-771993",
+      "name": "Creamy Cheddar Mac, Small",
+      "calories": 520,
+      "protein": 23,
+      "carbs": 60,
+      "fat": 22,
+      "servingLabel": "1 listed serving (World Famous Macs; size in item name)"
+    },
+    {
+      "id": "nutritionix-771994",
+      "name": "Garlic Bacon Crunch Mac, Regular",
+      "calories": 1290,
+      "protein": 55,
+      "carbs": 128,
+      "fat": 63,
+      "servingLabel": "1 listed serving (World Famous Macs; size in item name)"
+    },
+    {
+      "id": "nutritionix-771995",
+      "name": "Garlic Bacon Crunch Mac, Small",
+      "calories": 640,
+      "protein": 28,
+      "carbs": 64,
+      "fat": 31,
+      "servingLabel": "1 listed serving (World Famous Macs; size in item name)"
+    },
+    {
+      "id": "nutritionix-771996",
+      "name": "Pulled Pork BBQ Mac, Regular",
+      "calories": 1250,
+      "protein": 63,
+      "carbs": 138,
+      "fat": 49,
+      "servingLabel": "1 listed serving (World Famous Macs; size in item name)"
+    },
+    {
+      "id": "nutritionix-771997",
+      "name": "Pulled Pork BBQ Mac, Small",
+      "calories": 690,
+      "protein": 41,
+      "carbs": 69,
+      "fat": 27,
+      "servingLabel": "1 listed serving (World Famous Macs; size in item name)"
+    },
+    {
+      "id": "nutritionix-771998",
+      "name": "Stuffed Pasta, Cheese Tortelloni in Roasted Garlic Cream Sauce, Regular",
+      "calories": 770,
+      "protein": 36,
+      "carbs": 72,
+      "fat": 38,
+      "servingLabel": "1 listed serving (Stuffed Pasta; size in item name)"
+    },
+    {
+      "id": "nutritionix-771999",
+      "name": "Stuffed Pasta, Roasted Garlic Cream Tortelloni, Small",
+      "calories": 380,
+      "protein": 18,
+      "carbs": 36,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Stuffed Pasta; size in item name)"
+    },
+    {
+      "id": "nutritionix-772000",
+      "name": "Japanese Pan Noodles, Regular",
+      "calories": 640,
+      "protein": 20,
+      "carbs": 114,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Asian Noodles; size in item name)"
+    },
+    {
+      "id": "nutritionix-772001",
+      "name": "Japanese Pan Noodles, Small",
+      "calories": 320,
+      "protein": 10,
+      "carbs": 57,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Asian Noodles; size in item name)"
+    },
+    {
+      "id": "nutritionix-772002",
+      "name": "Pad Thai, Regular",
+      "calories": 1040,
+      "protein": 20,
+      "carbs": 143,
+      "fat": 42,
+      "servingLabel": "1 listed serving (Asian Noodles; size in item name)"
+    },
+    {
+      "id": "nutritionix-772003",
+      "name": "Pad Thai, Small",
+      "calories": 520,
+      "protein": 10,
+      "carbs": 72,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Asian Noodles; size in item name)"
+    },
+    {
+      "id": "nutritionix-772004",
+      "name": "Spicy Korean Beef Noodles, Regular",
+      "calories": 890,
+      "protein": 28,
+      "carbs": 114,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Asian Noodles; size in item name)"
+    },
+    {
+      "id": "nutritionix-772005",
+      "name": "Spicy Korean Beef Noodles, Small",
+      "calories": 510,
+      "protein": 21,
+      "carbs": 58,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Asian Noodles; size in item name)"
+    },
+    {
+      "id": "nutritionix-772006",
+      "name": "Chicken Noodle Soup",
+      "calories": 360,
+      "protein": 30,
+      "carbs": 41,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Salad & Soup; size in item name)"
+    },
+    {
+      "id": "nutritionix-772007",
+      "name": "Green Goddess Salad",
+      "calories": 720,
+      "protein": 35,
+      "carbs": 27,
+      "fat": 55,
+      "servingLabel": "1 listed serving (Salad & Soup; size in item name)"
+    },
+    {
+      "id": "nutritionix-772008",
+      "name": "Grilled Chicken Caesar Salad",
+      "calories": 670,
+      "protein": 42,
+      "carbs": 18,
+      "fat": 49,
+      "servingLabel": "1 listed serving (Salad & Soup; size in item name)"
+    },
+    {
+      "id": "nutritionix-772009",
+      "name": "The Med Salad with Chicken",
+      "calories": 440,
+      "protein": 36,
+      "carbs": 34,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Salad & Soup; size in item name)"
+    },
+    {
+      "id": "nutritionix-772010",
+      "name": "Kids Apples",
+      "calories": 30,
+      "protein": 0,
+      "carbs": 8,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Kids Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-772011",
+      "name": "Kids Buttered Noodles",
+      "calories": 380,
+      "protein": 11,
+      "carbs": 49,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Kids Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-772012",
+      "name": "Kids Creamy Cheddar Mac",
+      "calories": 520,
+      "protein": 23,
+      "carbs": 60,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Kids Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-772013",
+      "name": "Kids Grilled Chicken",
+      "calories": 170,
+      "protein": 27,
+      "carbs": 3,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Kids Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-772014",
+      "name": "Kids Spaghetti & Meatballs",
+      "calories": 450,
+      "protein": 16,
+      "carbs": 50,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Kids Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-772015",
+      "name": "Cheesy Garlic Bread, Regular",
+      "calories": 660,
+      "protein": 21,
+      "carbs": 78,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Shareables; size in item name)"
+    },
+    {
+      "id": "nutritionix-772016",
+      "name": "Cheesy Garlic Bread, Small",
+      "calories": 390,
+      "protein": 12,
+      "carbs": 46,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Shareables; size in item name)"
+    },
+    {
+      "id": "nutritionix-772017",
+      "name": "Korean BBQ Meatballs",
+      "calories": 440,
+      "protein": 16,
+      "carbs": 16,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Shareables; size in item name)"
+    },
+    {
+      "id": "nutritionix-772018",
+      "name": "Potstickers, Regular",
+      "calories": 330,
+      "protein": 14,
+      "carbs": 47,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Shareables; size in item name)"
+    },
+    {
+      "id": "nutritionix-772019",
+      "name": "Potstickers, Small",
+      "calories": 220,
+      "protein": 8,
+      "carbs": 35,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Shareables; size in item name)"
+    },
+    {
+      "id": "nutritionix-772020",
+      "name": "Baguette (Side)",
+      "calories": 170,
+      "protein": 7,
+      "carbs": 33,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-772021",
+      "name": "Caesar Salad (Side)",
+      "calories": 210,
+      "protein": 4,
+      "carbs": 4,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-772022",
+      "name": "Chicken Noodle Soup (Side)",
+      "calories": 120,
+      "protein": 13,
+      "carbs": 11,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-772023",
+      "name": "Creamy Cheddar Mac (Side)",
+      "calories": 260,
+      "protein": 11,
+      "carbs": 30,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-772024",
+      "name": "Lemon Parmesan Broccoli (Side)",
+      "calories": 140,
+      "protein": 3,
+      "carbs": 4,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-772025",
+      "name": "Chocolate Chunk Cookie",
+      "calories": 450,
+      "protein": 6,
+      "carbs": 64,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-772026",
+      "name": "Rice Crispy",
+      "calories": 540,
+      "protein": 6,
+      "carbs": 87,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-772027",
+      "name": "Snoodledoodle Cookie",
+      "calories": 450,
+      "protein": 6,
+      "carbs": 64,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    }
+  ],
+  "sourceDate": "2025-04-30"
+}

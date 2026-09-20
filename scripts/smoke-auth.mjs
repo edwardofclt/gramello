@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { randomBytes } from "node:crypto";
-import { mkdtemp, readdir, rm, writeFile } from "node:fs/promises";
+import { mkdir, mkdtemp, readdir, rm, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { spawn, spawnSync } from "node:child_process";
@@ -67,7 +67,7 @@ try {
   assert.match(await signedIn.text(), /Alice Smoke/);
   assert.match(signedIn.headers.get("cache-control"), /no-store/);
   assert.match(signedIn.headers.get("set-cookie"), /HttpOnly/i);
-  for (const [method, path] of [["GET", "/api/day"], ["GET", "/api/trends"], ["GET", "/api/foods/search?q=a"], ["GET", "/api/foods/barcode?code=3017620422003"], ["POST", "/api/entries"], ["PUT", "/api/goals"], ["DELETE", "/api/entries?id=unknown"]]) {
+  for (const [method, path] of [["POST", "/api/foods/custom"], ["GET", "/api/day"], ["GET", "/api/trends"], ["GET", "/api/foods/search?q=a"], ["GET", "/api/foods/barcode?code=3017620422003"], ["POST", "/api/entries"], ["PUT", "/api/goals"], ["DELETE", "/api/entries?id=unknown"]]) {
     const response = await request(path, { method, headers: { "oai-authenticated-user-id": "auth0|alice" } });
     assert.equal(response.status, 401, `${method} ${path}`);
     assert.match(response.headers.get("cache-control"), /no-store/);
@@ -102,7 +102,58 @@ try {
   assert.equal((await readDay(alice)).entries.length, 1);
   await request(`/api/entries?id=${id}`, { method: "DELETE", headers: { Cookie: alice } });
   assert.equal((await readDay(alice)).entries.length, 0);
-  console.log("PASS: compiled Worker sign-in page, private API guards, encrypted sessions, callback failures, account isolation, goals, trends, CSRF, and deletion ownership.");
+  const customResponse = await request("/api/foods/custom", { method: "POST", headers: { Cookie: alice }, body: JSON.stringify({
+    name: "Smoke custom bowl", servingLabel: "1 bowl", calories: 605, protein: 30, carbs: 65, fat: 25, verified: true, source: "USDA",
+  }) });
+  assert.equal(customResponse.status, 201);
+  const { food: custom } = await customResponse.json();
+  assert.equal(custom.verified, false);
+  assert.equal(custom.servingGrams, null);
+  const customEntry = await request("/api/entries", { method: "POST", headers: { Cookie: bob }, body: JSON.stringify({ date, meal: "Dinner", sourceId: custom.id, quantity: .5, unit: "serving" }) });
+  assert.equal(customEntry.status, 201);
+  assert.deepEqual(Object.fromEntries(Object.entries(await customEntry.json()).filter(([key]) => ["calories","protein","carbs","fat","grams","verified"].includes(key))), { grams: null, calories: 302.5, protein: 15, carbs: 32.5, fat: 12.5, verified: false });
+  const vivaSearch = await request("/api/foods/search?q=Viva%20Chicken", { headers: { Cookie: alice } });
+  assert.equal(vivaSearch.status, 200);
+  const viva = (await vivaSearch.json()).foods.find(item => item.brand === "Viva Chicken");
+  assert.ok(viva, "Imported Viva Chicken menu must be searchable in the compiled Worker");
+  assert.equal(viva.verified, true);
+  const vivaResponse = await request("/api/entries", { method: "POST", headers: { Cookie: alice }, body: JSON.stringify({ date, meal: "Dinner", sourceId: viva.id, quantity: .5, unit: "serving", calories: 999999, verified: false }) });
+  assert.equal(vivaResponse.status, 201);
+  const vivaEntry = await vivaResponse.json();
+  assert.equal(vivaEntry.calories, viva.calories / 2);
+  assert.equal(vivaEntry.verified, true);
+  assert.equal((await readDay(alice)).entries.at(-1).verified, true);
+
+  if (process.env.SMOKE_BROWSER === "1") {
+    await mkdir("work/food-catalog", { recursive: true });
+    const { chromium } = await import("@playwright/test");
+    const browser = await chromium.launch();
+    try {
+      const context = await browser.newContext({ viewport: { width: 390, height: 844 } });
+      await context.addCookies([{ name: "__session", value: alice.slice("__session=".length), url: base }]);
+      const page = await context.newPage();
+      await page.goto(base);
+      await page.getByRole("button", { name: "Add food", exact: true }).click();
+      await page.getByRole("button", { name: "Add custom food", exact: true }).click();
+      await page.getByRole("textbox", { name: "Food name", exact: true }).fill("Browser custom dinner");
+      await page.getByRole("textbox", { name: "Serving description", exact: true }).fill("1 plate");
+      for (const [label, value] of [["Calories (kcal)","605"],["Protein (g)","30"],["Carbs (g)","65"],["Fat (g)","25"]]) await page.getByRole("spinbutton", { name: label, exact: true }).fill(value);
+      await page.getByRole("button", { name: "Save custom food", exact: true }).click();
+      await page.getByRole("heading", { name: "Choose amount" }).waitFor();
+      await page.screenshot({ path: "work/food-catalog/web-custom-selected.png", fullPage: true });
+      await page.getByRole("button", { name: "Add to Breakfast", exact: true }).click();
+      await page.getByText("Browser custom dinner", { exact: true }).waitFor();
+      await page.reload();
+      await page.getByText("Browser custom dinner", { exact: true }).waitFor();
+      await page.screenshot({ path: "work/food-catalog/web-custom-diary.png", fullPage: true });
+      await page.getByRole("button", { name: "Add food", exact: true }).click();
+      await page.getByRole("textbox", { name: "Search foods", exact: true }).fill("Viva Chicken");
+      await page.locator(".result-row").first().waitFor();
+      assert.ok(await page.locator(".result-row .verified").count() > 0);
+      await page.screenshot({ path: "work/food-catalog/web-viva-search.png", fullPage: true });
+    } finally { await browser.close(); }
+  }
+  console.log("PASS: compiled Worker sign-in page, private API guards, encrypted sessions, callback failures, account isolation, goals, trends, CSRF, deletion ownership, shared custom foods, verified restaurant imports, and server-side portion calculations.");
 } catch (error) {
   // Wrangler logs binding names, but redact the fixture key defensively.
   console.error(log.replaceAll(secret, "[redacted]").split("\n").slice(-35).join("\n"));

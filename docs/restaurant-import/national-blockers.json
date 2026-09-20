@@ -1,0 +1,93 @@
+[
+  {
+    "chain": "Rita's Italian Ice",
+    "sourceUrl": "https://cdn.ritasice.com/wp-content/uploads/2026/02/2026-Nutrition-Guide.pdf",
+    "status": "source_quarantined",
+    "reason": "Main products provide ranges only, not exact macros per named flavor. The only exact table (toppings, page4) has no serving quantities and multiple apparent source defects: fiber9g exceeds totalcarbs8g for CookieDoughBites, MiniGummyBears show13gfat, ChocolateChips70kcal with25gcarb/0gfat. Values match rendered PDF; no corrections or averages invented."
+  },
+  {
+    "chain": "Mason's Famous Lobster Rolls",
+    "sourceUrl": "https://masonslobster.com/",
+    "status": "no_complete_public_macros_found",
+    "additionalSources": [
+      "https://order.masonslobster.com/",
+      "https://www.nutritionix.com/masons-famous-lobster-rolls/menu/premium"
+    ],
+    "reason": "Published ordering descriptions expose some calories/calorie ranges, but no complete calorie/protein/carbohydrate/fat table found. Nutritionix catalog probe returned no menu table."
+  },
+  {
+    "chain": "Famous Toastery",
+    "sourceUrl": "https://famoustoastery.com/",
+    "status": "no_complete_public_macros_found",
+    "additionalSources": [
+      "https://famoustoastery.com/order",
+      "https://www.nutritionix.com/famous-toastery/menu/premium"
+    ],
+    "reason": "Current site menu blocks say currently unavailable; linked order/menu sources do not expose all required macros. Nutritionix probe has no catalog."
+  },
+  {
+    "chain": "Hickory Tavern",
+    "sourceUrl": "https://hickorytavern.com/locations/ballantyne/menu/",
+    "status": "no_complete_public_macros_found",
+    "additionalSources": [
+      "https://thehickorytavern.com/locations/gastonia/menu/",
+      "https://www.nutritionix.com/hickory-tavern/menu/premium"
+    ],
+    "reason": "Official menus show descriptions but no complete macro values. Nutritionix catalog probe returned no usable nutrient rows."
+  },
+  {
+    "chain": "Chickie's & Pete's",
+    "sourceUrl": "https://chickiesandpetes.com/menu/",
+    "status": "no_complete_public_macros_found",
+    "additionalSources": [
+      "https://www.nutritionix.com/chickies-petes/menu/premium"
+    ],
+    "reason": "Official menus describe dishes without a full nutrition table. Nutritionix page has an empty menu table."
+  },
+  {
+    "chain": "Lee's Hoagie House",
+    "sourceUrl": "https://leeshoagiehouse.com/menu-2/",
+    "status": "no_complete_public_macros_found",
+    "additionalSources": [
+      "https://www.nutritionix.com/lees-hoagie-house/menu/premium"
+    ],
+    "reason": "Official menu lists sandwich sizes and ingredients but no full macros. Nutritionix table contains no nutrient rows."
+  },
+  {
+    "chain": "Fuel Pizza",
+    "sourceUrl": "https://www.fuelpizza.com/wp-content/uploads/2021/09/FUEL_PaperMenu_NC_011121_web-1.pdf",
+    "status": "no_complete_public_macros_found",
+    "additionalSources": [
+      "https://www.nutritionix.com/fuel-pizza/menu/premium"
+    ],
+    "reason": "Official menu PDF is a menu rather than a complete nutrition guide; Nutritionix catalog probe yielded no menu table."
+  },
+  {
+    "chain": "Hawkers",
+    "sourceUrl": "https://eathawkers.com/wp-content/uploads/2026/01/Allergen-Guide-12.25-Digital.pdf",
+    "status": "allergen_only",
+    "additionalSources": [
+      "https://www.nutritionix.com/hawkers-asian-street-food/menu/premium"
+    ],
+    "reason": "Official dietary guide provides allergens, not required macros. Nutritionix slug variants yielded no catalog table."
+  },
+  {
+    "chain": "Ruby Sunshine",
+    "sourceUrl": "https://rubybrunch.com/menu/",
+    "status": "no_complete_public_macros_found",
+    "additionalSources": [
+      "https://www.nutritionix.com/ruby-sunshine/menu/premium",
+      "https://www.nutritionix.com/ruby-slipper-cafe/menu/premium"
+    ],
+    "reason": "Official menu and dietary-preference guide provide dish/allergen descriptions, not complete macros. Nutritionix variants yielded no catalog."
+  },
+  {
+    "chain": "Vicious Biscuit",
+    "sourceUrl": "https://viciousbiscuit.com/menu/",
+    "status": "no_complete_public_macros_found",
+    "additionalSources": [
+      "https://www.nutritionix.com/vicious-biscuit/menu/premium"
+    ],
+    "reason": "Official menu provides ingredients/prices but no complete macro table; Nutritionix catalog probe yielded no menu table."
+  }
+]

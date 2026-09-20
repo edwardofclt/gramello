@@ -1,8 +1,5 @@
-export type BarcodeFood = {
-  id: string; name: string; brand?: string; source: string;
-  calories: number; protein: number; carbs: number; fat: number;
-  servingGrams: number; servingLabel: string; image?: string;
-};
+import type { Food } from './food';
+export type BarcodeFood = Food;
 
 // Keep codes as strings: leading zeros are part of the product identifier.
 export function normalizeBarcode(value: string): string | null {

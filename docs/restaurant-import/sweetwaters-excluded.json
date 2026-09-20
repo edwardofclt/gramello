@@ -1,0 +1,165 @@
+{
+  "sourceUrl": "https://www.sweetwaterscafe.com/sc-columbia-park-st/wp-content/uploads/2018/05/SW_BeverageFood_Nutrition_Sheet_1-30-2020.pdf",
+  "excluded": [
+    {
+      "page": 2,
+      "name": "Cr\u00e8me Caramel - No Whip",
+      "size": "Single",
+      "row": [
+        "Cr\u00e8me Caramel -\nNo Whip",
+        "Single",
+        "120",
+        "6",
+        "3.0",
+        "0",
+        "20",
+        "140",
+        "36",
+        "0",
+        "33",
+        "7"
+      ],
+      "reason": "Publisher calorie/macro inconsistency; no correction inferred"
+    },
+    {
+      "page": 7,
+      "name": "Caramel Ice Dragon - Skim",
+      "size": "Double",
+      "row": [
+        "Caramel Ice\nDragon - Skim",
+        "Double",
+        "440",
+        "15.0",
+        "9.0",
+        "0",
+        "60",
+        "180",
+        "68",
+        "0",
+        "59",
+        "99"
+      ],
+      "reason": "Publisher calorie/macro inconsistency; no correction inferred"
+    },
+    {
+      "page": 8,
+      "name": "Lychee Ice Dragon - Soy",
+      "size": "Double",
+      "row": [
+        "Lychee Ice\nDragon - Soy",
+        "Double",
+        "290",
+        "2.5",
+        "0.0",
+        "0",
+        "0",
+        "75",
+        "34",
+        "0",
+        "63",
+        "5"
+      ],
+      "reason": "Publisher calorie/macro inconsistency; no correction inferred"
+    },
+    {
+      "page": 9,
+      "name": "House-made Whipped Cream",
+      "size": "100",
+      "row": [
+        "House-made\nWhipped Cream",
+        "100",
+        "9",
+        "7.0",
+        "0",
+        "40",
+        "10",
+        "3",
+        "0",
+        "1",
+        "1",
+        ""
+      ],
+      "reason": "Non-numeric or incomplete required nutrients"
+    },
+    {
+      "page": 20,
+      "name": "Biscuit Breakfast Sandwich (egg, ham & cheese)",
+      "size": "185g",
+      "row": [
+        "Biscuit Breakfast\nSandwich\n(egg, ham & cheese)",
+        "185g",
+        "360",
+        "27.5",
+        "11.5",
+        "0",
+        "170",
+        "2065",
+        "46",
+        "1",
+        "7",
+        "27"
+      ],
+      "reason": "Publisher calorie/macro inconsistency; no correction inferred"
+    },
+    {
+      "page": 20,
+      "name": "Biscuit Breakfast Sandwich (egg, bacon & cheese)",
+      "size": "158g",
+      "row": [
+        "Biscuit Breakfast\nSandwich (egg,\nbacon & cheese)",
+        "158g",
+        "375",
+        "32",
+        "12.75",
+        "0",
+        "160",
+        "1400",
+        "43",
+        "1",
+        "4",
+        "21.5"
+      ],
+      "reason": "Publisher calorie/macro inconsistency; no correction inferred"
+    },
+    {
+      "page": 20,
+      "name": "Biscuit Breakfast Sandwich (egg & cheese)",
+      "size": "128g",
+      "row": [
+        "Biscuit Breakfast\nSandwich\n(egg & cheese)",
+        "128g",
+        "300",
+        "26",
+        "10.5",
+        "0",
+        "145",
+        "1145",
+        "43",
+        "1",
+        "4",
+        "17"
+      ],
+      "reason": "Publisher calorie/macro inconsistency; no correction inferred"
+    },
+    {
+      "page": 20,
+      "name": "Raspberry Jam Biscuit",
+      "size": "84g",
+      "row": [
+        "Raspberry Jam\nBiscuit",
+        "84g",
+        "180",
+        "11",
+        "5",
+        "0",
+        "0",
+        "900",
+        "56",
+        "1",
+        "12",
+        "7"
+      ],
+      "reason": "Publisher calorie/macro inconsistency; no correction inferred"
+    }
+  ]
+}

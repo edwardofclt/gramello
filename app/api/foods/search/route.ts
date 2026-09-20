@@ -1,21 +1,25 @@
-import { withAuthenticatedUser } from "@/lib/auth";
-type Food = { id:string; name:string; brand?:string; source:string; calories:number; protein:number; carbs:number; fat:number; servingGrams:number; servingLabel:string; image?:string };
-const genericFoods: Food[] = [
-  { id:"generic-chicken",name:"Chicken breast, cooked",source:"USDA reference",calories:165,protein:31,carbs:0,fat:3.6,servingGrams:100,servingLabel:"100 g" },
-  { id:"generic-rice",name:"White rice, cooked",source:"USDA reference",calories:130,protein:2.7,carbs:28.2,fat:.3,servingGrams:100,servingLabel:"100 g" },
-  { id:"generic-egg",name:"Large egg",source:"USDA reference",calories:144,protein:12.6,carbs:.8,fat:9.6,servingGrams:50,servingLabel:"1 large (50 g)" },
-  { id:"generic-banana",name:"Banana",source:"USDA reference",calories:89,protein:1.1,carbs:22.8,fat:.3,servingGrams:100,servingLabel:"100 g" },
-  { id:"generic-oats",name:"Rolled oats, dry",source:"USDA reference",calories:379,protein:13.2,carbs:67.7,fat:6.5,servingGrams:100,servingLabel:"100 g" },
-];
-const n=(v:unknown)=>Number.isFinite(Number(v))?Number(v):0;
-export async function GET(request: Request) {
-  return withAuthenticatedUser(request, () => searchFoods(request));
-}
+import { withAuthenticatedUser } from '@/lib/auth';
+import { cacheDatabaseFoods, findFoods } from '@/db/foods';
+import { referenceFoods, searchOpenFoodFacts, searchUsda } from '@/lib/food-providers';
 
-async function searchFoods(request: Request) {
-  const q=new URL(request.url).searchParams.get("q")?.trim()??""; if(q.length<2)return Response.json({foods:[]});
-  const local=genericFoods.filter(f=>`${f.name} ${f.brand??""}`.toLowerCase().includes(q.toLowerCase()));
-  const off=async()=>{const p=new URLSearchParams({search_terms:q,search_simple:"1",action:"process",json:"1",page_size:"12",fields:"code,product_name,brands,nutriments,serving_size,serving_quantity,image_front_small_url"});const r=await fetch(`https://world.openfoodfacts.org/cgi/search.pl?${p}`,{headers:{"User-Agent":"NourishTracker/1.0 (personal food diary)"}});if(!r.ok)throw new Error(`Open Food Facts ${r.status}`);const d=await r.json() as {products?:Array<Record<string,any>>};return(d.products??[]).flatMap((x):Food[]=>{if(!x.product_name||!x.nutriments)return[];const sg=n(x.serving_quantity)||100;return[{id:`off-${x.code}`,name:String(x.product_name),brand:x.brands?String(x.brands).split(",")[0]:undefined,source:"Open Food Facts",calories:n(x.nutriments["energy-kcal_100g"]),protein:n(x.nutriments.proteins_100g),carbs:n(x.nutriments.carbohydrates_100g),fat:n(x.nutriments.fat_100g),servingGrams:sg,servingLabel:x.serving_size?String(x.serving_size):`${sg} g`,image:x.image_front_small_url?String(x.image_front_small_url):undefined}]}).filter(f=>f.calories>0)};
-  const usda=async()=>{const r=await fetch(`https://api.nal.usda.gov/fdc/v1/foods/search?api_key=DEMO_KEY&query=${encodeURIComponent(q)}&pageSize=10`);if(!r.ok)throw new Error(`USDA FoodData Central ${r.status}`);const d=await r.json() as {foods?:Array<Record<string,any>>};return(d.foods??[]).flatMap((x):Food[]=>{const nutrients=Array.isArray(x.foodNutrients)?x.foodNutrients:[];const nutrient=(names:string[])=>n(nutrients.find((v:any)=>names.includes(String(v.nutrientName)))?.value);const calories=nutrient(["Energy","Energy (Atwater General Factors)"]);if(!x.description||!calories)return[];const sg=n(x.servingSize)||100;return[{id:`usda-${x.fdcId}`,name:String(x.description).toLowerCase().replace(/(^|\s)\S/g,(s:string)=>s.toUpperCase()),brand:x.brandOwner?String(x.brandOwner):undefined,source:"USDA FoodData Central",calories,protein:nutrient(["Protein"]),carbs:nutrient(["Carbohydrate, by difference"]),fat:nutrient(["Total lipid (fat)"]),servingGrams:sg,servingLabel:x.householdServingFullText?String(x.householdServingFullText):`${sg} g`}]} )};
-  const [a,b]=await Promise.allSettled([usda(),off()]);const foods=[...local,...(a.status==="fulfilled"?a.value:[]),...(b.status==="fulfilled"?b.value:[])];if(a.status==="rejected")console.error(a.reason);if(b.status==="rejected")console.error(b.reason);return Response.json({foods:foods.slice(0,24),partial:a.status==="rejected"||b.status==="rejected"});
+export async function GET(request: Request) {
+  return withAuthenticatedUser(request, async () => {
+    const query = new URL(request.url).searchParams.get('q')?.trim() ?? '';
+    if (query.length < 2) return Response.json({ foods: [], partial: false });
+    if (query.length > 200) return Response.json({ error: 'Search with a shorter food or restaurant name.' }, { status: 400 });
+    try {
+      const signal = AbortSignal.any([request.signal, AbortSignal.timeout(5_000)]);
+      const providers = await Promise.allSettled([searchUsda(query, signal), searchOpenFoodFacts(query, signal)]);
+      const reference = referenceFoods.filter(food => food.name.toLowerCase().includes(query.toLowerCase()));
+      const fetched = providers.flatMap(result => result.status === 'fulfilled' ? result.value : []);
+      await cacheDatabaseFoods([...reference, ...fetched]);
+      const local = await findFoods(query, 101);
+      // Providers may match synonyms that aren't literal substrings. Keep those too.
+      const foods = [...new Map([...local, ...fetched].map(food => [food.id, food])).values()];
+      return Response.json({ foods: foods.slice(0, 100), hasMore: foods.length > 100, partial: providers.some(result => result.status === 'rejected') });
+    } catch (error) {
+      console.error('Food search failed', error);
+      return Response.json({ error: 'Food search is unavailable. Please try again.' }, { status: 503 });
+    }
+  });
 }

@@ -1,0 +1,2491 @@
+{
+  "chain": "Olive Garden",
+  "sourceUrl": "https://media.olivegarden.com/en_us/pdf/olive_garden_nutrition.pdf",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "id": "calamari-1-menu-serving-see-item-description",
+      "name": "Calamari",
+      "calories": 670,
+      "protein": 24,
+      "carbs": 48,
+      "fat": 42,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "spicy-ranch-add-on-1-menu-serving-see-item-description",
+      "name": "spicy ranch (add-on)",
+      "calories": 240,
+      "protein": 1,
+      "carbs": 2,
+      "fat": 26,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "fried-mozzarella-1-menu-serving-see-item-description",
+      "name": "Fried Mozzarella",
+      "calories": 800,
+      "protein": 33,
+      "carbs": 57,
+      "fat": 49,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "lasagna-fritta-1-menu-serving-see-item-description",
+      "name": "Lasagna Fritta",
+      "calories": 1130,
+      "protein": 39,
+      "carbs": 75,
+      "fat": 76,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "meatballs-parmigiana-1-menu-serving-see-item-description",
+      "name": "Meatballs Parmigiana",
+      "calories": 1040,
+      "protein": 51,
+      "carbs": 27,
+      "fat": 83,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "shrimp-fritto-misto-1-menu-serving-see-item-description",
+      "name": "Shrimp Fritto Misto",
+      "calories": 1280,
+      "protein": 41,
+      "carbs": 101,
+      "fat": 79,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "spinach-artichoke-dip-with-flatbread-crisps-1-menu-serving-see-item-description",
+      "name": "Spinach-Artichoke Dip with flatbread crisps",
+      "calories": 1160,
+      "protein": 33,
+      "carbs": 75,
+      "fat": 81,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "stuffed-ziti-fritta-1-menu-serving-see-item-description",
+      "name": "Stuffed Ziti Fritta",
+      "calories": 500,
+      "protein": 27,
+      "carbs": 40,
+      "fat": 26,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "alfredo-add-on-1-menu-serving-see-item-description",
+      "name": "alfredo (add-on)",
+      "calories": 220,
+      "protein": 4,
+      "carbs": 3,
+      "fat": 22,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "toasted-ravioli-1-menu-serving-see-item-description",
+      "name": "Toasted Ravioli",
+      "calories": 650,
+      "protein": 25,
+      "carbs": 69,
+      "fat": 31,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "spicy-alfredo-dipping-sauce-1-menu-serving-see-item-description",
+      "name": "Spicy Alfredo dipping sauce",
+      "calories": 490,
+      "protein": 9,
+      "carbs": 7,
+      "fat": 48,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "spicy-alfredo-dipping-sauce-large-1-menu-serving-see-item-description",
+      "name": "Spicy Alfredo dipping sauce (Large)",
+      "calories": 980,
+      "protein": 18,
+      "carbs": 15,
+      "fat": 97,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "alfredo-dipping-sauce-1-menu-serving-see-item-description",
+      "name": "Alfredo dipping sauce",
+      "calories": 440,
+      "protein": 8,
+      "carbs": 5,
+      "fat": 43,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "alfredo-dipping-sauce-large-1-menu-serving-see-item-description",
+      "name": "Alfredo dipping sauce (Large)",
+      "calories": 870,
+      "protein": 15,
+      "carbs": 11,
+      "fat": 87,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "five-cheese-marinara-dipping-sauce-1-menu-serving-see-item-description",
+      "name": "Five Cheese Marinara dipping sauce",
+      "calories": 200,
+      "protein": 5,
+      "carbs": 9,
+      "fat": 17,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "five-cheese-marinara-dipping-sauce-large-1-menu-serving-see-item-description",
+      "name": "Five Cheese Marinara dipping sauce (Large)",
+      "calories": 400,
+      "protein": 11,
+      "carbs": 17,
+      "fat": 33,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "marinara-dipping-sauce-1-menu-serving-see-item-description",
+      "name": "Marinara dipping sauce",
+      "calories": 70,
+      "protein": 2,
+      "carbs": 8,
+      "fat": 4.5,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "marinara-sipping-sauce-large-1-menu-serving-see-item-description",
+      "name": "Marinara sipping sauce (Large)",
+      "calories": 150,
+      "protein": 4,
+      "carbs": 17,
+      "fat": 9,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "breadstick-with-garlic-topping-1-ea-1-menu-serving-see-item-description",
+      "name": "Breadstick with garlic topping (1 ea.)",
+      "calories": 140,
+      "protein": 4,
+      "carbs": 25,
+      "fat": 2.5,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "breadstick-plain-no-garlic-topping-1-ea-1-menu-serving-see-item-description",
+      "name": "Breadstick, plain (no garlic topping, 1 ea.)",
+      "calories": 130,
+      "protein": 4,
+      "carbs": 25,
+      "fat": 1,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "chicken-gnocchi-soup-1-menu-serving-see-item-description",
+      "name": "Chicken & Gnocchi Soup",
+      "calories": 230,
+      "protein": 11,
+      "carbs": 22,
+      "fat": 12,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "minestrone-soup-1-menu-serving-see-item-description",
+      "name": "Minestrone Soup",
+      "calories": 110,
+      "protein": 5,
+      "carbs": 17,
+      "fat": 1,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "pasta-fagioli-soup-1-menu-serving-see-item-description",
+      "name": "Pasta Fagioli Soup",
+      "calories": 150,
+      "protein": 8,
+      "carbs": 16,
+      "fat": 5,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "zuppa-toscana-soup-1-menu-serving-see-item-description",
+      "name": "Zuppa Toscana Soup",
+      "calories": 220,
+      "protein": 7,
+      "carbs": 15,
+      "fat": 15,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "stellini-soup-regional-1-menu-serving-see-item-description",
+      "name": "Stellini Soup (Regional)",
+      "calories": 200,
+      "protein": 9,
+      "carbs": 22,
+      "fat": 7,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "salad-with-signature-italian-dressing-1-menu-serving-see-item-description",
+      "name": "Salad with Signature Italian Dressing",
+      "calories": 150,
+      "protein": 3,
+      "carbs": 13,
+      "fat": 10,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "salad-without-dressing-1-menu-serving-see-item-description",
+      "name": "Salad without Dressing",
+      "calories": 70,
+      "protein": 2,
+      "carbs": 11,
+      "fat": 2,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "italian-dressing-1-fl-oz-1-menu-serving-see-item-description",
+      "name": "Italian Dressing (1 fl oz)",
+      "calories": 80,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 8,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "low-fat-italian-dressing-1-fl-oz-1-menu-serving-see-item-description",
+      "name": "Low-Fat Italian Dressing (1 fl oz)",
+      "calories": 30,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 2,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "create-your-own-pasta-fettuccine-1-menu-serving-see-item-description",
+      "name": "Create Your Own Pasta - Fettuccine",
+      "calories": 350,
+      "protein": 12,
+      "carbs": 67,
+      "fat": 2.5,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "create-your-own-pasta-angel-hair-1-menu-serving-see-item-description",
+      "name": "Create Your Own Pasta - Angel Hair",
+      "calories": 350,
+      "protein": 12,
+      "carbs": 67,
+      "fat": 2.5,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "create-your-own-pasta-bucatini-1-menu-serving-see-item-description",
+      "name": "Create Your Own Pasta - Bucatini",
+      "calories": 410,
+      "protein": 15,
+      "carbs": 81,
+      "fat": 3,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "create-your-own-pasta-gluten-free-rotini-1-menu-serving-see-item-description",
+      "name": "Create Your Own Pasta - Gluten-Free Rotini",
+      "calories": 380,
+      "protein": 9,
+      "carbs": 77,
+      "fat": 3.5,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "create-your-own-pasta-rigatoni-1-menu-serving-see-item-description",
+      "name": "Create Your Own Pasta - Rigatoni",
+      "calories": 440,
+      "protein": 14,
+      "carbs": 83,
+      "fat": 6,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "create-your-own-pasta-spaghetti-1-menu-serving-see-item-description",
+      "name": "Create Your Own Pasta - Spaghetti",
+      "calories": 340,
+      "protein": 12,
+      "carbs": 67,
+      "fat": 3.5,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "create-your-own-pasta-spicy-alfredo-sauce-1-menu-serving-see-item-description",
+      "name": "Create Your Own Pasta - Spicy Alfredo Sauce",
+      "calories": 980,
+      "protein": 18,
+      "carbs": 15,
+      "fat": 97,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "create-your-own-pasta-alfredo-sauce-1-menu-serving-see-item-description",
+      "name": "Create Your Own Pasta - Alfredo Sauce",
+      "calories": 870,
+      "protein": 15,
+      "carbs": 11,
+      "fat": 87,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "create-your-own-pasta-creamy-mushroom-sauce-1-menu-serving-see-item-description",
+      "name": "Create Your Own Pasta - Creamy Mushroom Sauce",
+      "calories": 860,
+      "protein": 10,
+      "carbs": 13,
+      "fat": 87,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "create-your-own-pasta-five-cheese-marinara-1-menu-serving-see-item-description",
+      "name": "Create Your Own Pasta - Five Cheese Marinara",
+      "calories": 400,
+      "protein": 11,
+      "carbs": 17,
+      "fat": 33,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "create-your-own-pasta-marinara-1-menu-serving-see-item-description",
+      "name": "Create Your Own Pasta - Marinara",
+      "calories": 150,
+      "protein": 4,
+      "carbs": 17,
+      "fat": 9,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "create-your-own-pasta-meat-sauce-1-menu-serving-see-item-description",
+      "name": "Create Your Own Pasta - Meat Sauce",
+      "calories": 300,
+      "protein": 14,
+      "carbs": 19,
+      "fat": 19,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "create-your-own-pasta-crispy-shrimp-fritta-1-menu-serving-see-item-description",
+      "name": "Create Your Own Pasta - Crispy Shrimp Fritta",
+      "calories": 220,
+      "protein": 11,
+      "carbs": 17,
+      "fat": 12,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "create-your-own-pasta-crispy-chicken-fritta-1-menu-serving-see-item-description",
+      "name": "Create Your Own Pasta - Crispy Chicken Fritta",
+      "calories": 240,
+      "protein": 20,
+      "carbs": 14,
+      "fat": 12,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "create-your-own-pasta-italian-sausage-2-links-1-menu-serving-see-item-description",
+      "name": "Create Your Own Pasta - Italian Sausage (2 Links)",
+      "calories": 470,
+      "protein": 27,
+      "carbs": 2,
+      "fat": 39,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "create-your-own-pasta-meatballs-3-1-menu-serving-see-item-description",
+      "name": "Create Your Own Pasta - Meatballs (3)",
+      "calories": 480,
+      "protein": 23,
+      "carbs": 7,
+      "fat": 40,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "create-your-own-pasta-sauteed-shrimp-1-menu-serving-see-item-description",
+      "name": "Create Your Own Pasta - Sauteed Shrimp",
+      "calories": 170,
+      "protein": 33,
+      "carbs": 1,
+      "fat": 3.5,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "create-your-own-pasta-broccoli-1-menu-serving-see-item-description",
+      "name": "Create Your Own Pasta - Broccoli",
+      "calories": 150,
+      "protein": 4,
+      "carbs": 8,
+      "fat": 13,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "spicy-alfredo-fettuccine-1-menu-serving-see-item-description",
+      "name": "Spicy Alfredo Fettuccine",
+      "calories": 1000,
+      "protein": 22,
+      "carbs": 62,
+      "fat": 74,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "cheese-ravioli-with-marinara-sauce-1-menu-serving-see-item-description",
+      "name": "Cheese Ravioli with Marinara Sauce",
+      "calories": 440,
+      "protein": 25,
+      "carbs": 38,
+      "fat": 22,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "cheese-ravioli-with-meat-sauce-1-menu-serving-see-item-description",
+      "name": "Cheese Ravioli with Meat Sauce",
+      "calories": 500,
+      "protein": 29,
+      "carbs": 39,
+      "fat": 26,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "chicken-parmigiana-1-menu-serving-see-item-description",
+      "name": "Chicken Parmigiana",
+      "calories": 630,
+      "protein": 36,
+      "carbs": 61,
+      "fat": 29,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "eggplant-parmigiana-1-menu-serving-see-item-description",
+      "name": "Eggplant Parmigiana",
+      "calories": 660,
+      "protein": 21,
+      "carbs": 75,
+      "fat": 32,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "fettuccine-alfredo-1-menu-serving-see-item-description",
+      "name": "Fettuccine Alfredo",
+      "calories": 920,
+      "protein": 20,
+      "carbs": 58,
+      "fat": 67,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "broccoli-add-on-1-menu-serving-see-item-description",
+      "name": "broccoli (add-on)",
+      "calories": 130,
+      "protein": 2,
+      "carbs": 4,
+      "fat": 12,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "five-cheese-ziti-al-forno-1-menu-serving-see-item-description",
+      "name": "Five Cheese Ziti al Forno",
+      "calories": 630,
+      "protein": 24,
+      "carbs": 57,
+      "fat": 35,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "lasagna-classico-1-menu-serving-see-item-description",
+      "name": "Lasagna Classico",
+      "calories": 500,
+      "protein": 29,
+      "carbs": 33,
+      "fat": 30,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "shrimp-scampi-1-menu-serving-see-item-description",
+      "name": "Shrimp Scampi",
+      "calories": 460,
+      "protein": 20,
+      "carbs": 52,
+      "fat": 18,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "spaghetti-with-marinara-1-menu-serving-see-item-description",
+      "name": "Spaghetti with Marinara",
+      "calories": 370,
+      "protein": 11,
+      "carbs": 63,
+      "fat": 9,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "spaghetti-with-meat-sauce-1-menu-serving-see-item-description",
+      "name": "Spaghetti with Meat Sauce",
+      "calories": 480,
+      "protein": 19,
+      "carbs": 64,
+      "fat": 17,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "spaghetti-meatballs-with-meat-sauce-1-menu-serving-see-item-description",
+      "name": "Spaghetti & Meatballs with Meat Sauce",
+      "calories": 800,
+      "protein": 35,
+      "carbs": 69,
+      "fat": 43,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "spaghetti-meatballs-with-marinara-1-menu-serving-see-item-description",
+      "name": "Spaghetti & Meatballs with Marinara",
+      "calories": 690,
+      "protein": 27,
+      "carbs": 67,
+      "fat": 36,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "spaghetti-with-meat-sauce-italian-sausage-1-menu-serving-see-item-description",
+      "name": "Spaghetti with Meat Sauce & Italian Sausage",
+      "calories": 720,
+      "protein": 33,
+      "carbs": 65,
+      "fat": 36,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "spicy-alfredo-fettuccine-1-menu-serving-see-item-description-2",
+      "name": "Spicy Alfredo Fettuccine",
+      "calories": 1330,
+      "protein": 30,
+      "carbs": 82,
+      "fat": 99,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "calabrian-steak-shrimp-bucatini-1-menu-serving-see-item-description",
+      "name": "Calabrian Steak & Shrimp Bucatini",
+      "calories": 1220,
+      "protein": 78,
+      "carbs": 82,
+      "fat": 65,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "calabrian-steak-bucatini-1-menu-serving-see-item-description",
+      "name": "Calabrian Steak Bucatini",
+      "calories": 1130,
+      "protein": 59,
+      "carbs": 81,
+      "fat": 65,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "calabrian-shrimp-bucatini-1-menu-serving-see-item-description",
+      "name": "Calabrian Shrimp Bucatini",
+      "calories": 1040,
+      "protein": 51,
+      "carbs": 81,
+      "fat": 58,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "creamy-mushroom-ravioli-1-menu-serving-see-item-description",
+      "name": "Creamy Mushroom Ravioli",
+      "calories": 980,
+      "protein": 24,
+      "carbs": 59,
+      "fat": 76,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "cheese-ravioli-with-marinara-sauce-1-menu-serving-see-item-description-2",
+      "name": "Cheese Ravioli with Marinara Sauce",
+      "calories": 750,
+      "protein": 41,
+      "carbs": 63,
+      "fat": 38,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "cheese-ravioli-with-meat-sauce-1-menu-serving-see-item-description-2",
+      "name": "Cheese Ravioli with Meat Sauce",
+      "calories": 860,
+      "protein": 50,
+      "carbs": 65,
+      "fat": 46,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "chicken-shrimp-carbonara-1-menu-serving-see-item-description",
+      "name": "Chicken & Shrimp Carbonara",
+      "calories": 1370,
+      "protein": 64,
+      "carbs": 75,
+      "fat": 91,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "chicken-alfredo-with-crispy-chicken-fritta-1-menu-serving-see-item-description",
+      "name": "Chicken Alfredo (with crispy chicken fritta)",
+      "calories": 1710,
+      "protein": 67,
+      "carbs": 106,
+      "fat": 113,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "chicken-alfredo-with-grilled-chicken-1-menu-serving-see-item-description",
+      "name": "Chicken Alfredo (with grilled chicken)",
+      "calories": 1480,
+      "protein": 79,
+      "carbs": 79,
+      "fat": 95,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "broccoli-add-on-1-menu-serving-see-item-description-2",
+      "name": "broccoli (add-on)",
+      "calories": 150,
+      "protein": 4,
+      "carbs": 8,
+      "fat": 13,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "chicken-parmigiana-1-menu-serving-see-item-description-2",
+      "name": "Chicken Parmigiana",
+      "calories": 1020,
+      "protein": 64,
+      "carbs": 80,
+      "fat": 51,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "chicken-scampi-1-menu-serving-see-item-description",
+      "name": "Chicken Scampi",
+      "calories": 1050,
+      "protein": 49,
+      "carbs": 106,
+      "fat": 45,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "chicken-tortelloni-alfredo-1-menu-serving-see-item-description",
+      "name": "Chicken Tortelloni Alfredo",
+      "calories": 1980,
+      "protein": 112,
+      "carbs": 95,
+      "fat": 131,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "eggplant-parmigiana-1-menu-serving-see-item-description-2",
+      "name": "Eggplant Parmigiana",
+      "calories": 1070,
+      "protein": 35,
+      "carbs": 108,
+      "fat": 58,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "fettuccine-alfredo-1-menu-serving-see-item-description-2",
+      "name": "Fettuccine Alfredo",
+      "calories": 1220,
+      "protein": 27,
+      "carbs": 78,
+      "fat": 89,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "five-cheese-ziti-al-forno-1-menu-serving-see-item-description-2",
+      "name": "Five Cheese Ziti al Forno",
+      "calories": 1170,
+      "protein": 46,
+      "carbs": 98,
+      "fat": 69,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "grilled-chicken-margherita-1-menu-serving-see-item-description",
+      "name": "Grilled Chicken Margherita",
+      "calories": 650,
+      "protein": 65,
+      "carbs": 15,
+      "fat": 39,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "herb-grilled-salmon-1-menu-serving-see-item-description",
+      "name": "Herb-Grilled Salmon",
+      "calories": 610,
+      "protein": 45,
+      "carbs": 9,
+      "fat": 45,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "herb-grilled-salmon-coho-regional-1-menu-serving-see-item-description",
+      "name": "Herb-Grilled Salmon Coho (Regional)",
+      "calories": 510,
+      "protein": 50,
+      "carbs": 9,
+      "fat": 31,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "lasagna-classico-1-menu-serving-see-item-description-2",
+      "name": "Lasagna Classico",
+      "calories": 940,
+      "protein": 54,
+      "carbs": 61,
+      "fat": 55,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "ravioli-carbonara-1-menu-serving-see-item-description",
+      "name": "Ravioli Carbonara",
+      "calories": 1390,
+      "protein": 53,
+      "carbs": 63,
+      "fat": 104,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "seafood-alfredo-1-menu-serving-see-item-description",
+      "name": "Seafood Alfredo",
+      "calories": 1370,
+      "protein": 53,
+      "carbs": 81,
+      "fat": 93,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "shrimp-alfredo-1-menu-serving-see-item-description",
+      "name": "Shrimp Alfredo",
+      "calories": 1390,
+      "protein": 60,
+      "carbs": 79,
+      "fat": 93,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "shrimp-carbonara-1-menu-serving-see-item-description",
+      "name": "Shrimp Carbonara",
+      "calories": 1200,
+      "protein": 58,
+      "carbs": 63,
+      "fat": 81,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "shrimp-scampi-1-menu-serving-see-item-description-2",
+      "name": "Shrimp Scampi",
+      "calories": 490,
+      "protein": 29,
+      "carbs": 52,
+      "fat": 18,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "spaghetti-with-marinara-1-menu-serving-see-item-description-2",
+      "name": "Spaghetti with Marinara",
+      "calories": 490,
+      "protein": 15,
+      "carbs": 83,
+      "fat": 12,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "spaghetti-with-meat-sauce-1-menu-serving-see-item-description-2",
+      "name": "Spaghetti with Meat Sauce",
+      "calories": 640,
+      "protein": 26,
+      "carbs": 85,
+      "fat": 22,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "spaghetti-with-meat-sauce-meatballs-3-1-menu-serving-see-item-description",
+      "name": "Spaghetti with Meat Sauce & Meatballs (3)",
+      "calories": 1120,
+      "protein": 49,
+      "carbs": 92,
+      "fat": 62,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "spaghetti-with-meat-sauce-sausage-2-1-menu-serving-see-item-description",
+      "name": "Spaghetti with Meat Sauce & Sausage (2)",
+      "calories": 1110,
+      "protein": 52,
+      "carbs": 87,
+      "fat": 62,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "steak-gorgonzola-alfredo-1-menu-serving-see-item-description",
+      "name": "Steak Gorgonzola Alfredo",
+      "calories": 1580,
+      "protein": 74,
+      "carbs": 85,
+      "fat": 105,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "stuffed-chicken-marsala-1-menu-serving-see-item-description",
+      "name": "Stuffed Chicken Marsala",
+      "calories": 1170,
+      "protein": 70,
+      "carbs": 94,
+      "fat": 58,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "tour-of-italy-1-menu-serving-see-item-description",
+      "name": "Tour of Italy",
+      "calories": 1550,
+      "protein": 72,
+      "carbs": 99,
+      "fat": 97,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "6-oz-sirloin-1-menu-serving-see-item-description",
+      "name": "6 oz. Sirloin",
+      "calories": 980,
+      "protein": 57,
+      "carbs": 49,
+      "fat": 62,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "lighter-portions-spicy-alfredo-fettuccine-1-menu-serving-see-item-description",
+      "name": "Lighter Portions - Spicy Alfredo Fettuccine",
+      "calories": 1000,
+      "protein": 22,
+      "carbs": 62,
+      "fat": 74,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "lighter-portions-cheese-ravioli-with-marinara-sauce-1-menu-serving-see-item-description",
+      "name": "Lighter Portions - Cheese Ravioli with Marinara Sauce",
+      "calories": 440,
+      "protein": 25,
+      "carbs": 38,
+      "fat": 22,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "lighter-portions-cheese-ravioli-with-meat-sauce-1-menu-serving-see-item-description",
+      "name": "Lighter Portions - Cheese Ravioli with Meat Sauce",
+      "calories": 500,
+      "protein": 29,
+      "carbs": 39,
+      "fat": 26,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "lighter-portions-chicken-parmigiana-1-menu-serving-see-item-description",
+      "name": "Lighter Portions - Chicken Parmigiana",
+      "calories": 630,
+      "protein": 36,
+      "carbs": 61,
+      "fat": 29,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "lighter-portions-eggplant-parmigiana-1-menu-serving-see-item-description",
+      "name": "Lighter Portions - Eggplant Parmigiana",
+      "calories": 660,
+      "protein": 21,
+      "carbs": 75,
+      "fat": 32,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "lighter-portions-fettuccine-alfredo-1-menu-serving-see-item-description",
+      "name": "Lighter Portions - Fettuccine Alfredo",
+      "calories": 920,
+      "protein": 20,
+      "carbs": 58,
+      "fat": 67,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "lighter-portions-add-broccoli-1-menu-serving-see-item-description",
+      "name": "Lighter Portions - add broccoli",
+      "calories": 130,
+      "protein": 2,
+      "carbs": 4,
+      "fat": 12,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "lighter-portions-five-cheese-ziti-al-forno-1-menu-serving-see-item-description",
+      "name": "Lighter Portions - Five Cheese Ziti al Forno",
+      "calories": 630,
+      "protein": 24,
+      "carbs": 57,
+      "fat": 35,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "lighter-portions-lasagna-classico-1-menu-serving-see-item-description",
+      "name": "Lighter Portions - Lasagna Classico",
+      "calories": 500,
+      "protein": 29,
+      "carbs": 33,
+      "fat": 30,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "lighter-portions-spaghetti-meatballs-with-meat-sauce-1-menu-serving-see-item-description",
+      "name": "Lighter Portions - Spaghetti & Meatballs with Meat Sauce",
+      "calories": 800,
+      "protein": 35,
+      "carbs": 69,
+      "fat": 43,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "lighter-portions-spaghetti-with-meat-sauce-italian-sausage-1-menu-serving-see-item-description",
+      "name": "Lighter Portions - Spaghetti with Meat Sauce & Italian Sausage",
+      "calories": 720,
+      "protein": 33,
+      "carbs": 65,
+      "fat": 36,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "italian-sausage-2-1-menu-serving-see-item-description",
+      "name": "Italian Sausage (2)",
+      "calories": 510,
+      "protein": 27,
+      "carbs": 6,
+      "fat": 42,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "mashed-potatoes-1-menu-serving-see-item-description",
+      "name": "Mashed Potatoes",
+      "calories": 200,
+      "protein": 4,
+      "carbs": 27,
+      "fat": 8,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "meatballs-3-1-menu-serving-see-item-description",
+      "name": "Meatballs (3)",
+      "calories": 520,
+      "protein": 24,
+      "carbs": 11,
+      "fat": 42,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "parmesan-garlic-broccoli-1-menu-serving-see-item-description",
+      "name": "Parmesan Garlic Broccoli",
+      "calories": 150,
+      "protein": 5,
+      "carbs": 8,
+      "fat": 13,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "pumpkin-cookie-butter-cheesecake-1-menu-serving-see-item-description",
+      "name": "Pumpkin Cookie Butter Cheesecake",
+      "calories": 620,
+      "protein": 10,
+      "carbs": 57,
+      "fat": 38,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "black-tie-mousse-cake-1-menu-serving-see-item-description",
+      "name": "Black Tie Mousse Cake",
+      "calories": 750,
+      "protein": 9,
+      "carbs": 76,
+      "fat": 50,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "chocolate-lasagna-1-menu-serving-see-item-description",
+      "name": "Chocolate Lasagna",
+      "calories": 980,
+      "protein": 13,
+      "carbs": 116,
+      "fat": 58,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "sicilian-cheesecake-with-strawberry-topping-1-menu-serving-see-item-description",
+      "name": "Sicilian Cheesecake with Strawberry Topping",
+      "calories": 730,
+      "protein": 12,
+      "carbs": 78,
+      "fat": 42,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "strawberry-cream-cake-1-menu-serving-see-item-description",
+      "name": "Strawberry Cream Cake",
+      "calories": 540,
+      "protein": 9,
+      "carbs": 69,
+      "fat": 26,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "tiramisu-1-menu-serving-see-item-description",
+      "name": "Tiramisu",
+      "calories": 470,
+      "protein": 6,
+      "carbs": 54,
+      "fat": 27,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "warm-italian-doughnuts-1-menu-serving-see-item-description",
+      "name": "Warm Italian Doughnuts",
+      "calories": 810,
+      "protein": 20,
+      "carbs": 119,
+      "fat": 28,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "chocolate-sauce-add-on-1-menu-serving-see-item-description",
+      "name": "chocolate sauce (add-on)",
+      "calories": 220,
+      "protein": 2,
+      "carbs": 48,
+      "fat": 3,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "raspberry-sauce-add-on-1-menu-serving-see-item-description",
+      "name": "raspberry sauce (add-on)",
+      "calories": 210,
+      "protein": 0,
+      "carbs": 51,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "mint-candy-1-ea-1-menu-serving-see-item-description",
+      "name": "Mint candy (1 ea.)",
+      "calories": 25,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 1.5,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "kids-menu-fettuccine-1-menu-serving-see-item-description",
+      "name": "Kids Menu - Fettuccine",
+      "calories": 220,
+      "protein": 7,
+      "carbs": 42,
+      "fat": 1.5,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "kids-menu-small-shells-1-menu-serving-see-item-description",
+      "name": "Kids Menu - Small Shells",
+      "calories": 210,
+      "protein": 7,
+      "carbs": 42,
+      "fat": 2,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "kids-menu-spaghetti-1-menu-serving-see-item-description",
+      "name": "Kids Menu - Spaghetti",
+      "calories": 170,
+      "protein": 6,
+      "carbs": 33,
+      "fat": 1.5,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "kids-menu-alfredo-sauce-1-menu-serving-see-item-description",
+      "name": "Kids Menu - Alfredo Sauce",
+      "calories": 440,
+      "protein": 8,
+      "carbs": 5,
+      "fat": 43,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "kids-menu-meat-sauce-1-menu-serving-see-item-description",
+      "name": "Kids Menu - Meat Sauce",
+      "calories": 110,
+      "protein": 5,
+      "carbs": 7,
+      "fat": 7,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "kids-menu-tomato-sauce-1-menu-serving-see-item-description",
+      "name": "Kids Menu - Tomato Sauce",
+      "calories": 80,
+      "protein": 1,
+      "carbs": 8,
+      "fat": 5,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "kids-menu-crispy-chicken-fritta-1-menu-serving-see-item-description",
+      "name": "Kids Menu - Crispy Chicken Fritta",
+      "calories": 240,
+      "protein": 20,
+      "carbs": 14,
+      "fat": 12,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "kids-menu-meatball-1-menu-serving-see-item-description",
+      "name": "Kids Menu - Meatball",
+      "calories": 160,
+      "protein": 8,
+      "carbs": 2,
+      "fat": 13,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "kids-menu-shrimp-1-menu-serving-see-item-description",
+      "name": "Kids Menu - Shrimp",
+      "calories": 45,
+      "protein": 10,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "kids-menu-cheese-ravioli-1-menu-serving-see-item-description",
+      "name": "Kids Menu - Cheese Ravioli",
+      "calories": 340,
+      "protein": 17,
+      "carbs": 33,
+      "fat": 16,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "kids-menu-cheese-pizza-1-menu-serving-see-item-description",
+      "name": "Kids Menu - Cheese Pizza",
+      "calories": 400,
+      "protein": 17,
+      "carbs": 54,
+      "fat": 13,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "kids-menu-add-pepperoni-1-menu-serving-see-item-description",
+      "name": "Kids Menu - add pepperoni",
+      "calories": 60,
+      "protein": 2,
+      "carbs": 0,
+      "fat": 5,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "kids-menu-chicken-fingers-1-menu-serving-see-item-description",
+      "name": "Kids Menu - Chicken Fingers",
+      "calories": 300,
+      "protein": 25,
+      "carbs": 15,
+      "fat": 15,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "kids-menu-macaroni-cheese-1-menu-serving-see-item-description",
+      "name": "Kids Menu - Macaroni & Cheese",
+      "calories": 360,
+      "protein": 16,
+      "carbs": 45,
+      "fat": 14,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "kids-menu-grapes-1-menu-serving-see-item-description",
+      "name": "Kids Menu - Grapes",
+      "calories": 40,
+      "protein": 0,
+      "carbs": 11,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "kids-menu-french-fries-1-menu-serving-see-item-description",
+      "name": "Kids Menu - French Fries",
+      "calories": 290,
+      "protein": 5,
+      "carbs": 37,
+      "fat": 14,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "kids-menu-mashed-potatoes-1-menu-serving-see-item-description",
+      "name": "Kids Menu - Mashed Potatoes",
+      "calories": 200,
+      "protein": 4,
+      "carbs": 27,
+      "fat": 8,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "kids-menu-parmesan-garlic-broccoli-1-menu-serving-see-item-description",
+      "name": "Kids Menu - Parmesan Garlic Broccoli",
+      "calories": 150,
+      "protein": 5,
+      "carbs": 8,
+      "fat": 13,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "kids-menu-spaghetti-with-tomato-sauce-1-menu-serving-see-item-description",
+      "name": "Kids Menu - Spaghetti with Tomato Sauce",
+      "calories": 180,
+      "protein": 5,
+      "carbs": 30,
+      "fat": 4.5,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "kids-menu-milk-1-1-menu-serving-see-item-description",
+      "name": "Kids Menu - Milk, 1%",
+      "calories": 100,
+      "protein": 8,
+      "carbs": 12,
+      "fat": 2.5,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "kids-menu-chocolate-milk-1-1-menu-serving-see-item-description",
+      "name": "Kids Menu - Chocolate Milk, 1%",
+      "calories": 180,
+      "protein": 8,
+      "carbs": 31,
+      "fat": 2.5,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "kids-menu-whole-chocolate-milk-1-menu-serving-see-item-description",
+      "name": "Kids Menu - Whole Chocolate Milk",
+      "calories": 210,
+      "protein": 8,
+      "carbs": 26,
+      "fat": 8,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "kids-menu-raspberry-lemonade-1-menu-serving-see-item-description",
+      "name": "Kids Menu - Raspberry Lemonade",
+      "calories": 110,
+      "protein": 0,
+      "carbs": 30,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "kids-menu-juice-apple-1-menu-serving-see-item-description",
+      "name": "Kids Menu - Juice, Apple",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 42,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "kids-menu-juice-cranberry-1-menu-serving-see-item-description",
+      "name": "Kids Menu - Juice, Cranberry",
+      "calories": 180,
+      "protein": 0,
+      "carbs": 45,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "kids-menu-juice-orange-1-menu-serving-see-item-description",
+      "name": "Kids Menu - Juice, Orange",
+      "calories": 180,
+      "protein": 3,
+      "carbs": 40,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "kids-menu-juice-pineapple-1-menu-serving-see-item-description",
+      "name": "Kids Menu - Juice, Pineapple",
+      "calories": 200,
+      "protein": 1,
+      "carbs": 48,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "kids-menu-smoothie-strawberry-1-menu-serving-see-item-description",
+      "name": "Kids Menu - Smoothie, Strawberry",
+      "calories": 220,
+      "protein": 0,
+      "carbs": 60,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "kids-menu-smoothie-peach-1-menu-serving-see-item-description",
+      "name": "Kids Menu - Smoothie, Peach",
+      "calories": 240,
+      "protein": 0,
+      "carbs": 61,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "gluten-sensitive-menu-zuppa-toscana-soup-1-menu-serving-see-item-description",
+      "name": "Gluten Sensitive Menu - Zuppa Toscana Soup",
+      "calories": 220,
+      "protein": 7,
+      "carbs": 15,
+      "fat": 15,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "gluten-sensitive-menu-salad-without-croutons-1-menu-serving-see-item-description",
+      "name": "Gluten Sensitive Menu - Salad without Croutons",
+      "calories": 110,
+      "protein": 2,
+      "carbs": 7,
+      "fat": 8,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "gluten-sensitive-menu-6-oz-tuscan-sirloin-1-menu-serving-see-item-description",
+      "name": "Gluten Sensitive Menu - 6 oz. Tuscan Sirloin",
+      "calories": 480,
+      "protein": 46,
+      "carbs": 9,
+      "fat": 30,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "gluten-sensitive-menu-grilled-chicken-parmigiana-1-menu-serving-see-item-description",
+      "name": "Gluten Sensitive Menu - Grilled Chicken Parmigiana",
+      "calories": 810,
+      "protein": 75,
+      "carbs": 59,
+      "fat": 33,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "gluten-sensitive-menu-herb-grilled-salmon-1-menu-serving-see-item-description",
+      "name": "Gluten Sensitive Menu - Herb-Grilled Salmon",
+      "calories": 610,
+      "protein": 45,
+      "carbs": 9,
+      "fat": 45,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "gluten-sensitive-menu-herb-grilled-salmon-coho-regional-1-menu-serving-see-item-description",
+      "name": "Gluten Sensitive Menu - Herb-Grilled Salmon Coho (Regional)",
+      "calories": 510,
+      "protein": 50,
+      "carbs": 9,
+      "fat": 31,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "gluten-sensitive-menu-rotini-pasta-with-marinara-1-menu-serving-see-item-description",
+      "name": "Gluten Sensitive Menu - Rotini Pasta with Marinara",
+      "calories": 530,
+      "protein": 13,
+      "carbs": 94,
+      "fat": 12,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "gluten-sensitive-menu-rotini-pasta-with-meat-sauce-1-menu-serving-see-item-description",
+      "name": "Gluten Sensitive Menu - Rotini Pasta with Meat Sauce",
+      "calories": 680,
+      "protein": 23,
+      "carbs": 96,
+      "fat": 22,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "gluten-sensitive-menu-kids-grilled-chicken-with-rotini-pasta-marinara-1-menu-serving-see-item-description",
+      "name": "Gluten Sensitive Menu - Kids Grilled Chicken with Rotini Pasta & Marinara",
+      "calories": 430,
+      "protein": 33,
+      "carbs": 58,
+      "fat": 9,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "gluten-sensitive-menu-kids-rotini-pasta-with-marinara-1-menu-serving-see-item-description",
+      "name": "Gluten Sensitive Menu - Kids Rotini Pasta with Marinara",
+      "calories": 260,
+      "protein": 6,
+      "carbs": 47,
+      "fat": 6,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "gluten-sensitive-menu-kids-rotini-pasta-with-meat-sauce-1-menu-serving-see-item-description",
+      "name": "Gluten Sensitive Menu - Kids Rotini Pasta with Meat Sauce",
+      "calories": 340,
+      "protein": 12,
+      "carbs": 48,
+      "fat": 11,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "og-s-old-fashioned-1-menu-serving-see-item-description",
+      "name": "OG's Old Fashioned",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 11,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "pineapple-coconut-margarita-1-menu-serving-see-item-description",
+      "name": "Pineapple Coconut Margarita",
+      "calories": 300,
+      "protein": 0,
+      "carbs": 41,
+      "fat": 2.5,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "frozen-strawberry-mango-margarita-1-menu-serving-see-item-description",
+      "name": "Frozen Strawberry-Mango Margarita",
+      "calories": 330,
+      "protein": 0,
+      "carbs": 62,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "frozen-green-apple-margarita-where-available-1-menu-serving-see-item-description",
+      "name": "Frozen Green Apple Margarita (where available)",
+      "calories": 390,
+      "protein": 0,
+      "carbs": 71,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "strawberry-frose-where-available-1-menu-serving-see-item-description",
+      "name": "Strawberry Frose (where available)",
+      "calories": 260,
+      "protein": 0,
+      "carbs": 44,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "strawberry-limoncello-margarita-1-menu-serving-see-item-description",
+      "name": "Strawberry Limoncello Margarita",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 43,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "blue-capri-1-menu-serving-see-item-description",
+      "name": "Blue Capri",
+      "calories": 290,
+      "protein": 0,
+      "carbs": 49,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "italian-rum-punch-1-menu-serving-see-item-description",
+      "name": "Italian Rum Punch",
+      "calories": 320,
+      "protein": 0,
+      "carbs": 48,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "sicilian-sunset-1-menu-serving-see-item-description",
+      "name": "Sicilian Sunset",
+      "calories": 230,
+      "protein": 0,
+      "carbs": 35,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "spiked-strawberry-lemonade-1-menu-serving-see-item-description",
+      "name": "Spiked Strawberry Lemonade",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 21,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "green-apple-moscato-sangria-glass-1-menu-serving-see-item-description",
+      "name": "Green Apple Moscato Sangria (Glass)",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 39,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "green-apple-moscato-sangria-pitcher-1-menu-serving-see-item-description",
+      "name": "Green Apple Moscato Sangria (Pitcher)",
+      "calories": 830,
+      "protein": 2,
+      "carbs": 161,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "berry-sangria-glass-1-menu-serving-see-item-description",
+      "name": "Berry Sangria (Glass)",
+      "calories": 210,
+      "protein": 0,
+      "carbs": 30,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "berry-sangria-pitcher-1-menu-serving-see-item-description",
+      "name": "Berry Sangria (Pitcher)",
+      "calories": 870,
+      "protein": 1,
+      "carbs": 126,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "watermelon-moscato-sangria-glass-1-menu-serving-see-item-description",
+      "name": "Watermelon Moscato Sangria (Glass)",
+      "calories": 180,
+      "protein": 0,
+      "carbs": 34,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "wine-whites-and-rose-glass-1-menu-serving-see-item-description",
+      "name": "Wine - Whites and Rosé - Glass",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "wine-whites-and-rose-grande-pour-1-menu-serving-see-item-description",
+      "name": "Wine - Whites and Rosé - Grande Pour",
+      "calories": 220,
+      "protein": 0,
+      "carbs": 6,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "wine-reds-glass-1-menu-serving-see-item-description",
+      "name": "Wine - Reds - Glass",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "wine-reds-grande-pour-1-menu-serving-see-item-description",
+      "name": "Wine - Reds - Grande Pour",
+      "calories": 230,
+      "protein": 0,
+      "carbs": 8,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "beer-light-draft-16-oz-1-menu-serving-see-item-description",
+      "name": "Beer - Light Draft (16 oz)",
+      "calories": 140,
+      "protein": 1,
+      "carbs": 6,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "beer-light-draft-22-oz-1-menu-serving-see-item-description",
+      "name": "Beer - Light Draft (22 oz)",
+      "calories": 190,
+      "protein": 2,
+      "carbs": 8,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "beer-regular-draft-16-oz-1-menu-serving-see-item-description",
+      "name": "Beer - Regular Draft (16 oz)",
+      "calories": 230,
+      "protein": 3,
+      "carbs": 16,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "beer-regular-draft-22-oz-1-menu-serving-see-item-description",
+      "name": "Beer - Regular Draft (22 oz)",
+      "calories": 310,
+      "protein": 4,
+      "carbs": 22,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "beer-bottle-regular-1-menu-serving-see-item-description",
+      "name": "Beer - Bottle, Regular",
+      "calories": 150,
+      "protein": 1,
+      "carbs": 11,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "beer-bottle-angry-orchard-hard-cider-1-menu-serving-see-item-description",
+      "name": "Beer - Bottle, Angry Orchard Hard Cider",
+      "calories": 220,
+      "protein": 0,
+      "carbs": 31,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "coffee-1-menu-serving-see-item-description",
+      "name": "Coffee",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "cappuccino-1-menu-serving-see-item-description",
+      "name": "Cappuccino",
+      "calories": 150,
+      "protein": 9,
+      "carbs": 13,
+      "fat": 6,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "iced-coffee-caramel-1-menu-serving-see-item-description",
+      "name": "Iced Coffee - Caramel",
+      "calories": 250,
+      "protein": 7,
+      "carbs": 40,
+      "fat": 7,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "iced-coffee-traditional-1-menu-serving-see-item-description",
+      "name": "Iced Coffee - Traditional",
+      "calories": 210,
+      "protein": 7,
+      "carbs": 29,
+      "fat": 7,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "iced-coffee-vanilla-1-menu-serving-see-item-description",
+      "name": "Iced Coffee - Vanilla",
+      "calories": 240,
+      "protein": 7,
+      "carbs": 38,
+      "fat": 7,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "lavazza-espresso-1-menu-serving-see-item-description",
+      "name": "Lavazza Espresso",
+      "calories": 60,
+      "protein": 5,
+      "carbs": 6,
+      "fat": 1.5,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "nab-half-tea-half-lemonade-1-menu-serving-see-item-description",
+      "name": "NAB Half Tea + Half Lemonade",
+      "calories": 80,
+      "protein": 0,
+      "carbs": 22,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "iced-tea-bellini-peach-raspberry-1-menu-serving-see-item-description",
+      "name": "Iced Tea, Bellini Peach-Raspberry",
+      "calories": 80,
+      "protein": 0,
+      "carbs": 18,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "iced-tea-mango-passion-fruit-1-menu-serving-see-item-description",
+      "name": "Iced Tea, Mango-Passion Fruit",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 26,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "italian-bottled-water-1-menu-serving-see-item-description",
+      "name": "Italian Bottled Water",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "lemonade-classic-1-menu-serving-see-item-description",
+      "name": "Lemonade, Classic",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 43,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "lemonade-raspberry-1-menu-serving-see-item-description",
+      "name": "Lemonade, Raspberry",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 45,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "limonata-sweet-pear-1-menu-serving-see-item-description",
+      "name": "Limonata, Sweet Pear",
+      "calories": 240,
+      "protein": 0,
+      "carbs": 60,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "limonata-strawberry-passion-fruit-1-menu-serving-see-item-description",
+      "name": "Limonata, Strawberry-Passion Fruit",
+      "calories": 180,
+      "protein": 0,
+      "carbs": 48,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "coke-1-menu-serving-see-item-description",
+      "name": "Coke",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 39,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "coke-zero-1-menu-serving-see-item-description",
+      "name": "Coke Zero",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "diet-coke-1-menu-serving-see-item-description",
+      "name": "Diet Coke",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "dr-pepper-1-menu-serving-see-item-description",
+      "name": "Dr. Pepper",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 41,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "minute-maid-lemonade-1-menu-serving-see-item-description",
+      "name": "Minute Maid Lemonade",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 43,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "sprite-1-menu-serving-see-item-description",
+      "name": "Sprite",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 38,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "juice-apple-1-menu-serving-see-item-description",
+      "name": "Juice, Apple",
+      "calories": 210,
+      "protein": 0,
+      "carbs": 53,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "juice-cranberry-1-menu-serving-see-item-description",
+      "name": "Juice, Cranberry",
+      "calories": 230,
+      "protein": 0,
+      "carbs": 56,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "juice-grapefruit-1-menu-serving-see-item-description",
+      "name": "Juice, Grapefruit",
+      "calories": 190,
+      "protein": 4,
+      "carbs": 42,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "juice-orange-1-menu-serving-see-item-description",
+      "name": "Juice, Orange",
+      "calories": 230,
+      "protein": 4,
+      "carbs": 51,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "juice-pineapple-1-menu-serving-see-item-description",
+      "name": "Juice, Pineapple",
+      "calories": 250,
+      "protein": 2,
+      "carbs": 60,
+      "fat": 0.5,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "juice-tomato-1-menu-serving-see-item-description",
+      "name": "Juice, Tomato",
+      "calories": 90,
+      "protein": 4,
+      "carbs": 19,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "famous-house-salad-to-go-1-menu-serving-see-item-description",
+      "name": "Famous House Salad To Go",
+      "calories": 290,
+      "protein": 8,
+      "carbs": 30,
+      "fat": 17,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "chicken-gnocchi-per-one-serving-serves-two-1-menu-serving-see-item-description",
+      "name": "Chicken & Gnocchi (Per One Serving, Serves Two)",
+      "calories": 230,
+      "protein": 11,
+      "carbs": 22,
+      "fat": 12,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "minestrone-per-one-serving-serves-two-1-menu-serving-see-item-description",
+      "name": "Minestrone (Per One Serving, Serves Two)",
+      "calories": 110,
+      "protein": 5,
+      "carbs": 17,
+      "fat": 1,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "pasta-fagioli-per-one-serving-serves-two-1-menu-serving-see-item-description",
+      "name": "Pasta Fagioli (Per One Serving, Serves Two)",
+      "calories": 150,
+      "protein": 8,
+      "carbs": 16,
+      "fat": 5,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "zuppa-toscana-per-one-serving-serves-two-1-menu-serving-see-item-description",
+      "name": "Zuppa Toscana (Per One Serving, Serves Two)",
+      "calories": 220,
+      "protein": 7,
+      "carbs": 15,
+      "fat": 15,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "stellini-soup-per-one-serving-serves-two-1-menu-serving-see-item-description",
+      "name": "Stellini Soup (Per One Serving, Serves Two)",
+      "calories": 200,
+      "protein": 9,
+      "carbs": 22,
+      "fat": 7,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "jumbo-famous-house-salad-serves-6-1-menu-serving-see-item-description",
+      "name": "Jumbo Famous House Salad (Serves 6)",
+      "calories": 1650,
+      "protein": 30,
+      "carbs": 134,
+      "fat": 114,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "chicken-gnocchi-half-gallon-1-menu-serving-see-item-description",
+      "name": "Chicken & Gnocchi, half-gallon",
+      "calories": 1870,
+      "protein": 88,
+      "carbs": 177,
+      "fat": 93,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "minestrone-half-gallon-1-menu-serving-see-item-description",
+      "name": "Minestrone, half-gallon",
+      "calories": 850,
+      "protein": 40,
+      "carbs": 140,
+      "fat": 9,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "pasta-fagioli-half-gallon-1-menu-serving-see-item-description",
+      "name": "Pasta Fagioli, half-gallon",
+      "calories": 1170,
+      "protein": 62,
+      "carbs": 131,
+      "fat": 44,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "zuppa-toscana-half-gallon-1-menu-serving-see-item-description",
+      "name": "Zuppa Toscana, half-gallon",
+      "calories": 1760,
+      "protein": 59,
+      "carbs": 123,
+      "fat": 117,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "stellini-soup-catering-regional-half-gallon-1-menu-serving-see-item-description",
+      "name": "Stellini Soup Catering (Regional), half-gallon",
+      "calories": 1570,
+      "protein": 73,
+      "carbs": 180,
+      "fat": 59,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "chicken-gnocchi-one-gallon-1-menu-serving-see-item-description",
+      "name": "Chicken & Gnocchi, one-gallon",
+      "calories": 3750,
+      "protein": 175,
+      "carbs": 353,
+      "fat": 186,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "minestrone-one-gallon-1-menu-serving-see-item-description",
+      "name": "Minestrone, one-gallon",
+      "calories": 1700,
+      "protein": 81,
+      "carbs": 279,
+      "fat": 18,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "pasta-fagioli-one-gallon-1-menu-serving-see-item-description",
+      "name": "Pasta Fagioli, one-gallon",
+      "calories": 2350,
+      "protein": 124,
+      "carbs": 261,
+      "fat": 87,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "zuppa-toscana-one-gallon-1-menu-serving-see-item-description",
+      "name": "Zuppa Toscana, one-gallon",
+      "calories": 3520,
+      "protein": 118,
+      "carbs": 246,
+      "fat": 234,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "stellini-soup-catering-regional-one-gallon-1-menu-serving-see-item-description",
+      "name": "Stellini Soup Catering (Regional), one-gallon",
+      "calories": 3130,
+      "protein": 145,
+      "carbs": 359,
+      "fat": 118,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "creamy-mushroom-ravioli-1-menu-serving-see-item-description-2",
+      "name": "Creamy Mushroom Ravioli",
+      "calories": 3930,
+      "protein": 94,
+      "carbs": 236,
+      "fat": 303,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "cheese-ravioli-with-marinara-1-menu-serving-see-item-description",
+      "name": "Cheese Ravioli with Marinara",
+      "calories": 2990,
+      "protein": 166,
+      "carbs": 254,
+      "fat": 153,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "cheese-ravioli-with-meat-sauce-1-menu-serving-see-item-description-3",
+      "name": "Cheese Ravioli with Meat sauce",
+      "calories": 3510,
+      "protein": 195,
+      "carbs": 246,
+      "fat": 198,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "chicken-and-shrimp-carbonara-1-menu-serving-see-item-description",
+      "name": "Chicken and Shrimp Carbonara",
+      "calories": 5460,
+      "protein": 255,
+      "carbs": 300,
+      "fat": 365,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "chicken-parmigiana-1-menu-serving-see-item-description-3",
+      "name": "Chicken Parmigiana",
+      "calories": 4790,
+      "protein": 266,
+      "carbs": 529,
+      "fat": 188,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "chicken-scampi-1-menu-serving-see-item-description-2",
+      "name": "Chicken Scampi",
+      "calories": 4190,
+      "protein": 196,
+      "carbs": 424,
+      "fat": 178,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "chicken-tortelloni-alfredo-1-menu-serving-see-item-description-2",
+      "name": "Chicken Tortelloni Alfredo",
+      "calories": 7930,
+      "protein": 446,
+      "carbs": 380,
+      "fat": 523,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "fettuccine-alfredo-1-menu-serving-see-item-description-3",
+      "name": "Fettuccine Alfredo",
+      "calories": 5010,
+      "protein": 116,
+      "carbs": 376,
+      "fat": 339,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "fettuccine-alfredo-with-broccoli-1-menu-serving-see-item-description",
+      "name": "Fettuccine Alfredo with Broccoli",
+      "calories": 5620,
+      "protein": 134,
+      "carbs": 409,
+      "fat": 389,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "five-cheese-ziti-al-forno-1-menu-serving-see-item-description-3",
+      "name": "Five Cheese Ziti al Forno",
+      "calories": 4680,
+      "protein": 183,
+      "carbs": 391,
+      "fat": 276,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "grilled-chicken-alfredo-1-menu-serving-see-item-description",
+      "name": "Grilled Chicken Alfredo",
+      "calories": 6050,
+      "protein": 322,
+      "carbs": 381,
+      "fat": 360,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "grilled-chicken-alfredo-with-broccoli-1-menu-serving-see-item-description",
+      "name": "Grilled Chicken Alfredo with Broccoli",
+      "calories": 6660,
+      "protein": 340,
+      "carbs": 414,
+      "fat": 410,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "lasagna-classico-serves-up-to-12-1-menu-serving-see-item-description",
+      "name": "Lasagna Classico (Serves up to 12)",
+      "calories": 6470,
+      "protein": 370,
+      "carbs": 448,
+      "fat": 364,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "lasagna-classico-serves-up-to-6-1-menu-serving-see-item-description",
+      "name": "Lasagna Classico (Serves up to 6)",
+      "calories": 3420,
+      "protein": 196,
+      "carbs": 230,
+      "fat": 196,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "shrimp-alfredo-1-menu-serving-see-item-description-2",
+      "name": "Shrimp Alfredo",
+      "calories": 5680,
+      "protein": 248,
+      "carbs": 382,
+      "fat": 352,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "shrimp-scampi-1-menu-serving-see-item-description-3",
+      "name": "Shrimp Scampi",
+      "calories": 1980,
+      "protein": 114,
+      "carbs": 208,
+      "fat": 72,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "spaghetti-with-marinara-sauce-1-menu-serving-see-item-description",
+      "name": "Spaghetti with Marinara Sauce",
+      "calories": 2270,
+      "protein": 72,
+      "carbs": 396,
+      "fat": 49,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "spaghetti-with-marinara-italian-sausage-1-menu-serving-see-item-description",
+      "name": "Spaghetti with Marinara & Italian Sausage",
+      "calories": 4260,
+      "protein": 181,
+      "carbs": 417,
+      "fat": 214,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "spaghetti-with-marinara-sauce-meatballs-1-menu-serving-see-item-description",
+      "name": "Spaghetti with Marinara Sauce & Meatballs",
+      "calories": 3980,
+      "protein": 153,
+      "carbs": 433,
+      "fat": 190,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "spaghetti-with-meat-sauce-1-menu-serving-see-item-description-3",
+      "name": "Spaghetti with Meat Sauce",
+      "calories": 2840,
+      "protein": 112,
+      "carbs": 403,
+      "fat": 88,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "spaghetti-with-meat-sauce-italian-sausage-1-menu-serving-see-item-description-2",
+      "name": "Spaghetti with Meat Sauce & Italian Sausage",
+      "calories": 4830,
+      "protein": 221,
+      "carbs": 424,
+      "fat": 252,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "spaghetti-with-meat-sauce-meatballs-1-menu-serving-see-item-description",
+      "name": "Spaghetti with Meat Sauce & Meatballs",
+      "calories": 4550,
+      "protein": 193,
+      "carbs": 440,
+      "fat": 228,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "catering-create-your-own-pasta-station-serves-10-1-menu-serving-see-item-description",
+      "name": "Catering - Create Your Own Pasta Station (Serves 10)",
+      "calories": 17280,
+      "protein": 702,
+      "carbs": 1531,
+      "fat": 944,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "fried-mozzarella-1-menu-serving-see-item-description-2",
+      "name": "Fried Mozzarella",
+      "calories": 3450,
+      "protein": 141,
+      "carbs": 243,
+      "fat": 212,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "toasted-ravioli-1-menu-serving-see-item-description-2",
+      "name": "Toasted Ravioli",
+      "calories": 2590,
+      "protein": 98,
+      "carbs": 274,
+      "fat": 123,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "marinara-add-on-1-menu-serving-see-item-description",
+      "name": "marinara (add-on)",
+      "calories": 110,
+      "protein": 3,
+      "carbs": 13,
+      "fat": 7,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "spinach-artichoke-dip-with-flatbread-crisps-1-menu-serving-see-item-description-2",
+      "name": "Spinach-Artichoke Dip with flatbread crisps",
+      "calories": 2310,
+      "protein": 66,
+      "carbs": 151,
+      "fat": 161,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "alfredo-one-pint-1-menu-serving-see-item-description",
+      "name": "Alfredo, one pint",
+      "calories": 1750,
+      "protein": 30,
+      "carbs": 21,
+      "fat": 173,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "five-cheese-marinara-one-pint-1-menu-serving-see-item-description",
+      "name": "Five Cheese Marinara, one pint",
+      "calories": 800,
+      "protein": 21,
+      "carbs": 35,
+      "fat": 67,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "marinara-one-pint-1-menu-serving-see-item-description",
+      "name": "Marinara, one pint",
+      "calories": 290,
+      "protein": 7,
+      "carbs": 33,
+      "fat": 17,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "meat-sauce-one-pint-1-menu-serving-see-item-description",
+      "name": "Meat sauce, one pint",
+      "calories": 600,
+      "protein": 28,
+      "carbs": 37,
+      "fat": 38,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "parmesan-garlic-broccoli-1-menu-serving-see-item-description-2",
+      "name": "Parmesan Garlic Broccoli",
+      "calories": 610,
+      "protein": 18,
+      "carbs": 33,
+      "fat": 51,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "chicken-fingers-1-menu-serving-see-item-description",
+      "name": "Chicken Fingers",
+      "calories": 1340,
+      "protein": 112,
+      "carbs": 69,
+      "fat": 69,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "ketchup-add-on-1-menu-serving-see-item-description",
+      "name": "ketchup (add-on)",
+      "calories": 170,
+      "protein": 1,
+      "carbs": 39,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "grilled-chicken-1-menu-serving-see-item-description",
+      "name": "Grilled Chicken",
+      "calories": 810,
+      "protein": 156,
+      "carbs": 7,
+      "fat": 17,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "italian-meatballs-1-menu-serving-see-item-description",
+      "name": "Italian Meatballs",
+      "calories": 1710,
+      "protein": 81,
+      "carbs": 37,
+      "fat": 140,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "italian-sausage-1-menu-serving-see-item-description",
+      "name": "Italian Sausage",
+      "calories": 1990,
+      "protein": 109,
+      "carbs": 21,
+      "fat": 164,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "iced-tea-bellini-peach-raspberry-1-gallon-1-menu-serving-see-item-description",
+      "name": "Iced Tea, Bellini Peach-Raspberry, 1 Gallon",
+      "calories": 800,
+      "protein": 0,
+      "carbs": 191,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "half-tea-half-lemonade-1-gallon-1-menu-serving-see-item-description",
+      "name": "Half Tea + Half Lemonade, 1 Gallon",
+      "calories": 900,
+      "protein": 0,
+      "carbs": 237,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "iced-tea-mango-passion-fruit-1-gallon-1-menu-serving-see-item-description",
+      "name": "Iced Tea, Mango-Passion Fruit, 1 Gallon",
+      "calories": 1140,
+      "protein": 0,
+      "carbs": 283,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "iced-tea-raspberry-1-gallon-1-menu-serving-see-item-description",
+      "name": "Iced Tea, Raspberry, 1 Gallon",
+      "calories": 830,
+      "protein": 0,
+      "carbs": 210,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "iced-tea-fresh-brewed-unsweetened-1-gallon-1-menu-serving-see-item-description",
+      "name": "Iced Tea, Fresh Brewed, Unsweetened, 1 Gallon",
+      "calories": 40,
+      "protein": 0,
+      "carbs": 12,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "lemonade-classic-1-gallon-1-menu-serving-see-item-description",
+      "name": "Lemonade, Classic, 1 Gallon",
+      "calories": 1770,
+      "protein": 0,
+      "carbs": 463,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "lemonade-raspberry-1-gallon-1-menu-serving-see-item-description",
+      "name": "Lemonade, Raspberry, 1 Gallon",
+      "calories": 1760,
+      "protein": 0,
+      "carbs": 475,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "coke-2-liter-1-menu-serving-see-item-description",
+      "name": "Coke, 2 Liter",
+      "calories": 790,
+      "protein": 0,
+      "carbs": 220,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "diet-coke-2-liter-1-menu-serving-see-item-description",
+      "name": "Diet Coke, 2 Liter",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    },
+    {
+      "id": "sprite-2-liter-1-menu-serving-see-item-description",
+      "name": "Sprite, 2 Liter",
+      "calories": 790,
+      "protein": 0,
+      "carbs": 214,
+      "fat": 0,
+      "servingLabel": "1 menu serving (see item description)"
+    }
+  ]
+}

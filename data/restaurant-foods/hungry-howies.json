@@ -1,0 +1,2521 @@
+{
+  "chain": "Hungry Howie's",
+  "sourceUrl": "https://www.nutritionix.com/hungry-howies/menu/premium",
+  "source": "Nutritionix",
+  "sourceKind": "database",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "id": "nutritionix-786748",
+      "name": "Cheese Only 8\" Junior (1 Slice), Customizable",
+      "calories": 160,
+      "protein": 8,
+      "carbs": 21,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Build Your Own Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786749",
+      "name": "Cheese Only 10\" Small (1 Slice), Customizable",
+      "calories": 150,
+      "protein": 7,
+      "carbs": 21,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Build Your Own Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786751",
+      "name": "Cheese Only 12\" Medium (1 Slice), Customizable",
+      "calories": 180,
+      "protein": 9,
+      "carbs": 25,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Build Your Own Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786753",
+      "name": "Cheese Only 14\", Large (1 Slice), Customizable",
+      "calories": 250,
+      "protein": 12,
+      "carbs": 34,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Build Your Own Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786756",
+      "name": "Cheese Only 16\" Xl (1 Slice), Customizable",
+      "calories": 350,
+      "protein": 17,
+      "carbs": 48,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Build Your Own Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786757",
+      "name": "Cheese Only Deep Dish (1 Slice), Customizable",
+      "calories": 330,
+      "protein": 13,
+      "carbs": 36,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Build Your Own Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786759",
+      "name": "Cheese Only Flat Bread (1 Slice), Customizable",
+      "calories": 100,
+      "protein": 5,
+      "carbs": 12,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Build Your Own Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786760",
+      "name": "Cheese Only No Dough Bowl (1 Slice), Customizable",
+      "calories": 300,
+      "protein": 4,
+      "carbs": 14,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Build Your Own Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786758",
+      "name": "Cheese Only Sheet (1 Slice), Customizable",
+      "calories": 190,
+      "protein": 9,
+      "carbs": 25,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Build Your Own Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786750",
+      "name": "Gluten Free Cheese Only 10\" Small (1 Slice), Customizable",
+      "calories": 90,
+      "protein": 4,
+      "carbs": 7,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Build Your Own Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786755",
+      "name": "Stuffed Crust Cheese Only 14\", Large (1 Slice), Customizable",
+      "calories": 300,
+      "protein": 15,
+      "carbs": 35,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Build Your Own Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786752",
+      "name": "Thin Crust Cheese Only 12\" Medium (1 Slice), Customizable",
+      "calories": 140,
+      "protein": 6,
+      "carbs": 13,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Build Your Own Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786754",
+      "name": "Thin Crust Cheese Only 14\", Large (1 Slice), Customizable",
+      "calories": 200,
+      "protein": 9,
+      "carbs": 18,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Build Your Own Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786761",
+      "name": "Asian Chicken 8\" Junior (1 Slice)",
+      "calories": 190,
+      "protein": 10,
+      "carbs": 25,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786777",
+      "name": "Asian Chicken 10\" Small (1 Slice)",
+      "calories": 190,
+      "protein": 10,
+      "carbs": 25,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786793",
+      "name": "Asian Chicken 10\" Small Gluten Free (1 Slice)",
+      "calories": 120,
+      "protein": 7,
+      "carbs": 11,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786804",
+      "name": "Asian Chicken 12\" Medium (1 Slice)",
+      "calories": 230,
+      "protein": 11,
+      "carbs": 30,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786820",
+      "name": "Asian Chicken 12\" Medium Thin Crust (1 Slice)",
+      "calories": 190,
+      "protein": 9,
+      "carbs": 19,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786836",
+      "name": "Asian Chicken 14\", Large (1 Slice)",
+      "calories": 310,
+      "protein": 16,
+      "carbs": 41,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786853",
+      "name": "Asian Chicken 14\", Large Thin Crust (1 Slice)",
+      "calories": 260,
+      "protein": 13,
+      "carbs": 25,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786869",
+      "name": "Asian Chicken 16\" Xl (1 Slice)",
+      "calories": 430,
+      "protein": 22,
+      "carbs": 57,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786885",
+      "name": "Asian Chicken Deep Dish (1 Slice)",
+      "calories": 400,
+      "protein": 17,
+      "carbs": 44,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786900",
+      "name": "Asian Chicken Sheet (1 Slice)",
+      "calories": 230,
+      "protein": 11,
+      "carbs": 30,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786762",
+      "name": "Bacon Cheddar Cheeseburger 8\" Junior (1 Slice)",
+      "calories": 210,
+      "protein": 11,
+      "carbs": 21,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786778",
+      "name": "Bacon Cheddar Cheeseburger 10\" Small (1 Slice)",
+      "calories": 220,
+      "protein": 11,
+      "carbs": 22,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786794",
+      "name": "Bacon Cheddar Cheeseburger 10\" Small Gluten Free (1 Slice)",
+      "calories": 150,
+      "protein": 8,
+      "carbs": 8,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786805",
+      "name": "Bacon Cheddar Cheeseburger 12\" Medium (1 Slice)",
+      "calories": 270,
+      "protein": 14,
+      "carbs": 25,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786821",
+      "name": "Bacon Cheddar Cheeseburger 12\" Medium Thin Crust (1 Slice)",
+      "calories": 240,
+      "protein": 12,
+      "carbs": 13,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786837",
+      "name": "Bacon Cheddar Cheeseburger 14\", Large (1 Slice)",
+      "calories": 350,
+      "protein": 18,
+      "carbs": 34,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786854",
+      "name": "Bacon Cheddar Cheeseburger 14\", Large Thin Crust (1 Slice)",
+      "calories": 310,
+      "protein": 15,
+      "carbs": 19,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786870",
+      "name": "Bacon Cheddar Cheeseburger 16\" Xl (1 Slice)",
+      "calories": 480,
+      "protein": 25,
+      "carbs": 49,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786886",
+      "name": "Bacon Cheddar Cheeseburger Deep Dish (1 Slice)",
+      "calories": 440,
+      "protein": 19,
+      "carbs": 37,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786901",
+      "name": "Bacon Cheddar Cheeseburger Sheet (1 Slice)",
+      "calories": 270,
+      "protein": 14,
+      "carbs": 26,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786763",
+      "name": "BBQ Chicken 8\" Junior (1 Slice)",
+      "calories": 190,
+      "protein": 10,
+      "carbs": 24,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786779",
+      "name": "BBQ Chicken 10\" Small (1 Slice)",
+      "calories": 190,
+      "protein": 10,
+      "carbs": 24,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786795",
+      "name": "BBQ Chicken 10\" Small Gluten Free (1 Slice)",
+      "calories": 120,
+      "protein": 7,
+      "carbs": 10,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786806",
+      "name": "BBQ Chicken 12\" Medium (1 Slice)",
+      "calories": 230,
+      "protein": 12,
+      "carbs": 29,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786822",
+      "name": "BBQ Chicken 12\" Medium Thin Crust (1 Slice)",
+      "calories": 200,
+      "protein": 10,
+      "carbs": 17,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786838",
+      "name": "BBQ Chicken 14\", Large (1 Slice)",
+      "calories": 300,
+      "protein": 16,
+      "carbs": 39,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786855",
+      "name": "BBQ Chicken 14\", Large Thin Crust (1 Slice)",
+      "calories": 240,
+      "protein": 12,
+      "carbs": 17,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786871",
+      "name": "BBQ Chicken 16\" Xl (1 Slice)",
+      "calories": 420,
+      "protein": 21,
+      "carbs": 55,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786887",
+      "name": "BBQ Chicken Deep Dish (1 Slice)",
+      "calories": 390,
+      "protein": 17,
+      "carbs": 42,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786902",
+      "name": "BBQ Chicken Sheet (1 Slice)",
+      "calories": 230,
+      "protein": 12,
+      "carbs": 29,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786764",
+      "name": "Buffalo Chicken 8\" Junior (1 Slice)",
+      "calories": 170,
+      "protein": 9,
+      "carbs": 21,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786780",
+      "name": "Buffalo Chicken 10\" Small (1 Slice)",
+      "calories": 180,
+      "protein": 10,
+      "carbs": 21,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786796",
+      "name": "Buffalo Chicken 10\" Small Gluten Free (1 Slice)",
+      "calories": 110,
+      "protein": 6,
+      "carbs": 7,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786807",
+      "name": "Buffalo Chicken 12\" Medium (1 Slice)",
+      "calories": 210,
+      "protein": 11,
+      "carbs": 24,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786823",
+      "name": "Buffalo Chicken 12\" Medium Thin Crust (1 Slice)",
+      "calories": 170,
+      "protein": 8,
+      "carbs": 13,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786839",
+      "name": "Buffalo Chicken 14\", Large (1 Slice)",
+      "calories": 290,
+      "protein": 16,
+      "carbs": 33,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786856",
+      "name": "Buffalo Chicken 14\", Large Thin Crust (1 Slice)",
+      "calories": 240,
+      "protein": 12,
+      "carbs": 18,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786872",
+      "name": "Buffalo Chicken 16\" Xl (1 Slice)",
+      "calories": 390,
+      "protein": 21,
+      "carbs": 46,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786888",
+      "name": "Buffalo Chicken Deep Dish (1 Slice)",
+      "calories": 380,
+      "protein": 16,
+      "carbs": 35,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786903",
+      "name": "Buffalo Chicken Sheet (1 Slice)",
+      "calories": 240,
+      "protein": 13,
+      "carbs": 25,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786765",
+      "name": "Chicken Bacon Ranch 8\" Junior (1 Slice)",
+      "calories": 210,
+      "protein": 10,
+      "carbs": 20,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786781",
+      "name": "Chicken Bacon Ranch 10\" Small (1 Slice)",
+      "calories": 220,
+      "protein": 10,
+      "carbs": 20,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786797",
+      "name": "Chicken Bacon Ranch 10\" Small Gluten Free (1 Slice)",
+      "calories": 160,
+      "protein": 7,
+      "carbs": 6,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786808",
+      "name": "Chicken Bacon Ranch 12\" Medium (1 Slice)",
+      "calories": 270,
+      "protein": 12,
+      "carbs": 24,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786824",
+      "name": "Chicken Bacon Ranch 12\" Medium Thin Crust (1 Slice)",
+      "calories": 230,
+      "protein": 10,
+      "carbs": 12,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786840",
+      "name": "Chicken Bacon Ranch 14\", Large (1 Slice)",
+      "calories": 350,
+      "protein": 16,
+      "carbs": 32,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786857",
+      "name": "Chicken Bacon Ranch 14\", Large Thin Crust (1 Slice)",
+      "calories": 300,
+      "protein": 13,
+      "carbs": 17,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786873",
+      "name": "Chicken Bacon Ranch 16\" Xl (1 Slice)",
+      "calories": 490,
+      "protein": 22,
+      "carbs": 46,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786889",
+      "name": "Chicken Bacon Ranch Deep Dish (1 Slice)",
+      "calories": 440,
+      "protein": 17,
+      "carbs": 35,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786904",
+      "name": "Chicken Bacon Ranch Sheet (1 Slice)",
+      "calories": 260,
+      "protein": 12,
+      "carbs": 25,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786766",
+      "name": "Howie Maui 8\" Junior (1 Slice)",
+      "calories": 180,
+      "protein": 9,
+      "carbs": 22,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786782",
+      "name": "Howie Maui 10\" Small (1 Slice)",
+      "calories": 180,
+      "protein": 9,
+      "carbs": 22,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786798",
+      "name": "Howie Maui 10\" Small Gluten Free (1 Slice)",
+      "calories": 110,
+      "protein": 5,
+      "carbs": 8,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786809",
+      "name": "Howie Maui 12\" Medium (1 Slice)",
+      "calories": 220,
+      "protein": 11,
+      "carbs": 26,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786825",
+      "name": "Howie Maui 12\" Medium Thin Crust (1 Slice)",
+      "calories": 180,
+      "protein": 9,
+      "carbs": 14,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786841",
+      "name": "Howie Maui 14\", Large (1 Slice)",
+      "calories": 290,
+      "protein": 15,
+      "carbs": 35,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786858",
+      "name": "Howie Maui 14\", Large Thin Crust (1 Slice)",
+      "calories": 230,
+      "protein": 11,
+      "carbs": 20,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786874",
+      "name": "Howie Maui 16\" Xl (1 Slice)",
+      "calories": 390,
+      "protein": 20,
+      "carbs": 50,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786890",
+      "name": "Howie Maui Deep Dish (1 Slice)",
+      "calories": 370,
+      "protein": 15,
+      "carbs": 38,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786905",
+      "name": "Howie Maui Sheet (1 Slice)",
+      "calories": 220,
+      "protein": 11,
+      "carbs": 27,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786767",
+      "name": "Howie Special 8\" Junior (1 Slice)",
+      "calories": 160,
+      "protein": 8,
+      "carbs": 22,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786783",
+      "name": "Howie Special 10\" Small (1 Slice)",
+      "calories": 180,
+      "protein": 9,
+      "carbs": 23,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786799",
+      "name": "Howie Special 10\" Small Gluten Free (1 Slice)",
+      "calories": 110,
+      "protein": 6,
+      "carbs": 9,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786810",
+      "name": "Howie Special 12\" Medium (1 Slice)",
+      "calories": 210,
+      "protein": 11,
+      "carbs": 26,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786826",
+      "name": "Howie Special 12\" Medium Thin Crust (1 Slice)",
+      "calories": 170,
+      "protein": 8,
+      "carbs": 15,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786842",
+      "name": "Howie Special 14\", Large (1 Slice)",
+      "calories": 280,
+      "protein": 14,
+      "carbs": 36,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786859",
+      "name": "Howie Special 14\", Large Thin Crust (1 Slice)",
+      "calories": 230,
+      "protein": 11,
+      "carbs": 20,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786875",
+      "name": "Howie Special 16\" Xl (1 Slice)",
+      "calories": 390,
+      "protein": 20,
+      "carbs": 50,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786891",
+      "name": "Howie Special Deep Dish (1 Slice)",
+      "calories": 370,
+      "protein": 15,
+      "carbs": 38,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786906",
+      "name": "Howie Special Sheet (1 Slice)",
+      "calories": 210,
+      "protein": 11,
+      "carbs": 27,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786768",
+      "name": "Meat Eaters 8\" Junior (1 Slice)",
+      "calories": 190,
+      "protein": 9,
+      "carbs": 21,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786784",
+      "name": "Meat Eaters 10\" Small (1 Slice)",
+      "calories": 210,
+      "protein": 10,
+      "carbs": 22,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786800",
+      "name": "Meat Eaters 10\" Small Gluten Free (1 Slice)",
+      "calories": 140,
+      "protein": 7,
+      "carbs": 8,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786811",
+      "name": "Meat Eaters 12\" Medium (1 Slice)",
+      "calories": 250,
+      "protein": 12,
+      "carbs": 25,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786827",
+      "name": "Meat Eaters 12\" Medium Thin Crust (1 Slice)",
+      "calories": 210,
+      "protein": 10,
+      "carbs": 14,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786843",
+      "name": "Meat Eaters 14\", Large (1 Slice)",
+      "calories": 340,
+      "protein": 17,
+      "carbs": 34,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786860",
+      "name": "Meat Eaters 14\", Large Thin Crust (1 Slice)",
+      "calories": 290,
+      "protein": 13,
+      "carbs": 19,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786876",
+      "name": "Meat Eaters 16\" Xl (1 Slice)",
+      "calories": 470,
+      "protein": 23,
+      "carbs": 49,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786892",
+      "name": "Meat Eaters Deep Dish (1 Slice)",
+      "calories": 420,
+      "protein": 17,
+      "carbs": 37,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786907",
+      "name": "Meat Eaters Sheet (1 Slice)",
+      "calories": 250,
+      "protein": 12,
+      "carbs": 26,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786769",
+      "name": "Spicy Asian Chicken 8\" Junior (1 Slice)",
+      "calories": 210,
+      "protein": 10,
+      "carbs": 27,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786785",
+      "name": "Spicy Asian Chicken 10\" Small (1 Slice)",
+      "calories": 210,
+      "protein": 10,
+      "carbs": 27,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786812",
+      "name": "Spicy Asian Chicken 12\" Medium (1 Slice)",
+      "calories": 240,
+      "protein": 11,
+      "carbs": 32,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786828",
+      "name": "Spicy Asian Chicken 12\" Medium Thin Crust (1 Slice, 6 Servings)",
+      "calories": 210,
+      "protein": 10,
+      "carbs": 27,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786829",
+      "name": "Spicy Asian Chicken 12\" Medium Thin Crust (1 Slice, 8 Servings)",
+      "calories": 210,
+      "protein": 9,
+      "carbs": 21,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786844",
+      "name": "Spicy Asian Chicken 14\", Large (1 Slice)",
+      "calories": 340,
+      "protein": 16,
+      "carbs": 44,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786861",
+      "name": "Spicy Asian Chicken 14\", Large Thin Crust (1 Slice)",
+      "calories": 290,
+      "protein": 12,
+      "carbs": 28,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786877",
+      "name": "Spicy Asian Chicken 16\" Xl (1 Slice)",
+      "calories": 460,
+      "protein": 21,
+      "carbs": 61,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786893",
+      "name": "Spicy Asian Chicken Deep Dish (1 Slice)",
+      "calories": 430,
+      "protein": 17,
+      "carbs": 47,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786770",
+      "name": "Spicy BBQ Chicken 8\" Junior (1 Slice)",
+      "calories": 210,
+      "protein": 10,
+      "carbs": 26,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786786",
+      "name": "Spicy BBQ Chicken 10\" Small (1 Slice)",
+      "calories": 210,
+      "protein": 10,
+      "carbs": 26,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786813",
+      "name": "Spicy BBQ Chicken 12\" Medium (1 Slice)",
+      "calories": 240,
+      "protein": 11,
+      "carbs": 31,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786830",
+      "name": "Spicy BBQ Chicken 12\" Medium Thin Crust (1 Slice)",
+      "calories": 200,
+      "protein": 9,
+      "carbs": 19,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786845",
+      "name": "Spicy BBQ Chicken 14\", Large (1 Slice)",
+      "calories": 330,
+      "protein": 15,
+      "carbs": 42,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786862",
+      "name": "Spicy BBQ Chicken 14\", Large Thin Crust (1 Slice)",
+      "calories": 270,
+      "protein": 12,
+      "carbs": 20,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786878",
+      "name": "Spicy BBQ Chicken 16\" Xl (1 Slice)",
+      "calories": 450,
+      "protein": 21,
+      "carbs": 58,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786894",
+      "name": "Spicy BBQ Chicken Deep Dish (1 Slice)",
+      "calories": 420,
+      "protein": 16,
+      "carbs": 45,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786771",
+      "name": "Spicy Buffalo Chicken 8\" Junior (1 Slice)",
+      "calories": 200,
+      "protein": 10,
+      "carbs": 23,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786787",
+      "name": "Spicy Buffalo Chicken 10\" Small (1 Slice)",
+      "calories": 200,
+      "protein": 10,
+      "carbs": 23,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786814",
+      "name": "Spicy Buffalo Chicken 12\" Medium (1 Slice)",
+      "calories": 230,
+      "protein": 11,
+      "carbs": 26,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786831",
+      "name": "Spicy Buffalo Chicken 12\" Medium Thin Crust (1 Slice)",
+      "calories": 190,
+      "protein": 8,
+      "carbs": 14,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786846",
+      "name": "Spicy Buffalo Chicken 14\", Large (1 Slice)",
+      "calories": 320,
+      "protein": 15,
+      "carbs": 36,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786863",
+      "name": "Spicy Buffalo Chicken 14\", Large Thin Crust (1 Slice)",
+      "calories": 270,
+      "protein": 12,
+      "carbs": 20,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786879",
+      "name": "Spicy Buffalo Chicken 16\" Xl (1 Slice)",
+      "calories": 430,
+      "protein": 20,
+      "carbs": 50,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786895",
+      "name": "Spicy Buffalo Chicken Deep Dish (1 Slice)",
+      "calories": 400,
+      "protein": 16,
+      "carbs": 38,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786772",
+      "name": "Spicy Chicken Bacon Ranch 8\" Junior (1 Slice)",
+      "calories": 230,
+      "protein": 10,
+      "carbs": 22,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786788",
+      "name": "Spicy Chicken Bacon Ranch 10\" Small (1 Slice)",
+      "calories": 220,
+      "protein": 10,
+      "carbs": 20,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786815",
+      "name": "Spicy Chicken Bacon Ranch 12\" Medium (1 Slice)",
+      "calories": 270,
+      "protein": 11,
+      "carbs": 26,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786847",
+      "name": "Spicy Chicken Bacon Ranch 14\", Large (1 Slice)",
+      "calories": 380,
+      "protein": 15,
+      "carbs": 35,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786864",
+      "name": "Spicy Chicken Bacon Ranch 14\", Large Thin Crust (1 Slice)",
+      "calories": 330,
+      "protein": 12,
+      "carbs": 20,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786880",
+      "name": "Spicy Chicken Bacon Ranch 16\" Xl (1 Slice)",
+      "calories": 520,
+      "protein": 21,
+      "carbs": 49,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786896",
+      "name": "Spicy Chicken Bacon Ranch Deep Dish (1 Slice)",
+      "calories": 470,
+      "protein": 16,
+      "carbs": 38,
+      "fat": 28,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786773",
+      "name": "Taco Pizza 8\" Junior (1 Slice)",
+      "calories": 200,
+      "protein": 10,
+      "carbs": 22,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786789",
+      "name": "Taco Pizza 10\" Small (1 Slice)",
+      "calories": 210,
+      "protein": 11,
+      "carbs": 22,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786816",
+      "name": "Taco Pizza 12\" Medium (1 Slice)",
+      "calories": 230,
+      "protein": 12,
+      "carbs": 26,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786832",
+      "name": "Taco Pizza 12\" Medium Thin Crust (1 Slice)",
+      "calories": 190,
+      "protein": 9,
+      "carbs": 14,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786848",
+      "name": "Taco Pizza 14\", Large (1 Slice)",
+      "calories": 300,
+      "protein": 15,
+      "carbs": 35,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786865",
+      "name": "Taco Pizza 14\", Large Thin Crust (1 Slice)",
+      "calories": 250,
+      "protein": 12,
+      "carbs": 19,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786881",
+      "name": "Taco Pizza 16\" Xl (1 Slice)",
+      "calories": 400,
+      "protein": 20,
+      "carbs": 49,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786775",
+      "name": "The Works 8\" Junior (1 Slice)",
+      "calories": 210,
+      "protein": 10,
+      "carbs": 22,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786791",
+      "name": "The Works 10\" Small (1 Slice)",
+      "calories": 210,
+      "protein": 10,
+      "carbs": 22,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786802",
+      "name": "The Works 10\" Small Gluten Free (1 Slice)",
+      "calories": 130,
+      "protein": 7,
+      "carbs": 7,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786818",
+      "name": "The Works 12\" Medium (1 Slice)",
+      "calories": 250,
+      "protein": 13,
+      "carbs": 26,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786834",
+      "name": "The Works 12\" Medium Thin Crust (1 Slice)",
+      "calories": 220,
+      "protein": 10,
+      "carbs": 15,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786850",
+      "name": "The Works 14\", Large (1 Slice)",
+      "calories": 310,
+      "protein": 16,
+      "carbs": 34,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786867",
+      "name": "The Works 14\", Large Thin Crust (1 Slice)",
+      "calories": 260,
+      "protein": 12,
+      "carbs": 18,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786883",
+      "name": "The Works 16\" Xl (1 Slice)",
+      "calories": 440,
+      "protein": 22,
+      "carbs": 48,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786898",
+      "name": "The Works Deep Dish (1 Slice)",
+      "calories": 400,
+      "protein": 17,
+      "carbs": 37,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786909",
+      "name": "The Works Sheet (1 Slice)",
+      "calories": 260,
+      "protein": 13,
+      "carbs": 27,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786774",
+      "name": "Three Cheeser Pepperoni Pleaser 8\" Junior (1 Slice)",
+      "calories": 270,
+      "protein": 12,
+      "carbs": 23,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786790",
+      "name": "Three Cheeser Pepperoni Pleaser 10\" Small (1 Slice)",
+      "calories": 210,
+      "protein": 10,
+      "carbs": 22,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786801",
+      "name": "Three Cheeser Pepperoni Pleaser 10\" Small Gluten Free (1 Slice)",
+      "calories": 140,
+      "protein": 7,
+      "carbs": 8,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786817",
+      "name": "Three Cheeser Pepperoni Pleaser 12\" Medium (1 Slice)",
+      "calories": 230,
+      "protein": 12,
+      "carbs": 25,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786833",
+      "name": "Three Cheeser Pepperoni Pleaser 12\" Medium Thin Crust (1 Slice)",
+      "calories": 200,
+      "protein": 9,
+      "carbs": 13,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786849",
+      "name": "Three Cheeser Pepperoni Pleaser 14\", Large (1 Slice)",
+      "calories": 370,
+      "protein": 18,
+      "carbs": 36,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786866",
+      "name": "Three Cheeser Pepperoni Pleaser 14\", Large Thin Crust (1 Slice)",
+      "calories": 320,
+      "protein": 15,
+      "carbs": 21,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786882",
+      "name": "Three Cheeser Pepperoni Pleaser 16\" Xl (1 Slice)",
+      "calories": 510,
+      "protein": 25,
+      "carbs": 51,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786897",
+      "name": "Three Cheeser Pepperoni Pleaser Deep Dish (1 Slice)",
+      "calories": 450,
+      "protein": 19,
+      "carbs": 39,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786908",
+      "name": "Three Cheeser Pepperoni Pleaser Sheet (1 Slice)",
+      "calories": 250,
+      "protein": 12,
+      "carbs": 27,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786776",
+      "name": "Veggie 8\" Junior (1 Slice)",
+      "calories": 170,
+      "protein": 8,
+      "carbs": 23,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786792",
+      "name": "Veggie 10\" Small (1 Slice)",
+      "calories": 170,
+      "protein": 8,
+      "carbs": 23,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786803",
+      "name": "Veggie 10\" Small Gluten Free (1 Slice)",
+      "calories": 100,
+      "protein": 5,
+      "carbs": 9,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786819",
+      "name": "Veggie 12\" Medium (1 Slice)",
+      "calories": 200,
+      "protein": 10,
+      "carbs": 28,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786835",
+      "name": "Veggie 12\" Medium Thin Crust (1 Slice)",
+      "calories": 160,
+      "protein": 7,
+      "carbs": 15,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786851",
+      "name": "Veggie 14\", Large (1 Slice)",
+      "calories": 270,
+      "protein": 12,
+      "carbs": 36,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786868",
+      "name": "Veggie 14\", Large Thin Crust (1 Slice)",
+      "calories": 220,
+      "protein": 9,
+      "carbs": 21,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786884",
+      "name": "Veggie 16\" Xl (1 Slice)",
+      "calories": 380,
+      "protein": 18,
+      "carbs": 51,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786899",
+      "name": "Veggie Deep Dish (1 Slice)",
+      "calories": 360,
+      "protein": 13,
+      "carbs": 39,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786910",
+      "name": "Veggie Sheet (1 Slice)",
+      "calories": 200,
+      "protein": 9,
+      "carbs": 27,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Specialty Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-786911",
+      "name": "Antipasto, Large",
+      "calories": 800,
+      "protein": 53,
+      "carbs": 27,
+      "fat": 53,
+      "servingLabel": "1 listed serving (Salad; size in item name)"
+    },
+    {
+      "id": "nutritionix-786912",
+      "name": "Antipasto, Regular",
+      "calories": 400,
+      "protein": 27,
+      "carbs": 14,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Salad; size in item name)"
+    },
+    {
+      "id": "nutritionix-786931",
+      "name": "Antipasto Salad",
+      "calories": 200,
+      "protein": 13,
+      "carbs": 8,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Salad; size in item name)"
+    },
+    {
+      "id": "nutritionix-786913",
+      "name": "Chef, Large",
+      "calories": 630,
+      "protein": 44,
+      "carbs": 25,
+      "fat": 38,
+      "servingLabel": "1 listed serving (Salad; size in item name)"
+    },
+    {
+      "id": "nutritionix-786914",
+      "name": "Chef, Regular",
+      "calories": 320,
+      "protein": 22,
+      "carbs": 13,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Salad; size in item name)"
+    },
+    {
+      "id": "nutritionix-786932",
+      "name": "Chef Salad",
+      "calories": 160,
+      "protein": 11,
+      "carbs": 8,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Salad; size in item name)"
+    },
+    {
+      "id": "nutritionix-786915",
+      "name": "Chicken Asiago, Large",
+      "calories": 370,
+      "protein": 35,
+      "carbs": 27,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Salad; size in item name)"
+    },
+    {
+      "id": "nutritionix-786916",
+      "name": "Chicken Asiago, Regular",
+      "calories": 240,
+      "protein": 25,
+      "carbs": 15,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Salad; size in item name)"
+    },
+    {
+      "id": "nutritionix-786933",
+      "name": "Chicken Asiago Salad",
+      "calories": 140,
+      "protein": 16,
+      "carbs": 9,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Salad; size in item name)"
+    },
+    {
+      "id": "nutritionix-786938",
+      "name": "Chicken Caesar Salad",
+      "calories": 140,
+      "protein": 16,
+      "carbs": 11,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Salad; size in item name)"
+    },
+    {
+      "id": "nutritionix-786917",
+      "name": "Chicken Ceaser, Large",
+      "calories": 310,
+      "protein": 35,
+      "carbs": 22,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Salad; size in item name)"
+    },
+    {
+      "id": "nutritionix-786918",
+      "name": "Chicken Ceaser, Regular",
+      "calories": 220,
+      "protein": 25,
+      "carbs": 15,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Salad; size in item name)"
+    },
+    {
+      "id": "nutritionix-786919",
+      "name": "Garden, Large",
+      "calories": 190,
+      "protein": 8,
+      "carbs": 31,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Salad; size in item name)"
+    },
+    {
+      "id": "nutritionix-786920",
+      "name": "Garden, Regular",
+      "calories": 90,
+      "protein": 3,
+      "carbs": 14,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Salad; size in item name)"
+    },
+    {
+      "id": "nutritionix-786934",
+      "name": "Garden Salad",
+      "calories": 60,
+      "protein": 2,
+      "carbs": 10,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Salad; size in item name)"
+    },
+    {
+      "id": "nutritionix-786921",
+      "name": "Greek, Large",
+      "calories": 460,
+      "protein": 30,
+      "carbs": 34,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Salad; size in item name)"
+    },
+    {
+      "id": "nutritionix-786922",
+      "name": "Greek, Regular",
+      "calories": 230,
+      "protein": 15,
+      "carbs": 18,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Salad; size in item name)"
+    },
+    {
+      "id": "nutritionix-786935",
+      "name": "Greek Salad",
+      "calories": 120,
+      "protein": 8,
+      "carbs": 10,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Salad; size in item name)"
+    },
+    {
+      "id": "nutritionix-786929",
+      "name": "Grilled Chicken, Large",
+      "calories": 560,
+      "protein": 48,
+      "carbs": 27,
+      "fat": 29,
+      "servingLabel": "1 listed serving (Salad; size in item name)"
+    },
+    {
+      "id": "nutritionix-786930",
+      "name": "Grilled Chicken, Regular",
+      "calories": 360,
+      "protein": 33,
+      "carbs": 15,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Salad; size in item name)"
+    },
+    {
+      "id": "nutritionix-786936",
+      "name": "Grilled Chicken Salad",
+      "calories": 200,
+      "protein": 20,
+      "carbs": 9,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Salad; size in item name)"
+    },
+    {
+      "id": "nutritionix-786923",
+      "name": "Spicy Chicken, Large",
+      "calories": 930,
+      "protein": 56,
+      "carbs": 59,
+      "fat": 52,
+      "servingLabel": "1 listed serving (Salad; size in item name)"
+    },
+    {
+      "id": "nutritionix-786924",
+      "name": "Spicy Chicken, Regular",
+      "calories": 640,
+      "protein": 40,
+      "carbs": 39,
+      "fat": 36,
+      "servingLabel": "1 listed serving (Salad; size in item name)"
+    },
+    {
+      "id": "nutritionix-786925",
+      "name": "Spicy Chicken Asiago, Large",
+      "calories": 740,
+      "protein": 43,
+      "carbs": 59,
+      "fat": 37,
+      "servingLabel": "1 listed serving (Salad; size in item name)"
+    },
+    {
+      "id": "nutritionix-786926",
+      "name": "Spicy Chicken Asiago, Regular",
+      "calories": 640,
+      "protein": 39,
+      "carbs": 48,
+      "fat": 33,
+      "servingLabel": "1 listed serving (Salad; size in item name)"
+    },
+    {
+      "id": "nutritionix-786939",
+      "name": "Spicy Chicken Asiago Salad",
+      "calories": 330,
+      "protein": 20,
+      "carbs": 25,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Salad; size in item name)"
+    },
+    {
+      "id": "nutritionix-786940",
+      "name": "Spicy Chicken Caesar",
+      "calories": 330,
+      "protein": 20,
+      "carbs": 26,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Salad; size in item name)"
+    },
+    {
+      "id": "nutritionix-786927",
+      "name": "Spicy Chicken Caesar, Large",
+      "calories": 680,
+      "protein": 43,
+      "carbs": 54,
+      "fat": 33,
+      "servingLabel": "1 listed serving (Salad; size in item name)"
+    },
+    {
+      "id": "nutritionix-786928",
+      "name": "Spicy Chicken Caesar, Regular",
+      "calories": 500,
+      "protein": 31,
+      "carbs": 38,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Salad; size in item name)"
+    },
+    {
+      "id": "nutritionix-786937",
+      "name": "Spicy Chicken Salad",
+      "calories": 390,
+      "protein": 24,
+      "carbs": 25,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Salad; size in item name)"
+    },
+    {
+      "id": "nutritionix-786942",
+      "name": "Original Boneless Howie Wings, Customizable",
+      "calories": 60,
+      "protein": 5,
+      "carbs": 5,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-786941",
+      "name": "Original Howie Wings, Customizable",
+      "calories": 70,
+      "protein": 5,
+      "carbs": 0,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-786943",
+      "name": "Spicy Chicken Tenders",
+      "calories": 130,
+      "protein": 8,
+      "carbs": 9,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Spicy Chicken Tenders; size in item name)"
+    },
+    {
+      "id": "nutritionix-786948",
+      "name": "Baked Pasta & Meatballs, Large",
+      "calories": 650,
+      "protein": 34,
+      "carbs": 68,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Pasta; size in item name)"
+    },
+    {
+      "id": "nutritionix-786949",
+      "name": "Baked Pasta & Meatballs, Regular",
+      "calories": 780,
+      "protein": 44,
+      "carbs": 70,
+      "fat": 36,
+      "servingLabel": "1 listed serving (Pasta; size in item name)"
+    },
+    {
+      "id": "nutritionix-786950",
+      "name": "Baked Pasta & Mushrooms, Large",
+      "calories": 430,
+      "protein": 19,
+      "carbs": 64,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Pasta; size in item name)"
+    },
+    {
+      "id": "nutritionix-786951",
+      "name": "Baked Pasta & Mushrooms, Regular",
+      "calories": 450,
+      "protein": 20,
+      "carbs": 65,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Pasta; size in item name)"
+    },
+    {
+      "id": "nutritionix-786952",
+      "name": "Baked Pasta & Sausage, Large",
+      "calories": 530,
+      "protein": 21,
+      "carbs": 64,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Pasta; size in item name)"
+    },
+    {
+      "id": "nutritionix-786953",
+      "name": "Baked Pasta & Sausage, Regular",
+      "calories": 560,
+      "protein": 23,
+      "carbs": 64,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Pasta; size in item name)"
+    },
+    {
+      "id": "nutritionix-786944",
+      "name": "Baked Pasta, Large",
+      "calories": 400,
+      "protein": 16,
+      "carbs": 63,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Pasta; size in item name)"
+    },
+    {
+      "id": "nutritionix-786945",
+      "name": "Baked Pasta, Regular",
+      "calories": 450,
+      "protein": 20,
+      "carbs": 64,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Pasta; size in item name)"
+    },
+    {
+      "id": "nutritionix-786946",
+      "name": "Chicken Parmesan Pasta, Large",
+      "calories": 700,
+      "protein": 36,
+      "carbs": 81,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Pasta; size in item name)"
+    },
+    {
+      "id": "nutritionix-786947",
+      "name": "Chicken Parmesan Pasta, Regular",
+      "calories": 740,
+      "protein": 39,
+      "carbs": 81,
+      "fat": 29,
+      "servingLabel": "1 listed serving (Pasta; size in item name)"
+    },
+    {
+      "id": "nutritionix-786955",
+      "name": "3 Cheeser Howie Bread",
+      "calories": 90,
+      "protein": 3,
+      "carbs": 12,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Howie Bread; size in item name)"
+    },
+    {
+      "id": "nutritionix-786961",
+      "name": "3 Cheeser Howie Bread (Fla. 8 Pie)",
+      "calories": 130,
+      "protein": 6,
+      "carbs": 15,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Howie Bread; size in item name)"
+    },
+    {
+      "id": "nutritionix-786956",
+      "name": "Asiago Howie Bread",
+      "calories": 80,
+      "protein": 3,
+      "carbs": 12,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Howie Bread; size in item name)"
+    },
+    {
+      "id": "nutritionix-786966",
+      "name": "Asiago Howie Bread, Small",
+      "calories": 90,
+      "protein": 4,
+      "carbs": 15,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Howie Bread; size in item name)"
+    },
+    {
+      "id": "nutritionix-786957",
+      "name": "Cajun Howie Bread",
+      "calories": 60,
+      "protein": 2,
+      "carbs": 11,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Howie Bread; size in item name)"
+    },
+    {
+      "id": "nutritionix-786970",
+      "name": "Cajun Howie Bread (Side For Wings)",
+      "calories": 110,
+      "protein": 4,
+      "carbs": 20,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Howie Bread; size in item name)"
+    },
+    {
+      "id": "nutritionix-786967",
+      "name": "Cajun Howie Bread, Small",
+      "calories": 80,
+      "protein": 3,
+      "carbs": 15,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Howie Bread; size in item name)"
+    },
+    {
+      "id": "nutritionix-786958",
+      "name": "Cinnamon Howie Bread",
+      "calories": 70,
+      "protein": 2,
+      "carbs": 13,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Howie Bread; size in item name)"
+    },
+    {
+      "id": "nutritionix-786968",
+      "name": "Cinnamon Howie Bread, Small",
+      "calories": 90,
+      "protein": 3,
+      "carbs": 16,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Howie Bread; size in item name)"
+    },
+    {
+      "id": "nutritionix-786959",
+      "name": "Deep Dish 3 Cheeser",
+      "calories": 140,
+      "protein": 6,
+      "carbs": 17,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Howie Bread; size in item name)"
+    },
+    {
+      "id": "nutritionix-786954",
+      "name": "Howie Bread",
+      "calories": 70,
+      "protein": 2,
+      "carbs": 12,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Howie Bread; size in item name)"
+    },
+    {
+      "id": "nutritionix-786960",
+      "name": "Howie Bread (Fla. 8 Piece)",
+      "calories": 80,
+      "protein": 3,
+      "carbs": 15,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Howie Bread; size in item name)"
+    },
+    {
+      "id": "nutritionix-786969",
+      "name": "Howie Bread (Side For Pasta)",
+      "calories": 120,
+      "protein": 4,
+      "carbs": 20,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Howie Bread; size in item name)"
+    },
+    {
+      "id": "nutritionix-786962",
+      "name": "Stuffed Howie Bread",
+      "calories": 130,
+      "protein": 6,
+      "carbs": 15,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Howie Bread; size in item name)"
+    },
+    {
+      "id": "nutritionix-786963",
+      "name": "Stuffed Howie Bread & Bacon",
+      "calories": 100,
+      "protein": 4,
+      "carbs": 12,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Howie Bread; size in item name)"
+    },
+    {
+      "id": "nutritionix-786964",
+      "name": "Stuffed Howie Bread & Jalapino",
+      "calories": 90,
+      "protein": 4,
+      "carbs": 12,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Howie Bread; size in item name)"
+    },
+    {
+      "id": "nutritionix-786965",
+      "name": "Stuffed Howie Bread An Pepperoni",
+      "calories": 100,
+      "protein": 4,
+      "carbs": 12,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Howie Bread; size in item name)"
+    },
+    {
+      "id": "nutritionix-786972",
+      "name": "Howie Cookie Chocolate Chip",
+      "calories": 180,
+      "protein": 2,
+      "carbs": 28,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Howie Cookie; size in item name)"
+    },
+    {
+      "id": "nutritionix-786973",
+      "name": "BBQ Dipping Sauce",
+      "calories": 80,
+      "protein": 0,
+      "carbs": 20,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Dipping Sauce; size in item name)"
+    },
+    {
+      "id": "nutritionix-786974",
+      "name": "Blue Cheese Dipping Sauce",
+      "calories": 200,
+      "protein": 1,
+      "carbs": 2,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Dipping Sauce; size in item name)"
+    },
+    {
+      "id": "nutritionix-786975",
+      "name": "Buffalo Sauce Dipping Sauce",
+      "calories": 60,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Dipping Sauce; size in item name)"
+    },
+    {
+      "id": "nutritionix-786976",
+      "name": "Cheese Sauce Dipping Sauce",
+      "calories": 140,
+      "protein": 1,
+      "carbs": 12,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Dipping Sauce; size in item name)"
+    },
+    {
+      "id": "nutritionix-786977",
+      "name": "Garlic Sauce Dipping Sauce",
+      "calories": 230,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Dipping Sauce; size in item name)"
+    },
+    {
+      "id": "nutritionix-786978",
+      "name": "Icing Dipping Sauce",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 34,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Dipping Sauce; size in item name)"
+    },
+    {
+      "id": "nutritionix-786979",
+      "name": "Pizza Sauce Dipping Sauce",
+      "calories": 35,
+      "protein": 1,
+      "carbs": 7,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Dipping Sauce; size in item name)"
+    },
+    {
+      "id": "nutritionix-786980",
+      "name": "Ranch Dipping Sauce",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Dipping Sauce; size in item name)"
+    },
+    {
+      "id": "nutritionix-786981",
+      "name": "1000 Island Dressing",
+      "calories": 210,
+      "protein": 0,
+      "carbs": 6,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Dressings; size in item name)"
+    },
+    {
+      "id": "nutritionix-786989",
+      "name": "Blue Cheese Dressing",
+      "calories": 200,
+      "protein": 1,
+      "carbs": 2,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Dressings; size in item name)"
+    },
+    {
+      "id": "nutritionix-786982",
+      "name": "Caesar Dressing",
+      "calories": 180,
+      "protein": 1,
+      "carbs": 2,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Dressings; size in item name)"
+    },
+    {
+      "id": "nutritionix-786983",
+      "name": "Fat Free Italian Dressing",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Dressings; size in item name)"
+    },
+    {
+      "id": "nutritionix-786984",
+      "name": "Fat Free Ranch Dressing",
+      "calories": 40,
+      "protein": 0,
+      "carbs": 9,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Dressings; size in item name)"
+    },
+    {
+      "id": "nutritionix-786985",
+      "name": "Greek Dressing",
+      "calories": 220,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Dressings; size in item name)"
+    },
+    {
+      "id": "nutritionix-786987",
+      "name": "Italian Dressing",
+      "calories": 130,
+      "protein": 1,
+      "carbs": 3,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Dressings; size in item name)"
+    },
+    {
+      "id": "nutritionix-786988",
+      "name": "Ranch Dressing",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Dressings; size in item name)"
+    },
+    {
+      "id": "nutritionix-786990",
+      "name": "Chicken Bacon Ranch Sub, Large",
+      "calories": 640,
+      "protein": 38,
+      "carbs": 61,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Subs; size in item name)"
+    },
+    {
+      "id": "nutritionix-786991",
+      "name": "Chicken Bacon Ranch Sub, Regular",
+      "calories": 430,
+      "protein": 24,
+      "carbs": 41,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Subs; size in item name)"
+    },
+    {
+      "id": "nutritionix-787000",
+      "name": "Chicken Club Sub, Large",
+      "calories": 840,
+      "protein": 45,
+      "carbs": 60,
+      "fat": 46,
+      "servingLabel": "1 listed serving (Subs; size in item name)"
+    },
+    {
+      "id": "nutritionix-787001",
+      "name": "Chicken Club Sub, Regular",
+      "calories": 500,
+      "protein": 29,
+      "carbs": 40,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Subs; size in item name)"
+    },
+    {
+      "id": "nutritionix-787006",
+      "name": "Deluxe Combo Sub, Large",
+      "calories": 540,
+      "protein": 29,
+      "carbs": 60,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Subs; size in item name)"
+    },
+    {
+      "id": "nutritionix-787007",
+      "name": "Deluxe Combo Sub, Regular",
+      "calories": 340,
+      "protein": 18,
+      "carbs": 40,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Subs; size in item name)"
+    },
+    {
+      "id": "nutritionix-786992",
+      "name": "Ham & Cheese Sub, Large",
+      "calories": 590,
+      "protein": 32,
+      "carbs": 62,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Subs; size in item name)"
+    },
+    {
+      "id": "nutritionix-786993",
+      "name": "Ham & Cheese Sub, Regular",
+      "calories": 310,
+      "protein": 19,
+      "carbs": 39,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Subs; size in item name)"
+    },
+    {
+      "id": "nutritionix-786994",
+      "name": "Italian Sub, Large",
+      "calories": 620,
+      "protein": 31,
+      "carbs": 62,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Subs; size in item name)"
+    },
+    {
+      "id": "nutritionix-786995",
+      "name": "Italian Sub, Regular",
+      "calories": 550,
+      "protein": 25,
+      "carbs": 44,
+      "fat": 31,
+      "servingLabel": "1 listed serving (Subs; size in item name)"
+    },
+    {
+      "id": "nutritionix-787019",
+      "name": "Large Pizza Deluxe Sub, Cheese Only, Customizable",
+      "calories": 870,
+      "protein": 41,
+      "carbs": 123,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Subs; size in item name)"
+    },
+    {
+      "id": "nutritionix-786996",
+      "name": "Meatball Sub, Large",
+      "calories": 640,
+      "protein": 35,
+      "carbs": 66,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Subs; size in item name)"
+    },
+    {
+      "id": "nutritionix-786997",
+      "name": "Meatball Sub, Regular",
+      "calories": 400,
+      "protein": 21,
+      "carbs": 43,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Subs; size in item name)"
+    },
+    {
+      "id": "nutritionix-787010",
+      "name": "Pizza Sub Deluxe (High) Sub, Large",
+      "calories": 620,
+      "protein": 29,
+      "carbs": 63,
+      "fat": 28,
+      "servingLabel": "1 listed serving (Subs; size in item name)"
+    },
+    {
+      "id": "nutritionix-787011",
+      "name": "Pizza Sub Deluxe (High) Sub, Regular",
+      "calories": 410,
+      "protein": 19,
+      "carbs": 42,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Subs; size in item name)"
+    },
+    {
+      "id": "nutritionix-787008",
+      "name": "Pizza Sub Deluxe (Low) Sub, Large",
+      "calories": 460,
+      "protein": 22,
+      "carbs": 66,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Subs; size in item name)"
+    },
+    {
+      "id": "nutritionix-787009",
+      "name": "Pizza Sub Deluxe (Low) Sub, Regular",
+      "calories": 300,
+      "protein": 14,
+      "carbs": 43,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Subs; size in item name)"
+    },
+    {
+      "id": "nutritionix-787012",
+      "name": "Pizza Sub Special Sub, Large",
+      "calories": 490,
+      "protein": 24,
+      "carbs": 67,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Subs; size in item name)"
+    },
+    {
+      "id": "nutritionix-787013",
+      "name": "Pizza Sub Special Sub, Regular",
+      "calories": 270,
+      "protein": 12,
+      "carbs": 39,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Subs; size in item name)"
+    },
+    {
+      "id": "nutritionix-787018",
+      "name": "Regular Pizza Deluxe Sub, Cheese Only, Customizable",
+      "calories": 580,
+      "protein": 27,
+      "carbs": 83,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Subs; size in item name)"
+    },
+    {
+      "id": "nutritionix-787014",
+      "name": "Spicy Chicken Bacon Ranch Sub, Large",
+      "calories": 600,
+      "protein": 31,
+      "carbs": 67,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Subs; size in item name)"
+    },
+    {
+      "id": "nutritionix-787015",
+      "name": "Spicy Chicken Bacon Ranch Sub, Regular",
+      "calories": 510,
+      "protein": 23,
+      "carbs": 48,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Subs; size in item name)"
+    },
+    {
+      "id": "nutritionix-786998",
+      "name": "Steak & Cheese Sub, Large",
+      "calories": 650,
+      "protein": 35,
+      "carbs": 62,
+      "fat": 29,
+      "servingLabel": "1 listed serving (Subs; size in item name)"
+    },
+    {
+      "id": "nutritionix-786999",
+      "name": "Steak & Cheese Sub, Regular",
+      "calories": 360,
+      "protein": 19,
+      "carbs": 41,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Subs; size in item name)"
+    },
+    {
+      "id": "nutritionix-787016",
+      "name": "Taco Sub, Large",
+      "calories": 770,
+      "protein": 36,
+      "carbs": 74,
+      "fat": 35,
+      "servingLabel": "1 listed serving (Subs; size in item name)"
+    },
+    {
+      "id": "nutritionix-787017",
+      "name": "Taco Sub, Regular",
+      "calories": 390,
+      "protein": 20,
+      "carbs": 42,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Subs; size in item name)"
+    },
+    {
+      "id": "nutritionix-787002",
+      "name": "Veggie Sub, Large",
+      "calories": 580,
+      "protein": 22,
+      "carbs": 69,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Subs; size in item name)"
+    },
+    {
+      "id": "nutritionix-787003",
+      "name": "Veggie Sub, Regular",
+      "calories": 380,
+      "protein": 15,
+      "carbs": 46,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Subs; size in item name)"
+    },
+    {
+      "id": "nutritionix-787022",
+      "name": "Diet Pepsi 22 oz.",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-787023",
+      "name": "Diet Pepsi 32 oz.",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-787024",
+      "name": "Mountain Dew 22 oz.",
+      "calories": 310,
+      "protein": 0,
+      "carbs": 84,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-787025",
+      "name": "Mountain Dew 32 oz.",
+      "calories": 450,
+      "protein": 0,
+      "carbs": 123,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-787020",
+      "name": "Pepsi 22 oz.",
+      "calories": 270,
+      "protein": 0,
+      "carbs": 75,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-787021",
+      "name": "Pepsi 32 oz.",
+      "calories": 400,
+      "protein": 0,
+      "carbs": 109,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-787026",
+      "name": "Starry 22 oz.",
+      "calories": 270,
+      "protein": 0,
+      "carbs": 71,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-787027",
+      "name": "Starry 32 oz.",
+      "calories": 400,
+      "protein": 0,
+      "carbs": 104,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-787028",
+      "name": "Sweet Tea 22 oz.",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 37,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-787029",
+      "name": "Sweet Tea 32 oz.",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 53,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-787030",
+      "name": "Unsweetened Tea 22 oz.",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-787031",
+      "name": "Unsweetened Tea 32 oz.",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    }
+  ],
+  "sourceDate": "2025-06-22"
+}

@@ -1,0 +1,919 @@
+{
+  "chain": "Del Taco",
+  "sourceUrl": "https://www.nutritionix.com/del-taco/menu/premium",
+  "source": "Nutritionix",
+  "sourceKind": "database",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "id": "nutritionix-787032",
+      "name": "Beer Battered Fish Taco",
+      "calories": 230,
+      "protein": 11,
+      "carbs": 28,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Tacos; size in item name)"
+    },
+    {
+      "id": "nutritionix-787033",
+      "name": "Carne Asada Steak Street Taco",
+      "calories": 120,
+      "protein": 10,
+      "carbs": 14,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Tacos; size in item name)"
+    },
+    {
+      "id": "nutritionix-787034",
+      "name": "Carne Asada Steak Street Taco Guac'd Up",
+      "calories": 140,
+      "protein": 10,
+      "carbs": 15,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Tacos; size in item name)"
+    },
+    {
+      "id": "nutritionix-787037",
+      "name": "Chipotle Crispy Chicken Guac'd Up Taco",
+      "calories": 260,
+      "protein": 9,
+      "carbs": 23,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Tacos; size in item name)"
+    },
+    {
+      "id": "nutritionix-787036",
+      "name": "Chipotle Crispy Chicken Taco",
+      "calories": 240,
+      "protein": 9,
+      "carbs": 22,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Tacos; size in item name)"
+    },
+    {
+      "id": "nutritionix-787042",
+      "name": "Crunchtada Tostada",
+      "calories": 330,
+      "protein": 12,
+      "carbs": 41,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Tacos; size in item name)"
+    },
+    {
+      "id": "nutritionix-787035",
+      "name": "Grilled Chicken Taco",
+      "calories": 210,
+      "protein": 11,
+      "carbs": 15,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Tacos; size in item name)"
+    },
+    {
+      "id": "nutritionix-787039",
+      "name": "Ranch Crispy Chicken Guac'd Up Taco",
+      "calories": 250,
+      "protein": 10,
+      "carbs": 24,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Tacos; size in item name)"
+    },
+    {
+      "id": "nutritionix-787038",
+      "name": "Ranch Crispy Chicken Taco",
+      "calories": 240,
+      "protein": 9,
+      "carbs": 22,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Tacos; size in item name)"
+    },
+    {
+      "id": "nutritionix-787041",
+      "name": "Snack Taco",
+      "calories": 120,
+      "protein": 6,
+      "carbs": 8,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Tacos; size in item name)"
+    },
+    {
+      "id": "nutritionix-787040",
+      "name": "The Del Taco",
+      "calories": 300,
+      "protein": 16,
+      "carbs": 14,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Tacos; size in item name)"
+    },
+    {
+      "id": "nutritionix-787043",
+      "name": "8 Layer Veggie Burrito",
+      "calories": 520,
+      "protein": 16,
+      "carbs": 70,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Classic Burritos; size in item name)"
+    },
+    {
+      "id": "nutritionix-787044",
+      "name": "Bean & Cheese Burrito (Green)",
+      "calories": 440,
+      "protein": 19,
+      "carbs": 69,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Classic Burritos; size in item name)"
+    },
+    {
+      "id": "nutritionix-787045",
+      "name": "Bean & Cheese Burrito (Red)",
+      "calories": 460,
+      "protein": 19,
+      "carbs": 68,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Classic Burritos; size in item name)"
+    },
+    {
+      "id": "nutritionix-787046",
+      "name": "Chicken Cheddar Roller (Chipotle)",
+      "calories": 280,
+      "protein": 13,
+      "carbs": 30,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Classic Burritos; size in item name)"
+    },
+    {
+      "id": "nutritionix-787047",
+      "name": "Chicken Cheddar Roller (Original)",
+      "calories": 250,
+      "protein": 13,
+      "carbs": 30,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Classic Burritos; size in item name)"
+    },
+    {
+      "id": "nutritionix-787048",
+      "name": "Chicken Cheddar Roller (Ranch)",
+      "calories": 270,
+      "protein": 13,
+      "carbs": 30,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Classic Burritos; size in item name)"
+    },
+    {
+      "id": "nutritionix-787050",
+      "name": "Del Beef Burrito",
+      "calories": 470,
+      "protein": 24,
+      "carbs": 39,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Classic Burritos; size in item name)"
+    },
+    {
+      "id": "nutritionix-787051",
+      "name": "Del Combo Beef & Bean Burrito",
+      "calories": 470,
+      "protein": 22,
+      "carbs": 53,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Classic Burritos; size in item name)"
+    },
+    {
+      "id": "nutritionix-787049",
+      "name": "Grilled Chicken Burrito",
+      "calories": 560,
+      "protein": 24,
+      "carbs": 40,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Classic Burritos; size in item name)"
+    },
+    {
+      "id": "nutritionix-787053",
+      "name": "Epic Carne Asada Steak Cali Bacon Burrito",
+      "calories": 1050,
+      "protein": 51,
+      "carbs": 73,
+      "fat": 60,
+      "servingLabel": "1 listed serving (Epic Burritos; size in item name)"
+    },
+    {
+      "id": "nutritionix-787056",
+      "name": "Epic Carne Asada Steak Fresh Guacamole Burrito",
+      "calories": 750,
+      "protein": 41,
+      "carbs": 89,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Epic Burritos; size in item name)"
+    },
+    {
+      "id": "nutritionix-787058",
+      "name": "Epic Carne Asada Steak Loaded Queso Burrito",
+      "calories": 890,
+      "protein": 47,
+      "carbs": 75,
+      "fat": 44,
+      "servingLabel": "1 listed serving (Epic Burritos; size in item name)"
+    },
+    {
+      "id": "nutritionix-787054",
+      "name": "Epic Combo Beef & Bean Burrito",
+      "calories": 900,
+      "protein": 43,
+      "carbs": 91,
+      "fat": 38,
+      "servingLabel": "1 listed serving (Epic Burritos; size in item name)"
+    },
+    {
+      "id": "nutritionix-787052",
+      "name": "Epic Grilled Chicken Cali Bacon Burrito",
+      "calories": 1020,
+      "protein": 46,
+      "carbs": 72,
+      "fat": 60,
+      "servingLabel": "1 listed serving (Epic Burritos; size in item name)"
+    },
+    {
+      "id": "nutritionix-787055",
+      "name": "Epic Grilled Chicken Fresh Guacamole Burrito",
+      "calories": 720,
+      "protein": 37,
+      "carbs": 87,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Epic Burritos; size in item name)"
+    },
+    {
+      "id": "nutritionix-787057",
+      "name": "Epic Grilled Chicken Loaded Queso Burrito",
+      "calories": 860,
+      "protein": 43,
+      "carbs": 73,
+      "fat": 45,
+      "servingLabel": "1 listed serving (Epic Burritos; size in item name)"
+    },
+    {
+      "id": "nutritionix-787059",
+      "name": "Cheddar Quesadilla",
+      "calories": 480,
+      "protein": 22,
+      "carbs": 35,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Quesadillas; size in item name)"
+    },
+    {
+      "id": "nutritionix-787060",
+      "name": "Chicken Cheddar Quesadilla",
+      "calories": 540,
+      "protein": 29,
+      "carbs": 36,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Quesadillas; size in item name)"
+    },
+    {
+      "id": "nutritionix-787061",
+      "name": "Mini Cheddar Quesadilla",
+      "calories": 130,
+      "protein": 5,
+      "carbs": 13,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Quesadillas; size in item name)"
+    },
+    {
+      "id": "nutritionix-787062",
+      "name": "3 Layer Queso Nachos",
+      "calories": 330,
+      "protein": 10,
+      "carbs": 44,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Nachos & Chips; size in item name)"
+    },
+    {
+      "id": "nutritionix-787063",
+      "name": "Chips & Fresh House-made Guac (Snack-sized)",
+      "calories": 170,
+      "protein": 2,
+      "carbs": 18,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Nachos & Chips; size in item name)"
+    },
+    {
+      "id": "nutritionix-787066",
+      "name": "Queso Loaded Nachos (Carne Asada Steak)",
+      "calories": 970,
+      "protein": 43,
+      "carbs": 99,
+      "fat": 47,
+      "servingLabel": "1 listed serving (Nachos & Chips; size in item name)"
+    },
+    {
+      "id": "nutritionix-787065",
+      "name": "Queso Loaded Nachos (Grilled Chicken)",
+      "calories": 950,
+      "protein": 40,
+      "carbs": 98,
+      "fat": 47,
+      "servingLabel": "1 listed serving (Nachos & Chips; size in item name)"
+    },
+    {
+      "id": "nutritionix-787064",
+      "name": "Queso Loaded Nachos (Seasoned Beef)",
+      "calories": 1030,
+      "protein": 41,
+      "carbs": 99,
+      "fat": 54,
+      "servingLabel": "1 listed serving (Nachos & Chips; size in item name)"
+    },
+    {
+      "id": "nutritionix-787074",
+      "name": "3 Pc. Crispy Chicken & Fries Box (Chipotle Dipping Sauce)",
+      "calories": 720,
+      "protein": 18,
+      "carbs": 45,
+      "fat": 51,
+      "servingLabel": "1 listed serving (Burgers & Fries; size in item name)"
+    },
+    {
+      "id": "nutritionix-787073",
+      "name": "3 Pc. Crispy Chicken & Fries Box (Ranch Dipping Sauce)",
+      "calories": 710,
+      "protein": 20,
+      "carbs": 47,
+      "fat": 50,
+      "servingLabel": "1 listed serving (Burgers & Fries; size in item name)"
+    },
+    {
+      "id": "nutritionix-787067",
+      "name": "Carne Asada Steak Fries",
+      "calories": 760,
+      "protein": 21,
+      "carbs": 45,
+      "fat": 56,
+      "servingLabel": "1 listed serving (Burgers & Fries; size in item name)"
+    },
+    {
+      "id": "nutritionix-787068",
+      "name": "Chili Cheddar Fries",
+      "calories": 570,
+      "protein": 15,
+      "carbs": 42,
+      "fat": 35,
+      "servingLabel": "1 listed serving (Burgers & Fries; size in item name)"
+    },
+    {
+      "id": "nutritionix-787070",
+      "name": "Crinkle Cut Fries (Large)",
+      "calories": 410,
+      "protein": 5,
+      "carbs": 43,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Burgers & Fries; size in item name)"
+    },
+    {
+      "id": "nutritionix-787069",
+      "name": "Crinkle Cut Fries (Regular)",
+      "calories": 320,
+      "protein": 4,
+      "carbs": 34,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Burgers & Fries; size in item name)"
+    },
+    {
+      "id": "nutritionix-787071",
+      "name": "Deluxe Chili Cheddar Fries",
+      "calories": 610,
+      "protein": 16,
+      "carbs": 44,
+      "fat": 37,
+      "servingLabel": "1 listed serving (Burgers & Fries; size in item name)"
+    },
+    {
+      "id": "nutritionix-787072",
+      "name": "Double Del Cheeseburger",
+      "calories": 690,
+      "protein": 30,
+      "carbs": 35,
+      "fat": 47,
+      "servingLabel": "1 listed serving (Burgers & Fries; size in item name)"
+    },
+    {
+      "id": "nutritionix-787076",
+      "name": "Breakfast Burrito (Bacon)",
+      "calories": 520,
+      "protein": 30,
+      "carbs": 36,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-787077",
+      "name": "Breakfast Burrito (Carne Asada Steak)",
+      "calories": 450,
+      "protein": 25,
+      "carbs": 38,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-787075",
+      "name": "Breakfast Burrito (Egg & Cheese)",
+      "calories": 380,
+      "protein": 16,
+      "carbs": 35,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-787079",
+      "name": "Breakfast Roller (Bacon)",
+      "calories": 290,
+      "protein": 16,
+      "carbs": 24,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-787078",
+      "name": "Breakfast Roller (Egg & Cheese)",
+      "calories": 250,
+      "protein": 11,
+      "carbs": 24,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-787080",
+      "name": "Donut Bites (4 Pc.)",
+      "calories": 240,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-787081",
+      "name": "Hashbrown Sticks (5 Pc.)",
+      "calories": 230,
+      "protein": 0,
+      "carbs": 18,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-787082",
+      "name": "Caramel Cheesecake Bites (2 Pc.)",
+      "calories": 410,
+      "protein": 7,
+      "carbs": 48,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Shakes & Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-787090",
+      "name": "Large Shake (Chocolate)",
+      "calories": 880,
+      "protein": 22,
+      "carbs": 165,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Shakes & Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-787091",
+      "name": "Large Shake (Strawberry)",
+      "calories": 820,
+      "protein": 21,
+      "carbs": 153,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Shakes & Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-787089",
+      "name": "Large Shake (Vanilla)",
+      "calories": 730,
+      "protein": 21,
+      "carbs": 131,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Shakes & Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-787084",
+      "name": "Mango Pineapple Poppers Shake (Large)",
+      "calories": 870,
+      "protein": 21,
+      "carbs": 164,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Shakes & Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-787083",
+      "name": "Mango Pineapple Poppers Shake (Regular)",
+      "calories": 540,
+      "protein": 14,
+      "carbs": 102,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Shakes & Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-787085",
+      "name": "Mini Cinnamon Churros (2 Pc.)",
+      "calories": 200,
+      "protein": 1,
+      "carbs": 25,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Shakes & Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-787087",
+      "name": "Regular Shake (Chocolate)",
+      "calories": 550,
+      "protein": 14,
+      "carbs": 102,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Shakes & Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-787088",
+      "name": "Regular Shake (Strawberry)",
+      "calories": 520,
+      "protein": 14,
+      "carbs": 96,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Shakes & Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-787086",
+      "name": "Regular Shake (Vanilla)",
+      "calories": 480,
+      "protein": 14,
+      "carbs": 85,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Shakes & Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-787094",
+      "name": "Del Inferno Hot Sauce Packet",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sauce Packets; size in item name)"
+    },
+    {
+      "id": "nutritionix-787093",
+      "name": "Del Scorcho Hot Sauce Packet",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sauce Packets; size in item name)"
+    },
+    {
+      "id": "nutritionix-787095",
+      "name": "Ketchup Packet",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sauce Packets; size in item name)"
+    },
+    {
+      "id": "nutritionix-787092",
+      "name": "Mild Hot Sauce Packet",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sauce Packets; size in item name)"
+    },
+    {
+      "id": "nutritionix-787104",
+      "name": "Bottled Water",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-787100",
+      "name": "Hot Coffee",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-787102",
+      "name": "Iced Coffee (Large)",
+      "calories": 250,
+      "protein": 5,
+      "carbs": 50,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-787101",
+      "name": "Iced Coffee (Regular)",
+      "calories": 150,
+      "protein": 3,
+      "carbs": 29,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-787097",
+      "name": "Mango Pineapple Poppers Lemonade (Large)",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 33,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-787096",
+      "name": "Mango Pineapple Poppers Lemonade (Regular)",
+      "calories": 70,
+      "protein": 0,
+      "carbs": 17,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-787099",
+      "name": "Mango Pineapple Poppers Sprite (Large)",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 39,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-787098",
+      "name": "Mango Pineapple Poppers Sprite (Regular)",
+      "calories": 80,
+      "protein": 0,
+      "carbs": 21,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-787108",
+      "name": "Real Strawberry Lemonade (Large)",
+      "calories": 90,
+      "protein": 0,
+      "carbs": 22,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-787107",
+      "name": "Real Strawberry Lemonade (Regular)",
+      "calories": 45,
+      "protein": 0,
+      "carbs": 11,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-787103",
+      "name": "Simply Orange",
+      "calories": 160,
+      "protein": 2,
+      "carbs": 37,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-787110",
+      "name": "Barq's Root Beer (Large)",
+      "calories": 370,
+      "protein": 0,
+      "carbs": 101,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-787109",
+      "name": "Barq's Root Beer (Regular)",
+      "calories": 300,
+      "protein": 0,
+      "carbs": 81,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-787116",
+      "name": "Coca-Cola (Large)",
+      "calories": 370,
+      "protein": 0,
+      "carbs": 100,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-787115",
+      "name": "Coca-Cola (Regular)",
+      "calories": 290,
+      "protein": 0,
+      "carbs": 80,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-787112",
+      "name": "Coca-Cola Cherry (Large)",
+      "calories": 380,
+      "protein": 0,
+      "carbs": 105,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-787111",
+      "name": "Coca-Cola Cherry (Regular)",
+      "calories": 310,
+      "protein": 0,
+      "carbs": 84,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-787114",
+      "name": "Coca-Cola ZeroSugar (Large)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-787113",
+      "name": "Coca-Cola ZeroSugar (Regular)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-787118",
+      "name": "Diet Coke (Large)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-787117",
+      "name": "Diet Coke (Regular)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-787120",
+      "name": "Dr Pepper (Large)",
+      "calories": 360,
+      "protein": 0,
+      "carbs": 98,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-787119",
+      "name": "Dr Pepper (Regular)",
+      "calories": 290,
+      "protein": 0,
+      "carbs": 78,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-787122",
+      "name": "Fanta Orange (Large)",
+      "calories": 370,
+      "protein": 0,
+      "carbs": 99,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-787121",
+      "name": "Fanta Orange (Regular)",
+      "calories": 300,
+      "protein": 0,
+      "carbs": 79,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-787124",
+      "name": "Fuze Raspberry Iced Tea (Large)",
+      "calories": 210,
+      "protein": 0,
+      "carbs": 56,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-787123",
+      "name": "Fuze Raspberry Iced Tea (Regular)",
+      "calories": 180,
+      "protein": 0,
+      "carbs": 48,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-787126",
+      "name": "Hi-C Flashin' Fruit Punch (Large)",
+      "calories": 390,
+      "protein": 0,
+      "carbs": 106,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-787125",
+      "name": "Hi-C Flashin' Fruit Punch (Regular)",
+      "calories": 310,
+      "protein": 0,
+      "carbs": 85,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-787128",
+      "name": "Mello Yello (Large)",
+      "calories": 390,
+      "protein": 0,
+      "carbs": 109,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-787127",
+      "name": "Mello Yello (Regular)",
+      "calories": 310,
+      "protein": 0,
+      "carbs": 87,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-787130",
+      "name": "Minute Maid Zero Sugar Lemonade (Large)",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-787129",
+      "name": "Minute Maid Zero Sugar Lemonade (Regular)",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-787132",
+      "name": "POWERADE Mountain Berry Blast (Large)",
+      "calories": 210,
+      "protein": 0,
+      "carbs": 55,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-787131",
+      "name": "POWERADE Mountain Berry Blast (Regular)",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 44,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-787134",
+      "name": "Sprite (Large)",
+      "calories": 350,
+      "protein": 0,
+      "carbs": 93,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-787133",
+      "name": "Sprite (Regular)",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 75,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    }
+  ],
+  "sourceDate": "2025-06-05"
+}

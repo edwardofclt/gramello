@@ -1,0 +1,478 @@
+{
+  "chain": "Fox's Pizza Den",
+  "sourceUrl": "https://www.nutritionix.com/foxs-pizza-den/menu/premium",
+  "source": "Nutritionix",
+  "sourceKind": "database",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "id": "nutritionix-512641",
+      "name": "Cheese Pizza, 9\"",
+      "calories": 200,
+      "protein": 9,
+      "carbs": 24,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Cheese Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-512642",
+      "name": "Cheese Pizza, 12\"",
+      "calories": 170,
+      "protein": 8,
+      "carbs": 21,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Cheese Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-512645",
+      "name": "Cheese Pizza, 12\" x 24\"",
+      "calories": 180,
+      "protein": 8,
+      "carbs": 21,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Cheese Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-512643",
+      "name": "Cheese Pizza, 14\"",
+      "calories": 200,
+      "protein": 9,
+      "carbs": 24,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Cheese Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-512644",
+      "name": "Cheese Pizza, 16\"",
+      "calories": 210,
+      "protein": 9,
+      "carbs": 25,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Cheese Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-512646",
+      "name": "Bacon Double Cheeseburger Pizza",
+      "calories": 280,
+      "protein": 14,
+      "carbs": 24,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Gourmet Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-512647",
+      "name": "Bbq Chicken Pizza",
+      "calories": 280,
+      "protein": 14,
+      "carbs": 37,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Gourmet Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-512648",
+      "name": "Buffalo Chicken Pizza",
+      "calories": 270,
+      "protein": 12,
+      "carbs": 25,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Gourmet Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-512649",
+      "name": "Chicken Rancher Pizza",
+      "calories": 270,
+      "protein": 12,
+      "carbs": 25,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Gourmet Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-512650",
+      "name": "Deluxe Pizza",
+      "calories": 290,
+      "protein": 12,
+      "carbs": 27,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Gourmet Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-512651",
+      "name": "Meat Supreme Pizza",
+      "calories": 340,
+      "protein": 17,
+      "carbs": 27,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Gourmet Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-512652",
+      "name": "Steak Rancher Pizza",
+      "calories": 310,
+      "protein": 13,
+      "carbs": 27,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Gourmet Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-512653",
+      "name": "Taco Pizza",
+      "calories": 290,
+      "protein": 13,
+      "carbs": 31,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Gourmet Pizza; size in item name)"
+    },
+    {
+      "id": "nutritionix-512654",
+      "name": "Chicken Hoagie (6.5\")",
+      "calories": 670,
+      "protein": 32,
+      "carbs": 63,
+      "fat": 32,
+      "servingLabel": "1 listed serving (Hoagies; size in item name)"
+    },
+    {
+      "id": "nutritionix-512655",
+      "name": "Club Hoagie (6.5\")",
+      "calories": 670,
+      "protein": 31,
+      "carbs": 61,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Hoagies; size in item name)"
+    },
+    {
+      "id": "nutritionix-512656",
+      "name": "Ham & Cheese Hoagie (6.5\")",
+      "calories": 660,
+      "protein": 32,
+      "carbs": 62,
+      "fat": 31,
+      "servingLabel": "1 listed serving (Hoagies; size in item name)"
+    },
+    {
+      "id": "nutritionix-512657",
+      "name": "Italian Hoagie (6.5\")",
+      "calories": 830,
+      "protein": 36,
+      "carbs": 63,
+      "fat": 47,
+      "servingLabel": "1 listed serving (Hoagies; size in item name)"
+    },
+    {
+      "id": "nutritionix-512658",
+      "name": "Meatball Hoagie (6.5\")",
+      "calories": 770,
+      "protein": 37,
+      "carbs": 77,
+      "fat": 35,
+      "servingLabel": "1 listed serving (Hoagies; size in item name)"
+    },
+    {
+      "id": "nutritionix-512659",
+      "name": "Pizzaroni Hoagie (6.5\")",
+      "calories": 610,
+      "protein": 25,
+      "carbs": 59,
+      "fat": 28,
+      "servingLabel": "1 listed serving (Hoagies; size in item name)"
+    },
+    {
+      "id": "nutritionix-512660",
+      "name": "Roast Beef Hoagie (6.5\")",
+      "calories": 660,
+      "protein": 35,
+      "carbs": 58,
+      "fat": 31,
+      "servingLabel": "1 listed serving (Hoagies; size in item name)"
+    },
+    {
+      "id": "nutritionix-512661",
+      "name": "Steak Hoagie (6.5\")",
+      "calories": 710,
+      "protein": 33,
+      "carbs": 61,
+      "fat": 37,
+      "servingLabel": "1 listed serving (Hoagies; size in item name)"
+    },
+    {
+      "id": "nutritionix-512662",
+      "name": "Turkey Hoagie (6.5\")",
+      "calories": 640,
+      "protein": 29,
+      "carbs": 61,
+      "fat": 31,
+      "servingLabel": "1 listed serving (Hoagies; size in item name)"
+    },
+    {
+      "id": "nutritionix-512663",
+      "name": "Beef, Bacon & Cheddar Wedgie, Half",
+      "calories": 520,
+      "protein": 27,
+      "carbs": 40,
+      "fat": 28,
+      "servingLabel": "1 listed serving (Wedgies; size in item name)"
+    },
+    {
+      "id": "nutritionix-512664",
+      "name": "BLT Wedgie, Half",
+      "calories": 600,
+      "protein": 25,
+      "carbs": 42,
+      "fat": 36,
+      "servingLabel": "1 listed serving (Wedgies; size in item name)"
+    },
+    {
+      "id": "nutritionix-512665",
+      "name": "Chicken Wedgie, Half",
+      "calories": 500,
+      "protein": 23,
+      "carbs": 47,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Wedgies; size in item name)"
+    },
+    {
+      "id": "nutritionix-512666",
+      "name": "Club Wedgie, Half",
+      "calories": 480,
+      "protein": 26,
+      "carbs": 46,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Wedgies; size in item name)"
+    },
+    {
+      "id": "nutritionix-512667",
+      "name": "Ham & Cheese Wedgie, Half",
+      "calories": 490,
+      "protein": 25,
+      "carbs": 44,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Wedgies; size in item name)"
+    },
+    {
+      "id": "nutritionix-512668",
+      "name": "Italian Wedgie, Half",
+      "calories": 570,
+      "protein": 27,
+      "carbs": 51,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Wedgies; size in item name)"
+    },
+    {
+      "id": "nutritionix-512669",
+      "name": "Pizzaroni Wedgie, Half",
+      "calories": 410,
+      "protein": 18,
+      "carbs": 41,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Wedgies; size in item name)"
+    },
+    {
+      "id": "nutritionix-512670",
+      "name": "Roast Beef Wedgie, Half",
+      "calories": 520,
+      "protein": 28,
+      "carbs": 43,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Wedgies; size in item name)"
+    },
+    {
+      "id": "nutritionix-512671",
+      "name": "Steak Wedgie, Half",
+      "calories": 450,
+      "protein": 24,
+      "carbs": 29,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Wedgies; size in item name)"
+    },
+    {
+      "id": "nutritionix-512672",
+      "name": "Taco Wedgie, Half",
+      "calories": 560,
+      "protein": 25,
+      "carbs": 64,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Wedgies; size in item name)"
+    },
+    {
+      "id": "nutritionix-512673",
+      "name": "Turkey Wedgie, Half",
+      "calories": 470,
+      "protein": 23,
+      "carbs": 42,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Wedgies; size in item name)"
+    },
+    {
+      "id": "nutritionix-512674",
+      "name": "Veggie Wedgie, Half",
+      "calories": 340,
+      "protein": 12,
+      "carbs": 38,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Wedgies; size in item name)"
+    },
+    {
+      "id": "nutritionix-512681",
+      "name": "Breadsticks",
+      "calories": 340,
+      "protein": 9,
+      "carbs": 58,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-512682",
+      "name": "Cheesey Breadsticks",
+      "calories": 410,
+      "protein": 13,
+      "carbs": 58,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-512683",
+      "name": "Jalapeno Poppers",
+      "calories": 510,
+      "protein": 12,
+      "carbs": 42,
+      "fat": 33,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-512684",
+      "name": "Mac & Cheese Wedges",
+      "calories": 330,
+      "protein": 9,
+      "carbs": 37,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-512685",
+      "name": "Mozzarella Sticks",
+      "calories": 450,
+      "protein": 20,
+      "carbs": 40,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-512686",
+      "name": "Onion Rings",
+      "calories": 500,
+      "protein": 6,
+      "carbs": 67,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-512687",
+      "name": "Wedge Fries",
+      "calories": 400,
+      "protein": 8,
+      "carbs": 56,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-512675",
+      "name": "Buffalo Chicken Salad",
+      "calories": 170,
+      "protein": 18,
+      "carbs": 8,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-512676",
+      "name": "Chef Salad",
+      "calories": 180,
+      "protein": 16,
+      "carbs": 5,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-512677",
+      "name": "Chicken Fry Salad",
+      "calories": 340,
+      "protein": 20,
+      "carbs": 28,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-512678",
+      "name": "Steak Fry Salad",
+      "calories": 330,
+      "protein": 19,
+      "carbs": 26,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-512679",
+      "name": "Taco Salad",
+      "calories": 480,
+      "protein": 19,
+      "carbs": 35,
+      "fat": 40,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-512680",
+      "name": "Tossed Salad",
+      "calories": 130,
+      "protein": 8,
+      "carbs": 5,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-512690",
+      "name": "Candy Cookie",
+      "calories": 120,
+      "protein": 1,
+      "carbs": 18,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-512688",
+      "name": "Cinnamon Sticks",
+      "calories": 440,
+      "protein": 7,
+      "carbs": 87,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-512691",
+      "name": "Pizza Brownie",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 20,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-512692",
+      "name": "Pizza Cookie",
+      "calories": 130,
+      "protein": 1,
+      "carbs": 16,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-512689",
+      "name": "S'mores Pizza Cookie",
+      "calories": 130,
+      "protein": 1,
+      "carbs": 17,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    }
+  ],
+  "sourceDate": "2024-06-03"
+}

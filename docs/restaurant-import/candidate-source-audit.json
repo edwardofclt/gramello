@@ -1,0 +1,141 @@
+[
+  {
+    "slug": "amelies-french-bakery-and-cafe",
+    "checkedAt": "2026-09-20",
+    "sourceUrl": "https://www.ameliesfrenchbakery.com/locations/carmel-commons",
+    "httpStatus": 200,
+    "linkUrls": [
+      "https://ameliesfrenchbakery.com/wp-content/uploads/2026/03/Amelies-In-house-Event-Menu-2026.1.pdf"
+    ],
+    "nutritionText": [],
+    "status": "inspected_menu_no_complete_nutrition_table_found",
+    "reason": "No complete four-nutrient table in the inspected menu page. This is a source lookup, not confirmation of chain identity or current nearby operation; linked menus may require additional review."
+  },
+  {
+    "slug": "akahana-asian-bistro-bar-sushi",
+    "checkedAt": "2026-09-20",
+    "sourceUrl": "https://order.akahanabistro.com/menu",
+    "httpStatus": 200,
+    "linkUrls": [],
+    "nutritionText": [],
+    "status": "inspected_menu_no_complete_nutrition_table_found",
+    "reason": "No complete four-nutrient table in the inspected menu page. This is a source lookup, not confirmation of chain identity or current nearby operation; linked menus may require additional review."
+  },
+  {
+    "slug": "akropolis-cafe",
+    "checkedAt": "2026-09-20",
+    "sourceUrl": "https://theakropoliscafenc.com/",
+    "httpStatus": 200,
+    "linkUrls": [],
+    "nutritionText": [],
+    "status": "inspected_menu_no_complete_nutrition_table_found",
+    "reason": "No complete four-nutrient table in the inspected menu page. This is a source lookup, not confirmation of chain identity or current nearby operation; linked menus may require additional review."
+  },
+  {
+    "slug": "biryani-nation",
+    "checkedAt": "2026-09-20",
+    "sourceUrl": "https://www.thebiryanination.com/menu-1?menu=dinner-menu",
+    "httpStatus": 200,
+    "linkUrls": [
+      "https://www.thebiryanination.com/_files/ugd/5a7e25_5dc46b596df140a28f68c1a5220a0d6c.pdf"
+    ],
+    "nutritionText": [],
+    "status": "inspected_menu_no_complete_nutrition_table_found",
+    "reason": "No complete four-nutrient table in the inspected menu page. This is a source lookup, not confirmation of chain identity or current nearby operation; linked menus may require additional review."
+  },
+  {
+    "slug": "brooklyn-pizza-parlor",
+    "checkedAt": "2026-09-20",
+    "sourceUrl": "https://brooklynpizzaparlors.com/wesley-chapel-brooklyn-pizza-parlor-wesley-chapel-food-menu",
+    "httpStatus": 200,
+    "linkUrls": [],
+    "nutritionText": [],
+    "status": "inspected_menu_no_complete_nutrition_table_found",
+    "reason": "No complete four-nutrient table in the inspected menu page. This is a source lookup, not confirmation of chain identity or current nearby operation; linked menus may require additional review."
+  },
+  {
+    "slug": "captain-steves",
+    "checkedAt": "2026-09-20",
+    "sourceUrl": "https://www.captainstevesfortmill.com/menus/",
+    "httpStatus": 200,
+    "linkUrls": [],
+    "nutritionText": [],
+    "status": "inspected_menu_no_complete_nutrition_table_found",
+    "reason": "No complete four-nutrient table in the inspected menu page. This is a source lookup, not confirmation of chain identity or current nearby operation; linked menus may require additional review."
+  },
+  {
+    "slug": "charanda-mexican-grill-and-cantina",
+    "checkedAt": "2026-09-20",
+    "sourceUrl": "https://www.charandarestaurante.com/",
+    "status": "source_access_failed",
+    "reason": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)>"
+  },
+  {
+    "slug": "don-pedro-mexican",
+    "checkedAt": "2026-09-20",
+    "sourceUrl": "https://donpedrorestaurant.com/",
+    "status": "source_access_failed",
+    "reason": "HTTP Error 406: Not Acceptable"
+  },
+  {
+    "slug": "desi-district",
+    "checkedAt": "2026-09-20",
+    "sourceUrl": "https://www.desidistrict.com/locations/charlotte",
+    "httpStatus": 200,
+    "linkUrls": [],
+    "nutritionText": [],
+    "status": "inspected_menu_no_complete_nutrition_table_found",
+    "reason": "No complete four-nutrient table in the inspected menu page. This is a source lookup, not confirmation of chain identity or current nearby operation; linked menus may require additional review."
+  },
+  {
+    "slug": "empire-pizza",
+    "checkedAt": "2026-09-20",
+    "sourceUrl": "https://empirepizzabar.com/order/empire-pizza-fort-mill",
+    "status": "source_access_failed",
+    "reason": "HTTP Error 403: Forbidden"
+  },
+  {
+    "slug": "hobos",
+    "checkedAt": "2026-09-20",
+    "sourceUrl": "https://hobos213.com/",
+    "status": "source_access_failed",
+    "reason": "HTTP Error 403: Forbidden"
+  },
+  {
+    "slug": "que-onda",
+    "checkedAt": "2026-09-20",
+    "sourceUrl": "https://www.queondatacos.com/our-menus",
+    "httpStatus": 200,
+    "linkUrls": [],
+    "nutritionText": [],
+    "status": "inspected_menu_no_complete_nutrition_table_found",
+    "reason": "No complete four-nutrient table in the inspected menu page. This is a source lookup, not confirmation of chain identity or current nearby operation; linked menus may require additional review."
+  },
+  {
+    "slug": "red-bowl-asian-bistro",
+    "checkedAt": "2026-09-20",
+    "sourceUrl": "https://www.redbowltegacay.com/menu",
+    "status": "source_access_failed",
+    "reason": "HTTP Error 406: Not Acceptable"
+  },
+  {
+    "slug": "ricos-acai",
+    "checkedAt": "2026-09-20",
+    "sourceUrl": "https://www.ricosacai.com/menu",
+    "httpStatus": 200,
+    "linkUrls": [],
+    "nutritionText": [],
+    "status": "inspected_menu_no_complete_nutrition_table_found",
+    "reason": "No complete four-nutrient table in the inspected menu page. This is a source lookup, not confirmation of chain identity or current nearby operation; linked menus may require additional review."
+  },
+  {
+    "slug": "thai-house",
+    "checkedAt": "2026-09-20",
+    "sourceUrl": "https://thaihouse.us.com/",
+    "httpStatus": 200,
+    "linkUrls": [],
+    "nutritionText": [],
+    "status": "inspected_menu_no_complete_nutrition_table_found",
+    "reason": "No complete four-nutrient table in the inspected menu page. This is a source lookup, not confirmation of chain identity or current nearby operation; linked menus may require additional review."
+  }
+]

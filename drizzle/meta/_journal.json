@@ -15,6 +15,20 @@
       "when": 1789469783710,
       "tag": "0001_gray_odin",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1789945411293,
+      "tag": "0002_food_catalog",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1789946193264,
+      "tag": "0003_restaurant_catalog",
+      "breakpoints": true
     }
   ]
 }
