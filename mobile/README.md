@@ -40,7 +40,7 @@ Charts and averages use logged days, matching the original web app.
    used by the web server. All values must be lowercase:
 
    ```text
-   nourish://YOUR_AUTH0_DOMAIN/ios/com.nourish.tracker/callback
+   nourish://YOUR_AUTH0_DOMAIN/ios/com.edwardofclt.nourish/callback
    nourish://YOUR_AUTH0_DOMAIN/android/com.nourish.tracker/callback
    ```
 
@@ -128,13 +128,40 @@ existing `.wrangler/state` directory. Keep the API, tunnel, and Metro running.
 [Cloudflare Quick Tunnels](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/do-more-with-tunnels/trycloudflare/)
 are temporary: a new tunnel gets a new URL, which must also be updated in the app.
 
-The configured app IDs are `com.nourish.tracker`, and the scheme is `nourish`.
-Change them in `app.config.ts` and update Auth0's URLs before distributing under
-your own app identity. `eas.json` includes development (iOS simulator), preview
+The iOS bundle ID is `com.edwardofclt.nourish`, the Android package is
+`com.nourish.tracker`, and the scheme is `nourish`. Update Auth0's callback and
+logout URLs whenever changing these IDs in `app.config.ts`.
+`eas.json` includes development (iOS simulator), preview
 (internal device), and production profiles. Supply the three public Auth0 variables
 to the corresponding EAS environment; set `EXPO_PUBLIC_API_URL` only when overriding
 the Fly.io deployment. Native signing, EAS project linking, and store
 submission are separate from this repository's web/Docker release pipeline.
+
+## TestFlight
+
+The Apple Developer App ID is `com.edwardofclt.nourish`, under team `6SHL6PHRS9`.
+The App Store Connect record is
+[Nourish: Calories & Macros](https://appstoreconnect.apple.com/apps/6814035327/distribution)
+(Apple ID `6814035327`). The installed app still displays **Nourish**.
+`eas.json` targets this record with the production submission profile.
+
+Before the first build, sign in to Expo, link an EAS project, and configure its
+production environment with the public Auth0 values described above. The native
+Auth0 application's allowed callback and logout URLs must include
+`nourish://dev-rgk5sso4.auth0.com/ios/com.edwardofclt.nourish/callback`.
+EAS also needs Apple distribution signing and submission credentials.
+
+Run from `mobile/` after completing that setup:
+
+```bash
+pnpm dlx eas-cli build --platform ios --profile production --auto-submit
+```
+
+Use the production profile for TestFlight; the preview profile uses internal
+device distribution. After Apple processes the uploaded build, it can be tested
+through the app's **Internal Testing** group in TestFlight. An app record alone
+does not contain an installable build. See
+[Expo's TestFlight guide](https://docs.expo.dev/submit/testflight/).
 
 ## Verify
 

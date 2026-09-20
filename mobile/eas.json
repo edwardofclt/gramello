@@ -3,6 +3,14 @@
   "build": {
     "development": { "developmentClient": true, "distribution": "internal", "ios": { "simulator": true } },
     "preview": { "distribution": "internal" },
-    "production": { "autoIncrement": true }
+    "production": { "distribution": "store", "autoIncrement": true }
+  },
+  "submit": {
+    "production": {
+      "ios": {
+        "ascAppId": "6814035327",
+        "appleTeamId": "6SHL6PHRS9"
+      }
+    }
   }
 }

@@ -8,7 +8,11 @@ const config: ExpoConfig = {
   orientation: 'portrait',
   userInterfaceStyle: 'dark',
   backgroundColor: '#0b121a',
-  ios: { bundleIdentifier: 'com.nourish.tracker', supportsTablet: true },
+  ios: {
+    bundleIdentifier: 'com.edwardofclt.nourish',
+    appleTeamId: '6SHL6PHRS9',
+    supportsTablet: true,
+  },
   android: { package: 'com.nourish.tracker' },
   plugins: [
     ['react-native-auth0', {
