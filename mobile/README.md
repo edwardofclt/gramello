@@ -12,7 +12,9 @@ In **Add food**, choose **Scan barcode**, allow camera access, and center a
 packaged food's UPC-A, EAN-8, EAN-13, or ITF-14 barcode. You can also enter the
 printed number manually. Open Food Facts supplies the product details; review
 the serving size and meal before adding. Unknown products or products without
-complete nutrition by weight can be searched by name instead.
+complete nutrition can be searched by name instead. Drinks with volume-based
+nutrition support servings, mL, and US fluid ounces; their diary entries display
+the selected amount without inventing a weight.
 
 The native scanner uses `expo-camera`. **Rebuild the development app** with
 `pnpm mobile:ios` or `pnpm mobile:android` after installing these changes so the

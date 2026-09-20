@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { mealFood, summarizeMeal, scaleFood, type MealInput } from '../lib/meals';
+import { mealFood, summarizeMeal, scaleFood, entryAmountLabel, type MealInput } from '../lib/meals';
 import { mealInputSchema } from '../lib/meal-validation';
 
 // Deliberately simple nutrition fixtures: 400 g at 200 kcal/100 g plus
@@ -59,5 +59,33 @@ describe('custom meal portions', () => {
     expect(input).not.toHaveProperty('calories');
     expect(input).not.toHaveProperty('userId');
     expect(summarizeMeal(input).totals.calories).toBe(0);
+  });
+});
+
+describe('volume amounts and recipes', () => {
+  const liquid = { ...food, id: 'milk', name: 'Milk', nutritionUnit: 'ml' as const, servingGrams: 0, servingMl: 250, servingLabel: '250 mL' };
+  it('does not convert mass and volume without density', () => {
+    expect(scaleFood(food, 10, 'milliliters')).toBeNull();
+    expect(scaleFood(food, 1, 'fluid-ounces')).toBeNull();
+    expect(scaleFood(liquid, 10, 'grams')).toBeNull();
+    expect(scaleFood(liquid, 1, 'ounces')).toBeNull();
+    expect(scaleFood(liquid, 0, 'milliliters')).toBeNull();
+    expect(scaleFood(liquid, Infinity, 'serving')).toBeNull();
+    expect(scaleFood({ ...liquid, calories: 0 }, 1, 'serving')).toMatchObject({ grams: 0, calories: 0 });
+  });
+  it('preserves volume ingredients and requires measured recipe yield', () => {
+    const recipe = { ...soup, ingredients: [...soup.ingredients, { food: liquid, quantity: 1, unit: 'serving' }] };
+    const saved = mealInputSchema.parse(recipe);
+    expect(saved.ingredients[2].food).toMatchObject({ nutritionUnit: 'ml', servingMl: 250 });
+    expect(summarizeMeal(saved).totals.calories).toBe(1700);
+    expect(mealInputSchema.safeParse({ ...recipe, totalGrams: null }).success).toBe(false);
+    expect(mealInputSchema.safeParse({ ...recipe, ingredients: [{ food: liquid, quantity: 100, unit: 'grams' }] }).success).toBe(false);
+    expect(mealInputSchema.safeParse({ ...recipe, ingredients: [{ food: liquid, quantity: 100, unit: 'milliliters' }] }).success).toBe(true);
+  });
+  it('displays saved volume amounts without inventing grams', () => {
+    expect(entryAmountLabel({ quantity: .5, unit: 'serving', grams: 0 })).toBe('0.5 servings');
+    expect(entryAmountLabel({ quantity: 250, unit: 'milliliters', grams: 0 })).toBe('250 mL');
+    expect(entryAmountLabel({ quantity: 8, unit: 'fluid-ounces', grams: 0 })).toBe('8 US fl oz');
+    expect(entryAmountLabel({ quantity: 1, unit: 'serving', grams: 40 })).toBe('40 g');
   });
 });

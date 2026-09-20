@@ -1,5 +1,6 @@
 'use client';
 
+import { unitHint } from '@/lib/meals';
 import { useRef, useState } from 'react';
 import { ChevronLeft, Loader2, Plus, Trash2 } from 'lucide-react';
 import { Button } from './ui/button';
@@ -49,21 +50,23 @@ function MealEditor({ api, initial, onSaved, onBack, onBusy }: { api: FoodApi; i
   }
   if (adding) return <div className="meal-builder"><button className="back-link" onClick={() => setAdding(false)}><ChevronLeft />Back to meal</button><h3>Add ingredient</h3><FoodPicker api={api} actionLabel="Add ingredient" onChoose={ingredient => { draft.setIngredients(items => [...items, ingredient]); setAdding(false); }} /></div>;
   const summary = draft.summary;
+  const requiresWeight = draft.ingredients.some(item => item.food.nutritionUnit === 'ml');
   return <div className="meal-builder">
     <button className="back-link" disabled={saving} onClick={onBack}><ChevronLeft />Back to my meals</button>
     <h3>{initial ? 'Edit meal' : 'Create meal'}</h3>
     <label className="meal-field">Meal name<Input value={draft.name} maxLength={150} disabled={saving} onChange={event => draft.setName(event.target.value)} placeholder="Beef & vegetable soup" /></label>
     <section className="meal-builder"><h4>Ingredients</h4>
       {draft.ingredients.map((ingredient, index) => <div className="ingredient-row" key={index}>
-        <div><strong>{ingredient.food.name}</strong><span>{ingredient.unit === 'serving' ? ingredient.food.servingLabel : ingredient.unit === 'ounces' ? 'oz by weight' : 'g'}</span></div>
+        <div><strong>{ingredient.food.name}</strong><span>{ingredient.unit === 'serving' ? ingredient.food.servingLabel : unitHint(ingredient.unit)}</span></div>
         <Input aria-label={`Amount of ${ingredient.food.name}`} type="number" min="0" step="any" disabled={saving} value={ingredient.amountText ?? String(ingredient.quantity)} onChange={event => draft.setIngredients(items => items.map((item, i) => i === index ? { ...item, quantity: Number(event.target.value), amountText: event.target.value } : item))} />
         <Button variant="ghost" aria-label={`Remove ingredient ${ingredient.food.name}`} disabled={saving} onClick={() => draft.setIngredients(items => items.filter((_, i) => i !== index))}><Trash2 /></Button>
       </div>)}
       <Button variant="outline" disabled={saving || draft.ingredients.length >= 100} onClick={() => setAdding(true)}><Plus />Add ingredient</Button>
     </section>
     <section className="meal-builder"><h4>Batch weight</h4>
-      <p className="meal-hint">Estimated from ingredients: {displayAmount(draft.estimatedGrams)} g ({displayAmount(draft.estimatedGrams / GRAMS_PER_OUNCE)} oz). For more accurate portions, weigh the finished meal without its container. Cooking can change the weight.</p>
-      <div className="field-grid"><label>Finished batch weight (optional)<Input type="number" step="any" min="0" placeholder="Use ingredient estimate" disabled={saving} value={draft.weight} onChange={event => draft.setWeight(event.target.value)} /></label><label>Batch weight unit<select value={draft.weightUnit} disabled={saving} onChange={event => { const next = event.target.value as 'grams' | 'ounces'; if (draft.weight.trim()) draft.setWeight(String(Number(draft.weight) * (next === 'ounces' ? 1 / GRAMS_PER_OUNCE : GRAMS_PER_OUNCE))); draft.setWeightUnit(next); }}><option value="grams">Grams</option><option value="ounces">Ounces (weight)</option></select></label></div>
+      {!requiresWeight && <p className="meal-hint">Estimated from ingredients: {displayAmount(draft.estimatedGrams)} g ({displayAmount(draft.estimatedGrams / GRAMS_PER_OUNCE)} oz). For more accurate portions, weigh the finished meal without its container. Cooking can change the weight.</p>}
+      {requiresWeight && <p className="meal-hint">Enter the finished batch weight to portion a meal with volume-based ingredients.</p>}
+      <div className="field-grid"><label>Finished batch weight{requiresWeight ? ' (required)' : ' (optional)'}<Input type="number" step="any" min="0" placeholder={requiresWeight ? "Enter measured weight" : "Use ingredient estimate"} disabled={saving} value={draft.weight} onChange={event => draft.setWeight(event.target.value)} /></label><label>Batch weight unit<select value={draft.weightUnit} disabled={saving} onChange={event => { const next = event.target.value as 'grams' | 'ounces'; if (draft.weight.trim()) draft.setWeight(String(Number(draft.weight) * (next === 'ounces' ? 1 / GRAMS_PER_OUNCE : GRAMS_PER_OUNCE))); draft.setWeightUnit(next); }}><option value="grams">Grams</option><option value="ounces">Ounces (weight)</option></select></label></div>
     </section>
     <section className="meal-builder"><h4>Plan your portions</h4>
       <div className="field-grid"><label>Portion by<select disabled={saving} value={draft.portionUnit} onChange={event => { draft.setPortionUnit(event.target.value as 'servings' | 'grams' | 'ounces'); draft.setPortion(''); }}><option value="servings">Number of equal servings</option><option value="grams">Grams per portion</option><option value="ounces">Ounces per portion</option></select></label><label>{draft.portionUnit === 'servings' ? 'Number of servings' : draft.portionUnit === 'grams' ? 'Grams per portion' : 'Ounces per portion'}<Input disabled={saving} type="number" step="any" min="0" value={draft.portion} onChange={event => draft.setPortion(event.target.value)} /></label></div>

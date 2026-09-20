@@ -10,23 +10,26 @@ Food search combines:
 
 Choose **Add food → Scan barcode** to scan a packaged food with your camera or
 type the printed barcode. Nourish looks up the exact product in Open Food Facts,
-then opens the usual serving/gram controls for review before saving. UPC-A,
+then opens the amount controls for review before saving. UPC-A,
 EAN-8, EAN-13, and ITF-14 product codes are supported. Browser camera access
 requires HTTPS (or localhost); manual entry works without camera permission.
-Unknown products, incomplete nutrition, and products labeled only by volume
-offer a return to name search. The diary currently measures food by weight.
+Unknown products and incomplete nutrition offer a return to name search.
+Volume-based products, including drinks, support servings, mL, and US fluid
+ounces. Weight-based foods retain servings, grams, and ounces by weight. Open
+Food Facts name-search results use the same unit and nutrition handling.
 
 ## Custom meals
 
 On web or mobile, choose **Add food → My meals → Create meal**. Search for or
-scan each ingredient, enter its amount in servings, grams, or ounces by weight,
-and name the meal. Nourish adds the ingredient calories, protein, carbs, and fat.
+scan each ingredient, enter its amount using its supported units, and name the meal. Nourish adds the ingredient calories, protein, carbs, and fat.
 
-The ingredient weights provide an estimated batch weight. For more accurate
+The ingredient weights provide an estimated batch weight. Meals containing
+volume-based ingredients require a finished batch weight because liquid density
+is not assumed. For more accurate
 portions, enter the weight of the finished meal without its container; cooking
 and added water change the weight. Choose a number of equal servings or a
 portion weight in grams or ounces. A 64 oz batch with 1,200 kcal makes four
-16 oz portions at 300 kcal each. Ounces mean weight, not fluid ounces, and
+16 oz portions at 300 kcal each. Recipe portion ounces mean weight, and
 portions assume the ingredients are evenly distributed.
 
 Saved meals sync through your account. Reopen **My meals** to log any weight or
