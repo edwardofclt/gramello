@@ -1,3 +1,9 @@
+## [1.3.0](https://github.com/edwardofclt/nourish/compare/v1.2.0...v1.3.0) (2026-09-20)
+
+### Features
+
+* add barcode scanning for food logging ([0bce669](https://github.com/edwardofclt/nourish/commit/0bce6698fd0a77bb2dec9cd6b9ba92b041a13b72))
+
 ## [1.2.0](https://github.com/edwardofclt/nourish/compare/v1.1.0...v1.2.0) (2026-09-20)
 
 ### Features
