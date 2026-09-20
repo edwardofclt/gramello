@@ -1,4 +1,4 @@
-const apiUrl = process.env.EXPO_PUBLIC_API_URL?.replace(/\/$/, '') ?? '';
+const apiUrl = (process.env.EXPO_PUBLIC_API_URL || 'https://nourish-api.fly.dev').replace(/\/$/, '');
 const domain = process.env.EXPO_PUBLIC_AUTH0_DOMAIN ?? '';
 const clientId = process.env.EXPO_PUBLIC_AUTH0_CLIENT_ID ?? '';
 const audience = process.env.EXPO_PUBLIC_AUTH0_AUDIENCE ?? '';
@@ -6,7 +6,7 @@ const audience = process.env.EXPO_PUBLIC_AUTH0_AUDIENCE ?? '';
 export const configuration = { apiUrl, domain, clientId, audience };
 
 export function configurationError() {
-  if (!apiUrl || !domain || !clientId || !audience) return 'Set the four public values in mobile/.env using mobile/.env.example, then restart Expo.';
+  if (!domain || !clientId || !audience) return 'Set the three public Auth0 values in mobile/.env using mobile/.env.example, then restart Expo.';
   try {
     const url = new URL(apiUrl);
     const local = ['localhost', '127.0.0.1', '10.0.2.2', '[::1]'].includes(url.hostname);
