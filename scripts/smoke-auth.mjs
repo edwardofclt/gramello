@@ -67,12 +67,13 @@ try {
   assert.match(await signedIn.text(), /Alice Smoke/);
   assert.match(signedIn.headers.get("cache-control"), /no-store/);
   assert.match(signedIn.headers.get("set-cookie"), /HttpOnly/i);
-  for (const [method, path] of [["GET", "/api/day"], ["GET", "/api/trends"], ["GET", "/api/foods/search?q=a"], ["POST", "/api/entries"], ["PUT", "/api/goals"], ["DELETE", "/api/entries?id=unknown"]]) {
+  for (const [method, path] of [["GET", "/api/day"], ["GET", "/api/trends"], ["GET", "/api/foods/search?q=a"], ["GET", "/api/foods/barcode?code=3017620422003"], ["POST", "/api/entries"], ["PUT", "/api/goals"], ["DELETE", "/api/entries?id=unknown"]]) {
     const response = await request(path, { method, headers: { "oai-authenticated-user-id": "auth0|alice" } });
     assert.equal(response.status, 401, `${method} ${path}`);
     assert.match(response.headers.get("cache-control"), /no-store/);
   }
   assert.equal((await request("/api/day", { headers: { Cookie: "__session=invalid" } })).status, 401);
+  assert.equal((await request("/api/foods/barcode?code=invalid", { headers: { Cookie: alice } })).status, 400);
   // Also verifies the compiled Worker loads the native configuration bindings.
   // Missing native configuration would yield 503 instead of invalid-token 401.
   assert.equal((await request("/api/day", { headers: { Authorization: "Bearer invalid-token", Cookie: alice } })).status, 401);

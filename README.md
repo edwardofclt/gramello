@@ -8,6 +8,14 @@ Food search combines:
 - [Open Food Facts](https://world.openfoodfacts.org/) for its open, community-maintained product database and images
 - A small built-in USDA reference fallback for common staples
 
+Choose **Add food → Scan barcode** to scan a packaged food with your camera or
+type the printed barcode. Nourish looks up the exact product in Open Food Facts,
+then opens the usual serving/gram controls for review before saving. UPC-A,
+EAN-8, EAN-13, and ITF-14 product codes are supported. Browser camera access
+requires HTTPS (or localhost); manual entry works without camera permission.
+Unknown products, incomplete nutrition, and products labeled only by volume
+offer a return to name search. The diary currently measures food by weight.
+
 ## Mobile app
 
 The React Native app in [`mobile/`](mobile/README.md) uses Expo, gluestack-ui,

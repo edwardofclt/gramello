@@ -1,9 +1,10 @@
-import { useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { ActivityIndicator, Image, Text, View } from 'react-native';
-import { ChevronLeft, ChevronRight, Minus, Plus, Search } from 'lucide-react-native';
+import { ChevronLeft, ChevronRight, Minus, Plus, ScanBarcode, Search } from 'lucide-react-native';
 import { useSession } from '../auth/Session';
 import { Action, Card, colors, ErrorNotice, Field, styles, useLayout } from '../components/ui';
 import { AppDialog } from '../components/AppDialog';
+import { BarcodeScanner } from '../components/BarcodeScanner';
 import { errorMessage } from '../lib/api';
 import { formatDate, scaleFood } from '../lib/nutrition';
 import { meals, type Food, type Meal } from '../lib/types';
@@ -15,6 +16,7 @@ export function FoodSheet({ date, initialMeal, onClose, onSaved }: { date: strin
   const [query, setQuery] = useState('');
   const [results, setResults] = useState<Food[]>([]);
   const [selected, setSelected] = useState<Food | null>(null);
+  const [scanning, setScanning] = useState(false);
   const [quantity, setQuantity] = useState('1');
   const [unit, setUnit] = useState<'serving' | 'grams'>('serving');
   const [searching, setSearching] = useState(false);
@@ -23,9 +25,16 @@ export function FoodSheet({ date, initialMeal, onClose, onSaved }: { date: strin
   const [searchRevision, setSearchRevision] = useState(0);
   const saveLock = useRef(false);
   const scaled = selected ? scaleFood(selected, Number(quantity), unit) : null;
+  const lookupBarcode = useCallback(async (code: string, signal: AbortSignal) => {
+    const result = await api<{ food: Food }>(`/api/foods/barcode?code=${encodeURIComponent(code)}`, { signal });
+    return result.food;
+  }, [api]);
+  const selectBarcodeFood = useCallback((food: Food) => {
+    setSelected(food); setScanning(false); setQuantity('1'); setUnit('serving'); setError(null);
+  }, []);
 
   useEffect(() => {
-    if (query.trim().length < 2) return;
+    if (scanning || selected || query.trim().length < 2) return;
     const controller = new AbortController();
     const timer = setTimeout(() => {
       setSearching(true); setError(null);
@@ -35,7 +44,7 @@ export function FoodSheet({ date, initialMeal, onClose, onSaved }: { date: strin
         .finally(() => { if (!controller.signal.aborted) setSearching(false); });
     }, 350);
     return () => { clearTimeout(timer); controller.abort(); };
-  }, [api, query, searchRevision]);
+  }, [api, query, searchRevision, scanning, selected]);
 
   async function save() {
     if (!selected || !scaled || saveLock.current) return;
@@ -47,11 +56,12 @@ export function FoodSheet({ date, initialMeal, onClose, onSaved }: { date: strin
     finally { saveLock.current = false; setSaving(false); }
   }
 
-  return <AppDialog title={selected ? 'Choose amount' : 'Add food'} description={`${selected ? 'Adjust by serving or exact weight.' : 'Search generic and brand-name foods.'} · ${formatDate(date)}`} onClose={onClose} busy={saving}>
+  return <AppDialog title={selected ? 'Choose amount' : scanning ? 'Scan barcode' : 'Add food'} description={`${selected ? 'Adjust by serving or exact weight.' : scanning ? 'Scan a packaged food or enter its barcode.' : 'Search generic and brand-name foods.'} · ${formatDate(date)}`} onClose={onClose} busy={saving}>
           {error && <ErrorNotice message={error} retry={selected ? undefined : () => setSearchRevision(value => value + 1)} />}
-          {!selected ? <>
+          {scanning ? <BarcodeScanner lookup={lookupBarcode} onFound={selectBarcodeFood} onBack={() => { setScanning(false); setSearching(false); }} /> : !selected ? <>
             <Field label="Search foods" placeholder="Try oats, chicken, or a brand…" autoFocus autoCorrect={false} returnKeyType="search" value={query}
               onChangeText={value => { setQuery(value); setResults([]); setError(null); setSearching(value.trim().length >= 2); }} />
+            <Action secondary label="Scan barcode" onPress={() => { setScanning(true); setSearching(false); setError(null); }}><ScanBarcode size={20} color={colors.mint} /><Text style={styles.body}>Scan barcode</Text></Action>
             <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 7 }}>{['USDA reference foods', 'Open Food Facts'].map(source => <Text key={source} style={{ color: colors.muted, fontSize: 11, backgroundColor: colors.raised, borderRadius: 20, paddingVertical: 5, paddingHorizontal: 9 }}>{source}</Text>)}</View>
             {searching ? <View style={styles.center}><ActivityIndicator color={colors.mint} /><Text style={styles.muted}>Searching food databases…</Text></View>
               : !results.length && !error ? <View style={styles.center}><Search size={36} color={colors.mint} /><Text style={styles.heading}>{query.trim().length < 2 ? 'Find your next bite' : 'No matches yet'}</Text><Text style={[styles.muted, { textAlign: 'center' }]}>{query.trim().length < 2 ? 'Search by food, brand, or product name.' : 'Try a shorter food name or another brand.'}</Text></View> : null}

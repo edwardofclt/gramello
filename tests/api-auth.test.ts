@@ -17,6 +17,7 @@ import { PUT as goals } from "@/app/api/goals/route";
 import { POST as add, DELETE as remove } from "@/app/api/entries/route";
 import { GET as trends } from "@/app/api/trends/route";
 import { GET as search } from "@/app/api/foods/search/route";
+import { GET as barcode } from "@/app/api/foods/barcode/route";
 import { getCurrentUser } from "@/lib/auth";
 
 const secret = "0123456789abcdef".repeat(4);
@@ -51,6 +52,7 @@ const routes = [
   ["GET", "/api/day", day, undefined],
   ["GET", "/api/trends", trends, undefined],
   ["GET", "/api/foods/search?q=a", search, undefined],
+  ["GET", "/api/foods/barcode?code=012345678905", barcode, undefined],
   ["PUT", "/api/goals", goals, targets],
   ["POST", "/api/entries", add, food],
   ["DELETE", "/api/entries?id=example", remove, undefined],
