@@ -1,4 +1,5 @@
-import type { Food, Goals } from './types';
+import type { Goals } from './types';
+export { scaleFood } from '../../../lib/meals';
 
 export { localDate } from '../../../lib/diary-date';
 
@@ -12,14 +13,6 @@ export function formatDate(date: string, short = false) {
   return new Date(`${date}T12:00:00Z`).toLocaleDateString('en-US', {
     ...(short ? {} : { weekday: 'short' as const }), month: 'short', day: 'numeric', timeZone: 'UTC',
   });
-}
-
-export function scaleFood(food: Pick<Food, keyof Goals | 'servingGrams'>, quantity: number, unit: 'serving' | 'grams') {
-  if (!Number.isFinite(quantity) || quantity <= 0) return null;
-  const grams = unit === 'grams' ? quantity : quantity * food.servingGrams;
-  if (!Number.isFinite(grams) || grams <= 0) return null;
-  const factor = grams / 100;
-  return { grams, calories: food.calories * factor, protein: food.protein * factor, carbs: food.carbs * factor, fat: food.fat * factor };
 }
 
 export function sumNutrition(items: Goals[]): Goals {

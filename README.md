@@ -16,6 +16,27 @@ requires HTTPS (or localhost); manual entry works without camera permission.
 Unknown products, incomplete nutrition, and products labeled only by volume
 offer a return to name search. The diary currently measures food by weight.
 
+## Custom meals
+
+On web or mobile, choose **Add food → My meals → Create meal**. Search for or
+scan each ingredient, enter its amount in servings, grams, or ounces by weight,
+and name the meal. Nourish adds the ingredient calories, protein, carbs, and fat.
+
+The ingredient weights provide an estimated batch weight. For more accurate
+portions, enter the weight of the finished meal without its container; cooking
+and added water change the weight. Choose a number of equal servings or a
+portion weight in grams or ounces. A 64 oz batch with 1,200 kcal makes four
+16 oz portions at 300 kcal each. Ounces mean weight, not fluid ounces, and
+portions assume the ingredients are evenly distributed.
+
+Saved meals sync through your account. Reopen **My meals** to log any weight or
+fractional serving, edit ingredients or yield, or delete a recipe. Edits and
+deletions leave previously logged diary nutrition unchanged.
+
+Existing installations need the `0002_custom_meals.sql` migration. Docker/Fly
+apply migrations on startup; local databases need this migration applied with
+the same Wrangler configuration and state directory used for the app.
+
 ## Mobile app
 
 The React Native app in [`mobile/`](mobile/README.md) uses Expo, gluestack-ui,

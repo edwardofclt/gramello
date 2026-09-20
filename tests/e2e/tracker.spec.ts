@@ -1,14 +1,6 @@
-import { test as base, expect, type Page } from '@playwright/test';
-import { randomUUID } from 'node:crypto';
+import { type Page } from '@playwright/test';
+import { test, expect } from './fixtures';
 import { execFileSync } from 'node:child_process';
-
-// Separate real database records for every test; never alter the owner's diary.
-const test = base.extend<{ userId: string }>({
-  userId: async ({}, use) => { await use(`playwright-${randomUUID()}`); },
-  extraHTTPHeaders: async ({ userId }, use) => {
-    await use({ 'oai-authenticated-user-id': userId });
-  },
-});
 
 const foods = [
   { id: 'test-oats', name: 'Rolled oats', source: 'USDA reference', calories: 400, protein: 10, carbs: 60, fat: 10, servingGrams: 40, servingLabel: '40 g' },
@@ -42,8 +34,7 @@ test('generic and branded foods scale by servings and grams and survive reload',
   expect(await (await saved).json()).toMatchObject({ grams: 80, calories: 320, protein: 8, carbs: 48, fat: 8 });
   await search(page);
   await page.getByRole('button', { name: /Brand granola Test Kitchen/ }).click();
-  await page.getByRole('combobox').nth(1).click();
-  await page.getByRole('option', { name: 'Grams', exact: true }).click();
+  await page.getByRole('combobox').nth(1).selectOption('grams');
   await page.getByRole('spinbutton').fill('60');
   await expect(page.locator('.nutrition-preview')).toContainText('300');
   const branded = page.waitForResponse(r => r.url().endsWith('/api/entries') && r.request().method() === 'POST');

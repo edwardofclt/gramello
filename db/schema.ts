@@ -15,3 +15,13 @@ export const entries = sqliteTable("entries", {
   quantity: real("quantity").notNull(), unit: text("unit").notNull(), grams: real("grams").notNull(), calories: real("calories").notNull(),
   protein: real("protein").notNull(), carbs: real("carbs").notNull(), fat: real("fat").notNull(), createdAt: text("created_at").notNull(),
 }, (table) => [index("idx_entries_user_date").on(table.userId, table.entryDate)]);
+
+export const customMeals = sqliteTable("custom_meals", {
+  id: text("id").primaryKey(),
+  userId: text("user_id").notNull(),
+  name: text("name").notNull(),
+  ingredients: text("ingredients").notNull(),
+  totalGrams: real("total_grams"),
+  servingGrams: real("serving_grams").notNull(),
+  updatedAt: text("updated_at").notNull(),
+}, (table) => [index("idx_custom_meals_user").on(table.userId)]);
