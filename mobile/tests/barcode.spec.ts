@@ -1,4 +1,6 @@
 import { test, expect, type Page } from '@playwright/test';
+import { productFood } from '../../lib/barcode-food';
+import { ghostProduct } from '../../tests/fixtures/ghost-energy';
 
 const product = { id: 'off-3017620422003', name: 'Breakfast oats', brand: 'Test Kitchen', source: 'Open Food Facts', calories: 400, protein: 10, carbs: 60, fat: 10, servingGrams: 40, servingLabel: '1/2 cup (40 g)' };
 
@@ -53,7 +55,7 @@ async function setup(page: Page, camera: boolean | 'pending' | 'blank' = false) 
     if (url.pathname === '/api/foods/barcode') {
       codes.push(url.searchParams.get('code')!);
       if (codes.at(-1) === '000000000000') return route.fulfill({ status: 404, json: { error: 'No product found for this barcode. Try another barcode or search by name.' }, headers });
-      return route.fulfill({ json: { food: product }, headers });
+      return route.fulfill({ json: { food: codes.at(-1) === '810128528191' ? productFood(ghostProduct, '810128528191') : product }, headers });
     }
     if (url.pathname === '/api/entries' && request.method() === 'POST') {
       const entry = { id: 'entry-1', ...request.postDataJSON() };
@@ -154,3 +156,27 @@ test('returning to search cancels a pending lookup and ignores its late result',
   await expect(page.getByRole('textbox', { name: 'Search foods' })).toBeVisible();
   await expect(page.getByText('Choose amount', { exact: true })).toHaveCount(0);
 });
+
+for (const width of [390, 1440]) {
+  test(`logs the Ghost energy drink in servings and volume at ${width}px`, async ({ page }) => {
+    await page.setViewportSize({ width, height: 844 });
+    const { entries } = await setup(page);
+    await page.getByRole('textbox', { name: 'Barcode number' }).fill('810128528191');
+    await page.getByRole('button', { name: 'Look up barcode', exact: true }).click();
+    await expect(page.getByText('Choose amount', { exact: true })).toBeVisible();
+    await expect(page.getByRole('button', { name: 'Grams', exact: true })).toHaveCount(0);
+    await expect(page.getByRole('textbox', { name: 'Servings (16 fl oz)' })).toHaveValue('1');
+    await page.getByRole('button', { name: 'mL', exact: true }).click();
+    await expect(page.getByRole('textbox', { name: 'Volume in mL' })).toHaveValue('473.176');
+    await page.getByRole('button', { name: 'US fl oz', exact: true }).click();
+    await page.getByRole('textbox', { name: 'Volume in US fluid ounces' }).fill('8');
+    await page.getByRole('button', { name: 'Add to lunch', exact: true }).click();
+    await expect(page.getByText('Energy Drink', { exact: true })).toBeVisible();
+    expect(entries).toHaveLength(1);
+    expect(entries[0]).toMatchObject({ sourceId: 'off-0810128528191', meal: 'Lunch', quantity: 8, unit: 'fluid-ounces', grams: 0 });
+    expect(entries[0].calories).toBeCloseTo(5, 4);
+    expect(entries[0].carbs).toBeCloseTo(1, 4);
+    await expect(page.getByText(/8 US fl oz · Open Food Facts/)).toBeVisible();
+    await page.screenshot({ path: `test-results/ghost-diary-${width}.png` });
+  });
+}

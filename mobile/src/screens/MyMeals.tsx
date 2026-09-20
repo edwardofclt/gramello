@@ -1,3 +1,4 @@
+import { unitHint } from '../../../lib/meals';
 import { useRef, useState } from 'react';
 import { ActivityIndicator, Text, View } from 'react-native';
 import { useSession } from '../auth/Session';
@@ -49,6 +50,7 @@ function MealEditor({ date, initialMeal, initial, onSaved, onBack, onBusy }: { d
   }
   if (adding) return <><Action quiet secondary onPress={() => setAdding(false)}>Back to meal</Action><Text style={styles.heading}>Add ingredient</Text><FoodPicker date={date} initialMeal={initialMeal} onSaved={() => {}} onIngredient={ingredient => { draft.setIngredients(items => [...items, ingredient]); setAdding(false); }} /></>;
   const summary = draft.summary;
+  const requiresWeight = draft.ingredients.some(item => item.food.nutritionUnit === 'ml');
   return <>
     <Action quiet secondary disabled={saving} onPress={onBack}>Back to my meals</Action>
     <Text style={styles.heading}>{initial ? 'Edit meal' : 'Create meal'}</Text>
@@ -56,13 +58,14 @@ function MealEditor({ date, initialMeal, initial, onSaved, onBack, onBusy }: { d
     <Text style={styles.eyebrow}>INGREDIENTS</Text>
     {draft.ingredients.map((ingredient, index) => <Card key={index}>
       <Text style={styles.body}>{ingredient.food.name}</Text>
-      <Field label={`Amount of ${ingredient.food.name}`} hint={ingredient.unit === 'serving' ? ingredient.food.servingLabel : ingredient.unit === 'ounces' ? 'oz by weight' : 'g'} keyboardType="decimal-pad" value={ingredient.amountText ?? String(ingredient.quantity)} editable={!saving} onChangeText={value => draft.setIngredients(items => items.map((item, i) => i === index ? { ...item, quantity: Number(value), amountText: value } : item))} />
+      <Field label={`Amount of ${ingredient.food.name}`} hint={ingredient.unit === 'serving' ? ingredient.food.servingLabel : unitHint(ingredient.unit)} keyboardType="decimal-pad" value={ingredient.amountText ?? String(ingredient.quantity)} editable={!saving} onChangeText={value => draft.setIngredients(items => items.map((item, i) => i === index ? { ...item, quantity: Number(value), amountText: value } : item))} />
       <Action secondary label={`Remove ingredient ${ingredient.food.name}`} disabled={saving} onPress={() => draft.setIngredients(items => items.filter((_, i) => i !== index))}>Remove ingredient</Action>
     </Card>)}
     <Action secondary disabled={saving || draft.ingredients.length >= 100} onPress={() => setAdding(true)}>Add ingredient</Action>
     <Text style={styles.eyebrow}>BATCH WEIGHT</Text>
-    <Text style={styles.muted}>Estimated from ingredients: {displayAmount(draft.estimatedGrams)} g ({displayAmount(draft.estimatedGrams / GRAMS_PER_OUNCE)} oz). For more accurate portions, weigh the finished meal without its container. Cooking can change the weight.</Text>
-    <Field label="Finished batch weight (optional)" value={draft.weight} onChangeText={draft.setWeight} keyboardType="decimal-pad" placeholder="Use ingredient estimate" editable={!saving} />
+    {!requiresWeight && <Text style={styles.muted}>Estimated from ingredients: {displayAmount(draft.estimatedGrams)} g ({displayAmount(draft.estimatedGrams / GRAMS_PER_OUNCE)} oz). For more accurate portions, weigh the finished meal without its container. Cooking can change the weight.</Text>}
+    <Field label={`Finished batch weight (${requiresWeight ? 'required' : 'optional'})`} value={draft.weight} onChangeText={draft.setWeight} keyboardType="decimal-pad" placeholder={requiresWeight ? "Enter measured weight" : "Use ingredient estimate"} editable={!saving} />
+    {requiresWeight && <Text style={styles.muted}>Enter the finished batch weight to portion a meal with volume-based ingredients.</Text>}
     <View style={styles.row}>{(['grams', 'ounces'] as const).map(unit => <Action key={unit} secondary={draft.weightUnit !== unit} disabled={saving} label={`Batch weight in ${unit}`} onPress={() => { if (draft.weight.trim() && unit !== draft.weightUnit) draft.setWeight(String(Number(draft.weight) * (unit === 'ounces' ? 1 / GRAMS_PER_OUNCE : GRAMS_PER_OUNCE))); draft.setWeightUnit(unit); }}>{unit === 'grams' ? 'Grams' : 'Ounces'}</Action>)}</View>
     <Text style={styles.eyebrow}>PLAN YOUR PORTIONS</Text>
     <View style={[styles.row, { flexWrap: 'wrap' }]}>{(['servings', 'grams', 'ounces'] as const).map(unit => <Action compact key={unit} disabled={saving} secondary={draft.portionUnit !== unit} onPress={() => { if (unit !== draft.portionUnit) { draft.setPortionUnit(unit); draft.setPortion(''); } }}>{unit === 'servings' ? 'Equal servings' : unit === 'grams' ? 'Grams per portion' : 'Ounces per portion'}</Action>)}</View>

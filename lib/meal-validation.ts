@@ -6,12 +6,13 @@ const nutrient = z.number().finite().nonnegative().max(100_000);
 const food = z.object({
   id: z.string().min(1).max(200), name: z.string().trim().min(1).max(300),
   source: z.string().min(1).max(100), brand: z.string().max(300).optional(),
-  servingGrams: positive, servingLabel: z.string().max(200),
+  servingGrams: z.number().finite().nonnegative().max(1_000_000), servingLabel: z.string().max(200),
+  nutritionUnit: z.enum(['g', 'ml']).optional(), servingMl: positive.optional(),
   calories: nutrient, protein: nutrient, carbs: nutrient, fat: nutrient,
-});
+}).refine(food => food.nutritionUnit === 'ml' ? food.servingGrams === 0 && Boolean(food.servingMl) : food.servingGrams > 0);
 export const mealInputSchema = z.object({
   name: z.string().trim().min(1).max(150),
-  ingredients: z.array(z.object({ food, quantity: positive, unit: z.enum(['serving', 'grams', 'ounces']) })).min(1).max(100),
+  ingredients: z.array(z.object({ food, quantity: positive, unit: z.enum(['serving', 'grams', 'ounces', 'milliliters', 'fluid-ounces']) })).min(1).max(100),
   totalGrams: positive.nullable(), servingGrams: positive,
 }).superRefine((meal, context) => {
   try {

@@ -1,5 +1,6 @@
 import { withAuthenticatedUser } from "@/lib/auth";
-type Food = { id:string; name:string; brand?:string; source:string; calories:number; protein:number; carbs:number; fat:number; servingGrams:number; servingLabel:string; image?:string };
+import type { Food } from '@/lib/meals';
+import { productFood, productFields, type Product } from '@/lib/barcode-food';
 const genericFoods: Food[] = [
   { id:"generic-chicken",name:"Chicken breast, cooked",source:"USDA reference",calories:165,protein:31,carbs:0,fat:3.6,servingGrams:100,servingLabel:"100 g" },
   { id:"generic-rice",name:"White rice, cooked",source:"USDA reference",calories:130,protein:2.7,carbs:28.2,fat:.3,servingGrams:100,servingLabel:"100 g" },
@@ -15,7 +16,17 @@ export async function GET(request: Request) {
 async function searchFoods(request: Request) {
   const q=new URL(request.url).searchParams.get("q")?.trim()??""; if(q.length<2)return Response.json({foods:[]});
   const local=genericFoods.filter(f=>`${f.name} ${f.brand??""}`.toLowerCase().includes(q.toLowerCase()));
-  const off=async()=>{const p=new URLSearchParams({search_terms:q,search_simple:"1",action:"process",json:"1",page_size:"12",fields:"code,product_name,brands,nutriments,serving_size,serving_quantity,image_front_small_url"});const r=await fetch(`https://world.openfoodfacts.org/cgi/search.pl?${p}`,{headers:{"User-Agent":"NourishTracker/1.0 (personal food diary)"}});if(!r.ok)throw new Error(`Open Food Facts ${r.status}`);const d=await r.json() as {products?:Array<Record<string,any>>};return(d.products??[]).flatMap((x):Food[]=>{if(!x.product_name||!x.nutriments)return[];const sg=n(x.serving_quantity)||100;return[{id:`off-${x.code}`,name:String(x.product_name),brand:x.brands?String(x.brands).split(",")[0]:undefined,source:"Open Food Facts",calories:n(x.nutriments["energy-kcal_100g"]),protein:n(x.nutriments.proteins_100g),carbs:n(x.nutriments.carbohydrates_100g),fat:n(x.nutriments.fat_100g),servingGrams:sg,servingLabel:x.serving_size?String(x.serving_size):`${sg} g`,image:x.image_front_small_url?String(x.image_front_small_url):undefined}]}).filter(f=>f.calories>0)};
+  const off = async () => {
+    const params = new URLSearchParams({ search_terms: q, search_simple: '1', action: 'process', json: '1', page_size: '12', fields: productFields });
+    const response = await fetch(`https://world.openfoodfacts.org/cgi/search.pl?${params}`, { headers: { 'User-Agent': 'NourishTracker/1.0 (personal food diary)' } });
+    if (!response.ok) throw new Error(`Open Food Facts ${response.status}`);
+    const data = await response.json() as { products?: Product[] };
+    return (data.products ?? []).flatMap(product => {
+      if (!product.code) return [];
+      const food = productFood(product, product.code);
+      return food ? [food] : [];
+    });
+  };
   const usda=async()=>{const r=await fetch(`https://api.nal.usda.gov/fdc/v1/foods/search?api_key=DEMO_KEY&query=${encodeURIComponent(q)}&pageSize=10`);if(!r.ok)throw new Error(`USDA FoodData Central ${r.status}`);const d=await r.json() as {foods?:Array<Record<string,any>>};return(d.foods??[]).flatMap((x):Food[]=>{const nutrients=Array.isArray(x.foodNutrients)?x.foodNutrients:[];const nutrient=(names:string[])=>n(nutrients.find((v:any)=>names.includes(String(v.nutrientName)))?.value);const calories=nutrient(["Energy","Energy (Atwater General Factors)"]);if(!x.description||!calories)return[];const sg=n(x.servingSize)||100;return[{id:`usda-${x.fdcId}`,name:String(x.description).toLowerCase().replace(/(^|\s)\S/g,(s:string)=>s.toUpperCase()),brand:x.brandOwner?String(x.brandOwner):undefined,source:"USDA FoodData Central",calories,protein:nutrient(["Protein"]),carbs:nutrient(["Carbohydrate, by difference"]),fat:nutrient(["Total lipid (fat)"]),servingGrams:sg,servingLabel:x.householdServingFullText?String(x.householdServingFullText):`${sg} g`}]} )};
   const [a,b]=await Promise.allSettled([usda(),off()]);const foods=[...local,...(a.status==="fulfilled"?a.value:[]),...(b.status==="fulfilled"?b.value:[])];if(a.status==="rejected")console.error(a.reason);if(b.status==="rejected")console.error(b.reason);return Response.json({foods:foods.slice(0,24),partial:a.status==="rejected"||b.status==="rejected"});
 }
