@@ -40,7 +40,7 @@ Charts and averages use logged days, matching the original web app.
    used by the web server. All values must be lowercase:
 
    ```text
-   nourish://YOUR_AUTH0_DOMAIN/ios/com.nourish.tracker/callback
+   nourish://YOUR_AUTH0_DOMAIN/ios/com.edwardofclt.nourish/callback
    nourish://YOUR_AUTH0_DOMAIN/android/com.nourish.tracker/callback
    ```
 
@@ -128,13 +128,58 @@ existing `.wrangler/state` directory. Keep the API, tunnel, and Metro running.
 [Cloudflare Quick Tunnels](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/do-more-with-tunnels/trycloudflare/)
 are temporary: a new tunnel gets a new URL, which must also be updated in the app.
 
-The configured app IDs are `com.nourish.tracker`, and the scheme is `nourish`.
-Change them in `app.config.ts` and update Auth0's URLs before distributing under
-your own app identity. `eas.json` includes development (iOS simulator), preview
-(internal device), and production profiles. Supply the three public Auth0 variables
-to the corresponding EAS environment; set `EXPO_PUBLIC_API_URL` only when overriding
-the Fly.io deployment. Native signing, EAS project linking, and store
-submission are separate from this repository's web/Docker release pipeline.
+The iOS bundle ID is `com.edwardofclt.nourish`, the Android package is
+`com.nourish.tracker`, and the scheme is `nourish`. Update Auth0's callback and
+logout URLs whenever changing these IDs in `app.config.ts`.
+`eas.json` includes development (iOS simulator), preview
+(internal device), and production profiles. The production profile includes the
+public Auth0 and Fly.io settings. Supply the public Auth0 variables separately for
+development and preview builds. Keep all client secrets out of mobile configuration.
+
+## TestFlight
+
+The Apple Developer App ID is `com.edwardofclt.nourish`, under team `6SHL6PHRS9`.
+The App Store Connect record is
+[Nourish: Calories & Macros](https://appstoreconnect.apple.com/apps/6814035327/distribution)
+(Apple ID `6814035327`). The installed app still displays **Nourish**.
+`eas.json` targets this record with the production submission profile. The linked
+Expo project is [@edwardofclt/nourish-mobile](https://expo.dev/accounts/edwardofclt/projects/nourish-mobile).
+Apple distribution signing and App Store Connect submission credentials are
+managed by EAS. The native Auth0 application's callback and logout allowlists include
+`nourish://dev-rgk5sso4.auth0.com/ios/com.edwardofclt.nourish/callback`.
+
+### GitHub releases
+
+Every stable release published by the **Release** workflow calls
+`.github/workflows/testflight.yml`. Publishing a stable release manually in GitHub
+also triggers it. The job checks out the exact release tag, sets the mobile
+package version from that tag, builds on EAS, and submits to TestFlight. EAS
+increments the iOS build number remotely so reruns use a new build number. The
+GitHub job waits for both build and submission and fails if either fails.
+
+The repository's `EXPO_TOKEN` Actions secret belongs to the **nourish-github**
+Expo robot with the Developer role. Rotate that token in Expo and replace the
+GitHub secret if needed. No Apple passwords or signing keys are stored in this
+repository. If Apple signing credentials expire, repair them with
+`npx eas-cli@24.7.0 credentials:configure-build --platform ios --profile production`
+from `mobile/` before rerunning the workflow.
+
+To rebuild an existing stable release, choose **Actions > TestFlight > Run workflow**
+and enter its tag (for example, `v1.2.0`). Prereleases and drafts are excluded.
+The explicit call from the Release workflow is required because releases created
+with `GITHUB_TOKEN` don't trigger another release-event workflow.
+
+For a manual build of your current checkout, sign in to Expo and run from `mobile/`:
+
+```bash
+npx eas-cli@24.7.0 build --platform ios --profile production --auto-submit
+```
+
+Use the production profile for TestFlight; the preview profile uses internal
+device distribution. After Apple processes the uploaded build, it can be tested
+through the app's **Internal Testing** group in TestFlight, with automatic build
+distribution enabled. Submission does not release the app publicly. See
+[Expo's TestFlight guide](https://docs.expo.dev/submit/testflight/).
 
 ## Verify
 

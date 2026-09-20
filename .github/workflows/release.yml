@@ -70,3 +70,12 @@ jobs:
             ghcr.io/${{ github.repository }}:latest
             ghcr.io/${{ github.repository }}:${{ needs.release.outputs.version }}
           platforms: linux/amd64,linux/arm64
+
+  testflight:
+    needs: release
+    if: needs.release.outputs.published == 'true'
+    uses: ./.github/workflows/testflight.yml
+    with:
+      release_tag: ${{ needs.release.outputs.tag }}
+    secrets:
+      EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}

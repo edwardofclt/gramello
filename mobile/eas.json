@@ -1,8 +1,26 @@
 {
-  "cli": { "version": ">= 16.0.0", "appVersionSource": "local" },
+  "cli": { "version": ">= 24.7.0", "appVersionSource": "remote" },
   "build": {
     "development": { "developmentClient": true, "distribution": "internal", "ios": { "simulator": true } },
     "preview": { "distribution": "internal" },
-    "production": { "autoIncrement": true }
+    "production": {
+      "distribution": "store",
+      "autoIncrement": true,
+      "environment": "production",
+      "env": {
+        "EXPO_PUBLIC_API_URL": "https://nourish-api.fly.dev",
+        "EXPO_PUBLIC_AUTH0_DOMAIN": "dev-rgk5sso4.auth0.com",
+        "EXPO_PUBLIC_AUTH0_CLIENT_ID": "Nk1vBd7aulBIcnOMaGnBlHENzJ33cZTs",
+        "EXPO_PUBLIC_AUTH0_AUDIENCE": "https://nourish-api"
+      }
+    }
+  },
+  "submit": {
+    "production": {
+      "ios": {
+        "ascAppId": "6814035327",
+        "appleTeamId": "6SHL6PHRS9"
+      }
+    }
   }
 }
