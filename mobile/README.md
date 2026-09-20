@@ -1,10 +1,28 @@
-# Nourish for iOS and Android
+# Nourish for iOS, Android, and web
 
 An Expo / React Native companion using gluestack-ui core 5. The native app has a
 daily diary, food search with serving/gram controls, meal logging/removal, 7-day /
 30-day / 6-month trends, and editable calorie/macro goals. It calls the existing
 Nourish API at `https://nourish-api.fly.dev` by default, so the same Auth0 account
 sees the same data on web and mobile.
+
+## Browser experience
+
+The Expo browser UI follows the original web app's design: a desktop sidebar and
+header, horizontal energy summary, two-column meal diary, centered food/goal
+dialogs, and calorie and macro trend charts. Below 761px it switches to a
+single-column diary and bottom navigation. iOS and Android use the shared screens
+with native safe areas, keyboard handling, and page sheets.
+
+With the public environment values configured, run `pnpm --filter @nourish/mobile
+web`. Live browser login requires the browser origin to be configured in Auth0;
+cross-origin API requests also require an API gateway with appropriate CORS
+support, or deployment of the app and API on the same origin. The browser tests
+below use isolated Auth0/API fixtures, not a live account.
+
+The diary date and trend range are retained when switching views. Chart values
+can be inspected with pointer hover, touch, or the previous/next day buttons.
+Charts and averages use logged days, matching the original web app.
 
 ## Connect Auth0 and the API
 
@@ -125,6 +143,7 @@ pnpm test
 pnpm --filter @nourish/mobile typecheck
 pnpm lint:mobile
 pnpm --filter @nourish/mobile export
+pnpm --filter @nourish/mobile exec expo export --platform web
 pnpm exec playwright install chromium
 pnpm test:mobile:ui
 ```
@@ -132,7 +151,10 @@ pnpm test:mobile:ui
 The browser interaction test runs the **real Expo/React Native screens and
 gluestack components**, replacing Auth0 and HTTP responses with isolated fixtures.
 It exercises sign-in, food search/scaling/add/remove, coupled goals, trends, and
-logout at phone size. `NOURISH_UI_TEST=1` is set only by its dedicated server
+logout at phone and desktop sizes, plus tablet/narrow layouts, short dialogs,
+Escape/focus restoration, and chart inspection. `MOBILE_TEST_PORT=8087 pnpm
+test:mobile:ui` selects another port when 8082 is occupied.
+`NOURISH_UI_TEST=1` is set only by its dedicated server
 configuration; do not set it for normal development or builds. It does not prove
 native browser callbacks or secure storage: verify login, restart/restore,
 refresh, and logout on both devices with your configured Auth0 tenant.

@@ -1,15 +1,16 @@
 import { useEffect, useRef, useState } from 'react';
-import { ActivityIndicator, KeyboardAvoidingView, Modal, Platform, ScrollView, Text, View } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
-import { ChevronLeft, ChevronRight, Search, X } from 'lucide-react-native';
+import { ActivityIndicator, Image, Text, View } from 'react-native';
+import { ChevronLeft, ChevronRight, Minus, Plus, Search } from 'lucide-react-native';
 import { useSession } from '../auth/Session';
-import { Action, Card, colors, ErrorNotice, Field, styles } from '../components/ui';
+import { Action, Card, colors, ErrorNotice, Field, styles, useLayout } from '../components/ui';
+import { AppDialog } from '../components/AppDialog';
 import { errorMessage } from '../lib/api';
 import { formatDate, scaleFood } from '../lib/nutrition';
 import { meals, type Food, type Meal } from '../lib/types';
 
 export function FoodSheet({ date, initialMeal, onClose, onSaved }: { date: string; initialMeal: Meal; onClose: () => void; onSaved: () => void }) {
   const { api } = useSession();
+  const { width } = useLayout();
   const [meal, setMeal] = useState(initialMeal);
   const [query, setQuery] = useState('');
   const [results, setResults] = useState<Food[]>([]);
@@ -46,39 +47,40 @@ export function FoodSheet({ date, initialMeal, onClose, onSaved }: { date: strin
     finally { saveLock.current = false; setSaving(false); }
   }
 
-  return <Modal visible animationType="slide" presentationStyle="pageSheet" onRequestClose={() => { if (!saveLock.current) onClose(); }}>
-    <SafeAreaView style={styles.screen} edges={['top', 'bottom']}>
-      <KeyboardAvoidingView style={{ flex: 1 }} behavior={Platform.OS === 'ios' ? 'padding' : 'height'}>
-        <View style={[styles.between, { padding: 20, borderBottomWidth: 1, borderColor: colors.border }]}>
-          <View><Text style={styles.heading}>{selected ? 'Choose amount' : 'Add food'}</Text><Text style={styles.muted}>{formatDate(date)}</Text></View>
-          <Action secondary compact disabled={saving} label="Close food search" onPress={onClose}><X size={20} color={colors.text} /></Action>
-        </View>
-        <ScrollView contentContainerStyle={styles.content} keyboardShouldPersistTaps="handled" keyboardDismissMode="on-drag">
+  return <AppDialog title={selected ? 'Choose amount' : 'Add food'} description={`${selected ? 'Adjust by serving or exact weight.' : 'Search generic and brand-name foods.'} · ${formatDate(date)}`} onClose={onClose} busy={saving}>
           {error && <ErrorNotice message={error} retry={selected ? undefined : () => setSearchRevision(value => value + 1)} />}
           {!selected ? <>
             <Field label="Search foods" placeholder="Try oats, chicken, or a brand…" autoFocus autoCorrect={false} returnKeyType="search" value={query}
               onChangeText={value => { setQuery(value); setResults([]); setError(null); setSearching(value.trim().length >= 2); }} />
-            <Text style={styles.muted}>USDA reference foods · Open Food Facts</Text>
+            <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 7 }}>{['USDA reference foods', 'Open Food Facts'].map(source => <Text key={source} style={{ color: colors.muted, fontSize: 11, backgroundColor: colors.raised, borderRadius: 20, paddingVertical: 5, paddingHorizontal: 9 }}>{source}</Text>)}</View>
             {searching ? <View style={styles.center}><ActivityIndicator color={colors.mint} /><Text style={styles.muted}>Searching food databases…</Text></View>
               : !results.length && !error ? <View style={styles.center}><Search size={36} color={colors.mint} /><Text style={styles.heading}>{query.trim().length < 2 ? 'Find your next bite' : 'No matches yet'}</Text><Text style={[styles.muted, { textAlign: 'center' }]}>{query.trim().length < 2 ? 'Search by food, brand, or product name.' : 'Try a shorter food name or another brand.'}</Text></View> : null}
-            {results.map(food => <Action key={food.id} secondary onPress={() => { setSelected(food); setError(null); }}>
-              <View style={[styles.between, { flex: 1, paddingVertical: 14 }]}>
-                <View style={{ flex: 1, gap: 5 }}><Text style={[styles.body, { fontWeight: '600' }]}>{food.name}</Text><Text style={styles.muted}>{food.brand ? `${food.brand} · ` : ''}{food.source}</Text><Text style={styles.muted}>{Math.round(food.calories)} kcal per 100 g</Text></View><ChevronRight color={colors.muted} size={20} />
+            {results.map(food => <Action key={food.id} quiet secondary style={{ paddingHorizontal: 0, justifyContent: 'flex-start', borderBottomWidth: 1, borderColor: colors.border }} onPress={() => { setSelected(food); setError(null); }}>
+              <View style={[styles.between, { flex: 1, paddingVertical: 12 }]}>
+                <FoodThumbnail food={food} />
+                <View style={{ flex: 1, gap: 5 }}><Text style={[styles.body, { fontWeight: '600' }]}>{food.name}</Text><Text style={styles.muted}>{food.brand ? `${food.brand} · ` : ''}{food.source}</Text><Text style={[styles.muted, { fontSize: 11 }]}>{Math.round(food.calories)} kcal · P {Math.round(food.protein)}g · C {Math.round(food.carbs)}g · F {Math.round(food.fat)}g per 100 g</Text></View><ChevronRight color={colors.muted} size={18} />
               </View>
             </Action>)}
           </> : <>
-            <Action secondary disabled={saving} onPress={() => { setSelected(null); setError(null); }}><ChevronLeft size={18} color={colors.mint} /><Text style={styles.body}>Back to results</Text></Action>
-            <Card><Text style={styles.heading}>{selected.name}</Text><Text style={styles.muted}>{selected.brand || selected.source} · {selected.servingLabel}</Text></Card>
+            <Action quiet secondary style={{ justifyContent: 'flex-start', paddingHorizontal: 0 }} disabled={saving} onPress={() => { setSelected(null); setError(null); }}><ChevronLeft size={18} color={colors.muted} /><Text style={styles.muted}>Back to results</Text></Action>
+            <Card style={{ flexDirection: 'row', alignItems: 'center', backgroundColor: colors.background, borderWidth: 0, padding: 15 }}><FoodThumbnail food={selected} /><View style={{ flex: 1, gap: 4 }}><Text style={styles.heading}>{selected.name}</Text><Text style={styles.muted}>{selected.brand || selected.source} · {selected.servingLabel}</Text></View></Card>
             <Text style={styles.eyebrow}>ADD TO MEAL</Text>
             <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 8 }}>{meals.map(item => <Action key={item} compact secondary={meal !== item} disabled={saving} onPress={() => setMeal(item)}>{item}</Action>)}</View>
             <View style={styles.row}>{(['serving', 'grams'] as const).map(item => <View style={{ flex: 1 }} key={item}><Action secondary={unit !== item} disabled={saving} onPress={() => { setUnit(item); setQuantity(item === 'grams' ? String(selected.servingGrams) : '1'); }}>{item === 'grams' ? 'Grams' : 'Servings'}</Action></View>)}</View>
-            <Field label={unit === 'grams' ? 'Weight in grams' : `Servings (${selected.servingLabel})`} value={quantity} onChangeText={setQuantity} keyboardType="decimal-pad" editable={!saving} selectTextOnFocus />
-            <Card><View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 16 }}>{(['calories', 'protein', 'carbs', 'fat'] as const).map(key => <View style={{ width: '42%', gap: 4 }} key={key}><Text style={styles.title}>{scaled ? Math.round(scaled[key]) : '—'}<Text style={styles.muted}>{key === 'calories' ? ' kcal' : ' g'}</Text></Text><Text style={styles.muted}>{key[0].toUpperCase() + key.slice(1)}</Text></View>)}</View></Card>
+            <View style={[styles.row, { alignItems: 'flex-end' }]}>
+              <Action secondary compact disabled={saving} label="Decrease amount" onPress={() => setQuantity(String(Math.max(unit === 'grams' ? 1 : .25, (Number(quantity) || 0) - (unit === 'grams' ? 5 : .25))))}><Minus size={18} color={colors.muted} /></Action>
+              <View style={{ flex: 1 }}><Field label={unit === 'grams' ? 'Weight in grams' : `Servings (${selected.servingLabel})`} value={quantity} onChangeText={setQuantity} keyboardType="decimal-pad" editable={!saving} selectTextOnFocus /></View>
+              <Action secondary compact disabled={saving} label="Increase amount" onPress={() => setQuantity(String((Number(quantity) || 0) + (unit === 'grams' ? 5 : .25)))}><Plus size={18} color={colors.muted} /></Action>
+            </View>
+            <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 8 }}>{(['calories', 'protein', 'carbs', 'fat'] as const).map(key => <View style={{ flexGrow: 1, flexBasis: width > 550 ? '22%' : '46%', gap: 4, alignItems: 'center', backgroundColor: colors.raised, padding: 12, borderRadius: 12 }} key={key}><Text style={[styles.heading, { fontSize: 20 }]}>{scaled ? Math.round(scaled[key]) : '—'}{key !== 'calories' ? 'g' : ''}</Text><Text style={styles.muted}>{key}</Text></View>)}</View>
             {!scaled && <Text style={styles.muted}>Enter an amount greater than zero.</Text>}
             <Action busy={saving} disabled={!scaled} onPress={() => void save()}>{`Add to ${meal.toLowerCase()}`}</Action>
           </>}
-        </ScrollView>
-      </KeyboardAvoidingView>
-    </SafeAreaView>
-  </Modal>;
+  </AppDialog>;
+}
+
+function FoodThumbnail({ food }: { food: Food }) {
+  const [failed, setFailed] = useState(false);
+  return food.image && !failed ? <Image source={{ uri: food.image }} alt="" accessibilityIgnoresInvertColors onError={() => setFailed(true)} style={{ width: 52, height: 52, borderRadius: 12 }} />
+    : <View style={{ width: 52, height: 52, borderRadius: 12, backgroundColor: '#19394b', alignItems: 'center', justifyContent: 'center' }}><Text style={{ color: colors.mint, fontSize: 20, fontWeight: '800' }}>{food.name.charAt(0)}</Text></View>;
 }

@@ -1,17 +1,10 @@
 import { createContext, useCallback, useContext, useMemo, useState, type ReactNode } from 'react';
-import { Alert } from 'react-native';
-
-// Native Alert is absent on web; retain the real confirm/cancel callbacks.
-Alert.alert = (title, message, buttons) => {
-  if (window.confirm(`${title}\n${message}`)) buttons?.find(button => button.style === 'destructive')?.onPress?.();
-};
-
 // Only the external identity provider is replaced. Tests run the real app,
 // gluestack controls, session lifecycle, request client, and screen components.
 type User = { name: string; email: string } | null;
 function useFakeAuth() {
   const [user, setUser] = useState<User>(null);
-  const authorize = useCallback(async () => { setUser({ name: 'Alex Rivera', email: 'alex@example.test' }); }, []);
+  const authorize = useCallback(async () => { setUser({ name: new URLSearchParams(window.location.search).get('testName') || 'Alex Rivera', email: 'alex@example.test' }); }, []);
   const clearCredentials = useCallback(async () => { setUser(null); }, []);
   const getCredentials = useCallback(async () => ({ accessToken: 'ui-test-access-token' }), []);
   return useMemo(() => ({ user, isLoading: false, authorize, clearCredentials, clearSession: clearCredentials, getCredentials }), [user, authorize, clearCredentials, getCredentials]);

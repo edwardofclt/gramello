@@ -1,6 +1,8 @@
 import { test, expect } from '@playwright/test';
 
-test('logs a measured food, changes goals, reads trends, and clears the diary on sign-out', async ({ page }) => {
+for (const width of [390, 1440]) {
+test(`logs food, saves goals, reads trends, and signs out at ${width}px`, async ({ page }) => {
+  await page.setViewportSize({ width, height: width === 390 ? 844 : 1000 });
   const errors: string[] = [];
   page.on('pageerror', error => errors.push(error.message));
   const entries: Record<string, unknown>[] = [];
@@ -21,9 +23,9 @@ test('logs a measured food, changes goals, reads trends, and clears the diary on
     return route.fulfill({ json: body, headers });
   });
   await page.goto('/');
-  await expect(page.getByText('A little more', { exact: false })).toBeVisible();
-  await page.screenshot({ path: 'test-results/mobile-welcome.png', fullPage: true });
-  await page.getByRole('button', { name: 'Continue with Nourish' }).click();
+  await expect(page.getByText('Your nutrition,', { exact: false })).toBeVisible();
+  await page.screenshot({ path: `test-results/web-${width}-welcome.png`, fullPage: true });
+  await page.getByRole('button', { name: 'Sign in to Nourish' }).click();
   await expect(page.getByText('Food diary', { exact: true })).toBeVisible();
   await page.getByRole('button', { name: 'Add Breakfast', exact: true }).click();
   await page.getByRole('textbox', { name: 'Search foods' }).fill('oats');
@@ -33,24 +35,30 @@ test('logs a measured food, changes goals, reads trends, and clears the diary on
   await page.getByRole('button', { name: 'Add to breakfast', exact: true }).click();
   await expect(page.getByText('Rolled oats', { exact: true })).toBeVisible();
   expect(entries[0]).toMatchObject({ grams: 50, calories: 190, protein: 7, carbs: 33, fat: 3, meal: 'Breakfast' });
-  await page.screenshot({ path: 'test-results/mobile-diary.png', fullPage: true });
-  await page.getByRole('button', { name: 'Settings tab', exact: true }).click();
+  await page.screenshot({ path: `test-results/web-${width}-diary.png`, fullPage: true });
+  await page.getByRole('button', { name: 'Edit goals', exact: true }).click();
   await page.getByRole('textbox', { name: 'Protein (grams)' }).fill('160');
+  await page.screenshot({ path: `test-results/web-${width}-goals.png`, fullPage: true });
   await page.getByRole('button', { name: 'Save daily goals' }).click();
-  await expect(page.getByText('Daily goals saved.', { exact: false })).toBeVisible();
+  await expect(page.getByTestId('app-dialog')).toHaveCount(0);
   expect(goals).toMatchObject({ protein: 160, calories: 2043 });
-  await page.screenshot({ path: 'test-results/mobile-settings.png', fullPage: true });
+  await expect(page.getByLabel('190 of 2043 calories logged')).toBeVisible();
   await page.getByRole('button', { name: 'Trends tab', exact: true }).click();
-  await expect(page.getByText('1 logged day in this period')).toBeVisible();
+  await expect(page.getByText('1 logged day in this period.', { exact: false })).toBeVisible();
   await page.getByRole('button', { name: '30 days', exact: true }).click();
-  await expect(page.getByText('1 logged day in this period')).toBeVisible();
+  await expect(page.getByText('1 logged day in this period.', { exact: false })).toBeVisible();
+  await page.screenshot({ path: `test-results/web-${width}-trends.png`, fullPage: true });
   await page.getByRole('button', { name: 'Diary tab', exact: true }).click();
-  page.on('dialog', dialog => dialog.accept());
   await page.getByRole('button', { name: 'Remove Rolled oats' }).click();
+  await page.getByRole('button', { name: 'Keep food', exact: true }).click();
+  await expect(page.getByText('Rolled oats', { exact: true })).toBeVisible();
+  await page.getByRole('button', { name: 'Remove Rolled oats' }).click();
+  await page.getByRole('button', { name: 'Remove food', exact: true }).click();
   await expect(page.getByText('Rolled oats', { exact: true })).toHaveCount(0);
-  await page.getByRole('button', { name: 'Settings tab', exact: true }).click();
+  await page.getByRole('button', { name: 'Account menu', exact: true }).click();
   await page.getByRole('button', { name: 'Sign out', exact: true }).click();
-  await expect(page.getByRole('button', { name: 'Continue with Nourish' })).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Sign in to Nourish' })).toBeVisible();
   await expect(page.getByRole('tablist')).toHaveCount(0);
   expect(errors).toEqual([]);
 });
+}
