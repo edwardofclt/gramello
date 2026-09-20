@@ -9,10 +9,11 @@ export default defineConfig({
   timeout: 45_000,
   reporter: [['list'], ['html', { open: 'never' }]],
   use: {
-    baseURL: process.env.PLAYWRIGHT_BASE_URL || 'http://127.0.0.1:3000',
+    baseURL: process.env.PLAYWRIGHT_BASE_URL || 'http://127.0.0.1:5198',
     trace: 'retain-on-failure',
     screenshot: 'only-on-failure',
   },
+  webServer: process.env.PLAYWRIGHT_BASE_URL ? undefined : { command: 'node tests/e2e/server.mjs', url: 'http://127.0.0.1:5198', timeout: 120_000 },
   projects: [
     { name: 'desktop', use: { ...devices['Desktop Chrome'] } },
     { name: 'mobile', use: { ...devices['iPhone 13'], defaultBrowserType: 'chromium' } },

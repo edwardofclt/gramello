@@ -1,5 +1,5 @@
 import { DatabaseSync } from "node:sqlite";
-import { readFileSync } from "node:fs";
+import { readFileSync, readdirSync } from "node:fs";
 import { generateSessionCookie } from "@auth0/nextjs-auth0/testing";
 import { NextRequest } from "next/server";
 import { afterAll, beforeEach, describe, expect, it, vi } from "vitest";
@@ -18,12 +18,15 @@ import { POST as add, DELETE as remove } from "@/app/api/entries/route";
 import { GET as trends } from "@/app/api/trends/route";
 import { GET as search } from "@/app/api/foods/search/route";
 import { GET as barcode } from "@/app/api/foods/barcode/route";
+import { GET as listMeals, POST as createMeal, PUT as updateMeal, DELETE as deleteMeal } from "@/app/api/meals/route";
+import type { CustomMeal, Food } from "@/lib/meals";
 import { getCurrentUser } from "@/lib/auth";
 
 const secret = "0123456789abcdef".repeat(4);
 const database = new DatabaseSync(":memory:");
-database.exec(readFileSync(new URL("../drizzle/0000_silent_ultragirl.sql", import.meta.url), "utf8"));
-database.exec(readFileSync(new URL("../drizzle/0001_gray_odin.sql", import.meta.url), "utf8"));
+for (const file of readdirSync(new URL("../drizzle/", import.meta.url)).filter(file => file.endsWith(".sql")).sort()) {
+  database.exec(readFileSync(new URL(`../drizzle/${file}`, import.meta.url), "utf8"));
+}
 const configuration = {
   AUTH0_DOMAIN: "nourish-tests.us.auth0.com",
   AUTH0_CLIENT_ID: "test-client",
@@ -48,7 +51,14 @@ Object.assign(runtime.env, configuration, {
 
 const food = { date: "2026-09-19", meal: "Breakfast", name: "Oats", source: "custom", quantity: 1, unit: "serving", grams: 50, calories: 190, protein: 7, carbs: 33, fat: 3 };
 const targets = { calories: 2000, protein: 150, carbs: 200, fat: 67 };
+const mealDraft = { name: "Soup", totalGrams: 1814.36948, servingGrams: 453.59237, ingredients: [
+  { food: { id: "beef", name: "Beef", source: "Test", servingGrams: 100, servingLabel: "100 g", calories: 200, protein: 20, carbs: 10, fat: 5 }, quantity: 600, unit: "grams" },
+] };
 const routes = [
+  ["GET", "/api/meals", listMeals, undefined],
+  ["POST", "/api/meals", createMeal, mealDraft],
+  ["PUT", "/api/meals?id=example", updateMeal, mealDraft],
+  ["DELETE", "/api/meals?id=example", deleteMeal, undefined],
   ["GET", "/api/day", day, undefined],
   ["GET", "/api/trends", trends, undefined],
   ["GET", "/api/foods/search?q=a", search, undefined],
@@ -81,7 +91,7 @@ async function call(handler: (request: Request) => Promise<Response>, path: stri
 }
 
 beforeEach(() => {
-  database.exec("DELETE FROM entries; DELETE FROM goals;");
+  database.exec("DELETE FROM entries; DELETE FROM goals; DELETE FROM custom_meals;");
   Object.assign(runtime.env, configuration);
 });
 afterAll(() => database.close());
@@ -139,5 +149,34 @@ describe("private API authentication", () => {
     const response = await call(add, "/api/entries", { method: "POST", body: food, user: "auth0|alice", headers: { origin } });
     expect(response.status).toBe(403);
     expect(database.prepare("SELECT * FROM entries").all()).toEqual([]);
+  });
+});
+
+
+describe("saved meals", () => {
+  it("persists ingredient snapshots, recalculates nutrition, and isolates every operation by account", async () => {
+    const response = await call(createMeal, "/api/meals", { method: "POST", user: "auth0|alice", body: { ...mealDraft, userId: "auth0|bob", calories: 9999 } });
+    expect(response.status).toBe(201);
+    const { meal, food } = await response.json() as { meal: CustomMeal; food: Food };
+    expect(meal.ingredients).toEqual(mealDraft.ingredients);
+    expect(food.calories * 453.59237 / 100).toBeCloseTo(300, 8);
+    const own = await (await call(listMeals, "/api/meals", { user: "auth0|alice" })).json() as { meals: CustomMeal[] };
+    expect(own.meals).toHaveLength(1);
+    expect(own.meals[0].id).toBe(meal.id);
+    expect(await (await call(listMeals, "/api/meals", { user: "auth0|bob" })).json()).toEqual({ meals: [] });
+    expect((await call(updateMeal, `/api/meals?id=${meal.id}`, { method: "PUT", user: "auth0|bob", body: { ...mealDraft, name: "Stolen" } })).status).toBe(404);
+    expect((await call(deleteMeal, `/api/meals?id=${meal.id}`, { method: "DELETE", user: "auth0|bob" })).status).toBe(404);
+    const updated = await call(updateMeal, `/api/meals?id=${meal.id}`, { method: "PUT", user: "auth0|alice", body: { ...mealDraft, name: "Soup v2", totalGrams: 907.18474 } });
+    expect(updated.status).toBe(200);
+    expect((await updated.json() as { food: Food }).food.calories * 453.59237 / 100).toBeCloseTo(600, 8);
+    expect((await call(deleteMeal, `/api/meals?id=${meal.id}`, { method: "DELETE", user: "auth0|alice" })).status).toBe(200);
+    expect((await (await call(listMeals, "/api/meals", { user: "auth0|alice" })).json() as { meals: CustomMeal[] }).meals).toEqual([]);
+  });
+  it("validates recipes and rejects cross-origin meal writes", async () => {
+    expect((await call(createMeal, "/api/meals", { method: "POST", user: "auth0|alice", body: { ...mealDraft, totalGrams: 0 } })).status).toBe(400);
+    for (const [method, handler] of [["POST", createMeal], ["PUT", updateMeal], ["DELETE", deleteMeal]] as const) {
+      expect((await call(handler, "/api/meals?id=anything", { method, user: "auth0|alice", body: mealDraft, headers: { origin: "https://evil.test" } })).status).toBe(403);
+    }
+    expect(database.prepare("SELECT * FROM custom_meals").all()).toEqual([]);
   });
 });

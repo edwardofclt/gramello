@@ -51,3 +51,29 @@
   .topbar .add-food { width: 44px; min-width: 44px; padding: 0; }
   .topbar .add-food span { display: none; }
 }
+
+/* Saved meals share the food dialog and remain usable in short mobile viewports. */
+.food-picker,.meal-builder{display:flex;flex-direction:column;gap:14px;min-width:0}
+.meal-builder h3,.amount-panel h3{font-size:1.15rem;font-weight:700;margin:8px 0}
+.meal-builder h4{font-size:.9rem;font-weight:700;color:#e1edf3}
+.meal-field{display:flex;flex-direction:column;gap:7px;font-size:.8rem;color:#9cb0bd}
+.food-dialog select{width:100%;min-width:0;min-height:44px;padding:8px 12px;border:1px solid #315065;border-radius:10px;background:#0b2130;color:#f4f8fb;font-size:.9rem}
+.food-dialog select:focus-visible{outline:2px solid #6ee7c7;outline-offset:2px}
+.meal-hint{font-size:.8rem;line-height:1.6;color:#9cb0bd}
+.meal-error{font-size:.85rem;line-height:1.5;color:#ffb4b4;background:#321e26;padding:12px;border-radius:12px}
+.meal-actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.saved-meal{padding:16px;background:#0b2130;border:1px solid #29465a;border-radius:16px;display:flex;flex-direction:column;gap:12px}
+.saved-meal-choice{display:flex;flex-direction:column;gap:6px;text-align:left;width:100%;cursor:pointer}
+.saved-meal-choice strong{font-size:1rem;color:#6ee7c7;overflow-wrap:anywhere}
+.saved-meal-choice span,.meal-delete p{font-size:.8rem;color:#9cb0bd;line-height:1.5}
+.meal-delete{display:flex;flex-direction:column;gap:12px}
+.ingredient-row{display:grid;grid-template-columns:minmax(0,1fr) 85px 40px;gap:8px;align-items:center;border-bottom:1px solid #213b4d;padding-bottom:12px}
+.ingredient-row>div{display:flex;flex-direction:column;gap:5px;min-width:0}
+.ingredient-row strong{font-size:.85rem;overflow-wrap:anywhere}
+.ingredient-row span{color:#9cb0bd;font-size:.75rem}
+.batch-summary{padding:16px;background:#132f41;border-radius:14px;color:#9cb0bd;font-size:.8rem;line-height:1.8}
+.batch-summary strong{color:#6ee7c7;font-size:1rem}
+.meal-builder > .nutrition-preview{margin:0}
+.amount-panel .field-grid{margin-top:14px}
+.amount-panel .field-grid input{height:44px}
+@media(max-width:760px){.food-dialog select{font-size:16px}.ingredient-row{grid-template-columns:minmax(0,1fr) 70px 36px}}
