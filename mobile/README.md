@@ -164,9 +164,9 @@ development and preview builds. Keep all client secrets out of mobile configurat
 
 The Apple Developer App ID is `com.edwardofclt.nourish`, under team `6SHL6PHRS9`.
 The App Store Connect record is
-[Nourish: Calories & Macros](https://appstoreconnect.apple.com/apps/6814035327/distribution)
-(Apple ID `6814035327`). New builds display **Gramello**; the existing App Store
-Connect listing name must be updated separately before a public rebrand.
+[Gramello: Calories & Macros](https://appstoreconnect.apple.com/apps/6814035327/distribution)
+(Apple ID `6814035327`). The App Store Connect name is saved as
+**Gramello: Calories & Macros**; new builds display **Gramello**.
 `eas.json` targets this record with the production submission profile. The linked
 Expo project is [@edwardofclt/nourish-mobile](https://expo.dev/accounts/edwardofclt/projects/nourish-mobile).
 Apple distribution signing and App Store Connect submission credentials are
