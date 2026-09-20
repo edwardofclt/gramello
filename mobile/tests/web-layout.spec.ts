@@ -7,7 +7,7 @@ test('desktop diary keeps its selected day through navigation and opens centered
     json: { goals: { calories: 2000, protein: 150, carbs: 200, fat: 67 }, entries: [], days: [] },
   }));
   await page.goto('/?testName=Alexandria%20Longdisplayname');
-  await page.getByRole('button', { name: /Continue with Nourish|Sign in to Nourish/ }).click();
+  await page.getByRole('button', { name: /Continue with Gramello|Sign in to Gramello/ }).click();
   await expect(page.getByRole('navigation', { name: 'Main navigation' })).toBeVisible();
   const breakfast = await page.getByTestId('meal-Breakfast').boundingBox();
   const lunch = await page.getByTestId('meal-Lunch').boundingBox();
@@ -66,7 +66,7 @@ test('diary and interactive trends adapt from desktop through tablet to a narrow
     return route.fulfill({ headers: { 'access-control-allow-origin': '*', 'access-control-allow-headers': 'authorization,content-type' }, json: { goals, entries, days } });
   });
   await page.goto('/');
-  await page.getByRole('button', { name: 'Sign in to Nourish' }).click();
+  await page.getByRole('button', { name: 'Sign in to Gramello' }).click();
   await expect(page.getByText('Chicken & avocado bowl')).toBeVisible();
   await page.screenshot({ path: 'test-results/web-desktop-populated.png', fullPage: true });
   await page.getByRole('button', { name: 'Trends tab', exact: true }).click();
@@ -111,7 +111,7 @@ test('food amount and goals remain reachable in short browser dialogs', async ({
       json: { goals: { calories: 2000, protein: 150, carbs: 200, fat: 67 }, entries: [], foods: [{ id: 'oats', name: 'Rolled oats with a long product name for a narrow display', source: 'USDA reference', servingLabel: '40 g', servingGrams: 40, calories: 380, protein: 14, carbs: 66, fat: 6 }] } });
   });
   await page.goto('/');
-  await page.getByRole('button', { name: 'Sign in to Nourish' }).click();
+  await page.getByRole('button', { name: 'Sign in to Gramello' }).click();
   await page.getByRole('button', { name: 'Add food', exact: true }).click();
   await page.getByRole('textbox', { name: 'Search foods' }).fill('oats');
   await page.getByRole('button', { name: /Rolled oats/ }).click();

@@ -1,4 +1,4 @@
-import NourishApp from "./nourish-app";
+import GramelloApp from "./gramello-app";
 import SignIn from "./sign-in";
 import { getCurrentUser } from "@/lib/auth";
 
@@ -14,5 +14,5 @@ export default async function Home({ searchParams }: {
     return <SignIn unavailable />;
   }
   if (!user) return <SignIn failed={(await searchParams).auth_error === "1"} />;
-  return <NourishApp user={user} />;
+  return <GramelloApp user={user} />;
 }

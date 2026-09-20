@@ -1,9 +1,9 @@
-# Nourish for iOS, Android, and web
+# Gramello for iOS, Android, and web
 
 An Expo / React Native companion using gluestack-ui core 5. The native app has a
 daily diary, food search with serving/gram controls, meal logging/removal, 7-day /
 30-day / 6-month trends, and editable calorie/macro goals. It calls the existing
-Nourish API at `https://nourish-api.fly.dev` by default, so the same Auth0 account
+Gramello API at `https://nourish-api.fly.dev` by default, so the same Auth0 account
 sees the same data on web and mobile.
 
 ## Barcode scanning
@@ -109,7 +109,7 @@ after changing the Auth0 domain, scheme, bundle ID, or native dependencies.
 For a physical iPhone, connect and unlock it, trust the Mac if prompted, then run
 `pnpm mobile:ios --device` and select the phone. Xcode must have a development
 signing team configured; the phone may also prompt you to enable Developer Mode.
-Open the installed **Nourish** app to connect to Metro. Scanning the QR code in
+Open the installed **Gramello** app to connect to Metro. Scanning the QR code in
 **Expo Go** cannot load Auth0 and produces `A0Auth0 could not be found`; reloading
 JavaScript cannot add a native module to Expo Go. A simulator build also cannot
 be installed on a physical phone.
@@ -125,7 +125,7 @@ pnpm mobile:ios --device
 Choose an available iPhone simulator from the device picker. An existing simulator
 can appear in `xcrun simctl list devices` while Xcode still reports it as an
 ineligible build destination. Check eligibility with `xcodebuild -workspace
-mobile/ios/Nourish.xcworkspace -scheme Nourish -showdestinations` from the repository
+mobile/ios/Gramello.xcworkspace -scheme Gramello -showdestinations` from the repository
 root. Apple also provides the download in **Xcode > Settings > Components**; see
 [Apple's component installation guide](https://developer.apple.com/documentation/xcode/downloading-and-installing-additional-xcode-components).
 
@@ -138,7 +138,7 @@ to these loopback/emulator origins in development; production requires HTTPS.
 On a physical phone, `localhost` refers to the phone itself. A successful Auth0
 login does not prove that the phone can reach the diary API. Set
 `EXPO_PUBLIC_API_URL=https://nourish-api.fly.dev` and restart Metro with
-`pnpm mobile --clear`, then reload the installed Nourish app.
+`pnpm mobile --clear`, then reload the installed Gramello app.
 
 For temporary device testing, run the updated production API locally using the
 root README's `pnpm build` / `pnpm start` instructions, then expose its port with
@@ -152,7 +152,9 @@ are temporary: a new tunnel gets a new URL, which must also be updated in the ap
 
 The iOS bundle ID is `com.edwardofclt.nourish`, the Android package is
 `com.nourish.tracker`, and the scheme is `nourish`. Update Auth0's callback and
-logout URLs whenever changing these IDs in `app.config.ts`.
+logout URLs whenever changing these IDs in `app.config.ts`. These identifiers
+are intentionally retained for the Gramello branding trial so existing installs,
+Auth0 callbacks, and the linked EAS project continue to work.
 `eas.json` includes development (iOS simulator), preview
 (internal device), and production profiles. The production profile includes the
 public Auth0 and Fly.io settings. Supply the public Auth0 variables separately for
@@ -162,8 +164,9 @@ development and preview builds. Keep all client secrets out of mobile configurat
 
 The Apple Developer App ID is `com.edwardofclt.nourish`, under team `6SHL6PHRS9`.
 The App Store Connect record is
-[Nourish: Calories & Macros](https://appstoreconnect.apple.com/apps/6814035327/distribution)
-(Apple ID `6814035327`). The installed app still displays **Nourish**.
+[Gramello: Calories & Macros](https://appstoreconnect.apple.com/apps/6814035327/distribution)
+(Apple ID `6814035327`). The App Store Connect name is saved as
+**Gramello: Calories & Macros**; new builds display **Gramello**.
 `eas.json` targets this record with the production submission profile. The linked
 Expo project is [@edwardofclt/nourish-mobile](https://expo.dev/accounts/edwardofclt/projects/nourish-mobile).
 Apple distribution signing and App Store Connect submission credentials are

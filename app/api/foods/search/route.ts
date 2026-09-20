@@ -18,7 +18,7 @@ async function searchFoods(request: Request) {
   const local=genericFoods.filter(f=>`${f.name} ${f.brand??""}`.toLowerCase().includes(q.toLowerCase()));
   const off = async () => {
     const params = new URLSearchParams({ search_terms: q, search_simple: '1', action: 'process', json: '1', page_size: '12', fields: productFields });
-    const response = await fetch(`https://world.openfoodfacts.org/cgi/search.pl?${params}`, { headers: { 'User-Agent': 'NourishTracker/1.0 (personal food diary)' } });
+    const response = await fetch(`https://world.openfoodfacts.org/cgi/search.pl?${params}`, { headers: { 'User-Agent': 'GramelloTracker/1.0 (personal food diary)' } });
     if (!response.ok) throw new Error(`Open Food Facts ${response.status}`);
     const data = await response.json() as { products?: Product[] };
     return (data.products ?? []).flatMap(product => {

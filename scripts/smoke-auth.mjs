@@ -61,7 +61,7 @@ try {
 
   const page = await request("/");
   assert.equal(page.status, 200);
-  assert.match(await page.text(), /Sign in to Nourish/);
+  assert.match(await page.text(), /Sign in to Gramello/);
   const signedIn = await request("/", { headers: { Cookie: alice } });
   assert.equal(signedIn.status, 200);
   assert.match(await signedIn.text(), /Alice Smoke/);
