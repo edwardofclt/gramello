@@ -3,7 +3,8 @@
 An Expo / React Native companion using gluestack-ui core 5. The native app has a
 daily diary, food search with serving/gram controls, meal logging/removal, 7-day /
 30-day / 6-month trends, and editable calorie/macro goals. It calls the existing
-Nourish API, so the same Auth0 account sees the same data on web and mobile.
+Nourish API at `https://nourish-api.fly.dev` by default, so the same Auth0 account
+sees the same data on web and mobile.
 
 ## Connect Auth0 and the API
 
@@ -32,9 +33,12 @@ Nourish API, so the same Auth0 account sees the same data on web and mobile.
    signature, issuer, audience, expiration, subject, and client are verified before
    accessing the existing diary. Web cookie authentication still requires CSRF
    origin checks.
-5. Copy `mobile/.env.example` to `mobile/.env` and fill the four **public** values.
-   `EXPO_PUBLIC_API_URL` is your existing Nourish server's HTTPS origin, with no
-   `/api` suffix. Its audience/domain/native client ID must match the server.
+5. Copy `mobile/.env.example` to `mobile/.env` and fill the three **public Auth0**
+   values. The app defaults to `https://nourish-api.fly.dev`; leave
+   `EXPO_PUBLIC_API_URL` as supplied or unset it to use that deployment. Override
+   it only to use another API origin, with no `/api` suffix. Existing `.env`
+   files pointing to a temporary tunnel must be updated or have this override
+   removed. The audience/domain/native client ID must match the server.
    `AUTH0_SECRET` and `AUTH0_CLIENT_SECRET` must never appear here.
 
 The Auth0 SDK uses Universal Login with authorization code + PKCE, restores and
@@ -85,14 +89,15 @@ mobile/ios/Nourish.xcworkspace -scheme Nourish -showdestinations` from the repos
 root. Apple also provides the download in **Xcode > Settings > Components**; see
 [Apple's component installation guide](https://developer.apple.com/documentation/xcode/downloading-and-installing-additional-xcode-components).
 
-Use an HTTPS development deployment/tunnel for a physical phone. For local API
-work, iOS Simulator can use `http://localhost:5173`, and Android Emulator can use
+The deployed Fly.io API works on physical phones and simulators without a local
+API or tunnel. For local API work, override `EXPO_PUBLIC_API_URL`: iOS Simulator
+can use `http://localhost:5173`, and Android Emulator can use
 `http://10.0.2.2:5173`, with the web API running and reachable. HTTP is restricted
 to these loopback/emulator origins in development; production requires HTTPS.
 
 On a physical phone, `localhost` refers to the phone itself. A successful Auth0
 login does not prove that the phone can reach the diary API. Set
-`EXPO_PUBLIC_API_URL` to the reachable HTTPS API origin and restart Metro with
+`EXPO_PUBLIC_API_URL=https://nourish-api.fly.dev` and restart Metro with
 `pnpm mobile --clear`, then reload the installed Nourish app.
 
 For temporary device testing, run the updated production API locally using the
@@ -108,8 +113,9 @@ are temporary: a new tunnel gets a new URL, which must also be updated in the ap
 The configured app IDs are `com.nourish.tracker`, and the scheme is `nourish`.
 Change them in `app.config.ts` and update Auth0's URLs before distributing under
 your own app identity. `eas.json` includes development (iOS simulator), preview
-(internal device), and production profiles. Supply the four public variables to
-the corresponding EAS environment. Native signing, EAS project linking, and store
+(internal device), and production profiles. Supply the three public Auth0 variables
+to the corresponding EAS environment; set `EXPO_PUBLIC_API_URL` only when overriding
+the Fly.io deployment. Native signing, EAS project linking, and store
 submission are separate from this repository's web/Docker release pipeline.
 
 ## Verify
