@@ -1,3 +1,9 @@
+## [1.4.1](https://github.com/edwardofclt/nourish/compare/v1.4.0...v1.4.1) (2026-09-20)
+
+### Bug Fixes
+
+* support volume-based barcode drinks ([ae06582](https://github.com/edwardofclt/nourish/commit/ae065824ef036d32ffb6fbbd19e0b5572434c86a))
+
 ## [1.4.0](https://github.com/edwardofclt/nourish/compare/v1.3.0...v1.4.0) (2026-09-20)
 
 ### Features
