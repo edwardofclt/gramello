@@ -12,6 +12,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Toaster, toast } from "sonner";
 import { changeGoal, macroPercent } from "./goal-math";
+import { localDate as today } from "@/lib/diary-date";
 import type { AuthUser } from "@/lib/auth";
 import SignIn from "./sign-in";
 
@@ -23,7 +24,6 @@ type MacroKey="protein"|"carbs"|"fat";
 
 const defaultGoals:Goals={calories:2400,protein:180,carbs:250,fat:70};
 const meals=["Breakfast","Lunch","Dinner","Snacks"];
-const today=()=>new Date().toISOString().slice(0,10);
 const fmtDate=(value:string)=>new Intl.DateTimeFormat("en-US",{weekday:"short",month:"short",day:"numeric",timeZone:"UTC"}).format(new Date(`${value}T12:00:00Z`));
 const round=(n:number)=>Math.round(n);
 const clamp=(n:number)=>Math.min(100,Math.max(0,n));
@@ -50,7 +50,7 @@ export default function NourishApp({ user }: { user: AuthUser }){
     return response;
   }, []);
   const [view,setView]=useState<"today"|"trends">("today");
-  const [date,setDate]=useState(today());
+  const [date,setDate]=useState(today);
   const [goals,setGoals]=useState<Goals>(defaultGoals);
   const [entries,setEntries]=useState<Entry[]>([]);
   const [loading,setLoading]=useState(true);
@@ -70,8 +70,40 @@ export default function NourishApp({ user }: { user: AuthUser }){
   const [trends,setTrends]=useState<Trend[]>([]);
   const [trendLoading,setTrendLoading]=useState(false);
 
-  const loadDay=useCallback(async()=>{setLoading(true);try{const r=await authFetch(`/api/day?date=${date}`);const data=await r.json() as { error?: string; entries: Entry[]; goals: Goals };if(!r.ok)throw new Error(data.error);setEntries(data.entries);setGoals(data.goals);setDraftGoals(data.goals)}catch(e){toast.error(e instanceof Error?e.message:"Could not load diary")}finally{setLoading(false)}},[date,authFetch]);
-  useEffect(()=>{void loadDay()},[loadDay]);
+  const loadDay=useCallback(async(signal:AbortSignal)=>{
+    setLoading(true);
+    try {
+      const r=await authFetch(`/api/day?date=${date}`,{signal});
+      const data=await r.json() as { error?: string; entries: Entry[]; goals: Goals };
+      if(signal.aborted)return;
+      if(!r.ok)throw new Error(data.error);
+      setEntries(data.entries);
+      setGoals(data.goals);
+    } catch(e) {
+      if(!signal.aborted)toast.error(e instanceof Error?e.message:"Could not load diary");
+    } finally {
+      if(!signal.aborted)setLoading(false);
+    }
+  },[date,authFetch]);
+  useEffect(()=>{
+    if(sessionExpired)return;
+    let controller:AbortController;
+    const reload=()=>{
+      controller?.abort();
+      controller=new AbortController();
+      void loadDay(controller.signal);
+    };
+    const resume=()=>{if(document.visibilityState==="visible")reload()};
+    // The day response also supplies the goals used by Trends.
+    reload();
+    window.addEventListener("focus",resume);
+    document.addEventListener("visibilitychange",resume);
+    return()=>{
+      controller.abort();
+      window.removeEventListener("focus",resume);
+      document.removeEventListener("visibilitychange",resume);
+    };
+  },[loadDay,view,sessionExpired]);
 
   useEffect(()=>{if(view!=="trends")return;setTrendLoading(true);authFetch(`/api/trends?days=${range}`).then(async r=>{const d=await r.json() as { error?: string; days: Trend[] };if(!r.ok)throw new Error(d.error);setTrends(d.days)}).catch(e=>toast.error(e.message)).finally(()=>setTrendLoading(false))},[view,range,authFetch]);
 
@@ -82,6 +114,7 @@ export default function NourishApp({ user }: { user: AuthUser }){
   const consumedPct=goals.calories?total.calories/goals.calories*100:0;
 
   const shiftDate=(days:number)=>{const d=new Date(`${date}T12:00:00Z`);d.setUTCDate(d.getUTCDate()+days);setDate(d.toISOString().slice(0,10))};
+  const openGoals=()=>{setDraftGoals(goals);setGoalOpen(true)};
   const openFood=()=>{setScanning(false);setSelected(null);setQuery("");setResults([]);setQuantity(1);setUnit("serving");setAddOpen(true)};
   const lookupBarcode=useCallback(async(code:string,signal:AbortSignal)=>{
     const response=await authFetch(`/api/foods/barcode?code=${encodeURIComponent(code)}`,{signal});
@@ -111,7 +144,7 @@ export default function NourishApp({ user }: { user: AuthUser }){
         <button className={view==="trends"?"active":""} onClick={()=>setView("trends")}><TrendingUp/>Trends</button>
       </nav>
       <div className="sidebar-card"><Sparkles/><strong>Stay consistent</strong><span>Small choices, tracked daily, become visible progress.</span></div>
-      <button className="settings-link" onClick={()=>setGoalOpen(true)}><Settings2/>Daily goals</button>
+      <button className="settings-link" onClick={openGoals}><Settings2/>Daily goals</button>
     </aside>
 
     <main>
@@ -133,7 +166,7 @@ export default function NourishApp({ user }: { user: AuthUser }){
           <div className="macro-grid"><MacroProgress label="Protein" current={total.protein} target={goals.protein} color="#6ee7c7"/><MacroProgress label="Carbs" current={total.carbs} target={goals.carbs} color="#78a9ff"/><MacroProgress label="Fat" current={total.fat} target={goals.fat} color="#ffbd66"/></div>
         </div>
 
-        <div className="diary-heading"><div><span className="eyebrow">MEALS</span><h2>Food diary</h2></div><button onClick={()=>setGoalOpen(true)}><Target/>Edit goals</button></div>
+        <div className="diary-heading"><div><span className="eyebrow">MEALS</span><h2>Food diary</h2></div><button onClick={openGoals}><Target/>Edit goals</button></div>
         {loading?<div className="loading-card"><Loader2 className="spin"/>Loading your diary…</div>:<div className="meal-list">{meals.map(name=>{const items=entries.filter(e=>e.meal===name);const c=items.reduce((s,e)=>s+e.calories,0);return <article className="meal-card" key={name}><header><div><span className={`meal-icon ${name.toLowerCase()}`}><Utensils/></span><div><h3>{name}</h3><p>{items.length?`${items.length} item${items.length===1?"":"s"}`:"Nothing logged yet"}</p></div></div><div><strong>{round(c)}</strong><span>kcal</span><button aria-label={`Add ${name}`} onClick={()=>{setMeal(name);openFood()}}><Plus/></button></div></header>{items.length>0&&<div className="food-rows">{items.map(item=><div className="food-row" key={item.id}><div className="food-thumb">{item.name.charAt(0)}</div><div><strong>{item.name}</strong><span>{item.brand?`${item.brand} · `:""}{round(item.grams)} g · {item.source}</span></div><div className="food-macros"><span><b>{round(item.protein)}g</b>P</span><span><b>{round(item.carbs)}g</b>C</span><span><b>{round(item.fat)}g</b>F</span></div><strong className="food-cal">{round(item.calories)}</strong><button className="delete" aria-label={`Remove ${item.name}`} onClick={()=>void deleteEntry(item.id)}><Trash2/></button></div>)}</div>}</article>})}</div>}
       </section>:<Trends range={range} setRange={setRange} trends={trends} loading={trendLoading} goals={goals}/>} 
     </main>
