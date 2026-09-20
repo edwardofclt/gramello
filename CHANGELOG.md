@@ -1,3 +1,14 @@
+## [1.4.0](https://github.com/edwardofclt/nourish/compare/v1.3.0...v1.4.0) (2026-09-20)
+
+### Features
+
+* add reusable custom meals with flexible portions ([c1b5bff](https://github.com/edwardofclt/nourish/commit/c1b5bff4828fc92865e97bcd425ee66f908f8c50))
+
+### Bug Fixes
+
+* preserve ingredient input focus while web dialogs scroll ([611c8b9](https://github.com/edwardofclt/nourish/commit/611c8b98fc9ef8274f40de6f34088053acc96db5))
+* sync web diary dates and refresh with mobile ([9f0296d](https://github.com/edwardofclt/nourish/commit/9f0296d4a912b324c869a071b0d7632e31724cbe))
+
 ## [1.3.0](https://github.com/edwardofclt/nourish/compare/v1.2.0...v1.3.0) (2026-09-20)
 
 ### Features
