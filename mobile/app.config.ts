@@ -20,6 +20,12 @@ const config: ExpoConfig = {
   android: { package: 'com.nourish.tracker' },
   extra: { eas: { projectId: 'c23e01dd-d5d1-4f70-8786-e63e2f04a888' } },
   plugins: [
+    ['expo-camera', {
+      cameraPermission: 'Allow Nourish to scan food barcodes with your camera.',
+      microphonePermission: false,
+      recordAudioAndroid: false,
+      barcodeScannerEnabled: true,
+    }],
     ['react-native-auth0', {
       domain: process.env.EXPO_PUBLIC_AUTH0_DOMAIN || 'configure-auth0.invalid',
       customScheme: 'nourish',

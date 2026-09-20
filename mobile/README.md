@@ -6,6 +6,26 @@ daily diary, food search with serving/gram controls, meal logging/removal, 7-day
 Nourish API at `https://nourish-api.fly.dev` by default, so the same Auth0 account
 sees the same data on web and mobile.
 
+## Barcode scanning
+
+In **Add food**, choose **Scan barcode**, allow camera access, and center a
+packaged food's UPC-A, EAN-8, EAN-13, or ITF-14 barcode. You can also enter the
+printed number manually. Open Food Facts supplies the product details; review
+the serving size and meal before adding. Unknown products or products without
+complete nutrition by weight can be searched by name instead.
+
+The native scanner uses `expo-camera`. **Rebuild the development app** with
+`pnpm mobile:ios` or `pnpm mobile:android` after installing these changes so the
+camera module and permission configuration are included. No microphone access
+is requested. Native camera scanning requires a physical device; test permission
+denial, scanning, closing the sheet, and background/foreground transitions there.
+Browser scanning uses the same scanner as the original web app and needs HTTPS
+or localhost. Both stop the camera when leaving the scanner or entering a code.
+
+`pnpm test:mobile:ui` covers camera denial, manual lookup, unknown products,
+serving calculations, cancellation, and real barcode decoding from a simulated
+camera stream. `pnpm test` covers barcode normalization and product/API handling.
+
 ## Browser experience
 
 The Expo browser UI follows the original web app's design: a desktop sidebar and
