@@ -1,16 +1,16 @@
 import { useEffect, useState, type ReactNode } from 'react';
-import { Pressable, Text, View } from 'react-native';
+import { Image, Pressable, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { BookOpen, ChevronDown, LayoutDashboard, LogOut, Plus, Settings, Settings2, Sparkles, TrendingUp, UserRound } from 'lucide-react-native';
 import { useSession } from '../auth/Session';
 import { Action, colors, isWeb, styles, useLayout } from './ui';
+import gramelloMark from '../../assets/gramello-mark.png';
 
 export type Tab = 'diary' | 'trends' | 'settings';
 export function Brand() {
   return <View style={[styles.row, { gap: 11 }]}>
-    <View style={{ width: 36, height: 36, borderRadius: 12, backgroundColor: colors.mint, alignItems: 'center', justifyContent: 'center' }}>
-      <Text style={{ color: '#062018', fontSize: 22, fontWeight: '900' }}>N</Text>
-    </View><Text style={{ color: colors.text, fontSize: 20, fontWeight: '700', letterSpacing: -.5 }}>Nourish</Text>
+    <Image source={gramelloMark} alt="" accessible={false} style={{ width: 44, height: 44, borderRadius: 12 }} />
+    <Text style={{ color: colors.text, fontSize: 20, fontWeight: '700', letterSpacing: -.5 }}>Gramello</Text>
   </View>;
 }
 

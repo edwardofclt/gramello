@@ -25,7 +25,7 @@ test(`logs food, saves goals, reads trends, and signs out at ${width}px`, async 
   await page.goto('/');
   await expect(page.getByText('Your nutrition,', { exact: false })).toBeVisible();
   await page.screenshot({ path: `test-results/web-${width}-welcome.png`, fullPage: true });
-  await page.getByRole('button', { name: 'Sign in to Nourish' }).click();
+  await page.getByRole('button', { name: 'Sign in to Gramello' }).click();
   await expect(page.getByText('Food diary', { exact: true })).toBeVisible();
   await page.getByRole('button', { name: 'Add Breakfast', exact: true }).click();
   await page.getByRole('textbox', { name: 'Search foods' }).fill('oats');
@@ -57,7 +57,7 @@ test(`logs food, saves goals, reads trends, and signs out at ${width}px`, async 
   await expect(page.getByText('Rolled oats', { exact: true })).toHaveCount(0);
   await page.getByRole('button', { name: 'Account menu', exact: true }).click();
   await page.getByRole('button', { name: 'Sign out', exact: true }).click();
-  await expect(page.getByRole('button', { name: 'Sign in to Nourish' })).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Sign in to Gramello' })).toBeVisible();
   await expect(page.getByRole('tablist')).toHaveCount(0);
   expect(errors).toEqual([]);
 });

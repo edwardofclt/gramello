@@ -70,7 +70,7 @@ export function SettingsScreen() {
       {loading && <Loading label="Loading your goals…" />}
       {error && <ErrorNotice message={error} retry={reload} />}
       {data && <GoalsEditor goals={data.goals} />}
-      <Card><Text style={styles.eyebrow}>YOUR ACCOUNT</Text><View><Text style={styles.heading}>{name}</Text>{email && email !== name && <Text style={styles.muted}>{email}</Text>}</View><Text style={styles.muted}>Your diary stays in sync with Nourish on the web.</Text><Action secondary busy={busy} onPress={() => void signOut()}><LogOut color={colors.muted} size={18} /><Text style={styles.body}>Sign out</Text></Action></Card>
+      <Card><Text style={styles.eyebrow}>YOUR ACCOUNT</Text><View><Text style={styles.heading}>{name}</Text>{email && email !== name && <Text style={styles.muted}>{email}</Text>}</View><Text style={styles.muted}>Your diary stays in sync with Gramello on the web.</Text><Action secondary busy={busy} onPress={() => void signOut()}><LogOut color={colors.muted} size={18} /><Text style={styles.body}>Sign out</Text></Action></Card>
     </ScrollView>
   </KeyboardAvoidingView>;
 }

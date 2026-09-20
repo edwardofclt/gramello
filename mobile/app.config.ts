@@ -2,11 +2,11 @@ import type { ExpoConfig } from 'expo/config';
 import mobilePackage from './package.json';
 
 const config: ExpoConfig = {
-  name: 'Nourish',
+  name: 'Gramello',
   slug: 'nourish-mobile',
   owner: 'edwardofclt',
   version: mobilePackage.version,
-  icon: './assets/icon.png',
+  icon: './assets/gramello-bowl-icon.png',
   scheme: 'nourish',
   orientation: 'portrait',
   userInterfaceStyle: 'dark',
@@ -21,7 +21,7 @@ const config: ExpoConfig = {
   extra: { eas: { projectId: 'c23e01dd-d5d1-4f70-8786-e63e2f04a888' } },
   plugins: [
     ['expo-camera', {
-      cameraPermission: 'Allow Nourish to scan food barcodes with your camera.',
+      cameraPermission: 'Allow Gramello to scan food barcodes with your camera.',
       microphonePermission: false,
       recordAudioAndroid: false,
       barcodeScannerEnabled: true,

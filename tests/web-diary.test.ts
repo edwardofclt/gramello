@@ -3,7 +3,7 @@ import { act, createElement } from 'react';
 import { createRoot, hydrateRoot, type Root } from 'react-dom/client';
 import { renderToString } from 'react-dom/server';
 import { afterEach, beforeEach, expect, it, vi } from 'vitest';
-import NourishApp from '../app/nourish-app';
+import GramelloApp from '../app/gramello-app';
 import { localDate } from '../mobile/src/lib/nutrition';
 
 const user = { userId: 'auth0|diary-test', displayName: 'Diary Test', email: null };
@@ -51,7 +51,7 @@ afterEach(async () => {
 async function mount() {
   await act(async () => {
     root = createRoot(container);
-    root.render(createElement(NourishApp, { user }));
+    root.render(createElement(GramelloApp, { user }));
   });
 }
 
@@ -68,13 +68,13 @@ it.each([
 ])('hydrates a UTC server page into the mobile diary date in %s', async (zone, now, expectedDate) => {
   vi.setSystemTime(new Date(now));
   vi.stubEnv('TZ', 'UTC');
-  container.innerHTML = renderToString(createElement(NourishApp, { user }));
+  container.innerHTML = renderToString(createElement(GramelloApp, { user }));
   vi.stubEnv('TZ', zone);
   entryDate = expectedDate;
   entries = [lunch];
   const hydrationError = vi.fn();
   await act(async () => {
-    root = hydrateRoot(container, createElement(NourishApp, { user }), { onRecoverableError: hydrationError });
+    root = hydrateRoot(container, createElement(GramelloApp, { user }), { onRecoverableError: hydrationError });
   });
 
   expect(localDate()).toBe(expectedDate);
