@@ -1,0 +1,167 @@
+// @vitest-environment jsdom
+import { act, createElement } from 'react';
+import { createRoot, hydrateRoot, type Root } from 'react-dom/client';
+import { renderToString } from 'react-dom/server';
+import { afterEach, beforeEach, expect, it, vi } from 'vitest';
+import NourishApp from '../app/nourish-app';
+import { localDate } from '../mobile/src/lib/nutrition';
+
+const user = { userId: 'auth0|diary-test', displayName: 'Diary Test', email: null };
+const goals = { calories: 2400, protein: 180, carbs: 250, fat: 70 };
+const lunch = { id: 'mobile-lunch', meal: 'Lunch', name: 'Lunch from phone', source: 'custom',
+  quantity: 1, unit: 'serving', grams: 100, calories: 400, protein: 25, carbs: 40, fat: 15 };
+let container: HTMLDivElement;
+let root: Root | undefined;
+let entries: typeof lunch[];
+let entryDate: string;
+let requestedDates: string[];
+
+beforeEach(() => {
+  vi.stubGlobal('IS_REACT_ACT_ENVIRONMENT', true);
+  vi.stubEnv('TZ', 'America/New_York');
+  vi.useFakeTimers({ toFake: ['Date'] });
+  vi.setSystemTime(new Date('2026-09-19T16:00:00Z'));
+  entries = [];
+  entryDate = '2026-09-19';
+  requestedDates = [];
+  vi.stubGlobal('fetch', async (input: string) => {
+    const url = new URL(input, 'https://nourish.test');
+    if (url.pathname === '/api/day') {
+      const date = url.searchParams.get('date')!;
+      requestedDates.push(date);
+      return Response.json({ goals, entries: date === entryDate ? entries : [] });
+    }
+    if (url.pathname === '/api/trends') return Response.json({ days: [] });
+    throw new Error(`Unexpected request: ${input}`);
+  });
+  container = document.createElement('div');
+  document.body.appendChild(container);
+});
+
+afterEach(async () => {
+  await act(async () => root?.unmount());
+  root = undefined;
+  container.remove();
+  vi.restoreAllMocks();
+  vi.unstubAllGlobals();
+  vi.unstubAllEnvs();
+  vi.useRealTimers();
+});
+
+async function mount() {
+  await act(async () => {
+    root = createRoot(container);
+    root.render(createElement(NourishApp, { user }));
+  });
+}
+
+async function navigate(label: 'Today' | 'Trends') {
+  const button = [...container.querySelectorAll<HTMLButtonElement>('nav button')]
+    .find(button => button.textContent === label)!;
+  await act(async () => button.click());
+}
+
+it.each([
+  ['America/New_York', '2026-09-20T01:00:00Z', '2026-09-19'],
+  ['Asia/Tokyo', '2026-09-19T16:00:00Z', '2026-09-20'],
+  ['UTC', '2026-09-19T16:00:00Z', '2026-09-19'],
+])('hydrates a UTC server page into the mobile diary date in %s', async (zone, now, expectedDate) => {
+  vi.setSystemTime(new Date(now));
+  vi.stubEnv('TZ', 'UTC');
+  container.innerHTML = renderToString(createElement(NourishApp, { user }));
+  vi.stubEnv('TZ', zone);
+  entryDate = expectedDate;
+  entries = [lunch];
+  const hydrationError = vi.fn();
+  await act(async () => {
+    root = hydrateRoot(container, createElement(NourishApp, { user }), { onRecoverableError: hydrationError });
+  });
+
+  expect(localDate()).toBe(expectedDate);
+  expect(requestedDates).toEqual([expectedDate]);
+  expect(container.querySelector('.food-row')?.textContent ?? '').toContain('Lunch from phone');
+  expect(container.querySelector('.date-row')?.textContent).toBe('Today');
+  expect(container.querySelector<HTMLButtonElement>('[aria-label="Next day"]')?.disabled).toBe(true);
+  expect(hydrationError).not.toHaveBeenCalled();
+
+  await act(async () => container.querySelector<HTMLButtonElement>('[aria-label="Previous day"]')!.click());
+  expect(container.querySelector('.food-row')).toBeNull();
+  expect(container.querySelector<HTMLButtonElement>('[aria-label="Next day"]')?.disabled).toBe(false);
+  await act(async () => container.querySelector<HTMLButtonElement>('[aria-label="Next day"]')!.click());
+  expect(container.querySelector('.food-row')?.textContent ?? '').toContain('Lunch from phone');
+});
+
+it.each(['focus', 'visibilitychange'])('shows food added on another device after %s', async event => {
+  await mount();
+  expect(container.querySelector('.food-row')).toBeNull();
+  entries = [lunch];
+  await act(async () => {
+    if (event === 'visibilitychange') {
+      vi.spyOn(document, 'visibilityState', 'get').mockReturnValue('visible');
+      document.dispatchEvent(new Event(event));
+    } else {
+      window.dispatchEvent(new Event(event));
+    }
+  });
+  expect(container.querySelector('.food-row')?.textContent ?? '').toContain('Lunch from phone');
+});
+
+it('reloads the diary when returning from Trends', async () => {
+  await mount();
+  await navigate('Trends');
+  entries = [lunch];
+  await navigate('Today');
+  expect(container.querySelector('.food-row')?.textContent ?? '').toContain('Lunch from phone');
+});
+
+it('loads current goals when Trends opens before the diary request finishes', async () => {
+  const pending: ((response: Response) => void)[] = [];
+  vi.stubGlobal('fetch', (input: string) => {
+    if (input.startsWith('/api/day')) return new Promise<Response>(resolve => pending.push(resolve));
+    return Promise.resolve(Response.json({ days: [] }));
+  });
+  await mount();
+  await navigate('Trends');
+  await act(async () => {
+    for (const finish of pending) finish(Response.json({ goals: { ...goals, protein: 150 }, entries: [] }));
+  });
+  expect(container.textContent).toContain('-150g vs target');
+});
+
+it('refreshes the selected historical day without jumping to today', async () => {
+  await mount();
+  await act(async () => container.querySelector<HTMLButtonElement>('[aria-label="Previous day"]')!.click());
+  entryDate = '2026-09-18';
+  entries = [lunch];
+  await act(async () => window.dispatchEvent(new Event('focus')));
+  expect(requestedDates.at(-1)).toBe('2026-09-18');
+  expect(container.querySelector('.food-row')?.textContent ?? '').toContain('Lunch from phone');
+});
+
+it('ignores a stale response after selecting a different day', async () => {
+  let finishToday!: (response: Response) => void;
+  vi.stubGlobal('fetch', (input: string) => {
+    if (input.endsWith('2026-09-19')) return new Promise<Response>(resolve => { finishToday = resolve; });
+    return Promise.resolve(Response.json({ goals, entries: [{ ...lunch, name: 'Yesterday lunch' }] }));
+  });
+  await mount();
+  await act(async () => container.querySelector<HTMLButtonElement>('[aria-label="Previous day"]')!.click());
+  expect(container.querySelector('.food-row')?.textContent ?? '').toContain('Yesterday lunch');
+  await act(async () => finishToday(Response.json({ goals, entries: [lunch] })));
+  expect(container.querySelector('.food-row')?.textContent ?? '').toContain('Yesterday lunch');
+  expect(container.textContent).not.toContain('Lunch from phone');
+});
+
+it('preserves unsaved goal edits when the diary refreshes', async () => {
+  await mount();
+  const edit = [...container.querySelectorAll<HTMLButtonElement>('button')].find(button => button.textContent === 'Edit goals')!;
+  await act(async () => edit.click());
+  const calories = document.querySelector<HTMLInputElement>('.goal-fields input')!;
+  await act(async () => {
+    Object.getOwnPropertyDescriptor(HTMLInputElement.prototype, 'value')!.set!.call(calories, '2000');
+    calories.dispatchEvent(new Event('input', { bubbles: true }));
+  });
+  expect(calories.value).toBe('2000');
+  await act(async () => window.dispatchEvent(new Event('focus')));
+  expect(calories.value).toBe('2000');
+});

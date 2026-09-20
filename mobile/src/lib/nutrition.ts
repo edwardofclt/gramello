@@ -1,8 +1,6 @@
 import type { Food, Goals } from './types';
 
-export function localDate(date = new Date()) {
-  return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
-}
+export { localDate } from '../../../lib/diary-date';
 
 export function shiftDate(date: string, days: number) {
   const next = new Date(`${date}T12:00:00Z`);
