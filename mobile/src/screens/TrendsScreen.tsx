@@ -1,50 +1,62 @@
 import { useState } from 'react';
 import { ScrollView, Text, View } from 'react-native';
-import Svg, { Line, Path } from 'react-native-svg';
 import { TrendingUp } from 'lucide-react-native';
 import { useSession } from '../auth/Session';
-import { Action, Card, colors, ErrorNotice, Loading, styles } from '../components/ui';
-import { formatDate, localDate, shiftDate, sumNutrition } from '../lib/nutrition';
-import type { Trend } from '../lib/types';
+import { Action, Card, colors, ErrorNotice, isWeb, Loading, styles, useLayout } from '../components/ui';
+import { NutritionChart } from '../components/NutritionChart';
+import { localDate, sumNutrition } from '../lib/nutrition';
+import type { Day, Trend } from '../lib/types';
 import { useResource } from '../lib/useResource';
 
-function CalorieChart({ days, range }: { days: Trend[]; range: number }) {
-  const [width, setWidth] = useState(280);
-  const height = 150;
-  const byDate = new Map(days.map(day => [day.date, day.calories]));
-  const values = Array.from({ length: range }, (_, index) => byDate.get(shiftDate(localDate(), index - range + 1)) ?? 0);
-  const max = Math.max(1, ...values);
-  const points = values.map((value, index) => `${index * width / (range - 1)},${height - value / max * (height - 12)}`);
-  const line = `M ${points.join(' L ')}`;
-  return <View style={{ gap: 12 }} onLayout={event => setWidth(Math.max(1, event.nativeEvent.layout.width))}>
-    <View style={styles.between}><Text style={styles.muted}>Calories</Text><Text style={styles.muted}>Peak {Math.round(max)} kcal</Text></View>
-    <View accessible accessibilityLabel={`Calorie trend over ${range} days. Highest logged day: ${Math.round(max)} calories.`}>
-      <Svg width={width} height={height + 2}>
-        {[0, .5, 1].map(fraction => <Line key={fraction} x1={0} x2={width} y1={height * fraction} y2={height * fraction} stroke={colors.border} strokeDasharray="4 5" />)}
-        <Path d={`${line} L ${width},${height} L 0,${height} Z`} fill={colors.mint} opacity={.1} />
-        <Path d={line} fill="none" stroke={colors.mint} strokeWidth={2.5} strokeLinejoin="round" />
-      </Svg>
-    </View>
-    <View style={styles.between}><Text style={styles.muted}>{formatDate(shiftDate(localDate(), 1 - range), true)}</Text><Text style={styles.muted}>Today</Text></View>
-    <Text style={styles.muted}>Days without entries appear as 0. Averages use logged days only.</Text>
-  </View>;
-}
-
-export function TrendsScreen() {
+export function TrendsScreen({ range, onRange }: { range: number; onRange: (range: number) => void }) {
   const { api } = useSession();
-  const [range, setRange] = useState(7);
+  const { desktop, wide, pageStyle } = useLayout();
+  const [date] = useState(localDate);
   const { data, error, loading, reload } = useResource<{ days: Trend[] }>(api, `/api/trends?days=${range}`);
-  const days = data?.days ?? [];
+  const goalsResource = useResource<Day>(api, `/api/day?date=${date}`);
+  const goals = goalsResource.data?.goals;
+  const days = [...(data?.days ?? [])].sort((a, b) => a.date.localeCompare(b.date));
   const totals = sumNutrition(days);
   const average = (key: keyof typeof totals) => days.length ? Math.round(totals[key] / days.length) : 0;
-  return <ScrollView contentContainerStyle={styles.content}>
-    <View><Text style={styles.eyebrow}>NUTRITION ANALYTICS</Text><Text style={styles.title}>Your progress</Text><Text style={styles.muted}>Small choices. A bigger picture.</Text></View>
-    <View style={styles.row}>{[{ days: 7, label: '7 days' }, { days: 30, label: '30 days' }, { days: 183, label: '6 months' }].map(item => <View key={item.days} style={{ flex: 1 }}><Action compact secondary={range !== item.days} onPress={() => setRange(item.days)}>{item.label}</Action></View>)}</View>
+  const adherence = days.length && goals ? Math.round(days.filter(day => Math.abs(day.calories - goals.calories) <= goals.calories * .1).length / days.length * 100) : 0;
+  const proteinDays = goals ? days.filter(day => day.protein >= goals.protein * .9).length : 0;
+  const pending = loading || goalsResource.loading;
+  const stats = [
+    { label: 'Average calories', value: average('calories').toLocaleString(), detail: 'daily kcal' },
+    { label: 'Goal-range days', value: `${adherence}%`, detail: 'within ±10%' },
+    { label: 'Average protein', value: `${average('protein')}g`, detail: `${goals ? Math.round(average('protein') - goals.protein) : '—'}g vs target` },
+    { label: 'Protein target', value: String(proteinDays), detail: 'days at 90%+' },
+  ];
+  return <ScrollView contentContainerStyle={pageStyle}>
+    {!isWeb && <View><Text style={styles.eyebrow}>NUTRITION ANALYTICS</Text><Text style={styles.title}>Your progress</Text></View>}
+    <View style={{ flexDirection: desktop ? 'row' : 'column', justifyContent: 'space-between', gap: 16 }}>
+      <View style={{ gap: 5 }}><Text style={styles.eyebrow}>ROLLING VIEW</Text><Text accessibilityRole="header" style={[styles.heading, { fontSize: 23 }]}>Nutrition trends</Text></View>
+      <View style={[styles.row, { gap: 4, padding: 4, borderRadius: 13, backgroundColor: '#102b3d', borderWidth: 1, borderColor: colors.border }]}>
+        {[{ days: 7, label: '7 days' }, { days: 30, label: '30 days' }, { days: 183, label: '6 months' }].map(item => <View key={item.days} style={desktop ? {} : { flex: 1 }}><Action compact secondary={range !== item.days} quiet={range !== item.days} style={{ minHeight: 36 }} onPress={() => onRange(item.days)}>{item.label}</Action></View>)}
+      </View>
+    </View>
     {error && <ErrorNotice message={error} retry={reload} />}
-    {loading ? <Loading label="Loading your trends…" /> : data && !days.length ? <Card><View style={styles.center}><TrendingUp size={40} color={colors.mint} /><Text style={styles.heading}>Your story starts here</Text><Text style={[styles.muted, { textAlign: 'center' }]}>Log a meal in your diary to start seeing your nutrition patterns.</Text></View></Card> : data && <>
-      <Card><Text style={styles.eyebrow}>AVERAGE DAILY ENERGY</Text><Text style={[styles.title, { fontSize: 42 }]}>{average('calories').toLocaleString()}<Text style={styles.muted}> kcal</Text></Text><Text style={styles.muted}>{days.length} logged {days.length === 1 ? 'day' : 'days'} in this period</Text><CalorieChart days={days} range={range} /></Card>
-      <Card><Text style={styles.heading}>Your daily averages</Text>{([{ key: 'protein', color: colors.mint, label: 'Protein' }, { key: 'carbs', color: colors.blue, label: 'Carbs' }, { key: 'fat', color: colors.amber, label: 'Fat' }] as const).map(item => <View key={item.key} style={styles.between}><View style={styles.row}><View style={{ width: 9, height: 9, borderRadius: 5, backgroundColor: item.color }} /><Text style={styles.body}>{item.label}</Text></View><Text style={styles.heading}>{average(item.key)}<Text style={styles.muted}> g</Text></Text></View>)}</Card>
-      <Card><Text style={styles.heading}>Recent logged days</Text>{days.slice(-7).reverse().map(day => <View style={styles.between} key={day.date}><Text style={styles.muted}>{formatDate(day.date)}</Text><Text style={styles.body}>{Math.round(day.calories).toLocaleString()} kcal</Text></View>)}</Card>
+    {goalsResource.error && <ErrorNotice message={goalsResource.error} retry={goalsResource.reload} />}
+    {pending ? <Loading label="Loading your trends…" /> : data && goals && <>
+      <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 14 }}>
+        {stats.map(stat => <Card key={stat.label} style={{ flexBasis: wide ? '22%' : '46%', flexGrow: 1, padding: 18, borderRadius: 17, gap: 8 }}>
+          <Text style={[styles.muted, { fontSize: 12 }]}>{stat.label}</Text><Text style={[styles.title, { fontSize: 27 }]}>{stat.value}</Text><Text style={[styles.muted, { fontSize: 11 }]}>{stat.detail}</Text>
+        </Card>)}
+      </View>
+      <Card style={{ borderRadius: 20 }}>
+        <View style={styles.between}><View style={{ flex: 1, gap: 5 }}><Text style={styles.eyebrow}>ENERGY</Text><Text style={styles.heading}>Calories over time</Text></View><Legend items={[{ label: 'Actual', color: colors.mint }, { label: 'Goal', color: colors.blue }]} /></View>
+        {days.length ? <NutritionChart key={`calories-${range}`} days={days} goal={goals.calories} kind="calories" />
+          : <View style={[styles.center, { minHeight: 250 }]}><TrendingUp size={36} color={colors.mint} /><Text style={[styles.heading, { textAlign: 'center' }]}>Your chart starts with your first logged day</Text><Text style={[styles.muted, { textAlign: 'center' }]}>Food you log today will appear here automatically.</Text></View>}
+      </Card>
+      <Card style={{ borderRadius: 20 }}>
+        <View style={styles.between}><View style={{ flex: 1, gap: 5 }}><Text style={styles.eyebrow}>MACRONUTRIENTS</Text><Text style={styles.heading}>Daily macro mix</Text></View><Legend items={[{ label: 'Protein', color: colors.mint }, { label: 'Carbs', color: colors.blue }, { label: 'Fat', color: colors.amber }]} /></View>
+        {days.length ? <NutritionChart key={`macros-${range}`} days={days} goal={goals.calories} kind="macros" /> : <View style={styles.center}><Text style={styles.muted}>No macro data in this range yet.</Text></View>}
+      </Card>
+      <Text style={styles.muted}>{days.length} logged {days.length === 1 ? 'day' : 'days'} in this period. Charts and averages use logged days only.</Text>
     </>}
   </ScrollView>;
+}
+
+function Legend({ items }: { items: { label: string; color: string }[] }) {
+  return <View style={{ flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'flex-end', gap: 10, maxWidth: '45%' }}>{items.map(item => <View key={item.label} style={[styles.row, { gap: 5 }]}><View style={{ width: 7, height: 7, borderRadius: 4, backgroundColor: item.color }} /><Text style={{ color: colors.muted, fontSize: 11 }}>{item.label}</Text></View>)}</View>;
 }
