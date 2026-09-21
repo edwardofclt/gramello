@@ -19,6 +19,13 @@ or requests.
   and custom-meal names, ingredients and yields. These records and their
   timestamps are stored with your account identifier so they can be loaded on
   your signed-in devices.
+- **Shared custom foods:** When you save a custom food to the shared food catalog,
+  its name, brand, serving description, serving weight if supplied, and nutrition
+  values become searchable by other users. The service stores your account
+  identifier as the creator, but does not include that identifier, your account
+  name, or your email address in food-search results. Custom foods are separate
+  from your private diary and saved meal recipes. Do not put personal information
+  in a shared food's name, brand, or serving description.
 - **Search and barcode information:** Food-search terms and product barcodes are
   sent to the Gramello service to retrieve food information. Queries are passed
   to USDA FoodData Central and/or Open Food Facts as appropriate. Gramello does
@@ -27,7 +34,10 @@ or requests.
 - **Technical information:** When you connect to Gramello or its providers, those
   services receive connection and request information, such as an IP address,
   request time, and browser or device information. Hosting and authentication
-  services may keep operational and security logs.
+  services may keep operational and security logs. Auth0's authentication logs
+  can associate sign-in events, IP addresses, device/browser information, and an
+  approximate location derived from the IP address with your account. Gramello
+  does not request your device's location permission for this purpose.
 - **Support information:** Information you choose to email us, including your
   contact details and any details you supply to investigate an issue.
 
@@ -82,6 +92,11 @@ Diary entries and saved meals remain stored until you remove them or request
 their deletion. Removing a saved recipe does not remove previously logged diary
 entries. You can edit your saved goals. Signing out or uninstalling the app does
 not delete server records or the authentication account.
+
+Shared custom foods remain in the common catalog. Contact support to request
+correction or removal of a food you submitted; the app currently has no control
+for deleting a shared custom food. Other users may already have logged its
+nutrition values in their own diaries.
 
 Deleted records may remain temporarily in backups. The service is configured to
 retain automatic server-volume snapshots for 14 days. Authentication and hosting

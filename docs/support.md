@@ -32,12 +32,19 @@ diary. Uninstalling the app does not delete your account or server data.
 Search by food name or scan a packaged-food barcode from **Add food**. Camera
 access is optional: you can enter the barcode manually. If a product is missing
 or its information is incomplete, try searching by name. Food data comes from
-USDA FoodData Central and Open Food Facts, with a small built-in reference list.
+USDA FoodData Central, Open Food Facts, restaurant nutrition sources, and foods
+submitted by other users. Source and verification labels help distinguish them;
+an Unverified food was submitted by a user and has not been verified by Gramello.
 
 Check the serving amount, units, and nutrition against the package label before
 saving. Food-database information can be incomplete or incorrect. Foods measured
 by weight support grams and weight ounces; volume-based drinks support
 milliliters and US fluid ounces.
+
+Custom foods you save to the shared catalog are searchable by everyone. Do not
+include personal information in their names or descriptions. To report an
+incorrect or inappropriate shared food, or request correction or removal of a
+food you submitted, email support with the food name and brand.
 
 ## Custom meals and goals
 
