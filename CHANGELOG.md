@@ -1,3 +1,9 @@
+## [1.6.0](https://github.com/edwardofclt/nourish/compare/v1.5.0...v1.6.0) (2026-09-21)
+
+### Features
+
+* add verified restaurant catalog and shared custom foods ([67a94f3](https://github.com/edwardofclt/nourish/commit/67a94f32b3d3e3ebe107a759e3ebc93e2cbf7962))
+
 ## [1.5.0](https://github.com/edwardofclt/nourish/compare/v1.4.1...v1.5.0) (2026-09-20)
 
 ### Features
