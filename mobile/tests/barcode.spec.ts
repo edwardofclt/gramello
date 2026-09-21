@@ -65,7 +65,7 @@ async function setup(page: Page, camera: boolean | 'pending' | 'blank' = false) 
     return route.fulfill({ json: {}, headers });
   });
   await page.goto('/');
-  await page.getByRole('button', { name: 'Sign in to Nourish' }).click();
+  await page.getByRole('button', { name: 'Sign in to Gramello' }).click();
   await page.getByRole('button', { name: 'Add Lunch', exact: true }).click();
   await page.getByRole('button', { name: 'Scan barcode', exact: true }).click();
   return { entries, codes };

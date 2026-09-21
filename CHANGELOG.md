@@ -1,3 +1,9 @@
+## [1.5.0](https://github.com/edwardofclt/nourish/compare/v1.4.1...v1.5.0) (2026-09-20)
+
+### Features
+
+* rebrand Nourish as Gramello with bowl icon ([f560d26](https://github.com/edwardofclt/nourish/commit/f560d26016aac382aaa492290306444a3482a1b2))
+
 ## [1.4.1](https://github.com/edwardofclt/nourish/compare/v1.4.0...v1.4.1) (2026-09-20)
 
 ### Bug Fixes

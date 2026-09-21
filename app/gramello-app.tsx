@@ -6,6 +6,7 @@ import { Activity, CalendarDays, ChevronLeft, ChevronRight, LayoutDashboard, Loa
 import { FoodDialog, type DiaryEntry } from "@/components/food-dialog";
 import { FoodVerification } from "@/components/food-verification";
 import { entryAmountLabel } from "@/lib/meals";
+import { BrandMark as Logo } from "@/components/brand-mark";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
@@ -27,14 +28,13 @@ const fmtDate=(value:string)=>new Intl.DateTimeFormat("en-US",{weekday:"short",m
 const round=(n:number)=>Math.round(n);
 const clamp=(n:number)=>Math.min(100,Math.max(0,n));
 
-function Logo(){return <div className="logo-mark" aria-hidden="true"><span>N</span></div>}
 
 function MacroProgress({label,current,target,color}:{label:string;current:number;target:number;color:string}){
   const pct=target?current/target*100:0;
   return <div className="macro-progress"><div className="macro-progress-top"><span><i style={{background:color}}/>{label}</span><strong>{round(current)} <small>/ {target}g</small></strong></div><div className="track"><span style={{width:`${clamp(pct)}%`,background:color}}/></div></div>;
 }
 
-export default function NourishApp({ user }: { user: AuthUser }){
+export default function GramelloApp({ user }: { user: AuthUser }){
   const [sessionExpired, setSessionExpired] = useState(false);
   const authFetch = useCallback(async (input: RequestInfo | URL, init?: RequestInit) => {
     const response = await fetch(input, { ...init, cache: "no-store" });
@@ -130,7 +130,7 @@ export default function NourishApp({ user }: { user: AuthUser }){
 
   return <div className="app-shell">
     <aside className="sidebar">
-      <div className="brand"><Logo/><span>Nourish</span></div>
+      <div className="brand"><Logo/><span>Gramello</span></div>
       <nav aria-label="Main navigation">
         <button className={view==="today"?"active":""} onClick={()=>setView("today")}><LayoutDashboard/>Today</button>
         <button className={view==="trends"?"active":""} onClick={()=>setView("trends")}><TrendingUp/>Trends</button>
@@ -141,7 +141,7 @@ export default function NourishApp({ user }: { user: AuthUser }){
 
     <main>
       <header className="topbar">
-        <div className="mobile-brand"><Logo/><span>Nourish</span></div>
+        <div className="mobile-brand"><Logo/><span>Gramello</span></div>
         <div><p>{view==="today"?"DAILY DIARY":"NUTRITION ANALYTICS"}</p><h1>{view==="today"?"Today’s fuel":"Your progress"}</h1></div>
         <div className="topbar-actions">
           <Button onClick={openFood} className="add-food" aria-label="Add food"><Plus/><span>Add food</span></Button>

@@ -83,7 +83,7 @@ export async function lookupBarcode(input: string, signal?: AbortSignal): Promis
   if (!code) return { status: 400, error: 'Enter an 8, 12, 13, or 14 digit product barcode.' };
   try {
     const response = await fetch(`https://world.openfoodfacts.org/api/v2/product/${code}?fields=${productFields}`, {
-      headers: { 'User-Agent': 'NourishTracker/1.0 (personal food diary)', Accept: 'application/json' },
+      headers: { 'User-Agent': 'GramelloTracker/1.0 (personal food diary)', Accept: 'application/json' },
       signal: signal ? AbortSignal.any([signal, AbortSignal.timeout(10_000)]) : AbortSignal.timeout(10_000),
     });
     if (response.status === 404) return { status: 404, error: 'No product found for this barcode. Try another barcode or search by name.' };

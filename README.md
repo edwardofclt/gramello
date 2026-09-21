@@ -1,4 +1,4 @@
-# Nourish
+# Gramello
 
 A self-hostable calorie and macro tracker with a fast daily diary, precise serving and weight controls, goal tracking, and 7-day, 30-day, and 6-month analytics.
 
@@ -9,7 +9,7 @@ Food search combines:
 - A small built-in USDA reference fallback for common staples
 
 Choose **Add food → Scan barcode** to scan a packaged food with your camera or
-type the printed barcode. Nourish looks up the exact product in Open Food Facts,
+type the printed barcode. Gramello looks up the exact product in Open Food Facts,
 then opens the amount controls for review before saving. UPC-A,
 EAN-8, EAN-13, and ITF-14 product codes are supported. Browser camera access
 requires HTTPS (or localhost); manual entry works without camera permission.
@@ -21,7 +21,7 @@ Food Facts name-search results use the same unit and nutrition handling.
 ## Custom meals
 
 On web or mobile, choose **Add food → My meals → Create meal**. Search for or
-scan each ingredient, enter its amount using its supported units, and name the meal. Nourish adds the ingredient calories, protein, carbs, and fat.
+scan each ingredient, enter its amount using its supported units, and name the meal. Gramello adds the ingredient calories, protein, carbs, and fat.
 
 The ingredient weights provide an estimated batch weight. Meals containing
 volume-based ingredients require a finished batch weight because liquid density
@@ -84,8 +84,9 @@ faithfully are documented instead of guessed.
 `drizzle/0004_restaurant_catalog.sql` imports the reviewed snapshots. Both run
 through the existing startup migration runner. Do not rewrite migrations that
 have already been deployed: future refreshed imports need a new migration file.
-During preparation, regenerate the initial import with
-`node scripts/restaurant-catalog.mjs`. Extractors in `scripts/restaurant-import/`
+During preparation, reconcile source reports with
+`python3 scripts/restaurant-import/refresh-coverage.py`, then regenerate the
+initial import with `node scripts/restaurant-catalog.mjs`. Extractors in `scripts/restaurant-import/`
 are maintenance tools and do not run during app requests.
 
 Run `SMOKE_BROWSER=1 pnpm test:smoke` after building to verify real migrations,
@@ -185,7 +186,7 @@ relative to `dist/server/wrangler.json`).
 The iOS and Android app uses a separate Auth0 **Native Application** and the
 same tenant and enabled connections as the web application. In Auth0:
 
-1. Create an API for the Nourish server. Use a stable URL-style identifier such
+1. Create an API for the Gramello server. Use a stable URL-style identifier such
    as `https://api.nourish.example` (it need not resolve on the public internet),
    select RS256 signing, and enable offline access for the API.
 2. Create a Native Application. Enable Refresh Token Rotation with reuse
@@ -196,12 +197,12 @@ same tenant and enabled connections as the web application. In Auth0:
    `AUTH0_MOBILE_CLIENT_ID` to the Native Application client ID. The server uses
    these values to accept only access tokens issued for this API and native app.
 4. Give the mobile app the Auth0 domain, Native Application client ID, API
-   audience, and Nourish API base URL. Request `openid profile email
+   audience, and Gramello API base URL. Request `openid profile email
    offline_access`. These are public identifiers. Never put
    `AUTH0_CLIENT_SECRET`, `AUTH0_SECRET`, or any other client secret in the app.
 
 Both Auth0 applications must use the same tenant connections so the same person
-receives the same Auth0 `sub` on web and mobile. Nourish uses that exact verified
+receives the same Auth0 `sub` on web and mobile. Gramello uses that exact verified
 subject as the database owner; changing tenants, connections, or account-linking
 behavior can produce a different subject and therefore a separate diary.
 

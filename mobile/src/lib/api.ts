@@ -27,8 +27,8 @@ export function createApiClient(baseUrl: string, getToken: () => Promise<string>
     const data: unknown = await response.json().catch(() => null);
     if (!isCurrent()) throw new SessionExpiredError();
     const message = data && typeof data === 'object' && 'error' in data && typeof data.error === 'string' ? data.error : null;
-    if (!response.ok) throw new Error(message || 'Nourish could not be reached. Please try again.');
-    if (data === null) throw new Error('Nourish returned an unreadable response. Please try again.');
+    if (!response.ok) throw new Error(message || 'Gramello could not be reached. Please try again.');
+    if (data === null) throw new Error('Gramello returned an unreadable response. Please try again.');
     return data as T;
   };
 }

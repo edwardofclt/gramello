@@ -17,7 +17,7 @@ export const referenceFoods: Food[] = [
 export async function searchOpenFoodFacts(query: string, signal: AbortSignal): Promise<Food[]> {
   const fields = productFields;
   const params = new URLSearchParams({ search_terms:query, search_simple:'1', action:'process', json:'1', page_size:'20', fields });
-  const response = await fetch(`https://world.openfoodfacts.org/cgi/search.pl?${params}`, { headers:{'User-Agent':'NourishTracker/1.0 (personal food diary)'}, signal });
+  const response = await fetch(`https://world.openfoodfacts.org/cgi/search.pl?${params}`, { headers:{'User-Agent':'GramelloTracker/1.0 (personal food diary)'}, signal });
   if (!response.ok) throw new Error(`Open Food Facts ${response.status}`);
   const data = await response.json() as { products?: Product[] };
   return (data.products ?? []).flatMap(product => {

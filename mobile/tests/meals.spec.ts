@@ -36,7 +36,7 @@ for (const width of [390, 1440]) {
       return route.fulfill({ headers, json: {} });
     });
     await page.goto('/');
-    await page.getByRole('button', { name: 'Sign in to Nourish', exact: true }).click();
+    await page.getByRole('button', { name: 'Sign in to Gramello', exact: true }).click();
     await page.getByRole('button', { name: 'Add Lunch', exact: true }).click();
     await page.getByRole('button', { name: 'My meals', exact: true }).click();
     await page.getByRole('button', { name: 'Create meal', exact: true }).click();

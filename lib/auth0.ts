@@ -44,7 +44,7 @@ export function getAuth0() {
       cookie: { secure: configuration.appBaseUrl.startsWith("https:"), sameSite: "lax" },
     },
     async onCallback(error) {
-      // Nourish has one page. Never reflect provider errors or return URLs.
+      // Gramello has one page. Never reflect provider errors or return URLs.
       return NextResponse.redirect(new URL(error ? "/?auth_error=1" : "/", configuration.appBaseUrl));
     },
   });
