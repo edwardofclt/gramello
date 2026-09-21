@@ -1,3 +1,9 @@
+## [1.6.1](https://github.com/edwardofclt/nourish/compare/v1.6.0...v1.6.1) (2026-09-21)
+
+### Bug Fixes
+
+* defer native food form focus until the sheet is presented ([3728f10](https://github.com/edwardofclt/nourish/commit/3728f10a179dca0a5040aa1e46d7b9f0297eb061))
+
 ## [1.6.0](https://github.com/edwardofclt/nourish/compare/v1.5.0...v1.6.0) (2026-09-21)
 
 ### Features
