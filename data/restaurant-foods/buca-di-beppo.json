@@ -1,0 +1,829 @@
+{
+  "chain": "Buca di Beppo",
+  "sourceUrl": "https://www.nutritionix.com/buca-di-beppo/menu/premium",
+  "source": "Nutritionix",
+  "sourceKind": "database",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "id": "nutritionix-535521",
+      "name": "Bruschetta",
+      "calories": 390,
+      "protein": 18,
+      "carbs": 26,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Appetizers; size in item name)"
+    },
+    {
+      "id": "nutritionix-535520",
+      "name": "Buca Trio Platter",
+      "calories": 550,
+      "protein": 19,
+      "carbs": 38,
+      "fat": 36,
+      "servingLabel": "1 listed serving (Appetizers; size in item name)"
+    },
+    {
+      "id": "nutritionix-535523",
+      "name": "Fried Calamari",
+      "calories": 120,
+      "protein": 5,
+      "carbs": 8,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Appetizers; size in item name)"
+    },
+    {
+      "id": "nutritionix-535522",
+      "name": "Fried Mozzarella",
+      "calories": 360,
+      "protein": 18,
+      "carbs": 25,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Appetizers; size in item name)"
+    },
+    {
+      "id": "nutritionix-535524",
+      "name": "Garlic Parmesan Wings",
+      "calories": 610,
+      "protein": 28,
+      "carbs": 5,
+      "fat": 54,
+      "servingLabel": "1 listed serving (Appetizers; size in item name)"
+    },
+    {
+      "id": "nutritionix-535525",
+      "name": "Mozzarella Caprese",
+      "calories": 180,
+      "protein": 7,
+      "carbs": 3,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Appetizers; size in item name)"
+    },
+    {
+      "id": "nutritionix-535526",
+      "name": "Spicy Shrimp",
+      "calories": 390,
+      "protein": 11,
+      "carbs": 28,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Appetizers; size in item name)"
+    },
+    {
+      "id": "nutritionix-535532",
+      "name": "Margherita Pizza",
+      "calories": 160,
+      "protein": 7,
+      "carbs": 20,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-535533",
+      "name": "Pepperoni Pizza",
+      "calories": 300,
+      "protein": 13,
+      "carbs": 20,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-535534",
+      "name": "Pizza con Formaggio",
+      "calories": 200,
+      "protein": 8,
+      "carbs": 20,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-535535",
+      "name": "Spicy Arrabbiata Pizza",
+      "calories": 290,
+      "protein": 12,
+      "carbs": 22,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-535528",
+      "name": "Apple Gorgonzola Salad",
+      "calories": 490,
+      "protein": 11,
+      "carbs": 32,
+      "fat": 38,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-535529",
+      "name": "Caesar Salad",
+      "calories": 140,
+      "protein": 4,
+      "carbs": 9,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-535530",
+      "name": "Chopped Antipasti Salad",
+      "calories": 380,
+      "protein": 12,
+      "carbs": 10,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-535531",
+      "name": "Mixed Green Salad",
+      "calories": 170,
+      "protein": 2,
+      "carbs": 9,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-535557",
+      "name": "Baked Ziti",
+      "calories": 680,
+      "protein": 28,
+      "carbs": 80,
+      "fat": 28,
+      "servingLabel": "1 listed serving (Traditional Pastas; size in item name)"
+    },
+    {
+      "id": "nutritionix-535558",
+      "name": "Fettuccine Alfredo",
+      "calories": 710,
+      "protein": 21,
+      "carbs": 94,
+      "fat": 28,
+      "servingLabel": "1 listed serving (Traditional Pastas; size in item name)"
+    },
+    {
+      "id": "nutritionix-535559",
+      "name": "Spaghetti Marinara",
+      "calories": 370,
+      "protein": 13,
+      "carbs": 70,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Traditional Pastas; size in item name)"
+    },
+    {
+      "id": "nutritionix-535560",
+      "name": "Spaghetti with Meat Sauce",
+      "calories": 410,
+      "protein": 21,
+      "carbs": 68,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Traditional Pastas; size in item name)"
+    },
+    {
+      "id": "nutritionix-535544",
+      "name": "Cheese Manicotti",
+      "calories": 390,
+      "protein": 14,
+      "carbs": 39,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Stuffed Pastas; size in item name)"
+    },
+    {
+      "id": "nutritionix-535545",
+      "name": "Chicken Cannelloni",
+      "calories": 570,
+      "protein": 35,
+      "carbs": 43,
+      "fat": 28,
+      "servingLabel": "1 listed serving (Stuffed Pastas; size in item name)"
+    },
+    {
+      "id": "nutritionix-535546",
+      "name": "Quattro al Forno",
+      "calories": 720,
+      "protein": 34,
+      "carbs": 76,
+      "fat": 31,
+      "servingLabel": "1 listed serving (Stuffed Pastas; size in item name)"
+    },
+    {
+      "id": "nutritionix-535547",
+      "name": "Ravioli al Pomodoro",
+      "calories": 340,
+      "protein": 14,
+      "carbs": 40,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Stuffed Pastas; size in item name)"
+    },
+    {
+      "id": "nutritionix-535548",
+      "name": "Ravioli with Meat Sauce",
+      "calories": 530,
+      "protein": 26,
+      "carbs": 45,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Stuffed Pastas; size in item name)"
+    },
+    {
+      "id": "nutritionix-535549",
+      "name": "Stuffed Shells",
+      "calories": 350,
+      "protein": 15,
+      "carbs": 46,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Stuffed Pastas; size in item name)"
+    },
+    {
+      "id": "nutritionix-535550",
+      "name": "Baked Rigatoni",
+      "calories": 760,
+      "protein": 40,
+      "carbs": 89,
+      "fat": 28,
+      "servingLabel": "1 listed serving (Specialty Pastas; size in item name)"
+    },
+    {
+      "id": "nutritionix-535551",
+      "name": "Chicken Carbonara",
+      "calories": 730,
+      "protein": 33,
+      "carbs": 69,
+      "fat": 36,
+      "servingLabel": "1 listed serving (Specialty Pastas; size in item name)"
+    },
+    {
+      "id": "nutritionix-535552",
+      "name": "Lasagna",
+      "calories": 400,
+      "protein": 24,
+      "carbs": 34,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Specialty Pastas; size in item name)"
+    },
+    {
+      "id": "nutritionix-535554",
+      "name": "Penne Basilica",
+      "calories": 820,
+      "protein": 30,
+      "carbs": 94,
+      "fat": 36,
+      "servingLabel": "1 listed serving (Specialty Pastas; size in item name)"
+    },
+    {
+      "id": "nutritionix-535553",
+      "name": "Penne San Remo",
+      "calories": 780,
+      "protein": 26,
+      "carbs": 87,
+      "fat": 36,
+      "servingLabel": "1 listed serving (Specialty Pastas; size in item name)"
+    },
+    {
+      "id": "nutritionix-535555",
+      "name": "Shrimp Fra Diavolo",
+      "calories": 700,
+      "protein": 29,
+      "carbs": 78,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Specialty Pastas; size in item name)"
+    },
+    {
+      "id": "nutritionix-535556",
+      "name": "Spicy Chicken Rigatoni",
+      "calories": 820,
+      "protein": 26,
+      "carbs": 89,
+      "fat": 40,
+      "servingLabel": "1 listed serving (Specialty Pastas; size in item name)"
+    },
+    {
+      "id": "nutritionix-535538",
+      "name": "Chicken Limone",
+      "calories": 400,
+      "protein": 26,
+      "carbs": 12,
+      "fat": 28,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-535539",
+      "name": "Chicken Marsala",
+      "calories": 360,
+      "protein": 27,
+      "carbs": 22,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-535540",
+      "name": "Chicken Parmigiana",
+      "calories": 920,
+      "protein": 48,
+      "carbs": 52,
+      "fat": 59,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-535541",
+      "name": "Eggplant Parmigiana",
+      "calories": 910,
+      "protein": 40,
+      "carbs": 67,
+      "fat": 55,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-535542",
+      "name": "Prosciutto Stuffed Chicken",
+      "calories": 520,
+      "protein": 44,
+      "carbs": 34,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-535543",
+      "name": "Salmon Sorrento",
+      "calories": 670,
+      "protein": 28,
+      "carbs": 2,
+      "fat": 60,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-535562",
+      "name": "Side of Brussels Sprouts & Prosciutto",
+      "calories": 200,
+      "protein": 9,
+      "carbs": 13,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Shareable Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-535563",
+      "name": "Side of Green Beans",
+      "calories": 190,
+      "protein": 2,
+      "carbs": 11,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Shareable Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-535564",
+      "name": "Side of Italian Broccoli Romano",
+      "calories": 260,
+      "protein": 6,
+      "carbs": 19,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Shareable Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-535565",
+      "name": "Side of Italian Sausage",
+      "calories": 200,
+      "protein": 13,
+      "carbs": 5,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Shareable Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-535577",
+      "name": "Kids Cheese Pizza",
+      "calories": 440,
+      "protein": 18,
+      "carbs": 60,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Kids; size in item name)"
+    },
+    {
+      "id": "nutritionix-535578",
+      "name": "Kids Chicken Parmigiana",
+      "calories": 1110,
+      "protein": 34,
+      "carbs": 79,
+      "fat": 73,
+      "servingLabel": "1 listed serving (Kids; size in item name)"
+    },
+    {
+      "id": "nutritionix-535579",
+      "name": "Kids Fettuccine Alfredo",
+      "calories": 520,
+      "protein": 16,
+      "carbs": 70,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Kids; size in item name)"
+    },
+    {
+      "id": "nutritionix-535580",
+      "name": "Kids Macaroni & Cheese",
+      "calories": 710,
+      "protein": 27,
+      "carbs": 77,
+      "fat": 33,
+      "servingLabel": "1 listed serving (Kids; size in item name)"
+    },
+    {
+      "id": "nutritionix-535581",
+      "name": "Kids Pepperoni Pizza",
+      "calories": 550,
+      "protein": 22,
+      "carbs": 60,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Kids; size in item name)"
+    },
+    {
+      "id": "nutritionix-535583",
+      "name": "Kids Spaghetti Marinara",
+      "calories": 530,
+      "protein": 18,
+      "carbs": 102,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Kids; size in item name)"
+    },
+    {
+      "id": "nutritionix-535616",
+      "name": "Buddy V's Cake Slices, Black & White",
+      "calories": 370,
+      "protein": 3,
+      "carbs": 50,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Dessert; size in item name)"
+    },
+    {
+      "id": "nutritionix-535576",
+      "name": "Buddy V's Cake Slices, Chocolate Fudge",
+      "calories": 360,
+      "protein": 3,
+      "carbs": 50,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Dessert; size in item name)"
+    },
+    {
+      "id": "nutritionix-535575",
+      "name": "Buddy V's Cake Slices, Confetti",
+      "calories": 360,
+      "protein": 3,
+      "carbs": 50,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Dessert; size in item name)"
+    },
+    {
+      "id": "nutritionix-535574",
+      "name": "Buddy V's Cake Slices, Rainbow",
+      "calories": 390,
+      "protein": 2,
+      "carbs": 53,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Dessert; size in item name)"
+    },
+    {
+      "id": "nutritionix-535573",
+      "name": "Buddy V's Cake Slices, Red Velvet",
+      "calories": 340,
+      "protein": 4,
+      "carbs": 37,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Dessert; size in item name)"
+    },
+    {
+      "id": "nutritionix-535567",
+      "name": "Chocolate Chip Cannoli",
+      "calories": 310,
+      "protein": 5,
+      "carbs": 37,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Dessert; size in item name)"
+    },
+    {
+      "id": "nutritionix-535568",
+      "name": "Colossal Brownie Sundae",
+      "calories": 1200,
+      "protein": 7,
+      "carbs": 174,
+      "fat": 54,
+      "servingLabel": "1 listed serving (Dessert; size in item name)"
+    },
+    {
+      "id": "nutritionix-535569",
+      "name": "Double Dark Chocolate Cake",
+      "calories": 570,
+      "protein": 4,
+      "carbs": 77,
+      "fat": 28,
+      "servingLabel": "1 listed serving (Dessert; size in item name)"
+    },
+    {
+      "id": "nutritionix-535570",
+      "name": "Homemade Cheesecake",
+      "calories": 460,
+      "protein": 8,
+      "carbs": 71,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Dessert; size in item name)"
+    },
+    {
+      "id": "nutritionix-535571",
+      "name": "Italian Creme Cake",
+      "calories": 390,
+      "protein": 3,
+      "carbs": 40,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Dessert; size in item name)"
+    },
+    {
+      "id": "nutritionix-535572",
+      "name": "Tiramisu",
+      "calories": 830,
+      "protein": 13,
+      "carbs": 70,
+      "fat": 55,
+      "servingLabel": "1 listed serving (Dessert; size in item name)"
+    },
+    {
+      "id": "nutritionix-535536",
+      "name": "Garlic Bread",
+      "calories": 130,
+      "protein": 3,
+      "carbs": 17,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Fresh Breads; size in item name)"
+    },
+    {
+      "id": "nutritionix-535537",
+      "name": "Mozzarella Garlic Bread",
+      "calories": 150,
+      "protein": 5,
+      "carbs": 17,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Fresh Breads; size in item name)"
+    },
+    {
+      "id": "nutritionix-535588",
+      "name": "Lunch Add Chicken to Salad",
+      "calories": 200,
+      "protein": 29,
+      "carbs": 3,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Lunch; size in item name)"
+    },
+    {
+      "id": "nutritionix-535587",
+      "name": "Lunch Add Shrimp to Salad",
+      "calories": 170,
+      "protein": 20,
+      "carbs": 1,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Lunch; size in item name)"
+    },
+    {
+      "id": "nutritionix-535584",
+      "name": "Lunch Apple Gorgonzola Salad",
+      "calories": 750,
+      "protein": 14,
+      "carbs": 65,
+      "fat": 53,
+      "servingLabel": "1 listed serving (Lunch; size in item name)"
+    },
+    {
+      "id": "nutritionix-535589",
+      "name": "Lunch Baked Ziti",
+      "calories": 1030,
+      "protein": 46,
+      "carbs": 121,
+      "fat": 42,
+      "servingLabel": "1 listed serving (Lunch; size in item name)"
+    },
+    {
+      "id": "nutritionix-535585",
+      "name": "Lunch Caesar Salad",
+      "calories": 220,
+      "protein": 7,
+      "carbs": 15,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Lunch; size in item name)"
+    },
+    {
+      "id": "nutritionix-535597",
+      "name": "Lunch Chicken Limone",
+      "calories": 520,
+      "protein": 27,
+      "carbs": 16,
+      "fat": 38,
+      "servingLabel": "1 listed serving (Lunch; size in item name)"
+    },
+    {
+      "id": "nutritionix-535598",
+      "name": "Lunch Chicken Parmigiana",
+      "calories": 980,
+      "protein": 50,
+      "carbs": 61,
+      "fat": 60,
+      "servingLabel": "1 listed serving (Lunch; size in item name)"
+    },
+    {
+      "id": "nutritionix-535610",
+      "name": "Lunch Chocolate Chip Cannoli",
+      "calories": 250,
+      "protein": 6,
+      "carbs": 27,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Lunch; size in item name)"
+    },
+    {
+      "id": "nutritionix-535586",
+      "name": "Lunch Chopped Antipasti Salad",
+      "calories": 550,
+      "protein": 17,
+      "carbs": 15,
+      "fat": 48,
+      "servingLabel": "1 listed serving (Lunch; size in item name)"
+    },
+    {
+      "id": "nutritionix-535605",
+      "name": "Lunch Creamy Pesto Penne with Caesar Salad",
+      "calories": 1010,
+      "protein": 29,
+      "carbs": 115,
+      "fat": 49,
+      "servingLabel": "1 listed serving (Lunch; size in item name)"
+    },
+    {
+      "id": "nutritionix-535604",
+      "name": "Lunch Creamy Pesto Penne with Mixed Green Salad",
+      "calories": 1030,
+      "protein": 27,
+      "carbs": 116,
+      "fat": 50,
+      "servingLabel": "1 listed serving (Lunch; size in item name)"
+    },
+    {
+      "id": "nutritionix-535599",
+      "name": "Lunch Eggplant Parmigiana",
+      "calories": 1360,
+      "protein": 59,
+      "carbs": 99,
+      "fat": 82,
+      "servingLabel": "1 listed serving (Lunch; size in item name)"
+    },
+    {
+      "id": "nutritionix-535606",
+      "name": "Lunch Fettuccine Alfredo with Caesar Salad",
+      "calories": 870,
+      "protein": 27,
+      "carbs": 111,
+      "fat": 37,
+      "servingLabel": "1 listed serving (Lunch; size in item name)"
+    },
+    {
+      "id": "nutritionix-535607",
+      "name": "Lunch Fettuccine Alfredo with Mixed Green Salad",
+      "calories": 1030,
+      "protein": 27,
+      "carbs": 116,
+      "fat": 50,
+      "servingLabel": "1 listed serving (Lunch; size in item name)"
+    },
+    {
+      "id": "nutritionix-535601",
+      "name": "Lunch Garlic Bread",
+      "calories": 130,
+      "protein": 3,
+      "carbs": 17,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Lunch; size in item name)"
+    },
+    {
+      "id": "nutritionix-535611",
+      "name": "Lunch Italian Creme Cake",
+      "calories": 580,
+      "protein": 5,
+      "carbs": 59,
+      "fat": 35,
+      "servingLabel": "1 listed serving (Lunch; size in item name)"
+    },
+    {
+      "id": "nutritionix-535590",
+      "name": "Lunch Lasagna",
+      "calories": 620,
+      "protein": 37,
+      "carbs": 51,
+      "fat": 31,
+      "servingLabel": "1 listed serving (Lunch; size in item name)"
+    },
+    {
+      "id": "nutritionix-535602",
+      "name": "Lunch Mozzarella Garlic Bread",
+      "calories": 150,
+      "protein": 5,
+      "carbs": 17,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Lunch; size in item name)"
+    },
+    {
+      "id": "nutritionix-535600",
+      "name": "Lunch Salmon Sorrento",
+      "calories": 860,
+      "protein": 28,
+      "carbs": 2,
+      "fat": 82,
+      "servingLabel": "1 listed serving (Lunch; size in item name)"
+    },
+    {
+      "id": "nutritionix-535591",
+      "name": "Lunch Shrimp Fra Diavolo",
+      "calories": 1040,
+      "protein": 44,
+      "carbs": 117,
+      "fat": 45,
+      "servingLabel": "1 listed serving (Lunch; size in item name)"
+    },
+    {
+      "id": "nutritionix-535596",
+      "name": "Lunch Side Caesar Salad",
+      "calories": 100,
+      "protein": 3,
+      "carbs": 6,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Lunch; size in item name)"
+    },
+    {
+      "id": "nutritionix-535595",
+      "name": "Lunch Side Mixed Green Salad",
+      "calories": 110,
+      "protein": 1,
+      "carbs": 7,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Lunch; size in item name)"
+    },
+    {
+      "id": "nutritionix-535615",
+      "name": "Lunch Side of Fettuccine Alfredo",
+      "calories": 670,
+      "protein": 21,
+      "carbs": 102,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Lunch; size in item name)"
+    },
+    {
+      "id": "nutritionix-535612",
+      "name": "Lunch Side of Green Beans",
+      "calories": 250,
+      "protein": 1,
+      "carbs": 8,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Lunch; size in item name)"
+    },
+    {
+      "id": "nutritionix-535614",
+      "name": "Lunch Side of Spaghetti Marinara",
+      "calories": 470,
+      "protein": 16,
+      "carbs": 92,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Lunch; size in item name)"
+    },
+    {
+      "id": "nutritionix-535613",
+      "name": "Lunch Side of talian Broccoli Romano",
+      "calories": 240,
+      "protein": 5,
+      "carbs": 16,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Lunch; size in item name)"
+    },
+    {
+      "id": "nutritionix-535592",
+      "name": "Lunch Spaghetti Marinara",
+      "calories": 530,
+      "protein": 18,
+      "carbs": 101,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Lunch; size in item name)"
+    },
+    {
+      "id": "nutritionix-535609",
+      "name": "Lunch Spaghetti Marinara with Caesar Salad",
+      "calories": 620,
+      "protein": 21,
+      "carbs": 109,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Lunch; size in item name)"
+    },
+    {
+      "id": "nutritionix-535608",
+      "name": "Lunch Spaghetti Marinara with Mixed Green Salad",
+      "calories": 630,
+      "protein": 19,
+      "carbs": 109,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Lunch; size in item name)"
+    },
+    {
+      "id": "nutritionix-535594",
+      "name": "Lunch Spicy Chicken Rigatoni",
+      "calories": 1230,
+      "protein": 39,
+      "carbs": 133,
+      "fat": 60,
+      "servingLabel": "1 listed serving (Lunch; size in item name)"
+    }
+  ],
+  "sourceDate": "2024-06-25"
+}

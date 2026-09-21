@@ -1,0 +1,2224 @@
+{
+  "chain": "Jet's Pizza",
+  "sourceUrl": "https://www.nutritionix.com/jets-pizza/menu/premium",
+  "source": "Nutritionix",
+  "sourceKind": "database",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "id": "nutritionix-203910",
+      "name": "All Meaty - Small Hand Tossed Slice",
+      "calories": 430,
+      "protein": 25,
+      "carbs": 45,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Small Hand Tossed Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203911",
+      "name": "Aloha BBQ Chicken - Small Hand Tossed Slice",
+      "calories": 410,
+      "protein": 24,
+      "carbs": 54,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Small Hand Tossed Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203912",
+      "name": "BBQ Chicken - Small Hand Tossed Slice",
+      "calories": 400,
+      "protein": 25,
+      "carbs": 52,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Small Hand Tossed Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203913",
+      "name": "BLT - Small Hand Tossed Slice",
+      "calories": 410,
+      "protein": 21,
+      "carbs": 41,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Small Hand Tossed Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203914",
+      "name": "Buffalo Ranch Chicken - Small Hand Tossed Slice",
+      "calories": 400,
+      "protein": 25,
+      "carbs": 42,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Small Hand Tossed Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203818",
+      "name": "Cheese - Small Hand Tossed Slice",
+      "calories": 350,
+      "protein": 22,
+      "carbs": 45,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Small Hand Tossed Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-389415",
+      "name": "Chicken Bacon Ranch - Small Hand Tossed Slice",
+      "calories": 430,
+      "protein": 26,
+      "carbs": 41,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Small Hand Tossed Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203917",
+      "name": "Eugene Supreme - Small Hand Tossed Slice",
+      "calories": 360,
+      "protein": 20,
+      "carbs": 47,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Small Hand Tossed Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203916",
+      "name": "Hawaiian - Small Hand Tossed Slice",
+      "calories": 370,
+      "protein": 21,
+      "carbs": 47,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Small Hand Tossed Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203918",
+      "name": "Jet 10 - Small Hand Tossed Slice",
+      "calories": 390,
+      "protein": 22,
+      "carbs": 46,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Small Hand Tossed Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203920",
+      "name": "Super Special - Small Hand Tossed Slice",
+      "calories": 350,
+      "protein": 20,
+      "carbs": 46,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Small Hand Tossed Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-967690",
+      "name": "Ultimate Pepperoni - Small Hand Tossed Slice",
+      "calories": 430,
+      "protein": 23,
+      "carbs": 44,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Small Hand Tossed Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203921",
+      "name": "Veggie - Small Hand Tossed Slice",
+      "calories": 330,
+      "protein": 18,
+      "carbs": 46,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Small Hand Tossed Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203874",
+      "name": "All Meaty - Small Thin Crust Slice",
+      "calories": 330,
+      "protein": 18,
+      "carbs": 22,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Small Thin Crust Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203875",
+      "name": "Aloha BBQ Chicken - Small Thin Crust Slice",
+      "calories": 310,
+      "protein": 18,
+      "carbs": 31,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Small Thin Crust Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203876",
+      "name": "BBQ Chicken - Small Thin Crust Slice",
+      "calories": 300,
+      "protein": 18,
+      "carbs": 30,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Small Thin Crust Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203877",
+      "name": "BLT - Small Thin Crust Slice",
+      "calories": 280,
+      "protein": 15,
+      "carbs": 18,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Small Thin Crust Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203878",
+      "name": "Buffalo Ranch Chicken - Small Thin Crust Slice",
+      "calories": 300,
+      "protein": 18,
+      "carbs": 19,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Small Thin Crust Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203819",
+      "name": "Cheese - Small Thin Crust Slice",
+      "calories": 230,
+      "protein": 13,
+      "carbs": 22,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Small Thin Crust Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-389416",
+      "name": "Chicken Bacon Ranch - Small Thin Crust Slice",
+      "calories": 320,
+      "protein": 20,
+      "carbs": 18,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Small Thin Crust Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203881",
+      "name": "Eugene Supreme - Small Thin Crust Slice",
+      "calories": 270,
+      "protein": 14,
+      "carbs": 24,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Small Thin Crust Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203880",
+      "name": "Hawaiian - Small Thin Crust Slice",
+      "calories": 270,
+      "protein": 15,
+      "carbs": 24,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Small Thin Crust Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203882",
+      "name": "Jet 10 - Small Thin Crust Slice",
+      "calories": 290,
+      "protein": 15,
+      "carbs": 23,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Small Thin Crust Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203884",
+      "name": "Super Special - Small Thin Crust Slice",
+      "calories": 240,
+      "protein": 13,
+      "carbs": 23,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Small Thin Crust Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-967691",
+      "name": "Ultimate Pepperoni - Small Thin Crust Slice",
+      "calories": 330,
+      "protein": 16,
+      "carbs": 22,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Small Thin Crust Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203885",
+      "name": "Veggie - Small Thin Crust Slice",
+      "calories": 230,
+      "protein": 11,
+      "carbs": 23,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Small Thin Crust Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203806",
+      "name": "Build Your Own 1-2 Topping Medium Hand Tossed Slice",
+      "calories": 220,
+      "protein": 13,
+      "carbs": 28,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Medium Hand Tossed Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203807",
+      "name": "Build Your Own 3+ Topping Medium Hand Tossed Slice",
+      "calories": 210,
+      "protein": 12,
+      "carbs": 28,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Medium Hand Tossed Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203898",
+      "name": "All Meaty - Medium Hand Tossed Slice",
+      "calories": 290,
+      "protein": 17,
+      "carbs": 29,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Medium Hand Tossed Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203899",
+      "name": "Aloha BBQ Chicken - Medium Hand Tossed Slice",
+      "calories": 280,
+      "protein": 17,
+      "carbs": 35,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Medium Hand Tossed Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203900",
+      "name": "BBQ Chicken - Medium Hand Tossed Slice",
+      "calories": 270,
+      "protein": 17,
+      "carbs": 34,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Medium Hand Tossed Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203901",
+      "name": "BLT - Medium Hand Tossed Slice",
+      "calories": 310,
+      "protein": 15,
+      "carbs": 26,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Medium Hand Tossed Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203902",
+      "name": "Buffalo Ranch Chicken - Medium Hand Tossed Slice",
+      "calories": 270,
+      "protein": 17,
+      "carbs": 27,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Medium Hand Tossed Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203820",
+      "name": "Cheese - Medium Hand Tossed Slice",
+      "calories": 230,
+      "protein": 14,
+      "carbs": 29,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Medium Hand Tossed Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203905",
+      "name": "Eugene Supreme - Medium Hand Tossed Slice",
+      "calories": 240,
+      "protein": 13,
+      "carbs": 30,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Medium Hand Tossed Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203904",
+      "name": "Hawaiian - Medium Hand Tossed Slice",
+      "calories": 250,
+      "protein": 15,
+      "carbs": 30,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Medium Hand Tossed Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203906",
+      "name": "Jet 10 - Medium Hand Tossed Slice",
+      "calories": 270,
+      "protein": 15,
+      "carbs": 29,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Medium Hand Tossed Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203908",
+      "name": "Super Special - Medium Hand Tossed Slice",
+      "calories": 230,
+      "protein": 14,
+      "carbs": 29,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Medium Hand Tossed Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-967693",
+      "name": "Ultimate Pepperoni - Medium Hand Tossed Slice",
+      "calories": 290,
+      "protein": 15,
+      "carbs": 28,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Medium Hand Tossed Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203909",
+      "name": "Veggie - Medium Hand Tossed Slice",
+      "calories": 220,
+      "protein": 12,
+      "carbs": 30,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Medium Hand Tossed Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203827",
+      "name": "All Meaty - Large Detroit-Style Slice",
+      "calories": 450,
+      "protein": 23,
+      "carbs": 40,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Large Detroit-Style Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203828",
+      "name": "Aloha BBQ Chicken - Large Detroit-Style Slice",
+      "calories": 420,
+      "protein": 22,
+      "carbs": 49,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Large Detroit-Style Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203829",
+      "name": "BBQ Chicken - Large Detroit-Style Slice",
+      "calories": 410,
+      "protein": 22,
+      "carbs": 48,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Large Detroit-Style Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203830",
+      "name": "BLT - Large Detroit-Style Slice",
+      "calories": 430,
+      "protein": 18,
+      "carbs": 37,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Large Detroit-Style Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203831",
+      "name": "Buffalo Ranch Chicken - Large Detroit-Style Slice",
+      "calories": 400,
+      "protein": 22,
+      "carbs": 37,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Large Detroit-Style Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203821",
+      "name": "Cheese - Large Detroit-Style Slice",
+      "calories": 360,
+      "protein": 19,
+      "carbs": 40,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Large Detroit-Style Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-389411",
+      "name": "Chicken Bacon Ranch - Large Detroit-Style Slice",
+      "calories": 430,
+      "protein": 23,
+      "carbs": 36,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Large Detroit-Style Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203833",
+      "name": "Eugene Supreme - Large Detroit-Style Slice",
+      "calories": 390,
+      "protein": 19,
+      "carbs": 43,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Large Detroit-Style Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203826",
+      "name": "Hawaiian - Large Detroit-Style Slice",
+      "calories": 390,
+      "protein": 20,
+      "carbs": 42,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Large Detroit-Style Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203834",
+      "name": "Jet 10 - Large Detroit-Style Slice",
+      "calories": 410,
+      "protein": 19,
+      "carbs": 41,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Large Detroit-Style Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203836",
+      "name": "Super Special - Large Detroit-Style Slice",
+      "calories": 360,
+      "protein": 18,
+      "carbs": 41,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Large Detroit-Style Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-967686",
+      "name": "Ultimate Pepperoni - Large Detroit-Style Slice",
+      "calories": 440,
+      "protein": 20,
+      "carbs": 40,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Large Detroit-Style Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203837",
+      "name": "Veggie - Large Detroit-Style Slice",
+      "calories": 350,
+      "protein": 16,
+      "carbs": 41,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Large Detroit-Style Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203886",
+      "name": "All Meaty - Large Hand Tossed Slice",
+      "calories": 400,
+      "protein": 23,
+      "carbs": 40,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Large Hand Tossed Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203887",
+      "name": "Aloha BBQ Chicken - Large Hand Tossed Slice",
+      "calories": 420,
+      "protein": 22,
+      "carbs": 49,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Large Hand Tossed Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203888",
+      "name": "BBQ Chicken - Large Hand Tossed Slice",
+      "calories": 380,
+      "protein": 24,
+      "carbs": 48,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Large Hand Tossed Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203889",
+      "name": "BLT - Large Hand Tossed Slice",
+      "calories": 400,
+      "protein": 20,
+      "carbs": 37,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Large Hand Tossed Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203890",
+      "name": "Buffalo Ranch Chicken - Large Hand Tossed Slice",
+      "calories": 380,
+      "protein": 25,
+      "carbs": 37,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Large Hand Tossed Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203822",
+      "name": "Cheese - Large Hand Tossed Slice",
+      "calories": 330,
+      "protein": 21,
+      "carbs": 40,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Large Hand Tossed Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-389412",
+      "name": "Chicken Bacon Ranch - Large Hand Tossed Slice",
+      "calories": 380,
+      "protein": 24,
+      "carbs": 36,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Large Hand Tossed Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203893",
+      "name": "Eugene Supreme - Large Hand Tossed Slice",
+      "calories": 330,
+      "protein": 19,
+      "carbs": 42,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Large Hand Tossed Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203892",
+      "name": "Hawaiian - Large Hand Tossed Slice",
+      "calories": 340,
+      "protein": 20,
+      "carbs": 42,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Large Hand Tossed Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203894",
+      "name": "Jet 10 - Large Hand Tossed Slice",
+      "calories": 380,
+      "protein": 21,
+      "carbs": 41,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Large Hand Tossed Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203896",
+      "name": "Super Special - Large Hand Tossed Slice",
+      "calories": 320,
+      "protein": 18,
+      "carbs": 41,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Large Hand Tossed Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-967687",
+      "name": "Ultimate Pepperoni - Large Hand Tossed Slice",
+      "calories": 400,
+      "protein": 21,
+      "carbs": 39,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Large Hand Tossed Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203897",
+      "name": "Veggie - Large Hand Tossed Slice",
+      "calories": 310,
+      "protein": 17,
+      "carbs": 41,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Large Hand Tossed Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203862",
+      "name": "All Meaty - Large Thin Crust Slice",
+      "calories": 330,
+      "protein": 18,
+      "carbs": 25,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Large Thin Crust Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203863",
+      "name": "Aloha BBQ Chicken - Large Thin Crust Slice",
+      "calories": 330,
+      "protein": 19,
+      "carbs": 34,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Large Thin Crust Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203864",
+      "name": "BBQ Chicken - Large Thin Crust Slice",
+      "calories": 320,
+      "protein": 19,
+      "carbs": 32,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Large Thin Crust Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203865",
+      "name": "BLT - Large Thin Crust Slice",
+      "calories": 290,
+      "protein": 15,
+      "carbs": 21,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Large Thin Crust Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203866",
+      "name": "Buffalo Ranch Chicken - Large Thin Crust Slice",
+      "calories": 320,
+      "protein": 20,
+      "carbs": 22,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Large Thin Crust Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203823",
+      "name": "Cheese - Large Thin Crust Slice",
+      "calories": 240,
+      "protein": 13,
+      "carbs": 24,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Large Thin Crust Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-389413",
+      "name": "Chicken Bacon Ranch - Large Thin Crust Slice",
+      "calories": 340,
+      "protein": 21,
+      "carbs": 21,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Large Thin Crust Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203869",
+      "name": "Eugene Supreme - Large Thin Crust Slice",
+      "calories": 290,
+      "protein": 14,
+      "carbs": 27,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Large Thin Crust Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203868",
+      "name": "Hawaiian - Large Thin Crust Slice",
+      "calories": 280,
+      "protein": 15,
+      "carbs": 27,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Large Thin Crust Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203870",
+      "name": "Jet 10 - Large Thin Crust Slice",
+      "calories": 320,
+      "protein": 16,
+      "carbs": 26,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Large Thin Crust Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203872",
+      "name": "Super Special - Large Thin Crust Slice",
+      "calories": 260,
+      "protein": 13,
+      "carbs": 25,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Large Thin Crust Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-967688",
+      "name": "Ultimate Pepperoni - Large Thin Crust Slice",
+      "calories": 330,
+      "protein": 16,
+      "carbs": 24,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Large Thin Crust Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203873",
+      "name": "Veggie - Large Thin Crust Slice",
+      "calories": 240,
+      "protein": 12,
+      "carbs": 26,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Large Thin Crust Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-205393",
+      "name": "All Meaty - Large NY Style Slice",
+      "calories": 430,
+      "protein": 27,
+      "carbs": 34,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Large NY Style Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-205394",
+      "name": "Aloha BBQ Chicken - Large NY Style Slice",
+      "calories": 420,
+      "protein": 28,
+      "carbs": 46,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Large NY Style Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-205395",
+      "name": "BBQ Chicken - Large NY Style Slice",
+      "calories": 410,
+      "protein": 28,
+      "carbs": 44,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Large NY Style Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-205396",
+      "name": "BLT - Large NY Style Slice",
+      "calories": 450,
+      "protein": 22,
+      "carbs": 30,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Large NY Style Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-205397",
+      "name": "Buffalo Ranch Chicken - Large NY Style Slice",
+      "calories": 400,
+      "protein": 28,
+      "carbs": 30,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Large NY Style Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203824",
+      "name": "Cheese - Large NY Style Slice",
+      "calories": 290,
+      "protein": 19,
+      "carbs": 33,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Large NY Style Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-205400",
+      "name": "Eugene Supreme - Large NY Style Slice",
+      "calories": 340,
+      "protein": 20,
+      "carbs": 37,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Large NY Style Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-205401",
+      "name": "Hawaiian - Large NY Style Slice",
+      "calories": 350,
+      "protein": 22,
+      "carbs": 36,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Large NY Style Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-205402",
+      "name": "Jet 10 - Large NY Style Slice",
+      "calories": 400,
+      "protein": 23,
+      "carbs": 35,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Large NY Style Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-205405",
+      "name": "Super Special - Large NY Style Slice",
+      "calories": 320,
+      "protein": 20,
+      "carbs": 35,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Large NY Style Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-967709",
+      "name": "Ultimate Pepperoni - Large NY Style Slice",
+      "calories": 420,
+      "protein": 24,
+      "carbs": 33,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Large NY Style Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-205406",
+      "name": "Veggie - Large NY Style Slice",
+      "calories": 300,
+      "protein": 18,
+      "carbs": 35,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Large NY Style Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203850",
+      "name": "All Meaty - X-Large Detroit-Style Slice",
+      "calories": 440,
+      "protein": 23,
+      "carbs": 40,
+      "fat": 20,
+      "servingLabel": "1 listed serving (X-Large Detroit-Style Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203851",
+      "name": "Aloha BBQ Chicken - X-Large Detroit-Style Slice",
+      "calories": 400,
+      "protein": 21,
+      "carbs": 48,
+      "fat": 13,
+      "servingLabel": "1 listed serving (X-Large Detroit-Style Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203852",
+      "name": "BBQ Chicken - X-Large Detroit-Style Slice",
+      "calories": 400,
+      "protein": 21,
+      "carbs": 47,
+      "fat": 13,
+      "servingLabel": "1 listed serving (X-Large Detroit-Style Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203853",
+      "name": "BLT - X-Large Detroit-Style Slice",
+      "calories": 420,
+      "protein": 17,
+      "carbs": 36,
+      "fat": 22,
+      "servingLabel": "1 listed serving (X-Large Detroit-Style Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203854",
+      "name": "Buffalo Ranch Chicken - X-Large Detroit-Style Slice",
+      "calories": 390,
+      "protein": 21,
+      "carbs": 37,
+      "fat": 17,
+      "servingLabel": "1 listed serving (X-Large Detroit-Style Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203825",
+      "name": "Cheese - X-Large Detroit-Style Slice",
+      "calories": 350,
+      "protein": 18,
+      "carbs": 39,
+      "fat": 13,
+      "servingLabel": "1 listed serving (X-Large Detroit-Style Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-389417",
+      "name": "Chicken Bacon Ranch - X-Large Detroit-Style Slice",
+      "calories": 440,
+      "protein": 23,
+      "carbs": 36,
+      "fat": 22,
+      "servingLabel": "1 listed serving (X-Large Detroit-Style Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203857",
+      "name": "Eugene Supreme - X-Large Detroit-Style Slice",
+      "calories": 390,
+      "protein": 19,
+      "carbs": 42,
+      "fat": 16,
+      "servingLabel": "1 listed serving (X-Large Detroit-Style Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203856",
+      "name": "Hawaiian - X-Large Detroit-Style Slice",
+      "calories": 390,
+      "protein": 20,
+      "carbs": 42,
+      "fat": 15,
+      "servingLabel": "1 listed serving (X-Large Detroit-Style Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203858",
+      "name": "Jet 10 - X-Large Detroit-Style Slice",
+      "calories": 420,
+      "protein": 21,
+      "carbs": 41,
+      "fat": 19,
+      "servingLabel": "1 listed serving (X-Large Detroit-Style Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203860",
+      "name": "Super Special - X-Large Detroit-Style Slice",
+      "calories": 370,
+      "protein": 18,
+      "carbs": 41,
+      "fat": 14,
+      "servingLabel": "1 listed serving (X-Large Detroit-Style Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-967692",
+      "name": "Ultimate Pepperoni - X-Large Detroit-Style Slice",
+      "calories": 440,
+      "protein": 21,
+      "carbs": 39,
+      "fat": 21,
+      "servingLabel": "1 listed serving (X-Large Detroit-Style Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203861",
+      "name": "Veggie - X-Large Detroit-Style Slice",
+      "calories": 350,
+      "protein": 17,
+      "carbs": 41,
+      "fat": 13,
+      "servingLabel": "1 listed serving (X-Large Detroit-Style Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203941",
+      "name": "All Meaty - Party Tray Slice",
+      "calories": 440,
+      "protein": 23,
+      "carbs": 40,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Party Tray Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203944",
+      "name": "Aloha BBQ Chicken - Party Tray Slice",
+      "calories": 400,
+      "protein": 21,
+      "carbs": 48,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Party Tray Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203934",
+      "name": "BBQ Chicken - Party Tray Slice",
+      "calories": 400,
+      "protein": 21,
+      "carbs": 47,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Party Tray Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203936",
+      "name": "BLT - Party Tray Slice",
+      "calories": 420,
+      "protein": 17,
+      "carbs": 36,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Party Tray Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203935",
+      "name": "Buffalo Ranch Chicken - Party Tray Slice",
+      "calories": 390,
+      "protein": 21,
+      "carbs": 37,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Party Tray Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-205392",
+      "name": "Cheese - Party Tray Slice",
+      "calories": 350,
+      "protein": 18,
+      "carbs": 39,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Party Tray Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203939",
+      "name": "Eugene Supreme - Party Tray Slice",
+      "calories": 390,
+      "protein": 19,
+      "carbs": 42,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Party Tray Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203937",
+      "name": "Hawaiian - Party Tray Slice",
+      "calories": 390,
+      "protein": 20,
+      "carbs": 42,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Party Tray Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203943",
+      "name": "Jet 10 - Party Tray Slice",
+      "calories": 420,
+      "protein": 21,
+      "carbs": 41,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Party Tray Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203940",
+      "name": "Super Special - Party Tray Slice",
+      "calories": 370,
+      "protein": 18,
+      "carbs": 41,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Party Tray Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-967708",
+      "name": "Ultimate Pepperoni - Party Tray Slice",
+      "calories": 440,
+      "protein": 21,
+      "carbs": 39,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Party Tray Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203942",
+      "name": "Veggie - Party Tray Slice",
+      "calories": 360,
+      "protein": 17,
+      "carbs": 41,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Party Tray Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-205376",
+      "name": "All Meaty - 4 Corner Pizza Detroit-Style Slice",
+      "calories": 480,
+      "protein": 24,
+      "carbs": 45,
+      "fat": 21,
+      "servingLabel": "1 listed serving (4 Corner Detroit-Style Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-205375",
+      "name": "Aloha BBQ Chicken - 4 Corner Pizza Detroit-Style Slice",
+      "calories": 440,
+      "protein": 21,
+      "carbs": 54,
+      "fat": 14,
+      "servingLabel": "1 listed serving (4 Corner Detroit-Style Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-205377",
+      "name": "BBQ Chicken - 4 Corner Pizza Detroit-Style Slice",
+      "calories": 430,
+      "protein": 22,
+      "carbs": 52,
+      "fat": 14,
+      "servingLabel": "1 listed serving (4 Corner Detroit-Style Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-205378",
+      "name": "BLT - 4 Corner Pizza Detroit-Style Slice",
+      "calories": 480,
+      "protein": 18,
+      "carbs": 42,
+      "fat": 25,
+      "servingLabel": "1 listed serving (4 Corner Detroit-Style Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-205379",
+      "name": "Buffalo Ranch Chicken - 4 Corner Pizza Detroit-Style Slice",
+      "calories": 430,
+      "protein": 22,
+      "carbs": 42,
+      "fat": 18,
+      "servingLabel": "1 listed serving (4 Corner Detroit-Style Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-205380",
+      "name": "Cheese - 4 Corner Pizza Detroit-Style Slice",
+      "calories": 400,
+      "protein": 21,
+      "carbs": 45,
+      "fat": 15,
+      "servingLabel": "1 listed serving (4 Corner Detroit-Style Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-389414",
+      "name": "Chicken Bacon Ranch - 4 Corner Pizza Detroit-Style Slice",
+      "calories": 380,
+      "protein": 17,
+      "carbs": 40,
+      "fat": 16,
+      "servingLabel": "1 listed serving (4 Corner Detroit-Style Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-205383",
+      "name": "Eugene Supreme - 4 Corner Pizza Detroit-Style Slice",
+      "calories": 420,
+      "protein": 19,
+      "carbs": 47,
+      "fat": 17,
+      "servingLabel": "1 listed serving (4 Corner Detroit-Style Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-205384",
+      "name": "Hawaiian - 4 Corner Pizza Detroit-Style Slice",
+      "calories": 420,
+      "protein": 20,
+      "carbs": 47,
+      "fat": 16,
+      "servingLabel": "1 listed serving (4 Corner Detroit-Style Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-205385",
+      "name": "Jet 10 - 4 Corner Pizza Detroit-Style Slice",
+      "calories": 430,
+      "protein": 19,
+      "carbs": 46,
+      "fat": 18,
+      "servingLabel": "1 listed serving (4 Corner Detroit-Style Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-205388",
+      "name": "Super Special - 4 Corner Pizza Detroit-Style Slice",
+      "calories": 400,
+      "protein": 19,
+      "carbs": 46,
+      "fat": 15,
+      "servingLabel": "1 listed serving (4 Corner Detroit-Style Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-967689",
+      "name": "Ultimate Pepperoni - 4 Corner Pizza Detroit-Style Slice",
+      "calories": 480,
+      "protein": 22,
+      "carbs": 45,
+      "fat": 23,
+      "servingLabel": "1 listed serving (4 Corner Detroit-Style Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-205389",
+      "name": "Veggie - 4 Corner Pizza Detroit-Style Slice",
+      "calories": 380,
+      "protein": 17,
+      "carbs": 46,
+      "fat": 13,
+      "servingLabel": "1 listed serving (4 Corner Detroit-Style Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203929",
+      "name": "All Meaty - 8 Corner Pizza Detroit-Style Slice",
+      "calories": 450,
+      "protein": 23,
+      "carbs": 40,
+      "fat": 21,
+      "servingLabel": "1 listed serving (8 Corner Detroit-Style Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203932",
+      "name": "Aloha BBQ Chicken - 8 Corner Pizza Detroit-Style Slice",
+      "calories": 410,
+      "protein": 21,
+      "carbs": 49,
+      "fat": 14,
+      "servingLabel": "1 listed serving (8 Corner Detroit-Style Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203922",
+      "name": "BBQ Chicken - 8 Corner Pizza Detroit-Style Slice",
+      "calories": 400,
+      "protein": 21,
+      "carbs": 48,
+      "fat": 14,
+      "servingLabel": "1 listed serving (8 Corner Detroit-Style Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203924",
+      "name": "BLT - 8 Corner Pizza Detroit-Style Slice",
+      "calories": 450,
+      "protein": 18,
+      "carbs": 37,
+      "fat": 24,
+      "servingLabel": "1 listed serving (8 Corner Detroit-Style Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203923",
+      "name": "Buffalo Ranch Chicken - 8 Corner Pizza Detroit-Style Slice",
+      "calories": 400,
+      "protein": 21,
+      "carbs": 37,
+      "fat": 17,
+      "servingLabel": "1 listed serving (8 Corner Detroit-Style Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-205390",
+      "name": "Cheese - 8 Corner Pizza Detroit-Style Slice",
+      "calories": 370,
+      "protein": 20,
+      "carbs": 40,
+      "fat": 14,
+      "servingLabel": "1 listed serving (8 Corner Detroit-Style Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-389408",
+      "name": "Chicken Bacon Ranch - 8 Corner Pizza Detroit-Style Slice",
+      "calories": 430,
+      "protein": 22,
+      "carbs": 36,
+      "fat": 20,
+      "servingLabel": "1 listed serving (8 Corner Detroit-Style Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203927",
+      "name": "Eugene Supreme - 8 Corner Pizza Detroit-Style Slice",
+      "calories": 380,
+      "protein": 18,
+      "carbs": 42,
+      "fat": 15,
+      "servingLabel": "1 listed serving (8 Corner Detroit-Style Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203925",
+      "name": "Hawaiian - 8 Corner Pizza Detroit-Style Slice",
+      "calories": 390,
+      "protein": 20,
+      "carbs": 42,
+      "fat": 15,
+      "servingLabel": "1 listed serving (8 Corner Detroit-Style Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203931",
+      "name": "Jet 10 - 8 Corner Pizza Detroit-Style Slice",
+      "calories": 400,
+      "protein": 19,
+      "carbs": 41,
+      "fat": 17,
+      "servingLabel": "1 listed serving (8 Corner Detroit-Style Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203928",
+      "name": "Super Special - 8 Corner Pizza Detroit-Style Slice",
+      "calories": 370,
+      "protein": 18,
+      "carbs": 41,
+      "fat": 14,
+      "servingLabel": "1 listed serving (8 Corner Detroit-Style Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-967683",
+      "name": "Ultimate Pepperoni - 8 Corner Pizza Detroit-Style Slice",
+      "calories": 450,
+      "protein": 21,
+      "carbs": 40,
+      "fat": 23,
+      "servingLabel": "1 listed serving (8 Corner Detroit-Style Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-203930",
+      "name": "Veggie - 8 Corner Pizza Detroit-Style Slice",
+      "calories": 350,
+      "protein": 16,
+      "carbs": 41,
+      "fat": 12,
+      "servingLabel": "1 listed serving (8 Corner Detroit-Style Pizza Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-205407",
+      "name": "All Meaty - Gluten-Free Slice",
+      "calories": 260,
+      "protein": 12,
+      "carbs": 28,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Gluten-Free Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-205408",
+      "name": "Aloha BBQ Chicken - Gluten-Free Slice",
+      "calories": 260,
+      "protein": 12,
+      "carbs": 35,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Gluten-Free Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-205409",
+      "name": "BBQ Chicken - Gluten-Free Slice",
+      "calories": 250,
+      "protein": 12,
+      "carbs": 34,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Gluten-Free Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-205410",
+      "name": "BLT - Gluten-Free Slice",
+      "calories": 260,
+      "protein": 10,
+      "carbs": 25,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Gluten-Free Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-205411",
+      "name": "Buffalo Ranch Chicken - Gluten-Free Slice",
+      "calories": 250,
+      "protein": 13,
+      "carbs": 26,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Gluten-Free Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-205391",
+      "name": "Cheese - Gluten-Free Slice",
+      "calories": 200,
+      "protein": 8,
+      "carbs": 28,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Gluten-Free Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-389410",
+      "name": "Chicken Bacon Ranch - Gluten-Free Slice",
+      "calories": 290,
+      "protein": 15,
+      "carbs": 25,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Gluten-Free Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-205414",
+      "name": "Eugene Supreme - Gluten-Free Slice",
+      "calories": 230,
+      "protein": 9,
+      "carbs": 30,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Gluten-Free Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-205415",
+      "name": "Hawaiian - Gluten-Free Slice",
+      "calories": 210,
+      "protein": 9,
+      "carbs": 29,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Gluten-Free Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-205416",
+      "name": "Jet 10 - Gluten-Free Slice",
+      "calories": 240,
+      "protein": 10,
+      "carbs": 29,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Gluten-Free Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-205417",
+      "name": "Super Special - Gluten-Free Slice",
+      "calories": 210,
+      "protein": 9,
+      "carbs": 28,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Gluten-Free Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-967685",
+      "name": "Ultimate Pepperoni - Gluten-Free Slice",
+      "calories": 270,
+      "protein": 11,
+      "carbs": 28,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Gluten-Free Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-205418",
+      "name": "Veggie - Gluten-Free Slice",
+      "calories": 200,
+      "protein": 7,
+      "carbs": 29,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Gluten-Free Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-277411",
+      "name": "Build Your Own 1-2 Topping Cauliflower Crust Slice",
+      "calories": 170,
+      "protein": 10,
+      "carbs": 16,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Seasoned Cauliflower Crust Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-277412",
+      "name": "Build Your Own 3+ Topping Cauliflower Crust Slice",
+      "calories": 160,
+      "protein": 9,
+      "carbs": 16,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Seasoned Cauliflower Crust Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-277414",
+      "name": "All Meaty - Cauliflower Crust Slice",
+      "calories": 230,
+      "protein": 13,
+      "carbs": 16,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Seasoned Cauliflower Crust Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-277415",
+      "name": "Aloha BBQ Chicken - Cauliflower Crust Slice",
+      "calories": 230,
+      "protein": 14,
+      "carbs": 23,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Seasoned Cauliflower Crust Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-277416",
+      "name": "BBQ Chicken - Cauliflower Crust Slice",
+      "calories": 230,
+      "protein": 14,
+      "carbs": 22,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Seasoned Cauliflower Crust Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-277417",
+      "name": "BLT - Cauliflower Crust Slice",
+      "calories": 230,
+      "protein": 12,
+      "carbs": 13,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Seasoned Cauliflower Crust Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-277418",
+      "name": "Buffalo Ranch Chicken - Cauliflower Crust Slice",
+      "calories": 220,
+      "protein": 15,
+      "carbs": 14,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Seasoned Cauliflower Crust Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-277413",
+      "name": "Cheese - Cauliflower Crust Slice",
+      "calories": 170,
+      "protein": 10,
+      "carbs": 16,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Seasoned Cauliflower Crust Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-389409",
+      "name": "Chicken Bacon Ranch - Cauliflower Crust Slice",
+      "calories": 260,
+      "protein": 17,
+      "carbs": 13,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Seasoned Cauliflower Crust Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-277421",
+      "name": "Eugene Supreme - Cauliflower Crust Slice",
+      "calories": 210,
+      "protein": 11,
+      "carbs": 18,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Seasoned Cauliflower Crust Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-277420",
+      "name": "Hawaiian - Cauliflower Crust Slice",
+      "calories": 180,
+      "protein": 11,
+      "carbs": 16,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Seasoned Cauliflower Crust Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-277422",
+      "name": "Jet 10 - Cauliflower Crust Slice",
+      "calories": 220,
+      "protein": 12,
+      "carbs": 17,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Seasoned Cauliflower Crust Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-277423",
+      "name": "Super Special - Cauliflower Crust Slice",
+      "calories": 180,
+      "protein": 10,
+      "carbs": 16,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Seasoned Cauliflower Crust Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-967684",
+      "name": "Ultimate Pepperoni - Cauliflower Crust Slice",
+      "calories": 240,
+      "protein": 12,
+      "carbs": 16,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Seasoned Cauliflower Crust Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-277424",
+      "name": "Veggie - Cauliflower Crust Slice",
+      "calories": 170,
+      "protein": 9,
+      "carbs": 16,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Seasoned Cauliflower Crust Slices; size in item name)"
+    },
+    {
+      "id": "nutritionix-277425",
+      "name": "Cheese and Pepperoni Slice",
+      "calories": 490,
+      "protein": 23,
+      "carbs": 57,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Pizza by the Slice; size in item name)"
+    },
+    {
+      "id": "nutritionix-277426",
+      "name": "Cheese Only Slice",
+      "calories": 460,
+      "protein": 22,
+      "carbs": 57,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Pizza by the Slice; size in item name)"
+    },
+    {
+      "id": "nutritionix-203946",
+      "name": "Medium Antipasto Salad",
+      "calories": 170,
+      "protein": 12,
+      "carbs": 6,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-203949",
+      "name": "Medium Garden Salad",
+      "calories": 110,
+      "protein": 5,
+      "carbs": 7,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-203950",
+      "name": "Medium Greek Salad",
+      "calories": 100,
+      "protein": 4,
+      "carbs": 8,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-203951",
+      "name": "Party Size Antipasto Salad",
+      "calories": 120,
+      "protein": 8,
+      "carbs": 3,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-203952",
+      "name": "Party Size Garden Salad",
+      "calories": 70,
+      "protein": 3,
+      "carbs": 4,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-203953",
+      "name": "Party Size Greek Salad",
+      "calories": 80,
+      "protein": 4,
+      "carbs": 6,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-203954",
+      "name": "Small Antipasto Salad",
+      "calories": 170,
+      "protein": 12,
+      "carbs": 6,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-203957",
+      "name": "Small Garden Salad",
+      "calories": 100,
+      "protein": 5,
+      "carbs": 7,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-203958",
+      "name": "Small Greek Salad",
+      "calories": 90,
+      "protein": 5,
+      "carbs": 8,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-29717",
+      "name": "Salad Dressings - Small - Catalina Dressing",
+      "calories": 80,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Salad Dressings - Small; size in item name)"
+    },
+    {
+      "id": "nutritionix-29731",
+      "name": "Salad Dressings - Small - Fat Free Raspberry Vinaigrette",
+      "calories": 20,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Salad Dressings - Small; size in item name)"
+    },
+    {
+      "id": "nutritionix-29728",
+      "name": "Salad Dressings - Small - Greek Dressing",
+      "calories": 230,
+      "protein": 0,
+      "carbs": 6,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Salad Dressings - Small; size in item name)"
+    },
+    {
+      "id": "nutritionix-29723",
+      "name": "Salad Dressings - Small - Italian Dressing",
+      "calories": 260,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 28,
+      "servingLabel": "1 listed serving (Salad Dressings - Small; size in item name)"
+    },
+    {
+      "id": "nutritionix-29730",
+      "name": "Salad Dressings - Small - Ranch Dressing",
+      "calories": 210,
+      "protein": 1,
+      "carbs": 1,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Salad Dressings - Small; size in item name)"
+    },
+    {
+      "id": "nutritionix-594899",
+      "name": "Salad Dressings - Bottle - Cajun Ranch",
+      "calories": 1240,
+      "protein": 6,
+      "carbs": 6,
+      "fat": 133,
+      "servingLabel": "1 listed serving (Salad Dressings - Bottle; size in item name)"
+    },
+    {
+      "id": "nutritionix-203987",
+      "name": "Boneless Wings",
+      "calories": 50,
+      "protein": 5,
+      "carbs": 3,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Sidekicks; size in item name)"
+    },
+    {
+      "id": "nutritionix-203960",
+      "name": "Deep Dish Bread",
+      "calories": 130,
+      "protein": 5,
+      "carbs": 13,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Sidekicks; size in item name)"
+    },
+    {
+      "id": "nutritionix-203959",
+      "name": "Jet's Bread",
+      "calories": 130,
+      "protein": 7,
+      "carbs": 17,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Sidekicks; size in item name)"
+    },
+    {
+      "id": "nutritionix-203962",
+      "name": "Jet's Triple Cheese Turbo Stix",
+      "calories": 140,
+      "protein": 5,
+      "carbs": 13,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Sidekicks; size in item name)"
+    },
+    {
+      "id": "nutritionix-203988",
+      "name": "Traditional Wings",
+      "calories": 80,
+      "protein": 6,
+      "carbs": 1,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Sidekicks; size in item name)"
+    },
+    {
+      "id": "nutritionix-30903",
+      "name": "Plain (No Sauce)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Wing Sauce - Traditional Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-29734",
+      "name": "Wing Sauce - Traditional Wings - BBQ",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Wing Sauce - Traditional Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-29733",
+      "name": "Wing Sauce - Traditional Wings - Honey BBQ",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Wing Sauce - Traditional Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-29720",
+      "name": "Hot Buffalo",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Wing Sauce - Traditional Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-29719",
+      "name": "Mild Buffalo",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Wing Sauce - Traditional Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-29735",
+      "name": "Wing Sauce - Traditional Wings - Sweet Red Chili",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Wing Sauce - Traditional Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-206610",
+      "name": "Cheese Only Jet's Boat",
+      "calories": 710,
+      "protein": 36,
+      "carbs": 88,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Jet's Boats; size in item name)"
+    },
+    {
+      "id": "nutritionix-203972",
+      "name": "Ham & Cheese Deli Boat",
+      "calories": 990,
+      "protein": 41,
+      "carbs": 83,
+      "fat": 54,
+      "servingLabel": "1 listed serving (Deli Boats; size in item name)"
+    },
+    {
+      "id": "nutritionix-203970",
+      "name": "Italian Deli Boat",
+      "calories": 1090,
+      "protein": 44,
+      "carbs": 84,
+      "fat": 63,
+      "servingLabel": "1 listed serving (Deli Boats; size in item name)"
+    },
+    {
+      "id": "nutritionix-203971",
+      "name": "Veggie Deli Boat",
+      "calories": 990,
+      "protein": 33,
+      "carbs": 88,
+      "fat": 54,
+      "servingLabel": "1 listed serving (Deli Boats; size in item name)"
+    },
+    {
+      "id": "nutritionix-29713",
+      "name": "Butter Garlic Dipping Sauce",
+      "calories": 190,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Dipping Sauces; size in item name)"
+    },
+    {
+      "id": "nutritionix-487074",
+      "name": "Mike's Hot Honey Dipping Sauce",
+      "calories": 70,
+      "protein": 0,
+      "carbs": 17,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Dipping Sauces; size in item name)"
+    },
+    {
+      "id": "nutritionix-29703",
+      "name": "Dipping Sauces - Pizza Sauce",
+      "calories": 80,
+      "protein": 2,
+      "carbs": 17,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Dipping Sauces; size in item name)"
+    },
+    {
+      "id": "nutritionix-285877",
+      "name": "Chocolate Chip Brownie",
+      "calories": 150,
+      "protein": 1,
+      "carbs": 20,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-270363",
+      "name": "Chocolate Chip Cookie",
+      "calories": 150,
+      "protein": 1,
+      "carbs": 18,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-203961",
+      "name": "Cinnamon Stix",
+      "calories": 120,
+      "protein": 2,
+      "carbs": 22,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-29739",
+      "name": "10\" Thin",
+      "calories": 110,
+      "protein": 3,
+      "carbs": 16,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Crust - Small; size in item name)"
+    },
+    {
+      "id": "nutritionix-49210",
+      "name": "Cauliflower Crust",
+      "calories": 90,
+      "protein": 4,
+      "carbs": 12,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Crust - Small; size in item name)"
+    },
+    {
+      "id": "nutritionix-29742",
+      "name": "Crust - Small - Deep Dish",
+      "calories": 240,
+      "protein": 6,
+      "carbs": 39,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Crust - Small; size in item name)"
+    },
+    {
+      "id": "nutritionix-29738",
+      "name": "Gluten Free Crust",
+      "calories": 120,
+      "protein": 2,
+      "carbs": 24,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Crust - Small; size in item name)"
+    },
+    {
+      "id": "nutritionix-29741",
+      "name": "Crust - Small - Hand Tossed",
+      "calories": 210,
+      "protein": 9,
+      "carbs": 39,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Crust - Small; size in item name)"
+    },
+    {
+      "id": "nutritionix-29740",
+      "name": "14\" Thin",
+      "calories": 120,
+      "protein": 3,
+      "carbs": 19,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Crust - Large; size in item name)"
+    },
+    {
+      "id": "nutritionix-29709",
+      "name": "Cheeses - Small Deep Dish - Cheddar",
+      "calories": 110,
+      "protein": 7,
+      "carbs": 1,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Cheeses - Small Deep Dish; size in item name)"
+    },
+    {
+      "id": "nutritionix-29707",
+      "name": "Cheeses - Small Deep Dish - Feta",
+      "calories": 60,
+      "protein": 5,
+      "carbs": 1,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Cheeses - Small Deep Dish; size in item name)"
+    },
+    {
+      "id": "nutritionix-29704",
+      "name": "Cheeses - Small Deep Dish - Premium Mozzarella",
+      "calories": 80,
+      "protein": 8,
+      "carbs": 1,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Cheeses - Small Deep Dish; size in item name)"
+    },
+    {
+      "id": "nutritionix-29687",
+      "name": "Toppings - Small Deep Dish or Hand Tossed - Anchovies",
+      "calories": 5,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Toppings - Small Deep Dish or Hand Tossed; size in item name)"
+    },
+    {
+      "id": "nutritionix-29678",
+      "name": "Toppings - Small Deep Dish or Hand Tossed - Bacon",
+      "calories": 60,
+      "protein": 4,
+      "carbs": 0,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Toppings - Small Deep Dish or Hand Tossed; size in item name)"
+    },
+    {
+      "id": "nutritionix-29695",
+      "name": "Toppings - Small Deep Dish or Hand Tossed - Black Olives",
+      "calories": 30,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Toppings - Small Deep Dish or Hand Tossed; size in item name)"
+    },
+    {
+      "id": "nutritionix-29675",
+      "name": "Toppings - Small Deep Dish or Hand Tossed - Bold Pepperoni",
+      "calories": 50,
+      "protein": 2,
+      "carbs": 0,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Toppings - Small Deep Dish or Hand Tossed; size in item name)"
+    },
+    {
+      "id": "nutritionix-29700",
+      "name": "Toppings - Small Deep Dish or Hand Tossed - Greek Olives, Sliced",
+      "calories": 40,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Toppings - Small Deep Dish or Hand Tossed; size in item name)"
+    },
+    {
+      "id": "nutritionix-91348",
+      "name": "Toppings - Small Deep Dish or Hand Tossed - Ham",
+      "calories": 10,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 0.5,
+      "servingLabel": "1 listed serving (Toppings - Small Deep Dish or Hand Tossed; size in item name)"
+    },
+    {
+      "id": "nutritionix-29680",
+      "name": "Toppings - Small Deep Dish or Hand Tossed - Italian Sausage",
+      "calories": 80,
+      "protein": 4,
+      "carbs": 1,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Toppings - Small Deep Dish or Hand Tossed; size in item name)"
+    },
+    {
+      "id": "nutritionix-29698",
+      "name": "Mild Peppers",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Toppings - Small Deep Dish or Hand Tossed; size in item name)"
+    },
+    {
+      "id": "nutritionix-29689",
+      "name": "Toppings - Small Deep Dish or Hand Tossed - Onions",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Toppings - Small Deep Dish or Hand Tossed; size in item name)"
+    },
+    {
+      "id": "nutritionix-29674",
+      "name": "Toppings - Small Deep Dish or Hand Tossed - Pepperoni",
+      "calories": 40,
+      "protein": 2,
+      "carbs": 0,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Toppings - Small Deep Dish or Hand Tossed; size in item name)"
+    },
+    {
+      "id": "nutritionix-29697",
+      "name": "Toppings - Small Deep Dish or Hand Tossed - Pineapple",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Toppings - Small Deep Dish or Hand Tossed; size in item name)"
+    },
+    {
+      "id": "nutritionix-29693",
+      "name": "Toppings - Small Deep Dish or Hand Tossed - Red Onions",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Toppings - Small Deep Dish or Hand Tossed; size in item name)"
+    },
+    {
+      "id": "nutritionix-419110",
+      "name": "Toppings - Small Deep Dish or Hand Tossed - Shredded Pepperoni",
+      "calories": 60,
+      "protein": 3,
+      "carbs": 0,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Toppings - Small Deep Dish or Hand Tossed; size in item name)"
+    },
+    {
+      "id": "nutritionix-29681",
+      "name": "Toppings - Medium Hand Tossed - Hamburger",
+      "calories": 30,
+      "protein": 2,
+      "carbs": 0,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Toppings - Medium Hand Tossed; size in item name)"
+    },
+    {
+      "id": "nutritionix-29699",
+      "name": "Toppings - Medium Hand Tossed - Jalapenos",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Toppings - Medium Hand Tossed; size in item name)"
+    },
+    {
+      "id": "nutritionix-29688",
+      "name": "Mushrooms",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Toppings - Medium Hand Tossed; size in item name)"
+    },
+    {
+      "id": "nutritionix-29694",
+      "name": "Toppings - Large NY Style - Green Peppers",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Toppings - Large NY Style; size in item name)"
+    },
+    {
+      "id": "nutritionix-29683",
+      "name": "Toppings - Large NY Style - Grilled Chicken",
+      "calories": 45,
+      "protein": 9,
+      "carbs": 1,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Toppings - Large NY Style; size in item name)"
+    },
+    {
+      "id": "nutritionix-29736",
+      "name": "Crust Flavors - Small Deep Dish or Hand Tossed - Butter",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Crust Flavors - Small Deep Dish or Hand Tossed; size in item name)"
+    },
+    {
+      "id": "nutritionix-29715",
+      "name": "Cajun",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Crust Flavors - Small Deep Dish or Hand Tossed; size in item name)"
+    },
+    {
+      "id": "nutritionix-29721",
+      "name": "Garlic",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Crust Flavors - Small Deep Dish or Hand Tossed; size in item name)"
+    },
+    {
+      "id": "nutritionix-29706",
+      "name": "Crust Flavors - Small Deep Dish or Hand Tossed - Romano",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Crust Flavors - Small Deep Dish or Hand Tossed; size in item name)"
+    },
+    {
+      "id": "nutritionix-29732",
+      "name": "Crust Flavors - Small Deep Dish or Hand Tossed - Sesame Seed",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Crust Flavors - Small Deep Dish or Hand Tossed; size in item name)"
+    },
+    {
+      "id": "nutritionix-30690",
+      "name": "Crust Flavors - Small Deep Dish or Hand Tossed - Turbo Crust",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Crust Flavors - Small Deep Dish or Hand Tossed; size in item name)"
+    },
+    {
+      "id": "nutritionix-29692",
+      "name": "Toppings - Jet's Boat - Tomatoes",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Toppings - Jet's Boat; size in item name)"
+    },
+    {
+      "id": "nutritionix-29691",
+      "name": "Grape Tomatoes",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Salad Toppings - Small; size in item name)"
+    },
+    {
+      "id": "nutritionix-29684",
+      "name": "Salad Toppings - Small - Jet's Boneless Chicken",
+      "calories": 60,
+      "protein": 6,
+      "carbs": 4,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Salad Toppings - Small; size in item name)"
+    },
+    {
+      "id": "nutritionix-29708",
+      "name": "Salad Toppings - Small - Provolone",
+      "calories": 30,
+      "protein": 2,
+      "carbs": 0,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Salad Toppings - Small; size in item name)"
+    },
+    {
+      "id": "nutritionix-29679",
+      "name": "Salami",
+      "calories": 45,
+      "protein": 3,
+      "carbs": 0,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Salad Toppings - Party Tray; size in item name)"
+    }
+  ],
+  "sourceDate": "2026-07-27"
+}

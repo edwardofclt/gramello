@@ -1,0 +1,667 @@
+{
+  "chain": "Five Guys",
+  "sourceUrl": "https://www.fiveguys.com/wp-content/uploads/2026/09/Five-Guys-US-Nutrition-Allergen-Guide-English-September-2026.pdf",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "id": "bacon-2-pieces-supplier-s-14-g",
+      "name": "Bacon (2 pieces) (Supplier S)",
+      "calories": 70,
+      "protein": 5,
+      "carbs": 0,
+      "fat": 6,
+      "servingLabel": "14 g",
+      "servingGrams": 14
+    },
+    {
+      "id": "bacon-2-pieces-supplier-d-14-g",
+      "name": "Bacon (2 pieces) (Supplier D)",
+      "calories": 73,
+      "protein": 6,
+      "carbs": 0,
+      "fat": 5,
+      "servingLabel": "14 g",
+      "servingGrams": 14
+    },
+    {
+      "id": "bacon-1-piece-supplier-d-7-g",
+      "name": "Bacon (1 piece) (Supplier D)",
+      "calories": 36,
+      "protein": 3,
+      "carbs": 0,
+      "fat": 3,
+      "servingLabel": "7 g",
+      "servingGrams": 7
+    },
+    {
+      "id": "mini-patty-35-g",
+      "name": "Mini Patty",
+      "calories": 163,
+      "protein": 9,
+      "carbs": 0,
+      "fat": 9,
+      "servingLabel": "35 g",
+      "servingGrams": 35
+    },
+    {
+      "id": "hamburger-patty-65-g",
+      "name": "Hamburger Patty",
+      "calories": 302,
+      "protein": 16,
+      "carbs": 0,
+      "fat": 17,
+      "servingLabel": "65 g",
+      "servingGrams": 65
+    },
+    {
+      "id": "hot-dog-supplier-h-90-g",
+      "name": "Hot Dog (Supplier H)",
+      "calories": 280,
+      "protein": 11,
+      "carbs": 1,
+      "fat": 26,
+      "servingLabel": "90 g",
+      "servingGrams": 90
+    },
+    {
+      "id": "hot-dog-supplier-k-90-g",
+      "name": "Hot Dog (Supplier K)",
+      "calories": 260,
+      "protein": 11,
+      "carbs": 1,
+      "fat": 24,
+      "servingLabel": "90 g",
+      "servingGrams": 90
+    },
+    {
+      "id": "mini-bun-37-g",
+      "name": "Mini Bun",
+      "calories": 120,
+      "protein": 3,
+      "carbs": 20,
+      "fat": 3,
+      "servingLabel": "37 g",
+      "servingGrams": 37
+    },
+    {
+      "id": "hamburger-bun-77-g",
+      "name": "Hamburger Bun",
+      "calories": 240,
+      "protein": 7,
+      "carbs": 35,
+      "fat": 8,
+      "servingLabel": "77 g",
+      "servingGrams": 77
+    },
+    {
+      "id": "hot-dog-buns-71-g",
+      "name": "Hot Dog Buns",
+      "calories": 220,
+      "protein": 6,
+      "carbs": 33,
+      "fat": 7,
+      "servingLabel": "71 g",
+      "servingGrams": 71
+    },
+    {
+      "id": "mini-five-guys-style-175-g",
+      "name": "Mini Five Guys Style",
+      "calories": 405,
+      "protein": 6,
+      "carbs": 55,
+      "fat": 17,
+      "servingLabel": "175 g",
+      "servingGrams": 175
+    },
+    {
+      "id": "little-five-guys-style-227-g",
+      "name": "Little Five Guys Style",
+      "calories": 526,
+      "protein": 8,
+      "carbs": 72,
+      "fat": 23,
+      "servingLabel": "227 g",
+      "servingGrams": 227
+    },
+    {
+      "id": "regular-five-guys-style-411-g",
+      "name": "Regular Five Guys Style",
+      "calories": 953,
+      "protein": 15,
+      "carbs": 131,
+      "fat": 41,
+      "servingLabel": "411 g",
+      "servingGrams": 411
+    },
+    {
+      "id": "large-five-guys-style-567-g",
+      "name": "Large Five Guys Style",
+      "calories": 1314,
+      "protein": 20,
+      "carbs": 181,
+      "fat": 57,
+      "servingLabel": "567 g",
+      "servingGrams": 567
+    },
+    {
+      "id": "mini-five-guys-style-178-g",
+      "name": "Mini Five Guys Style",
+      "calories": 413,
+      "protein": 6,
+      "carbs": 56,
+      "fat": 17,
+      "servingLabel": "178 g",
+      "servingGrams": 178
+    },
+    {
+      "id": "little-cajun-style-232-g",
+      "name": "Little Cajun Style",
+      "calories": 540,
+      "protein": 8,
+      "carbs": 75,
+      "fat": 28,
+      "servingLabel": "232 g",
+      "servingGrams": 232
+    },
+    {
+      "id": "regular-cajun-style-416-g",
+      "name": "Regular Cajun Style",
+      "calories": 967,
+      "protein": 15,
+      "carbs": 134,
+      "fat": 41,
+      "servingLabel": "416 g",
+      "servingGrams": 416
+    },
+    {
+      "id": "large-cajun-style-572-g",
+      "name": "Large Cajun Style",
+      "calories": 1328,
+      "protein": 20,
+      "carbs": 184,
+      "fat": 57,
+      "servingLabel": "572 g",
+      "servingGrams": 572
+    },
+    {
+      "id": "a-1-sauce-17-g",
+      "name": "A.1. Sauce",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 0,
+      "servingLabel": "17 g",
+      "servingGrams": 17
+    },
+    {
+      "id": "cheese-1-slice-supplier-s-19-g",
+      "name": "Cheese (1 slice) (Supplier S)",
+      "calories": 70,
+      "protein": 3,
+      "carbs": 1,
+      "fat": 6,
+      "servingLabel": "19 g",
+      "servingGrams": 19
+    },
+    {
+      "id": "green-peppers-25-g",
+      "name": "Green Peppers",
+      "calories": 3,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "25 g",
+      "servingGrams": 25
+    },
+    {
+      "id": "grilled-mushrooms-21-g",
+      "name": "Grilled Mushrooms",
+      "calories": 6,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "21 g",
+      "servingGrams": 21
+    },
+    {
+      "id": "hot-sauce-5-g",
+      "name": "Hot Sauce",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "5 g",
+      "servingGrams": 5
+    },
+    {
+      "id": "ketchup-17-g",
+      "name": "Ketchup",
+      "calories": 30,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 0,
+      "servingLabel": "17 g",
+      "servingGrams": 17
+    },
+    {
+      "id": "lettuce-30-g",
+      "name": "Lettuce",
+      "calories": 3,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "30 g",
+      "servingGrams": 30
+    },
+    {
+      "id": "mayonnaise-supplier-k-14-g",
+      "name": "Mayonnaise (Supplier K)",
+      "calories": 111,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 11,
+      "servingLabel": "14 g",
+      "servingGrams": 14
+    },
+    {
+      "id": "mayonnaise-supplier-s-14-g",
+      "name": "Mayonnaise (Supplier S)",
+      "calories": 103,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 11,
+      "servingLabel": "14 g",
+      "servingGrams": 14
+    },
+    {
+      "id": "mustard-5-g",
+      "name": "Mustard",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "5 g",
+      "servingGrams": 5
+    },
+    {
+      "id": "onions-grilled-onions-26-g",
+      "name": "Onions / Grilled Onions",
+      "calories": 11,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "26 g",
+      "servingGrams": 26
+    },
+    {
+      "id": "pickles-supplier-m-28-g",
+      "name": "Pickles (Supplier M)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "28 g",
+      "servingGrams": 28
+    },
+    {
+      "id": "pickles-supplier-b-28-g",
+      "name": "Pickles (Supplier B)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "28 g",
+      "servingGrams": 28
+    },
+    {
+      "id": "relish-15-g",
+      "name": "Relish",
+      "calories": 16,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 0,
+      "servingLabel": "15 g",
+      "servingGrams": 15
+    },
+    {
+      "id": "vanilla-shake-base-315-g",
+      "name": "Vanilla Shake Base",
+      "calories": 524,
+      "protein": 10,
+      "carbs": 65,
+      "fat": 25,
+      "servingLabel": "315 g",
+      "servingGrams": 315
+    },
+    {
+      "id": "whipped-cream-supplier-s-7-g",
+      "name": "Whipped Cream (Supplier S)",
+      "calories": 7,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 1.5,
+      "servingLabel": "7 g",
+      "servingGrams": 7
+    },
+    {
+      "id": "whipped-cream-supplier-a-6-g",
+      "name": "Whipped Cream (Supplier A)",
+      "calories": 6,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 1.5,
+      "servingLabel": "6 g",
+      "servingGrams": 6
+    },
+    {
+      "id": "blackberry-sauce-60-g",
+      "name": "Blackberry Sauce",
+      "calories": 80,
+      "protein": 0,
+      "carbs": 20,
+      "fat": 0,
+      "servingLabel": "60 g",
+      "servingGrams": 60
+    },
+    {
+      "id": "bacon-2-pieces-14-g",
+      "name": "Bacon (2 pieces)",
+      "calories": 70,
+      "protein": 5,
+      "carbs": 0,
+      "fat": 6,
+      "servingLabel": "14 g",
+      "servingGrams": 14
+    },
+    {
+      "id": "chocolate-50-g",
+      "name": "Chocolate",
+      "calories": 133,
+      "protein": 2,
+      "carbs": 30,
+      "fat": 2,
+      "servingLabel": "50 g",
+      "servingGrams": 50
+    },
+    {
+      "id": "oreo-creme-50-g",
+      "name": "Oreo Crème",
+      "calories": 320,
+      "protein": 0,
+      "carbs": 23,
+      "fat": 25,
+      "servingLabel": "50 g",
+      "servingGrams": 50
+    },
+    {
+      "id": "oreo-cookie-pieces-25-g",
+      "name": "Oreo Cookie Pieces",
+      "calories": 120,
+      "protein": 1,
+      "carbs": 18,
+      "fat": 5,
+      "servingLabel": "25 g",
+      "servingGrams": 25
+    },
+    {
+      "id": "peanut-butter-50-g",
+      "name": "Peanut Butter",
+      "calories": 322,
+      "protein": 9,
+      "carbs": 9,
+      "fat": 29,
+      "servingLabel": "50 g",
+      "servingGrams": 50
+    },
+    {
+      "id": "reeses-peanut-butter-cup-28-g",
+      "name": "Reese’s Peanut Butter Cup",
+      "calories": 150,
+      "protein": 3,
+      "carbs": 15,
+      "fat": 8,
+      "servingLabel": "28 g",
+      "servingGrams": 28
+    },
+    {
+      "id": "mini-vanilla-shake-base-155-g",
+      "name": "Mini Vanilla Shake Base",
+      "calories": 250,
+      "protein": 5,
+      "carbs": 33,
+      "fat": 12,
+      "servingLabel": "155 g",
+      "servingGrams": 155
+    },
+    {
+      "id": "blackberry-sauce-30-g",
+      "name": "Blackberry Sauce",
+      "calories": 40,
+      "protein": 0,
+      "carbs": 10,
+      "fat": 0,
+      "servingLabel": "30 g",
+      "servingGrams": 30
+    },
+    {
+      "id": "bacon-2-pieces-7-g",
+      "name": "Bacon (2 pieces)",
+      "calories": 35,
+      "protein": 2,
+      "carbs": 0,
+      "fat": 3,
+      "servingLabel": "7 g",
+      "servingGrams": 7
+    },
+    {
+      "id": "banana-marinade-60-g",
+      "name": "Banana Marinade",
+      "calories": 87,
+      "protein": 0,
+      "carbs": 21,
+      "fat": 0,
+      "servingLabel": "60 g",
+      "servingGrams": 60
+    },
+    {
+      "id": "chocolate-25-g",
+      "name": "Chocolate",
+      "calories": 66,
+      "protein": 1,
+      "carbs": 15,
+      "fat": 1,
+      "servingLabel": "25 g",
+      "servingGrams": 25
+    },
+    {
+      "id": "coffee-8-g",
+      "name": "Coffee",
+      "calories": 13,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 0,
+      "servingLabel": "8 g",
+      "servingGrams": 8
+    },
+    {
+      "id": "oreo-creme-25-g",
+      "name": "Oreo Crème",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 11,
+      "fat": 12,
+      "servingLabel": "25 g",
+      "servingGrams": 25
+    },
+    {
+      "id": "peanut-butter-25-g",
+      "name": "Peanut Butter",
+      "calories": 161,
+      "protein": 4,
+      "carbs": 4,
+      "fat": 14,
+      "servingLabel": "25 g",
+      "servingGrams": 25
+    },
+    {
+      "id": "reeses-peanut-butter-cup-14-g",
+      "name": "Reese’s Peanut Butter Cup",
+      "calories": 75,
+      "protein": 1,
+      "carbs": 7,
+      "fat": 4,
+      "servingLabel": "14 g",
+      "servingGrams": 14
+    },
+    {
+      "id": "salted-caramel-25-g",
+      "name": "Salted Caramel",
+      "calories": 77,
+      "protein": 0,
+      "carbs": 18,
+      "fat": 0,
+      "servingLabel": "25 g",
+      "servingGrams": 25
+    },
+    {
+      "id": "strawberry-40-g",
+      "name": "Strawberry",
+      "calories": 53,
+      "protein": 0,
+      "carbs": 14,
+      "fat": 0,
+      "servingLabel": "40 g",
+      "servingGrams": 40
+    },
+    {
+      "id": "chocolate-milk-245-g",
+      "name": "Chocolate Milk",
+      "calories": 150,
+      "protein": 8,
+      "carbs": 23,
+      "fat": 2.5,
+      "servingLabel": "245 g",
+      "servingGrams": 245
+    },
+    {
+      "id": "low-fat-milk-213-g",
+      "name": "Low Fat Milk",
+      "calories": 90,
+      "protein": 7,
+      "carbs": 10,
+      "fat": 2,
+      "servingLabel": "213 g",
+      "servingGrams": 213
+    },
+    {
+      "id": "apple-juice-177-g",
+      "name": "Apple Juice",
+      "calories": 35,
+      "protein": 0,
+      "carbs": 9,
+      "fat": 0,
+      "servingLabel": "177 g",
+      "servingGrams": 177
+    },
+    {
+      "id": "orange-juice-blend-300-g",
+      "name": "Orange Juice Blend",
+      "calories": 140,
+      "protein": 1,
+      "carbs": 34,
+      "fat": 0,
+      "servingLabel": "300 g",
+      "servingGrams": 300
+    },
+    {
+      "id": "cheese-sauce-90-g",
+      "name": "Cheese Sauce",
+      "calories": 92,
+      "protein": 4,
+      "carbs": 7,
+      "fat": 6,
+      "servingLabel": "90 g",
+      "servingGrams": 90
+    },
+    {
+      "id": "bulk-peanuts-1oz-30-g",
+      "name": "Bulk Peanuts (1oz.)",
+      "calories": 170,
+      "protein": 7,
+      "carbs": 5,
+      "fat": 14,
+      "servingLabel": "30 g",
+      "servingGrams": 30
+    },
+    {
+      "id": "cajun-peanuts-30-g",
+      "name": "Cajun Peanuts",
+      "calories": 170,
+      "protein": 7,
+      "carbs": 5,
+      "fat": 14,
+      "servingLabel": "30 g",
+      "servingGrams": 30
+    },
+    {
+      "id": "fry-sauce-bulk-28-g",
+      "name": "Fry Sauce Bulk",
+      "calories": 80,
+      "protein": 0,
+      "carbs": 6,
+      "fat": 6,
+      "servingLabel": "28 g",
+      "servingGrams": 28
+    },
+    {
+      "id": "fry-sauce-pc-35-g",
+      "name": "Fry Sauce PC",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 9,
+      "servingLabel": "35 g",
+      "servingGrams": 35
+    },
+    {
+      "id": "malt-vinegar-1tbs-15-g",
+      "name": "Malt Vinegar (1tbs)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "15 g",
+      "servingGrams": 15
+    },
+    {
+      "id": "eggs-2-105-g",
+      "name": "Eggs (2)",
+      "calories": 160,
+      "protein": 13,
+      "carbs": 1,
+      "fat": 11,
+      "servingLabel": "105 g",
+      "servingGrams": 105
+    },
+    {
+      "id": "liquid-butter-flavored-oil-14-g",
+      "name": "Liquid Butter Flavored Oil",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 14,
+      "servingLabel": "14 g",
+      "servingGrams": 14
+    },
+    {
+      "id": "chives-seasoning-1-2-g",
+      "name": "Chives Seasoning",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1-2 g"
+    }
+  ],
+  "sourceDate": "2026-09"
+}

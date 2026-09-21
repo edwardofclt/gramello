@@ -1,0 +1,361 @@
+{
+  "chain": "Eggs Up Grill",
+  "sourceUrl": "https://www.nutritionix.com/eggs-up-grill/menu/premium",
+  "source": "Nutritionix",
+  "sourceKind": "database",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "id": "nutritionix-552498",
+      "name": "Biscuits and Gravy",
+      "calories": 680,
+      "protein": 12,
+      "carbs": 73,
+      "fat": 36,
+      "servingLabel": "1 listed serving (Shareable Bites; size in item name)"
+    },
+    {
+      "id": "nutritionix-586115",
+      "name": "Blueberry Muffin and Eggs Breakfast",
+      "calories": 420,
+      "protein": 15,
+      "carbs": 42,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Breakfast Classics; size in item name)"
+    },
+    {
+      "id": "nutritionix-586117",
+      "name": "Homestead Platter",
+      "calories": 840,
+      "protein": 43,
+      "carbs": 40,
+      "fat": 56,
+      "servingLabel": "1 listed serving (Breakfast Classics; size in item name)"
+    },
+    {
+      "id": "nutritionix-586114",
+      "name": "Southern Staples Breakfast",
+      "calories": 1170,
+      "protein": 46,
+      "carbs": 65,
+      "fat": 81,
+      "servingLabel": "1 listed serving (Breakfast Classics; size in item name)"
+    },
+    {
+      "id": "nutritionix-552499",
+      "name": "The Classic Breakfast",
+      "calories": 640,
+      "protein": 26,
+      "carbs": 69,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Breakfast Classics; size in item name)"
+    },
+    {
+      "id": "nutritionix-586116",
+      "name": "The Grand Classic Breakfast",
+      "calories": 1210,
+      "protein": 52,
+      "carbs": 191,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Breakfast Classics; size in item name)"
+    },
+    {
+      "id": "nutritionix-586120",
+      "name": "Biscuit-Wich",
+      "calories": 390,
+      "protein": 22,
+      "carbs": 14,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Pick-Me-Ups; size in item name)"
+    },
+    {
+      "id": "nutritionix-586119",
+      "name": "Carne Breakfast Burrito",
+      "calories": 510,
+      "protein": 25,
+      "carbs": 34,
+      "fat": 29,
+      "servingLabel": "1 listed serving (Pick-Me-Ups; size in item name)"
+    },
+    {
+      "id": "nutritionix-586122",
+      "name": "Chicken Biscuit Club",
+      "calories": 760,
+      "protein": 32,
+      "carbs": 60,
+      "fat": 39,
+      "servingLabel": "1 listed serving (Pick-Me-Ups; size in item name)"
+    },
+    {
+      "id": "nutritionix-586118",
+      "name": "The Egg Bomb",
+      "calories": 500,
+      "protein": 22,
+      "carbs": 45,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Pick-Me-Ups; size in item name)"
+    },
+    {
+      "id": "nutritionix-586121",
+      "name": "Waffle Sandwich",
+      "calories": 900,
+      "protein": 42,
+      "carbs": 116,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Pick-Me-Ups; size in item name)"
+    },
+    {
+      "id": "nutritionix-586125",
+      "name": "Coastal Crab Cake Benedict",
+      "calories": 500,
+      "protein": 25,
+      "carbs": 41,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Big City Brunch; size in item name)"
+    },
+    {
+      "id": "nutritionix-586126",
+      "name": "Eggs Benedict",
+      "calories": 450,
+      "protein": 30,
+      "carbs": 30,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Big City Brunch; size in item name)"
+    },
+    {
+      "id": "nutritionix-586127",
+      "name": "Founder's Hash Benedict",
+      "calories": 660,
+      "protein": 31,
+      "carbs": 45,
+      "fat": 39,
+      "servingLabel": "1 listed serving (Big City Brunch; size in item name)"
+    },
+    {
+      "id": "nutritionix-586129",
+      "name": "Honey Berry Yogurt Crunch",
+      "calories": 660,
+      "protein": 31,
+      "carbs": 45,
+      "fat": 39,
+      "servingLabel": "1 listed serving (Big City Brunch; size in item name)"
+    },
+    {
+      "id": "nutritionix-586123",
+      "name": "Loaded Home Fry Bowl",
+      "calories": 770,
+      "protein": 46,
+      "carbs": 38,
+      "fat": 48,
+      "servingLabel": "1 listed serving (Big City Brunch; size in item name)"
+    },
+    {
+      "id": "nutritionix-586128",
+      "name": "Shrimp & Grits Bowl",
+      "calories": 1260,
+      "protein": 62,
+      "carbs": 140,
+      "fat": 43,
+      "servingLabel": "1 listed serving (Big City Brunch; size in item name)"
+    },
+    {
+      "id": "nutritionix-586124",
+      "name": "Southwestern Bowl",
+      "calories": 830,
+      "protein": 36,
+      "carbs": 65,
+      "fat": 47,
+      "servingLabel": "1 listed serving (Big City Brunch; size in item name)"
+    },
+    {
+      "id": "nutritionix-586136",
+      "name": "Baja Chicken",
+      "calories": 1170,
+      "protein": 76,
+      "carbs": 37,
+      "fat": 82,
+      "servingLabel": "1 listed serving (Signature Omelets; size in item name)"
+    },
+    {
+      "id": "nutritionix-586132",
+      "name": "Goodness Gracious Omelet",
+      "calories": 560,
+      "protein": 24,
+      "carbs": 77,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Signature Omelets; size in item name)"
+    },
+    {
+      "id": "nutritionix-586131",
+      "name": "Patty-O-Sullivan Omelet",
+      "calories": 1050,
+      "protein": 63,
+      "carbs": 67,
+      "fat": 57,
+      "servingLabel": "1 listed serving (Signature Omelets; size in item name)"
+    },
+    {
+      "id": "nutritionix-586133",
+      "name": "Philly Cheese Steak Omelet",
+      "calories": 580,
+      "protein": 32,
+      "carbs": 50,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Signature Omelets; size in item name)"
+    },
+    {
+      "id": "nutritionix-586135",
+      "name": "Texas Farmhouse Omelet",
+      "calories": 1480,
+      "protein": 73,
+      "carbs": 187,
+      "fat": 48,
+      "servingLabel": "1 listed serving (Signature Omelets; size in item name)"
+    },
+    {
+      "id": "nutritionix-586130",
+      "name": "The Greek Omelet",
+      "calories": 300,
+      "protein": 30,
+      "carbs": 9,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Signature Omelets; size in item name)"
+    },
+    {
+      "id": "nutritionix-586134",
+      "name": "Veggie Omelet",
+      "calories": 500,
+      "protein": 7,
+      "carbs": 85,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Signature Omelets; size in item name)"
+    },
+    {
+      "id": "nutritionix-586137",
+      "name": "Belgian Waffle",
+      "calories": 300,
+      "protein": 7,
+      "carbs": 23,
+      "fat": 21,
+      "servingLabel": "1 listed serving (The Griddle; size in item name)"
+    },
+    {
+      "id": "nutritionix-586138",
+      "name": "Buttermilk Pancakes",
+      "calories": 110,
+      "protein": 3,
+      "carbs": 17,
+      "fat": 3,
+      "servingLabel": "1 listed serving (The Griddle; size in item name)"
+    },
+    {
+      "id": "nutritionix-586140",
+      "name": "Cinnamon Swirl French Toast",
+      "calories": 160,
+      "protein": 6,
+      "carbs": 27,
+      "fat": 3,
+      "servingLabel": "1 listed serving (The Griddle; size in item name)"
+    },
+    {
+      "id": "nutritionix-586139",
+      "name": "Gluten Friendly Pancakes",
+      "calories": 190,
+      "protein": 2,
+      "carbs": 12,
+      "fat": 8,
+      "servingLabel": "1 listed serving (The Griddle; size in item name)"
+    },
+    {
+      "id": "nutritionix-586141",
+      "name": "Red, White and Blue Waffle",
+      "calories": 370,
+      "protein": 8,
+      "carbs": 41,
+      "fat": 21,
+      "servingLabel": "1 listed serving (The Griddle; size in item name)"
+    },
+    {
+      "id": "nutritionix-586147",
+      "name": "BBQ Chicken Melt",
+      "calories": 1030,
+      "protein": 67,
+      "carbs": 56,
+      "fat": 49,
+      "servingLabel": "1 listed serving (Hot Off The Grill; size in item name)"
+    },
+    {
+      "id": "nutritionix-586142",
+      "name": "Brunch Burger",
+      "calories": 1140,
+      "protein": 56,
+      "carbs": 54,
+      "fat": 66,
+      "servingLabel": "1 listed serving (Hot Off The Grill; size in item name)"
+    },
+    {
+      "id": "nutritionix-586145",
+      "name": "Cheesesteak Melt",
+      "calories": 1110,
+      "protein": 54,
+      "carbs": 51,
+      "fat": 79,
+      "servingLabel": "1 listed serving (Hot Off The Grill; size in item name)"
+    },
+    {
+      "id": "nutritionix-586144",
+      "name": "Eggs Up Grill BLT",
+      "calories": 470,
+      "protein": 10,
+      "carbs": 47,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Hot Off The Grill; size in item name)"
+    },
+    {
+      "id": "nutritionix-586143",
+      "name": "Great American Cheese Burger",
+      "calories": 930,
+      "protein": 57,
+      "carbs": 65,
+      "fat": 48,
+      "servingLabel": "1 listed serving (Hot Off The Grill; size in item name)"
+    },
+    {
+      "id": "nutritionix-586146",
+      "name": "TLC (Tender Loving Chicken) Sandwich",
+      "calories": 810,
+      "protein": 28,
+      "carbs": 88,
+      "fat": 39,
+      "servingLabel": "1 listed serving (Hot Off The Grill; size in item name)"
+    },
+    {
+      "id": "nutritionix-586149",
+      "name": "Cobb Salad",
+      "calories": 390,
+      "protein": 43,
+      "carbs": 11,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-586150",
+      "name": "Praline Pecan Chicken Salad",
+      "calories": 860,
+      "protein": 47,
+      "carbs": 58,
+      "fat": 48,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-586148",
+      "name": "Spinach Salad",
+      "calories": 110,
+      "protein": 1,
+      "carbs": 9,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    }
+  ],
+  "sourceDate": "2025-04-27"
+}

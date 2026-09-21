@@ -1,0 +1,97 @@
+{
+  "chain": "Lean Kitchen",
+  "sourceUrl": "https://leankitchenco.com/charlotte/",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "name": "Chicken Bacon Brussels",
+      "calories": 265,
+      "protein": 33,
+      "fat": 8,
+      "carbs": 16,
+      "servingLabel": "1 prepared meal",
+      "id": "chicken-bacon-brussels"
+    },
+    {
+      "name": "Breakfast Bowl",
+      "calories": 395,
+      "protein": 22,
+      "fat": 20,
+      "carbs": 16,
+      "servingLabel": "1 prepared meal",
+      "id": "breakfast-bowl"
+    },
+    {
+      "name": "Cheeseburger Bowl",
+      "calories": 540,
+      "protein": 35,
+      "fat": 19,
+      "carbs": 56,
+      "servingLabel": "1 prepared meal",
+      "id": "cheeseburger-bowl"
+    },
+    {
+      "name": "Buffalo Ranch Cauliflower Bowl",
+      "calories": 275,
+      "protein": 35,
+      "fat": 6,
+      "carbs": 11,
+      "servingLabel": "1 prepared meal",
+      "id": "buffalo-ranch-cauliflower-bowl"
+    },
+    {
+      "name": "Hearty Super Chili",
+      "calories": 505,
+      "protein": 30,
+      "fat": 12,
+      "carbs": 60,
+      "servingLabel": "1 prepared meal",
+      "id": "hearty-super-chili"
+    },
+    {
+      "name": "Low Carb Sweet Chili Sizzler",
+      "calories": 275,
+      "protein": 29,
+      "fat": 12,
+      "carbs": 16,
+      "servingLabel": "1 prepared meal",
+      "id": "low-carb-sweet-chili-sizzler"
+    },
+    {
+      "name": "Turkey Tacos",
+      "calories": 265,
+      "protein": 15,
+      "fat": 8,
+      "carbs": 27,
+      "servingLabel": "1 prepared meal",
+      "id": "turkey-tacos"
+    },
+    {
+      "name": "Meatball Mac 'N Cheese",
+      "calories": 375,
+      "protein": 15,
+      "fat": 26,
+      "carbs": 25,
+      "servingLabel": "1 prepared meal",
+      "id": "meatball-mac-n-cheese"
+    },
+    {
+      "name": "Ranch Burger Bowl",
+      "calories": 280,
+      "protein": 32,
+      "fat": 10,
+      "carbs": 35,
+      "servingLabel": "1 prepared meal",
+      "id": "ranch-burger-bowl"
+    },
+    {
+      "name": "Taco Bowl",
+      "calories": 455,
+      "protein": 32,
+      "fat": 10,
+      "carbs": 43,
+      "servingLabel": "1 prepared meal",
+      "id": "taco-bowl"
+    }
+  ]
+}

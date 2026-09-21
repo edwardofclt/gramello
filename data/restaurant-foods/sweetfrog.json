@@ -1,0 +1,2763 @@
+{
+  "chain": "sweetFrog",
+  "sourceUrl": "https://www.sweetfrog.com/menu/nutrition/index.php",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "name": "Low Fat Frozen Yogurt - Apple Pie Donuts",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 8.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "low-fat-frozen-yogurt-apple-pie-donuts"
+    },
+    {
+      "name": "Low Fat Frozen Yogurt - Asian Green Tea",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "low-fat-frozen-yogurt-asian-green-tea"
+    },
+    {
+      "name": "Low Fat Frozen Yogurt - Baked Apple Stack",
+      "calories": 40.0,
+      "fat": 0.5,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "low-fat-frozen-yogurt-baked-apple-stack"
+    },
+    {
+      "name": "Low Fat Frozen Yogurt - Butterfinger",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "low-fat-frozen-yogurt-butterfinger"
+    },
+    {
+      "name": "Low Fat Frozen Yogurt - Cake Batter",
+      "calories": 35.0,
+      "fat": 0.5,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "low-fat-frozen-yogurt-cake-batter"
+    },
+    {
+      "name": "Low Fat Frozen Yogurt - Caramel Apple Pie",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "low-fat-frozen-yogurt-caramel-apple-pie"
+    },
+    {
+      "name": "Low Fat Frozen Yogurt - Cookies & Cream",
+      "calories": 40.0,
+      "fat": 1.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "low-fat-frozen-yogurt-cookies-cream"
+    },
+    {
+      "name": "Low Fat Frozen Yogurt - Cookie's Sugar Cookie",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 8.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "low-fat-frozen-yogurt-cookie-s-sugar-cookie"
+    },
+    {
+      "name": "Low Fat Frozen Yogurt - Dulce de Leche",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "low-fat-frozen-yogurt-dulce-de-leche"
+    },
+    {
+      "name": "Low Fat Frozen Yogurt - Eggnog",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 8.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "low-fat-frozen-yogurt-eggnog"
+    },
+    {
+      "name": "Low Fat Frozen Yogurt - French Toast",
+      "calories": 40.0,
+      "fat": 0.0,
+      "carbs": 8.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "low-fat-frozen-yogurt-french-toast"
+    },
+    {
+      "name": "Low Fat Frozen Yogurt - Frosted Animal Cookies",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "low-fat-frozen-yogurt-frosted-animal-cookies"
+    },
+    {
+      "name": "Low Fat Frozen Yogurt - Irish Mint",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 8.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "low-fat-frozen-yogurt-irish-mint"
+    },
+    {
+      "name": "Low Fat Frozen Yogurt - Milk Chocolate",
+      "calories": 40.0,
+      "fat": 0.5,
+      "carbs": 8.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "low-fat-frozen-yogurt-milk-chocolate"
+    },
+    {
+      "name": "Low Fat Frozen Yogurt - Mocha Latte",
+      "calories": 40.0,
+      "fat": 0.5,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "low-fat-frozen-yogurt-mocha-latte"
+    },
+    {
+      "name": "Low Fat Frozen Yogurt - My Little Cupcake",
+      "calories": 40.0,
+      "fat": 1.0,
+      "carbs": 8.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "low-fat-frozen-yogurt-my-little-cupcake"
+    },
+    {
+      "name": "Low Fat Frozen Yogurt - New York Cheesecake",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "low-fat-frozen-yogurt-new-york-cheesecake"
+    },
+    {
+      "name": "Low Fat Frozen Yogurt - Oatmeal Cookie",
+      "calories": 40.0,
+      "fat": 0.0,
+      "carbs": 9.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "low-fat-frozen-yogurt-oatmeal-cookie"
+    },
+    {
+      "name": "Low Fat Frozen Yogurt - Original Tart",
+      "calories": 30.0,
+      "fat": 0.0,
+      "carbs": 6.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "low-fat-frozen-yogurt-original-tart"
+    },
+    {
+      "name": "Low Fat Frozen Yogurt - Salted Caramel Popcorn",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "low-fat-frozen-yogurt-salted-caramel-popcorn"
+    },
+    {
+      "name": "Low Fat Frozen Yogurt - Salted Caramel Pretzel",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "low-fat-frozen-yogurt-salted-caramel-pretzel"
+    },
+    {
+      "name": "Low Fat Frozen Yogurt - Scoop's Cake Batter",
+      "calories": 35.0,
+      "fat": 0.5,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "low-fat-frozen-yogurt-scoop-s-cake-batter"
+    },
+    {
+      "name": "Low Fat Frozen Yogurt - Strawberry Shortcake",
+      "calories": 35.0,
+      "fat": 0.5,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "low-fat-frozen-yogurt-strawberry-shortcake"
+    },
+    {
+      "name": "Low Fat Frozen Yogurt - Sweet Coconut",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 8.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "low-fat-frozen-yogurt-sweet-coconut"
+    },
+    {
+      "name": "Low Fat Frozen Yogurt - Ube Cake Batter",
+      "calories": 35.0,
+      "fat": 0.5,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "low-fat-frozen-yogurt-ube-cake-batter"
+    },
+    {
+      "name": "Nonfat Frozen Yogurt - Apple Pie",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "nonfat-frozen-yogurt-apple-pie"
+    },
+    {
+      "name": "Nonfat Frozen Yogurt - Banana Taffy",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "nonfat-frozen-yogurt-banana-taffy"
+    },
+    {
+      "name": "Nonfat Frozen Yogurt - Berry Blast",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "nonfat-frozen-yogurt-berry-blast"
+    },
+    {
+      "name": "Nonfat Frozen Yogurt - Blue Cotton Candy",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 6.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "nonfat-frozen-yogurt-blue-cotton-candy"
+    },
+    {
+      "name": "Nonfat Frozen Yogurt - Cable Car Chocolate",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "nonfat-frozen-yogurt-cable-car-chocolate"
+    },
+    {
+      "name": "Nonfat Frozen Yogurt - Cappuccino",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "nonfat-frozen-yogurt-cappuccino"
+    },
+    {
+      "name": "Nonfat Frozen Yogurt - Country Vanilla",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "nonfat-frozen-yogurt-country-vanilla"
+    },
+    {
+      "name": "Nonfat Frozen Yogurt - Crisp Rice Treat",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 8.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "nonfat-frozen-yogurt-crisp-rice-treat"
+    },
+    {
+      "name": "Nonfat Frozen Yogurt - Cruisn' Breeze",
+      "calories": 30.0,
+      "fat": 0.0,
+      "carbs": 8.0,
+      "protein": 0.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "nonfat-frozen-yogurt-cruisn-breeze"
+    },
+    {
+      "name": "Nonfat Frozen Yogurt - Dutch Apple Dumpling",
+      "calories": 30.0,
+      "fat": 0.0,
+      "carbs": 8.0,
+      "protein": 0.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "nonfat-frozen-yogurt-dutch-apple-dumpling"
+    },
+    {
+      "name": "Nonfat Frozen Yogurt - Georgia Peach",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 8.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "nonfat-frozen-yogurt-georgia-peach"
+    },
+    {
+      "name": "Nonfat Frozen Yogurt - Hawaiian Pineapple",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "nonfat-frozen-yogurt-hawaiian-pineapple"
+    },
+    {
+      "name": "Nonfat Frozen Yogurt - Island Banana",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "nonfat-frozen-yogurt-island-banana"
+    },
+    {
+      "name": "Nonfat Frozen Yogurt - Luau Love",
+      "calories": 30.0,
+      "fat": 0.0,
+      "carbs": 7.0,
+      "protein": 0.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "nonfat-frozen-yogurt-luau-love"
+    },
+    {
+      "name": "Nonfat Frozen Yogurt - Mountain Blackberry",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "nonfat-frozen-yogurt-mountain-blackberry"
+    },
+    {
+      "name": "Nonfat Frozen Yogurt - Orange Cream",
+      "calories": 40.0,
+      "fat": 0.0,
+      "carbs": 10.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "nonfat-frozen-yogurt-orange-cream"
+    },
+    {
+      "name": "Nonfat Frozen Yogurt - Peach Melba",
+      "calories": 30.0,
+      "fat": 0.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "nonfat-frozen-yogurt-peach-melba"
+    },
+    {
+      "name": "Nonfat Frozen Yogurt - Peppermint Stick",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 8.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "nonfat-frozen-yogurt-peppermint-stick"
+    },
+    {
+      "name": "Nonfat Frozen Yogurt - Pina Colada",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "nonfat-frozen-yogurt-pina-colada"
+    },
+    {
+      "name": "Nonfat Frozen Yogurt - Pineapple Upside Down Cake",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "nonfat-frozen-yogurt-pineapple-upside-down-cake"
+    },
+    {
+      "name": "Nonfat Frozen Yogurt - Pistachio",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 8.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "nonfat-frozen-yogurt-pistachio"
+    },
+    {
+      "name": "Nonfat Frozen Yogurt - POGsicle",
+      "calories": 30.0,
+      "fat": 0.0,
+      "carbs": 7.0,
+      "protein": 0.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "nonfat-frozen-yogurt-pogsicle"
+    },
+    {
+      "name": "Nonfat Frozen Yogurt - Pomberry Punch",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 7.0,
+      "protein": 0.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "nonfat-frozen-yogurt-pomberry-punch"
+    },
+    {
+      "name": "Nonfat Frozen Yogurt - Pomegranate Raspberry Tart",
+      "calories": 40.0,
+      "fat": 0.0,
+      "carbs": 8.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "nonfat-frozen-yogurt-pomegranate-raspberry-tart"
+    },
+    {
+      "name": "Nonfat Frozen Yogurt - Pool Party Punch",
+      "calories": 30.0,
+      "fat": 0.0,
+      "carbs": 7.0,
+      "protein": 0.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "nonfat-frozen-yogurt-pool-party-punch"
+    },
+    {
+      "name": "Nonfat Frozen Yogurt - Pumpkin Bread Batter",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "nonfat-frozen-yogurt-pumpkin-bread-batter"
+    },
+    {
+      "name": "Nonfat Frozen Yogurt - Pumpkin Pie",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 8.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "nonfat-frozen-yogurt-pumpkin-pie"
+    },
+    {
+      "name": "Nonfat Frozen Yogurt - Purple Berry Bomb",
+      "calories": 30.0,
+      "fat": 0.0,
+      "carbs": 6.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "nonfat-frozen-yogurt-purple-berry-bomb"
+    },
+    {
+      "name": "Nonfat Frozen Yogurt - Raspberry Macaron",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "nonfat-frozen-yogurt-raspberry-macaron"
+    },
+    {
+      "name": "Nonfat Frozen Yogurt - Taro",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "nonfat-frozen-yogurt-taro"
+    },
+    {
+      "name": "Nonfat Frozen Yogurt - Toasted Marshmallow",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "nonfat-frozen-yogurt-toasted-marshmallow"
+    },
+    {
+      "name": "Nonfat Frozen Yogurt - Vanilla",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "nonfat-frozen-yogurt-vanilla"
+    },
+    {
+      "name": "Nonfat Frozen Yogurt - Very Raspberry",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "nonfat-frozen-yogurt-very-raspberry"
+    },
+    {
+      "name": "Nonfat Frozen Yogurt - Very Strawberry",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "nonfat-frozen-yogurt-very-strawberry"
+    },
+    {
+      "name": "Gelato - Caramel Sea Salt",
+      "calories": 40.0,
+      "fat": 0.5,
+      "carbs": 8.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "gelato-caramel-sea-salt"
+    },
+    {
+      "name": "Gelato - Chocolate",
+      "calories": 50.0,
+      "fat": 2.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "gelato-chocolate"
+    },
+    {
+      "name": "Gelato - Cold Brew Coffee",
+      "calories": 40.0,
+      "fat": 1.0,
+      "carbs": 6.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "gelato-cold-brew-coffee"
+    },
+    {
+      "name": "Gelato - Cookies and Cold Brew",
+      "calories": 50.0,
+      "fat": 1.5,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "gelato-cookies-and-cold-brew"
+    },
+    {
+      "name": "Gelato - Hazelnut",
+      "calories": 45.0,
+      "fat": 2.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "gelato-hazelnut"
+    },
+    {
+      "name": "Gelato - Horchata",
+      "calories": 35.0,
+      "fat": 1.0,
+      "carbs": 6.0,
+      "protein": 0.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "gelato-horchata"
+    },
+    {
+      "name": "Gelato - Pistachio",
+      "calories": 45.0,
+      "fat": 2.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "gelato-pistachio"
+    },
+    {
+      "name": "Gelato - Vanilla Bean",
+      "calories": 45.0,
+      "fat": 2.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "gelato-vanilla-bean"
+    },
+    {
+      "name": "Dairy Free Sorbet - Blue Raspberry Slushie",
+      "calories": 30.0,
+      "fat": 0.0,
+      "carbs": 7.0,
+      "protein": 0.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "dairy-free-sorbet-blue-raspberry-slushie"
+    },
+    {
+      "name": "Dairy Free Sorbet - Cherry Slushie",
+      "calories": 30.0,
+      "fat": 0.0,
+      "carbs": 7.0,
+      "protein": 0.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "dairy-free-sorbet-cherry-slushie"
+    },
+    {
+      "name": "Dairy Free Sorbet - Chocolate Fudge",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 9.0,
+      "protein": 0.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "dairy-free-sorbet-chocolate-fudge"
+    },
+    {
+      "name": "Dairy Free Sorbet - Green Apple",
+      "calories": 30.0,
+      "fat": 0.0,
+      "carbs": 8.0,
+      "protein": 0.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "dairy-free-sorbet-green-apple"
+    },
+    {
+      "name": "Dairy Free Sorbet - Hawaiian Passion Mango",
+      "calories": 30.0,
+      "fat": 0.0,
+      "carbs": 7.0,
+      "protein": 0.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "dairy-free-sorbet-hawaiian-passion-mango"
+    },
+    {
+      "name": "Dairy Free Sorbet - Mango",
+      "calories": 30.0,
+      "fat": 0.0,
+      "carbs": 7.0,
+      "protein": 0.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "dairy-free-sorbet-mango"
+    },
+    {
+      "name": "Dairy Free Sorbet - Passion Orange Guava",
+      "calories": 30.0,
+      "fat": 0.0,
+      "carbs": 7.0,
+      "protein": 0.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "dairy-free-sorbet-passion-orange-guava"
+    },
+    {
+      "name": "Dairy Free Sorbet - Pomegranate Raspberry",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 8.0,
+      "protein": 0.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "dairy-free-sorbet-pomegranate-raspberry"
+    },
+    {
+      "name": "Dairy Free Sorbet - Strawberry Kiwi",
+      "calories": 30.0,
+      "fat": 0.0,
+      "carbs": 7.0,
+      "protein": 0.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "dairy-free-sorbet-strawberry-kiwi"
+    },
+    {
+      "name": "Dairy Free Sorbet - Strawberry Lemonade",
+      "calories": 30.0,
+      "fat": 0.0,
+      "carbs": 7.0,
+      "protein": 0.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "dairy-free-sorbet-strawberry-lemonade"
+    },
+    {
+      "name": "Dairy Free Sorbet - Tropical Watermelon Sorbet",
+      "calories": 30.0,
+      "fat": 0.0,
+      "carbs": 7.0,
+      "protein": 0.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "dairy-free-sorbet-tropical-watermelon-sorbet"
+    },
+    {
+      "name": "Dairy Free Sorbet - Watermelon",
+      "calories": 30.0,
+      "fat": 0.0,
+      "carbs": 7.0,
+      "protein": 0.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "dairy-free-sorbet-watermelon"
+    },
+    {
+      "name": "No Sugar Added - NSA Cheesecake",
+      "calories": 30.0,
+      "fat": 0.0,
+      "carbs": 6.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "no-sugar-added-nsa-cheesecake"
+    },
+    {
+      "name": "No Sugar Added - NSA Chocolate",
+      "calories": 30.0,
+      "fat": 0.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "no-sugar-added-nsa-chocolate"
+    },
+    {
+      "name": "No Sugar Added - NSA Raspberry",
+      "calories": 30.0,
+      "fat": 0.0,
+      "carbs": 6.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "no-sugar-added-nsa-raspberry"
+    },
+    {
+      "name": "No Sugar Added - NSA Strawberry",
+      "calories": 25.0,
+      "fat": 0.0,
+      "carbs": 6.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "no-sugar-added-nsa-strawberry"
+    },
+    {
+      "name": "No Sugar Added - NSA Strawberry Banana",
+      "calories": 30.0,
+      "fat": 0.0,
+      "carbs": 6.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "no-sugar-added-nsa-strawberry-banana"
+    },
+    {
+      "name": "No Sugar Added - NSA Summer Strawberry Cheesecake",
+      "calories": 25.0,
+      "fat": 0.0,
+      "carbs": 6.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "no-sugar-added-nsa-summer-strawberry-cheesecake"
+    },
+    {
+      "name": "No Sugar Added - NSA Vanilla",
+      "calories": 30.0,
+      "fat": 0.0,
+      "carbs": 6.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "no-sugar-added-nsa-vanilla"
+    },
+    {
+      "name": "No Sugar Added - NSA Yellow Cake Batter",
+      "calories": 30.0,
+      "fat": 0.0,
+      "carbs": 6.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "no-sugar-added-nsa-yellow-cake-batter"
+    },
+    {
+      "name": "Dole Soft Serve - Dole Soft Serve Cherry",
+      "calories": 25.0,
+      "fat": 0.0,
+      "carbs": 6.0,
+      "protein": 0.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "dole-soft-serve-dole-soft-serve-cherry"
+    },
+    {
+      "name": "Dole Soft Serve - Dole Soft Serve Cherry Limeade",
+      "calories": 25.0,
+      "fat": 0.0,
+      "carbs": 6.0,
+      "protein": 0.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "dole-soft-serve-dole-soft-serve-cherry-limeade"
+    },
+    {
+      "name": "Dole Soft Serve - Dole Soft Serve Lemon",
+      "calories": 25.0,
+      "fat": 0.0,
+      "carbs": 6.0,
+      "protein": 0.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "dole-soft-serve-dole-soft-serve-lemon"
+    },
+    {
+      "name": "Dole Soft Serve - Dole Soft Serve Lime",
+      "calories": 25.0,
+      "fat": 0.0,
+      "carbs": 6.0,
+      "protein": 0.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "dole-soft-serve-dole-soft-serve-lime"
+    },
+    {
+      "name": "Dole Soft Serve - Dole Soft Serve Mango",
+      "calories": 25.0,
+      "fat": 0.0,
+      "carbs": 6.0,
+      "protein": 0.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "dole-soft-serve-dole-soft-serve-mango"
+    },
+    {
+      "name": "Dole Soft Serve - Dole Soft Serve Orange",
+      "calories": 25.0,
+      "fat": 0.0,
+      "carbs": 6.0,
+      "protein": 0.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "dole-soft-serve-dole-soft-serve-orange"
+    },
+    {
+      "name": "Dole Soft Serve - Dole Soft Serve Peach",
+      "calories": 25.0,
+      "fat": 0.0,
+      "carbs": 7.0,
+      "protein": 0.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "dole-soft-serve-dole-soft-serve-peach"
+    },
+    {
+      "name": "Dole Soft Serve - Dole Soft Serve Pineapple",
+      "calories": 25.0,
+      "fat": 0.0,
+      "carbs": 6.0,
+      "protein": 0.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "dole-soft-serve-dole-soft-serve-pineapple"
+    },
+    {
+      "name": "Dole Soft Serve - Dole Soft Serve Pomegranate",
+      "calories": 25.0,
+      "fat": 0.0,
+      "carbs": 6.0,
+      "protein": 0.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "dole-soft-serve-dole-soft-serve-pomegranate"
+    },
+    {
+      "name": "Dole Soft Serve - Dole Soft Serve Raspberry",
+      "calories": 25.0,
+      "fat": 0.0,
+      "carbs": 7.0,
+      "protein": 0.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "dole-soft-serve-dole-soft-serve-raspberry"
+    },
+    {
+      "name": "Dole Soft Serve - Dole Soft Serve Orange + Raspberry",
+      "calories": 25.0,
+      "fat": 0.0,
+      "carbs": 7.0,
+      "protein": 0.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "dole-soft-serve-dole-soft-serve-orange-raspberry"
+    },
+    {
+      "name": "Dole Soft Serve - Dole Soft Serve Strawberry",
+      "calories": 25.0,
+      "fat": 0.0,
+      "carbs": 6.0,
+      "protein": 0.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "dole-soft-serve-dole-soft-serve-strawberry"
+    },
+    {
+      "name": "Dole Soft Serve - Dole Soft Serve Strawberry Lemonade",
+      "calories": 25.0,
+      "fat": 0.0,
+      "carbs": 6.0,
+      "protein": 0.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "dole-soft-serve-dole-soft-serve-strawberry-lemonade"
+    },
+    {
+      "name": "Dole Soft Serve - Dole Soft Serve Watermelon",
+      "calories": 25.0,
+      "fat": 0.0,
+      "carbs": 6.0,
+      "protein": 0.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "dole-soft-serve-dole-soft-serve-watermelon"
+    },
+    {
+      "name": "Lite Ice Cream - Campfire Crush",
+      "calories": 45.0,
+      "fat": 1.0,
+      "carbs": 8.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "lite-ice-cream-campfire-crush"
+    },
+    {
+      "name": "Lite Ice Cream - Chocolate",
+      "calories": 40.0,
+      "fat": 1.5,
+      "carbs": 6.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "lite-ice-cream-chocolate"
+    },
+    {
+      "name": "Lite Ice Cream - Chocolate Chip Cookie",
+      "calories": 50.0,
+      "fat": 1.5,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "lite-ice-cream-chocolate-chip-cookie"
+    },
+    {
+      "name": "Lite Ice Cream - Farm Stand Strawberry",
+      "calories": 40.0,
+      "fat": 1.0,
+      "carbs": 6.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "lite-ice-cream-farm-stand-strawberry"
+    },
+    {
+      "name": "Lite Ice Cream - Fruity Cereal",
+      "calories": 50.0,
+      "fat": 1.5,
+      "carbs": 9.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "lite-ice-cream-fruity-cereal"
+    },
+    {
+      "name": "Lite Ice Cream - Milk and Cookies",
+      "calories": 50.0,
+      "fat": 1.5,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "lite-ice-cream-milk-and-cookies"
+    },
+    {
+      "name": "Lite Ice Cream - Sweet Corn Flake Cereal",
+      "calories": 45.0,
+      "fat": 1.0,
+      "carbs": 8.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "lite-ice-cream-sweet-corn-flake-cereal"
+    },
+    {
+      "name": "Lite Ice Cream - Vanilla",
+      "calories": 40.0,
+      "fat": 1.5,
+      "carbs": 6.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "lite-ice-cream-vanilla"
+    },
+    {
+      "name": "Frozen Treat - Banana Cream Pie",
+      "calories": 45.0,
+      "fat": 1.5,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "frozen-treat-banana-cream-pie"
+    },
+    {
+      "name": "Frozen Treat - Banana Nut",
+      "calories": 40.0,
+      "fat": 1.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "frozen-treat-banana-nut"
+    },
+    {
+      "name": "Frozen Treat - Black Raspberry",
+      "calories": 35.0,
+      "fat": 0.5,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "frozen-treat-black-raspberry"
+    },
+    {
+      "name": "Frozen Treat - Candy Cane",
+      "calories": 35.0,
+      "fat": 0.5,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "frozen-treat-candy-cane"
+    },
+    {
+      "name": "Frozen Treat - Candy Caramels",
+      "calories": 40.0,
+      "fat": 1.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "frozen-treat-candy-caramels"
+    },
+    {
+      "name": "Frozen Treat - Caramel Almond Delight",
+      "calories": 40.0,
+      "fat": 1.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "frozen-treat-caramel-almond-delight"
+    },
+    {
+      "name": "Frozen Treat - Caramel Brownie",
+      "calories": 45.0,
+      "fat": 1.0,
+      "carbs": 8.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "frozen-treat-caramel-brownie"
+    },
+    {
+      "name": "Frozen Treat - Caramel Nut",
+      "calories": 40.0,
+      "fat": 1.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "frozen-treat-caramel-nut"
+    },
+    {
+      "name": "Frozen Treat - Chocolate",
+      "calories": 45.0,
+      "fat": 1.0,
+      "carbs": 8.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "frozen-treat-chocolate"
+    },
+    {
+      "name": "Frozen Treat - Chocolate Cake",
+      "calories": 45.0,
+      "fat": 1.0,
+      "carbs": 8.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "frozen-treat-chocolate-cake"
+    },
+    {
+      "name": "Frozen Treat - Chocolate Caramel Bar",
+      "calories": 40.0,
+      "fat": 0.5,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "frozen-treat-chocolate-caramel-bar"
+    },
+    {
+      "name": "Frozen Treat - Chocolate Caramel Peanut Butter Cup",
+      "calories": 40.0,
+      "fat": 1.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "frozen-treat-chocolate-caramel-peanut-butter-cup"
+    },
+    {
+      "name": "Frozen Treat - Chocolate Caramels",
+      "calories": 45.0,
+      "fat": 1.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "frozen-treat-chocolate-caramels"
+    },
+    {
+      "name": "Frozen Treat - Chocolate Covered Banana",
+      "calories": 40.0,
+      "fat": 1.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "frozen-treat-chocolate-covered-banana"
+    },
+    {
+      "name": "Frozen Treat - Chocolate Covered Raspberry",
+      "calories": 40.0,
+      "fat": 1.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "frozen-treat-chocolate-covered-raspberry"
+    },
+    {
+      "name": "Frozen Treat - Chocolate Covered Strawberry",
+      "calories": 40.0,
+      "fat": 1.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "frozen-treat-chocolate-covered-strawberry"
+    },
+    {
+      "name": "Frozen Treat - Chocolate Hazelnut",
+      "calories": 45.0,
+      "fat": 1.0,
+      "carbs": 8.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "frozen-treat-chocolate-hazelnut"
+    },
+    {
+      "name": "Frozen Treat - Chocolate Macaroon",
+      "calories": 45.0,
+      "fat": 1.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "frozen-treat-chocolate-macaroon"
+    },
+    {
+      "name": "Frozen Treat - Chocolate Malt",
+      "calories": 40.0,
+      "fat": 0.0,
+      "carbs": 8.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "frozen-treat-chocolate-malt"
+    },
+    {
+      "name": "Frozen Treat - Chocolate PB Cup",
+      "calories": 45.0,
+      "fat": 2.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "frozen-treat-chocolate-pb-cup"
+    },
+    {
+      "name": "Frozen Treat - Chocolate Peanut Butter Pie",
+      "calories": 45.0,
+      "fat": 2.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "frozen-treat-chocolate-peanut-butter-pie"
+    },
+    {
+      "name": "Frozen Treat - Chocolate S'more",
+      "calories": 40.0,
+      "fat": 0.5,
+      "carbs": 8.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "frozen-treat-chocolate-s-more"
+    },
+    {
+      "name": "Frozen Treat - Coco Nutty",
+      "calories": 40.0,
+      "fat": 1.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "frozen-treat-coco-nutty"
+    },
+    {
+      "name": "Frozen Treat - Cookie Latte",
+      "calories": 40.0,
+      "fat": 1.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "frozen-treat-cookie-latte"
+    },
+    {
+      "name": "Frozen Treat - Crème Brulee",
+      "calories": 50.0,
+      "fat": 2.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "frozen-treat-cr-me-brulee"
+    },
+    {
+      "name": "Frozen Treat - Double Chocolate Hazelnut",
+      "calories": 45.0,
+      "fat": 1.5,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "frozen-treat-double-chocolate-hazelnut"
+    },
+    {
+      "name": "Frozen Treat - Hawaiian Wedding Cake",
+      "calories": 40.0,
+      "fat": 1.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "frozen-treat-hawaiian-wedding-cake"
+    },
+    {
+      "name": "Frozen Treat - Hazelnut Cheesecake",
+      "calories": 40.0,
+      "fat": 1.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "frozen-treat-hazelnut-cheesecake"
+    },
+    {
+      "name": "Frozen Treat - Hazelnut Crème",
+      "calories": 45.0,
+      "fat": 1.5,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "frozen-treat-hazelnut-cr-me"
+    },
+    {
+      "name": "Frozen Treat - Homemade Peanut Butter Cookie",
+      "calories": 40.0,
+      "fat": 1.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "frozen-treat-homemade-peanut-butter-cookie"
+    },
+    {
+      "name": "Frozen Treat - Hot Chocolate",
+      "calories": 45.0,
+      "fat": 1.0,
+      "carbs": 8.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "frozen-treat-hot-chocolate"
+    },
+    {
+      "name": "Frozen Treat - Mississippi Mud Pie",
+      "calories": 40.0,
+      "fat": 1.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "frozen-treat-mississippi-mud-pie"
+    },
+    {
+      "name": "Frozen Treat - Nuts for Cake",
+      "calories": 40.0,
+      "fat": 1.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "frozen-treat-nuts-for-cake"
+    },
+    {
+      "name": "Frozen Treat - Peach Souffle",
+      "calories": 45.0,
+      "fat": 1.5,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "frozen-treat-peach-souffle"
+    },
+    {
+      "name": "Frozen Treat - Peanut Butter",
+      "calories": 40.0,
+      "fat": 1.5,
+      "carbs": 6.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "frozen-treat-peanut-butter"
+    },
+    {
+      "name": "Frozen Treat - Pistachio Mint",
+      "calories": 40.0,
+      "fat": 1.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "frozen-treat-pistachio-mint"
+    },
+    {
+      "name": "Frozen Treat - Pistachio Nut Cake",
+      "calories": 40.0,
+      "fat": 1.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "frozen-treat-pistachio-nut-cake"
+    },
+    {
+      "name": "Frozen Treat - Salted Caramel Brownie",
+      "calories": 40.0,
+      "fat": 1.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "frozen-treat-salted-caramel-brownie"
+    },
+    {
+      "name": "Frozen Treat - Toasted Marshmallow Fudge",
+      "calories": 40.0,
+      "fat": 1.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "frozen-treat-toasted-marshmallow-fudge"
+    },
+    {
+      "name": "Frozen Treat - Triple Decker Bar",
+      "calories": 40.0,
+      "fat": 1.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "frozen-treat-triple-decker-bar"
+    },
+    {
+      "name": "Frozen Treat - Tropical Cream",
+      "calories": 35.0,
+      "fat": 0.5,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "frozen-treat-tropical-cream"
+    },
+    {
+      "name": "Frozen Treat - White Vanilla",
+      "calories": 40.0,
+      "fat": 1.0,
+      "carbs": 6.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Frozen_Desserts.pdf",
+      "id": "frozen-treat-white-vanilla"
+    },
+    {
+      "name": "Fruit - Bananas",
+      "calories": 25.0,
+      "fat": 0.0,
+      "carbs": 6.0,
+      "protein": 0.0,
+      "servingLabel": "1 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "fruit-bananas"
+    },
+    {
+      "name": "Fruit - Blackberries",
+      "calories": 10.0,
+      "fat": 0.0,
+      "carbs": 2.0,
+      "protein": 0.0,
+      "servingLabel": "0.8 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "fruit-blackberries"
+    },
+    {
+      "name": "Fruit - Blueberries",
+      "calories": 10.0,
+      "fat": 0.0,
+      "carbs": 3.0,
+      "protein": 0.0,
+      "servingLabel": "0.7 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "fruit-blueberries"
+    },
+    {
+      "name": "Fruit - Kiwi",
+      "calories": 15.0,
+      "fat": 0.0,
+      "carbs": 4.0,
+      "protein": 0.0,
+      "servingLabel": "1 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "fruit-kiwi"
+    },
+    {
+      "name": "Fruit - Mango",
+      "calories": 15.0,
+      "fat": 0.0,
+      "carbs": 3.0,
+      "protein": 0.0,
+      "servingLabel": "0.8 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "fruit-mango"
+    },
+    {
+      "name": "Fruit - Pineapple",
+      "calories": 10.0,
+      "fat": 0.0,
+      "carbs": 3.0,
+      "protein": 0.0,
+      "servingLabel": "0.7 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "fruit-pineapple"
+    },
+    {
+      "name": "Fruit - Raspberries",
+      "calories": 5.0,
+      "fat": 0.0,
+      "carbs": 2.0,
+      "protein": 0.0,
+      "servingLabel": "0.5 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "fruit-raspberries"
+    },
+    {
+      "name": "Fruit - Strawberries",
+      "calories": 5.0,
+      "fat": 0.0,
+      "carbs": 2.0,
+      "protein": 0.0,
+      "servingLabel": "0.7 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "fruit-strawberries"
+    },
+    {
+      "name": "Boba Poppers - Blueberry",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 8.0,
+      "protein": 0.0,
+      "servingLabel": "0.9 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "boba-poppers-blueberry"
+    },
+    {
+      "name": "Boba Poppers - Cherry",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 8.0,
+      "protein": 0.0,
+      "servingLabel": "0.9 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "boba-poppers-cherry"
+    },
+    {
+      "name": "Boba Poppers - Kiwi",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 8.0,
+      "protein": 0.0,
+      "servingLabel": "0.9 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "boba-poppers-kiwi"
+    },
+    {
+      "name": "Boba Poppers - Mango",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 8.0,
+      "protein": 0.0,
+      "servingLabel": "0.9 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "boba-poppers-mango"
+    },
+    {
+      "name": "Boba Poppers - Orange",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 8.0,
+      "protein": 0.0,
+      "servingLabel": "0.9 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "boba-poppers-orange"
+    },
+    {
+      "name": "Boba Poppers - Passion Fruit",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 8.0,
+      "protein": 0.0,
+      "servingLabel": "0.9 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "boba-poppers-passion-fruit"
+    },
+    {
+      "name": "Boba Poppers - Pineapple",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 8.0,
+      "protein": 0.0,
+      "servingLabel": "0.9 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "boba-poppers-pineapple"
+    },
+    {
+      "name": "Boba Poppers - Pomegranate",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 8.0,
+      "protein": 0.0,
+      "servingLabel": "0.9 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "boba-poppers-pomegranate"
+    },
+    {
+      "name": "Boba Poppers - Strawberry",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 8.0,
+      "protein": 0.0,
+      "servingLabel": "0.9 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "boba-poppers-strawberry"
+    },
+    {
+      "name": "Boba Poppers - Tropical",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 8.0,
+      "protein": 0.0,
+      "servingLabel": "0.9 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "boba-poppers-tropical"
+    },
+    {
+      "name": "Candy - Butterfinger",
+      "calories": 50.0,
+      "fat": 2.0,
+      "carbs": 8.0,
+      "protein": 1.0,
+      "servingLabel": "0.4 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "candy-butterfinger"
+    },
+    {
+      "name": "Candy - Caramel Cups (mini)",
+      "calories": 100.0,
+      "fat": 5.0,
+      "carbs": 12.0,
+      "protein": 1.0,
+      "servingLabel": "0.7 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "candy-caramel-cups-mini"
+    },
+    {
+      "name": "Candy - Chocolate Rocks",
+      "calories": 60.0,
+      "fat": 3.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "0.4 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "candy-chocolate-rocks"
+    },
+    {
+      "name": "Candy - HEATH Bar",
+      "calories": 70.0,
+      "fat": 4.5,
+      "carbs": 9.0,
+      "protein": 0.0,
+      "servingLabel": "0.5 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "candy-heath-bar"
+    },
+    {
+      "name": "Candy - Jolly Rancher",
+      "calories": 120.0,
+      "fat": 3.0,
+      "carbs": 24.0,
+      "protein": 0.0,
+      "servingLabel": "1 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "candy-jolly-rancher"
+    },
+    {
+      "name": "Candy - KIT KAT",
+      "calories": 90.0,
+      "fat": 4.5,
+      "carbs": 11.0,
+      "protein": 1.0,
+      "servingLabel": "0.6 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "candy-kit-kat"
+    },
+    {
+      "name": "Candy - M&M'S (mini)",
+      "calories": 80.0,
+      "fat": 3.5,
+      "carbs": 12.0,
+      "protein": 1.0,
+      "servingLabel": "0.6 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "candy-m-m-s-mini"
+    },
+    {
+      "name": "Candy - M&M'S (peanut)",
+      "calories": 140.0,
+      "fat": 7.0,
+      "carbs": 17.0,
+      "protein": 3.0,
+      "servingLabel": "1 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "candy-m-m-s-peanut"
+    },
+    {
+      "name": "Candy - M&M'S (plain)",
+      "calories": 120.0,
+      "fat": 5.0,
+      "carbs": 18.0,
+      "protein": 1.0,
+      "servingLabel": "0.9 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "candy-m-m-s-plain"
+    },
+    {
+      "name": "Candy - Mint Chocolate (Andes)",
+      "calories": 90.0,
+      "fat": 6.0,
+      "carbs": 10.0,
+      "protein": 1.0,
+      "servingLabel": "0.6 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "candy-mint-chocolate-andes"
+    },
+    {
+      "name": "Candy - Nerds",
+      "calories": 90.0,
+      "fat": 0.0,
+      "carbs": 21.0,
+      "protein": 0.0,
+      "servingLabel": "0.8 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "candy-nerds"
+    },
+    {
+      "name": "Candy - Nonpareils",
+      "calories": 60.0,
+      "fat": 2.5,
+      "carbs": 11.0,
+      "protein": 0.0,
+      "servingLabel": "0.5 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "candy-nonpareils"
+    },
+    {
+      "name": "Candy - Peanut Butter Cups",
+      "calories": 110.0,
+      "fat": 7.0,
+      "carbs": 13.0,
+      "protein": 2.0,
+      "servingLabel": "0.8 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "candy-peanut-butter-cups"
+    },
+    {
+      "name": "Candy - REESE'S Peanut Butter Cups",
+      "calories": 110.0,
+      "fat": 7.0,
+      "carbs": 13.0,
+      "protein": 3.0,
+      "servingLabel": "0.8 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "candy-reese-s-peanut-butter-cups"
+    },
+    {
+      "name": "Candy - REESE'S Pieces (mini)",
+      "calories": 110.0,
+      "fat": 5.0,
+      "carbs": 14.0,
+      "protein": 2.0,
+      "servingLabel": "0.8 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "candy-reese-s-pieces-mini"
+    },
+    {
+      "name": "Candy - Skittles",
+      "calories": 90.0,
+      "fat": 1.0,
+      "carbs": 21.0,
+      "protein": 0.0,
+      "servingLabel": "0.8 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "candy-skittles"
+    },
+    {
+      "name": "Candy - Snickers",
+      "calories": 80.0,
+      "fat": 3.5,
+      "carbs": 11.0,
+      "protein": 1.0,
+      "servingLabel": "0.6 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "candy-snickers"
+    },
+    {
+      "name": "Candy - TWIX",
+      "calories": 70.0,
+      "fat": 3.5,
+      "carbs": 9.0,
+      "protein": 1.0,
+      "servingLabel": "0.5 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "candy-twix"
+    },
+    {
+      "name": "Chips - Chocolate",
+      "calories": 70.0,
+      "fat": 3.5,
+      "carbs": 9.0,
+      "protein": 1.0,
+      "servingLabel": "0.5 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "chips-chocolate"
+    },
+    {
+      "name": "Chips - Peanut Butter",
+      "calories": 90.0,
+      "fat": 5.0,
+      "carbs": 9.0,
+      "protein": 3.0,
+      "servingLabel": "0.6 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "chips-peanut-butter"
+    },
+    {
+      "name": "Chips - Vanilla",
+      "calories": 100.0,
+      "fat": 6.0,
+      "carbs": 12.0,
+      "protein": 2.0,
+      "servingLabel": "0.7 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "chips-vanilla"
+    },
+    {
+      "name": "Chips - Yogurt",
+      "calories": 80.0,
+      "fat": 4.0,
+      "carbs": 12.0,
+      "protein": 0.0,
+      "servingLabel": "0.6 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "chips-yogurt"
+    },
+    {
+      "name": "Gummies - Bears",
+      "calories": 90.0,
+      "fat": 0.0,
+      "carbs": 22.0,
+      "protein": 1.0,
+      "servingLabel": "1.1 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "gummies-bears"
+    },
+    {
+      "name": "Gummies - Frogs",
+      "calories": 120.0,
+      "fat": 0.0,
+      "carbs": 28.0,
+      "protein": 1.0,
+      "servingLabel": "1.4 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "gummies-frogs"
+    },
+    {
+      "name": "Gummies - Peach Rings",
+      "calories": 90.0,
+      "fat": 0.0,
+      "carbs": 22.0,
+      "protein": 1.0,
+      "servingLabel": "1.1 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "gummies-peach-rings"
+    },
+    {
+      "name": "Gummies - Sour Belts",
+      "calories": 30.0,
+      "fat": 0.0,
+      "carbs": 7.0,
+      "protein": 0.0,
+      "servingLabel": "0.3 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "gummies-sour-belts"
+    },
+    {
+      "name": "Gummies - Sour Worms",
+      "calories": 50.0,
+      "fat": 0.0,
+      "carbs": 12.0,
+      "protein": 1.0,
+      "servingLabel": "0.6 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "gummies-sour-worms"
+    },
+    {
+      "name": "Gummies - Swedish Fish",
+      "calories": 80.0,
+      "fat": 0.0,
+      "carbs": 20.0,
+      "protein": 0.0,
+      "servingLabel": "0.8 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "gummies-swedish-fish"
+    },
+    {
+      "name": "Gummies - Worms (regular)",
+      "calories": 50.0,
+      "fat": 0.0,
+      "carbs": 12.0,
+      "protein": 1.0,
+      "servingLabel": "0.6 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "gummies-worms-regular"
+    },
+    {
+      "name": "Nuts - Almonds",
+      "calories": 70.0,
+      "fat": 6.0,
+      "carbs": 2.0,
+      "protein": 2.0,
+      "servingLabel": "0.4 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "nuts-almonds"
+    },
+    {
+      "name": "Nuts - Peanuts",
+      "calories": 70.0,
+      "fat": 6.0,
+      "carbs": 2.0,
+      "protein": 3.0,
+      "servingLabel": "0.4 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "nuts-peanuts"
+    },
+    {
+      "name": "Nuts - Pecans",
+      "calories": 190.0,
+      "fat": 20.0,
+      "carbs": 4.0,
+      "protein": 3.0,
+      "servingLabel": "1 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "nuts-pecans"
+    },
+    {
+      "name": "Nuts - Walnuts",
+      "calories": 70.0,
+      "fat": 7.0,
+      "carbs": 2.0,
+      "protein": 2.0,
+      "servingLabel": "0.4 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "nuts-walnuts"
+    },
+    {
+      "name": "Nuts - Wet Walnuts",
+      "calories": 280.0,
+      "fat": 15.0,
+      "carbs": 38.0,
+      "protein": 3.0,
+      "servingLabel": "1.7 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "nuts-wet-walnuts"
+    },
+    {
+      "name": "Miscellaneous - Brownie Bites",
+      "calories": 50.0,
+      "fat": 2.5,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "0.4 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "miscellaneous-brownie-bites"
+    },
+    {
+      "name": "Miscellaneous - Brownie Brittle",
+      "calories": 30.0,
+      "fat": 1.0,
+      "carbs": 6.0,
+      "protein": 0.0,
+      "servingLabel": "0.2 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "miscellaneous-brownie-brittle"
+    },
+    {
+      "name": "Miscellaneous - Brownie Squares",
+      "calories": 100.0,
+      "fat": 5.0,
+      "carbs": 12.0,
+      "protein": 1.0,
+      "servingLabel": "0.8 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "miscellaneous-brownie-squares"
+    },
+    {
+      "name": "Miscellaneous - Cap'n Crunch",
+      "calories": 10.0,
+      "fat": 0.0,
+      "carbs": 2.0,
+      "protein": 0.0,
+      "servingLabel": "0.1 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "miscellaneous-cap-n-crunch"
+    },
+    {
+      "name": "Miscellaneous - Cheesecake Bites",
+      "calories": 40.0,
+      "fat": 2.5,
+      "carbs": 4.0,
+      "protein": 1.0,
+      "servingLabel": "0.4 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "miscellaneous-cheesecake-bites"
+    },
+    {
+      "name": "Miscellaneous - Chocolate Chip Cookies (Chips Ahoy!)",
+      "calories": 70.0,
+      "fat": 3.5,
+      "carbs": 9.0,
+      "protein": 0.0,
+      "servingLabel": "0.5 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "miscellaneous-chocolate-chip-cookies-chips-ahoy"
+    },
+    {
+      "name": "Miscellaneous - Chocolate Chip Cookies (Chips Ahoy!) Chunky",
+      "calories": 70.0,
+      "fat": 3.5,
+      "carbs": 9.0,
+      "protein": 1.0,
+      "servingLabel": "0.5 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "miscellaneous-chocolate-chip-cookies-chips-ahoy-chunky"
+    },
+    {
+      "name": "Miscellaneous - Chocolate Covered Sunflower Seeds",
+      "calories": 90.0,
+      "fat": 5.0,
+      "carbs": 9.0,
+      "protein": 1.0,
+      "servingLabel": "0.6 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "miscellaneous-chocolate-covered-sunflower-seeds"
+    },
+    {
+      "name": "Miscellaneous - Coconut (shredded)",
+      "calories": 25.0,
+      "fat": 1.5,
+      "carbs": 3.0,
+      "protein": 0.0,
+      "servingLabel": "0.2 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "miscellaneous-coconut-shredded"
+    },
+    {
+      "name": "Miscellaneous - Cookie Dough Bites",
+      "calories": 80.0,
+      "fat": 3.5,
+      "carbs": 11.0,
+      "protein": 1.0,
+      "servingLabel": "0.6 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "miscellaneous-cookie-dough-bites"
+    },
+    {
+      "name": "Miscellaneous - Crushed OREO Cookies",
+      "calories": 50.0,
+      "fat": 2.0,
+      "carbs": 8.0,
+      "protein": 0.0,
+      "servingLabel": "0.4 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "miscellaneous-crushed-oreo-cookies"
+    },
+    {
+      "name": "Miscellaneous - Dark Chocolate Raspberry Cups",
+      "calories": 110.0,
+      "fat": 7.0,
+      "carbs": 12.0,
+      "protein": 1.0,
+      "servingLabel": "0.7 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "miscellaneous-dark-chocolate-raspberry-cups"
+    },
+    {
+      "name": "Miscellaneous - Dark Chocolate Shavings",
+      "calories": 60.0,
+      "fat": 4.0,
+      "carbs": 6.0,
+      "protein": 1.0,
+      "servingLabel": "0.4 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "miscellaneous-dark-chocolate-shavings"
+    },
+    {
+      "name": "Miscellaneous - Froot Loops",
+      "calories": 10.0,
+      "fat": 0.0,
+      "carbs": 2.0,
+      "protein": 0.0,
+      "servingLabel": "0.1 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "miscellaneous-froot-loops"
+    },
+    {
+      "name": "Miscellaneous - Frosted Animal Cookies",
+      "calories": 70.0,
+      "fat": 3.5,
+      "carbs": 10.0,
+      "protein": 1.0,
+      "servingLabel": "0.5 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "miscellaneous-frosted-animal-cookies"
+    },
+    {
+      "name": "Miscellaneous - Fruit Snacks",
+      "calories": 80.0,
+      "fat": 0.0,
+      "carbs": 23.0,
+      "protein": 0.0,
+      "servingLabel": "1 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "miscellaneous-fruit-snacks"
+    },
+    {
+      "name": "Miscellaneous - Fruity PEBBLES",
+      "calories": 10.0,
+      "fat": 0.0,
+      "carbs": 2.0,
+      "protein": 0.0,
+      "servingLabel": "0.1 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "miscellaneous-fruity-pebbles"
+    },
+    {
+      "name": "Miscellaneous - Graham Cracker Crumbs",
+      "calories": 25.0,
+      "fat": 0.5,
+      "carbs": 4.0,
+      "protein": 0.0,
+      "servingLabel": "0.2 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "miscellaneous-graham-cracker-crumbs"
+    },
+    {
+      "name": "Miscellaneous - Granola (udi's)",
+      "calories": 40.0,
+      "fat": 1.5,
+      "carbs": 6.0,
+      "protein": 1.0,
+      "servingLabel": "0.3 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "miscellaneous-granola-udi-s"
+    },
+    {
+      "name": "Miscellaneous - Granola, Low Fat Granola Crunchy (Kellogg's)",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "0.3 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "miscellaneous-granola-low-fat-granola-crunchy-kellogg-s"
+    },
+    {
+      "name": "Miscellaneous - Granola, Low Fat Granola without Raisins (Kellogg's)",
+      "calories": 30.0,
+      "fat": 0.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "0.3 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "miscellaneous-granola-low-fat-granola-without-raisins-kellogg-s"
+    },
+    {
+      "name": "Miscellaneous - Granola, Oats and Honey (Cascadian Farm)",
+      "calories": 35.0,
+      "fat": 1.0,
+      "carbs": 6.0,
+      "protein": 1.0,
+      "servingLabel": "0.3 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "miscellaneous-granola-oats-and-honey-cascadian-farm"
+    },
+    {
+      "name": "Miscellaneous - Granola, Oats and Honey (Nature Valley)",
+      "calories": 35.0,
+      "fat": 0.5,
+      "carbs": 1.0,
+      "protein": 1.0,
+      "servingLabel": "0.3 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "miscellaneous-granola-oats-and-honey-nature-valley"
+    },
+    {
+      "name": "Miscellaneous - Maraschino Cherries",
+      "calories": 20.0,
+      "fat": 0.0,
+      "carbs": 8.0,
+      "protein": 0.0,
+      "servingLabel": "0.7 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "miscellaneous-maraschino-cherries"
+    },
+    {
+      "name": "Miscellaneous - Marshmallows",
+      "calories": 20.0,
+      "fat": 0.0,
+      "carbs": 5.0,
+      "protein": 0.0,
+      "servingLabel": "0.2 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "miscellaneous-marshmallows"
+    },
+    {
+      "name": "Miscellaneous - Mochi",
+      "calories": 60.0,
+      "fat": 0.0,
+      "carbs": 14.0,
+      "protein": 1.0,
+      "servingLabel": "0.7 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "miscellaneous-mochi"
+    },
+    {
+      "name": "Miscellaneous - Nilla Wafers",
+      "calories": 90.0,
+      "fat": 4.0,
+      "carbs": 14.0,
+      "protein": 1.0,
+      "servingLabel": "0.7 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "miscellaneous-nilla-wafers"
+    },
+    {
+      "name": "Miscellaneous - Nutter Butter Bites",
+      "calories": 130.0,
+      "fat": 6.0,
+      "carbs": 20.0,
+      "protein": 2.0,
+      "servingLabel": "1 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "miscellaneous-nutter-butter-bites"
+    },
+    {
+      "name": "Miscellaneous - Peanut Butter Buckeyes",
+      "calories": 160.0,
+      "fat": 10.0,
+      "carbs": 14.0,
+      "protein": 3.0,
+      "servingLabel": "1 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "miscellaneous-peanut-butter-buckeyes"
+    },
+    {
+      "name": "Miscellaneous - Pound Cake",
+      "calories": 30.0,
+      "fat": 1.5,
+      "carbs": 4.0,
+      "protein": 0.0,
+      "servingLabel": "0.3 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "miscellaneous-pound-cake"
+    },
+    {
+      "name": "Miscellaneous - S'more",
+      "calories": 150.0,
+      "fat": 8.0,
+      "carbs": 18.0,
+      "protein": 1.0,
+      "servingLabel": "1 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "miscellaneous-s-more"
+    },
+    {
+      "name": "Miscellaneous - Sprinkles",
+      "calories": 110.0,
+      "fat": 4.5,
+      "carbs": 18.0,
+      "protein": 0.0,
+      "servingLabel": "0.8 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "miscellaneous-sprinkles"
+    },
+    {
+      "name": "Miscellaneous - Sprinkles, Chocolate",
+      "calories": 100.0,
+      "fat": 4.0,
+      "carbs": 16.0,
+      "protein": 0.0,
+      "servingLabel": "0.8 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "miscellaneous-sprinkles-chocolate"
+    },
+    {
+      "name": "Miscellaneous - Sprinkles, Unicorn",
+      "calories": 100.0,
+      "fat": 2.5,
+      "carbs": 19.0,
+      "protein": 0.0,
+      "servingLabel": "0.8 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "miscellaneous-sprinkles-unicorn"
+    },
+    {
+      "name": "Miscellaneous - Waffle Cone Pieces",
+      "calories": 20.0,
+      "fat": 0.0,
+      "carbs": 3.0,
+      "protein": 0.0,
+      "servingLabel": "0.2 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "miscellaneous-waffle-cone-pieces"
+    },
+    {
+      "name": "Miscellaneous - Whipped Cream",
+      "calories": 5.0,
+      "fat": 0.5,
+      "carbs": 1.0,
+      "protein": 0.0,
+      "servingLabel": "0.1 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "miscellaneous-whipped-cream"
+    },
+    {
+      "name": "Sauces - Caramel",
+      "calories": 60.0,
+      "fat": 1.0,
+      "carbs": 13.0,
+      "protein": 0.0,
+      "servingLabel": "0.7 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "sauces-caramel"
+    },
+    {
+      "name": "Sauces - Chocolate",
+      "calories": 50.0,
+      "fat": 0.0,
+      "carbs": 12.0,
+      "protein": 0.0,
+      "servingLabel": "0.7 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "sauces-chocolate"
+    },
+    {
+      "name": "Sauces - Chocolate Hazelnut",
+      "calories": 140.0,
+      "fat": 9.0,
+      "carbs": 14.0,
+      "protein": 1.0,
+      "servingLabel": "0.9 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "sauces-chocolate-hazelnut"
+    },
+    {
+      "name": "Sauces - Hot Fudge",
+      "calories": 80.0,
+      "fat": 3.0,
+      "carbs": 14.0,
+      "protein": 1.0,
+      "servingLabel": "0.9 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "sauces-hot-fudge"
+    },
+    {
+      "name": "Sauces - Marshmallow",
+      "calories": 60.0,
+      "fat": 0.0,
+      "carbs": 14.0,
+      "protein": 0.0,
+      "servingLabel": "0.8 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "sauces-marshmallow"
+    },
+    {
+      "name": "Sauces - Peanut Butter",
+      "calories": 130.0,
+      "fat": 12.0,
+      "carbs": 4.0,
+      "protein": 4.0,
+      "servingLabel": "0.7 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "sauces-peanut-butter"
+    },
+    {
+      "name": "Sauces - Strawberry",
+      "calories": 50.0,
+      "fat": 0.0,
+      "carbs": 20.0,
+      "protein": 0.0,
+      "servingLabel": "0.7 oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "sauces-strawberry"
+    },
+    {
+      "name": "Waffles - Waffle Bowl",
+      "calories": 190.0,
+      "fat": 4.5,
+      "carbs": 35.0,
+      "protein": 2.0,
+      "servingLabel": "1 each oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "waffles-waffle-bowl"
+    },
+    {
+      "name": "Waffles - Waffle Cone",
+      "calories": 190.0,
+      "fat": 4.5,
+      "carbs": 35.0,
+      "protein": 2.0,
+      "servingLabel": "1 each oz (1 serving)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutrition_Statement_Toppings.pdf",
+      "id": "waffles-waffle-cone"
+    },
+    {
+      "name": "Acai Bowls - Aloha Tropical",
+      "calories": 280.0,
+      "fat": 7.0,
+      "carbs": 60.0,
+      "protein": 2.0,
+      "servingLabel": "1 bowl (237 g)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutritional_Information_Optional_Products.pdf",
+      "servingGrams": 237,
+      "id": "acai-bowls-aloha-tropical"
+    },
+    {
+      "name": "Acai Bowls - Caramel Apple Crunch",
+      "calories": 380.0,
+      "fat": 13.0,
+      "carbs": 67.0,
+      "protein": 6.0,
+      "servingLabel": "1 bowl (278 g)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutritional_Information_Optional_Products.pdf",
+      "servingGrams": 278,
+      "id": "acai-bowls-caramel-apple-crunch"
+    },
+    {
+      "name": "Acai Bowls - Chocolate Berry",
+      "calories": 300.0,
+      "fat": 7.0,
+      "carbs": 65.0,
+      "protein": 3.0,
+      "servingLabel": "1 bowl (249 g)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutritional_Information_Optional_Products.pdf",
+      "servingGrams": 249,
+      "id": "acai-bowls-chocolate-berry"
+    },
+    {
+      "name": "Acai Bowls - Slice of Life",
+      "calories": 480.0,
+      "fat": 22.0,
+      "carbs": 77.0,
+      "protein": 7.0,
+      "servingLabel": "1 bowl (303 g)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutritional_Information_Optional_Products.pdf",
+      "servingGrams": 303,
+      "id": "acai-bowls-slice-of-life"
+    },
+    {
+      "name": "Chocolate Covered Strawberry - Chocolate Covered Strawberry",
+      "calories": 60.0,
+      "fat": 4.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "servingLabel": "1 each",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutritional_Information_Optional_Products.pdf",
+      "id": "chocolate-covered-strawberry-chocolate-covered-strawberry"
+    },
+    {
+      "name": "Floats - Dole Soft Serve, Orange with NSA Vanilla",
+      "calories": 320.0,
+      "fat": 0.0,
+      "carbs": 75.0,
+      "protein": 5.0,
+      "servingLabel": "340 g",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutritional_Information_Optional_Products.pdf",
+      "servingGrams": 340,
+      "id": "floats-dole-soft-serve-orange-with-nsa-vanilla"
+    },
+    {
+      "name": "Floats - Dole Soft Serve, Orange with Vanilla",
+      "calories": 340.0,
+      "fat": 0.0,
+      "carbs": 79.0,
+      "protein": 2.0,
+      "servingLabel": "340 g",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutritional_Information_Optional_Products.pdf",
+      "servingGrams": 340,
+      "id": "floats-dole-soft-serve-orange-with-vanilla"
+    },
+    {
+      "name": "Floats - Dole Soft Serve, Pineapple",
+      "calories": 220.0,
+      "fat": 0.0,
+      "carbs": 53.0,
+      "protein": 1.0,
+      "servingLabel": "340 g",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutritional_Information_Optional_Products.pdf",
+      "servingGrams": 340,
+      "id": "floats-dole-soft-serve-pineapple"
+    },
+    {
+      "name": "Floats - Root Beer with NSA Vanilla",
+      "calories": 220.0,
+      "fat": 0.0,
+      "carbs": 54.0,
+      "protein": 2.0,
+      "servingLabel": "340 g",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutritional_Information_Optional_Products.pdf",
+      "servingGrams": 340,
+      "id": "floats-root-beer-with-nsa-vanilla"
+    },
+    {
+      "name": "Floats - Root Beer with Vanilla",
+      "calories": 310.0,
+      "fat": 0.0,
+      "carbs": 50.0,
+      "protein": 4.0,
+      "servingLabel": "340 g",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutritional_Information_Optional_Products.pdf",
+      "servingGrams": 340,
+      "id": "floats-root-beer-with-vanilla"
+    },
+    {
+      "name": "Smoothies - Barfresh - Strawberry Banana",
+      "calories": 280.0,
+      "fat": 0.0,
+      "carbs": 64.0,
+      "protein": 7.0,
+      "servingLabel": "16 fl. oz.",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutritional_Information_Optional_Products.pdf",
+      "id": "smoothies-barfresh-strawberry-banana"
+    },
+    {
+      "name": "Smoothies - Barfresh - Triple Berry",
+      "calories": 280.0,
+      "fat": 0.0,
+      "carbs": 71.0,
+      "protein": 0.0,
+      "servingLabel": "16 fl. oz.",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutritional_Information_Optional_Products.pdf",
+      "id": "smoothies-barfresh-triple-berry"
+    },
+    {
+      "name": "Smoothies - Barfresh - Mango Burst",
+      "calories": 280.0,
+      "fat": 0.0,
+      "carbs": 70.0,
+      "protein": 0.0,
+      "servingLabel": "16 fl. oz.",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutritional_Information_Optional_Products.pdf",
+      "id": "smoothies-barfresh-mango-burst"
+    },
+    {
+      "name": "Smoothies - Barfresh - Caribbean",
+      "calories": 280.0,
+      "fat": 0.0,
+      "carbs": 69.0,
+      "protein": 0.0,
+      "servingLabel": "16 fl. oz.",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutritional_Information_Optional_Products.pdf",
+      "id": "smoothies-barfresh-caribbean"
+    },
+    {
+      "name": "Smoothies - Barfresh - Caramel Macchiato",
+      "calories": 420.0,
+      "fat": 7.0,
+      "carbs": 75.0,
+      "protein": 14.0,
+      "servingLabel": "16 fl. oz.",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutritional_Information_Optional_Products.pdf",
+      "id": "smoothies-barfresh-caramel-macchiato"
+    },
+    {
+      "name": "Shakes - Cookies N' Cream",
+      "calories": 650.0,
+      "fat": 15.0,
+      "carbs": 111.0,
+      "protein": 20.0,
+      "servingLabel": "16 fl. oz.",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutritional_Information_Optional_Products.pdf",
+      "id": "shakes-cookies-n-cream"
+    },
+    {
+      "name": "Shakes - Cotton Candy",
+      "calories": 540.0,
+      "fat": 9.0,
+      "carbs": 82.0,
+      "protein": 13.0,
+      "servingLabel": "16 fl. oz.",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutritional_Information_Optional_Products.pdf",
+      "id": "shakes-cotton-candy"
+    },
+    {
+      "name": "Shakes - Strawberry",
+      "calories": 450.0,
+      "fat": 5.0,
+      "carbs": 86.0,
+      "protein": 13.0,
+      "servingLabel": "16 fl. oz.",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutritional_Information_Optional_Products.pdf",
+      "id": "shakes-strawberry"
+    },
+    {
+      "name": "Shakes - Vanilla",
+      "calories": 380.0,
+      "fat": 5.0,
+      "carbs": 69.0,
+      "protein": 18.0,
+      "servingLabel": "16 fl. oz.",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutritional_Information_Optional_Products.pdf",
+      "id": "shakes-vanilla"
+    },
+    {
+      "name": "Cakes - Birthday",
+      "calories": 260.0,
+      "fat": 9.0,
+      "carbs": 42.0,
+      "protein": 3.0,
+      "servingLabel": "1 slice (107 g)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutritional_Information_Optional_Products.pdf",
+      "servingGrams": 107,
+      "id": "cakes-birthday"
+    },
+    {
+      "name": "Cakes - Cookies N' Cream",
+      "calories": 310.0,
+      "fat": 11.0,
+      "carbs": 49.0,
+      "protein": 5.0,
+      "servingLabel": "1 slice (124 g)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutritional_Information_Optional_Products.pdf",
+      "servingGrams": 124,
+      "id": "cakes-cookies-n-cream"
+    },
+    {
+      "name": "Cakes - Strawberry Shortcake",
+      "calories": 260.0,
+      "fat": 8.0,
+      "carbs": 43.0,
+      "protein": 3.0,
+      "servingLabel": "1 slice (122 g)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutritional_Information_Optional_Products.pdf",
+      "servingGrams": 122,
+      "id": "cakes-strawberry-shortcake"
+    },
+    {
+      "name": "Cakes - Triple Chocolate",
+      "calories": 290.0,
+      "fat": 11.0,
+      "carbs": 44.0,
+      "protein": 4.0,
+      "servingLabel": "1 slice (115 g)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutritional_Information_Optional_Products.pdf",
+      "servingGrams": 115,
+      "id": "cakes-triple-chocolate"
+    },
+    {
+      "name": "Frozen Yogurt Cookie Sandwiches - Chocolates N' Cream",
+      "calories": 300.0,
+      "fat": 9.0,
+      "carbs": 50.0,
+      "protein": 5.0,
+      "servingLabel": "1 each (113 g)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutritional_Information_Optional_Products.pdf",
+      "servingGrams": 113,
+      "id": "frozen-yogurt-cookie-sandwiches-chocolates-n-cream"
+    },
+    {
+      "name": "Frozen Yogurt Cookie Sandwiches - Cookies N' Cream",
+      "calories": 250.0,
+      "fat": 6.0,
+      "carbs": 44.0,
+      "protein": 5.0,
+      "servingLabel": "1 each (108 g)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutritional_Information_Optional_Products.pdf",
+      "servingGrams": 108,
+      "id": "frozen-yogurt-cookie-sandwiches-cookies-n-cream"
+    },
+    {
+      "name": "Frozen Yogurt Cookie Sandwiches - Sprinkles N' Cream",
+      "calories": 270.0,
+      "fat": 7.0,
+      "carbs": 48.0,
+      "protein": 5.0,
+      "servingLabel": "1 each (113 g)",
+      "sourceUrl": "https://www.sweetfrog.com/assets/pdf/Nutritional_Information_Optional_Products.pdf",
+      "servingGrams": 113,
+      "id": "frozen-yogurt-cookie-sandwiches-sprinkles-n-cream"
+    }
+  ]
+}

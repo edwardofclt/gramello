@@ -1,0 +1,3565 @@
+{
+  "chain": "Honey Baked Ham",
+  "sourceUrl": "https://www.nutritionix.com/honeybaked-ham/menu/premium",
+  "source": "Nutritionix",
+  "sourceKind": "database",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "id": "nutritionix-15626",
+      "name": "BBQ Pork Roast",
+      "calories": 160,
+      "protein": 14,
+      "carbs": 16,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Signature Meats; size in item name)"
+    },
+    {
+      "id": "nutritionix-18765",
+      "name": "Beef Pot Roast",
+      "calories": 180,
+      "protein": 29,
+      "carbs": 5,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Signature Meats; size in item name)"
+    },
+    {
+      "id": "nutritionix-13776",
+      "name": "Bone-In Ham",
+      "calories": 160,
+      "protein": 16,
+      "carbs": 4,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Signature Meats; size in item name)"
+    },
+    {
+      "id": "nutritionix-618546",
+      "name": "Cob Smoked Uncured Bacon",
+      "calories": 60,
+      "protein": 3,
+      "carbs": 0,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Signature Meats; size in item name)"
+    },
+    {
+      "id": "nutritionix-105425",
+      "name": "Garlic Herb Roasted Half Turkey Breast",
+      "calories": 140,
+      "protein": 19,
+      "carbs": 6,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Signature Meats; size in item name)"
+    },
+    {
+      "id": "nutritionix-15694",
+      "name": "Pepper Bacon",
+      "calories": 90,
+      "protein": 5,
+      "carbs": 0,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Signature Meats; size in item name)"
+    },
+    {
+      "id": "nutritionix-155230",
+      "name": "Prime Rib - TY",
+      "calories": 250,
+      "protein": 14,
+      "carbs": 1,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Signature Meats; size in item name)"
+    },
+    {
+      "id": "nutritionix-15629",
+      "name": "Seasoned Back Pork Ribs",
+      "calories": 290,
+      "protein": 18,
+      "carbs": 10,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Signature Meats; size in item name)"
+    },
+    {
+      "id": "nutritionix-13779",
+      "name": "Smoked Turkey",
+      "calories": 120,
+      "protein": 19,
+      "carbs": 8,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Signature Meats; size in item name)"
+    },
+    {
+      "id": "nutritionix-15697",
+      "name": "Sweet Glaze Bacon",
+      "calories": 90,
+      "protein": 3,
+      "carbs": 1,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Signature Meats; size in item name)"
+    },
+    {
+      "id": "nutritionix-13720",
+      "name": "Turkey Breast, Roasted",
+      "calories": 120,
+      "protein": 19,
+      "carbs": 9,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Signature Meats; size in item name)"
+    },
+    {
+      "id": "nutritionix-13721",
+      "name": "Turkey Breast, Smoked",
+      "calories": 120,
+      "protein": 19,
+      "carbs": 11,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Signature Meats; size in item name)"
+    },
+    {
+      "id": "nutritionix-22262",
+      "name": "Whole Cajun Style Turkey",
+      "calories": 160,
+      "protein": 15,
+      "carbs": 3,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Signature Meats; size in item name)"
+    },
+    {
+      "id": "nutritionix-22261",
+      "name": "Whole Roasted Turkey",
+      "calories": 110,
+      "protein": 15,
+      "carbs": 1,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Signature Meats; size in item name)"
+    },
+    {
+      "id": "nutritionix-22260",
+      "name": "Whole Smoked Turkey",
+      "calories": 110,
+      "protein": 15,
+      "carbs": 1,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Signature Meats; size in item name)"
+    },
+    {
+      "id": "nutritionix-114949",
+      "name": "Avocado Spread - CA",
+      "calories": 90,
+      "protein": 1,
+      "carbs": 6,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115141",
+      "name": "Avocado Whole- Ca",
+      "calories": 320,
+      "protein": 4,
+      "carbs": 17,
+      "fat": 29,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115201",
+      "name": "Baby Back Ribs - CA",
+      "calories": 290,
+      "protein": 18,
+      "carbs": 10,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-14393",
+      "name": "Bacon",
+      "calories": 100,
+      "protein": 7,
+      "carbs": 1,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-14398",
+      "name": "Baker's Roll",
+      "calories": 240,
+      "protein": 6,
+      "carbs": 43,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-153988",
+      "name": "Balsamic Vinaigrette -CW",
+      "calories": 60,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-153987",
+      "name": "Balsamic Vinaigrette Dressing - F",
+      "calories": 60,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115146",
+      "name": "Banana- ca",
+      "calories": 110,
+      "protein": 1,
+      "carbs": 27,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-14395",
+      "name": "Banana Pepper",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-154007",
+      "name": "Baron Spices Jamaicaon Jerk Seasoning - F",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115151",
+      "name": "Basil- Ca",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115197",
+      "name": "BBQ Beans Side Dish- Ca",
+      "calories": 220,
+      "protein": 9,
+      "carbs": 42,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-110739",
+      "name": "BBQ Garlic Herb Butter",
+      "calories": 440,
+      "protein": 2,
+      "carbs": 25,
+      "fat": 40,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-153949",
+      "name": "Best Choice Brown Sugar - CW",
+      "calories": 30,
+      "protein": 0,
+      "carbs": 8,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-114947",
+      "name": "Black Olives - CA",
+      "calories": 50,
+      "protein": 0,
+      "carbs": 8,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-118406",
+      "name": "Black Pepper- Ca",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115085",
+      "name": "Blue Cheese Crumbles - CA",
+      "calories": 100,
+      "protein": 5,
+      "carbs": 2,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-13777",
+      "name": "Boneless Ham",
+      "calories": 120,
+      "protein": 17,
+      "carbs": 5,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115098",
+      "name": "Brown Sugar - CA",
+      "calories": 30,
+      "protein": 0,
+      "carbs": 8,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115086",
+      "name": "Butter Block - CA",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-113584",
+      "name": "Buttermilk Biscuit",
+      "calories": 160,
+      "protein": 3,
+      "carbs": 21,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115112",
+      "name": "Canned Chipotle- Ca",
+      "calories": 20,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115099",
+      "name": "Canned Clam - CA",
+      "calories": 25,
+      "protein": 4,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-150111",
+      "name": "Canned Crushed Pineapple",
+      "calories": 80,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115102",
+      "name": "Canned Pineapple - CA",
+      "calories": 70,
+      "protein": 1,
+      "carbs": 17,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115103",
+      "name": "Canned Red Pepper- CA",
+      "calories": 25,
+      "protein": 1,
+      "carbs": 7,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115138",
+      "name": "Cauliflower- Ca",
+      "calories": 25,
+      "protein": 1,
+      "carbs": 5,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115159",
+      "name": "Celery- Ca",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-13730",
+      "name": "Cheddar",
+      "calories": 90,
+      "protein": 6,
+      "carbs": 1,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-40914",
+      "name": "Cheddar Cheese",
+      "calories": 90,
+      "protein": 5,
+      "carbs": 1,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-154018",
+      "name": "Chianti shredded Parmesan Cheese - F",
+      "calories": 20,
+      "protein": 2,
+      "carbs": 0,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-150109",
+      "name": "Chipotle Concentrate - C",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-153966",
+      "name": "Chipotle Concentrate - CW",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115172",
+      "name": "Chipotle Mayo",
+      "calories": 180,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115142",
+      "name": "Chive- Ca",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-13745",
+      "name": "Ciabatta",
+      "calories": 220,
+      "protein": 4,
+      "carbs": 38,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115155",
+      "name": "Cilantro- Ca",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115158",
+      "name": "Clam Broth- Ca",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115185",
+      "name": "Clam Chowder- Ca",
+      "calories": 420,
+      "protein": 7,
+      "carbs": 17,
+      "fat": 33,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115088",
+      "name": "Clarified Butter - CA",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115114",
+      "name": "Coca Cola Syrup- Ca",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 27,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-154573",
+      "name": "Coffee Creamer",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0.5,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-153962",
+      "name": "Cool crisp Banana Pepper rings - F",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-40893",
+      "name": "Cornbread Croutons",
+      "calories": 30,
+      "protein": 1,
+      "carbs": 4,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115199",
+      "name": "Corn Bread Stuffing Side Dish- Ca",
+      "calories": 180,
+      "protein": 3,
+      "carbs": 19,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115115",
+      "name": "Corn Starch- Ca",
+      "calories": 35,
+      "protein": 0,
+      "carbs": 9,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115175",
+      "name": "Country Gravy",
+      "calories": 110,
+      "protein": 5,
+      "carbs": 13,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115128",
+      "name": "Cracker Saltine- Ca",
+      "calories": 25,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 0.5,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-46733",
+      "name": "Craisins",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 33,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-118538",
+      "name": "Cranberry Orange Salad Fresh Made Side- Ca",
+      "calories": 190,
+      "protein": 0,
+      "carbs": 47,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-15688",
+      "name": "Cranberry Walnut Chutney",
+      "calories": 50,
+      "protein": 0,
+      "carbs": 13,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115177",
+      "name": "Cream Cheese Stuffing",
+      "calories": 450,
+      "protein": 9,
+      "carbs": 24,
+      "fat": 39,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115140",
+      "name": "Crimini mushroom- Ca",
+      "calories": 20,
+      "protein": 2,
+      "carbs": 4,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115184",
+      "name": "Crimini Mushroom Prep- Ca",
+      "calories": 140,
+      "protein": 2,
+      "carbs": 3,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-13740",
+      "name": "Croissant",
+      "calories": 220,
+      "protein": 5,
+      "carbs": 25,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-13755",
+      "name": "Croutons",
+      "calories": 35,
+      "protein": 1,
+      "carbs": 4,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-154005",
+      "name": "Crushed Pineapple - CW",
+      "calories": 70,
+      "protein": 1,
+      "carbs": 17,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-154004",
+      "name": "Crushed Pineapple - F",
+      "calories": 80,
+      "protein": 0,
+      "carbs": 20,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-14397",
+      "name": "Cucumber",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-153986",
+      "name": "Dash Southwest Chipotle Seasoning - F",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115136",
+      "name": "Denver mix(red and green bell pepper)- Ca",
+      "calories": 25,
+      "protein": 1,
+      "carbs": 6,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-150110",
+      "name": "Domino Dark Brown Sugar - C",
+      "calories": 30,
+      "protein": 0,
+      "carbs": 8,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-153946",
+      "name": "Domino Dark Brown Sugar - F",
+      "calories": 30,
+      "protein": 0,
+      "carbs": 8,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-118405",
+      "name": "Dried Chives- Ca",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-118404",
+      "name": "Dried Parsley- Ca",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-40915",
+      "name": "Duke's Buttermilk Ranch",
+      "calories": 110,
+      "protein": 1,
+      "carbs": 2,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-40833",
+      "name": "Duke's Honey Mustard Dressing (Gallon)",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 7,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-40831",
+      "name": "Duke's Mayonnaise",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115080",
+      "name": "English Muffin- Ca",
+      "calories": 120,
+      "protein": 4,
+      "carbs": 21,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-40890",
+      "name": "French Crispy Onions",
+      "calories": 45,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115176",
+      "name": "French Toast Mix",
+      "calories": 290,
+      "protein": 10,
+      "carbs": 22,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-132436",
+      "name": "Fresh Avocado Pulp",
+      "calories": 110,
+      "protein": 1,
+      "carbs": 4,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115174",
+      "name": "Frozen Corn- Ca",
+      "calories": 160,
+      "protein": 5,
+      "carbs": 39,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115147",
+      "name": "Frozen Strawberry IQF- Ca",
+      "calories": 50,
+      "protein": 0,
+      "carbs": 13,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-93460",
+      "name": "Garlic and Herb Butter Spread",
+      "calories": 70,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115139",
+      "name": "Garlic Clove- Ca",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115186",
+      "name": "Garlic Parmesan Mix",
+      "calories": 440,
+      "protein": 40,
+      "carbs": 4,
+      "fat": 29,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115117",
+      "name": "Gelatine Powder- Ca",
+      "calories": 5,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-142864",
+      "name": "GF Veggie Avocado Spread",
+      "calories": 110,
+      "protein": 1,
+      "carbs": 3,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115148",
+      "name": "Ginger- Ca",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-153963",
+      "name": "GLC Provolone Cheese - F",
+      "calories": 80,
+      "protein": 5,
+      "carbs": 0,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-142863",
+      "name": "Gluten Friendly Wrap",
+      "calories": 200,
+      "protein": 5,
+      "carbs": 34,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-150113",
+      "name": "Gold Med Mayonnaise - C",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-150132",
+      "name": "Granulated Garlic",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-13752",
+      "name": "Green Peppers",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115153",
+      "name": "Ground Nutmeg- Ca",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-13719",
+      "name": "Ham",
+      "calories": 160,
+      "protein": 16,
+      "carbs": 4,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115192",
+      "name": "Ham Croquette",
+      "calories": 190,
+      "protein": 10,
+      "carbs": 23,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-40916",
+      "name": "Hard Boiled Egg",
+      "calories": 70,
+      "protein": 6,
+      "carbs": 1,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115168",
+      "name": "Hash Brown Seasoned - CA Only",
+      "calories": 140,
+      "protein": 2,
+      "carbs": 30,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115173",
+      "name": "Hawaiin Garlic Roll",
+      "calories": 160,
+      "protein": 3,
+      "carbs": 17,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-427349",
+      "name": "HBH Baked Beans with Ham",
+      "calories": 150,
+      "protein": 6,
+      "carbs": 22,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115195",
+      "name": "HBH Ham Soup",
+      "calories": 330,
+      "protein": 21,
+      "carbs": 58,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115187",
+      "name": "HBH Spice",
+      "calories": 260,
+      "protein": 0,
+      "carbs": 64,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-13733",
+      "name": "Hickory Honey Mustard",
+      "calories": 20,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-154604",
+      "name": "Highland Balsamic Vinaigrette Dressing - CW",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-153953",
+      "name": "Highland Mayo Deluxe - CW",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115091",
+      "name": "Hollandaise Sauce - CA",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-364654",
+      "name": "Honey Baked Beans",
+      "calories": 150,
+      "protein": 6,
+      "carbs": 22,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-93461",
+      "name": "Honey Garlic & Herb Butter Spread",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 33,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-25453",
+      "name": "Honey Mustard",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-13738",
+      "name": "Horseradish Sauce",
+      "calories": 20,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-153965",
+      "name": "Kaiser Mild Banana Pepper rings - CW",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-150108",
+      "name": "Kens Dressing Balsamic Vinaigrette - C",
+      "calories": 60,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-153989",
+      "name": "Kens sweet vidalia onion Dressing - C",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 10,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-153748",
+      "name": "kikkoman Teriyaki Sauce - C",
+      "calories": 15,
+      "protein": 1,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-153948",
+      "name": "Kikkoman Teriyaki Sauce - CW",
+      "calories": 15,
+      "protein": 1,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-153820",
+      "name": "Kikkoman Teriyaki Sauce - PL - F",
+      "calories": 15,
+      "protein": 1,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-36322",
+      "name": "King's Hawaiian Original Hawaiian Sweet Rolls",
+      "calories": 90,
+      "protein": 3,
+      "carbs": 16,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115118",
+      "name": "Lawry's Seasoning Salt- Ca",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115149",
+      "name": "Lemon Juice- Ca",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-616408",
+      "name": "Lettuce",
+      "calories": 15,
+      "protein": 1,
+      "carbs": 3,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-13749",
+      "name": "Lettuce Leaf",
+      "calories": 0,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115119",
+      "name": "Liquid Butter- Ca",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115092",
+      "name": "Liquid Egg - CA",
+      "calories": 140,
+      "protein": 13,
+      "carbs": 1,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115169",
+      "name": "Liquid egg w/ Cream",
+      "calories": 310,
+      "protein": 19,
+      "carbs": 1,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-436226",
+      "name": "Liquid Egg w/ Cream Mixture",
+      "calories": 37630,
+      "protein": 802,
+      "carbs": 62,
+      "fat": 3435,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115171",
+      "name": "Mac & Cheese Sauce",
+      "calories": 1170,
+      "protein": 27,
+      "carbs": 11,
+      "fat": 107,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115093",
+      "name": "Manu Cream - CA",
+      "calories": 60,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115081",
+      "name": "Marble Rye",
+      "calories": 150,
+      "protein": 5,
+      "carbs": 27,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-107853",
+      "name": "Margarine",
+      "calories": 70,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115101",
+      "name": "Marinara Sauce - CA",
+      "calories": 50,
+      "protein": 2,
+      "carbs": 8,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115198",
+      "name": "Mashed Potatoes Side Dish- Ca",
+      "calories": 350,
+      "protein": 2,
+      "carbs": 13,
+      "fat": 33,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-105426",
+      "name": "McCormick Culinary Rotisserie Chicken Seasoning",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-150112",
+      "name": "McCormick Jerk Seasoning",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-154006",
+      "name": "MC Jerk Carribean Seasoning -",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115137",
+      "name": "Med Green Asparagus- Ca",
+      "calories": 20,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-154022",
+      "name": "Milanos Shredded Permesan Cheese - CW",
+      "calories": 130,
+      "protein": 6,
+      "carbs": 2,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115162",
+      "name": "Mixed Fresh Fruit- Ca",
+      "calories": 100,
+      "protein": 1,
+      "carbs": 24,
+      "fat": 0.5,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-118408",
+      "name": "Mushroom Pieces Canned- Ca",
+      "calories": 60,
+      "protein": 3,
+      "carbs": 14,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115165",
+      "name": "Nashville Hot Seasoning",
+      "calories": 300,
+      "protein": 6,
+      "carbs": 65,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115121",
+      "name": "Nutella- Ca",
+      "calories": 200,
+      "protein": 2,
+      "carbs": 22,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115120",
+      "name": "Nut Macadamia Raw- Ca",
+      "calories": 960,
+      "protein": 11,
+      "carbs": 18,
+      "fat": 101,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115122",
+      "name": "Olive Oil- Ca",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115123",
+      "name": "Pancake Syrup- Ca",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 26,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115124",
+      "name": "Panko Bread Crumbs- Ca",
+      "calories": 110,
+      "protein": 4,
+      "carbs": 23,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-150718",
+      "name": "Papetti Egg Patties",
+      "calories": 110,
+      "protein": 5,
+      "carbs": 2,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115150",
+      "name": "Parsley- Ca",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115126",
+      "name": "Pasta Campanelle- Ca",
+      "calories": 200,
+      "protein": 7,
+      "carbs": 42,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-40876",
+      "name": "Pickle Chips",
+      "calories": 0,
+      "protein": 2,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-40858",
+      "name": "Pickled Red Onion",
+      "calories": 30,
+      "protein": 0,
+      "carbs": 7,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-118409",
+      "name": "Potassium Sorbate- Ca",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115157",
+      "name": "Potato Russet- Ca",
+      "calories": 170,
+      "protein": 5,
+      "carbs": 37,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115127",
+      "name": "Powder Sugar- Ca",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 30,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115095",
+      "name": "Provolone Cheese - CA",
+      "calories": 70,
+      "protein": 6,
+      "carbs": 0,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-153964",
+      "name": "Provolone Cheese - CW",
+      "calories": 70,
+      "protein": 5,
+      "carbs": 0,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-14394",
+      "name": "Red Onion",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115191",
+      "name": "Red Pepper Aioli",
+      "calories": 190,
+      "protein": 2,
+      "carbs": 2,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-30783",
+      "name": "Red Pepper Jelly",
+      "calories": 35,
+      "protein": 0,
+      "carbs": 9,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-40869",
+      "name": "Roasted Tomatoes",
+      "calories": 60,
+      "protein": 2,
+      "carbs": 3,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-13778",
+      "name": "Roasted Turkey Breast",
+      "calories": 120,
+      "protein": 19,
+      "carbs": 6,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-150131",
+      "name": "Roseli Banana Pepepr rings - C",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-150130",
+      "name": "Roseli Provolone Sliced Cheese - C",
+      "calories": 100,
+      "protein": 7,
+      "carbs": 1,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-150114",
+      "name": "Roseli Shredded Parmesan Cheese - C",
+      "calories": 110,
+      "protein": 9,
+      "carbs": 1,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-153746",
+      "name": "Round scrambled egg patties",
+      "calories": 70,
+      "protein": 4,
+      "carbs": 1,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115182",
+      "name": "Salsa Prep- Ca",
+      "calories": 180,
+      "protein": 9,
+      "carbs": 41,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-118407",
+      "name": "Salt- Ca",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115135",
+      "name": "Sausage patty- Ca",
+      "calories": 170,
+      "protein": 9,
+      "carbs": 3,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-119794",
+      "name": "Savory Pie Filing",
+      "calories": 100,
+      "protein": 2,
+      "carbs": 9,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-154017",
+      "name": "Schrieber Cheddar Cheese - CW",
+      "calories": 80,
+      "protein": 5,
+      "carbs": 0,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115090",
+      "name": "Shell Egg - CA",
+      "calories": 80,
+      "protein": 7,
+      "carbs": 0,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-40894",
+      "name": "Shredded Cheddar Cheese",
+      "calories": 110,
+      "protein": 6,
+      "carbs": 1,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115084",
+      "name": "Shredded Cheddar Cheese - CA",
+      "calories": 110,
+      "protein": 6,
+      "carbs": 1,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115087",
+      "name": "Shredded Monterey Jack Cheddar Cheese - CA",
+      "calories": 110,
+      "protein": 7,
+      "carbs": 1,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115094",
+      "name": "Shredded Swiss Cheese - CA",
+      "calories": 110,
+      "protein": 7,
+      "carbs": 0,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-13744",
+      "name": "Sliced Multigrain",
+      "calories": 300,
+      "protein": 14,
+      "carbs": 54,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115306",
+      "name": "Sour Cream-",
+      "calories": 60,
+      "protein": 1,
+      "carbs": 2,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115082",
+      "name": "Sourdough Bread- CA",
+      "calories": 150,
+      "protein": 5,
+      "carbs": 32,
+      "fat": 0.5,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-107852",
+      "name": "Southern Style Biscuit",
+      "calories": 110,
+      "protein": 2,
+      "carbs": 15,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-40909",
+      "name": "Spring Mix",
+      "calories": 25,
+      "protein": 2,
+      "carbs": 4,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115180",
+      "name": "Strawberry Jam prep",
+      "calories": 360,
+      "protein": 0,
+      "carbs": 95,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115179",
+      "name": "Sugar- Ca",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-154003",
+      "name": "Sweet Bbay Rays BBQ Sauce - CW",
+      "calories": 70,
+      "protein": 0,
+      "carbs": 18,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-154002",
+      "name": "Sweet Bbay Rays BBQ Sauce - F",
+      "calories": 70,
+      "protein": 0,
+      "carbs": 18,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-40896",
+      "name": "Sweet HBH Glaze",
+      "calories": 60,
+      "protein": 0,
+      "carbs": 16,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-13729",
+      "name": "Swiss",
+      "calories": 80,
+      "protein": 6,
+      "carbs": 0,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115096",
+      "name": "Swiss Cheese - CA",
+      "calories": 80,
+      "protein": 6,
+      "carbs": 1,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-154574",
+      "name": "Sysco Sugar",
+      "calories": 30,
+      "protein": 0,
+      "carbs": 8,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-154575",
+      "name": "Sysco Sweetner",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115130",
+      "name": "Tabasco sauce- Ca",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115152",
+      "name": "Thyme- Ca",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115183",
+      "name": "Toasted Bread Crumbs",
+      "calories": 170,
+      "protein": 4,
+      "carbs": 23,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115190",
+      "name": "Tomato Bisque Soup",
+      "calories": 500,
+      "protein": 3,
+      "carbs": 11,
+      "fat": 45,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-114948",
+      "name": "Tri Tip",
+      "calories": 110,
+      "protein": 18,
+      "carbs": 1,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115200",
+      "name": "Turkey Gravy Side Dish- Ca",
+      "calories": 25,
+      "protein": 2,
+      "carbs": 4,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-80099",
+      "name": "Unglazed Smoked Turkey",
+      "calories": 90,
+      "protein": 17,
+      "carbs": 2,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-118403",
+      "name": "Vanee Turkey Gravy- Ca",
+      "calories": 35,
+      "protein": 1,
+      "carbs": 4,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-153952",
+      "name": "Ventura Foods Mayo - F",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-153990",
+      "name": "Vidalia Onion Vinaigrette -",
+      "calories": 110,
+      "protein": 0,
+      "carbs": 7,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115189",
+      "name": "Waffle Mix - Complete",
+      "calories": 1460,
+      "protein": 22,
+      "carbs": 313,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115161",
+      "name": "Waffle Mix Page Foods- Ca",
+      "calories": 160,
+      "protein": 4,
+      "carbs": 28,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115097",
+      "name": "Whole Milk - CA",
+      "calories": 160,
+      "protein": 8,
+      "carbs": 13,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-115144",
+      "name": "Yellow onion- Ca",
+      "calories": 40,
+      "protein": 1,
+      "carbs": 10,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Add-ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-22058",
+      "name": "Dinner Rolls",
+      "calories": 90,
+      "protein": 1,
+      "carbs": 11,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Additional Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-41051",
+      "name": "Honey Baked Ham Cheesy Potatoes Au Gratin",
+      "calories": 260,
+      "protein": 10,
+      "carbs": 20,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Additional Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-41050",
+      "name": "Honey Baked Ham Cinnamon Apples",
+      "calories": 90,
+      "protein": 0,
+      "carbs": 18,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Additional Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-41034",
+      "name": "Honey Baked Ham Country Cornbread Stuffing",
+      "calories": 240,
+      "protein": 4,
+      "carbs": 23,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Additional Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-41048",
+      "name": "Honey Baked Ham Creamy Russet Mashed Potatoes",
+      "calories": 350,
+      "protein": 3,
+      "carbs": 25,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Additional Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-41052",
+      "name": "Honey Baked Ham Double Chedder Macaroni & Cheese",
+      "calories": 390,
+      "protein": 16,
+      "carbs": 31,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Additional Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-41047",
+      "name": "Honey Baked Ham Green Bean Casserole with Crispy Onion",
+      "calories": 120,
+      "protein": 3,
+      "carbs": 8,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Additional Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-41033",
+      "name": "Honey Baked Ham Loaded Smashed Potatoes",
+      "calories": 300,
+      "protein": 8,
+      "carbs": 21,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Additional Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-41045",
+      "name": "Honey Baked Ham Maple Sweet Potato Souffle with Pecans",
+      "calories": 250,
+      "protein": 3,
+      "carbs": 40,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Additional Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-119221",
+      "name": "Honey Baked Ham Savory Gravy",
+      "calories": 35,
+      "protein": 3,
+      "carbs": 2,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Additional Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-41032",
+      "name": "Honey Baked Ham Tuscan Style Broccoli",
+      "calories": 150,
+      "protein": 5,
+      "carbs": 6,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Additional Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-29670",
+      "name": "Mini Twist Roll",
+      "calories": 120,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Additional Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-49750",
+      "name": "NEW Broccoli Bacon Bliss",
+      "calories": 170,
+      "protein": 4,
+      "carbs": 16,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Additional Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-40879",
+      "name": "Potato Chips, Jalapeno",
+      "calories": 200,
+      "protein": 2,
+      "carbs": 23,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Additional Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-40878",
+      "name": "Potato Chips, Mesquite BBQ",
+      "calories": 200,
+      "protein": 2,
+      "carbs": 24,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Additional Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-40877",
+      "name": "Potato Chips, Original",
+      "calories": 210,
+      "protein": 2,
+      "carbs": 23,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Additional Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-40880",
+      "name": "Potato Chips, Sweet Maui Onion",
+      "calories": 200,
+      "protein": 2,
+      "carbs": 24,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Additional Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-13780",
+      "name": "Potato Salad",
+      "calories": 160,
+      "protein": 1,
+      "carbs": 11,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Additional Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-150115",
+      "name": "Resers Salad Pasta",
+      "calories": 140,
+      "protein": 4,
+      "carbs": 22,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Additional Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-29671",
+      "name": "Wheat Dinner Roll",
+      "calories": 110,
+      "protein": 3,
+      "carbs": 20,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Additional Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-29672",
+      "name": "White Mountain Dinner Roll",
+      "calories": 110,
+      "protein": 3,
+      "carbs": 19,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Additional Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-431198",
+      "name": "English Muffin",
+      "calories": 120,
+      "protein": 4,
+      "carbs": 23,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Breads; size in item name)"
+    },
+    {
+      "id": "nutritionix-15620",
+      "name": "Apple-Cranberry Stuffed Pork Loin",
+      "calories": 170,
+      "protein": 20,
+      "carbs": 9,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Catalog Items; size in item name)"
+    },
+    {
+      "id": "nutritionix-15682",
+      "name": "Baby Swiss Cheese",
+      "calories": 120,
+      "protein": 6,
+      "carbs": 0,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Catalog Items; size in item name)"
+    },
+    {
+      "id": "nutritionix-15647",
+      "name": "Carrot Cake",
+      "calories": 370,
+      "protein": 3,
+      "carbs": 38,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Catalog Items; size in item name)"
+    },
+    {
+      "id": "nutritionix-59173",
+      "name": "Champagne Mustard",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Catalog Items; size in item name)"
+    },
+    {
+      "id": "nutritionix-15676",
+      "name": "Cinnamon Pecan Streusel Rum Cake Sampler",
+      "calories": 440,
+      "protein": 4,
+      "carbs": 57,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Catalog Items; size in item name)"
+    },
+    {
+      "id": "nutritionix-15644",
+      "name": "Coconut Cake",
+      "calories": 330,
+      "protein": 2,
+      "carbs": 40,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Catalog Items; size in item name)"
+    },
+    {
+      "id": "nutritionix-15677",
+      "name": "Coconut Rum Cake Sampler",
+      "calories": 450,
+      "protein": 4,
+      "carbs": 56,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Catalog Items; size in item name)"
+    },
+    {
+      "id": "nutritionix-15698",
+      "name": "Ham Bone Mixed Bean Soup Mix",
+      "calories": 180,
+      "protein": 11,
+      "carbs": 32,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Catalog Items; size in item name)"
+    },
+    {
+      "id": "nutritionix-15642",
+      "name": "Hot Fudge Sundae Cheesecake - Catalog",
+      "calories": 570,
+      "protein": 8,
+      "carbs": 58,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Catalog Items; size in item name)"
+    },
+    {
+      "id": "nutritionix-15645",
+      "name": "Lemon Cream Cake",
+      "calories": 460,
+      "protein": 4,
+      "carbs": 50,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Catalog Items; size in item name)"
+    },
+    {
+      "id": "nutritionix-15623",
+      "name": "Peppercorn Beef Tenderloin",
+      "calories": 370,
+      "protein": 42,
+      "carbs": 3,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Catalog Items; size in item name)"
+    },
+    {
+      "id": "nutritionix-13732",
+      "name": "Savory Mayo",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Catalog Items; size in item name)"
+    },
+    {
+      "id": "nutritionix-15625",
+      "name": "Seasoned BBQ Sliced Beef Brisket",
+      "calories": 220,
+      "protein": 11,
+      "carbs": 0,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Catalog Items; size in item name)"
+    },
+    {
+      "id": "nutritionix-25446",
+      "name": "Split Pea Soup Mix",
+      "calories": 180,
+      "protein": 11,
+      "carbs": 33,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Catalog Items; size in item name)"
+    },
+    {
+      "id": "nutritionix-15643",
+      "name": "Strawberry Swirl Cheesecake - Catalog",
+      "calories": 520,
+      "protein": 8,
+      "carbs": 50,
+      "fat": 33,
+      "servingLabel": "1 listed serving (Catalog Items; size in item name)"
+    },
+    {
+      "id": "nutritionix-15637",
+      "name": "Sweet Potato Puff",
+      "calories": 250,
+      "protein": 4,
+      "carbs": 27,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Catalog Items; size in item name)"
+    },
+    {
+      "id": "nutritionix-15650",
+      "name": "Triple Chocolate Cake",
+      "calories": 280,
+      "protein": 3,
+      "carbs": 31,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Catalog Items; size in item name)"
+    },
+    {
+      "id": "nutritionix-15640",
+      "name": "Turtle Cheesecake - Catalog",
+      "calories": 590,
+      "protein": 8,
+      "carbs": 56,
+      "fat": 37,
+      "servingLabel": "1 listed serving (Catalog Items; size in item name)"
+    },
+    {
+      "id": "nutritionix-15649",
+      "name": "Tuxedo Mousse Cake",
+      "calories": 630,
+      "protein": 6,
+      "carbs": 72,
+      "fat": 37,
+      "servingLabel": "1 listed serving (Catalog Items; size in item name)"
+    },
+    {
+      "id": "nutritionix-15641",
+      "name": "Vanilla Cheesecake-Catalog",
+      "calories": 580,
+      "protein": 10,
+      "carbs": 43,
+      "fat": 41,
+      "servingLabel": "1 listed serving (Catalog Items; size in item name)"
+    },
+    {
+      "id": "nutritionix-25447",
+      "name": "White Bean Ham Bone Soup Mix",
+      "calories": 170,
+      "protein": 11,
+      "carbs": 31,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Catalog Items; size in item name)"
+    },
+    {
+      "id": "nutritionix-19627",
+      "name": "Blueberry Coffee Cake",
+      "calories": 210,
+      "protein": 3,
+      "carbs": 29,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-44465",
+      "name": "Chocolate Chip Chunk Cookie",
+      "calories": 270,
+      "protein": 4,
+      "carbs": 37,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-13757",
+      "name": "Chocolate Chip Cookie",
+      "calories": 280,
+      "protein": 2,
+      "carbs": 40,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-19698",
+      "name": "Chocolate Chocolate Chip Rum Cake",
+      "calories": 210,
+      "protein": 2,
+      "carbs": 28,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-13759",
+      "name": "Desserts - Chocolate Chunk Cookie",
+      "calories": 330,
+      "protein": 4,
+      "carbs": 39,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-383896",
+      "name": "Desserts - Chocolate Chunk Cookie",
+      "calories": 350,
+      "protein": 4,
+      "carbs": 39,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-19701",
+      "name": "Cinnamon Pecan Streusel Rum Cake",
+      "calories": 230,
+      "protein": 2,
+      "carbs": 30,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-19626",
+      "name": "Cinnamon Walnut Coffee Cake",
+      "calories": 260,
+      "protein": 4,
+      "carbs": 29,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-19700",
+      "name": "Coconut Rum Cake",
+      "calories": 220,
+      "protein": 2,
+      "carbs": 27,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-13760",
+      "name": "Double Chocolate Caramel Cookie",
+      "calories": 290,
+      "protein": 3,
+      "carbs": 37,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-44464",
+      "name": "Fudge Brownie with Chocolate Chips",
+      "calories": 320,
+      "protein": 2,
+      "carbs": 44,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-13761",
+      "name": "Heath Crunch Cookie",
+      "calories": 190,
+      "protein": 2,
+      "carbs": 27,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-13774",
+      "name": "Hot Fudge Cheesecake",
+      "calories": 320,
+      "protein": 4,
+      "carbs": 29,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-44467",
+      "name": "Macadamia White and Chocolate Chunk Cookie",
+      "calories": 290,
+      "protein": 4,
+      "carbs": 36,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-13771",
+      "name": "NY Style Cheesecake",
+      "calories": 210,
+      "protein": 4,
+      "carbs": 15,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-13762",
+      "name": "Oatmeal Raisin Cookie",
+      "calories": 300,
+      "protein": 4,
+      "carbs": 42,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-383895",
+      "name": "Oatmeal Raisin Cookie",
+      "calories": 300,
+      "protein": 4,
+      "carbs": 42,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-13763",
+      "name": "Oatmeal Raisin Nut Cookie",
+      "calories": 270,
+      "protein": 3,
+      "carbs": 38,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-15673",
+      "name": "Pecan Pie",
+      "calories": 450,
+      "protein": 4,
+      "carbs": 69,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-19615",
+      "name": "Pumpkin Pie",
+      "calories": 290,
+      "protein": 4,
+      "carbs": 41,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-167368",
+      "name": "Red Velvet Cake",
+      "calories": 330,
+      "protein": 3,
+      "carbs": 42,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-13766",
+      "name": "Snickerdoodle",
+      "calories": 300,
+      "protein": 4,
+      "carbs": 46,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-384181",
+      "name": "Snickerdoodle/Sugar",
+      "calories": 290,
+      "protein": 5,
+      "carbs": 43,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-13773",
+      "name": "Strawberry Cheesecake",
+      "calories": 290,
+      "protein": 4,
+      "carbs": 26,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-13767",
+      "name": "Sugar Cookie",
+      "calories": 270,
+      "protein": 2,
+      "carbs": 38,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-51254",
+      "name": "Vanilla Cheesecake",
+      "calories": 320,
+      "protein": 5,
+      "carbs": 23,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-19699",
+      "name": "Vanilla Rum Cake",
+      "calories": 210,
+      "protein": 2,
+      "carbs": 27,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-49903",
+      "name": "White Chocolate HBH Spice Cookie",
+      "calories": 380,
+      "protein": 5,
+      "carbs": 53,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-383897",
+      "name": "White Chocolate Macadamia Nut Cookie",
+      "calories": 350,
+      "protein": 4,
+      "carbs": 39,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-13768",
+      "name": "White Chocolate Macademia Nut Cookie",
+      "calories": 350,
+      "protein": 4,
+      "carbs": 38,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-56407",
+      "name": "Classic Cranberry Chicken Salad",
+      "calories": 310,
+      "protein": 16,
+      "carbs": 14,
+      "fat": 21,
+      "servingLabel": "1 listed serving (HoneyBaked Extras; size in item name)"
+    },
+    {
+      "id": "nutritionix-49761",
+      "name": "Ham Salad",
+      "calories": 310,
+      "protein": 17,
+      "carbs": 16,
+      "fat": 21,
+      "servingLabel": "1 listed serving (HoneyBaked Extras; size in item name)"
+    },
+    {
+      "id": "nutritionix-409658",
+      "name": "3-Pack Ham and Swiss Sliders",
+      "calories": 500,
+      "protein": 26,
+      "carbs": 63,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Signature Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-317756",
+      "name": "Classic Cranberry Chicken Salad Sandwich",
+      "calories": 540,
+      "protein": 23,
+      "carbs": 41,
+      "fat": 32,
+      "servingLabel": "1 listed serving (Signature Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-112625",
+      "name": "Ham Classic",
+      "calories": 610,
+      "protein": 29,
+      "carbs": 42,
+      "fat": 38,
+      "servingLabel": "1 listed serving (Signature Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-112631",
+      "name": "Ham Salad Sandwich",
+      "calories": 720,
+      "protein": 33,
+      "carbs": 72,
+      "fat": 40,
+      "servingLabel": "1 listed serving (Signature Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-112627",
+      "name": "Roasted Turkey Classic",
+      "calories": 610,
+      "protein": 33,
+      "carbs": 66,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Signature Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-112626",
+      "name": "Smoked Turkey Classic",
+      "calories": 610,
+      "protein": 32,
+      "carbs": 68,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Signature Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-112633",
+      "name": "BBQ Smoked Stacker",
+      "calories": 650,
+      "protein": 37,
+      "carbs": 60,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Specialty Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-1178073",
+      "name": "BBQ Smoked Stacker - 1",
+      "calories": 610,
+      "protein": 35,
+      "carbs": 61,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Specialty Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-1178064",
+      "name": "Deluxe Ham Classic (Bone-in Ham)",
+      "calories": 900,
+      "protein": 45,
+      "carbs": 44,
+      "fat": 64,
+      "servingLabel": "1 listed serving (Specialty Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-1178771",
+      "name": "Deluxe Ham Classic (Boneless)",
+      "calories": 560,
+      "protein": 13,
+      "carbs": 38,
+      "fat": 42,
+      "servingLabel": "1 listed serving (Specialty Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-1178772",
+      "name": "Deluxe Turkey Classic (Roasted Turkey)",
+      "calories": 760,
+      "protein": 44,
+      "carbs": 53,
+      "fat": 45,
+      "servingLabel": "1 listed serving (Specialty Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-1178063",
+      "name": "Deluxe Turkey Classic (Smoked Turkey)",
+      "calories": 760,
+      "protein": 44,
+      "carbs": 57,
+      "fat": 45,
+      "servingLabel": "1 listed serving (Specialty Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-504120",
+      "name": "Gluten Friendly Ham Classic Wrap",
+      "calories": 610,
+      "protein": 29,
+      "carbs": 51,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Specialty Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-504312",
+      "name": "Gluten Friendly Roasted Turkey Classic Wrap",
+      "calories": 570,
+      "protein": 32,
+      "carbs": 53,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Specialty Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-612208",
+      "name": "Gluten Friendly Smoked Turkey Classic",
+      "calories": 570,
+      "protein": 32,
+      "carbs": 59,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Specialty Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-492416",
+      "name": "Gluten Friendly Veggie Wrap",
+      "calories": 400,
+      "protein": 10,
+      "carbs": 57,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Specialty Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-514902",
+      "name": "New Veggie Sandwich",
+      "calories": 460,
+      "protein": 16,
+      "carbs": 63,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Specialty Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-112629",
+      "name": "Tavern Club",
+      "calories": 1000,
+      "protein": 61,
+      "carbs": 72,
+      "fat": 59,
+      "servingLabel": "1 listed serving (Specialty Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-252561",
+      "name": "The HoneyBaked",
+      "calories": 860,
+      "protein": 34,
+      "carbs": 85,
+      "fat": 43,
+      "servingLabel": "1 listed serving (Specialty Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-387817",
+      "name": "The Honeybaked - Roasted Turkey (LTO)",
+      "calories": 620,
+      "protein": 38,
+      "carbs": 69,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Specialty Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-387816",
+      "name": "The Honeybaked - Smoked Turkey (LTO)",
+      "calories": 540,
+      "protein": 32,
+      "carbs": 71,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Specialty Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-112628",
+      "name": "Turkey Bacon Ranch",
+      "calories": 740,
+      "protein": 50,
+      "carbs": 73,
+      "fat": 35,
+      "servingLabel": "1 listed serving (Specialty Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-20500",
+      "name": "8 oz Baked Potato Soup",
+      "calories": 250,
+      "protein": 6,
+      "carbs": 20,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Soups; size in item name)"
+    },
+    {
+      "id": "nutritionix-18761",
+      "name": "8 oz Broccoli, Ham and Cheddar Soup",
+      "calories": 280,
+      "protein": 12,
+      "carbs": 12,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Soups; size in item name)"
+    },
+    {
+      "id": "nutritionix-18758",
+      "name": "8 oz Roasted Turkey Noodle Soup",
+      "calories": 110,
+      "protein": 8,
+      "carbs": 15,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Soups; size in item name)"
+    },
+    {
+      "id": "nutritionix-20876",
+      "name": "12 oz Baked Potato Soup",
+      "calories": 370,
+      "protein": 9,
+      "carbs": 30,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Soups; size in item name)"
+    },
+    {
+      "id": "nutritionix-18762",
+      "name": "12 oz Broccoli, Ham and Cheddar Soup",
+      "calories": 430,
+      "protein": 19,
+      "carbs": 19,
+      "fat": 31,
+      "servingLabel": "1 listed serving (Soups; size in item name)"
+    },
+    {
+      "id": "nutritionix-18759",
+      "name": "12 oz Roasted Turkey Noodle Soup",
+      "calories": 170,
+      "protein": 11,
+      "carbs": 22,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Soups; size in item name)"
+    },
+    {
+      "id": "nutritionix-415598",
+      "name": "Baked Potato Soup",
+      "calories": 220,
+      "protein": 5,
+      "carbs": 20,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Soups; size in item name)"
+    },
+    {
+      "id": "nutritionix-415597",
+      "name": "Broccoli & Cheese Soup",
+      "calories": 220,
+      "protein": 8,
+      "carbs": 13,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Soups; size in item name)"
+    },
+    {
+      "id": "nutritionix-415600",
+      "name": "Chicken Noodle Soup",
+      "calories": 110,
+      "protein": 8,
+      "carbs": 11,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Soups; size in item name)"
+    },
+    {
+      "id": "nutritionix-20502",
+      "name": "Chicken Tortilla Soup",
+      "calories": 170,
+      "protein": 8,
+      "carbs": 15,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Soups; size in item name)"
+    },
+    {
+      "id": "nutritionix-582453",
+      "name": "Garden Salad - Catering",
+      "calories": 210,
+      "protein": 14,
+      "carbs": 21,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-499612",
+      "name": "New Chef Salad (Whole)",
+      "calories": 620,
+      "protein": 42,
+      "carbs": 47,
+      "fat": 31,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-514417",
+      "name": "New Garden Salad - Full",
+      "calories": 160,
+      "protein": 8,
+      "carbs": 18,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-13739",
+      "name": "Balsamic Vinaigrette",
+      "calories": 35,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Sauces; size in item name)"
+    },
+    {
+      "id": "nutritionix-40889",
+      "name": "BBQ Sauce",
+      "calories": 60,
+      "protein": 1,
+      "carbs": 13,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sauces; size in item name)"
+    },
+    {
+      "id": "nutritionix-154001",
+      "name": "BBQ Sauce - C",
+      "calories": 70,
+      "protein": 0,
+      "carbs": 18,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sauces; size in item name)"
+    },
+    {
+      "id": "nutritionix-81315",
+      "name": "Brown Sugar Garlic Butter",
+      "calories": 470,
+      "protein": 1,
+      "carbs": 54,
+      "fat": 29,
+      "servingLabel": "1 listed serving (Sauces; size in item name)"
+    },
+    {
+      "id": "nutritionix-150133",
+      "name": "Kraft Sweet Honey BBQ Sauce",
+      "calories": 60,
+      "protein": 0,
+      "carbs": 15,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sauces; size in item name)"
+    },
+    {
+      "id": "nutritionix-40834",
+      "name": "Duke's Coleslaw Dressing",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 6,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Salad Items; size in item name)"
+    },
+    {
+      "id": "nutritionix-13750",
+      "name": "Romaine Lettuce",
+      "calories": 20,
+      "protein": 1,
+      "carbs": 4,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Salad Items; size in item name)"
+    },
+    {
+      "id": "nutritionix-141793",
+      "name": "Stokely Diced Potato",
+      "calories": 70,
+      "protein": 2,
+      "carbs": 16,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Salad Items; size in item name)"
+    },
+    {
+      "id": "nutritionix-154602",
+      "name": "Black Coffee",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0.5,
+      "servingLabel": "1 listed serving (Test Market; size in item name)"
+    },
+    {
+      "id": "nutritionix-523391",
+      "name": "California Pasta Salad",
+      "calories": 90,
+      "protein": 3,
+      "carbs": 15,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Test Market; size in item name)"
+    },
+    {
+      "id": "nutritionix-166277",
+      "name": "Carver Ham",
+      "calories": 120,
+      "protein": 17,
+      "carbs": 4,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Test Market; size in item name)"
+    },
+    {
+      "id": "nutritionix-744731",
+      "name": "Carver Ham Sandwich",
+      "calories": 790,
+      "protein": 55,
+      "carbs": 53,
+      "fat": 38,
+      "servingLabel": "1 listed serving (Test Market; size in item name)"
+    },
+    {
+      "id": "nutritionix-154014",
+      "name": "Decaffeinated black Coffee",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Test Market; size in item name)"
+    },
+    {
+      "id": "nutritionix-636390",
+      "name": "Ham and Turkey Bella - C",
+      "calories": 740,
+      "protein": 51,
+      "carbs": 59,
+      "fat": 32,
+      "servingLabel": "1 listed serving (Test Market; size in item name)"
+    },
+    {
+      "id": "nutritionix-636392",
+      "name": "Ham and Turkey Bella - CW",
+      "calories": 790,
+      "protein": 52,
+      "carbs": 60,
+      "fat": 36,
+      "servingLabel": "1 listed serving (Test Market; size in item name)"
+    },
+    {
+      "id": "nutritionix-636391",
+      "name": "Ham and Turkey Bella - F",
+      "calories": 770,
+      "protein": 53,
+      "carbs": 58,
+      "fat": 33,
+      "servingLabel": "1 listed serving (Test Market; size in item name)"
+    },
+    {
+      "id": "nutritionix-154010",
+      "name": "Mrs Gerry's Pasta Salad - CW",
+      "calories": 340,
+      "protein": 6,
+      "carbs": 20,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Test Market; size in item name)"
+    },
+    {
+      "id": "nutritionix-154008",
+      "name": "Pasta Feista Salad - F",
+      "calories": 240,
+      "protein": 6,
+      "carbs": 31,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Test Market; size in item name)"
+    },
+    {
+      "id": "nutritionix-154009",
+      "name": "Resers Pasta Salad - C",
+      "calories": 140,
+      "protein": 4,
+      "carbs": 22,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Test Market; size in item name)"
+    },
+    {
+      "id": "nutritionix-252563",
+      "name": "Sandwich - High Five (Test Market)",
+      "calories": 770,
+      "protein": 46,
+      "carbs": 73,
+      "fat": 31,
+      "servingLabel": "1 listed serving (Test Market; size in item name)"
+    },
+    {
+      "id": "nutritionix-252562",
+      "name": "Sandwich - Turkey BAC (Test Market)",
+      "calories": 660,
+      "protein": 42,
+      "carbs": 72,
+      "fat": 29,
+      "servingLabel": "1 listed serving (Test Market; size in item name)"
+    },
+    {
+      "id": "nutritionix-633697",
+      "name": "Sothwest Turkey Ole - CW",
+      "calories": 490,
+      "protein": 30,
+      "carbs": 44,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Test Market; size in item name)"
+    },
+    {
+      "id": "nutritionix-633698",
+      "name": "Sothwest Turkey Ole - F",
+      "calories": 500,
+      "protein": 30,
+      "carbs": 44,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Test Market; size in item name)"
+    },
+    {
+      "id": "nutritionix-393237",
+      "name": "Take-and-Bake Slider Tray",
+      "calories": 1870,
+      "protein": 74,
+      "carbs": 202,
+      "fat": 100,
+      "servingLabel": "1 listed serving (Test Market; size in item name)"
+    },
+    {
+      "id": "nutritionix-522860",
+      "name": "Turkey Bacon Blitz",
+      "calories": 790,
+      "protein": 42,
+      "carbs": 66,
+      "fat": 37,
+      "servingLabel": "1 listed serving (Test Market; size in item name)"
+    },
+    {
+      "id": "nutritionix-633699",
+      "name": "Turkey Bacon Blitz - C",
+      "calories": 790,
+      "protein": 42,
+      "carbs": 63,
+      "fat": 37,
+      "servingLabel": "1 listed serving (Test Market; size in item name)"
+    },
+    {
+      "id": "nutritionix-633701",
+      "name": "Turkey Bacon Blitz - CW",
+      "calories": 770,
+      "protein": 42,
+      "carbs": 60,
+      "fat": 37,
+      "servingLabel": "1 listed serving (Test Market; size in item name)"
+    },
+    {
+      "id": "nutritionix-633700",
+      "name": "Turkey Bacon Blitz - F",
+      "calories": 790,
+      "protein": 42,
+      "carbs": 63,
+      "fat": 36,
+      "servingLabel": "1 listed serving (Test Market; size in item name)"
+    },
+    {
+      "id": "nutritionix-58240",
+      "name": "Unglazed Roasted Turkey",
+      "calories": 90,
+      "protein": 17,
+      "carbs": 1,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Test Market; size in item name)"
+    },
+    {
+      "id": "nutritionix-593754",
+      "name": "Breakfast box - Bacon Egg & Cheese",
+      "calories": 790,
+      "protein": 28,
+      "carbs": 59,
+      "fat": 50,
+      "servingLabel": "1 listed serving (Test Market Catering; size in item name)"
+    },
+    {
+      "id": "nutritionix-593753",
+      "name": "Breakfast Box - Ham Egg & Cheese",
+      "calories": 770,
+      "protein": 29,
+      "carbs": 60,
+      "fat": 46,
+      "servingLabel": "1 listed serving (Test Market Catering; size in item name)"
+    },
+    {
+      "id": "nutritionix-593756",
+      "name": "Breakfast box - Ham Egg & Cheese Biscuit",
+      "calories": 730,
+      "protein": 22,
+      "carbs": 74,
+      "fat": 38,
+      "servingLabel": "1 listed serving (Test Market Catering; size in item name)"
+    },
+    {
+      "id": "nutritionix-591705",
+      "name": "Catering Ham & Cheddar Biscuit",
+      "calories": 520,
+      "protein": 19,
+      "carbs": 45,
+      "fat": 28,
+      "servingLabel": "1 listed serving (Test Market Catering; size in item name)"
+    },
+    {
+      "id": "nutritionix-585519",
+      "name": "GF Wrap Boxed Lunch",
+      "calories": 760,
+      "protein": 11,
+      "carbs": 99,
+      "fat": 35,
+      "servingLabel": "1 listed serving (Test Market Catering; size in item name)"
+    },
+    {
+      "id": "nutritionix-150703",
+      "name": "Gluten Free Chocolate Brownie",
+      "calories": 350,
+      "protein": 4,
+      "carbs": 42,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Test Market Catering; size in item name)"
+    },
+    {
+      "id": "nutritionix-153950",
+      "name": "Tropicana Orange Juice",
+      "calories": 110,
+      "protein": 2,
+      "carbs": 26,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Test Market Catering; size in item name)"
+    },
+    {
+      "id": "nutritionix-151842",
+      "name": "Yoplait Yogurt Blueberry Light",
+      "calories": 80,
+      "protein": 5,
+      "carbs": 15,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Test Market Catering; size in item name)"
+    },
+    {
+      "id": "nutritionix-151843",
+      "name": "Yoplait Yogurt Blueberry Original",
+      "calories": 140,
+      "protein": 5,
+      "carbs": 27,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Test Market Catering; size in item name)"
+    },
+    {
+      "id": "nutritionix-151845",
+      "name": "Yoplait Yogurt Mixed Berry Original",
+      "calories": 140,
+      "protein": 5,
+      "carbs": 28,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Test Market Catering; size in item name)"
+    },
+    {
+      "id": "nutritionix-151844",
+      "name": "Yoplait Yogurt Strawberry Light",
+      "calories": 80,
+      "protein": 5,
+      "carbs": 15,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Test Market Catering; size in item name)"
+    },
+    {
+      "id": "nutritionix-151841",
+      "name": "Yoplait Yogurt Strawberry Original",
+      "calories": 140,
+      "protein": 5,
+      "carbs": 26,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Test Market Catering; size in item name)"
+    },
+    {
+      "id": "nutritionix-40856",
+      "name": "Honey Iced Tea (Test Market)",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 42,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Test Market Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-40854",
+      "name": "Honey Lemonade (Test Market)",
+      "calories": 220,
+      "protein": 0,
+      "carbs": 58,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Test Market Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-158657",
+      "name": "Bacon & Cheddar Croissant",
+      "calories": 460,
+      "protein": 22,
+      "carbs": 28,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Breakfast Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-275958",
+      "name": "Bacon, Egg, & Cheddar Croissant",
+      "calories": 520,
+      "protein": 24,
+      "carbs": 29,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Breakfast Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-591646",
+      "name": "Bacon Egg & Cheese Croissant",
+      "calories": 520,
+      "protein": 23,
+      "carbs": 29,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Breakfast Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-593755",
+      "name": "Breakfast box - Egg & Cheese",
+      "calories": 690,
+      "protein": 21,
+      "carbs": 58,
+      "fat": 42,
+      "servingLabel": "1 listed serving (Breakfast Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-591647",
+      "name": "Egg and Cheese Croissant",
+      "calories": 420,
+      "protein": 16,
+      "carbs": 28,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Breakfast Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-429060",
+      "name": "Ham & Cheddar Biscuit 3-Pack",
+      "calories": 330,
+      "protein": 11,
+      "carbs": 39,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Breakfast Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-438463",
+      "name": "Ham & Cheddar Biscuit 8-Pack",
+      "calories": 370,
+      "protein": 11,
+      "carbs": 39,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Breakfast Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-158653",
+      "name": "Ham & Cheddar Croissant",
+      "calories": 470,
+      "protein": 27,
+      "carbs": 30,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Breakfast Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-158655",
+      "name": "Ham, Bacon & Cheddar Croissant",
+      "calories": 570,
+      "protein": 34,
+      "carbs": 31,
+      "fat": 35,
+      "servingLabel": "1 listed serving (Breakfast Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-275959",
+      "name": "Ham, Bacon, Egg, & Cheddar Croissant",
+      "calories": 600,
+      "protein": 32,
+      "carbs": 31,
+      "fat": 38,
+      "servingLabel": "1 listed serving (Breakfast Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-275955",
+      "name": "Ham, Egg, & Cheddar Croissant",
+      "calories": 500,
+      "protein": 25,
+      "carbs": 30,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Breakfast Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-590553",
+      "name": "Ham Egg & Cheese Croissant",
+      "calories": 500,
+      "protein": 24,
+      "carbs": 30,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Breakfast Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-158654",
+      "name": "Thin Sliced Ham & Cheddar Croissant",
+      "calories": 390,
+      "protein": 19,
+      "carbs": 28,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Breakfast Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-275956",
+      "name": "Thin Sliced Ham, Egg, & Cheddar Croissant",
+      "calories": 500,
+      "protein": 25,
+      "carbs": 30,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Breakfast Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-564719",
+      "name": "3pk Garlic Herb Turkey & Cheddar Slider",
+      "calories": 610,
+      "protein": 35,
+      "carbs": 63,
+      "fat": 25,
+      "servingLabel": "1 listed serving (LTO Item; size in item name)"
+    },
+    {
+      "id": "nutritionix-447322",
+      "name": "Garlic Herb TB",
+      "calories": 150,
+      "protein": 17,
+      "carbs": 4,
+      "fat": 7,
+      "servingLabel": "1 listed serving (LTO Item; size in item name)"
+    },
+    {
+      "id": "nutritionix-564826",
+      "name": "Ham & Swiss slider - 3pk",
+      "calories": 610,
+      "protein": 35,
+      "carbs": 56,
+      "fat": 31,
+      "servingLabel": "1 listed serving (LTO Item; size in item name)"
+    },
+    {
+      "id": "nutritionix-574006",
+      "name": "Ham and Cheddar Biscuits",
+      "calories": 330,
+      "protein": 12,
+      "carbs": 31,
+      "fat": 17,
+      "servingLabel": "1 listed serving (LTO Item; size in item name)"
+    },
+    {
+      "id": "nutritionix-447323",
+      "name": "Honey BBQ TB",
+      "calories": 180,
+      "protein": 17,
+      "carbs": 12,
+      "fat": 7,
+      "servingLabel": "1 listed serving (LTO Item; size in item name)"
+    },
+    {
+      "id": "nutritionix-630645",
+      "name": "LOL butter spread",
+      "calories": 270,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 31,
+      "servingLabel": "1 listed serving (LTO Item; size in item name)"
+    },
+    {
+      "id": "nutritionix-474209",
+      "name": "Lunch Turkey Pot Pie",
+      "calories": 630,
+      "protein": 23,
+      "carbs": 67,
+      "fat": 29,
+      "servingLabel": "1 listed serving (LTO Item; size in item name)"
+    },
+    {
+      "id": "nutritionix-447324",
+      "name": "Nashville Hot TB",
+      "calories": 180,
+      "protein": 18,
+      "carbs": 4,
+      "fat": 11,
+      "servingLabel": "1 listed serving (LTO Item; size in item name)"
+    },
+    {
+      "id": "nutritionix-467555",
+      "name": "Pork Cuban Sliders 3PK",
+      "calories": 530,
+      "protein": 31,
+      "carbs": 63,
+      "fat": 20,
+      "servingLabel": "1 listed serving (LTO Item; size in item name)"
+    },
+    {
+      "id": "nutritionix-447098",
+      "name": "Retail Turkey Pot Pie",
+      "calories": 550,
+      "protein": 29,
+      "carbs": 50,
+      "fat": 24,
+      "servingLabel": "1 listed serving (LTO Item; size in item name)"
+    },
+    {
+      "id": "nutritionix-783100",
+      "name": "Tavern Club Slider 3pk",
+      "calories": 730,
+      "protein": 35,
+      "carbs": 59,
+      "fat": 41,
+      "servingLabel": "1 listed serving (LTO Item; size in item name)"
+    },
+    {
+      "id": "nutritionix-783099",
+      "name": "Tavern Club Slider 12pk",
+      "calories": 3080,
+      "protein": 150,
+      "carbs": 238,
+      "fat": 178,
+      "servingLabel": "1 listed serving (LTO Item; size in item name)"
+    },
+    {
+      "id": "nutritionix-141759",
+      "name": "B&M Original Baked Beans",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 34,
+      "fat": 1,
+      "servingLabel": "1 listed serving (California Only; size in item name)"
+    },
+    {
+      "id": "nutritionix-430045",
+      "name": "California Veggie Sandwich",
+      "calories": 460,
+      "protein": 18,
+      "carbs": 72,
+      "fat": 21,
+      "servingLabel": "1 listed serving (California Only; size in item name)"
+    },
+    {
+      "id": "nutritionix-438956",
+      "name": "Chocolate Banana Upcharge",
+      "calories": 410,
+      "protein": 4,
+      "carbs": 60,
+      "fat": 17,
+      "servingLabel": "1 listed serving (California Only; size in item name)"
+    },
+    {
+      "id": "nutritionix-443164",
+      "name": "Cranberry Orange Salad Fresh Made Side",
+      "calories": 190,
+      "protein": 0,
+      "carbs": 47,
+      "fat": 0,
+      "servingLabel": "1 listed serving (California Only; size in item name)"
+    },
+    {
+      "id": "nutritionix-438954",
+      "name": "Stuffed Strawberry Upcharge",
+      "calories": 480,
+      "protein": 10,
+      "carbs": 31,
+      "fat": 39,
+      "servingLabel": "1 listed serving (California Only; size in item name)"
+    },
+    {
+      "id": "nutritionix-442715",
+      "name": "Turkey Gravy Fresh Made- Ca",
+      "calories": 150,
+      "protein": 5,
+      "carbs": 19,
+      "fat": 6,
+      "servingLabel": "1 listed serving (California Only; size in item name)"
+    },
+    {
+      "id": "nutritionix-41028",
+      "name": "Honey Iced Tea (Test Market Catering)",
+      "calories": 2040,
+      "protein": 0,
+      "carbs": 538,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks/Beverage; size in item name)"
+    },
+    {
+      "id": "nutritionix-41029",
+      "name": "Honey Lemonade (Test Market Catering)",
+      "calories": 2750,
+      "protein": 0,
+      "carbs": 742,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drink/Beverage; size in item name)"
+    }
+  ],
+  "sourceDate": "2026-09-17"
+}

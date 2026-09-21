@@ -1,0 +1,3925 @@
+{
+  "chain": "Dairy Queen",
+  "sourceUrl": "https://www.nutritionix.com/dairy-queen/menu/premium",
+  "source": "Nutritionix",
+  "sourceKind": "database",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "id": "nutritionix-835330",
+      "name": "Backyard Bacon Ranch Burger, Double",
+      "calories": 820,
+      "protein": 38,
+      "carbs": 53,
+      "fat": 51,
+      "servingLabel": "1 listed serving (Signature Stackburgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-835331",
+      "name": "Backyard Bacon Ranch Burger, Triple",
+      "calories": 1020,
+      "protein": 50,
+      "carbs": 54,
+      "fat": 67,
+      "servingLabel": "1 listed serving (Signature Stackburgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-835332",
+      "name": "Bacon Two Cheese Deluxe Burger, Double",
+      "calories": 720,
+      "protein": 37,
+      "carbs": 39,
+      "fat": 47,
+      "servingLabel": "1 listed serving (Signature Stackburgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-835333",
+      "name": "Bacon Two Cheese Deluxe Burger, Triple",
+      "calories": 920,
+      "protein": 49,
+      "carbs": 40,
+      "fat": 63,
+      "servingLabel": "1 listed serving (Signature Stackburgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-835334",
+      "name": "Flamethrower Burger, Double",
+      "calories": 720,
+      "protein": 34,
+      "carbs": 37,
+      "fat": 49,
+      "servingLabel": "1 listed serving (Signature Stackburgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-835335",
+      "name": "Flamethrower Burger, Triple",
+      "calories": 910,
+      "protein": 46,
+      "carbs": 38,
+      "fat": 65,
+      "servingLabel": "1 listed serving (Signature Stackburgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-835336",
+      "name": "Hamburger",
+      "calories": 320,
+      "protein": 15,
+      "carbs": 36,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Signature Stackburgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-835337",
+      "name": "Hamburger, Double",
+      "calories": 460,
+      "protein": 24,
+      "carbs": 36,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Signature Stackburgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-835338",
+      "name": "Hamburger, Triple",
+      "calories": 610,
+      "protein": 33,
+      "carbs": 36,
+      "fat": 37,
+      "servingLabel": "1 listed serving (Signature Stackburgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-835339",
+      "name": "Original Cheeseburger, Double",
+      "calories": 570,
+      "protein": 29,
+      "carbs": 38,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Signature Stackburgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-835340",
+      "name": "Original Cheeseburger, Single",
+      "calories": 370,
+      "protein": 17,
+      "carbs": 37,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Signature Stackburgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-835341",
+      "name": "Original Cheeseburger, Triple",
+      "calories": 760,
+      "protein": 40,
+      "carbs": 39,
+      "fat": 50,
+      "servingLabel": "1 listed serving (Signature Stackburgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-835342",
+      "name": "Two Cheese Deluxe Burger, Double",
+      "calories": 620,
+      "protein": 29,
+      "carbs": 39,
+      "fat": 39,
+      "servingLabel": "1 listed serving (Signature Stackburgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-835343",
+      "name": "Two Cheese Deluxe Burger, Triple",
+      "calories": 820,
+      "protein": 41,
+      "carbs": 40,
+      "fat": 55,
+      "servingLabel": "1 listed serving (Signature Stackburgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-835030",
+      "name": "Chicken Strip Basket, 4 Piece",
+      "calories": 1020,
+      "protein": 35,
+      "carbs": 111,
+      "fat": 48,
+      "servingLabel": "1 listed serving (Chicken & Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-835031",
+      "name": "Chicken Strip Basket, 6 Piece",
+      "calories": 1300,
+      "protein": 48,
+      "carbs": 139,
+      "fat": 61,
+      "servingLabel": "1 listed serving (Chicken & Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-835032",
+      "name": "Chicken Strips, 3 Piece",
+      "calories": 430,
+      "protein": 19,
+      "carbs": 41,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Chicken & Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-835033",
+      "name": "Original Chicken Strip Sandwich",
+      "calories": 550,
+      "protein": 18,
+      "carbs": 62,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Chicken & Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-835034",
+      "name": "Sauced & Tossed Honey BBQ Chicken Strip Basket, 4 Piece",
+      "calories": 1140,
+      "protein": 35,
+      "carbs": 142,
+      "fat": 48,
+      "servingLabel": "1 listed serving (Chicken & Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-835035",
+      "name": "Sauced & Tossed Honey BBQ Chicken Strip Basket, 6 Piece",
+      "calories": 1480,
+      "protein": 49,
+      "carbs": 186,
+      "fat": 61,
+      "servingLabel": "1 listed serving (Chicken & Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-835036",
+      "name": "Side Salad",
+      "calories": 20,
+      "protein": 1,
+      "carbs": 4,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Chicken & Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-835037",
+      "name": "Spicy Chicken Strip Sandwich",
+      "calories": 530,
+      "protein": 18,
+      "carbs": 63,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Chicken & Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-835077",
+      "name": "Cheese Dog",
+      "calories": 390,
+      "protein": 16,
+      "carbs": 27,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Hot Dogs; size in item name)"
+    },
+    {
+      "id": "nutritionix-835078",
+      "name": "Chili Cheese Dog",
+      "calories": 420,
+      "protein": 18,
+      "carbs": 28,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Hot Dogs; size in item name)"
+    },
+    {
+      "id": "nutritionix-835079",
+      "name": "Chili Cheese Dogs (2)",
+      "calories": 850,
+      "protein": 36,
+      "carbs": 56,
+      "fat": 53,
+      "servingLabel": "1 listed serving (Hot Dogs; size in item name)"
+    },
+    {
+      "id": "nutritionix-835080",
+      "name": "Chili Dog",
+      "calories": 390,
+      "protein": 16,
+      "carbs": 28,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Hot Dogs; size in item name)"
+    },
+    {
+      "id": "nutritionix-835081",
+      "name": "Classic Dog",
+      "calories": 340,
+      "protein": 13,
+      "carbs": 28,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Hot Dogs; size in item name)"
+    },
+    {
+      "id": "nutritionix-835082",
+      "name": "Hot Dog",
+      "calories": 330,
+      "protein": 12,
+      "carbs": 25,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Hot Dogs; size in item name)"
+    },
+    {
+      "id": "nutritionix-835119",
+      "name": "Kids Applesauce",
+      "calories": 45,
+      "protein": 0,
+      "carbs": 11,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Kids' Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-835120",
+      "name": "Kids Banana",
+      "calories": 110,
+      "protein": 1,
+      "carbs": 27,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Kids' Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-835121",
+      "name": "Kids Chicken Strips, 2 Piece",
+      "calories": 280,
+      "protein": 13,
+      "carbs": 28,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Kids' Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-835122",
+      "name": "Kids Fries, Kids'",
+      "calories": 170,
+      "protein": 3,
+      "carbs": 23,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Kids' Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-835123",
+      "name": "Kids Hamburger",
+      "calories": 320,
+      "protein": 15,
+      "carbs": 36,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Kids' Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-835124",
+      "name": "Kids Hot Dog",
+      "calories": 330,
+      "protein": 12,
+      "carbs": 25,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Kids' Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-835125",
+      "name": "Kids Milk",
+      "calories": 110,
+      "protein": 8,
+      "carbs": 12,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Kids' Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-835344",
+      "name": "Cheese Curds, Large",
+      "calories": 1000,
+      "protein": 49,
+      "carbs": 52,
+      "fat": 67,
+      "servingLabel": "1 listed serving (Snacks and Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-835345",
+      "name": "Cheese Curds, Regular",
+      "calories": 500,
+      "protein": 24,
+      "carbs": 26,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Snacks and Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-835346",
+      "name": "Doritos Nacho Cheese Tortilla Chips",
+      "calories": 240,
+      "protein": 3,
+      "carbs": 28,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Snacks and Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-835347",
+      "name": "Fries, Large",
+      "calories": 450,
+      "protein": 8,
+      "carbs": 59,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Snacks and Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-835348",
+      "name": "Fries, Regular",
+      "calories": 280,
+      "protein": 5,
+      "carbs": 36,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Snacks and Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-835349",
+      "name": "Fry-Rings, A La Carte",
+      "calories": 400,
+      "protein": 7,
+      "carbs": 53,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Snacks and Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-835350",
+      "name": "Lay's BBQ Potato Chips",
+      "calories": 230,
+      "protein": 3,
+      "carbs": 23,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Snacks and Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-835351",
+      "name": "Lay's Potato Chips, Original",
+      "calories": 240,
+      "protein": 3,
+      "carbs": 23,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Snacks and Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-835352",
+      "name": "Onion Rings, Large",
+      "calories": 450,
+      "protein": 7,
+      "carbs": 60,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Snacks and Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-835353",
+      "name": "Onion Rings, Regular",
+      "calories": 290,
+      "protein": 5,
+      "carbs": 39,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Snacks and Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-835354",
+      "name": "Oven Baked Lay's Original Potato Crisps",
+      "calories": 130,
+      "protein": 2,
+      "carbs": 26,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Snacks and Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-835355",
+      "name": "Soft Pretzel Sticks with Zesty Queso",
+      "calories": 330,
+      "protein": 9,
+      "carbs": 49,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Snacks and Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-835068",
+      "name": "BBQ Dipping Sauce Cup",
+      "calories": 90,
+      "protein": 1,
+      "carbs": 21,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Dressing, Sauces & Dips; size in item name)"
+    },
+    {
+      "id": "nutritionix-835069",
+      "name": "Country Gravy Dipping Sauce",
+      "calories": 70,
+      "protein": 0,
+      "carbs": 6,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Dressing, Sauces & Dips; size in item name)"
+    },
+    {
+      "id": "nutritionix-835070",
+      "name": "Honey Mustard Dipping Sauce Cup",
+      "calories": 240,
+      "protein": 1,
+      "carbs": 15,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Dressing, Sauces & Dips; size in item name)"
+    },
+    {
+      "id": "nutritionix-835071",
+      "name": "House Made Hidden Valley Ranch Dipping Sauce Cup",
+      "calories": 220,
+      "protein": 1,
+      "carbs": 3,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Dressing, Sauces & Dips; size in item name)"
+    },
+    {
+      "id": "nutritionix-835072",
+      "name": "Kraft Fat Free Italian Dressing",
+      "calories": 25,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Dressing, Sauces & Dips; size in item name)"
+    },
+    {
+      "id": "nutritionix-835073",
+      "name": "Kraft Honey Mustard Dressing",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 12,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Dressing, Sauces & Dips; size in item name)"
+    },
+    {
+      "id": "nutritionix-835074",
+      "name": "Marzetti Light Italian Dressing",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Dressing, Sauces & Dips; size in item name)"
+    },
+    {
+      "id": "nutritionix-835075",
+      "name": "Wild Buffalo Dipping Sauce Cup",
+      "calories": 90,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Dressing, Sauces & Dips; size in item name)"
+    },
+    {
+      "id": "nutritionix-835076",
+      "name": "Zesty Queso Dipping Sauce",
+      "calories": 130,
+      "protein": 3,
+      "carbs": 6,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Dressing, Sauces & Dips; size in item name)"
+    },
+    {
+      "id": "nutritionix-835170",
+      "name": "BBQ Sandwich",
+      "calories": 280,
+      "protein": 14,
+      "carbs": 39,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Local Favorites; size in item name)"
+    },
+    {
+      "id": "nutritionix-835171",
+      "name": "Chili Cheese Fries",
+      "calories": 990,
+      "protein": 25,
+      "carbs": 107,
+      "fat": 52,
+      "servingLabel": "1 listed serving (Local Favorites; size in item name)"
+    },
+    {
+      "id": "nutritionix-835172",
+      "name": "Corn Dog",
+      "calories": 240,
+      "protein": 6,
+      "carbs": 25,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Local Favorites; size in item name)"
+    },
+    {
+      "id": "nutritionix-835173",
+      "name": "Mega Chili Cheese Dog",
+      "calories": 760,
+      "protein": 32,
+      "carbs": 49,
+      "fat": 49,
+      "servingLabel": "1 listed serving (Local Favorites; size in item name)"
+    },
+    {
+      "id": "nutritionix-835174",
+      "name": "Pork Tenderloin Sandwich",
+      "calories": 600,
+      "protein": 21,
+      "carbs": 52,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Local Favorites; size in item name)"
+    },
+    {
+      "id": "nutritionix-835175",
+      "name": "Steakfinger Basket",
+      "calories": 940,
+      "protein": 23,
+      "carbs": 97,
+      "fat": 51,
+      "servingLabel": "1 listed serving (Local Favorites; size in item name)"
+    },
+    {
+      "id": "nutritionix-835176",
+      "name": "Wild Alaskan Fish Sandwich",
+      "calories": 420,
+      "protein": 17,
+      "carbs": 50,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Local Favorites; size in item name)"
+    },
+    {
+      "id": "nutritionix-835312",
+      "name": "Caramel Shake, Large",
+      "calories": 980,
+      "protein": 22,
+      "carbs": 154,
+      "fat": 31,
+      "servingLabel": "1 listed serving (Shakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-835313",
+      "name": "Caramel Shake, Medium",
+      "calories": 750,
+      "protein": 17,
+      "carbs": 115,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Shakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-835314",
+      "name": "Caramel Shake, Small",
+      "calories": 550,
+      "protein": 13,
+      "carbs": 79,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Shakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-835315",
+      "name": "Chocolate Shake, Large",
+      "calories": 920,
+      "protein": 21,
+      "carbs": 147,
+      "fat": 28,
+      "servingLabel": "1 listed serving (Shakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-835316",
+      "name": "Chocolate Shake, Medium",
+      "calories": 710,
+      "protein": 16,
+      "carbs": 110,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Shakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-835317",
+      "name": "Chocolate Shake, Small",
+      "calories": 530,
+      "protein": 13,
+      "carbs": 77,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Shakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-835318",
+      "name": "Hot Fudge Shake, Large",
+      "calories": 990,
+      "protein": 23,
+      "carbs": 140,
+      "fat": 38,
+      "servingLabel": "1 listed serving (Shakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-835319",
+      "name": "Hot Fudge Shake, Medium",
+      "calories": 750,
+      "protein": 17,
+      "carbs": 105,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Shakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-835320",
+      "name": "Hot Fudge Shake, Small",
+      "calories": 550,
+      "protein": 13,
+      "carbs": 75,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Shakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-835321",
+      "name": "Make It A Malt Adds, Large",
+      "calories": 110,
+      "protein": 2,
+      "carbs": 23,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Shakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-835322",
+      "name": "Make It A Malt Adds, Medium",
+      "calories": 80,
+      "protein": 1,
+      "carbs": 18,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Shakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-835323",
+      "name": "Make It A Malt Adds, Small",
+      "calories": 60,
+      "protein": 1,
+      "carbs": 12,
+      "fat": 0.5,
+      "servingLabel": "1 listed serving (Shakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-835324",
+      "name": "Strawberry Shake, Large",
+      "calories": 800,
+      "protein": 21,
+      "carbs": 120,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Shakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-835325",
+      "name": "Strawberry Shake, Medium",
+      "calories": 630,
+      "protein": 16,
+      "carbs": 92,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Shakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-835326",
+      "name": "Strawberry Shake, Small",
+      "calories": 490,
+      "protein": 13,
+      "carbs": 68,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Shakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-835327",
+      "name": "Vanilla Shake, Large",
+      "calories": 860,
+      "protein": 22,
+      "carbs": 127,
+      "fat": 29,
+      "servingLabel": "1 listed serving (Shakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-835328",
+      "name": "Vanilla Shake, Medium",
+      "calories": 660,
+      "protein": 16,
+      "carbs": 97,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Shakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-835329",
+      "name": "Vanilla Shake, Small",
+      "calories": 520,
+      "protein": 13,
+      "carbs": 73,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Shakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-835177",
+      "name": "Misty Freeze, Large",
+      "calories": 590,
+      "protein": 12,
+      "carbs": 102,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Misty Slush; size in item name)"
+    },
+    {
+      "id": "nutritionix-835178",
+      "name": "Misty Freeze, Medium",
+      "calories": 450,
+      "protein": 10,
+      "carbs": 77,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Misty Slush; size in item name)"
+    },
+    {
+      "id": "nutritionix-835179",
+      "name": "Misty Freeze, Small",
+      "calories": 360,
+      "protein": 8,
+      "carbs": 62,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Misty Slush; size in item name)"
+    },
+    {
+      "id": "nutritionix-835180",
+      "name": "Misty Slush, Large",
+      "calories": 340,
+      "protein": 0,
+      "carbs": 86,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Misty Slush; size in item name)"
+    },
+    {
+      "id": "nutritionix-835181",
+      "name": "Misty Slush, Medium",
+      "calories": 260,
+      "protein": 0,
+      "carbs": 65,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Misty Slush; size in item name)"
+    },
+    {
+      "id": "nutritionix-835182",
+      "name": "Misty Slush, Small",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 50,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Misty Slush; size in item name)"
+    },
+    {
+      "id": "nutritionix-835058",
+      "name": "Banana Split",
+      "calories": 520,
+      "protein": 9,
+      "carbs": 94,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Curl on Top Treats; size in item name)"
+    },
+    {
+      "id": "nutritionix-835059",
+      "name": "Brownie and Oreo Cupfection",
+      "calories": 720,
+      "protein": 10,
+      "carbs": 122,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Curl on Top Treats; size in item name)"
+    },
+    {
+      "id": "nutritionix-835060",
+      "name": "Heath Caramel Brownie Cupfection",
+      "calories": 760,
+      "protein": 11,
+      "carbs": 117,
+      "fat": 29,
+      "servingLabel": "1 listed serving (Curl on Top Treats; size in item name)"
+    },
+    {
+      "id": "nutritionix-835061",
+      "name": "Peanut Buster Parfait",
+      "calories": 710,
+      "protein": 17,
+      "carbs": 95,
+      "fat": 31,
+      "servingLabel": "1 listed serving (Curl on Top Treats; size in item name)"
+    },
+    {
+      "id": "nutritionix-835371",
+      "name": "Add DQ Sprinkles",
+      "calories": 35,
+      "protein": 0,
+      "carbs": 6,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Sundaes; size in item name)"
+    },
+    {
+      "id": "nutritionix-835356",
+      "name": "Caramel Sundae, Large",
+      "calories": 600,
+      "protein": 12,
+      "carbs": 102,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Sundaes; size in item name)"
+    },
+    {
+      "id": "nutritionix-835357",
+      "name": "Caramel Sundae, Medium",
+      "calories": 430,
+      "protein": 9,
+      "carbs": 73,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Sundaes; size in item name)"
+    },
+    {
+      "id": "nutritionix-835358",
+      "name": "Caramel Sundae, Small",
+      "calories": 300,
+      "protein": 6,
+      "carbs": 50,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Sundaes; size in item name)"
+    },
+    {
+      "id": "nutritionix-835359",
+      "name": "Cherry Sundae, Large",
+      "calories": 510,
+      "protein": 12,
+      "carbs": 86,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Sundaes; size in item name)"
+    },
+    {
+      "id": "nutritionix-835360",
+      "name": "Cherry Sundae, Medium",
+      "calories": 360,
+      "protein": 8,
+      "carbs": 61,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Sundaes; size in item name)"
+    },
+    {
+      "id": "nutritionix-835361",
+      "name": "Cherry Sundae, Small",
+      "calories": 250,
+      "protein": 6,
+      "carbs": 42,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Sundaes; size in item name)"
+    },
+    {
+      "id": "nutritionix-835362",
+      "name": "Chocolate Sundae, Large",
+      "calories": 560,
+      "protein": 12,
+      "carbs": 97,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Sundaes; size in item name)"
+    },
+    {
+      "id": "nutritionix-835363",
+      "name": "Chocolate Sundae, Medium",
+      "calories": 400,
+      "protein": 8,
+      "carbs": 70,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Sundaes; size in item name)"
+    },
+    {
+      "id": "nutritionix-835364",
+      "name": "Chocolate Sundae, Small",
+      "calories": 270,
+      "protein": 6,
+      "carbs": 48,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Sundaes; size in item name)"
+    },
+    {
+      "id": "nutritionix-835365",
+      "name": "Hot Fudge Sundae, Large",
+      "calories": 610,
+      "protein": 13,
+      "carbs": 93,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Sundaes; size in item name)"
+    },
+    {
+      "id": "nutritionix-835366",
+      "name": "Hot Fudge Sundae, Medium",
+      "calories": 430,
+      "protein": 9,
+      "carbs": 66,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Sundaes; size in item name)"
+    },
+    {
+      "id": "nutritionix-835367",
+      "name": "Hot Fudge Sundae, Small",
+      "calories": 300,
+      "protein": 6,
+      "carbs": 46,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Sundaes; size in item name)"
+    },
+    {
+      "id": "nutritionix-835368",
+      "name": "Strawberry Sundae, Large",
+      "calories": 490,
+      "protein": 12,
+      "carbs": 80,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Sundaes; size in item name)"
+    },
+    {
+      "id": "nutritionix-835369",
+      "name": "Strawberry Sundae, Medium",
+      "calories": 340,
+      "protein": 8,
+      "carbs": 56,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Sundaes; size in item name)"
+    },
+    {
+      "id": "nutritionix-835370",
+      "name": "Strawberry Sundae, Small",
+      "calories": 240,
+      "protein": 6,
+      "carbs": 39,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Sundaes; size in item name)"
+    },
+    {
+      "id": "nutritionix-835038",
+      "name": "Chocolate Cone, Kids'",
+      "calories": 160,
+      "protein": 4,
+      "carbs": 25,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Cones; size in item name)"
+    },
+    {
+      "id": "nutritionix-835039",
+      "name": "Chocolate Cone, Large",
+      "calories": 480,
+      "protein": 12,
+      "carbs": 73,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Cones; size in item name)"
+    },
+    {
+      "id": "nutritionix-835040",
+      "name": "Chocolate Cone, Medium",
+      "calories": 340,
+      "protein": 8,
+      "carbs": 52,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Cones; size in item name)"
+    },
+    {
+      "id": "nutritionix-835041",
+      "name": "Chocolate Cone, Small",
+      "calories": 240,
+      "protein": 6,
+      "carbs": 36,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Cones; size in item name)"
+    },
+    {
+      "id": "nutritionix-835042",
+      "name": "Dipped Cone, Cherry, Kids'",
+      "calories": 210,
+      "protein": 4,
+      "carbs": 28,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Cones; size in item name)"
+    },
+    {
+      "id": "nutritionix-835043",
+      "name": "Dipped Cone, Cherry, Large",
+      "calories": 550,
+      "protein": 12,
+      "carbs": 76,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Cones; size in item name)"
+    },
+    {
+      "id": "nutritionix-835044",
+      "name": "Dipped Cone, Cherry, Medium",
+      "calories": 460,
+      "protein": 8,
+      "carbs": 58,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Cones; size in item name)"
+    },
+    {
+      "id": "nutritionix-835045",
+      "name": "Dipped Cone, Cherry, Small",
+      "calories": 320,
+      "protein": 6,
+      "carbs": 40,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Cones; size in item name)"
+    },
+    {
+      "id": "nutritionix-835046",
+      "name": "Dipped Cone, Chocolate, Kids'",
+      "calories": 200,
+      "protein": 4,
+      "carbs": 28,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Cones; size in item name)"
+    },
+    {
+      "id": "nutritionix-835047",
+      "name": "Dipped Cone, Chocolate, Large",
+      "calories": 640,
+      "protein": 13,
+      "carbs": 81,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Cones; size in item name)"
+    },
+    {
+      "id": "nutritionix-835048",
+      "name": "Dipped Cone, Chocolate, Medium",
+      "calories": 460,
+      "protein": 9,
+      "carbs": 58,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Cones; size in item name)"
+    },
+    {
+      "id": "nutritionix-835049",
+      "name": "Dipped Cone, Chocolate, Small",
+      "calories": 320,
+      "protein": 6,
+      "carbs": 40,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Cones; size in item name)"
+    },
+    {
+      "id": "nutritionix-835050",
+      "name": "Peanut Brittle Crunch Cone, Kids",
+      "calories": 190,
+      "protein": 5,
+      "carbs": 30,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Cones; size in item name)"
+    },
+    {
+      "id": "nutritionix-835051",
+      "name": "Peanut Brittle Crunch Cone, Large",
+      "calories": 560,
+      "protein": 14,
+      "carbs": 85,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Cones; size in item name)"
+    },
+    {
+      "id": "nutritionix-835052",
+      "name": "Peanut Brittle Crunch Cone, Medium",
+      "calories": 410,
+      "protein": 10,
+      "carbs": 62,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Cones; size in item name)"
+    },
+    {
+      "id": "nutritionix-835053",
+      "name": "Peanut Brittle Crunch Cone, Small",
+      "calories": 280,
+      "protein": 7,
+      "carbs": 42,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Cones; size in item name)"
+    },
+    {
+      "id": "nutritionix-835054",
+      "name": "Vanilla Cone, Kids'",
+      "calories": 160,
+      "protein": 4,
+      "carbs": 25,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Cones; size in item name)"
+    },
+    {
+      "id": "nutritionix-835055",
+      "name": "Vanilla Cone, Large",
+      "calories": 450,
+      "protein": 12,
+      "carbs": 71,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Cones; size in item name)"
+    },
+    {
+      "id": "nutritionix-835056",
+      "name": "Vanilla Cone, Medium",
+      "calories": 320,
+      "protein": 8,
+      "carbs": 50,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Cones; size in item name)"
+    },
+    {
+      "id": "nutritionix-835057",
+      "name": "Vanilla Cone, Small",
+      "calories": 220,
+      "protein": 6,
+      "carbs": 34,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Cones; size in item name)"
+    },
+    {
+      "id": "nutritionix-835066",
+      "name": "8\" Dots Blue Orange Yellow Green Icing, RTD",
+      "calories": 3920,
+      "protein": 78,
+      "carbs": 595,
+      "fat": 161,
+      "servingLabel": "1 listed serving (DQ Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-835067",
+      "name": "8\" Dots Blue Orange Yellow Green Icing, Store Made",
+      "calories": 3760,
+      "protein": 70,
+      "carbs": 549,
+      "fat": 153,
+      "servingLabel": "1 listed serving (DQ Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-835064",
+      "name": "10\" Dots Blue Orange Yellow Green Icing, RTD",
+      "calories": 5840,
+      "protein": 120,
+      "carbs": 885,
+      "fat": 236,
+      "servingLabel": "1 listed serving (DQ Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-835065",
+      "name": "10\" Dots Blue Orange Yellow Green Icing, Store Made",
+      "calories": 5570,
+      "protein": 106,
+      "carbs": 812,
+      "fat": 223,
+      "servingLabel": "1 listed serving (DQ Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-835062",
+      "name": "Sheet Cake Multi Color Icing Quins and Streamers, RTD",
+      "calories": 8850,
+      "protein": 173,
+      "carbs": 1311,
+      "fat": 354,
+      "servingLabel": "1 listed serving (DQ Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-835063",
+      "name": "Sheet Cake Multi Color Icing Quins and Streamers, Store Made",
+      "calories": 8480,
+      "protein": 154,
+      "carbs": 1206,
+      "fat": 339,
+      "servingLabel": "1 listed serving (DQ Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-835234",
+      "name": "Buster Bar, 6 Pack, Manufactured",
+      "calories": 2850,
+      "protein": 61,
+      "carbs": 274,
+      "fat": 177,
+      "servingLabel": "1 listed serving (Novelties; size in item name)"
+    },
+    {
+      "id": "nutritionix-835235",
+      "name": "Buster Bar, 6 Pack, Store Made",
+      "calories": 2650,
+      "protein": 63,
+      "carbs": 255,
+      "fat": 161,
+      "servingLabel": "1 listed serving (Novelties; size in item name)"
+    },
+    {
+      "id": "nutritionix-835236",
+      "name": "Dilly Bar, 6 Pack, Manufactured",
+      "calories": 1340,
+      "protein": 20,
+      "carbs": 153,
+      "fat": 74,
+      "servingLabel": "1 listed serving (Novelties; size in item name)"
+    },
+    {
+      "id": "nutritionix-835237",
+      "name": "Dilly Bar, 6 Pack, Store Made",
+      "calories": 1210,
+      "protein": 19,
+      "carbs": 128,
+      "fat": 71,
+      "servingLabel": "1 listed serving (Novelties; size in item name)"
+    },
+    {
+      "id": "nutritionix-835238",
+      "name": "DQ Sandwich, 6 Pack",
+      "calories": 1100,
+      "protein": 23,
+      "carbs": 182,
+      "fat": 31,
+      "servingLabel": "1 listed serving (Novelties; size in item name)"
+    },
+    {
+      "id": "nutritionix-835280",
+      "name": "Banana Chill Smoothie, Large",
+      "calories": 390,
+      "protein": 9,
+      "carbs": 91,
+      "fat": 0.5,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835281",
+      "name": "Banana Chill Smoothie, Medium",
+      "calories": 260,
+      "protein": 6,
+      "carbs": 60,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835282",
+      "name": "Banana Chill Smoothie, Small",
+      "calories": 200,
+      "protein": 5,
+      "carbs": 45,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835283",
+      "name": "Banana Chill Smoothie, X-Large",
+      "calories": 460,
+      "protein": 11,
+      "carbs": 106,
+      "fat": 0.5,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835276",
+      "name": "Coconana Berry Julius, Large",
+      "calories": 630,
+      "protein": 1,
+      "carbs": 155,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835277",
+      "name": "Coconana Berry Julius, Medium",
+      "calories": 430,
+      "protein": 1,
+      "carbs": 105,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835278",
+      "name": "Coconana Berry Julius, Small",
+      "calories": 300,
+      "protein": 1,
+      "carbs": 75,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835279",
+      "name": "Coconana Berry Smoothie, Large",
+      "calories": 590,
+      "protein": 8,
+      "carbs": 138,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835253",
+      "name": "Coconana Berry Smoothie, Medium",
+      "calories": 460,
+      "protein": 6,
+      "carbs": 109,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835254",
+      "name": "Coconana Berry Smoothie, Small",
+      "calories": 340,
+      "protein": 4,
+      "carbs": 79,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835255",
+      "name": "Coconana Berry Smoothie, X-Large",
+      "calories": 800,
+      "protein": 11,
+      "carbs": 188,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835256",
+      "name": "Mango Pineapple Smoothie, Large",
+      "calories": 420,
+      "protein": 8,
+      "carbs": 96,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835257",
+      "name": "Mango Pineapple Smoothie, Medium",
+      "calories": 330,
+      "protein": 6,
+      "carbs": 77,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835258",
+      "name": "Mango Pineapple Smoothie, Small",
+      "calories": 250,
+      "protein": 4,
+      "carbs": 59,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835259",
+      "name": "Mango Pineapple Smoothie, X-Large",
+      "calories": 590,
+      "protein": 10,
+      "carbs": 136,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835284",
+      "name": "Orangeberry Xtreme Smoothie, Large",
+      "calories": 430,
+      "protein": 8,
+      "carbs": 100,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835285",
+      "name": "Orangeberry Xtreme Smoothie, Medium",
+      "calories": 350,
+      "protein": 6,
+      "carbs": 81,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835286",
+      "name": "Orangeberry Xtreme Smoothie, Small",
+      "calories": 260,
+      "protein": 4,
+      "carbs": 61,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835287",
+      "name": "Orangeberry Xtreme Smoothie, X-Large",
+      "calories": 600,
+      "protein": 10,
+      "carbs": 141,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835288",
+      "name": "Pomegranate Berry Blast Smoothie, Large",
+      "calories": 470,
+      "protein": 6,
+      "carbs": 110,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835289",
+      "name": "Pomegranate Berry Blast Smoothie, Medium",
+      "calories": 380,
+      "protein": 4,
+      "carbs": 89,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835290",
+      "name": "Pomegranate Berry Blast Smoothie, Small",
+      "calories": 290,
+      "protein": 3,
+      "carbs": 68,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835291",
+      "name": "Pomegranate Berry Blast Smoothie, X-Large",
+      "calories": 660,
+      "protein": 7,
+      "carbs": 157,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835260",
+      "name": "Strawberry Banana Smoothie, Large",
+      "calories": 440,
+      "protein": 8,
+      "carbs": 103,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835261",
+      "name": "Strawberry Banana Smoothie, Medium",
+      "calories": 350,
+      "protein": 6,
+      "carbs": 83,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835262",
+      "name": "Strawberry Banana Smoothie, Small",
+      "calories": 260,
+      "protein": 4,
+      "carbs": 62,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835263",
+      "name": "Strawberry Banana Smoothie, X-Large",
+      "calories": 620,
+      "protein": 11,
+      "carbs": 144,
+      "fat": 0.5,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835264",
+      "name": "Strawberry Mango Rush Premium Fruit Smoothie, Extra Large",
+      "calories": 640,
+      "protein": 9,
+      "carbs": 152,
+      "fat": 0.5,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835265",
+      "name": "Strawberry Mango Rush Premium Fruit Smoothie, Large",
+      "calories": 460,
+      "protein": 7,
+      "carbs": 109,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835266",
+      "name": "Strawberry Mango Rush Premium Fruit Smoothie, Medium",
+      "calories": 370,
+      "protein": 5,
+      "carbs": 88,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835267",
+      "name": "Strawberry Mango Rush Premium Fruit Smoothie, Small",
+      "calories": 270,
+      "protein": 4,
+      "carbs": 63,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835292",
+      "name": "Strawberry Smoothie, Large",
+      "calories": 400,
+      "protein": 6,
+      "carbs": 93,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835293",
+      "name": "Strawberry Smoothie, Medium",
+      "calories": 320,
+      "protein": 4,
+      "carbs": 75,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835294",
+      "name": "Strawberry Smoothie, Small",
+      "calories": 240,
+      "protein": 3,
+      "carbs": 56,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835295",
+      "name": "Strawberry Smoothie, X-Large",
+      "calories": 560,
+      "protein": 7,
+      "carbs": 131,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835268",
+      "name": "Strawberry Watermelon Flavored Sensation Smoothie, Large",
+      "calories": 410,
+      "protein": 7,
+      "carbs": 93,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835269",
+      "name": "Strawberry Watermelon Flavored Sensation Smoothie, Medium",
+      "calories": 370,
+      "protein": 6,
+      "carbs": 86,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835270",
+      "name": "Strawberry Watermelon Flavored Sensation Smoothie, Small",
+      "calories": 260,
+      "protein": 4,
+      "carbs": 61,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835271",
+      "name": "Strawberry Watermelon Flavored Sensation Smoothie, X-Large",
+      "calories": 630,
+      "protein": 9,
+      "carbs": 147,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835296",
+      "name": "Strawberry Watermelon Sensation Smoothie, Large",
+      "calories": 420,
+      "protein": 5,
+      "carbs": 99,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835297",
+      "name": "Strawberry Watermelon Sensation Smoothie, Medium",
+      "calories": 340,
+      "protein": 4,
+      "carbs": 80,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835298",
+      "name": "Strawberry Watermelon Sensation Smoothie, Small",
+      "calories": 250,
+      "protein": 3,
+      "carbs": 60,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835299",
+      "name": "Strawberry Watermelon Sensation Smoothie, X-Large",
+      "calories": 590,
+      "protein": 7,
+      "carbs": 140,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835300",
+      "name": "Sunshine Orange Smoothie, Large",
+      "calories": 460,
+      "protein": 8,
+      "carbs": 108,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835301",
+      "name": "Sunshine Orange Smoothie, Medium",
+      "calories": 360,
+      "protein": 6,
+      "carbs": 84,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835302",
+      "name": "Sunshine Orange Smoothie, Small",
+      "calories": 260,
+      "protein": 4,
+      "carbs": 60,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835303",
+      "name": "Sunshine Orange Smoothie, X-Large",
+      "calories": 620,
+      "protein": 10,
+      "carbs": 144,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835272",
+      "name": "Tripleberry Smoothie, Large",
+      "calories": 460,
+      "protein": 8,
+      "carbs": 107,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835273",
+      "name": "Tripleberry Smoothie, Medium",
+      "calories": 370,
+      "protein": 6,
+      "carbs": 87,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835274",
+      "name": "Tripleberry Smoothie, Small",
+      "calories": 280,
+      "protein": 4,
+      "carbs": 66,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835275",
+      "name": "Tripleberry Smoothie, X-Large",
+      "calories": 660,
+      "protein": 10,
+      "carbs": 153,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835308",
+      "name": "Tropi-Colada Smoothie, Large",
+      "calories": 460,
+      "protein": 4,
+      "carbs": 109,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835309",
+      "name": "Tropi-Colada Smoothie, Medium",
+      "calories": 350,
+      "protein": 4,
+      "carbs": 83,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835310",
+      "name": "Tropi-Colada Smoothie, Small",
+      "calories": 250,
+      "protein": 3,
+      "carbs": 58,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835311",
+      "name": "Tropi-Colada Smoothie, X-Large",
+      "calories": 600,
+      "protein": 7,
+      "carbs": 141,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835304",
+      "name": "Tropical Tango Smoothie, Large",
+      "calories": 430,
+      "protein": 7,
+      "carbs": 100,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835305",
+      "name": "Tropical Tango Smoothie, Medium",
+      "calories": 350,
+      "protein": 6,
+      "carbs": 82,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835306",
+      "name": "Tropical Tango Smoothie, Small",
+      "calories": 250,
+      "protein": 4,
+      "carbs": 58,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835307",
+      "name": "Tropical Tango Smoothie, X-Large",
+      "calories": 590,
+      "protein": 9,
+      "carbs": 140,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Premium Fruit Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835083",
+      "name": "Orange Julius, Large",
+      "calories": 400,
+      "protein": 2,
+      "carbs": 99,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Julius Originals; size in item name)"
+    },
+    {
+      "id": "nutritionix-835084",
+      "name": "Orange Julius, Medium",
+      "calories": 260,
+      "protein": 1,
+      "carbs": 65,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Julius Originals; size in item name)"
+    },
+    {
+      "id": "nutritionix-835085",
+      "name": "Orange Julius, Small",
+      "calories": 200,
+      "protein": 1,
+      "carbs": 50,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Julius Originals; size in item name)"
+    },
+    {
+      "id": "nutritionix-835086",
+      "name": "Strawberry Banana Julius, Large",
+      "calories": 670,
+      "protein": 3,
+      "carbs": 146,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Julius Originals; size in item name)"
+    },
+    {
+      "id": "nutritionix-835087",
+      "name": "Strawberry Banana Julius, Medium",
+      "calories": 460,
+      "protein": 2,
+      "carbs": 99,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Julius Originals; size in item name)"
+    },
+    {
+      "id": "nutritionix-835088",
+      "name": "Strawberry Banana Julius, Small",
+      "calories": 330,
+      "protein": 1,
+      "carbs": 71,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Julius Originals; size in item name)"
+    },
+    {
+      "id": "nutritionix-835089",
+      "name": "Strawberry Mango Rush Julius Original, Large",
+      "calories": 690,
+      "protein": 2,
+      "carbs": 171,
+      "fat": 0.5,
+      "servingLabel": "1 listed serving (Julius Originals; size in item name)"
+    },
+    {
+      "id": "nutritionix-835090",
+      "name": "Strawberry Mango Rush Julius Original, Medium",
+      "calories": 480,
+      "protein": 1,
+      "carbs": 119,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Julius Originals; size in item name)"
+    },
+    {
+      "id": "nutritionix-835091",
+      "name": "Strawberry Mango Rush Julius Original, Small",
+      "calories": 340,
+      "protein": 1,
+      "carbs": 85,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Julius Originals; size in item name)"
+    },
+    {
+      "id": "nutritionix-835092",
+      "name": "Tripleberry Julius, Large",
+      "calories": 680,
+      "protein": 3,
+      "carbs": 147,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Julius Originals; size in item name)"
+    },
+    {
+      "id": "nutritionix-835093",
+      "name": "Tripleberry Julius, Medium",
+      "calories": 470,
+      "protein": 2,
+      "carbs": 101,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Julius Originals; size in item name)"
+    },
+    {
+      "id": "nutritionix-835094",
+      "name": "Tripleberry Julius, Small",
+      "calories": 340,
+      "protein": 1,
+      "carbs": 74,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Julius Originals; size in item name)"
+    },
+    {
+      "id": "nutritionix-835211",
+      "name": "Applewood Smoked Bacon",
+      "calories": 50,
+      "protein": 4,
+      "carbs": 0,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Mobile Add Ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-835212",
+      "name": "BBQ Sauce",
+      "calories": 30,
+      "protein": 0,
+      "carbs": 7,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Mobile Add Ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-835183",
+      "name": "Brownie Pieces, Medium & Large Blizzard",
+      "calories": 120,
+      "protein": 1,
+      "carbs": 17,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Mobile Add Ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-835184",
+      "name": "Brownie Pieces, Mini & Small Blizzard",
+      "calories": 60,
+      "protein": 1,
+      "carbs": 8,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Mobile Add Ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-835213",
+      "name": "Burger Patty",
+      "calories": 150,
+      "protein": 9,
+      "carbs": 0,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Mobile Add Ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-835185",
+      "name": "Butterfinger Pieces, Medium & Large Blizzard",
+      "calories": 170,
+      "protein": 3,
+      "carbs": 24,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Mobile Add Ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-835186",
+      "name": "Butterfinger Pieces, Mini & Small Blizzard",
+      "calories": 80,
+      "protein": 2,
+      "carbs": 12,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Mobile Add Ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-835187",
+      "name": "Caramel Topping, Mini & Small Blizzard",
+      "calories": 45,
+      "protein": 0,
+      "carbs": 10,
+      "fat": 0.5,
+      "servingLabel": "1 listed serving (Mobile Add Ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-835188",
+      "name": "Caramel Topping, Sundae, Shake, Malt, Moolatte, Medium & Large Blizzard",
+      "calories": 90,
+      "protein": 1,
+      "carbs": 20,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Mobile Add Ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-835189",
+      "name": "Cheesecake Pieces, Medium & Large Blizzard",
+      "calories": 100,
+      "protein": 2,
+      "carbs": 9,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Mobile Add Ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-835190",
+      "name": "Cheesecake Pieces, Mini & Small Blizzard",
+      "calories": 50,
+      "protein": 1,
+      "carbs": 5,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Mobile Add Ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-835214",
+      "name": "Chili Dog Sauce",
+      "calories": 40,
+      "protein": 2,
+      "carbs": 2,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Mobile Add Ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-835191",
+      "name": "Choco Chunks, Medium & Large Blizzard",
+      "calories": 70,
+      "protein": 1,
+      "carbs": 9,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Mobile Add Ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-835192",
+      "name": "Choco Chunks, Mini & Small Blizzard",
+      "calories": 35,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Mobile Add Ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-835223",
+      "name": "Chocolate Topping, Mini & Small Blizzard",
+      "calories": 50,
+      "protein": 0,
+      "carbs": 12,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Mobile Add Ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-835193",
+      "name": "Chocolatetopping, Mini & Small Blizzard",
+      "calories": 50,
+      "protein": 0,
+      "carbs": 12,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Mobile Add Ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-835224",
+      "name": "Chocolate Topping, Sundae, Shake, Malt, Medium & Large Blizzard",
+      "calories": 90,
+      "protein": 0,
+      "carbs": 22,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Mobile Add Ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-835194",
+      "name": "Chocolatetopping, Sundae, Shake, Malt, Medium & Large Blizzard",
+      "calories": 90,
+      "protein": 0,
+      "carbs": 22,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Mobile Add Ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-835195",
+      "name": "Cookie Dough Pieces, Medium & Large Blizzard",
+      "calories": 290,
+      "protein": 2,
+      "carbs": 42,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Mobile Add Ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-835196",
+      "name": "Cookie Dough Pieces, Mini & Small Blizzard",
+      "calories": 150,
+      "protein": 1,
+      "carbs": 21,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Mobile Add Ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-835215",
+      "name": "Diced Tomato",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Mobile Add Ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-835216",
+      "name": "Dilly Bar Chocolate, 6 Pack, Manufactured",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 25,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Mobile Add Ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-835197",
+      "name": "Fudge, Medium & Large Blizzard",
+      "calories": 100,
+      "protein": 1,
+      "carbs": 15,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Mobile Add Ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-835198",
+      "name": "Fudge, Mini & Small Blizzard",
+      "calories": 50,
+      "protein": 0,
+      "carbs": 7,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Mobile Add Ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-835217",
+      "name": "Jalapeno Bacon",
+      "calories": 20,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Mobile Add Ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-835218",
+      "name": "Ketchup, Better Burger",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Mobile Add Ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-835219",
+      "name": "Lettuce",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Mobile Add Ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-835199",
+      "name": "M&M's Candies, Medium & Large Blizzard",
+      "calories": 180,
+      "protein": 2,
+      "carbs": 27,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Mobile Add Ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-835200",
+      "name": "M&M's Candies, Mini & Small Blizzard",
+      "calories": 90,
+      "protein": 1,
+      "carbs": 14,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Mobile Add Ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-835220",
+      "name": "Mayo",
+      "calories": 110,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Mobile Add Ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-835201",
+      "name": "Oreo Cookie Pieces, Medium & Large Blizzard",
+      "calories": 180,
+      "protein": 1,
+      "carbs": 27,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Mobile Add Ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-835202",
+      "name": "Oreo Cookie Pieces, Mini & Small Blizzard",
+      "calories": 120,
+      "protein": 1,
+      "carbs": 18,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Mobile Add Ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-835203",
+      "name": "Peanut Butter Topping, Mini & Small Blizzard",
+      "calories": 45,
+      "protein": 1,
+      "carbs": 2,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Mobile Add Ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-835204",
+      "name": "Peanut Butter Topping, Sundae, Shake, Malt, Medium & Large Blizzard",
+      "calories": 120,
+      "protein": 2,
+      "carbs": 6,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Mobile Add Ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-835205",
+      "name": "Pineapple Topping, Sundae",
+      "calories": 30,
+      "protein": 0,
+      "carbs": 7,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Mobile Add Ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-835221",
+      "name": "Ranch",
+      "calories": 50,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Mobile Add Ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-835206",
+      "name": "Reese's Peanut Butter Cup Pieces, Medium & Large Blizzard",
+      "calories": 180,
+      "protein": 4,
+      "carbs": 20,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Mobile Add Ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-835207",
+      "name": "Reese's Peanut Butter Cup Pieces, Mini & Small Blizzard",
+      "calories": 90,
+      "protein": 2,
+      "carbs": 10,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Mobile Add Ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-835208",
+      "name": "Strawberry Topping, Mini & Small Blizzard",
+      "calories": 25,
+      "protein": 0,
+      "carbs": 7,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Mobile Add Ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-835209",
+      "name": "Strawberry Topping, Sundae, Shake, Malt, Medium & Large Blizzard",
+      "calories": 60,
+      "protein": 0,
+      "carbs": 14,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Mobile Add Ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-835210",
+      "name": "Vanilla Syrup, Shake, Malt, Moolatte",
+      "calories": 25,
+      "protein": 0,
+      "carbs": 6,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Mobile Add Ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-835222",
+      "name": "Yellow Mustard",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Mobile Add Ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-835374",
+      "name": "Add a Banana, Large",
+      "calories": 50,
+      "protein": 1,
+      "carbs": 13,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Supplemental Facts; size in item name)"
+    },
+    {
+      "id": "nutritionix-835373",
+      "name": "Add a Banana, Medium",
+      "calories": 40,
+      "protein": 0,
+      "carbs": 10,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Supplemental Facts; size in item name)"
+    },
+    {
+      "id": "nutritionix-835372",
+      "name": "Add a Banana, Small",
+      "calories": 25,
+      "protein": 0,
+      "carbs": 7,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Supplemental Facts; size in item name)"
+    },
+    {
+      "id": "nutritionix-835375",
+      "name": "Add a Banana, X-Large",
+      "calories": 70,
+      "protein": 1,
+      "carbs": 17,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Supplemental Facts; size in item name)"
+    },
+    {
+      "id": "nutritionix-835376",
+      "name": "Antioxidant Boost",
+      "calories": 20,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Supplemental Facts; size in item name)"
+    },
+    {
+      "id": "nutritionix-835377",
+      "name": "Energy Boost",
+      "calories": 20,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Supplemental Facts; size in item name)"
+    },
+    {
+      "id": "nutritionix-835378",
+      "name": "Protein Boost",
+      "calories": 50,
+      "protein": 12,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Supplemental Facts; size in item name)"
+    },
+    {
+      "id": "nutritionix-835379",
+      "name": "Vitamin C Boost",
+      "calories": 20,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Supplemental Facts; size in item name)"
+    },
+    {
+      "id": "nutritionix-835026",
+      "name": "American Cheese",
+      "calories": 50,
+      "protein": 2,
+      "carbs": 1,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-835002",
+      "name": "Bacon (3)",
+      "calories": 390,
+      "protein": 20,
+      "carbs": 1,
+      "fat": 35,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-835003",
+      "name": "Biscuit Sandwich with Bacon",
+      "calories": 420,
+      "protein": 14,
+      "carbs": 19,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-835004",
+      "name": "Biscuit Sandwich with Ham",
+      "calories": 350,
+      "protein": 13,
+      "carbs": 19,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-835005",
+      "name": "Biscuit Sandwich with Sausage",
+      "calories": 410,
+      "protein": 13,
+      "carbs": 18,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-835006",
+      "name": "Breakfast Bowl – Gravy",
+      "calories": 830,
+      "protein": 30,
+      "carbs": 42,
+      "fat": 59,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-835007",
+      "name": "Chicken and Gravy Burrito",
+      "calories": 320,
+      "protein": 15,
+      "carbs": 31,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-835008",
+      "name": "Chicken Strips (2)",
+      "calories": 240,
+      "protein": 15,
+      "carbs": 19,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-835009",
+      "name": "Coffee, 12 oz",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-835010",
+      "name": "Coffee, 16 oz",
+      "calories": 5,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-835011",
+      "name": "Country Platter with Ham",
+      "calories": 860,
+      "protein": 28,
+      "carbs": 60,
+      "fat": 42,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-835012",
+      "name": "Eggs (2)",
+      "calories": 150,
+      "protein": 12,
+      "carbs": 2,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-835013",
+      "name": "Ham (2)",
+      "calories": 60,
+      "protein": 9,
+      "carbs": 2,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-835014",
+      "name": "Hash Browns",
+      "calories": 180,
+      "protein": 1,
+      "carbs": 18,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-835015",
+      "name": "Lil' Donuts",
+      "calories": 290,
+      "protein": 3,
+      "carbs": 37,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-835016",
+      "name": "Milk, 12 oz",
+      "calories": 220,
+      "protein": 15,
+      "carbs": 21,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-835017",
+      "name": "Milk, 16 oz",
+      "calories": 280,
+      "protein": 18,
+      "carbs": 27,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-835018",
+      "name": "Orange Juice Bottle",
+      "calories": 190,
+      "protein": 3,
+      "carbs": 44,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-835019",
+      "name": "Pancake Platter with Bacon",
+      "calories": 730,
+      "protein": 29,
+      "carbs": 60,
+      "fat": 42,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-835020",
+      "name": "Pancake Platter with Ham",
+      "calories": 390,
+      "protein": 18,
+      "carbs": 61,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-835021",
+      "name": "Pancake Platter with Sausage",
+      "calories": 520,
+      "protein": 17,
+      "carbs": 60,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-835022",
+      "name": "Pancakes (3)",
+      "calories": 260,
+      "protein": 7,
+      "carbs": 46,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-835027",
+      "name": "Pepper Jack Cheese",
+      "calories": 50,
+      "protein": 3,
+      "carbs": 0,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-835023",
+      "name": "Sausage Biscuit Twin Pak",
+      "calories": 690,
+      "protein": 13,
+      "carbs": 34,
+      "fat": 42,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-835024",
+      "name": "Sausages (2)",
+      "calories": 190,
+      "protein": 8,
+      "carbs": 0,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-835028",
+      "name": "Shredded Cheese",
+      "calories": 60,
+      "protein": 3,
+      "carbs": 1,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-835025",
+      "name": "Steak Fingers (2)",
+      "calories": 230,
+      "protein": 8,
+      "carbs": 15,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-835029",
+      "name": "Swiss Cheese",
+      "calories": 60,
+      "protein": 4,
+      "carbs": 0,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-834929",
+      "name": "Butterfinger Blizzard, Large",
+      "calories": 1060,
+      "protein": 27,
+      "carbs": 155,
+      "fat": 37,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834928",
+      "name": "Butterfinger Blizzard, Medium",
+      "calories": 800,
+      "protein": 20,
+      "carbs": 118,
+      "fat": 28,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834926",
+      "name": "Butterfinger Blizzard, Mini",
+      "calories": 350,
+      "protein": 9,
+      "carbs": 52,
+      "fat": 12,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834927",
+      "name": "Butterfinger Blizzard, Small",
+      "calories": 590,
+      "protein": 15,
+      "carbs": 87,
+      "fat": 21,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834997",
+      "name": "Caramel Java Chip Blizzard, Large",
+      "calories": 1150,
+      "protein": 22,
+      "carbs": 181,
+      "fat": 40,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834996",
+      "name": "Caramel Java Chip Blizzard, Medium",
+      "calories": 890,
+      "protein": 18,
+      "carbs": 139,
+      "fat": 31,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834994",
+      "name": "Caramel Java Chip Blizzard, Mini",
+      "calories": 360,
+      "protein": 8,
+      "carbs": 55,
+      "fat": 13,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834995",
+      "name": "Caramel Java Chip Blizzard, Small",
+      "calories": 630,
+      "protein": 13,
+      "carbs": 96,
+      "fat": 22,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834933",
+      "name": "Choco Brownie Extreme Blizzard, Large",
+      "calories": 1330,
+      "protein": 26,
+      "carbs": 184,
+      "fat": 60,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834932",
+      "name": "Choco Brownie Extreme Blizzard, Medium",
+      "calories": 980,
+      "protein": 20,
+      "carbs": 137,
+      "fat": 43,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834930",
+      "name": "Choco Brownie Extreme Blizzard, Mini",
+      "calories": 420,
+      "protein": 9,
+      "carbs": 58,
+      "fat": 18,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834931",
+      "name": "Choco Brownie Extreme Blizzard, Small",
+      "calories": 740,
+      "protein": 15,
+      "carbs": 103,
+      "fat": 33,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834937",
+      "name": "Chocolate Chip Cookie Dough Blizzard, Large",
+      "calories": 1370,
+      "protein": 23,
+      "carbs": 201,
+      "fat": 54,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834936",
+      "name": "Chocolate Chip Cookie Dough Blizzard, Medium",
+      "calories": 1030,
+      "protein": 18,
+      "carbs": 151,
+      "fat": 40,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834934",
+      "name": "Chocolate Chip Cookie Dough Blizzard, Mini",
+      "calories": 410,
+      "protein": 8,
+      "carbs": 60,
+      "fat": 16,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834935",
+      "name": "Chocolate Chip Cookie Dough Blizzard, Small",
+      "calories": 710,
+      "protein": 13,
+      "carbs": 104,
+      "fat": 27,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834911",
+      "name": "Confetti Cake Blizzard, Large",
+      "calories": 1220,
+      "protein": 22,
+      "carbs": 162,
+      "fat": 54,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834910",
+      "name": "Confetti Cake Blizzard, Medium",
+      "calories": 920,
+      "protein": 17,
+      "carbs": 123,
+      "fat": 41,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834908",
+      "name": "Confetti Cake Blizzard, Mini",
+      "calories": 380,
+      "protein": 8,
+      "carbs": 52,
+      "fat": 16,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834909",
+      "name": "Confetti Cake Blizzard, Small",
+      "calories": 890,
+      "protein": 18,
+      "carbs": 139,
+      "fat": 31,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834915",
+      "name": "Cotton Candy Blizzard, Large",
+      "calories": 1150,
+      "protein": 21,
+      "carbs": 166,
+      "fat": 45,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834914",
+      "name": "Cotton Candy Blizzard, Medium",
+      "calories": 870,
+      "protein": 16,
+      "carbs": 127,
+      "fat": 33,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834912",
+      "name": "Cotton Candy Blizzard, Mini",
+      "calories": 390,
+      "protein": 7,
+      "carbs": 55,
+      "fat": 16,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834913",
+      "name": "Cotton Candy Blizzard, Small",
+      "calories": 610,
+      "protein": 13,
+      "carbs": 91,
+      "fat": 22,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834916",
+      "name": "Crunchin' Cookie Dipped Cone, Kids",
+      "calories": 200,
+      "protein": 4,
+      "carbs": 28,
+      "fat": 9,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834919",
+      "name": "Crunchin' Cookie Dipped Cone, Large",
+      "calories": 640,
+      "protein": 12,
+      "carbs": 83,
+      "fat": 29,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834918",
+      "name": "Crunchin' Cookie Dipped Cone, Medium",
+      "calories": 460,
+      "protein": 9,
+      "carbs": 59,
+      "fat": 21,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834917",
+      "name": "Crunchin' Cookie Dipped Cone, Small",
+      "calories": 320,
+      "protein": 6,
+      "carbs": 40,
+      "fat": 15,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834923",
+      "name": "Dipped Strawberry Cheesecake Blizzard, Large",
+      "calories": 1110,
+      "protein": 23,
+      "carbs": 159,
+      "fat": 44,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834922",
+      "name": "Dipped Strawberry Cheesecake Blizzard, Medium",
+      "calories": 820,
+      "protein": 18,
+      "carbs": 118,
+      "fat": 33,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834920",
+      "name": "Dipped Strawberry Cheesecake Blizzard, Mini",
+      "calories": 350,
+      "protein": 8,
+      "carbs": 50,
+      "fat": 14,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834921",
+      "name": "Dipped Strawberry Cheesecake Blizzard, Small",
+      "calories": 610,
+      "protein": 14,
+      "carbs": 87,
+      "fat": 25,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-835001",
+      "name": "French Silk Pie Blizzard, Large",
+      "calories": 1290,
+      "protein": 25,
+      "carbs": 175,
+      "fat": 58,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-835000",
+      "name": "French Silk Pie Blizzard, Medium",
+      "calories": 940,
+      "protein": 19,
+      "carbs": 128,
+      "fat": 42,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834998",
+      "name": "French Silk Pie Blizzard, Mini",
+      "calories": 430,
+      "protein": 8,
+      "carbs": 57,
+      "fat": 20,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834999",
+      "name": "French Silk Pie Blizzard, Small",
+      "calories": 730,
+      "protein": 14,
+      "carbs": 98,
+      "fat": 33,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834941",
+      "name": "Heath Blizzard, Large",
+      "calories": 1190,
+      "protein": 23,
+      "carbs": 168,
+      "fat": 49,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834940",
+      "name": "Heath Blizzard, Medium",
+      "calories": 880,
+      "protein": 17,
+      "carbs": 124,
+      "fat": 37,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834938",
+      "name": "Heath Blizzard, Mini",
+      "calories": 360,
+      "protein": 8,
+      "carbs": 52,
+      "fat": 14,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834939",
+      "name": "Heath Blizzard, Small",
+      "calories": 640,
+      "protein": 13,
+      "carbs": 91,
+      "fat": 26,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834945",
+      "name": "M&M's Chocolate Candy Blizzard, Large",
+      "calories": 1160,
+      "protein": 23,
+      "carbs": 183,
+      "fat": 38,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834944",
+      "name": "M&M's Chocolate Candy Blizzard, Medium",
+      "calories": 880,
+      "protein": 18,
+      "carbs": 135,
+      "fat": 29,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834943",
+      "name": "M&M's Chocolate Candy Blizzard, Small",
+      "calories": 660,
+      "protein": 14,
+      "carbs": 103,
+      "fat": 21,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834942",
+      "name": "M&M's Chocolate Candy Blizzard -Mini",
+      "calories": 370,
+      "protein": 8,
+      "carbs": 58,
+      "fat": 12,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834949",
+      "name": "Mint Oreo Blizzard, Large",
+      "calories": 1140,
+      "protein": 22,
+      "carbs": 177,
+      "fat": 39,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834948",
+      "name": "Mint Oreo Blizzard, Medium",
+      "calories": 880,
+      "protein": 17,
+      "carbs": 137,
+      "fat": 30,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834946",
+      "name": "Mint Oreo Blizzard, Mini",
+      "calories": 360,
+      "protein": 8,
+      "carbs": 56,
+      "fat": 12,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834947",
+      "name": "Mint Oreo Blizzard, Small",
+      "calories": 640,
+      "protein": 13,
+      "carbs": 99,
+      "fat": 22,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834953",
+      "name": "Mixing Bowl Mashup Blizzard, Large",
+      "calories": 1670,
+      "protein": 25,
+      "carbs": 224,
+      "fat": 73,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834952",
+      "name": "Mixing Bowl Mashup Blizzard, Medium",
+      "calories": 1230,
+      "protein": 19,
+      "carbs": 170,
+      "fat": 55,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834950",
+      "name": "Mixing Bowl Mashup Blizzard, Mini",
+      "calories": 490,
+      "protein": 9,
+      "carbs": 68,
+      "fat": 21,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834951",
+      "name": "Mixing Bowl Mashup Blizzard, Small",
+      "calories": 870,
+      "protein": 14,
+      "carbs": 120,
+      "fat": 38,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834925",
+      "name": "Orange Cream Flavored Shake, Large",
+      "calories": 1090,
+      "protein": 20,
+      "carbs": 148,
+      "fat": 46,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834924",
+      "name": "Orange Cream Flavored Shake, Medium",
+      "calories": 830,
+      "protein": 15,
+      "carbs": 112,
+      "fat": 36,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834961",
+      "name": "Oreo Cookie Blizzard, Large",
+      "calories": 1050,
+      "protein": 22,
+      "carbs": 156,
+      "fat": 39,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834960",
+      "name": "Oreo Cookie Blizzard, Medium",
+      "calories": 820,
+      "protein": 17,
+      "carbs": 121,
+      "fat": 30,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834958",
+      "name": "Oreo Cookie Blizzard, Mini",
+      "calories": 340,
+      "protein": 8,
+      "carbs": 51,
+      "fat": 12,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834959",
+      "name": "Oreo Cookie Blizzard, Small",
+      "calories": 600,
+      "protein": 13,
+      "carbs": 89,
+      "fat": 22,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834957",
+      "name": "Oreo Fudge Brownie Blizzard, Large",
+      "calories": 1480,
+      "protein": 26,
+      "carbs": 207,
+      "fat": 67,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834956",
+      "name": "Oreo Fudge Brownie Blizzard, Medium",
+      "calories": 1120,
+      "protein": 20,
+      "carbs": 157,
+      "fat": 49,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834954",
+      "name": "Oreo Fudge Brownie Blizzard, Mini",
+      "calories": 430,
+      "protein": 8,
+      "carbs": 61,
+      "fat": 18,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834955",
+      "name": "Oreo Fudge Brownie Blizzard, Small",
+      "calories": 770,
+      "protein": 14,
+      "carbs": 109,
+      "fat": 33,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834965",
+      "name": "Pumpkin Pie Blizzard, Large",
+      "calories": 940,
+      "protein": 19,
+      "carbs": 145,
+      "fat": 32,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834964",
+      "name": "Pumpkin Pie Blizzard, Medium",
+      "calories": 720,
+      "protein": 14,
+      "carbs": 110,
+      "fat": 25,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834962",
+      "name": "Pumpkin Pie Blizzard, Mini",
+      "calories": 360,
+      "protein": 7,
+      "carbs": 52,
+      "fat": 14,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834963",
+      "name": "Pumpkin Pie Blizzard, Small",
+      "calories": 560,
+      "protein": 11,
+      "carbs": 86,
+      "fat": 20,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834973",
+      "name": "Reese's Peanut Butter Cups Blizzard, Large",
+      "calories": 1080,
+      "protein": 28,
+      "carbs": 148,
+      "fat": 45,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834972",
+      "name": "Reese's Peanut Butter Cups Blizzard, Medium",
+      "calories": 820,
+      "protein": 21,
+      "carbs": 113,
+      "fat": 34,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834970",
+      "name": "Reese's Peanut Butter Cups Blizzard, Mini",
+      "calories": 360,
+      "protein": 9,
+      "carbs": 50,
+      "fat": 14,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834971",
+      "name": "Reese's Peanut Butter Cups Blizzard, Small",
+      "calories": 610,
+      "protein": 16,
+      "carbs": 84,
+      "fat": 24,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834969",
+      "name": "Reese's Pieces Cookie Dough Blizzard, Large",
+      "calories": 1650,
+      "protein": 31,
+      "carbs": 183,
+      "fat": 78,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834968",
+      "name": "Reese's Pieces Cookie Dough Blizzard, Medium",
+      "calories": 1220,
+      "protein": 23,
+      "carbs": 138,
+      "fat": 57,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834966",
+      "name": "Reese's Pieces Cookie Dough Blizzard, Mini",
+      "calories": 460,
+      "protein": 9,
+      "carbs": 56,
+      "fat": 20,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834967",
+      "name": "Reese's Pieces Cookie Dough Blizzard, Small",
+      "calories": 860,
+      "protein": 17,
+      "carbs": 102,
+      "fat": 38,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834977",
+      "name": "Royal New York Cheesecake Blizzard Filled with Strawberry, Large",
+      "calories": 1350,
+      "protein": 25,
+      "carbs": 177,
+      "fat": 61,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834976",
+      "name": "Royal New York Cheesecake Blizzard Filled with Strawberry, Medium",
+      "calories": 1040,
+      "protein": 19,
+      "carbs": 140,
+      "fat": 46,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834974",
+      "name": "Royal New York Cheesecake Blizzard Filled with Strawberry, Mini",
+      "calories": 450,
+      "protein": 8,
+      "carbs": 65,
+      "fat": 18,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834975",
+      "name": "Royal New York Cheesecake Blizzard Filled with Strawberry, Small",
+      "calories": 750,
+      "protein": 14,
+      "carbs": 102,
+      "fat": 32,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834981",
+      "name": "Royal Reese's Fluffernutter Blizzard, Large",
+      "calories": 1420,
+      "protein": 31,
+      "carbs": 182,
+      "fat": 66,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834980",
+      "name": "Royal Reese's Fluffernutter Blizzard, Medium",
+      "calories": 1100,
+      "protein": 24,
+      "carbs": 147,
+      "fat": 48,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834978",
+      "name": "Royal Reese's Fluffernutter Blizzard, Mini",
+      "calories": 450,
+      "protein": 9,
+      "carbs": 67,
+      "fat": 17,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834979",
+      "name": "Royal Reese's Fluffernutter Blizzard, Small",
+      "calories": 750,
+      "protein": 17,
+      "carbs": 104,
+      "fat": 31,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834985",
+      "name": "Salted Caramel Truffle Blizzard, Large",
+      "calories": 1360,
+      "protein": 24,
+      "carbs": 186,
+      "fat": 62,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834984",
+      "name": "Salted Caramel Truffle Blizzard, Medium",
+      "calories": 990,
+      "protein": 18,
+      "carbs": 137,
+      "fat": 44,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834983",
+      "name": "Salted Caramel Truffle Blizzard, Small",
+      "calories": 740,
+      "protein": 14,
+      "carbs": 102,
+      "fat": 33,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834982",
+      "name": "Salted Caramel Truffle Blizzard -Mini",
+      "calories": 420,
+      "protein": 8,
+      "carbs": 59,
+      "fat": 18,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834989",
+      "name": "Snickers Blizzard, Large",
+      "calories": 1070,
+      "protein": 24,
+      "carbs": 164,
+      "fat": 36,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834988",
+      "name": "Snickers Blizzard, Medium",
+      "calories": 800,
+      "protein": 19,
+      "carbs": 121,
+      "fat": 28,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834986",
+      "name": "Snickers Blizzard, Mini",
+      "calories": 350,
+      "protein": 8,
+      "carbs": 53,
+      "fat": 12,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834987",
+      "name": "Snickers Blizzard, Small",
+      "calories": 610,
+      "protein": 14,
+      "carbs": 93,
+      "fat": 20,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834907",
+      "name": "Superman Cake Batter Cookie Dough Blizzard, Large",
+      "calories": 1090,
+      "protein": 20,
+      "carbs": 171,
+      "fat": 37,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834906",
+      "name": "Superman Cake Batter Cookie Dough Blizzard, Medium",
+      "calories": 850,
+      "protein": 16,
+      "carbs": 133,
+      "fat": 29,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834904",
+      "name": "Superman Cake Batter Cookie Dough Blizzard, Mini",
+      "calories": 360,
+      "protein": 7,
+      "carbs": 56,
+      "fat": 12,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834905",
+      "name": "Superman Cake Batter Cookie Dough Blizzard, Small",
+      "calories": 610,
+      "protein": 12,
+      "carbs": 95,
+      "fat": 21,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834993",
+      "name": "Turtle Pecan Cluster Blizzard, Large",
+      "calories": 1370,
+      "protein": 24,
+      "carbs": 165,
+      "fat": 71,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834992",
+      "name": "Turtle Pecan Cluster Blizzard, Medium",
+      "calories": 1020,
+      "protein": 18,
+      "carbs": 123,
+      "fat": 52,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834990",
+      "name": "Turtle Pecan Cluster Blizzard, Mini",
+      "calories": 430,
+      "protein": 8,
+      "carbs": 51,
+      "fat": 22,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-834991",
+      "name": "Turtle Pecan Cluster Blizzard, Small",
+      "calories": 680,
+      "protein": 14,
+      "carbs": 84,
+      "fat": 34,
+      "servingLabel": "1 listed serving (BlizzardTreats; size in item name)"
+    },
+    {
+      "id": "nutritionix-835126",
+      "name": "Banana Chill Light, Large",
+      "calories": 280,
+      "protein": 6,
+      "carbs": 66,
+      "fat": 0.5,
+      "servingLabel": "1 listed serving (Light Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835127",
+      "name": "Banana Chill Light, Medium",
+      "calories": 210,
+      "protein": 5,
+      "carbs": 52,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Light Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835128",
+      "name": "Banana Chill Light, Small",
+      "calories": 160,
+      "protein": 3,
+      "carbs": 37,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Light Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835129",
+      "name": "Banana Chill Light, X-Large",
+      "calories": 300,
+      "protein": 6,
+      "carbs": 72,
+      "fat": 0.5,
+      "servingLabel": "1 listed serving (Light Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835130",
+      "name": "Mango Pineapple Light, Large",
+      "calories": 270,
+      "protein": 1,
+      "carbs": 66,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Light Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835131",
+      "name": "Mango Pineapple Light, Medium",
+      "calories": 220,
+      "protein": 1,
+      "carbs": 54,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Light Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835132",
+      "name": "Mango Pineapple Light, Small",
+      "calories": 180,
+      "protein": 0,
+      "carbs": 44,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Light Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835133",
+      "name": "Mango Pineapple Light, X-Large",
+      "calories": 390,
+      "protein": 1,
+      "carbs": 97,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Light Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835134",
+      "name": "Orangeberry Xtreme Light, Large",
+      "calories": 270,
+      "protein": 2,
+      "carbs": 71,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Light Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835135",
+      "name": "Orangeberry Xtreme Light, Medium",
+      "calories": 220,
+      "protein": 1,
+      "carbs": 54,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Light Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835136",
+      "name": "Orangeberry Xtreme Light, Small",
+      "calories": 180,
+      "protein": 1,
+      "carbs": 44,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Light Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835137",
+      "name": "Orangeberry Xtreme Light, X-Large",
+      "calories": 400,
+      "protein": 2,
+      "carbs": 98,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Light Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835138",
+      "name": "Pomegranate Berry Blast Light, Large",
+      "calories": 260,
+      "protein": 1,
+      "carbs": 64,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Light Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835139",
+      "name": "Pomegranate Berry Blast Light, Medium",
+      "calories": 210,
+      "protein": 0,
+      "carbs": 51,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Light Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835140",
+      "name": "Pomegranate Berry Blast Light, Small",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 39,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Light Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835141",
+      "name": "Pomegranate Berry Blast Light, X-Large",
+      "calories": 360,
+      "protein": 1,
+      "carbs": 90,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Light Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835142",
+      "name": "Strawberry Banana Light, Large",
+      "calories": 270,
+      "protein": 1,
+      "carbs": 67,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Light Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835143",
+      "name": "Strawberry Banana Light, Medium",
+      "calories": 220,
+      "protein": 1,
+      "carbs": 55,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Light Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835144",
+      "name": "Strawberry Banana Light, Small",
+      "calories": 170,
+      "protein": 1,
+      "carbs": 43,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Light Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835145",
+      "name": "Strawberry Banana Light, X-Large",
+      "calories": 390,
+      "protein": 2,
+      "carbs": 98,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Light Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835146",
+      "name": "Strawberry Light, Large",
+      "calories": 270,
+      "protein": 1,
+      "carbs": 67,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Light Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835147",
+      "name": "Strawberry Light, Medium",
+      "calories": 210,
+      "protein": 1,
+      "carbs": 53,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Light Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835149",
+      "name": "Strawberry Light, Small",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 43,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Light Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835148",
+      "name": "Strawberry Light, X-Large",
+      "calories": 390,
+      "protein": 1,
+      "carbs": 97,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Light Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835150",
+      "name": "Strawberry Watermelon Sensation Light, Large",
+      "calories": 270,
+      "protein": 0,
+      "carbs": 66,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Light Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835151",
+      "name": "Strawberry Watermelon Sensation Light, Medium",
+      "calories": 220,
+      "protein": 0,
+      "carbs": 55,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Light Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835152",
+      "name": "Strawberry Watermelon Sensation Light, Small",
+      "calories": 180,
+      "protein": 0,
+      "carbs": 43,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Light Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835153",
+      "name": "Strawberry Watermelon Sensation Light, X-Large",
+      "calories": 400,
+      "protein": 1,
+      "carbs": 98,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Light Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835154",
+      "name": "Sunshine Orange Light, Large",
+      "calories": 230,
+      "protein": 3,
+      "carbs": 56,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Light Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835155",
+      "name": "Sunshine Orange Light, Medium",
+      "calories": 170,
+      "protein": 2,
+      "carbs": 41,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Light Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835156",
+      "name": "Sunshine Orange Light, Small",
+      "calories": 140,
+      "protein": 2,
+      "carbs": 35,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Light Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835157",
+      "name": "Sunshine Orange Light, X-Large",
+      "calories": 310,
+      "protein": 4,
+      "carbs": 76,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Light Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835158",
+      "name": "Tripleberry Light, Large",
+      "calories": 260,
+      "protein": 1,
+      "carbs": 64,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Light Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835159",
+      "name": "Tripleberry Light, Medium",
+      "calories": 210,
+      "protein": 1,
+      "carbs": 51,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Light Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835160",
+      "name": "Tripleberry Light, Small",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 39,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Light Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835161",
+      "name": "Tripleberry Light, X-Large",
+      "calories": 360,
+      "protein": 1,
+      "carbs": 90,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Light Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835166",
+      "name": "Tropi-Colada Light, Large",
+      "calories": 270,
+      "protein": 1,
+      "carbs": 66,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Light Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835167",
+      "name": "Tropi-Colada Light, Medium",
+      "calories": 210,
+      "protein": 1,
+      "carbs": 53,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Light Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835168",
+      "name": "Tropi-Colada Light, Small",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 41,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Light Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835169",
+      "name": "Tropi-Colada Light, X-Large",
+      "calories": 380,
+      "protein": 1,
+      "carbs": 94,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Light Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835162",
+      "name": "Tropical Tango Light, Large",
+      "calories": 280,
+      "protein": 1,
+      "carbs": 70,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Light Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835163",
+      "name": "Tropical Tango Light, Medium",
+      "calories": 220,
+      "protein": 2,
+      "carbs": 54,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Light Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835164",
+      "name": "Tropical Tango Light, Small",
+      "calories": 160,
+      "protein": 1,
+      "carbs": 40,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Light Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835165",
+      "name": "Tropical Tango Light, X-Large",
+      "calories": 380,
+      "protein": 2,
+      "carbs": 94,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Light Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-835239",
+      "name": "Bacon Cheese Dog, 5:1 Dog",
+      "calories": 490,
+      "protein": 23,
+      "carbs": 28,
+      "fat": 32,
+      "servingLabel": "1 listed serving (Orange Julius Hot Dogs; size in item name)"
+    },
+    {
+      "id": "nutritionix-835240",
+      "name": "Bacon Cheese Dog, 8:1 Dog",
+      "calories": 420,
+      "protein": 19,
+      "carbs": 27,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Orange Julius Hot Dogs; size in item name)"
+    },
+    {
+      "id": "nutritionix-835241",
+      "name": "Cheese Dog, 5:1 Dog",
+      "calories": 460,
+      "protein": 20,
+      "carbs": 27,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Orange Julius Hot Dogs; size in item name)"
+    },
+    {
+      "id": "nutritionix-835242",
+      "name": "Chili Cheese Dog, 5:1 Dog",
+      "calories": 500,
+      "protein": 22,
+      "carbs": 29,
+      "fat": 33,
+      "servingLabel": "1 listed serving (Orange Julius Hot Dogs; size in item name)"
+    },
+    {
+      "id": "nutritionix-835243",
+      "name": "Relish Dog, 5:1 Dog",
+      "calories": 430,
+      "protein": 17,
+      "carbs": 32,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Orange Julius Hot Dogs; size in item name)"
+    },
+    {
+      "id": "nutritionix-835244",
+      "name": "Relish Dog, 8:1 Dog",
+      "calories": 350,
+      "protein": 13,
+      "carbs": 31,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Orange Julius Hot Dogs; size in item name)"
+    }
+  ],
+  "sourceDate": "2025-07-18"
+}

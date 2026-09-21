@@ -1,0 +1,1054 @@
+{
+  "chain": "Sbarro",
+  "sourceUrl": "https://sbarro.com/wp-content/uploads/2022/10/Sbarro-Nutrition-and-Allergen-Info-10.12.22.pdf",
+  "sourceKind": "restaurant",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "name": "17in NY Cheese Pizza",
+      "calories": 2750,
+      "fat": 96,
+      "carbs": 340,
+      "protein": 135,
+      "servingLabel": "Full Pizza",
+      "servingGrams": 1237,
+      "id": "17in-ny-cheese-pizza-full-pizza"
+    },
+    {
+      "name": "17in NY Pepperoni",
+      "calories": 3110,
+      "fat": 132,
+      "carbs": 341,
+      "protein": 145,
+      "servingLabel": "Full Pizza",
+      "servingGrams": 1293,
+      "id": "17in-ny-pepperoni-full-pizza"
+    },
+    {
+      "name": "17in NY Supremo",
+      "calories": 3420,
+      "fat": 156,
+      "carbs": 357,
+      "protein": 153,
+      "servingLabel": "Full Pizza",
+      "servingGrams": 1627,
+      "id": "17in-ny-supremo-full-pizza"
+    },
+    {
+      "name": "17in NY Sausage",
+      "calories": 3540,
+      "fat": 163,
+      "carbs": 354,
+      "protein": 167,
+      "servingLabel": "Full Pizza",
+      "servingGrams": 1453,
+      "id": "17in-ny-sausage-full-pizza"
+    },
+    {
+      "name": "17in NY Mushroom",
+      "calories": 2770,
+      "fat": 104,
+      "carbs": 341,
+      "protein": 123,
+      "servingLabel": "Full Pizza",
+      "servingGrams": 1466,
+      "id": "17in-ny-mushroom-full-pizza"
+    },
+    {
+      "name": "17in NY Spinach and Tomato",
+      "calories": 2850,
+      "fat": 105,
+      "carbs": 355,
+      "protein": 129,
+      "servingLabel": "Full Pizza",
+      "servingGrams": 1494,
+      "id": "17in-ny-spinach-and-tomato-full-pizza"
+    },
+    {
+      "name": "17in NY Chicken, Bacon and Ranch",
+      "calories": 4030,
+      "fat": 225,
+      "carbs": 323,
+      "protein": 179,
+      "servingLabel": "Full Pizza",
+      "servingGrams": 1435,
+      "id": "17in-ny-chicken-bacon-and-ranch-full-pizza"
+    },
+    {
+      "name": "17in NY Buffalo Chicken",
+      "calories": 3230,
+      "fat": 145,
+      "carbs": 315,
+      "protein": 171,
+      "servingLabel": "Full Pizza",
+      "servingGrams": 1370,
+      "id": "17in-ny-buffalo-chicken-full-pizza"
+    },
+    {
+      "name": "17in NY Classic Hawaiian",
+      "calories": 2880,
+      "fat": 89,
+      "carbs": 369,
+      "protein": 156,
+      "servingLabel": "Full Pizza",
+      "servingGrams": 1513,
+      "id": "17in-ny-classic-hawaiian-full-pizza"
+    },
+    {
+      "name": "17in NY 4 Cheese White",
+      "calories": 3300,
+      "fat": 164,
+      "carbs": 330,
+      "protein": 144,
+      "servingLabel": "Full Pizza",
+      "servingGrams": 1195,
+      "id": "17in-ny-4-cheese-white-full-pizza"
+    },
+    {
+      "name": "17in NY Veggie",
+      "calories": 2780,
+      "fat": 97,
+      "carbs": 357,
+      "protein": 126,
+      "servingLabel": "Full Pizza",
+      "servingGrams": 1642,
+      "id": "17in-ny-veggie-full-pizza"
+    },
+    {
+      "name": "17in NY Meat Primo",
+      "calories": 3990,
+      "fat": 192,
+      "carbs": 356,
+      "protein": 206,
+      "servingLabel": "Full Pizza",
+      "servingGrams": 1602,
+      "id": "17in-ny-meat-primo-full-pizza"
+    },
+    {
+      "name": "17in NY Mama’s Meatball",
+      "calories": 3780,
+      "fat": 182,
+      "carbs": 352,
+      "protein": 173,
+      "servingLabel": "Full Pizza",
+      "servingGrams": 1572,
+      "id": "17in-ny-mamas-meatball-full-pizza"
+    },
+    {
+      "name": "14in NY Cheese Pizza",
+      "calories": 1850,
+      "fat": 65,
+      "carbs": 228,
+      "protein": 91,
+      "servingLabel": "Full Pizza",
+      "servingGrams": 839,
+      "id": "14in-ny-cheese-pizza-full-pizza"
+    },
+    {
+      "name": "14in NY Pepperoni",
+      "calories": 2110,
+      "fat": 91,
+      "carbs": 229,
+      "protein": 99,
+      "servingLabel": "Full Pizza",
+      "servingGrams": 881,
+      "id": "14in-ny-pepperoni-full-pizza"
+    },
+    {
+      "name": "14in NY Supremo",
+      "calories": 2350,
+      "fat": 110,
+      "carbs": 239,
+      "protein": 107,
+      "servingLabel": "Full Pizza",
+      "servingGrams": 1094,
+      "id": "14in-ny-supremo-full-pizza"
+    },
+    {
+      "name": "14in NY Veggie",
+      "calories": 1930,
+      "fat": 70,
+      "carbs": 240,
+      "protein": 90,
+      "servingLabel": "Full Pizza",
+      "servingGrams": 1138,
+      "id": "14in-ny-veggie-full-pizza"
+    },
+    {
+      "name": "14in NY Classic Hawaiian",
+      "calories": 1960,
+      "fat": 61,
+      "carbs": 248,
+      "protein": 107,
+      "servingLabel": "Full Pizza",
+      "servingGrams": 1039,
+      "id": "14in-ny-classic-hawaiian-full-pizza"
+    },
+    {
+      "name": "14in NY 4 Cheese White",
+      "calories": 2260,
+      "fat": 114,
+      "carbs": 222,
+      "protein": 99,
+      "servingLabel": "Full Pizza",
+      "servingGrams": 821,
+      "id": "14in-ny-4-cheese-white-full-pizza"
+    },
+    {
+      "name": "14in NY Mama’s Meatball",
+      "calories": 2620,
+      "fat": 129,
+      "carbs": 237,
+      "protein": 120,
+      "servingLabel": "Full Pizza",
+      "servingGrams": 1084,
+      "id": "14in-ny-mamas-meatball-full-pizza"
+    },
+    {
+      "name": "Roman Classic Cheese",
+      "calories": 3670,
+      "fat": 193,
+      "carbs": 357,
+      "protein": 137,
+      "servingLabel": "Full Pizza",
+      "servingGrams": 1449,
+      "id": "roman-classic-cheese-full-pizza"
+    },
+    {
+      "name": "Roman Pepperoni and Bacon",
+      "calories": 4580,
+      "fat": 271,
+      "carbs": 360,
+      "protein": 185,
+      "servingLabel": "Full Pizza",
+      "servingGrams": 1618,
+      "id": "roman-pepperoni-and-bacon-full-pizza"
+    },
+    {
+      "name": "Roman Veggie",
+      "calories": 3810,
+      "fat": 202,
+      "carbs": 375,
+      "protein": 135,
+      "servingLabel": "Full Pizza",
+      "servingGrams": 1906,
+      "id": "roman-veggie-full-pizza"
+    },
+    {
+      "name": "Roman Double Duo Pepperoni",
+      "calories": 4790,
+      "fat": 298,
+      "carbs": 358,
+      "protein": 178,
+      "servingLabel": "Full Pizza",
+      "servingGrams": 1665,
+      "id": "roman-double-duo-pepperoni-full-pizza"
+    },
+    {
+      "name": "Roman Meat Primo",
+      "calories": 5000,
+      "fat": 295,
+      "carbs": 374,
+      "protein": 215,
+      "servingLabel": "Full Pizza",
+      "servingGrams": 1841,
+      "id": "roman-meat-primo-full-pizza"
+    },
+    {
+      "name": "Roman Buffalo Chicken Ranch",
+      "calories": 4120,
+      "fat": 232,
+      "carbs": 332,
+      "protein": 187,
+      "servingLabel": "Full Pizza",
+      "servingGrams": 1527,
+      "id": "roman-buffalo-chicken-ranch-full-pizza"
+    },
+    {
+      "name": "Roman Supremo",
+      "calories": 4500,
+      "fat": 264,
+      "carbs": 376,
+      "protein": 167,
+      "servingLabel": "Full Pizza",
+      "servingGrams": 1865,
+      "id": "roman-supremo-full-pizza"
+    },
+    {
+      "name": "Roman Sausage and Pepperoni",
+      "calories": 4810,
+      "fat": 290,
+      "carbs": 373,
+      "protein": 187,
+      "servingLabel": "Full Pizza",
+      "servingGrams": 1749,
+      "id": "roman-sausage-and-pepperoni-full-pizza"
+    },
+    {
+      "name": "Roman Classic Hawaiian",
+      "calories": 3890,
+      "fat": 192,
+      "carbs": 386,
+      "protein": 165,
+      "servingLabel": "Full Pizza",
+      "servingGrams": 1752,
+      "id": "roman-classic-hawaiian-full-pizza"
+    },
+    {
+      "name": "Pan Classic Hawaiian",
+      "calories": 4510,
+      "fat": 195,
+      "carbs": 497,
+      "protein": 203,
+      "servingLabel": "Full Pizza",
+      "servingGrams": 2010,
+      "id": "pan-classic-hawaiian-full-pizza"
+    },
+    {
+      "name": "Pan Spinach and Tomato",
+      "calories": 4470,
+      "fat": 213,
+      "carbs": 481,
+      "protein": 173,
+      "servingLabel": "Full Pizza",
+      "servingGrams": 1989,
+      "id": "pan-spinach-and-tomato-full-pizza"
+    },
+    {
+      "name": "Pan Spinach and Mushroom",
+      "calories": 4580,
+      "fat": 228,
+      "carbs": 474,
+      "protein": 173,
+      "servingLabel": "Full Pizza",
+      "servingGrams": 2059,
+      "id": "pan-spinach-and-mushroom-full-pizza"
+    },
+    {
+      "name": "Pan Meat Primo",
+      "calories": 5570,
+      "fat": 297,
+      "carbs": 479,
+      "protein": 248,
+      "servingLabel": "Full Pizza",
+      "servingGrams": 2045,
+      "id": "pan-meat-primo-full-pizza"
+    },
+    {
+      "name": "Pan Veggie",
+      "calories": 4580,
+      "fat": 225,
+      "carbs": 482,
+      "protein": 171,
+      "servingLabel": "Full Pizza",
+      "servingGrams": 2023,
+      "id": "pan-veggie-full-pizza"
+    },
+    {
+      "name": "Pan Sausage and Pepperoni",
+      "calories": 5450,
+      "fat": 298,
+      "carbs": 479,
+      "protein": 224,
+      "servingLabel": "Full Pizza",
+      "servingGrams": 1966,
+      "id": "pan-sausage-and-pepperoni-full-pizza"
+    },
+    {
+      "name": "Pan Chicken and Broccoli",
+      "calories": 5070,
+      "fat": 260,
+      "carbs": 461,
+      "protein": 242,
+      "servingLabel": "Full Pizza",
+      "servingGrams": 1944,
+      "id": "pan-chicken-and-broccoli-full-pizza"
+    },
+    {
+      "name": "Pan Double Duo",
+      "calories": 5810,
+      "fat": 334,
+      "carbs": 466,
+      "protein": 243,
+      "servingLabel": "Full Pizza",
+      "servingGrams": 2005,
+      "id": "pan-double-duo-full-pizza"
+    },
+    {
+      "name": "Sicilian Cheese Pizza",
+      "calories": 3870,
+      "fat": 164,
+      "carbs": 447,
+      "protein": 159,
+      "servingLabel": "Full Pizza",
+      "servingGrams": 1610,
+      "id": "sicilian-cheese-pizza-full-pizza"
+    },
+    {
+      "name": "Sicilian Sausage and Pepperoni",
+      "calories": 5580,
+      "fat": 322,
+      "carbs": 460,
+      "protein": 216,
+      "servingLabel": "Full Pizza",
+      "servingGrams": 1971,
+      "id": "sicilian-sausage-and-pepperoni-full-pizza"
+    },
+    {
+      "name": "Stuffed Sausage and Pepperoni Pizza",
+      "calories": 7200,
+      "fat": 372,
+      "carbs": 661,
+      "protein": 314,
+      "servingLabel": "Full Pizza",
+      "servingGrams": 2499,
+      "id": "stuffed-sausage-and-pepperoni-pizza-full-pizza"
+    },
+    {
+      "name": "Stuffed Spinach and Broccoli Pizza",
+      "calories": 5890,
+      "fat": 272,
+      "carbs": 650,
+      "protein": 233,
+      "servingLabel": "Full Pizza",
+      "servingGrams": 2466,
+      "id": "stuffed-spinach-and-broccoli-pizza-full-pizza"
+    },
+    {
+      "name": "STROMBOLI Pepperoni and Cheese",
+      "calories": 3430,
+      "fat": 180,
+      "carbs": 311,
+      "protein": 152,
+      "servingLabel": "Full Log (4 pcs)",
+      "servingGrams": 1090,
+      "id": "stromboli-pepperoni-and-cheese-full-log-4-pcs"
+    },
+    {
+      "name": "STROMBOLI Spinach and Cheese",
+      "calories": 2970,
+      "fat": 138,
+      "carbs": 319,
+      "protein": 124,
+      "servingLabel": "Full Log (4 pcs)",
+      "servingGrams": 1172,
+      "id": "stromboli-spinach-and-cheese-full-log-4-pcs"
+    },
+    {
+      "name": "STROMBOLI Fresh Spinach and Cheese",
+      "calories": 3090,
+      "fat": 141,
+      "carbs": 325,
+      "protein": 145,
+      "servingLabel": "Full Log (4 pcs)",
+      "servingGrams": 1212,
+      "id": "stromboli-fresh-spinach-and-cheese-full-log-4-pcs"
+    },
+    {
+      "name": "STROMBOLI Sausage, Pepperoni and Bacon",
+      "calories": 3510,
+      "fat": 184,
+      "carbs": 313,
+      "protein": 156,
+      "servingLabel": "Full Log (4 pcs)",
+      "servingGrams": 1122,
+      "id": "stromboli-sausage-pepperoni-and-bacon-full-log-4-pcs"
+    },
+    {
+      "name": "STROMBOLI Chicken and Four Cheese",
+      "calories": 3180,
+      "fat": 142,
+      "carbs": 314,
+      "protein": 173,
+      "servingLabel": "Full Log (4 pcs)",
+      "servingGrams": 1162,
+      "id": "stromboli-chicken-and-four-cheese-full-log-4-pcs"
+    },
+    {
+      "name": "STROMBOLI Chicken, Pepper and Onion",
+      "calories": 2960,
+      "fat": 120,
+      "carbs": 318,
+      "protein": 160,
+      "servingLabel": "Full Log (4 pcs)",
+      "servingGrams": 1199,
+      "id": "stromboli-chicken-pepper-and-onion-full-log-4-pcs"
+    },
+    {
+      "name": "STROMBOLI Veggie",
+      "calories": 2780,
+      "fat": 117,
+      "carbs": 320,
+      "protein": 116,
+      "servingLabel": "Full Log (4 pcs)",
+      "servingGrams": 1271,
+      "id": "stromboli-veggie-full-log-4-pcs"
+    },
+    {
+      "name": "STROMBOLI Meat Primo",
+      "calories": 4040,
+      "fat": 217,
+      "carbs": 324,
+      "protein": 196,
+      "servingLabel": "Full Log (4 pcs)",
+      "servingGrams": 1329,
+      "id": "stromboli-meat-primo-full-log-4-pcs"
+    },
+    {
+      "name": "STROMBOLI Buffalo Chicken",
+      "calories": 3110,
+      "fat": 136,
+      "carbs": 314,
+      "protein": 166,
+      "servingLabel": "Full Log (4 pcs)",
+      "servingGrams": 1268,
+      "id": "stromboli-buffalo-chicken-full-log-4-pcs"
+    },
+    {
+      "name": "STROMBOLI Classic Hawaiian",
+      "calories": 3170,
+      "fat": 142,
+      "carbs": 336,
+      "protein": 146,
+      "servingLabel": "Full Log (4 pcs)",
+      "servingGrams": 1268,
+      "id": "stromboli-classic-hawaiian-full-log-4-pcs"
+    },
+    {
+      "name": "STROMBOLI Supremo",
+      "calories": 3450,
+      "fat": 178,
+      "carbs": 325,
+      "protein": 143,
+      "servingLabel": "Full Log (4 pcs)",
+      "servingGrams": 1327,
+      "id": "stromboli-supremo-full-log-4-pcs"
+    },
+    {
+      "name": "BREADSTICKS Garlic Breadsticks",
+      "calories": 280,
+      "fat": 11,
+      "carbs": 38,
+      "protein": 8,
+      "servingLabel": "1 Serving",
+      "servingGrams": 91,
+      "id": "breadsticks-garlic-breadsticks-1-serving"
+    },
+    {
+      "name": "Pasta Sauce",
+      "calories": 30,
+      "fat": 2,
+      "carbs": 3,
+      "protein": 1,
+      "servingLabel": "1 Serving",
+      "servingGrams": 57,
+      "id": "pasta-sauce-1-serving"
+    },
+    {
+      "name": "Baked Ziti Side",
+      "calories": 480,
+      "fat": 24,
+      "carbs": 48,
+      "protein": 19,
+      "servingLabel": "1 Serving",
+      "servingGrams": 369,
+      "id": "baked-ziti-side-1-serving"
+    },
+    {
+      "name": "Baked Ziti Side With Chicken",
+      "calories": 760,
+      "fat": 38,
+      "carbs": 58,
+      "protein": 48,
+      "servingLabel": "1 Serving",
+      "servingGrams": 580,
+      "id": "baked-ziti-side-with-chicken-1-serving"
+    },
+    {
+      "name": "Baked Ziti Side With Meatballs",
+      "calories": 890,
+      "fat": 53,
+      "carbs": 59,
+      "protein": 39,
+      "servingLabel": "1 Serving",
+      "servingGrams": 566,
+      "id": "baked-ziti-side-with-meatballs-1-serving"
+    },
+    {
+      "name": "Baked Ziti Entree",
+      "calories": 700,
+      "fat": 36,
+      "carbs": 70,
+      "protein": 28,
+      "servingLabel": "1 Serving",
+      "servingGrams": 567,
+      "id": "baked-ziti-entree-1-serving"
+    },
+    {
+      "name": "Spaghetti Entrée",
+      "calories": 850,
+      "fat": 39,
+      "carbs": 103,
+      "protein": 20,
+      "servingLabel": "1 Serving",
+      "servingGrams": 567,
+      "id": "spaghetti-entree-1-serving"
+    },
+    {
+      "name": "Spaghetti Side",
+      "calories": 420,
+      "fat": 20,
+      "carbs": 52,
+      "protein": 10,
+      "servingLabel": "1 Serving",
+      "servingGrams": 284,
+      "id": "spaghetti-side-1-serving"
+    },
+    {
+      "name": "Spaghetti With Meatballs",
+      "calories": 990,
+      "fat": 56,
+      "carbs": 83,
+      "protein": 34,
+      "servingLabel": "1 Serving",
+      "servingGrams": 566,
+      "id": "spaghetti-with-meatballs-1-serving"
+    },
+    {
+      "name": "STEAM Meatballs",
+      "calories": 400,
+      "fat": 28,
+      "carbs": 10,
+      "protein": 20,
+      "servingLabel": "2 Meatballs",
+      "servingGrams": 177,
+      "id": "steam-meatballs-2-meatballs"
+    },
+    {
+      "name": "STEAM Baked Lasagna",
+      "calories": 1250,
+      "fat": 63,
+      "carbs": 112,
+      "protein": 58,
+      "servingLabel": "1 Serving",
+      "servingGrams": 755,
+      "id": "steam-baked-lasagna-1-serving"
+    },
+    {
+      "name": "STEAM Service Chicken Parmesan A la Carte",
+      "calories": 260,
+      "fat": 11,
+      "carbs": 15,
+      "protein": 27,
+      "servingLabel": "1 Serving",
+      "servingGrams": 189,
+      "id": "steam-service-chicken-parmesan-a-la-carte-1-serving"
+    },
+    {
+      "name": "STEAM Service Chicken Parmesan Entrée Baked Ziti",
+      "calories": 850,
+      "fat": 43,
+      "carbs": 66,
+      "protein": 52,
+      "servingLabel": "1 Serving",
+      "servingGrams": 637,
+      "id": "steam-service-chicken-parmesan-entree-baked-ziti-1-serving"
+    },
+    {
+      "name": "STEAM Service Chicken Parmesan Entrée with Spaghetti",
+      "calories": 850,
+      "fat": 41,
+      "carbs": 77,
+      "protein": 44,
+      "servingLabel": "1 Serving",
+      "servingGrams": 580,
+      "id": "steam-service-chicken-parmesan-entree-with-spaghetti-1-serving"
+    },
+    {
+      "name": "STEAM Chicken Parmesan",
+      "calories": 320,
+      "fat": 16,
+      "carbs": 14,
+      "protein": 32,
+      "servingLabel": "1 Serving",
+      "servingGrams": 183,
+      "id": "steam-chicken-parmesan-1-serving"
+    },
+    {
+      "name": "Roasted Potatoes Large Side",
+      "calories": 450,
+      "fat": 9,
+      "carbs": 82,
+      "protein": 10,
+      "servingLabel": "1 Serving",
+      "servingGrams": 454,
+      "id": "roasted-potatoes-large-side-1-serving"
+    },
+    {
+      "name": "Roasted Potatoes Reg Side",
+      "calories": 280,
+      "fat": 5,
+      "carbs": 52,
+      "protein": 6,
+      "servingLabel": "1 Serving",
+      "servingGrams": 284,
+      "id": "roasted-potatoes-reg-side-1-serving"
+    },
+    {
+      "name": "Roasted Carrots Large Side",
+      "calories": 250,
+      "fat": 9,
+      "carbs": 41,
+      "protein": 4,
+      "servingLabel": "1 Serving",
+      "servingGrams": 454,
+      "id": "roasted-carrots-large-side-1-serving"
+    },
+    {
+      "name": "Roasted Carrots Reg Side",
+      "calories": 140,
+      "fat": 5,
+      "carbs": 23,
+      "protein": 2,
+      "servingLabel": "1 Serving",
+      "servingGrams": 255,
+      "id": "roasted-carrots-reg-side-1-serving"
+    },
+    {
+      "name": "STEAM Sausage and Peppers",
+      "calories": 4360,
+      "fat": 345,
+      "carbs": 190,
+      "protein": 199,
+      "servingLabel": "1 Full Tray",
+      "servingGrams": 3831,
+      "id": "steam-sausage-and-peppers-1-full-tray"
+    },
+    {
+      "name": "STEAM Service Sausage and Peppers Entrée with Baked Ziti",
+      "calories": 840,
+      "fat": 51,
+      "carbs": 63,
+      "protein": 35,
+      "servingLabel": "1 Serving",
+      "servingGrams": 634,
+      "id": "steam-service-sausage-and-peppers-entree-with-baked-ziti-1-serving"
+    },
+    {
+      "name": "STEAM Service Sausage and Peppers Entrée with Spaghetti",
+      "calories": 830,
+      "fat": 49,
+      "carbs": 72,
+      "protein": 27,
+      "servingLabel": "1 Serving",
+      "servingGrams": 561,
+      "id": "steam-service-sausage-and-peppers-entree-with-spaghetti-1-serving"
+    },
+    {
+      "name": "Vegetable Rice 10oz",
+      "calories": 280,
+      "fat": 8,
+      "carbs": 48,
+      "protein": 5,
+      "servingLabel": "1 Serving",
+      "servingGrams": 284,
+      "id": "vegetable-rice-10oz-1-serving"
+    },
+    {
+      "name": "Vegetable Rice 14oz",
+      "calories": 400,
+      "fat": 11,
+      "carbs": 67,
+      "protein": 6,
+      "servingLabel": "1 Serving",
+      "servingGrams": 397,
+      "id": "vegetable-rice-14oz-1-serving"
+    },
+    {
+      "name": "Yellow Rice 10oz Side",
+      "calories": 330,
+      "fat": 4.5,
+      "carbs": 65,
+      "protein": 6,
+      "servingLabel": "1 Serving",
+      "servingGrams": 284,
+      "id": "yellow-rice-10oz-side-1-serving"
+    },
+    {
+      "name": "Yellow Rice 16oz Large",
+      "calories": 530,
+      "fat": 8,
+      "carbs": 104,
+      "protein": 10,
+      "servingLabel": "1 Serving",
+      "servingGrams": 454,
+      "id": "yellow-rice-16oz-large-1-serving"
+    },
+    {
+      "name": "Mixed Vegetables",
+      "calories": 2210,
+      "fat": 178,
+      "carbs": 145,
+      "protein": 42,
+      "servingLabel": "1 Serving",
+      "servingGrams": 2703,
+      "id": "mixed-vegetables-1-serving"
+    },
+    {
+      "name": "STEAM Service Mac and Cheese Side",
+      "calories": 670,
+      "fat": 37,
+      "carbs": 47,
+      "protein": 31,
+      "servingLabel": "1 Serving",
+      "servingGrams": 326,
+      "id": "steam-service-mac-and-cheese-side-1-serving"
+    },
+    {
+      "name": "STEAM Macaroni and Cheese Entree",
+      "calories": 1090,
+      "fat": 61,
+      "carbs": 82,
+      "protein": 50,
+      "servingLabel": "1 Serving",
+      "servingGrams": 503,
+      "id": "steam-macaroni-and-cheese-entree-1-serving"
+    },
+    {
+      "name": "Mushroom & Three Pepper Salad 10oz",
+      "calories": 150,
+      "fat": 10,
+      "carbs": 12,
+      "protein": 7,
+      "servingLabel": "1 Serving",
+      "servingGrams": 284,
+      "id": "mushroom-three-pepper-salad-10oz-1-serving"
+    },
+    {
+      "name": "Mushroom & Three Pepper Salad 14oz",
+      "calories": 210,
+      "fat": 15,
+      "carbs": 17,
+      "protein": 10,
+      "servingLabel": "1 Serving",
+      "servingGrams": 397,
+      "id": "mushroom-three-pepper-salad-14oz-1-serving"
+    },
+    {
+      "name": "Garden Salad Entrée",
+      "calories": 45,
+      "fat": 0,
+      "carbs": 10,
+      "protein": 2,
+      "servingLabel": "1 Serving",
+      "servingGrams": 263,
+      "id": "garden-salad-entree-1-serving"
+    },
+    {
+      "name": "Garden Salad Side",
+      "calories": 25,
+      "fat": 0,
+      "carbs": 5,
+      "protein": 1,
+      "servingLabel": "1 Serving",
+      "servingGrams": 132,
+      "id": "garden-salad-side-1-serving"
+    },
+    {
+      "name": "Caesar Salad Side",
+      "calories": 50,
+      "fat": 1,
+      "carbs": 8,
+      "protein": 2,
+      "servingLabel": "1 Serving",
+      "servingGrams": 121,
+      "id": "caesar-salad-side-1-serving"
+    },
+    {
+      "name": "Caesar Salad Entrée",
+      "calories": 70,
+      "fat": 1.5,
+      "carbs": 13,
+      "protein": 3,
+      "servingLabel": "1 Serving",
+      "servingGrams": 127,
+      "id": "caesar-salad-entree-1-serving"
+    },
+    {
+      "name": "Tomato Cucumber Salad 12oz",
+      "calories": 130,
+      "fat": 8,
+      "carbs": 15,
+      "protein": 3,
+      "servingLabel": "1 Serving",
+      "servingGrams": 340,
+      "id": "tomato-cucumber-salad-12oz-1-serving"
+    },
+    {
+      "name": "Tomato Cucumber Salad 16oz",
+      "calories": 170,
+      "fat": 10,
+      "carbs": 20,
+      "protein": 3,
+      "servingLabel": "1 Serving",
+      "servingGrams": 454,
+      "id": "tomato-cucumber-salad-16oz-1-serving"
+    },
+    {
+      "name": "Pasta Primavera Salad 10oz",
+      "calories": 480,
+      "fat": 35,
+      "carbs": 39,
+      "protein": 7,
+      "servingLabel": "1 Serving",
+      "servingGrams": 284,
+      "id": "pasta-primavera-salad-10oz-1-serving"
+    },
+    {
+      "name": "Pasta Primavera Salad 14oz",
+      "calories": 680,
+      "fat": 49,
+      "carbs": 55,
+      "protein": 10,
+      "servingLabel": "1 Serving",
+      "servingGrams": 397,
+      "id": "pasta-primavera-salad-14oz-1-serving"
+    },
+    {
+      "name": "Greek Salad 12oz",
+      "calories": 160,
+      "fat": 10,
+      "carbs": 12,
+      "protein": 9,
+      "servingLabel": "1 Serving",
+      "servingGrams": 340,
+      "id": "greek-salad-12oz-1-serving"
+    },
+    {
+      "name": "Greek Salad 8oz",
+      "calories": 50,
+      "fat": 3.5,
+      "carbs": 4,
+      "protein": 3,
+      "servingLabel": "1 Serving",
+      "servingGrams": 113,
+      "id": "greek-salad-8oz-1-serving"
+    },
+    {
+      "name": "Fruit Salad 12oz",
+      "calories": 120,
+      "fat": 0.5,
+      "carbs": 29,
+      "protein": 2,
+      "servingLabel": "1 Serving",
+      "servingGrams": 340,
+      "id": "fruit-salad-12oz-1-serving"
+    },
+    {
+      "name": "Fruit Salad 16oz",
+      "calories": 150,
+      "fat": 0.5,
+      "carbs": 38,
+      "protein": 3,
+      "servingLabel": "1 Serving",
+      "servingGrams": 454,
+      "id": "fruit-salad-16oz-1-serving"
+    },
+    {
+      "name": "DESSERTS NY Cheesecake",
+      "calories": 600,
+      "fat": 39,
+      "carbs": 55,
+      "protein": 6,
+      "servingLabel": "1 Serving",
+      "servingGrams": 175,
+      "id": "desserts-ny-cheesecake-1-serving"
+    },
+    {
+      "name": "DESSERTS Strawberry Cheesecake",
+      "calories": 640,
+      "fat": 39,
+      "carbs": 64,
+      "protein": 6,
+      "servingLabel": "1 Serving",
+      "servingGrams": 203,
+      "id": "desserts-strawberry-cheesecake-1-serving"
+    },
+    {
+      "name": "DESSERTS Chocolate Cake",
+      "calories": 440,
+      "fat": 23,
+      "carbs": 56,
+      "protein": 5,
+      "servingLabel": "1 Serving",
+      "servingGrams": 122,
+      "id": "desserts-chocolate-cake-1-serving"
+    },
+    {
+      "name": "DESSERTS Carrot Cake",
+      "calories": 530,
+      "fat": 29,
+      "carbs": 58,
+      "protein": 5,
+      "servingLabel": "1 Serving",
+      "servingGrams": 141,
+      "id": "desserts-carrot-cake-1-serving"
+    },
+    {
+      "name": "DESSERTS Cannoli",
+      "calories": 230,
+      "fat": 13,
+      "carbs": 23,
+      "protein": 5,
+      "servingLabel": "1 Serving",
+      "servingGrams": 78,
+      "id": "desserts-cannoli-1-serving"
+    },
+    {
+      "name": "DESSERTS NY Tiramisu",
+      "calories": 190,
+      "fat": 12,
+      "carbs": 19,
+      "protein": 2,
+      "servingLabel": "1 Serving",
+      "servingGrams": 73,
+      "id": "desserts-ny-tiramisu-1-serving"
+    },
+    {
+      "name": "Iced Tea 12 fl oz",
+      "calories": 5,
+      "fat": 0,
+      "carbs": 1,
+      "protein": 0,
+      "servingLabel": "1 Serving",
+      "servingGrams": 356,
+      "id": "iced-tea-12-fl-oz-1-serving"
+    },
+    {
+      "name": "Sweet Iced Tea 12 fl oz",
+      "calories": 130,
+      "fat": 0,
+      "carbs": 35,
+      "protein": 0,
+      "servingLabel": "1 Serving",
+      "servingGrams": 373,
+      "id": "sweet-iced-tea-12-fl-oz-1-serving"
+    },
+    {
+      "name": "Lemonade 12 fl oz",
+      "calories": 180,
+      "fat": 0,
+      "carbs": 47,
+      "protein": 0,
+      "servingLabel": "1 Serving",
+      "servingGrams": 356,
+      "id": "lemonade-12-fl-oz-1-serving"
+    }
+  ],
+  "sourceDate": "2022-10-12",
+  "coverageNotes": {
+    "method": "Official linked US nutrition PDF; publisher serving and calories retained.",
+    "skippedNonExactRows": [],
+    "sourceLandingUrl": "https://sbarro.com/us-nutritional-information/"
+  }
+}

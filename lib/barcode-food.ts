@@ -1,5 +1,5 @@
 import { normalizeBarcode, type BarcodeFood } from './barcode';
-import { ML_PER_FLUID_OUNCE } from './meals';
+import { ML_PER_FLUID_OUNCE } from './food';
 
 type LookupResult = { status: 200; food: BarcodeFood } | { status: 400 | 404 | 422 | 503; error: string };
 export type Product = {
@@ -65,10 +65,11 @@ export function productFood(product: Product, code: string): BarcodeFood | null 
   const servingMl = volume ? servingVolume(product) : null;
   const serving = nutrient(product.serving_quantity);
   const hasServingWeight = product.serving_quantity_unit === 'g' || (!product.serving_quantity_unit && /\d\s*g\b/i.test(product.serving_size ?? ''));
-  const servingGrams = volume ? 0 : serving && hasServingWeight ? serving : 100;
+  const servingGrams = volume ? null : serving && hasServingWeight ? serving : 100;
   return {
     id: `off-${product.code || code}`, name: product.product_name.trim(),
-    brand: product.brands?.split(',')[0]?.trim() || undefined, source: 'Open Food Facts',
+    brand: product.brands?.split(',')[0]?.trim() || undefined, source: 'Open Food Facts', sourceKind: 'database', verified: true,
+    nutritionBasis: volume ? '100ml' : '100g', sourceUrl: `https://world.openfoodfacts.org/product/${encodeURIComponent(product.code || code)}`, checkedAt: new Date().toISOString(),
     calories, protein, carbs, fat, servingGrams,
     ...(volume ? { nutritionUnit: 'ml' as const, servingMl: servingMl ?? 100 } : {}),
     servingLabel: volume ? servingMl ? product.serving_size || `${servingMl} mL` : '100 mL'

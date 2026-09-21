@@ -1,10 +1,11 @@
 "use client";
 
-import { entryAmountLabel } from '@/lib/meals';
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { Area, AreaChart, Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip as ChartTooltip, XAxis, YAxis } from "recharts";
-import { Activity, CalendarDays, ChevronLeft, ChevronRight, Flame, LayoutDashboard, Loader2, Plus, Settings2, Sparkles, Target, Trash2, TrendingUp, Utensils, X } from "lucide-react";
-import { FoodDialog } from "@/components/food-dialog";
+import { Activity, CalendarDays, ChevronLeft, ChevronRight, LayoutDashboard, Loader2, Plus, Settings2, Sparkles, Target, Trash2, TrendingUp, Utensils } from "lucide-react";
+import { FoodDialog, type DiaryEntry } from "@/components/food-dialog";
+import { FoodVerification } from "@/components/food-verification";
+import { entryAmountLabel } from "@/lib/meals";
 import { BrandMark as Logo } from "@/components/brand-mark";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
@@ -18,9 +19,8 @@ import type { AuthUser } from "@/lib/auth";
 import SignIn from "./sign-in";
 
 type Goals={calories:number;protein:number;carbs:number;fat:number};
-type Entry={id:string;meal:string;name:string;brand?:string;source:string;sourceId?:string;quantity:number;unit:string;grams:number;calories:number;protein:number;carbs:number;fat:number};
+type Entry=DiaryEntry;
 type Trend={date:string;calories:number;protein:number;carbs:number;fat:number};
-type MacroKey="protein"|"carbs"|"fat";
 
 const defaultGoals:Goals={calories:2400,protein:180,carbs:250,fat:70};
 const meals=["Breakfast","Lunch","Dinner","Snacks"];
@@ -28,9 +28,6 @@ const fmtDate=(value:string)=>new Intl.DateTimeFormat("en-US",{weekday:"short",m
 const round=(n:number)=>Math.round(n);
 const clamp=(n:number)=>Math.min(100,Math.max(0,n));
 
-function Ring({value,label,color}:{value:number;label:string;color:string}){
-  return <div className="macro-ring" style={{"--pct":`${clamp(value)}%`,"--ring":color} as React.CSSProperties}><div><strong>{round(value)}%</strong><span>{label}</span></div></div>;
-}
 
 function MacroProgress({label,current,target,color}:{label:string;current:number;target:number;color:string}){
   const pct=target?current/target*100:0;
@@ -96,8 +93,22 @@ export default function GramelloApp({ user }: { user: AuthUser }){
     };
   },[loadDay,view,sessionExpired]);
 
-  useEffect(()=>{if(view!=="trends")return;setTrendLoading(true);authFetch(`/api/trends?days=${range}`).then(async r=>{const d=await r.json() as { error?: string; days: Trend[] };if(!r.ok)throw new Error(d.error);setTrends(d.days)}).catch(e=>toast.error(e.message)).finally(()=>setTrendLoading(false))},[view,range,authFetch]);
-
+  useEffect(()=>{
+    if(view!=="trends")return;
+    const controller=new AbortController();
+    const load=async()=>{
+      setTrendLoading(true);
+      try {
+        const response=await authFetch(`/api/trends?days=${range}`,{signal:controller.signal});
+        const data=await response.json() as {error?:string;days:Trend[]};
+        if(!response.ok)throw new Error(data.error);
+        if(!controller.signal.aborted)setTrends(data.days);
+      } catch(error) { if(!controller.signal.aborted)toast.error(error instanceof Error?error.message:"Could not load trends"); }
+      finally { if(!controller.signal.aborted)setTrendLoading(false); }
+    };
+    void load();
+    return()=>controller.abort();
+  },[view,range,authFetch]);
 
   const total=useMemo(()=>entries.reduce((a,e)=>({calories:a.calories+e.calories,protein:a.protein+e.protein,carbs:a.carbs+e.carbs,fat:a.fat+e.fat}),{calories:0,protein:0,carbs:0,fat:0}),[entries]);
   const remaining=Math.max(0,goals.calories-total.calories);
@@ -148,11 +159,11 @@ export default function GramelloApp({ user }: { user: AuthUser }){
         </div>
 
         <div className="diary-heading"><div><span className="eyebrow">MEALS</span><h2>Food diary</h2></div><button onClick={openGoals}><Target/>Edit goals</button></div>
-        {loading?<div className="loading-card"><Loader2 className="spin"/>Loading your diary…</div>:<div className="meal-list">{meals.map(name=>{const items=entries.filter(e=>e.meal===name);const c=items.reduce((s,e)=>s+e.calories,0);return <article className="meal-card" key={name}><header><div><span className={`meal-icon ${name.toLowerCase()}`}><Utensils/></span><div><h3>{name}</h3><p>{items.length?`${items.length} item${items.length===1?"":"s"}`:"Nothing logged yet"}</p></div></div><div><strong>{round(c)}</strong><span>kcal</span><button aria-label={`Add ${name}`} onClick={()=>{setMeal(name);openFood()}}><Plus/></button></div></header>{items.length>0&&<div className="food-rows">{items.map(item=><div className="food-row" key={item.id}><div className="food-thumb">{item.name.charAt(0)}</div><div><strong>{item.name}</strong><span>{item.brand?`${item.brand} · `:""}{entryAmountLabel(item)} · {item.source}</span></div><div className="food-macros"><span><b>{round(item.protein)}g</b>P</span><span><b>{round(item.carbs)}g</b>C</span><span><b>{round(item.fat)}g</b>F</span></div><strong className="food-cal">{round(item.calories)}</strong><button className="delete" aria-label={`Remove ${item.name}`} onClick={()=>void deleteEntry(item.id)}><Trash2/></button></div>)}</div>}</article>})}</div>}
+        {loading?<div className="loading-card"><Loader2 className="spin"/>Loading your diary…</div>:<div className="meal-list">{meals.map(name=>{const items=entries.filter(e=>e.meal===name);const c=items.reduce((s,e)=>s+e.calories,0);return <article className="meal-card" key={name}><header><div><span className={`meal-icon ${name.toLowerCase()}`}><Utensils/></span><div><h3>{name}</h3><p>{items.length?`${items.length} item${items.length===1?"":"s"}`:"Nothing logged yet"}</p></div></div><div><strong>{round(c)}</strong><span>kcal</span><button aria-label={`Add ${name}`} onClick={()=>{setMeal(name);openFood()}}><Plus/></button></div></header>{items.length>0&&<div className="food-rows">{items.map(item=><div className="food-row" key={item.id}><div className="food-thumb">{item.name.charAt(0)}</div><div><strong>{item.name}</strong><span>{item.brand?`${item.brand} · `:""}{entryAmountLabel(item)} · {item.source}</span><FoodVerification verified={item.verified}/></div><div className="food-macros"><span><b>{round(item.protein)}g</b>P</span><span><b>{round(item.carbs)}g</b>C</span><span><b>{round(item.fat)}g</b>F</span></div><strong className="food-cal">{round(item.calories)}</strong><button className="delete" aria-label={`Remove ${item.name}`} onClick={()=>void deleteEntry(item.id)}><Trash2/></button></div>)}</div>}</article>})}</div>}
       </section>:<Trends range={range} setRange={setRange} trends={trends} loading={trendLoading} goals={goals}/>} 
     </main>
 
-    {addOpen && <FoodDialog date={date} initialMeal={meal} authFetch={authFetch} onClose={()=>setAddOpen(false)} onAdded={entry=>{setEntries(items=>[...items,entry]);setAddOpen(false);toast.success(`${entry.name} added to ${entry.meal.toLowerCase()}`)}}/>}
+    {addOpen && <FoodDialog date={date} initialMeal={meal} authFetch={authFetch} onClose={()=>setAddOpen(false)} onAdded={entry=>{setEntries(prev=>[...prev,entry]);setAddOpen(false);toast.success(`${entry.name} added to ${entry.meal.toLowerCase()}`)}}/>}
 
     <Dialog open={goalOpen} onOpenChange={setGoalOpen}><DialogContent className="goal-dialog"><DialogHeader><DialogTitle>Daily targets</DialogTitle><DialogDescription>Macro grams update calories automatically. Changing calories keeps your current macro percentage split.</DialogDescription></DialogHeader><div className="goal-fields">{(["calories","protein","carbs","fat"] as const).map(k=><label key={k}><span>{k.charAt(0).toUpperCase()+k.slice(1)}{k!=="calories"&&<small style={{display:"block",color:"#6ee7c7",fontSize:".8rem"}}>{macroPercent(draftGoals,k).toFixed(1)}%</small>}</span><div><Input type="number" min="0" step="any" value={Math.round(draftGoals[k]*100)/100} onChange={e=>setDraftGoals(g=>changeGoal(g,k,Number(e.target.value)))}/><span>{k==="calories"?"kcal":"g"}</span></div></label>)}</div><p style={{fontSize:".875rem",color:"#8ca1b2"}}>Protein & carbs: 4 kcal/g · Fat: 9 kcal/g. Grams are displayed rounded to two decimals. If all macros are zero, changing calories starts a 30/40/30 split.</p><Button className="confirm-button" onClick={()=>void updateGoals()} disabled={saving||draftGoals.calories<=0}>{saving&&<Loader2 className="spin"/>}Save goals</Button></DialogContent></Dialog>
     <Toaster richColors position="bottom-right"/>

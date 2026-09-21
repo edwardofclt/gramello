@@ -1,0 +1,6526 @@
+{
+  "chain": "Papa Johns",
+  "sourceUrl": "https://www.nutritionix.com/papa-johns/menu/premium",
+  "source": "Nutritionix",
+  "sourceKind": "database",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "id": "nutritionix-606819",
+      "name": "BBQ Chicken Bacon Pizza, Epic Stuffed Crust",
+      "calories": 400,
+      "protein": 20,
+      "carbs": 45,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606821",
+      "name": "BBQ Chicken Bacon Pizza, Gluten Free",
+      "calories": 340,
+      "protein": 13,
+      "carbs": 42,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606818",
+      "name": "BBQ Chicken Bacon Pizza, Original Crust, Extra Large",
+      "calories": 360,
+      "protein": 16,
+      "carbs": 48,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606817",
+      "name": "BBQ Chicken Bacon Pizza, Original Crust, Large",
+      "calories": 340,
+      "protein": 16,
+      "carbs": 45,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606816",
+      "name": "BBQ Chicken Bacon Pizza, Original Crust, Medium",
+      "calories": 240,
+      "protein": 11,
+      "carbs": 32,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606814",
+      "name": "BBQ Chicken Bacon Pizza, Original Crust, Pizza for One",
+      "calories": 240,
+      "protein": 12,
+      "carbs": 30,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606815",
+      "name": "BBQ Chicken Bacon Pizza, Original Crust, Small",
+      "calories": 230,
+      "protein": 10,
+      "carbs": 30,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606820",
+      "name": "BBQ Chicken Bacon Pizza, Thin Crust",
+      "calories": 270,
+      "protein": 13,
+      "carbs": 27,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606827",
+      "name": "Butter Chicken Pizza, Epic Stuffed Crust",
+      "calories": 370,
+      "protein": 23,
+      "carbs": 39,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606829",
+      "name": "Butter Chicken Pizza, Gluten Free",
+      "calories": 130,
+      "protein": 7,
+      "carbs": 14,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606826",
+      "name": "Butter Chicken Pizza, Original Crust, Extra Large",
+      "calories": 310,
+      "protein": 16,
+      "carbs": 41,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606825",
+      "name": "Butter Chicken Pizza, Original Crust, Large",
+      "calories": 300,
+      "protein": 16,
+      "carbs": 38,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606824",
+      "name": "Butter Chicken Pizza, Original Crust, Medium",
+      "calories": 280,
+      "protein": 15,
+      "carbs": 36,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606822",
+      "name": "Butter Chicken Pizza, Original Crust, Pizza for One",
+      "calories": 210,
+      "protein": 11,
+      "carbs": 26,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606823",
+      "name": "Butter Chicken Pizza, Original Crust, Small",
+      "calories": 200,
+      "protein": 11,
+      "carbs": 26,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606828",
+      "name": "Butter Chicken Pizza, Thin Crust",
+      "calories": 220,
+      "protein": 14,
+      "carbs": 20,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606795",
+      "name": "Cheese Pizza, Epic Stuffed Crust",
+      "calories": 360,
+      "protein": 15,
+      "carbs": 40,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606797",
+      "name": "Cheese Pizza, Gluten Free",
+      "calories": 290,
+      "protein": 10,
+      "carbs": 36,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606794",
+      "name": "Cheese Pizza, Original Crust, Extra Large",
+      "calories": 300,
+      "protein": 11,
+      "carbs": 40,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606793",
+      "name": "Cheese Pizza, Original Crust, Large",
+      "calories": 290,
+      "protein": 11,
+      "carbs": 38,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606792",
+      "name": "Cheese Pizza, Original Crust, Medium",
+      "calories": 210,
+      "protein": 8,
+      "carbs": 27,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606790",
+      "name": "Cheese Pizza, Original Crust, Pizza for One",
+      "calories": 200,
+      "protein": 8,
+      "carbs": 25,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606791",
+      "name": "Cheese Pizza, Original Crust, Small",
+      "calories": 180,
+      "protein": 7,
+      "carbs": 25,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606796",
+      "name": "Cheese Pizza, Thin Crust",
+      "calories": 210,
+      "protein": 8,
+      "carbs": 20,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606786",
+      "name": "Cheesy Burger Pizza, Original Crust, Large",
+      "calories": 360,
+      "protein": 12,
+      "carbs": 39,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606788",
+      "name": "Cheesy Calzone Epic Stuffed Crust Pizza, Large",
+      "calories": 350,
+      "protein": 14,
+      "carbs": 41,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606934",
+      "name": "Create Your Own Crispy Parm Pizza, Crispy Parm Crust, Large",
+      "calories": 140,
+      "protein": 5,
+      "carbs": 16,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606835",
+      "name": "Extra Cheesy Alfredo Pizza, Epic Stuffed Crust",
+      "calories": 390,
+      "protein": 18,
+      "carbs": 39,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606837",
+      "name": "Extra Cheesy Alfredo Pizza, Gluten Free",
+      "calories": 180,
+      "protein": 7,
+      "carbs": 18,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606834",
+      "name": "Extra Cheesy Alfredo Pizza, Original Crust, Extra Large",
+      "calories": 330,
+      "protein": 13,
+      "carbs": 39,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606833",
+      "name": "Extra Cheesy Alfredo Pizza, Original Crust, Large",
+      "calories": 320,
+      "protein": 13,
+      "carbs": 37,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606832",
+      "name": "Extra Cheesy Alfredo Pizza, Original Crust, Medium",
+      "calories": 230,
+      "protein": 10,
+      "carbs": 26,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606830",
+      "name": "Extra Cheesy Alfredo Pizza, Original Crust, Pizza for One",
+      "calories": 220,
+      "protein": 9,
+      "carbs": 24,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606831",
+      "name": "Extra Cheesy Alfredo Pizza, Original Crust, Small",
+      "calories": 210,
+      "protein": 9,
+      "carbs": 25,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606843",
+      "name": "Fiery Buffalo Chicken Pizza, Epic Stuffed Crust",
+      "calories": 390,
+      "protein": 20,
+      "carbs": 40,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606845",
+      "name": "Fiery Buffalo Chicken Pizza, Gluten Free",
+      "calories": 160,
+      "protein": 8,
+      "carbs": 16,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606842",
+      "name": "Fiery Buffalo Chicken Pizza, Original Crust, Extra Large",
+      "calories": 350,
+      "protein": 16,
+      "carbs": 40,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606841",
+      "name": "Fiery Buffalo Chicken Pizza, Original Crust, Large",
+      "calories": 330,
+      "protein": 16,
+      "carbs": 38,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606840",
+      "name": "Fiery Buffalo Chicken Pizza, Original Crust, Medium",
+      "calories": 230,
+      "protein": 11,
+      "carbs": 27,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606838",
+      "name": "Fiery Buffalo Chicken Pizza, Original Crust, Pizza for One",
+      "calories": 230,
+      "protein": 12,
+      "carbs": 26,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606839",
+      "name": "Fiery Buffalo Chicken Pizza, Original Crust, Small",
+      "calories": 220,
+      "protein": 10,
+      "carbs": 26,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606844",
+      "name": "Fiery Buffalo Chicken Pizza, Thin Crust",
+      "calories": 260,
+      "protein": 13,
+      "carbs": 20,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606851",
+      "name": "Fresh Spinach & Tomato Alfredo Pizza, Epic Stuffed Crust",
+      "calories": 350,
+      "protein": 15,
+      "carbs": 39,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606853",
+      "name": "Fresh Spinach & Tomato Alfredo Pizza, Gluten Free",
+      "calories": 280,
+      "protein": 10,
+      "carbs": 37,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606850",
+      "name": "Fresh Spinach & Tomato Alfredo Pizza, Original Crust, Extra Large",
+      "calories": 300,
+      "protein": 11,
+      "carbs": 41,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606849",
+      "name": "Fresh Spinach & Tomato Alfredo Pizza, Original Crust, Large",
+      "calories": 280,
+      "protein": 10,
+      "carbs": 39,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606848",
+      "name": "Fresh Spinach & Tomato Alfredo Pizza, Original Crust, Medium",
+      "calories": 200,
+      "protein": 7,
+      "carbs": 27,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606846",
+      "name": "Fresh Spinach & Tomato Alfredo Pizza, Original Crust, Pizza for One",
+      "calories": 190,
+      "protein": 7,
+      "carbs": 26,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606847",
+      "name": "Fresh Spinach & Tomato Alfredo Pizza, Original Crust, Small",
+      "calories": 190,
+      "protein": 7,
+      "carbs": 26,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606852",
+      "name": "Fresh Spinach & Tomato Alfredo Pizza, Thin Crust",
+      "calories": 210,
+      "protein": 8,
+      "carbs": 21,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606859",
+      "name": "Garden Fresh Pizza, Epic Stuffed Crust",
+      "calories": 350,
+      "protein": 15,
+      "carbs": 41,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606861",
+      "name": "Garden Fresh Pizza, Gluten Free",
+      "calories": 280,
+      "protein": 10,
+      "carbs": 37,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606858",
+      "name": "Garden Fresh Pizza, Original Crust, Extra Large",
+      "calories": 300,
+      "protein": 11,
+      "carbs": 41,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606857",
+      "name": "Garden Fresh Pizza, Original Crust, Large",
+      "calories": 280,
+      "protein": 10,
+      "carbs": 39,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606856",
+      "name": "Garden Fresh Pizza, Original Crust, Medium",
+      "calories": 200,
+      "protein": 7,
+      "carbs": 27,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606854",
+      "name": "Garden Fresh Pizza, Original Crust, Pizza for One",
+      "calories": 190,
+      "protein": 7,
+      "carbs": 26,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606855",
+      "name": "Garden Fresh Pizza, Original Crust, Small",
+      "calories": 190,
+      "protein": 7,
+      "carbs": 26,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606860",
+      "name": "Garden Fresh Pizza, Thin Crust",
+      "calories": 210,
+      "protein": 8,
+      "carbs": 21,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606789",
+      "name": "Garlic Epic Stuffed Crust Pizza, Large",
+      "calories": 370,
+      "protein": 16,
+      "carbs": 39,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606867",
+      "name": "Meatball Pepperoni Pizza, Epic Stuffed Crust",
+      "calories": 430,
+      "protein": 19,
+      "carbs": 41,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606869",
+      "name": "Meatball Pepperoni Pizza, Gluten Free",
+      "calories": 180,
+      "protein": 8,
+      "carbs": 16,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606866",
+      "name": "Meatball Pepperoni Pizza, Original Crust, Extra Large",
+      "calories": 370,
+      "protein": 15,
+      "carbs": 41,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606865",
+      "name": "Meatball Pepperoni Pizza, Original Crust, Large",
+      "calories": 360,
+      "protein": 15,
+      "carbs": 38,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606864",
+      "name": "Meatball Pepperoni Pizza, Original Crust, Medium",
+      "calories": 240,
+      "protein": 10,
+      "carbs": 27,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606862",
+      "name": "Meatball Pepperoni Pizza, Original Crust, Pizza for One",
+      "calories": 240,
+      "protein": 10,
+      "carbs": 26,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606863",
+      "name": "Meatball Pepperoni Pizza, Original Crust, Small",
+      "calories": 230,
+      "protein": 10,
+      "carbs": 26,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606868",
+      "name": "Meatball Pepperoni Pizza, Thin Crust",
+      "calories": 280,
+      "protein": 12,
+      "carbs": 20,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606787",
+      "name": "NY Style Crispy Cuppy 'Roni Pizza, Large",
+      "calories": 390,
+      "protein": 17,
+      "carbs": 39,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606875",
+      "name": "Pepperoni, Sausage & Six Cheese Pizza, Epic Stuffed Crust",
+      "calories": 480,
+      "protein": 20,
+      "carbs": 40,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606874",
+      "name": "Pepperoni, Sausage & Six Cheese Pizza, Original Crust, Extra Large",
+      "calories": 410,
+      "protein": 16,
+      "carbs": 38,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606873",
+      "name": "Pepperoni, Sausage & Six Cheese Pizza, Original Crust, Large",
+      "calories": 390,
+      "protein": 16,
+      "carbs": 36,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606872",
+      "name": "Pepperoni, Sausage & Six Cheese Pizza, Original Crust, Medium",
+      "calories": 280,
+      "protein": 11,
+      "carbs": 25,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606870",
+      "name": "Pepperoni, Sausage & Six Cheese Pizza, Original Crust, Pizza for One",
+      "calories": 280,
+      "protein": 11,
+      "carbs": 24,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606871",
+      "name": "Pepperoni, Sausage & Six Cheese Pizza, Original Crust, Small",
+      "calories": 260,
+      "protein": 11,
+      "carbs": 24,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606876",
+      "name": "Pepperoni, Sausage & Six Cheese Pizza, Thin Crust",
+      "calories": 320,
+      "protein": 13,
+      "carbs": 18,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606803",
+      "name": "Pepperoni Pizza, Epic Stuffed Crust",
+      "calories": 390,
+      "protein": 16,
+      "carbs": 40,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606805",
+      "name": "Pepperoni Pizza, Gluten Free",
+      "calories": 340,
+      "protein": 12,
+      "carbs": 36,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606802",
+      "name": "Pepperoni Pizza, Original Crust, Extra Large",
+      "calories": 330,
+      "protein": 12,
+      "carbs": 40,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606801",
+      "name": "Pepperoni Pizza, Original Crust, Large",
+      "calories": 320,
+      "protein": 12,
+      "carbs": 38,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606800",
+      "name": "Pepperoni Pizza, Original Crust, Medium",
+      "calories": 230,
+      "protein": 8,
+      "carbs": 26,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606798",
+      "name": "Pepperoni Pizza, Original Crust, Pizza for One",
+      "calories": 220,
+      "protein": 8,
+      "carbs": 25,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606799",
+      "name": "Pepperoni Pizza, Original Crust, Small",
+      "calories": 210,
+      "protein": 8,
+      "carbs": 25,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606804",
+      "name": "Pepperoni Pizza, Thin Crust",
+      "calories": 250,
+      "protein": 9,
+      "carbs": 20,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606882",
+      "name": "Philly Cheesesteak Pizza, Epic Stuffed Crust",
+      "calories": 430,
+      "protein": 19,
+      "carbs": 40,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606884",
+      "name": "Philly Cheesesteak Pizza, Gluten Free",
+      "calories": 160,
+      "protein": 8,
+      "carbs": 16,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606881",
+      "name": "Philly Cheesesteak Pizza, Original Crust, Extra Large",
+      "calories": 350,
+      "protein": 16,
+      "carbs": 40,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606880",
+      "name": "Philly Cheesesteak Pizza, Original Crust, Large",
+      "calories": 330,
+      "protein": 16,
+      "carbs": 38,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606879",
+      "name": "Philly Cheesesteak Pizza, Original Crust, Medium",
+      "calories": 230,
+      "protein": 11,
+      "carbs": 27,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606877",
+      "name": "Philly Cheesesteak Pizza, Original Crust, Pizza for One",
+      "calories": 230,
+      "protein": 12,
+      "carbs": 26,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606878",
+      "name": "Philly Cheesesteak Pizza, Original Crust, Small",
+      "calories": 220,
+      "protein": 10,
+      "carbs": 26,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606883",
+      "name": "Philly Cheesesteak Pizza, Thin Crust",
+      "calories": 260,
+      "protein": 13,
+      "carbs": 20,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606811",
+      "name": "Sausage Pizza, Epic Stuffed Crust",
+      "calories": 400,
+      "protein": 16,
+      "carbs": 40,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606813",
+      "name": "Sausage Pizza, Gluten Free",
+      "calories": 340,
+      "protein": 11,
+      "carbs": 36,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606810",
+      "name": "Sausage Pizza, Original Crust, Extra Large",
+      "calories": 340,
+      "protein": 12,
+      "carbs": 40,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606809",
+      "name": "Sausage Pizza, Original Crust, Large",
+      "calories": 330,
+      "protein": 12,
+      "carbs": 38,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606808",
+      "name": "Sausage Pizza, Original Crust, Medium",
+      "calories": 240,
+      "protein": 8,
+      "carbs": 27,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606806",
+      "name": "Sausage Pizza, Original Crust, Pizza for One",
+      "calories": 230,
+      "protein": 8,
+      "carbs": 25,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606807",
+      "name": "Sausage Pizza, Original Crust, Small",
+      "calories": 220,
+      "protein": 8,
+      "carbs": 25,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606812",
+      "name": "Sausage Pizza, Thin Crust",
+      "calories": 260,
+      "protein": 9,
+      "carbs": 20,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606935",
+      "name": "Shaq-A-Roni Pizza, Original Crust, Large",
+      "calories": 390,
+      "protein": 15,
+      "carbs": 39,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606933",
+      "name": "Spicy Garlic Epic Stuffed Crust Pizza, Large",
+      "calories": 370,
+      "protein": 16,
+      "carbs": 39,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606890",
+      "name": "Super Hawaiian Pizza, Epic Stuffed Crust",
+      "calories": 400,
+      "protein": 19,
+      "carbs": 42,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606892",
+      "name": "Super Hawaiian Pizza, Gluten Free",
+      "calories": 170,
+      "protein": 8,
+      "carbs": 17,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606889",
+      "name": "Super Hawaiian Pizza, Original Crust, Extra Large",
+      "calories": 360,
+      "protein": 16,
+      "carbs": 42,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606888",
+      "name": "Super Hawaiian Pizza, Original Crust, Large",
+      "calories": 340,
+      "protein": 15,
+      "carbs": 40,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606887",
+      "name": "Super Hawaiian Pizza, Original Crust, Medium",
+      "calories": 230,
+      "protein": 10,
+      "carbs": 28,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606885",
+      "name": "Super Hawaiian Pizza, Original Crust, Pizza for One",
+      "calories": 230,
+      "protein": 10,
+      "carbs": 27,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606886",
+      "name": "Super Hawaiian Pizza, Original Crust, Small",
+      "calories": 230,
+      "protein": 10,
+      "carbs": 27,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606891",
+      "name": "Super Hawaiian Pizza, Thin Crust",
+      "calories": 260,
+      "protein": 12,
+      "carbs": 22,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606898",
+      "name": "The Meats Pizza, Epic Stuffed Crust",
+      "calories": 440,
+      "protein": 20,
+      "carbs": 40,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606900",
+      "name": "The Meats Pizza, Gluten Free",
+      "calories": 340,
+      "protein": 13,
+      "carbs": 36,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606897",
+      "name": "The Meats Pizza, Original Crust, Extra Large",
+      "calories": 410,
+      "protein": 17,
+      "carbs": 41,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606896",
+      "name": "The Meats Pizza, Original Crust, Large",
+      "calories": 380,
+      "protein": 15,
+      "carbs": 38,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606895",
+      "name": "The Meats Pizza, Original Crust, Medium",
+      "calories": 260,
+      "protein": 11,
+      "carbs": 27,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606893",
+      "name": "The Meats Pizza, Original Crust, Pizza for One",
+      "calories": 260,
+      "protein": 11,
+      "carbs": 26,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606894",
+      "name": "The Meats Pizza, Original Crust, Small",
+      "calories": 250,
+      "protein": 10,
+      "carbs": 26,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606899",
+      "name": "The Meats Pizza, Thin Crust",
+      "calories": 300,
+      "protein": 13,
+      "carbs": 20,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606906",
+      "name": "The Works Pizza, Epic Stuffed Crust",
+      "calories": 410,
+      "protein": 18,
+      "carbs": 41,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606908",
+      "name": "The Works Pizza, Gluten Free",
+      "calories": 320,
+      "protein": 12,
+      "carbs": 37,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606905",
+      "name": "The Works Pizza, Original Crust, Extra Large",
+      "calories": 360,
+      "protein": 14,
+      "carbs": 41,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606904",
+      "name": "The Works Pizza, Original Crust, Large",
+      "calories": 340,
+      "protein": 13,
+      "carbs": 39,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606903",
+      "name": "The Works Pizza, Original Crust, Medium",
+      "calories": 230,
+      "protein": 9,
+      "carbs": 27,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606901",
+      "name": "The Works Pizza, Original Crust, Pizza for One",
+      "calories": 230,
+      "protein": 9,
+      "carbs": 26,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606902",
+      "name": "The Works Pizza, Original Crust, Small",
+      "calories": 230,
+      "protein": 9,
+      "carbs": 26,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606907",
+      "name": "The Works Pizza, Thin Crust",
+      "calories": 270,
+      "protein": 11,
+      "carbs": 21,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606914",
+      "name": "Tuscan Six Cheese Pizza, Epic Stuffed Crust",
+      "calories": 390,
+      "protein": 18,
+      "carbs": 40,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606916",
+      "name": "Tuscan Six Cheese Pizza, Gluten Free",
+      "calories": 310,
+      "protein": 12,
+      "carbs": 36,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606913",
+      "name": "Tuscan Six Cheese Pizza, Original Crust, Extra Large",
+      "calories": 330,
+      "protein": 14,
+      "carbs": 40,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606912",
+      "name": "Tuscan Six Cheese Pizza, Original Crust, Large",
+      "calories": 320,
+      "protein": 14,
+      "carbs": 38,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606911",
+      "name": "Tuscan Six Cheese Pizza, Original Crust, Medium",
+      "calories": 230,
+      "protein": 10,
+      "carbs": 27,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606909",
+      "name": "Tuscan Six Cheese Pizza, Original Crust, Pizza for One",
+      "calories": 220,
+      "protein": 10,
+      "carbs": 25,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606910",
+      "name": "Tuscan Six Cheese Pizza, Original Crust, Small",
+      "calories": 220,
+      "protein": 9,
+      "carbs": 26,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606915",
+      "name": "Tuscan Six Cheese Pizza, Thin Crust",
+      "calories": 250,
+      "protein": 11,
+      "carbs": 20,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606922",
+      "name": "Ultimate Pepperoni Pizza, Epic Stuffed Crust",
+      "calories": 410,
+      "protein": 17,
+      "carbs": 40,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606924",
+      "name": "Ultimate Pepperoni Pizza, Gluten Free",
+      "calories": 180,
+      "protein": 7,
+      "carbs": 16,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606921",
+      "name": "Ultimate Pepperoni Pizza, Original Crust, Extra Large",
+      "calories": 370,
+      "protein": 14,
+      "carbs": 40,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606920",
+      "name": "Ultimate Pepperoni Pizza, Original Crust, Large",
+      "calories": 360,
+      "protein": 14,
+      "carbs": 38,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606919",
+      "name": "Ultimate Pepperoni Pizza, Original Crust, Medium",
+      "calories": 250,
+      "protein": 10,
+      "carbs": 27,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606917",
+      "name": "Ultimate Pepperoni Pizza, Original Crust, Pizza for One",
+      "calories": 250,
+      "protein": 10,
+      "carbs": 26,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606918",
+      "name": "Ultimate Pepperoni Pizza, Original Crust, Small",
+      "calories": 240,
+      "protein": 9,
+      "carbs": 26,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606923",
+      "name": "Ultimate Pepperoni Pizza, Thin Crust",
+      "calories": 290,
+      "protein": 12,
+      "carbs": 20,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606930",
+      "name": "Zesty Italian Trio Pizza, Epic Stuffed Crust",
+      "calories": 440,
+      "protein": 19,
+      "carbs": 41,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606932",
+      "name": "Zesty Italian Trio Pizza, Gluten Free",
+      "calories": 180,
+      "protein": 7,
+      "carbs": 16,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606929",
+      "name": "Zesty Italian Trio Pizza, Original Crust, Extra Large",
+      "calories": 390,
+      "protein": 15,
+      "carbs": 40,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606928",
+      "name": "Zesty Italian Trio Pizza, Original Crust, Large",
+      "calories": 370,
+      "protein": 14,
+      "carbs": 38,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606927",
+      "name": "Zesty Italian Trio Pizza, Original Crust, Medium",
+      "calories": 260,
+      "protein": 10,
+      "carbs": 27,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606925",
+      "name": "Zesty Italian Trio Pizza, Original Crust, Pizza for One",
+      "calories": 250,
+      "protein": 10,
+      "carbs": 25,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606926",
+      "name": "Zesty Italian Trio Pizza, Original Crust, Small",
+      "calories": 240,
+      "protein": 9,
+      "carbs": 25,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606931",
+      "name": "Zesty Italian Trio Pizza, Thin Crust",
+      "calories": 300,
+      "protein": 12,
+      "carbs": 20,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Specialty Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-606936",
+      "name": "Chicken Alfredo Papa Bowl",
+      "calories": 570,
+      "protein": 62,
+      "carbs": 15,
+      "fat": 31,
+      "servingLabel": "1 listed serving (Papa Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-606938",
+      "name": "Garden Veggie Papa Bowl",
+      "calories": 380,
+      "protein": 22,
+      "carbs": 21,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Papa Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-606937",
+      "name": "Italian Meats Trio Papa Bowl",
+      "calories": 880,
+      "protein": 46,
+      "carbs": 24,
+      "fat": 68,
+      "servingLabel": "1 listed serving (Papa Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-658310",
+      "name": "Cheesy Burger Papadia",
+      "calories": 840,
+      "protein": 34,
+      "carbs": 79,
+      "fat": 43,
+      "servingLabel": "1 listed serving (Papadias; size in item name)"
+    },
+    {
+      "id": "nutritionix-606951",
+      "name": "Doritos Cool Ranch Beef Papadia",
+      "calories": 870,
+      "protein": 35,
+      "carbs": 82,
+      "fat": 45,
+      "servingLabel": "1 listed serving (Papadias; size in item name)"
+    },
+    {
+      "id": "nutritionix-606949",
+      "name": "Doritos Cool Ranch Chicken Papadia",
+      "calories": 840,
+      "protein": 55,
+      "carbs": 82,
+      "fat": 32,
+      "servingLabel": "1 listed serving (Papadias; size in item name)"
+    },
+    {
+      "id": "nutritionix-606952",
+      "name": "Doritos Cool Ranch Create Your Own Papadia",
+      "calories": 490,
+      "protein": 12,
+      "carbs": 75,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Papadias; size in item name)"
+    },
+    {
+      "id": "nutritionix-606950",
+      "name": "Doritos Cool Ranch Steak Papadia",
+      "calories": 860,
+      "protein": 41,
+      "carbs": 84,
+      "fat": 39,
+      "servingLabel": "1 listed serving (Papadias; size in item name)"
+    },
+    {
+      "id": "nutritionix-606945",
+      "name": "Grilled BBQ Chicken & Bacon Papadia",
+      "calories": 840,
+      "protein": 60,
+      "carbs": 85,
+      "fat": 28,
+      "servingLabel": "1 listed serving (Papadias; size in item name)"
+    },
+    {
+      "id": "nutritionix-606946",
+      "name": "Grilled Buffalo Chicken Papadia",
+      "calories": 920,
+      "protein": 63,
+      "carbs": 80,
+      "fat": 39,
+      "servingLabel": "1 listed serving (Papadias; size in item name)"
+    },
+    {
+      "id": "nutritionix-606948",
+      "name": "Italian Papadia",
+      "calories": 940,
+      "protein": 38,
+      "carbs": 76,
+      "fat": 53,
+      "servingLabel": "1 listed serving (Papadias; size in item name)"
+    },
+    {
+      "id": "nutritionix-606947",
+      "name": "Meatball Pepperoni Papadia",
+      "calories": 940,
+      "protein": 42,
+      "carbs": 79,
+      "fat": 49,
+      "servingLabel": "1 listed serving (Papadias; size in item name)"
+    },
+    {
+      "id": "nutritionix-606940",
+      "name": "Parmesan Crusted BBQ Chicken Bacon Papadia",
+      "calories": 960,
+      "protein": 71,
+      "carbs": 83,
+      "fat": 38,
+      "servingLabel": "1 listed serving (Papadias; size in item name)"
+    },
+    {
+      "id": "nutritionix-606941",
+      "name": "Parmesan Crusted Grilled Buffalo Chicken Papadia",
+      "calories": 1050,
+      "protein": 74,
+      "carbs": 80,
+      "fat": 48,
+      "servingLabel": "1 listed serving (Papadias; size in item name)"
+    },
+    {
+      "id": "nutritionix-606943",
+      "name": "Parmesan Crusted Italian Papadia",
+      "calories": 1070,
+      "protein": 49,
+      "carbs": 76,
+      "fat": 62,
+      "servingLabel": "1 listed serving (Papadias; size in item name)"
+    },
+    {
+      "id": "nutritionix-606942",
+      "name": "Parmesan Crusted Meatball Pepperoni Papadia",
+      "calories": 1060,
+      "protein": 53,
+      "carbs": 79,
+      "fat": 59,
+      "servingLabel": "1 listed serving (Papadias; size in item name)"
+    },
+    {
+      "id": "nutritionix-606944",
+      "name": "Philly Cheesesteak Papadia",
+      "calories": 810,
+      "protein": 40,
+      "carbs": 80,
+      "fat": 35,
+      "servingLabel": "1 listed serving (Papadias; size in item name)"
+    },
+    {
+      "id": "nutritionix-606965",
+      "name": "BBQ Boneless Wings, 10 wings",
+      "calories": 640,
+      "protein": 49,
+      "carbs": 54,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-606966",
+      "name": "BBQ Boneless Wings, 15 wings",
+      "calories": 1130,
+      "protein": 85,
+      "carbs": 99,
+      "fat": 44,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-606967",
+      "name": "BBQ Boneless Wings, 30 wings",
+      "calories": 1920,
+      "protein": 148,
+      "carbs": 160,
+      "fat": 77,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-606981",
+      "name": "BBQ Wings, 8 wings",
+      "calories": 880,
+      "protein": 67,
+      "carbs": 20,
+      "fat": 57,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-606982",
+      "name": "BBQ Wings, 16 wings",
+      "calories": 1750,
+      "protein": 134,
+      "carbs": 40,
+      "fat": 114,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-606983",
+      "name": "BBQ Wings, 24 wings",
+      "calories": 2630,
+      "protein": 200,
+      "carbs": 60,
+      "fat": 170,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-606984",
+      "name": "BBQ Wings, 32 wings",
+      "calories": 3500,
+      "protein": 267,
+      "carbs": 80,
+      "fat": 227,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-606985",
+      "name": "BBQ Wings, 50 wings",
+      "calories": 5470,
+      "protein": 418,
+      "carbs": 125,
+      "fat": 355,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-606962",
+      "name": "Buffalo Boneless Wings, 10 wings",
+      "calories": 630,
+      "protein": 50,
+      "carbs": 44,
+      "fat": 29,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-606963",
+      "name": "Buffalo Boneless Wings, 15 wings",
+      "calories": 1110,
+      "protein": 87,
+      "carbs": 77,
+      "fat": 50,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-606964",
+      "name": "Buffalo Boneless Wings, 30 wings",
+      "calories": 1890,
+      "protein": 149,
+      "carbs": 132,
+      "fat": 85,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-606976",
+      "name": "Buffalo Wings, 8 wings",
+      "calories": 840,
+      "protein": 67,
+      "carbs": 8,
+      "fat": 58,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-606977",
+      "name": "Buffalo Wings, 16 wings",
+      "calories": 1670,
+      "protein": 133,
+      "carbs": 16,
+      "fat": 115,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-606978",
+      "name": "Buffalo Wings, 24 wings",
+      "calories": 2510,
+      "protein": 200,
+      "carbs": 24,
+      "fat": 173,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-606979",
+      "name": "Buffalo Wings, 32 wings",
+      "calories": 3340,
+      "protein": 267,
+      "carbs": 33,
+      "fat": 231,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-606980",
+      "name": "Buffalo Wings, 50 wings",
+      "calories": 5220,
+      "protein": 417,
+      "carbs": 51,
+      "fat": 360,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-606956",
+      "name": "Garlic Parmesan Boneless Wings, 10 wings",
+      "calories": 680,
+      "protein": 50,
+      "carbs": 42,
+      "fat": 35,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-606957",
+      "name": "Garlic Parmesan Boneless Wings, 15 wings",
+      "calories": 1070,
+      "protein": 76,
+      "carbs": 63,
+      "fat": 58,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-606958",
+      "name": "Garlic Parmesan Boneless Wings, 30 wings",
+      "calories": 2170,
+      "protein": 151,
+      "carbs": 126,
+      "fat": 119,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-606986",
+      "name": "Garlic Parmesan Wings, 8 wings",
+      "calories": 1040,
+      "protein": 68,
+      "carbs": 6,
+      "fat": 81,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-606987",
+      "name": "Garlic Parmesan Wings, 16 wings",
+      "calories": 2080,
+      "protein": 137,
+      "carbs": 11,
+      "fat": 162,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-606988",
+      "name": "Garlic Parmesan Wings, 24 wings",
+      "calories": 3120,
+      "protein": 205,
+      "carbs": 17,
+      "fat": 243,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-606989",
+      "name": "Garlic Parmesan Wings, 32 wings",
+      "calories": 4160,
+      "protein": 273,
+      "carbs": 23,
+      "fat": 324,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-606990",
+      "name": "Garlic Parmesan Wings, 50 wings",
+      "calories": 6500,
+      "protein": 427,
+      "carbs": 35,
+      "fat": 507,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-606968",
+      "name": "Honey Chipotle Boneless Wings, 10 wings",
+      "calories": 630,
+      "protein": 49,
+      "carbs": 52,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-606969",
+      "name": "Honey Chipotle Boneless Wings, 15 wings",
+      "calories": 990,
+      "protein": 74,
+      "carbs": 86,
+      "fat": 38,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-606970",
+      "name": "Honey Chipotle Boneless Wings, 30 wings",
+      "calories": 1940,
+      "protein": 148,
+      "carbs": 164,
+      "fat": 77,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-606991",
+      "name": "Honey Chipotle Wings, 8 wings",
+      "calories": 900,
+      "protein": 67,
+      "carbs": 27,
+      "fat": 57,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-606992",
+      "name": "Honey Chipotle Wings, 16 wings",
+      "calories": 1800,
+      "protein": 133,
+      "carbs": 55,
+      "fat": 113,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-606993",
+      "name": "Honey Chipotle Wings, 24 wings",
+      "calories": 2710,
+      "protein": 200,
+      "carbs": 82,
+      "fat": 170,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-606994",
+      "name": "Honey Chipotle Wings, 32 wings",
+      "calories": 3610,
+      "protein": 267,
+      "carbs": 109,
+      "fat": 227,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-606995",
+      "name": "Honey Chipotle Wings, 50 wings",
+      "calories": 5640,
+      "protein": 417,
+      "carbs": 171,
+      "fat": 354,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-606959",
+      "name": "Hot Lemon Pepper Boneless Wings, 10 wings",
+      "calories": 600,
+      "protein": 47,
+      "carbs": 43,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-606960",
+      "name": "Hot Lemon Pepper Boneless Wings, 15 wings",
+      "calories": 950,
+      "protein": 75,
+      "carbs": 68,
+      "fat": 43,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-606961",
+      "name": "Hot Lemon Pepper Boneless Wings, 30 wings",
+      "calories": 1810,
+      "protein": 142,
+      "carbs": 128,
+      "fat": 82,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-606996",
+      "name": "Hot Lemon Pepper Wings, 8 wings",
+      "calories": 960,
+      "protein": 75,
+      "carbs": 8,
+      "fat": 67,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-606997",
+      "name": "Hot Lemon Pepper Wings, 16 wings",
+      "calories": 1910,
+      "protein": 151,
+      "carbs": 17,
+      "fat": 134,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-606998",
+      "name": "Hot Lemon Pepper Wings, 24 wings",
+      "calories": 2870,
+      "protein": 226,
+      "carbs": 25,
+      "fat": 201,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-606999",
+      "name": "Hot Lemon Pepper Wings, 32 wings",
+      "calories": 3830,
+      "protein": 302,
+      "carbs": 33,
+      "fat": 268,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-607000",
+      "name": "Hot Lemon Pepper Wings, 50 wings",
+      "calories": 5980,
+      "protein": 472,
+      "carbs": 52,
+      "fat": 419,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-606953",
+      "name": "Unsauced Boneless Wings, 10 wings",
+      "calories": 590,
+      "protein": 49,
+      "carbs": 41,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-606954",
+      "name": "Unsauced Boneless Wings, 15 wings",
+      "calories": 890,
+      "protein": 74,
+      "carbs": 62,
+      "fat": 38,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-606955",
+      "name": "Unsauced Boneless Wings, 30 wings",
+      "calories": 1910,
+      "protein": 159,
+      "carbs": 133,
+      "fat": 83,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-606971",
+      "name": "Unsauced Roasted Wings, 8 wings",
+      "calories": 810,
+      "protein": 66,
+      "carbs": 4,
+      "fat": 57,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-606972",
+      "name": "Unsauced Roasted Wings, 16 wings",
+      "calories": 1620,
+      "protein": 133,
+      "carbs": 8,
+      "fat": 113,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-606973",
+      "name": "Unsauced Roasted Wings, 24 wings",
+      "calories": 2430,
+      "protein": 199,
+      "carbs": 12,
+      "fat": 170,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-606974",
+      "name": "Unsauced Roasted Wings, 32 wings",
+      "calories": 3240,
+      "protein": 265,
+      "carbs": 16,
+      "fat": 226,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-606975",
+      "name": "Unsauced Roasted Wings, 50 wings",
+      "calories": 5060,
+      "protein": 415,
+      "carbs": 25,
+      "fat": 353,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-607008",
+      "name": "Bacon Cheesesticks, 10\"",
+      "calories": 110,
+      "protein": 4,
+      "carbs": 11,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-607009",
+      "name": "Bacon Cheesesticks, 12\"",
+      "calories": 130,
+      "protein": 5,
+      "carbs": 13,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-607001",
+      "name": "Bacon Cheesy Burger Papa Bites, 8 Pieces",
+      "calories": 100,
+      "protein": 4,
+      "carbs": 10,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-607012",
+      "name": "Breadsticks, 12\"",
+      "calories": 130,
+      "protein": 4,
+      "carbs": 24,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-607013",
+      "name": "Breadsticks, 14\"",
+      "calories": 150,
+      "protein": 4,
+      "carbs": 27,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-607003",
+      "name": "Calzones Papa Bites, 8 Pieces",
+      "calories": 110,
+      "protein": 4,
+      "carbs": 10,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-607006",
+      "name": "Cheesesticks, 10\"",
+      "calories": 90,
+      "protein": 3,
+      "carbs": 10,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-607007",
+      "name": "Cheesesticks, 12\"",
+      "calories": 110,
+      "protein": 4,
+      "carbs": 13,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-607004",
+      "name": "Chicken Parmesan Papa Bites, 8 Pieces",
+      "calories": 110,
+      "protein": 6,
+      "carbs": 10,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-607016",
+      "name": "Garlic Knots",
+      "calories": 110,
+      "protein": 2,
+      "carbs": 14,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-607014",
+      "name": "Garlic Parmesan Breadsticks, 12\"",
+      "calories": 160,
+      "protein": 4,
+      "carbs": 24,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-607015",
+      "name": "Garlic Parmesan Breadsticks, 14\"",
+      "calories": 170,
+      "protein": 4,
+      "carbs": 27,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-607005",
+      "name": "Jalapeno Papa Bites, 8 Pieces",
+      "calories": 80,
+      "protein": 3,
+      "carbs": 10,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-607010",
+      "name": "Tuscan 6-Cheese Cheesesticks, 10\"",
+      "calories": 110,
+      "protein": 4,
+      "carbs": 11,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-607011",
+      "name": "Tuscan 6-Cheese Cheesesticks, 12\"",
+      "calories": 130,
+      "protein": 5,
+      "carbs": 13,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-607018",
+      "name": "Chocolate Chip Cookie",
+      "calories": 190,
+      "protein": 2,
+      "carbs": 26,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-607020",
+      "name": "Cinnamon Pullaparts",
+      "calories": 1960,
+      "protein": 19,
+      "carbs": 264,
+      "fat": 94,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-607019",
+      "name": "Double Chocolate Chip Brownie",
+      "calories": 240,
+      "protein": 2,
+      "carbs": 34,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-607017",
+      "name": "Oreo Cookie Papa Bites",
+      "calories": 80,
+      "protein": 2,
+      "carbs": 13,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-607029",
+      "name": "Dipping Sauce, BBQ Sauce",
+      "calories": 45,
+      "protein": 0,
+      "carbs": 11,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Dipping Sauces; size in item name)"
+    },
+    {
+      "id": "nutritionix-607032",
+      "name": "Dipping Sauce, Blue Cheese",
+      "calories": 160,
+      "protein": 1,
+      "carbs": 1,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Dipping Sauces; size in item name)"
+    },
+    {
+      "id": "nutritionix-607030",
+      "name": "Dipping Sauce, Buffalo Sauce",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 0.5,
+      "servingLabel": "1 listed serving (Dipping Sauces; size in item name)"
+    },
+    {
+      "id": "nutritionix-607027",
+      "name": "Dipping Sauce, Cheese Sauce",
+      "calories": 40,
+      "protein": 1,
+      "carbs": 2,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Dipping Sauces; size in item name)"
+    },
+    {
+      "id": "nutritionix-607022",
+      "name": "Dipping Sauce, Cheesy Burger Sauce",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Dipping Sauces; size in item name)"
+    },
+    {
+      "id": "nutritionix-607033",
+      "name": "Dipping Sauce, Cream Cheese Icing",
+      "calories": 150,
+      "protein": 1,
+      "carbs": 32,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Dipping Sauces; size in item name)"
+    },
+    {
+      "id": "nutritionix-607023",
+      "name": "Dipping Sauce, Doritos Cool Ranch Sauce",
+      "calories": 180,
+      "protein": 1,
+      "carbs": 5,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Dipping Sauces; size in item name)"
+    },
+    {
+      "id": "nutritionix-607028",
+      "name": "Dipping Sauce, Honey Mustard",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Dipping Sauces; size in item name)"
+    },
+    {
+      "id": "nutritionix-607026",
+      "name": "Dipping Sauce, Pizza Sauce",
+      "calories": 20,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Dipping Sauces; size in item name)"
+    },
+    {
+      "id": "nutritionix-607031",
+      "name": "Dipping Sauce, Ranch Sauce",
+      "calories": 100,
+      "protein": 1,
+      "carbs": 2,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Dipping Sauces; size in item name)"
+    },
+    {
+      "id": "nutritionix-607024",
+      "name": "Dipping Sauce, Special Zesty Sauce",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Dipping Sauces; size in item name)"
+    },
+    {
+      "id": "nutritionix-607038",
+      "name": "Extra Anchovies",
+      "calories": 30,
+      "protein": 4,
+      "carbs": 0,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Extras; size in item name)"
+    },
+    {
+      "id": "nutritionix-607039",
+      "name": "Extra Banana Peppers",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Extras; size in item name)"
+    },
+    {
+      "id": "nutritionix-607035",
+      "name": "Extra Crushed Red Pepper",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Extras; size in item name)"
+    },
+    {
+      "id": "nutritionix-607040",
+      "name": "Extra Jalapeno Peppers",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Extras; size in item name)"
+    },
+    {
+      "id": "nutritionix-607034",
+      "name": "Extra Parmesan Cheese",
+      "calories": 190,
+      "protein": 2,
+      "carbs": 26,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Extras; size in item name)"
+    },
+    {
+      "id": "nutritionix-607037",
+      "name": "Extra Pepperoncinis",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Extras; size in item name)"
+    },
+    {
+      "id": "nutritionix-607036",
+      "name": "Extra Special Seasonings",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Extras; size in item name)"
+    },
+    {
+      "id": "nutritionix-607111",
+      "name": "A&W Cream Soda, 2 Liter",
+      "calories": 1010,
+      "protein": 0,
+      "carbs": 262,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607110",
+      "name": "A&W Cream Soda, 20 Oz",
+      "calories": 300,
+      "protein": 0,
+      "carbs": 78,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607113",
+      "name": "A&W Root Beer, 2 Liter",
+      "calories": 1010,
+      "protein": 0,
+      "carbs": 262,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607112",
+      "name": "A&W Root Beer, 20 Oz",
+      "calories": 300,
+      "protein": 0,
+      "carbs": 78,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607260",
+      "name": "AMP, 16 Oz",
+      "calories": 220,
+      "protein": 1,
+      "carbs": 58,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607193",
+      "name": "Aquafina Raspberry, 20 Oz",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607194",
+      "name": "Barq's Root Beer, 20 Oz",
+      "calories": 270,
+      "protein": 0,
+      "carbs": 75,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607261",
+      "name": "Blueberry Pomegranate, 16 Oz",
+      "calories": 80,
+      "protein": 0,
+      "carbs": 20,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607195",
+      "name": "Brisk Fruit Punch, 20 Oz",
+      "calories": 180,
+      "protein": 0,
+      "carbs": 48,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607115",
+      "name": "Brisk Lemonade, 2 Liter",
+      "calories": 610,
+      "protein": 0,
+      "carbs": 159,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607114",
+      "name": "Brisk Lemonade, 20 Oz",
+      "calories": 180,
+      "protein": 0,
+      "carbs": 47,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607196",
+      "name": "Brisk Pink Lemonade, 20 Oz",
+      "calories": 180,
+      "protein": 0,
+      "carbs": 45,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607197",
+      "name": "Brisk Strawberry Melon, 20 Oz",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 32,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607061",
+      "name": "Brisk Sweet Tea Lemon, 2 Liter",
+      "calories": 720,
+      "protein": 0,
+      "carbs": 182,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607059",
+      "name": "Brisk Sweet Tea Lemon, 12 Oz",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 32,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607060",
+      "name": "Brisk Sweet Tea Lemon, 20 Oz",
+      "calories": 210,
+      "protein": 0,
+      "carbs": 54,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607198",
+      "name": "Brisk Tea Raspberry, 20 Oz",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 32,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607117",
+      "name": "Canada Dry, 2 Liter",
+      "calories": 680,
+      "protein": 0,
+      "carbs": 186,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607116",
+      "name": "Canada Dry, 20 Oz",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 55,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607064",
+      "name": "Cheerwine, 2 Liter",
+      "calories": 850,
+      "protein": 0,
+      "carbs": 237,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607062",
+      "name": "Cheerwine, 12 Oz",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 42,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607063",
+      "name": "Cheerwine, 20 Oz",
+      "calories": 250,
+      "protein": 0,
+      "carbs": 70,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607199",
+      "name": "Cherry Coke, 20 Oz",
+      "calories": 250,
+      "protein": 0,
+      "carbs": 70,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607119",
+      "name": "Cherry Dr Pepper, 2 Liter",
+      "calories": 880,
+      "protein": 0,
+      "carbs": 240,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607118",
+      "name": "Cherry Dr Pepper, 20 Oz",
+      "calories": 260,
+      "protein": 0,
+      "carbs": 71,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607121",
+      "name": "Cherry Seven Up, 2 Liter",
+      "calories": 850,
+      "protein": 0,
+      "carbs": 220,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607120",
+      "name": "Cherry Seven Up, 20 Oz",
+      "calories": 250,
+      "protein": 0,
+      "carbs": 65,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607123",
+      "name": "Cherry Vanilla Dr Pepper, 2 Liter",
+      "calories": 810,
+      "protein": 0,
+      "carbs": 220,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607122",
+      "name": "Cherry Vanilla Dr Pepper, 20 Oz",
+      "calories": 240,
+      "protein": 0,
+      "carbs": 65,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607243",
+      "name": "Cherry Vanilla Pepsi, 2 Liter",
+      "calories": 740,
+      "protein": 0,
+      "carbs": 200,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607242",
+      "name": "Cherry Vanilla Pepsi, 20 Oz",
+      "calories": 220,
+      "protein": 0,
+      "carbs": 59,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607108",
+      "name": "Coffee, 16 Oz",
+      "calories": 5,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607109",
+      "name": "Coffee, 20 Oz",
+      "calories": 5,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607125",
+      "name": "Coke, 2 Liter",
+      "calories": 820,
+      "protein": 0,
+      "carbs": 222,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607124",
+      "name": "Coke, 20 Oz",
+      "calories": 240,
+      "protein": 0,
+      "carbs": 66,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607129",
+      "name": "Countrytime Strawberry Lemonade, 2 Liter",
+      "calories": 760,
+      "protein": 0,
+      "carbs": 203,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607128",
+      "name": "Countrytime Strawberry Lemonade, 20 Oz",
+      "calories": 230,
+      "protein": 0,
+      "carbs": 60,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607131",
+      "name": "Crush Cherry, 2 Liter",
+      "calories": 980,
+      "protein": 0,
+      "carbs": 264,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607130",
+      "name": "Crush Cherry, 20 Oz",
+      "calories": 290,
+      "protein": 0,
+      "carbs": 78,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607067",
+      "name": "Crush Cream Soda, 2 Liter",
+      "calories": 950,
+      "protein": 0,
+      "carbs": 254,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607065",
+      "name": "Crush Cream Soda, 12 Oz",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 45,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607066",
+      "name": "Crush Cream Soda, 20 Oz",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 75,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607070",
+      "name": "Crush Grape, 2 Liter",
+      "calories": 910,
+      "protein": 0,
+      "carbs": 243,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607068",
+      "name": "Crush Grape, 12 Oz",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 43,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607069",
+      "name": "Crush Grape, 20 Oz",
+      "calories": 270,
+      "protein": 0,
+      "carbs": 72,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607073",
+      "name": "Crush Orange, 1.25 Liter",
+      "calories": 630,
+      "protein": 0,
+      "carbs": 180,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607074",
+      "name": "Crush Orange, 2 Liter",
+      "calories": 1010,
+      "protein": 0,
+      "carbs": 287,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607071",
+      "name": "Crush Orange, 12 Oz",
+      "calories": 180,
+      "protein": 0,
+      "carbs": 51,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607072",
+      "name": "Crush Orange, 20 Oz",
+      "calories": 300,
+      "protein": 0,
+      "carbs": 85,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607133",
+      "name": "Crush Peach, 2 Liter",
+      "calories": 1050,
+      "protein": 0,
+      "carbs": 281,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607132",
+      "name": "Crush Peach, 20 Oz",
+      "calories": 310,
+      "protein": 0,
+      "carbs": 83,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607135",
+      "name": "Crush Pineapple, 2 Liter",
+      "calories": 1080,
+      "protein": 0,
+      "carbs": 291,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607134",
+      "name": "Crush Pineapple, 20 Oz",
+      "calories": 320,
+      "protein": 0,
+      "carbs": 86,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607077",
+      "name": "Crush Strawberry, 2 Liter",
+      "calories": 980,
+      "protein": 0,
+      "carbs": 260,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607075",
+      "name": "Crush Strawberry, 12 Oz",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 46,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607076",
+      "name": "Crush Strawberry, 20 Oz",
+      "calories": 290,
+      "protein": 0,
+      "carbs": 77,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607245",
+      "name": "Crystal Pepsi, 2 Liter",
+      "calories": 850,
+      "protein": 0,
+      "carbs": 233,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607244",
+      "name": "Crystal Pepsi, 20 Oz",
+      "calories": 250,
+      "protein": 0,
+      "carbs": 69,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607139",
+      "name": "Diet Dr Pepper, 2 Liter",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607138",
+      "name": "Diet Dr Pepper, 20 Oz",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607141",
+      "name": "Diet Mist Twst, 1.25 Liter",
+      "calories": 530,
+      "protein": 0,
+      "carbs": 137,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607142",
+      "name": "Diet Mist Twst, 2 Liter",
+      "calories": 900,
+      "protein": 0,
+      "carbs": 234,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607140",
+      "name": "Diet Mist Twst, 20 Oz",
+      "calories": 240,
+      "protein": 0,
+      "carbs": 65,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607051",
+      "name": "Diet Mountain Dew, 2 Liter",
+      "calories": 35,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607049",
+      "name": "Diet Mountain Dew, 12 Oz",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607050",
+      "name": "Diet Mountain Dew, 20 Oz",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607080",
+      "name": "Diet Pepsi, 1.25 Liter",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607081",
+      "name": "Diet Pepsi, 2 Liter",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607078",
+      "name": "Diet Pepsi, 12 Oz",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607079",
+      "name": "Diet Pepsi, 20 Oz",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607201",
+      "name": "Diet Pepsi Max, 20 Oz",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607156",
+      "name": "Diet Seven Up, 2 Liter",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607155",
+      "name": "Diet Seven Up, 20 Oz",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607158",
+      "name": "Diet Wild Cherry Pepsi, 2 Liter",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607157",
+      "name": "Diet Wild Cherry Pepsi, 20 Oz",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607160",
+      "name": "Doc X, 2 Liter",
+      "calories": 850,
+      "protein": 0,
+      "carbs": 225,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607159",
+      "name": "Doc X, 20 Oz",
+      "calories": 250,
+      "protein": 0,
+      "carbs": 67,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607054",
+      "name": "Dr Pepper, 2 Liter",
+      "calories": 850,
+      "protein": 0,
+      "carbs": 228,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607052",
+      "name": "Dr Pepper, 12 Oz",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 41,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607053",
+      "name": "Dr Pepper, 20 Oz",
+      "calories": 250,
+      "protein": 0,
+      "carbs": 68,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607162",
+      "name": "Dr Pepper 10, 2 Liter",
+      "calories": 70,
+      "protein": 0,
+      "carbs": 17,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607161",
+      "name": "Dr Pepper 10, 20 Oz",
+      "calories": 20,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607164",
+      "name": "Dr Wham, 2 Liter",
+      "calories": 850,
+      "protein": 0,
+      "carbs": 220,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607163",
+      "name": "Dr Wham, 20 Oz",
+      "calories": 250,
+      "protein": 0,
+      "carbs": 65,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607165",
+      "name": "Fanta Orange, 2 Liter",
+      "calories": 930,
+      "protein": 0,
+      "carbs": 254,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607202",
+      "name": "Gatorade Cool Blue, 20 Oz",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 39,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607204",
+      "name": "Gatorade Fierce Blue Cherry, 20 Oz",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 36,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607203",
+      "name": "Gatorade Fierce Grape, 20 Oz",
+      "calories": 500,
+      "protein": 0,
+      "carbs": 125,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607205",
+      "name": "Gatorade Fierce Green Apple, 20 Oz",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 36,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607206",
+      "name": "Gatorade Fierce Melon, 20 Oz",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 35,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607207",
+      "name": "Gatorade Fruit Punch, 20 Oz",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 36,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607208",
+      "name": "Gatorade Fruit Punch, 64 Oz",
+      "calories": 450,
+      "protein": 0,
+      "carbs": 115,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607209",
+      "name": "Gatorade G2 Blueberry Pomegranate, 20 Oz",
+      "calories": 50,
+      "protein": 0,
+      "carbs": 12,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607210",
+      "name": "Gatorade G2 Fruit Punch, 20 Oz",
+      "calories": 45,
+      "protein": 0,
+      "carbs": 11,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607211",
+      "name": "Gatorade G2 Grape, 20 Oz",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 39,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607212",
+      "name": "Gatorade G2 Orange, 20 Oz",
+      "calories": 50,
+      "protein": 0,
+      "carbs": 12,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607213",
+      "name": "Gatorade Glacial Cherry, 20 Oz",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 35,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607214",
+      "name": "Gatorade Glacial Freeze, 20 Oz",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 39,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607215",
+      "name": "Gatorade Lemon Lime, 20 Oz",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 35,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607216",
+      "name": "Gatorade Lime Cucumber, 20 Oz",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 34,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607217",
+      "name": "Gatorade Mango Xtreme, 20 Oz",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 36,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607218",
+      "name": "Gatorade Orange, 20 Oz",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 36,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607219",
+      "name": "Gatorade Orange, 64 Oz",
+      "calories": 450,
+      "protein": 0,
+      "carbs": 115,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607220",
+      "name": "Gatorade Raspberry, 20 Oz",
+      "calories": 50,
+      "protein": 0,
+      "carbs": 12,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607221",
+      "name": "Gatorade Riptide Rush, 20 Oz",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 34,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607222",
+      "name": "Gatorade Tropical Mango, 20 Oz",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 36,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607167",
+      "name": "Grapico, 2 Liter",
+      "calories": 790,
+      "protein": 0,
+      "carbs": 197,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607166",
+      "name": "Grapico, 20 Oz",
+      "calories": 230,
+      "protein": 0,
+      "carbs": 58,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607283",
+      "name": "Hawaiian Fruit Punch, 12 Oz",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 50,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607083",
+      "name": "Hawaiian Punch, 2 Liter",
+      "calories": 1100,
+      "protein": 0,
+      "carbs": 279,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607082",
+      "name": "Hawaiian Punch, 20 Oz",
+      "calories": 330,
+      "protein": 0,
+      "carbs": 83,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607223",
+      "name": "Lipton Green Tea Citrus, 20 Oz",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 33,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607224",
+      "name": "Lipton Green Tea Honey, 20 Oz",
+      "calories": 180,
+      "protein": 0,
+      "carbs": 48,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607225",
+      "name": "Lipton Green Tea Passionfruit Mango, 20 Oz",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 33,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607169",
+      "name": "Lipton Half & Half, 2 Liter",
+      "calories": 410,
+      "protein": 0,
+      "carbs": 105,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607168",
+      "name": "Lipton Half & Half, 20 Oz",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 31,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607226",
+      "name": "Lipton Ice Tea Lemon, 20 Oz",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 65,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607227",
+      "name": "Lipton Ice Tea Pomegranate Blueberry, 20 Oz",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 33,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607250",
+      "name": "Lipton Pureleaf Diet Lemon Tea, 18.5 Oz",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607252",
+      "name": "Lipton Pureleaf Extrasweet Tea, 18.5 Oz",
+      "calories": 250,
+      "protein": 0,
+      "carbs": 65,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607253",
+      "name": "Lipton Pureleaf Green Tea, 18.5 Oz",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 25,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607249",
+      "name": "Lipton Pure Leaf Half And Half, 18.5 Oz",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 42,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607254",
+      "name": "Lipton Pureleaf Lemon, 18.5 Oz",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 41,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607255",
+      "name": "Lipton Pureleaf Nts Peach Tea, 18.5 Oz",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 26,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607256",
+      "name": "Lipton Pureleaf Peach Tea, 18.5 Oz",
+      "calories": 110,
+      "protein": 0,
+      "carbs": 29,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607257",
+      "name": "Lipton Pureleaf Raspberry Tea, 18.5 Oz",
+      "calories": 180,
+      "protein": 0,
+      "carbs": 46,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607258",
+      "name": "Lipton Pureleaf Sweet Tea, 18.5 Oz",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 42,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607084",
+      "name": "Lipton Sparkling Iced Tea Peach, 12 Oz",
+      "calories": 70,
+      "protein": 0,
+      "carbs": 18,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607085",
+      "name": "Lipton Sparkling Iced Tea Peach, 20 Oz",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 30,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607274",
+      "name": "Lipton Sparkling Tea Raspberry, 12 Oz",
+      "calories": 70,
+      "protein": 0,
+      "carbs": 18,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607088",
+      "name": "Manzanita Sol, 2 Liter",
+      "calories": 890,
+      "protein": 0,
+      "carbs": 235,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607086",
+      "name": "Manzanita Sol, 12 Oz",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 42,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607087",
+      "name": "Manzanita Sol, 20 Oz",
+      "calories": 260,
+      "protein": 0,
+      "carbs": 70,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607171",
+      "name": "Mist Twst, 2 Liter",
+      "calories": 810,
+      "protein": 0,
+      "carbs": 220,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607170",
+      "name": "Mist Twst, 20 Oz",
+      "calories": 240,
+      "protein": 0,
+      "carbs": 65,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607247",
+      "name": "Montellier Sparkling Water, 17 Oz",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607047",
+      "name": "Mountain Dew, 1.25 Liter",
+      "calories": 600,
+      "protein": 0,
+      "carbs": 162,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607048",
+      "name": "Mountain Dew, 2 Liter",
+      "calories": 930,
+      "protein": 0,
+      "carbs": 262,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607045",
+      "name": "Mountain Dew, 12 Oz",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 47,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607046",
+      "name": "Mountain Dew, 20 Oz",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 78,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607143",
+      "name": "Mountain Dew Baja Blast, 20 Oz",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 73,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607145",
+      "name": "Mountain Dew Code Red, 2 Liter",
+      "calories": 950,
+      "protein": 0,
+      "carbs": 260,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607144",
+      "name": "Mountain Dew Code Red, 20 Oz",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 78,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607172",
+      "name": "Mountain Dew Game Fuel, 2 Liter",
+      "calories": 570,
+      "protein": 0,
+      "carbs": 156,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607147",
+      "name": "Mountain Dew Game Fuel Citrus Cherry, 2 Liter",
+      "calories": 570,
+      "protein": 0,
+      "carbs": 156,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607146",
+      "name": "Mountain Dew Game Fuel Citrus Cherry, 20 Oz",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 46,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607262",
+      "name": "Mountain Dew Kickstart Black Cherry, 16 Oz",
+      "calories": 80,
+      "protein": 0,
+      "carbs": 20,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607275",
+      "name": "Mountain Dew Kickstart Blood Orange, 12 Oz",
+      "calories": 60,
+      "protein": 0,
+      "carbs": 15,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607276",
+      "name": "Mountain Dew Kickstart Blueberry Pomegranate, 12 Oz",
+      "calories": 60,
+      "protein": 0,
+      "carbs": 15,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607277",
+      "name": "Mountain Dew Kickstart Energizing Watermelon, 12 Oz",
+      "calories": 60,
+      "protein": 0,
+      "carbs": 16,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607263",
+      "name": "Mountain Dew Kickstart Fruit Punch, 16 Oz",
+      "calories": 80,
+      "protein": 0,
+      "carbs": 20,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607264",
+      "name": "Mountain Dew Kickstart Kiwi Strawberry, 12 Oz",
+      "calories": 60,
+      "protein": 0,
+      "carbs": 15,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607265",
+      "name": "Mountain Dew Kickstart Kiwi Strawberry, 16 Oz",
+      "calories": 80,
+      "protein": 0,
+      "carbs": 20,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607266",
+      "name": "Mountain Dew Kickstart Lime, 16 Oz",
+      "calories": 80,
+      "protein": 0,
+      "carbs": 20,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607267",
+      "name": "Mountain Dew Kickstart Orange Citrus, 16 Oz",
+      "calories": 80,
+      "protein": 0,
+      "carbs": 21,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607278",
+      "name": "Mountain Dew Kickstart Pineapple Orange, 12 Oz",
+      "calories": 60,
+      "protein": 0,
+      "carbs": 15,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607148",
+      "name": "Mountain Dew Livewire, 20 Oz",
+      "calories": 290,
+      "protein": 0,
+      "carbs": 77,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607150",
+      "name": "Mountain Dew Voltage, 2 Liter",
+      "calories": 980,
+      "protein": 0,
+      "carbs": 257,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607149",
+      "name": "Mountain Dew Voltage, 20 Oz",
+      "calories": 290,
+      "protein": 0,
+      "carbs": 76,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607279",
+      "name": "Mtn Dew Kickstart Pineapple Orange Mango, 12 Oz",
+      "calories": 60,
+      "protein": 0,
+      "carbs": 15,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607228",
+      "name": "Mtn Dew Throwback, 20 Oz",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 73,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607152",
+      "name": "Mug Cream Soda, 2 Liter",
+      "calories": 1010,
+      "protein": 0,
+      "carbs": 271,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607151",
+      "name": "Mug Cream Soda, 20 Oz",
+      "calories": 300,
+      "protein": 0,
+      "carbs": 80,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607091",
+      "name": "Mug Root Beer, 2 Liter",
+      "calories": 850,
+      "protein": 0,
+      "carbs": 245,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607089",
+      "name": "Mug Root Beer, 12 Oz",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 44,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607090",
+      "name": "Mug Root Beer, 20 Oz",
+      "calories": 250,
+      "protein": 0,
+      "carbs": 73,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607043",
+      "name": "Pepsi, 1.25 Liter",
+      "calories": 530,
+      "protein": 0,
+      "carbs": 146,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607044",
+      "name": "Pepsi, 2 Liter",
+      "calories": 900,
+      "protein": 0,
+      "carbs": 246,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607041",
+      "name": "Pepsi, 12 Oz",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 42,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607042",
+      "name": "Pepsi, 20 Oz",
+      "calories": 250,
+      "protein": 0,
+      "carbs": 69,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607280",
+      "name": "Pepsi Max, 12 Oz",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607281",
+      "name": "Pepsi Mexico, 12 Oz",
+      "calories": 220,
+      "protein": 0,
+      "carbs": 58,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607094",
+      "name": "Pepsi Next, 2 Liter",
+      "calories": 560,
+      "protein": 0,
+      "carbs": 152,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607092",
+      "name": "Pepsi Next, 12 Oz",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 27,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607093",
+      "name": "Pepsi Next, 20 Oz",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 45,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607154",
+      "name": "Pepsi Real Sugar, 2 Liter",
+      "calories": 850,
+      "protein": 0,
+      "carbs": 223,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607153",
+      "name": "Pepsi Real Sugar, 20 Oz",
+      "calories": 250,
+      "protein": 0,
+      "carbs": 66,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607173",
+      "name": "Pepsi Throwback, 2 Liter",
+      "calories": 880,
+      "protein": 0,
+      "carbs": 227,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607175",
+      "name": "Pepsi Zero Sugar, 2 Liter",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607174",
+      "name": "Pepsi Zero Sugar, 20 Oz",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607229",
+      "name": "Pibb Xtra, 20 Oz",
+      "calories": 250,
+      "protein": 0,
+      "carbs": 65,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607230",
+      "name": "Powerade Mountain Blast, 20 Oz",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 35,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607268",
+      "name": "Rockstar, 16 Oz",
+      "calories": 280,
+      "protein": 2,
+      "carbs": 61,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607269",
+      "name": "Rockstar Fruit Punch, 16 Oz",
+      "calories": 260,
+      "protein": 0,
+      "carbs": 62,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607270",
+      "name": "Rockstar Lemonade, 16 Oz",
+      "calories": 20,
+      "protein": 0,
+      "carbs": 6,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607271",
+      "name": "Rockstar Recovery, 16 Oz",
+      "calories": 20,
+      "protein": 0,
+      "carbs": 6,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607272",
+      "name": "Rockstar Sugar Free, 16 Oz",
+      "calories": 20,
+      "protein": 1,
+      "carbs": 3,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607273",
+      "name": "Rockstar Xtra, 16 Oz",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 64,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607097",
+      "name": "Schweppes Ginger Ale, 1.25 Liter",
+      "calories": 440,
+      "protein": 0,
+      "carbs": 116,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607098",
+      "name": "Schweppes Ginger Ale, 2 Liter",
+      "calories": 680,
+      "protein": 0,
+      "carbs": 186,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607095",
+      "name": "Schweppes Ginger Ale, 12 Oz",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 33,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607096",
+      "name": "Schweppes Ginger Ale, 20 Oz",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 55,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607177",
+      "name": "Schweppes Ginger Ale Raspberry, 2 Liter",
+      "calories": 790,
+      "protein": 0,
+      "carbs": 214,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607176",
+      "name": "Schweppes Ginger Ale Raspberry, 20 Oz",
+      "calories": 230,
+      "protein": 0,
+      "carbs": 63,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607101",
+      "name": "Seven Up, 2 Liter",
+      "calories": 850,
+      "protein": 0,
+      "carbs": 220,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607099",
+      "name": "Seven Up, 12 Oz",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 39,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607100",
+      "name": "Seven Up, 20 Oz",
+      "calories": 250,
+      "protein": 0,
+      "carbs": 65,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607231",
+      "name": "Sobe Blackberry Blueberry, 20 Oz",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 8,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607232",
+      "name": "Sobe Energize Power Fruit Punch, 20 Oz",
+      "calories": 250,
+      "protein": 0,
+      "carbs": 65,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607233",
+      "name": "Sobe Energy Citrus, 20 Oz",
+      "calories": 250,
+      "protein": 0,
+      "carbs": 64,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607234",
+      "name": "Sobe Fuji Apple, 20 Oz",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 8,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607235",
+      "name": "Sobe Pomegranate Cherry, 20 Oz",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 26,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607236",
+      "name": "Sobe Strawberry Daquiri, 20 Oz",
+      "calories": 250,
+      "protein": 0,
+      "carbs": 63,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607237",
+      "name": "Sobe Strawberry Dragonfruit, 20 Oz",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 8,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607238",
+      "name": "Sobe Strawberry Kiwi, 20 Oz",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 26,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607239",
+      "name": "Sobe Yumberry Pomegranate, 20 Oz",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 8,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607179",
+      "name": "Sprite, 2 Liter",
+      "calories": 890,
+      "protein": 1,
+      "carbs": 227,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607178",
+      "name": "Sprite, 20 Oz",
+      "calories": 260,
+      "protein": 0,
+      "carbs": 67,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607248",
+      "name": "Starbucks Doubleshot Energy Vanilla, 15 Oz",
+      "calories": 210,
+      "protein": 10,
+      "carbs": 34,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607282",
+      "name": "Starbucks Refreshers Strawberry Lemonade, 12 Oz",
+      "calories": 90,
+      "protein": 0,
+      "carbs": 27,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607055",
+      "name": "Starry, 12 Oz",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 39,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607056",
+      "name": "Starry, 20 Oz",
+      "calories": 240,
+      "protein": 0,
+      "carbs": 65,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607057",
+      "name": "Starry Zero Sugar, 12 Oz",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607058",
+      "name": "Starry Zero Sugar, 20 Oz",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607181",
+      "name": "Sunkist Grape, 2 Liter",
+      "calories": 960,
+      "protein": 0,
+      "carbs": 259,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607180",
+      "name": "Sunkist Grape, 20 Oz",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 77,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607183",
+      "name": "Sunkist Orange, 2 Liter",
+      "calories": 1100,
+      "protein": 0,
+      "carbs": 296,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607182",
+      "name": "Sunkist Orange, 20 Oz",
+      "calories": 330,
+      "protein": 0,
+      "carbs": 88,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607185",
+      "name": "Sunkist Peach, 2 Liter",
+      "calories": 960,
+      "protein": 0,
+      "carbs": 265,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607184",
+      "name": "Sunkist Peach, 20 Oz",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 78,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607187",
+      "name": "Sunkist Strawberry, 2 Liter",
+      "calories": 960,
+      "protein": 0,
+      "carbs": 259,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607186",
+      "name": "Sunkist Strawberry, 20 Oz",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 77,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607189",
+      "name": "Tropicana Twst Orange, 2 Liter",
+      "calories": 1100,
+      "protein": 0,
+      "carbs": 279,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607188",
+      "name": "Tropicana Twst Orange, 20 Oz",
+      "calories": 330,
+      "protein": 0,
+      "carbs": 83,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607240",
+      "name": "Vanilla Pepsi, 20 Oz",
+      "calories": 250,
+      "protein": 0,
+      "carbs": 66,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607241",
+      "name": "Vanilla Pepsi Real Sugar, 20 Oz",
+      "calories": 250,
+      "protein": 0,
+      "carbs": 66,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607104",
+      "name": "Welch's Grape Soda, 2 Liter",
+      "calories": 1100,
+      "protein": 0,
+      "carbs": 287,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607102",
+      "name": "Welch's Grape Soda, 12 Oz",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 51,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607103",
+      "name": "Welch's Grape Soda, 20 Oz",
+      "calories": 330,
+      "protein": 0,
+      "carbs": 85,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607107",
+      "name": "Wild Cherry Pepsi, 2 Liter",
+      "calories": 850,
+      "protein": 0,
+      "carbs": 237,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607105",
+      "name": "Wild Cherry Pepsi, 12 Oz",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 42,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607106",
+      "name": "Wild Cherry Pepsi, 20 Oz",
+      "calories": 250,
+      "protein": 0,
+      "carbs": 70,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607191",
+      "name": "Wild Cherry Pepsi Real Sugar, 2 Liter",
+      "calories": 850,
+      "protein": 0,
+      "carbs": 223,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607190",
+      "name": "Wild Cherry Pepsi Real Sugar, 20 Oz",
+      "calories": 250,
+      "protein": 0,
+      "carbs": 66,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-607382",
+      "name": "Alfredo Sauce for Gluten Free Crust",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607380",
+      "name": "Alfredo Sauce for Original Crust, Extra Large",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607379",
+      "name": "Alfredo Sauce for Original Crust, Large",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607378",
+      "name": "Alfredo Sauce for Original Crust, Medium",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607376",
+      "name": "Alfredo Sauce for Original Crust, Pizza for One",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607377",
+      "name": "Alfredo Sauce for Original Crust, Small",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607381",
+      "name": "Alfredo Sauce for Thin Crust",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607389",
+      "name": "Anchovies for Gluten Free Crust",
+      "calories": 10,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607387",
+      "name": "Anchovies for Original Crust, Extra Large",
+      "calories": 10,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607386",
+      "name": "Anchovies for Original Crust, Large",
+      "calories": 10,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607385",
+      "name": "Anchovies for Original Crust, Medium",
+      "calories": 10,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607383",
+      "name": "Anchovies for Original Crust, Pizza for One",
+      "calories": 10,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607384",
+      "name": "Anchovies for Original Crust, Small",
+      "calories": 10,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607388",
+      "name": "Anchovies for Thin Crust",
+      "calories": 10,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607396",
+      "name": "Bacon for Gluten Free Crust",
+      "calories": 35,
+      "protein": 2,
+      "carbs": 1,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607394",
+      "name": "Bacon for Original Crust, Extra Large",
+      "calories": 50,
+      "protein": 3,
+      "carbs": 1,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607393",
+      "name": "Bacon for Original Crust, Large",
+      "calories": 50,
+      "protein": 3,
+      "carbs": 1,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607392",
+      "name": "Bacon for Original Crust, Medium",
+      "calories": 35,
+      "protein": 2,
+      "carbs": 1,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607390",
+      "name": "Bacon for Original Crust, Pizza for One",
+      "calories": 35,
+      "protein": 2,
+      "carbs": 1,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607391",
+      "name": "Bacon for Original Crust, Small",
+      "calories": 35,
+      "protein": 2,
+      "carbs": 1,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607395",
+      "name": "Bacon for Thin Crust",
+      "calories": 50,
+      "protein": 3,
+      "carbs": 1,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607403",
+      "name": "Banana Peppers for Gluten Free Crust",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607401",
+      "name": "Banana Peppers for Original Crust, Extra Large",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607400",
+      "name": "Banana Peppers for Original Crust, Large",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607399",
+      "name": "Banana Peppers for Original Crust, Medium",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607397",
+      "name": "Banana Peppers for Original Crust, Pizza for One",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607398",
+      "name": "Banana Peppers for Original Crust, Small",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607402",
+      "name": "Banana Peppers for Thin Crust",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607332",
+      "name": "BBQ Sauce-Extra for Gluten Free Crust",
+      "calories": 35,
+      "protein": 0,
+      "carbs": 8,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607330",
+      "name": "BBQ Sauce-Extra for Original Crust, Extra Large",
+      "calories": 45,
+      "protein": 0,
+      "carbs": 11,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607329",
+      "name": "BBQ Sauce-Extra for Original Crust, Large",
+      "calories": 45,
+      "protein": 0,
+      "carbs": 11,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607328",
+      "name": "BBQ Sauce-Extra for Original Crust, Medium",
+      "calories": 35,
+      "protein": 0,
+      "carbs": 8,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607326",
+      "name": "BBQ Sauce-Extra for Original Crust, Pizza for One",
+      "calories": 30,
+      "protein": 0,
+      "carbs": 8,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607327",
+      "name": "BBQ Sauce-Extra for Original Crust, Small",
+      "calories": 35,
+      "protein": 0,
+      "carbs": 8,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607331",
+      "name": "BBQ Sauce-Extra for Thin Crust",
+      "calories": 45,
+      "protein": 0,
+      "carbs": 11,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607323",
+      "name": "BBQ Sauce-Light for Original Crust, Extra Large",
+      "calories": 20,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607322",
+      "name": "BBQ Sauce-Light for Original Crust, Large",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607321",
+      "name": "BBQ Sauce-Light for Original Crust, Medium",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607319",
+      "name": "BBQ Sauce-Light for Original Crust, Pizza for One",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607324",
+      "name": "BBQ Sauce-Light for Thin Crust",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607318",
+      "name": "BBQ Sauce for Gluten Free Crust",
+      "calories": 25,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607316",
+      "name": "BBQ Sauce for Original Crust, Extra Large",
+      "calories": 35,
+      "protein": 0,
+      "carbs": 9,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607315",
+      "name": "BBQ Sauce for Original Crust, Large",
+      "calories": 35,
+      "protein": 0,
+      "carbs": 8,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607314",
+      "name": "BBQ Sauce for Original Crust, Medium",
+      "calories": 25,
+      "protein": 0,
+      "carbs": 6,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607312",
+      "name": "BBQ Sauce for Original Crust, Pizza for One",
+      "calories": 25,
+      "protein": 0,
+      "carbs": 6,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607313",
+      "name": "BBQ Sauce for Original Crust, Small",
+      "calories": 20,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607317",
+      "name": "BBQ Sauce for Thin Crust",
+      "calories": 35,
+      "protein": 0,
+      "carbs": 8,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607410",
+      "name": "Beef for Gluten Free Crust",
+      "calories": 30,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607408",
+      "name": "Beef for Original Crust, Extra Large",
+      "calories": 40,
+      "protein": 2,
+      "carbs": 0,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607407",
+      "name": "Beef for Original Crust, Large",
+      "calories": 40,
+      "protein": 2,
+      "carbs": 0,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607406",
+      "name": "Beef for Original Crust, Medium",
+      "calories": 30,
+      "protein": 2,
+      "carbs": 0,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607404",
+      "name": "Beef for Original Crust, Pizza for One",
+      "calories": 25,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607405",
+      "name": "Beef for Original Crust, Small",
+      "calories": 30,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607409",
+      "name": "Beef for Thin Crust",
+      "calories": 40,
+      "protein": 2,
+      "carbs": 0,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607417",
+      "name": "Black Olives for Gluten Free Crust",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607415",
+      "name": "Black Olives for Original Crust, Extra Large",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607414",
+      "name": "Black Olives for Original Crust, Large",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607413",
+      "name": "Black Olives for Original Crust, Medium",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607411",
+      "name": "Black Olives for Original Crust, Pizza for One",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607412",
+      "name": "Black Olives for Original Crust, Small",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607416",
+      "name": "Black Olives for Thin Crust",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607424",
+      "name": "Canadian Bacon for Gluten Free Crust",
+      "calories": 10,
+      "protein": 2,
+      "carbs": 0,
+      "fat": 0.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607422",
+      "name": "Canadian Bacon for Original Crust, Extra Large",
+      "calories": 20,
+      "protein": 2,
+      "carbs": 0,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607421",
+      "name": "Canadian Bacon for Original Crust, Large",
+      "calories": 20,
+      "protein": 2,
+      "carbs": 0,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607420",
+      "name": "Canadian Bacon for Original Crust, Medium",
+      "calories": 15,
+      "protein": 2,
+      "carbs": 0,
+      "fat": 0.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607418",
+      "name": "Canadian Bacon for Original Crust, Pizza for One",
+      "calories": 10,
+      "protein": 2,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607419",
+      "name": "Canadian Bacon for Original Crust, Small",
+      "calories": 10,
+      "protein": 2,
+      "carbs": 0,
+      "fat": 0.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607423",
+      "name": "Canadian Bacon for Thin Crust",
+      "calories": 20,
+      "protein": 2,
+      "carbs": 0,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607297",
+      "name": "Cheese for Gluten Free Crust",
+      "calories": 45,
+      "protein": 3,
+      "carbs": 1,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607295",
+      "name": "Cheese for Original Crust, Extra Large",
+      "calories": 70,
+      "protein": 4,
+      "carbs": 1,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607294",
+      "name": "Cheese for Original Crust, Large",
+      "calories": 70,
+      "protein": 4,
+      "carbs": 1,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607293",
+      "name": "Cheese for Original Crust, Medium",
+      "calories": 50,
+      "protein": 3,
+      "carbs": 1,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607291",
+      "name": "Cheese for Original Crust, Pizza for One",
+      "calories": 50,
+      "protein": 3,
+      "carbs": 1,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607292",
+      "name": "Cheese for Original Crust, Small",
+      "calories": 45,
+      "protein": 3,
+      "carbs": 1,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607296",
+      "name": "Cheese for Thin Crust",
+      "calories": 70,
+      "protein": 4,
+      "carbs": 1,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607333",
+      "name": "Cheesy Burger Sauce for Original Crust, Large",
+      "calories": 60,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607431",
+      "name": "Chicken for Gluten Free Crust",
+      "calories": 15,
+      "protein": 3,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607429",
+      "name": "Chicken for Original Crust, Extra Large",
+      "calories": 20,
+      "protein": 5,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607428",
+      "name": "Chicken for Original Crust, Large",
+      "calories": 20,
+      "protein": 5,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607427",
+      "name": "Chicken for Original Crust, Medium",
+      "calories": 15,
+      "protein": 4,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607425",
+      "name": "Chicken for Original Crust, Pizza for One",
+      "calories": 20,
+      "protein": 4,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607426",
+      "name": "Chicken for Original Crust, Small",
+      "calories": 15,
+      "protein": 3,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607430",
+      "name": "Chicken for Thin Crust",
+      "calories": 20,
+      "protein": 5,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607311",
+      "name": "Extra Cheese for Gluten Free Crust",
+      "calories": 60,
+      "protein": 4,
+      "carbs": 1,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607309",
+      "name": "Extra Cheese for Original Crust, Extra Large",
+      "calories": 80,
+      "protein": 5,
+      "carbs": 2,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607308",
+      "name": "Extra Cheese for Original Crust, Large",
+      "calories": 90,
+      "protein": 5,
+      "carbs": 2,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607307",
+      "name": "Extra Cheese for Original Crust, Medium",
+      "calories": 70,
+      "protein": 4,
+      "carbs": 1,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607305",
+      "name": "Extra Cheese for Original Crust, Pizza for One",
+      "calories": 70,
+      "protein": 4,
+      "carbs": 1,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607306",
+      "name": "Extra Cheese for Original Crust, Small",
+      "calories": 60,
+      "protein": 4,
+      "carbs": 1,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607310",
+      "name": "Extra Cheese for Thin Crust",
+      "calories": 90,
+      "protein": 5,
+      "carbs": 2,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607290",
+      "name": "Gluten Free Crust (Crust Only)",
+      "calories": 90,
+      "protein": 2,
+      "carbs": 17,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607445",
+      "name": "Green Olives for Gluten Free Crust",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607443",
+      "name": "Green Olives for Original Crust, Extra Large",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607442",
+      "name": "Green Olives for Original Crust, Large",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607441",
+      "name": "Green Olives for Original Crust, Medium",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607439",
+      "name": "Green Olives for Original Crust, Pizza for One",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607440",
+      "name": "Green Olives for Original Crust, Small",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607444",
+      "name": "Green Olives for Thin Crust",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607459",
+      "name": "Italian Sausage for Gluten Free Crust",
+      "calories": 35,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607457",
+      "name": "Italian Sausage for Original Crust, Extra Large",
+      "calories": 50,
+      "protein": 2,
+      "carbs": 0,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607456",
+      "name": "Italian Sausage for Original Crust, Large",
+      "calories": 50,
+      "protein": 2,
+      "carbs": 0,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607455",
+      "name": "Italian Sausage for Original Crust, Medium",
+      "calories": 40,
+      "protein": 2,
+      "carbs": 0,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607453",
+      "name": "Italian Sausage for Original Crust, Pizza for One",
+      "calories": 40,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607454",
+      "name": "Italian Sausage for Original Crust, Small",
+      "calories": 35,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607458",
+      "name": "Italian Sausage for Thin Crust",
+      "calories": 50,
+      "protein": 2,
+      "carbs": 0,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607466",
+      "name": "Jalapeno for Gluten Free Crust",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607464",
+      "name": "Jalapeno for Original Crust, Extra Large",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607463",
+      "name": "Jalapeno for Original Crust, Large",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607462",
+      "name": "Jalapeno for Original Crust, Medium",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607460",
+      "name": "Jalapeno for Original Crust, Pizza for One",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607461",
+      "name": "Jalapeno for Original Crust, Small",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607465",
+      "name": "Jalapeno for Thin Crust",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607304",
+      "name": "Light Cheese for Gluten Free Crust",
+      "calories": 35,
+      "protein": 2,
+      "carbs": 1,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607302",
+      "name": "Light Cheese for Original Crust, Extra Large",
+      "calories": 50,
+      "protein": 3,
+      "carbs": 1,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607301",
+      "name": "Light Cheese for Original Crust, Large",
+      "calories": 50,
+      "protein": 3,
+      "carbs": 1,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607300",
+      "name": "Light Cheese for Original Crust, Medium",
+      "calories": 35,
+      "protein": 2,
+      "carbs": 1,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607298",
+      "name": "Light Cheese for Original Crust, Pizza for One",
+      "calories": 40,
+      "protein": 2,
+      "carbs": 1,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607299",
+      "name": "Light Cheese for Original Crust, Small",
+      "calories": 35,
+      "protein": 2,
+      "carbs": 1,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607303",
+      "name": "Light Cheese for Thin Crust",
+      "calories": 50,
+      "protein": 3,
+      "carbs": 1,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607473",
+      "name": "Meatball for Gluten Free Crust",
+      "calories": 25,
+      "protein": 2,
+      "carbs": 0,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607471",
+      "name": "Meatball for Original Crust, Extra Large",
+      "calories": 40,
+      "protein": 3,
+      "carbs": 1,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607470",
+      "name": "Meatball for Original Crust, Large",
+      "calories": 40,
+      "protein": 2,
+      "carbs": 1,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607469",
+      "name": "Meatball for Original Crust, Medium",
+      "calories": 25,
+      "protein": 2,
+      "carbs": 0,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607467",
+      "name": "Meatball for Original Crust, Pizza for One",
+      "calories": 20,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607468",
+      "name": "Meatball for Original Crust, Small",
+      "calories": 25,
+      "protein": 2,
+      "carbs": 0,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607472",
+      "name": "Meatball for Thin Crust",
+      "calories": 40,
+      "protein": 2,
+      "carbs": 1,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607478",
+      "name": "Mushroom for Original Crust, Extra Large",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607477",
+      "name": "Mushroom for Original Crust, Large",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607479",
+      "name": "Mushroom for Thin Crust",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607487",
+      "name": "Onion for Gluten Free Crust",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607485",
+      "name": "Onion for Original Crust, Extra Large",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607484",
+      "name": "Onion for Original Crust, Large",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607483",
+      "name": "Onion for Original Crust, Medium",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607481",
+      "name": "Onion for Original Crust, Pizza for One",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607482",
+      "name": "Onion for Original Crust, Small",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607486",
+      "name": "Onion for Thin Crust",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607288",
+      "name": "Original Crust, Extra Large (Crust Only)",
+      "calories": 200,
+      "protein": 6,
+      "carbs": 36,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607287",
+      "name": "Original Crust, Large (Crust Only)",
+      "calories": 190,
+      "protein": 5,
+      "carbs": 34,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607286",
+      "name": "Original Crust, Medium (Crust Only)",
+      "calories": 130,
+      "protein": 4,
+      "carbs": 24,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607284",
+      "name": "Original Crust, Pizza for One (Crust Only)",
+      "calories": 120,
+      "protein": 3,
+      "carbs": 23,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607285",
+      "name": "Original Crust, Small (Crust Only)",
+      "calories": 130,
+      "protein": 4,
+      "carbs": 23,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607354",
+      "name": "Original Sauce-Extra for Gluten Free Crust",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607352",
+      "name": "Original Sauce-Extra for Original Crust, Extra Large",
+      "calories": 20,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 0.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607351",
+      "name": "Original Sauce-Extra for Original Crust, Large",
+      "calories": 20,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 0.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607350",
+      "name": "Original Sauce-Extra for Original Crust, Medium",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607348",
+      "name": "Original Sauce-Extra for Original Crust, Pizza for One",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607349",
+      "name": "Original Sauce-Extra for Original Crust, Small",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607353",
+      "name": "Original Sauce-Extra for Thin Crust",
+      "calories": 20,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 0.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607347",
+      "name": "Original Sauce-Light for Gluten Free Crust",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607345",
+      "name": "Original Sauce-Light for Original Crust, Extra Large",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607344",
+      "name": "Original Sauce-Light for Original Crust, Large",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607343",
+      "name": "Original Sauce-Light for Original Crust, Medium",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607341",
+      "name": "Original Sauce-Light for Original Crust, Pizza for One",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607342",
+      "name": "Original Sauce-Light for Original Crust, Small",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607346",
+      "name": "Original Sauce-Light for Thin Crust",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607340",
+      "name": "Original Sauce for Gluten Free Crust",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607338",
+      "name": "Original Sauce for Original Crust, Extra Large",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607337",
+      "name": "Original Sauce for Original Crust, Large",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607336",
+      "name": "Original Sauce for Original Crust, Medium",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607334",
+      "name": "Original Sauce for Original Crust, Pizza for One",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607335",
+      "name": "Original Sauce for Original Crust, Small",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607339",
+      "name": "Original Sauce for Thin Crust",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607494",
+      "name": "Parmesan Romano for Gluten Free Crust",
+      "calories": 15,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607492",
+      "name": "Parmesan Romano for Original Crust, Extra Large",
+      "calories": 20,
+      "protein": 2,
+      "carbs": 0,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607491",
+      "name": "Parmesan Romano for Original Crust, Large",
+      "calories": 20,
+      "protein": 2,
+      "carbs": 0,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607490",
+      "name": "Parmesan Romano for Original Crust, Medium",
+      "calories": 15,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607488",
+      "name": "Parmesan Romano for Original Crust, Pizza for One",
+      "calories": 15,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607489",
+      "name": "Parmesan Romano for Original Crust, Small",
+      "calories": 15,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607493",
+      "name": "Parmesan Romano for Thin Crust",
+      "calories": 20,
+      "protein": 2,
+      "carbs": 0,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607501",
+      "name": "Pepperoni for Gluten Free Crust",
+      "calories": 30,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607499",
+      "name": "Pepperoni for Original Crust, Extra Large",
+      "calories": 50,
+      "protein": 2,
+      "carbs": 0,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607498",
+      "name": "Pepperoni for Original Crust, Large",
+      "calories": 50,
+      "protein": 2,
+      "carbs": 0,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607497",
+      "name": "Pepperoni for Original Crust, Medium",
+      "calories": 35,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607495",
+      "name": "Pepperoni for Original Crust, Pizza for One",
+      "calories": 40,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607496",
+      "name": "Pepperoni for Original Crust, Small",
+      "calories": 30,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607500",
+      "name": "Pepperoni for Thin Crust",
+      "calories": 50,
+      "protein": 2,
+      "carbs": 0,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607508",
+      "name": "Pineapple for Gluten Free Crust",
+      "calories": 5,
+      "protein": 1,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607506",
+      "name": "Pineapple for Original Crust, Extra Large",
+      "calories": 10,
+      "protein": 2,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607505",
+      "name": "Pineapple for Original Crust, Large",
+      "calories": 10,
+      "protein": 2,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607504",
+      "name": "Pineapple for Original Crust, Medium",
+      "calories": 5,
+      "protein": 1,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607502",
+      "name": "Pineapple for Original Crust, Pizza for One",
+      "calories": 5,
+      "protein": 1,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607503",
+      "name": "Pineapple for Original Crust, Small",
+      "calories": 5,
+      "protein": 1,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607507",
+      "name": "Pineapple for Thin Crust",
+      "calories": 10,
+      "protein": 2,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607375",
+      "name": "Ranch Sauce-Extra for Gluten Free Crust",
+      "calories": 45,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607373",
+      "name": "Ranch Sauce-Extra for Original Crust, Extra Large",
+      "calories": 80,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607372",
+      "name": "Ranch Sauce-Extra for Original Crust, Large",
+      "calories": 70,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607371",
+      "name": "Ranch Sauce-Extra for Original Crust, Medium",
+      "calories": 50,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607369",
+      "name": "Ranch Sauce-Extra for Original Crust, Pizza for One",
+      "calories": 80,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607370",
+      "name": "Ranch Sauce-Extra for Original Crust, Small",
+      "calories": 45,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607374",
+      "name": "Ranch Sauce-Extra for Thin Crust",
+      "calories": 70,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607368",
+      "name": "Ranch Sauce-Light for Gluten Free Crust",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607366",
+      "name": "Ranch Sauce-Light for Original Crust, Extra Large",
+      "calories": 30,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607365",
+      "name": "Ranch Sauce-Light for Original Crust, Large",
+      "calories": 25,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607364",
+      "name": "Ranch Sauce-Light for Original Crust, Medium",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607362",
+      "name": "Ranch Sauce-Light for Original Crust, Pizza for One",
+      "calories": 25,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607363",
+      "name": "Ranch Sauce-Light for Original Crust, Small",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607367",
+      "name": "Ranch Sauce-Light for Thin Crust",
+      "calories": 25,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607361",
+      "name": "Ranch Sauce for Gluten Free Crust",
+      "calories": 35,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607359",
+      "name": "Ranch Sauce for Original Crust, Extra Large",
+      "calories": 60,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607358",
+      "name": "Ranch Sauce for Original Crust, Large",
+      "calories": 50,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607357",
+      "name": "Ranch Sauce for Original Crust, Medium",
+      "calories": 35,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607355",
+      "name": "Ranch Sauce for Original Crust, Pizza for One",
+      "calories": 35,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607356",
+      "name": "Ranch Sauce for Original Crust, Small",
+      "calories": 35,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607360",
+      "name": "Ranch Sauce for Thin Crust",
+      "calories": 50,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607513",
+      "name": "Roma Tomatoes for Original Crust, Extra Large",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607512",
+      "name": "Roma Tomatoes for Original Crust, Large",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607514",
+      "name": "Roma Tomatoes for Thin Crust",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607522",
+      "name": "Salami for Gluten Free Crust",
+      "calories": 25,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607520",
+      "name": "Salami for Original Crust, Extra Large",
+      "calories": 45,
+      "protein": 2,
+      "carbs": 1,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607519",
+      "name": "Salami for Original Crust, Large",
+      "calories": 40,
+      "protein": 2,
+      "carbs": 1,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607518",
+      "name": "Salami for Original Crust, Medium",
+      "calories": 35,
+      "protein": 2,
+      "carbs": 0,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607516",
+      "name": "Salami for Original Crust, Pizza for One",
+      "calories": 25,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607517",
+      "name": "Salami for Original Crust, Small",
+      "calories": 25,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607521",
+      "name": "Salami for Thin Crust",
+      "calories": 40,
+      "protein": 2,
+      "carbs": 1,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607536",
+      "name": "Sausage for Gluten Free Crust",
+      "calories": 40,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607534",
+      "name": "Sausage for Original Crust, Extra Large",
+      "calories": 60,
+      "protein": 2,
+      "carbs": 0,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607533",
+      "name": "Sausage for Original Crust, Large",
+      "calories": 60,
+      "protein": 2,
+      "carbs": 0,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607532",
+      "name": "Sausage for Original Crust, Medium",
+      "calories": 45,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607530",
+      "name": "Sausage for Original Crust, Pizza for One",
+      "calories": 45,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607531",
+      "name": "Sausage for Original Crust, Small",
+      "calories": 40,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607535",
+      "name": "Sausage for Thin Crust",
+      "calories": 60,
+      "protein": 2,
+      "carbs": 0,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607541",
+      "name": "Spinach for Original Crust, Extra Large",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607540",
+      "name": "Spinach for Original Crust, Large",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607542",
+      "name": "Spinach for Thin Crust",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607529",
+      "name": "Steak for Gluten Free Crust",
+      "calories": 35,
+      "protein": 3,
+      "carbs": 0,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607527",
+      "name": "Steak for Original Crust, Extra Large",
+      "calories": 50,
+      "protein": 5,
+      "carbs": 1,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607526",
+      "name": "Steak for Original Crust, Large",
+      "calories": 50,
+      "protein": 5,
+      "carbs": 1,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607525",
+      "name": "Steak for Original Crust, Medium",
+      "calories": 40,
+      "protein": 4,
+      "carbs": 0,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607523",
+      "name": "Steak for Original Crust, Pizza for One",
+      "calories": 25,
+      "protein": 3,
+      "carbs": 0,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607524",
+      "name": "Steak for Original Crust, Small",
+      "calories": 35,
+      "protein": 3,
+      "carbs": 0,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607528",
+      "name": "Steak for Thin Crust",
+      "calories": 50,
+      "protein": 5,
+      "carbs": 1,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607289",
+      "name": "Thin Crust (Crust Only)",
+      "calories": 110,
+      "protein": 3,
+      "carbs": 16,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607550",
+      "name": "Three Cheese Blend for Gluten Free Crust",
+      "calories": 20,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607548",
+      "name": "Three Cheese Blend for Original Crust, Extra Large",
+      "calories": 25,
+      "protein": 2,
+      "carbs": 0,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607547",
+      "name": "Three Cheese Blend for Original Crust, Large",
+      "calories": 25,
+      "protein": 2,
+      "carbs": 0,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607546",
+      "name": "Three Cheese Blend for Original Crust, Medium",
+      "calories": 20,
+      "protein": 2,
+      "carbs": 0,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607544",
+      "name": "Three Cheese Blend for Original Crust, Pizza for One",
+      "calories": 20,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607545",
+      "name": "Three Cheese Blend for Original Crust, Small",
+      "calories": 20,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    },
+    {
+      "id": "nutritionix-607549",
+      "name": "Three Cheese Blend for Thin Crust",
+      "calories": 25,
+      "protein": 2,
+      "carbs": 0,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Individual Ingredients; size in item name)"
+    }
+  ],
+  "sourceDate": "2024-12-18"
+}

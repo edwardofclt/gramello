@@ -1,0 +1,1204 @@
+{
+  "chain": "Handel’s Homemade Ice Cream",
+  "sourceUrl": "https://handelsicecream.com/nutritional-info/",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "name": "Banana",
+      "calories": 320,
+      "fat": 17.0,
+      "carbs": 37,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "banana"
+    },
+    {
+      "name": "Banana Cream Pie",
+      "calories": 360,
+      "fat": 17.0,
+      "carbs": 48,
+      "protein": 5,
+      "servingLabel": "Small dish",
+      "id": "banana-cream-pie"
+    },
+    {
+      "name": "Bananas Foster",
+      "calories": 380,
+      "fat": 18.0,
+      "carbs": 49,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "bananas-foster"
+    },
+    {
+      "name": "Birthday Cake",
+      "calories": 470,
+      "fat": 24.0,
+      "carbs": 58,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "birthday-cake"
+    },
+    {
+      "name": "Black Cherry",
+      "calories": 350,
+      "fat": 18.0,
+      "carbs": 42,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "black-cherry"
+    },
+    {
+      "name": "Black Raspberry",
+      "calories": 350,
+      "fat": 17.0,
+      "carbs": 42,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "black-raspberry"
+    },
+    {
+      "name": "Black Raspberry Chunk",
+      "calories": 400,
+      "fat": 21.0,
+      "carbs": 47,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "black-raspberry-chunk"
+    },
+    {
+      "name": "Black Walnut",
+      "calories": 400,
+      "fat": 26.0,
+      "carbs": 36,
+      "protein": 8,
+      "servingLabel": "Small dish",
+      "id": "black-walnut"
+    },
+    {
+      "name": "Blue Monster",
+      "calories": 420,
+      "fat": 22.0,
+      "carbs": 49,
+      "protein": 7,
+      "servingLabel": "Small dish",
+      "id": "blue-monster"
+    },
+    {
+      "name": "Blue Moon",
+      "calories": 350,
+      "fat": 20.0,
+      "carbs": 37,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "blue-moon"
+    },
+    {
+      "name": "Blueberry Cheesecake Chunk",
+      "calories": 360,
+      "fat": 17.0,
+      "carbs": 48,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "blueberry-cheesecake-chunk"
+    },
+    {
+      "name": "Blueberry Cobbler",
+      "calories": 380,
+      "fat": 19.0,
+      "carbs": 46,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "blueberry-cobbler"
+    },
+    {
+      "name": "Brownie Dough",
+      "calories": 390,
+      "fat": 19.0,
+      "carbs": 48,
+      "protein": 7,
+      "servingLabel": "Small dish",
+      "id": "brownie-dough"
+    },
+    {
+      "name": "Buckeye",
+      "calories": 430,
+      "fat": 24.0,
+      "carbs": 49,
+      "protein": 8,
+      "servingLabel": "Small dish",
+      "id": "buckeye"
+    },
+    {
+      "name": "Butter Pecan",
+      "calories": 430,
+      "fat": 29.0,
+      "carbs": 36,
+      "protein": 7,
+      "servingLabel": "Small dish",
+      "id": "butter-pecan"
+    },
+    {
+      "name": "Butterscotch Ripple",
+      "calories": 360,
+      "fat": 18.0,
+      "carbs": 44,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "butterscotch-ripple"
+    },
+    {
+      "name": "Cake Batter",
+      "calories": 390,
+      "fat": 19.0,
+      "carbs": 48,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "cake-batter"
+    },
+    {
+      "name": "Caramel Apple",
+      "calories": 370,
+      "fat": 18.0,
+      "carbs": 46,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "caramel-apple"
+    },
+    {
+      "name": "Caramel Latte",
+      "calories": 370,
+      "fat": 17.0,
+      "carbs": 50,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "caramel-latte"
+    },
+    {
+      "name": "Caramel Pretzel Crunch",
+      "calories": 420,
+      "fat": 19.0,
+      "carbs": 55,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "caramel-pretzel-crunch"
+    },
+    {
+      "name": "Cheesecake Made With OREO",
+      "calories": 390,
+      "fat": 19.0,
+      "carbs": 48,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "cheesecake-made-with-oreo"
+    },
+    {
+      "name": "Cherry Cordial",
+      "calories": 360,
+      "fat": 19.0,
+      "carbs": 42,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "cherry-cordial"
+    },
+    {
+      "name": "Cherry Magnolia",
+      "calories": 390,
+      "fat": 20.0,
+      "carbs": 47,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "cherry-magnolia"
+    },
+    {
+      "name": "Cherry Vanilla",
+      "calories": 350,
+      "fat": 18.0,
+      "carbs": 42,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "cherry-vanilla"
+    },
+    {
+      "name": "Chocoholic Chunk",
+      "calories": 390,
+      "fat": 22.0,
+      "carbs": 46,
+      "protein": 8,
+      "servingLabel": "Small dish",
+      "id": "chocoholic-chunk"
+    },
+    {
+      "name": "Chocoholic Peanut Butter Ripple",
+      "calories": 430,
+      "fat": 27.0,
+      "carbs": 41,
+      "protein": 11,
+      "servingLabel": "Small dish",
+      "id": "chocoholic-peanut-butter-ripple"
+    },
+    {
+      "name": "Chocolate",
+      "calories": 360,
+      "fat": 18.0,
+      "carbs": 45,
+      "protein": 7,
+      "servingLabel": "Small dish",
+      "id": "chocolate"
+    },
+    {
+      "name": "Chocolate Almond",
+      "calories": 410,
+      "fat": 22.0,
+      "carbs": 48,
+      "protein": 9,
+      "servingLabel": "Small dish",
+      "id": "chocolate-almond"
+    },
+    {
+      "name": "Chocolate Cake Batter",
+      "calories": 400,
+      "fat": 17.0,
+      "carbs": 57,
+      "protein": 7,
+      "servingLabel": "Small dish",
+      "id": "chocolate-cake-batter"
+    },
+    {
+      "name": "Chocolate Chip",
+      "calories": 380,
+      "fat": 22.0,
+      "carbs": 41,
+      "protein": 7,
+      "servingLabel": "Small dish",
+      "id": "chocolate-chip"
+    },
+    {
+      "name": "Chocolate Chip Cheesecake Chunk",
+      "calories": 400,
+      "fat": 19.0,
+      "carbs": 53,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "chocolate-chip-cheesecake-chunk"
+    },
+    {
+      "name": "Chocolate Chip Cookie Dough",
+      "calories": 410,
+      "fat": 22.0,
+      "carbs": 47,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "chocolate-chip-cookie-dough"
+    },
+    {
+      "name": "Chocolate Covered Strawberry",
+      "calories": 330,
+      "fat": 14.0,
+      "carbs": 48,
+      "protein": 5,
+      "servingLabel": "Small dish",
+      "id": "chocolate-covered-strawberry"
+    },
+    {
+      "name": "Chocolate Made With OREO",
+      "calories": 400,
+      "fat": 19.0,
+      "carbs": 51,
+      "protein": 7,
+      "servingLabel": "Small dish",
+      "id": "chocolate-made-with-oreo"
+    },
+    {
+      "name": "Chocolate Malt With Caramel",
+      "calories": 380,
+      "fat": 17.0,
+      "carbs": 52,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "chocolate-malt-with-caramel"
+    },
+    {
+      "name": "Chocolate Marshmallow",
+      "calories": 370,
+      "fat": 17.0,
+      "carbs": 49,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "chocolate-marshmallow"
+    },
+    {
+      "name": "Chocolate Ooohh...Dough!",
+      "calories": 410,
+      "fat": 19.0,
+      "carbs": 55,
+      "protein": 7,
+      "servingLabel": "Small dish",
+      "id": "chocolate-ooohh-dough"
+    },
+    {
+      "name": "Chocolate Orange",
+      "calories": 360,
+      "fat": 18.0,
+      "carbs": 44,
+      "protein": 7,
+      "servingLabel": "Small dish",
+      "id": "chocolate-orange"
+    },
+    {
+      "name": "Chocolate Peanut Butter Brownie",
+      "calories": 440,
+      "fat": 25.0,
+      "carbs": 48,
+      "protein": 9,
+      "servingLabel": "Small dish",
+      "id": "chocolate-peanut-butter-brownie"
+    },
+    {
+      "name": "Chocolate Pecan",
+      "calories": 440,
+      "fat": 27.0,
+      "carbs": 43,
+      "protein": 7,
+      "servingLabel": "Small dish",
+      "id": "chocolate-pecan"
+    },
+    {
+      "name": "Chocolate Raspberry Truffle",
+      "calories": 390,
+      "fat": 20.0,
+      "carbs": 48,
+      "protein": 7,
+      "servingLabel": "Small dish",
+      "id": "chocolate-raspberry-truffle"
+    },
+    {
+      "name": "Cinnamon Graham Cracker",
+      "calories": 440,
+      "fat": 25.0,
+      "carbs": 51,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "cinnamon-graham-cracker"
+    },
+    {
+      "name": "Cinnamon Pecan",
+      "calories": 430,
+      "fat": 30.0,
+      "carbs": 36,
+      "protein": 7,
+      "servingLabel": "Small dish",
+      "id": "cinnamon-pecan"
+    },
+    {
+      "name": "Cinnamon Roll",
+      "calories": 390,
+      "fat": 18.0,
+      "carbs": 53,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "cinnamon-roll"
+    },
+    {
+      "name": "Coconut Almond Fudge Ripple",
+      "calories": 420,
+      "fat": 24.0,
+      "carbs": 46,
+      "protein": 8,
+      "servingLabel": "Small dish",
+      "id": "coconut-almond-fudge-ripple"
+    },
+    {
+      "name": "Coconut Caramel Delight",
+      "calories": 430,
+      "fat": 22.0,
+      "carbs": 52,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "coconut-caramel-delight"
+    },
+    {
+      "name": "Coconut Cream Pie",
+      "calories": 400,
+      "fat": 20.0,
+      "carbs": 50,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "coconut-cream-pie"
+    },
+    {
+      "name": "Coconut Pineapple",
+      "calories": 350,
+      "fat": 19.0,
+      "carbs": 41,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "coconut-pineapple"
+    },
+    {
+      "name": "Coffee",
+      "calories": 340,
+      "fat": 19.0,
+      "carbs": 36,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "coffee"
+    },
+    {
+      "name": "Coffee Chocolate Chip",
+      "calories": 370,
+      "fat": 22.0,
+      "carbs": 40,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "coffee-chocolate-chip"
+    },
+    {
+      "name": "Coffee with Heath",
+      "calories": 390,
+      "fat": 22.0,
+      "carbs": 42,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "coffee-with-heath"
+    },
+    {
+      "name": "Confetti Brownie Batter",
+      "calories": 430,
+      "fat": 18.0,
+      "carbs": 62,
+      "protein": 7,
+      "servingLabel": "Small dish",
+      "id": "confetti-brownie-batter"
+    },
+    {
+      "name": "Cotton Candy",
+      "calories": 380,
+      "fat": 20.0,
+      "carbs": 43,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "cotton-candy"
+    },
+    {
+      "name": "Deep Dish Apple Pie",
+      "calories": 380,
+      "fat": 19.0,
+      "carbs": 46,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "deep-dish-apple-pie"
+    },
+    {
+      "name": "Dulce de Leche",
+      "calories": 380,
+      "fat": 18.0,
+      "carbs": 50,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "dulce-de-leche"
+    },
+    {
+      "name": "Eggnog",
+      "calories": 370,
+      "fat": 19.0,
+      "carbs": 41,
+      "protein": 7,
+      "servingLabel": "Small dish",
+      "id": "eggnog"
+    },
+    {
+      "name": "Elvis",
+      "calories": 390,
+      "fat": 24.0,
+      "carbs": 37,
+      "protein": 9,
+      "servingLabel": "Small dish",
+      "id": "elvis"
+    },
+    {
+      "name": "French Silk Pie",
+      "calories": 460,
+      "fat": 27.0,
+      "carbs": 52,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "french-silk-pie"
+    },
+    {
+      "name": "Fudge Ripple",
+      "calories": 360,
+      "fat": 18.0,
+      "carbs": 46,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "fudge-ripple"
+    },
+    {
+      "name": "Fudge Ripple Brownie",
+      "calories": 390,
+      "fat": 19.0,
+      "carbs": 50,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "fudge-ripple-brownie"
+    },
+    {
+      "name": "Graham Canyon",
+      "calories": 420,
+      "fat": 20.0,
+      "carbs": 55,
+      "protein": 5,
+      "servingLabel": "Small dish",
+      "id": "graham-canyon"
+    },
+    {
+      "name": "Graham Central Station",
+      "calories": 470,
+      "fat": 26.0,
+      "carbs": 54,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "graham-central-station"
+    },
+    {
+      "name": "Grape",
+      "calories": 350,
+      "fat": 20.0,
+      "carbs": 37,
+      "protein": 7,
+      "servingLabel": "Small dish",
+      "id": "grape"
+    },
+    {
+      "name": "Green Monster",
+      "calories": 420,
+      "fat": 22.0,
+      "carbs": 49,
+      "protein": 7,
+      "servingLabel": "Small dish",
+      "id": "green-monster"
+    },
+    {
+      "name": "Green Tea",
+      "calories": 360,
+      "fat": 20.0,
+      "carbs": 38,
+      "protein": 7,
+      "servingLabel": "Small dish",
+      "id": "green-tea"
+    },
+    {
+      "name": "Heavenly Hash",
+      "calories": 420,
+      "fat": 21.0,
+      "carbs": 55,
+      "protein": 7,
+      "servingLabel": "Small dish",
+      "id": "heavenly-hash"
+    },
+    {
+      "name": "Horchata",
+      "calories": 370,
+      "fat": 20.0,
+      "carbs": 41,
+      "protein": 7,
+      "servingLabel": "Small dish",
+      "id": "horchata"
+    },
+    {
+      "name": "Key Lime Pie",
+      "calories": 410,
+      "fat": 24.0,
+      "carbs": 45,
+      "protein": 5,
+      "servingLabel": "Small dish",
+      "id": "key-lime-pie"
+    },
+    {
+      "name": "Knot Your Average Dough",
+      "calories": 450,
+      "fat": 23.0,
+      "carbs": 54,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "knot-your-average-dough"
+    },
+    {
+      "name": "Lemon Bar",
+      "calories": 430,
+      "fat": 26.0,
+      "carbs": 43,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "lemon-bar"
+    },
+    {
+      "name": "Lemon Meringue Pie",
+      "calories": 370,
+      "fat": 18.0,
+      "carbs": 48,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "lemon-meringue-pie"
+    },
+    {
+      "name": "Meri's Joy",
+      "calories": 440,
+      "fat": 28.0,
+      "carbs": 43,
+      "protein": 8,
+      "servingLabel": "Small dish",
+      "id": "meri-s-joy"
+    },
+    {
+      "name": "Midnight Madness",
+      "calories": 460,
+      "fat": 27.0,
+      "carbs": 47,
+      "protein": 11,
+      "servingLabel": "Small dish",
+      "id": "midnight-madness"
+    },
+    {
+      "name": "Mint Chocolate Chip With Chocolate Chips",
+      "calories": 380,
+      "fat": 22.0,
+      "carbs": 41,
+      "protein": 7,
+      "servingLabel": "Small dish",
+      "id": "mint-chocolate-chip-with-chocolate-chips"
+    },
+    {
+      "name": "Mint Made With OREO",
+      "calories": 390,
+      "fat": 21.0,
+      "carbs": 45,
+      "protein": 7,
+      "servingLabel": "Small dish",
+      "id": "mint-made-with-oreo"
+    },
+    {
+      "name": "Mocha Almond Fudge Ripple",
+      "calories": 400,
+      "fat": 22.0,
+      "carbs": 45,
+      "protein": 8,
+      "servingLabel": "Small dish",
+      "id": "mocha-almond-fudge-ripple"
+    },
+    {
+      "name": "Monkey Business",
+      "calories": 390,
+      "fat": 16.0,
+      "carbs": 57,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "monkey-business"
+    },
+    {
+      "name": "Mud Pie",
+      "calories": 400,
+      "fat": 19.0,
+      "carbs": 52,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "mud-pie"
+    },
+    {
+      "name": "New York Style Cheesecake",
+      "calories": 440,
+      "fat": 25.0,
+      "carbs": 50,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "new-york-style-cheesecake"
+    },
+    {
+      "name": "Ooohh...Dough!",
+      "calories": 410,
+      "fat": 21.0,
+      "carbs": 49,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "ooohh-dough"
+    },
+    {
+      "name": "Orange Dream Cream",
+      "calories": 290,
+      "fat": 10.0,
+      "carbs": 47,
+      "protein": 3,
+      "servingLabel": "Small dish",
+      "id": "orange-dream-cream"
+    },
+    {
+      "name": "Orange Pineapple",
+      "calories": 350,
+      "fat": 17.0,
+      "carbs": 44,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "orange-pineapple"
+    },
+    {
+      "name": "Peach",
+      "calories": 300,
+      "fat": 13.0,
+      "carbs": 43,
+      "protein": 4,
+      "servingLabel": "Small dish",
+      "id": "peach"
+    },
+    {
+      "name": "Peanut Butter",
+      "calories": 410,
+      "fat": 26.0,
+      "carbs": 37,
+      "protein": 9,
+      "servingLabel": "Small dish",
+      "id": "peanut-butter"
+    },
+    {
+      "name": "Peanut Butter Parfait",
+      "calories": 430,
+      "fat": 27.0,
+      "carbs": 42,
+      "protein": 10,
+      "servingLabel": "Small dish",
+      "id": "peanut-butter-parfait"
+    },
+    {
+      "name": "Peppermint Bark",
+      "calories": 400,
+      "fat": 22.0,
+      "carbs": 47,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "peppermint-bark"
+    },
+    {
+      "name": "Peppermint Stick",
+      "calories": 370,
+      "fat": 20.0,
+      "carbs": 43,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "peppermint-stick"
+    },
+    {
+      "name": "Pineapple Upside Down Cake",
+      "calories": 370,
+      "fat": 14.0,
+      "carbs": 56,
+      "protein": 5,
+      "servingLabel": "Small dish",
+      "id": "pineapple-upside-down-cake"
+    },
+    {
+      "name": "Pink Lemonade",
+      "calories": 400,
+      "fat": 18.0,
+      "carbs": 55,
+      "protein": 5,
+      "servingLabel": "Small dish",
+      "id": "pink-lemonade"
+    },
+    {
+      "name": "Pistachio",
+      "calories": 400,
+      "fat": 25.0,
+      "carbs": 38,
+      "protein": 8,
+      "servingLabel": "Small dish",
+      "id": "pistachio"
+    },
+    {
+      "name": "Praline Pecan",
+      "calories": 350,
+      "fat": 18.0,
+      "carbs": 47,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "praline-pecan"
+    },
+    {
+      "name": "Pumpkin Cheesecake Chunk",
+      "calories": 370,
+      "fat": 17.0,
+      "carbs": 50,
+      "protein": 5,
+      "servingLabel": "Small dish",
+      "id": "pumpkin-cheesecake-chunk"
+    },
+    {
+      "name": "Pumpkin Pecan",
+      "calories": 430,
+      "fat": 25.0,
+      "carbs": 46,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "pumpkin-pecan"
+    },
+    {
+      "name": "Pumpkin Pie",
+      "calories": 430,
+      "fat": 22.0,
+      "carbs": 54,
+      "protein": 5,
+      "servingLabel": "Small dish",
+      "id": "pumpkin-pie"
+    },
+    {
+      "name": "Pumpkin Ripple",
+      "calories": 360,
+      "fat": 14.0,
+      "carbs": 54,
+      "protein": 5,
+      "servingLabel": "Small dish",
+      "id": "pumpkin-ripple"
+    },
+    {
+      "name": "Raspberry Cheesecake Chunk",
+      "calories": 360,
+      "fat": 17.0,
+      "carbs": 47,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "raspberry-cheesecake-chunk"
+    },
+    {
+      "name": "Raspberry Dream Cream",
+      "calories": 280,
+      "fat": 11.0,
+      "carbs": 42,
+      "protein": 4,
+      "servingLabel": "Small dish",
+      "id": "raspberry-dream-cream"
+    },
+    {
+      "name": "Raspberry Sheet Cake",
+      "calories": 370,
+      "fat": 15.0,
+      "carbs": 53,
+      "protein": 5,
+      "servingLabel": "Small dish",
+      "id": "raspberry-sheet-cake"
+    },
+    {
+      "name": "Rocky Mocha Blast",
+      "calories": 400,
+      "fat": 18.0,
+      "carbs": 53,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "rocky-mocha-blast"
+    },
+    {
+      "name": "Rocky Road",
+      "calories": 410,
+      "fat": 21.0,
+      "carbs": 49,
+      "protein": 8,
+      "servingLabel": "Small dish",
+      "id": "rocky-road"
+    },
+    {
+      "name": "Salty Caramel Truffle",
+      "calories": 400,
+      "fat": 22.0,
+      "carbs": 46,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "salty-caramel-truffle"
+    },
+    {
+      "name": "S'mores",
+      "calories": 390,
+      "fat": 17.0,
+      "carbs": 56,
+      "protein": 5,
+      "servingLabel": "Small dish",
+      "id": "s-mores"
+    },
+    {
+      "name": "Snappy Turtle",
+      "calories": 450,
+      "fat": 25.0,
+      "carbs": 51,
+      "protein": 7,
+      "servingLabel": "Small dish",
+      "id": "snappy-turtle"
+    },
+    {
+      "name": "Snickerdoodle",
+      "calories": 410,
+      "fat": 24.0,
+      "carbs": 41,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "snickerdoodle"
+    },
+    {
+      "name": "Snix",
+      "calories": 470,
+      "fat": 27.0,
+      "carbs": 47,
+      "protein": 10,
+      "servingLabel": "Small dish",
+      "id": "snix"
+    },
+    {
+      "name": "Spouse Like A House",
+      "calories": 460,
+      "fat": 28.0,
+      "carbs": 47,
+      "protein": 10,
+      "servingLabel": "Small dish",
+      "id": "spouse-like-a-house"
+    },
+    {
+      "name": "Sticky Fingers",
+      "calories": 460,
+      "fat": 25.0,
+      "carbs": 52,
+      "protein": 8,
+      "servingLabel": "Small dish",
+      "id": "sticky-fingers"
+    },
+    {
+      "name": "Strawberry",
+      "calories": 310,
+      "fat": 15.0,
+      "carbs": 38,
+      "protein": 5,
+      "servingLabel": "Small dish",
+      "id": "strawberry"
+    },
+    {
+      "name": "Strawberry Cheesecake Chunk",
+      "calories": 370,
+      "fat": 17.0,
+      "carbs": 49,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "strawberry-cheesecake-chunk"
+    },
+    {
+      "name": "Taro",
+      "calories": 390,
+      "fat": 21.0,
+      "carbs": 46,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "taro"
+    },
+    {
+      "name": "Tiger Stripes",
+      "calories": 360,
+      "fat": 19.0,
+      "carbs": 40,
+      "protein": 7,
+      "servingLabel": "Small dish",
+      "id": "tiger-stripes"
+    },
+    {
+      "name": "Tin Lizzy",
+      "calories": 400,
+      "fat": 21.0,
+      "carbs": 48,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "tin-lizzy"
+    },
+    {
+      "name": "Toasted Almond",
+      "calories": 400,
+      "fat": 25.0,
+      "carbs": 36,
+      "protein": 9,
+      "servingLabel": "Small dish",
+      "id": "toasted-almond"
+    },
+    {
+      "name": "Twixter",
+      "calories": 430,
+      "fat": 22.0,
+      "carbs": 55,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "twixter"
+    },
+    {
+      "name": "Vanilla",
+      "calories": 350,
+      "fat": 20.0,
+      "carbs": 37,
+      "protein": 7,
+      "servingLabel": "Small dish",
+      "id": "vanilla"
+    },
+    {
+      "name": "Vanilla Caramel Brownie",
+      "calories": 400,
+      "fat": 19.0,
+      "carbs": 51,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "vanilla-caramel-brownie"
+    },
+    {
+      "name": "Vanilla Caramel Truffle",
+      "calories": 420,
+      "fat": 21.0,
+      "carbs": 51,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "vanilla-caramel-truffle"
+    },
+    {
+      "name": "Vanilla Made With OREO",
+      "calories": 390,
+      "fat": 21.0,
+      "carbs": 45,
+      "protein": 7,
+      "servingLabel": "Small dish",
+      "id": "vanilla-made-with-oreo"
+    },
+    {
+      "name": "Vanilla Peanut Butter Chip",
+      "calories": 450,
+      "fat": 29.0,
+      "carbs": 42,
+      "protein": 9,
+      "servingLabel": "Small dish",
+      "id": "vanilla-peanut-butter-chip"
+    },
+    {
+      "name": "Vanilla Peanut Butter Ripple",
+      "calories": 420,
+      "fat": 28.0,
+      "carbs": 37,
+      "protein": 10,
+      "servingLabel": "Small dish",
+      "id": "vanilla-peanut-butter-ripple"
+    },
+    {
+      "name": "Vanilla Raspberry Chip",
+      "calories": 370,
+      "fat": 20.0,
+      "carbs": 44,
+      "protein": 6,
+      "servingLabel": "Small dish",
+      "id": "vanilla-raspberry-chip"
+    },
+    {
+      "name": "Vanilla Turtle",
+      "calories": 440,
+      "fat": 27.0,
+      "carbs": 44,
+      "protein": 7,
+      "servingLabel": "Small dish",
+      "id": "vanilla-turtle"
+    },
+    {
+      "name": "Vanilla With Reese's Peanut Butter Cup",
+      "calories": 400,
+      "fat": 23.0,
+      "carbs": 43,
+      "protein": 8,
+      "servingLabel": "Small dish",
+      "id": "vanilla-with-reese-s-peanut-butter-cup"
+    },
+    {
+      "name": "Black Raspberry",
+      "calories": 220,
+      "fat": 2.0,
+      "carbs": 50,
+      "protein": 1,
+      "servingLabel": "Small dish",
+      "id": "black-raspberry-2"
+    },
+    {
+      "name": "Lime",
+      "calories": 240,
+      "fat": 2.0,
+      "carbs": 55,
+      "protein": 1,
+      "servingLabel": "Small dish",
+      "id": "lime"
+    },
+    {
+      "name": "Orange",
+      "calories": 240,
+      "fat": 2.0,
+      "carbs": 55,
+      "protein": 1,
+      "servingLabel": "Small dish",
+      "id": "orange"
+    },
+    {
+      "name": "Pineapple",
+      "calories": 230,
+      "fat": 2.0,
+      "carbs": 53,
+      "protein": 1,
+      "servingLabel": "Small dish",
+      "id": "pineapple"
+    },
+    {
+      "name": "Pink Champagne",
+      "calories": 220,
+      "fat": 2.5,
+      "carbs": 51,
+      "protein": 1,
+      "servingLabel": "Small dish",
+      "id": "pink-champagne"
+    },
+    {
+      "name": "Red Raspberry",
+      "calories": 210,
+      "fat": 2.5,
+      "carbs": 46,
+      "protein": 1,
+      "servingLabel": "Small dish",
+      "id": "red-raspberry"
+    },
+    {
+      "name": "Chocolate Almond Milk",
+      "calories": 210,
+      "fat": 3.0,
+      "carbs": 45,
+      "protein": 2,
+      "servingLabel": "Small dish",
+      "id": "chocolate-almond-milk"
+    },
+    {
+      "name": "Coconut Milk",
+      "calories": 180,
+      "fat": 1.0,
+      "carbs": 43,
+      "protein": 0,
+      "servingLabel": "Small dish",
+      "id": "coconut-milk"
+    },
+    {
+      "name": "Mango",
+      "calories": 210,
+      "fat": 0.0,
+      "carbs": 52,
+      "protein": 1,
+      "servingLabel": "Small dish",
+      "id": "mango"
+    },
+    {
+      "name": "Vanilla Pineapple",
+      "calories": 210,
+      "fat": 0.0,
+      "carbs": 52,
+      "protein": 0,
+      "servingLabel": "Small dish",
+      "id": "vanilla-pineapple"
+    }
+  ]
+}

@@ -1,0 +1,3358 @@
+{
+  "chain": "Potbelly Sandwich Shop",
+  "sourceUrl": "https://www.nutritionix.com/potbelly/menu/premium",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "name": "Avo Turkey, Originals",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 640.0,
+      "fat": 24.0,
+      "carbs": 73.0,
+      "protein": 46.0,
+      "id": "avo-turkey-originals-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "A Wreck, Originals",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 650.0,
+      "fat": 28.0,
+      "carbs": 65.0,
+      "protein": 42.0,
+      "id": "a-wreck-originals-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Bacon, Egg & Cheddar, Originals",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 940.0,
+      "fat": 56.0,
+      "carbs": 67.0,
+      "protein": 43.0,
+      "id": "bacon-egg-cheddar-originals-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "BLTA, Originals",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 840.0,
+      "fat": 49.0,
+      "carbs": 73.0,
+      "protein": 32.0,
+      "id": "blta-originals-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chicken Cordon Bleu, Originals",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 710.0,
+      "fat": 22.0,
+      "carbs": 67.0,
+      "protein": 59.0,
+      "id": "chicken-cordon-bleu-originals-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chicken Salad & Provolone, Originals",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 760.0,
+      "fat": 38.0,
+      "carbs": 64.0,
+      "protein": 44.0,
+      "id": "chicken-salad-provolone-originals-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Clubby, Originals",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 850.0,
+      "fat": 44.0,
+      "carbs": 72.0,
+      "protein": 50.0,
+      "id": "clubby-originals-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Cubano, Originals",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 800.0,
+      "fat": 38.0,
+      "carbs": 64.0,
+      "protein": 46.0,
+      "id": "cubano-originals-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Fiery Island Chicken, Originals",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 720.0,
+      "fat": 23.0,
+      "carbs": 83.0,
+      "protein": 52.0,
+      "id": "fiery-island-chicken-originals-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Grilled Cheese, Originals",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 640.0,
+      "fat": 30.0,
+      "carbs": 61.0,
+      "protein": 33.0,
+      "id": "grilled-cheese-originals-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Grilled Chicken & Cheddar, Originals",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 570.0,
+      "fat": 14.0,
+      "carbs": 62.0,
+      "protein": 50.0,
+      "id": "grilled-chicken-cheddar-originals-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Grilled Chicken Club, Originals",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 770.0,
+      "fat": 32.0,
+      "carbs": 64.0,
+      "protein": 58.0,
+      "id": "grilled-chicken-club-originals-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Ham, Mushroom, Egg & Swiss, Originals",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 720.0,
+      "fat": 28.0,
+      "carbs": 68.0,
+      "protein": 50.0,
+      "id": "ham-mushroom-egg-swiss-originals-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Italian, Originals",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 770.0,
+      "fat": 44.0,
+      "carbs": 63.0,
+      "protein": 35.0,
+      "id": "italian-originals-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Mama's Meatball, Originals",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 920.0,
+      "fat": 48.0,
+      "carbs": 76.0,
+      "protein": 44.0,
+      "id": "mama-s-meatball-originals-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Mediterranean, Originals",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 670.0,
+      "fat": 17.0,
+      "carbs": 81.0,
+      "protein": 54.0,
+      "id": "mediterranean-originals-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Mediterranean No Chicken, Originals",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 520.0,
+      "fat": 15.0,
+      "carbs": 80.0,
+      "protein": 24.0,
+      "id": "mediterranean-no-chicken-originals-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Pizza Melt, Originals",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 820.0,
+      "fat": 41.0,
+      "carbs": 73.0,
+      "protein": 41.0,
+      "id": "pizza-melt-originals-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Prime Rib Steak Sandwich, Originals",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 880.0,
+      "fat": 55.0,
+      "carbs": 67.0,
+      "protein": 38.0,
+      "id": "prime-rib-steak-sandwich-originals-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Roast Beef & Provolone, Originals",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 610.0,
+      "fat": 21.0,
+      "carbs": 64.0,
+      "protein": 42.0,
+      "id": "roast-beef-provolone-originals-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Sicilian, Originals",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 980.0,
+      "fat": 57.0,
+      "carbs": 74.0,
+      "protein": 45.0,
+      "id": "sicilian-originals-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Smoked Ham & Swiss, Originals",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 590.0,
+      "fat": 20.0,
+      "carbs": 64.0,
+      "protein": 41.0,
+      "id": "smoked-ham-swiss-originals-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Sweet Heat Pork BBQ, Originals",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 950.0,
+      "fat": 48.0,
+      "carbs": 77.0,
+      "protein": 48.0,
+      "id": "sweet-heat-pork-bbq-originals-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Tuna Salad & Swiss, Originals",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 690.0,
+      "fat": 31.0,
+      "carbs": 64.0,
+      "protein": 46.0,
+      "id": "tuna-salad-swiss-originals-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Turkey Breast & Swiss, Originals",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 520.0,
+      "fat": 14.0,
+      "carbs": 67.0,
+      "protein": 43.0,
+      "id": "turkey-breast-swiss-originals-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Veggie Melt, Originals",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 750.0,
+      "fat": 39.0,
+      "carbs": 70.0,
+      "protein": 38.0,
+      "id": "veggie-melt-originals-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Wrecking Ball, Originals",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 850.0,
+      "fat": 41.0,
+      "carbs": 75.0,
+      "protein": 50.0,
+      "id": "wrecking-ball-originals-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Avo Turkey, BIGS",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 930.0,
+      "fat": 36.0,
+      "carbs": 107.0,
+      "protein": 64.0,
+      "id": "avo-turkey-bigs-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "A Wreck, BIGS",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 930.0,
+      "fat": 39.0,
+      "carbs": 95.0,
+      "protein": 59.0,
+      "id": "a-wreck-bigs-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chicken Cordon Bleu, BIGS",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 990.0,
+      "fat": 30.0,
+      "carbs": 98.0,
+      "protein": 81.0,
+      "id": "chicken-cordon-bleu-bigs-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Grilled Cheese, BIGS",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 950.0,
+      "fat": 45.0,
+      "carbs": 89.0,
+      "protein": 50.0,
+      "id": "grilled-cheese-bigs-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Grilled Chicken & Cheddar, BIGS",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 820.0,
+      "fat": 22.0,
+      "carbs": 92.0,
+      "protein": 70.0,
+      "id": "grilled-chicken-cheddar-bigs-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Mediterranean, BIGS",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 980.0,
+      "fat": 25.0,
+      "carbs": 119.0,
+      "protein": 76.0,
+      "id": "mediterranean-bigs-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Mediterranean No Chicken, BIGS",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 770.0,
+      "fat": 22.0,
+      "carbs": 118.0,
+      "protein": 35.0,
+      "id": "mediterranean-no-chicken-bigs-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Roast Beef & Provolone, BIGS",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 870.0,
+      "fat": 30.0,
+      "carbs": 94.0,
+      "protein": 59.0,
+      "id": "roast-beef-provolone-bigs-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Smoked Ham & Swiss, BIGS",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 840.0,
+      "fat": 28.0,
+      "carbs": 94.0,
+      "protein": 58.0,
+      "id": "smoked-ham-swiss-bigs-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Tuna Salad & Swiss, BIGS",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 970.0,
+      "fat": 43.0,
+      "carbs": 94.0,
+      "protein": 65.0,
+      "id": "tuna-salad-swiss-bigs-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Turkey Breast & Swiss, BIGS",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 760.0,
+      "fat": 20.0,
+      "carbs": 98.0,
+      "protein": 60.0,
+      "id": "turkey-breast-swiss-bigs-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Avo Turkey, Skinny",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 410.0,
+      "fat": 13.0,
+      "carbs": 52.0,
+      "protein": 29.0,
+      "id": "avo-turkey-skinny-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "A Wreck, Skinny",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 440.0,
+      "fat": 17.0,
+      "carbs": 47.0,
+      "protein": 27.0,
+      "id": "a-wreck-skinny-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Bacon, Egg & Cheddar, Skinny",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 540.0,
+      "fat": 29.0,
+      "carbs": 48.0,
+      "protein": 25.0,
+      "id": "bacon-egg-cheddar-skinny-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Barnyard, Skinny",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 620.0,
+      "fat": 32.0,
+      "carbs": 49.0,
+      "protein": 35.0,
+      "id": "barnyard-skinny-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "BLTA, Skinny",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 490.0,
+      "fat": 25.0,
+      "carbs": 50.0,
+      "protein": 19.0,
+      "id": "blta-skinny-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chicken Cordon Bleu, Skinny",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 490.0,
+      "fat": 15.0,
+      "carbs": 48.0,
+      "protein": 40.0,
+      "id": "chicken-cordon-bleu-skinny-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chicken Salad & Provolone, Skinny",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 510.0,
+      "fat": 24.0,
+      "carbs": 46.0,
+      "protein": 29.0,
+      "id": "chicken-salad-provolone-skinny-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Clubby, Skinny",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 540.0,
+      "fat": 26.0,
+      "carbs": 52.0,
+      "protein": 32.0,
+      "id": "clubby-skinny-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Cubano, Skinny",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 530.0,
+      "fat": 24.0,
+      "carbs": 46.0,
+      "protein": 30.0,
+      "id": "cubano-skinny-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Fiery Island Chicken, Skinny",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 460.0,
+      "fat": 13.0,
+      "carbs": 56.0,
+      "protein": 34.0,
+      "id": "fiery-island-chicken-skinny-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Fireball, Skinny",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 680.0,
+      "fat": 35.0,
+      "carbs": 57.0,
+      "protein": 33.0,
+      "id": "fireball-skinny-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Grilled Cheese, Skinny",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 390.0,
+      "fat": 16.0,
+      "carbs": 45.0,
+      "protein": 20.0,
+      "id": "grilled-cheese-skinny-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Grilled Chicken & Cheddar, Skinny",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 380.0,
+      "fat": 9.0,
+      "carbs": 46.0,
+      "protein": 33.0,
+      "id": "grilled-chicken-cheddar-skinny-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Grilled Chicken Club, Skinny",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 480.0,
+      "fat": 17.0,
+      "carbs": 46.0,
+      "protein": 37.0,
+      "id": "grilled-chicken-club-skinny-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Ham, Mushroom, Egg & Swiss, Skinny",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 460.0,
+      "fat": 16.0,
+      "carbs": 48.0,
+      "protein": 32.0,
+      "id": "ham-mushroom-egg-swiss-skinny-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Italian, Skinny",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 520.0,
+      "fat": 28.0,
+      "carbs": 46.0,
+      "protein": 23.0,
+      "id": "italian-skinny-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Lucky 7, Skinny",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 690.0,
+      "fat": 40.0,
+      "carbs": 49.0,
+      "protein": 38.0,
+      "id": "lucky-7-skinny-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Mama's Meatball, Skinny",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 620.0,
+      "fat": 31.0,
+      "carbs": 55.0,
+      "protein": 29.0,
+      "id": "mama-s-meatball-skinny-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Mediterranean, Skinny",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 440.0,
+      "fat": 10.0,
+      "carbs": 55.0,
+      "protein": 35.0,
+      "id": "mediterranean-skinny-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Mediterranean No Chicken, Skinny",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 330.0,
+      "fat": 8.0,
+      "carbs": 54.0,
+      "protein": 15.0,
+      "id": "mediterranean-no-chicken-skinny-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Pizza Melt, Skinny",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 520.0,
+      "fat": 24.0,
+      "carbs": 52.0,
+      "protein": 26.0,
+      "id": "pizza-melt-skinny-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Prime Rib Steak Sandwich, Skinny",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 590.0,
+      "fat": 36.0,
+      "carbs": 48.0,
+      "protein": 25.0,
+      "id": "prime-rib-steak-sandwich-skinny-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Roast Beef & Provolone, Skinny",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 410.0,
+      "fat": 13.0,
+      "carbs": 47.0,
+      "protein": 28.0,
+      "id": "roast-beef-provolone-skinny-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Sausage, Egg & Cheddar, Skinny",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 620.0,
+      "fat": 36.0,
+      "carbs": 47.0,
+      "protein": 29.0,
+      "id": "sausage-egg-cheddar-skinny-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Sicilian, Skinny",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 630.0,
+      "fat": 35.0,
+      "carbs": 53.0,
+      "protein": 28.0,
+      "id": "sicilian-skinny-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Smoked Ham & Swiss, Skinny",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 390.0,
+      "fat": 12.0,
+      "carbs": 47.0,
+      "protein": 27.0,
+      "id": "smoked-ham-swiss-skinny-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Smokestack Pork & Mac, Skinny",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 660.0,
+      "fat": 31.0,
+      "carbs": 63.0,
+      "protein": 32.0,
+      "id": "smokestack-pork-mac-skinny-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Sweet Heat Pork BBQ, Skinny",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 610.0,
+      "fat": 31.0,
+      "carbs": 52.0,
+      "protein": 32.0,
+      "id": "sweet-heat-pork-bbq-skinny-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Tuna Salad & Swiss, Skinny",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 460.0,
+      "fat": 20.0,
+      "carbs": 47.0,
+      "protein": 30.0,
+      "id": "tuna-salad-swiss-skinny-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Turkey Breast & Swiss, Skinny",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 350.0,
+      "fat": 8.0,
+      "carbs": 49.0,
+      "protein": 28.0,
+      "id": "turkey-breast-swiss-skinny-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Veggie Melt, Skinny",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 450.0,
+      "fat": 20.0,
+      "carbs": 50.0,
+      "protein": 22.0,
+      "id": "veggie-melt-skinny-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Wrecking Ball, Skinny",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 550.0,
+      "fat": 24.0,
+      "carbs": 53.0,
+      "protein": 32.0,
+      "id": "wrecking-ball-skinny-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Avo Turkey Wrap",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 550.0,
+      "fat": 29.0,
+      "carbs": 41.0,
+      "protein": 53.0,
+      "id": "avo-turkey-wrap-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "A Wreck Wrap",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 570.0,
+      "fat": 33.0,
+      "carbs": 34.0,
+      "protein": 49.0,
+      "id": "a-wreck-wrap-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Bacon, Egg & Cheddar Wrap",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 850.0,
+      "fat": 61.0,
+      "carbs": 36.0,
+      "protein": 51.0,
+      "id": "bacon-egg-cheddar-wrap-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Barnyard Wrap",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 930.0,
+      "fat": 63.0,
+      "carbs": 39.0,
+      "protein": 65.0,
+      "id": "barnyard-wrap-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "BLTA Wrap",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 750.0,
+      "fat": 54.0,
+      "carbs": 42.0,
+      "protein": 39.0,
+      "id": "blta-wrap-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chicken Bacon Ranch Wrap",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 820.0,
+      "fat": 51.0,
+      "carbs": 36.0,
+      "protein": 67.0,
+      "id": "chicken-bacon-ranch-wrap-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chicken Cordon Bleu Wrap",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 630.0,
+      "fat": 28.0,
+      "carbs": 36.0,
+      "protein": 67.0,
+      "id": "chicken-cordon-bleu-wrap-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chicken Salad & Provolone Wrap",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 670.0,
+      "fat": 43.0,
+      "carbs": 32.0,
+      "protein": 51.0,
+      "id": "chicken-salad-provolone-wrap-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Clubby Wrap",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 760.0,
+      "fat": 49.0,
+      "carbs": 41.0,
+      "protein": 58.0,
+      "id": "clubby-wrap-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Cubano Wrap",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 710.0,
+      "fat": 43.0,
+      "carbs": 33.0,
+      "protein": 54.0,
+      "id": "cubano-wrap-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Fiery Island Chicken Wrap",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 640.0,
+      "fat": 28.0,
+      "carbs": 52.0,
+      "protein": 59.0,
+      "id": "fiery-island-chicken-wrap-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Fireball Wrap",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 930.0,
+      "fat": 59.0,
+      "carbs": 47.0,
+      "protein": 57.0,
+      "id": "fireball-wrap-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Grilled Cheese Wrap",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 550.0,
+      "fat": 35.0,
+      "carbs": 30.0,
+      "protein": 41.0,
+      "id": "grilled-cheese-wrap-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Grilled Chicken & Cheddar Wrap",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 480.0,
+      "fat": 19.0,
+      "carbs": 31.0,
+      "protein": 58.0,
+      "id": "grilled-chicken-cheddar-wrap-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Grilled Chicken Club Wrap",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 680.0,
+      "fat": 37.0,
+      "carbs": 33.0,
+      "protein": 66.0,
+      "id": "grilled-chicken-club-wrap-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Ham, Mushroom, Egg & Swiss Wrap",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 630.0,
+      "fat": 33.0,
+      "carbs": 37.0,
+      "protein": 58.0,
+      "id": "ham-mushroom-egg-swiss-wrap-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Italian Wrap",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 690.0,
+      "fat": 49.0,
+      "carbs": 33.0,
+      "protein": 43.0,
+      "id": "italian-wrap-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Lucky 7 Wrap",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 930.0,
+      "fat": 66.0,
+      "carbs": 36.0,
+      "protein": 64.0,
+      "id": "lucky-7-wrap-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Mama's Meatball Wrap",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 840.0,
+      "fat": 53.0,
+      "carbs": 45.0,
+      "protein": 52.0,
+      "id": "mama-s-meatball-wrap-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Mediterranean No Chicken Wrap",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 430.0,
+      "fat": 19.0,
+      "carbs": 48.0,
+      "protein": 31.0,
+      "id": "mediterranean-no-chicken-wrap-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Mediterranean Wrap",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 580.0,
+      "fat": 21.0,
+      "carbs": 49.0,
+      "protein": 62.0,
+      "id": "mediterranean-wrap-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Pizza Melt Wrap",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 730.0,
+      "fat": 46.0,
+      "carbs": 42.0,
+      "protein": 49.0,
+      "id": "pizza-melt-wrap-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Prime Rib Steak Wrap",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 800.0,
+      "fat": 60.0,
+      "carbs": 36.0,
+      "protein": 46.0,
+      "id": "prime-rib-steak-wrap-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Roast Beef & Provolone Wrap",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 520.0,
+      "fat": 26.0,
+      "carbs": 33.0,
+      "protein": 50.0,
+      "id": "roast-beef-provolone-wrap-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Sicilian Wrap",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 890.0,
+      "fat": 62.0,
+      "carbs": 42.0,
+      "protein": 53.0,
+      "id": "sicilian-wrap-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Smoked Ham & Swiss Wrap",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 500.0,
+      "fat": 25.0,
+      "carbs": 34.0,
+      "protein": 49.0,
+      "id": "smoked-ham-swiss-wrap-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Smokestack Pork & Mac Wrap",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 930.0,
+      "fat": 54.0,
+      "carbs": 61.0,
+      "protein": 57.0,
+      "id": "smokestack-pork-mac-wrap-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Southwest Avo Chicken Wrap",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 710.0,
+      "fat": 36.0,
+      "carbs": 48.0,
+      "protein": 60.0,
+      "id": "southwest-avo-chicken-wrap-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Sweet Heat Pork BBQ Wrap",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 860.0,
+      "fat": 53.0,
+      "carbs": 47.0,
+      "protein": 56.0,
+      "id": "sweet-heat-pork-bbq-wrap-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Tuna Salad & Swiss Wrap",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 600.0,
+      "fat": 36.0,
+      "carbs": 32.0,
+      "protein": 54.0,
+      "id": "tuna-salad-swiss-wrap-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Turkey Breast & Swiss Wrap",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 430.0,
+      "fat": 18.0,
+      "carbs": 36.0,
+      "protein": 51.0,
+      "id": "turkey-breast-swiss-wrap-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Veggie Melt Wrap",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 660.0,
+      "fat": 43.0,
+      "carbs": 39.0,
+      "protein": 46.0,
+      "id": "veggie-melt-wrap-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Wrecking Ball Wrap",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 760.0,
+      "fat": 46.0,
+      "carbs": 43.0,
+      "protein": 57.0,
+      "id": "wrecking-ball-wrap-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Bread - FLAT",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 230.0,
+      "fat": 3.0,
+      "carbs": 43.0,
+      "protein": 0.0,
+      "id": "bread-flat-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Bread - Multigrain",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 310.0,
+      "fat": 3.5,
+      "carbs": 62.0,
+      "protein": 13.0,
+      "id": "bread-multigrain-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Bread - Multigrain, BIGS",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 460.0,
+      "fat": 5.0,
+      "carbs": 91.0,
+      "protein": 18.0,
+      "id": "bread-multigrain-bigs-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Bread - Multigrain, BIGS, Thin-Cut",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 330.0,
+      "fat": 4.0,
+      "carbs": 66.0,
+      "protein": 13.0,
+      "id": "bread-multigrain-bigs-thin-cut-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Bread - Multigrain, Skinny",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 230.0,
+      "fat": 2.5,
+      "carbs": 45.0,
+      "protein": 9.0,
+      "id": "bread-multigrain-skinny-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Bread - Multigrain, Skinny, Thin-Cut",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 170.0,
+      "fat": 2.0,
+      "carbs": 33.0,
+      "protein": 7.0,
+      "id": "bread-multigrain-skinny-thin-cut-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Bread - Multigrain, Thin-Cut",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 210.0,
+      "fat": 3.0,
+      "carbs": 41.0,
+      "protein": 8.0,
+      "id": "bread-multigrain-thin-cut-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Bread - White",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 310.0,
+      "fat": 3.0,
+      "carbs": 61.0,
+      "protein": 12.0,
+      "id": "bread-white-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Bread - White, BIGS",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 450.0,
+      "fat": 4.0,
+      "carbs": 89.0,
+      "protein": 18.0,
+      "id": "bread-white-bigs-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Bread - White, BIGS, Thin-Cut",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 320.0,
+      "fat": 3.0,
+      "carbs": 64.0,
+      "protein": 13.0,
+      "id": "bread-white-bigs-thin-cut-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Bread - White, Skinny",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 220.0,
+      "fat": 2.0,
+      "carbs": 45.0,
+      "protein": 9.0,
+      "id": "bread-white-skinny-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Bread - White, Skinny, Thin-Cut",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 160.0,
+      "fat": 1.0,
+      "carbs": 32.0,
+      "protein": 7.0,
+      "id": "bread-white-skinny-thin-cut-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Bread - White, Thin-Cut",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 200.0,
+      "fat": 2.0,
+      "carbs": 40.0,
+      "protein": 8.0,
+      "id": "bread-white-thin-cut-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Damascus Flaxseed Wrap",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 220.0,
+      "fat": 8.0,
+      "carbs": 30.0,
+      "protein": 20.0,
+      "id": "damascus-flaxseed-wrap-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Brown Mustard",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 20.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "brown-mustard-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Caramelized Onions",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 15.0,
+      "fat": 1.0,
+      "carbs": 1.0,
+      "protein": 0.0,
+      "id": "caramelized-onions-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chipotle Lime",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 80.0,
+      "fat": 8.0,
+      "carbs": 3.0,
+      "protein": 0.0,
+      "id": "chipotle-lime-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Hot Peppers",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 25.0,
+      "fat": 1.5,
+      "carbs": 2.0,
+      "protein": 0.0,
+      "id": "hot-peppers-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Italian Seasoning",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "italian-seasoning-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Lettuce",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 5.0,
+      "fat": 0.0,
+      "carbs": 1.0,
+      "protein": 0.0,
+      "id": "lettuce-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Mayo",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 160.0,
+      "fat": 18.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "mayo-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Oil",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 50.0,
+      "fat": 6.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "oil-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Pickles",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "pickles-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Red Wine Vinegar",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 5.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "red-wine-vinegar-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Roasted Garlic Aioli",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 190.0,
+      "fat": 21.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "roasted-garlic-aioli-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Sauerkraut",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 5.0,
+      "fat": 0.0,
+      "carbs": 1.0,
+      "protein": 0.0,
+      "id": "sauerkraut-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Sweet Heat BBQ",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 60.0,
+      "fat": 0.0,
+      "carbs": 15.0,
+      "protein": 0.0,
+      "id": "sweet-heat-bbq-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Tomato",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 5.0,
+      "fat": 0.0,
+      "carbs": 1.0,
+      "protein": 0.0,
+      "id": "tomato-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Tortilla Crisps",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 70.0,
+      "fat": 4.0,
+      "carbs": 8.0,
+      "protein": 0.0,
+      "id": "tortilla-crisps-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Brown Mustard",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 25.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "brown-mustard-1-menu-serving-size-in-name-133"
+    },
+    {
+      "name": "Caramelized Onions",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 20.0,
+      "fat": 1.5,
+      "carbs": 2.0,
+      "protein": 0.0,
+      "id": "caramelized-onions-1-menu-serving-size-in-name-134"
+    },
+    {
+      "name": "Hot Peppers",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 40.0,
+      "fat": 2.5,
+      "carbs": 3.0,
+      "protein": 0.0,
+      "id": "hot-peppers-1-menu-serving-size-in-name-135"
+    },
+    {
+      "name": "Mayo",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 180.0,
+      "fat": 20.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "mayo-1-menu-serving-size-in-name-136"
+    },
+    {
+      "name": "Oil",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 100.0,
+      "fat": 11.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "oil-1-menu-serving-size-in-name-137"
+    },
+    {
+      "name": "Red Wine Vinegar",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 15.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "red-wine-vinegar-1-menu-serving-size-in-name-138"
+    },
+    {
+      "name": "Roasted Garlic Aioli",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 210.0,
+      "fat": 23.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "roasted-garlic-aioli-1-menu-serving-size-in-name-139"
+    },
+    {
+      "name": "Sauerkraut",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 10.0,
+      "fat": 0.0,
+      "carbs": 2.0,
+      "protein": 0.0,
+      "id": "sauerkraut-1-menu-serving-size-in-name-140"
+    },
+    {
+      "name": "Sliced Onions",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 5.0,
+      "fat": 0.0,
+      "carbs": 1.0,
+      "protein": 0.0,
+      "id": "sliced-onions-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Sweet Heat BBQ",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 80.0,
+      "fat": 0.0,
+      "carbs": 19.0,
+      "protein": 0.0,
+      "id": "sweet-heat-bbq-1-menu-serving-size-in-name-142"
+    },
+    {
+      "name": "Tomato",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 10.0,
+      "fat": 0.0,
+      "carbs": 2.0,
+      "protein": 0.0,
+      "id": "tomato-1-menu-serving-size-in-name-144"
+    },
+    {
+      "name": "Brown Mustard",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 10.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "brown-mustard-1-menu-serving-size-in-name-145"
+    },
+    {
+      "name": "Buttermilk Ranch",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 60.0,
+      "fat": 6.0,
+      "carbs": 1.0,
+      "protein": 0.0,
+      "id": "buttermilk-ranch-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Hot Pepper Ranch",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 35.0,
+      "fat": 3.5,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "hot-pepper-ranch-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Hot Peppers",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 15.0,
+      "fat": 1.0,
+      "carbs": 1.0,
+      "protein": 0.0,
+      "id": "hot-peppers-1-menu-serving-size-in-name-148"
+    },
+    {
+      "name": "Marinara Sauce",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 15.0,
+      "fat": 0.0,
+      "carbs": 2.0,
+      "protein": 0.0,
+      "id": "marinara-sauce-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Mayo",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 100.0,
+      "fat": 11.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "mayo-1-menu-serving-size-in-name-150"
+    },
+    {
+      "name": "Oil",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 25.0,
+      "fat": 3.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "oil-1-menu-serving-size-in-name-151"
+    },
+    {
+      "name": "Potbelly Whole Pickle",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "potbelly-whole-pickle-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Red Wine Vinegar",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "red-wine-vinegar-1-menu-serving-size-in-name-153"
+    },
+    {
+      "name": "Roasted Garlic Aioli",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 80.0,
+      "fat": 8.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "roasted-garlic-aioli-1-menu-serving-size-in-name-154"
+    },
+    {
+      "name": "Sliced Onions",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "sliced-onions-1-menu-serving-size-in-name-155"
+    },
+    {
+      "name": "Sweet Heat BBQ",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 25.0,
+      "fat": 0.0,
+      "carbs": 6.0,
+      "protein": 0.0,
+      "id": "sweet-heat-bbq-1-menu-serving-size-in-name-156"
+    },
+    {
+      "name": "Artichoke Hearts",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 10.0,
+      "fat": 0.0,
+      "carbs": 1.0,
+      "protein": 0.0,
+      "id": "artichoke-hearts-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Avocado",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 120.0,
+      "fat": 10.0,
+      "carbs": 5.0,
+      "protein": 3.0,
+      "id": "avocado-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Egg Patty",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 60.0,
+      "fat": 4.0,
+      "carbs": 1.0,
+      "protein": 4.0,
+      "id": "egg-patty-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Hummus",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 120.0,
+      "fat": 7.0,
+      "carbs": 12.0,
+      "protein": 4.0,
+      "id": "hummus-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Avocado",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 180.0,
+      "fat": 16.0,
+      "carbs": 8.0,
+      "protein": 4.0,
+      "id": "avocado-1-menu-serving-size-in-name-161"
+    },
+    {
+      "name": "Hummus",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 180.0,
+      "fat": 11.0,
+      "carbs": 18.0,
+      "protein": 6.0,
+      "id": "hummus-1-menu-serving-size-in-name-162"
+    },
+    {
+      "name": "Sliced Mushrooms",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 10.0,
+      "fat": 0.0,
+      "carbs": 1.0,
+      "protein": 1.0,
+      "id": "sliced-mushrooms-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Avocado",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 60.0,
+      "fat": 5.0,
+      "carbs": 3.0,
+      "protein": 1.0,
+      "id": "avocado-1-menu-serving-size-in-name-164"
+    },
+    {
+      "name": "Cucumbers",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "cucumbers-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Hummus",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 60.0,
+      "fat": 3.5,
+      "carbs": 6.0,
+      "protein": 2.0,
+      "id": "hummus-1-menu-serving-size-in-name-166"
+    },
+    {
+      "name": "Roasted Red Peppers",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 5.0,
+      "fat": 0.0,
+      "carbs": 1.0,
+      "protein": 0.0,
+      "id": "roasted-red-peppers-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Sliced Mushrooms",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "sliced-mushrooms-1-menu-serving-size-in-name-168"
+    },
+    {
+      "name": "Blue Cheese - Extra",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 50.0,
+      "fat": 4.0,
+      "carbs": 0.0,
+      "protein": 3.0,
+      "id": "blue-cheese-extra-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Cheddar - Extra",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 60.0,
+      "fat": 4.5,
+      "carbs": 0.0,
+      "protein": 4.0,
+      "id": "cheddar-extra-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Feta - Extra",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 35.0,
+      "fat": 2.0,
+      "carbs": 1.0,
+      "protein": 3.0,
+      "id": "feta-extra-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "A Wreck Salad",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 370.0,
+      "fat": 24.0,
+      "carbs": 9.0,
+      "protein": 30.0,
+      "id": "a-wreck-salad-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chicken Salad Salad",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 870.0,
+      "fat": 60.0,
+      "carbs": 59.0,
+      "protein": 23.0,
+      "id": "chicken-salad-salad-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Farmhouse",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 790.0,
+      "fat": 61.0,
+      "carbs": 12.0,
+      "protein": 46.0,
+      "id": "farmhouse-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Powerhouse",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 560.0,
+      "fat": 15.0,
+      "carbs": 75.0,
+      "protein": 30.0,
+      "id": "powerhouse-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Apple Walnut, Half",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 540.0,
+      "fat": 38.0,
+      "carbs": 29.0,
+      "protein": 19.0,
+      "id": "apple-walnut-half-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "A Wreck Salad, Half",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 250.0,
+      "fat": 17.0,
+      "carbs": 5.0,
+      "protein": 21.0,
+      "id": "a-wreck-salad-half-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chicken Salad Salad, Half",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 440.0,
+      "fat": 30.0,
+      "carbs": 30.0,
+      "protein": 11.0,
+      "id": "chicken-salad-salad-half-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Farmhouse, Half",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 400.0,
+      "fat": 31.0,
+      "carbs": 7.0,
+      "protein": 23.0,
+      "id": "farmhouse-half-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Powerhouse, Half",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 280.0,
+      "fat": 8.0,
+      "carbs": 38.0,
+      "protein": 15.0,
+      "id": "powerhouse-half-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Cucumbers",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 5.0,
+      "fat": 0.0,
+      "carbs": 1.0,
+      "protein": 0.0,
+      "id": "cucumbers-1-menu-serving-size-in-name-181"
+    },
+    {
+      "name": "Grape Tomato",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 10.0,
+      "fat": 0.0,
+      "carbs": 1.0,
+      "protein": 0.0,
+      "id": "grape-tomato-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Candied Walnuts",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 140.0,
+      "fat": 13.0,
+      "carbs": 6.0,
+      "protein": 3.0,
+      "id": "candied-walnuts-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chopped Bacon",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 140.0,
+      "fat": 10.0,
+      "carbs": 0.0,
+      "protein": 12.0,
+      "id": "chopped-bacon-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Diced Apples",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 15.0,
+      "fat": 0.0,
+      "carbs": 4.0,
+      "protein": 0.0,
+      "id": "diced-apples-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Dried Cranberry",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 100.0,
+      "fat": 0.0,
+      "carbs": 24.0,
+      "protein": 0.0,
+      "id": "dried-cranberry-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Fresh Strawberries",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 15.0,
+      "fat": 0.0,
+      "carbs": 3.0,
+      "protein": 0.0,
+      "id": "fresh-strawberries-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Garbanzo Beans",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 80.0,
+      "fat": 1.5,
+      "carbs": 13.0,
+      "protein": 4.0,
+      "id": "garbanzo-beans-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Glazed Walnuts",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 140.0,
+      "fat": 13.0,
+      "carbs": 4.0,
+      "protein": 2.0,
+      "id": "glazed-walnuts-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Hard Boiled Egg",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 45.0,
+      "fat": 3.0,
+      "carbs": 0.0,
+      "protein": 4.0,
+      "id": "hard-boiled-egg-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Hummus",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 90.0,
+      "fat": 5.0,
+      "carbs": 9.0,
+      "protein": 3.0,
+      "id": "hummus-1-menu-serving-size-in-name-191"
+    },
+    {
+      "name": "Red Grapes",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 15.0,
+      "fat": 0.0,
+      "carbs": 4.0,
+      "protein": 0.0,
+      "id": "red-grapes-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Balsamic Vinaigrette",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 380.0,
+      "fat": 36.0,
+      "carbs": 14.0,
+      "protein": 0.0,
+      "id": "balsamic-vinaigrette-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Buttermilk Ranch",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 360.0,
+      "fat": 38.0,
+      "carbs": 6.0,
+      "protein": 2.0,
+      "id": "buttermilk-ranch-1-menu-serving-size-in-name-194"
+    },
+    {
+      "name": "Fat Free Vinaigrette",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 240.0,
+      "fat": 0.0,
+      "carbs": 57.0,
+      "protein": 0.0,
+      "id": "fat-free-vinaigrette-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Hot Pepper Ranch",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 390.0,
+      "fat": 42.0,
+      "carbs": 3.0,
+      "protein": 0.0,
+      "id": "hot-pepper-ranch-1-menu-serving-size-in-name-196"
+    },
+    {
+      "name": "Balsamic Vinaigrette",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 190.0,
+      "fat": 18.0,
+      "carbs": 7.0,
+      "protein": 0.0,
+      "id": "balsamic-vinaigrette-1-menu-serving-size-in-name-198"
+    },
+    {
+      "name": "Fat Free Vinaigrette",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 120.0,
+      "fat": 0.0,
+      "carbs": 29.0,
+      "protein": 0.0,
+      "id": "fat-free-vinaigrette-1-menu-serving-size-in-name-199"
+    },
+    {
+      "name": "Hot Pepper Ranch",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 200.0,
+      "fat": 21.0,
+      "carbs": 2.0,
+      "protein": 0.0,
+      "id": "hot-pepper-ranch-1-menu-serving-size-in-name-200"
+    },
+    {
+      "name": "Broccoli Cheddar, Bowl",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 350.0,
+      "fat": 24.0,
+      "carbs": 17.0,
+      "protein": 12.0,
+      "id": "broccoli-cheddar-bowl-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Broccoli Cheddar, Cup",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 230.0,
+      "fat": 16.0,
+      "carbs": 11.0,
+      "protein": 8.0,
+      "id": "broccoli-cheddar-cup-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chicken Pot Pie, Bowl",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 420.0,
+      "fat": 29.0,
+      "carbs": 18.0,
+      "protein": 12.0,
+      "id": "chicken-pot-pie-bowl-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chicken Pot Pie, Cup",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 280.0,
+      "fat": 19.0,
+      "carbs": 12.0,
+      "protein": 8.0,
+      "id": "chicken-pot-pie-cup-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chili, Bowl",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 370.0,
+      "fat": 16.0,
+      "carbs": 30.0,
+      "protein": 23.0,
+      "id": "chili-bowl-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chili, Cup",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 250.0,
+      "fat": 11.0,
+      "carbs": 20.0,
+      "protein": 15.0,
+      "id": "chili-cup-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chili Mac, Bowl",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 470.0,
+      "fat": 24.0,
+      "carbs": 42.0,
+      "protein": 23.0,
+      "id": "chili-mac-bowl-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chili Mac, Cup",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 300.0,
+      "fat": 15.0,
+      "carbs": 26.0,
+      "protein": 15.0,
+      "id": "chili-mac-cup-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Garden Vegetable, Bowl",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 110.0,
+      "fat": 0.0,
+      "carbs": 23.0,
+      "protein": 4.0,
+      "id": "garden-vegetable-bowl-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Garden Vegetable, Cup",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 70.0,
+      "fat": 0.0,
+      "carbs": 15.0,
+      "protein": 3.0,
+      "id": "garden-vegetable-cup-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Loaded Baked Potato, Bowl",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 310.0,
+      "fat": 20.0,
+      "carbs": 24.0,
+      "protein": 7.0,
+      "id": "loaded-baked-potato-bowl-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Loaded Baked Potato, Cup",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 210.0,
+      "fat": 13.0,
+      "carbs": 16.0,
+      "protein": 5.0,
+      "id": "loaded-baked-potato-cup-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Mac & Cheese, Bowl",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 460.0,
+      "fat": 20.0,
+      "carbs": 51.0,
+      "protein": 17.0,
+      "id": "mac-cheese-bowl-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Mac & Cheese, Cup",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 300.0,
+      "fat": 13.0,
+      "carbs": 33.0,
+      "protein": 11.0,
+      "id": "mac-cheese-cup-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Pork BBQ Mac, Bowl",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 880.0,
+      "fat": 52.0,
+      "carbs": 59.0,
+      "protein": 42.0,
+      "id": "pork-bbq-mac-bowl-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Pork BBQ Mac, Cup",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 600.0,
+      "fat": 35.0,
+      "carbs": 43.0,
+      "protein": 28.0,
+      "id": "pork-bbq-mac-cup-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Southwest Corn Chowder, Bowl (at Select Locations)",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 360.0,
+      "fat": 16.0,
+      "carbs": 47.0,
+      "protein": 7.0,
+      "id": "southwest-corn-chowder-bowl-at-select-locations-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Southwest Corn Chowder, Cup (at Select Locations)",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 220.0,
+      "fat": 10.0,
+      "carbs": 30.0,
+      "protein": 5.0,
+      "id": "southwest-corn-chowder-cup-at-select-locations-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chili",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 30.0,
+      "fat": 1.5,
+      "carbs": 2.0,
+      "protein": 2.0,
+      "id": "chili-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chopped Bacon",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 70.0,
+      "fat": 5.0,
+      "carbs": 0.0,
+      "protein": 6.0,
+      "id": "chopped-bacon-1-menu-serving-size-in-name-220"
+    },
+    {
+      "name": "Cheddar",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 60.0,
+      "fat": 4.5,
+      "carbs": 0.0,
+      "protein": 4.0,
+      "id": "cheddar-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Oyster Crackers",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 70.0,
+      "fat": 2.0,
+      "carbs": 11.0,
+      "protein": 1.0,
+      "id": "oyster-crackers-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Baked Lay's",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 140.0,
+      "fat": 4.0,
+      "carbs": 24.0,
+      "protein": 2.0,
+      "id": "baked-lay-s-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Potbelly Whole Pickle",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 25.0,
+      "fat": 0.0,
+      "carbs": 5.0,
+      "protein": 1.0,
+      "id": "potbelly-whole-pickle-1-menu-serving-size-in-name-224"
+    },
+    {
+      "name": "Utz Cheese Curls",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 230.0,
+      "fat": 14.0,
+      "carbs": 22.0,
+      "protein": 3.0,
+      "id": "utz-cheese-curls-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Zapp's Hot Pepper Chips",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 220.0,
+      "fat": 12.0,
+      "carbs": 24.0,
+      "protein": 3.0,
+      "id": "zapp-s-hot-pepper-chips-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Zapp's Hotter 'N Hot Jalapeno Chips",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 220.0,
+      "fat": 12.0,
+      "carbs": 24.0,
+      "protein": 3.0,
+      "id": "zapp-s-hotter-n-hot-jalapeno-chips-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Zapp's Mesquite Bar-B-Que Chips",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 220.0,
+      "fat": 12.0,
+      "carbs": 24.0,
+      "protein": 3.0,
+      "id": "zapp-s-mesquite-bar-b-que-chips-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Zapp's Regular Chips",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 220.0,
+      "fat": 12.0,
+      "carbs": 25.0,
+      "protein": 3.0,
+      "id": "zapp-s-regular-chips-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Zapp's Salt & Vinegar Chips",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 220.0,
+      "fat": 12.0,
+      "carbs": 24.0,
+      "protein": 3.0,
+      "id": "zapp-s-salt-vinegar-chips-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Zapp's VooDoo Heat Chips",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 220.0,
+      "fat": 12.0,
+      "carbs": 25.0,
+      "protein": 3.0,
+      "id": "zapp-s-voodoo-heat-chips-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Zapp's VooDoo Regular Chips",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 220.0,
+      "fat": 12.0,
+      "carbs": 24.0,
+      "protein": 3.0,
+      "id": "zapp-s-voodoo-regular-chips-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids' Combo Ham & Swiss",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 500.0,
+      "fat": 15.0,
+      "carbs": 71.0,
+      "protein": 24.0,
+      "id": "kids-combo-ham-swiss-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids' Combo Mac & Cheese",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 530.0,
+      "fat": 25.0,
+      "carbs": 68.0,
+      "protein": 17.0,
+      "id": "kids-combo-mac-cheese-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids' Combo PB&J",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 740.0,
+      "fat": 30.0,
+      "carbs": 105.0,
+      "protein": 20.0,
+      "id": "kids-combo-pb-j-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids' Combo Turkey & Swiss",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 460.0,
+      "fat": 11.0,
+      "carbs": 72.0,
+      "protein": 25.0,
+      "id": "kids-combo-turkey-swiss-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Bread - Multigrain",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 210.0,
+      "fat": 2.5,
+      "carbs": 42.0,
+      "protein": 9.0,
+      "id": "bread-multigrain-1-menu-serving-size-in-name-237"
+    },
+    {
+      "name": "Bread - Multigrain, Thin-Cut",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 110.0,
+      "fat": 1.5,
+      "carbs": 21.0,
+      "protein": 4.0,
+      "id": "bread-multigrain-thin-cut-1-menu-serving-size-in-name-238"
+    },
+    {
+      "name": "Bread - White",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 210.0,
+      "fat": 2.0,
+      "carbs": 42.0,
+      "protein": 9.0,
+      "id": "bread-white-1-menu-serving-size-in-name-239"
+    },
+    {
+      "name": "Bread - White, Thin-Cut",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 100.0,
+      "fat": 1.0,
+      "carbs": 20.0,
+      "protein": 4.0,
+      "id": "bread-white-thin-cut-1-menu-serving-size-in-name-240"
+    },
+    {
+      "name": "Brown Mustard",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 5.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "brown-mustard-1-menu-serving-size-in-name-241"
+    },
+    {
+      "name": "Lettuce",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "lettuce-1-menu-serving-size-in-name-242"
+    },
+    {
+      "name": "Mayo",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 50.0,
+      "fat": 6.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "mayo-1-menu-serving-size-in-name-243"
+    },
+    {
+      "name": "Oil",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 15.0,
+      "fat": 2.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "oil-1-menu-serving-size-in-name-244"
+    },
+    {
+      "name": "Tomato",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "tomato-1-menu-serving-size-in-name-245"
+    },
+    {
+      "name": "Avocado",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 45.0,
+      "fat": 4.0,
+      "carbs": 2.0,
+      "protein": 1.0,
+      "id": "avocado-1-menu-serving-size-in-name-246"
+    },
+    {
+      "name": "Bacon",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 100.0,
+      "fat": 9.0,
+      "carbs": 1.0,
+      "protein": 4.0,
+      "id": "bacon-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Apple Sauce",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 50.0,
+      "fat": 0.0,
+      "carbs": 13.0,
+      "protein": 0.0,
+      "id": "apple-sauce-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Mini Oatmeal Chocolate Chip Cookie",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 100.0,
+      "fat": 4.0,
+      "carbs": 14.0,
+      "protein": 1.0,
+      "id": "mini-oatmeal-chocolate-chip-cookie-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Chocolate Milk",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 190.0,
+      "fat": 2.5,
+      "carbs": 31.0,
+      "protein": 10.0,
+      "id": "kids-chocolate-milk-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Milk",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 130.0,
+      "fat": 5.0,
+      "carbs": 13.0,
+      "protein": 8.0,
+      "id": "kids-milk-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Water Bottle",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "water-bottle-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Banana Pudding Shake",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 710.0,
+      "fat": 35.0,
+      "carbs": 87.0,
+      "protein": 14.0,
+      "id": "banana-pudding-shake-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chocolate Brownie Cookie",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 420.0,
+      "fat": 19.0,
+      "carbs": 58.0,
+      "protein": 5.0,
+      "id": "chocolate-brownie-cookie-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chocolate Shake",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 770.0,
+      "fat": 36.0,
+      "carbs": 101.0,
+      "protein": 15.0,
+      "id": "chocolate-shake-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Cold Brew Shake",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 680.0,
+      "fat": 36.0,
+      "carbs": 78.0,
+      "protein": 13.0,
+      "id": "cold-brew-shake-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Confetti Cookie Shake",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 880.0,
+      "fat": 45.0,
+      "carbs": 105.0,
+      "protein": 16.0,
+      "id": "confetti-cookie-shake-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Dream Bar",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 430.0,
+      "fat": 23.0,
+      "carbs": 51.0,
+      "protein": 4.0,
+      "id": "dream-bar-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "English Toffee Shake",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 700.0,
+      "fat": 34.0,
+      "carbs": 89.0,
+      "protein": 12.0,
+      "id": "english-toffee-shake-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Oatmeal Chocolate Chip Cookie",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 420.0,
+      "fat": 17.0,
+      "carbs": 60.0,
+      "protein": 6.0,
+      "id": "oatmeal-chocolate-chip-cookie-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "OREO Shake",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 770.0,
+      "fat": 40.0,
+      "carbs": 90.0,
+      "protein": 15.0,
+      "id": "oreo-shake-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "S'mores Cookie",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 430.0,
+      "fat": 19.0,
+      "carbs": 61.0,
+      "protein": 5.0,
+      "id": "s-mores-cookie-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Strawberry Shake",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 710.0,
+      "fat": 35.0,
+      "carbs": 90.0,
+      "protein": 13.0,
+      "id": "strawberry-shake-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Sugar Cookie",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 520.0,
+      "fat": 24.0,
+      "carbs": 77.0,
+      "protein": 5.0,
+      "id": "sugar-cookie-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Vanilla Shake",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 700.0,
+      "fat": 37.0,
+      "carbs": 78.0,
+      "protein": 15.0,
+      "id": "vanilla-shake-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chocolate Syrup - Second Flavor",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 100.0,
+      "fat": 0.0,
+      "carbs": 24.0,
+      "protein": 1.0,
+      "id": "chocolate-syrup-second-flavor-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Coffee Syrup - Second Flavor",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 70.0,
+      "fat": 0.0,
+      "carbs": 17.0,
+      "protein": 0.0,
+      "id": "coffee-syrup-second-flavor-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Vanilla",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 5.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "vanilla-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Strawberries",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 30.0,
+      "fat": 0.0,
+      "carbs": 8.0,
+      "protein": 0.0,
+      "id": "strawberries-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Coke",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 270.0,
+      "fat": 0.0,
+      "carbs": 73.0,
+      "protein": 0.0,
+      "id": "coke-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Coke Zero Sugar",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "coke-zero-sugar-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Diet Dr. Pepper",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "diet-dr-pepper-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Dr. Pepper",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 240.0,
+      "fat": 0.0,
+      "carbs": 65.0,
+      "protein": 0.0,
+      "id": "dr-pepper-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Fanta Orange",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 260.0,
+      "fat": 0.0,
+      "carbs": 73.0,
+      "protein": 0.0,
+      "id": "fanta-orange-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Fuze Raspberry Tea",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 140.0,
+      "fat": 0.0,
+      "carbs": 38.0,
+      "protein": 0.0,
+      "id": "fuze-raspberry-tea-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Minute Maid Lemonade",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 230.0,
+      "fat": 0.0,
+      "carbs": 63.0,
+      "protein": 0.0,
+      "id": "minute-maid-lemonade-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Sprite",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 240.0,
+      "fat": 0.0,
+      "carbs": 64.0,
+      "protein": 0.0,
+      "id": "sprite-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Sweetened Iced Tea",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 280.0,
+      "fat": 0.0,
+      "carbs": 71.0,
+      "protein": 0.0,
+      "id": "sweetened-iced-tea-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Unsweetened Iced Tea",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "unsweetened-iced-tea-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Coke",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 400.0,
+      "fat": 0.0,
+      "carbs": 109.0,
+      "protein": 0.0,
+      "id": "coke-1-menu-serving-size-in-name-280"
+    },
+    {
+      "name": "Dr. Pepper",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 360.0,
+      "fat": 0.0,
+      "carbs": 98.0,
+      "protein": 0.0,
+      "id": "dr-pepper-1-menu-serving-size-in-name-281"
+    },
+    {
+      "name": "Fanta Orange",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 400.0,
+      "fat": 0.0,
+      "carbs": 109.0,
+      "protein": 0.0,
+      "id": "fanta-orange-1-menu-serving-size-in-name-282"
+    },
+    {
+      "name": "Fuze Raspberry Tea",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 200.0,
+      "fat": 0.0,
+      "carbs": 57.0,
+      "protein": 0.0,
+      "id": "fuze-raspberry-tea-1-menu-serving-size-in-name-283"
+    },
+    {
+      "name": "Minute Maid Lemonade",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 340.0,
+      "fat": 0.0,
+      "carbs": 94.0,
+      "protein": 0.0,
+      "id": "minute-maid-lemonade-1-menu-serving-size-in-name-284"
+    },
+    {
+      "name": "Sprite",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 360.0,
+      "fat": 0.0,
+      "carbs": 96.0,
+      "protein": 0.0,
+      "id": "sprite-1-menu-serving-size-in-name-285"
+    },
+    {
+      "name": "Sweetened Iced Tea",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 420.0,
+      "fat": 0.0,
+      "carbs": 106.0,
+      "protein": 0.0,
+      "id": "sweetened-iced-tea-1-menu-serving-size-in-name-286"
+    },
+    {
+      "name": "Unsweetened Iced Tea",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 5.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "unsweetened-iced-tea-1-menu-serving-size-in-name-287"
+    },
+    {
+      "name": "Farmer's Punch",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 200.0,
+      "fat": 0.0,
+      "carbs": 48.0,
+      "protein": 0.0,
+      "id": "farmer-s-punch-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Lemonade",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 200.0,
+      "fat": 0.0,
+      "carbs": 50.0,
+      "protein": 0.0,
+      "id": "lemonade-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Mandarin Cardamom",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 220.0,
+      "fat": 0.0,
+      "carbs": 50.0,
+      "protein": 0.0,
+      "id": "mandarin-cardamom-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Pineapple Passionfruit",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 80.0,
+      "fat": 0.0,
+      "carbs": 20.0,
+      "protein": 0.0,
+      "id": "pineapple-passionfruit-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Strawberry DragonFruit",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 200.0,
+      "fat": 0.0,
+      "carbs": 50.0,
+      "protein": 0.0,
+      "id": "strawberry-dragonfruit-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Watermelon Mint",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 80.0,
+      "fat": 0.0,
+      "carbs": 20.0,
+      "protein": 0.0,
+      "id": "watermelon-mint-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Farmer's Punch",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 300.0,
+      "fat": 0.0,
+      "carbs": 73.0,
+      "protein": 0.0,
+      "id": "farmer-s-punch-1-menu-serving-size-in-name-294"
+    },
+    {
+      "name": "Lemonade",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 300.0,
+      "fat": 0.0,
+      "carbs": 75.0,
+      "protein": 0.0,
+      "id": "lemonade-1-menu-serving-size-in-name-295"
+    },
+    {
+      "name": "Mandarin Cardamom",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 330.0,
+      "fat": 0.0,
+      "carbs": 75.0,
+      "protein": 0.0,
+      "id": "mandarin-cardamom-1-menu-serving-size-in-name-296"
+    },
+    {
+      "name": "Pineapple Passionfruit",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 130.0,
+      "fat": 0.0,
+      "carbs": 30.0,
+      "protein": 0.0,
+      "id": "pineapple-passionfruit-1-menu-serving-size-in-name-297"
+    },
+    {
+      "name": "Strawberry DragonFruit",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 300.0,
+      "fat": 0.0,
+      "carbs": 75.0,
+      "protein": 0.0,
+      "id": "strawberry-dragonfruit-1-menu-serving-size-in-name-298"
+    },
+    {
+      "name": "Watermelon Mint",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 130.0,
+      "fat": 0.0,
+      "carbs": 30.0,
+      "protein": 0.0,
+      "id": "watermelon-mint-1-menu-serving-size-in-name-299"
+    },
+    {
+      "name": "Arizona Tea",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 180.0,
+      "fat": 0.0,
+      "carbs": 50.0,
+      "protein": 0.0,
+      "id": "arizona-tea-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Cherry Coke 20 oz",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 260.0,
+      "fat": 0.0,
+      "carbs": 70.0,
+      "protein": 0.0,
+      "id": "cherry-coke-20-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Coca Zero Sugar 20oz",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "coca-zero-sugar-20oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Coke 12oz",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 140.0,
+      "fat": 0.0,
+      "carbs": 39.0,
+      "protein": 0.0,
+      "id": "coke-12oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Coke 20oz",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 240.0,
+      "fat": 0.0,
+      "carbs": 65.0,
+      "protein": 0.0,
+      "id": "coke-20oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Crush",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 160.0,
+      "fat": 0.0,
+      "carbs": 43.0,
+      "protein": 0.0,
+      "id": "crush-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Diet Coke 12 oz",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "diet-coke-12-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Diet Coke 20 oz",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "diet-coke-20-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Diet Snapple Half & Half",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 10.0,
+      "fat": 0.0,
+      "carbs": 1.0,
+      "protein": 0.0,
+      "id": "diet-snapple-half-half-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Honest Organic Honey Green Tea",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 70.0,
+      "fat": 0.0,
+      "carbs": 19.0,
+      "protein": 0.0,
+      "id": "honest-organic-honey-green-tea-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Honest Organic Peach Tea",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 100.0,
+      "fat": 0.0,
+      "carbs": 25.0,
+      "protein": 0.0,
+      "id": "honest-organic-peach-tea-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "IBC Cream Soda",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 180.0,
+      "fat": 0.0,
+      "carbs": 44.0,
+      "protein": 0.0,
+      "id": "ibc-cream-soda-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "IBC Root Beer",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 160.0,
+      "fat": 0.0,
+      "carbs": 40.0,
+      "protein": 0.0,
+      "id": "ibc-root-beer-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Nantucket Nectars Lemonade Bottle",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 180.0,
+      "fat": 0.0,
+      "carbs": 47.0,
+      "protein": 0.0,
+      "id": "nantucket-nectars-lemonade-bottle-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Nantucket Nectars Orange Mango",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 220.0,
+      "fat": 0.0,
+      "carbs": 55.0,
+      "protein": 0.0,
+      "id": "nantucket-nectars-orange-mango-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Powerade Mountain Berry Blast",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 130.0,
+      "fat": 0.0,
+      "carbs": 35.0,
+      "protein": 0.0,
+      "id": "powerade-mountain-berry-blast-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "San Pellegrino",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "san-pellegrino-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "San Pellegrino Blood Orange",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 140.0,
+      "fat": 0.0,
+      "carbs": 33.0,
+      "protein": 0.0,
+      "id": "san-pellegrino-blood-orange-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Simply Orange",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 160.0,
+      "fat": 0.0,
+      "carbs": 37.0,
+      "protein": 2.0,
+      "id": "simply-orange-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Smartwater",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "smartwater-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Sprite 20oz",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 240.0,
+      "fat": 0.0,
+      "carbs": 64.0,
+      "protein": 0.0,
+      "id": "sprite-20oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Vitamin Water Squeezed Lemonade",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 5.0,
+      "protein": 0.0,
+      "id": "vitamin-water-squeezed-lemonade-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Vitamin Water XXX Acai Blue Pom",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 120.0,
+      "fat": 0.0,
+      "carbs": 33.0,
+      "protein": 0.0,
+      "id": "vitamin-water-xxx-acai-blue-pom-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Avo Turkey, Catering Portion",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 240.0,
+      "fat": 9.0,
+      "carbs": 27.0,
+      "protein": 16.0,
+      "id": "avo-turkey-catering-portion-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "A Wreck, Catering Portion",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 240.0,
+      "fat": 10.0,
+      "carbs": 24.0,
+      "protein": 15.0,
+      "id": "a-wreck-catering-portion-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "BLTA, Catering Portion",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 250.0,
+      "fat": 12.0,
+      "carbs": 27.0,
+      "protein": 13.0,
+      "id": "blta-catering-portion-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chicken Salad & Provolone, Catering Portion",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 270.0,
+      "fat": 13.0,
+      "carbs": 23.0,
+      "protein": 15.0,
+      "id": "chicken-salad-provolone-catering-portion-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Grilled Chicken & Cheddar, Catering Portion",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 210.0,
+      "fat": 6.0,
+      "carbs": 23.0,
+      "protein": 18.0,
+      "id": "grilled-chicken-cheddar-catering-portion-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Grilled Chicken Club, Catering Portion",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 250.0,
+      "fat": 9.0,
+      "carbs": 23.0,
+      "protein": 21.0,
+      "id": "grilled-chicken-club-catering-portion-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Italian, Catering Portion",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 270.0,
+      "fat": 15.0,
+      "carbs": 23.0,
+      "protein": 13.0,
+      "id": "italian-catering-portion-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Mama's Meatball, Catering Portion",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 330.0,
+      "fat": 16.0,
+      "carbs": 28.0,
+      "protein": 16.0,
+      "id": "mama-s-meatball-catering-portion-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Mediterranean (Vegan), Catering Portion",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 170.0,
+      "fat": 4.0,
+      "carbs": 29.0,
+      "protein": 7.0,
+      "id": "mediterranean-vegan-catering-portion-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Mediterranean, Catering Portion",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 250.0,
+      "fat": 6.0,
+      "carbs": 30.0,
+      "protein": 19.0,
+      "id": "mediterranean-catering-portion-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Mediterranean No Chicken, Catering Portion",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 200.0,
+      "fat": 6.0,
+      "carbs": 30.0,
+      "protein": 9.0,
+      "id": "mediterranean-no-chicken-catering-portion-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Pizza Melt, Catering Portion",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 300.0,
+      "fat": 15.0,
+      "carbs": 27.0,
+      "protein": 15.0,
+      "id": "pizza-melt-catering-portion-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Roast Beef & Provolone, Catering Portion",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 220.0,
+      "fat": 8.0,
+      "carbs": 24.0,
+      "protein": 15.0,
+      "id": "roast-beef-provolone-catering-portion-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Smoked Ham & Swiss, Catering Portion",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 210.0,
+      "fat": 7.0,
+      "carbs": 24.0,
+      "protein": 15.0,
+      "id": "smoked-ham-swiss-catering-portion-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Tuna Salad & Swiss, Catering Portion",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 250.0,
+      "fat": 11.0,
+      "carbs": 24.0,
+      "protein": 16.0,
+      "id": "tuna-salad-swiss-catering-portion-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Turkey Breast & Swiss, Catering Portion",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 190.0,
+      "fat": 5.0,
+      "carbs": 25.0,
+      "protein": 15.0,
+      "id": "turkey-breast-swiss-catering-portion-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Veggie Melt, Catering Portion",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 280.0,
+      "fat": 15.0,
+      "carbs": 26.0,
+      "protein": 14.0,
+      "id": "veggie-melt-catering-portion-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Avo Turkey, Individual Lunch Box",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 640.0,
+      "fat": 24.0,
+      "carbs": 73.0,
+      "protein": 46.0,
+      "id": "avo-turkey-individual-lunch-box-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "A Wreck, Individual Lunch Box",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 650.0,
+      "fat": 28.0,
+      "carbs": 65.0,
+      "protein": 42.0,
+      "id": "a-wreck-individual-lunch-box-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "BLTA, Individual Lunch Box",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 680.0,
+      "fat": 31.0,
+      "carbs": 73.0,
+      "protein": 36.0,
+      "id": "blta-individual-lunch-box-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chicken Salad & Provolone, Individual Lunch Box",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 760.0,
+      "fat": 38.0,
+      "carbs": 64.0,
+      "protein": 44.0,
+      "id": "chicken-salad-provolone-individual-lunch-box-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Grilled Chicken & Cheddar, Individual Lunch Box",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 570.0,
+      "fat": 14.0,
+      "carbs": 62.0,
+      "protein": 50.0,
+      "id": "grilled-chicken-cheddar-individual-lunch-box-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Grilled Chicken Club, Individual Lunch Box",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 690.0,
+      "fat": 23.0,
+      "carbs": 64.0,
+      "protein": 60.0,
+      "id": "grilled-chicken-club-individual-lunch-box-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Italian, Individual Lunch Box",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 770.0,
+      "fat": 44.0,
+      "carbs": 63.0,
+      "protein": 35.0,
+      "id": "italian-individual-lunch-box-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Mama's Meatball, Individual Lunch Box",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 920.0,
+      "fat": 48.0,
+      "carbs": 76.0,
+      "protein": 44.0,
+      "id": "mama-s-meatball-individual-lunch-box-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Mediterranean (Vegan), Individual Lunch Box",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 450.0,
+      "fat": 10.0,
+      "carbs": 77.0,
+      "protein": 17.0,
+      "id": "mediterranean-vegan-individual-lunch-box-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Mediterranean, Individual Lunch Box",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 670.0,
+      "fat": 17.0,
+      "carbs": 81.0,
+      "protein": 54.0,
+      "id": "mediterranean-individual-lunch-box-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Mediterranean No Chicken, Individual Lunch Box",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 520.0,
+      "fat": 15.0,
+      "carbs": 80.0,
+      "protein": 24.0,
+      "id": "mediterranean-no-chicken-individual-lunch-box-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Pizza Melt, Individual Lunch Box",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 820.0,
+      "fat": 41.0,
+      "carbs": 73.0,
+      "protein": 41.0,
+      "id": "pizza-melt-individual-lunch-box-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Roast Beef & Provolone, Individual Lunch Box",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 610.0,
+      "fat": 21.0,
+      "carbs": 64.0,
+      "protein": 42.0,
+      "id": "roast-beef-provolone-individual-lunch-box-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Smoked Ham & Swiss, Individual Lunch Box",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 590.0,
+      "fat": 20.0,
+      "carbs": 64.0,
+      "protein": 41.0,
+      "id": "smoked-ham-swiss-individual-lunch-box-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Tuna Salad & Swiss, Individual Lunch Box",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 690.0,
+      "fat": 31.0,
+      "carbs": 64.0,
+      "protein": 46.0,
+      "id": "tuna-salad-swiss-individual-lunch-box-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Turkey Breast & Swiss, Individual Lunch Box",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 520.0,
+      "fat": 14.0,
+      "carbs": 67.0,
+      "protein": 43.0,
+      "id": "turkey-breast-swiss-individual-lunch-box-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Veggie Melt, Individual Lunch Box",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 750.0,
+      "fat": 39.0,
+      "carbs": 70.0,
+      "protein": 38.0,
+      "id": "veggie-melt-individual-lunch-box-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Double Egg & Cheddar, Originals",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 710.0,
+      "fat": 32.0,
+      "carbs": 65.0,
+      "protein": 39.0,
+      "id": "double-egg-cheddar-originals-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Double Egg & Cheddar, Skinny",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 510.0,
+      "fat": 23.0,
+      "carbs": 48.0,
+      "protein": 28.0,
+      "id": "double-egg-cheddar-skinny-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Double Egg & Cheddar Wrap",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 630.0,
+      "fat": 38.0,
+      "carbs": 34.0,
+      "protein": 47.0,
+      "id": "double-egg-cheddar-wrap-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Mediterranean Chicken Bowl",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 810.0,
+      "fat": 45.0,
+      "carbs": 55.0,
+      "protein": 45.0,
+      "id": "mediterranean-chicken-bowl-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Mediterranean Chicken Bowl - Double Meat",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 960.0,
+      "fat": 47.0,
+      "carbs": 56.0,
+      "protein": 76.0,
+      "id": "mediterranean-chicken-bowl-double-meat-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Pastrami, BIGS",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 890.0,
+      "fat": 25.0,
+      "carbs": 97.0,
+      "protein": 75.0,
+      "id": "pastrami-bigs-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Pastrami, Originals",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 620.0,
+      "fat": 18.0,
+      "carbs": 66.0,
+      "protein": 54.0,
+      "id": "pastrami-originals-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Pastrami, Skinny",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 420.0,
+      "fat": 11.0,
+      "carbs": 48.0,
+      "protein": 36.0,
+      "id": "pastrami-skinny-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Pastrami Wrap",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 640.0,
+      "fat": 31.0,
+      "carbs": 37.0,
+      "protein": 70.0,
+      "id": "pastrami-wrap-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Pesto Grilled Chicken Bowl",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 620.0,
+      "fat": 30.0,
+      "carbs": 41.0,
+      "protein": 46.0,
+      "id": "pesto-grilled-chicken-bowl-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Pesto Grilled Chicken Bowl - Double Meat",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 780.0,
+      "fat": 32.0,
+      "carbs": 42.0,
+      "protein": 76.0,
+      "id": "pesto-grilled-chicken-bowl-double-meat-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Smoky Elote Chicken Bowl",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 630.0,
+      "fat": 26.0,
+      "carbs": 56.0,
+      "protein": 40.0,
+      "id": "smoky-elote-chicken-bowl-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Smoky Elote Chicken Bowl - Double Meat",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 780.0,
+      "fat": 29.0,
+      "carbs": 57.0,
+      "protein": 70.0,
+      "id": "smoky-elote-chicken-bowl-double-meat-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Smoky Elote Pork Bowl",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 940.0,
+      "fat": 60.0,
+      "carbs": 57.0,
+      "protein": 37.0,
+      "id": "smoky-elote-pork-bowl-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Steak, Egg & Cheddar, BIGS",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 800.0,
+      "fat": 30.0,
+      "carbs": 92.0,
+      "protein": 41.0,
+      "id": "steak-egg-cheddar-bigs-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Steak, Egg & Cheddar, Originals",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 540.0,
+      "fat": 20.0,
+      "carbs": 63.0,
+      "protein": 27.0,
+      "id": "steak-egg-cheddar-originals-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Steak, Egg & Cheddar, Skinny",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 340.0,
+      "fat": 11.0,
+      "carbs": 46.0,
+      "protein": 17.0,
+      "id": "steak-egg-cheddar-skinny-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Steak, Egg & Cheddar Wrap",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 450.0,
+      "fat": 25.0,
+      "carbs": 32.0,
+      "protein": 35.0,
+      "id": "steak-egg-cheddar-wrap-1-menu-serving-size-in-name"
+    }
+  ],
+  "source": "Nutritionix",
+  "sourceKind": "database",
+  "sourceDate": "2026-09-15"
+}

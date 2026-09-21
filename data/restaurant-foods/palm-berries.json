@@ -1,0 +1,195 @@
+{
+  "chain": "Palm Berries",
+  "sourceUrl": "https://palmberriesllc.com/wp-content/uploads/2022/06/Palmberries-Nutrition-Facts.pdf",
+  "retrievedAt": "2026-09-20",
+  "sourceDate": "Undated guide at 2022/06 upload path; still linked on official menu at retrieval",
+  "coverageNotes": {
+    "sourceLandingUrl": "https://palmberriesllc.com/our-menu/",
+    "method": "All 20 complete nutrition labels transcribed and visually reviewed across 3 PDF pages.",
+    "scope": "6 specialty bowls, 6 bases without toppings, and 8 smoothies; menu may include additional seasonal items.",
+    "servingBasis": "Printed serving ounces retained, including mixed 8 oz and 12 oz base servings; no gram weight inferred.",
+    "sourceSpelling": "Brazillian retained as printed in source."
+  },
+  "foods": [
+    {
+      "id": "sami-bowl",
+      "name": "Sami Bowl",
+      "servingLabel": "12 oz",
+      "calories": 720,
+      "protein": 12,
+      "carbs": 122,
+      "fat": 26
+    },
+    {
+      "id": "queen-city-bowl",
+      "name": "Queen City Bowl",
+      "servingLabel": "12 oz",
+      "calories": 460,
+      "protein": 6,
+      "carbs": 96,
+      "fat": 9
+    },
+    {
+      "id": "sunset-bowl",
+      "name": "Sunset Bowl",
+      "servingLabel": "12 oz",
+      "calories": 520,
+      "protein": 7,
+      "carbs": 111,
+      "fat": 8
+    },
+    {
+      "id": "protein-bowl",
+      "name": "Protein Bowl",
+      "servingLabel": "12 oz",
+      "calories": 630,
+      "protein": 22,
+      "carbs": 102,
+      "fat": 18
+    },
+    {
+      "id": "palm-bowl",
+      "name": "Palm Bowl",
+      "servingLabel": "12 oz",
+      "calories": 630,
+      "protein": 9,
+      "carbs": 102,
+      "fat": 25
+    },
+    {
+      "id": "dragon-bowl",
+      "name": "Dragon Bowl",
+      "servingLabel": "12 oz",
+      "calories": 450,
+      "protein": 8,
+      "carbs": 102,
+      "fat": 5
+    },
+    {
+      "id": "classic-base",
+      "name": "Classic Base",
+      "servingLabel": "12 oz",
+      "calories": 300,
+      "protein": 3,
+      "carbs": 67,
+      "fat": 5
+    },
+    {
+      "id": "very-berry-base",
+      "name": "Very Berry Base",
+      "servingLabel": "8 oz",
+      "calories": 190,
+      "protein": 2,
+      "carbs": 44,
+      "fat": 3
+    },
+    {
+      "id": "tropical-base",
+      "name": "Tropical Base",
+      "servingLabel": "8 oz",
+      "calories": 200,
+      "protein": 2,
+      "carbs": 46,
+      "fat": 3
+    },
+    {
+      "id": "superhuman-base",
+      "name": "Superhuman Base",
+      "servingLabel": "8 oz",
+      "calories": 230,
+      "protein": 13,
+      "carbs": 35,
+      "fat": 5
+    },
+    {
+      "id": "pure-base",
+      "name": "Pure Base",
+      "servingLabel": "12 oz",
+      "calories": 240,
+      "protein": 2,
+      "carbs": 48,
+      "fat": 6
+    },
+    {
+      "id": "pink-base",
+      "name": "Pink Base",
+      "servingLabel": "12 oz",
+      "calories": 290,
+      "protein": 5,
+      "carbs": 64,
+      "fat": 1
+    },
+    {
+      "id": "green-sip-smoothie",
+      "name": "Green Sip Smoothie",
+      "servingLabel": "16 oz",
+      "calories": 310,
+      "protein": 6,
+      "carbs": 76,
+      "fat": 1
+    },
+    {
+      "id": "horizon-smoothie",
+      "name": "Horizon Smoothie",
+      "servingLabel": "16 oz",
+      "calories": 440,
+      "protein": 4,
+      "carbs": 116,
+      "fat": 0.5
+    },
+    {
+      "id": "brazillian-smoothie",
+      "name": "Brazillian Smoothie",
+      "servingLabel": "16 oz",
+      "calories": 560,
+      "protein": 5,
+      "carbs": 121,
+      "fat": 10
+    },
+    {
+      "id": "queen-dream-smoothie",
+      "name": "Queen Dream Smoothie",
+      "servingLabel": "16 oz",
+      "calories": 400,
+      "protein": 4,
+      "carbs": 88,
+      "fat": 7
+    },
+    {
+      "id": "acerola-smoothie",
+      "name": "Acerola Smoothie",
+      "servingLabel": "16 oz",
+      "calories": 310,
+      "protein": 3,
+      "carbs": 77,
+      "fat": 0.5
+    },
+    {
+      "id": "koo-pu-smoothie",
+      "name": "Koo Pu Smoothie",
+      "servingLabel": "16 oz",
+      "calories": 490,
+      "protein": 5,
+      "carbs": 115,
+      "fat": 6
+    },
+    {
+      "id": "flamingo-smoothie",
+      "name": "Flamingo Smoothie",
+      "servingLabel": "16 oz",
+      "calories": 490,
+      "protein": 5,
+      "carbs": 113,
+      "fat": 0.5
+    },
+    {
+      "id": "gainz-smoothie",
+      "name": "Gainz Smoothie",
+      "servingLabel": "16 oz",
+      "calories": 560,
+      "protein": 38,
+      "carbs": 69,
+      "fat": 17
+    }
+  ]
+}

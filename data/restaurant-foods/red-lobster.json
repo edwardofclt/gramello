@@ -1,0 +1,2494 @@
+{
+  "chain": "Red Lobster",
+  "sourceUrl": "https://www.nutritionix.com/red-lobster/menu/premium",
+  "source": "Nutritionix",
+  "sourceKind": "database",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "id": "nutritionix-786168",
+      "name": "Create Your Own Lobster Lover's Dream Caribbean Rock Lobster Tail",
+      "calories": 480,
+      "protein": 27,
+      "carbs": 2,
+      "fat": 41,
+      "servingLabel": "1 listed serving (Lobsterfest; size in item name)"
+    },
+    {
+      "id": "nutritionix-786169",
+      "name": "Create Your Own Lobster Lover's Dream Garlic Butter Lobster Tail",
+      "calories": 330,
+      "protein": 14,
+      "carbs": 8,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Lobsterfest; size in item name)"
+    },
+    {
+      "id": "nutritionix-786171",
+      "name": "Create Your Own Lobster Lover's Dream Lobster & Shrimp Linguini",
+      "calories": 970,
+      "protein": 43,
+      "carbs": 64,
+      "fat": 62,
+      "servingLabel": "1 listed serving (Lobsterfest; size in item name)"
+    },
+    {
+      "id": "nutritionix-786170",
+      "name": "Create Your Own Lobster Lover's Dream Lobster Mac & Cheese",
+      "calories": 630,
+      "protein": 41,
+      "carbs": 48,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Lobsterfest; size in item name)"
+    },
+    {
+      "id": "nutritionix-786172",
+      "name": "Create Your Own Lobster Lover's Dream Maine Lobster Tail",
+      "calories": 420,
+      "protein": 14,
+      "carbs": 0,
+      "fat": 37,
+      "servingLabel": "1 listed serving (Lobsterfest; size in item name)"
+    },
+    {
+      "id": "nutritionix-786173",
+      "name": "Lobster Roll with Chesapeake Fries",
+      "calories": 1560,
+      "protein": 45,
+      "carbs": 137,
+      "fat": 92,
+      "servingLabel": "1 listed serving (Lobsterfest; size in item name)"
+    },
+    {
+      "id": "nutritionix-786197",
+      "name": "Admiral's Feast",
+      "calories": 1670,
+      "protein": 57,
+      "carbs": 131,
+      "fat": 99,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-786198",
+      "name": "Atlantic Salmon, Blackened",
+      "calories": 470,
+      "protein": 47,
+      "carbs": 5,
+      "fat": 28,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-786199",
+      "name": "Atlantic Salmon, Broiled",
+      "calories": 460,
+      "protein": 47,
+      "carbs": 2,
+      "fat": 28,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-786200",
+      "name": "Atlantic Salmon, Grilled",
+      "calories": 510,
+      "protein": 47,
+      "carbs": 1,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-786201",
+      "name": "Bacon Cheeseburger",
+      "calories": 940,
+      "protein": 62,
+      "carbs": 43,
+      "fat": 57,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-786202",
+      "name": "Bar Harbor Lobster Bake",
+      "calories": 1020,
+      "protein": 54,
+      "carbs": 78,
+      "fat": 53,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-786203",
+      "name": "Cajun Chicken Linguini Alfredo",
+      "calories": 1190,
+      "protein": 66,
+      "carbs": 86,
+      "fat": 64,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-786204",
+      "name": "Crab Carbonara",
+      "calories": 1730,
+      "protein": 72,
+      "carbs": 84,
+      "fat": 126,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-786205",
+      "name": "Crab Your Way, Snow Crab, Crispy Potatoes & Cajun Butter",
+      "calories": 1260,
+      "protein": 44,
+      "carbs": 64,
+      "fat": 95,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-786206",
+      "name": "Crab Your Way, Snow Crab, Crispy Potatoes & Roasted Garlic Butter",
+      "calories": 1470,
+      "protein": 45,
+      "carbs": 73,
+      "fat": 114,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-786207",
+      "name": "Crab Your Way, Snow Crab Simply Steamed, Crispy Potatoes",
+      "calories": 910,
+      "protein": 42,
+      "carbs": 56,
+      "fat": 59,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-786214",
+      "name": "Create Your Own Ultimate Feast, 7 oz Sirloin",
+      "calories": 320,
+      "protein": 46,
+      "carbs": 1,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-786208",
+      "name": "Create Your Own Ultimate Feast, Garlic Shrimp Scampi",
+      "calories": 220,
+      "protein": 12,
+      "carbs": 4,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-786209",
+      "name": "Create Your Own Ultimate Feast, Grilled Atlantic Salmon",
+      "calories": 510,
+      "protein": 47,
+      "carbs": 1,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-786210",
+      "name": "Create Your Own Ultimate Feast, Grilled Sea Scallops",
+      "calories": 280,
+      "protein": 15,
+      "carbs": 30,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-786211",
+      "name": "Create Your Own Ultimate Feast, Grilled Shrimp",
+      "calories": 250,
+      "protein": 16,
+      "carbs": 29,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-786212",
+      "name": "Create Your Own Ultimate Feast, Maine Lobster Tail",
+      "calories": 420,
+      "protein": 14,
+      "carbs": 0,
+      "fat": 37,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-786213",
+      "name": "Create Your Own Ultimate Feast, Parrot Isle Jumbo Coconut Shrimp",
+      "calories": 470,
+      "protein": 13,
+      "carbs": 41,
+      "fat": 29,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-786215",
+      "name": "Create Your Own Ultimate Feast, Shrimp Linguini Alfredo",
+      "calories": 620,
+      "protein": 27,
+      "carbs": 56,
+      "fat": 31,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-786216",
+      "name": "Create Your Own Ultimate Feast, Snow Crab Legs",
+      "calories": 380,
+      "protein": 19,
+      "carbs": 0,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-786217",
+      "name": "Create Your Own Ultimate Feast, Walt's Favorite Shrimp",
+      "calories": 260,
+      "protein": 10,
+      "carbs": 31,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-786218",
+      "name": "Crunch-Fried Flounder Sandwich with Fries & Hush Puppies",
+      "calories": 1690,
+      "protein": 40,
+      "carbs": 190,
+      "fat": 85,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-786219",
+      "name": "Fish & Chips with Fries, Coleslaw, Hush Puppies",
+      "calories": 1660,
+      "protein": 39,
+      "carbs": 148,
+      "fat": 100,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-786220",
+      "name": "Grilled Lobster, Shrimp & Salmon",
+      "calories": 1180,
+      "protein": 76,
+      "carbs": 47,
+      "fat": 76,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-786221",
+      "name": "Lemon Basil Mahi",
+      "calories": 470,
+      "protein": 43,
+      "carbs": 14,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-786222",
+      "name": "Live Maine Lobster",
+      "calories": 440,
+      "protein": 33,
+      "carbs": 0,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-786226",
+      "name": "Lobster & Shrimp Linguini",
+      "calories": 1240,
+      "protein": 63,
+      "carbs": 85,
+      "fat": 74,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-786223",
+      "name": "Lobster Lover's Duo",
+      "calories": 600,
+      "protein": 25,
+      "carbs": 1,
+      "fat": 51,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-786224",
+      "name": "Lobster Pappardelle Pasta",
+      "calories": 1090,
+      "protein": 45,
+      "carbs": 60,
+      "fat": 76,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-786225",
+      "name": "Lobster Quesadilla with Tortilla Chips",
+      "calories": 1570,
+      "protein": 52,
+      "carbs": 113,
+      "fat": 102,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-786227",
+      "name": "Mahi, Blackened",
+      "calories": 260,
+      "protein": 41,
+      "carbs": 5,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-786228",
+      "name": "Mahi, Broiled",
+      "calories": 250,
+      "protein": 41,
+      "carbs": 2,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-786229",
+      "name": "Mahi, Grilled",
+      "calories": 300,
+      "protein": 40,
+      "carbs": 1,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-786230",
+      "name": "Parmesan-Crusted Chicken",
+      "calories": 650,
+      "protein": 47,
+      "carbs": 34,
+      "fat": 35,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-786231",
+      "name": "Salmon New Orleans",
+      "calories": 1160,
+      "protein": 102,
+      "carbs": 9,
+      "fat": 77,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-786233",
+      "name": "Shrimp, Crispy Dragon Shrimp",
+      "calories": 510,
+      "protein": 13,
+      "carbs": 34,
+      "fat": 36,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-786234",
+      "name": "Shrimp, Garlic Shrimp Scampi",
+      "calories": 220,
+      "protein": 12,
+      "carbs": 3,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-786235",
+      "name": "Shrimp, Grilled Shrimp",
+      "calories": 250,
+      "protein": 16,
+      "carbs": 29,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-786236",
+      "name": "Shrimp, Parrot Isle Jumbo Coconut Shrimp",
+      "calories": 470,
+      "protein": 13,
+      "carbs": 41,
+      "fat": 29,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-786237",
+      "name": "Shrimp, Popcorn Shrimp",
+      "calories": 430,
+      "protein": 16,
+      "carbs": 49,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-786238",
+      "name": "Shrimp, Shrimp Linguini Alfredo",
+      "calories": 620,
+      "protein": 27,
+      "carbs": 56,
+      "fat": 31,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-786239",
+      "name": "Shrimp, Walt's Favorite Shrimp",
+      "calories": 260,
+      "protein": 10,
+      "carbs": 31,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-786232",
+      "name": "Shrimp Alfredo, Entrée",
+      "calories": 1010,
+      "protein": 37,
+      "carbs": 78,
+      "fat": 60,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-786240",
+      "name": "Steak, 6 oz Filet Mignon",
+      "calories": 260,
+      "protein": 34,
+      "carbs": 1,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-786241",
+      "name": "Steak, 7 oz Sirloin",
+      "calories": 320,
+      "protein": 46,
+      "carbs": 1,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-786242",
+      "name": "Surf & Turf, Maine Lobster Tail & 6 oz Filet Mignon",
+      "calories": 680,
+      "protein": 47,
+      "carbs": 2,
+      "fat": 54,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-786243",
+      "name": "Surf & Turf, Maine Lobster Tail & 7 oz Sirloin",
+      "calories": 740,
+      "protein": 59,
+      "carbs": 1,
+      "fat": 56,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-786244",
+      "name": "Ultimate Feast",
+      "calories": 1280,
+      "protein": 52,
+      "carbs": 35,
+      "fat": 98,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-786245",
+      "name": "Wild-Caught Crunch Fried Flounder",
+      "calories": 1170,
+      "protein": 44,
+      "carbs": 78,
+      "fat": 74,
+      "servingLabel": "1 listed serving (Entrees; size in item name)"
+    },
+    {
+      "id": "nutritionix-786252",
+      "name": "Bacon Mac & Cheese",
+      "calories": 600,
+      "protein": 24,
+      "carbs": 46,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-786253",
+      "name": "Baked Potato",
+      "calories": 270,
+      "protein": 7,
+      "carbs": 55,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-786254",
+      "name": "Caesar Salad",
+      "calories": 360,
+      "protein": 11,
+      "carbs": 14,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-786255",
+      "name": "Cheddar Bay Biscuits, Each",
+      "calories": 160,
+      "protein": 3,
+      "carbs": 16,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-786256",
+      "name": "Chesapeake Fries",
+      "calories": 510,
+      "protein": 7,
+      "carbs": 74,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-786257",
+      "name": "Coleslaw",
+      "calories": 110,
+      "protein": 2,
+      "carbs": 10,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-786258",
+      "name": "Crispy Brussels Sprouts",
+      "calories": 380,
+      "protein": 12,
+      "carbs": 48,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-786259",
+      "name": "Fully Loaded Baked Potato",
+      "calories": 520,
+      "protein": 17,
+      "carbs": 57,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-786260",
+      "name": "House Salad",
+      "calories": 160,
+      "protein": 8,
+      "carbs": 12,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-786261",
+      "name": "Hush Puppies, 6",
+      "calories": 420,
+      "protein": 4,
+      "carbs": 40,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-786262",
+      "name": "Lobster-Topped Baked Potato",
+      "calories": 450,
+      "protein": 18,
+      "carbs": 59,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-786263",
+      "name": "Lobster-Topped Mashed Potatoes",
+      "calories": 350,
+      "protein": 15,
+      "carbs": 25,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-786264",
+      "name": "Mashed Potatoes",
+      "calories": 210,
+      "protein": 4,
+      "carbs": 27,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-786265",
+      "name": "Orzo Rice",
+      "calories": 310,
+      "protein": 6,
+      "carbs": 57,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-786266",
+      "name": "Roasted Asparagus",
+      "calories": 100,
+      "protein": 3,
+      "carbs": 7,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-786267",
+      "name": "Seasoned Broccoli",
+      "calories": 190,
+      "protein": 4,
+      "carbs": 9,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-786274",
+      "name": "Friday Fish & Chips with Hush Puppies, Fries, Coleslaw",
+      "calories": 1660,
+      "protein": 39,
+      "carbs": 148,
+      "fat": 100,
+      "servingLabel": "1 listed serving (Daily Deals; size in item name)"
+    },
+    {
+      "id": "nutritionix-786268",
+      "name": "Monday Lobster & Shrimp",
+      "calories": 850,
+      "protein": 37,
+      "carbs": 7,
+      "fat": 76,
+      "servingLabel": "1 listed serving (Daily Deals; size in item name)"
+    },
+    {
+      "id": "nutritionix-786272",
+      "name": "Thursday Chicken Alfredo",
+      "calories": 1190,
+      "protein": 66,
+      "carbs": 86,
+      "fat": 64,
+      "servingLabel": "1 listed serving (Daily Deals; size in item name)"
+    },
+    {
+      "id": "nutritionix-786273",
+      "name": "Thursday Shrimp Alfredo",
+      "calories": 1010,
+      "protein": 37,
+      "carbs": 78,
+      "fat": 60,
+      "servingLabel": "1 listed serving (Daily Deals; size in item name)"
+    },
+    {
+      "id": "nutritionix-786270",
+      "name": "Tuesday Snow Crab Legs Roasted Garlic Butter with Crispy Potatoes",
+      "calories": 1470,
+      "protein": 45,
+      "carbs": 73,
+      "fat": 114,
+      "servingLabel": "1 listed serving (Daily Deals; size in item name)"
+    },
+    {
+      "id": "nutritionix-786269",
+      "name": "Tuesday Snow Crab Legs Simply Steamed with Crispy Potatoes",
+      "calories": 910,
+      "protein": 42,
+      "carbs": 56,
+      "fat": 59,
+      "servingLabel": "1 listed serving (Daily Deals; size in item name)"
+    },
+    {
+      "id": "nutritionix-786271",
+      "name": "Wednesday Steak & Lobster",
+      "calories": 740,
+      "protein": 59,
+      "carbs": 1,
+      "fat": 56,
+      "servingLabel": "1 listed serving (Daily Deals; size in item name)"
+    },
+    {
+      "id": "nutritionix-786283",
+      "name": "Lunch Special, Caesar Salad",
+      "calories": 360,
+      "protein": 11,
+      "carbs": 14,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Weekday Lunch Specials; size in item name)"
+    },
+    {
+      "id": "nutritionix-786284",
+      "name": "Lunch Special, Cheeseburger with Chesapeake Fries",
+      "calories": 1430,
+      "protein": 64,
+      "carbs": 130,
+      "fat": 71,
+      "servingLabel": "1 listed serving (Weekday Lunch Specials; size in item name)"
+    },
+    {
+      "id": "nutritionix-786285",
+      "name": "Lunch Special, Chicken Linguini Alfredo",
+      "calories": 790,
+      "protein": 53,
+      "carbs": 61,
+      "fat": 40,
+      "servingLabel": "1 listed serving (Weekday Lunch Specials; size in item name)"
+    },
+    {
+      "id": "nutritionix-786275",
+      "name": "Lunch Special, Garlic Shrimp Scampi",
+      "calories": 440,
+      "protein": 24,
+      "carbs": 7,
+      "fat": 35,
+      "servingLabel": "1 listed serving (Weekday Lunch Specials; size in item name)"
+    },
+    {
+      "id": "nutritionix-786286",
+      "name": "Lunch Special, House Salad",
+      "calories": 160,
+      "protein": 8,
+      "carbs": 12,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Weekday Lunch Specials; size in item name)"
+    },
+    {
+      "id": "nutritionix-786287",
+      "name": "Lunch Special, Lobster Bisque, Cup",
+      "calories": 310,
+      "protein": 6,
+      "carbs": 13,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Weekday Lunch Specials; size in item name)"
+    },
+    {
+      "id": "nutritionix-786288",
+      "name": "Lunch Special, Lobster Flatbread",
+      "calories": 400,
+      "protein": 20,
+      "carbs": 39,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Weekday Lunch Specials; size in item name)"
+    },
+    {
+      "id": "nutritionix-786289",
+      "name": "Lunch Special, New England Clam Chowder, Cup",
+      "calories": 250,
+      "protein": 8,
+      "carbs": 18,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Weekday Lunch Specials; size in item name)"
+    },
+    {
+      "id": "nutritionix-786290",
+      "name": "Lunch Special, Parrot Isle Coconut Shrimp with Chesapeake Fries",
+      "calories": 1140,
+      "protein": 24,
+      "carbs": 137,
+      "fat": 55,
+      "servingLabel": "1 listed serving (Weekday Lunch Specials; size in item name)"
+    },
+    {
+      "id": "nutritionix-786276",
+      "name": "Lunch Special, Parrot Isle Jumbo Coconut Shrimp",
+      "calories": 570,
+      "protein": 16,
+      "carbs": 48,
+      "fat": 35,
+      "servingLabel": "1 listed serving (Weekday Lunch Specials; size in item name)"
+    },
+    {
+      "id": "nutritionix-786277",
+      "name": "Lunch Special, Popcorn Shrimp",
+      "calories": 430,
+      "protein": 16,
+      "carbs": 49,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Weekday Lunch Specials; size in item name)"
+    },
+    {
+      "id": "nutritionix-786291",
+      "name": "Lunch Special, Popcorn Shrimp with Chesapeake Fries",
+      "calories": 1000,
+      "protein": 23,
+      "carbs": 138,
+      "fat": 40,
+      "servingLabel": "1 listed serving (Weekday Lunch Specials; size in item name)"
+    },
+    {
+      "id": "nutritionix-786278",
+      "name": "Lunch Special, Sailor's Platter",
+      "calories": 1350,
+      "protein": 49,
+      "carbs": 92,
+      "fat": 85,
+      "servingLabel": "1 listed serving (Weekday Lunch Specials; size in item name)"
+    },
+    {
+      "id": "nutritionix-786279",
+      "name": "Lunch Special, Sesame-Soy Salmon Bowl",
+      "calories": 1150,
+      "protein": 61,
+      "carbs": 88,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Weekday Lunch Specials; size in item name)"
+    },
+    {
+      "id": "nutritionix-786292",
+      "name": "Lunch Special, Shrimp Linguini Alfredo",
+      "calories": 620,
+      "protein": 27,
+      "carbs": 57,
+      "fat": 31,
+      "servingLabel": "1 listed serving (Weekday Lunch Specials; size in item name)"
+    },
+    {
+      "id": "nutritionix-786280",
+      "name": "Lunch Special, Southwest Shrimp Bowl",
+      "calories": 770,
+      "protein": 24,
+      "carbs": 55,
+      "fat": 51,
+      "servingLabel": "1 listed serving (Weekday Lunch Specials; size in item name)"
+    },
+    {
+      "id": "nutritionix-786281",
+      "name": "Lunch Special, Walt's Favorite Shrimp",
+      "calories": 380,
+      "protein": 15,
+      "carbs": 43,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Weekday Lunch Specials; size in item name)"
+    },
+    {
+      "id": "nutritionix-786293",
+      "name": "Lunch Special, Walt's Favorite Shrimp with Chesapeake Fries",
+      "calories": 870,
+      "protein": 19,
+      "carbs": 124,
+      "fat": 33,
+      "servingLabel": "1 listed serving (Weekday Lunch Specials; size in item name)"
+    },
+    {
+      "id": "nutritionix-786282",
+      "name": "Lunch Special, Wild-Caught Crunch-Fried Flounder",
+      "calories": 1170,
+      "protein": 44,
+      "carbs": 78,
+      "fat": 74,
+      "servingLabel": "1 listed serving (Weekday Lunch Specials; size in item name)"
+    },
+    {
+      "id": "nutritionix-786294",
+      "name": "Lunch Special, Wild-Caught Crunch Fried Flounder with Chesapeake Fries",
+      "calories": 1270,
+      "protein": 29,
+      "carbs": 129,
+      "fat": 69,
+      "servingLabel": "1 listed serving (Weekday Lunch Specials; size in item name)"
+    },
+    {
+      "id": "nutritionix-786295",
+      "name": "Brownie Overboardtm",
+      "calories": 1020,
+      "protein": 13,
+      "carbs": 121,
+      "fat": 57,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-786296",
+      "name": "Chocolate Wave",
+      "calories": 1110,
+      "protein": 11,
+      "carbs": 134,
+      "fat": 62,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-786297",
+      "name": "Key Lime Pie",
+      "calories": 580,
+      "protein": 10,
+      "carbs": 76,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-786298",
+      "name": "Strawberry Cheesecake Bliss",
+      "calories": 1170,
+      "protein": 14,
+      "carbs": 102,
+      "fat": 69,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-786360",
+      "name": "Kids Broccoli",
+      "calories": 190,
+      "protein": 4,
+      "carbs": 9,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Kids' Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-786361",
+      "name": "Kids Coastal Cooler, Cherry Wave Slushy",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 37,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Kids' Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-786362",
+      "name": "Kids Coastal Cooler, Mango Smoothie",
+      "calories": 190,
+      "protein": 3,
+      "carbs": 44,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Kids' Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-786363",
+      "name": "Kids Coastal Cooler, Raspberry Bay Smoothie",
+      "calories": 190,
+      "protein": 3,
+      "carbs": 44,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Kids' Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-786364",
+      "name": "Kids Coastal Cooler, Sunset Strawberry Smoothie",
+      "calories": 190,
+      "protein": 3,
+      "carbs": 44,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Kids' Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-786365",
+      "name": "Kids Crispy Chicken Tenders",
+      "calories": 690,
+      "protein": 25,
+      "carbs": 29,
+      "fat": 54,
+      "servingLabel": "1 listed serving (Kids' Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-786366",
+      "name": "Kids Crunchy Popcorn Shrimp",
+      "calories": 430,
+      "protein": 16,
+      "carbs": 49,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Kids' Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-786367",
+      "name": "Kids Fruit",
+      "calories": 30,
+      "protein": 0,
+      "carbs": 8,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Kids' Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-786368",
+      "name": "Kids Garlic-Grilled Shrimp",
+      "calories": 80,
+      "protein": 11,
+      "carbs": 1,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Kids' Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-786369",
+      "name": "Kids Golden-Fried Fish",
+      "calories": 530,
+      "protein": 22,
+      "carbs": 53,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Kids' Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-786370",
+      "name": "Kids Grilled Chicken",
+      "calories": 170,
+      "protein": 31,
+      "carbs": 0,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Kids' Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-786371",
+      "name": "Kids Juice",
+      "calories": 110,
+      "protein": 2,
+      "carbs": 27,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Kids' Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-786372",
+      "name": "Kids Lemonade",
+      "calories": 50,
+      "protein": 0,
+      "carbs": 14,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Kids' Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-786373",
+      "name": "Kids Macaroni And Cheese",
+      "calories": 270,
+      "protein": 9,
+      "carbs": 40,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Kids' Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-786374",
+      "name": "Kids Milk 1%",
+      "calories": 100,
+      "protein": 8,
+      "carbs": 12,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Kids' Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-786375",
+      "name": "Kids Petite Maine Lobster Tail",
+      "calories": 360,
+      "protein": 10,
+      "carbs": 0,
+      "fat": 35,
+      "servingLabel": "1 listed serving (Kids' Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-786376",
+      "name": "Kids Raspberry Lemonade",
+      "calories": 90,
+      "protein": 0,
+      "carbs": 24,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Kids' Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-786377",
+      "name": "Kids Surf's Up Sundae",
+      "calories": 200,
+      "protein": 3,
+      "carbs": 25,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Kids' Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-786299",
+      "name": "Bahama Mama",
+      "calories": 360,
+      "protein": 0,
+      "carbs": 61,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Alcoholic Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-786300",
+      "name": "Baileys And Coffee",
+      "calories": 200,
+      "protein": 2,
+      "carbs": 15,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Alcoholic Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-786301",
+      "name": "Grand Patrón Margarita",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 15,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Alcoholic Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-786302",
+      "name": "Lobster Punch",
+      "calories": 390,
+      "protein": 1,
+      "carbs": 78,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Alcoholic Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-786303",
+      "name": "Main Deck Margarita Flight, Rocks",
+      "calories": 410,
+      "protein": 0,
+      "carbs": 57,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Alcoholic Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-786304",
+      "name": "Mango Martini",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 17,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Alcoholic Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-786305",
+      "name": "Margarita, Caribbean Blue, Frozen",
+      "calories": 270,
+      "protein": 0,
+      "carbs": 20,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Alcoholic Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-786306",
+      "name": "Margarita, Caribbean Blue, Rocks",
+      "calories": 180,
+      "protein": 0,
+      "carbs": 15,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Alcoholic Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-786307",
+      "name": "Margarita, Classic, Frozen",
+      "calories": 180,
+      "protein": 0,
+      "carbs": 23,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Alcoholic Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-786308",
+      "name": "Margarita, Classic, Rocks",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 8,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Alcoholic Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-786309",
+      "name": "Margarita, Mango, Frozen",
+      "calories": 330,
+      "protein": 0,
+      "carbs": 58,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Alcoholic Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-786310",
+      "name": "Margarita, Mango, Rocks",
+      "calories": 210,
+      "protein": 0,
+      "carbs": 30,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Alcoholic Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-786311",
+      "name": "Margarita, Passion Fruit, Frozen",
+      "calories": 420,
+      "protein": 0,
+      "carbs": 84,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Alcoholic Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-786312",
+      "name": "Margarita, Passion Fruit, Rocks",
+      "calories": 230,
+      "protein": 0,
+      "carbs": 36,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Alcoholic Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-786313",
+      "name": "Margarita, Raspberry, Frozen",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 46,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Alcoholic Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-786314",
+      "name": "Margarita, Raspberry, Rocks",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 20,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Alcoholic Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-786315",
+      "name": "Margarita, Strawberry, Frozen",
+      "calories": 230,
+      "protein": 0,
+      "carbs": 35,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Alcoholic Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-786316",
+      "name": "Margarita, Strawberry, Rocks",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 19,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Alcoholic Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-786317",
+      "name": "Margarita, Watermelon, Frozen",
+      "calories": 330,
+      "protein": 0,
+      "carbs": 58,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Alcoholic Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-786318",
+      "name": "Margarita, Watermelon, Rocks",
+      "calories": 210,
+      "protein": 0,
+      "carbs": 30,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Alcoholic Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-786319",
+      "name": "Mocha Espresso Martini",
+      "calories": 360,
+      "protein": 3,
+      "carbs": 42,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Alcoholic Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-786320",
+      "name": "Ruby Mule",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 25,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Alcoholic Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-786321",
+      "name": "Seaside Sangria Flight",
+      "calories": 300,
+      "protein": 1,
+      "carbs": 60,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Alcoholic Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-786322",
+      "name": "Sunset Passion Colada",
+      "calories": 310,
+      "protein": 0,
+      "carbs": 66,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Alcoholic Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-786323",
+      "name": "Tito's Twisted Strawberry Lemonade",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 22,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Alcoholic Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-786324",
+      "name": "Top-Shelf Long Island Iced Tea",
+      "calories": 190,
+      "protein": 0,
+      "carbs": 18,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Alcoholic Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-786325",
+      "name": "Triple Berry Sangria",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 35,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Alcoholic Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-786326",
+      "name": "Tropical White Sangria",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 24,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Alcoholic Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-786327",
+      "name": "Under The Purple Sea",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 20,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Alcoholic Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-786328",
+      "name": "Wine, 6 oz",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Wine; size in item name)"
+    },
+    {
+      "id": "nutritionix-786329",
+      "name": "Wine, 9 oz",
+      "calories": 220,
+      "protein": 0,
+      "carbs": 7,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Wine; size in item name)"
+    },
+    {
+      "id": "nutritionix-786330",
+      "name": "Wine, Bottle",
+      "calories": 640,
+      "protein": 3,
+      "carbs": 29,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Wine; size in item name)"
+    },
+    {
+      "id": "nutritionix-786331",
+      "name": "Light Beer, 12 oz",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 6,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beer; size in item name)"
+    },
+    {
+      "id": "nutritionix-786334",
+      "name": "Light Draft Beer, 14 oz",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 7,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beer; size in item name)"
+    },
+    {
+      "id": "nutritionix-786336",
+      "name": "Light Draft Beer, 20 oz",
+      "calories": 170,
+      "protein": 1,
+      "carbs": 10,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beer; size in item name)"
+    },
+    {
+      "id": "nutritionix-786333",
+      "name": "Nonalcoholic Beer, 12 oz",
+      "calories": 70,
+      "protein": 0,
+      "carbs": 15,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beer; size in item name)"
+    },
+    {
+      "id": "nutritionix-786332",
+      "name": "Regular Beer, 12 oz",
+      "calories": 150,
+      "protein": 2,
+      "carbs": 13,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beer; size in item name)"
+    },
+    {
+      "id": "nutritionix-786335",
+      "name": "Regular Draft Beer, 14 oz",
+      "calories": 180,
+      "protein": 2,
+      "carbs": 15,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beer; size in item name)"
+    },
+    {
+      "id": "nutritionix-786337",
+      "name": "Regular Draft Beer, 20 oz",
+      "calories": 260,
+      "protein": 3,
+      "carbs": 21,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beer; size in item name)"
+    },
+    {
+      "id": "nutritionix-786338",
+      "name": "Boston Iced Tea, Classic Cranberry",
+      "calories": 80,
+      "protein": 0,
+      "carbs": 19,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Non-Alcoholic Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-786339",
+      "name": "Boston Iced Tea, Mango",
+      "calories": 110,
+      "protein": 0,
+      "carbs": 26,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Non-Alcoholic Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-786340",
+      "name": "Boston Iced Tea, Raspberry",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 26,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Non-Alcoholic Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-786341",
+      "name": "Coffee",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Non-Alcoholic Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-786342",
+      "name": "Diet Pepsi",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Non-Alcoholic Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-786343",
+      "name": "Dr. Pepper",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 39,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Non-Alcoholic Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-786344",
+      "name": "Iced Tea",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Non-Alcoholic Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-786345",
+      "name": "Lemonade",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 37,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Non-Alcoholic Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-786346",
+      "name": "Mango Fruit Smoothie",
+      "calories": 380,
+      "protein": 7,
+      "carbs": 88,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Non-Alcoholic Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-786347",
+      "name": "Mango Lemonade",
+      "calories": 210,
+      "protein": 0,
+      "carbs": 48,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Non-Alcoholic Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-786348",
+      "name": "Mountain Dew",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 44,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Non-Alcoholic Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-786349",
+      "name": "Mug Root Beer",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 52,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Non-Alcoholic Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-786350",
+      "name": "Organic Hot Tea",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Non-Alcoholic Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-786351",
+      "name": "Pepsi",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 41,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Non-Alcoholic Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-786352",
+      "name": "Raspberry Fruit Smoothie",
+      "calories": 460,
+      "protein": 7,
+      "carbs": 94,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Non-Alcoholic Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-786353",
+      "name": "Starry Lemon Lime",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 51,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Non-Alcoholic Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-786354",
+      "name": "Strawberry Fruit Smoothie",
+      "calories": 450,
+      "protein": 8,
+      "carbs": 90,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Non-Alcoholic Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-786355",
+      "name": "Strawberry Lemonade",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 47,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Non-Alcoholic Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-786356",
+      "name": "Tropicana Fruit Punch",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 45,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Non-Alcoholic Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-786357",
+      "name": "Watermelon Lemonade",
+      "calories": 260,
+      "protein": 0,
+      "carbs": 62,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Non-Alcoholic Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-786358",
+      "name": "Zero-Proof Mocktail, Coastal Colada",
+      "calories": 310,
+      "protein": 1,
+      "carbs": 73,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Non-Alcoholic Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-786359",
+      "name": "Zero-Proof Mocktail, Strawberry Breeze",
+      "calories": 180,
+      "protein": 1,
+      "carbs": 47,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Non-Alcoholic Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-786378",
+      "name": "Admiral's Family Feast",
+      "calories": 5400,
+      "protein": 179,
+      "carbs": 428,
+      "fat": 328,
+      "servingLabel": "1 listed serving (Family Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-786379",
+      "name": "Bar Harbor Lobster Bake Family Feast",
+      "calories": 3070,
+      "protein": 160,
+      "carbs": 234,
+      "fat": 159,
+      "servingLabel": "1 listed serving (Family Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-786380",
+      "name": "Cajun Chicken Linguini Alfredo Family Meal",
+      "calories": 3810,
+      "protein": 239,
+      "carbs": 268,
+      "fat": 196,
+      "servingLabel": "1 listed serving (Family Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-786381",
+      "name": "Crab Linguini Alfredo Family Meal",
+      "calories": 3060,
+      "protein": 116,
+      "carbs": 225,
+      "fat": 184,
+      "servingLabel": "1 listed serving (Family Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-786383",
+      "name": "Create Your Own Family Feast, Crispy Fish",
+      "calories": 1610,
+      "protein": 66,
+      "carbs": 119,
+      "fat": 96,
+      "servingLabel": "1 listed serving (Family Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-786382",
+      "name": "Create Your Own Family Feast, Grilled Chicken",
+      "calories": 690,
+      "protein": 122,
+      "carbs": 1,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Family Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-786386",
+      "name": "Create Your Own Family Feast, Grilled Shrimp",
+      "calories": 980,
+      "protein": 63,
+      "carbs": 120,
+      "fat": 29,
+      "servingLabel": "1 listed serving (Family Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-786384",
+      "name": "Create Your Own Family Feast, Parrot Isle Coconut Shrimp",
+      "calories": 1150,
+      "protein": 28,
+      "carbs": 110,
+      "fat": 67,
+      "servingLabel": "1 listed serving (Family Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-786385",
+      "name": "Create Your Own Family Feast, Shrimp Scampi",
+      "calories": 870,
+      "protein": 48,
+      "carbs": 12,
+      "fat": 70,
+      "servingLabel": "1 listed serving (Family Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-786387",
+      "name": "Create Your Own Family Feast, Walt's Favorite Shrimp",
+      "calories": 610,
+      "protein": 21,
+      "carbs": 84,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Family Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-786388",
+      "name": "Fish Fry Family Meal",
+      "calories": 7590,
+      "protein": 212,
+      "carbs": 728,
+      "fat": 423,
+      "servingLabel": "1 listed serving (Family Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-786389",
+      "name": "Seaside Shrimp Trio Family Feast",
+      "calories": 5090,
+      "protein": 254,
+      "carbs": 393,
+      "fat": 270,
+      "servingLabel": "1 listed serving (Family Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-786390",
+      "name": "Shrimp Linguini Alfredo Family Meal",
+      "calories": 3020,
+      "protein": 110,
+      "carbs": 234,
+      "fat": 177,
+      "servingLabel": "1 listed serving (Family Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-786391",
+      "name": "Ultimate Family Feast",
+      "calories": 4320,
+      "protein": 204,
+      "carbs": 153,
+      "fat": 320,
+      "servingLabel": "1 listed serving (Family Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-786392",
+      "name": "Family Sides, Bacon Mac & Cheese",
+      "calories": 2400,
+      "protein": 96,
+      "carbs": 184,
+      "fat": 136,
+      "servingLabel": "1 listed serving (Family Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-786393",
+      "name": "Family Sides, Baked Potatoes with Butter And Sour Cream",
+      "calories": 1080,
+      "protein": 28,
+      "carbs": 220,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Family Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-786394",
+      "name": "Family Sides, Caesar Salad",
+      "calories": 1440,
+      "protein": 44,
+      "carbs": 56,
+      "fat": 120,
+      "servingLabel": "1 listed serving (Family Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-786395",
+      "name": "Family Sides, Chesapeake Fries",
+      "calories": 2040,
+      "protein": 28,
+      "carbs": 296,
+      "fat": 80,
+      "servingLabel": "1 listed serving (Family Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-786396",
+      "name": "Family Sides, Coleslaw",
+      "calories": 440,
+      "protein": 8,
+      "carbs": 40,
+      "fat": 32,
+      "servingLabel": "1 listed serving (Family Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-786397",
+      "name": "Family Sides, Crispy Brussels Sprouts",
+      "calories": 1520,
+      "protein": 44,
+      "carbs": 192,
+      "fat": 68,
+      "servingLabel": "1 listed serving (Family Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-786398",
+      "name": "Family Sides, House Salad",
+      "calories": 640,
+      "protein": 32,
+      "carbs": 48,
+      "fat": 36,
+      "servingLabel": "1 listed serving (Family Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-786399",
+      "name": "Family Sides, Mashed Potatoes",
+      "calories": 640,
+      "protein": 12,
+      "carbs": 81,
+      "fat": 29,
+      "servingLabel": "1 listed serving (Family Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-786400",
+      "name": "Family Sides, Orzo Rice",
+      "calories": 1240,
+      "protein": 24,
+      "carbs": 228,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Family Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-786401",
+      "name": "Family Sides, Seasoned Broccoli",
+      "calories": 760,
+      "protein": 16,
+      "carbs": 36,
+      "fat": 64,
+      "servingLabel": "1 listed serving (Family Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-786404",
+      "name": "Cheesecake, 10 Slices",
+      "calories": 9870,
+      "protein": 130,
+      "carbs": 705,
+      "fat": 618,
+      "servingLabel": "1 listed serving (Family Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-786402",
+      "name": "Chocolate Wave Cake, 14 Slices",
+      "calories": 13020,
+      "protein": 118,
+      "carbs": 1564,
+      "fat": 746,
+      "servingLabel": "1 listed serving (Family Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-786403",
+      "name": "Key Lime Pie, 8 Slices",
+      "calories": 4160,
+      "protein": 80,
+      "carbs": 568,
+      "fat": 176,
+      "servingLabel": "1 listed serving (Family Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-786405",
+      "name": "Triple Chocolate Brownie, 24 Pieces",
+      "calories": 6220,
+      "protein": 78,
+      "carbs": 720,
+      "fat": 360,
+      "servingLabel": "1 listed serving (Family Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-786407",
+      "name": "Black Tiger Shrimp Cocktail, Large",
+      "calories": 1380,
+      "protein": 183,
+      "carbs": 100,
+      "fat": 31,
+      "servingLabel": "1 listed serving (Party Platters; size in item name)"
+    },
+    {
+      "id": "nutritionix-786406",
+      "name": "Black Tiger Shrimp Cocktail, Small",
+      "calories": 690,
+      "protein": 91,
+      "carbs": 50,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Party Platters; size in item name)"
+    },
+    {
+      "id": "nutritionix-786408",
+      "name": "Cheddar Bay Biscuits, Half Dozen",
+      "calories": 970,
+      "protein": 18,
+      "carbs": 95,
+      "fat": 59,
+      "servingLabel": "1 listed serving (Party Platters; size in item name)"
+    },
+    {
+      "id": "nutritionix-786409",
+      "name": "Cheddar Bay Biscuits, One Dozen",
+      "calories": 1940,
+      "protein": 36,
+      "carbs": 191,
+      "fat": 118,
+      "servingLabel": "1 listed serving (Party Platters; size in item name)"
+    },
+    {
+      "id": "nutritionix-786410",
+      "name": "Crab Queso Platter",
+      "calories": 4480,
+      "protein": 167,
+      "carbs": 328,
+      "fat": 282,
+      "servingLabel": "1 listed serving (Party Platters; size in item name)"
+    },
+    {
+      "id": "nutritionix-786411",
+      "name": "Crispy Chicken Tenders Platter",
+      "calories": 4740,
+      "protein": 194,
+      "carbs": 197,
+      "fat": 361,
+      "servingLabel": "1 listed serving (Party Platters; size in item name)"
+    },
+    {
+      "id": "nutritionix-786412",
+      "name": "Crispy Dragon Shrimp Platter",
+      "calories": 4010,
+      "protein": 99,
+      "carbs": 263,
+      "fat": 288,
+      "servingLabel": "1 listed serving (Party Platters; size in item name)"
+    },
+    {
+      "id": "nutritionix-786413",
+      "name": "Crunchy Popcorn Shrimp Platter",
+      "calories": 2500,
+      "protein": 92,
+      "carbs": 270,
+      "fat": 117,
+      "servingLabel": "1 listed serving (Party Platters; size in item name)"
+    },
+    {
+      "id": "nutritionix-786414",
+      "name": "Garlic Shrimp Scampi Platter",
+      "calories": 1080,
+      "protein": 60,
+      "carbs": 15,
+      "fat": 88,
+      "servingLabel": "1 listed serving (Party Platters; size in item name)"
+    },
+    {
+      "id": "nutritionix-786415",
+      "name": "Jumbo Grilled Shrimp Platter",
+      "calories": 1770,
+      "protein": 113,
+      "carbs": 127,
+      "fat": 90,
+      "servingLabel": "1 listed serving (Party Platters; size in item name)"
+    },
+    {
+      "id": "nutritionix-786416",
+      "name": "Lobster Dip Platter",
+      "calories": 4150,
+      "protein": 148,
+      "carbs": 312,
+      "fat": 260,
+      "servingLabel": "1 listed serving (Party Platters; size in item name)"
+    },
+    {
+      "id": "nutritionix-786417",
+      "name": "Mozzarella Cheesesticks Platter",
+      "calories": 2220,
+      "protein": 86,
+      "carbs": 162,
+      "fat": 142,
+      "servingLabel": "1 listed serving (Party Platters; size in item name)"
+    },
+    {
+      "id": "nutritionix-786418",
+      "name": "Parrot Isle Jumbo Coconut Shrimp Platter",
+      "calories": 2780,
+      "protein": 79,
+      "carbs": 238,
+      "fat": 168,
+      "servingLabel": "1 listed serving (Party Platters; size in item name)"
+    },
+    {
+      "id": "nutritionix-786419",
+      "name": "Walt's Favorite Shrimp Platter",
+      "calories": 1250,
+      "protein": 48,
+      "carbs": 155,
+      "fat": 49,
+      "servingLabel": "1 listed serving (Party Platters; size in item name)"
+    },
+    {
+      "id": "nutritionix-786420",
+      "name": "Blue Cheese Dressing",
+      "calories": 230,
+      "protein": 2,
+      "carbs": 2,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Dressings & Condiments; size in item name)"
+    },
+    {
+      "id": "nutritionix-786421",
+      "name": "Butter - 100% Pure Melted Butter",
+      "calories": 300,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 33,
+      "servingLabel": "1 listed serving (Dressings & Condiments; size in item name)"
+    },
+    {
+      "id": "nutritionix-786422",
+      "name": "Butter - Whipped",
+      "calories": 80,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Dressings & Condiments; size in item name)"
+    },
+    {
+      "id": "nutritionix-786423",
+      "name": "Caesar Dressing",
+      "calories": 300,
+      "protein": 2,
+      "carbs": 0,
+      "fat": 32,
+      "servingLabel": "1 listed serving (Dressings & Condiments; size in item name)"
+    },
+    {
+      "id": "nutritionix-786424",
+      "name": "Citrus Vinaigrette Dressing",
+      "calories": 70,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Dressings & Condiments; size in item name)"
+    },
+    {
+      "id": "nutritionix-786425",
+      "name": "Cocktail Sauce",
+      "calories": 50,
+      "protein": 0,
+      "carbs": 11,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Dressings & Condiments; size in item name)"
+    },
+    {
+      "id": "nutritionix-786426",
+      "name": "Honey Mustard Dressing",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 9,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Dressings & Condiments; size in item name)"
+    },
+    {
+      "id": "nutritionix-786427",
+      "name": "Ketchup",
+      "calories": 60,
+      "protein": 0,
+      "carbs": 15,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Dressings & Condiments; size in item name)"
+    },
+    {
+      "id": "nutritionix-786428",
+      "name": "Mango Pineapple Vinaigrette Dressing",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 11,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Dressings & Condiments; size in item name)"
+    },
+    {
+      "id": "nutritionix-786429",
+      "name": "Marinara Sauce",
+      "calories": 30,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Dressings & Condiments; size in item name)"
+    },
+    {
+      "id": "nutritionix-786430",
+      "name": "Pico De Gallo",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Dressings & Condiments; size in item name)"
+    },
+    {
+      "id": "nutritionix-786431",
+      "name": "Piña Colada Sauce",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 14,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Dressings & Condiments; size in item name)"
+    },
+    {
+      "id": "nutritionix-786432",
+      "name": "Ranch Dressing",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Dressings & Condiments; size in item name)"
+    },
+    {
+      "id": "nutritionix-786433",
+      "name": "Sour Cream",
+      "calories": 20,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Dressings & Condiments; size in item name)"
+    },
+    {
+      "id": "nutritionix-786434",
+      "name": "Tartar Sauce",
+      "calories": 230,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Dressings & Condiments; size in item name)"
+    },
+    {
+      "id": "nutritionix-786435",
+      "name": "Tartar Sauce, Family Size",
+      "calories": 1210,
+      "protein": 0,
+      "carbs": 8,
+      "fat": 120,
+      "servingLabel": "1 listed serving (Dressings & Condiments; size in item name)"
+    },
+    {
+      "id": "nutritionix-786436",
+      "name": "Thousand Island Dressing",
+      "calories": 210,
+      "protein": 0,
+      "carbs": 8,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Dressings & Condiments; size in item name)"
+    },
+    {
+      "id": "nutritionix-786160",
+      "name": "1st Course, Caesar Salad",
+      "calories": 360,
+      "protein": 11,
+      "carbs": 14,
+      "fat": 30,
+      "servingLabel": "1 listed serving (3-Course Shrimp Sensation; size in item name)"
+    },
+    {
+      "id": "nutritionix-786161",
+      "name": "1st Course, House Salad",
+      "calories": 160,
+      "protein": 8,
+      "carbs": 12,
+      "fat": 9,
+      "servingLabel": "1 listed serving (3-Course Shrimp Sensation; size in item name)"
+    },
+    {
+      "id": "nutritionix-786159",
+      "name": "1st Course, Lobster Bisque",
+      "calories": 310,
+      "protein": 6,
+      "carbs": 13,
+      "fat": 26,
+      "servingLabel": "1 listed serving (3-Course Shrimp Sensation; size in item name)"
+    },
+    {
+      "id": "nutritionix-786158",
+      "name": "1st Course, New England Clam Chowder",
+      "calories": 250,
+      "protein": 8,
+      "carbs": 18,
+      "fat": 17,
+      "servingLabel": "1 listed serving (3-Course Shrimp Sensation; size in item name)"
+    },
+    {
+      "id": "nutritionix-786163",
+      "name": "2nd Course, Black Tiger Shrimp Cocktail",
+      "calories": 130,
+      "protein": 13,
+      "carbs": 14,
+      "fat": 3,
+      "servingLabel": "1 listed serving (3-Course Shrimp Sensation; size in item name)"
+    },
+    {
+      "id": "nutritionix-786164",
+      "name": "2nd Course, Crispy Dragon Shrimp",
+      "calories": 510,
+      "protein": 13,
+      "carbs": 34,
+      "fat": 36,
+      "servingLabel": "1 listed serving (3-Course Shrimp Sensation; size in item name)"
+    },
+    {
+      "id": "nutritionix-786162",
+      "name": "2nd Course, Parrot Isle Jumbo Coconut Shrimp",
+      "calories": 380,
+      "protein": 10,
+      "carbs": 34,
+      "fat": 23,
+      "servingLabel": "1 listed serving (3-Course Shrimp Sensation; size in item name)"
+    },
+    {
+      "id": "nutritionix-786174",
+      "name": "Bacon Wrapped Sea Scallops, 4 Scallops",
+      "calories": 450,
+      "protein": 23,
+      "carbs": 9,
+      "fat": 37,
+      "servingLabel": "1 listed serving (Starters & Soups; size in item name)"
+    },
+    {
+      "id": "nutritionix-786175",
+      "name": "Bacon Wrapped Sea Scallops, 6 Scallops",
+      "calories": 620,
+      "protein": 34,
+      "carbs": 9,
+      "fat": 52,
+      "servingLabel": "1 listed serving (Starters & Soups; size in item name)"
+    },
+    {
+      "id": "nutritionix-786176",
+      "name": "Black Tiger Shrimp Cocktail",
+      "calories": 180,
+      "protein": 23,
+      "carbs": 10,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Starters & Soups; size in item name)"
+    },
+    {
+      "id": "nutritionix-786177",
+      "name": "Calamari - Crispy Dragon",
+      "calories": 1030,
+      "protein": 48,
+      "carbs": 60,
+      "fat": 66,
+      "servingLabel": "1 listed serving (Starters & Soups; size in item name)"
+    },
+    {
+      "id": "nutritionix-786178",
+      "name": "Calamari - Hand-Breaded",
+      "calories": 1000,
+      "protein": 47,
+      "carbs": 44,
+      "fat": 70,
+      "servingLabel": "1 listed serving (Starters & Soups; size in item name)"
+    },
+    {
+      "id": "nutritionix-786180",
+      "name": "Clam Chowder, Bowl",
+      "calories": 510,
+      "protein": 15,
+      "carbs": 36,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Starters & Soups; size in item name)"
+    },
+    {
+      "id": "nutritionix-786179",
+      "name": "Clam Chowder, Cup",
+      "calories": 250,
+      "protein": 8,
+      "carbs": 18,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Starters & Soups; size in item name)"
+    },
+    {
+      "id": "nutritionix-786181",
+      "name": "Crab Queso",
+      "calories": 930,
+      "protein": 30,
+      "carbs": 76,
+      "fat": 56,
+      "servingLabel": "1 listed serving (Starters & Soups; size in item name)"
+    },
+    {
+      "id": "nutritionix-786182",
+      "name": "Crispy Dragon Shrimp",
+      "calories": 1010,
+      "protein": 25,
+      "carbs": 67,
+      "fat": 72,
+      "servingLabel": "1 listed serving (Starters & Soups; size in item name)"
+    },
+    {
+      "id": "nutritionix-786184",
+      "name": "Lobster Bisque, Bowl",
+      "calories": 630,
+      "protein": 11,
+      "carbs": 27,
+      "fat": 52,
+      "servingLabel": "1 listed serving (Starters & Soups; size in item name)"
+    },
+    {
+      "id": "nutritionix-786183",
+      "name": "Lobster Bisque, Cup",
+      "calories": 310,
+      "protein": 6,
+      "carbs": 13,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Starters & Soups; size in item name)"
+    },
+    {
+      "id": "nutritionix-786185",
+      "name": "Lobster Dip",
+      "calories": 890,
+      "protein": 30,
+      "carbs": 82,
+      "fat": 35,
+      "servingLabel": "1 listed serving (Starters & Soups; size in item name)"
+    },
+    {
+      "id": "nutritionix-786186",
+      "name": "Lobster Flatbread",
+      "calories": 800,
+      "protein": 39,
+      "carbs": 77,
+      "fat": 38,
+      "servingLabel": "1 listed serving (Starters & Soups; size in item name)"
+    },
+    {
+      "id": "nutritionix-786187",
+      "name": "Mozzarella Cheesesticks",
+      "calories": 730,
+      "protein": 31,
+      "carbs": 58,
+      "fat": 41,
+      "servingLabel": "1 listed serving (Starters & Soups; size in item name)"
+    },
+    {
+      "id": "nutritionix-786188",
+      "name": "Parrot Isle Jumbo Coconut Shrimp",
+      "calories": 660,
+      "protein": 20,
+      "carbs": 55,
+      "fat": 41,
+      "servingLabel": "1 listed serving (Starters & Soups; size in item name)"
+    },
+    {
+      "id": "nutritionix-786189",
+      "name": "Seafood-Stuffed Mushrooms",
+      "calories": 390,
+      "protein": 30,
+      "carbs": 18,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Starters & Soups; size in item name)"
+    },
+    {
+      "id": "nutritionix-786190",
+      "name": "Caesar Salad with Chicken",
+      "calories": 730,
+      "protein": 43,
+      "carbs": 26,
+      "fat": 52,
+      "servingLabel": "1 listed serving (Salads & Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-786191",
+      "name": "Sesame-Soy Salmon Bowl",
+      "calories": 1150,
+      "protein": 61,
+      "carbs": 88,
+      "fat": 60,
+      "servingLabel": "1 listed serving (Salads & Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-786192",
+      "name": "Southwest Shrimp Bowl",
+      "calories": 770,
+      "protein": 24,
+      "carbs": 55,
+      "fat": 51,
+      "servingLabel": "1 listed serving (Salads & Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-786193",
+      "name": "Signature Cocktails, Grand Patrón Margarita",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 15,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Signature Cocktails; size in item name)"
+    },
+    {
+      "id": "nutritionix-786194",
+      "name": "Signature Cocktails, Lobster Punch",
+      "calories": 390,
+      "protein": 1,
+      "carbs": 78,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Signature Cocktails; size in item name)"
+    },
+    {
+      "id": "nutritionix-786195",
+      "name": "Signature Cocktails, Main Deck Margarita Flight, Rocks",
+      "calories": 410,
+      "protein": 0,
+      "carbs": 57,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Signature Cocktails; size in item name)"
+    },
+    {
+      "id": "nutritionix-786196",
+      "name": "Signature Cocktails, Sunset Passion Colada",
+      "calories": 310,
+      "protein": 0,
+      "carbs": 66,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Signature Cocktails; size in item name)"
+    },
+    {
+      "id": "nutritionix-786246",
+      "name": "Bacon-Wrapped Sea Scallops, 2 Scallops",
+      "calories": 220,
+      "protein": 12,
+      "carbs": 5,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Add To Any Entrée; size in item name)"
+    },
+    {
+      "id": "nutritionix-786247",
+      "name": "Garlic Shrimp Scampi",
+      "calories": 220,
+      "protein": 12,
+      "carbs": 3,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Add To Any Entrée; size in item name)"
+    },
+    {
+      "id": "nutritionix-786248",
+      "name": "Grilled Shrimp, with Rice",
+      "calories": 250,
+      "protein": 14,
+      "carbs": 29,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Add To Any Entrée; size in item name)"
+    },
+    {
+      "id": "nutritionix-786249",
+      "name": "Maine Lobster Tail",
+      "calories": 420,
+      "protein": 12,
+      "carbs": 0,
+      "fat": 36,
+      "servingLabel": "1 listed serving (Add To Any Entrée; size in item name)"
+    },
+    {
+      "id": "nutritionix-786250",
+      "name": "Rock Lobster Tail",
+      "calories": 480,
+      "protein": 27,
+      "carbs": 2,
+      "fat": 41,
+      "servingLabel": "1 listed serving (Add To Any Entrée; size in item name)"
+    },
+    {
+      "id": "nutritionix-786251",
+      "name": "Snow Crab Legs, 1/2 Lb.",
+      "calories": 380,
+      "protein": 18,
+      "carbs": 1,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Add To Any Entrée; size in item name)"
+    }
+  ],
+  "sourceDate": "2025-06-03"
+}

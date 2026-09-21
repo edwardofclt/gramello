@@ -40,6 +40,59 @@ Existing installations need the `0002_custom_meals.sql` migration. Docker/Fly
 apply migrations on startup; local databases need this migration applied with
 the same Wrangler configuration and state directory used for the app.
 
+## Restaurant menus and custom foods
+
+Food search also includes imported restaurant menus for chains found within a
+10-mile straight-line radius of the Census reference point for ZIP 29707. The
+[coverage audit](docs/restaurant-import/coverage.md) distinguishes confirmed
+locations, map candidates, and unresolved locations. The
+[import summary](docs/restaurant-import/import-summary.json) lists the exact
+catalogs and serving counts included in the migration; some chains do not
+publish a usable full nutrition table.
+
+Restaurant publications and nutrition database values show **Verified** in
+search, portion selection, and the diary. This badge identifies the source;
+it is not an independent laboratory measurement or a promise that a snapshot
+matches every location's current menu. Source URLs and retrieval dates are
+retained. Historical diary snapshots without validated catalog provenance stay
+unverified. Logging a catalog food uses server-side nutrition and portion
+calculations, so client-supplied values cannot forge a verified entry.
+
+Choose **Add food → Add custom food** on web or mobile. Enter a name, a serving
+description, and total calories, protein, carbs, and fat for that serving.
+Serving weight is optional. The food becomes searchable by all signed-in users
+and always shows **Unverified**. A custom food saves to the shared catalog
+before you choose how much to add to your private diary; contributor identities
+are not exposed in search. Calories are kept as entered, independently of the
+macro totals.
+
+Restaurant/custom foods can be logged by servings even when no weight is known.
+Grams are offered only when a source provides a weight. Search retains local
+catalog results during upstream outages and indicates when results are partial.
+
+### Maintaining the imported catalog
+
+Curated source snapshots live in `data/restaurant-foods/`, with provenance,
+exclusions, source dates, location evidence, and extraction notes in
+`docs/restaurant-import/`. The import generator rejects missing macros, invalid
+numbers, duplicate IDs, missing serving labels, and missing HTTPS source URLs.
+It preserves published numeric precision and never converts missing values to
+zero. Source errors, incomplete rows, and ranges that cannot be represented
+faithfully are documented instead of guessed.
+
+`drizzle/0003_food_catalog.sql` preserves existing diary rows and adds the catalog.
+`drizzle/0004_restaurant_catalog.sql` imports the reviewed snapshots. Both run
+through the existing startup migration runner. Do not rewrite migrations that
+have already been deployed: future refreshed imports need a new migration file.
+During preparation, reconcile source reports with
+`python3 scripts/restaurant-import/refresh-coverage.py`, then regenerate the
+initial import with `node scripts/restaurant-catalog.mjs`. Extractors in `scripts/restaurant-import/`
+are maintenance tools and do not run during app requests.
+
+Run `SMOKE_BROWSER=1 pnpm test:smoke` after building to verify real migrations,
+source verification, custom-food persistence, and the web flow in an isolated
+local database. This does not modify the production diary.
+
 ## Mobile app
 
 The React Native app in [`mobile/`](mobile/README.md) uses Expo, gluestack-ui,

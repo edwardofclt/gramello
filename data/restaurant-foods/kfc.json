@@ -1,0 +1,1963 @@
+{
+  "chain": "KFC",
+  "sourceUrl": "https://www.nutritionix.com/kfc/menu/premium",
+  "source": "Nutritionix",
+  "sourceKind": "database",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "id": "nutritionix-1112723",
+      "name": "Country Fried Steak Meal",
+      "calories": 870,
+      "protein": 21,
+      "carbs": 83,
+      "fat": 51,
+      "servingLabel": "1 listed serving (Limited Time Offers; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151897",
+      "name": "Dirty Dr Pepper (20 fl oz)",
+      "calories": 310,
+      "protein": 0,
+      "carbs": 74,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Limited Time Offers; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151898",
+      "name": "Dirty Dr Pepper (30 fl oz)",
+      "calories": 430,
+      "protein": 0,
+      "carbs": 107,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Limited Time Offers; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151901",
+      "name": "Dirty Lemonade (20 fl oz)",
+      "calories": 210,
+      "protein": 0,
+      "carbs": 48,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Limited Time Offers; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151902",
+      "name": "Dirty Lemonade (30 fl oz)",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 67,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Limited Time Offers; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151899",
+      "name": "Dirty Pepsi (20 fl oz)",
+      "calories": 320,
+      "protein": 0,
+      "carbs": 78,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Limited Time Offers; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151900",
+      "name": "Dirty Pepsi (30 fl oz)",
+      "calories": 450,
+      "protein": 0,
+      "carbs": 113,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Limited Time Offers; size in item name)"
+    },
+    {
+      "id": "nutritionix-614691",
+      "name": "Dirty Tart Cherry Lemonade (20 fl oz)",
+      "calories": 390,
+      "protein": 0,
+      "carbs": 90,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Limited Time Offers; size in item name)"
+    },
+    {
+      "id": "nutritionix-614692",
+      "name": "Dirty Tart Cherry Lemonade (32 fl oz)",
+      "calories": 580,
+      "protein": 0,
+      "carbs": 137,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Limited Time Offers; size in item name)"
+    },
+    {
+      "id": "nutritionix-330246",
+      "name": "Honey BBQ Hot & Spicy Wings (1)",
+      "calories": 110,
+      "protein": 5,
+      "carbs": 9,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Limited Time Offers; size in item name)"
+    },
+    {
+      "id": "nutritionix-330248",
+      "name": "Hot & Spicy Wings (1)",
+      "calories": 90,
+      "protein": 5,
+      "carbs": 3,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Limited Time Offers; size in item name)"
+    },
+    {
+      "id": "nutritionix-1172129",
+      "name": "Hot Ranch 6 Piece Combo",
+      "calories": 1380,
+      "protein": 37,
+      "carbs": 70,
+      "fat": 106,
+      "servingLabel": "1 listed serving (Limited Time Offers; size in item name)"
+    },
+    {
+      "id": "nutritionix-1172128",
+      "name": "Hot Ranch Loaded Wedges",
+      "calories": 870,
+      "protein": 10,
+      "carbs": 88,
+      "fat": 54,
+      "servingLabel": "1 listed serving (Limited Time Offers; size in item name)"
+    },
+    {
+      "id": "nutritionix-787138",
+      "name": "Mashed Potatoes With Gravy (Medium)",
+      "calories": 180,
+      "protein": 4,
+      "carbs": 27,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Limited Time Offers; size in item name)"
+    },
+    {
+      "id": "nutritionix-330247",
+      "name": "Mike's Hot Honey Hot & Spicy Wings (1)",
+      "calories": 110,
+      "protein": 5,
+      "carbs": 9,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Limited Time Offers; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151893",
+      "name": "Popcorn Chicken",
+      "calories": 620,
+      "protein": 23,
+      "carbs": 40,
+      "fat": 41,
+      "servingLabel": "1 listed serving (Limited Time Offers; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151895",
+      "name": "Popcorn Chicken Big Box",
+      "calories": 1470,
+      "protein": 52,
+      "carbs": 147,
+      "fat": 77,
+      "servingLabel": "1 listed serving (Limited Time Offers; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151896",
+      "name": "Popcorn Chicken Bucket",
+      "calories": 1670,
+      "protein": 63,
+      "carbs": 106,
+      "fat": 110,
+      "servingLabel": "1 listed serving (Limited Time Offers; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151894",
+      "name": "Popcorn Chicken Combo",
+      "calories": 940,
+      "protein": 28,
+      "carbs": 81,
+      "fat": 56,
+      "servingLabel": "1 listed serving (Limited Time Offers; size in item name)"
+    },
+    {
+      "id": "nutritionix-189840",
+      "name": "Potato Wedges",
+      "calories": 320,
+      "protein": 5,
+      "carbs": 40,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Limited Time Offers; size in item name)"
+    },
+    {
+      "id": "nutritionix-189841",
+      "name": "Potato Wedges (Large)",
+      "calories": 760,
+      "protein": 11,
+      "carbs": 97,
+      "fat": 36,
+      "servingLabel": "1 listed serving (Limited Time Offers; size in item name)"
+    },
+    {
+      "id": "nutritionix-614686",
+      "name": "Tart Cherry Lemonade (20 fl oz)",
+      "calories": 320,
+      "protein": 0,
+      "carbs": 81,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Limited Time Offers; size in item name)"
+    },
+    {
+      "id": "nutritionix-614687",
+      "name": "Tart Cherry Lemonade (32 fl oz)",
+      "calories": 500,
+      "protein": 0,
+      "carbs": 128,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Limited Time Offers; size in item name)"
+    },
+    {
+      "id": "nutritionix-614688",
+      "name": "Tart Cherry Lemonade, 1/2 Gallon",
+      "calories": 1090,
+      "protein": 0,
+      "carbs": 276,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Limited Time Offers; size in item name)"
+    },
+    {
+      "id": "nutritionix-614689",
+      "name": "Tart Cherry Lemonade, Gallon",
+      "calories": 2170,
+      "protein": 0,
+      "carbs": 552,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Limited Time Offers; size in item name)"
+    },
+    {
+      "id": "nutritionix-1172126",
+      "name": "Wings & Sandwich Big Box",
+      "calories": 1760,
+      "protein": 56,
+      "carbs": 109,
+      "fat": 123,
+      "servingLabel": "1 listed serving (Limited Time Offers; size in item name)"
+    },
+    {
+      "id": "nutritionix-1172127",
+      "name": "Wings & Tenders Big Box",
+      "calories": 1620,
+      "protein": 55,
+      "carbs": 120,
+      "fat": 106,
+      "servingLabel": "1 listed serving (Limited Time Offers; size in item name)"
+    },
+    {
+      "id": "nutritionix-23948",
+      "name": "Original Recipe Chicken Breast",
+      "calories": 390,
+      "protein": 39,
+      "carbs": 11,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Original Recipe Chicken; size in item name)"
+    },
+    {
+      "id": "nutritionix-23949",
+      "name": "Original Recipe Chicken Drumstick",
+      "calories": 130,
+      "protein": 12,
+      "carbs": 4,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Original Recipe Chicken; size in item name)"
+    },
+    {
+      "id": "nutritionix-23950",
+      "name": "Original Recipe Chicken Thigh",
+      "calories": 280,
+      "protein": 19,
+      "carbs": 8,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Original Recipe Chicken; size in item name)"
+    },
+    {
+      "id": "nutritionix-23947",
+      "name": "Original Recipe Chicken Whole Wing",
+      "calories": 130,
+      "protein": 10,
+      "carbs": 3,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Original Recipe Chicken; size in item name)"
+    },
+    {
+      "id": "nutritionix-23953",
+      "name": "Extra Crispy Chicken Breast",
+      "calories": 530,
+      "protein": 35,
+      "carbs": 18,
+      "fat": 35,
+      "servingLabel": "1 listed serving (Extra Crispy Chicken; size in item name)"
+    },
+    {
+      "id": "nutritionix-23954",
+      "name": "Extra Crispy Chicken Drumstick",
+      "calories": 170,
+      "protein": 10,
+      "carbs": 5,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Extra Crispy Chicken; size in item name)"
+    },
+    {
+      "id": "nutritionix-23955",
+      "name": "Extra Crispy Chicken Thigh",
+      "calories": 330,
+      "protein": 22,
+      "carbs": 9,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Extra Crispy Chicken; size in item name)"
+    },
+    {
+      "id": "nutritionix-23952",
+      "name": "Extra Crispy Chicken Whole Wing",
+      "calories": 170,
+      "protein": 10,
+      "carbs": 5,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Extra Crispy Chicken; size in item name)"
+    },
+    {
+      "id": "nutritionix-23961",
+      "name": "Kentucky Grilled Chicken Breast",
+      "calories": 210,
+      "protein": 38,
+      "carbs": 0,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Kentucky Grilled Chicken; size in item name)"
+    },
+    {
+      "id": "nutritionix-23962",
+      "name": "Kentucky Grilled Chicken Drumstick",
+      "calories": 80,
+      "protein": 11,
+      "carbs": 0,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Kentucky Grilled Chicken; size in item name)"
+    },
+    {
+      "id": "nutritionix-23963",
+      "name": "Kentucky Grilled Chicken Thigh",
+      "calories": 150,
+      "protein": 17,
+      "carbs": 0,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Kentucky Grilled Chicken; size in item name)"
+    },
+    {
+      "id": "nutritionix-23960",
+      "name": "Kentucky Grilled Chicken Whole Wing",
+      "calories": 70,
+      "protein": 9,
+      "carbs": 0,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Kentucky Grilled Chicken; size in item name)"
+    },
+    {
+      "id": "nutritionix-23957",
+      "name": "Spicy Crispy Chicken Breast",
+      "calories": 350,
+      "protein": 30,
+      "carbs": 11,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Spicy Crispy Chicken; size in item name)"
+    },
+    {
+      "id": "nutritionix-23958",
+      "name": "Spicy Crispy Chicken Drumstick",
+      "calories": 130,
+      "protein": 9,
+      "carbs": 5,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Spicy Crispy Chicken; size in item name)"
+    },
+    {
+      "id": "nutritionix-23959",
+      "name": "Spicy Crispy Chicken Thigh",
+      "calories": 270,
+      "protein": 13,
+      "carbs": 10,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Spicy Crispy Chicken; size in item name)"
+    },
+    {
+      "id": "nutritionix-23956",
+      "name": "Spicy Crispy Chicken Whole Wing",
+      "calories": 120,
+      "protein": 7,
+      "carbs": 5,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Spicy Crispy Chicken; size in item name)"
+    },
+    {
+      "id": "nutritionix-154722",
+      "name": "NEW! Original Recipe Tender (each)",
+      "calories": 170,
+      "protein": 11,
+      "carbs": 20,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Original Recipe Tenders; size in item name)"
+    },
+    {
+      "id": "nutritionix-113112",
+      "name": "Kentucky Fried Nuggets (1)",
+      "calories": 35,
+      "protein": 3,
+      "carbs": 1,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Kentucky Fried Nuggets; size in item name)"
+    },
+    {
+      "id": "nutritionix-189824",
+      "name": "BBQ Baked Beans",
+      "calories": 190,
+      "protein": 11,
+      "carbs": 34,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Homestyle Sides (Individual); size in item name)"
+    },
+    {
+      "id": "nutritionix-189826",
+      "name": "Biscuit",
+      "calories": 180,
+      "protein": 4,
+      "carbs": 22,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Homestyle Sides (Individual); size in item name)"
+    },
+    {
+      "id": "nutritionix-965323",
+      "name": "Cheese Curds",
+      "calories": 350,
+      "protein": 17,
+      "carbs": 17,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Homestyle Sides (Individual); size in item name)"
+    },
+    {
+      "id": "nutritionix-965324",
+      "name": "Cheese Curd Snack Box",
+      "calories": 340,
+      "protein": 25,
+      "carbs": 15,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Homestyle Sides (Individual); size in item name)"
+    },
+    {
+      "id": "nutritionix-189827",
+      "name": "Coleslaw",
+      "calories": 170,
+      "protein": 1,
+      "carbs": 14,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Homestyle Sides (Individual); size in item name)"
+    },
+    {
+      "id": "nutritionix-189829",
+      "name": "Corn on the Cob",
+      "calories": 70,
+      "protein": 2,
+      "carbs": 17,
+      "fat": 0.5,
+      "servingLabel": "1 listed serving (Homestyle Sides (Individual); size in item name)"
+    },
+    {
+      "id": "nutritionix-189831",
+      "name": "Green Beans",
+      "calories": 25,
+      "protein": 1,
+      "carbs": 5,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Homestyle Sides (Individual); size in item name)"
+    },
+    {
+      "id": "nutritionix-189833",
+      "name": "KFC Cornbread Muffin",
+      "calories": 210,
+      "protein": 3,
+      "carbs": 28,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Homestyle Sides (Individual); size in item name)"
+    },
+    {
+      "id": "nutritionix-189834",
+      "name": "Macaroni & Cheese",
+      "calories": 140,
+      "protein": 5,
+      "carbs": 17,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Homestyle Sides (Individual); size in item name)"
+    },
+    {
+      "id": "nutritionix-189836",
+      "name": "Mashed Potatoes",
+      "calories": 110,
+      "protein": 2,
+      "carbs": 17,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Homestyle Sides (Individual); size in item name)"
+    },
+    {
+      "id": "nutritionix-189838",
+      "name": "Mashed Potatoes With Gravy",
+      "calories": 130,
+      "protein": 3,
+      "carbs": 20,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Homestyle Sides (Individual); size in item name)"
+    },
+    {
+      "id": "nutritionix-314194",
+      "name": "Secret Recipe Fries",
+      "calories": 320,
+      "protein": 5,
+      "carbs": 41,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Homestyle Sides (Individual); size in item name)"
+    },
+    {
+      "id": "nutritionix-189842",
+      "name": "Sweet Kernel Corn",
+      "calories": 70,
+      "protein": 2,
+      "carbs": 16,
+      "fat": 0.5,
+      "servingLabel": "1 listed serving (Homestyle Sides (Individual); size in item name)"
+    },
+    {
+      "id": "nutritionix-189825",
+      "name": "BBQ Baked Beans (Family)",
+      "calories": 830,
+      "protein": 47,
+      "carbs": 148,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Homestyle Sides (Family); size in item name)"
+    },
+    {
+      "id": "nutritionix-189828",
+      "name": "Coleslaw (Family)",
+      "calories": 640,
+      "protein": 4,
+      "carbs": 54,
+      "fat": 46,
+      "servingLabel": "1 listed serving (Homestyle Sides (Family); size in item name)"
+    },
+    {
+      "id": "nutritionix-189830",
+      "name": "Corn on the Cob (Family)",
+      "calories": 280,
+      "protein": 9,
+      "carbs": 67,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Homestyle Sides (Family); size in item name)"
+    },
+    {
+      "id": "nutritionix-189832",
+      "name": "Green Beans (Family)",
+      "calories": 80,
+      "protein": 4,
+      "carbs": 15,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Homestyle Sides (Family); size in item name)"
+    },
+    {
+      "id": "nutritionix-189835",
+      "name": "Macaroni & Cheese (Family)",
+      "calories": 540,
+      "protein": 18,
+      "carbs": 66,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Homestyle Sides (Family); size in item name)"
+    },
+    {
+      "id": "nutritionix-189837",
+      "name": "Mashed Potatoes (Family)",
+      "calories": 460,
+      "protein": 9,
+      "carbs": 72,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Homestyle Sides (Family); size in item name)"
+    },
+    {
+      "id": "nutritionix-189839",
+      "name": "Mashed Potatoes With Gravy (Family)",
+      "calories": 590,
+      "protein": 12,
+      "carbs": 88,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Homestyle Sides (Family); size in item name)"
+    },
+    {
+      "id": "nutritionix-314193",
+      "name": "Secret Recipe Fries (Family)",
+      "calories": 840,
+      "protein": 13,
+      "carbs": 108,
+      "fat": 40,
+      "servingLabel": "1 listed serving (Homestyle Sides (Family); size in item name)"
+    },
+    {
+      "id": "nutritionix-189843",
+      "name": "Sweet Kernel Corn (Family)",
+      "calories": 280,
+      "protein": 10,
+      "carbs": 67,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Homestyle Sides (Family); size in item name)"
+    },
+    {
+      "id": "nutritionix-355061",
+      "name": "Classic Chicken Sandwich",
+      "calories": 650,
+      "protein": 34,
+      "carbs": 49,
+      "fat": 35,
+      "servingLabel": "1 listed serving (Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-175198",
+      "name": "KFC Snacker",
+      "calories": 350,
+      "protein": 15,
+      "carbs": 39,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-355062",
+      "name": "Spicy Chicken Sandwich",
+      "calories": 620,
+      "protein": 34,
+      "carbs": 49,
+      "fat": 33,
+      "servingLabel": "1 listed serving (Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-175233",
+      "name": "Twister",
+      "calories": 680,
+      "protein": 29,
+      "carbs": 74,
+      "fat": 31,
+      "servingLabel": "1 listed serving (Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-175204",
+      "name": "Chicken Pot Pie",
+      "calories": 720,
+      "protein": 26,
+      "carbs": 60,
+      "fat": 41,
+      "servingLabel": "1 listed serving (Pot Pie and Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-175205",
+      "name": "KFC Famous Bowl",
+      "calories": 590,
+      "protein": 31,
+      "carbs": 67,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Pot Pie and Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-175210",
+      "name": "Caesar Side Salad",
+      "calories": 40,
+      "protein": 3,
+      "carbs": 2,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-175227",
+      "name": "House Side Salad",
+      "calories": 15,
+      "protein": 1,
+      "carbs": 3,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-24013",
+      "name": "Heinz Buttermilk Dressing",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Dressing and Croutons; size in item name)"
+    },
+    {
+      "id": "nutritionix-24012",
+      "name": "Hidden Valley The Original Ranch Fat Free Dressing",
+      "calories": 35,
+      "protein": 1,
+      "carbs": 8,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Dressing and Croutons; size in item name)"
+    },
+    {
+      "id": "nutritionix-24010",
+      "name": "KFC Creamy Parmesan Caesar Dressing",
+      "calories": 260,
+      "protein": 2,
+      "carbs": 4,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Dressing and Croutons; size in item name)"
+    },
+    {
+      "id": "nutritionix-24011",
+      "name": "Marzetti Light Italian Dressing",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0.5,
+      "servingLabel": "1 listed serving (Dressing and Croutons; size in item name)"
+    },
+    {
+      "id": "nutritionix-24009",
+      "name": "Parmesan Garlic Croutons",
+      "calories": 60,
+      "protein": 2,
+      "carbs": 8,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Dressing and Croutons; size in item name)"
+    },
+    {
+      "id": "nutritionix-23993",
+      "name": "Apple Turnover",
+      "calories": 230,
+      "protein": 2,
+      "carbs": 32,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-23994",
+      "name": "Café Valley Chocolate Chip Cake (1 Slice)",
+      "calories": 300,
+      "protein": 4,
+      "carbs": 39,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-23995",
+      "name": "Café Valley Lemon Cake (1 Slice)",
+      "calories": 220,
+      "protein": 2,
+      "carbs": 30,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-24030",
+      "name": "Café Valley Mini Chocolate Chip Cake",
+      "calories": 300,
+      "protein": 3,
+      "carbs": 49,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-24031",
+      "name": "Café Valley Mini Lemon Cake",
+      "calories": 300,
+      "protein": 3,
+      "carbs": 43,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151903",
+      "name": "Chocolate Chunk Cookie",
+      "calories": 190,
+      "protein": 2,
+      "carbs": 26,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-78292",
+      "name": "BBQ - Dipping Sauce Cup",
+      "calories": 45,
+      "protein": 0,
+      "carbs": 11,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Dipping Sauces & Condiments; size in item name)"
+    },
+    {
+      "id": "nutritionix-110671",
+      "name": "Buffalo Ranch - Dipping Sauce Cup",
+      "calories": 120,
+      "protein": 1,
+      "carbs": 2,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Dipping Sauces & Condiments; size in item name)"
+    },
+    {
+      "id": "nutritionix-23987",
+      "name": "Colonel's Buttery Spread",
+      "calories": 35,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Dipping Sauces & Condiments; size in item name)"
+    },
+    {
+      "id": "nutritionix-154721",
+      "name": "Comeback Sauce - Dipping Sauce Cup",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Dipping Sauces & Condiments; size in item name)"
+    },
+    {
+      "id": "nutritionix-35189",
+      "name": "Grape Jelly Packet",
+      "calories": 35,
+      "protein": 0,
+      "carbs": 9,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Dipping Sauces & Condiments; size in item name)"
+    },
+    {
+      "id": "nutritionix-78290",
+      "name": "Honey Mustard - Dipping Sauce Cup",
+      "calories": 110,
+      "protein": 0,
+      "carbs": 6,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Dipping Sauces & Condiments; size in item name)"
+    },
+    {
+      "id": "nutritionix-23986",
+      "name": "Honey Sauce Packet",
+      "calories": 30,
+      "protein": 0,
+      "carbs": 8,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Dipping Sauces & Condiments; size in item name)"
+    },
+    {
+      "id": "nutritionix-35188",
+      "name": "Ketchup",
+      "calories": 30,
+      "protein": 0,
+      "carbs": 8,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Dipping Sauces & Condiments; size in item name)"
+    },
+    {
+      "id": "nutritionix-78289",
+      "name": "KFC Sauce - Dipping Sauce Cup",
+      "calories": 90,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Dipping Sauces & Condiments; size in item name)"
+    },
+    {
+      "id": "nutritionix-35191",
+      "name": "Lemon Juice Packet",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Dipping Sauces & Condiments; size in item name)"
+    },
+    {
+      "id": "nutritionix-78291",
+      "name": "Ranch - Dipping Sauce Cup",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Dipping Sauces & Condiments; size in item name)"
+    },
+    {
+      "id": "nutritionix-988236",
+      "name": "Spicy Zinger Mayo",
+      "calories": 590,
+      "protein": 1,
+      "carbs": 4,
+      "fat": 64,
+      "servingLabel": "1 listed serving (Dipping Sauces & Condiments; size in item name)"
+    },
+    {
+      "id": "nutritionix-132242",
+      "name": "Sticky Chicky Sweet n' Sour Dipping Sauce Cup",
+      "calories": 45,
+      "protein": 0,
+      "carbs": 11,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Dipping Sauces & Condiments; size in item name)"
+    },
+    {
+      "id": "nutritionix-35190",
+      "name": "Strawberry Jam Packet",
+      "calories": 35,
+      "protein": 0,
+      "carbs": 9,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Dipping Sauces & Condiments; size in item name)"
+    },
+    {
+      "id": "nutritionix-594723",
+      "name": "Supergirl Honey Mustard - Dipping Sauce Cup",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Dipping Sauces & Condiments; size in item name)"
+    },
+    {
+      "id": "nutritionix-594721",
+      "name": "Supergirl Sweet Chili - Dipping Sauce Cup",
+      "calories": 40,
+      "protein": 0,
+      "carbs": 11,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Dipping Sauces & Condiments; size in item name)"
+    },
+    {
+      "id": "nutritionix-427399",
+      "name": "Kentucky Fried Chicken Nuggets Kids Meal",
+      "calories": 170,
+      "protein": 17,
+      "carbs": 7,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Kids Meal; size in item name)"
+    },
+    {
+      "id": "nutritionix-644565",
+      "name": "Original Recipe Tenders Kids Meal",
+      "calories": 350,
+      "protein": 21,
+      "carbs": 39,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Kids Meal; size in item name)"
+    },
+    {
+      "id": "nutritionix-46852",
+      "name": "Capri Sun 100% Juice Fruit Punch",
+      "calories": 80,
+      "protein": 0,
+      "carbs": 21,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Kids Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-24028",
+      "name": "Chocolate Milk 1%",
+      "calories": 150,
+      "protein": 7,
+      "carbs": 26,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Kids Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-24027",
+      "name": "Milk 1%",
+      "calories": 90,
+      "protein": 7,
+      "carbs": 10,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Kids Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-35185",
+      "name": "Musselman's Applesauce",
+      "calories": 45,
+      "protein": 0,
+      "carbs": 12,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Kids Meal Applesauce; size in item name)"
+    },
+    {
+      "id": "nutritionix-24132",
+      "name": "7UP (12 fl oz)",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 35,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24133",
+      "name": "7UP (16 fl oz)",
+      "calories": 190,
+      "protein": 0,
+      "carbs": 46,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24134",
+      "name": "7UP (20 fl oz)",
+      "calories": 240,
+      "protein": 0,
+      "carbs": 58,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24135",
+      "name": "7UP (30 fl oz)",
+      "calories": 350,
+      "protein": 0,
+      "carbs": 87,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24146",
+      "name": "Classic Lemonade (1/2 Gallon)",
+      "calories": 880,
+      "protein": 0,
+      "carbs": 234,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24144",
+      "name": "Classic Lemonade (20 fl oz)",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 39,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24096",
+      "name": "Code Red Mountain Dew (12 fl oz)",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 46,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24097",
+      "name": "Code Red Mountain Dew (16 fl oz)",
+      "calories": 230,
+      "protein": 0,
+      "carbs": 62,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24098",
+      "name": "Code Red Mountain Dew (20 fl oz)",
+      "calories": 290,
+      "protein": 0,
+      "carbs": 77,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24099",
+      "name": "Code Red Mountain Dew (30 fl oz)",
+      "calories": 430,
+      "protein": 0,
+      "carbs": 116,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24128",
+      "name": "Diet Dr Pepper (12 fl oz)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24129",
+      "name": "Diet Dr Pepper (16 fl oz)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24130",
+      "name": "Diet Dr Pepper (20 fl oz)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24131",
+      "name": "Diet Dr Pepper (30 fl oz)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24092",
+      "name": "Diet Mountain Dew (12 fl oz)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24093",
+      "name": "Diet Mountain Dew (16 fl oz)",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24094",
+      "name": "Diet Mountain Dew (20 fl oz)",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24095",
+      "name": "Diet Mountain Dew (30 fl oz)",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-26489",
+      "name": "Diet Pepsi Wild Cherry Pepsi (12 fl oz)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-26490",
+      "name": "Diet Pepsi Wild Cherry Pepsi (16 fl oz)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-26491",
+      "name": "Diet Pepsi Wild Cherry Pepsi (20 fl oz)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-26492",
+      "name": "Diet Pepsi Wild Cherry Pepsi (30 fl oz)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24124",
+      "name": "Dr Pepper (12 fl oz)",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 39,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24125",
+      "name": "Dr Pepper (16 fl oz)",
+      "calories": 190,
+      "protein": 0,
+      "carbs": 52,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24126",
+      "name": "Dr Pepper (20 fl oz)",
+      "calories": 240,
+      "protein": 0,
+      "carbs": 65,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24127",
+      "name": "Dr Pepper (30 fl oz)",
+      "calories": 360,
+      "protein": 0,
+      "carbs": 98,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24072",
+      "name": "Lipton Brisk Lemon Tea (12 fl oz)",
+      "calories": 80,
+      "protein": 0,
+      "carbs": 22,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24073",
+      "name": "Lipton Brisk Lemon Tea (16 fl oz)",
+      "calories": 110,
+      "protein": 0,
+      "carbs": 29,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24074",
+      "name": "Lipton Brisk Lemon Tea (20 fl oz)",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 36,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24075",
+      "name": "Lipton Brisk Lemon Tea (30 fl oz)",
+      "calories": 210,
+      "protein": 0,
+      "carbs": 55,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24076",
+      "name": "Lipton Brisk No Calorie Peach Iced Green Tea (12 fl oz)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24077",
+      "name": "Lipton Brisk No Calorie Peach Iced Green Tea (16 fl oz)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24078",
+      "name": "Lipton Brisk No Calorie Peach Iced Green Tea (20 fl oz)",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24079",
+      "name": "Lipton Brisk No Calorie Peach Iced Green Tea (30 fl oz)",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24084",
+      "name": "Lipton Brisk Raspberry Tea (12 fl oz)",
+      "calories": 80,
+      "protein": 0,
+      "carbs": 20,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24085",
+      "name": "Lipton Brisk Raspberry Tea (16 fl oz)",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 26,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24086",
+      "name": "Lipton Brisk Raspberry Tea (20 fl oz)",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 33,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24087",
+      "name": "Lipton Brisk Raspberry Tea (30 fl oz)",
+      "calories": 190,
+      "protein": 0,
+      "carbs": 49,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24064",
+      "name": "Lipton Brisk Sweet Iced Tea (12 fl oz)",
+      "calories": 80,
+      "protein": 0,
+      "carbs": 22,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24065",
+      "name": "Lipton Brisk Sweet Iced Tea (16 fl oz)",
+      "calories": 110,
+      "protein": 0,
+      "carbs": 29,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24066",
+      "name": "Lipton Brisk Sweet Iced Tea (20 fl oz)",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 36,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24067",
+      "name": "Lipton Brisk Sweet Iced Tea (30 fl oz)",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 54,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24068",
+      "name": "Lipton Brisk Unsweetened No Lemon Iced Tea (12 fl oz)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24069",
+      "name": "Lipton Brisk Unsweetened No Lemon Iced Tea (16 fl oz)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24070",
+      "name": "Lipton Brisk Unsweetened No Lemon Iced Tea (20 fl oz)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24071",
+      "name": "Lipton Brisk Unsweetened No Lemon Iced Tea (30 fl oz)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24060",
+      "name": "Manzanita Sol (12 fl oz)",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 42,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24061",
+      "name": "Manzanita Sol (16 fl oz)",
+      "calories": 210,
+      "protein": 0,
+      "carbs": 57,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24062",
+      "name": "Manzanita Sol (20 fl oz)",
+      "calories": 260,
+      "protein": 0,
+      "carbs": 71,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24063",
+      "name": "Manzanita Sol (30 fl oz)",
+      "calories": 400,
+      "protein": 0,
+      "carbs": 106,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24056",
+      "name": "Miranda Strawberry (12 fl oz)",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 44,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24057",
+      "name": "Miranda Strawberry (16 fl oz)",
+      "calories": 220,
+      "protein": 0,
+      "carbs": 58,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24058",
+      "name": "Miranda Strawberry (20 fl oz)",
+      "calories": 270,
+      "protein": 0,
+      "carbs": 73,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24059",
+      "name": "Miranda Strawberry (30 fl oz)",
+      "calories": 410,
+      "protein": 0,
+      "carbs": 109,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-50536",
+      "name": "MNT DEW Sweet Lightning (20 fl oz)",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 32,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24088",
+      "name": "Mountain Dew (12 fl oz)",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 44,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24089",
+      "name": "Mountain Dew (16 fl oz)",
+      "calories": 220,
+      "protein": 0,
+      "carbs": 59,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24090",
+      "name": "Mountain Dew (20 fl oz)",
+      "calories": 270,
+      "protein": 0,
+      "carbs": 73,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24091",
+      "name": "Mountain Dew (30 fl oz)",
+      "calories": 410,
+      "protein": 0,
+      "carbs": 110,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24120",
+      "name": "Mug Root Beer (12 fl oz)",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 39,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24121",
+      "name": "Mug Root Beer (16 fl oz)",
+      "calories": 190,
+      "protein": 0,
+      "carbs": 52,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24122",
+      "name": "Mug Root Beer (20 fl oz)",
+      "calories": 240,
+      "protein": 0,
+      "carbs": 65,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24123",
+      "name": "Mug Root Beer (30 fl oz)",
+      "calories": 360,
+      "protein": 0,
+      "carbs": 98,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24040",
+      "name": "Pepsi Zero Sugar (12 fl oz)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24041",
+      "name": "Pepsi Zero Sugar (16 fl oz)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24042",
+      "name": "Pepsi Zero Sugar (20 fl oz)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24043",
+      "name": "Pepsi Zero Sugar (30 fl oz)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24032",
+      "name": "Pepsi (12 fl oz)",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 41,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24033",
+      "name": "Pepsi (16 fl oz)",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 55,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24034",
+      "name": "Pepsi (20 fl oz)",
+      "calories": 250,
+      "protein": 0,
+      "carbs": 69,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24035",
+      "name": "Pepsi (30 fl oz)",
+      "calories": 380,
+      "protein": 0,
+      "carbs": 104,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-26493",
+      "name": "Sobe Lifewater Yumberry Pomegranate (12 fl oz)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-26494",
+      "name": "Sobe Lifewater Yumberry Pomegranate (16 fl oz)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-26495",
+      "name": "Sobe Lifewater Yumberry Pomegranate (20 fl oz)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-26496",
+      "name": "Sobe Lifewater Yumberry Pomegranate (30 fl oz)",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-418846",
+      "name": "Southern Iced Tea (1/2 Gallon)",
+      "calories": 1130,
+      "protein": 8,
+      "carbs": 274,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-418848",
+      "name": "Southern Iced Tea (12 fl oz)",
+      "calories": 210,
+      "protein": 1,
+      "carbs": 51,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-418849",
+      "name": "Southern Iced Tea (16 fl oz)",
+      "calories": 280,
+      "protein": 2,
+      "carbs": 69,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-418844",
+      "name": "Southern Iced Tea (20 fl oz)",
+      "calories": 350,
+      "protein": 2,
+      "carbs": 86,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-418845",
+      "name": "Southern Iced Tea (30 fl oz)",
+      "calories": 530,
+      "protein": 4,
+      "carbs": 128,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-418847",
+      "name": "Southern Iced Tea (Gallon)",
+      "calories": 2250,
+      "protein": 15,
+      "carbs": 548,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-113115",
+      "name": "Starry (12 fl oz)",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 39,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-113116",
+      "name": "Starry (16 fl oz)",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 52,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-113117",
+      "name": "Starry (20 fl oz)",
+      "calories": 240,
+      "protein": 0,
+      "carbs": 65,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-113118",
+      "name": "Starry (30 fl oz)",
+      "calories": 370,
+      "protein": 0,
+      "carbs": 97,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24112",
+      "name": "Tropicana Fruit Punch (12 fl oz)",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 45,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24113",
+      "name": "Tropicana Fruit Punch (16 fl oz)",
+      "calories": 230,
+      "protein": 0,
+      "carbs": 60,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24114",
+      "name": "Tropicana Fruit Punch (20 fl oz)",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 75,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24115",
+      "name": "Tropicana Fruit Punch (30 fl oz)",
+      "calories": 420,
+      "protein": 0,
+      "carbs": 113,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24104",
+      "name": "Tropicana Light Lemonade (12 fl oz)",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24105",
+      "name": "Tropicana Light Lemonade (16 fl oz)",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24106",
+      "name": "Tropicana Light Lemonade (20 fl oz)",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24107",
+      "name": "Tropicana Light Lemonade (30 fl oz)",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24108",
+      "name": "Tropicana Pink Lemonade (12 fl oz)",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 40,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24109",
+      "name": "Tropicana Pink Lemonade (16 fl oz)",
+      "calories": 210,
+      "protein": 0,
+      "carbs": 53,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24110",
+      "name": "Tropicana Pink Lemonade (20 fl oz)",
+      "calories": 260,
+      "protein": 0,
+      "carbs": 67,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24111",
+      "name": "Tropicana Pink Lemonade (30 fl oz)",
+      "calories": 390,
+      "protein": 0,
+      "carbs": 100,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24116",
+      "name": "Tropicana Twister Orange (12 fl oz)",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 46,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24117",
+      "name": "Tropicana Twister Orange (16 fl oz)",
+      "calories": 230,
+      "protein": 0,
+      "carbs": 61,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24118",
+      "name": "Tropicana Twister Orange (20 fl oz)",
+      "calories": 290,
+      "protein": 0,
+      "carbs": 76,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24119",
+      "name": "Tropicana Twister Orange (30 fl oz)",
+      "calories": 430,
+      "protein": 0,
+      "carbs": 115,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24044",
+      "name": "Wild Cherry Pepsi (12 fl oz)",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 42,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24045",
+      "name": "Wild Cherry Pepsi (16 fl oz)",
+      "calories": 210,
+      "protein": 0,
+      "carbs": 56,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24046",
+      "name": "Wild Cherry Pepsi (20 fl oz)",
+      "calories": 260,
+      "protein": 0,
+      "carbs": 70,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-24047",
+      "name": "Wild Cherry Pepsi (30 fl oz)",
+      "calories": 390,
+      "protein": 0,
+      "carbs": 105,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-175244",
+      "name": "Country Fried Steak without Peppered White Gravy",
+      "calories": 360,
+      "protein": 13,
+      "carbs": 22,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Regional Menu Items; size in item name)"
+    },
+    {
+      "id": "nutritionix-175243",
+      "name": "Country Fried Steak with Peppered White Gravy",
+      "calories": 390,
+      "protein": 13,
+      "carbs": 26,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Regional Menu Items; size in item name)"
+    },
+    {
+      "id": "nutritionix-175241",
+      "name": "KFC Gizzards",
+      "calories": 300,
+      "protein": 20,
+      "carbs": 18,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Regional Menu Items; size in item name)"
+    },
+    {
+      "id": "nutritionix-175242",
+      "name": "KFC Livers",
+      "calories": 230,
+      "protein": 17,
+      "carbs": 12,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Regional Menu Items; size in item name)"
+    }
+  ],
+  "sourceDate": "2026-09-15"
+}

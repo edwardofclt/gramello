@@ -6,7 +6,7 @@ import { Action, Card, colors, ErrorNotice, Field, styles } from '../components/
 import { FoodPicker } from './FoodPicker';
 import { useMealDraft } from '../../../hooks/use-meal-draft';
 import { useMealLibrary } from '../../../hooks/use-meal-library';
-import { displayAmount, GRAMS_PER_OUNCE, mealFood, nutrientKeys, summarizeMeal, type CustomMeal, type Food } from '../../../lib/meals';
+import { displayAmount, GRAMS_PER_OUNCE, mealFood, nutrientKeys, scaleFood, summarizeMeal, type CustomMeal, type Food } from '../../../lib/meals';
 import type { Meal } from '../lib/types';
 
 export function MyMeals({ date, initialMeal, onChoose, onBusy }: { date: string; initialMeal: Meal; onChoose: (food: Food) => void; onBusy: (busy: boolean) => void }) {
@@ -48,9 +48,9 @@ function MealEditor({ date, initialMeal, initial, onSaved, onBack, onBusy }: { d
     catch (error) { setError(error instanceof Error ? error.message : 'Meal could not be saved.'); }
     finally { lock.current = false; setSaving(false); onBusy(false); }
   }
-  if (adding) return <><Action quiet secondary onPress={() => setAdding(false)}>Back to meal</Action><Text style={styles.heading}>Add ingredient</Text><FoodPicker date={date} initialMeal={initialMeal} onSaved={() => {}} onIngredient={ingredient => { draft.setIngredients(items => [...items, ingredient]); setAdding(false); }} /></>;
+  if (adding) return <><Action quiet secondary disabled={saving} onPress={() => setAdding(false)}>Back to meal</Action><Text style={styles.heading}>Add ingredient</Text><FoodPicker date={date} initialMeal={initialMeal} onSaved={() => {}} onBusy={busy => { setSaving(busy); onBusy(busy); }} onIngredient={ingredient => { draft.setIngredients(items => [...items, ingredient]); setAdding(false); }} /></>;
   const summary = draft.summary;
-  const requiresWeight = draft.ingredients.some(item => item.food.nutritionUnit === 'ml');
+  const requiresWeight = draft.ingredients.some(item => scaleFood(item.food, item.quantity, item.unit)?.grams == null);
   return <>
     <Action quiet secondary disabled={saving} onPress={onBack}>Back to my meals</Action>
     <Text style={styles.heading}>{initial ? 'Edit meal' : 'Create meal'}</Text>
@@ -65,7 +65,7 @@ function MealEditor({ date, initialMeal, initial, onSaved, onBack, onBusy }: { d
     <Text style={styles.eyebrow}>BATCH WEIGHT</Text>
     {!requiresWeight && <Text style={styles.muted}>Estimated from ingredients: {displayAmount(draft.estimatedGrams)} g ({displayAmount(draft.estimatedGrams / GRAMS_PER_OUNCE)} oz). For more accurate portions, weigh the finished meal without its container. Cooking can change the weight.</Text>}
     <Field label={`Finished batch weight (${requiresWeight ? 'required' : 'optional'})`} value={draft.weight} onChangeText={draft.setWeight} keyboardType="decimal-pad" placeholder={requiresWeight ? "Enter measured weight" : "Use ingredient estimate"} editable={!saving} />
-    {requiresWeight && <Text style={styles.muted}>Enter the finished batch weight to portion a meal with volume-based ingredients.</Text>}
+    {requiresWeight && <Text style={styles.muted}>Enter the finished batch weight when an ingredient is measured by volume or has no known weight.</Text>}
     <View style={styles.row}>{(['grams', 'ounces'] as const).map(unit => <Action key={unit} secondary={draft.weightUnit !== unit} disabled={saving} label={`Batch weight in ${unit}`} onPress={() => { if (draft.weight.trim() && unit !== draft.weightUnit) draft.setWeight(String(Number(draft.weight) * (unit === 'ounces' ? 1 / GRAMS_PER_OUNCE : GRAMS_PER_OUNCE))); draft.setWeightUnit(unit); }}>{unit === 'grams' ? 'Grams' : 'Ounces'}</Action>)}</View>
     <Text style={styles.eyebrow}>PLAN YOUR PORTIONS</Text>
     <View style={[styles.row, { flexWrap: 'wrap' }]}>{(['servings', 'grams', 'ounces'] as const).map(unit => <Action compact key={unit} disabled={saving} secondary={draft.portionUnit !== unit} onPress={() => { if (unit !== draft.portionUnit) { draft.setPortionUnit(unit); draft.setPortion(''); } }}>{unit === 'servings' ? 'Equal servings' : unit === 'grams' ? 'Grams per portion' : 'Ounces per portion'}</Action>)}</View>

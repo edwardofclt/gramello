@@ -52,6 +52,8 @@
   .topbar .add-food span { display: none; }
 }
 
+.food-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}.source-pills{flex-wrap:wrap}.food-verification{display:inline-flex!important;align-items:center;gap:4px;font-size:.68rem!important;line-height:1.5;font-weight:650;width:fit-content}.food-verification svg{width:13px;height:13px}.food-verification.verified{color:#6ee7c7!important}.food-verification.unverified{color:#ffbd66!important}.nutrition-source{color:#8bc8ff;font-size:.72rem;text-decoration:underline;margin-top:4px}.food-error{color:#ffacac;background:#361e28;border-radius:12px;padding:12px;font-size:.85rem}.food-notice{color:#ffce8c;font-size:.78rem;line-height:1.5;margin:12px 0}.custom-food-form{display:grid;gap:16px}.custom-food-form>p{font-size:.85rem;color:#a6bac7;line-height:1.6}.custom-food-fields{display:grid;grid-template-columns:1fr 1fr;gap:14px}.custom-food-fields label{display:grid;gap:6px;color:#a6bac7;font-size:.8rem}.custom-food-fields .wide{grid-column:1/-1}.custom-food-fields input{min-height:44px}.selected-food section{min-width:0}.selected-food strong{overflow-wrap:anywhere}.result-row strong{white-space:normal!important;overflow-wrap:anywhere}.result-row small{white-space:normal}.food-row>div:nth-child(2){min-width:0}.food-row .food-verification{margin-top:3px}
+@media(max-width:400px){.custom-food-fields{grid-template-columns:1fr}.food-actions{flex-direction:column}.custom-food-fields .wide{grid-column:auto}}
 /* Saved meals share the food dialog and remain usable in short mobile viewports. */
 .food-picker,.meal-builder{display:flex;flex-direction:column;gap:14px;min-width:0}
 .meal-builder h3,.amount-panel h3{font-size:1.15rem;font-weight:700;margin:8px 0}

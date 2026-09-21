@@ -1,0 +1,2386 @@
+{
+  "chain": "Manhattan Bagel",
+  "sourceUrl": "https://www.nutritionix.com/manhattan-bagel/menu/premium",
+  "source": "Nutritionix",
+  "sourceKind": "database",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "id": "nutritionix-538889",
+      "name": "Add Syrup",
+      "calories": 50,
+      "protein": 0,
+      "carbs": 13,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Limited Time Offerings; size in item name)"
+    },
+    {
+      "id": "nutritionix-538886",
+      "name": "French Toast Egg Sandwich, 1 Egg",
+      "calories": 920,
+      "protein": 32,
+      "carbs": 93,
+      "fat": 47,
+      "servingLabel": "1 listed serving (Limited Time Offerings; size in item name)"
+    },
+    {
+      "id": "nutritionix-538887",
+      "name": "French Toast Egg Sandwich, 2 Eggs",
+      "calories": 1000,
+      "protein": 38,
+      "carbs": 93,
+      "fat": 52,
+      "servingLabel": "1 listed serving (Limited Time Offerings; size in item name)"
+    },
+    {
+      "id": "nutritionix-538888",
+      "name": "Maple French Toast Gourmet Bagel",
+      "calories": 360,
+      "protein": 10,
+      "carbs": 71,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Limited Time Offerings; size in item name)"
+    },
+    {
+      "id": "nutritionix-538892",
+      "name": "Bagel Thin, Whole Wheat Bagel",
+      "calories": 190,
+      "protein": 7,
+      "carbs": 40,
+      "fat": 0.5,
+      "servingLabel": "1 listed serving (Classic Bagels; size in item name)"
+    },
+    {
+      "id": "nutritionix-538893",
+      "name": "Blueberry Bagel",
+      "calories": 310,
+      "protein": 11,
+      "carbs": 67,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Classic Bagels; size in item name)"
+    },
+    {
+      "id": "nutritionix-538895",
+      "name": "Cheddar Bagel",
+      "calories": 300,
+      "protein": 12,
+      "carbs": 60,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Classic Bagels; size in item name)"
+    },
+    {
+      "id": "nutritionix-538904",
+      "name": "Cheddar Jalapeno Bagel",
+      "calories": 310,
+      "protein": 11,
+      "carbs": 62,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Classic Bagels; size in item name)"
+    },
+    {
+      "id": "nutritionix-538894",
+      "name": "Chocolate Chip Bagel",
+      "calories": 290,
+      "protein": 10,
+      "carbs": 58,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Classic Bagels; size in item name)"
+    },
+    {
+      "id": "nutritionix-538896",
+      "name": "Cinnamon Raisin Bagel",
+      "calories": 310,
+      "protein": 11,
+      "carbs": 63,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Classic Bagels; size in item name)"
+    },
+    {
+      "id": "nutritionix-538897",
+      "name": "Cranberry Bagel",
+      "calories": 310,
+      "protein": 10,
+      "carbs": 60,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Classic Bagels; size in item name)"
+    },
+    {
+      "id": "nutritionix-538898",
+      "name": "Egg Bagel",
+      "calories": 310,
+      "protein": 11,
+      "carbs": 63,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Classic Bagels; size in item name)"
+    },
+    {
+      "id": "nutritionix-538899",
+      "name": "Everything Bagel",
+      "calories": 330,
+      "protein": 12,
+      "carbs": 62,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Classic Bagels; size in item name)"
+    },
+    {
+      "id": "nutritionix-538900",
+      "name": "Everything Egg Bagel",
+      "calories": 340,
+      "protein": 12,
+      "carbs": 65,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Classic Bagels; size in item name)"
+    },
+    {
+      "id": "nutritionix-538901",
+      "name": "French Toast Bagel",
+      "calories": 320,
+      "protein": 10,
+      "carbs": 59,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Classic Bagels; size in item name)"
+    },
+    {
+      "id": "nutritionix-538902",
+      "name": "Garlic Bagel",
+      "calories": 320,
+      "protein": 12,
+      "carbs": 65,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Classic Bagels; size in item name)"
+    },
+    {
+      "id": "nutritionix-538891",
+      "name": "Honey Wheat Bagel",
+      "calories": 300,
+      "protein": 11,
+      "carbs": 63,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Classic Bagels; size in item name)"
+    },
+    {
+      "id": "nutritionix-538905",
+      "name": "Multigrain Bagel",
+      "calories": 330,
+      "protein": 12,
+      "carbs": 68,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Classic Bagels; size in item name)"
+    },
+    {
+      "id": "nutritionix-538906",
+      "name": "Onion Bagel",
+      "calories": 320,
+      "protein": 12,
+      "carbs": 65,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Classic Bagels; size in item name)"
+    },
+    {
+      "id": "nutritionix-538890",
+      "name": "Plain Bagel",
+      "calories": 300,
+      "protein": 11,
+      "carbs": 60,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Classic Bagels; size in item name)"
+    },
+    {
+      "id": "nutritionix-538907",
+      "name": "Poppy Bagel",
+      "calories": 310,
+      "protein": 12,
+      "carbs": 60,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Classic Bagels; size in item name)"
+    },
+    {
+      "id": "nutritionix-538908",
+      "name": "Pumpernickel Bagel",
+      "calories": 310,
+      "protein": 12,
+      "carbs": 64,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Classic Bagels; size in item name)"
+    },
+    {
+      "id": "nutritionix-538909",
+      "name": "Rye Bagel",
+      "calories": 310,
+      "protein": 11,
+      "carbs": 62,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Classic Bagels; size in item name)"
+    },
+    {
+      "id": "nutritionix-538910",
+      "name": "Salt Bagel",
+      "calories": 300,
+      "protein": 11,
+      "carbs": 60,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Classic Bagels; size in item name)"
+    },
+    {
+      "id": "nutritionix-538911",
+      "name": "Sesame Seed Bagel",
+      "calories": 340,
+      "protein": 13,
+      "carbs": 60,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Classic Bagels; size in item name)"
+    },
+    {
+      "id": "nutritionix-538903",
+      "name": "Whole Wheat Everything Bagel",
+      "calories": 330,
+      "protein": 12,
+      "carbs": 65,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Classic Bagels; size in item name)"
+    },
+    {
+      "id": "nutritionix-538912",
+      "name": "Asiago Bagel",
+      "calories": 340,
+      "protein": 15,
+      "carbs": 60,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Gourmet Bagels; size in item name)"
+    },
+    {
+      "id": "nutritionix-538913",
+      "name": "California Power Bagel Bagel",
+      "calories": 310,
+      "protein": 11,
+      "carbs": 59,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Gourmet Bagels; size in item name)"
+    },
+    {
+      "id": "nutritionix-538914",
+      "name": "Cheesy Hash Brown Bagel",
+      "calories": 390,
+      "protein": 13,
+      "carbs": 59,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Gourmet Bagels; size in item name)"
+    },
+    {
+      "id": "nutritionix-538915",
+      "name": "Super Cinnamon Raisin Bagel",
+      "calories": 330,
+      "protein": 11,
+      "carbs": 67,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Gourmet Bagels; size in item name)"
+    },
+    {
+      "id": "nutritionix-538917",
+      "name": "Asiago Roll",
+      "calories": 330,
+      "protein": 14,
+      "carbs": 52,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Rolls & Breads; size in item name)"
+    },
+    {
+      "id": "nutritionix-538922",
+      "name": "Bialy",
+      "calories": 310,
+      "protein": 10,
+      "carbs": 54,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Rolls & Breads; size in item name)"
+    },
+    {
+      "id": "nutritionix-538916",
+      "name": "Cheddar Roll",
+      "calories": 330,
+      "protein": 12,
+      "carbs": 52,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Rolls & Breads; size in item name)"
+    },
+    {
+      "id": "nutritionix-538919",
+      "name": "Croissant",
+      "calories": 390,
+      "protein": 8,
+      "carbs": 41,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Rolls & Breads; size in item name)"
+    },
+    {
+      "id": "nutritionix-538918",
+      "name": "Flour Roll",
+      "calories": 280,
+      "protein": 9,
+      "carbs": 52,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Rolls & Breads; size in item name)"
+    },
+    {
+      "id": "nutritionix-538925",
+      "name": "Flour Tortilla 12 inch",
+      "calories": 310,
+      "protein": 8,
+      "carbs": 52,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Rolls & Breads; size in item name)"
+    },
+    {
+      "id": "nutritionix-538924",
+      "name": "Marble Rye",
+      "calories": 260,
+      "protein": 10,
+      "carbs": 46,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Rolls & Breads; size in item name)"
+    },
+    {
+      "id": "nutritionix-538923",
+      "name": "Multigrain Bread",
+      "calories": 150,
+      "protein": 6,
+      "carbs": 30,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Rolls & Breads; size in item name)"
+    },
+    {
+      "id": "nutritionix-538920",
+      "name": "Steak Roll",
+      "calories": 230,
+      "protein": 8,
+      "carbs": 41,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Rolls & Breads; size in item name)"
+    },
+    {
+      "id": "nutritionix-538921",
+      "name": "Steak Roll Hand Rolled",
+      "calories": 280,
+      "protein": 9,
+      "carbs": 52,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Rolls & Breads; size in item name)"
+    },
+    {
+      "id": "nutritionix-538926",
+      "name": "Onion and Chive Cream Cheese",
+      "calories": 110,
+      "protein": 2,
+      "carbs": 4,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Cream Cheese; size in item name)"
+    },
+    {
+      "id": "nutritionix-538927",
+      "name": "Plain (Block) Cream Cheese",
+      "calories": 120,
+      "protein": 2,
+      "carbs": 2,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Cream Cheese; size in item name)"
+    },
+    {
+      "id": "nutritionix-538928",
+      "name": "Plain Cream Cheese",
+      "calories": 120,
+      "protein": 2,
+      "carbs": 2,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Cream Cheese; size in item name)"
+    },
+    {
+      "id": "nutritionix-538929",
+      "name": "Salmon, Hand Mixed Cream Cheese",
+      "calories": 100,
+      "protein": 3,
+      "carbs": 2,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Cream Cheese; size in item name)"
+    },
+    {
+      "id": "nutritionix-538931",
+      "name": "Honey Almond Whipped Reduced Fat Cream Cheese",
+      "calories": 120,
+      "protein": 2,
+      "carbs": 10,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Whipped Reduced Fat Cream Cheese; size in item name)"
+    },
+    {
+      "id": "nutritionix-538932",
+      "name": "Jalapeno Salsa Whipped Reduced Fat Cream Cheese",
+      "calories": 100,
+      "protein": 2,
+      "carbs": 5,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Whipped Reduced Fat Cream Cheese; size in item name)"
+    },
+    {
+      "id": "nutritionix-538933",
+      "name": "Strawberry Whipped Reduced Fat Cream Cheese",
+      "calories": 120,
+      "protein": 1,
+      "carbs": 9,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Whipped Reduced Fat Cream Cheese; size in item name)"
+    },
+    {
+      "id": "nutritionix-538930",
+      "name": "Veggie Whipped Reduced Fat Cream Cheese",
+      "calories": 100,
+      "protein": 2,
+      "carbs": 5,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Whipped Reduced Fat Cream Cheese; size in item name)"
+    },
+    {
+      "id": "nutritionix-538934",
+      "name": "Avocado",
+      "calories": 100,
+      "protein": 1,
+      "carbs": 6,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-538935",
+      "name": "Butter",
+      "calories": 110,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-538942",
+      "name": "Bacon",
+      "calories": 70,
+      "protein": 5,
+      "carbs": 1,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Egg & Meat; size in item name)"
+    },
+    {
+      "id": "nutritionix-538936",
+      "name": "Brisket",
+      "calories": 110,
+      "protein": 8,
+      "carbs": 1,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Egg & Meat; size in item name)"
+    },
+    {
+      "id": "nutritionix-538937",
+      "name": "Egg White",
+      "calories": 45,
+      "protein": 9,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Egg & Meat; size in item name)"
+    },
+    {
+      "id": "nutritionix-538943",
+      "name": "Ham, Breakfast",
+      "calories": 45,
+      "protein": 6,
+      "carbs": 2,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Egg & Meat; size in item name)"
+    },
+    {
+      "id": "nutritionix-538944",
+      "name": "Ham, Lunch",
+      "calories": 90,
+      "protein": 12,
+      "carbs": 4,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Egg & Meat; size in item name)"
+    },
+    {
+      "id": "nutritionix-538953",
+      "name": "Pastrami",
+      "calories": 110,
+      "protein": 14,
+      "carbs": 0,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Egg & Meat; size in item name)"
+    },
+    {
+      "id": "nutritionix-538947",
+      "name": "Pork Roll",
+      "calories": 230,
+      "protein": 15,
+      "carbs": 2,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Egg & Meat; size in item name)"
+    },
+    {
+      "id": "nutritionix-538945",
+      "name": "Pork Sausage",
+      "calories": 230,
+      "protein": 7,
+      "carbs": 1,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Egg & Meat; size in item name)"
+    },
+    {
+      "id": "nutritionix-538950",
+      "name": "Salmon, Lox",
+      "calories": 100,
+      "protein": 12,
+      "carbs": 0,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Egg & Meat; size in item name)"
+    },
+    {
+      "id": "nutritionix-538940",
+      "name": "Scrambled Eggs",
+      "calories": 45,
+      "protein": 8,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Egg & Meat; size in item name)"
+    },
+    {
+      "id": "nutritionix-538941",
+      "name": "Scrambled Eggs, Wrap",
+      "calories": 90,
+      "protein": 16,
+      "carbs": 2,
+      "fat": 0.5,
+      "servingLabel": "1 listed serving (Egg & Meat; size in item name)"
+    },
+    {
+      "id": "nutritionix-538951",
+      "name": "Steak, Breakfast",
+      "calories": 60,
+      "protein": 8,
+      "carbs": 1,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Egg & Meat; size in item name)"
+    },
+    {
+      "id": "nutritionix-538952",
+      "name": "Steak, Lunch",
+      "calories": 120,
+      "protein": 16,
+      "carbs": 1,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Egg & Meat; size in item name)"
+    },
+    {
+      "id": "nutritionix-538949",
+      "name": "Turkey, Lunch",
+      "calories": 90,
+      "protein": 15,
+      "carbs": 9,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Egg & Meat; size in item name)"
+    },
+    {
+      "id": "nutritionix-538948",
+      "name": "Turkey Bacon",
+      "calories": 50,
+      "protein": 4,
+      "carbs": 0,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Egg & Meat; size in item name)"
+    },
+    {
+      "id": "nutritionix-538946",
+      "name": "Turkey Sausage",
+      "calories": 90,
+      "protein": 7,
+      "carbs": 0,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Egg & Meat; size in item name)"
+    },
+    {
+      "id": "nutritionix-538938",
+      "name": "Whole Egg 1 Each",
+      "calories": 80,
+      "protein": 6,
+      "carbs": 1,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Egg & Meat; size in item name)"
+    },
+    {
+      "id": "nutritionix-538939",
+      "name": "Whole Egg 2 Each",
+      "calories": 160,
+      "protein": 13,
+      "carbs": 2,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Egg & Meat; size in item name)"
+    },
+    {
+      "id": "nutritionix-538954",
+      "name": "Coffee, 12 fl oz",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Coffee & Hot Tea; size in item name)"
+    },
+    {
+      "id": "nutritionix-538955",
+      "name": "Coffee, 16 fl oz",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Coffee & Hot Tea; size in item name)"
+    },
+    {
+      "id": "nutritionix-538956",
+      "name": "Coffee, 20 fl oz",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Coffee & Hot Tea; size in item name)"
+    },
+    {
+      "id": "nutritionix-538957",
+      "name": "Coffee, 24 fl oz",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Coffee & Hot Tea; size in item name)"
+    },
+    {
+      "id": "nutritionix-538958",
+      "name": "Coffee Decaf, 12 fl oz",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Coffee & Hot Tea; size in item name)"
+    },
+    {
+      "id": "nutritionix-538959",
+      "name": "Coffee Decaf, 16 fl oz",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Coffee & Hot Tea; size in item name)"
+    },
+    {
+      "id": "nutritionix-538960",
+      "name": "Coffee Decaf, 20 fl oz",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Coffee & Hot Tea; size in item name)"
+    },
+    {
+      "id": "nutritionix-538961",
+      "name": "Coffee Decaf, 24 fl oz",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Coffee & Hot Tea; size in item name)"
+    },
+    {
+      "id": "nutritionix-538968",
+      "name": "Cafe Latte, 12 fl oz",
+      "calories": 120,
+      "protein": 8,
+      "carbs": 11,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Coffee, Specialty Hot (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-538969",
+      "name": "Cafe Latte, 16 fl oz",
+      "calories": 150,
+      "protein": 10,
+      "carbs": 14,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Coffee, Specialty Hot (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-538970",
+      "name": "Cafe Latte, 20 fl oz",
+      "calories": 170,
+      "protein": 12,
+      "carbs": 17,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Coffee, Specialty Hot (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-538971",
+      "name": "Cafe Latte, 24 fl oz",
+      "calories": 200,
+      "protein": 14,
+      "carbs": 20,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Coffee, Specialty Hot (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-538972",
+      "name": "Cappuccino, 12 fl oz",
+      "calories": 90,
+      "protein": 6,
+      "carbs": 9,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Coffee, Specialty Hot (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-538973",
+      "name": "Cappuccino, 16 fl oz",
+      "calories": 120,
+      "protein": 9,
+      "carbs": 12,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Coffee, Specialty Hot (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-538974",
+      "name": "Cappuccino, 20 fl oz",
+      "calories": 160,
+      "protein": 11,
+      "carbs": 15,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Coffee, Specialty Hot (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-538975",
+      "name": "Cappuccino, 24 fl oz",
+      "calories": 170,
+      "protein": 12,
+      "carbs": 17,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Coffee, Specialty Hot (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-538988",
+      "name": "Caramel, Macchiato, 12 fl oz",
+      "calories": 250,
+      "protein": 9,
+      "carbs": 39,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Coffee, Specialty Hot (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-538989",
+      "name": "Caramel, Macchiato, 16 fl oz",
+      "calories": 330,
+      "protein": 12,
+      "carbs": 54,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Coffee, Specialty Hot (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-538990",
+      "name": "Caramel, Macchiato, 20 fl oz",
+      "calories": 400,
+      "protein": 14,
+      "carbs": 68,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Coffee, Specialty Hot (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-538991",
+      "name": "Caramel, Macchiato, 24 fl oz",
+      "calories": 490,
+      "protein": 17,
+      "carbs": 84,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Coffee, Specialty Hot (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-538980",
+      "name": "Chocolate Mocha, 12 fl oz",
+      "calories": 270,
+      "protein": 9,
+      "carbs": 44,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Coffee, Specialty Hot (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-538981",
+      "name": "Chocolate Mocha, 16 fl oz",
+      "calories": 360,
+      "protein": 12,
+      "carbs": 61,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Coffee, Specialty Hot (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-538982",
+      "name": "Chocolate Mocha, 20 fl oz",
+      "calories": 450,
+      "protein": 14,
+      "carbs": 78,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Coffee, Specialty Hot (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-538983",
+      "name": "Chocolate Mocha, 24 fl oz",
+      "calories": 460,
+      "protein": 16,
+      "carbs": 77,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Coffee, Specialty Hot (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-538967",
+      "name": "Espresso Double",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Coffee, Specialty Hot (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-538966",
+      "name": "Espresso Single",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Coffee, Specialty Hot (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-538996",
+      "name": "Hazelnut Mocha, 12 fl oz",
+      "calories": 280,
+      "protein": 9,
+      "carbs": 47,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Coffee, Specialty Hot (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-538997",
+      "name": "Hazelnut Mocha, 16 fl oz",
+      "calories": 330,
+      "protein": 11,
+      "carbs": 55,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Coffee, Specialty Hot (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-538998",
+      "name": "Hazelnut Mocha, 20 fl oz",
+      "calories": 450,
+      "protein": 13,
+      "carbs": 81,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Coffee, Specialty Hot (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-538999",
+      "name": "Hazelnut Mocha, 24 fl oz",
+      "calories": 530,
+      "protein": 15,
+      "carbs": 94,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Coffee, Specialty Hot (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-538992",
+      "name": "Vanilla Hazelnut Latte, 12 fl oz",
+      "calories": 220,
+      "protein": 8,
+      "carbs": 32,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Coffee, Specialty Hot (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-538993",
+      "name": "Vanilla Hazelnut Latte, 16 fl oz",
+      "calories": 290,
+      "protein": 10,
+      "carbs": 45,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Coffee, Specialty Hot (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-538994",
+      "name": "Vanilla Hazelnut Latte, 20 fl oz",
+      "calories": 340,
+      "protein": 11,
+      "carbs": 57,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Coffee, Specialty Hot (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-538995",
+      "name": "Vanilla Hazelnut Latte, 24 fl oz",
+      "calories": 380,
+      "protein": 14,
+      "carbs": 59,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Coffee, Specialty Hot (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-538976",
+      "name": "Vanilla Latte, 12 fl oz",
+      "calories": 180,
+      "protein": 8,
+      "carbs": 26,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Coffee, Specialty Hot (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-538977",
+      "name": "Vanilla Latte, 16 fl oz",
+      "calories": 230,
+      "protein": 10,
+      "carbs": 34,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Coffee, Specialty Hot (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-538978",
+      "name": "Vanilla Latte, 20 fl oz",
+      "calories": 270,
+      "protein": 12,
+      "carbs": 41,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Coffee, Specialty Hot (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-538979",
+      "name": "Vanilla Latte, 24 fl oz",
+      "calories": 310,
+      "protein": 13,
+      "carbs": 48,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Coffee, Specialty Hot (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-538984",
+      "name": "White Chocolate Mocha, 12 fl oz",
+      "calories": 270,
+      "protein": 9,
+      "carbs": 43,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Coffee, Specialty Hot (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-538985",
+      "name": "White Chocolate Mocha, 16 fl oz",
+      "calories": 350,
+      "protein": 12,
+      "carbs": 59,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Coffee, Specialty Hot (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-538986",
+      "name": "White Chocolate Mocha, 20 fl oz",
+      "calories": 430,
+      "protein": 14,
+      "carbs": 75,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Coffee, Specialty Hot (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-538987",
+      "name": "White Chocolate Mocha, 24 fl oz",
+      "calories": 510,
+      "protein": 16,
+      "carbs": 90,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Coffee, Specialty Hot (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-539000",
+      "name": "Chai Tea Latte, 12 fl oz",
+      "calories": 200,
+      "protein": 8,
+      "carbs": 31,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Other Hot Beverages (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-539001",
+      "name": "Chai Tea Latte, 16 fl oz",
+      "calories": 250,
+      "protein": 10,
+      "carbs": 40,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Other Hot Beverages (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-539002",
+      "name": "Chai Tea Latte, 20 fl oz",
+      "calories": 310,
+      "protein": 12,
+      "carbs": 50,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Other Hot Beverages (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-539003",
+      "name": "Chai Tea Latte, 24 fl oz",
+      "calories": 340,
+      "protein": 15,
+      "carbs": 53,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Other Hot Beverages (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-539004",
+      "name": "Hot Chocolate, 12 fl oz",
+      "calories": 270,
+      "protein": 9,
+      "carbs": 44,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Other Hot Beverages (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-539006",
+      "name": "Hot Chocolate, 20 fl oz",
+      "calories": 440,
+      "protein": 14,
+      "carbs": 77,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Other Hot Beverages (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-539007",
+      "name": "Hot Chocolate, 24 fl oz",
+      "calories": 490,
+      "protein": 16,
+      "carbs": 81,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Other Hot Beverages (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-539008",
+      "name": "Iced Americano, 16 fl oz",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Iced Specialty Coffee (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-539009",
+      "name": "Iced Americano, 24 fl oz",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Iced Specialty Coffee (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-539020",
+      "name": "Iced Cappuccino, 12 fl oz",
+      "calories": 90,
+      "protein": 6,
+      "carbs": 8,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Iced Specialty Coffee (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-539021",
+      "name": "Iced Cappuccino, 16 fl oz",
+      "calories": 120,
+      "protein": 8,
+      "carbs": 11,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Iced Specialty Coffee (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-539022",
+      "name": "Iced Cappuccino, 20 fl oz",
+      "calories": 140,
+      "protein": 10,
+      "carbs": 14,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Iced Specialty Coffee (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-539023",
+      "name": "Iced Cappuccino, 24 fl oz",
+      "calories": 170,
+      "protein": 12,
+      "carbs": 17,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Iced Specialty Coffee (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-539036",
+      "name": "Iced Caramel Macchiato, 12 fl oz",
+      "calories": 290,
+      "protein": 9,
+      "carbs": 33,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Iced Specialty Coffee (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-539037",
+      "name": "Iced Caramel Macchiato, 16 fl oz",
+      "calories": 360,
+      "protein": 12,
+      "carbs": 48,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Iced Specialty Coffee (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-539038",
+      "name": "Iced Caramel Macchiato, 20 fl oz",
+      "calories": 380,
+      "protein": 14,
+      "carbs": 48,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Iced Specialty Coffee (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-539039",
+      "name": "Iced Caramel Macchiato, 24 fl oz",
+      "calories": 470,
+      "protein": 16,
+      "carbs": 65,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Iced Specialty Coffee (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-539016",
+      "name": "Iced Chai Latte, 12 fl oz",
+      "calories": 170,
+      "protein": 6,
+      "carbs": 29,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Iced Specialty Coffee (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-539017",
+      "name": "Iced Chai Latte, 16 fl oz",
+      "calories": 240,
+      "protein": 10,
+      "carbs": 40,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Iced Specialty Coffee (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-539018",
+      "name": "Iced Chai Latte, 20 fl oz",
+      "calories": 260,
+      "protein": 11,
+      "carbs": 41,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Iced Specialty Coffee (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-539019",
+      "name": "Iced Chai Latte, 24 fl oz",
+      "calories": 320,
+      "protein": 13,
+      "carbs": 51,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Iced Specialty Coffee (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-539028",
+      "name": "Iced Chocolate Mocha, 12 fl oz",
+      "calories": 300,
+      "protein": 7,
+      "carbs": 41,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Iced Specialty Coffee (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-539029",
+      "name": "Iced Chocolate Mocha, 16 fl oz",
+      "calories": 420,
+      "protein": 10,
+      "carbs": 65,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Iced Specialty Coffee (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-539030",
+      "name": "Iced Chocolate Mocha, 20 fl oz",
+      "calories": 440,
+      "protein": 12,
+      "carbs": 66,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Iced Specialty Coffee (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-539031",
+      "name": "Iced Chocolate Mocha, 24 fl oz",
+      "calories": 580,
+      "protein": 14,
+      "carbs": 97,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Iced Specialty Coffee (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-539010",
+      "name": "Iced Coffee, 16 fl oz",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Iced Specialty Coffee (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-539011",
+      "name": "Iced Coffee, 24 fl oz",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Iced Specialty Coffee (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-539044",
+      "name": "Iced Hazelnut Mocha, 12 fl oz",
+      "calories": 250,
+      "protein": 8,
+      "carbs": 35,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Iced Specialty Coffee (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-539045",
+      "name": "Iced Hazelnut Mocha, 16 fl oz",
+      "calories": 330,
+      "protein": 10,
+      "carbs": 50,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Iced Specialty Coffee (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-539046",
+      "name": "Iced Hazelnut Mocha, 20 fl oz",
+      "calories": 380,
+      "protein": 12,
+      "carbs": 57,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Iced Specialty Coffee (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-539047",
+      "name": "Iced Hazelnut Mocha, 24 fl oz",
+      "calories": 460,
+      "protein": 15,
+      "carbs": 73,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Iced Specialty Coffee (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-539012",
+      "name": "Iced Latte, 12 fl oz",
+      "calories": 90,
+      "protein": 6,
+      "carbs": 8,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Iced Specialty Coffee (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-539013",
+      "name": "Iced Latte, 16 fl oz",
+      "calories": 140,
+      "protein": 10,
+      "carbs": 14,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Iced Specialty Coffee (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-539014",
+      "name": "Iced Latte, 20 fl oz",
+      "calories": 140,
+      "protein": 10,
+      "carbs": 14,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Iced Specialty Coffee (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-539015",
+      "name": "Iced Latte, 24 fl oz",
+      "calories": 190,
+      "protein": 13,
+      "carbs": 18,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Iced Specialty Coffee (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-539040",
+      "name": "Iced Vanilla Hazelnut Latte, 12 fl oz",
+      "calories": 190,
+      "protein": 5,
+      "carbs": 38,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Iced Specialty Coffee (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-539041",
+      "name": "Iced Vanilla Hazelnut Latte, 16 fl oz",
+      "calories": 220,
+      "protein": 6,
+      "carbs": 40,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Iced Specialty Coffee (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-539042",
+      "name": "Iced Vanilla Hazelnut Latte, 20 fl oz",
+      "calories": 280,
+      "protein": 8,
+      "carbs": 52,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Iced Specialty Coffee (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-539043",
+      "name": "Iced Vanilla Hazelnut Latte, 24 fl oz",
+      "calories": 300,
+      "protein": 10,
+      "carbs": 55,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Iced Specialty Coffee (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-539024",
+      "name": "Iced Vanilla Latte, 12 fl oz",
+      "calories": 170,
+      "protein": 7,
+      "carbs": 25,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Iced Specialty Coffee (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-539025",
+      "name": "Iced Vanilla Latte, 16 fl oz",
+      "calories": 220,
+      "protein": 10,
+      "carbs": 33,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Iced Specialty Coffee (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-539026",
+      "name": "Iced Vanilla Latte, 20 fl oz",
+      "calories": 270,
+      "protein": 12,
+      "carbs": 41,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Iced Specialty Coffee (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-539027",
+      "name": "Iced Vanilla Latte, 24 fl oz",
+      "calories": 300,
+      "protein": 13,
+      "carbs": 48,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Iced Specialty Coffee (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-539032",
+      "name": "Iced White Chocolate Mocha, 12 fl oz",
+      "calories": 300,
+      "protein": 8,
+      "carbs": 39,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Iced Specialty Coffee (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-539033",
+      "name": "Iced White Chocolate Mocha, 16 fl oz",
+      "calories": 410,
+      "protein": 10,
+      "carbs": 63,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Iced Specialty Coffee (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-539034",
+      "name": "Iced White Chocolate Mocha, 20 fl oz",
+      "calories": 430,
+      "protein": 12,
+      "carbs": 63,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Iced Specialty Coffee (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-539035",
+      "name": "Iced White Chocolate Mocha, 24 fl oz",
+      "calories": 570,
+      "protein": 15,
+      "carbs": 94,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Iced Specialty Coffee (with 2% Milk); size in item name)"
+    },
+    {
+      "id": "nutritionix-539050",
+      "name": "Caramel Cream Cold Brew, 16 fl oz",
+      "calories": 220,
+      "protein": 4,
+      "carbs": 38,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Cold Brew; size in item name)"
+    },
+    {
+      "id": "nutritionix-539051",
+      "name": "Caramel Cream Cold Brew, 24 fl oz",
+      "calories": 380,
+      "protein": 7,
+      "carbs": 63,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Cold Brew; size in item name)"
+    },
+    {
+      "id": "nutritionix-539052",
+      "name": "Chocolate Cream Cold Brew, 16 fl oz",
+      "calories": 210,
+      "protein": 4,
+      "carbs": 36,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Cold Brew; size in item name)"
+    },
+    {
+      "id": "nutritionix-539053",
+      "name": "Chocolate Cream Cold Brew, 24 fl oz",
+      "calories": 350,
+      "protein": 6,
+      "carbs": 59,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Cold Brew; size in item name)"
+    },
+    {
+      "id": "nutritionix-539048",
+      "name": "Classic Cold Brew, 16 fl oz",
+      "calories": 10,
+      "protein": 1,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cold Brew; size in item name)"
+    },
+    {
+      "id": "nutritionix-539049",
+      "name": "Classic Cold Brew, 24 fl oz",
+      "calories": 20,
+      "protein": 1,
+      "carbs": 3,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cold Brew; size in item name)"
+    },
+    {
+      "id": "nutritionix-539054",
+      "name": "Vanilla Cream Cold Brew, 18 fl oz",
+      "calories": 200,
+      "protein": 2,
+      "carbs": 31,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Cold Brew; size in item name)"
+    },
+    {
+      "id": "nutritionix-539055",
+      "name": "Vanilla Cream Cold Brew, 24 fl oz",
+      "calories": 330,
+      "protein": 4,
+      "carbs": 51,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Cold Brew; size in item name)"
+    },
+    {
+      "id": "nutritionix-539056",
+      "name": "Caffe Caramel, 18 fl oz",
+      "calories": 390,
+      "protein": 5,
+      "carbs": 72,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Chillerz Frozen Blended Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-539057",
+      "name": "Caffe Caramel, 24 fl oz",
+      "calories": 650,
+      "protein": 8,
+      "carbs": 124,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Chillerz Frozen Blended Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-539058",
+      "name": "Caffe Mocha, 18 fl oz",
+      "calories": 420,
+      "protein": 4,
+      "carbs": 79,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Chillerz Frozen Blended Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-539059",
+      "name": "Caffe Mocha, 24 fl oz",
+      "calories": 690,
+      "protein": 7,
+      "carbs": 135,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Chillerz Frozen Blended Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-539061",
+      "name": "Blackberry Lemonade, 16 fl oz",
+      "calories": 230,
+      "protein": 0,
+      "carbs": 60,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Poured Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-539065",
+      "name": "Half and Half -Iced Tea/Lemonade, Gold Peak, 16 fl oz",
+      "calories": 90,
+      "protein": 0,
+      "carbs": 23,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Poured Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-539066",
+      "name": "Half and Half -Iced Tea/Lemonade, Lipton, 16 fl oz",
+      "calories": 90,
+      "protein": 0,
+      "carbs": 23,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Poured Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-539079",
+      "name": "Iced Chocolate Raspberry Coffee, 24 fl oz",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 29,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Poured Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-539080",
+      "name": "Iced Chocolate Raspberry Coffee, 32 fl oz",
+      "calories": 150,
+      "protein": 1,
+      "carbs": 37,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Poured Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-539075",
+      "name": "Iced Hazelnut Coffee, Beverage Bar, 24 fl oz",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 24,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Poured Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-539076",
+      "name": "Iced Hazelnut Coffee, Beverage Bar, 32 fl oz",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 30,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Poured Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-539067",
+      "name": "Iced Tea, Black Gold Peak, 24 fl oz",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Poured Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-539068",
+      "name": "Iced Tea, Black Gold Peak, 32 fl oz",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Poured Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-539069",
+      "name": "Iced Tea, Gold Peak Passion Mango, 24 fl oz",
+      "calories": 35,
+      "protein": 0,
+      "carbs": 9,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Poured Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-539070",
+      "name": "Iced Tea, Gold Peak Passion Mango, 32 fl oz",
+      "calories": 45,
+      "protein": 0,
+      "carbs": 12,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Poured Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-539073",
+      "name": "Iced Tea, Green, 24 fl oz",
+      "calories": 35,
+      "protein": 0,
+      "carbs": 9,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Poured Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-539074",
+      "name": "Iced Tea, Green, 32 fl oz",
+      "calories": 45,
+      "protein": 0,
+      "carbs": 12,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Poured Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-539077",
+      "name": "Iced Vanilla Coffee, Beverage Bar, 24 fl oz",
+      "calories": 90,
+      "protein": 0,
+      "carbs": 22,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Poured Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-539078",
+      "name": "Iced Vanilla Coffee, Beverage Bar, 32 fl oz",
+      "calories": 110,
+      "protein": 0,
+      "carbs": 28,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Poured Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-539060",
+      "name": "Lemonade, 16 fl oz",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 47,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Poured Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-539063",
+      "name": "Orange Juice, 16 fl oz",
+      "calories": 230,
+      "protein": 4,
+      "carbs": 54,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Poured Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-539064",
+      "name": "Orange Juice, 20 fl oz",
+      "calories": 280,
+      "protein": 4,
+      "carbs": 68,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Poured Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-539062",
+      "name": "Strawberry Lemonade, 16 fl oz",
+      "calories": 260,
+      "protein": 0,
+      "carbs": 70,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Poured Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-539083",
+      "name": "Fruit Salad, Grab and Go",
+      "calories": 160,
+      "protein": 2,
+      "carbs": 40,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-539081",
+      "name": "Hash Browns",
+      "calories": 140,
+      "protein": 1,
+      "carbs": 15,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-539082",
+      "name": "Yogurt parfait with Fruit",
+      "calories": 190,
+      "protein": 8,
+      "carbs": 39,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-539103",
+      "name": "Avocado Egg White",
+      "calories": 520,
+      "protein": 24,
+      "carbs": 72,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-539085",
+      "name": "Bagel Classic, Bacon and Cheese on Plain",
+      "calories": 540,
+      "protein": 28,
+      "carbs": 66,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-539084",
+      "name": "Bagel Classic, Cheese on Plain",
+      "calories": 490,
+      "protein": 24,
+      "carbs": 65,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-539086",
+      "name": "Bagel Classic, Ham and Cheese on Plain",
+      "calories": 540,
+      "protein": 31,
+      "carbs": 66,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-539087",
+      "name": "Bagel Classic, Pork Roll and Cheese on Plain",
+      "calories": 720,
+      "protein": 39,
+      "carbs": 67,
+      "fat": 33,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-539088",
+      "name": "Bagel Classic, Pork Sausage and Cheese on Plain",
+      "calories": 720,
+      "protein": 31,
+      "carbs": 66,
+      "fat": 37,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-539089",
+      "name": "Bagel Classic, Turkey Bacon and Cheese on Plain",
+      "calories": 540,
+      "protein": 26,
+      "carbs": 65,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-539090",
+      "name": "Bagel Classic, Turkey Sausage and Cheese on Plain",
+      "calories": 570,
+      "protein": 29,
+      "carbs": 62,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-539091",
+      "name": "Breakfast Cheesesteak",
+      "calories": 760,
+      "protein": 43,
+      "carbs": 79,
+      "fat": 31,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-539100",
+      "name": "Brisket and Egg",
+      "calories": 830,
+      "protein": 35,
+      "carbs": 65,
+      "fat": 48,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-539099",
+      "name": "Classic Light",
+      "calories": 380,
+      "protein": 27,
+      "carbs": 41,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-539092",
+      "name": "Croissant Classic, Bacon and Cheese",
+      "calories": 650,
+      "protein": 26,
+      "carbs": 44,
+      "fat": 41,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-539093",
+      "name": "Croissant Classic, Ham and Cheese",
+      "calories": 650,
+      "protein": 29,
+      "carbs": 45,
+      "fat": 39,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-539094",
+      "name": "Croissant Classic, Pork Roll and Cheese",
+      "calories": 830,
+      "protein": 37,
+      "carbs": 45,
+      "fat": 55,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-539095",
+      "name": "Croissant Classic, Pork Sausage and Cheese",
+      "calories": 830,
+      "protein": 29,
+      "carbs": 44,
+      "fat": 60,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-539098",
+      "name": "Croissant Classic, Spinach and Bacon",
+      "calories": 910,
+      "protein": 30,
+      "carbs": 47,
+      "fat": 68,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-539096",
+      "name": "Croissant Classic, Turkey Bacon and Cheese",
+      "calories": 650,
+      "protein": 24,
+      "carbs": 43,
+      "fat": 41,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-539097",
+      "name": "Croissant Classic, Turkey Sausage and Cheese",
+      "calories": 630,
+      "protein": 27,
+      "carbs": 44,
+      "fat": 38,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-539101",
+      "name": "Farmhouse",
+      "calories": 700,
+      "protein": 37,
+      "carbs": 65,
+      "fat": 33,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-539104",
+      "name": "Santa Fe Egg White",
+      "calories": 430,
+      "protein": 26,
+      "carbs": 39,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-539105",
+      "name": "Big Breakfast Burrito",
+      "calories": 1050,
+      "protein": 50,
+      "carbs": 76,
+      "fat": 60,
+      "servingLabel": "1 listed serving (Burritos & Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-539106",
+      "name": "Breakfast Burrito",
+      "calories": 1210,
+      "protein": 46,
+      "carbs": 94,
+      "fat": 70,
+      "servingLabel": "1 listed serving (Burritos & Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-539107",
+      "name": "Ranchero Wrap",
+      "calories": 690,
+      "protein": 36,
+      "carbs": 62,
+      "fat": 31,
+      "servingLabel": "1 listed serving (Burritos & Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-539108",
+      "name": "Village Veggie Wrap",
+      "calories": 580,
+      "protein": 12,
+      "carbs": 62,
+      "fat": 33,
+      "servingLabel": "1 listed serving (Burritos & Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-539109",
+      "name": "White Albacore Tuna Wrap",
+      "calories": 540,
+      "protein": 23,
+      "carbs": 54,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Burritos & Wraps; size in item name)"
+    },
+    {
+      "id": "nutritionix-539112",
+      "name": "BLT on Multigrain Bread",
+      "calories": 510,
+      "protein": 18,
+      "carbs": 34,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Deli Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-539110",
+      "name": "Chicken Salad Criossant",
+      "calories": 650,
+      "protein": 21,
+      "carbs": 45,
+      "fat": 44,
+      "servingLabel": "1 listed serving (Deli Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-539113",
+      "name": "Ham and Swiss on Sesame",
+      "calories": 580,
+      "protein": 36,
+      "carbs": 67,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Deli Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-539114",
+      "name": "Nova Lox",
+      "calories": 680,
+      "protein": 28,
+      "carbs": 65,
+      "fat": 35,
+      "servingLabel": "1 listed serving (Deli Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-539111",
+      "name": "Turkey and Cheddar",
+      "calories": 600,
+      "protein": 29,
+      "carbs": 40,
+      "fat": 41,
+      "servingLabel": "1 listed serving (Deli Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-539116",
+      "name": "White Albacore Tuna on Sesame Bagel",
+      "calories": 580,
+      "protein": 28,
+      "carbs": 67,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Deli Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-539115",
+      "name": "Whitefish Salad",
+      "calories": 350,
+      "protein": 14,
+      "carbs": 23,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Deli Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-539117",
+      "name": "Avocado Veg Out",
+      "calories": 470,
+      "protein": 17,
+      "carbs": 74,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Signature Lunch; size in item name)"
+    },
+    {
+      "id": "nutritionix-539119",
+      "name": "Chicken Melt",
+      "calories": 590,
+      "protein": 43,
+      "carbs": 59,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Signature Lunch; size in item name)"
+    },
+    {
+      "id": "nutritionix-539120",
+      "name": "Cuban",
+      "calories": 500,
+      "protein": 36,
+      "carbs": 46,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Signature Lunch; size in item name)"
+    },
+    {
+      "id": "nutritionix-539121",
+      "name": "East Side Reuban",
+      "calories": 610,
+      "protein": 36,
+      "carbs": 51,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Signature Lunch; size in item name)"
+    },
+    {
+      "id": "nutritionix-539122",
+      "name": "Egg Salad",
+      "calories": 480,
+      "protein": 21,
+      "carbs": 63,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Signature Lunch; size in item name)"
+    },
+    {
+      "id": "nutritionix-539124",
+      "name": "Ellis Island Hot Pastrami",
+      "calories": 560,
+      "protein": 36,
+      "carbs": 67,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Signature Lunch; size in item name)"
+    },
+    {
+      "id": "nutritionix-539123",
+      "name": "Empire State Club",
+      "calories": 510,
+      "protein": 26,
+      "carbs": 40,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Signature Lunch; size in item name)"
+    },
+    {
+      "id": "nutritionix-539118",
+      "name": "Manhattan Cheesesteak",
+      "calories": 660,
+      "protein": 39,
+      "carbs": 59,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Signature Lunch; size in item name)"
+    },
+    {
+      "id": "nutritionix-539128",
+      "name": "Reuban",
+      "calories": 610,
+      "protein": 36,
+      "carbs": 51,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Signature Lunch; size in item name)"
+    },
+    {
+      "id": "nutritionix-539127",
+      "name": "Spicy Chicken",
+      "calories": 640,
+      "protein": 44,
+      "carbs": 62,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Signature Lunch; size in item name)"
+    },
+    {
+      "id": "nutritionix-539125",
+      "name": "Thintastic Avocado BLT",
+      "calories": 450,
+      "protein": 12,
+      "carbs": 47,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Signature Lunch; size in item name)"
+    },
+    {
+      "id": "nutritionix-539126",
+      "name": "Thintastic Turkey",
+      "calories": 350,
+      "protein": 24,
+      "carbs": 54,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Signature Lunch; size in item name)"
+    },
+    {
+      "id": "nutritionix-539129",
+      "name": "Avocado Toast",
+      "calories": 410,
+      "protein": 12,
+      "carbs": 67,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Toast; size in item name)"
+    },
+    {
+      "id": "nutritionix-539130",
+      "name": "Chicken Noodle Soup, 8 oz",
+      "calories": 110,
+      "protein": 8,
+      "carbs": 12,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Soups; size in item name)"
+    },
+    {
+      "id": "nutritionix-539131",
+      "name": "Chicken Noodle Soup, 16 oz",
+      "calories": 200,
+      "protein": 14,
+      "carbs": 22,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Soups; size in item name)"
+    },
+    {
+      "id": "nutritionix-539132",
+      "name": "Chicken Salad",
+      "calories": 250,
+      "protein": 13,
+      "carbs": 1,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-539134",
+      "name": "Country Club with Chicken (Without Dressing)",
+      "calories": 350,
+      "protein": 31,
+      "carbs": 29,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-539137",
+      "name": "Garden Market Salad (Without Dressing)",
+      "calories": 160,
+      "protein": 7,
+      "carbs": 29,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-539138",
+      "name": "Garden Market Salad with Chicken Salad (Without Dressing)",
+      "calories": 420,
+      "protein": 19,
+      "carbs": 31,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-539139",
+      "name": "Garden Market Salad with Tuna Salad (Without Dressing)",
+      "calories": 400,
+      "protein": 20,
+      "carbs": 30,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-539135",
+      "name": "Grilled Chicken Caesar (Without Dressing)",
+      "calories": 360,
+      "protein": 39,
+      "carbs": 28,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-539136",
+      "name": "NY Deli Chef Salad (Without Dressing)",
+      "calories": 420,
+      "protein": 32,
+      "carbs": 34,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-539133",
+      "name": "Tuna Salad",
+      "calories": 230,
+      "protein": 13,
+      "carbs": 1,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-539140",
+      "name": "Asian Dressing",
+      "calories": 370,
+      "protein": 0,
+      "carbs": 16,
+      "fat": 32,
+      "servingLabel": "1 listed serving (Salad Dressings; size in item name)"
+    },
+    {
+      "id": "nutritionix-539141",
+      "name": "Caesar Dressing",
+      "calories": 410,
+      "protein": 3,
+      "carbs": 3,
+      "fat": 44,
+      "servingLabel": "1 listed serving (Salad Dressings; size in item name)"
+    },
+    {
+      "id": "nutritionix-539142",
+      "name": "Cinnamon Roll with Icing",
+      "calories": 610,
+      "protein": 11,
+      "carbs": 98,
+      "fat": 39,
+      "servingLabel": "1 listed serving (Sweets; size in item name)"
+    },
+    {
+      "id": "nutritionix-539143",
+      "name": "Cookie, Heavenly Chocolate Chip",
+      "calories": 460,
+      "protein": 5,
+      "carbs": 58,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Sweets; size in item name)"
+    },
+    {
+      "id": "nutritionix-539144",
+      "name": "Crumb Cake, Original",
+      "calories": 840,
+      "protein": 4,
+      "carbs": 79,
+      "fat": 58,
+      "servingLabel": "1 listed serving (Sweets; size in item name)"
+    },
+    {
+      "id": "nutritionix-539145",
+      "name": "Crumb Cake, Raspberry",
+      "calories": 810,
+      "protein": 4,
+      "carbs": 80,
+      "fat": 54,
+      "servingLabel": "1 listed serving (Sweets; size in item name)"
+    },
+    {
+      "id": "nutritionix-539146",
+      "name": "Danish",
+      "calories": 190,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Sweets; size in item name)"
+    },
+    {
+      "id": "nutritionix-539148",
+      "name": "Mini Cookie, Heavenly Chocolate Chip",
+      "calories": 610,
+      "protein": 7,
+      "carbs": 78,
+      "fat": 33,
+      "servingLabel": "1 listed serving (Sweets; size in item name)"
+    },
+    {
+      "id": "nutritionix-539152",
+      "name": "Muffin, Blueberry",
+      "calories": 740,
+      "protein": 8,
+      "carbs": 95,
+      "fat": 36,
+      "servingLabel": "1 listed serving (Sweets; size in item name)"
+    },
+    {
+      "id": "nutritionix-539153",
+      "name": "Muffin, Chocolate Chip",
+      "calories": 780,
+      "protein": 9,
+      "carbs": 97,
+      "fat": 40,
+      "servingLabel": "1 listed serving (Sweets; size in item name)"
+    },
+    {
+      "id": "nutritionix-539154",
+      "name": "Muffin, Cinnamon Chip",
+      "calories": 860,
+      "protein": 8,
+      "carbs": 112,
+      "fat": 43,
+      "servingLabel": "1 listed serving (Sweets; size in item name)"
+    },
+    {
+      "id": "nutritionix-539156",
+      "name": "Muffin, Corn",
+      "calories": 730,
+      "protein": 9,
+      "carbs": 96,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Sweets; size in item name)"
+    },
+    {
+      "id": "nutritionix-539155",
+      "name": "Muffin, Cranberry Orange",
+      "calories": 680,
+      "protein": 8,
+      "carbs": 81,
+      "fat": 37,
+      "servingLabel": "1 listed serving (Sweets; size in item name)"
+    },
+    {
+      "id": "nutritionix-539157",
+      "name": "Muffin, Double Dutch Chocolate",
+      "calories": 750,
+      "protein": 9,
+      "carbs": 89,
+      "fat": 40,
+      "servingLabel": "1 listed serving (Sweets; size in item name)"
+    },
+    {
+      "id": "nutritionix-539150",
+      "name": "Pastry, Apple Pie",
+      "calories": 250,
+      "protein": 3,
+      "carbs": 38,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Sweets; size in item name)"
+    },
+    {
+      "id": "nutritionix-539151",
+      "name": "Pastry, Strawberry and Cream",
+      "calories": 340,
+      "protein": 4,
+      "carbs": 42,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Sweets; size in item name)"
+    },
+    {
+      "id": "nutritionix-539149",
+      "name": "Pound Cake, Lemon",
+      "calories": 470,
+      "protein": 6,
+      "carbs": 66,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Sweets; size in item name)"
+    },
+    {
+      "id": "nutritionix-539147",
+      "name": "Scone",
+      "calories": 440,
+      "protein": 5,
+      "carbs": 55,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Sweets; size in item name)"
+    }
+  ],
+  "sourceDate": "2024-06-26"
+}

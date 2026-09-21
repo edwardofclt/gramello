@@ -1,0 +1,1008 @@
+{
+  "chain": "Sarku Japan",
+  "sourceUrl": "https://www.sarkujapan.com/nutrition/",
+  "sourceKind": "restaurant",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "name": "Chicken Teriyaki with Steamed White Rice",
+      "calories": 640,
+      "fat": 24,
+      "carbs": 79,
+      "protein": 28,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "chicken-teriyaki-with-steamed-white-rice-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Chicken Teriyaki with Brown Rice",
+      "calories": 660,
+      "fat": 26,
+      "carbs": 74,
+      "protein": 31,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "chicken-teriyaki-with-brown-rice-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Chicken Teriyaki with Fried Rice",
+      "calories": 660,
+      "fat": 28,
+      "carbs": 76,
+      "protein": 28,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "chicken-teriyaki-with-fried-rice-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Chicken Teriyaki with (Yakisoba) Noodles",
+      "calories": 870,
+      "fat": 32,
+      "carbs": 105,
+      "protein": 43,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "chicken-teriyaki-with-yakisoba-noodles-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Beef Teriyaki with Steamed White Rice",
+      "calories": 580,
+      "fat": 16,
+      "carbs": 80,
+      "protein": 30,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "beef-teriyaki-with-steamed-white-rice-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Beef Teriyaki with Brown Rice",
+      "calories": 590,
+      "fat": 18,
+      "carbs": 75,
+      "protein": 33,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "beef-teriyaki-with-brown-rice-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Beef Teriyaki with Fried Rice",
+      "calories": 600,
+      "fat": 20,
+      "carbs": 76,
+      "protein": 29,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "beef-teriyaki-with-fried-rice-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Beef Teriyaki with (Yakisoba) Noodles",
+      "calories": 810,
+      "fat": 24,
+      "carbs": 76,
+      "protein": 29,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "beef-teriyaki-with-yakisoba-noodles-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Shrimp Teriyaki with Steamed White Rice",
+      "calories": 530,
+      "fat": 12,
+      "carbs": 80,
+      "protein": 27,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "shrimp-teriyaki-with-steamed-white-rice-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Shrimp Teriyaki with Brown Rice",
+      "calories": 550,
+      "fat": 14,
+      "carbs": 75,
+      "protein": 30,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "shrimp-teriyaki-with-brown-rice-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Shrimp Teriyaki with Fried Rice",
+      "calories": 560,
+      "fat": 16,
+      "carbs": 77,
+      "protein": 27,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "shrimp-teriyaki-with-fried-rice-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Shrimp Teriyaki with (Yakisoba) Noodles",
+      "calories": 760,
+      "fat": 20,
+      "carbs": 106,
+      "protein": 42,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "shrimp-teriyaki-with-yakisoba-noodles-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Chicken and Shrimp Teriyaki with Steamed White Rice",
+      "calories": 750,
+      "fat": 29,
+      "carbs": 85,
+      "protein": 40,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "chicken-and-shrimp-teriyaki-with-steamed-white-rice-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Chicken and Shrimp Teriyaki with Brown Rice",
+      "calories": 770,
+      "fat": 31,
+      "carbs": 80,
+      "protein": 43,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "chicken-and-shrimp-teriyaki-with-brown-rice-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Chicken and Shrimp Teriyaki with Fried Rice",
+      "calories": 780,
+      "fat": 33,
+      "carbs": 81,
+      "protein": 40,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "chicken-and-shrimp-teriyaki-with-fried-rice-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Chicken and Shrimp Teriyaki with (Yakisoba) Noodles",
+      "calories": 980,
+      "fat": 36,
+      "carbs": 111,
+      "protein": 55,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "chicken-and-shrimp-teriyaki-with-yakisoba-noodles-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Beef and Shrimp Teriyaki with Steamed White Rice",
+      "calories": 690,
+      "fat": 21,
+      "carbs": 85,
+      "protein": 41,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "beef-and-shrimp-teriyaki-with-steamed-white-rice-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Beef and Shrimp Teriyaki with Brown Rice",
+      "calories": 700,
+      "fat": 23,
+      "carbs": 80,
+      "protein": 44,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "beef-and-shrimp-teriyaki-with-brown-rice-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Beef and Shrimp Teriyaki with Fried Rice",
+      "calories": 710,
+      "fat": 25,
+      "carbs": 82,
+      "protein": 41,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "beef-and-shrimp-teriyaki-with-fried-rice-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Beef and Shrimp Teriyaki with (Yakisoba) Noodles",
+      "calories": 920,
+      "fat": 28,
+      "carbs": 112,
+      "protein": 56,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "beef-and-shrimp-teriyaki-with-yakisoba-noodles-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Chicken Teriyaki Bowl (14 oz)",
+      "calories": 430,
+      "fat": 16,
+      "carbs": 53,
+      "protein": 19,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "chicken-teriyaki-bowl-14-oz-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Extra Teriyaki Sauce (1.5 fl oz)",
+      "calories": 35,
+      "fat": 0,
+      "carbs": 8,
+      "protein": 1,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "extra-teriyaki-sauce-1-5-fl-oz-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Extra Teriyaki Beef (5.5 oz)",
+      "calories": 240,
+      "fat": 12,
+      "carbs": 10,
+      "protein": 23,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "extra-teriyaki-beef-5-5-oz-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Extra Teriyaki Chicken (4 oz)",
+      "calories": 170,
+      "fat": 11,
+      "carbs": 5,
+      "protein": 12,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "extra-teriyaki-chicken-4-oz-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Extra Teriyaki Shrimp (2 oz)",
+      "calories": 110,
+      "fat": 5,
+      "carbs": 6,
+      "protein": 11,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "extra-teriyaki-shrimp-2-oz-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "White Sauce / Yum Yum Sauce (2 oz)",
+      "calories": 330,
+      "fat": 33,
+      "carbs": 6,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "white-sauce-yum-yum-sauce-2-oz-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Chicken Bento",
+      "calories": 800,
+      "fat": 32,
+      "carbs": 97,
+      "protein": 28,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "chicken-bento-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Chicken Bento with Brown Rice",
+      "calories": 810,
+      "fat": 33,
+      "carbs": 98,
+      "protein": 31,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "chicken-bento-with-brown-rice-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Chicken Bento with Fried Rice",
+      "calories": 820,
+      "fat": 35,
+      "carbs": 95,
+      "protein": 28,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "chicken-bento-with-fried-rice-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Chicken Bento with (Yakisoba) Noodles",
+      "calories": 950,
+      "fat": 37,
+      "carbs": 114,
+      "protein": 38,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "chicken-bento-with-yakisoba-noodles-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Beef Bento",
+      "calories": 810,
+      "fat": 29,
+      "carbs": 100,
+      "protein": 36,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "beef-bento-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Beef Bento with Brown Rice",
+      "calories": 820,
+      "fat": 31,
+      "carbs": 97,
+      "protein": 38,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "beef-bento-with-brown-rice-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Beef Bento with Fried Rice",
+      "calories": 830,
+      "fat": 32,
+      "carbs": 98,
+      "protein": 36,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "beef-bento-with-fried-rice-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Beef Bento with (Yakisoba) Noodles",
+      "calories": 970,
+      "fat": 35,
+      "carbs": 118,
+      "protein": 46,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "beef-bento-with-yakisoba-noodles-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Shrimp Bento",
+      "calories": 730,
+      "fat": 24,
+      "carbs": 99,
+      "protein": 30,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "shrimp-bento-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Shrimp Bento with Brown Rice",
+      "calories": 740,
+      "fat": 26,
+      "carbs": 95,
+      "protein": 32,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "shrimp-bento-with-brown-rice-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Shrimp Bento with Fried Rice",
+      "calories": 750,
+      "fat": 27,
+      "carbs": 96,
+      "protein": 29,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "shrimp-bento-with-fried-rice-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Shrimp Bento with (Yakisoba) Noodles",
+      "calories": 890,
+      "fat": 29,
+      "carbs": 116,
+      "protein": 39,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "shrimp-bento-with-yakisoba-noodles-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Vegetable Spring Roll",
+      "calories": 160,
+      "fat": 9,
+      "carbs": 15,
+      "protein": 2,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "vegetable-spring-roll-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Chicken Egg Roll",
+      "calories": 160,
+      "fat": 6,
+      "carbs": 21,
+      "protein": 8,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "chicken-egg-roll-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Dumplings (6 pcs)",
+      "calories": 260,
+      "fat": 12,
+      "carbs": 29,
+      "protein": 8,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "dumplings-6-pcs-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Shrimp Tempura (3 pcs)",
+      "calories": 390,
+      "fat": 30,
+      "carbs": 23,
+      "protein": 8,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "shrimp-tempura-3-pcs-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Edamame",
+      "calories": 170,
+      "fat": 7,
+      "carbs": 11,
+      "protein": 14,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "edamame-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Miso Soup",
+      "calories": 50,
+      "fat": 2,
+      "carbs": 6,
+      "protein": 4,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "miso-soup-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Seaweed Salad",
+      "calories": 70,
+      "fat": 2,
+      "carbs": 13,
+      "protein": 1,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "seaweed-salad-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Garden Salad",
+      "calories": 210,
+      "fat": 15,
+      "carbs": 17,
+      "protein": 2,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "garden-salad-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "California Roll",
+      "calories": 330,
+      "fat": 8,
+      "carbs": 57,
+      "protein": 9,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "california-roll-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Chicken Teriyaki Roll",
+      "calories": 360,
+      "fat": 11,
+      "carbs": 53,
+      "protein": 12,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "chicken-teriyaki-roll-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Shrimp Tempura Roll",
+      "calories": 520,
+      "fat": 24,
+      "carbs": 65,
+      "protein": 10,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "shrimp-tempura-roll-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Tempura California Roll",
+      "calories": 510,
+      "fat": 26,
+      "carbs": 61,
+      "protein": 8,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "tempura-california-roll-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Salmon Avocado Roll",
+      "calories": 350,
+      "fat": 11,
+      "carbs": 49,
+      "protein": 13,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "salmon-avocado-roll-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Spicy Tuna Roll",
+      "calories": 430,
+      "fat": 14,
+      "carbs": 55,
+      "protein": 17,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "spicy-tuna-roll-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Green Dragon Roll",
+      "calories": 650,
+      "fat": 35,
+      "carbs": 71,
+      "protein": 12,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "green-dragon-roll-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Volcano Roll",
+      "calories": 440,
+      "fat": 17,
+      "carbs": 54,
+      "protein": 15,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "volcano-roll-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Rock and Roll",
+      "calories": 550,
+      "fat": 21,
+      "carbs": 66,
+      "protein": 20,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "rock-and-roll-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Red Bull Roll",
+      "calories": 590,
+      "fat": 24,
+      "carbs": 58,
+      "protein": 29,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "red-bull-roll-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Dancing Eel Roll",
+      "calories": 430,
+      "fat": 13,
+      "carbs": 61,
+      "protein": 16,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "dancing-eel-roll-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Philadelphia Roll",
+      "calories": 430,
+      "fat": 18,
+      "carbs": 49,
+      "protein": 17,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "philadelphia-roll-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Boston Roll",
+      "calories": 280,
+      "fat": 4,
+      "carbs": 49,
+      "protein": 13,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "boston-roll-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Vegetables Roll",
+      "calories": 280,
+      "fat": 4.5,
+      "carbs": 54,
+      "protein": 5,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "vegetables-roll-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Tuna Roll",
+      "calories": 190,
+      "fat": 0,
+      "carbs": 33,
+      "protein": 11,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "tuna-roll-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Salmon Roll",
+      "calories": 220,
+      "fat": 5,
+      "carbs": 33,
+      "protein": 10,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "salmon-roll-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Rainbow Roll",
+      "calories": 360,
+      "fat": 7,
+      "carbs": 51,
+      "protein": 21,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "rainbow-roll-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Spider Roll",
+      "calories": 510,
+      "fat": 21,
+      "carbs": 68,
+      "protein": 9,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "spider-roll-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Sarku Japan Roll",
+      "calories": 540,
+      "fat": 26,
+      "carbs": 56,
+      "protein": 17,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "sarku-japan-roll-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Salmon Skin Hand Roll",
+      "calories": 210,
+      "fat": 7,
+      "carbs": 27,
+      "protein": 9,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "salmon-skin-hand-roll-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Seafood Hand Roll",
+      "calories": 170,
+      "fat": 1.5,
+      "carbs": 29,
+      "protein": 9,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "seafood-hand-roll-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Spicy Tuna Hand Roll",
+      "calories": 180,
+      "fat": 3.5,
+      "carbs": 27,
+      "protein": 8,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "spicy-tuna-hand-roll-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "E1 Salmon and Maki Combo",
+      "calories": 500,
+      "fat": 12,
+      "carbs": 66,
+      "protein": 28,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "e1-salmon-and-maki-combo-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "E2 Vegetable Zen",
+      "calories": 590,
+      "fat": 13,
+      "carbs": 101,
+      "protein": 14,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "e2-vegetable-zen-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "E3 Cooked D'Lite",
+      "calories": 520,
+      "fat": 8,
+      "carbs": 94,
+      "protein": 15,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "e3-cooked-dlite-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "E4 Sushi and Roll",
+      "calories": 680,
+      "fat": 11,
+      "carbs": 118,
+      "protein": 24,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "e4-sushi-and-roll-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "E5 Sushi, Sashimi and Roll",
+      "calories": 670,
+      "fat": 14,
+      "carbs": 92,
+      "protein": 37,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "e5-sushi-sashimi-and-roll-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Salmon",
+      "calories": 60,
+      "fat": 1,
+      "carbs": 8,
+      "protein": 2,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "salmon-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Tilapia",
+      "calories": 45,
+      "fat": 0,
+      "carbs": 8,
+      "protein": 2,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "tilapia-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Tuna",
+      "calories": 45,
+      "fat": 0,
+      "carbs": 8,
+      "protein": 3,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "tuna-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Eel",
+      "calories": 70,
+      "fat": 2,
+      "carbs": 10,
+      "protein": 2,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "eel-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Imitation Crab Meat",
+      "calories": 45,
+      "fat": 0,
+      "carbs": 9,
+      "protein": 1,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "imitation-crab-meat-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Shrimp",
+      "calories": 45,
+      "fat": 0,
+      "carbs": 8,
+      "protein": 2,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "shrimp-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Tofu Skin Sushi (1 piece)",
+      "calories": 80,
+      "fat": 2,
+      "carbs": 12,
+      "protein": 2,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "tofu-skin-sushi-1-piece-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Vegetarian D'Lite Combo (mixed vegetables and steamed rice)",
+      "calories": 410,
+      "fat": 6,
+      "carbs": 83,
+      "protein": 8,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "vegetarian-dlite-combo-mixed-vegetables-and-steamed-rice-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Vegetarian D'Lite Combo (mixed vegetables and steamed rice) with Brown Rice",
+      "calories": 420,
+      "fat": 8,
+      "carbs": 77,
+      "protein": 11,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "vegetarian-dlite-combo-mixed-vegetables-and-steamed-rice-with-brown-rice-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Vegetarian D'Lite Combo (mixed vegetables and steamed rice) with Fried Rice",
+      "calories": 430,
+      "fat": 10,
+      "carbs": 79,
+      "protein": 8,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "vegetarian-dlite-combo-mixed-vegetables-and-steamed-rice-with-fried-rice-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Vegetarian D'Lite Combo (mixed vegetables and steamed rice) with (Yakisoba) Noodles",
+      "calories": 640,
+      "fat": 14,
+      "carbs": 109,
+      "protein": 23,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "vegetarian-dlite-combo-mixed-vegetables-and-steamed-rice-with-yakisoba-noodles-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "44 pc Sushi & Regular Roll Party Tray (Serves 3 people)",
+      "calories": 670,
+      "fat": 19,
+      "carbs": 99,
+      "protein": 23,
+      "servingLabel": "1 person serving (tray serves 3)",
+      "id": "44-pc-sushi-regular-roll-party-tray-serves-3-people-1-person-serving-tray-serves-3"
+    },
+    {
+      "name": "44 pc Sushi & Regular Roll Party Tray (Serves 3 people) - Entire Tray",
+      "calories": 2010,
+      "fat": 57,
+      "carbs": 297,
+      "protein": 69,
+      "servingLabel": "Entire tray",
+      "id": "44-pc-sushi-regular-roll-party-tray-serves-3-people-entire-tray-entire-tray"
+    },
+    {
+      "name": "54 pc Sushi & Regular Roll Party Tray (Serves 4 people)",
+      "calories": 710,
+      "fat": 25,
+      "carbs": 93,
+      "protein": 23,
+      "servingLabel": "1 person serving (tray serves 4)",
+      "id": "54-pc-sushi-regular-roll-party-tray-serves-4-people-1-person-serving-tray-serves-4"
+    },
+    {
+      "name": "54 pc Sushi & Regular Roll Party Tray (Serves 4 people) - Entire Tray",
+      "calories": 2850,
+      "fat": 98,
+      "carbs": 375,
+      "protein": 96,
+      "servingLabel": "Entire tray",
+      "id": "54-pc-sushi-regular-roll-party-tray-serves-4-people-entire-tray-entire-tray"
+    },
+    {
+      "name": "60 pc Sushi & Regular Roll Party Tray (Serves 5 people)",
+      "calories": 460,
+      "fat": 15,
+      "carbs": 64,
+      "protein": 15,
+      "servingLabel": "1 person serving (tray serves 5)",
+      "id": "60-pc-sushi-regular-roll-party-tray-serves-5-people-1-person-serving-tray-serves-5"
+    },
+    {
+      "name": "60 pc Sushi & Regular Roll Party Tray (Serves 5 people) - Entire Tray",
+      "calories": 2280,
+      "fat": 74,
+      "carbs": 321,
+      "protein": 73,
+      "servingLabel": "Entire tray",
+      "id": "60-pc-sushi-regular-roll-party-tray-serves-5-people-entire-tray-entire-tray"
+    },
+    {
+      "name": "Classic Coke (22 oz)",
+      "calories": 290,
+      "fat": 0,
+      "carbs": 80,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "classic-coke-22-oz-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Classic Coke (32 oz)",
+      "calories": 430,
+      "fat": 0,
+      "carbs": 116,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "classic-coke-32-oz-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Classic Coke (44 oz)",
+      "calories": 580,
+      "fat": 0,
+      "carbs": 160,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "classic-coke-44-oz-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Diet Coke (22 oz)",
+      "calories": 0,
+      "fat": 0,
+      "carbs": 0,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "diet-coke-22-oz-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Diet Coke (32 oz)",
+      "calories": 0,
+      "fat": 0,
+      "carbs": 0,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "diet-coke-32-oz-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Diet Coke (44 oz)",
+      "calories": 0,
+      "fat": 0,
+      "carbs": 0,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "diet-coke-44-oz-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Sprite (22 oz)",
+      "calories": 290,
+      "fat": 0,
+      "carbs": 77,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "sprite-22-oz-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Sprite (32 oz)",
+      "calories": 420,
+      "fat": 0,
+      "carbs": 112,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "sprite-32-oz-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Sprite (44 oz)",
+      "calories": 570,
+      "fat": 0,
+      "carbs": 154,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "sprite-44-oz-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Fanta Orange (22 oz)",
+      "calories": 310,
+      "fat": 0,
+      "carbs": 84,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "fanta-orange-22-oz-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Fanta Orange (32 oz)",
+      "calories": 460,
+      "fat": 0,
+      "carbs": 122,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "fanta-orange-32-oz-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Fanta Orange (44 oz)",
+      "calories": 630,
+      "fat": 0,
+      "carbs": 167,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "fanta-orange-44-oz-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "MM Lemonade (22 oz)",
+      "calories": 290,
+      "fat": 0,
+      "carbs": 79,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "mm-lemonade-22-oz-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "MM Lemonade (32 oz)",
+      "calories": 420,
+      "fat": 0,
+      "carbs": 115,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "mm-lemonade-32-oz-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Fuze Iced Tea (22 oz)",
+      "calories": 170,
+      "fat": 0,
+      "carbs": 46,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "fuze-iced-tea-22-oz-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Fuze Iced Tea (32 oz)",
+      "calories": 250,
+      "fat": 0,
+      "carbs": 67,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "fuze-iced-tea-32-oz-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Fuze Iced Tea (44 oz)",
+      "calories": 350,
+      "fat": 0,
+      "carbs": 92,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "fuze-iced-tea-44-oz-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Dr. Pepper (22 oz)",
+      "calories": 250,
+      "fat": 0,
+      "carbs": 72,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "dr-pepper-22-oz-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Dr. Pepper (32 oz)",
+      "calories": 360,
+      "fat": 0,
+      "carbs": 104,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "dr-pepper-32-oz-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Dr. Pepper (44 oz)",
+      "calories": 500,
+      "fat": 0,
+      "carbs": 143,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "dr-pepper-44-oz-1-menu-serving-size-in-item-name"
+    }
+  ],
+  "coverageNotes": {
+    "method": "Official HTML nutrition table; all four requested numeric fields required.",
+    "skippedNonExactRows": [],
+    "quarantinedRows": [
+      {
+        "name": "MM Lemonade (44 oz)",
+        "reason": "Publisher row is internally inconsistent; calories disagree materially with stated macros. Excluded pending publisher clarification."
+      }
+    ]
+  }
+}

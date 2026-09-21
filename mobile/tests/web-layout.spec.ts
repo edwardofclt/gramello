@@ -54,10 +54,10 @@ test('diary and interactive trends adapt from desktop through tablet to a narrow
   const requests: number[] = [];
   const goals = { calories: 2400, protein: 180, carbs: 250, fat: 70 };
   const entries = [
-    { id: '1', meal: 'Breakfast', name: 'Greek yogurt & blueberries', source: 'USDA reference', grams: 250, calories: 280, protein: 24, carbs: 35, fat: 5 },
-    { id: '2', meal: 'Breakfast', name: 'Whole grain toast', source: 'USDA reference', grams: 80, calories: 210, protein: 8, carbs: 36, fat: 4 },
-    { id: '3', meal: 'Lunch', name: 'Chicken & avocado bowl', source: 'USDA reference', grams: 380, calories: 620, protein: 48, carbs: 56, fat: 22 },
-    { id: '4', meal: 'Snacks', name: 'Apple with almond butter', source: 'USDA reference', grams: 200, calories: 240, protein: 6, carbs: 28, fat: 13 },
+    { id: '1', meal: 'Breakfast', name: 'Greek yogurt & blueberries', source: 'USDA reference', quantity: 250, unit: 'grams', grams: 250, calories: 280, protein: 24, carbs: 35, fat: 5 },
+    { id: '2', meal: 'Breakfast', name: 'Whole grain toast', source: 'USDA reference', quantity: 80, unit: 'grams', grams: 80, calories: 210, protein: 8, carbs: 36, fat: 4 },
+    { id: '3', meal: 'Lunch', name: 'Chicken & avocado bowl', source: 'USDA reference', quantity: 380, unit: 'grams', grams: 380, calories: 620, protein: 48, carbs: 56, fat: 22 },
+    { id: '4', meal: 'Snacks', name: 'Apple with almond butter', source: 'USDA reference', quantity: 200, unit: 'grams', grams: 200, calories: 240, protein: 6, carbs: 28, fat: 13 },
   ];
   const days = [2100, 2380, 2450, 2200, 2500, 1980, 2350].map((calories, i) => ({ date: `2026-09-${13 + i}`, calories, protein: 140 + i * 9, carbs: 210 + i * 8, fat: 55 + i * 2 }));
   await page.route('https://nourish.test/api/**', route => {

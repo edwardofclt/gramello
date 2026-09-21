@@ -1,0 +1,221 @@
+{
+  "chain": "Doc Popcorn",
+  "sourceUrl": "https://docpopcorn.com/flavors/",
+  "sourceKind": "restaurant",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "name": "Apple Crisp",
+      "calories": 110,
+      "fat": 4.5,
+      "carbs": 18,
+      "protein": 1,
+      "servingLabel": "1 cup (about 24g)",
+      "sourceUrl": "https://docpopcorn.com/apple-crisp/",
+      "servingGrams": 24,
+      "id": "apple-crisp-1-cup-about-24g"
+    },
+    {
+      "name": "Better Butter",
+      "calories": 60,
+      "fat": 3.5,
+      "carbs": 6,
+      "protein": 1,
+      "servingLabel": "1 cup (about 11g)",
+      "sourceUrl": "https://docpopcorn.com/better-butter/",
+      "servingGrams": 11,
+      "id": "better-butter-1-cup-about-11g"
+    },
+    {
+      "name": "Caramel Bliss®",
+      "calories": 220,
+      "fat": 12,
+      "carbs": 27,
+      "protein": 1,
+      "servingLabel": "1 cup (about 42g)",
+      "sourceUrl": "https://docpopcorn.com/caramel-bliss/",
+      "servingGrams": 42,
+      "id": "caramel-bliss-1-cup-about-42g"
+    },
+    {
+      "name": "Cheese 'n' Caramel",
+      "calories": 140,
+      "fat": 8,
+      "carbs": 17,
+      "protein": 2,
+      "servingLabel": "1 cup (about 27g)",
+      "sourceUrl": "https://docpopcorn.com/cheese-n-caramel/",
+      "servingGrams": 27,
+      "id": "cheese-n-caramel-1-cup-about-27g"
+    },
+    {
+      "name": "Cheesy Cheddar",
+      "calories": 60,
+      "fat": 3.5,
+      "carbs": 6,
+      "protein": 2,
+      "servingLabel": "1 cup (about 12g)",
+      "sourceUrl": "https://docpopcorn.com/cheesy-cheddar/",
+      "servingGrams": 12,
+      "id": "cheesy-cheddar-1-cup-about-12g"
+    },
+    {
+      "name": "Denver Mix™",
+      "calories": 140,
+      "fat": 8,
+      "carbs": 17,
+      "protein": 2,
+      "servingLabel": "1 cup (about 27g)",
+      "sourceUrl": "https://docpopcorn.com/denver-mix/",
+      "servingGrams": 27,
+      "id": "denver-mixtm-1-cup-about-27g"
+    },
+    {
+      "name": "Flamin' Cheesy",
+      "calories": 70,
+      "fat": 3.5,
+      "carbs": 7,
+      "protein": 1,
+      "servingLabel": "1 cup (about 14g)",
+      "sourceUrl": "https://docpopcorn.com/flamin-cheesy/",
+      "servingGrams": 14,
+      "id": "flamin-cheesy-1-cup-about-14g"
+    },
+    {
+      "name": "Fully Loaded Spud",
+      "calories": 45,
+      "fat": 2.5,
+      "carbs": 5,
+      "protein": 1,
+      "servingLabel": "1 cup (about 10g)",
+      "sourceUrl": "https://docpopcorn.com/fully-loaded-spud/",
+      "servingGrams": 10,
+      "id": "fully-loaded-spud-1-cup-about-10g"
+    },
+    {
+      "name": "Honey BBQ",
+      "calories": 160,
+      "fat": 7,
+      "carbs": 24,
+      "protein": 2,
+      "servingLabel": "1 cup (about 35g)",
+      "sourceUrl": "https://docpopcorn.com/honey-bbq/",
+      "servingGrams": 35,
+      "id": "honey-bbq-1-cup-about-35g"
+    },
+    {
+      "name": "Hoppin' Jalapeño",
+      "calories": 60,
+      "fat": 3.5,
+      "carbs": 7,
+      "protein": 1,
+      "servingLabel": "1 cup (about 12g)",
+      "sourceUrl": "https://docpopcorn.com/hoppin-jalape-o/",
+      "servingGrams": 12,
+      "id": "hoppin-jalapeno-1-cup-about-12g"
+    },
+    {
+      "name": "Hot Cocoa and Marshmallow",
+      "calories": 70,
+      "fat": 3,
+      "carbs": 10,
+      "protein": 1,
+      "servingLabel": "1 cup (about 15g)",
+      "sourceUrl": "https://docpopcorn.com/hot-cocoa-and-marshmallow/",
+      "servingGrams": 15,
+      "id": "hot-cocoa-and-marshmallow-1-cup-about-15g"
+    },
+    {
+      "name": "Klassic Kettle",
+      "calories": 100,
+      "fat": 4,
+      "carbs": 15,
+      "protein": 1,
+      "servingLabel": "1 cup (about 21g)",
+      "sourceUrl": "https://docpopcorn.com/klassic-kettle/",
+      "servingGrams": 21,
+      "id": "klassic-kettle-1-cup-about-21g"
+    },
+    {
+      "name": "Mexican Street Corn",
+      "calories": 70,
+      "fat": 3,
+      "carbs": 10,
+      "protein": 1,
+      "servingLabel": "1 cup (about 15g)",
+      "sourceUrl": "https://docpopcorn.com/mexican-street-corn/",
+      "servingGrams": 15,
+      "id": "mexican-street-corn-1-cup-about-15g"
+    },
+    {
+      "name": "Poppin' Pizza",
+      "calories": 60,
+      "fat": 3.5,
+      "carbs": 6,
+      "protein": 1,
+      "servingLabel": "1 cup (about 13g)",
+      "sourceUrl": "https://docpopcorn.com/poppin-pizza/",
+      "servingGrams": 13,
+      "id": "poppin-pizza-1-cup-about-13g"
+    },
+    {
+      "name": "SimplePop™",
+      "calories": 45,
+      "fat": 2.5,
+      "carbs": 4,
+      "protein": 1,
+      "servingLabel": "1 cup (about 9g)",
+      "sourceUrl": "https://docpopcorn.com/simple-pop/",
+      "servingGrams": 9,
+      "id": "simplepoptm-1-cup-about-9g"
+    },
+    {
+      "name": "Smoky Sweet Bacon",
+      "calories": 50,
+      "fat": 2.5,
+      "carbs": 6,
+      "protein": 1,
+      "servingLabel": "1 cup (about 10g)",
+      "sourceUrl": "https://docpopcorn.com/smoky-sweet-bacon/",
+      "servingGrams": 10,
+      "id": "smoky-sweet-bacon-1-cup-about-10g"
+    },
+    {
+      "name": "Sweet Butter",
+      "calories": 110,
+      "fat": 5,
+      "carbs": 17,
+      "protein": 1,
+      "servingLabel": "1 cup (about 24g)",
+      "sourceUrl": "https://docpopcorn.com/sweet-butter/",
+      "servingGrams": 24,
+      "id": "sweet-butter-1-cup-about-24g"
+    },
+    {
+      "name": "Triple White Cheddar",
+      "calories": 60,
+      "fat": 4,
+      "carbs": 6,
+      "protein": 2,
+      "servingLabel": "1 cup (about 12g)",
+      "sourceUrl": "https://docpopcorn.com/triple-white-cheddar/",
+      "servingGrams": 12,
+      "id": "triple-white-cheddar-1-cup-about-12g"
+    },
+    {
+      "name": "¡Hola! Churros",
+      "calories": 130,
+      "fat": 4.5,
+      "carbs": 21,
+      "protein": 1,
+      "servingLabel": "1 cup (about 29g)",
+      "sourceUrl": "https://docpopcorn.com/hola-churros/",
+      "servingGrams": 29,
+      "id": "hola-churros-1-cup-about-29g"
+    }
+  ],
+  "coverageNotes": {
+    "method": "Official product nutrition label; values per explicit serving, not bulk bag.",
+    "skippedPages": []
+  }
+}

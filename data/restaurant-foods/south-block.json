@@ -1,0 +1,271 @@
+{
+  "chain": "South Block",
+  "sourceUrl": "https://www.nutritionix.com/south-block/menu/premium",
+  "source": "Nutritionix",
+  "sourceKind": "database",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "id": "nutritionix-781744",
+      "name": "Almond Butter Bowl",
+      "calories": 810,
+      "protein": 18,
+      "carbs": 99,
+      "fat": 49,
+      "servingLabel": "1 listed serving (Acai Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-781745",
+      "name": "Cali Vibes Bowl",
+      "calories": 520,
+      "protein": 9,
+      "carbs": 92,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Acai Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-781741",
+      "name": "Loaded PBJ",
+      "calories": 920,
+      "protein": 23,
+      "carbs": 108,
+      "fat": 55,
+      "servingLabel": "1 listed serving (Acai Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-781742",
+      "name": "Nutella Bowl",
+      "calories": 830,
+      "protein": 11,
+      "carbs": 115,
+      "fat": 44,
+      "servingLabel": "1 listed serving (Acai Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-781738",
+      "name": "Nutella Mini",
+      "calories": 680,
+      "protein": 9,
+      "carbs": 86,
+      "fat": 37,
+      "servingLabel": "1 listed serving (Acai Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-781739",
+      "name": "OG Mini",
+      "calories": 420,
+      "protein": 7,
+      "carbs": 69,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Acai Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-781743",
+      "name": "PBJ Bowl",
+      "calories": 730,
+      "protein": 17,
+      "carbs": 97,
+      "fat": 41,
+      "servingLabel": "1 listed serving (Acai Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-781740",
+      "name": "Warrior Bowl",
+      "calories": 560,
+      "protein": 8,
+      "carbs": 108,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Acai Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-781737",
+      "name": "Warrior Mini",
+      "calories": 450,
+      "protein": 7,
+      "carbs": 80,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Acai Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-781746",
+      "name": "Green Bowl",
+      "calories": 490,
+      "protein": 9,
+      "carbs": 98,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Smoothie Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-781747",
+      "name": "Magic Dragon Bowl",
+      "calories": 600,
+      "protein": 10,
+      "carbs": 88,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Smoothie Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-781752",
+      "name": "Mango Sunshine Bowl",
+      "calories": 600,
+      "protein": 8,
+      "carbs": 119,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Smoothie Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-781751",
+      "name": "Mermaid Bowl",
+      "calories": 670,
+      "protein": 8,
+      "carbs": 109,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Smoothie Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-781750",
+      "name": "Peanut Blast Bowl",
+      "calories": 760,
+      "protein": 37,
+      "carbs": 135,
+      "fat": 31,
+      "servingLabel": "1 listed serving (Smoothie Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-781749",
+      "name": "Peanut Butter Cup Bowl",
+      "calories": 940,
+      "protein": 39,
+      "carbs": 155,
+      "fat": 41,
+      "servingLabel": "1 listed serving (Smoothie Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-781748",
+      "name": "Strawberry Bowl",
+      "calories": 550,
+      "protein": 7,
+      "carbs": 109,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Smoothie Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-781762",
+      "name": "Cave Monkey (L)",
+      "calories": 990,
+      "protein": 50,
+      "carbs": 146,
+      "fat": 53,
+      "servingLabel": "1 listed serving (Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-781761",
+      "name": "Cave Monkey (R)",
+      "calories": 610,
+      "protein": 37,
+      "carbs": 100,
+      "fat": 28,
+      "servingLabel": "1 listed serving (Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-781764",
+      "name": "Guava Breeze (L)",
+      "calories": 350,
+      "protein": 3,
+      "carbs": 86,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-781763",
+      "name": "Guava Breeze (R)",
+      "calories": 260,
+      "protein": 2,
+      "carbs": 64,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-781768",
+      "name": "Health Nut (L)",
+      "calories": 540,
+      "protein": 21,
+      "carbs": 101,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-781767",
+      "name": "Health Nut (R)",
+      "calories": 410,
+      "protein": 18,
+      "carbs": 82,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-781760",
+      "name": "Mango Mania (L)",
+      "calories": 420,
+      "protein": 2,
+      "carbs": 130,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-781759",
+      "name": "Mango Mania (R)",
+      "calories": 300,
+      "protein": 2,
+      "carbs": 88,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-781758",
+      "name": "Peanut Blast (L)",
+      "calories": 900,
+      "protein": 46,
+      "carbs": 132,
+      "fat": 50,
+      "servingLabel": "1 listed serving (Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-781757",
+      "name": "Peanut Blast (R)",
+      "calories": 570,
+      "protein": 35,
+      "carbs": 94,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-781754",
+      "name": "Super Green (L)",
+      "calories": 470,
+      "protein": 5,
+      "carbs": 141,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-781753",
+      "name": "Super Green (R)",
+      "calories": 330,
+      "protein": 3,
+      "carbs": 93,
+      "fat": 0.5,
+      "servingLabel": "1 listed serving (Smoothies; size in item name)"
+    },
+    {
+      "id": "nutritionix-781765",
+      "name": "Tropi-Kale (R)",
+      "calories": 240,
+      "protein": 4,
+      "carbs": 72,
+      "fat": 0.5,
+      "servingLabel": "1 listed serving (Smoothies; size in item name)"
+    }
+  ],
+  "sourceDate": "2025-05-15"
+}

@@ -1,0 +1,1864 @@
+{
+  "chain": "Andy's Frozen Custard",
+  "sourceUrl": "https://www.nutritionix.com/andys-frozen-custard/menu/premium",
+  "source": "Nutritionix",
+  "sourceKind": "database",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "id": "nutritionix-210879",
+      "name": "Chocolate Frozen Custard",
+      "calories": 210,
+      "protein": 5,
+      "carbs": 23,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Frozen Custard; size in item name)"
+    },
+    {
+      "id": "nutritionix-210878",
+      "name": "Vanilla Frozen Custard",
+      "calories": 200,
+      "protein": 4,
+      "carbs": 21,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Frozen Custard; size in item name)"
+    },
+    {
+      "id": "nutritionix-289649",
+      "name": "Andy's Chocolate Custom Sundae, Large",
+      "calories": 610,
+      "protein": 14,
+      "carbs": 66,
+      "fat": 29,
+      "servingLabel": "1 listed serving (Sundaes; size in item name)"
+    },
+    {
+      "id": "nutritionix-289648",
+      "name": "Andy's Chocolate Custom Sundae, Regular",
+      "calories": 450,
+      "protein": 11,
+      "carbs": 49,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Sundaes; size in item name)"
+    },
+    {
+      "id": "nutritionix-289658",
+      "name": "Andy's Chocolate Kids' Custom Sundae",
+      "calories": 290,
+      "protein": 7,
+      "carbs": 32,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Sundaes; size in item name)"
+    },
+    {
+      "id": "nutritionix-289655",
+      "name": "Andy's Hot Fudge Sundae with Pecans, Large",
+      "calories": 960,
+      "protein": 16,
+      "carbs": 93,
+      "fat": 57,
+      "servingLabel": "1 listed serving (Sundaes; size in item name)"
+    },
+    {
+      "id": "nutritionix-289654",
+      "name": "Andy's Hot Fudge Sundae with Pecans, Regular",
+      "calories": 810,
+      "protein": 13,
+      "carbs": 77,
+      "fat": 50,
+      "servingLabel": "1 listed serving (Sundaes; size in item name)"
+    },
+    {
+      "id": "nutritionix-289653",
+      "name": "Andy's Ozark Turtle Sundae, Large",
+      "calories": 1030,
+      "protein": 17,
+      "carbs": 120,
+      "fat": 60,
+      "servingLabel": "1 listed serving (Sundaes; size in item name)"
+    },
+    {
+      "id": "nutritionix-289652",
+      "name": "Andy's Ozark Turtle Sundae, Regular",
+      "calories": 880,
+      "protein": 14,
+      "carbs": 91,
+      "fat": 51,
+      "servingLabel": "1 listed serving (Sundaes; size in item name)"
+    },
+    {
+      "id": "nutritionix-289647",
+      "name": "Andy's Vanilla Custom Sundae, Large",
+      "calories": 580,
+      "protein": 12,
+      "carbs": 60,
+      "fat": 29,
+      "servingLabel": "1 listed serving (Sundaes; size in item name)"
+    },
+    {
+      "id": "nutritionix-289646",
+      "name": "Andy's Vanilla Custom Sundae, Regular",
+      "calories": 430,
+      "protein": 9,
+      "carbs": 45,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Sundaes; size in item name)"
+    },
+    {
+      "id": "nutritionix-289657",
+      "name": "Andy's Vanilla Kids' Custom Sundae",
+      "calories": 250,
+      "protein": 5,
+      "carbs": 26,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Sundaes; size in item name)"
+    },
+    {
+      "id": "nutritionix-289659",
+      "name": "Lil' Digger Kids' Sundae",
+      "calories": 400,
+      "protein": 6,
+      "carbs": 56,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Sundaes; size in item name)"
+    },
+    {
+      "id": "nutritionix-289656",
+      "name": "Stolen Brownie Sundae, Regular",
+      "calories": 870,
+      "protein": 15,
+      "carbs": 89,
+      "fat": 56,
+      "servingLabel": "1 listed serving (Sundaes; size in item name)"
+    },
+    {
+      "id": "nutritionix-289651",
+      "name": "The Original Straw-Ana Sundae, Large",
+      "calories": 700,
+      "protein": 12,
+      "carbs": 92,
+      "fat": 29,
+      "servingLabel": "1 listed serving (Sundaes; size in item name)"
+    },
+    {
+      "id": "nutritionix-289650",
+      "name": "The Original Straw-Ana Sundae, Regular",
+      "calories": 530,
+      "protein": 9,
+      "carbs": 72,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Sundaes; size in item name)"
+    },
+    {
+      "id": "nutritionix-289665",
+      "name": "Andy's Chocolate Custom Concrete, Large",
+      "calories": 1110,
+      "protein": 26,
+      "carbs": 121,
+      "fat": 53,
+      "servingLabel": "1 listed serving (Concretes; size in item name)"
+    },
+    {
+      "id": "nutritionix-289664",
+      "name": "Andy's Chocolate Custom Concrete, Medium",
+      "calories": 770,
+      "protein": 18,
+      "carbs": 83,
+      "fat": 36,
+      "servingLabel": "1 listed serving (Concretes; size in item name)"
+    },
+    {
+      "id": "nutritionix-289663",
+      "name": "Andy's Chocolate Custom Concrete, Small",
+      "calories": 560,
+      "protein": 13,
+      "carbs": 60,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Concretes; size in item name)"
+    },
+    {
+      "id": "nutritionix-289662",
+      "name": "Andy's Vanilla Custom Concrete, Large",
+      "calories": 1050,
+      "protein": 21,
+      "carbs": 110,
+      "fat": 53,
+      "servingLabel": "1 listed serving (Concretes; size in item name)"
+    },
+    {
+      "id": "nutritionix-289661",
+      "name": "Andy's Vanilla Custom Concrete, Medium",
+      "calories": 730,
+      "protein": 15,
+      "carbs": 76,
+      "fat": 36,
+      "servingLabel": "1 listed serving (Concretes; size in item name)"
+    },
+    {
+      "id": "nutritionix-289660",
+      "name": "Andy's Vanilla Custom Concrete, Small",
+      "calories": 530,
+      "protein": 11,
+      "carbs": 55,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Concretes; size in item name)"
+    },
+    {
+      "id": "nutritionix-289668",
+      "name": "Bootdaddy Concrete, Large",
+      "calories": 1400,
+      "protein": 24,
+      "carbs": 159,
+      "fat": 68,
+      "servingLabel": "1 listed serving (Concretes; size in item name)"
+    },
+    {
+      "id": "nutritionix-289667",
+      "name": "Bootdaddy Concrete, Medium",
+      "calories": 1110,
+      "protein": 18,
+      "carbs": 136,
+      "fat": 53,
+      "servingLabel": "1 listed serving (Concretes; size in item name)"
+    },
+    {
+      "id": "nutritionix-289666",
+      "name": "Bootdaddy Concrete, Small",
+      "calories": 790,
+      "protein": 15,
+      "carbs": 122,
+      "fat": 37,
+      "servingLabel": "1 listed serving (Concretes; size in item name)"
+    },
+    {
+      "id": "nutritionix-289677",
+      "name": "Butter Pecan Concrete, Large",
+      "calories": 1360,
+      "protein": 24,
+      "carbs": 144,
+      "fat": 73,
+      "servingLabel": "1 listed serving (Concretes; size in item name)"
+    },
+    {
+      "id": "nutritionix-289676",
+      "name": "Butter Pecan Concrete, Medium",
+      "calories": 1040,
+      "protein": 17,
+      "carbs": 110,
+      "fat": 56,
+      "servingLabel": "1 listed serving (Concretes; size in item name)"
+    },
+    {
+      "id": "nutritionix-289675",
+      "name": "Butter Pecan Concrete, Small",
+      "calories": 790,
+      "protein": 13,
+      "carbs": 79,
+      "fat": 46,
+      "servingLabel": "1 listed serving (Concretes; size in item name)"
+    },
+    {
+      "id": "nutritionix-289674",
+      "name": "Snowmonster Concrete, Large",
+      "calories": 1290,
+      "protein": 22,
+      "carbs": 156,
+      "fat": 61,
+      "servingLabel": "1 listed serving (Concretes; size in item name)"
+    },
+    {
+      "id": "nutritionix-289673",
+      "name": "Snowmonster Concrete, Medium",
+      "calories": 970,
+      "protein": 16,
+      "carbs": 122,
+      "fat": 45,
+      "servingLabel": "1 listed serving (Concretes; size in item name)"
+    },
+    {
+      "id": "nutritionix-289672",
+      "name": "Snowmonster Concrete, Small",
+      "calories": 690,
+      "protein": 11,
+      "carbs": 85,
+      "fat": 33,
+      "servingLabel": "1 listed serving (Concretes; size in item name)"
+    },
+    {
+      "id": "nutritionix-289671",
+      "name": "Triple Chocolate Concrete, Large",
+      "calories": 1480,
+      "protein": 30,
+      "carbs": 171,
+      "fat": 71,
+      "servingLabel": "1 listed serving (Concretes; size in item name)"
+    },
+    {
+      "id": "nutritionix-289670",
+      "name": "Triple Chocolate Concrete, Medium",
+      "calories": 1130,
+      "protein": 22,
+      "carbs": 134,
+      "fat": 54,
+      "servingLabel": "1 listed serving (Concretes; size in item name)"
+    },
+    {
+      "id": "nutritionix-289669",
+      "name": "Triple Chocolate Concrete, Small",
+      "calories": 820,
+      "protein": 16,
+      "carbs": 97,
+      "fat": 39,
+      "servingLabel": "1 listed serving (Concretes; size in item name)"
+    },
+    {
+      "id": "nutritionix-289686",
+      "name": "James Brownie Jackhammer, Large",
+      "calories": 1730,
+      "protein": 43,
+      "carbs": 161,
+      "fat": 104,
+      "servingLabel": "1 listed serving (Jackhammers; size in item name)"
+    },
+    {
+      "id": "nutritionix-289685",
+      "name": "James Brownie Jackhammer, Medium",
+      "calories": 1400,
+      "protein": 36,
+      "carbs": 126,
+      "fat": 88,
+      "servingLabel": "1 listed serving (Jackhammers; size in item name)"
+    },
+    {
+      "id": "nutritionix-289684",
+      "name": "James Brownie Jackhammer, Small",
+      "calories": 1030,
+      "protein": 26,
+      "carbs": 96,
+      "fat": 63,
+      "servingLabel": "1 listed serving (Jackhammers; size in item name)"
+    },
+    {
+      "id": "nutritionix-289683",
+      "name": "The Jackhammer, Chocolate, Large",
+      "calories": 1110,
+      "protein": 26,
+      "carbs": 121,
+      "fat": 53,
+      "servingLabel": "1 listed serving (Jackhammers; size in item name)"
+    },
+    {
+      "id": "nutritionix-289682",
+      "name": "The Jackhammer, Chocolate, Medium",
+      "calories": 770,
+      "protein": 18,
+      "carbs": 83,
+      "fat": 36,
+      "servingLabel": "1 listed serving (Jackhammers; size in item name)"
+    },
+    {
+      "id": "nutritionix-289681",
+      "name": "The Jackhammer, Chocolate, Small",
+      "calories": 560,
+      "protein": 13,
+      "carbs": 60,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Jackhammers; size in item name)"
+    },
+    {
+      "id": "nutritionix-289680",
+      "name": "The Jackhammer, Vanilla, Large",
+      "calories": 1050,
+      "protein": 21,
+      "carbs": 110,
+      "fat": 53,
+      "servingLabel": "1 listed serving (Jackhammers; size in item name)"
+    },
+    {
+      "id": "nutritionix-289679",
+      "name": "The Jackhammer, Vanilla, Medium",
+      "calories": 730,
+      "protein": 15,
+      "carbs": 76,
+      "fat": 36,
+      "servingLabel": "1 listed serving (Jackhammers; size in item name)"
+    },
+    {
+      "id": "nutritionix-289678",
+      "name": "The Jackhammer, Vanilla, Small",
+      "calories": 530,
+      "protein": 11,
+      "carbs": 55,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Jackhammers; size in item name)"
+    },
+    {
+      "id": "nutritionix-289687",
+      "name": "Andy's Banana Split",
+      "calories": 560,
+      "protein": 16,
+      "carbs": 113,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Splits; size in item name)"
+    },
+    {
+      "id": "nutritionix-289688",
+      "name": "Andy's Turtle Split",
+      "calories": 570,
+      "protein": 14,
+      "carbs": 83,
+      "fat": 37,
+      "servingLabel": "1 listed serving (Splits; size in item name)"
+    },
+    {
+      "id": "nutritionix-289694",
+      "name": "Vanilla Float with Coca-Cola, Large",
+      "calories": 530,
+      "protein": 8,
+      "carbs": 78,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Floats; size in item name)"
+    },
+    {
+      "id": "nutritionix-289693",
+      "name": "Vanilla Float with Coca-Cola, Small",
+      "calories": 400,
+      "protein": 6,
+      "carbs": 61,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Floats; size in item name)"
+    },
+    {
+      "id": "nutritionix-289691",
+      "name": "Vanilla Float with Cream Soda, Small",
+      "calories": 440,
+      "protein": 6,
+      "carbs": 68,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Floats; size in item name)"
+    },
+    {
+      "id": "nutritionix-289696",
+      "name": "Vanilla Float with Diet Coke, Large",
+      "calories": 380,
+      "protein": 8,
+      "carbs": 39,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Floats; size in item name)"
+    },
+    {
+      "id": "nutritionix-289695",
+      "name": "Vanilla Float with Diet Coke, Small",
+      "calories": 280,
+      "protein": 6,
+      "carbs": 29,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Floats; size in item name)"
+    },
+    {
+      "id": "nutritionix-289700",
+      "name": "Vanilla Float with Dr. Pepper, Large",
+      "calories": 530,
+      "protein": 8,
+      "carbs": 80,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Floats; size in item name)"
+    },
+    {
+      "id": "nutritionix-289699",
+      "name": "Vanilla Float with Dr. Pepper, Small",
+      "calories": 400,
+      "protein": 6,
+      "carbs": 63,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Floats; size in item name)"
+    },
+    {
+      "id": "nutritionix-289702",
+      "name": "Vanilla Float with Orange Soda, Large",
+      "calories": 530,
+      "protein": 8,
+      "carbs": 75,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Floats; size in item name)"
+    },
+    {
+      "id": "nutritionix-289701",
+      "name": "Vanilla Float with Orange Soda, Small",
+      "calories": 400,
+      "protein": 6,
+      "carbs": 59,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Floats; size in item name)"
+    },
+    {
+      "id": "nutritionix-289690",
+      "name": "Vanilla Float with Root Beer, Large",
+      "calories": 540,
+      "protein": 8,
+      "carbs": 80,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Floats; size in item name)"
+    },
+    {
+      "id": "nutritionix-289689",
+      "name": "Vanilla Float with Root Beer, Small",
+      "calories": 410,
+      "protein": 6,
+      "carbs": 63,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Floats; size in item name)"
+    },
+    {
+      "id": "nutritionix-289698",
+      "name": "Vanilla Float with Sprite, Large",
+      "calories": 520,
+      "protein": 8,
+      "carbs": 78,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Floats; size in item name)"
+    },
+    {
+      "id": "nutritionix-289697",
+      "name": "Vanilla Float with Sprite, Small",
+      "calories": 390,
+      "protein": 6,
+      "carbs": 61,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Floats; size in item name)"
+    },
+    {
+      "id": "nutritionix-289708",
+      "name": "Vanilla Freeze with Coca-Cola, Large",
+      "calories": 740,
+      "protein": 13,
+      "carbs": 91,
+      "fat": 33,
+      "servingLabel": "1 listed serving (Old-Fashioned Freezes; size in item name)"
+    },
+    {
+      "id": "nutritionix-289707",
+      "name": "Vanilla Freeze with Coca-Cola, Small",
+      "calories": 530,
+      "protein": 10,
+      "carbs": 63,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Old-Fashioned Freezes; size in item name)"
+    },
+    {
+      "id": "nutritionix-289706",
+      "name": "Vanilla Freeze with Cream Soda, Large",
+      "calories": 760,
+      "protein": 13,
+      "carbs": 95,
+      "fat": 33,
+      "servingLabel": "1 listed serving (Old-Fashioned Freezes; size in item name)"
+    },
+    {
+      "id": "nutritionix-289705",
+      "name": "Vanilla Freeze with Cream Soda, Small",
+      "calories": 490,
+      "protein": 9,
+      "carbs": 60,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Old-Fashioned Freezes; size in item name)"
+    },
+    {
+      "id": "nutritionix-289710",
+      "name": "Vanilla Freeze with Diet Coke, Large",
+      "calories": 650,
+      "protein": 13,
+      "carbs": 68,
+      "fat": 33,
+      "servingLabel": "1 listed serving (Old-Fashioned Freezes; size in item name)"
+    },
+    {
+      "id": "nutritionix-289709",
+      "name": "Vanilla Freeze with Diet Coke, Small",
+      "calories": 430,
+      "protein": 9,
+      "carbs": 45,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Old-Fashioned Freezes; size in item name)"
+    },
+    {
+      "id": "nutritionix-289714",
+      "name": "Vanilla Freeze with Dr. Pepper, Large",
+      "calories": 740,
+      "protein": 13,
+      "carbs": 92,
+      "fat": 33,
+      "servingLabel": "1 listed serving (Old-Fashioned Freezes; size in item name)"
+    },
+    {
+      "id": "nutritionix-289713",
+      "name": "Vanilla Freeze with Dr. Pepper, Small",
+      "calories": 480,
+      "protein": 9,
+      "carbs": 58,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Old-Fashioned Freezes; size in item name)"
+    },
+    {
+      "id": "nutritionix-289716",
+      "name": "Vanilla Freeze with Orange Soda, Large",
+      "calories": 740,
+      "protein": 13,
+      "carbs": 89,
+      "fat": 33,
+      "servingLabel": "1 listed serving (Old-Fashioned Freezes; size in item name)"
+    },
+    {
+      "id": "nutritionix-289715",
+      "name": "Vanilla Freeze with Orange Soda, Small",
+      "calories": 480,
+      "protein": 9,
+      "carbs": 57,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Old-Fashioned Freezes; size in item name)"
+    },
+    {
+      "id": "nutritionix-289704",
+      "name": "Vanilla Freeze with Root Beer, Large",
+      "calories": 750,
+      "protein": 13,
+      "carbs": 92,
+      "fat": 33,
+      "servingLabel": "1 listed serving (Old-Fashioned Freezes; size in item name)"
+    },
+    {
+      "id": "nutritionix-289703",
+      "name": "Vanilla Freeze with Root Beer, Small",
+      "calories": 480,
+      "protein": 9,
+      "carbs": 58,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Old-Fashioned Freezes; size in item name)"
+    },
+    {
+      "id": "nutritionix-289712",
+      "name": "Vanilla Freeze with Sprite, Large",
+      "calories": 730,
+      "protein": 13,
+      "carbs": 91,
+      "fat": 33,
+      "servingLabel": "1 listed serving (Old-Fashioned Freezes; size in item name)"
+    },
+    {
+      "id": "nutritionix-289711",
+      "name": "Vanilla Freeze with Sprite, Small",
+      "calories": 470,
+      "protein": 9,
+      "carbs": 57,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Old-Fashioned Freezes; size in item name)"
+    },
+    {
+      "id": "nutritionix-289718",
+      "name": "Cherry Old-Fashioned Soda, Large",
+      "calories": 700,
+      "protein": 8,
+      "carbs": 79,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Old-Fashioned Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-289717",
+      "name": "Cherry Old-Fashioned Soda, Small",
+      "calories": 490,
+      "protein": 6,
+      "carbs": 55,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Old-Fashioned Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-289720",
+      "name": "Chocolate Old-Fashioned Soda, Large",
+      "calories": 660,
+      "protein": 10,
+      "carbs": 110,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Old-Fashioned Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-289719",
+      "name": "Chocolate Old-Fashioned Soda, Small",
+      "calories": 490,
+      "protein": 7,
+      "carbs": 82,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Old-Fashioned Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-289722",
+      "name": "Key Lime Old-Fashioned Soda, Large",
+      "calories": 590,
+      "protein": 8,
+      "carbs": 92,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Old-Fashioned Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-289721",
+      "name": "Key Lime Old-Fashioned Soda, Small",
+      "calories": 440,
+      "protein": 6,
+      "carbs": 68,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Old-Fashioned Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-289724",
+      "name": "Raspberry Old-Fashioned Soda, Large",
+      "calories": 660,
+      "protein": 8,
+      "carbs": 79,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Old-Fashioned Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-289723",
+      "name": "Raspberry Old-Fashioned Soda, Small",
+      "calories": 460,
+      "protein": 6,
+      "carbs": 55,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Old-Fashioned Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-289726",
+      "name": "Strawberry Old-Fashioned Soda, Large",
+      "calories": 660,
+      "protein": 8,
+      "carbs": 79,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Old-Fashioned Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-289725",
+      "name": "Strawberry Old-Fashioned Soda, Small",
+      "calories": 460,
+      "protein": 6,
+      "carbs": 55,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Old-Fashioned Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-289734",
+      "name": "Chocolate Cone, Jumbo",
+      "calories": 730,
+      "protein": 17,
+      "carbs": 85,
+      "fat": 33,
+      "servingLabel": "1 listed serving (Cones & Cups; size in item name)"
+    },
+    {
+      "id": "nutritionix-289733",
+      "name": "Chocolate Cone, Large",
+      "calories": 630,
+      "protein": 15,
+      "carbs": 73,
+      "fat": 28,
+      "servingLabel": "1 listed serving (Cones & Cups; size in item name)"
+    },
+    {
+      "id": "nutritionix-289732",
+      "name": "Chocolate Cone, Medium",
+      "calories": 420,
+      "protein": 9,
+      "carbs": 48,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Cones & Cups; size in item name)"
+    },
+    {
+      "id": "nutritionix-289731",
+      "name": "Chocolate Cone, Small",
+      "calories": 320,
+      "protein": 7,
+      "carbs": 37,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Cones & Cups; size in item name)"
+    },
+    {
+      "id": "nutritionix-289742",
+      "name": "Chocolate Cup, Jumbo",
+      "calories": 690,
+      "protein": 16,
+      "carbs": 75,
+      "fat": 33,
+      "servingLabel": "1 listed serving (Cones & Cups; size in item name)"
+    },
+    {
+      "id": "nutritionix-289741",
+      "name": "Chocolate Cup, Large",
+      "calories": 580,
+      "protein": 14,
+      "carbs": 63,
+      "fat": 28,
+      "servingLabel": "1 listed serving (Cones & Cups; size in item name)"
+    },
+    {
+      "id": "nutritionix-289740",
+      "name": "Chocolate Cup, Medium",
+      "calories": 400,
+      "protein": 9,
+      "carbs": 43,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Cones & Cups; size in item name)"
+    },
+    {
+      "id": "nutritionix-289739",
+      "name": "Chocolate Cup, Small",
+      "calories": 290,
+      "protein": 7,
+      "carbs": 32,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Cones & Cups; size in item name)"
+    },
+    {
+      "id": "nutritionix-289730",
+      "name": "Vanilla Cone, Jumbo",
+      "calories": 700,
+      "protein": 14,
+      "carbs": 78,
+      "fat": 33,
+      "servingLabel": "1 listed serving (Cones & Cups; size in item name)"
+    },
+    {
+      "id": "nutritionix-289729",
+      "name": "Vanilla Cone, Large",
+      "calories": 600,
+      "protein": 12,
+      "carbs": 68,
+      "fat": 28,
+      "servingLabel": "1 listed serving (Cones & Cups; size in item name)"
+    },
+    {
+      "id": "nutritionix-289728",
+      "name": "Vanilla Cone, Medium",
+      "calories": 400,
+      "protein": 8,
+      "carbs": 44,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Cones & Cups; size in item name)"
+    },
+    {
+      "id": "nutritionix-289727",
+      "name": "Vanilla Cone, Small",
+      "calories": 300,
+      "protein": 6,
+      "carbs": 34,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Cones & Cups; size in item name)"
+    },
+    {
+      "id": "nutritionix-289738",
+      "name": "Vanilla Cup, Jumbo",
+      "calories": 650,
+      "protein": 13,
+      "carbs": 68,
+      "fat": 33,
+      "servingLabel": "1 listed serving (Cones & Cups; size in item name)"
+    },
+    {
+      "id": "nutritionix-289737",
+      "name": "Vanilla Cup, Large",
+      "calories": 550,
+      "protein": 11,
+      "carbs": 58,
+      "fat": 28,
+      "servingLabel": "1 listed serving (Cones & Cups; size in item name)"
+    },
+    {
+      "id": "nutritionix-289736",
+      "name": "Vanilla Cup, Medium",
+      "calories": 380,
+      "protein": 8,
+      "carbs": 39,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Cones & Cups; size in item name)"
+    },
+    {
+      "id": "nutritionix-289735",
+      "name": "Vanilla Cup, Small",
+      "calories": 280,
+      "protein": 6,
+      "carbs": 29,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Cones & Cups; size in item name)"
+    },
+    {
+      "id": "nutritionix-289749",
+      "name": "Butter Pecan, Pint",
+      "calories": 1210,
+      "protein": 20,
+      "carbs": 120,
+      "fat": 70,
+      "servingLabel": "1 listed serving (Pint & Quarts; size in item name)"
+    },
+    {
+      "id": "nutritionix-289744",
+      "name": "Chocolate, Pint",
+      "calories": 850,
+      "protein": 20,
+      "carbs": 92,
+      "fat": 40,
+      "servingLabel": "1 listed serving (Pint & Quarts; size in item name)"
+    },
+    {
+      "id": "nutritionix-289751",
+      "name": "Chocolate, Quart",
+      "calories": 450,
+      "protein": 11,
+      "carbs": 49,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Pint & Quarts; size in item name)"
+    },
+    {
+      "id": "nutritionix-289745",
+      "name": "Chocolate-Chocolate Chip Cookie Dough, Pint",
+      "calories": 1210,
+      "protein": 23,
+      "carbs": 143,
+      "fat": 58,
+      "servingLabel": "1 listed serving (Pint & Quarts; size in item name)"
+    },
+    {
+      "id": "nutritionix-289747",
+      "name": "Hot Fudge Brownie, Pint",
+      "calories": 1080,
+      "protein": 20,
+      "carbs": 125,
+      "fat": 57,
+      "servingLabel": "1 listed serving (Pint & Quarts; size in item name)"
+    },
+    {
+      "id": "nutritionix-289746",
+      "name": "Mint Chocolate Chip, Pint",
+      "calories": 1060,
+      "protein": 17,
+      "carbs": 132,
+      "fat": 48,
+      "servingLabel": "1 listed serving (Pint & Quarts; size in item name)"
+    },
+    {
+      "id": "nutritionix-289743",
+      "name": "Vanilla, Pint",
+      "calories": 800,
+      "protein": 16,
+      "carbs": 84,
+      "fat": 40,
+      "servingLabel": "1 listed serving (Pint & Quarts; size in item name)"
+    },
+    {
+      "id": "nutritionix-289750",
+      "name": "Vanilla, Quart",
+      "calories": 430,
+      "protein": 9,
+      "carbs": 45,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Pint & Quarts; size in item name)"
+    },
+    {
+      "id": "nutritionix-289753",
+      "name": "Chocolate Mini Cup",
+      "calories": 320,
+      "protein": 8,
+      "carbs": 35,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Mini Cups; size in item name)"
+    },
+    {
+      "id": "nutritionix-289752",
+      "name": "Vanilla Mini Cup",
+      "calories": 300,
+      "protein": 6,
+      "carbs": 32,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Mini Cups; size in item name)"
+    },
+    {
+      "id": "nutritionix-289759",
+      "name": "Chocolate Malt, Large",
+      "calories": 960,
+      "protein": 22,
+      "carbs": 128,
+      "fat": 38,
+      "servingLabel": "1 listed serving (Malts & Shakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-289758",
+      "name": "Chocolate Malt, Small",
+      "calories": 650,
+      "protein": 15,
+      "carbs": 82,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Malts & Shakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-289761",
+      "name": "Chocolate Shake, Large",
+      "calories": 740,
+      "protein": 16,
+      "carbs": 75,
+      "fat": 33,
+      "servingLabel": "1 listed serving (Malts & Shakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-289760",
+      "name": "Chocolate Shake, Small",
+      "calories": 540,
+      "protein": 12,
+      "carbs": 55,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Malts & Shakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-289755",
+      "name": "Vanilla Malt, Large",
+      "calories": 920,
+      "protein": 19,
+      "carbs": 121,
+      "fat": 38,
+      "servingLabel": "1 listed serving (Malts & Shakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-289754",
+      "name": "Vanilla Malt, Small",
+      "calories": 620,
+      "protein": 13,
+      "carbs": 77,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Malts & Shakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-289757",
+      "name": "Vanilla Shake, Large",
+      "calories": 700,
+      "protein": 14,
+      "carbs": 74,
+      "fat": 36,
+      "servingLabel": "1 listed serving (Malts & Shakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-289756",
+      "name": "Vanilla Shake, Small",
+      "calories": 510,
+      "protein": 10,
+      "carbs": 54,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Malts & Shakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-289767",
+      "name": "Dark Chocolate Custard Bar, Chocolate",
+      "calories": 350,
+      "protein": 5,
+      "carbs": 40,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Frozen To Go; size in item name)"
+    },
+    {
+      "id": "nutritionix-289768",
+      "name": "Dark Chocolate Custard Bar, Coffee",
+      "calories": 320,
+      "protein": 5,
+      "carbs": 31,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Frozen To Go; size in item name)"
+    },
+    {
+      "id": "nutritionix-289769",
+      "name": "Dark Chocolate Custard Bar, Mint",
+      "calories": 320,
+      "protein": 5,
+      "carbs": 31,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Frozen To Go; size in item name)"
+    },
+    {
+      "id": "nutritionix-289765",
+      "name": "Milk Chocolate Custard Bar, Salted Caramel",
+      "calories": 350,
+      "protein": 4,
+      "carbs": 46,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Frozen To Go; size in item name)"
+    },
+    {
+      "id": "nutritionix-289766",
+      "name": "Milk Chocolate Custard Bar, Vanilla",
+      "calories": 320,
+      "protein": 5,
+      "carbs": 32,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Frozen To Go; size in item name)"
+    },
+    {
+      "id": "nutritionix-289762",
+      "name": "Zarlengo's Italian Ice, Lemon",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 29,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Frozen To Go; size in item name)"
+    },
+    {
+      "id": "nutritionix-289764",
+      "name": "Zarlengo's Italian Ice, Raspberry Lemonade",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 29,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Frozen To Go; size in item name)"
+    },
+    {
+      "id": "nutritionix-289763",
+      "name": "Zarlengo's Italian Ice, Strawberry",
+      "calories": 110,
+      "protein": 0,
+      "carbs": 28,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Frozen To Go; size in item name)"
+    },
+    {
+      "id": "nutritionix-289778",
+      "name": "Coca-Cola, Large",
+      "calories": 290,
+      "protein": 0,
+      "carbs": 78,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-289777",
+      "name": "Coca-Cola, Medium",
+      "calories": 190,
+      "protein": 0,
+      "carbs": 52,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-289776",
+      "name": "Coca-Cola, Small",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 39,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-289781",
+      "name": "Diet Coke, Large",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-289780",
+      "name": "Diet Coke, Medium",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-289779",
+      "name": "Diet Coke, Small",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-289787",
+      "name": "Dr. Pepper, Large",
+      "calories": 300,
+      "protein": 0,
+      "carbs": 81,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-289786",
+      "name": "Dr. Pepper, Medium",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 54,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-289785",
+      "name": "Dr. Pepper, Small",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 41,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-289790",
+      "name": "Orange Soda, Large",
+      "calories": 300,
+      "protein": 0,
+      "carbs": 72,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-289789",
+      "name": "Orange Soda, Medium",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 48,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-289788",
+      "name": "Orange Soda, Small",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 36,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-289793",
+      "name": "Raspberry Iced Tea, Large",
+      "calories": 110,
+      "protein": 0,
+      "carbs": 26,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-289775",
+      "name": "Sprecher Cream Soda on Tap, Large",
+      "calories": 380,
+      "protein": 0,
+      "carbs": 93,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-289774",
+      "name": "Sprecher Cream Soda on Tap, Medium",
+      "calories": 250,
+      "protein": 0,
+      "carbs": 62,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-289773",
+      "name": "Sprecher Cream Soda on Tap, Small",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 47,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-289772",
+      "name": "Sprecher Root Beer on Tap, Large",
+      "calories": 330,
+      "protein": 0,
+      "carbs": 82,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-289771",
+      "name": "Sprecher Root Beer on Tap, Medium",
+      "calories": 220,
+      "protein": 0,
+      "carbs": 54,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-289770",
+      "name": "Sprecher Root Beer on Tap, Small",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 41,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-289784",
+      "name": "Sprite, Large",
+      "calories": 290,
+      "protein": 0,
+      "carbs": 77,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-289783",
+      "name": "Sprite, Medium",
+      "calories": 190,
+      "protein": 0,
+      "carbs": 51,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-289782",
+      "name": "Sprite, Small",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 38,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-289791",
+      "name": "Sweet Iced Tea, Large",
+      "calories": 330,
+      "protein": 0,
+      "carbs": 85,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-289794",
+      "name": "Almonds",
+      "calories": 170,
+      "protein": 6,
+      "carbs": 5,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289795",
+      "name": "Banana",
+      "calories": 50,
+      "protein": 1,
+      "carbs": 14,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289797",
+      "name": "Brownie, Medium & Large",
+      "calories": 90,
+      "protein": 2,
+      "carbs": 15,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289796",
+      "name": "Brownie, Small",
+      "calories": 60,
+      "protein": 2,
+      "carbs": 10,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289799",
+      "name": "Butterfinger, Medium & Large",
+      "calories": 260,
+      "protein": 3,
+      "carbs": 41,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289798",
+      "name": "Butterfinger, Small",
+      "calories": 180,
+      "protein": 2,
+      "carbs": 29,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289801",
+      "name": "Butterscotch, Medium & Large",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 31,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289800",
+      "name": "Butterscotch, Small",
+      "calories": 90,
+      "protein": 0,
+      "carbs": 21,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289803",
+      "name": "Cheesecake, Medium & Large",
+      "calories": 170,
+      "protein": 3,
+      "carbs": 15,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289802",
+      "name": "Cheesecake, Small",
+      "calories": 120,
+      "protein": 2,
+      "carbs": 11,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289805",
+      "name": "Cherries, Medium & Large",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 42,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289804",
+      "name": "Cherries, Small",
+      "calories": 110,
+      "protein": 0,
+      "carbs": 27,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289809",
+      "name": "Chocolate Syrup, Four Pumps",
+      "calories": 290,
+      "protein": 2,
+      "carbs": 71,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289806",
+      "name": "Chocolate Syrup, One Pump",
+      "calories": 70,
+      "protein": 1,
+      "carbs": 18,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289808",
+      "name": "Chocolate Syrup, Three Pumps",
+      "calories": 220,
+      "protein": 2,
+      "carbs": 53,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289807",
+      "name": "Chocolate Syrup, Two Pumps",
+      "calories": 150,
+      "protein": 1,
+      "carbs": 35,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289811",
+      "name": "Cookie Dough, Medium & Large",
+      "calories": 250,
+      "protein": 3,
+      "carbs": 37,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289810",
+      "name": "Cookie Dough, Small",
+      "calories": 170,
+      "protein": 2,
+      "carbs": 26,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289813",
+      "name": "Creme Caramel, Medium & Large",
+      "calories": 210,
+      "protein": 3,
+      "carbs": 40,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289812",
+      "name": "Creme Caramel, Small",
+      "calories": 140,
+      "protein": 2,
+      "carbs": 27,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289814",
+      "name": "Crushed Nuts",
+      "calories": 170,
+      "protein": 8,
+      "carbs": 6,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289816",
+      "name": "Espresso, Medium & Large",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289815",
+      "name": "Espresso, Small",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289818",
+      "name": "Heath Bar, Medium & Large",
+      "calories": 270,
+      "protein": 1,
+      "carbs": 32,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289817",
+      "name": "Heath Bar, Small",
+      "calories": 210,
+      "protein": 1,
+      "carbs": 25,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289820",
+      "name": "Hot Fudge, Medium & Large",
+      "calories": 240,
+      "protein": 2,
+      "carbs": 32,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289819",
+      "name": "Hot Fudge, Small",
+      "calories": 160,
+      "protein": 1,
+      "carbs": 21,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289823",
+      "name": "Key Lime Syrup, Large",
+      "calories": 210,
+      "protein": 0,
+      "carbs": 52,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289822",
+      "name": "Key Lime Syrup, Medium",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 39,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289821",
+      "name": "Key Lime Syrup, Small",
+      "calories": 110,
+      "protein": 0,
+      "carbs": 26,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289827",
+      "name": "M&M's, Medium & Large",
+      "calories": 330,
+      "protein": 3,
+      "carbs": 46,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289826",
+      "name": "M&M's, Small",
+      "calories": 230,
+      "protein": 2,
+      "carbs": 32,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289829",
+      "name": "Marshmallow Creme, Medium & Large",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 70,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289828",
+      "name": "Marshmallow Creme, Small",
+      "calories": 180,
+      "protein": 0,
+      "carbs": 47,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289825",
+      "name": "Melted Chocolate Chip, Medium & Large",
+      "calories": 120,
+      "protein": 1,
+      "carbs": 13,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289824",
+      "name": "Melted Chocolate Chip, Small",
+      "calories": 90,
+      "protein": 1,
+      "carbs": 10,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289832",
+      "name": "Mint Syrup, Large",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 35,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289831",
+      "name": "Mint Syrup, Medium",
+      "calories": 110,
+      "protein": 0,
+      "carbs": 26,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289830",
+      "name": "Mint Syrup, Small",
+      "calories": 70,
+      "protein": 0,
+      "carbs": 17,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289834",
+      "name": "Oreo, Medium & Large",
+      "calories": 160,
+      "protein": 1,
+      "carbs": 25,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289833",
+      "name": "Oreo, Small",
+      "calories": 120,
+      "protein": 1,
+      "carbs": 19,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289836",
+      "name": "Peanut Butter, Medium & Large",
+      "calories": 430,
+      "protein": 18,
+      "carbs": 14,
+      "fat": 36,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289835",
+      "name": "Peanut Butter, Small",
+      "calories": 290,
+      "protein": 12,
+      "carbs": 9,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289838",
+      "name": "Peanut Butter Cups, Medium & Large",
+      "calories": 310,
+      "protein": 7,
+      "carbs": 34,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289837",
+      "name": "Peanut Butter Cups, Small",
+      "calories": 220,
+      "protein": 5,
+      "carbs": 24,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289839",
+      "name": "Peanuts",
+      "calories": 170,
+      "protein": 7,
+      "carbs": 2,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289841",
+      "name": "Pineapple, Medium & Large",
+      "calories": 60,
+      "protein": 1,
+      "carbs": 15,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289840",
+      "name": "Pineapple, Small",
+      "calories": 40,
+      "protein": 1,
+      "carbs": 10,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289843",
+      "name": "Pretzels, Medium & Large",
+      "calories": 90,
+      "protein": 2,
+      "carbs": 18,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289842",
+      "name": "Pretzels, Small",
+      "calories": 70,
+      "protein": 2,
+      "carbs": 14,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289845",
+      "name": "Raspberries, Medium & Large",
+      "calories": 160,
+      "protein": 1,
+      "carbs": 44,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289844",
+      "name": "Raspberries, Small",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 33,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289847",
+      "name": "Reese's Pieces, Medium & Large",
+      "calories": 110,
+      "protein": 2,
+      "carbs": 12,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289846",
+      "name": "Reese's Pieces, Small",
+      "calories": 80,
+      "protein": 2,
+      "carbs": 9,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289848",
+      "name": "Roasted Pecans",
+      "calories": 180,
+      "protein": 2,
+      "carbs": 3,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289850",
+      "name": "Sprinkles, Medium & Large",
+      "calories": 270,
+      "protein": 0,
+      "carbs": 46,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289849",
+      "name": "Sprinkles, Small",
+      "calories": 210,
+      "protein": 0,
+      "carbs": 35,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289852",
+      "name": "Strawberries, Medium & Large",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 32,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-289851",
+      "name": "Strawberries, Small",
+      "calories": 80,
+      "protein": 0,
+      "carbs": 20,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    }
+  ],
+  "sourceDate": "2025-04-23"
+}

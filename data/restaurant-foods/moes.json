@@ -1,0 +1,764 @@
+{
+  "chain": "Moe’s Southwest Grill",
+  "sourceUrl": "https://assets.ctfassets.net/zqt8tllj2cy0/229Bgcvw5c0RwcUkhyghXG/d3722a14b4b1dd925316a8936200f5bd/MOES_1906368_Nutrition_Chart_2026_R4.pdf",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "name": "Tortilla Chips, Side",
+      "servingLabel": "1 listed portion",
+      "calories": 350.0,
+      "fat": 18.0,
+      "carbs": 45.0,
+      "protein": 5.0,
+      "id": "tortilla-chips-side-1-listed-portion"
+    },
+    {
+      "name": "Tortilla Chips, Cup",
+      "servingLabel": "1 listed portion",
+      "calories": 700.0,
+      "fat": 36.0,
+      "carbs": 90.0,
+      "protein": 10.0,
+      "id": "tortilla-chips-cup-1-listed-portion"
+    },
+    {
+      "name": "Tortilla Chips, Bowl",
+      "servingLabel": "1 listed portion",
+      "calories": 1050.0,
+      "fat": 54.0,
+      "carbs": 135.0,
+      "protein": 15.0,
+      "id": "tortilla-chips-bowl-1-listed-portion"
+    },
+    {
+      "name": "Adobo Chicken, Small (Tacos, Kids)",
+      "servingLabel": "1 listed portion",
+      "calories": 50.0,
+      "fat": 2.0,
+      "carbs": 1.0,
+      "protein": 7.0,
+      "id": "adobo-chicken-small-tacos-kids-1-listed-portion"
+    },
+    {
+      "name": "Adobo Chicken, Medium",
+      "servingLabel": "1 listed portion",
+      "calories": 100.0,
+      "fat": 5.0,
+      "carbs": 1.0,
+      "protein": 14.0,
+      "id": "adobo-chicken-medium-1-listed-portion"
+    },
+    {
+      "name": "Adobo Chicken, Double",
+      "servingLabel": "1 listed portion",
+      "calories": 200.0,
+      "fat": 10.0,
+      "carbs": 2.0,
+      "protein": 28.0,
+      "id": "adobo-chicken-double-1-listed-portion"
+    },
+    {
+      "name": "White Meat Chicken, Small",
+      "servingLabel": "1 listed portion",
+      "calories": 55.0,
+      "fat": 2.0,
+      "carbs": 2.0,
+      "protein": 9.0,
+      "id": "white-meat-chicken-small-1-listed-portion"
+    },
+    {
+      "name": "White Meat Chicken, Medium",
+      "servingLabel": "1 listed portion",
+      "calories": 110.0,
+      "fat": 3.0,
+      "carbs": 3.0,
+      "protein": 18.0,
+      "id": "white-meat-chicken-medium-1-listed-portion"
+    },
+    {
+      "name": "White Meat Chicken, Double",
+      "servingLabel": "1 listed portion",
+      "calories": 220.0,
+      "fat": 6.0,
+      "carbs": 6.0,
+      "protein": 36.0,
+      "id": "white-meat-chicken-double-1-listed-portion"
+    },
+    {
+      "name": "Hand Cut Steak, Small",
+      "servingLabel": "1 listed portion",
+      "calories": 65.0,
+      "fat": 4.0,
+      "carbs": 2.0,
+      "protein": 6.0,
+      "id": "hand-cut-steak-small-1-listed-portion"
+    },
+    {
+      "name": "Hand Cut Steak, Medium",
+      "servingLabel": "1 listed portion",
+      "calories": 130.0,
+      "fat": 8.0,
+      "carbs": 4.0,
+      "protein": 11.0,
+      "id": "hand-cut-steak-medium-1-listed-portion"
+    },
+    {
+      "name": "Hand Cut Steak, Double",
+      "servingLabel": "1 listed portion",
+      "calories": 260.0,
+      "fat": 16.0,
+      "carbs": 8.0,
+      "protein": 22.0,
+      "id": "hand-cut-steak-double-1-listed-portion"
+    },
+    {
+      "name": "Ground Beef, Small",
+      "servingLabel": "1 listed portion",
+      "calories": 75.0,
+      "fat": 5.0,
+      "carbs": 3.0,
+      "protein": 5.0,
+      "id": "ground-beef-small-1-listed-portion"
+    },
+    {
+      "name": "Ground Beef, Medium",
+      "servingLabel": "1 listed portion",
+      "calories": 150.0,
+      "fat": 9.0,
+      "carbs": 5.0,
+      "protein": 10.0,
+      "id": "ground-beef-medium-1-listed-portion"
+    },
+    {
+      "name": "Ground Beef, Double",
+      "servingLabel": "1 listed portion",
+      "calories": 300.0,
+      "fat": 18.0,
+      "carbs": 10.0,
+      "protein": 20.0,
+      "id": "ground-beef-double-1-listed-portion"
+    },
+    {
+      "name": "Tofu, Small",
+      "servingLabel": "1 listed portion",
+      "calories": 55.0,
+      "fat": 4.0,
+      "carbs": 1.0,
+      "protein": 5.0,
+      "id": "tofu-small-1-listed-portion"
+    },
+    {
+      "name": "Tofu, Medium",
+      "servingLabel": "1 listed portion",
+      "calories": 110.0,
+      "fat": 7.0,
+      "carbs": 2.0,
+      "protein": 9.0,
+      "id": "tofu-medium-1-listed-portion"
+    },
+    {
+      "name": "Tofu, Large",
+      "servingLabel": "1 listed portion",
+      "calories": 220.0,
+      "fat": 14.0,
+      "carbs": 4.0,
+      "protein": 18.0,
+      "id": "tofu-large-1-listed-portion"
+    },
+    {
+      "name": "Queso, Side",
+      "servingLabel": "1 listed portion",
+      "calories": 200.0,
+      "fat": 16.0,
+      "carbs": 5.0,
+      "protein": 8.0,
+      "id": "queso-side-1-listed-portion"
+    },
+    {
+      "name": "Queso, Cup",
+      "servingLabel": "1 listed portion",
+      "calories": 410.0,
+      "fat": 32.0,
+      "carbs": 11.0,
+      "protein": 17.0,
+      "id": "queso-cup-1-listed-portion"
+    },
+    {
+      "name": "Queso, Bowl",
+      "servingLabel": "1 listed portion",
+      "calories": 750.0,
+      "fat": 59.0,
+      "carbs": 20.0,
+      "protein": 31.0,
+      "id": "queso-bowl-1-listed-portion"
+    },
+    {
+      "name": "Queso, Add-On",
+      "servingLabel": "1 listed portion",
+      "calories": 130.0,
+      "fat": 10.0,
+      "carbs": 3.0,
+      "protein": 5.0,
+      "id": "queso-add-on-1-listed-portion"
+    },
+    {
+      "name": "Queso, Add-On, Small",
+      "servingLabel": "1 listed portion",
+      "calories": 50.0,
+      "fat": 4.0,
+      "carbs": 1.0,
+      "protein": 2.0,
+      "id": "queso-add-on-small-1-listed-portion"
+    },
+    {
+      "name": "Guac, Side",
+      "servingLabel": "1 listed portion",
+      "calories": 110.0,
+      "fat": 10.0,
+      "carbs": 7.0,
+      "protein": 2.0,
+      "id": "guac-side-1-listed-portion"
+    },
+    {
+      "name": "Guac, Cup",
+      "servingLabel": "1 listed portion",
+      "calories": 250.0,
+      "fat": 22.0,
+      "carbs": 15.0,
+      "protein": 3.0,
+      "id": "guac-cup-1-listed-portion"
+    },
+    {
+      "name": "Guac, Bowl",
+      "servingLabel": "1 listed portion",
+      "calories": 410.0,
+      "fat": 36.0,
+      "carbs": 26.0,
+      "protein": 6.0,
+      "id": "guac-bowl-1-listed-portion"
+    },
+    {
+      "name": "Guac, Add-On",
+      "servingLabel": "1 listed portion",
+      "calories": 60.0,
+      "fat": 6.0,
+      "carbs": 4.0,
+      "protein": 1.0,
+      "id": "guac-add-on-1-listed-portion"
+    },
+    {
+      "name": "Guac, Add-On, Small",
+      "servingLabel": "1 listed portion",
+      "calories": 40.0,
+      "fat": 4.0,
+      "carbs": 3.0,
+      "protein": 1.0,
+      "id": "guac-add-on-small-1-listed-portion"
+    },
+    {
+      "name": "Seasoned Rice, Ingredient for Jr. Burrito",
+      "servingLabel": "1 listed portion",
+      "calories": 94.0,
+      "fat": 2.0,
+      "carbs": 18.0,
+      "protein": 2.0,
+      "id": "seasoned-rice-ingredient-for-jr-burrito-1-listed-portion"
+    },
+    {
+      "name": "Seasoned Rice, Ingredient for Burrito",
+      "servingLabel": "1 listed portion",
+      "calories": 150.0,
+      "fat": 3.0,
+      "carbs": 27.0,
+      "protein": 3.0,
+      "id": "seasoned-rice-ingredient-for-burrito-1-listed-portion"
+    },
+    {
+      "name": "Seasoned Rice, Cup and Burrito Bowl",
+      "servingLabel": "1 listed portion",
+      "calories": 300.0,
+      "fat": 6.0,
+      "carbs": 54.0,
+      "protein": 6.0,
+      "id": "seasoned-rice-cup-and-burrito-bowl-1-listed-portion"
+    },
+    {
+      "name": "Seasoned Rice, Bowl",
+      "servingLabel": "1 listed portion",
+      "calories": 500.0,
+      "fat": 10.0,
+      "carbs": 90.0,
+      "protein": 10.0,
+      "id": "seasoned-rice-bowl-1-listed-portion"
+    },
+    {
+      "name": "Cilantro Lime Rice, Ingredient for Jr. Burrito",
+      "servingLabel": "1 listed portion",
+      "calories": 93.0,
+      "fat": 2.0,
+      "carbs": 18.0,
+      "protein": 2.0,
+      "id": "cilantro-lime-rice-ingredient-for-jr-burrito-1-listed-portion"
+    },
+    {
+      "name": "Cilantro Lime Rice, Ingredient for Burrito",
+      "servingLabel": "1 listed portion",
+      "calories": 140.0,
+      "fat": 3.0,
+      "carbs": 27.0,
+      "protein": 3.0,
+      "id": "cilantro-lime-rice-ingredient-for-burrito-1-listed-portion"
+    },
+    {
+      "name": "Cilantro Lime Rice, Cup and Burrito Bowl",
+      "servingLabel": "1 listed portion",
+      "calories": 280.0,
+      "fat": 6.0,
+      "carbs": 54.0,
+      "protein": 6.0,
+      "id": "cilantro-lime-rice-cup-and-burrito-bowl-1-listed-portion"
+    },
+    {
+      "name": "Cilantro Lime Rice, Bowl",
+      "servingLabel": "1 listed portion",
+      "calories": 470.0,
+      "fat": 10.0,
+      "carbs": 90.0,
+      "protein": 10.0,
+      "id": "cilantro-lime-rice-bowl-1-listed-portion"
+    },
+    {
+      "name": "Black Beans Jr. Ingredient portion/taco fresh free modifier",
+      "servingLabel": "1 listed portion",
+      "calories": 30.0,
+      "fat": 0.0,
+      "carbs": 6.0,
+      "protein": 2.0,
+      "id": "black-beans-jr-ingredient-portion-taco-fresh-free-modifier-1-listed-portion"
+    },
+    {
+      "name": "Black Beans, Ingredient portion for Burrito, Bowl, Nacho, Quesadilla, Stack",
+      "servingLabel": "1 listed portion",
+      "calories": 60.0,
+      "fat": 0.0,
+      "carbs": 12.0,
+      "protein": 3.0,
+      "id": "black-beans-ingredient-portion-for-burrito-bowl-nacho-quesadilla-stack-1-listed-portion"
+    },
+    {
+      "name": "Black Beans, Cup",
+      "servingLabel": "1 listed portion",
+      "calories": 120.0,
+      "fat": 0.0,
+      "carbs": 24.0,
+      "protein": 6.0,
+      "id": "black-beans-cup-1-listed-portion"
+    },
+    {
+      "name": "Black Beans, Bowl",
+      "servingLabel": "1 listed portion",
+      "calories": 220.0,
+      "fat": 0.0,
+      "carbs": 40.0,
+      "protein": 10.0,
+      "id": "black-beans-bowl-1-listed-portion"
+    },
+    {
+      "name": "Pinto Beans Jr. Ingredient portion/taco fresh free modifier",
+      "servingLabel": "1 listed portion",
+      "calories": 30.0,
+      "fat": 0.0,
+      "carbs": 6.0,
+      "protein": 2.0,
+      "id": "pinto-beans-jr-ingredient-portion-taco-fresh-free-modifier-1-listed-portion"
+    },
+    {
+      "name": "Pinto Beans, Ingredient for Burrito, Bowl, Nacho, Quesadilla, Stack",
+      "servingLabel": "1 listed portion",
+      "calories": 60.0,
+      "fat": 0.0,
+      "carbs": 12.0,
+      "protein": 3.0,
+      "id": "pinto-beans-ingredient-for-burrito-bowl-nacho-quesadilla-stack-1-listed-portion"
+    },
+    {
+      "name": "Pinto Beans, Cup",
+      "servingLabel": "1 listed portion",
+      "calories": 120.0,
+      "fat": 0.0,
+      "carbs": 24.0,
+      "protein": 6.0,
+      "id": "pinto-beans-cup-1-listed-portion"
+    },
+    {
+      "name": "Pinto Beans, Bowl",
+      "servingLabel": "1 listed portion",
+      "calories": 200.0,
+      "fat": 0.0,
+      "carbs": 40.0,
+      "protein": 10.0,
+      "id": "pinto-beans-bowl-1-listed-portion"
+    },
+    {
+      "name": "Grilled Onions and Peppers",
+      "servingLabel": "1 listed portion",
+      "calories": 25.0,
+      "fat": 0.0,
+      "carbs": 5.0,
+      "protein": 1.0,
+      "id": "grilled-onions-and-peppers-1-listed-portion"
+    },
+    {
+      "name": "Roasted Corn Salsa",
+      "servingLabel": "1 listed portion",
+      "calories": 80.0,
+      "fat": 3.5,
+      "carbs": 9.0,
+      "protein": 1.0,
+      "id": "roasted-corn-salsa-1-listed-portion"
+    },
+    {
+      "name": "Oaxaca Cheese",
+      "servingLabel": "1 listed portion",
+      "calories": 130.0,
+      "fat": 9.0,
+      "carbs": 2.0,
+      "protein": 10.0,
+      "id": "oaxaca-cheese-1-listed-portion"
+    },
+    {
+      "name": "New Pico",
+      "servingLabel": "1 listed portion",
+      "calories": 10.0,
+      "fat": 0.0,
+      "carbs": 3.0,
+      "protein": 0.0,
+      "id": "new-pico-1-listed-portion"
+    },
+    {
+      "name": "Guac",
+      "servingLabel": "1 listed portion",
+      "calories": 80.0,
+      "fat": 7.0,
+      "carbs": 5.0,
+      "protein": 1.0,
+      "id": "guac-1-listed-portion"
+    },
+    {
+      "name": "Sour Cream",
+      "servingLabel": "1 listed portion",
+      "calories": 60.0,
+      "fat": 5.0,
+      "carbs": 1.0,
+      "protein": 1.0,
+      "id": "sour-cream-1-listed-portion"
+    },
+    {
+      "name": "Romaine Lettuce",
+      "servingLabel": "1 listed portion",
+      "calories": 5.0,
+      "fat": 0.0,
+      "carbs": 1.0,
+      "protein": 0.0,
+      "id": "romaine-lettuce-1-listed-portion"
+    },
+    {
+      "name": "Onions, Diced",
+      "servingLabel": "1 listed portion",
+      "calories": 10.0,
+      "fat": 0.0,
+      "carbs": 3.0,
+      "protein": 0.0,
+      "id": "onions-diced-1-listed-portion"
+    },
+    {
+      "name": "Jalapenos, Pickled",
+      "servingLabel": "1 listed portion",
+      "calories": 5.0,
+      "fat": 0.0,
+      "carbs": 1.0,
+      "protein": 0.0,
+      "id": "jalapenos-pickled-1-listed-portion"
+    },
+    {
+      "name": "Jalapenos, Fresh",
+      "servingLabel": "1 listed portion",
+      "calories": 10.0,
+      "fat": 0.0,
+      "carbs": 2.0,
+      "protein": 0.0,
+      "id": "jalapenos-fresh-1-listed-portion"
+    },
+    {
+      "name": "Black Olives",
+      "servingLabel": "1 listed portion",
+      "calories": 40.0,
+      "fat": 4.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "black-olives-1-listed-portion"
+    },
+    {
+      "name": "Moe’s Sauce",
+      "servingLabel": "1 listed portion",
+      "calories": 110.0,
+      "fat": 11.0,
+      "carbs": 3.0,
+      "protein": 1.0,
+      "id": "moes-sauce-1-listed-portion"
+    },
+    {
+      "name": "Poblano Crema",
+      "servingLabel": "1 listed portion",
+      "calories": 40.0,
+      "fat": 3.0,
+      "carbs": 2.0,
+      "protein": 1.0,
+      "id": "poblano-crema-1-listed-portion"
+    },
+    {
+      "name": "Chili Lime Sauce",
+      "servingLabel": "1 listed portion",
+      "calories": 100.0,
+      "fat": 9.0,
+      "carbs": 4.0,
+      "protein": 0.0,
+      "id": "chili-lime-sauce-1-listed-portion"
+    },
+    {
+      "name": "Hard Rock",
+      "servingLabel": "1 listed portion",
+      "calories": 10.0,
+      "fat": 0.0,
+      "carbs": 1.0,
+      "protein": 0.0,
+      "id": "hard-rock-1-listed-portion"
+    },
+    {
+      "name": "Chipotle Ranch",
+      "servingLabel": "1 listed portion",
+      "calories": 140.0,
+      "fat": 15.0,
+      "carbs": 2.0,
+      "protein": 1.0,
+      "id": "chipotle-ranch-1-listed-portion"
+    },
+    {
+      "name": "SW Vin",
+      "servingLabel": "1 listed portion",
+      "calories": 130.0,
+      "fat": 13.0,
+      "carbs": 3.0,
+      "protein": 0.0,
+      "id": "sw-vin-1-listed-portion"
+    },
+    {
+      "name": "House-Made Salsa",
+      "servingLabel": "1 listed portion",
+      "calories": 10.0,
+      "fat": 0.0,
+      "carbs": 2.0,
+      "protein": 0.0,
+      "id": "house-made-salsa-1-listed-portion"
+    },
+    {
+      "name": "Tomatillo Salsa",
+      "servingLabel": "1 listed portion",
+      "calories": 10.0,
+      "fat": 0.0,
+      "carbs": 1.0,
+      "protein": 0.0,
+      "id": "tomatillo-salsa-1-listed-portion"
+    },
+    {
+      "name": "12” Flour Tortilla",
+      "servingLabel": "1 listed portion",
+      "calories": 310.0,
+      "fat": 8.0,
+      "carbs": 51.0,
+      "protein": 8.0,
+      "id": "12-flour-tortilla-1-listed-portion"
+    },
+    {
+      "name": "8” Flour Tortilla",
+      "servingLabel": "1 listed portion",
+      "calories": 100.0,
+      "fat": 3.0,
+      "carbs": 17.0,
+      "protein": 2.0,
+      "id": "8-flour-tortilla-1-listed-portion"
+    },
+    {
+      "name": "6” Flour Tortilla",
+      "servingLabel": "1 listed portion",
+      "calories": 70.0,
+      "fat": 2.0,
+      "carbs": 11.0,
+      "protein": 2.0,
+      "id": "6-flour-tortilla-1-listed-portion"
+    },
+    {
+      "name": "6” Crispy Corn Tortilla/Stack Shell",
+      "servingLabel": "1 listed portion",
+      "calories": 40.0,
+      "fat": 3.0,
+      "carbs": 3.0,
+      "protein": 1.0,
+      "id": "6-crispy-corn-tortilla-stack-shell-1-listed-portion"
+    },
+    {
+      "name": "Tortilla Chips",
+      "servingLabel": "1 listed portion",
+      "calories": 140.0,
+      "fat": 7.0,
+      "carbs": 18.0,
+      "protein": 2.0,
+      "id": "tortilla-chips-1-listed-portion"
+    },
+    {
+      "name": "Bacon",
+      "servingLabel": "1 listed portion",
+      "calories": 180.0,
+      "fat": 13.0,
+      "carbs": 0.0,
+      "protein": 17.0,
+      "id": "bacon-1-listed-portion"
+    },
+    {
+      "name": "Potatoes",
+      "servingLabel": "1 listed portion",
+      "calories": 200.0,
+      "fat": 8.0,
+      "carbs": 29.0,
+      "protein": 3.0,
+      "id": "potatoes-1-listed-portion"
+    },
+    {
+      "name": "Chocolate Chunk Cookie",
+      "servingLabel": "1 listed portion",
+      "calories": 170.0,
+      "fat": 8.0,
+      "carbs": 23.0,
+      "protein": 2.0,
+      "id": "chocolate-chunk-cookie-1-listed-portion"
+    },
+    {
+      "name": "Spicy Red Salsa",
+      "servingLabel": "1 listed portion",
+      "calories": 10.0,
+      "fat": 0.0,
+      "carbs": 2.0,
+      "protein": 0.0,
+      "id": "spicy-red-salsa-1-listed-portion"
+    },
+    {
+      "name": "Coca Cola Zero, Kids",
+      "servingLabel": "1 listed portion",
+      "calories": 5.0,
+      "fat": 0.0,
+      "carbs": 1.0,
+      "protein": 0.0,
+      "id": "coca-cola-zero-kids-1-listed-portion"
+    },
+    {
+      "name": "Coca Cola Zero, Regular",
+      "servingLabel": "1 listed portion",
+      "calories": 10.0,
+      "fat": 0.0,
+      "carbs": 1.0,
+      "protein": 0.0,
+      "id": "coca-cola-zero-regular-1-listed-portion"
+    },
+    {
+      "name": "Coca Cola Zero, Large",
+      "servingLabel": "1 listed portion",
+      "calories": 15.0,
+      "fat": 0.0,
+      "carbs": 2.0,
+      "protein": 1.0,
+      "id": "coca-cola-zero-large-1-listed-portion"
+    },
+    {
+      "name": "Sprite, Kids",
+      "servingLabel": "1 listed portion",
+      "calories": 140.0,
+      "fat": 0.0,
+      "carbs": 36.0,
+      "protein": 0.0,
+      "id": "sprite-kids-1-listed-portion"
+    },
+    {
+      "name": "Sprite, Regular",
+      "servingLabel": "1 listed portion",
+      "calories": 180.0,
+      "fat": 0.0,
+      "carbs": 49.0,
+      "protein": 0.0,
+      "id": "sprite-regular-1-listed-portion"
+    },
+    {
+      "name": "Sprite, Large",
+      "servingLabel": "1 listed portion",
+      "calories": 340.0,
+      "fat": 0.0,
+      "carbs": 91.0,
+      "protein": 0.0,
+      "id": "sprite-large-1-listed-portion"
+    },
+    {
+      "name": "Diet Coke, Kids",
+      "servingLabel": "1 listed portion",
+      "calories": 5.0,
+      "fat": 0.0,
+      "carbs": 1.0,
+      "protein": 0.0,
+      "id": "diet-coke-kids-1-listed-portion"
+    },
+    {
+      "name": "Diet Coke, Regular",
+      "servingLabel": "1 listed portion",
+      "calories": 10.0,
+      "fat": 0.0,
+      "carbs": 1.0,
+      "protein": 0.0,
+      "id": "diet-coke-regular-1-listed-portion"
+    },
+    {
+      "name": "Diet Coke, Large",
+      "servingLabel": "1 listed portion",
+      "calories": 15.0,
+      "fat": 0.0,
+      "carbs": 2.0,
+      "protein": 1.0,
+      "id": "diet-coke-large-1-listed-portion"
+    },
+    {
+      "name": "Coca-Cola, Kids",
+      "servingLabel": "1 listed portion",
+      "calories": 140.0,
+      "fat": 0.0,
+      "carbs": 39.0,
+      "protein": 0.0,
+      "id": "coca-cola-kids-1-listed-portion"
+    },
+    {
+      "name": "Coca-Cola, Regular",
+      "servingLabel": "1 listed portion",
+      "calories": 190.0,
+      "fat": 0.0,
+      "carbs": 52.0,
+      "protein": 0.0,
+      "id": "coca-cola-regular-1-listed-portion"
+    },
+    {
+      "name": "Coca-Cola, Large",
+      "servingLabel": "1 listed portion",
+      "calories": 360.0,
+      "fat": 0.0,
+      "carbs": 97.0,
+      "protein": 0.0,
+      "id": "coca-cola-large-1-listed-portion"
+    }
+  ],
+  "sourceDate": "2026"
+}

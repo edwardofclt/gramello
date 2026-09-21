@@ -1,0 +1,1477 @@
+{
+  "chain": "Waffle House",
+  "sourceUrl": "https://www.nutritionix.com/waffle-house/menu/premium",
+  "source": "Nutritionix",
+  "sourceKind": "database",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "id": "nutritionix-597434",
+      "name": "Breakfast All-Start Special, 2 Eggs (add waffle, side & toast)",
+      "calories": 180,
+      "protein": 12,
+      "carbs": 2,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Breakfast All-Star Special; size in item name)"
+    },
+    {
+      "id": "nutritionix-597435",
+      "name": "Breakfast All-Start Special, Classic Waffle",
+      "calories": 410,
+      "protein": 8,
+      "carbs": 55,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Breakfast All-Star Special; size in item name)"
+    },
+    {
+      "id": "nutritionix-597444",
+      "name": "Bacon Egg & Cheese Hashbrown Bowl",
+      "calories": 800,
+      "protein": 30,
+      "carbs": 62,
+      "fat": 48,
+      "servingLabel": "1 listed serving (Breakfast Hashbrown Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-597445",
+      "name": "Ham Egg & Cheese Hashbrown Bowl",
+      "calories": 780,
+      "protein": 40,
+      "carbs": 66,
+      "fat": 39,
+      "servingLabel": "1 listed serving (Breakfast Hashbrown Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-597443",
+      "name": "Sausage Egg & Cheese Hashbrown Bowl",
+      "calories": 920,
+      "protein": 32,
+      "carbs": 63,
+      "fat": 60,
+      "servingLabel": "1 listed serving (Breakfast Hashbrown Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-597446",
+      "name": "2 Egg Breafast, 2 Scrambled Eggs (add side & toast)",
+      "calories": 180,
+      "protein": 12,
+      "carbs": 2,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Egg Breakfasts; size in item name)"
+    },
+    {
+      "id": "nutritionix-597447",
+      "name": "Cheese 'N Eggs, 2 Scrambled Eggs with Cheese (add side & toast)",
+      "calories": 280,
+      "protein": 18,
+      "carbs": 2,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Egg Breakfasts; size in item name)"
+    },
+    {
+      "id": "nutritionix-597451",
+      "name": "Chicken & Eggs, Grilled Chicken and 2 Scrambled Eggs (add side & toast)",
+      "calories": 550,
+      "protein": 46,
+      "carbs": 3,
+      "fat": 39,
+      "servingLabel": "1 listed serving (Egg Breakfasts; size in item name)"
+    },
+    {
+      "id": "nutritionix-597450",
+      "name": "Country Ham & Eggs, Country Ham and 2 Scrambled Eggs (add side & toast)",
+      "calories": 640,
+      "protein": 83,
+      "carbs": 5,
+      "fat": 33,
+      "servingLabel": "1 listed serving (Egg Breakfasts; size in item name)"
+    },
+    {
+      "id": "nutritionix-597452",
+      "name": "Meat Lover's Chicken & Eggs, 2 Pieces of Grilled Chicken and 2 Scrambled Eggs (add side & toast)",
+      "calories": 500,
+      "protein": 54,
+      "carbs": 4,
+      "fat": 31,
+      "servingLabel": "1 listed serving (Egg Breakfasts; size in item name)"
+    },
+    {
+      "id": "nutritionix-597454",
+      "name": "Meat Lover's Pork Chops & Eggs, 3 Grilled Pork Chops and 2 Scrambled Eggs (add side & toast)",
+      "calories": 1230,
+      "protein": 139,
+      "carbs": 3,
+      "fat": 73,
+      "servingLabel": "1 listed serving (Egg Breakfasts; size in item name)"
+    },
+    {
+      "id": "nutritionix-597453",
+      "name": "Pork Chops & Eggs, 2 Grilled Pork Chops and 2 Scrambled Eggs (add side & toast)",
+      "calories": 570,
+      "protein": 57,
+      "carbs": 3,
+      "fat": 37,
+      "servingLabel": "1 listed serving (Egg Breakfasts; size in item name)"
+    },
+    {
+      "id": "nutritionix-597449",
+      "name": "Steak & Eggs, Sirloin Steak and 2 Scrambled Eggs (add side & toast)",
+      "calories": 660,
+      "protein": 59,
+      "carbs": 4,
+      "fat": 46,
+      "servingLabel": "1 listed serving (Egg Breakfasts; size in item name)"
+    },
+    {
+      "id": "nutritionix-597448",
+      "name": "T-Bone & Eggs, T-Bone Steak and 2 Scrambled Eggs (add side & toast)",
+      "calories": 1230,
+      "protein": 139,
+      "carbs": 3,
+      "fat": 73,
+      "servingLabel": "1 listed serving (Egg Breakfasts; size in item name)"
+    },
+    {
+      "id": "nutritionix-597455",
+      "name": "Classic Waffle House Waffle",
+      "calories": 410,
+      "protein": 8,
+      "carbs": 55,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Waffles; size in item name)"
+    },
+    {
+      "id": "nutritionix-597457",
+      "name": "Classic Waffle House Waffle, Add Chocolate Chips",
+      "calories": 110,
+      "protein": 1,
+      "carbs": 16,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Waffles; size in item name)"
+    },
+    {
+      "id": "nutritionix-597458",
+      "name": "Classic Waffle House Waffle, Add Peanut Butter Chips",
+      "calories": 150,
+      "protein": 3,
+      "carbs": 17,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Waffles; size in item name)"
+    },
+    {
+      "id": "nutritionix-597456",
+      "name": "Classic Waffle House Waffle, Add Pecans",
+      "calories": 150,
+      "protein": 2,
+      "carbs": 3,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Waffles; size in item name)"
+    },
+    {
+      "id": "nutritionix-597468",
+      "name": "Hashbrowns, Add Bert's Chili",
+      "calories": 80,
+      "protein": 5,
+      "carbs": 8,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Hashbrowns & Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-597467",
+      "name": "Hashbrowns, Add Grilled Mushrooms",
+      "calories": 20,
+      "protein": 2,
+      "carbs": 3,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Hashbrowns & Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-597465",
+      "name": "Hashbrowns, Add Grilled Tomatoes",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Hashbrowns & Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-597464",
+      "name": "Hashbrowns, Add Hickory Smoked Ham",
+      "calories": 60,
+      "protein": 9,
+      "carbs": 2,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Hashbrowns & Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-597466",
+      "name": "Hashbrowns, Add Jalapeno Peppers",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Hashbrowns & Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-597463",
+      "name": "Hashbrowns, Add Melted American Cheese",
+      "calories": 50,
+      "protein": 3,
+      "carbs": 0,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Hashbrowns & Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-597469",
+      "name": "Hashbrowns, Add Sausage Gravy",
+      "calories": 90,
+      "protein": 1,
+      "carbs": 10,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Hashbrowns & Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-597462",
+      "name": "Hashbrowns, Add Sauteed Onions",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Hashbrowns & Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-597460",
+      "name": "Hashbrowns, Large",
+      "calories": 380,
+      "protein": 5,
+      "carbs": 59,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Hashbrowns & Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-597459",
+      "name": "Hashbrowns, Regular",
+      "calories": 190,
+      "protein": 3,
+      "carbs": 29,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Hashbrowns & Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-597461",
+      "name": "Hashbrowns, Triple",
+      "calories": 570,
+      "protein": 9,
+      "carbs": 87,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Hashbrowns & Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-597470",
+      "name": "Side of Bacon",
+      "calories": 140,
+      "protein": 8,
+      "carbs": 0,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Breakfast Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-597471",
+      "name": "Side of Bacon, Large",
+      "calories": 230,
+      "protein": 13,
+      "carbs": 1,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Breakfast Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-597481",
+      "name": "Side of Bacon Egg & Cheese Grits Bowl",
+      "calories": 330,
+      "protein": 16,
+      "carbs": 17,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Breakfast Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-597476",
+      "name": "Side of Biscuit & Sausage Gravy",
+      "calories": 470,
+      "protein": 6,
+      "carbs": 44,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Breakfast Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-597478",
+      "name": "Side of Cheese Grits",
+      "calories": 140,
+      "protein": 4,
+      "carbs": 16,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Breakfast Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-597474",
+      "name": "Side of City Ham",
+      "calories": 110,
+      "protein": 15,
+      "carbs": 7,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Breakfast Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-597475",
+      "name": "Side of Country Ham",
+      "calories": 210,
+      "protein": 32,
+      "carbs": 0,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Breakfast Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-597439",
+      "name": "Side of Grilled Biscuit",
+      "calories": 380,
+      "protein": 5,
+      "carbs": 34,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Breakfast Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-597477",
+      "name": "Side of Grits",
+      "calories": 90,
+      "protein": 1,
+      "carbs": 16,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Breakfast Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-597482",
+      "name": "Side of Ham Egg & Cheese Grits Bowl",
+      "calories": 290,
+      "protein": 19,
+      "carbs": 19,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Breakfast Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-597441",
+      "name": "Side of Hashbrowns",
+      "calories": 190,
+      "protein": 3,
+      "carbs": 29,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Breakfast Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-597473",
+      "name": "Side of Large Sausage",
+      "calories": 390,
+      "protein": 15,
+      "carbs": 1,
+      "fat": 36,
+      "servingLabel": "1 listed serving (Breakfast Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-597438",
+      "name": "Side of Raisin Toast",
+      "calories": 300,
+      "protein": 6,
+      "carbs": 38,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Breakfast Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-597472",
+      "name": "Side of Sausage",
+      "calories": 260,
+      "protein": 10,
+      "carbs": 1,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Breakfast Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-597480",
+      "name": "Side of Sausage, Egg & Cheese Grits Bowl",
+      "calories": 360,
+      "protein": 15,
+      "carbs": 17,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Breakfast Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-597442",
+      "name": "Side of Sliced Tomatoes",
+      "calories": 10,
+      "protein": 1,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Breakfast Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-597440",
+      "name": "Side of Texas Toast",
+      "calories": 200,
+      "protein": 3,
+      "carbs": 19,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Breakfast Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-597479",
+      "name": "Side of Tomatoes",
+      "calories": 10,
+      "protein": 1,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Breakfast Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-597437",
+      "name": "Side of Wheat Toast",
+      "calories": 220,
+      "protein": 8,
+      "carbs": 22,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Breakfast Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-597436",
+      "name": "Side of White Toast",
+      "calories": 230,
+      "protein": 4,
+      "carbs": 26,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Breakfast Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-597489",
+      "name": "Add American Cheese to Grilled Biscuit",
+      "calories": 50,
+      "protein": 3,
+      "carbs": 0,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Grilled Biscuits; size in item name)"
+    },
+    {
+      "id": "nutritionix-597493",
+      "name": "Add American Cheese to Ham Biscuits",
+      "calories": 100,
+      "protein": 6,
+      "carbs": 0,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Grilled Biscuits; size in item name)"
+    },
+    {
+      "id": "nutritionix-597494",
+      "name": "Add Scrambled Eggs to Ham Biscuits",
+      "calories": 180,
+      "protein": 12,
+      "carbs": 2,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Grilled Biscuits; size in item name)"
+    },
+    {
+      "id": "nutritionix-597490",
+      "name": "Add Scrambled Egg to Grilled Biscuit",
+      "calories": 90,
+      "protein": 6,
+      "carbs": 1,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Grilled Biscuits; size in item name)"
+    },
+    {
+      "id": "nutritionix-597487",
+      "name": "Bacon Biscuit",
+      "calories": 470,
+      "protein": 10,
+      "carbs": 34,
+      "fat": 33,
+      "servingLabel": "1 listed serving (Grilled Biscuits; size in item name)"
+    },
+    {
+      "id": "nutritionix-597485",
+      "name": "Bacon Egg & Cheese Biscuit",
+      "calories": 610,
+      "protein": 19,
+      "carbs": 35,
+      "fat": 44,
+      "servingLabel": "1 listed serving (Grilled Biscuits; size in item name)"
+    },
+    {
+      "id": "nutritionix-597486",
+      "name": "Chicken Biscuit",
+      "calories": 520,
+      "protein": 34,
+      "carbs": 35,
+      "fat": 28,
+      "servingLabel": "1 listed serving (Grilled Biscuits; size in item name)"
+    },
+    {
+      "id": "nutritionix-597492",
+      "name": "City Ham Biscuits (2)",
+      "calories": 870,
+      "protein": 25,
+      "carbs": 75,
+      "fat": 53,
+      "servingLabel": "1 listed serving (Grilled Biscuits; size in item name)"
+    },
+    {
+      "id": "nutritionix-597491",
+      "name": "Country Ham Biscuits (2)",
+      "calories": 970,
+      "protein": 42,
+      "carbs": 68,
+      "fat": 60,
+      "servingLabel": "1 listed serving (Grilled Biscuits; size in item name)"
+    },
+    {
+      "id": "nutritionix-597483",
+      "name": "Grilled Biscuit",
+      "calories": 380,
+      "protein": 5,
+      "carbs": 34,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Grilled Biscuits; size in item name)"
+    },
+    {
+      "id": "nutritionix-597488",
+      "name": "Sausage Biscuit",
+      "calories": 510,
+      "protein": 10,
+      "carbs": 34,
+      "fat": 37,
+      "servingLabel": "1 listed serving (Grilled Biscuits; size in item name)"
+    },
+    {
+      "id": "nutritionix-597484",
+      "name": "Sausage Egg & Cheese Biscuit",
+      "calories": 650,
+      "protein": 19,
+      "carbs": 35,
+      "fat": 48,
+      "servingLabel": "1 listed serving (Grilled Biscuits; size in item name)"
+    },
+    {
+      "id": "nutritionix-597503",
+      "name": "Bacon & Egg Sandwich",
+      "calories": 360,
+      "protein": 18,
+      "carbs": 27,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Breakfast Sandwiches & Melts; size in item name)"
+    },
+    {
+      "id": "nutritionix-597504",
+      "name": "Bacon, Egg & Cheese Sandwich",
+      "calories": 410,
+      "protein": 21,
+      "carbs": 27,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Breakfast Sandwiches & Melts; size in item name)"
+    },
+    {
+      "id": "nutritionix-597502",
+      "name": "Bacon Sandwich",
+      "calories": 270,
+      "protein": 12,
+      "carbs": 26,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Breakfast Sandwiches & Melts; size in item name)"
+    },
+    {
+      "id": "nutritionix-597496",
+      "name": "Egg & Cheese Sandwich",
+      "calories": 270,
+      "protein": 13,
+      "carbs": 27,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Breakfast Sandwiches & Melts; size in item name)"
+    },
+    {
+      "id": "nutritionix-597495",
+      "name": "Egg Sandwich",
+      "calories": 220,
+      "protein": 10,
+      "carbs": 27,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Breakfast Sandwiches & Melts; size in item name)"
+    },
+    {
+      "id": "nutritionix-597506",
+      "name": "Grilled Ham Sandwich",
+      "calories": 240,
+      "protein": 19,
+      "carbs": 33,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Breakfast Sandwiches & Melts; size in item name)"
+    },
+    {
+      "id": "nutritionix-597507",
+      "name": "Ham & Egg Sandwich",
+      "calories": 330,
+      "protein": 25,
+      "carbs": 34,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Breakfast Sandwiches & Melts; size in item name)"
+    },
+    {
+      "id": "nutritionix-597508",
+      "name": "Ham, Egg & Cheese Sandwich",
+      "calories": 380,
+      "protein": 28,
+      "carbs": 34,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Breakfast Sandwiches & Melts; size in item name)"
+    },
+    {
+      "id": "nutritionix-597499",
+      "name": "Sausage & Egg Sandwich",
+      "calories": 480,
+      "protein": 20,
+      "carbs": 28,
+      "fat": 33,
+      "servingLabel": "1 listed serving (Breakfast Sandwiches & Melts; size in item name)"
+    },
+    {
+      "id": "nutritionix-597500",
+      "name": "Sausage, Egg & Cheese Sandwich",
+      "calories": 530,
+      "protein": 23,
+      "carbs": 28,
+      "fat": 37,
+      "servingLabel": "1 listed serving (Breakfast Sandwiches & Melts; size in item name)"
+    },
+    {
+      "id": "nutritionix-597498",
+      "name": "Sausage Sandwich",
+      "calories": 390,
+      "protein": 14,
+      "carbs": 27,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Breakfast Sandwiches & Melts; size in item name)"
+    },
+    {
+      "id": "nutritionix-597505",
+      "name": "Texas Bacon, Egg & Cheese Melt",
+      "calories": 730,
+      "protein": 26,
+      "carbs": 39,
+      "fat": 51,
+      "servingLabel": "1 listed serving (Breakfast Sandwiches & Melts; size in item name)"
+    },
+    {
+      "id": "nutritionix-597497",
+      "name": "Texas Egg & Cheese Melt",
+      "calories": 590,
+      "protein": 18,
+      "carbs": 39,
+      "fat": 39,
+      "servingLabel": "1 listed serving (Breakfast Sandwiches & Melts; size in item name)"
+    },
+    {
+      "id": "nutritionix-597509",
+      "name": "Texas Ham, Egg & Cheese Melt",
+      "calories": 700,
+      "protein": 33,
+      "carbs": 46,
+      "fat": 42,
+      "servingLabel": "1 listed serving (Breakfast Sandwiches & Melts; size in item name)"
+    },
+    {
+      "id": "nutritionix-597501",
+      "name": "Texas Sausage, Egg & Cheese Melt",
+      "calories": 850,
+      "protein": 28,
+      "carbs": 40,
+      "fat": 63,
+      "servingLabel": "1 listed serving (Breakfast Sandwiches & Melts; size in item name)"
+    },
+    {
+      "id": "nutritionix-597511",
+      "name": "Kids 1 Egg Breakfast, 1 Scrambled Egg (add sides & toast)",
+      "calories": 90,
+      "protein": 6,
+      "carbs": 1,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Kids Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-597522",
+      "name": "Kids Cheeseburger with Hashbrowns",
+      "calories": 710,
+      "protein": 17,
+      "carbs": 59,
+      "fat": 44,
+      "servingLabel": "1 listed serving (Kids Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-597523",
+      "name": "Kids Grilled Cheese with Hashbrowns",
+      "calories": 520,
+      "protein": 13,
+      "carbs": 55,
+      "fat": 28,
+      "servingLabel": "1 listed serving (Kids Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-597520",
+      "name": "Kids Side of Bacon",
+      "calories": 90,
+      "protein": 5,
+      "carbs": 0,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Kids Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-597515",
+      "name": "Kids Side of Grilled Biscuit",
+      "calories": 380,
+      "protein": 5,
+      "carbs": 34,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Kids Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-597517",
+      "name": "Kids Side of Grits",
+      "calories": 90,
+      "protein": 1,
+      "carbs": 16,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Kids Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-597518",
+      "name": "Kids Side of Hashbrowns",
+      "calories": 190,
+      "protein": 3,
+      "carbs": 29,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Kids Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-597514",
+      "name": "Kids Side of Raisin Toast",
+      "calories": 300,
+      "protein": 6,
+      "carbs": 38,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Kids Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-597521",
+      "name": "Kids Side of Sausage",
+      "calories": 130,
+      "protein": 5,
+      "carbs": 0,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Kids Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-597519",
+      "name": "Kids Side of Sliced Tomatoes",
+      "calories": 10,
+      "protein": 1,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Kids Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-597516",
+      "name": "Kids Side of Texas Toast",
+      "calories": 200,
+      "protein": 3,
+      "carbs": 19,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Kids Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-597513",
+      "name": "Kids Side of Wheat Toast",
+      "calories": 220,
+      "protein": 8,
+      "carbs": 22,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Kids Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-597512",
+      "name": "Kids Side of White Toast",
+      "calories": 230,
+      "protein": 4,
+      "carbs": 26,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Kids Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-597510",
+      "name": "Kids Waffle (add side)",
+      "calories": 410,
+      "protein": 8,
+      "carbs": 55,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Kids Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-597528",
+      "name": "Toddle House Build Your Own Omelet (add toppings, side & toast)",
+      "calories": 400,
+      "protein": 12,
+      "carbs": 2,
+      "fat": 38,
+      "servingLabel": "1 listed serving (Toddle House Omelet Breakfasts; size in item name)"
+    },
+    {
+      "id": "nutritionix-597529",
+      "name": "Toddle House Build Your Own Omelet, Add Bacon",
+      "calories": 90,
+      "protein": 5,
+      "carbs": 0,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Toddle House Omelet Breakfasts; size in item name)"
+    },
+    {
+      "id": "nutritionix-597532",
+      "name": "Toddle House Build Your Own Omelet, Add Cheesesteak",
+      "calories": 130,
+      "protein": 16,
+      "carbs": 0,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Toddle House Omelet Breakfasts; size in item name)"
+    },
+    {
+      "id": "nutritionix-597531",
+      "name": "Toddle House Build Your Own Omelet, Add Grilled Chicken",
+      "calories": 140,
+      "protein": 29,
+      "carbs": 1,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Toddle House Omelet Breakfasts; size in item name)"
+    },
+    {
+      "id": "nutritionix-597538",
+      "name": "Toddle House Build Your Own Omelet, Add Grilled Mushrooms",
+      "calories": 20,
+      "protein": 2,
+      "carbs": 3,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Toddle House Omelet Breakfasts; size in item name)"
+    },
+    {
+      "id": "nutritionix-597536",
+      "name": "Toddle House Build Your Own Omelet, Add Grilled Tomatoes",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Toddle House Omelet Breakfasts; size in item name)"
+    },
+    {
+      "id": "nutritionix-597535",
+      "name": "Toddle House Build Your Own Omelet, Add Hickory Smoked Ham",
+      "calories": 60,
+      "protein": 9,
+      "carbs": 2,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Toddle House Omelet Breakfasts; size in item name)"
+    },
+    {
+      "id": "nutritionix-597537",
+      "name": "Toddle House Build Your Own Omelet, Add Jalapeno Peppers",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Toddle House Omelet Breakfasts; size in item name)"
+    },
+    {
+      "id": "nutritionix-597534",
+      "name": "Toddle House Build Your Own Omelet, Add Melted American Cheese",
+      "calories": 100,
+      "protein": 5,
+      "carbs": 1,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Toddle House Omelet Breakfasts; size in item name)"
+    },
+    {
+      "id": "nutritionix-597530",
+      "name": "Toddle House Build Your Own Omelet, Add Sausage",
+      "calories": 130,
+      "protein": 5,
+      "carbs": 0,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Toddle House Omelet Breakfasts; size in item name)"
+    },
+    {
+      "id": "nutritionix-597533",
+      "name": "Toddle House Build Your Own Omelet, Add Sauteed Onions",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Toddle House Omelet Breakfasts; size in item name)"
+    },
+    {
+      "id": "nutritionix-597526",
+      "name": "Toddle House Cheesesteak Omelet (add side & toast)",
+      "calories": 630,
+      "protein": 33,
+      "carbs": 3,
+      "fat": 53,
+      "servingLabel": "1 listed serving (Toddle House Omelet Breakfasts; size in item name)"
+    },
+    {
+      "id": "nutritionix-597524",
+      "name": "Toddle House Egg Cheese Omelet (add side & toast)",
+      "calories": 500,
+      "protein": 17,
+      "carbs": 3,
+      "fat": 46,
+      "servingLabel": "1 listed serving (Toddle House Omelet Breakfasts; size in item name)"
+    },
+    {
+      "id": "nutritionix-597525",
+      "name": "Toddle House Egg Ham & Cheese Omelet (add side & toast)",
+      "calories": 560,
+      "protein": 26,
+      "carbs": 5,
+      "fat": 48,
+      "servingLabel": "1 listed serving (Toddle House Omelet Breakfasts; size in item name)"
+    },
+    {
+      "id": "nutritionix-597527",
+      "name": "Toddle House Fiesta Omelet (add side & toast)",
+      "calories": 590,
+      "protein": 26,
+      "carbs": 12,
+      "fat": 48,
+      "servingLabel": "1 listed serving (Toddle House Omelet Breakfasts; size in item name)"
+    },
+    {
+      "id": "nutritionix-597539",
+      "name": "Cheesesteak Melt Hashbrown Bowl",
+      "calories": 630,
+      "protein": 26,
+      "carbs": 63,
+      "fat": 29,
+      "servingLabel": "1 listed serving (Lunch & Dinner Hashbrown Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-597540",
+      "name": "Chicken Melt Hashbrown Bowl",
+      "calories": 640,
+      "protein": 39,
+      "carbs": 64,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Lunch & Dinner Hashbrown Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-597541",
+      "name": "Chicken Dinner",
+      "calories": 570,
+      "protein": 37,
+      "carbs": 56,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Classic Dinners; size in item name)"
+    },
+    {
+      "id": "nutritionix-597543",
+      "name": "Country Ham Dinner",
+      "calories": 640,
+      "protein": 40,
+      "carbs": 55,
+      "fat": 28,
+      "servingLabel": "1 listed serving (Classic Dinners; size in item name)"
+    },
+    {
+      "id": "nutritionix-597542",
+      "name": "Meat Lovers Chicken Dinner",
+      "calories": 710,
+      "protein": 66,
+      "carbs": 57,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Classic Dinners; size in item name)"
+    },
+    {
+      "id": "nutritionix-597545",
+      "name": "Meat Lovers Pork Chop Dinner",
+      "calories": 1300,
+      "protein": 122,
+      "carbs": 55,
+      "fat": 64,
+      "servingLabel": "1 listed serving (Classic Dinners; size in item name)"
+    },
+    {
+      "id": "nutritionix-597544",
+      "name": "Pork Chop Dinner",
+      "calories": 1010,
+      "protein": 84,
+      "carbs": 55,
+      "fat": 49,
+      "servingLabel": "1 listed serving (Classic Dinners; size in item name)"
+    },
+    {
+      "id": "nutritionix-597547",
+      "name": "Sirloin Dinner",
+      "calories": 620,
+      "protein": 29,
+      "carbs": 55,
+      "fat": 30,
+      "servingLabel": "1 listed serving (USDA Choice Steak Dinners; size in item name)"
+    },
+    {
+      "id": "nutritionix-597546",
+      "name": "T-Bone Dinner",
+      "calories": 730,
+      "protein": 42,
+      "carbs": 56,
+      "fat": 37,
+      "servingLabel": "1 listed serving (USDA Choice Steak Dinners; size in item name)"
+    },
+    {
+      "id": "nutritionix-597551",
+      "name": "Add Bacon to Texas Melt",
+      "calories": 90,
+      "protein": 5,
+      "carbs": 0,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Texas Melts; size in item name)"
+    },
+    {
+      "id": "nutritionix-597550",
+      "name": "Texas Angus Patty Melt",
+      "calories": 730,
+      "protein": 26,
+      "carbs": 42,
+      "fat": 50,
+      "servingLabel": "1 listed serving (Texas Melts; size in item name)"
+    },
+    {
+      "id": "nutritionix-597549",
+      "name": "Texas Cheesesteak Melt",
+      "calories": 650,
+      "protein": 28,
+      "carbs": 42,
+      "fat": 40,
+      "servingLabel": "1 listed serving (Texas Melts; size in item name)"
+    },
+    {
+      "id": "nutritionix-597548",
+      "name": "Texas Grilled Chicken Melt",
+      "calories": 660,
+      "protein": 41,
+      "carbs": 43,
+      "fat": 35,
+      "servingLabel": "1 listed serving (Texas Melts; size in item name)"
+    },
+    {
+      "id": "nutritionix-597554",
+      "name": "Bert's Chili as a Topping",
+      "calories": 80,
+      "protein": 5,
+      "carbs": 8,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Bert's Chili; size in item name)"
+    },
+    {
+      "id": "nutritionix-597553",
+      "name": "Large Bert's Chili",
+      "calories": 230,
+      "protein": 15,
+      "carbs": 23,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Bert's Chili; size in item name)"
+    },
+    {
+      "id": "nutritionix-597552",
+      "name": "Regular Bert's Chili",
+      "calories": 150,
+      "protein": 10,
+      "carbs": 15,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Bert's Chili; size in item name)"
+    },
+    {
+      "id": "nutritionix-597560",
+      "name": "\"Original\" Angus Cheeseburger",
+      "calories": 520,
+      "protein": 14,
+      "carbs": 30,
+      "fat": 37,
+      "servingLabel": "1 listed serving (100% Angus Beef Hamburgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-597559",
+      "name": "\"Original\" Angus Hamburger",
+      "calories": 470,
+      "protein": 11,
+      "carbs": 30,
+      "fat": 33,
+      "servingLabel": "1 listed serving (100% Angus Beef Hamburgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-597558",
+      "name": "Add Bacon",
+      "calories": 90,
+      "protein": 5,
+      "carbs": 0,
+      "fat": 8,
+      "servingLabel": "1 listed serving (100% Angus Beef Hamburgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-597556",
+      "name": "Angus 1/4 lb Cheeseburger Deluxe",
+      "calories": 620,
+      "protein": 22,
+      "carbs": 29,
+      "fat": 45,
+      "servingLabel": "1 listed serving (100% Angus Beef Hamburgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-597555",
+      "name": "Angus 1/4 lb Hamburger Deluxe",
+      "calories": 560,
+      "protein": 19,
+      "carbs": 27,
+      "fat": 41,
+      "servingLabel": "1 listed serving (100% Angus Beef Hamburgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-597562",
+      "name": "Double \"Original\" Angus Cheeseburger",
+      "calories": 630,
+      "protein": 21,
+      "carbs": 30,
+      "fat": 46,
+      "servingLabel": "1 listed serving (100% Angus Beef Hamburgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-597561",
+      "name": "Double \"Original\" Angus Hamburger",
+      "calories": 580,
+      "protein": 18,
+      "carbs": 30,
+      "fat": 42,
+      "servingLabel": "1 listed serving (100% Angus Beef Hamburgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-597557",
+      "name": "Double Angus 1/4 lb Cheeseburger Deluxe",
+      "calories": 890,
+      "protein": 40,
+      "carbs": 29,
+      "fat": 66,
+      "servingLabel": "1 listed serving (100% Angus Beef Hamburgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-597568",
+      "name": "BLT Sandwich",
+      "calories": 280,
+      "protein": 12,
+      "carbs": 27,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-597565",
+      "name": "Grilled Cheese Sandwich",
+      "calories": 330,
+      "protein": 10,
+      "carbs": 26,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-597564",
+      "name": "Grilled Chicken Bacon Cheese Sandwich Deluxe",
+      "calories": 630,
+      "protein": 41,
+      "carbs": 30,
+      "fat": 39,
+      "servingLabel": "1 listed serving (Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-597563",
+      "name": "Grilled Chicken Sandwich Deluxe",
+      "calories": 490,
+      "protein": 33,
+      "carbs": 30,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-597567",
+      "name": "Ham & Cheese Sandwich",
+      "calories": 300,
+      "protein": 22,
+      "carbs": 34,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-597569",
+      "name": "Texas Bacon Lover's BLT Sandwich",
+      "calories": 640,
+      "protein": 19,
+      "carbs": 39,
+      "fat": 44,
+      "servingLabel": "1 listed serving (Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-597566",
+      "name": "Waffle Sandwich (Ham and Cheese on Wheat)",
+      "calories": 380,
+      "protein": 26,
+      "carbs": 29,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-597570",
+      "name": "Southern Pecan Pie, Regular Slice",
+      "calories": 520,
+      "protein": 4,
+      "carbs": 65,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Pies; size in item name)"
+    },
+    {
+      "id": "nutritionix-597571",
+      "name": "Southern Pecan Pie, Small Slice",
+      "calories": 260,
+      "protein": 2,
+      "carbs": 32,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Pies; size in item name)"
+    },
+    {
+      "id": "nutritionix-597572",
+      "name": "Triple Chocolate Pie, Regular Slice",
+      "calories": 880,
+      "protein": 8,
+      "carbs": 120,
+      "fat": 42,
+      "servingLabel": "1 listed serving (Pies; size in item name)"
+    },
+    {
+      "id": "nutritionix-597573",
+      "name": "Triple Chocolate Pie, Small Slice",
+      "calories": 440,
+      "protein": 4,
+      "carbs": 60,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Pies; size in item name)"
+    },
+    {
+      "id": "nutritionix-597574",
+      "name": "Garden Salad",
+      "calories": 35,
+      "protein": 2,
+      "carbs": 7,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-597575",
+      "name": "Grilled Chicken Salad",
+      "calories": 180,
+      "protein": 31,
+      "carbs": 8,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-597587",
+      "name": "Alice's Iced Tea, Sweet",
+      "calories": 70,
+      "protein": 0,
+      "carbs": 17,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-597588",
+      "name": "Alice's Iced Tea-Monade",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 36,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-597592",
+      "name": "Apple Juice, Large",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 46,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-597591",
+      "name": "Apple Juice, Regular",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 23,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-597583",
+      "name": "Barq's Root Beer",
+      "calories": 180,
+      "protein": 0,
+      "carbs": 50,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-597595",
+      "name": "Chocolate Milk, Large",
+      "calories": 440,
+      "protein": 16,
+      "carbs": 58,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-597596",
+      "name": "Chocolate Milk, Regular",
+      "calories": 230,
+      "protein": 9,
+      "carbs": 31,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-597579",
+      "name": "Coca-Cola",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 44,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-597576",
+      "name": "Coffee",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-597577",
+      "name": "Dark Roast Coffee",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-597578",
+      "name": "Decaf Coffee",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-597580",
+      "name": "Diet Coke",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-597584",
+      "name": "Hi-C Fruit Punch",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 46,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-597597",
+      "name": "Hot Tea",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-597594",
+      "name": "Milk, Large",
+      "calories": 250,
+      "protein": 16,
+      "carbs": 24,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-597593",
+      "name": "Milk, Regular",
+      "calories": 130,
+      "protein": 9,
+      "carbs": 13,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-597585",
+      "name": "Minute Maid Classic Style Lemonade",
+      "calories": 210,
+      "protein": 0,
+      "carbs": 56,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-597590",
+      "name": "Minute Maid Orange Juice, Large",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 28,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-597589",
+      "name": "Minute Maid Orange Juice, Regular",
+      "calories": 230,
+      "protein": 0,
+      "carbs": 53,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-597582",
+      "name": "Pibb-Xtra",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 42,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-597581",
+      "name": "Sprite",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 42,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    }
+  ],
+  "sourceDate": "2025-09-29"
+}

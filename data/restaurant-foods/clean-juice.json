@@ -1,0 +1,991 @@
+{
+  "chain": "Clean Juice",
+  "sourceUrl": "https://www.nutritionix.com/clean-juice/menu/premium",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "name": "Fresh Juice, The Celery One",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 50.0,
+      "fat": 0.0,
+      "carbs": 13.0,
+      "protein": 2.0,
+      "id": "fresh-juice-the-celery-one-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Fresh Juice, The Detoxifying One",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 160.0,
+      "fat": 1.0,
+      "carbs": 38.0,
+      "protein": 3.0,
+      "id": "fresh-juice-the-detoxifying-one-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Fresh Juice, The Energy One",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 160.0,
+      "fat": 1.0,
+      "carbs": 37.0,
+      "protein": 3.0,
+      "id": "fresh-juice-the-energy-one-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Fresh Juice, The Glow One",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 140.0,
+      "fat": 1.0,
+      "carbs": 31.0,
+      "protein": 4.0,
+      "id": "fresh-juice-the-glow-one-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Fresh Juice, The Hardcore One",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 70.0,
+      "fat": 1.0,
+      "carbs": 16.0,
+      "protein": 3.0,
+      "id": "fresh-juice-the-hardcore-one-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Fresh Juice, The Immunity One",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 160.0,
+      "fat": 1.0,
+      "carbs": 39.0,
+      "protein": 3.0,
+      "id": "fresh-juice-the-immunity-one-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Fresh Juice, The Protection One",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 120.0,
+      "fat": 1.0,
+      "carbs": 30.0,
+      "protein": 2.0,
+      "id": "fresh-juice-the-protection-one-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Fresh Juice, The Wake Up One",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 160.0,
+      "fat": 1.0,
+      "carbs": 37.0,
+      "protein": 3.0,
+      "id": "fresh-juice-the-wake-up-one-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids, The Kids Cheesy Wrap",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 390.0,
+      "fat": 20.0,
+      "carbs": 39.0,
+      "protein": 15.0,
+      "id": "kids-the-kids-cheesy-wrap-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids, The Slushie One",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 100.0,
+      "fat": 0.0,
+      "carbs": 25.0,
+      "protein": 1.0,
+      "id": "kids-the-slushie-one-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids, The Strawberry Banana One",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 120.0,
+      "fat": 3.0,
+      "carbs": 34.0,
+      "protein": 1.0,
+      "id": "kids-the-strawberry-banana-one-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids, The Wild One",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 190.0,
+      "fat": 7.0,
+      "carbs": 31.0,
+      "protein": 4.0,
+      "id": "kids-the-wild-one-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids, The Young One",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 170.0,
+      "fat": 0.0,
+      "carbs": 43.0,
+      "protein": 2.0,
+      "id": "kids-the-young-one-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Coffee One Smoothie, 16 oz",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 170.0,
+      "fat": 4.0,
+      "carbs": 33.0,
+      "protein": 4.0,
+      "id": "the-coffee-one-smoothie-16-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Coffee One Smoothie, 24 oz",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 290.0,
+      "fat": 8.0,
+      "carbs": 54.0,
+      "protein": 6.0,
+      "id": "the-coffee-one-smoothie-24-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Healthy Heart One Smoothie, 16 oz",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 270.0,
+      "fat": 16.0,
+      "carbs": 34.0,
+      "protein": 4.0,
+      "id": "the-healthy-heart-one-smoothie-16-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Healthy Heart One Smoothie, 24 oz",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 350.0,
+      "fat": 23.0,
+      "carbs": 38.0,
+      "protein": 6.0,
+      "id": "the-healthy-heart-one-smoothie-24-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Longevity One Smoothie, 16 oz",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 170.0,
+      "fat": 0.0,
+      "carbs": 41.0,
+      "protein": 1.0,
+      "id": "the-longevity-one-smoothie-16-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Longevity One Smoothie, 24 oz",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 200.0,
+      "fat": 0.0,
+      "carbs": 49.0,
+      "protein": 1.0,
+      "id": "the-longevity-one-smoothie-24-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Peanut Butter One Smoothie, 16 oz",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 370.0,
+      "fat": 8.0,
+      "carbs": 67.0,
+      "protein": 8.0,
+      "id": "the-peanut-butter-one-smoothie-16-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Peanut Butter One Smoothie, 24 oz",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 490.0,
+      "fat": 13.0,
+      "carbs": 86.0,
+      "protein": 14.0,
+      "id": "the-peanut-butter-one-smoothie-24-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The So Basic One Smoothie, 16 oz",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 260.0,
+      "fat": 7.0,
+      "carbs": 50.0,
+      "protein": 5.0,
+      "id": "the-so-basic-one-smoothie-16-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The So Basic One Smoothie, 24 oz",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 370.0,
+      "fat": 10.0,
+      "carbs": 68.0,
+      "protein": 8.0,
+      "id": "the-so-basic-one-smoothie-24-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Tropical One Smoothie, 16 oz",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 270.0,
+      "fat": 14.0,
+      "carbs": 55.0,
+      "protein": 3.0,
+      "id": "the-tropical-one-smoothie-16-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Tropical One Smoothie, 24 oz",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 350.0,
+      "fat": 14.0,
+      "carbs": 76.0,
+      "protein": 4.0,
+      "id": "the-tropical-one-smoothie-24-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Chocolate One Smoothie, Whey, 16 oz",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 320.0,
+      "fat": 9.0,
+      "carbs": 47.0,
+      "protein": 20.0,
+      "id": "the-chocolate-one-smoothie-whey-16-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Chocolate One Smoothie, Whey, 24 oz",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 430.0,
+      "fat": 13.0,
+      "carbs": 63.0,
+      "protein": 24.0,
+      "id": "the-chocolate-one-smoothie-whey-24-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Creamsicle One Smoothie, Whey, 16 oz",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 330.0,
+      "fat": 3.0,
+      "carbs": 65.0,
+      "protein": 16.0,
+      "id": "the-creamsicle-one-smoothie-whey-16-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Creamsicle One Smoothie, Whey, 24 oz",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 400.0,
+      "fat": 3.0,
+      "carbs": 84.0,
+      "protein": 17.0,
+      "id": "the-creamsicle-one-smoothie-whey-24-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Double One Smoothie, Whey, 16 oz",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 290.0,
+      "fat": 7.0,
+      "carbs": 42.0,
+      "protein": 18.0,
+      "id": "the-double-one-smoothie-whey-16-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Double One Smoothie, Whey, 24 oz",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 370.0,
+      "fat": 11.0,
+      "carbs": 55.0,
+      "protein": 20.0,
+      "id": "the-double-one-smoothie-whey-24-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Intense One Smoothie, Whey, 16 oz",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 290.0,
+      "fat": 11.0,
+      "carbs": 34.0,
+      "protein": 17.0,
+      "id": "the-intense-one-smoothie-whey-16-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Intense One Smoothie, Whey, 24 oz",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 470.0,
+      "fat": 15.0,
+      "carbs": 77.0,
+      "protein": 19.0,
+      "id": "the-intense-one-smoothie-whey-24-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Recovery One Smoothie, Whey, 16 oz",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 340.0,
+      "fat": 8.0,
+      "carbs": 56.0,
+      "protein": 18.0,
+      "id": "the-recovery-one-smoothie-whey-16-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Recovery One Smoothie, Whey, 24 oz",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 450.0,
+      "fat": 12.0,
+      "carbs": 74.0,
+      "protein": 21.0,
+      "id": "the-recovery-one-smoothie-whey-24-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Youthful One Smoothie, Whey, 16 oz",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 360.0,
+      "fat": 19.0,
+      "carbs": 56.0,
+      "protein": 17.0,
+      "id": "the-youthful-one-smoothie-whey-16-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Youthful One Smoothie, Whey, 24 oz",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 480.0,
+      "fat": 20.0,
+      "carbs": 86.0,
+      "protein": 19.0,
+      "id": "the-youthful-one-smoothie-whey-24-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Chocolate One Smoothie, Hemp, 16 oz",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 320.0,
+      "fat": 10.0,
+      "carbs": 47.0,
+      "protein": 16.0,
+      "id": "the-chocolate-one-smoothie-hemp-16-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Chocolate One Smoothie, Hemp, 24 oz",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 420.0,
+      "fat": 14.0,
+      "carbs": 63.0,
+      "protein": 20.0,
+      "id": "the-chocolate-one-smoothie-hemp-24-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Creamsicle One Smoothie, Hemp, 16 oz",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 320.0,
+      "fat": 4.0,
+      "carbs": 65.0,
+      "protein": 13.0,
+      "id": "the-creamsicle-one-smoothie-hemp-16-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Creamsicle One Smoothie, Hemp, 24 oz",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 400.0,
+      "fat": 4.0,
+      "carbs": 84.0,
+      "protein": 14.0,
+      "id": "the-creamsicle-one-smoothie-hemp-24-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Double One Smoothie, Hemp, 16 oz",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 280.0,
+      "fat": 8.0,
+      "carbs": 42.0,
+      "protein": 14.0,
+      "id": "the-double-one-smoothie-hemp-16-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Double One Smoothie, Hemp, 24 oz",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 370.0,
+      "fat": 12.0,
+      "carbs": 55.0,
+      "protein": 16.0,
+      "id": "the-double-one-smoothie-hemp-24-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Intense One Smoothie, Hemp, 16 oz",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 280.0,
+      "fat": 12.0,
+      "carbs": 34.0,
+      "protein": 14.0,
+      "id": "the-intense-one-smoothie-hemp-16-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Intense One Smoothie, Hemp, 24 oz",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 470.0,
+      "fat": 16.0,
+      "carbs": 77.0,
+      "protein": 15.0,
+      "id": "the-intense-one-smoothie-hemp-24-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Recovery One Smoothie, Hemp, 16 oz",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 340.0,
+      "fat": 9.0,
+      "carbs": 56.0,
+      "protein": 14.0,
+      "id": "the-recovery-one-smoothie-hemp-16-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Recovery One Smoothie, Hemp, 24 oz",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 440.0,
+      "fat": 12.0,
+      "carbs": 74.0,
+      "protein": 17.0,
+      "id": "the-recovery-one-smoothie-hemp-24-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Youthful One Smoothie, Hemp, 16 oz",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 350.0,
+      "fat": 20.0,
+      "carbs": 56.0,
+      "protein": 13.0,
+      "id": "the-youthful-one-smoothie-hemp-16-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Youthful One Smoothie, Hemp, 24 oz",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 480.0,
+      "fat": 21.0,
+      "carbs": 86.0,
+      "protein": 16.0,
+      "id": "the-youthful-one-smoothie-hemp-24-oz-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Beach Bowl",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 490.0,
+      "fat": 28.0,
+      "carbs": 78.0,
+      "protein": 4.0,
+      "id": "the-beach-bowl-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Berry Bowl",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 540.0,
+      "fat": 11.0,
+      "carbs": 108.0,
+      "protein": 6.0,
+      "id": "the-berry-bowl-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Cold-Brew Bowl",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 450.0,
+      "fat": 13.0,
+      "carbs": 77.0,
+      "protein": 7.0,
+      "id": "the-cold-brew-bowl-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Dragon Fruit Bowl",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 540.0,
+      "fat": 28.0,
+      "carbs": 84.0,
+      "protein": 6.0,
+      "id": "the-dragon-fruit-bowl-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Green Bowl",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 500.0,
+      "fat": 11.0,
+      "carbs": 97.0,
+      "protein": 5.0,
+      "id": "the-green-bowl-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Nutty Bowl",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 560.0,
+      "fat": 15.0,
+      "carbs": 104.0,
+      "protein": 9.0,
+      "id": "the-nutty-bowl-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Balanced Bowl Salad",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 350.0,
+      "fat": 25.0,
+      "carbs": 22.0,
+      "protein": 18.0,
+      "id": "the-balanced-bowl-salad-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Protein Bowl Salad",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 360.0,
+      "fat": 30.0,
+      "carbs": 13.0,
+      "protein": 21.0,
+      "id": "the-protein-bowl-salad-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Yummus Bowl Salad",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 410.0,
+      "fat": 29.0,
+      "carbs": 40.0,
+      "protein": 14.0,
+      "id": "the-yummus-bowl-salad-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The BBQ Wrap",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 460.0,
+      "fat": 18.0,
+      "carbs": 57.0,
+      "protein": 25.0,
+      "id": "the-bbq-wrap-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Breakfast Wrap",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 620.0,
+      "fat": 40.0,
+      "carbs": 46.0,
+      "protein": 22.0,
+      "id": "the-breakfast-wrap-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Cali Wrap",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 430.0,
+      "fat": 18.0,
+      "carbs": 43.0,
+      "protein": 25.0,
+      "id": "the-cali-wrap-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Sweet & Savory Wrap",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 620.0,
+      "fat": 30.0,
+      "carbs": 64.0,
+      "protein": 27.0,
+      "id": "the-sweet-savory-wrap-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Veggie Wrap",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 430.0,
+      "fat": 25.0,
+      "carbs": 51.0,
+      "protein": 7.0,
+      "id": "the-veggie-wrap-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Buffalo Chicken Sandwich, Gluten-Free",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 440.0,
+      "fat": 21.0,
+      "carbs": 43.0,
+      "protein": 25.0,
+      "id": "the-buffalo-chicken-sandwich-gluten-free-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Buffalo Chicken Sandwich, Sourdough",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 520.0,
+      "fat": 20.0,
+      "carbs": 57.0,
+      "protein": 33.0,
+      "id": "the-buffalo-chicken-sandwich-sourdough-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Buffalo Chicken Sandwich, Sprouted Grain",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 420.0,
+      "fat": 23.0,
+      "carbs": 45.0,
+      "protein": 33.0,
+      "id": "the-buffalo-chicken-sandwich-sprouted-grain-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Cali Sandwich, Gluten-Free",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 480.0,
+      "fat": 24.0,
+      "carbs": 49.0,
+      "protein": 23.0,
+      "id": "the-cali-sandwich-gluten-free-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Cali Sandwich, Sourdough",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 560.0,
+      "fat": 20.0,
+      "carbs": 67.0,
+      "protein": 30.0,
+      "id": "the-cali-sandwich-sourdough-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Cali Sandwich, Sprouted Grain",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 540.0,
+      "fat": 26.0,
+      "carbs": 51.0,
+      "protein": 31.0,
+      "id": "the-cali-sandwich-sprouted-grain-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Chicken Pesto Sandwich, Gluten-Free",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 480.0,
+      "fat": 21.0,
+      "carbs": 53.0,
+      "protein": 22.0,
+      "id": "the-chicken-pesto-sandwich-gluten-free-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Chicken Pesto Sandwich, Sourdough",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 560.0,
+      "fat": 20.0,
+      "carbs": 67.0,
+      "protein": 30.0,
+      "id": "the-chicken-pesto-sandwich-sourdough-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Chicken Pesto Sandwich, Sprouted Grain",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 540.0,
+      "fat": 23.0,
+      "carbs": 55.0,
+      "protein": 30.0,
+      "id": "the-chicken-pesto-sandwich-sprouted-grain-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Egg Salad Sandwich, Gluten-Free",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 390.0,
+      "fat": 21.0,
+      "carbs": 47.0,
+      "protein": 13.0,
+      "id": "the-egg-salad-sandwich-gluten-free-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Egg Salad Sandwich, Sourdough",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 470.0,
+      "fat": 20.0,
+      "carbs": 61.0,
+      "protein": 21.0,
+      "id": "the-egg-salad-sandwich-sourdough-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Egg Salad Sandwich, Sprouted Grain",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 450.0,
+      "fat": 23.0,
+      "carbs": 49.0,
+      "protein": 21.0,
+      "id": "the-egg-salad-sandwich-sprouted-grain-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Ultimate Grilled Cheese, Gluten-Free",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 430.0,
+      "fat": 20.0,
+      "carbs": 46.0,
+      "protein": 13.0,
+      "id": "the-ultimate-grilled-cheese-gluten-free-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Ultimate Grilled Cheese, Sourdough",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 470.0,
+      "fat": 19.0,
+      "carbs": 60.0,
+      "protein": 21.0,
+      "id": "the-ultimate-grilled-cheese-sourdough-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Ultimate Grilled Cheese, Sprouted Grain",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 480.0,
+      "fat": 25.0,
+      "carbs": 47.0,
+      "protein": 25.0,
+      "id": "the-ultimate-grilled-cheese-sprouted-grain-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Avocado Toast, Gluten-Free",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 350.0,
+      "fat": 19.0,
+      "carbs": 46.0,
+      "protein": 3.0,
+      "id": "the-avocado-toast-gluten-free-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Avocado Toast, Sprouted Grain",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 280.0,
+      "fat": 18.0,
+      "carbs": 27.0,
+      "protein": 6.0,
+      "id": "the-avocado-toast-sprouted-grain-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Hummus Toast, Gluten-Free",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 360.0,
+      "fat": 17.0,
+      "carbs": 49.0,
+      "protein": 10.0,
+      "id": "the-hummus-toast-gluten-free-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Hummus Toast, Sprouted Grain",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 250.0,
+      "fat": 14.0,
+      "carbs": 27.0,
+      "protein": 12.0,
+      "id": "the-hummus-toast-sprouted-grain-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Loaded Avocado Toast, Gluten-Free",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 400.0,
+      "fat": 24.0,
+      "carbs": 50.0,
+      "protein": 7.0,
+      "id": "the-loaded-avocado-toast-gluten-free-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Loaded Avocado Toast, Sprouted Grain",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 330.0,
+      "fat": 23.0,
+      "carbs": 31.0,
+      "protein": 10.0,
+      "id": "the-loaded-avocado-toast-sprouted-grain-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Peanut Butter Toast, Gluten-Free",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 540.0,
+      "fat": 22.0,
+      "carbs": 76.0,
+      "protein": 12.0,
+      "id": "the-peanut-butter-toast-gluten-free-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Peanut Butter Toast, Sprouted Grain",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 470.0,
+      "fat": 21.0,
+      "carbs": 57.0,
+      "protein": 15.0,
+      "id": "the-peanut-butter-toast-sprouted-grain-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Protein Toast, Gluten-Free",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 430.0,
+      "fat": 24.0,
+      "carbs": 47.0,
+      "protein": 9.0,
+      "id": "the-protein-toast-gluten-free-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Protein Toast, Sprouted Grain",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 360.0,
+      "fat": 23.0,
+      "carbs": 28.0,
+      "protein": 12.0,
+      "id": "the-protein-toast-sprouted-grain-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Refresher, The Cucumber Pineapple One",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 180.0,
+      "fat": 0.0,
+      "carbs": 46.0,
+      "protein": 1.0,
+      "id": "refresher-the-cucumber-pineapple-one-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Refresher, The Dragonfruit Lemonade One",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 220.0,
+      "fat": 0.0,
+      "carbs": 55.0,
+      "protein": 2.0,
+      "id": "refresher-the-dragonfruit-lemonade-one-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Refresher, The Immunity One 2.0",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 180.0,
+      "fat": 1.0,
+      "carbs": 44.0,
+      "protein": 3.0,
+      "id": "refresher-the-immunity-one-2-0-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Cold-Pressed Juice, Blue",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 70.0,
+      "fat": 0.0,
+      "carbs": 19.0,
+      "protein": 0.0,
+      "id": "cold-pressed-juice-blue-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Cold-Pressed Juice, Green",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 6.0,
+      "protein": 0.0,
+      "id": "cold-pressed-juice-green-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Cold-Pressed Juice, Kiwi Green",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 140.0,
+      "fat": 0.0,
+      "carbs": 36.0,
+      "protein": 1.0,
+      "id": "cold-pressed-juice-kiwi-green-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Cold-Pressed Juice, Orange",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 130.0,
+      "fat": 0.0,
+      "carbs": 32.0,
+      "protein": 2.0,
+      "id": "cold-pressed-juice-orange-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Cold-Pressed Juice, Pink",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 60.0,
+      "fat": 0.0,
+      "carbs": 16.0,
+      "protein": 0.0,
+      "id": "cold-pressed-juice-pink-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Cold-Pressed Juice, Red",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 130.0,
+      "fat": 0.0,
+      "carbs": 33.0,
+      "protein": 2.0,
+      "id": "cold-pressed-juice-red-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Cold-Pressed Juice, Spicy Peach",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 170.0,
+      "fat": 0.0,
+      "carbs": 45.0,
+      "protein": 1.0,
+      "id": "cold-pressed-juice-spicy-peach-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Cold-Pressed Juice, Sweet Green",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 90.0,
+      "fat": 0.0,
+      "carbs": 22.0,
+      "protein": 1.0,
+      "id": "cold-pressed-juice-sweet-green-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Cold-Pressed Juice, Yellow",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 30.0,
+      "fat": 0.0,
+      "carbs": 7.0,
+      "protein": 0.0,
+      "id": "cold-pressed-juice-yellow-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Wellness Shot, ACV",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 30.0,
+      "fat": 0.0,
+      "carbs": 6.0,
+      "protein": 0.0,
+      "id": "wellness-shot-acv-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Wellness Shot, Elderberry",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 6.0,
+      "protein": 1.0,
+      "id": "wellness-shot-elderberry-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Wellness Shot, Hot Shot",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 20.0,
+      "fat": 0.0,
+      "carbs": 6.0,
+      "protein": 1.0,
+      "id": "wellness-shot-hot-shot-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Wellness Shot, Immune Booster",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 20.0,
+      "fat": 0.0,
+      "carbs": 5.0,
+      "protein": 0.0,
+      "id": "wellness-shot-immune-booster-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Wellness Shot, Wheatgrass",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 10.0,
+      "fat": 0.0,
+      "carbs": 1.0,
+      "protein": 1.0,
+      "id": "wellness-shot-wheatgrass-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Wellness Shot, Workout",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 30.0,
+      "fat": 0.0,
+      "carbs": 8.0,
+      "protein": 0.0,
+      "id": "wellness-shot-workout-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Cashew Milk, Cacao",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 310.0,
+      "fat": 20.0,
+      "carbs": 30.0,
+      "protein": 7.0,
+      "id": "cashew-milk-cacao-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Cashew Milk, White",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 310.0,
+      "fat": 20.0,
+      "carbs": 28.0,
+      "protein": 7.0,
+      "id": "cashew-milk-white-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Cashew Milk Latte",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 210.0,
+      "fat": 13.0,
+      "carbs": 21.0,
+      "protein": 5.0,
+      "id": "cashew-milk-latte-1-menu-serving-size-in-name"
+    }
+  ],
+  "source": "Nutritionix",
+  "sourceKind": "database",
+  "sourceDate": "2024-08-05"
+}

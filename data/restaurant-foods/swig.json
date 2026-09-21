@@ -1,0 +1,2233 @@
+{
+  "chain": "Swig",
+  "sourceUrl": "https://www.nutritionix.com/swig/menu/premium",
+  "source": "Nutritionix",
+  "sourceKind": "database",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "id": "nutritionix-1152020",
+      "name": "Beach Babe Soda, 12 fl oz",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 39,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152021",
+      "name": "Beach Babe Soda, 16 fl oz",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 49,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152022",
+      "name": "Beach Babe Soda, 24 fl oz",
+      "calories": 300,
+      "protein": 0,
+      "carbs": 74,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152023",
+      "name": "Beach Babe Soda, 32 fl oz",
+      "calories": 410,
+      "protein": 0,
+      "carbs": 101,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152024",
+      "name": "Beach Babe Soda, 44 fl oz",
+      "calories": 570,
+      "protein": 0,
+      "carbs": 140,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151990",
+      "name": "Big Al Soda, 12 fl oz",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151991",
+      "name": "Big Al Soda, 16 fl oz",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151992",
+      "name": "Big Al Soda, 24 fl oz",
+      "calories": 20,
+      "protein": 0,
+      "carbs": 6,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151993",
+      "name": "Big Al Soda, 32 fl oz",
+      "calories": 30,
+      "protein": 0,
+      "carbs": 8,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151994",
+      "name": "Big Al Soda, 44 fl oz",
+      "calories": 40,
+      "protein": 0,
+      "carbs": 11,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151995",
+      "name": "Big Booty Judy Soda, 12 fl oz",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 34,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151996",
+      "name": "Big Booty Judy Soda, 16 fl oz",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 43,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151997",
+      "name": "Big Booty Judy Soda, 24 fl oz",
+      "calories": 250,
+      "protein": 0,
+      "carbs": 65,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151998",
+      "name": "Big Booty Judy Soda, 32 fl oz",
+      "calories": 350,
+      "protein": 0,
+      "carbs": 88,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151999",
+      "name": "Big Booty Judy Soda, 44 fl oz",
+      "calories": 480,
+      "protein": 0,
+      "carbs": 122,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151905",
+      "name": "Big Daddy Soda, 12 fl oz",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 36,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151906",
+      "name": "Big Daddy Soda, 16 fl oz",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 46,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151907",
+      "name": "Big Daddy Soda, 24 fl oz",
+      "calories": 270,
+      "protein": 0,
+      "carbs": 69,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151908",
+      "name": "Big Daddy Soda, 32 fl oz",
+      "calories": 370,
+      "protein": 0,
+      "carbs": 94,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151909",
+      "name": "Big Daddy Soda, 44 fl oz",
+      "calories": 510,
+      "protein": 0,
+      "carbs": 130,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152025",
+      "name": "Bloody Wild Soda, 12 fl oz",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 38,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152026",
+      "name": "Bloody Wild Soda, 16 fl oz",
+      "calories": 180,
+      "protein": 0,
+      "carbs": 48,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152027",
+      "name": "Bloody Wild Soda, 24 fl oz",
+      "calories": 290,
+      "protein": 0,
+      "carbs": 76,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152028",
+      "name": "Bloody Wild Soda, 32 fl oz",
+      "calories": 400,
+      "protein": 0,
+      "carbs": 103,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152029",
+      "name": "Bloody Wild Soda, 44 fl oz",
+      "calories": 590,
+      "protein": 0,
+      "carbs": 153,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152030",
+      "name": "Busta Limes Soda, 12 fl oz",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 39,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152031",
+      "name": "Busta Limes Soda, 16 fl oz",
+      "calories": 190,
+      "protein": 0,
+      "carbs": 49,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152032",
+      "name": "Busta Limes Soda, 24 fl oz",
+      "calories": 300,
+      "protein": 0,
+      "carbs": 78,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152033",
+      "name": "Busta Limes Soda, 32 fl oz",
+      "calories": 400,
+      "protein": 0,
+      "carbs": 105,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152034",
+      "name": "Busta Limes Soda, 44 fl oz",
+      "calories": 600,
+      "protein": 0,
+      "carbs": 156,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152125",
+      "name": "Buttery Beer Soda, 12 fl oz",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 34,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152126",
+      "name": "Buttery Beer Soda, 16 fl oz",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 43,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152127",
+      "name": "Buttery Beer Soda, 24 fl oz",
+      "calories": 260,
+      "protein": 0,
+      "carbs": 65,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152128",
+      "name": "Buttery Beer Soda, 32 fl oz",
+      "calories": 350,
+      "protein": 0,
+      "carbs": 88,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152129",
+      "name": "Buttery Beer Soda, 44 fl oz",
+      "calories": 490,
+      "protein": 0,
+      "carbs": 122,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152035",
+      "name": "Candy Girl Soda, 12 fl oz",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 40,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152036",
+      "name": "Candy Girl Soda, 16 fl oz",
+      "calories": 190,
+      "protein": 0,
+      "carbs": 50,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152037",
+      "name": "Candy Girl Soda, 24 fl oz",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 74,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152038",
+      "name": "Candy Girl Soda, 32 fl oz",
+      "calories": 370,
+      "protein": 0,
+      "carbs": 98,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152039",
+      "name": "Candy Girl Soda, 44 fl oz",
+      "calories": 520,
+      "protein": 0,
+      "carbs": 135,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152145",
+      "name": "Cherry Bomb Soda, 12 fl oz",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 37,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152146",
+      "name": "Cherry Bomb Soda, 16 fl oz",
+      "calories": 180,
+      "protein": 0,
+      "carbs": 46,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152147",
+      "name": "Cherry Bomb Soda, 24 fl oz",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 70,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152148",
+      "name": "Cherry Bomb Soda, 32 fl oz",
+      "calories": 380,
+      "protein": 0,
+      "carbs": 95,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152149",
+      "name": "Cherry Bomb Soda, 44 fl oz",
+      "calories": 520,
+      "protein": 0,
+      "carbs": 132,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152135",
+      "name": "Daydreamer Soda, 12 fl oz",
+      "calories": 110,
+      "protein": 0,
+      "carbs": 29,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152136",
+      "name": "Daydreamer Soda, 16 fl oz",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 37,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152137",
+      "name": "Daydreamer Soda, 24 fl oz",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 55,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152138",
+      "name": "Daydreamer Soda, 32 fl oz",
+      "calories": 270,
+      "protein": 0,
+      "carbs": 74,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152139",
+      "name": "Daydreamer Soda, 44 fl oz",
+      "calories": 380,
+      "protein": 0,
+      "carbs": 103,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151910",
+      "name": "DDD Soda, 12 fl oz",
+      "calories": 25,
+      "protein": 0,
+      "carbs": 6,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151911",
+      "name": "DDD Soda, 16 fl oz",
+      "calories": 25,
+      "protein": 0,
+      "carbs": 6,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151912",
+      "name": "DDD Soda, 24 fl oz",
+      "calories": 30,
+      "protein": 0,
+      "carbs": 8,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151913",
+      "name": "DDD Soda, 32 fl oz",
+      "calories": 45,
+      "protein": 0,
+      "carbs": 12,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151914",
+      "name": "DDD Soda, 44 fl oz",
+      "calories": 70,
+      "protein": 0,
+      "carbs": 17,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152040",
+      "name": "Dew Gooder Soda, 12 fl oz",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 43,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152041",
+      "name": "Dew Gooder Soda, 16 fl oz",
+      "calories": 210,
+      "protein": 0,
+      "carbs": 53,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152042",
+      "name": "Dew Gooder Soda, 24 fl oz",
+      "calories": 330,
+      "protein": 0,
+      "carbs": 82,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152043",
+      "name": "Dew Gooder Soda, 32 fl oz",
+      "calories": 450,
+      "protein": 0,
+      "carbs": 112,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152044",
+      "name": "Dew Gooder Soda, 44 fl oz",
+      "calories": 650,
+      "protein": 0,
+      "carbs": 160,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151915",
+      "name": "Dirty Dr. Pepper Soda, 12 fl oz",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 34,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151916",
+      "name": "Dirty Dr. Pepper Soda, 16 fl oz",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 43,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151917",
+      "name": "Dirty Dr. Pepper Soda, 24 fl oz",
+      "calories": 230,
+      "protein": 0,
+      "carbs": 64,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151918",
+      "name": "Dirty Dr. Pepper Soda, 32 fl oz",
+      "calories": 310,
+      "protein": 0,
+      "carbs": 86,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151919",
+      "name": "Dirty Dr. Pepper Soda, 44 fl oz",
+      "calories": 440,
+      "protein": 0,
+      "carbs": 120,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151920",
+      "name": "Dirty S.O.P. Soda, 12 fl oz",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 34,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151921",
+      "name": "Dirty S.O.P. Soda, 16 fl oz",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 43,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151922",
+      "name": "Dirty S.O.P. Soda, 24 fl oz",
+      "calories": 230,
+      "protein": 0,
+      "carbs": 64,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151923",
+      "name": "Dirty S.O.P. Soda, 32 fl oz",
+      "calories": 320,
+      "protein": 0,
+      "carbs": 86,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151924",
+      "name": "Dirty S.O.P. Soda, 44 fl oz",
+      "calories": 440,
+      "protein": 0,
+      "carbs": 120,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152085",
+      "name": "Dizzle Soda, 12 fl oz",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 36,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152086",
+      "name": "Dizzle Soda, 16 fl oz",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 51,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152087",
+      "name": "Dizzle Soda, 24 fl oz",
+      "calories": 320,
+      "protein": 0,
+      "carbs": 78,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152088",
+      "name": "Dizzle Soda, 32 fl oz",
+      "calories": 440,
+      "protein": 0,
+      "carbs": 106,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152089",
+      "name": "Dizzle Soda, 44 fl oz",
+      "calories": 620,
+      "protein": 0,
+      "carbs": 151,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151925",
+      "name": "Dragon Dew Soda, 12 fl oz",
+      "calories": 200,
+      "protein": 1,
+      "carbs": 50,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151926",
+      "name": "Dragon Dew Soda, 16 fl oz",
+      "calories": 250,
+      "protein": 1,
+      "carbs": 62,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151927",
+      "name": "Dragon Dew Soda, 24 fl oz",
+      "calories": 370,
+      "protein": 1,
+      "carbs": 92,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151928",
+      "name": "Dragon Dew Soda, 32 fl oz",
+      "calories": 500,
+      "protein": 1,
+      "carbs": 124,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151929",
+      "name": "Dragon Dew Soda, 44 fl oz",
+      "calories": 680,
+      "protein": 1,
+      "carbs": 169,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152045",
+      "name": "Endless Summer Soda, 12 fl oz",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 37,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152046",
+      "name": "Endless Summer Soda, 16 fl oz",
+      "calories": 180,
+      "protein": 0,
+      "carbs": 47,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152047",
+      "name": "Endless Summer Soda, 24 fl oz",
+      "calories": 270,
+      "protein": 0,
+      "carbs": 70,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152048",
+      "name": "Endless Summer Soda, 32 fl oz",
+      "calories": 360,
+      "protein": 0,
+      "carbs": 94,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152049",
+      "name": "Endless Summer Soda, 44 fl oz",
+      "calories": 500,
+      "protein": 0,
+      "carbs": 130,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152050",
+      "name": "Guava Have It Soda, 12 fl oz",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 38,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152051",
+      "name": "Guava Have It Soda, 16 fl oz",
+      "calories": 190,
+      "protein": 0,
+      "carbs": 48,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152052",
+      "name": "Guava Have It Soda, 24 fl oz",
+      "calories": 300,
+      "protein": 0,
+      "carbs": 73,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152053",
+      "name": "Guava Have It Soda, 32 fl oz",
+      "calories": 410,
+      "protein": 0,
+      "carbs": 99,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152054",
+      "name": "Guava Have It Soda, 44 fl oz",
+      "calories": 560,
+      "protein": 0,
+      "carbs": 137,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152130",
+      "name": "Happy Camper Soda, 12 fl oz",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 32,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152131",
+      "name": "Happy Camper Soda, 16 fl oz",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 41,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152132",
+      "name": "Happy Camper Soda, 24 fl oz",
+      "calories": 240,
+      "protein": 0,
+      "carbs": 61,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152090",
+      "name": "Hard Candy Soda, 12 fl oz",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 31,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152091",
+      "name": "Hard Candy Soda, 16 fl oz",
+      "calories": 180,
+      "protein": 0,
+      "carbs": 46,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152092",
+      "name": "Hard Candy Soda, 24 fl oz",
+      "calories": 270,
+      "protein": 0,
+      "carbs": 69,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152093",
+      "name": "Hard Candy Soda, 32 fl oz",
+      "calories": 360,
+      "protein": 0,
+      "carbs": 93,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152094",
+      "name": "Hard Candy Soda, 44 fl oz",
+      "calories": 500,
+      "protein": 0,
+      "carbs": 129,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151980",
+      "name": "Heartbreaker Soda, 12 fl oz",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 34,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151981",
+      "name": "Heartbreaker Soda, 16 fl oz",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 43,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151982",
+      "name": "Heartbreaker Soda, 24 fl oz",
+      "calories": 250,
+      "protein": 0,
+      "carbs": 64,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151930",
+      "name": "Hula Girl Soda, 12 fl oz",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 43,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151931",
+      "name": "Hula Girl Soda, 16 fl oz",
+      "calories": 250,
+      "protein": 0,
+      "carbs": 65,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151932",
+      "name": "Hula Girl Soda, 24 fl oz",
+      "calories": 340,
+      "protein": 0,
+      "carbs": 84,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151933",
+      "name": "Hula Girl Soda, 32 fl oz",
+      "calories": 480,
+      "protein": 0,
+      "carbs": 120,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151934",
+      "name": "Hula Girl Soda, 44 fl oz",
+      "calories": 600,
+      "protein": 0,
+      "carbs": 148,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152150",
+      "name": "Island Time Soda, 12 fl oz",
+      "calories": 60,
+      "protein": 0,
+      "carbs": 14,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152151",
+      "name": "Island Time Soda, 16 fl oz",
+      "calories": 60,
+      "protein": 0,
+      "carbs": 14,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152152",
+      "name": "Island Time Soda, 24 fl oz",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 24,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152153",
+      "name": "Island Time Soda, 32 fl oz",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 34,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152154",
+      "name": "Island Time Soda, 44 fl oz",
+      "calories": 240,
+      "protein": 0,
+      "carbs": 53,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152055",
+      "name": "Jolly Elf Soda, 12 fl oz",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 41,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152056",
+      "name": "Jolly Elf Soda, 16 fl oz",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 51,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152057",
+      "name": "Jolly Elf Soda, 24 fl oz",
+      "calories": 310,
+      "protein": 0,
+      "carbs": 79,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152058",
+      "name": "Jolly Elf Soda, 32 fl oz",
+      "calories": 410,
+      "protein": 0,
+      "carbs": 106,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152015",
+      "name": "Just Peachy Soda, 12 fl oz",
+      "calories": 60,
+      "protein": 0,
+      "carbs": 13,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152016",
+      "name": "Just Peachy Soda, 16 fl oz",
+      "calories": 60,
+      "protein": 0,
+      "carbs": 13,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152017",
+      "name": "Just Peachy Soda, 24 fl oz",
+      "calories": 110,
+      "protein": 0,
+      "carbs": 23,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152018",
+      "name": "Just Peachy Soda, 32 fl oz",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 34,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152019",
+      "name": "Just Peachy Soda, 44 fl oz",
+      "calories": 220,
+      "protein": 0,
+      "carbs": 47,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151935",
+      "name": "Life's a Peach Soda, 12 fl oz",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 34,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151936",
+      "name": "Life's a Peach Soda, 16 fl oz",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 43,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151937",
+      "name": "Life's a Peach Soda, 24 fl oz",
+      "calories": 250,
+      "protein": 0,
+      "carbs": 64,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152095",
+      "name": "Loop-T-Loop Soda, 12 fl oz",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 31,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152096",
+      "name": "Loop-T-Loop Soda, 16 fl oz",
+      "calories": 180,
+      "protein": 0,
+      "carbs": 46,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152097",
+      "name": "Loop-T-Loop Soda, 24 fl oz",
+      "calories": 260,
+      "protein": 0,
+      "carbs": 69,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152098",
+      "name": "Loop-T-Loop Soda, 32 fl oz",
+      "calories": 360,
+      "protein": 0,
+      "carbs": 93,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152099",
+      "name": "Loop-T-Loop Soda, 44 fl oz",
+      "calories": 500,
+      "protein": 0,
+      "carbs": 129,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151940",
+      "name": "Malibu Soda, 12 fl oz",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 33,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151941",
+      "name": "Malibu Soda, 16 fl oz",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 43,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151942",
+      "name": "Malibu Soda, 24 fl oz",
+      "calories": 230,
+      "protein": 0,
+      "carbs": 63,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151943",
+      "name": "Malibu Soda, 32 fl oz",
+      "calories": 310,
+      "protein": 0,
+      "carbs": 85,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151944",
+      "name": "Malibu Soda, 44 fl oz",
+      "calories": 430,
+      "protein": 0,
+      "carbs": 119,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151945",
+      "name": "Naughty & Nice Soda, 12 fl oz",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 33,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151946",
+      "name": "Naughty & Nice Soda, 16 fl oz",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 43,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151947",
+      "name": "Naughty & Nice Soda, 24 fl oz",
+      "calories": 250,
+      "protein": 0,
+      "carbs": 63,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152140",
+      "name": "Orange You Glad Soda, 12 fl oz",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 35,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152141",
+      "name": "Orange You Glad Soda, 16 fl oz",
+      "calories": 180,
+      "protein": 0,
+      "carbs": 45,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152142",
+      "name": "Orange You Glad Soda, 24 fl oz",
+      "calories": 270,
+      "protein": 0,
+      "carbs": 68,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152060",
+      "name": "Paradise Soda, 12 fl oz",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 39,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152061",
+      "name": "Paradise Soda, 16 fl oz",
+      "calories": 190,
+      "protein": 0,
+      "carbs": 50,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152062",
+      "name": "Paradise Soda, 24 fl oz",
+      "calories": 290,
+      "protein": 0,
+      "carbs": 75,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152063",
+      "name": "Paradise Soda, 32 fl oz",
+      "calories": 400,
+      "protein": 0,
+      "carbs": 103,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152064",
+      "name": "Paradise Soda, 44 fl oz",
+      "calories": 570,
+      "protein": 0,
+      "carbs": 148,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152155",
+      "name": "Pink Bahama Soda, 12 fl oz",
+      "calories": 25,
+      "protein": 0,
+      "carbs": 7,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152156",
+      "name": "Pink Bahama Soda, 16 fl oz",
+      "calories": 25,
+      "protein": 0,
+      "carbs": 7,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152157",
+      "name": "Pink Bahama Soda, 24 fl oz",
+      "calories": 35,
+      "protein": 0,
+      "carbs": 10,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152158",
+      "name": "Pink Bahama Soda, 32 fl oz",
+      "calories": 50,
+      "protein": 0,
+      "carbs": 15,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152159",
+      "name": "Pink Bahama Soda, 44 fl oz",
+      "calories": 80,
+      "protein": 0,
+      "carbs": 21,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152100",
+      "name": "Poppin' Pineapple Soda, 12 fl oz",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 37,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152101",
+      "name": "Poppin' Pineapple Soda, 16 fl oz",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 52,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152102",
+      "name": "Poppin' Pineapple Soda, 24 fl oz",
+      "calories": 290,
+      "protein": 0,
+      "carbs": 74,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152103",
+      "name": "Poppin' Pineapple Soda, 32 fl oz",
+      "calories": 380,
+      "protein": 0,
+      "carbs": 98,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152104",
+      "name": "Poppin' Pineapple Soda, 44 fl oz",
+      "calories": 520,
+      "protein": 0,
+      "carbs": 133,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151950",
+      "name": "Princess Peach Soda, 12 fl oz",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 37,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151951",
+      "name": "Princess Peach Soda, 16 fl oz",
+      "calories": 180,
+      "protein": 0,
+      "carbs": 46,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151952",
+      "name": "Princess Peach Soda, 24 fl oz",
+      "calories": 270,
+      "protein": 0,
+      "carbs": 69,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151953",
+      "name": "Princess Peach Soda, 32 fl oz",
+      "calories": 370,
+      "protein": 0,
+      "carbs": 94,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151954",
+      "name": "Princess Peach Soda, 44 fl oz",
+      "calories": 510,
+      "protein": 0,
+      "carbs": 131,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151955",
+      "name": "Raspberry Dream Soda, 12 fl oz",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 38,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151956",
+      "name": "Raspberry Dream Soda, 16 fl oz",
+      "calories": 180,
+      "protein": 0,
+      "carbs": 47,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151957",
+      "name": "Raspberry Dream Soda, 24 fl oz",
+      "calories": 290,
+      "protein": 0,
+      "carbs": 76,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151958",
+      "name": "Raspberry Dream Soda, 32 fl oz",
+      "calories": 400,
+      "protein": 0,
+      "carbs": 104,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151959",
+      "name": "Raspberry Dream Soda, 44 fl oz",
+      "calories": 550,
+      "protein": 0,
+      "carbs": 142,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152105",
+      "name": "Riptide Soda, 12 fl oz",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 37,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152106",
+      "name": "Riptide Soda, 16 fl oz",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 52,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152107",
+      "name": "Riptide Soda, 24 fl oz",
+      "calories": 300,
+      "protein": 0,
+      "carbs": 79,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152108",
+      "name": "Riptide Soda, 32 fl oz",
+      "calories": 410,
+      "protein": 0,
+      "carbs": 107,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152109",
+      "name": "Riptide Soda, 44 fl oz",
+      "calories": 590,
+      "protein": 0,
+      "carbs": 154,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151960",
+      "name": "Save Me Jade Soda, 12 fl oz",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151961",
+      "name": "Save Me Jade Soda, 16 fl oz",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151962",
+      "name": "Save Me Jade Soda, 24 fl oz",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151963",
+      "name": "Save Me Jade Soda, 32 fl oz",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151964",
+      "name": "Save Me Jade Soda, 44 fl oz",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152110",
+      "name": "Shark Attack Soda, 12 fl oz",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 37,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152111",
+      "name": "Shark Attack Soda, 16 fl oz",
+      "calories": 180,
+      "protein": 0,
+      "carbs": 45,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152112",
+      "name": "Shark Attack Soda, 24 fl oz",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 72,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152113",
+      "name": "Shark Attack Soda, 32 fl oz",
+      "calories": 330,
+      "protein": 0,
+      "carbs": 87,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152114",
+      "name": "Shark Attack Soda, 44 fl oz",
+      "calories": 460,
+      "protein": 0,
+      "carbs": 119,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152160",
+      "name": "Sleigh All Day Soda, 12 fl oz",
+      "calories": 60,
+      "protein": 0,
+      "carbs": 16,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152161",
+      "name": "Sleigh All Day Soda, 16 fl oz",
+      "calories": 70,
+      "protein": 0,
+      "carbs": 19,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152162",
+      "name": "Sleigh All Day Soda, 24 fl oz",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 28,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152163",
+      "name": "Sleigh All Day Soda, 32 fl oz",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 38,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152164",
+      "name": "Sleigh All Day Soda, 44 fl oz",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 54,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151965",
+      "name": "Smooth Criminal Soda, 12 fl oz",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 34,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151966",
+      "name": "Smooth Criminal Soda, 16 fl oz",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 43,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151967",
+      "name": "Smooth Criminal Soda, 24 fl oz",
+      "calories": 250,
+      "protein": 0,
+      "carbs": 64,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152115",
+      "name": "Snowball Soda, 12 fl oz",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 34,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152116",
+      "name": "Snowball Soda, 16 fl oz",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 49,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152117",
+      "name": "Snowball Soda, 24 fl oz",
+      "calories": 300,
+      "protein": 0,
+      "carbs": 74,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152118",
+      "name": "Snowball Soda, 32 fl oz",
+      "calories": 410,
+      "protein": 0,
+      "carbs": 101,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152119",
+      "name": "Snowball Soda, 44 fl oz",
+      "calories": 570,
+      "protein": 0,
+      "carbs": 140,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151970",
+      "name": "Spring Fling Soda, 12 fl oz",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 43,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151971",
+      "name": "Spring Fling Soda, 16 fl oz",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 52,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151972",
+      "name": "Spring Fling Soda, 24 fl oz",
+      "calories": 320,
+      "protein": 0,
+      "carbs": 82,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151973",
+      "name": "Spring Fling Soda, 32 fl oz",
+      "calories": 440,
+      "protein": 0,
+      "carbs": 113,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151974",
+      "name": "Spring Fling Soda, 44 fl oz",
+      "calories": 610,
+      "protein": 0,
+      "carbs": 156,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151975",
+      "name": "Texas Tab Soda, 12 fl oz",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 36,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151976",
+      "name": "Texas Tab Soda, 16 fl oz",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 45,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151977",
+      "name": "Texas Tab Soda, 24 fl oz",
+      "calories": 260,
+      "protein": 0,
+      "carbs": 68,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151978",
+      "name": "Texas Tab Soda, 32 fl oz",
+      "calories": 360,
+      "protein": 0,
+      "carbs": 92,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151979",
+      "name": "Texas Tab Soda, 44 fl oz",
+      "calories": 500,
+      "protein": 0,
+      "carbs": 128,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152065",
+      "name": "The Dropout Soda, 12 fl oz",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 37,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152066",
+      "name": "The Dropout Soda, 16 fl oz",
+      "calories": 180,
+      "protein": 0,
+      "carbs": 47,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152067",
+      "name": "The Dropout Soda, 24 fl oz",
+      "calories": 270,
+      "protein": 0,
+      "carbs": 70,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152068",
+      "name": "The Dropout Soda, 32 fl oz",
+      "calories": 360,
+      "protein": 0,
+      "carbs": 94,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152069",
+      "name": "The Dropout Soda, 44 fl oz",
+      "calories": 500,
+      "protein": 0,
+      "carbs": 131,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152000",
+      "name": "The Founder Soda, 12 fl oz",
+      "calories": 20,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152001",
+      "name": "The Founder Soda, 16 fl oz",
+      "calories": 20,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152002",
+      "name": "The Founder Soda, 24 fl oz",
+      "calories": 40,
+      "protein": 0,
+      "carbs": 7,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152003",
+      "name": "The Founder Soda, 32 fl oz",
+      "calories": 60,
+      "protein": 0,
+      "carbs": 9,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152004",
+      "name": "The Founder Soda, 44 fl oz",
+      "calories": 80,
+      "protein": 0,
+      "carbs": 13,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151985",
+      "name": "The Ring King Soda, 12 fl oz",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 43,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151986",
+      "name": "The Ring King Soda, 16 fl oz",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 53,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151987",
+      "name": "The Ring King Soda, 24 fl oz",
+      "calories": 320,
+      "protein": 0,
+      "carbs": 83,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151988",
+      "name": "The Ring King Soda, 32 fl oz",
+      "calories": 450,
+      "protein": 0,
+      "carbs": 115,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1151989",
+      "name": "The Ring King Soda, 44 fl oz",
+      "calories": 620,
+      "protein": 0,
+      "carbs": 158,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152070",
+      "name": "The Rocket Soda, 12 fl oz",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 39,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152071",
+      "name": "The Rocket Soda, 16 fl oz",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 49,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152072",
+      "name": "The Rocket Soda, 24 fl oz",
+      "calories": 300,
+      "protein": 0,
+      "carbs": 74,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152073",
+      "name": "The Rocket Soda, 32 fl oz",
+      "calories": 410,
+      "protein": 0,
+      "carbs": 100,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152074",
+      "name": "The Rocket Soda, 44 fl oz",
+      "calories": 570,
+      "protein": 0,
+      "carbs": 139,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152005",
+      "name": "This Bliss Soda, 12 fl oz",
+      "calories": 25,
+      "protein": 0,
+      "carbs": 7,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152006",
+      "name": "This Bliss Soda, 16 fl oz",
+      "calories": 25,
+      "protein": 0,
+      "carbs": 7,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152007",
+      "name": "This Bliss Soda, 24 fl oz",
+      "calories": 35,
+      "protein": 0,
+      "carbs": 10,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152008",
+      "name": "This Bliss Soda, 32 fl oz",
+      "calories": 50,
+      "protein": 0,
+      "carbs": 14,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152009",
+      "name": "This Bliss Soda, 44 fl oz",
+      "calories": 80,
+      "protein": 0,
+      "carbs": 21,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152120",
+      "name": "Unlucky Ducky Soda, 12 fl oz",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 36,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152121",
+      "name": "Unlucky Ducky Soda, 16 fl oz",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 45,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152122",
+      "name": "Unlucky Ducky Soda, 24 fl oz",
+      "calories": 270,
+      "protein": 0,
+      "carbs": 71,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152123",
+      "name": "Unlucky Ducky Soda, 32 fl oz",
+      "calories": 330,
+      "protein": 0,
+      "carbs": 85,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152124",
+      "name": "Unlucky Ducky Soda, 44 fl oz",
+      "calories": 450,
+      "protein": 0,
+      "carbs": 117,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152010",
+      "name": "Waikiki Soda, 12 fl oz",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 35,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152011",
+      "name": "Waikiki Soda, 16 fl oz",
+      "calories": 190,
+      "protein": 0,
+      "carbs": 44,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152012",
+      "name": "Waikiki Soda, 24 fl oz",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 67,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152013",
+      "name": "Waikiki Soda, 32 fl oz",
+      "calories": 390,
+      "protein": 0,
+      "carbs": 92,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152014",
+      "name": "Waikiki Soda, 44 fl oz",
+      "calories": 540,
+      "protein": 0,
+      "carbs": 127,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152075",
+      "name": "Watermelon Sugar Soda, 12 fl oz",
+      "calories": 180,
+      "protein": 0,
+      "carbs": 46,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152076",
+      "name": "Watermelon Sugar Soda, 16 fl oz",
+      "calories": 220,
+      "protein": 0,
+      "carbs": 56,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152077",
+      "name": "Watermelon Sugar Soda, 24 fl oz",
+      "calories": 320,
+      "protein": 0,
+      "carbs": 81,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152078",
+      "name": "Watermelon Sugar Soda, 32 fl oz",
+      "calories": 430,
+      "protein": 0,
+      "carbs": 107,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152079",
+      "name": "Watermelon Sugar Soda, 44 fl oz",
+      "calories": 590,
+      "protein": 0,
+      "carbs": 146,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152080",
+      "name": "Wild Soda, 12 fl oz",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 34,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152081",
+      "name": "Wild Soda, 16 fl oz",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 45,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152082",
+      "name": "Wild Soda, 24 fl oz",
+      "calories": 260,
+      "protein": 0,
+      "carbs": 69,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152083",
+      "name": "Wild Soda, 32 fl oz",
+      "calories": 360,
+      "protein": 0,
+      "carbs": 93,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1152084",
+      "name": "Wild Soda, 44 fl oz",
+      "calories": 510,
+      "protein": 0,
+      "carbs": 133,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sodas; size in item name)"
+    }
+  ],
+  "sourceDate": "2026-07-01"
+}
