@@ -10,15 +10,16 @@ export function AppDialog({ title, description, children, onClose, busy = false 
   title: string; description?: string; children: ReactNode; onClose: () => void; busy?: boolean;
 }) {
   const { height, desktop } = useLayout();
+  const [presented, setPresented] = useState(isWeb);
   // Capture before the search input auto-focuses. RN Web's own effect runs
   // after that focus and would otherwise try to restore the removed input.
   const [trigger] = useState(() => isWeb && document.activeElement instanceof HTMLElement ? document.activeElement : null);
   useEffect(() => () => {
     if (trigger) requestAnimationFrame(() => { if (trigger.isConnected) trigger.focus(); });
   }, [trigger]);
-  const close = () => { if (!busy) onClose(); };
+  const close = () => { if (presented && !busy) onClose(); };
   return <Modal visible accessibilityLabel={title} transparent={isWeb} animationType={isWeb ? 'none' : 'slide'}
-    presentationStyle={isWeb ? 'overFullScreen' : 'pageSheet'} onRequestClose={close}>
+    presentationStyle={isWeb ? 'overFullScreen' : 'pageSheet'} onShow={() => setPresented(true)} onRequestClose={close}>
     <View style={[{ flex: 1 }, isWeb && { backgroundColor: '#020b11bb', padding: 16, justifyContent: 'center', alignItems: 'center' }]}>
       <SafeAreaView testID="app-dialog" style={isWeb ? {
         flexShrink: 1, zIndex: 1, width: '100%', maxWidth: 650, maxHeight: Math.min(height - 32, desktop ? 760 : height - 32),
@@ -31,7 +32,9 @@ export function AppDialog({ title, description, children, onClose, busy = false 
             <Action quiet secondary compact disabled={busy} label={`Close ${title.toLowerCase()}`} onPress={close}><X size={20} color={colors.muted} /></Action>
           </View>
           <ScrollView style={{ flexShrink: 1 }} contentContainerStyle={[styles.content, { paddingTop: 8, paddingHorizontal: isWeb ? 24 : 20 }]} keyboardShouldPersistTaps="handled" keyboardDismissMode={isWeb ? 'none' : 'on-drag'}>
-            {children}
+            {/* Native autoFocus must wait until the sheet's presentation finishes.
+                Opening the keyboard during that transition can interrupt the sheet. */}
+            {presented && children}
           </ScrollView>
         </KeyboardAvoidingView>
       </SafeAreaView>
