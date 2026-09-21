@@ -1,0 +1,116 @@
+# Gramello privacy policy
+
+Effective date: September 20, 2026
+
+Gramello is a food diary and calorie/macronutrient tracker provided by Edward
+Herbert II. This policy explains how the Gramello app and its connected service
+handle information. Contact
+[gramello@edwardofclt.com](mailto:gramello@edwardofclt.com) with privacy questions
+or requests.
+
+## Information used by Gramello
+
+- **Account information:** Your account identifier and the name and email address
+  returned by the sign-in provider. Auth0 provides authentication. Passwords and
+  sign-in credentials are handled through the authentication provider; the
+  Gramello diary database does not store your password.
+- **Nutrition information:** Food names, brands, diary dates, meal categories,
+  amounts and units, calories, protein, carbohydrate and fat values, daily goals,
+  and custom-meal names, ingredients and yields. These records and their
+  timestamps are stored with your account identifier so they can be loaded on
+  your signed-in devices.
+- **Search and barcode information:** Food-search terms and product barcodes are
+  sent to the Gramello service to retrieve food information. Queries are passed
+  to USDA FoodData Central and/or Open Food Facts as appropriate. Gramello does
+  not include your account name, email, or sign-in token in those food-provider
+  requests.
+- **Technical information:** When you connect to Gramello or its providers, those
+  services receive connection and request information, such as an IP address,
+  request time, and browser or device information. Hosting and authentication
+  services may keep operational and security logs.
+- **Support information:** Information you choose to email us, including your
+  contact details and any details you supply to investigate an issue.
+
+## Camera and device permissions
+
+Camera access is used to read food barcodes. Barcode recognition happens on the
+device; the recognized barcode is sent for product lookup. Gramello does not
+upload or store camera photographs or video for this feature. You can decline
+or revoke camera permission and enter a barcode manually. Gramello does not
+request microphone access for barcode scanning.
+
+The current app does not integrate with Apple Health/HealthKit or collect your
+device's precise location, contacts, or photo library.
+
+## How information is used
+
+Information is used to authenticate you, keep your diary associated with your
+account, synchronize saved entries and meals, calculate nutrition totals and
+trends, retrieve food information, respond to support requests, and operate and
+protect the service.
+
+Gramello does not include third-party advertising or advertising-tracking SDKs.
+We do not sell your nutrition diary data or use it for targeted advertising.
+
+## Service providers and external services
+
+- **Auth0** handles sign-in and account authentication.
+- **Fly.io** hosts the connected Gramello service and its diary storage.
+- **USDA FoodData Central and Open Food Facts** supply food-search and product
+  information. Product images may load directly from their external image hosts,
+  which receive the network information needed to serve those images.
+- **Apple** handles App Store purchases and distribution. Gramello does not
+  receive your full payment-card details. Apple handles payment information
+  under its own policies.
+- **GitHub** hosts these support and privacy pages and the public issue tracker.
+  GitHub receives information when you visit or use its services. Anything you
+  post in a public issue is public; use email for private support.
+
+These providers process information under their own privacy policies and the
+terms applicable to their services. Information may be processed in the United
+States or other locations where the relevant providers operate. We may disclose
+information when required by applicable law or necessary to protect the service
+and its users.
+
+## Storage and retention
+
+Nutrition records are stored on the server under your account identifier. The
+native app uses the operating-system-backed credentials manager for sign-in
+credentials. The web app uses authentication cookies to maintain a session.
+
+Diary entries and saved meals remain stored until you remove them or request
+their deletion. Removing a saved recipe does not remove previously logged diary
+entries. You can edit your saved goals. Signing out or uninstalling the app does
+not delete server records or the authentication account.
+
+Deleted records may remain temporarily in backups. The service is configured to
+retain automatic server-volume snapshots for 14 days. Authentication and hosting
+providers may retain separate operational or security records according to
+their own policies or legal obligations. HTTPS protects data in transit, but no
+online service can guarantee absolute security.
+
+## Your choices and requests
+
+You can view your diary, edit your goals and saved recipes, remove individual
+entries or meals, sign out, and change camera permission in your device settings.
+
+For a copy of your data, correction of account information, or deletion of your
+account and associated data, email
+[gramello@edwardofclt.com](mailto:gramello@edwardofclt.com) from the address
+associated with your account. We may ask for information needed to verify that
+the account belongs to you. Do not send your password or a sign-in code.
+Account-level deletion currently requires contacting support; removing the app
+alone does not start a deletion request.
+
+## Children
+
+Gramello is not designed for children under 13. If you believe a child under 13
+has provided personal information, contact us so we can investigate and remove
+the information as appropriate.
+
+## Changes to this policy
+
+We may update this policy when the app or its data practices change. The
+effective date above identifies the latest published version.
+
+For product help, see [Gramello support](support.md).
