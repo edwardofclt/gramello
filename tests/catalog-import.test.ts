@@ -13,13 +13,16 @@ describe('restaurant import', () => {
     db.exec(readFileSync(new URL('../drizzle/0000_silent_ultragirl.sql', import.meta.url), 'utf8'));
     db.exec(readFileSync(new URL('../drizzle/0001_gray_odin.sql', import.meta.url), 'utf8'));
     db.exec("INSERT INTO entries VALUES ('old','alice','2026-09-19','Dinner','Old food',NULL,'custom',NULL,1,'serving',100,605,30,65,25,'yesterday')");
-    db.exec(readFileSync(new URL('../drizzle/0002_food_catalog.sql', import.meta.url), 'utf8'));
+    db.exec(readFileSync(new URL('../drizzle/0002_custom_meals.sql', import.meta.url), 'utf8'));
+    db.exec("INSERT INTO custom_meals VALUES ('meal','alice','Soup','[]',400,100,'yesterday')");
+    db.exec(readFileSync(new URL('../drizzle/0003_food_catalog.sql', import.meta.url), 'utf8'));
+    expect(db.prepare('SELECT name, total_grams FROM custom_meals').get()).toMatchObject({ name: 'Soup', total_grams: 400 });
     expect(db.prepare('SELECT id, user_id, calories, grams, verified FROM entries').get()).toMatchObject({ id: 'old', user_id: 'alice', calories: 605, grams: 100, verified: 0 });
     db.close();
   });
   it('imports official per-serving values with source evidence, no invented weight, and idempotent updates', () => {
     const db = new DatabaseSync(':memory:');
-    for (const file of ['0000_silent_ultragirl', '0001_gray_odin', '0002_food_catalog']) db.exec(readFileSync(new URL(`../drizzle/${file}.sql`, import.meta.url), 'utf8'));
+    for (const file of ['0000_silent_ultragirl', '0001_gray_odin', '0002_custom_meals', '0003_food_catalog']) db.exec(readFileSync(new URL(`../drizzle/${file}.sql`, import.meta.url), 'utf8'));
     const sql = catalogSql('example', catalog);
     db.exec(sql); db.exec(sql);
     expect(db.prepare('SELECT id,brand,verified,source_kind,source_url,nutrition_basis,serving_grams,calories,protein FROM foods').all()).toEqual([

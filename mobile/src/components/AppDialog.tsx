@@ -30,7 +30,7 @@ export function AppDialog({ title, description, children, onClose, busy = false 
             <View style={{ gap: 5, flex: 1 }}><Text accessibilityRole="header" style={styles.heading}>{title}</Text>{description && <Text style={styles.muted}>{description}</Text>}</View>
             <Action quiet secondary compact disabled={busy} label={`Close ${title.toLowerCase()}`} onPress={close}><X size={20} color={colors.muted} /></Action>
           </View>
-          <ScrollView style={{ flexShrink: 1 }} contentContainerStyle={[styles.content, { paddingTop: 8, paddingHorizontal: isWeb ? 24 : 20 }]} keyboardShouldPersistTaps="handled" keyboardDismissMode="on-drag">
+          <ScrollView style={{ flexShrink: 1 }} contentContainerStyle={[styles.content, { paddingTop: 8, paddingHorizontal: isWeb ? 24 : 20 }]} keyboardShouldPersistTaps="handled" keyboardDismissMode={isWeb ? 'none' : 'on-drag'}>
             {children}
           </ScrollView>
         </KeyboardAvoidingView>

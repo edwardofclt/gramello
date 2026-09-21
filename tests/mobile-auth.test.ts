@@ -33,7 +33,7 @@ const configuration = {
 const database = new DatabaseSync(":memory:");
 database.exec(readFileSync(new URL("../drizzle/0000_silent_ultragirl.sql", import.meta.url), "utf8"));
 database.exec(readFileSync(new URL("../drizzle/0001_gray_odin.sql", import.meta.url), "utf8"));
-database.exec(readFileSync(new URL("../drizzle/0002_food_catalog.sql", import.meta.url), "utf8"));
+database.exec(readFileSync(new URL("../drizzle/0003_food_catalog.sql", import.meta.url), "utf8"));
 Object.assign(runtime.env, configuration, {
   DB: {
     prepare(sql: string) {

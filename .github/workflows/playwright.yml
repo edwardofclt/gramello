@@ -3,12 +3,11 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ['tests/e2e/**', 'playwright.config.ts', '.github/workflows/playwright.yml']
+    paths: ['app/**', 'components/**', 'hooks/**', 'lib/**', 'db/**', 'drizzle/**', 'tests/e2e/**', 'playwright.config.ts', 'package.json', 'pnpm-lock.yaml', '.github/workflows/playwright.yml']
   pull_request:
-    paths: ['tests/e2e/**', 'playwright.config.ts', '.github/workflows/playwright.yml']
+    paths: ['app/**', 'components/**', 'hooks/**', 'lib/**', 'db/**', 'drizzle/**', 'tests/e2e/**', 'playwright.config.ts', 'package.json', 'pnpm-lock.yaml', '.github/workflows/playwright.yml']
 permissions:
   contents: read
-  packages: read
 jobs:
   browser-tests:
     runs-on: ubuntu-latest
@@ -22,23 +21,10 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run: pnpm exec playwright install --with-deps chromium
-      - uses: docker/login-action@v3
-        with:
-          registry: ghcr.io
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
-      - name: Start released container with disposable storage
-        run: |
-          docker run -d --name nourish-e2e -p 127.0.0.1:3000:3000 -v nourish-e2e:/data ghcr.io/edwardofclt/nourish:1.0.0
-          for attempt in $(seq 1 60); do
-            if curl --fail --silent http://127.0.0.1:3000/api/day > /dev/null; then exit 0; fi
-            sleep 2
-          done
-          docker logs nourish-e2e
-          exit 1
-      - run: pnpm test:e2e
-        env:
-          E2E_CONTAINER_NAME: nourish-e2e
+      - name: Build current checkout
+        run: pnpm build
+      - name: Test with disposable authenticated Worker
+        run: pnpm test:e2e
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -47,9 +33,3 @@ jobs:
             playwright-report/
             test-results/
           retention-days: 7
-      - name: Logs and cleanup
-        if: always()
-        run: |
-          docker logs nourish-e2e || true
-          docker rm -f nourish-e2e || true
-          docker volume rm nourish-e2e || true

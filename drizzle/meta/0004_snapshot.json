@@ -1,8 +1,8 @@
 {
+  "id": "b3a29866-1f37-4fab-bbd9-9e21d35113fa",
+  "prevId": "b27dc314-1a13-481b-85c1-17b0fefda55f",
   "version": "6",
   "dialect": "sqlite",
-  "id": "b27dc314-1a13-481b-85c1-17b0fefda55f",
-  "prevId": "547086cf-3f65-492a-a8de-3b45595636ed",
   "tables": {
     "custom_meals": {
       "name": "custom_meals",
@@ -443,9 +443,9 @@
   "views": {},
   "enums": {},
   "_meta": {
+    "columns": {},
     "schemas": {},
-    "tables": {},
-    "columns": {}
+    "tables": {}
   },
   "internal": {
     "indexes": {}

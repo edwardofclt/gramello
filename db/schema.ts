@@ -21,7 +21,17 @@ export const foods = sqliteTable("foods", {
   id: text("id").primaryKey(), name: text("name").notNull(), brand: text("brand"),
   source: text("source").notNull(), sourceKind: text("source_kind").notNull(), sourceUrl: text("source_url"),
   verified: integer("verified", { mode: "boolean" }).notNull().default(false),
-  nutritionBasis: text("nutrition_basis").notNull(), servingGrams: real("serving_grams"), servingLabel: text("serving_label").notNull(),
+  nutritionBasis: text("nutrition_basis").notNull(), servingGrams: real("serving_grams"), servingMl: real("serving_ml"), servingLabel: text("serving_label").notNull(),
   calories: real("calories").notNull(), protein: real("protein").notNull(), carbs: real("carbs").notNull(), fat: real("fat").notNull(),
   image: text("image"), createdBy: text("created_by"), checkedAt: text("checked_at"), createdAt: text("created_at").notNull(),
 }, (table) => [index("idx_foods_name").on(table.name), index("idx_foods_brand").on(table.brand)]);
+
+export const customMeals = sqliteTable("custom_meals", {
+  id: text("id").primaryKey(),
+  userId: text("user_id").notNull(),
+  name: text("name").notNull(),
+  ingredients: text("ingredients").notNull(),
+  totalGrams: real("total_grams"),
+  servingGrams: real("serving_grams").notNull(),
+  updatedAt: text("updated_at").notNull(),
+}, (table) => [index("idx_custom_meals_user").on(table.userId)]);

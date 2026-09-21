@@ -64,7 +64,7 @@ async function main() {
     imported.push({ file, chain: catalog.chain, inventorySlug: chain.slug, eligibilityStatus: chain.eligibilityStatus, foodCount: catalog.foods.length, sourceUrl: catalog.sourceUrl, source: catalog.source || 'Official restaurant nutrition', sourceDate: catalog.sourceDate ?? null, retrievedAt: catalog.retrievedAt });
   }
   if (!imported.length) throw new Error('No eligible catalogs; audit location coverage before generating seeds');
-  await writeFile('drizzle/0003_restaurant_catalog.sql', `${sql.join('\n--> statement-breakpoint\n')}\n`);
+  await writeFile('drizzle/0004_restaurant_catalog.sql', `${sql.join('\n--> statement-breakpoint\n')}\n`);
   const result = { zip: coverage.zip, radiusMiles: coverage.radiusMiles, center: coverage.center, generatedFrom: 'data/restaurant-foods + docs/restaurant-import/coverage.json', catalogCount: imported.length, foodCount: imported.reduce((sum, chain) => sum + chain.foodCount, 0), imported, excluded };
   await writeFile('docs/restaurant-import/import-summary.json', `${JSON.stringify(result, null, 2)}\n`);
   console.log(`Prepared ${result.foodCount} foods across ${result.catalogCount} chain catalogs; ${excluded.length} catalogs excluded pending location evidence.`);

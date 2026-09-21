@@ -8,6 +8,7 @@ CREATE TABLE `foods` (
 	`verified` integer DEFAULT false NOT NULL,
 	`nutrition_basis` text NOT NULL,
 	`serving_grams` real,
+	`serving_ml` real,
 	`serving_label` text NOT NULL,
 	`calories` real NOT NULL,
 	`protein` real NOT NULL,

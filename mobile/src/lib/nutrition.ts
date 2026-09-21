@@ -1,4 +1,5 @@
 import type { Goals } from './types';
+export { scaleFood } from '../../../lib/meals';
 
 export { localDate } from '../../../lib/diary-date';
 
@@ -13,8 +14,6 @@ export function formatDate(date: string, short = false) {
     ...(short ? {} : { weekday: 'short' as const }), month: 'short', day: 'numeric', timeZone: 'UTC',
   });
 }
-
-export { scaleFood } from '../../../lib/food';
 
 export function sumNutrition(items: Goals[]): Goals {
   return items.reduce((total, item) => ({

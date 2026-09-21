@@ -1,5 +1,5 @@
 import { DatabaseSync } from "node:sqlite";
-import { readFileSync } from "node:fs";
+import { readFileSync, readdirSync } from "node:fs";
 import { generateSessionCookie } from "@auth0/nextjs-auth0/testing";
 import { NextRequest } from "next/server";
 import { afterAll, afterEach, beforeEach, describe, expect, it, vi } from "vitest";
@@ -21,13 +21,16 @@ import { POST as customFood } from "@/app/api/foods/custom/route";
 import { GET as barcode } from "@/app/api/foods/barcode/route";
 import type { Food } from "@/lib/food";
 import type { EntryInput } from "@/db/store";
+import { ghostProduct } from './fixtures/ghost-energy';
+import { GET as listMeals, POST as createMeal, PUT as updateMeal, DELETE as deleteMeal } from "@/app/api/meals/route";
+import type { CustomMeal } from "@/lib/meals";
 import { getCurrentUser } from "@/lib/auth";
 
 const secret = "0123456789abcdef".repeat(4);
 const database = new DatabaseSync(":memory:");
-database.exec(readFileSync(new URL("../drizzle/0000_silent_ultragirl.sql", import.meta.url), "utf8"));
-database.exec(readFileSync(new URL("../drizzle/0001_gray_odin.sql", import.meta.url), "utf8"));
-database.exec(readFileSync(new URL("../drizzle/0002_food_catalog.sql", import.meta.url), "utf8"));
+for (const file of readdirSync(new URL("../drizzle/", import.meta.url)).filter(file => file.endsWith(".sql")).sort()) {
+  database.exec(readFileSync(new URL(`../drizzle/${file}`, import.meta.url), "utf8"));
+}
 const configuration = {
   AUTH0_DOMAIN: "nourish-tests.us.auth0.com",
   AUTH0_CLIENT_ID: "test-client",
@@ -52,7 +55,14 @@ Object.assign(runtime.env, configuration, {
 
 const food = { date: "2026-09-19", meal: "Breakfast", name: "Oats", source: "custom", quantity: 1, unit: "serving", grams: 50, calories: 190, protein: 7, carbs: 33, fat: 3 };
 const targets = { calories: 2000, protein: 150, carbs: 200, fat: 67 };
+const mealDraft = { name: "Soup", totalGrams: 1814.36948, servingGrams: 453.59237, ingredients: [
+  { food: { id: "beef", name: "Beef", source: "Test", servingGrams: 100, servingLabel: "100 g", calories: 200, protein: 20, carbs: 10, fat: 5 }, quantity: 600, unit: "grams" },
+] };
 const routes = [
+  ["GET", "/api/meals", listMeals, undefined],
+  ["POST", "/api/meals", createMeal, mealDraft],
+  ["PUT", "/api/meals?id=example", updateMeal, mealDraft],
+  ["DELETE", "/api/meals?id=example", deleteMeal, undefined],
   ["GET", "/api/day", day, undefined],
   ["GET", "/api/trends", trends, undefined],
   ["GET", "/api/foods/search?q=a", search, undefined],
@@ -86,7 +96,7 @@ async function call(handler: (request: Request) => Promise<Response>, path: stri
 }
 
 beforeEach(() => {
-  database.exec("DELETE FROM entries; DELETE FROM goals; DELETE FROM foods;");
+  database.exec("DELETE FROM entries; DELETE FROM goals; DELETE FROM foods; DELETE FROM custom_meals;");
   Object.assign(runtime.env, configuration);
 });
 afterAll(() => database.close());
@@ -150,6 +160,23 @@ describe("private API authentication", () => {
 
 
 describe("shared food catalog", () => {
+  it("caches exact volume servings and logs canonical values across all supported volume units", async () => {
+    vi.stubGlobal("fetch", async () => Response.json({ status: 1, product: ghostProduct }));
+    const lookup = await call(barcode, "/api/foods/barcode?code=810128528191", { user: "auth0|alice" });
+    expect(lookup.status).toBe(200);
+    const { food: drink } = await lookup.json() as { food: Food };
+    vi.stubGlobal("fetch", async () => { throw new Error("Provider unavailable"); });
+    const response = await call(search, "/api/foods/search?q=Energy%20Drink", { user: "auth0|bob" });
+    expect((await response.json() as { foods: Food[] }).foods[0]).toMatchObject({ nutritionBasis: '100ml', nutritionUnit: 'ml', servingMl: 473.176, servingGrams: null, verified: true });
+    for (const [unit, quantity] of [['serving', 1], ['milliliters', 473.176], ['fluid-ounces', 473.176 / 29.5735295625]] as const) {
+      const logged = await call(add, "/api/entries", { method: 'POST', user: 'auth0|bob', body: { ...food, sourceId: drink.id, unit, quantity, calories: 999999 } });
+      expect(logged.status).toBe(201);
+      const entry = await logged.json() as EntryInput;
+      expect(entry.calories).toBeCloseTo(10);
+      expect(entry).toMatchObject({ grams: null, verified: true, servingLabel: '16 fl oz' });
+    }
+    expect((await call(add, "/api/entries", { method: 'POST', user: 'auth0|bob', body: { ...food, sourceId: drink.id, unit: 'grams' } })).status).toBe(400);
+  });
   const custom = { name: "Test bowl", servingLabel: "1 bowl", calories: 605, protein: 30, carbs: 65, fat: 25 };
   it("shares custom foods while discarding forged source and verification fields", async () => {
     const response = await call(customFood, "/api/foods/custom", { method: "POST", user: "auth0|alice", body: { ...custom, verified: true, source: "USDA", sourceKind: "database", userId: "auth0|bob" } });
@@ -204,4 +231,40 @@ it("prioritizes an exact restaurant brand over unrelated branded products", asyn
   const response = await call(search, "/api/foods/search?q=Viva%20Chicken", { user: "auth0|alice" });
   const result = await response.json() as { foods: Food[] };
   expect(result.foods.map(item => item.id)).toEqual(['restaurant-viva-test', 'off-unrelated']);
+});
+describe("saved meals", () => {
+  it("logs the owner's saved recipe canonically and keeps it unverified", async () => {
+    const saved = await call(createMeal, '/api/meals', { method: 'POST', user: 'auth0|alice', body: mealDraft });
+    const { food: recipe } = await saved.json() as { food: Food };
+    const body = { ...food, sourceId: recipe.id, quantity: 16, unit: 'ounces', calories: 99999, verified: true };
+    const logged = await call(add, '/api/entries', { method: 'POST', user: 'auth0|alice', body });
+    expect(logged.status).toBe(201);
+    expect(await logged.json()).toMatchObject({ name: 'Soup', source: 'My meals', verified: false, calories: 300 });
+    expect((await call(add, '/api/entries', { method: 'POST', user: 'auth0|bob', body })).status).toBe(404);
+  });
+  it("persists ingredient snapshots, recalculates nutrition, and isolates every operation by account", async () => {
+    const response = await call(createMeal, "/api/meals", { method: "POST", user: "auth0|alice", body: { ...mealDraft, userId: "auth0|bob", calories: 9999 } });
+    expect(response.status).toBe(201);
+    const { meal, food } = await response.json() as { meal: CustomMeal; food: Food };
+    expect(meal.ingredients).toEqual(mealDraft.ingredients);
+    expect(food.calories * 453.59237 / 100).toBeCloseTo(300, 8);
+    const own = await (await call(listMeals, "/api/meals", { user: "auth0|alice" })).json() as { meals: CustomMeal[] };
+    expect(own.meals).toHaveLength(1);
+    expect(own.meals[0].id).toBe(meal.id);
+    expect(await (await call(listMeals, "/api/meals", { user: "auth0|bob" })).json()).toEqual({ meals: [] });
+    expect((await call(updateMeal, `/api/meals?id=${meal.id}`, { method: "PUT", user: "auth0|bob", body: { ...mealDraft, name: "Stolen" } })).status).toBe(404);
+    expect((await call(deleteMeal, `/api/meals?id=${meal.id}`, { method: "DELETE", user: "auth0|bob" })).status).toBe(404);
+    const updated = await call(updateMeal, `/api/meals?id=${meal.id}`, { method: "PUT", user: "auth0|alice", body: { ...mealDraft, name: "Soup v2", totalGrams: 907.18474 } });
+    expect(updated.status).toBe(200);
+    expect((await updated.json() as { food: Food }).food.calories * 453.59237 / 100).toBeCloseTo(600, 8);
+    expect((await call(deleteMeal, `/api/meals?id=${meal.id}`, { method: "DELETE", user: "auth0|alice" })).status).toBe(200);
+    expect((await (await call(listMeals, "/api/meals", { user: "auth0|alice" })).json() as { meals: CustomMeal[] }).meals).toEqual([]);
+  });
+  it("validates recipes and rejects cross-origin meal writes", async () => {
+    expect((await call(createMeal, "/api/meals", { method: "POST", user: "auth0|alice", body: { ...mealDraft, totalGrams: 0 } })).status).toBe(400);
+    for (const [method, handler] of [["POST", createMeal], ["PUT", updateMeal], ["DELETE", deleteMeal]] as const) {
+      expect((await call(handler, "/api/meals?id=anything", { method, user: "auth0|alice", body: mealDraft, headers: { origin: "https://evil.test" } })).status).toBe(403);
+    }
+    expect(database.prepare("SELECT * FROM custom_meals").all()).toEqual([]);
+  });
 });

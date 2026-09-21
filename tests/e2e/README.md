@@ -1,10 +1,12 @@
 # Browser tests
 
-Run against a disposable local Nourish container (default http://127.0.0.1:3000):
+Build once, then run against the automatically started disposable Worker at
+http://127.0.0.1:5198:
 
 ```bash
 pnpm install --frozen-lockfile
 pnpm exec playwright install chromium
+pnpm build
 pnpm exec playwright test
 ```
 
@@ -14,9 +16,13 @@ and branded search results, diary writes/deletion, goals, reload persistence,
 Food search responses use deterministic fixtures; database APIs are real.
 This suite does not certify live USDA/Open Food Facts availability.
 
-Each test uses a unique test user header to isolate its records from your diary.
-Use a disposable volume to avoid accumulating test users. Never point this at a
-public or production instance. `PLAYWRIGHT_BASE_URL` overrides the target URL.
+Each test uses an encrypted Auth0 session for a unique test account. The server
+uses test-only credentials and a temporary database, applies all migrations,
+and removes the database when the run ends. Custom meal tests cover batch
+nutrition, ounces, fractional portions, persistence, failed saves, editing, and
+deletion without changing diary history. Never point this at production.
+`PLAYWRIGHT_BASE_URL` skips the test server and requires an explicitly configured
+disposable instance with matching test credentials.
 
 To also verify an actual restart (Docker CLI access required):
 

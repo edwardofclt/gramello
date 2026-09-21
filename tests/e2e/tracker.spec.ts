@@ -1,14 +1,6 @@
-import { test as base, expect, type Page } from '@playwright/test';
-import { randomUUID } from 'node:crypto';
+import { type Page } from '@playwright/test';
+import { test, expect } from './fixtures';
 import { execFileSync } from 'node:child_process';
-
-// Separate real database records for every test; never alter the owner's diary.
-const test = base.extend<{ userId: string }>({
-  userId: async ({}, provideFixture) => { await provideFixture(`playwright-${randomUUID()}`); },
-  extraHTTPHeaders: async ({ userId }, provideFixture) => {
-    await provideFixture({ 'oai-authenticated-user-id': userId });
-  },
-});
 
 const foods = [
   { id: 'test-oats', name: 'Rolled oats', source: 'USDA reference', calories: 400, protein: 10, carbs: 60, fat: 10, servingGrams: 40, servingLabel: '40 g' },
@@ -42,8 +34,7 @@ test('generic and branded foods scale by servings and grams and survive reload',
   expect(await (await saved).json()).toMatchObject({ grams: 80, calories: 320, protein: 8, carbs: 48, fat: 8 });
   await search(page);
   await page.getByRole('button', { name: /Brand granola Test Kitchen/ }).click();
-  await page.getByRole('combobox').nth(1).click();
-  await page.getByRole('option', { name: 'Grams', exact: true }).click();
+  await page.getByRole('combobox').nth(1).selectOption('grams');
   await page.getByRole('spinbutton').fill('60');
   await expect(page.locator('.nutrition-preview')).toContainText('300');
   const branded = page.waitForResponse(r => r.url().endsWith('/api/entries') && r.request().method() === 'POST');
@@ -145,4 +136,28 @@ test('saved food survives a real container restart', async ({ page, request }) =
   }, { timeout: 30_000 }).toBe(200);
   await openDiary(page);
   await expect(page.locator('.food-row')).toContainText('Rolled oats');
+});
+
+test('shows catalog provenance and notices, and resets the portion when choosing another food', async ({ page }) => {
+  const restaurant = { ...foods[0], id: 'restaurant-fixture', name: 'Restaurant bowl fixture', source: 'Official menu', sourceKind: 'restaurant', nutritionBasis: 'serving', servingLabel: '1 bowl', servingGrams: null, calories: 650, verified: true, sourceUrl: 'https://example.com/nutrition' };
+  await page.route('**/api/foods/search?*', route => route.fulfill({ json: { foods: [foods[0], restaurant], partial: true, hasMore: true } }));
+  await openDiary(page);
+  await page.getByRole('button', { name: 'Add Lunch', exact: true }).click();
+  await page.getByRole('textbox', { name: 'Search foods', exact: true }).fill('fixture');
+  await expect(page.getByRole('status')).toContainText('Some nutrition databases are unavailable');
+  await expect(page.getByText('Showing the first 100 matches. Add an item name to narrow your search.')).toBeVisible();
+  const bowl = page.getByRole('button', { name: /Restaurant bowl fixture Official menu/ });
+  await expect(bowl).toContainText('Verified');
+  await expect(bowl).toContainText('650 kcal');
+  await expect(bowl).toContainText('per 1 bowl');
+  await page.getByRole('button', { name: /Rolled oats USDA reference/ }).click();
+  await page.getByLabel('Measure', { exact: true }).selectOption('ounces');
+  await page.getByRole('spinbutton', { name: 'Weight in ounces' }).fill('8');
+  await page.getByRole('button', { name: 'Back to results', exact: true }).click();
+  await bowl.click();
+  await expect(page.getByLabel('Measure', { exact: true })).toHaveValue('serving');
+  await expect(page.getByLabel('Measure', { exact: true }).locator('option')).toHaveText(['Servings (1 bowl)']);
+  await expect(page.getByRole('spinbutton', { name: 'Servings', exact: true })).toHaveValue('1');
+  await expect(page.locator('.nutrition-preview')).toContainText('650');
+  await expect(page.getByRole('link', { name: 'View nutrition source' })).toHaveAttribute('href', 'https://example.com/nutrition');
 });

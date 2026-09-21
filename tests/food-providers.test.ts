@@ -10,7 +10,7 @@ describe('verified database values', () => {
     ] }));
     const foods = await searchOpenFoodFacts('water', new AbortController().signal);
     expect(foods).toHaveLength(1);
-    expect(foods[0]).toMatchObject({ calories: 0, protein: 0, carbs: 0, fat: 0, verified: true, sourceKind: 'database', nutritionBasis: 'serving', servingLabel: '100 ml', servingGrams: null });
+    expect(foods[0]).toMatchObject({ calories: 0, protein: 0, carbs: 0, fat: 0, verified: true, sourceKind: 'database', nutritionBasis: '100ml', nutritionUnit: 'ml', servingMl: 250, servingLabel: '250 ml', servingGrams: null });
   });
   it('selects USDA kcal rather than kJ and does not treat milliliters as grams', async () => {
     vi.stubGlobal('fetch', async () => Response.json({ foods: [{ fdcId: 42, description: 'Test milk', servingSize: 250, servingSizeUnit: 'ml', foodNutrients: [

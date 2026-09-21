@@ -1,7 +1,9 @@
 import { withAuthenticatedUser } from '@/lib/auth';
 import { addEntry, removeEntry, type EntryInput } from '@/db/store';
 import { getFood } from '@/db/foods';
-import { scaleFood } from '@/lib/food';
+import { getMeal } from '@/db/meals';
+import { scaleFood, type AmountUnit } from '@/lib/food';
+import { mealFood } from '@/lib/meals';
 
 export async function POST(request: Request) {
   return withAuthenticatedUser(request, async ({ userId }) => {
@@ -9,15 +11,18 @@ export async function POST(request: Request) {
     try { b = await request.json(); }
     catch { return Response.json({ error: 'That food entry is incomplete.' }, { status: 400 }); }
     if (!b || typeof b.date !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(b.date) || !['Breakfast', 'Lunch', 'Dinner', 'Snacks'].includes(b.meal)
-      || typeof b.quantity !== 'number' || !Number.isFinite(b.quantity) || b.quantity <= 0 || b.quantity > 100_000 || !['serving', 'grams'].includes(b.unit)
+      || typeof b.quantity !== 'number' || !Number.isFinite(b.quantity) || b.quantity <= 0 || b.quantity > 100_000 || !['serving', 'grams', 'ounces', 'milliliters', 'fluid-ounces'].includes(b.unit)
       || (b.sourceId !== undefined && typeof b.sourceId !== 'string')) {
       return Response.json({ error: 'That food entry is incomplete.' }, { status: 400 });
     }
     try {
-      const food = b.sourceId ? await getFood(b.sourceId) : null;
+      const recipeId = b.sourceId?.startsWith('meal-') ? b.sourceId.slice(5) : null;
+      const recipe = recipeId ? await getMeal(userId, recipeId) : null;
+      if (recipeId && !recipe) return Response.json({ error: 'Saved meal not found. Choose a meal from your library.' }, { status: 404 });
+      const food = recipe ? mealFood(recipe) : b.sourceId ? await getFood(b.sourceId) : null;
       let item: EntryInput;
       if (food) {
-        const portion = scaleFood(food, b.quantity, b.unit as 'serving' | 'grams');
+        const portion = scaleFood(food, b.quantity, b.unit as AmountUnit);
         if (!portion) return Response.json({ error: 'Choose a valid serving amount. Weight is unavailable for this food.' }, { status: 400 });
         item = { date: b.date, meal: b.meal, sourceId: food.id, name: food.name, brand: food.brand, source: food.source,
           verified: food.verified, sourceUrl: food.sourceUrl, servingLabel: food.servingLabel,
@@ -31,7 +36,8 @@ export async function POST(request: Request) {
           return Response.json({ error: 'That food entry is incomplete. Search for the food again.' }, { status: 400 });
         }
         item = { date: b.date, meal: b.meal, name: b.name, brand: typeof b.brand === 'string' ? b.brand : undefined, source: 'Unverified entry',
-          sourceId: b.sourceId, quantity: b.quantity, unit: b.unit, grams: b.grams, calories: b.calories, protein: b.protein, carbs: b.carbs, fat: b.fat, verified: false };
+          sourceId: b.sourceId, quantity: b.quantity, unit: b.unit, grams: b.grams, calories: b.calories, protein: b.protein, carbs: b.carbs, fat: b.fat, verified: false,
+          servingLabel: typeof b.servingLabel === 'string' && b.servingLabel.length <= 200 ? b.servingLabel : undefined };
       }
       return Response.json(await addEntry(userId, item), { status: 201 });
     } catch (error) { console.error(error); return Response.json({ error: 'Food could not be added.' }, { status: 503 }); }

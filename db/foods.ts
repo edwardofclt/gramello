@@ -2,11 +2,12 @@ import { env } from 'cloudflare:workers';
 import type { CustomFoodInput, Food } from '../lib/food';
 
 const columns = `id, name, brand, source, source_kind as sourceKind, source_url as sourceUrl, verified,
-  nutrition_basis as nutritionBasis, serving_grams as servingGrams, serving_label as servingLabel,
+  nutrition_basis as nutritionBasis, serving_grams as servingGrams, serving_ml as servingMl, serving_label as servingLabel,
   calories, protein, carbs, fat, image, checked_at as checkedAt`;
 function database() { if (!env.DB) throw new Error('Food catalog unavailable'); return env.DB; }
-function fromRow(row: Omit<Food, 'verified'> & { verified: boolean | number }): Food {
+function fromRow(row: Omit<Food, 'verified'> & { verified?: boolean | number }): Food {
   return { ...row, verified: row.verified === true || row.verified === 1,
+    ...(row.nutritionBasis === '100ml' ? { nutritionUnit: 'ml' as const } : {}), servingMl: row.servingMl ?? undefined,
     brand: row.brand ?? undefined, sourceUrl: row.sourceUrl ?? undefined, image: row.image ?? undefined, checkedAt: row.checkedAt ?? undefined };
 }
 export async function getFood(id: string): Promise<Food | null> {
@@ -22,13 +23,13 @@ export async function findFoods(query: string, limit = 100): Promise<Food[]> {
   return (rows.results ?? []).map(fromRow);
 }
 async function writeFood(food: Food, createdBy: string | null) {
-  await database().prepare(`INSERT INTO foods (id,name,brand,source,source_kind,source_url,verified,nutrition_basis,serving_grams,serving_label,calories,protein,carbs,fat,image,created_by,checked_at,created_at)
-    VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET
+  await database().prepare(`INSERT INTO foods (id,name,brand,source,source_kind,source_url,verified,nutrition_basis,serving_grams,serving_ml,serving_label,calories,protein,carbs,fat,image,created_by,checked_at,created_at)
+    VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET
     name=excluded.name,brand=excluded.brand,source=excluded.source,source_url=excluded.source_url,
-    serving_grams=excluded.serving_grams,serving_label=excluded.serving_label,nutrition_basis=excluded.nutrition_basis,
+    serving_grams=excluded.serving_grams,serving_ml=excluded.serving_ml,serving_label=excluded.serving_label,nutrition_basis=excluded.nutrition_basis,
     calories=excluded.calories,protein=excluded.protein,carbs=excluded.carbs,fat=excluded.fat,image=excluded.image,checked_at=excluded.checked_at`)
-    .bind(food.id, food.name, food.brand || null, food.source, food.sourceKind, food.sourceUrl || null, food.verified ? 1 : 0,
-      food.nutritionBasis, food.servingGrams, food.servingLabel, food.calories, food.protein, food.carbs, food.fat,
+    .bind(food.id, food.name, food.brand || null, food.source, food.sourceKind || 'custom', food.sourceUrl || null, food.verified ? 1 : 0,
+      food.nutritionBasis || (food.nutritionUnit === 'ml' ? '100ml' : '100g'), food.servingGrams, food.servingMl ?? null, food.servingLabel, food.calories, food.protein, food.carbs, food.fat,
       food.image || null, createdBy, food.checkedAt || null, new Date().toISOString()).run();
 }
 export async function cacheDatabaseFoods(foods: Food[]) {
