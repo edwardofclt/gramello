@@ -12,6 +12,7 @@ The app remains **Prepare for Submission**; it has not been submitted or release
 | Primary category | Health & Fitness |
 | Secondary category | Food & Drink |
 | Primary localization | English (U.S.) |
+| Prepared listing version | 1.6.0 |
 | Price | US$0.99; base country United States |
 | Availability | United States only; all other countries/regions unavailable |
 | New regions | Automatic availability disabled |
@@ -67,9 +68,9 @@ device location permission.
 - Provide App Review with a working dedicated demo account and verify the review
   contact details in App Store Connect. Do not commit credentials to this repo.
 - Upload accurate native iPhone and iPad screenshots for the release build.
-- Set the listing version to match the selected release build. The listing was
-  initially 1.0. TestFlight has branded version 1.5.0 build 8; the newly released
-  1.6.0 restaurant/custom-food build was not yet listed during this check.
+- Attach the final release build to the prepared 1.6.0 listing. TestFlight has
+  branded version 1.5.0 build 8; the newly released 1.6.0 restaurant/custom-food
+  build was not yet listed during this check.
 - Test the final native build, its authentication, account deletion, food search,
   barcode scanning, and server deployment before submitting for review.
 
