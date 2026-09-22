@@ -12,7 +12,7 @@ export function FoodSheet({ date, initialMeal, onClose, onSaved }: { date: strin
   const [library, setLibrary] = useState(false);
   const [selected, setSelected] = useState<Food | undefined>();
   const [busy, setBusy] = useState(false);
-  return <AppDialog title={library ? 'My meals' : title} description={`${library ? 'Build a meal, save it, and portion it your way.' : 'Search foods or reuse your own meals.'} · ${formatDate(date)}`} onClose={onClose} busy={busy}>
+  return <AppDialog title={library ? 'My meals' : title} description={`${library ? 'Build a meal, save it, and portion it your way.' : 'Search foods, restaurants, and community submissions, or reuse your own meals.'} · ${formatDate(date)}`} onClose={onClose} busy={busy}>
     <View style={styles.row}><Action secondary={library} disabled={busy} onPress={() => { setSelected(undefined); setLibrary(false); }}>Search foods</Action><Action secondary={!library} disabled={busy} onPress={() => setLibrary(true)}>My meals</Action></View>
     {library ? <MyMeals date={date} initialMeal={initialMeal} onBusy={setBusy} onChoose={food => { setSelected(food); setLibrary(false); }} />
       : <FoodPicker key={selected?.id ?? 'search'} date={date} initialMeal={initialMeal} initialFood={selected} onSaved={onSaved} onBusy={setBusy} onTitle={setTitle} />}

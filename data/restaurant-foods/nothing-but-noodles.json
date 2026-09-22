@@ -1,0 +1,613 @@
+{
+  "chain": "Nothing But Noodles",
+  "sourceUrl": "https://www.nutritionix.com/nothing-but-noodles/menu/premium",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "name": "General Tso's Chicken",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 760.0,
+      "fat": 44.0,
+      "carbs": 69.0,
+      "protein": 24.0,
+      "id": "general-tso-s-chicken-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kung Pao Chicken",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 940.0,
+      "fat": 51.0,
+      "carbs": 89.0,
+      "protein": 31.0,
+      "id": "kung-pao-chicken-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Thai Peanut Stir Fry",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 600.0,
+      "fat": 27.0,
+      "carbs": 59.0,
+      "protein": 29.0,
+      "id": "thai-peanut-stir-fry-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Beef Stroganoff",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 510.0,
+      "fat": 31.0,
+      "carbs": 33.0,
+      "protein": 26.0,
+      "id": "beef-stroganoff-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Buttery Noodles",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 650.0,
+      "fat": 44.0,
+      "carbs": 46.0,
+      "protein": 19.0,
+      "id": "buttery-noodles-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Santa Fe Pasta",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 710.0,
+      "fat": 54.0,
+      "carbs": 40.0,
+      "protein": 18.0,
+      "id": "santa-fe-pasta-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Southwest ChipoUe",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 710.0,
+      "fat": 58.0,
+      "carbs": 41.0,
+      "protein": 11.0,
+      "id": "southwest-chipoue-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Spicy Cajun Pasta",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 660.0,
+      "fat": 50.0,
+      "carbs": 44.0,
+      "protein": 9.0,
+      "id": "spicy-cajun-pasta-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Pad Thai Noodles",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 600.0,
+      "fat": 10.0,
+      "carbs": 118.0,
+      "protein": 14.0,
+      "id": "pad-thai-noodles-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Sesame Lo Mein",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 410.0,
+      "fat": 11.0,
+      "carbs": 64.0,
+      "protein": 5.0,
+      "id": "sesame-lo-mein-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Spicy Japanese Noodles",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 420.0,
+      "fat": 8.0,
+      "carbs": 74.0,
+      "protein": 10.0,
+      "id": "spicy-japanese-noodles-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Thai Peanut",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 570.0,
+      "fat": 20.0,
+      "carbs": 89.0,
+      "protein": 11.0,
+      "id": "thai-peanut-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Basil Pesto",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 570.0,
+      "fat": 42.0,
+      "carbs": 36.0,
+      "protein": 14.0,
+      "id": "basil-pesto-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Cappelini Primavera",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 500.0,
+      "fat": 28.0,
+      "carbs": 56.0,
+      "protein": 10.0,
+      "id": "cappelini-primavera-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Fettuccini Alfredo",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 720.0,
+      "fat": 56.0,
+      "carbs": 36.0,
+      "protein": 20.0,
+      "id": "fettuccini-alfredo-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Margherita Pasta",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 470.0,
+      "fat": 31.0,
+      "carbs": 36.0,
+      "protein": 9.0,
+      "id": "margherita-pasta-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Marinara Pasta",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 490.0,
+      "fat": 11.0,
+      "carbs": 77.0,
+      "protein": 23.0,
+      "id": "marinara-pasta-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Three-Cheese Macaroni",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 450.0,
+      "fat": 21.0,
+      "carbs": 45.0,
+      "protein": 20.0,
+      "id": "three-cheese-macaroni-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Cheesy Chicken & Vegetables",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 320.0,
+      "fat": 21.0,
+      "carbs": 6.0,
+      "protein": 29.0,
+      "id": "cheesy-chicken-vegetables-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chicken Pomodoro",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 450.0,
+      "fat": 34.0,
+      "carbs": 7.0,
+      "protein": 28.0,
+      "id": "chicken-pomodoro-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Primavera Chicken & Vegetable Wrap",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 320.0,
+      "fat": 15.0,
+      "carbs": 26.0,
+      "protein": 22.0,
+      "id": "primavera-chicken-vegetable-wrap-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Shrimp Pests Florentine",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 310.0,
+      "fat": 25.0,
+      "carbs": 5.0,
+      "protein": 16.0,
+      "id": "shrimp-pests-florentine-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Thai Curry Beef & Vegetables",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 440.0,
+      "fat": 30.0,
+      "carbs": 16.0,
+      "protein": 32.0,
+      "id": "thai-curry-beef-vegetables-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Eggplant Parmesan",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 730.0,
+      "fat": 37.0,
+      "carbs": 79.0,
+      "protein": 19.0,
+      "id": "eggplant-parmesan-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Stuffed Shells",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 700.0,
+      "fat": 57.0,
+      "carbs": 28.0,
+      "protein": 27.0,
+      "id": "stuffed-shells-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "BBQ Chicken Salad",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 210.0,
+      "fat": 15.0,
+      "carbs": 11.0,
+      "protein": 9.0,
+      "id": "bbq-chicken-salad-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Caesar Salad",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 250.0,
+      "fat": 19.0,
+      "carbs": 14.0,
+      "protein": 7.0,
+      "id": "caesar-salad-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chopped Salad",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 230.0,
+      "fat": 15.0,
+      "carbs": 10.0,
+      "protein": 7.0,
+      "id": "chopped-salad-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Cranberry Spinach Salad",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 150.0,
+      "fat": 10.0,
+      "carbs": 18.0,
+      "protein": 3.0,
+      "id": "cranberry-spinach-salad-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Garden Fresh Salad",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 110.0,
+      "fat": 5.0,
+      "carbs": 12.0,
+      "protein": 5.0,
+      "id": "garden-fresh-salad-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Greek Salad",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 410.0,
+      "fat": 31.0,
+      "carbs": 26.0,
+      "protein": 9.0,
+      "id": "greek-salad-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Hunk of Lettuce",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 230.0,
+      "fat": 21.0,
+      "carbs": 7.0,
+      "protein": 6.0,
+      "id": "hunk-of-lettuce-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Mandarin Orange Salad",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 210.0,
+      "fat": 14.0,
+      "carbs": 13.0,
+      "protein": 2.0,
+      "id": "mandarin-orange-salad-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Oriental Salad",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 190.0,
+      "fat": 11.0,
+      "carbs": 20.0,
+      "protein": 4.0,
+      "id": "oriental-salad-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Pear & Balsamic Spinach Salad",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 400.0,
+      "fat": 28.0,
+      "carbs": 38.0,
+      "protein": 7.0,
+      "id": "pear-balsamic-spinach-salad-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Spicy Cucumber & Chicken Salad",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 280.0,
+      "fat": 15.0,
+      "carbs": 10.0,
+      "protein": 28.0,
+      "id": "spicy-cucumber-chicken-salad-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Steak Salad",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 140.0,
+      "fat": 19.0,
+      "carbs": 7.0,
+      "protein": 11.0,
+      "id": "steak-salad-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Sun-Dried Tomato",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 270.0,
+      "fat": 12.0,
+      "carbs": 32.0,
+      "protein": 11.0,
+      "id": "sun-dried-tomato-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Buttermilk Ranch",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 60.0,
+      "fat": 6.0,
+      "carbs": 1.0,
+      "protein": 0.0,
+      "id": "buttermilk-ranch-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Creamy Balsamic",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 150.0,
+      "fat": 10.0,
+      "carbs": 20.0,
+      "protein": 0.0,
+      "id": "creamy-balsamic-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Golden Italian",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 60.0,
+      "fat": 6.0,
+      "carbs": 2.0,
+      "protein": 0.0,
+      "id": "golden-italian-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Oriental Salad Dressing",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 140.0,
+      "fat": 10.0,
+      "carbs": 12.0,
+      "protein": 0.0,
+      "id": "oriental-salad-dressing-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Poppy Seed",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 70.0,
+      "fat": 6.0,
+      "carbs": 5.0,
+      "protein": 0.0,
+      "id": "poppy-seed-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Roasted Garlic Balsamic Vinaigrette",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 30.0,
+      "fat": 3.0,
+      "carbs": 2.0,
+      "protein": 0.0,
+      "id": "roasted-garlic-balsamic-vinaigrette-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Alfredo",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 720.0,
+      "fat": 55.0,
+      "carbs": 39.0,
+      "protein": 19.0,
+      "id": "alfredo-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Buttery Noodles - Kids",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 720.0,
+      "fat": 49.0,
+      "carbs": 51.0,
+      "protein": 21.0,
+      "id": "buttery-noodles-kids-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Macaroni & Cheese",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 450.0,
+      "fat": 26.0,
+      "carbs": 38.0,
+      "protein": 18.0,
+      "id": "macaroni-cheese-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Spaghetti",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 290.0,
+      "fat": 6.0,
+      "carbs": 47.0,
+      "protein": 13.0,
+      "id": "spaghetti-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Cucumber Side Salad",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 190.0,
+      "fat": 16.0,
+      "carbs": 13.0,
+      "protein": 2.0,
+      "id": "cucumber-side-salad-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Fresh Mozzarella",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 770.0,
+      "fat": 27.0,
+      "carbs": 134.0,
+      "protein": 20.0,
+      "id": "fresh-mozzarella-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Garlic Breadsticks",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 110.0,
+      "fat": 4.0,
+      "carbs": 28.0,
+      "protein": 2.0,
+      "id": "garlic-breadsticks-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Mozzarella Cheese Bread",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 630.0,
+      "fat": 17.0,
+      "carbs": 86.0,
+      "protein": 33.0,
+      "id": "mozzarella-cheese-bread-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Potstidairs",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 480.0,
+      "fat": 33.0,
+      "carbs": 39.0,
+      "protein": 11.0,
+      "id": "potstidairs-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Thai Lettuce Wraps",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 360.0,
+      "fat": 23.0,
+      "carbs": 15.0,
+      "protein": 24.0,
+      "id": "thai-lettuce-wraps-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Tomato Bisque",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 250.0,
+      "fat": 23.0,
+      "carbs": 9.0,
+      "protein": 2.0,
+      "id": "tomato-bisque-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Cannoli",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 370.0,
+      "fat": 17.0,
+      "carbs": 44.0,
+      "protein": 10.0,
+      "id": "cannoli-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Cotton Candy",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 70.0,
+      "fat": 0.0,
+      "carbs": 17.0,
+      "protein": 0.0,
+      "id": "cotton-candy-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Key Lime Ple",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 590.0,
+      "fat": 33.0,
+      "carbs": 67.0,
+      "protein": 11.0,
+      "id": "key-lime-ple-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "New York Cheesecake",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 770.0,
+      "fat": 53.0,
+      "carbs": 59.0,
+      "protein": 15.0,
+      "id": "new-york-cheesecake-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "New York Cheesecake w/ Almonds drizzled with non-alcoholic Amaretto Liqueur",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 110.0,
+      "fat": 3.0,
+      "carbs": 20.0,
+      "protein": 1.0,
+      "id": "new-york-cheesecake-w-almonds-drizzled-with-non-alcoholic-amaretto-liqueur-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "New York Cheesecake w/ Chocolate Syrup",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 100.0,
+      "fat": 0.0,
+      "carbs": 23.0,
+      "protein": 1.0,
+      "id": "new-york-cheesecake-w-chocolate-syrup-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "New York Cheesecake w/ Strawberry Puree",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 70.0,
+      "fat": 0.0,
+      "carbs": 8.0,
+      "protein": 0.0,
+      "id": "new-york-cheesecake-w-strawberry-puree-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Triple Chocolate Cake",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 710.0,
+      "fat": 33.0,
+      "carbs": 106.0,
+      "protein": 6.0,
+      "id": "triple-chocolate-cake-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Beef",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 110.0,
+      "fat": 4.0,
+      "carbs": 0.0,
+      "protein": 17.0,
+      "id": "beef-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chicken",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 100.0,
+      "fat": 3.0,
+      "carbs": 0.0,
+      "protein": 18.0,
+      "id": "chicken-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Shrimp",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 50.0,
+      "fat": 1.0,
+      "carbs": 1.0,
+      "protein": 10.0,
+      "id": "shrimp-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Tofu",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 60.0,
+      "fat": 4.0,
+      "carbs": 1.0,
+      "protein": 7.0,
+      "id": "tofu-1-menu-serving-size-in-name"
+    }
+  ],
+  "source": "Nutritionix",
+  "sourceKind": "database",
+  "sourceDate": "2015-03-17"
+}

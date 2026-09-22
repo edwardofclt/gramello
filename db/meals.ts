@@ -6,6 +6,10 @@ const columns = 'id, name, ingredients, total_grams as totalGrams, serving_grams
 const decode = (row: MealRow): CustomMeal => ({ ...row, ingredients: JSON.parse(row.ingredients) });
 function db() { if (!env.DB) throw new Error('Meal storage unavailable'); return env.DB; }
 
+export async function getMeal(userId: string, id: string) {
+  const row = await db().prepare(`SELECT ${columns} FROM custom_meals WHERE id = ? AND user_id = ?`).bind(id, userId).first<MealRow>();
+  return row ? decode(row) : null;
+}
 export async function listMeals(userId: string) {
   const rows = await db().prepare(`SELECT ${columns} FROM custom_meals WHERE user_id = ? ORDER BY updated_at DESC, id`).bind(userId).all<MealRow>();
   return (rows.results ?? []).map(decode);

@@ -1,0 +1,384 @@
+{
+  "checkedAt": "2026-09-20",
+  "scope": "Targeted follow-up on missing regional chains. Not a claim that nutrition is unpublished everywhere.",
+  "imports": [
+    {
+      "chain": "Super Chix",
+      "catalogFile": "super-chix.json",
+      "sourceUrl": "https://nutrition.superchix.com/menu",
+      "importedServings": 98
+    },
+    {
+      "chain": "North Italia",
+      "catalogFile": "north-italia.json",
+      "sourceUrl": "https://www.northitalia.com/wp-content/uploads/2026/04/North-Italia-Nutritional-Guide-04-2026-1.pdf",
+      "importedServings": 316
+    },
+    {
+      "chain": "Postino",
+      "catalogFile": "postino.json",
+      "sourceUrl": "https://app.everybite.com/widget/7d6e5b3d",
+      "importedServings": 139
+    }
+  ],
+  "blocked": [
+    {
+      "chain": "Metro Diner",
+      "inventorySlug": "metro-diner",
+      "status": "blocked_missing_complete_macros",
+      "blocker": "Current official menu publishes calories or calorie ranges but no fat, carbs, or protein totals. No complete Nutritionix catalog found.",
+      "checkedAt": "2026-09-20",
+      "checks": [
+        {
+          "url": "https://metrodiner.com/menu/",
+          "outcome": "Current page links April 2026 menu PDF."
+        },
+        {
+          "url": "https://cdn.metrodiner.io/wp-content/uploads/2026/06/4.26_MetroMenu.pdf",
+          "outcome": "Both PDF pages visually inspected. Menu calories only; no macro table. PDF text encoding is broken, so omission was checked visually."
+        },
+        {
+          "url": "https://www.nutritionix.com/metro-diner/menu/premium",
+          "outcome": "HTTP 404 Page Not Found."
+        }
+      ]
+    },
+    {
+      "chain": "Flying Biscuit Cafe",
+      "inventorySlug": "flying-biscuit-cafe",
+      "status": "blocked_missing_complete_macros",
+      "blocker": "Official local menu contains descriptions/prices but no nutrient values. Nutritionix chain exists but its table says No Results Found.",
+      "checkedAt": "2026-09-20",
+      "checks": [
+        {
+          "url": "https://www.flyingbiscuit.com/locations-2/charlotte-rea/",
+          "outcome": "Current Stonecrest location page links local food/drink/catering PDFs."
+        },
+        {
+          "url": "https://www.flyingbiscuit.com/img/menus/charlotte-rea-menu.pdf",
+          "outcome": "One-page local menu retrieved; no calorie/macro nutrition table."
+        },
+        {
+          "url": "https://www.nutritionix.com/the-flying-biscuit-cafe/menu/premium",
+          "outcome": "HTTP 200 chain menu, body is No Results Found. Alternate /flying-biscuit/menu/premium returns 404."
+        }
+      ]
+    },
+    {
+      "chain": "Blackfinn Ameripub",
+      "inventorySlug": "blackfinn-ameripub",
+      "status": "blocked_missing_complete_macros",
+      "blocker": "Ballantyne official menu descriptions/prices have no complete calorie/macro rows; queried database aliases unavailable.",
+      "checkedAt": "2026-09-20",
+      "checks": [
+        {
+          "url": "https://blackfinnballantyne.com/menus/",
+          "outcome": "HTTP 200; complete current food/beverage menu text inspected, no nutrient totals or linked nutrition guide."
+        },
+        {
+          "url": "https://www.nutritionix.com/blackfinn/menu/premium",
+          "outcome": "HTTP 404."
+        },
+        {
+          "url": "https://www.nutritionix.com/blackfinn-ameripub/menu/premium",
+          "outcome": "HTTP 404."
+        }
+      ]
+    },
+    {
+      "chain": "131 MAIN",
+      "inventorySlug": "131-main",
+      "status": "blocked_missing_complete_macros",
+      "blocker": "Official lunch and dinner menus have no calorie/macro rows or nutrition guide link.",
+      "checkedAt": "2026-09-20",
+      "checks": [
+        {
+          "url": "https://www.131-main.com/blakeney/",
+          "outcome": "Links the checked official lunch/dinner menus."
+        },
+        {
+          "url": "https://www.131-main.com/menus/lunch/",
+          "outcome": "HTTP 200; descriptions/prices only."
+        },
+        {
+          "url": "https://www.131-main.com/menus/dinner-fall/",
+          "outcome": "HTTP 200; descriptions/prices only."
+        },
+        {
+          "url": "https://www.nutritionix.com/131-main/menu/premium",
+          "outcome": "HTTP 404."
+        }
+      ]
+    },
+    {
+      "chain": "Greco Fresh Grille",
+      "inventorySlug": "greco-fresh-grille",
+      "status": "blocked_missing_complete_macros",
+      "blocker": "Official dietary document is an allergen checklist, without calories or macros.",
+      "checkedAt": "2026-09-20",
+      "checks": [
+        {
+          "url": "https://grecofreshgrille.com/menu/",
+          "outcome": "Current official menu links allergen PDF; no complete macro totals."
+        },
+        {
+          "url": "https://media-cdn.getbento.com/accounts/ba6575f7f076ad7c1e7c254651d05806/media/1JJmLUHyTpu5Wwra8JzU_zG8ksbbeSaO5S3RnzG6L_Greco%2520Allergy%2520Chart%2520%281%29.pdf",
+          "outcome": "Retrieved PDF is milk/egg/soy/wheat/sesame/peanut/tree-nut/fish checkmarks only."
+        },
+        {
+          "url": "https://www.nutritionix.com/greco-fresh-grille/menu/premium",
+          "outcome": "HTTP 404."
+        }
+      ]
+    },
+    {
+      "chain": "Ilios Crafted Greek",
+      "inventorySlug": "ilios-crafted-greek",
+      "status": "blocked_missing_complete_macros",
+      "blocker": "Official food menu supplies descriptions/prices and dietary tags without nutrient totals. No chain Nutritionix catalog found. Third-party estimated macro articles were not imported as verified.",
+      "checkedAt": "2026-09-20",
+      "checks": [
+        {
+          "url": "https://ilioscraftedgreek.com/charlotte-ilios-crafted-greek-food-menu",
+          "outcome": "HTTP 200; whole page inspected, no calories/fat/carbs/protein totals or nutrition PDF."
+        },
+        {
+          "url": "https://www.nutritionix.com/ilios-crafted-greek/menu/premium",
+          "outcome": "HTTP 404."
+        }
+      ]
+    },
+    {
+      "chain": "Duckworth’s Grill & Taphouse",
+      "inventorySlug": "duckworths",
+      "status": "blocked_missing_complete_macros",
+      "blocker": "Current Rea Farms menu supplies dishes/prices but no nutrient totals.",
+      "checkedAt": "2026-09-20",
+      "checks": [
+        {
+          "url": "https://www.duckworths.com/location/duckworths-rea-farms/",
+          "outcome": "HTTP 200; full current menu inspected; no nutrition document or macro totals."
+        },
+        {
+          "url": "https://www.duckworths.com/menus/",
+          "outcome": "Official menu directory points to location menu pages."
+        },
+        {
+          "url": "https://www.nutritionix.com/duckworths/menu/premium",
+          "outcome": "HTTP 404."
+        }
+      ]
+    },
+    {
+      "chain": "Chex Grill & Wings",
+      "inventorySlug": "chex-grill-wings",
+      "status": "blocked_missing_complete_macros",
+      "blocker": "Official menu/category pages describe foods and direct users to local ordering; no complete nutrient table found.",
+      "checkedAt": "2026-09-20",
+      "checks": [
+        {
+          "url": "https://chexgrill.com/menu/",
+          "outcome": "HTTP 200; menu categories but no nutrient totals or nutrition guide."
+        },
+        {
+          "url": "https://chexgrill.com/menu/wings",
+          "outcome": "HTTP 200; description/flavors only."
+        },
+        {
+          "url": "https://www.nutritionix.com/chex-grill/menu/premium",
+          "outcome": "HTTP 404."
+        }
+      ]
+    },
+    {
+      "chain": "Burtons Grill & Bar",
+      "inventorySlug": "burtons-grill-bar",
+      "status": "blocked_missing_complete_macros",
+      "blocker": "Official linked TenKites menu exposes ingredients/allergens but calories are dashes and no macro values are provided. Nutritionix table empty.",
+      "checkedAt": "2026-09-20",
+      "checks": [
+        {
+          "url": "https://burtonsgrill.com/menus/nc/charlotte-park-road/all-day/",
+          "outcome": "Official menu links its TenKites dietary/allergen data."
+        },
+        {
+          "url": "https://menus.tenkites.com/burtons/burtonsgrillbarmenu",
+          "outcome": "HTTP 200; allergens and ingredient data retrieved, data-calories=\"-\" and no carbohydrate/nutrient amounts."
+        },
+        {
+          "url": "https://www.nutritionix.com/burtons-grill/menu/premium",
+          "outcome": "HTTP 200 chain menu, body is No Results Found. Alternate burtons-grill-and-bar returns 404."
+        }
+      ]
+    },
+    {
+      "chain": "Famous Toastery",
+      "inventorySlug": "famous-toastery",
+      "status": "audited_by_national_agent",
+      "checkedAt": "2026-09-20",
+      "blocker": "Independent national agent inspected official menu/order sources and found no complete macro data; see national audit for exact probes.",
+      "checks": [
+        {
+          "url": "https://famoustoastery.com/",
+          "outcome": "National agent reports no published complete macros in inspected menu; checked via independent subagent."
+        }
+      ]
+    },
+    {
+      "chain": "Hickory Tavern",
+      "inventorySlug": "hickory-tavern",
+      "status": "audited_by_national_agent",
+      "checkedAt": "2026-09-20",
+      "blocker": "Independent national agent inspected official menu/order sources and found no complete macro data; see national audit for exact probes.",
+      "checks": [
+        {
+          "url": "https://hickorytavern.com/locations/ballantyne/menu/",
+          "outcome": "National agent reports no published complete macros in inspected menu; checked via independent subagent."
+        }
+      ]
+    },
+    {
+      "chain": "Sabor Latin Street Grill",
+      "inventorySlug": "sabor-latin-street-grill",
+      "status": "blocked_missing_complete_macros",
+      "checkedAt": "2026-09-20",
+      "blocker": "Current menu gives dishes/prices; official allergen chart has no calorie/macro amounts.",
+      "checks": [
+        {
+          "url": "https://www.saborlatingrill.com/menu/",
+          "outcome": "HTML menu inspected; no nutrient totals."
+        },
+        {
+          "url": "https://www.saborlatingrill.com/wp-content/uploads/2026/03/MENU-2026_compressed.pdf",
+          "outcome": "2026 menu PDF retrieved, no numeric macro table."
+        },
+        {
+          "url": "https://www.saborlatingrill.com/wp-content/uploads/2022/10/Allergen-Chart-S.pdf",
+          "outcome": "Single image-based PDF visually inspected: allergen symbols only, no macro totals."
+        },
+        {
+          "url": "https://www.nutritionix.com/sabor-latin-street-grill/menu/premium",
+          "outcome": "HTTP 404; no chain menu at this queried slug."
+        }
+      ]
+    },
+    {
+      "chain": "Midwood Smokehouse",
+      "inventorySlug": "midwood-smokehouse",
+      "status": "blocked_missing_complete_macros",
+      "checkedAt": "2026-09-20",
+      "blocker": "Official Ballantyne menu data has descriptions/prices but no nutrient totals. Old diet guide recommends menu choices without calorie/macro numbers.",
+      "checks": [
+        {
+          "url": "https://midwoodsmokehouse.com/menus/ballantyne/",
+          "outcome": "Current page embeds Marqii menu widget."
+        },
+        {
+          "url": "https://embed.marqii.com/api/v2/public/widget/ec0cdd92-c150-41ce-82d9-6126135ebdd7?widgetType=menus",
+          "outcome": "Public official-widget JSON retrieved: item descriptions, prices, allergens, dietary restrictions; no calories, fat or carbohydrate fields."
+        },
+        {
+          "url": "https://midwoodsmokehouse.com/bbq/wp-content/uploads/2019/06/Diet-Booklet_final121619.pdf",
+          "outcome": "Direct download 404; cached browser extraction of 12 pages reviewed. Diet recommendation booklet, not a nutrition table."
+        },
+        {
+          "url": "https://www.nutritionix.com/midwood-smokehouse/menu/premium",
+          "outcome": "HTTP 404; no chain menu at this queried slug."
+        }
+      ]
+    },
+    {
+      "chain": "Hawthorne’s NY Pizza & Bar",
+      "inventorySlug": "hawthornes-ny-pizza-bar",
+      "status": "blocked_missing_complete_macros",
+      "checkedAt": "2026-09-20",
+      "blocker": "Official menu contains descriptions/prices but no nutrition totals.",
+      "checks": [
+        {
+          "url": "https://hawthornespizza.com/",
+          "outcome": "Official site redirects to pizzacharlottenc.com; follow its menu on that host."
+        },
+        {
+          "url": "https://pizzacharlottenc.com/charlotte-hawthorne-s-pizza-7th-street-food-menu",
+          "outcome": "HTTP 200, full menu inspected; no calorie/macronutrient numbers or linked nutrition document."
+        },
+        {
+          "url": "https://www.nutritionix.com/hawthornes-ny-pizza-bar/menu/premium",
+          "outcome": "HTTP 404; no chain menu at this queried slug."
+        }
+      ]
+    },
+    {
+      "chain": "Ilios Noche",
+      "inventorySlug": "ilios-noche",
+      "status": "blocked_missing_complete_macros",
+      "checkedAt": "2026-09-20",
+      "blocker": "Official food menu contains descriptions/prices but no nutrition totals.",
+      "checks": [
+        {
+          "url": "https://iliosnoche.com/charlotte-ilios-noche-food-menu",
+          "outcome": "HTTP 200, entire 9,716-character menu text inspected: no calorie/macronutrient numbers or nutrition guide."
+        },
+        {
+          "url": "https://www.nutritionix.com/ilios-noche/menu/premium",
+          "outcome": "HTTP 404; no chain menu at this queried slug."
+        }
+      ]
+    },
+    {
+      "chain": "Inizio Pizza",
+      "inventorySlug": "inizio-pizza",
+      "status": "blocked_missing_complete_macros",
+      "checkedAt": "2026-09-20",
+      "blocker": "Official pizza menu contains descriptions/prices but no nutrition totals.",
+      "checks": [
+        {
+          "url": "https://www.iniziopizza.com/menu",
+          "outcome": "HTTP 200; all displayed menu categories inspected, no calorie/macronutrient amounts or linked nutrition guide."
+        },
+        {
+          "url": "https://www.nutritionix.com/inizio-pizza/menu/premium",
+          "outcome": "HTTP 404; no chain menu at this queried slug."
+        }
+      ]
+    },
+    {
+      "chain": "521 BBQ & Grill",
+      "inventorySlug": "521-bbq-grill",
+      "status": "blocked_missing_complete_macros",
+      "checkedAt": "2026-09-20",
+      "blocker": "Current Indian Land restaurant PDF menu has serving choices/prices but no nutrient table.",
+      "checks": [
+        {
+          "url": "https://521bbqil.com/",
+          "outcome": "Current official Indian Land site links menu PDF."
+        },
+        {
+          "url": "https://521bbqil.com/source/521-BBQ-Menu.pdf",
+          "outcome": "2026 menu retrieved; no calories or macro totals."
+        },
+        {
+          "url": "https://www.nutritionix.com/521-bbq/menu/premium",
+          "outcome": "HTTP 404; no chain menu at this queried slug."
+        }
+      ]
+    },
+    {
+      "chain": "Charbar No. 7",
+      "inventorySlug": "charbar-no-7",
+      "status": "blocked_missing_complete_macros",
+      "checkedAt": "2026-09-20",
+      "blocker": "Official menu browser extraction gives descriptions/prices but no nutrition facts.",
+      "checks": [
+        {
+          "url": "https://charbar7.com/menus/lunch-dinner/",
+          "outcome": "Browser retrieval shows food descriptions and prices only. Direct curl received a JavaScript/browser gate; browser source used for inspection."
+        },
+        {
+          "url": "https://www.nutritionix.com/charbar-no-7/menu/premium",
+          "outcome": "HTTP 404; no chain menu at this queried slug."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,613 @@
+{
+  "chain": "Popeyes",
+  "sourceUrl": "https://www.nutritionix.com/popeyes/menu/premium",
+  "source": "Nutritionix",
+  "sourceKind": "database",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "id": "nutritionix-613775",
+      "name": "Classic or Spicy, Chicken Breast",
+      "calories": 380,
+      "protein": 35,
+      "carbs": 16,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Signature Chicken; size in item name)"
+    },
+    {
+      "id": "nutritionix-613773",
+      "name": "Classic or Spicy, Chicken Leg",
+      "calories": 160,
+      "protein": 14,
+      "carbs": 5,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Signature Chicken; size in item name)"
+    },
+    {
+      "id": "nutritionix-613774",
+      "name": "Classic or Spicy, Chicken Thigh",
+      "calories": 280,
+      "protein": 14,
+      "carbs": 7,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Signature Chicken; size in item name)"
+    },
+    {
+      "id": "nutritionix-613772",
+      "name": "Classic or Spicy, Chicken Wing",
+      "calories": 210,
+      "protein": 13,
+      "carbs": 8,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Signature Chicken; size in item name)"
+    },
+    {
+      "id": "nutritionix-613778",
+      "name": "Blackened Tenders, 3 pc",
+      "calories": 170,
+      "protein": 26,
+      "carbs": 2,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Tenders; size in item name)"
+    },
+    {
+      "id": "nutritionix-613779",
+      "name": "Blackened Tenders, 5 pc",
+      "calories": 280,
+      "protein": 43,
+      "carbs": 3,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Tenders; size in item name)"
+    },
+    {
+      "id": "nutritionix-613776",
+      "name": "Classic or Spicy Tenders, 3 pc",
+      "calories": 450,
+      "protein": 38,
+      "carbs": 29,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Tenders; size in item name)"
+    },
+    {
+      "id": "nutritionix-613777",
+      "name": "Classic or Spicy Tenders, 5 pc",
+      "calories": 740,
+      "protein": 63,
+      "carbs": 48,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Tenders; size in item name)"
+    },
+    {
+      "id": "nutritionix-658311",
+      "name": "Classic Boneless Wings",
+      "calories": 500,
+      "protein": 26,
+      "carbs": 23,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-658318",
+      "name": "Honey BBQ Bone-In Wings",
+      "calories": 880,
+      "protein": 46,
+      "carbs": 70,
+      "fat": 46,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-658312",
+      "name": "Honey BBQ Boneless Wings",
+      "calories": 700,
+      "protein": 27,
+      "carbs": 72,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-658319",
+      "name": "Honey Lemon Pepper Bone-In Wings",
+      "calories": 920,
+      "protein": 45,
+      "carbs": 83,
+      "fat": 46,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-658313",
+      "name": "Honey Lemon Pepper Boneless Wings",
+      "calories": 750,
+      "protein": 26,
+      "carbs": 85,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-658320",
+      "name": "Roasted Garlic Parmesan Bone-In Wings",
+      "calories": 1040,
+      "protein": 48,
+      "carbs": 29,
+      "fat": 81,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-658314",
+      "name": "Roasted Garlic Parmesan Boneless Wings",
+      "calories": 860,
+      "protein": 29,
+      "carbs": 31,
+      "fat": 69,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-658321",
+      "name": "Signature Hot Bone-In Wings",
+      "calories": 1190,
+      "protein": 46,
+      "carbs": 45,
+      "fat": 94,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-658315",
+      "name": "Signature Hot Boneless Wings",
+      "calories": 1020,
+      "protein": 28,
+      "carbs": 46,
+      "fat": 82,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-658317",
+      "name": "Spicy Bone-In Wings",
+      "calories": 680,
+      "protein": 45,
+      "carbs": 22,
+      "fat": 46,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-658322",
+      "name": "Sweet 'N Spicy Bone-In Wings",
+      "calories": 950,
+      "protein": 46,
+      "carbs": 77,
+      "fat": 46,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-658316",
+      "name": "Sweet 'N Spicy Boneless Wings",
+      "calories": 730,
+      "protein": 27,
+      "carbs": 78,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-613782",
+      "name": "Popcorn Shrimp",
+      "calories": 390,
+      "protein": 14,
+      "carbs": 28,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Seafood; size in item name)"
+    },
+    {
+      "id": "nutritionix-613783",
+      "name": "Chicken Sandwich, Classic",
+      "calories": 700,
+      "protein": 28,
+      "carbs": 50,
+      "fat": 42,
+      "servingLabel": "1 listed serving (Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-613784",
+      "name": "Chicken Sandwich, Spicy",
+      "calories": 700,
+      "protein": 28,
+      "carbs": 50,
+      "fat": 42,
+      "servingLabel": "1 listed serving (Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-613785",
+      "name": "Biscuit",
+      "calories": 210,
+      "protein": 3,
+      "carbs": 20,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Signature Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-613787",
+      "name": "Cajun Fries, Large",
+      "calories": 800,
+      "protein": 10,
+      "carbs": 97,
+      "fat": 42,
+      "servingLabel": "1 listed serving (Signature Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-613786",
+      "name": "Cajun Fries, Regular",
+      "calories": 270,
+      "protein": 4,
+      "carbs": 33,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Signature Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-613795",
+      "name": "Coleslaw, Large",
+      "calories": 420,
+      "protein": 3,
+      "carbs": 36,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Signature Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-613794",
+      "name": "Coleslaw, Regular",
+      "calories": 140,
+      "protein": 1,
+      "carbs": 12,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Signature Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-613789",
+      "name": "Homestyle Mac & Cheese, Large",
+      "calories": 850,
+      "protein": 33,
+      "carbs": 48,
+      "fat": 63,
+      "servingLabel": "1 listed serving (Signature Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-613788",
+      "name": "Homestyle Mac & Cheese, Regular",
+      "calories": 280,
+      "protein": 11,
+      "carbs": 16,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Signature Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-613796",
+      "name": "Jalapeno",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Signature Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-613791",
+      "name": "Mashed Potatoes with Cajun Gravy, Large",
+      "calories": 330,
+      "protein": 9,
+      "carbs": 54,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Signature Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-613790",
+      "name": "Mashed Potatoes with Cajun Gravy, Regular",
+      "calories": 110,
+      "protein": 3,
+      "carbs": 18,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Signature Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-613793",
+      "name": "Red Beans & Rice, Large",
+      "calories": 610,
+      "protein": 19,
+      "carbs": 51,
+      "fat": 40,
+      "servingLabel": "1 listed serving (Signature Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-613792",
+      "name": "Red Beans & Rice, Regular",
+      "calories": 250,
+      "protein": 8,
+      "carbs": 22,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Signature Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-613797",
+      "name": "Bayou Buffalo Sauce",
+      "calories": 60,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Signature Dipping Sauces; size in item name)"
+    },
+    {
+      "id": "nutritionix-613798",
+      "name": "BoldBQ Sauce",
+      "calories": 70,
+      "protein": 0,
+      "carbs": 16,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Signature Dipping Sauces; size in item name)"
+    },
+    {
+      "id": "nutritionix-613800",
+      "name": "Buttermilk Ranch Sauce",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Signature Dipping Sauces; size in item name)"
+    },
+    {
+      "id": "nutritionix-613804",
+      "name": "Cocktail Sauce",
+      "calories": 40,
+      "protein": 0,
+      "carbs": 9,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Signature Dipping Sauces; size in item name)"
+    },
+    {
+      "id": "nutritionix-613801",
+      "name": "Mardi Gras Mustard Sauce",
+      "calories": 100,
+      "protein": 1,
+      "carbs": 5,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Signature Dipping Sauces; size in item name)"
+    },
+    {
+      "id": "nutritionix-613802",
+      "name": "Sweet Heat Sauce",
+      "calories": 70,
+      "protein": 0,
+      "carbs": 19,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Signature Dipping Sauces; size in item name)"
+    },
+    {
+      "id": "nutritionix-613803",
+      "name": "Tartar Sauce",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Signature Dipping Sauces; size in item name)"
+    },
+    {
+      "id": "nutritionix-658323",
+      "name": "Wild Honey Mustard",
+      "calories": 110,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Signature Dipping Sauces; size in item name)"
+    },
+    {
+      "id": "nutritionix-613809",
+      "name": "Bacon Biscuit",
+      "calories": 400,
+      "protein": 8,
+      "carbs": 37,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-613805",
+      "name": "Chicken Biscuit",
+      "calories": 490,
+      "protein": 17,
+      "carbs": 47,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-613813",
+      "name": "Coffee",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-613808",
+      "name": "Egg & Sausage Biscuit",
+      "calories": 690,
+      "protein": 20,
+      "carbs": 43,
+      "fat": 45,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-613807",
+      "name": "Egg Biscuit",
+      "calories": 510,
+      "protein": 13,
+      "carbs": 41,
+      "fat": 29,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-613811",
+      "name": "Grits",
+      "calories": 370,
+      "protein": 5,
+      "carbs": 80,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-613812",
+      "name": "Hash Rounds",
+      "calories": 360,
+      "protein": 3,
+      "carbs": 41,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-613814",
+      "name": "Orange Juice",
+      "calories": 140,
+      "protein": 2,
+      "carbs": 33,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-613810",
+      "name": "Sausage & Gravy Biscuit",
+      "calories": 510,
+      "protein": 10,
+      "carbs": 42,
+      "fat": 33,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-613806",
+      "name": "Sausage Biscuit",
+      "calories": 540,
+      "protein": 13,
+      "carbs": 41,
+      "fat": 36,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-613815",
+      "name": "Coke",
+      "calories": 240,
+      "protein": 0,
+      "carbs": 66,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-613816",
+      "name": "Diet Coke",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-613823",
+      "name": "Diet Pepsi",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-613824",
+      "name": "Dr Pepper",
+      "calories": 240,
+      "protein": 0,
+      "carbs": 65,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-613819",
+      "name": "Fanta Orange",
+      "calories": 260,
+      "protein": 0,
+      "carbs": 70,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-613818",
+      "name": "Fanta Strawberry",
+      "calories": 270,
+      "protein": 0,
+      "carbs": 70,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-613827",
+      "name": "Minute Maid Lemonade",
+      "calories": 270,
+      "protein": 0,
+      "carbs": 71,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-613821",
+      "name": "Mountain Dew",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 73,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-613822",
+      "name": "Pepsi",
+      "calories": 250,
+      "protein": 0,
+      "carbs": 69,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-613817",
+      "name": "Sprite",
+      "calories": 230,
+      "protein": 0,
+      "carbs": 61,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-613825",
+      "name": "Unsweetened Tea",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-613828",
+      "name": "Cinnamon Apple Pie",
+      "calories": 240,
+      "protein": 3,
+      "carbs": 35,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-613830",
+      "name": "Kids Chicken Leg, Classic",
+      "calories": 160,
+      "protein": 14,
+      "carbs": 5,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Kids Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-613829",
+      "name": "Kids Tender, Classic",
+      "calories": 150,
+      "protein": 13,
+      "carbs": 12,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Kids Meals; size in item name)"
+    }
+  ],
+  "sourceDate": "2025-09-29"
+}

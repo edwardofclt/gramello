@@ -8,7 +8,7 @@ import { Input } from './ui/input';
 import { FoodPicker, NutritionPreview } from './food-picker';
 import { useMealDraft } from '@/hooks/use-meal-draft';
 import { useMealLibrary } from '@/hooks/use-meal-library';
-import { displayAmount, GRAMS_PER_OUNCE, mealFood, summarizeMeal, type CustomMeal, type Food } from '@/lib/meals';
+import { displayAmount, GRAMS_PER_OUNCE, mealFood, scaleFood, summarizeMeal, type CustomMeal, type Food } from '@/lib/meals';
 import type { FoodApi } from '@/lib/food-api';
 
 export function MyMeals({ api, onChoose, onBusy }: { api: FoodApi; onChoose: (food: Food) => void; onBusy: (busy: boolean) => void }) {
@@ -39,6 +39,7 @@ function MealEditor({ api, initial, onSaved, onBack, onBusy }: { api: FoodApi; i
   const draft = useMealDraft(initial);
   const [adding, setAdding] = useState(false);
   const [saving, setSaving] = useState(false);
+  const [pickerBusy, setPickerBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const lock = useRef(false);
   async function save() {
@@ -48,9 +49,9 @@ function MealEditor({ api, initial, onSaved, onBack, onBusy }: { api: FoodApi; i
     catch (error) { setError(error instanceof Error ? error.message : 'Meal could not be saved.'); }
     finally { lock.current = false; setSaving(false); onBusy(false); }
   }
-  if (adding) return <div className="meal-builder"><button className="back-link" onClick={() => setAdding(false)}><ChevronLeft />Back to meal</button><h3>Add ingredient</h3><FoodPicker api={api} actionLabel="Add ingredient" onChoose={ingredient => { draft.setIngredients(items => [...items, ingredient]); setAdding(false); }} /></div>;
+  if (adding) return <div className="meal-builder"><button className="back-link" disabled={pickerBusy} onClick={() => setAdding(false)}><ChevronLeft />Back to meal</button><h3>Add ingredient</h3><FoodPicker api={api} onBusy={busy => { setPickerBusy(busy); onBusy(busy); }} actionLabel="Add ingredient" onChoose={ingredient => { draft.setIngredients(items => [...items, ingredient]); setAdding(false); }} /></div>;
   const summary = draft.summary;
-  const requiresWeight = draft.ingredients.some(item => item.food.nutritionUnit === 'ml');
+  const requiresWeight = draft.ingredients.some(item => scaleFood(item.food, item.quantity, item.unit)?.grams == null);
   return <div className="meal-builder">
     <button className="back-link" disabled={saving} onClick={onBack}><ChevronLeft />Back to my meals</button>
     <h3>{initial ? 'Edit meal' : 'Create meal'}</h3>
@@ -65,7 +66,7 @@ function MealEditor({ api, initial, onSaved, onBack, onBusy }: { api: FoodApi; i
     </section>
     <section className="meal-builder"><h4>Batch weight</h4>
       {!requiresWeight && <p className="meal-hint">Estimated from ingredients: {displayAmount(draft.estimatedGrams)} g ({displayAmount(draft.estimatedGrams / GRAMS_PER_OUNCE)} oz). For more accurate portions, weigh the finished meal without its container. Cooking can change the weight.</p>}
-      {requiresWeight && <p className="meal-hint">Enter the finished batch weight to portion a meal with volume-based ingredients.</p>}
+      {requiresWeight && <p className="meal-hint">Enter the finished batch weight because an ingredient’s weight is unknown.</p>}
       <div className="field-grid"><label>Finished batch weight{requiresWeight ? ' (required)' : ' (optional)'}<Input type="number" step="any" min="0" placeholder={requiresWeight ? "Enter measured weight" : "Use ingredient estimate"} disabled={saving} value={draft.weight} onChange={event => draft.setWeight(event.target.value)} /></label><label>Batch weight unit<select value={draft.weightUnit} disabled={saving} onChange={event => { const next = event.target.value as 'grams' | 'ounces'; if (draft.weight.trim()) draft.setWeight(String(Number(draft.weight) * (next === 'ounces' ? 1 / GRAMS_PER_OUNCE : GRAMS_PER_OUNCE))); draft.setWeightUnit(next); }}><option value="grams">Grams</option><option value="ounces">Ounces (weight)</option></select></label></div>
     </section>
     <section className="meal-builder"><h4>Plan your portions</h4>

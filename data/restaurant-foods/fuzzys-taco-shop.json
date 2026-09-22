@@ -1,0 +1,1972 @@
+{
+  "chain": "Fuzzy's Taco Shop",
+  "sourceUrl": "https://www.nutritionix.com/fuzzys-taco-shop/menu/premium",
+  "source": "Nutritionix",
+  "sourceKind": "database",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "id": "nutritionix-661616",
+      "name": "Chips & Arbol Chile Salsa",
+      "calories": 800,
+      "protein": 12,
+      "carbs": 100,
+      "fat": 39,
+      "servingLabel": "1 listed serving (Get It Started; size in item name)"
+    },
+    {
+      "id": "nutritionix-661617",
+      "name": "Chips & Guacamole",
+      "calories": 990,
+      "protein": 13,
+      "carbs": 105,
+      "fat": 59,
+      "servingLabel": "1 listed serving (Get It Started; size in item name)"
+    },
+    {
+      "id": "nutritionix-661613",
+      "name": "Chips & Queso",
+      "calories": 960,
+      "protein": 22,
+      "carbs": 99,
+      "fat": 55,
+      "servingLabel": "1 listed serving (Get It Started; size in item name)"
+    },
+    {
+      "id": "nutritionix-661618",
+      "name": "Chips & Queso with Birria Beef",
+      "calories": 1000,
+      "protein": 27,
+      "carbs": 100,
+      "fat": 56,
+      "servingLabel": "1 listed serving (Get It Started; size in item name)"
+    },
+    {
+      "id": "nutritionix-661615",
+      "name": "Chips & Queso with Chorizo",
+      "calories": 1060,
+      "protein": 27,
+      "carbs": 100,
+      "fat": 63,
+      "servingLabel": "1 listed serving (Get It Started; size in item name)"
+    },
+    {
+      "id": "nutritionix-661619",
+      "name": "Chips & Queso with Pork Green Chili",
+      "calories": 1010,
+      "protein": 22,
+      "carbs": 105,
+      "fat": 57,
+      "servingLabel": "1 listed serving (Get It Started; size in item name)"
+    },
+    {
+      "id": "nutritionix-661614",
+      "name": "Chips & Queso with Seasoned Ground Beef",
+      "calories": 1030,
+      "protein": 28,
+      "carbs": 100,
+      "fat": 60,
+      "servingLabel": "1 listed serving (Get It Started; size in item name)"
+    },
+    {
+      "id": "nutritionix-661621",
+      "name": "Grilled Chicken Salad (No Dressing)",
+      "calories": 470,
+      "protein": 40,
+      "carbs": 30,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-661623",
+      "name": "Grilled Shrimp Salad (No Dressing)",
+      "calories": 420,
+      "protein": 29,
+      "carbs": 29,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-661622",
+      "name": "Grilled Steak Salad (No Dressing)",
+      "calories": 510,
+      "protein": 43,
+      "carbs": 28,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-661624",
+      "name": "Shredded Brisket Salad (No Dressing)",
+      "calories": 510,
+      "protein": 26,
+      "carbs": 31,
+      "fat": 32,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-661620",
+      "name": "Shredded Chicken Salad (No Dressing)",
+      "calories": 470,
+      "protein": 38,
+      "carbs": 29,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-661628",
+      "name": "Arbol Chile Salsa",
+      "calories": 40,
+      "protein": 1,
+      "carbs": 6,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Salad Dressings; size in item name)"
+    },
+    {
+      "id": "nutritionix-661627",
+      "name": "Avocado Ranch",
+      "calories": 310,
+      "protein": 2,
+      "carbs": 6,
+      "fat": 32,
+      "servingLabel": "1 listed serving (Salad Dressings; size in item name)"
+    },
+    {
+      "id": "nutritionix-661625",
+      "name": "Buttermilk Ranch",
+      "calories": 200,
+      "protein": 1,
+      "carbs": 2,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Salad Dressings; size in item name)"
+    },
+    {
+      "id": "nutritionix-661626",
+      "name": "House Vinairgrette",
+      "calories": 510,
+      "protein": 2,
+      "carbs": 2,
+      "fat": 55,
+      "servingLabel": "1 listed serving (Salad Dressings; size in item name)"
+    },
+    {
+      "id": "nutritionix-661634",
+      "name": "Carnitas Nachos",
+      "calories": 1690,
+      "protein": 64,
+      "carbs": 107,
+      "fat": 113,
+      "servingLabel": "1 listed serving (Nachos; size in item name)"
+    },
+    {
+      "id": "nutritionix-661632",
+      "name": "Grilled Chicken Nachos",
+      "calories": 1680,
+      "protein": 73,
+      "carbs": 106,
+      "fat": 109,
+      "servingLabel": "1 listed serving (Nachos; size in item name)"
+    },
+    {
+      "id": "nutritionix-661633",
+      "name": "Grilled Steak Nachos",
+      "calories": 1720,
+      "protein": 76,
+      "carbs": 105,
+      "fat": 112,
+      "servingLabel": "1 listed serving (Nachos; size in item name)"
+    },
+    {
+      "id": "nutritionix-661630",
+      "name": "Seasoned Ground Beef Nachos",
+      "calories": 1780,
+      "protein": 66,
+      "carbs": 107,
+      "fat": 121,
+      "servingLabel": "1 listed serving (Nachos; size in item name)"
+    },
+    {
+      "id": "nutritionix-661631",
+      "name": "Shredded Brisket Nachos",
+      "calories": 1720,
+      "protein": 58,
+      "carbs": 108,
+      "fat": 119,
+      "servingLabel": "1 listed serving (Nachos; size in item name)"
+    },
+    {
+      "id": "nutritionix-661629",
+      "name": "Shredded Chicken Nachos",
+      "calories": 1680,
+      "protein": 71,
+      "carbs": 106,
+      "fat": 109,
+      "servingLabel": "1 listed serving (Nachos; size in item name)"
+    },
+    {
+      "id": "nutritionix-661640",
+      "name": "Beer-Battered Cod Taco",
+      "calories": 460,
+      "protein": 28,
+      "carbs": 22,
+      "fat": 29,
+      "servingLabel": "1 listed serving (Fuzzy's OG Tacos; size in item name)"
+    },
+    {
+      "id": "nutritionix-661644",
+      "name": "Carnitas Taco",
+      "calories": 290,
+      "protein": 15,
+      "carbs": 15,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Fuzzy's OG Tacos; size in item name)"
+    },
+    {
+      "id": "nutritionix-661642",
+      "name": "Grilled Chicken Taco",
+      "calories": 310,
+      "protein": 23,
+      "carbs": 15,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Fuzzy's OG Tacos; size in item name)"
+    },
+    {
+      "id": "nutritionix-661641",
+      "name": "Grilled Cod Taco",
+      "calories": 350,
+      "protein": 30,
+      "carbs": 14,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Fuzzy's OG Tacos; size in item name)"
+    },
+    {
+      "id": "nutritionix-661635",
+      "name": "Grilled Shrimp Taco",
+      "calories": 290,
+      "protein": 17,
+      "carbs": 15,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Fuzzy's OG Tacos; size in item name)"
+    },
+    {
+      "id": "nutritionix-661643",
+      "name": "Grilled Steak Taco",
+      "calories": 330,
+      "protein": 24,
+      "carbs": 14,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Fuzzy's OG Tacos; size in item name)"
+    },
+    {
+      "id": "nutritionix-661645",
+      "name": "Grilled Veggies Taco",
+      "calories": 280,
+      "protein": 11,
+      "carbs": 21,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Fuzzy's OG Tacos; size in item name)"
+    },
+    {
+      "id": "nutritionix-661637",
+      "name": "Seasoned Ground Beef Taco",
+      "calories": 310,
+      "protein": 16,
+      "carbs": 15,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Fuzzy's OG Tacos; size in item name)"
+    },
+    {
+      "id": "nutritionix-661639",
+      "name": "Shredded Brisket Taco",
+      "calories": 300,
+      "protein": 13,
+      "carbs": 15,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Fuzzy's OG Tacos; size in item name)"
+    },
+    {
+      "id": "nutritionix-661638",
+      "name": "Shredded Chicken Taco",
+      "calories": 280,
+      "protein": 17,
+      "carbs": 14,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Fuzzy's OG Tacos; size in item name)"
+    },
+    {
+      "id": "nutritionix-661636",
+      "name": "Tempura Shrimp Taco",
+      "calories": 380,
+      "protein": 21,
+      "carbs": 21,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Fuzzy's OG Tacos; size in item name)"
+    },
+    {
+      "id": "nutritionix-661652",
+      "name": "Baja Fish Taco, Beer-Battered Cod",
+      "calories": 240,
+      "protein": 11,
+      "carbs": 19,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Primo Baja Tacos; size in item name)"
+    },
+    {
+      "id": "nutritionix-661651",
+      "name": "Birria Bowl",
+      "calories": 630,
+      "protein": 34,
+      "carbs": 51,
+      "fat": 33,
+      "servingLabel": "1 listed serving (Primo Baja Tacos; size in item name)"
+    },
+    {
+      "id": "nutritionix-661646",
+      "name": "California Heat Grilled Shrimp Taco",
+      "calories": 460,
+      "protein": 28,
+      "carbs": 21,
+      "fat": 29,
+      "servingLabel": "1 listed serving (Primo Baja Tacos; size in item name)"
+    },
+    {
+      "id": "nutritionix-661647",
+      "name": "California Heat Tempura Shrimp Taco",
+      "calories": 550,
+      "protein": 32,
+      "carbs": 27,
+      "fat": 35,
+      "servingLabel": "1 listed serving (Primo Baja Tacos; size in item name)"
+    },
+    {
+      "id": "nutritionix-661648",
+      "name": "Margaita Tempura Shrimp Taco",
+      "calories": 400,
+      "protein": 16,
+      "carbs": 27,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Primo Baja Tacos; size in item name)"
+    },
+    {
+      "id": "nutritionix-661649",
+      "name": "Margarita Grilled Shrimp Taco",
+      "calories": 310,
+      "protein": 12,
+      "carbs": 21,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Primo Baja Tacos; size in item name)"
+    },
+    {
+      "id": "nutritionix-661650",
+      "name": "Quesabirria Tacos",
+      "calories": 570,
+      "protein": 28,
+      "carbs": 32,
+      "fat": 37,
+      "servingLabel": "1 listed serving (Primo Baja Tacos; size in item name)"
+    },
+    {
+      "id": "nutritionix-661658",
+      "name": "Carnitas Burrito",
+      "calories": 950,
+      "protein": 41,
+      "carbs": 90,
+      "fat": 48,
+      "servingLabel": "1 listed serving (Burritos; size in item name)"
+    },
+    {
+      "id": "nutritionix-661656",
+      "name": "Grilled Chicken Burrito",
+      "calories": 950,
+      "protein": 50,
+      "carbs": 90,
+      "fat": 44,
+      "servingLabel": "1 listed serving (Burritos; size in item name)"
+    },
+    {
+      "id": "nutritionix-661657",
+      "name": "Grilled Steak Burrito",
+      "calories": 990,
+      "protein": 53,
+      "carbs": 89,
+      "fat": 48,
+      "servingLabel": "1 listed serving (Burritos; size in item name)"
+    },
+    {
+      "id": "nutritionix-661655",
+      "name": "Seasoned Ground Beef Burrito",
+      "calories": 1050,
+      "protein": 43,
+      "carbs": 91,
+      "fat": 57,
+      "servingLabel": "1 listed serving (Burritos; size in item name)"
+    },
+    {
+      "id": "nutritionix-661653",
+      "name": "Shredded Brisket Burrito",
+      "calories": 990,
+      "protein": 35,
+      "carbs": 92,
+      "fat": 54,
+      "servingLabel": "1 listed serving (Burritos; size in item name)"
+    },
+    {
+      "id": "nutritionix-661654",
+      "name": "Shredded Chicken Burrito",
+      "calories": 950,
+      "protein": 48,
+      "carbs": 89,
+      "fat": 44,
+      "servingLabel": "1 listed serving (Burritos; size in item name)"
+    },
+    {
+      "id": "nutritionix-661660",
+      "name": "Pork Green Chili",
+      "calories": 270,
+      "protein": 13,
+      "carbs": 28,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Burritos - Smother It; size in item name)"
+    },
+    {
+      "id": "nutritionix-661659",
+      "name": "Queso",
+      "calories": 200,
+      "protein": 10,
+      "carbs": 8,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Burritos - Smother It; size in item name)"
+    },
+    {
+      "id": "nutritionix-661666",
+      "name": "Carnitas Bowl",
+      "calories": 670,
+      "protein": 34,
+      "carbs": 44,
+      "fat": 41,
+      "servingLabel": "1 listed serving (Burrito Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-661664",
+      "name": "Grilled Chicken Bowl",
+      "calories": 670,
+      "protein": 43,
+      "carbs": 44,
+      "fat": 37,
+      "servingLabel": "1 listed serving (Burrito Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-661665",
+      "name": "Grilled Steak Bowl",
+      "calories": 710,
+      "protein": 45,
+      "carbs": 43,
+      "fat": 41,
+      "servingLabel": "1 listed serving (Burrito Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-661663",
+      "name": "Seasoned Ground Beef Bowl",
+      "calories": 770,
+      "protein": 36,
+      "carbs": 45,
+      "fat": 50,
+      "servingLabel": "1 listed serving (Burrito Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-661661",
+      "name": "Shredded Brisket Bowl",
+      "calories": 710,
+      "protein": 28,
+      "carbs": 46,
+      "fat": 47,
+      "servingLabel": "1 listed serving (Burrito Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-661662",
+      "name": "Shredded Chicken Bowl",
+      "calories": 670,
+      "protein": 41,
+      "carbs": 44,
+      "fat": 37,
+      "servingLabel": "1 listed serving (Burrito Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-661702",
+      "name": "Combo Plate, Baja Fish Taco, Beer-Battered Cod",
+      "calories": 240,
+      "protein": 11,
+      "carbs": 19,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Mexican Plates; size in item name)"
+    },
+    {
+      "id": "nutritionix-661699",
+      "name": "Combo Plate, Beer-Battered Cod Taco",
+      "calories": 460,
+      "protein": 28,
+      "carbs": 22,
+      "fat": 29,
+      "servingLabel": "1 listed serving (Mexican Plates; size in item name)"
+    },
+    {
+      "id": "nutritionix-661700",
+      "name": "Combo Plate, California Heat Grilled Shrimp Taco",
+      "calories": 460,
+      "protein": 28,
+      "carbs": 21,
+      "fat": 29,
+      "servingLabel": "1 listed serving (Mexican Plates; size in item name)"
+    },
+    {
+      "id": "nutritionix-661701",
+      "name": "Combo Plate, California Heat Tempura Shrimp Taco",
+      "calories": 550,
+      "protein": 32,
+      "carbs": 27,
+      "fat": 35,
+      "servingLabel": "1 listed serving (Mexican Plates; size in item name)"
+    },
+    {
+      "id": "nutritionix-661695",
+      "name": "Combo Plate, Carnitas Taco",
+      "calories": 290,
+      "protein": 15,
+      "carbs": 15,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Mexican Plates; size in item name)"
+    },
+    {
+      "id": "nutritionix-661694",
+      "name": "Combo Plate, Grilled Beef Taco",
+      "calories": 330,
+      "protein": 24,
+      "carbs": 14,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Mexican Plates; size in item name)"
+    },
+    {
+      "id": "nutritionix-661693",
+      "name": "Combo Plate, Grilled Chicken Taco",
+      "calories": 310,
+      "protein": 23,
+      "carbs": 15,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Mexican Plates; size in item name)"
+    },
+    {
+      "id": "nutritionix-661698",
+      "name": "Combo Plate, Grilled Cod Taco",
+      "calories": 350,
+      "protein": 30,
+      "carbs": 14,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Mexican Plates; size in item name)"
+    },
+    {
+      "id": "nutritionix-661689",
+      "name": "Combo Plate, Grilled Shrimp Taco",
+      "calories": 290,
+      "protein": 17,
+      "carbs": 15,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Mexican Plates; size in item name)"
+    },
+    {
+      "id": "nutritionix-661697",
+      "name": "Combo Plate, Grilled Veggies Taco",
+      "calories": 280,
+      "protein": 11,
+      "carbs": 21,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Mexican Plates; size in item name)"
+    },
+    {
+      "id": "nutritionix-661703",
+      "name": "Combo Plate, Margarita Shrimp Taco",
+      "calories": 310,
+      "protein": 12,
+      "carbs": 21,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Mexican Plates; size in item name)"
+    },
+    {
+      "id": "nutritionix-661704",
+      "name": "Combo Plate, Margarita Tempura Shrimp Taco",
+      "calories": 400,
+      "protein": 16,
+      "carbs": 27,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Mexican Plates; size in item name)"
+    },
+    {
+      "id": "nutritionix-661696",
+      "name": "Combo Plate, Seasoned Ground Beef Taco",
+      "calories": 310,
+      "protein": 16,
+      "carbs": 15,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Mexican Plates; size in item name)"
+    },
+    {
+      "id": "nutritionix-661692",
+      "name": "Combo Plate, Shredded Brisket Taco",
+      "calories": 300,
+      "protein": 13,
+      "carbs": 15,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Mexican Plates; size in item name)"
+    },
+    {
+      "id": "nutritionix-661691",
+      "name": "Combo Plate, Shredded Chicken Taco",
+      "calories": 280,
+      "protein": 17,
+      "carbs": 14,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Mexican Plates; size in item name)"
+    },
+    {
+      "id": "nutritionix-661690",
+      "name": "Combo Plate, Tempura Shrimp Taco",
+      "calories": 380,
+      "protein": 21,
+      "carbs": 21,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Mexican Plates; size in item name)"
+    },
+    {
+      "id": "nutritionix-661685",
+      "name": "Enchilada Plate, Carnitas Enchilada, 1 Each",
+      "calories": 230,
+      "protein": 9,
+      "carbs": 15,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Mexican Plates; size in item name)"
+    },
+    {
+      "id": "nutritionix-661687",
+      "name": "Enchilada Plate, Cheese Enchilada, 1 Each",
+      "calories": 300,
+      "protein": 13,
+      "carbs": 15,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Mexican Plates; size in item name)"
+    },
+    {
+      "id": "nutritionix-661688",
+      "name": "Enchilada Plate, Grilled Shrimp Enchilada, 1 Each",
+      "calories": 240,
+      "protein": 13,
+      "carbs": 16,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Mexican Plates; size in item name)"
+    },
+    {
+      "id": "nutritionix-661686",
+      "name": "Enchilada Plate, Grilled Veggies Enchilada, 1 Each",
+      "calories": 210,
+      "protein": 6,
+      "carbs": 17,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Mexican Plates; size in item name)"
+    },
+    {
+      "id": "nutritionix-661684",
+      "name": "Enchilada Plate, Seasoned Ground Beef, 1 Each",
+      "calories": 250,
+      "protein": 10,
+      "carbs": 15,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Mexican Plates; size in item name)"
+    },
+    {
+      "id": "nutritionix-661683",
+      "name": "Enchilada Plate, Shredded Chicken Enchilada, 1 Each",
+      "calories": 220,
+      "protein": 11,
+      "carbs": 15,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Mexican Plates; size in item name)"
+    },
+    {
+      "id": "nutritionix-661705",
+      "name": "Mexican Plate Side, Black Beans",
+      "calories": 150,
+      "protein": 9,
+      "carbs": 27,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Mexican Plates; size in item name)"
+    },
+    {
+      "id": "nutritionix-661708",
+      "name": "Mexican Plate Side, Cilantro-Lime Rice",
+      "calories": 190,
+      "protein": 5,
+      "carbs": 36,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Mexican Plates; size in item name)"
+    },
+    {
+      "id": "nutritionix-661707",
+      "name": "Mexican Plate Side, Fuzzy's Rice",
+      "calories": 180,
+      "protein": 4,
+      "carbs": 33,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Mexican Plates; size in item name)"
+    },
+    {
+      "id": "nutritionix-661709",
+      "name": "Mexican Plate Side, Latin-Fried Potatoes",
+      "calories": 360,
+      "protein": 4,
+      "carbs": 32,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Mexican Plates; size in item name)"
+    },
+    {
+      "id": "nutritionix-661706",
+      "name": "Mexican Plate Side, Refried Beans",
+      "calories": 240,
+      "protein": 13,
+      "carbs": 29,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Mexican Plates; size in item name)"
+    },
+    {
+      "id": "nutritionix-661680",
+      "name": "Taco Plate, Baja Fish Taco, Battered Cod",
+      "calories": 240,
+      "protein": 11,
+      "carbs": 19,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Mexican Plates; size in item name)"
+    },
+    {
+      "id": "nutritionix-661677",
+      "name": "Taco Plate, Beer-Battered Cod Taco",
+      "calories": 460,
+      "protein": 28,
+      "carbs": 22,
+      "fat": 29,
+      "servingLabel": "1 listed serving (Mexican Plates; size in item name)"
+    },
+    {
+      "id": "nutritionix-661678",
+      "name": "Taco Plate, California Heat Grilled Shrimp Taco",
+      "calories": 460,
+      "protein": 28,
+      "carbs": 21,
+      "fat": 29,
+      "servingLabel": "1 listed serving (Mexican Plates; size in item name)"
+    },
+    {
+      "id": "nutritionix-661679",
+      "name": "Taco Plate, California Heat Tempura Shrimp Taco",
+      "calories": 550,
+      "protein": 32,
+      "carbs": 27,
+      "fat": 35,
+      "servingLabel": "1 listed serving (Mexican Plates; size in item name)"
+    },
+    {
+      "id": "nutritionix-661674",
+      "name": "Taco Plate, Carnitas Taco",
+      "calories": 290,
+      "protein": 15,
+      "carbs": 15,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Mexican Plates; size in item name)"
+    },
+    {
+      "id": "nutritionix-661672",
+      "name": "Taco Plate, Grilled Chicken Taco",
+      "calories": 310,
+      "protein": 23,
+      "carbs": 15,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Mexican Plates; size in item name)"
+    },
+    {
+      "id": "nutritionix-661676",
+      "name": "Taco Plate, Grilled Cod Taco",
+      "calories": 350,
+      "protein": 30,
+      "carbs": 14,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Mexican Plates; size in item name)"
+    },
+    {
+      "id": "nutritionix-661667",
+      "name": "Taco Plate, Grilled Shrimp Taco",
+      "calories": 290,
+      "protein": 17,
+      "carbs": 15,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Mexican Plates; size in item name)"
+    },
+    {
+      "id": "nutritionix-661673",
+      "name": "Taco Plate, Grilled Steak Taco",
+      "calories": 330,
+      "protein": 24,
+      "carbs": 14,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Mexican Plates; size in item name)"
+    },
+    {
+      "id": "nutritionix-661675",
+      "name": "Taco Plate, Grilled Veggies Taco",
+      "calories": 280,
+      "protein": 11,
+      "carbs": 21,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Mexican Plates; size in item name)"
+    },
+    {
+      "id": "nutritionix-661681",
+      "name": "Taco Plate, Margarita Grilled Shrimp Taco",
+      "calories": 310,
+      "protein": 12,
+      "carbs": 21,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Mexican Plates; size in item name)"
+    },
+    {
+      "id": "nutritionix-661682",
+      "name": "Taco Plate, Margarita Tempura Shrimp Taco",
+      "calories": 400,
+      "protein": 16,
+      "carbs": 27,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Mexican Plates; size in item name)"
+    },
+    {
+      "id": "nutritionix-661669",
+      "name": "Taco Plate, Seasoned Ground Beef Taco",
+      "calories": 310,
+      "protein": 16,
+      "carbs": 15,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Mexican Plates; size in item name)"
+    },
+    {
+      "id": "nutritionix-661671",
+      "name": "Taco Plate, Shredded Brisket Taco",
+      "calories": 300,
+      "protein": 13,
+      "carbs": 15,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Mexican Plates; size in item name)"
+    },
+    {
+      "id": "nutritionix-661670",
+      "name": "Taco Plate, Shredded Chicken Taco",
+      "calories": 280,
+      "protein": 17,
+      "carbs": 14,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Mexican Plates; size in item name)"
+    },
+    {
+      "id": "nutritionix-661668",
+      "name": "Taco Plate, Tempura Shrimp Taco",
+      "calories": 380,
+      "protein": 21,
+      "carbs": 21,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Mexican Plates; size in item name)"
+    },
+    {
+      "id": "nutritionix-661715",
+      "name": "Carnitas Quesadilla",
+      "calories": 950,
+      "protein": 40,
+      "carbs": 54,
+      "fat": 64,
+      "servingLabel": "1 listed serving (Quesadillas; size in item name)"
+    },
+    {
+      "id": "nutritionix-661712",
+      "name": "Grilled Chicken Quesadilla",
+      "calories": 990,
+      "protein": 34,
+      "carbs": 55,
+      "fat": 70,
+      "servingLabel": "1 listed serving (Quesadillas; size in item name)"
+    },
+    {
+      "id": "nutritionix-661714",
+      "name": "Grilled Shrimp Quesadilla",
+      "calories": 890,
+      "protein": 38,
+      "carbs": 53,
+      "fat": 59,
+      "servingLabel": "1 listed serving (Quesadillas; size in item name)"
+    },
+    {
+      "id": "nutritionix-661713",
+      "name": "Grilled Steak Quesadilla",
+      "calories": 980,
+      "protein": 52,
+      "carbs": 52,
+      "fat": 63,
+      "servingLabel": "1 listed serving (Quesadillas; size in item name)"
+    },
+    {
+      "id": "nutritionix-661711",
+      "name": "Shredded Brisket Quesadilla",
+      "calories": 990,
+      "protein": 34,
+      "carbs": 55,
+      "fat": 70,
+      "servingLabel": "1 listed serving (Quesadillas; size in item name)"
+    },
+    {
+      "id": "nutritionix-661710",
+      "name": "Shredded Chicken Quesadilla",
+      "calories": 940,
+      "protein": 47,
+      "carbs": 53,
+      "fat": 60,
+      "servingLabel": "1 listed serving (Quesadillas; size in item name)"
+    },
+    {
+      "id": "nutritionix-661717",
+      "name": "Baja Burger",
+      "calories": 470,
+      "protein": 29,
+      "carbs": 29,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Burgers, Wings & Fries; size in item name)"
+    },
+    {
+      "id": "nutritionix-661716",
+      "name": "Big Fuzz Burrito",
+      "calories": 1280,
+      "protein": 60,
+      "carbs": 72,
+      "fat": 84,
+      "servingLabel": "1 listed serving (Burgers, Wings & Fries; size in item name)"
+    },
+    {
+      "id": "nutritionix-661718",
+      "name": "Breakfast Burger",
+      "calories": 630,
+      "protein": 42,
+      "carbs": 31,
+      "fat": 35,
+      "servingLabel": "1 listed serving (Burgers, Wings & Fries; size in item name)"
+    },
+    {
+      "id": "nutritionix-661719",
+      "name": "Cheeseburger",
+      "calories": 400,
+      "protein": 27,
+      "carbs": 29,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Burgers, Wings & Fries; size in item name)"
+    },
+    {
+      "id": "nutritionix-661720",
+      "name": "Double Cheeseburger",
+      "calories": 590,
+      "protein": 46,
+      "carbs": 29,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Burgers, Wings & Fries; size in item name)"
+    },
+    {
+      "id": "nutritionix-661724",
+      "name": "Fries, Large",
+      "calories": 1120,
+      "protein": 18,
+      "carbs": 147,
+      "fat": 52,
+      "servingLabel": "1 listed serving (Burgers, Wings & Fries; size in item name)"
+    },
+    {
+      "id": "nutritionix-661723",
+      "name": "Fries, Small",
+      "calories": 560,
+      "protein": 9,
+      "carbs": 73,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Burgers, Wings & Fries; size in item name)"
+    },
+    {
+      "id": "nutritionix-661721",
+      "name": "Hamburger",
+      "calories": 350,
+      "protein": 24,
+      "carbs": 29,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Burgers, Wings & Fries; size in item name)"
+    },
+    {
+      "id": "nutritionix-661722",
+      "name": "Nacho Burger",
+      "calories": 570,
+      "protein": 31,
+      "carbs": 39,
+      "fat": 31,
+      "servingLabel": "1 listed serving (Burgers, Wings & Fries; size in item name)"
+    },
+    {
+      "id": "nutritionix-661725",
+      "name": "Wings, 6 count, with Honey Chipotle",
+      "calories": 790,
+      "protein": 19,
+      "carbs": 24,
+      "fat": 69,
+      "servingLabel": "1 listed serving (Burgers, Wings & Fries; size in item name)"
+    },
+    {
+      "id": "nutritionix-661726",
+      "name": "Wings, 6 count, with Hot Sauce",
+      "calories": 760,
+      "protein": 20,
+      "carbs": 6,
+      "fat": 73,
+      "servingLabel": "1 listed serving (Burgers, Wings & Fries; size in item name)"
+    },
+    {
+      "id": "nutritionix-661727",
+      "name": "Wings, 12 count, with Honey Chipotle",
+      "calories": 1580,
+      "protein": 39,
+      "carbs": 49,
+      "fat": 139,
+      "servingLabel": "1 listed serving (Burgers, Wings & Fries; size in item name)"
+    },
+    {
+      "id": "nutritionix-661728",
+      "name": "Wings, 12 count, with Hot Sauce",
+      "calories": 1520,
+      "protein": 39,
+      "carbs": 13,
+      "fat": 146,
+      "servingLabel": "1 listed serving (Burgers, Wings & Fries; size in item name)"
+    },
+    {
+      "id": "nutritionix-661729",
+      "name": "Wings, 18 count, with Honey Chipotle",
+      "calories": 2370,
+      "protein": 58,
+      "carbs": 73,
+      "fat": 208,
+      "servingLabel": "1 listed serving (Burgers, Wings & Fries; size in item name)"
+    },
+    {
+      "id": "nutritionix-661730",
+      "name": "Wings, 18 count, with Hot Sauce",
+      "calories": 2270,
+      "protein": 59,
+      "carbs": 19,
+      "fat": 219,
+      "servingLabel": "1 listed serving (Burgers, Wings & Fries; size in item name)"
+    },
+    {
+      "id": "nutritionix-661731",
+      "name": "Wings, 24 count, with Honey Chipotle",
+      "calories": 3160,
+      "protein": 78,
+      "carbs": 97,
+      "fat": 277,
+      "servingLabel": "1 listed serving (Burgers, Wings & Fries; size in item name)"
+    },
+    {
+      "id": "nutritionix-661732",
+      "name": "Wings, 24 count, with Hot Sauce",
+      "calories": 3030,
+      "protein": 78,
+      "carbs": 26,
+      "fat": 292,
+      "servingLabel": "1 listed serving (Burgers, Wings & Fries; size in item name)"
+    },
+    {
+      "id": "nutritionix-661737",
+      "name": "Breakfast Taco Plate - Bacon, Egg, & Cheese Taco",
+      "calories": 510,
+      "protein": 29,
+      "carbs": 17,
+      "fat": 36,
+      "servingLabel": "1 listed serving (Breakfast Faves; size in item name)"
+    },
+    {
+      "id": "nutritionix-661738",
+      "name": "Breakfast Taco Plate - Bacon, Potato, Egg, & Cheese Taco",
+      "calories": 590,
+      "protein": 31,
+      "carbs": 28,
+      "fat": 39,
+      "servingLabel": "1 listed serving (Breakfast Faves; size in item name)"
+    },
+    {
+      "id": "nutritionix-661739",
+      "name": "Breakfast Taco Plate - Chorizo, Egg, & Cheese Taco",
+      "calories": 470,
+      "protein": 26,
+      "carbs": 17,
+      "fat": 33,
+      "servingLabel": "1 listed serving (Breakfast Faves; size in item name)"
+    },
+    {
+      "id": "nutritionix-661740",
+      "name": "Breakfast Taco Plate - Chorizo, Potato, Egg, & Cheese Taco",
+      "calories": 550,
+      "protein": 27,
+      "carbs": 28,
+      "fat": 37,
+      "servingLabel": "1 listed serving (Breakfast Faves; size in item name)"
+    },
+    {
+      "id": "nutritionix-661736",
+      "name": "Breakfast Taco Plate - Potato, Egg, & Cheese Taco",
+      "calories": 460,
+      "protein": 22,
+      "carbs": 27,
+      "fat": 29,
+      "servingLabel": "1 listed serving (Breakfast Faves; size in item name)"
+    },
+    {
+      "id": "nutritionix-661735",
+      "name": "Chilaquiles, Beef",
+      "calories": 1570,
+      "protein": 70,
+      "carbs": 109,
+      "fat": 95,
+      "servingLabel": "1 listed serving (Breakfast Faves; size in item name)"
+    },
+    {
+      "id": "nutritionix-661734",
+      "name": "Chilaquiles, Chicken",
+      "calories": 1520,
+      "protein": 73,
+      "carbs": 109,
+      "fat": 89,
+      "servingLabel": "1 listed serving (Breakfast Faves; size in item name)"
+    },
+    {
+      "id": "nutritionix-661733",
+      "name": "Migas",
+      "calories": 1440,
+      "protein": 57,
+      "carbs": 108,
+      "fat": 86,
+      "servingLabel": "1 listed serving (Breakfast Faves; size in item name)"
+    },
+    {
+      "id": "nutritionix-661744",
+      "name": "Bacon, Egg, & Cheese Burrito",
+      "calories": 1280,
+      "protein": 71,
+      "carbs": 53,
+      "fat": 87,
+      "servingLabel": "1 listed serving (Breakfast Whenever; size in item name)"
+    },
+    {
+      "id": "nutritionix-661743",
+      "name": "Bacon, Egg, & Cheese Taco",
+      "calories": 510,
+      "protein": 29,
+      "carbs": 17,
+      "fat": 36,
+      "servingLabel": "1 listed serving (Breakfast Whenever; size in item name)"
+    },
+    {
+      "id": "nutritionix-661746",
+      "name": "Bacon, Potato, Egg, & Cheese Burrito",
+      "calories": 1470,
+      "protein": 74,
+      "carbs": 78,
+      "fat": 96,
+      "servingLabel": "1 listed serving (Breakfast Whenever; size in item name)"
+    },
+    {
+      "id": "nutritionix-661745",
+      "name": "Bacon, Potato, Egg, & Cheese Taco",
+      "calories": 590,
+      "protein": 31,
+      "carbs": 28,
+      "fat": 39,
+      "servingLabel": "1 listed serving (Breakfast Whenever; size in item name)"
+    },
+    {
+      "id": "nutritionix-661748",
+      "name": "Chorizo, Egg, & Cheese Burrito",
+      "calories": 1250,
+      "protein": 68,
+      "carbs": 53,
+      "fat": 85,
+      "servingLabel": "1 listed serving (Breakfast Whenever; size in item name)"
+    },
+    {
+      "id": "nutritionix-661747",
+      "name": "Chorizo, Egg, & Cheese Taco",
+      "calories": 470,
+      "protein": 26,
+      "carbs": 17,
+      "fat": 33,
+      "servingLabel": "1 listed serving (Breakfast Whenever; size in item name)"
+    },
+    {
+      "id": "nutritionix-661750",
+      "name": "Chorizo, Potato, Egg, & Cheese Burrito",
+      "calories": 1440,
+      "protein": 71,
+      "carbs": 78,
+      "fat": 93,
+      "servingLabel": "1 listed serving (Breakfast Whenever; size in item name)"
+    },
+    {
+      "id": "nutritionix-661749",
+      "name": "Chorizo, Potato, Egg, & Cheese Taco",
+      "calories": 550,
+      "protein": 27,
+      "carbs": 28,
+      "fat": 37,
+      "servingLabel": "1 listed serving (Breakfast Whenever; size in item name)"
+    },
+    {
+      "id": "nutritionix-661742",
+      "name": "Potato, Egg, & Cheese Burrito",
+      "calories": 1340,
+      "protein": 66,
+      "carbs": 77,
+      "fat": 86,
+      "servingLabel": "1 listed serving (Breakfast Whenever; size in item name)"
+    },
+    {
+      "id": "nutritionix-661741",
+      "name": "Potato, Egg, & Cheese Taco",
+      "calories": 460,
+      "protein": 22,
+      "carbs": 27,
+      "fat": 29,
+      "servingLabel": "1 listed serving (Breakfast Whenever; size in item name)"
+    },
+    {
+      "id": "nutritionix-661751",
+      "name": "Black Beans",
+      "calories": 150,
+      "protein": 9,
+      "carbs": 27,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Side Vibes; size in item name)"
+    },
+    {
+      "id": "nutritionix-661754",
+      "name": "Cilantro-Lime Rice",
+      "calories": 190,
+      "protein": 5,
+      "carbs": 36,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Side Vibes; size in item name)"
+    },
+    {
+      "id": "nutritionix-661753",
+      "name": "Fuzzy's Rice",
+      "calories": 180,
+      "protein": 4,
+      "carbs": 33,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Side Vibes; size in item name)"
+    },
+    {
+      "id": "nutritionix-661755",
+      "name": "Latin-Fried Potatoes",
+      "calories": 360,
+      "protein": 4,
+      "carbs": 32,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Side Vibes; size in item name)"
+    },
+    {
+      "id": "nutritionix-661752",
+      "name": "Refried Beans",
+      "calories": 240,
+      "protein": 13,
+      "carbs": 29,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Side Vibes; size in item name)"
+    },
+    {
+      "id": "nutritionix-661756",
+      "name": "Small Chips & Queso",
+      "calories": 310,
+      "protein": 9,
+      "carbs": 28,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Side Vibes; size in item name)"
+    },
+    {
+      "id": "nutritionix-661767",
+      "name": "Kids Black Beans",
+      "calories": 150,
+      "protein": 9,
+      "carbs": 27,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Kid Stuff; size in item name)"
+    },
+    {
+      "id": "nutritionix-661763",
+      "name": "Kids Carrot Sticks with Buttermilk Ranch Dressing",
+      "calories": 60,
+      "protein": 1,
+      "carbs": 4,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Kid Stuff; size in item name)"
+    },
+    {
+      "id": "nutritionix-661757",
+      "name": "Kids Cheese Nachos",
+      "calories": 660,
+      "protein": 22,
+      "carbs": 51,
+      "fat": 42,
+      "servingLabel": "1 listed serving (Kid Stuff; size in item name)"
+    },
+    {
+      "id": "nutritionix-661758",
+      "name": "Kids Cheese Quesadilla",
+      "calories": 340,
+      "protein": 15,
+      "carbs": 30,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Kid Stuff; size in item name)"
+    },
+    {
+      "id": "nutritionix-661760",
+      "name": "Kids Chicken Sticks",
+      "calories": 330,
+      "protein": 19,
+      "carbs": 23,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Kid Stuff; size in item name)"
+    },
+    {
+      "id": "nutritionix-661769",
+      "name": "Kids Cilantro-Lime Rice",
+      "calories": 190,
+      "protein": 5,
+      "carbs": 36,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Kid Stuff; size in item name)"
+    },
+    {
+      "id": "nutritionix-661768",
+      "name": "Kids Fuzzy's Rice",
+      "calories": 180,
+      "protein": 4,
+      "carbs": 33,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Kid Stuff; size in item name)"
+    },
+    {
+      "id": "nutritionix-661759",
+      "name": "Kids Ground Beef Crispy Taco",
+      "calories": 660,
+      "protein": 20,
+      "carbs": 65,
+      "fat": 35,
+      "servingLabel": "1 listed serving (Kid Stuff; size in item name)"
+    },
+    {
+      "id": "nutritionix-661770",
+      "name": "Kids Latin-Fried Potatoes",
+      "calories": 360,
+      "protein": 4,
+      "carbs": 32,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Kid Stuff; size in item name)"
+    },
+    {
+      "id": "nutritionix-661764",
+      "name": "Kids Oreo Churro Bites",
+      "calories": 160,
+      "protein": 1,
+      "carbs": 14,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Kid Stuff; size in item name)"
+    },
+    {
+      "id": "nutritionix-661761",
+      "name": "Kids Queso Dip",
+      "calories": 70,
+      "protein": 3,
+      "carbs": 3,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Kid Stuff; size in item name)"
+    },
+    {
+      "id": "nutritionix-661762",
+      "name": "Kids Ranch Dip",
+      "calories": 100,
+      "protein": 1,
+      "carbs": 1,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Kid Stuff; size in item name)"
+    },
+    {
+      "id": "nutritionix-661766",
+      "name": "Kids Refried Beans",
+      "calories": 240,
+      "protein": 13,
+      "carbs": 29,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Kid Stuff; size in item name)"
+    },
+    {
+      "id": "nutritionix-661765",
+      "name": "Kids Sopapilla Bites",
+      "calories": 240,
+      "protein": 1,
+      "carbs": 36,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Kid Stuff; size in item name)"
+    },
+    {
+      "id": "nutritionix-661772",
+      "name": "Oreo Churros",
+      "calories": 690,
+      "protein": 6,
+      "carbs": 70,
+      "fat": 43,
+      "servingLabel": "1 listed serving (Sweet Talk; size in item name)"
+    },
+    {
+      "id": "nutritionix-661771",
+      "name": "Sopapilla Bites",
+      "calories": 560,
+      "protein": 4,
+      "carbs": 83,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Sweet Talk; size in item name)"
+    },
+    {
+      "id": "nutritionix-661773",
+      "name": "Coffee, 12 fl oz",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661775",
+      "name": "Orange Juice, 12 fl oz",
+      "calories": 170,
+      "protein": 2,
+      "carbs": 41,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661779",
+      "name": "Sweetened Tea, 24 fl oz",
+      "calories": 190,
+      "protein": 0,
+      "carbs": 50,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661778",
+      "name": "Sweetened Tea, 32 fl oz",
+      "calories": 260,
+      "protein": 0,
+      "carbs": 67,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661777",
+      "name": "Unsweetened Tea, 24 fl oz",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661776",
+      "name": "Unsweetened Tea, 32 fl oz",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661774",
+      "name": "Water Bottle",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661781",
+      "name": "Barq's Root Beer, 24 fl oz",
+      "calories": 320,
+      "protein": 0,
+      "carbs": 90,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-661782",
+      "name": "Barq's Root Beer, 32 fl oz",
+      "calories": 430,
+      "protein": 0,
+      "carbs": 120,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-661780",
+      "name": "Barq's Root Beer, Kid's",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 45,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-661784",
+      "name": "Cherry Coke, 24 fl oz",
+      "calories": 300,
+      "protein": 0,
+      "carbs": 84,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-661785",
+      "name": "Cherry Coke, 32 fl oz",
+      "calories": 400,
+      "protein": 0,
+      "carbs": 112,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-661783",
+      "name": "Cherry Coke, Kid's",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 42,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-661787",
+      "name": "Coca Cola, 24 fl oz",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 78,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-661786",
+      "name": "Coca Cola, Kid's",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 39,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-661788",
+      "name": "Cocal Cola, 32 fl oz",
+      "calories": 370,
+      "protein": 0,
+      "carbs": 104,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-661790",
+      "name": "Coke Zero, 24 fl oz",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-661791",
+      "name": "Coke Zero, 32 fl oz",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-661789",
+      "name": "Coke Zero, Kid's",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-661793",
+      "name": "Diet Coke, 24 fl oz",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-661794",
+      "name": "Diet Coke, 32 fl oz",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-661792",
+      "name": "Diet Coke, Kid's",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-661799",
+      "name": "Diet Dr. Pepper, 24 fl oz",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-661800",
+      "name": "Diet Dr. Pepper, 32 fl oz",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-661798",
+      "name": "Diet Dr. Pepper, Kid's",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-661796",
+      "name": "Dr. Pepper, 24 fl oz",
+      "calories": 300,
+      "protein": 0,
+      "carbs": 79,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-661797",
+      "name": "Dr. Pepper, 32 fl oz",
+      "calories": 400,
+      "protein": 0,
+      "carbs": 106,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-661795",
+      "name": "Dr. Pepper, Kid's",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 40,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-661802",
+      "name": "Fruit Punch, Hi-C, 24 fl oz",
+      "calories": 340,
+      "protein": 0,
+      "carbs": 86,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-661803",
+      "name": "Fruit Punch, Hi-C, 32 fl oz",
+      "calories": 450,
+      "protein": 0,
+      "carbs": 114,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-661801",
+      "name": "Fruit Punch, Hi-C, Kid's",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 43,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-661805",
+      "name": "FUZE Raspberry Ice Tea, 24 fl oz",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 44,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-661806",
+      "name": "FUZE Raspberry Ice Tea, 32 fl oz",
+      "calories": 270,
+      "protein": 0,
+      "carbs": 59,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-661804",
+      "name": "FUZE Raspberry Ice Tea, Kid's",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 22,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-661808",
+      "name": "Gold Peak Unsweetened Iced Tea, 24 fl oz",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-661809",
+      "name": "Gold Peak Unsweetened Iced Tea, 32 fl oz",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-661807",
+      "name": "Gold Peak Unsweetened Iced Tea, Kid's",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-661811",
+      "name": "Mellow Yellow, 24 fl oz",
+      "calories": 340,
+      "protein": 0,
+      "carbs": 94,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-661812",
+      "name": "Mellow Yellow, 32 fl oz",
+      "calories": 450,
+      "protein": 0,
+      "carbs": 125,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-661810",
+      "name": "Mellow Yellow, Kid's",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 47,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-661814",
+      "name": "Minute Maid Lemonade, 24 fl oz",
+      "calories": 300,
+      "protein": 0,
+      "carbs": 84,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-661815",
+      "name": "Minute Maid Lemonade, 32 fl oz",
+      "calories": 400,
+      "protein": 0,
+      "carbs": 112,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-661813",
+      "name": "Minute Maid Lemonade, Kid's",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 42,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-661817",
+      "name": "Minute Maid Light Lemonade, 24 fl oz",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-661818",
+      "name": "Minute Maid Light Lemonade, 32 fl oz",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-661816",
+      "name": "Minute Maid Light Lemonade, Kid's",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-661820",
+      "name": "Orange Fanta, 24 fl oz",
+      "calories": 320,
+      "protein": 0,
+      "carbs": 88,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-661821",
+      "name": "Orange Fanta, 32 fl oz",
+      "calories": 430,
+      "protein": 0,
+      "carbs": 117,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-661819",
+      "name": "Orange Fanta, Kid's",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 44,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-661823",
+      "name": "Powerade, Mountain Berry Blast, 24 fl oz",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 42,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-661824",
+      "name": "Powerade, Mountain Berry Blast, 32 fl oz",
+      "calories": 210,
+      "protein": 0,
+      "carbs": 56,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-661822",
+      "name": "Powerade, Mountain Berry Blast, Kid's",
+      "calories": 80,
+      "protein": 0,
+      "carbs": 21,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-661826",
+      "name": "Sierra Mist, 24 fl oz",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 74,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-661827",
+      "name": "Sierra Mist, 32 fl oz",
+      "calories": 370,
+      "protein": 0,
+      "carbs": 99,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-661825",
+      "name": "Sierra Mist, Kid's",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 37,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-661829",
+      "name": "Sprite, 24 fl oz",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 76,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-661830",
+      "name": "Sprite, 32 fl oz",
+      "calories": 370,
+      "protein": 0,
+      "carbs": 101,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-661828",
+      "name": "Sprite, Kid's",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 38,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Drinks; size in item name)"
+    }
+  ],
+  "sourceDate": "2025-01-23"
+}

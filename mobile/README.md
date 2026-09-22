@@ -160,6 +160,46 @@ Auth0 callbacks, and the linked EAS project continue to work.
 public Auth0 and Fly.io settings. Supply the public Auth0 variables separately for
 development and preview builds. Keep all client secrets out of mobile configuration.
 
+## Android release APK
+
+Every stable release created by **Release** calls
+`.github/workflows/android-apk.yml` to build a signed, standalone Android APK on
+EAS and attach `gramello-vX.Y.Z.apk` to that GitHub release. It checks out the exact
+tag and sets the app version from it. The `production-apk` profile inherits the
+production API/Auth0 settings and automatic remote Android version-code increments,
+with internal distribution and an explicit APK build type. It does not require
+Metro or Expo Go and does not submit to Google Play.
+
+The workflow uses the same `EXPO_TOKEN` Actions secret as TestFlight. Android
+signing credentials must also exist in the linked EAS project. Before the first
+CI build, sign in to Expo from a checkout containing the APK profile and run:
+
+```bash
+cd mobile
+npx eas-cli@24.7.0 build --platform android --profile production-apk
+```
+
+If prompted, select the existing Android keystore or let EAS generate and store
+one. Retain that keystore so subsequent APKs can update existing installs; never
+commit signing keys. Complete this first build successfully so later CI builds
+can run without prompts. See [Expo's CI setup guide](https://docs.expo.dev/build/building-on-ci/).
+
+Ensure the Native Auth0 application's **Allowed Callback URLs** and **Allowed
+Logout URLs** both include
+`nourish://dev-rgk5sso4.auth0.com/android/com.nourish.tracker/callback`.
+
+Publishing a stable release manually also starts the APK workflow. To retry one,
+choose **Actions > Android APK > Run workflow** and enter a published stable tag
+that includes the `production-apk` profile. Drafts and prereleases are rejected.
+Rerunning builds a new APK with an incremented version code and replaces only
+that release's matching APK asset. Build, download, validation, or upload failures
+fail the job; an AAB is never uploaded as an APK. The Release workflow calls this
+workflow explicitly because releases created with `GITHUB_TOKEN` do not trigger
+another release-event workflow.
+
+Download the APK from the release's **Assets** on your Android device, allow
+installation from that source if prompted, and open **Gramello**.
+
 ## TestFlight
 
 The Apple Developer App ID is `com.edwardofclt.nourish`, under team `6SHL6PHRS9`.

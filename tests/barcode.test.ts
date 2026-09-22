@@ -80,7 +80,7 @@ describe('product lookup', () => {
 
   it('keeps millilitres separate from grams', async () => {
     provider({ status: 1, product: { ...product, nutrition_data_per: '100ml', serving_quantity: 250, serving_quantity_unit: 'ml', serving_size: '250 ml' } });
-    expect(await lookupBarcode('012345678905')).toMatchObject({ status: 200, food: { nutritionUnit: 'ml', servingMl: 250, servingGrams: 0 } });
+    expect(await lookupBarcode('012345678905')).toMatchObject({ status: 200, food: { nutritionUnit: 'ml', servingMl: 250, servingGrams: null } });
   });
 
   it('detects volume from the package when OFF uses 100g fields for a liquid', async () => {
@@ -89,7 +89,7 @@ describe('product lookup', () => {
       product_quantity_unit: 'ml', quantity: '1 L',
       nutriments: { 'energy-kcal_100g': 822, proteins_100g: 0, carbohydrates_100g: 0, fat_100g: 91 },
     } });
-    expect(await lookupBarcode('8410660098804')).toMatchObject({ status: 200, food: { nutritionUnit: 'ml', servingMl: 100, servingLabel: '100 mL', servingGrams: 0 } });
+    expect(await lookupBarcode('8410660098804')).toMatchObject({ status: 200, food: { nutritionUnit: 'ml', servingMl: 100, servingLabel: '100 mL', servingGrams: null } });
     const requestedFields = new URL(String(fetcher.mock.calls[0][0])).searchParams.get('fields')?.split(',');
     expect(requestedFields).toContain('product_quantity_unit');
     expect(requestedFields).toContain('quantity');
@@ -101,7 +101,7 @@ describe('product lookup', () => {
     expect(String(fetcher.mock.calls[0][0])).toContain('/product/810128528191?');
     expect(result.status).toBe(200);
     if (result.status !== 200) throw new Error('Expected the Ghost drink');
-    expect(result.food).toMatchObject({ id: 'off-0810128528191', nutritionUnit: 'ml', servingGrams: 0, servingMl: 473.176, servingLabel: '16 fl oz' });
+    expect(result.food).toMatchObject({ id: 'off-0810128528191', nutritionUnit: 'ml', servingGrams: null, servingMl: 473.176, servingLabel: '16 fl oz' });
     expect(scaleFood(result.food, 1, 'serving')?.calories).toBeCloseTo(10, 6);
     expect(scaleFood(result.food, .5, 'serving')?.carbs).toBeCloseTo(1, 6);
     expect(scaleFood(result.food, 473.176, 'milliliters')?.calories).toBeCloseTo(10, 6);
@@ -122,7 +122,7 @@ describe('product lookup', () => {
   ])('normalizes volume serving %s with a safe fallback', async (serving_size, serving_quantity, serving_quantity_unit, expected) => {
     provider({ status: 1, product: { ...ghostProduct, serving_size, serving_quantity, serving_quantity_unit } });
     const result = await lookupBarcode('810128528191');
-    expect(result).toMatchObject({ status: 200, food: { servingMl: expected, servingGrams: 0 } });
+    expect(result).toMatchObject({ status: 200, food: { servingMl: expected, servingGrams: null } });
   });
 
   it('does not treat a serving without a known weight as grams', async () => {

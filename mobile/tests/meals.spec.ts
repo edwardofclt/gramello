@@ -78,3 +78,52 @@ for (const width of [390, 1440]) {
     expect(errors).toEqual([]);
   });
 }
+
+test('a custom ingredient without a weight can be saved in a meal after weighing the batch', async ({ page }) => {
+  let savedMeal: CustomMeal | undefined;
+  const entries: Record<string, unknown>[] = [];
+  await page.route('https://nourish.test/api/**', async route => {
+    const request = route.request();
+    const path = new URL(request.url()).pathname;
+    const headers = { 'access-control-allow-origin': '*', 'access-control-allow-headers': 'authorization,content-type', 'access-control-allow-methods': 'GET,POST' };
+    if (request.method() === 'OPTIONS') return route.fulfill({ status: 204, headers });
+    if (path === '/api/day') return route.fulfill({ headers, json: { goals: { calories: 2400, protein: 180, carbs: 250, fat: 70 }, entries } });
+    if (path === '/api/foods/custom') return route.fulfill({ status: 201, headers, json: { food: { ...request.postDataJSON(), id: 'custom-sauce', source: 'Community submitted', sourceKind: 'custom', verified: false, nutritionBasis: 'serving' } } });
+    if (path === '/api/meals') {
+      if (request.method() === 'POST') {
+        savedMeal = { ...request.postDataJSON(), id: 'custom-meal', updatedAt: 'today' };
+        return route.fulfill({ headers, status: 201, json: { meal: savedMeal } });
+      }
+      return route.fulfill({ headers, json: { meals: savedMeal ? [savedMeal] : [] } });
+    }
+    if (path === '/api/entries') {
+      entries.push({ ...request.postDataJSON(), id: 'entry-custom-meal' });
+      return route.fulfill({ headers, status: 201, json: entries[0] });
+    }
+    return route.fulfill({ headers, json: { foods: [] } });
+  });
+  await page.goto('/');
+  await page.getByRole('button', { name: 'Sign in to Nourish', exact: true }).click();
+  await page.getByRole('button', { name: 'Add Dinner', exact: true }).click();
+  await page.getByRole('button', { name: 'My meals', exact: true }).click();
+  await page.getByRole('button', { name: 'Create meal', exact: true }).click();
+  await page.getByRole('textbox', { name: 'Meal name' }).fill('Shared sauce meal');
+  await page.getByRole('button', { name: 'Add ingredient', exact: true }).click();
+  await page.getByRole('button', { name: 'Add custom food', exact: true }).click();
+  for (const [name, value] of [['Food name', 'Custom sauce'], ['Serving description', '1 jar'], ['Calories (kcal)', '600'], ['Protein (g)', '30'], ['Carbs (g)', '60'], ['Fat (g)', '20']]) {
+    await page.getByRole('textbox', { name, exact: true }).fill(value);
+  }
+  await page.getByRole('button', { name: 'Save custom food', exact: true }).click();
+  await expect(page.getByRole('button', { name: 'Grams', exact: true })).toHaveCount(0);
+  await page.getByRole('button', { name: 'Add ingredient', exact: true }).click();
+  await expect(page.getByRole('button', { name: 'Save meal', exact: true })).toBeDisabled();
+  await expect(page.getByText(/Enter the finished batch weight when an ingredient/)).toBeVisible();
+  await page.getByRole('textbox', { name: 'Finished batch weight (required)', exact: true }).fill('400');
+  await page.getByRole('textbox', { name: 'Number of servings', exact: true }).fill('2');
+  await expect(page.getByText('Whole batch · 600 kcal', { exact: true })).toBeVisible();
+  await page.getByRole('button', { name: 'Save meal', exact: true }).click();
+  await page.getByRole('button', { name: 'Choose Shared sauce meal', exact: true }).click();
+  await page.getByRole('button', { name: 'Add to dinner', exact: true }).click();
+  expect(savedMeal).toMatchObject({ totalGrams: 400, servingGrams: 200, ingredients: [{ food: { id: 'custom-sauce', nutritionBasis: 'serving', servingGrams: null, verified: false }, quantity: 1, unit: 'serving' }] });
+  expect(entries[0]).toMatchObject({ grams: 200, calories: 300, protein: 15, carbs: 30, fat: 10, source: 'My meals' });
+});

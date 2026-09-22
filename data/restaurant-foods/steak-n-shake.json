@@ -1,0 +1,1000 @@
+{
+  "chain": "Steak 'n Shake",
+  "sourceUrl": "https://www.nutritionix.com/steak-n-shake/menu/premium",
+  "source": "Nutritionix",
+  "sourceKind": "database",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "id": "nutritionix-811795",
+      "name": "Bacon N Cheese Double",
+      "calories": 600,
+      "protein": 34,
+      "carbs": 29,
+      "fat": 38,
+      "servingLabel": "1 listed serving (Steakburgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-811796",
+      "name": "Bacon N Cheese Single",
+      "calories": 460,
+      "protein": 25,
+      "carbs": 29,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Steakburgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-811805",
+      "name": "Butter Steakburger",
+      "calories": 870,
+      "protein": 28,
+      "carbs": 34,
+      "fat": 65,
+      "servingLabel": "1 listed serving (Steakburgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-811797",
+      "name": "Garlic Double",
+      "calories": 730,
+      "protein": 28,
+      "carbs": 33,
+      "fat": 50,
+      "servingLabel": "1 listed serving (Steakburgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-811798",
+      "name": "Single with Cheese",
+      "calories": 390,
+      "protein": 19,
+      "carbs": 32,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Steakburgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-811806",
+      "name": "Steakburger 7x7",
+      "calories": 1660,
+      "protein": 95,
+      "carbs": 29,
+      "fat": 128,
+      "servingLabel": "1 listed serving (Steakburgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-811800",
+      "name": "The Original Double",
+      "calories": 460,
+      "protein": 23,
+      "carbs": 33,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Steakburgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-811801",
+      "name": "The Original Double with Cheese",
+      "calories": 530,
+      "protein": 27,
+      "carbs": 32,
+      "fat": 32,
+      "servingLabel": "1 listed serving (Steakburgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-811803",
+      "name": "Triple with Cheese",
+      "calories": 750,
+      "protein": 40,
+      "carbs": 32,
+      "fat": 50,
+      "servingLabel": "1 listed serving (Steakburgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-811802",
+      "name": "Triple without Cheese",
+      "calories": 610,
+      "protein": 32,
+      "carbs": 32,
+      "fat": 38,
+      "servingLabel": "1 listed serving (Steakburgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-811804",
+      "name": "Western BBQ N Bacon",
+      "calories": 790,
+      "protein": 35,
+      "carbs": 54,
+      "fat": 43,
+      "servingLabel": "1 listed serving (Steakburgers; size in item name)"
+    },
+    {
+      "id": "nutritionix-811807",
+      "name": "Grilled Cheese N Bacon",
+      "calories": 590,
+      "protein": 24,
+      "carbs": 41,
+      "fat": 35,
+      "servingLabel": "1 listed serving (Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-811808",
+      "name": "Chili 3-Way",
+      "calories": 710,
+      "protein": 31,
+      "carbs": 98,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Chili; size in item name)"
+    },
+    {
+      "id": "nutritionix-811809",
+      "name": "Chili Deluxe, Bowl",
+      "calories": 1000,
+      "protein": 58,
+      "carbs": 71,
+      "fat": 56,
+      "servingLabel": "1 listed serving (Chili; size in item name)"
+    },
+    {
+      "id": "nutritionix-811810",
+      "name": "Chili Deluxe, Cup",
+      "calories": 500,
+      "protein": 29,
+      "carbs": 36,
+      "fat": 28,
+      "servingLabel": "1 listed serving (Chili; size in item name)"
+    },
+    {
+      "id": "nutritionix-811811",
+      "name": "Chili Mac",
+      "calories": 1200,
+      "protein": 46,
+      "carbs": 112,
+      "fat": 61,
+      "servingLabel": "1 listed serving (Chili; size in item name)"
+    },
+    {
+      "id": "nutritionix-811812",
+      "name": "Applesauce",
+      "calories": 90,
+      "protein": 0,
+      "carbs": 22,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-811813",
+      "name": "Chicken Fingers (3)",
+      "calories": 330,
+      "protein": 21,
+      "carbs": 22,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-811814",
+      "name": "Onion Rings, Large",
+      "calories": 660,
+      "protein": 8,
+      "carbs": 79,
+      "fat": 35,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-811815",
+      "name": "Onion Rings, Medium",
+      "calories": 330,
+      "protein": 4,
+      "carbs": 39,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-811820",
+      "name": "Cheese French Fries, Large",
+      "calories": 790,
+      "protein": 9,
+      "carbs": 88,
+      "fat": 45,
+      "servingLabel": "1 listed serving (French Fries; size in item name)"
+    },
+    {
+      "id": "nutritionix-811821",
+      "name": "Cheese French Fries, Medium",
+      "calories": 590,
+      "protein": 8,
+      "carbs": 63,
+      "fat": 35,
+      "servingLabel": "1 listed serving (French Fries; size in item name)"
+    },
+    {
+      "id": "nutritionix-811822",
+      "name": "Cheese French Fries, Small",
+      "calories": 320,
+      "protein": 4,
+      "carbs": 34,
+      "fat": 18,
+      "servingLabel": "1 listed serving (French Fries; size in item name)"
+    },
+    {
+      "id": "nutritionix-811823",
+      "name": "Chili Cheese Fries, Large",
+      "calories": 1070,
+      "protein": 26,
+      "carbs": 120,
+      "fat": 53,
+      "servingLabel": "1 listed serving (French Fries; size in item name)"
+    },
+    {
+      "id": "nutritionix-811824",
+      "name": "Chili Cheese Fries, Medium",
+      "calories": 760,
+      "protein": 18,
+      "carbs": 83,
+      "fat": 39,
+      "servingLabel": "1 listed serving (French Fries; size in item name)"
+    },
+    {
+      "id": "nutritionix-811825",
+      "name": "Chili Cheese Fries, Small",
+      "calories": 430,
+      "protein": 11,
+      "carbs": 47,
+      "fat": 22,
+      "servingLabel": "1 listed serving (French Fries; size in item name)"
+    },
+    {
+      "id": "nutritionix-811819",
+      "name": "French Fries, Kids",
+      "calories": 150,
+      "protein": 1,
+      "carbs": 19,
+      "fat": 8,
+      "servingLabel": "1 listed serving (French Fries; size in item name)"
+    },
+    {
+      "id": "nutritionix-811816",
+      "name": "French Fries, Large",
+      "calories": 650,
+      "protein": 6,
+      "carbs": 79,
+      "fat": 34,
+      "servingLabel": "1 listed serving (French Fries; size in item name)"
+    },
+    {
+      "id": "nutritionix-811817",
+      "name": "French Fries, Medium",
+      "calories": 450,
+      "protein": 4,
+      "carbs": 54,
+      "fat": 24,
+      "servingLabel": "1 listed serving (French Fries; size in item name)"
+    },
+    {
+      "id": "nutritionix-811818",
+      "name": "French Fries, Small",
+      "calories": 240,
+      "protein": 2,
+      "carbs": 30,
+      "fat": 13,
+      "servingLabel": "1 listed serving (French Fries; size in item name)"
+    },
+    {
+      "id": "nutritionix-811826",
+      "name": "American Cheese",
+      "calories": 70,
+      "protein": 4,
+      "carbs": 0,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Add-Ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-811829",
+      "name": "Bacon",
+      "calories": 60,
+      "protein": 4,
+      "carbs": 0,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Add-Ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-811827",
+      "name": "Chili (for fries)",
+      "calories": 170,
+      "protein": 9,
+      "carbs": 19,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Add-Ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-811828",
+      "name": "Grilled Onions",
+      "calories": 30,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Add-Ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-811830",
+      "name": "Steakburger Patty (1)",
+      "calories": 140,
+      "protein": 9,
+      "carbs": 0,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Add-Ons; size in item name)"
+    },
+    {
+      "id": "nutritionix-811832",
+      "name": "Chicken Fingers & Fries",
+      "calories": 380,
+      "protein": 15,
+      "carbs": 25,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Kids; size in item name)"
+    },
+    {
+      "id": "nutritionix-811836",
+      "name": "Grilled Cheese & Fries",
+      "calories": 780,
+      "protein": 18,
+      "carbs": 51,
+      "fat": 56,
+      "servingLabel": "1 listed serving (Kids; size in item name)"
+    },
+    {
+      "id": "nutritionix-811833",
+      "name": "Steakburger & Fries",
+      "calories": 460,
+      "protein": 15,
+      "carbs": 39,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Kids; size in item name)"
+    },
+    {
+      "id": "nutritionix-811834",
+      "name": "Steakburger with Cheese & Fries",
+      "calories": 530,
+      "protein": 19,
+      "carbs": 39,
+      "fat": 33,
+      "servingLabel": "1 listed serving (Kids; size in item name)"
+    },
+    {
+      "id": "nutritionix-811835",
+      "name": "Steak Frank & Fries",
+      "calories": 540,
+      "protein": 13,
+      "carbs": 40,
+      "fat": 36,
+      "servingLabel": "1 listed serving (Kids; size in item name)"
+    },
+    {
+      "id": "nutritionix-811831",
+      "name": "Steak Frank, Chili Cheese",
+      "calories": 710,
+      "protein": 33,
+      "carbs": 46,
+      "fat": 44,
+      "servingLabel": "1 listed serving (Steak Franks; size in item name)"
+    },
+    {
+      "id": "nutritionix-811837",
+      "name": "Barq's Root Beer, 12 oz (with Ice)",
+      "calories": 70,
+      "protein": 0,
+      "carbs": 18,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-811838",
+      "name": "Barq's Root Beer, 20 oz (with Ice)",
+      "calories": 110,
+      "protein": 0,
+      "carbs": 30,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-811839",
+      "name": "Barq's Root Beer, 22 oz (with Ice)",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 33,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-811840",
+      "name": "Barq's Root Beer, 44 oz (with Ice)",
+      "calories": 250,
+      "protein": 0,
+      "carbs": 66,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-811854",
+      "name": "Chocolate Milk (7 fl oz bottle)",
+      "calories": 150,
+      "protein": 7,
+      "carbs": 26,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-811842",
+      "name": "Coke Classic, 12 oz (with Ice)",
+      "calories": 60,
+      "protein": 0,
+      "carbs": 16,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-811843",
+      "name": "Coke Classic, 20 oz (with Ice)",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 27,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-811844",
+      "name": "Coke Classic, 22 oz (with Ice)",
+      "calories": 110,
+      "protein": 0,
+      "carbs": 30,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-811845",
+      "name": "Coke Classic, 44 oz (with Ice)",
+      "calories": 220,
+      "protein": 0,
+      "carbs": 59,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-811846",
+      "name": "Coke Zero Sugar, 12 oz (with Ice)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-811847",
+      "name": "Coke Zero Sugar, 20 oz (with Ice)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-811848",
+      "name": "Coke Zero Sugar, 22 oz (with Ice)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-811849",
+      "name": "Coke Zero Sugar, 24 oz (with Ice)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-811850",
+      "name": "Diet Coke, 12 oz (with Ice)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-811851",
+      "name": "Diet Coke, 20 oz (with Ice)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-811852",
+      "name": "Diet Coke, 22 oz (with Ice)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-811853",
+      "name": "Diet Coke, 44 oz (with Ice)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-811855",
+      "name": "Milk (7 fl oz bottle)",
+      "calories": 90,
+      "protein": 7,
+      "carbs": 10,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-811856",
+      "name": "Minute Maid Lemonade, 12 oz (with Ice)",
+      "calories": 60,
+      "protein": 0,
+      "carbs": 16,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-811857",
+      "name": "Minute Maid Lemonade, 20 oz (with Ice)",
+      "calories": 90,
+      "protein": 0,
+      "carbs": 27,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-811858",
+      "name": "Minute Maid Lemonade, 22 oz (with Ice)",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 30,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-811859",
+      "name": "Minute Maid Lemonade, 44 oz (with Ice)",
+      "calories": 210,
+      "protein": 0,
+      "carbs": 59,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-811860",
+      "name": "Sprite, 12 oz (with Ice)",
+      "calories": 60,
+      "protein": 0,
+      "carbs": 16,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-811861",
+      "name": "Sprite, 20 oz (with Ice)",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 26,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-811862",
+      "name": "Sprite, 22 oz (with Ice)",
+      "calories": 110,
+      "protein": 0,
+      "carbs": 29,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-811863",
+      "name": "Sprite, 44 oz (with Ice)",
+      "calories": 210,
+      "protein": 0,
+      "carbs": 57,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-811864",
+      "name": "Tea, Iced, 20 oz (with Ice)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-811865",
+      "name": "Tea, Sweet, 20 oz (with Ice)",
+      "calories": 110,
+      "protein": 0,
+      "carbs": 28,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-811866",
+      "name": "Tea, Sweet, 24 oz (with Ice)",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 35,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-811867",
+      "name": "Tea, Sweet, 44 oz (with Ice)",
+      "calories": 250,
+      "protein": 0,
+      "carbs": 64,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-811868",
+      "name": "Banana, Regular",
+      "calories": 700,
+      "protein": 40,
+      "carbs": 126,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Milkshakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-811869",
+      "name": "Birthday Cake Shake, Regular",
+      "calories": 840,
+      "protein": 39,
+      "carbs": 136,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Milkshakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-811870",
+      "name": "Birthday Cake Shake, Small / Kids",
+      "calories": 500,
+      "protein": 17,
+      "carbs": 82,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Milkshakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-811871",
+      "name": "Butterfinger, Regular",
+      "calories": 760,
+      "protein": 39,
+      "carbs": 128,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Milkshakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-811872",
+      "name": "Butterfinger, Small / Kids",
+      "calories": 520,
+      "protein": 18,
+      "carbs": 87,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Milkshakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-811875",
+      "name": "Chocolate, Regular",
+      "calories": 600,
+      "protein": 38,
+      "carbs": 101,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Milkshakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-811876",
+      "name": "Chocolate, Small / Kids",
+      "calories": 380,
+      "protein": 16,
+      "carbs": 66,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Milkshakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-811877",
+      "name": "Cookie Dough, Regular",
+      "calories": 760,
+      "protein": 38,
+      "carbs": 127,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Milkshakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-811878",
+      "name": "Cookie Dough, Small / Kids",
+      "calories": 510,
+      "protein": 18,
+      "carbs": 86,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Milkshakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-811873",
+      "name": "Cotton Candy, Regular",
+      "calories": 620,
+      "protein": 37,
+      "carbs": 104,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Milkshakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-811874",
+      "name": "Cotton Candy, Small / Kids",
+      "calories": 370,
+      "protein": 16,
+      "carbs": 64,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Milkshakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-811879",
+      "name": "Egg Nog, Regular",
+      "calories": 630,
+      "protein": 38,
+      "carbs": 106,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Milkshakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-811880",
+      "name": "Egg Nog, Small / Kids",
+      "calories": 380,
+      "protein": 16,
+      "carbs": 64,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Milkshakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-811881",
+      "name": "Kit Kat, Kids / Small",
+      "calories": 460,
+      "protein": 18,
+      "carbs": 76,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Milkshakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-811882",
+      "name": "Kit Kat, Regular",
+      "calories": 710,
+      "protein": 38,
+      "carbs": 116,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Milkshakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-811883",
+      "name": "M&M's, Regular",
+      "calories": 790,
+      "protein": 39,
+      "carbs": 131,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Milkshakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-811884",
+      "name": "M&M's, Small / Kids",
+      "calories": 550,
+      "protein": 18,
+      "carbs": 90,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Milkshakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-811885",
+      "name": "Nutella, Regular",
+      "calories": 820,
+      "protein": 40,
+      "carbs": 110,
+      "fat": 36,
+      "servingLabel": "1 listed serving (Milkshakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-811886",
+      "name": "Nutella, Small / Kids",
+      "calories": 480,
+      "protein": 18,
+      "carbs": 68,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Milkshakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-811887",
+      "name": "Oreo Cookies 'n Cream, Regular",
+      "calories": 730,
+      "protein": 38,
+      "carbs": 122,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Milkshakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-811888",
+      "name": "Oreo Cookies 'n Cream, Small / Kids",
+      "calories": 490,
+      "protein": 17,
+      "carbs": 82,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Milkshakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-811889",
+      "name": "Oreo Mint, Regular",
+      "calories": 760,
+      "protein": 38,
+      "carbs": 120,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Milkshakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-811890",
+      "name": "Oreo Mint, Small / Kids",
+      "calories": 510,
+      "protein": 17,
+      "carbs": 87,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Milkshakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-811891",
+      "name": "Oreo Red Velvet Milk Shake, Regular",
+      "calories": 960,
+      "protein": 41,
+      "carbs": 157,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Milkshakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-811892",
+      "name": "Oreo Red Velvet Milk Shake, Small / Kids",
+      "calories": 600,
+      "protein": 19,
+      "carbs": 99,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Milkshakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-811893",
+      "name": "Peppermint Chocolate Chip, Regular",
+      "calories": 850,
+      "protein": 38,
+      "carbs": 127,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Milkshakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-811894",
+      "name": "Peppermint Chocolate Chip, Small / Kids",
+      "calories": 500,
+      "protein": 17,
+      "carbs": 86,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Milkshakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-811895",
+      "name": "Reese's Chocolate PB, Regular",
+      "calories": 980,
+      "protein": 48,
+      "carbs": 118,
+      "fat": 47,
+      "servingLabel": "1 listed serving (Milkshakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-811896",
+      "name": "Reese's Chocolate PB, Small / Kids",
+      "calories": 560,
+      "protein": 22,
+      "carbs": 71,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Milkshakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-811897",
+      "name": "Reese's Peanut Butter, Regular",
+      "calories": 900,
+      "protein": 47,
+      "carbs": 98,
+      "fat": 47,
+      "servingLabel": "1 listed serving (Milkshakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-811898",
+      "name": "Reese's Peanut Butter, Small / Kids",
+      "calories": 550,
+      "protein": 21,
+      "carbs": 69,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Milkshakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-811899",
+      "name": "Reese's Peanut Butter Cup, Regular",
+      "calories": 780,
+      "protein": 39,
+      "carbs": 125,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Milkshakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-811900",
+      "name": "Reese's Peanut Butter Cup, Small / Kids",
+      "calories": 530,
+      "protein": 18,
+      "carbs": 84,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Milkshakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-811901",
+      "name": "Strawberry, Regular",
+      "calories": 610,
+      "protein": 37,
+      "carbs": 103,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Milkshakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-811902",
+      "name": "Strawberry, Small / Kids",
+      "calories": 400,
+      "protein": 16,
+      "carbs": 71,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Milkshakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-811903",
+      "name": "Vanilla, Regular",
+      "calories": 620,
+      "protein": 37,
+      "carbs": 105,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Milkshakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-811904",
+      "name": "Vanilla, Small / Kids",
+      "calories": 400,
+      "protein": 16,
+      "carbs": 72,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Milkshakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-811905",
+      "name": "White Chocolate, Regular",
+      "calories": 630,
+      "protein": 37,
+      "carbs": 105,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Milkshakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-811906",
+      "name": "White Chocolate, Small / Kids",
+      "calories": 390,
+      "protein": 16,
+      "carbs": 66,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Milkshakes; size in item name)"
+    }
+  ],
+  "sourceDate": "2025-06-24"
+}

@@ -1,0 +1,802 @@
+{
+  "chain": "Pollo Campero",
+  "sourceUrl": "https://www.nutritionix.com/pollo-campero/menu/premium",
+  "source": "Nutritionix",
+  "sourceKind": "database",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "id": "nutritionix-545442",
+      "name": "Citrus Grilled Chicken Breast",
+      "calories": 210,
+      "protein": 32,
+      "carbs": 3,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Chicken; size in item name)"
+    },
+    {
+      "id": "nutritionix-545443",
+      "name": "Citrus Grilled Chicken Drumstick",
+      "calories": 100,
+      "protein": 11,
+      "carbs": 0,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Chicken; size in item name)"
+    },
+    {
+      "id": "nutritionix-545444",
+      "name": "Citrus Grilled Chicken Thigh",
+      "calories": 170,
+      "protein": 16,
+      "carbs": 1,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Chicken; size in item name)"
+    },
+    {
+      "id": "nutritionix-545445",
+      "name": "Citrus Grilled Chicken Whole Wing",
+      "calories": 50,
+      "protein": 7,
+      "carbs": 0,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Chicken; size in item name)"
+    },
+    {
+      "id": "nutritionix-545438",
+      "name": "Traditional Chicken Breast",
+      "calories": 390,
+      "protein": 51,
+      "carbs": 12,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Chicken; size in item name)"
+    },
+    {
+      "id": "nutritionix-545439",
+      "name": "Traditional Chicken Drumstick",
+      "calories": 170,
+      "protein": 17,
+      "carbs": 2,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Chicken; size in item name)"
+    },
+    {
+      "id": "nutritionix-545440",
+      "name": "Traditional Chicken Thigh",
+      "calories": 270,
+      "protein": 27,
+      "carbs": 17,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Chicken; size in item name)"
+    },
+    {
+      "id": "nutritionix-545441",
+      "name": "Traditional Chicken Whole Wing",
+      "calories": 160,
+      "protein": 13,
+      "carbs": 3,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Chicken; size in item name)"
+    },
+    {
+      "id": "nutritionix-545446",
+      "name": "Campero Nuggets (3)",
+      "calories": 170,
+      "protein": 17,
+      "carbs": 8,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Campero Nuggets; size in item name)"
+    },
+    {
+      "id": "nutritionix-545447",
+      "name": "Campero Nuggets (6)",
+      "calories": 330,
+      "protein": 35,
+      "carbs": 17,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Campero Nuggets; size in item name)"
+    },
+    {
+      "id": "nutritionix-545448",
+      "name": "Campero Nuggets (9)",
+      "calories": 500,
+      "protein": 52,
+      "carbs": 25,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Campero Nuggets; size in item name)"
+    },
+    {
+      "id": "nutritionix-545449",
+      "name": "Campero Nuggets (30)",
+      "calories": 1650,
+      "protein": 172,
+      "carbs": 83,
+      "fat": 70,
+      "servingLabel": "1 listed serving (Campero Nuggets; size in item name)"
+    },
+    {
+      "id": "nutritionix-545450",
+      "name": "Campero Chicken Empanada",
+      "calories": 170,
+      "protein": 7,
+      "carbs": 19,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Empanadas; size in item name)"
+    },
+    {
+      "id": "nutritionix-545455",
+      "name": "Breakfast Sandwich (Select Markets Only)",
+      "calories": 550,
+      "protein": 43,
+      "carbs": 53,
+      "fat": 36,
+      "servingLabel": "1 listed serving (Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-545453",
+      "name": "Buffalo Chicken Sandwich",
+      "calories": 630,
+      "protein": 36,
+      "carbs": 65,
+      "fat": 28,
+      "servingLabel": "1 listed serving (Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-545452",
+      "name": "Campero Sandwich with Fried Filet",
+      "calories": 480,
+      "protein": 35,
+      "carbs": 51,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-545451",
+      "name": "Campero Spicy Sandwich with Fried Filet",
+      "calories": 560,
+      "protein": 25,
+      "carbs": 53,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-545454",
+      "name": "Queso Bacon Chicken Sandwich",
+      "calories": 670,
+      "protein": 44,
+      "carbs": 55,
+      "fat": 29,
+      "servingLabel": "1 listed serving (Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-545456",
+      "name": "Campero Salad with Fried Filet (No Dressing)",
+      "calories": 420,
+      "protein": 32,
+      "carbs": 33,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-545457",
+      "name": "Campero Chicken Bowl with Fried Filet",
+      "calories": 640,
+      "protein": 35,
+      "carbs": 33,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Bowls; size in item name)"
+    },
+    {
+      "id": "nutritionix-545475",
+      "name": "Black Beans, Individual (Select Markets Only)",
+      "calories": 80,
+      "protein": 4,
+      "carbs": 12,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Side Dishes; size in item name)"
+    },
+    {
+      "id": "nutritionix-545466",
+      "name": "Campero Beans/ Pinto Beans, Family",
+      "calories": 340,
+      "protein": 20,
+      "carbs": 68,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Side Dishes; size in item name)"
+    },
+    {
+      "id": "nutritionix-545465",
+      "name": "Campero Beans/ Pinto Beans, Individual",
+      "calories": 110,
+      "protein": 7,
+      "carbs": 23,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Side Dishes; size in item name)"
+    },
+    {
+      "id": "nutritionix-545468",
+      "name": "Campero Coleslaw, Family",
+      "calories": 870,
+      "protein": 4,
+      "carbs": 55,
+      "fat": 76,
+      "servingLabel": "1 listed serving (Side Dishes; size in item name)"
+    },
+    {
+      "id": "nutritionix-545467",
+      "name": "Campero Coleslaw, Individual",
+      "calories": 280,
+      "protein": 2,
+      "carbs": 17,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Side Dishes; size in item name)"
+    },
+    {
+      "id": "nutritionix-545472",
+      "name": "Campero Rice, Family",
+      "calories": 520,
+      "protein": 3,
+      "carbs": 81,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Side Dishes; size in item name)"
+    },
+    {
+      "id": "nutritionix-545471",
+      "name": "Campero Rice, Individual",
+      "calories": 170,
+      "protein": 1,
+      "carbs": 27,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Side Dishes; size in item name)"
+    },
+    {
+      "id": "nutritionix-545458",
+      "name": "Corn Tortillas",
+      "calories": 120,
+      "protein": 3,
+      "carbs": 24,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Side Dishes; size in item name)"
+    },
+    {
+      "id": "nutritionix-545459",
+      "name": "Dinner Roll",
+      "calories": 90,
+      "protein": 3,
+      "carbs": 18,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Side Dishes; size in item name)"
+    },
+    {
+      "id": "nutritionix-545460",
+      "name": "Flour Tortillas",
+      "calories": 220,
+      "protein": 1,
+      "carbs": 15,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Side Dishes; size in item name)"
+    },
+    {
+      "id": "nutritionix-545462",
+      "name": "French Fries,Family",
+      "calories": 640,
+      "protein": 7,
+      "carbs": 91,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Side Dishes; size in item name)"
+    },
+    {
+      "id": "nutritionix-545461",
+      "name": "French Fries, Individual",
+      "calories": 320,
+      "protein": 3,
+      "carbs": 46,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Side Dishes; size in item name)"
+    },
+    {
+      "id": "nutritionix-545476",
+      "name": "Hashbrown (Select Markets Only)",
+      "calories": 120,
+      "protein": 1,
+      "carbs": 15,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Side Dishes; size in item name)"
+    },
+    {
+      "id": "nutritionix-545464",
+      "name": "Mac & Cheese, Family",
+      "calories": 610,
+      "protein": 19,
+      "carbs": 63,
+      "fat": 28,
+      "servingLabel": "1 listed serving (Side Dishes; size in item name)"
+    },
+    {
+      "id": "nutritionix-545463",
+      "name": "Mac & Cheese, Individual",
+      "calories": 210,
+      "protein": 7,
+      "carbs": 22,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Side Dishes; size in item name)"
+    },
+    {
+      "id": "nutritionix-545470",
+      "name": "Sweet Plantains, Family",
+      "calories": 730,
+      "protein": 5,
+      "carbs": 152,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Side Dishes; size in item name)"
+    },
+    {
+      "id": "nutritionix-545469",
+      "name": "Sweet Plantains, Individual",
+      "calories": 240,
+      "protein": 2,
+      "carbs": 42,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Side Dishes; size in item name)"
+    },
+    {
+      "id": "nutritionix-545474",
+      "name": "Yuca Fries, Family",
+      "calories": 660,
+      "protein": 1,
+      "carbs": 116,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Side Dishes; size in item name)"
+    },
+    {
+      "id": "nutritionix-545473",
+      "name": "Yuca Fries, Individual",
+      "calories": 320,
+      "protein": 1,
+      "carbs": 62,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Side Dishes; size in item name)"
+    },
+    {
+      "id": "nutritionix-545480",
+      "name": "Bacon, Egg, Cheese Sandwich (Select Markets Only)",
+      "calories": 380,
+      "protein": 17,
+      "carbs": 33,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-545477",
+      "name": "Bacon Breakfast Empanada (Select Markets Only)",
+      "calories": 230,
+      "protein": 11,
+      "carbs": 23,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-545478",
+      "name": "Campero Nuggets & Mini Waffles (Select Markets Only)",
+      "calories": 690,
+      "protein": 41,
+      "carbs": 65,
+      "fat": 35,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-545481",
+      "name": "Sausage, Egg, Cheese Sandwich (Select Markets Only)",
+      "calories": 550,
+      "protein": 19,
+      "carbs": 34,
+      "fat": 38,
+      "servingLabel": "1 listed serving (Breakfast; size in item name)"
+    },
+    {
+      "id": "nutritionix-545490",
+      "name": "Bottled Water",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-545494",
+      "name": "Diet Pepsi, 10oz",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-545495",
+      "name": "Diet Pepsi, 20oz",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-545496",
+      "name": "Diet Pepsi, 30oz",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-545500",
+      "name": "Dr Pepper, 10oz",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 33,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-545501",
+      "name": "Dr Pepper, 20oz",
+      "calories": 250,
+      "protein": 0,
+      "carbs": 66,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-545502",
+      "name": "Dr Pepper, 30oz",
+      "calories": 380,
+      "protein": 0,
+      "carbs": 99,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-545482",
+      "name": "Horchata del Morro, 20 oz",
+      "calories": 230,
+      "protein": 0,
+      "carbs": 55,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-545483",
+      "name": "Horchata del Morro, 30 oz",
+      "calories": 340,
+      "protein": 0,
+      "carbs": 82,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-545484",
+      "name": "Jamaica, 20 oz",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 52,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-545485",
+      "name": "Jamaica, 30 oz",
+      "calories": 300,
+      "protein": 2,
+      "carbs": 78,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-545486",
+      "name": "Lemonade, 20 oz",
+      "calories": 360,
+      "protein": 3,
+      "carbs": 90,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-545487",
+      "name": "Lemonade, 30 oz",
+      "calories": 540,
+      "protein": 0,
+      "carbs": 135,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-545509",
+      "name": "Manzanita Sol, 10oz",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 32,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-545510",
+      "name": "Manzanita Sol, 20oz",
+      "calories": 230,
+      "protein": 0,
+      "carbs": 63,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-545511",
+      "name": "Manzanita Sol, 30oz",
+      "calories": 350,
+      "protein": 0,
+      "carbs": 95,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-545512",
+      "name": "Mirinda, Strawberry, 10 oz",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 36,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-545513",
+      "name": "Mirinda, Strawberry, 20 oz",
+      "calories": 270,
+      "protein": 0,
+      "carbs": 72,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-545514",
+      "name": "Mirinda, Strawberry, 30 oz",
+      "calories": 410,
+      "protein": 0,
+      "carbs": 109,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-545506",
+      "name": "Mtn Dew, 10oz",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 32,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-545507",
+      "name": "Mtn Dew, 20oz",
+      "calories": 240,
+      "protein": 0,
+      "carbs": 64,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-545508",
+      "name": "Mtn Dew, 30oz",
+      "calories": 360,
+      "protein": 0,
+      "carbs": 96,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-545491",
+      "name": "Pepsi, 10oz",
+      "calories": 110,
+      "protein": 0,
+      "carbs": 30,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-545492",
+      "name": "Pepsi, 20oz",
+      "calories": 220,
+      "protein": 0,
+      "carbs": 60,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-545493",
+      "name": "Pepsi, 30oz",
+      "calories": 330,
+      "protein": 0,
+      "carbs": 91,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-545503",
+      "name": "Starry, 10oz",
+      "calories": 110,
+      "protein": 0,
+      "carbs": 30,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-545504",
+      "name": "Starry, 20oz",
+      "calories": 220,
+      "protein": 0,
+      "carbs": 59,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-545505",
+      "name": "Starry, 30oz",
+      "calories": 330,
+      "protein": 0,
+      "carbs": 89,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-545515",
+      "name": "Sugar Packet",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-545497",
+      "name": "Wild Cherry Pepsi, 10oz",
+      "calories": 110,
+      "protein": 0,
+      "carbs": 31,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-545498",
+      "name": "Wild Cherry Pepsi, 20oz",
+      "calories": 230,
+      "protein": 0,
+      "carbs": 62,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-545499",
+      "name": "Wild Cherry Pepsi, 30oz",
+      "calories": 340,
+      "protein": 0,
+      "carbs": 92,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-545518",
+      "name": "Chocolate Chip Cookie",
+      "calories": 260,
+      "protein": 3,
+      "carbs": 35,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-545517",
+      "name": "Traditional Baked Flan",
+      "calories": 210,
+      "protein": 8,
+      "carbs": 26,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-545520",
+      "name": "Balsamic Vinaigrette",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Dressings & Sauces; size in item name)"
+    },
+    {
+      "id": "nutritionix-545523",
+      "name": "Barbecue Sauce",
+      "calories": 50,
+      "protein": 0,
+      "carbs": 12,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Dressings & Sauces; size in item name)"
+    },
+    {
+      "id": "nutritionix-545521",
+      "name": "Buffalo Sauce",
+      "calories": 10,
+      "protein": 1,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Dressings & Sauces; size in item name)"
+    },
+    {
+      "id": "nutritionix-545524",
+      "name": "Campero Signature Sauce",
+      "calories": 110,
+      "protein": 1,
+      "carbs": 4,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Dressings & Sauces; size in item name)"
+    },
+    {
+      "id": "nutritionix-749686",
+      "name": "Campero Spicy and Smokey Sauce",
+      "calories": 180,
+      "protein": 0,
+      "carbs": 11,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Dressings & Sauces; size in item name)"
+    },
+    {
+      "id": "nutritionix-749687",
+      "name": "Campero Sweet and Tangy Sauce",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 27,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Dressings & Sauces; size in item name)"
+    },
+    {
+      "id": "nutritionix-749685",
+      "name": "Creamy Jalapeno Sauce",
+      "calories": 250,
+      "protein": 1,
+      "carbs": 3,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Dressings & Sauces; size in item name)"
+    },
+    {
+      "id": "nutritionix-545525",
+      "name": "Guacamole Salsa",
+      "calories": 70,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Dressings & Sauces; size in item name)"
+    },
+    {
+      "id": "nutritionix-545526",
+      "name": "Maple Syrup",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 31,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Dressings & Sauces; size in item name)"
+    },
+    {
+      "id": "nutritionix-545522",
+      "name": "Ranch Sauce",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Dressings & Sauces; size in item name)"
+    },
+    {
+      "id": "nutritionix-545519",
+      "name": "Sour Cream (Select Markets Only)",
+      "calories": 60,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Dressings & Sauces; size in item name)"
+    }
+  ],
+  "sourceDate": "2026-06-18"
+}

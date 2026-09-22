@@ -1,0 +1,2062 @@
+{
+  "chain": "Chuck E. Cheese",
+  "sourceUrl": "https://www.nutritionix.com/chuck-e-cheeses/menu/premium",
+  "source": "Nutritionix",
+  "sourceKind": "database",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "id": "nutritionix-722100",
+      "name": "Bread, Cheesy Breadsticks",
+      "calories": 70,
+      "protein": 3,
+      "carbs": 5,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Appetizers & Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-722090",
+      "name": "Platter, App Sampler, Large, with Plain Boneless Wings",
+      "calories": 2200,
+      "protein": 92,
+      "carbs": 193,
+      "fat": 124,
+      "servingLabel": "1 listed serving (Appetizers & Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-722091",
+      "name": "Platter, App Sampler, Large, with Plain Traditional Wings",
+      "calories": 2340,
+      "protein": 105,
+      "carbs": 166,
+      "fat": 139,
+      "servingLabel": "1 listed serving (Appetizers & Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-722092",
+      "name": "Platter, App Sampler, Large, with Sweet Chili Sauce Boneless Wings",
+      "calories": 2340,
+      "protein": 92,
+      "carbs": 227,
+      "fat": 124,
+      "servingLabel": "1 listed serving (Appetizers & Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-722093",
+      "name": "Platter, App Sampler, Large, with Sweet Chili Sauce Traditional Wings",
+      "calories": 2480,
+      "protein": 105,
+      "carbs": 200,
+      "fat": 139,
+      "servingLabel": "1 listed serving (Appetizers & Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-722086",
+      "name": "Platter, App Sampler, with Plain Boneless Wings",
+      "calories": 1580,
+      "protein": 52,
+      "carbs": 140,
+      "fat": 94,
+      "servingLabel": "1 listed serving (Appetizers & Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-722087",
+      "name": "Platter, App Sampler, with Plain Traditional Wings",
+      "calories": 1650,
+      "protein": 58,
+      "carbs": 127,
+      "fat": 101,
+      "servingLabel": "1 listed serving (Appetizers & Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-722088",
+      "name": "Platter, App Sampler, with Sweet Chili Sauce Boneless Wings",
+      "calories": 1650,
+      "protein": 52,
+      "carbs": 157,
+      "fat": 94,
+      "servingLabel": "1 listed serving (Appetizers & Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-722089",
+      "name": "Platter, App Sampler, with Sweet Chili Sauce Traditional Wings",
+      "calories": 1720,
+      "protein": 58,
+      "carbs": 144,
+      "fat": 101,
+      "servingLabel": "1 listed serving (Appetizers & Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-722094",
+      "name": "Platter, French Fry Platter",
+      "calories": 2460,
+      "protein": 43,
+      "carbs": 369,
+      "fat": 89,
+      "servingLabel": "1 listed serving (Appetizers & Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-722095",
+      "name": "Platter, Vegetable with Blue Cheese Dressing",
+      "calories": 900,
+      "protein": 13,
+      "carbs": 47,
+      "fat": 77,
+      "servingLabel": "1 listed serving (Appetizers & Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-722096",
+      "name": "Platter, Vegetable with Ranch Dressing",
+      "calories": 500,
+      "protein": 13,
+      "carbs": 50,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Appetizers & Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-722097",
+      "name": "Saucy Meatballs with Buffalo BBQ",
+      "calories": 710,
+      "protein": 34,
+      "carbs": 28,
+      "fat": 49,
+      "servingLabel": "1 listed serving (Appetizers & Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-722098",
+      "name": "Saucy Meatballs with Spicy Korean BBQ",
+      "calories": 790,
+      "protein": 34,
+      "carbs": 42,
+      "fat": 51,
+      "servingLabel": "1 listed serving (Appetizers & Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-722099",
+      "name": "Saucy Meatballs with Sweet Chili Sauce",
+      "calories": 790,
+      "protein": 34,
+      "carbs": 48,
+      "fat": 49,
+      "servingLabel": "1 listed serving (Appetizers & Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-722101",
+      "name": "Side, French Fries",
+      "calories": 420,
+      "protein": 34,
+      "carbs": 67,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Appetizers & Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-722102",
+      "name": "Side, Ketchup",
+      "calories": 60,
+      "protein": 1,
+      "carbs": 14,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Appetizers & Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-722104",
+      "name": "Side, Marinara Sauce",
+      "calories": 15,
+      "protein": 1,
+      "carbs": 3,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Appetizers & Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-722103",
+      "name": "Side, Ranch Dressing",
+      "calories": 110,
+      "protein": 1,
+      "carbs": 2,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Appetizers & Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-722105",
+      "name": "Salad Bar, Bacon Bits",
+      "calories": 60,
+      "protein": 5,
+      "carbs": 0,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Salad Bar; size in item name)"
+    },
+    {
+      "id": "nutritionix-722106",
+      "name": "Salad Bar, Black Olives",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Salad Bar; size in item name)"
+    },
+    {
+      "id": "nutritionix-722107",
+      "name": "Salad Bar, Broccoli",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Salad Bar; size in item name)"
+    },
+    {
+      "id": "nutritionix-722108",
+      "name": "Salad Bar, Cantaloupe",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Salad Bar; size in item name)"
+    },
+    {
+      "id": "nutritionix-722109",
+      "name": "Salad Bar, Carrots",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Salad Bar; size in item name)"
+    },
+    {
+      "id": "nutritionix-722111",
+      "name": "Salad Bar, Cottage Cheese",
+      "calories": 110,
+      "protein": 12,
+      "carbs": 5,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Salad Bar; size in item name)"
+    },
+    {
+      "id": "nutritionix-722112",
+      "name": "Salad Bar, Croutons",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0.5,
+      "servingLabel": "1 listed serving (Salad Bar; size in item name)"
+    },
+    {
+      "id": "nutritionix-722113",
+      "name": "Salad Bar, Cucumbers",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Salad Bar; size in item name)"
+    },
+    {
+      "id": "nutritionix-722114",
+      "name": "Salad Bar, Dressing, Balsamic Vinaigrette",
+      "calories": 60,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Salad Bar; size in item name)"
+    },
+    {
+      "id": "nutritionix-722115",
+      "name": "Salad Bar, Dressing, Blue Cheese",
+      "calories": 90,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Salad Bar; size in item name)"
+    },
+    {
+      "id": "nutritionix-722116",
+      "name": "Salad Bar, Dressing, Lite Northern Italian",
+      "calories": 25,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Salad Bar; size in item name)"
+    },
+    {
+      "id": "nutritionix-722117",
+      "name": "Salad Bar, Dressing, Ranch",
+      "calories": 35,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Salad Bar; size in item name)"
+    },
+    {
+      "id": "nutritionix-722118",
+      "name": "Salad Bar, Dressing, Thousand Island",
+      "calories": 60,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Salad Bar; size in item name)"
+    },
+    {
+      "id": "nutritionix-722119",
+      "name": "Salad Bar, Egg Hard Cooked",
+      "calories": 70,
+      "protein": 6,
+      "carbs": 1,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Salad Bar; size in item name)"
+    },
+    {
+      "id": "nutritionix-722121",
+      "name": "Salad Bar, Grapes",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Salad Bar; size in item name)"
+    },
+    {
+      "id": "nutritionix-722120",
+      "name": "Salad Bar, Grape Tomatoes",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Salad Bar; size in item name)"
+    },
+    {
+      "id": "nutritionix-722122",
+      "name": "Salad Bar, Green Pepper",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Salad Bar; size in item name)"
+    },
+    {
+      "id": "nutritionix-722123",
+      "name": "Salad Bar, Honeydew Melon",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Salad Bar; size in item name)"
+    },
+    {
+      "id": "nutritionix-722124",
+      "name": "Salad Bar, Jalapenos",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Salad Bar; size in item name)"
+    },
+    {
+      "id": "nutritionix-722125",
+      "name": "Salad Bar, Lettuce Mix",
+      "calories": 10,
+      "protein": 1,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Salad Bar; size in item name)"
+    },
+    {
+      "id": "nutritionix-722126",
+      "name": "Salad Bar, Oranges",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Salad Bar; size in item name)"
+    },
+    {
+      "id": "nutritionix-722127",
+      "name": "Salad Bar, Potato Salad",
+      "calories": 70,
+      "protein": 1,
+      "carbs": 8,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Salad Bar; size in item name)"
+    },
+    {
+      "id": "nutritionix-722128",
+      "name": "Salad Bar, Red Onions",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Salad Bar; size in item name)"
+    },
+    {
+      "id": "nutritionix-722129",
+      "name": "Salad Bar, Romaine Lettuce",
+      "calories": 10,
+      "protein": 1,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Salad Bar; size in item name)"
+    },
+    {
+      "id": "nutritionix-722110",
+      "name": "Salad Bar, Shredded Cheddar Cheese",
+      "calories": 25,
+      "protein": 2,
+      "carbs": 0,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Salad Bar; size in item name)"
+    },
+    {
+      "id": "nutritionix-722130",
+      "name": "Salad Bar, Spinach",
+      "calories": 5,
+      "protein": 1,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Salad Bar; size in item name)"
+    },
+    {
+      "id": "nutritionix-722131",
+      "name": "Salad Bar, Strawberries",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Salad Bar; size in item name)"
+    },
+    {
+      "id": "nutritionix-722132",
+      "name": "Salad Bar, Strawberry Parfait",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Salad Bar; size in item name)"
+    },
+    {
+      "id": "nutritionix-722133",
+      "name": "Salad Bar, Watermelon",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Salad Bar; size in item name)"
+    },
+    {
+      "id": "nutritionix-722134",
+      "name": "Crust, Gluten Free (Crust Portion for 1 Slice)",
+      "calories": 45,
+      "protein": 0,
+      "carbs": 9,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Pizza Crust; size in item name)"
+    },
+    {
+      "id": "nutritionix-722135",
+      "name": "Crust, Stuffed, Large (Crust Portion for 1 Slice)",
+      "calories": 170,
+      "protein": 6,
+      "carbs": 24,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Pizza Crust; size in item name)"
+    },
+    {
+      "id": "nutritionix-722136",
+      "name": "Crust, Stuffed, Medium (Crust Portion for 1 Slice)",
+      "calories": 160,
+      "protein": 6,
+      "carbs": 23,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Pizza Crust; size in item name)"
+    },
+    {
+      "id": "nutritionix-722137",
+      "name": "Crust, Stuffed, X-Large (Crust Portion for 1 Slice)",
+      "calories": 130,
+      "protein": 5,
+      "carbs": 18,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Pizza Crust; size in item name)"
+    },
+    {
+      "id": "nutritionix-722139",
+      "name": "Crust, Traditional, Individual (Crust Portion for 1 Slice)",
+      "calories": 60,
+      "protein": 2,
+      "carbs": 11,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Pizza Crust; size in item name)"
+    },
+    {
+      "id": "nutritionix-722138",
+      "name": "Crust, Traditional, Individual without Garlic Margarine or Seasoning (Crust Portion for 1 Slice)",
+      "calories": 60,
+      "protein": 2,
+      "carbs": 11,
+      "fat": 0.5,
+      "servingLabel": "1 listed serving (Pizza Crust; size in item name)"
+    },
+    {
+      "id": "nutritionix-722141",
+      "name": "Crust, Traditional, Large (Crust Portion for 1 Slice)",
+      "calories": 100,
+      "protein": 3,
+      "carbs": 19,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Pizza Crust; size in item name)"
+    },
+    {
+      "id": "nutritionix-722140",
+      "name": "Crust, Traditional, Large without Garlic Margarine or Seasoning (Crust Portion for 1 Slice)",
+      "calories": 100,
+      "protein": 3,
+      "carbs": 19,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Pizza Crust; size in item name)"
+    },
+    {
+      "id": "nutritionix-722143",
+      "name": "Crust, Traditional, Medium (Crust Portion for 1 Slice)",
+      "calories": 90,
+      "protein": 3,
+      "carbs": 17,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Pizza Crust; size in item name)"
+    },
+    {
+      "id": "nutritionix-722142",
+      "name": "Crust, Traditional, Medium without Garlic Margarine or Seasoning (Crust Portion for 1 Slice)",
+      "calories": 90,
+      "protein": 3,
+      "carbs": 17,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Pizza Crust; size in item name)"
+    },
+    {
+      "id": "nutritionix-722145",
+      "name": "Crust, Traditional, X-Large (Crust Portion for 1 Slice)",
+      "calories": 100,
+      "protein": 3,
+      "carbs": 18,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Pizza Crust; size in item name)"
+    },
+    {
+      "id": "nutritionix-722144",
+      "name": "Crust, Traditional, X-Large without Garlic Margarine or Seasoning (Crust Portion for 1 Slice)",
+      "calories": 90,
+      "protein": 3,
+      "carbs": 18,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Pizza Crust; size in item name)"
+    },
+    {
+      "id": "nutritionix-722146",
+      "name": "Extra Mozzarella, Individual (Cheese Portion for 1 Slice)",
+      "calories": 20,
+      "protein": 2,
+      "carbs": 0,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Pizza Cheese; size in item name)"
+    },
+    {
+      "id": "nutritionix-722147",
+      "name": "Extra Mozzarella, Large (Cheese Portion for 1 Slice)",
+      "calories": 35,
+      "protein": 2,
+      "carbs": 0,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Pizza Cheese; size in item name)"
+    },
+    {
+      "id": "nutritionix-722148",
+      "name": "Extra Mozzarella, Medium (Cheese Portion for 1 Slice)",
+      "calories": 30,
+      "protein": 2,
+      "carbs": 0,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Pizza Cheese; size in item name)"
+    },
+    {
+      "id": "nutritionix-722149",
+      "name": "Extra Mozzarella, X-Large (Cheese Portion for 1 Slice)",
+      "calories": 35,
+      "protein": 2,
+      "carbs": 0,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Pizza Cheese; size in item name)"
+    },
+    {
+      "id": "nutritionix-722150",
+      "name": "Mozzarella, Individual (Cheese Portion for 1 Slice)",
+      "calories": 30,
+      "protein": 2,
+      "carbs": 0,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Pizza Cheese; size in item name)"
+    },
+    {
+      "id": "nutritionix-722151",
+      "name": "Mozzarella, Large (Cheese Portion for 1 Slice)",
+      "calories": 60,
+      "protein": 4,
+      "carbs": 0,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Pizza Cheese; size in item name)"
+    },
+    {
+      "id": "nutritionix-722152",
+      "name": "Mozzarella, Medium (Cheese Portion for 1 Slice)",
+      "calories": 50,
+      "protein": 3,
+      "carbs": 0,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Pizza Cheese; size in item name)"
+    },
+    {
+      "id": "nutritionix-722153",
+      "name": "Mozzarella, X-Large (Cheese Portion for 1 Slice)",
+      "calories": 50,
+      "protein": 4,
+      "carbs": 0,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Pizza Cheese; size in item name)"
+    },
+    {
+      "id": "nutritionix-722154",
+      "name": "Red, Individual (Sauce Portion for 1 Slice)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Pizza Sauce; size in item name)"
+    },
+    {
+      "id": "nutritionix-722155",
+      "name": "Red, Large (Sauce Portion for 1 Slice)",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Pizza Sauce; size in item name)"
+    },
+    {
+      "id": "nutritionix-722156",
+      "name": "Red, Medium (Sauce Portion for 1 Slice)",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Pizza Sauce; size in item name)"
+    },
+    {
+      "id": "nutritionix-722157",
+      "name": "Red, X-Large (Sauce Portion for 1 Slice)",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Pizza Sauce; size in item name)"
+    },
+    {
+      "id": "nutritionix-722158",
+      "name": "Bacon, Individual (Topping Portion for 1 Slice)",
+      "calories": 20,
+      "protein": 2,
+      "carbs": 0,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Pizza Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722159",
+      "name": "Bacon, Large (Topping Portion for 1 Slice)",
+      "calories": 25,
+      "protein": 2,
+      "carbs": 0,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Pizza Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722160",
+      "name": "Bacon, Medium (Topping Portion for 1 Slice)",
+      "calories": 25,
+      "protein": 2,
+      "carbs": 0,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Pizza Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722161",
+      "name": "Bacon, X-Large (Topping Portion for 1 Slice)",
+      "calories": 20,
+      "protein": 2,
+      "carbs": 0,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Pizza Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722162",
+      "name": "Beef, Individual (Topping Portion for 1 Slice)",
+      "calories": 15,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Pizza Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722163",
+      "name": "Beef, Large (Topping Portion for 1 Slice)",
+      "calories": 25,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Pizza Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722164",
+      "name": "Beef, Medium (Topping Portion for 1 Slice)",
+      "calories": 20,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Pizza Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722165",
+      "name": "Beef, X-Large (Topping Portion for 1 Slice)",
+      "calories": 25,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Pizza Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722166",
+      "name": "Black Olives, Individual (Topping Portion for 1 Slice)",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Pizza Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722167",
+      "name": "Black Olives, Large (Topping Portion for 1 Slice)",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Pizza Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722168",
+      "name": "Black Olives, Medium (Topping Portion for 1 Slice)",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Pizza Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722169",
+      "name": "Black Olives, X-Large (Topping Portion for 1 Slice)",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Pizza Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722174",
+      "name": "Chicken, Individual (Topping Portion for 1 Slice)",
+      "calories": 5,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Pizza Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722175",
+      "name": "Chicken, Large (Topping Portion for 1 Slice)",
+      "calories": 10,
+      "protein": 2,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Pizza Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722176",
+      "name": "Chicken, Medium (Topping Portion for 1 Slice)",
+      "calories": 10,
+      "protein": 2,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Pizza Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722177",
+      "name": "Chicken, X-Large (Topping Portion for 1 Slice)",
+      "calories": 10,
+      "protein": 2,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Pizza Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722211",
+      "name": "Grape Tomatoes, Large (Topping Portion for 1 Slice)",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Pizza Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722212",
+      "name": "Grape Tomatoes, Medium (Topping Portion for 1 Slice)",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Pizza Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722213",
+      "name": "Grape Tomatoes, X-Large (Topping Portion for 1 Slice)",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Pizza Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722170",
+      "name": "Ham, Individual (Topping Portion for 1 Slice)",
+      "calories": 5,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Pizza Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722171",
+      "name": "Ham, Large (Topping Portion for 1 Slice)",
+      "calories": 5,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Pizza Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722172",
+      "name": "Ham, Medium (Topping Portion for 1 Slice)",
+      "calories": 5,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Pizza Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722173",
+      "name": "Ham, X-Large (Topping Portion for 1 Slice)",
+      "calories": 5,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Pizza Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722186",
+      "name": "Jalapenos, Individual (Topping Portion for 1 Slice)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Pizza Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722187",
+      "name": "Jalapenos, Large (Topping Portion for 1 Slice)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Pizza Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722188",
+      "name": "Jalapenos, Medium (Topping Portion for 1 Slice)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Pizza Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722189",
+      "name": "Jalapenos, X-Large (Topping Portion for 1 Slice)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Pizza Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722194",
+      "name": "Pepperoni, Individual (Topping Portion for 1 Slice)",
+      "calories": 15,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Pizza Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722195",
+      "name": "Pepperoni, Large (Topping Portion for 1 Slice)",
+      "calories": 25,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Pizza Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722196",
+      "name": "Pepperoni, Medium (Topping Portion for 1 Slice)",
+      "calories": 25,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Pizza Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722197",
+      "name": "Pepperoni, X-Large (Topping Portion for 1 Slice)",
+      "calories": 25,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Pizza Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722198",
+      "name": "Pineapple, Individual (Topping Portion for 1 Slice)",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Pizza Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722199",
+      "name": "Pineapple, Large (Topping Portion for 1 Slice)",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Pizza Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722200",
+      "name": "Pineapple, Medium (Topping Portion for 1 Slice)",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Pizza Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722201",
+      "name": "Pineapple, X-Large (Topping Portion for 1 Slice)",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Pizza Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722203",
+      "name": "Red Onion, Large (Topping Portion for 1 Slice)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Pizza Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722205",
+      "name": "Red Onion, X-Large (Topping Portion for 1 Slice)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Pizza Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722206",
+      "name": "Sausage, Individual (Topping Portion for 1 Slice)",
+      "calories": 15,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Pizza Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722207",
+      "name": "Sausage, Large (Topping Portion for 1 Slice)",
+      "calories": 30,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Pizza Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722208",
+      "name": "Sausage, Medium (Topping Portion for 1 Slice)",
+      "calories": 25,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Pizza Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722209",
+      "name": "Sausage, X-Large (Topping Portion for 1 Slice)",
+      "calories": 25,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Pizza Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722214",
+      "name": "Pizza, 5 Meat, Individual (1 Slice)",
+      "calories": 130,
+      "protein": 7,
+      "carbs": 12,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-722215",
+      "name": "Pizza, 5 Meat, Large (1 Slice)",
+      "calories": 230,
+      "protein": 11,
+      "carbs": 21,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-722216",
+      "name": "Pizza, 5 Meat, Medium (1 Slice)",
+      "calories": 200,
+      "protein": 10,
+      "carbs": 18,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-722217",
+      "name": "Pizza, 5 Meat, X-Large (1 Slice)",
+      "calories": 220,
+      "protein": 11,
+      "carbs": 19,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-722218",
+      "name": "Pizza, Homestyle BBQ Chicken, Large (1 Slice)",
+      "calories": 300,
+      "protein": 15,
+      "carbs": 38,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-722219",
+      "name": "Pizza, Signature Meatball, Large (1 Slice)",
+      "calories": 320,
+      "protein": 15,
+      "carbs": 32,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-722220",
+      "name": "Pizza, Spicy BBQ Piggy, Large (1 Slice)",
+      "calories": 330,
+      "protein": 15,
+      "carbs": 37,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-722221",
+      "name": "Pizza, Spicy Hawaiian, Large (1 Slice)",
+      "calories": 290,
+      "protein": 12,
+      "carbs": 39,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-722222",
+      "name": "Pizza, Supreme, Individual (1 Slice)",
+      "calories": 120,
+      "protein": 5,
+      "carbs": 12,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-722223",
+      "name": "Pizza, Supreme, Large (1 Slice)",
+      "calories": 210,
+      "protein": 9,
+      "carbs": 21,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-722224",
+      "name": "Pizza, Supreme, Medium (1 Slice)",
+      "calories": 180,
+      "protein": 8,
+      "carbs": 19,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-722225",
+      "name": "Pizza, Supreme, X-Large (1 Slice)",
+      "calories": 200,
+      "protein": 9,
+      "carbs": 20,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-722226",
+      "name": "Pizza, Veggie, Individual (1 Slice)",
+      "calories": 100,
+      "protein": 4,
+      "carbs": 12,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-722227",
+      "name": "Pizza, Veggie, Large (1 Slice)",
+      "calories": 170,
+      "protein": 7,
+      "carbs": 21,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-722228",
+      "name": "Pizza, Veggie, Medium (1 Slice)",
+      "calories": 150,
+      "protein": 7,
+      "carbs": 19,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-722229",
+      "name": "Pizza, Veggie, X-Large (1 Slice)",
+      "calories": 170,
+      "protein": 7,
+      "carbs": 20,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Pizzas; size in item name)"
+    },
+    {
+      "id": "nutritionix-722233",
+      "name": "Wings, Boneless, Buffalo BBQ, Large",
+      "calories": 240,
+      "protein": 19,
+      "carbs": 27,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Boneless Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722234",
+      "name": "Wings, Boneless, Buffalo BBQ, Medium",
+      "calories": 240,
+      "protein": 19,
+      "carbs": 27,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Boneless Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722235",
+      "name": "Wings, Boneless, Buffalo BBQ, Regular",
+      "calories": 240,
+      "protein": 19,
+      "carbs": 27,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Boneless Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722236",
+      "name": "Wings, Boneless, Homestyle BBQ, Large",
+      "calories": 270,
+      "protein": 19,
+      "carbs": 34,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Boneless Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722237",
+      "name": "Wings, Boneless, Homestyle BBQ, Medium",
+      "calories": 270,
+      "protein": 19,
+      "carbs": 34,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Boneless Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722238",
+      "name": "Wings, Boneless, Homestyle BBQ, Regular",
+      "calories": 270,
+      "protein": 19,
+      "carbs": 34,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Boneless Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722239",
+      "name": "Wings, Boneless, Louisiana Honey Hot, Large",
+      "calories": 270,
+      "protein": 19,
+      "carbs": 36,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Boneless Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722240",
+      "name": "Wings, Boneless, Louisiana Honey Hot, Medium",
+      "calories": 270,
+      "protein": 19,
+      "carbs": 36,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Boneless Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722241",
+      "name": "Wings, Boneless, Louisiana Honey Hot, Regular",
+      "calories": 270,
+      "protein": 19,
+      "carbs": 36,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Boneless Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722230",
+      "name": "Wings, Boneless, Plain, Large",
+      "calories": 210,
+      "protein": 19,
+      "carbs": 20,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Boneless Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722231",
+      "name": "Wings, Boneless, Plain, Medium",
+      "calories": 210,
+      "protein": 19,
+      "carbs": 20,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Boneless Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722232",
+      "name": "Wings, Boneless, Plain, Regular",
+      "calories": 210,
+      "protein": 19,
+      "carbs": 20,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Boneless Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722242",
+      "name": "Wings, Boneless, Spicy Buffalo, Large",
+      "calories": 210,
+      "protein": 19,
+      "carbs": 20,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Boneless Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722243",
+      "name": "Wings, Boneless, Spicy Buffalo, Medium",
+      "calories": 210,
+      "protein": 19,
+      "carbs": 20,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Boneless Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722244",
+      "name": "Wings, Boneless, Spicy Buffalo, Regular",
+      "calories": 210,
+      "protein": 19,
+      "carbs": 20,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Boneless Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722245",
+      "name": "Wings, Boneless, Spicy Korean BBQ, Large",
+      "calories": 280,
+      "protein": 19,
+      "carbs": 34,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Boneless Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722246",
+      "name": "Wings, Boneless, Spicy Korean BBQ, Medium",
+      "calories": 280,
+      "protein": 19,
+      "carbs": 34,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Boneless Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722247",
+      "name": "Wings, Boneless, Spicy Korean BBQ, Regular",
+      "calories": 280,
+      "protein": 19,
+      "carbs": 34,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Boneless Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722248",
+      "name": "Wings, Boneless, Sweet Chili Sauce, Large",
+      "calories": 280,
+      "protein": 19,
+      "carbs": 37,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Boneless Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722249",
+      "name": "Wings, Boneless, Sweet Chili Sauce, Medium",
+      "calories": 280,
+      "protein": 19,
+      "carbs": 37,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Boneless Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722250",
+      "name": "Wings, Boneless, Sweet Chili Sauce, Regular",
+      "calories": 280,
+      "protein": 19,
+      "carbs": 37,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Boneless Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722254",
+      "name": "Wings, Traditional, Buffalo BBQ, Large",
+      "calories": 310,
+      "protein": 26,
+      "carbs": 14,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Traditional Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722255",
+      "name": "Wings, Traditional, Buffalo BBQ, Medium",
+      "calories": 310,
+      "protein": 26,
+      "carbs": 14,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Traditional Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722256",
+      "name": "Wings, Traditional, Buffalo BBQ, Regular",
+      "calories": 310,
+      "protein": 26,
+      "carbs": 14,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Traditional Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722257",
+      "name": "Wings, Traditional, Chili Lime, Large",
+      "calories": 320,
+      "protein": 26,
+      "carbs": 7,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Traditional Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722258",
+      "name": "Wings, Traditional, Chili Lime, Medium",
+      "calories": 320,
+      "protein": 26,
+      "carbs": 7,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Traditional Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722259",
+      "name": "Wings, Traditional, Chili Lime, Regular",
+      "calories": 320,
+      "protein": 26,
+      "carbs": 7,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Traditional Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722260",
+      "name": "Wings, Traditional, Homestyle BBQ, Large",
+      "calories": 340,
+      "protein": 26,
+      "carbs": 21,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Traditional Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722261",
+      "name": "Wings, Traditional, Homestyle BBQ, Medium",
+      "calories": 340,
+      "protein": 26,
+      "carbs": 21,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Traditional Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722262",
+      "name": "Wings, Traditional, Homestyle BBQ, Regular",
+      "calories": 340,
+      "protein": 26,
+      "carbs": 21,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Traditional Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722263",
+      "name": "Wings, Traditional, Lemon Pepper, Large",
+      "calories": 320,
+      "protein": 26,
+      "carbs": 9,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Traditional Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722264",
+      "name": "Wings, Traditional, Lemon Pepper, Medium",
+      "calories": 320,
+      "protein": 26,
+      "carbs": 9,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Traditional Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722265",
+      "name": "Wings, Traditional, Lemon Pepper, Regular",
+      "calories": 320,
+      "protein": 26,
+      "carbs": 9,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Traditional Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722266",
+      "name": "Wings, Traditional, Louisiana Honey Hot, Large",
+      "calories": 340,
+      "protein": 26,
+      "carbs": 23,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Traditional Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722267",
+      "name": "Wings, Traditional, Louisiana Honey Hot, Medium",
+      "calories": 340,
+      "protein": 26,
+      "carbs": 23,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Traditional Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722268",
+      "name": "Wings, Traditional, Louisiana Honey Hot, Regular",
+      "calories": 340,
+      "protein": 26,
+      "carbs": 23,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Traditional Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722251",
+      "name": "Wings, Traditional, Plain, Large",
+      "calories": 280,
+      "protein": 26,
+      "carbs": 7,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Traditional Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722252",
+      "name": "Wings, Traditional, Plain, Medium",
+      "calories": 280,
+      "protein": 26,
+      "carbs": 7,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Traditional Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722253",
+      "name": "Wings, Traditional, Plain, Regular",
+      "calories": 280,
+      "protein": 26,
+      "carbs": 7,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Traditional Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722269",
+      "name": "Wings, Traditional, Spicy Buffalo, Large",
+      "calories": 280,
+      "protein": 26,
+      "carbs": 7,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Traditional Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722270",
+      "name": "Wings, Traditional, Spicy Buffalo, Medium",
+      "calories": 280,
+      "protein": 26,
+      "carbs": 7,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Traditional Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722271",
+      "name": "Wings, Traditional, Spicy Buffalo, Regular",
+      "calories": 280,
+      "protein": 26,
+      "carbs": 7,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Traditional Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722274",
+      "name": "Wings, Traditional, Spicy Korean BBQ, Large",
+      "calories": 350,
+      "protein": 26,
+      "carbs": 21,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Traditional Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722272",
+      "name": "Wings, Traditional, Spicy Korean BBQ, Medium",
+      "calories": 350,
+      "protein": 26,
+      "carbs": 21,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Traditional Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722273",
+      "name": "Wings, Traditional, Spicy Korean BBQ, Regular",
+      "calories": 350,
+      "protein": 26,
+      "carbs": 21,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Traditional Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722275",
+      "name": "Wings, Traditional, Sweet Chili Sauce, Large",
+      "calories": 350,
+      "protein": 26,
+      "carbs": 24,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Traditional Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722276",
+      "name": "Wings, Traditional, Sweet Chili Sauce, Medium",
+      "calories": 350,
+      "protein": 26,
+      "carbs": 24,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Traditional Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722277",
+      "name": "Wings, Traditional, Sweet Chili Sauce, Regular",
+      "calories": 350,
+      "protein": 26,
+      "carbs": 24,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Traditional Wings; size in item name)"
+    },
+    {
+      "id": "nutritionix-722279",
+      "name": "Dessert, Chocolate Chip Cookie Slice",
+      "calories": 200,
+      "protein": 2,
+      "carbs": 28,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-722280",
+      "name": "Dessert, Cotton Candy Blue",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 42,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-722281",
+      "name": "Dessert, Cotton Candy Green",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 42,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-722282",
+      "name": "Dessert, Cotton Candy Pink",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 42,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-722283",
+      "name": "Dessert, Unicorn Churros",
+      "calories": 340,
+      "protein": 3,
+      "carbs": 48,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-722278",
+      "name": "Platter, Dessert",
+      "calories": 420,
+      "protein": 5,
+      "carbs": 62,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-722292",
+      "name": "Ice Cream, Bomb Pop, Red, White and Blue",
+      "calories": 80,
+      "protein": 0,
+      "carbs": 21,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-722293",
+      "name": "Ice Cream, Dippin' Dots, Banana Split, 3.5 fl oz",
+      "calories": 140,
+      "protein": 2,
+      "carbs": 17,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-722294",
+      "name": "Ice Cream, Dippin' Dots, Banana Split, 5 fl oz",
+      "calories": 200,
+      "protein": 4,
+      "carbs": 25,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-722295",
+      "name": "Ice Cream, Dippin' Dots, Banana Split, 8 fl oz",
+      "calories": 320,
+      "protein": 6,
+      "carbs": 40,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-722296",
+      "name": "Ice Cream, Dippin' Dots, Brownie Batter, 3.5 fl oz",
+      "calories": 170,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-722297",
+      "name": "Ice Cream, Dippin' Dots, Brownie Batter, 5 fl oz",
+      "calories": 240,
+      "protein": 4,
+      "carbs": 31,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-722298",
+      "name": "Ice Cream, Dippin' Dots, Brownie Batter, 8 fl oz",
+      "calories": 380,
+      "protein": 6,
+      "carbs": 50,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-722299",
+      "name": "Ice Cream, Dippin' Dots, Chocolate Chip Cookie Dough, 3.5 fl oz",
+      "calories": 170,
+      "protein": 3,
+      "carbs": 23,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-722300",
+      "name": "Ice Cream, Dippin' Dots, Chocolate Chip Cookie Dough, 5 fl oz",
+      "calories": 240,
+      "protein": 4,
+      "carbs": 33,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-722301",
+      "name": "Ice Cream, Dippin' Dots, Chocolate Chip Cookie Dough, 8 fl oz",
+      "calories": 390,
+      "protein": 6,
+      "carbs": 53,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-722302",
+      "name": "Ice Cream, Dippin' Dots, Cookies & Cream, 3.5 fl oz",
+      "calories": 170,
+      "protein": 3,
+      "carbs": 21,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-722303",
+      "name": "Ice Cream, Dippin' Dots, Cookies & Cream, 5 fl oz",
+      "calories": 240,
+      "protein": 4,
+      "carbs": 30,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-722304",
+      "name": "Ice Cream, Dippin' Dots, Cookies & Cream, 8 fl oz",
+      "calories": 380,
+      "protein": 6,
+      "carbs": 48,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-722305",
+      "name": "Ice Cream, Dippin' Dots, Rainbow Ice, 3.5 fl oz",
+      "calories": 90,
+      "protein": 0,
+      "carbs": 23,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-722306",
+      "name": "Ice Cream, Dippin' Dots, Rainbow Ice, 5 fl oz",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 33,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-722307",
+      "name": "Ice Cream, Dippin' Dots, Rainbow Ice, 8 fl oz",
+      "calories": 210,
+      "protein": 0,
+      "carbs": 52,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-722308",
+      "name": "Ice Cream, Dippin' Dots, Strawberry, 3.5 fl oz",
+      "calories": 140,
+      "protein": 3,
+      "carbs": 16,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-722309",
+      "name": "Ice Cream, Dippin' Dots, Strawberry, 5 fl oz",
+      "calories": 190,
+      "protein": 4,
+      "carbs": 23,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-722310",
+      "name": "Ice Cream, Dippin' Dots, Strawberry, 8 fl oz",
+      "calories": 310,
+      "protein": 6,
+      "carbs": 37,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-722311",
+      "name": "Ice Cream, Push-up, Rainbow Sherbet",
+      "calories": 80,
+      "protein": 0,
+      "carbs": 19,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-722284",
+      "name": "Ice Cream Bar, Cookies N Cream",
+      "calories": 230,
+      "protein": 4,
+      "carbs": 32,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-722285",
+      "name": "Ice Cream Bar, Strawberry Fruit",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 32,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-722286",
+      "name": "Ice Cream Bar, Strawberry Shortcake",
+      "calories": 190,
+      "protein": 2,
+      "carbs": 26,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-722287",
+      "name": "Ice Cream Cone, Cookies & Cream",
+      "calories": 280,
+      "protein": 4,
+      "carbs": 39,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-722288",
+      "name": "Ice Cream Cup, Chocolate",
+      "calories": 130,
+      "protein": 2,
+      "carbs": 17,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-722289",
+      "name": "Ice Cream Cup, Vanilla",
+      "calories": 130,
+      "protein": 2,
+      "carbs": 16,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-722290",
+      "name": "Ice Cream Sandwich, Big Bopper",
+      "calories": 450,
+      "protein": 6,
+      "carbs": 64,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-722291",
+      "name": "Ice Cream Sandwich, Big Vanilla",
+      "calories": 240,
+      "protein": 4,
+      "carbs": 40,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Ice Cream; size in item name)"
+    },
+    {
+      "id": "nutritionix-722312",
+      "name": "Buddy V's Cake, Chocolate Fudge",
+      "calories": 590,
+      "protein": 5,
+      "carbs": 82,
+      "fat": 28,
+      "servingLabel": "1 listed serving (Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-722313",
+      "name": "Buddy V's Cake, Confetti",
+      "calories": 570,
+      "protein": 3,
+      "carbs": 73,
+      "fat": 31,
+      "servingLabel": "1 listed serving (Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-722314",
+      "name": "Buddy V's Cake, Vanilla Rainbow",
+      "calories": 650,
+      "protein": 4,
+      "carbs": 81,
+      "fat": 36,
+      "servingLabel": "1 listed serving (Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-722321",
+      "name": "Cake, Round Chocolate with Chocoalte and Yellow Buttercream, 1 Slice",
+      "calories": 290,
+      "protein": 2,
+      "carbs": 40,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-722322",
+      "name": "Cake, Round Chocolate with Chocoalte and Yellow Buttercream, Whole",
+      "calories": 3490,
+      "protein": 29,
+      "carbs": 485,
+      "fat": 175,
+      "servingLabel": "1 listed serving (Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-722323",
+      "name": "Cake, Round White with Vanilla and Purple Buttercream, 1 Slice",
+      "calories": 260,
+      "protein": 2,
+      "carbs": 33,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-722324",
+      "name": "Cake, Round White with Vanilla and Purple Buttercream, Whole",
+      "calories": 3160,
+      "protein": 23,
+      "carbs": 401,
+      "fat": 162,
+      "servingLabel": "1 listed serving (Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-722325",
+      "name": "Cake, Sheet Chocolate with Fudge and Yellow Buttercream, 1 Slice",
+      "calories": 290,
+      "protein": 2,
+      "carbs": 40,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-722326",
+      "name": "Cake, Sheet Chocolate with Fudge and Yellow Buttercream, Whole",
+      "calories": 5270,
+      "protein": 42,
+      "carbs": 722,
+      "fat": 250,
+      "servingLabel": "1 listed serving (Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-722327",
+      "name": "Cake, Sheet White with Vanilla and Purple Buttercream, 1 Slice",
+      "calories": 280,
+      "protein": 2,
+      "carbs": 38,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-722328",
+      "name": "Cake, Sheet White with Vanilla and Purple Buttercream, Whole",
+      "calories": 5100,
+      "protein": 40,
+      "carbs": 685,
+      "fat": 228,
+      "servingLabel": "1 listed serving (Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-722315",
+      "name": "Cake Image, Barbie",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-722316",
+      "name": "Cake Image, Batman",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-722317",
+      "name": "Cake Image, Chuck E Cheese",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-722318",
+      "name": "Cake Image, Hello Kitty",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-722319",
+      "name": "Cake Image, Paw Patrol",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cakes; size in item name)"
+    },
+    {
+      "id": "nutritionix-722320",
+      "name": "Cake Image, PJ Masks",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cakes; size in item name)"
+    }
+  ],
+  "sourceDate": "2025-03-05"
+}

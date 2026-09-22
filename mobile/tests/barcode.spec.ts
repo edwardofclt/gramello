@@ -173,7 +173,7 @@ for (const width of [390, 1440]) {
     await page.getByRole('button', { name: 'Add to lunch', exact: true }).click();
     await expect(page.getByText('Energy Drink', { exact: true })).toBeVisible();
     expect(entries).toHaveLength(1);
-    expect(entries[0]).toMatchObject({ sourceId: 'off-0810128528191', meal: 'Lunch', quantity: 8, unit: 'fluid-ounces', grams: 0 });
+    expect(entries[0]).toMatchObject({ sourceId: 'off-0810128528191', meal: 'Lunch', quantity: 8, unit: 'fluid-ounces', grams: null });
     expect(entries[0].calories).toBeCloseTo(5, 4);
     expect(entries[0].carbs).toBeCloseTo(1, 4);
     await expect(page.getByText(/8 US fl oz · Open Food Facts/)).toBeVisible();

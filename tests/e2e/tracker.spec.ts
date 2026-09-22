@@ -137,3 +137,27 @@ test('saved food survives a real container restart', async ({ page, request }) =
   await openDiary(page);
   await expect(page.locator('.food-row')).toContainText('Rolled oats');
 });
+
+test('shows catalog provenance and notices, and resets the portion when choosing another food', async ({ page }) => {
+  const restaurant = { ...foods[0], id: 'restaurant-fixture', name: 'Restaurant bowl fixture', source: 'Official menu', sourceKind: 'restaurant', nutritionBasis: 'serving', servingLabel: '1 bowl', servingGrams: null, calories: 650, verified: true, sourceUrl: 'https://example.com/nutrition' };
+  await page.route('**/api/foods/search?*', route => route.fulfill({ json: { foods: [foods[0], restaurant], partial: true, hasMore: true } }));
+  await openDiary(page);
+  await page.getByRole('button', { name: 'Add Lunch', exact: true }).click();
+  await page.getByRole('textbox', { name: 'Search foods', exact: true }).fill('fixture');
+  await expect(page.getByRole('status')).toContainText('Some nutrition databases are unavailable');
+  await expect(page.getByText('Showing the first 100 matches. Add an item name to narrow your search.')).toBeVisible();
+  const bowl = page.getByRole('button', { name: /Restaurant bowl fixture Official menu/ });
+  await expect(bowl).toContainText('Verified');
+  await expect(bowl).toContainText('650 kcal');
+  await expect(bowl).toContainText('per 1 bowl');
+  await page.getByRole('button', { name: /Rolled oats USDA reference/ }).click();
+  await page.getByLabel('Measure', { exact: true }).selectOption('ounces');
+  await page.getByRole('spinbutton', { name: 'Weight in ounces' }).fill('8');
+  await page.getByRole('button', { name: 'Back to results', exact: true }).click();
+  await bowl.click();
+  await expect(page.getByLabel('Measure', { exact: true })).toHaveValue('serving');
+  await expect(page.getByLabel('Measure', { exact: true }).locator('option')).toHaveText(['Servings (1 bowl)']);
+  await expect(page.getByRole('spinbutton', { name: 'Servings', exact: true })).toHaveValue('1');
+  await expect(page.locator('.nutrition-preview')).toContainText('650');
+  await expect(page.getByRole('link', { name: 'View nutrition source' })).toHaveAttribute('href', 'https://example.com/nutrition');
+});

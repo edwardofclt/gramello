@@ -1,0 +1,1859 @@
+{
+  "chain": "Jamba",
+  "sourceUrl": "https://assets.ctfassets.net/zqt8tllj2cy0/evcoqai6h6vOxuBZebEPF/5e40b19977920b2275a427e70e9f7915/Jamba_Nutrition_Spreadsheet_-_Sept_2026.pdf",
+  "sourceKind": "restaurant",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "name": "Acai Super-Antioxidant, Smoothie, Small",
+      "calories": 340,
+      "fat": 4,
+      "carbs": 71,
+      "protein": 5,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "acai-super-antioxidant-smoothie-small-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Acai Super-Antioxidant, Smoothie, Medium",
+      "calories": 465,
+      "fat": 6,
+      "carbs": 96,
+      "protein": 7,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "acai-super-antioxidant-smoothie-medium-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Acai Super-Antioxidant, Smoothie, Large",
+      "calories": 600,
+      "fat": 7,
+      "carbs": 125,
+      "protein": 10,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "acai-super-antioxidant-smoothie-large-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Aloha Pineapple® Smoothie, Small",
+      "calories": 275,
+      "fat": 0,
+      "carbs": 64,
+      "protein": 6,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "aloha-pineapple-smoothie-small-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Aloha Pineapple® Smoothie, Medium",
+      "calories": 380,
+      "fat": 0,
+      "carbs": 89,
+      "protein": 8,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "aloha-pineapple-smoothie-medium-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Aloha Pineapple® Smoothie, Large",
+      "calories": 500,
+      "fat": 0,
+      "carbs": 119,
+      "protein": 9,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "aloha-pineapple-smoothie-large-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Apple ‘n Greens™ Smoothie, Small",
+      "calories": 250,
+      "fat": 1,
+      "carbs": 60,
+      "protein": 5,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "apple-n-greenstm-smoothie-small-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Apple ‘n Greens™ Smoothie, Medium",
+      "calories": 320,
+      "fat": 1,
+      "carbs": 77,
+      "protein": 5,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "apple-n-greenstm-smoothie-medium-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Apple ‘n Greens™ Smoothie, Large",
+      "calories": 420,
+      "fat": 2,
+      "carbs": 102,
+      "protein": 7,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "apple-n-greenstm-smoothie-large-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Caribbean Passion® Smoothie, Small",
+      "calories": 255,
+      "fat": 0,
+      "carbs": 63,
+      "protein": 1,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "caribbean-passion-smoothie-small-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Caribbean Passion® Smoothie, Medium",
+      "calories": 340,
+      "fat": 0,
+      "carbs": 84,
+      "protein": 1,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "caribbean-passion-smoothie-medium-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Caribbean Passion® Smoothie, Large",
+      "calories": 450,
+      "fat": 0,
+      "carbs": 111,
+      "protein": 1,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "caribbean-passion-smoothie-large-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Greens ‘n Ginger™ Smoothie, Small",
+      "calories": 245,
+      "fat": 1,
+      "carbs": 60,
+      "protein": 3,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "greens-n-gingertm-smoothie-small-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Greens ‘n Ginger™ Smoothie, Medium",
+      "calories": 330,
+      "fat": 1,
+      "carbs": 80,
+      "protein": 4,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "greens-n-gingertm-smoothie-medium-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Greens ‘n Ginger™ Smoothie, Large",
+      "calories": 410,
+      "fat": 2,
+      "carbs": 99,
+      "protein": 6,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "greens-n-gingertm-smoothie-large-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Mango-A-Go-Go® Smoothie, Small",
+      "calories": 295,
+      "fat": 0,
+      "carbs": 74,
+      "protein": 1,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "mango-a-go-go-smoothie-small-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Mango-A-Go-Go® Smoothie, Medium",
+      "calories": 415,
+      "fat": 1,
+      "carbs": 104,
+      "protein": 1,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "mango-a-go-go-smoothie-medium-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Mango-A-Go-Go® Smoothie, Large",
+      "calories": 530,
+      "fat": 1,
+      "carbs": 133,
+      "protein": 1,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "mango-a-go-go-smoothie-large-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Mega Mango™ Smoothie, Small",
+      "calories": 215,
+      "fat": 0,
+      "carbs": 54,
+      "protein": 2,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "mega-mangotm-smoothie-small-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Mega Mango™ Smoothie, Medium",
+      "calories": 315,
+      "fat": 1,
+      "carbs": 79,
+      "protein": 3,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "mega-mangotm-smoothie-medium-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Mega Mango™ Smoothie, Large",
+      "calories": 405,
+      "fat": 1,
+      "carbs": 101,
+      "protein": 3,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "mega-mangotm-smoothie-large-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Orange C-Booster™ Smoothie, Small",
+      "calories": 230,
+      "fat": 0,
+      "carbs": 57,
+      "protein": 2,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "orange-c-boostertm-smoothie-small-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Orange C-Booster™ Smoothie, Medium",
+      "calories": 315,
+      "fat": 0,
+      "carbs": 78,
+      "protein": 3,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "orange-c-boostertm-smoothie-medium-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Orange C-Booster™ Smoothie, Large",
+      "calories": 400,
+      "fat": 0,
+      "carbs": 99,
+      "protein": 4,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "orange-c-boostertm-smoothie-large-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Orange Dream Machine® Smoothie, Small",
+      "calories": 295,
+      "fat": 0,
+      "carbs": 66,
+      "protein": 5,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "orange-dream-machine-smoothie-small-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Orange Dream Machine® Smoothie, Medium",
+      "calories": 405,
+      "fat": 0,
+      "carbs": 93,
+      "protein": 6,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "orange-dream-machine-smoothie-medium-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Orange Dream Machine® Smoothie, Large",
+      "calories": 520,
+      "fat": 1,
+      "carbs": 118,
+      "protein": 9,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "orange-dream-machine-smoothie-large-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "PB + Banana Protein (Soy) Smoothie, Small",
+      "calories": 520,
+      "fat": 22,
+      "carbs": 50,
+      "protein": 34,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "pb-banana-protein-soy-smoothie-small-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "PB + Banana Protein (Soy) Smoothie, Medium",
+      "calories": 600,
+      "fat": 23,
+      "carbs": 67,
+      "protein": 36,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "pb-banana-protein-soy-smoothie-medium-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "PB + Banana Protein (Soy) Smoothie, Large",
+      "calories": 800,
+      "fat": 34,
+      "carbs": 86,
+      "protein": 44,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "pb-banana-protein-soy-smoothie-large-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "PB + Banana Protein (Whey) Smoothie, Small",
+      "calories": 555,
+      "fat": 23,
+      "carbs": 50,
+      "protein": 41,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "pb-banana-protein-whey-smoothie-small-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "PB + Banana Protein (Whey) Smoothie, Medium",
+      "calories": 640,
+      "fat": 24,
+      "carbs": 67,
+      "protein": 44,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "pb-banana-protein-whey-smoothie-medium-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "PB + Banana Protein (Whey) Smoothie, Large",
+      "calories": 835,
+      "fat": 35,
+      "carbs": 87,
+      "protein": 51,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "pb-banana-protein-whey-smoothie-large-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Peach Perfection™ Smoothie, Small",
+      "calories": 220,
+      "fat": 0,
+      "carbs": 54,
+      "protein": 2,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "peach-perfectiontm-smoothie-small-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Peach Perfection™ Smoothie, Medium",
+      "calories": 315,
+      "fat": 1,
+      "carbs": 78,
+      "protein": 2,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "peach-perfectiontm-smoothie-medium-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Peach Perfection™ Smoothie, Large",
+      "calories": 400,
+      "fat": 1,
+      "carbs": 99,
+      "protein": 3,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "peach-perfectiontm-smoothie-large-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Peanut Butter Moo'd® Smoothie, Small",
+      "calories": 475,
+      "fat": 11,
+      "carbs": 79,
+      "protein": 15,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "peanut-butter-mood-smoothie-small-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Peanut Butter Moo'd® Smoothie, Medium",
+      "calories": 755,
+      "fat": 21,
+      "carbs": 120,
+      "protein": 24,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "peanut-butter-mood-smoothie-medium-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Peanut Butter Moo'd® Smoothie, Large",
+      "calories": 950,
+      "fat": 29,
+      "carbs": 142,
+      "protein": 30,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "peanut-butter-mood-smoothie-large-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Protein Berry Workout™ (Soy) Smoothie, Small",
+      "calories": 295,
+      "fat": 1,
+      "carbs": 57,
+      "protein": 16,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "protein-berry-workouttm-soy-smoothie-small-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Protein Berry Workout™ (Soy) Smoothie, Medium",
+      "calories": 410,
+      "fat": 2,
+      "carbs": 82,
+      "protein": 19,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "protein-berry-workouttm-soy-smoothie-medium-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Protein Berry Workout™ (Soy) Smoothie, Large",
+      "calories": 500,
+      "fat": 2,
+      "carbs": 102,
+      "protein": 21,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "protein-berry-workouttm-soy-smoothie-large-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Protein Berry Workout™ (Whey) Smoothie, Small",
+      "calories": 260,
+      "fat": 2,
+      "carbs": 44,
+      "protein": 19,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "protein-berry-workouttm-whey-smoothie-small-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Protein Berry Workout™ (Whey) Smoothie, Medium",
+      "calories": 345,
+      "fat": 2,
+      "carbs": 61,
+      "protein": 21,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "protein-berry-workouttm-whey-smoothie-medium-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Protein Berry Workout™ (Whey) Smoothie, Large",
+      "calories": 425,
+      "fat": 3,
+      "carbs": 79,
+      "protein": 23,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "protein-berry-workouttm-whey-smoothie-large-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Razzmatazz® Smoothie, Small",
+      "calories": 280,
+      "fat": 0,
+      "carbs": 69,
+      "protein": 1,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "razzmatazz-smoothie-small-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Razzmatazz® Smoothie, Medium",
+      "calories": 375,
+      "fat": 0,
+      "carbs": 92,
+      "protein": 1,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "razzmatazz-smoothie-medium-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Razzmatazz® Smoothie, Large",
+      "calories": 475,
+      "fat": 0,
+      "carbs": 117,
+      "protein": 2,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "razzmatazz-smoothie-large-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Strawberries Wild® Smoothie, Small",
+      "calories": 260,
+      "fat": 0,
+      "carbs": 63,
+      "protein": 3,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "strawberries-wild-smoothie-small-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Strawberries Wild® Smoothie, Medium",
+      "calories": 375,
+      "fat": 0,
+      "carbs": 91,
+      "protein": 4,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "strawberries-wild-smoothie-medium-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Strawberries Wild® Smoothie, Large",
+      "calories": 480,
+      "fat": 0,
+      "carbs": 115,
+      "protein": 5,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "strawberries-wild-smoothie-large-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Strawberry Surf Rider™ Smoothie, Small",
+      "calories": 255,
+      "fat": 0,
+      "carbs": 64,
+      "protein": 1,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "strawberry-surf-ridertm-smoothie-small-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Strawberry Surf Rider™ Smoothie, Medium",
+      "calories": 360,
+      "fat": 0,
+      "carbs": 90,
+      "protein": 1,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "strawberry-surf-ridertm-smoothie-medium-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Strawberry Surf Rider™ Smoothie, Large",
+      "calories": 465,
+      "fat": 0,
+      "carbs": 116,
+      "protein": 1,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "strawberry-surf-ridertm-smoothie-large-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Strawberry Whirl™ Smoothie, Small",
+      "calories": 215,
+      "fat": 0,
+      "carbs": 54,
+      "protein": 1,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "strawberry-whirltm-smoothie-small-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Strawberry Whirl™ Smoothie, Medium",
+      "calories": 315,
+      "fat": 0,
+      "carbs": 80,
+      "protein": 2,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "strawberry-whirltm-smoothie-medium-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Strawberry Whirl™ Smoothie, Large",
+      "calories": 385,
+      "fat": 1,
+      "carbs": 97,
+      "protein": 2,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "strawberry-whirltm-smoothie-large-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "White Gummi Smoothie, Small",
+      "calories": 305,
+      "fat": 0,
+      "carbs": 73,
+      "protein": 2,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "white-gummi-smoothie-small-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "White Gummi Smoothie, Medium",
+      "calories": 420,
+      "fat": 0,
+      "carbs": 101,
+      "protein": 2,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "white-gummi-smoothie-medium-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "White Gummi Smoothie, Large",
+      "calories": 565,
+      "fat": 0,
+      "carbs": 135,
+      "protein": 4,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "white-gummi-smoothie-large-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Acai Primo, Regular",
+      "calories": 500,
+      "fat": 9,
+      "carbs": 102,
+      "protein": 7,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "acai-primo-regular-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Acai Primo, Large",
+      "calories": 720,
+      "fat": 15,
+      "carbs": 141,
+      "protein": 11,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "acai-primo-large-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Acai Peanut Butter plus Nutella, Regular",
+      "calories": 685,
+      "fat": 22,
+      "carbs": 118,
+      "protein": 12,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "acai-peanut-butter-plus-nutella-regular-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Acai Peanut Butter plus Nutella, Large",
+      "calories": 980,
+      "fat": 33,
+      "carbs": 160,
+      "protein": 18,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "acai-peanut-butter-plus-nutella-large-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Chunky Strawberry™, Regular",
+      "calories": 600,
+      "fat": 18,
+      "carbs": 95,
+      "protein": 20,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "chunky-strawberrytm-regular-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Chunky Strawberry™, Large",
+      "calories": 860,
+      "fat": 31,
+      "carbs": 123,
+      "protein": 28,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "chunky-strawberrytm-large-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Vanilla Blue Sky, Regular",
+      "calories": 360,
+      "fat": 9,
+      "carbs": 68,
+      "protein": 5,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "vanilla-blue-sky-regular-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Vanilla Blue Sky, Large",
+      "calories": 520,
+      "fat": 14,
+      "carbs": 95,
+      "protein": 9,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "vanilla-blue-sky-large-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Dragon Fruit Delight, Regular",
+      "calories": 460,
+      "fat": 7,
+      "carbs": 96,
+      "protein": 6,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "dragon-fruit-delight-regular-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Dragon Fruit Delight, Large",
+      "calories": 720,
+      "fat": 12,
+      "carbs": 147,
+      "protein": 11,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "dragon-fruit-delight-large-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Bowl, Mango Sunshine, Regular",
+      "calories": 410,
+      "fat": 5,
+      "carbs": 92,
+      "protein": 4,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "bowl-mango-sunshine-regular-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Bowl, Mango Sunshine, Large",
+      "calories": 610,
+      "fat": 9,
+      "carbs": 130,
+      "protein": 8,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "bowl-mango-sunshine-large-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Bowl, Acai Dream, Regular",
+      "calories": 445,
+      "fat": 6,
+      "carbs": 92,
+      "protein": 8,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "bowl-acai-dream-regular-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Bowl, Acai Dream, Large",
+      "calories": 675,
+      "fat": 11,
+      "carbs": 133,
+      "protein": 13,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "bowl-acai-dream-large-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Bowl, Dragon Fruit Dream, Regular",
+      "calories": 420,
+      "fat": 5,
+      "carbs": 88,
+      "protein": 7,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "bowl-dragon-fruit-dream-regular-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Bowl, Dragon Fruit Dream, Large",
+      "calories": 635,
+      "fat": 9,
+      "carbs": 128,
+      "protein": 12,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "bowl-dragon-fruit-dream-large-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Bowl, Acai Dragon Swirl, Regular",
+      "calories": 405,
+      "fat": 6,
+      "carbs": 84,
+      "protein": 6,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "bowl-acai-dragon-swirl-regular-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Bowl, Acai Dragon Swirl, Large",
+      "calories": 615,
+      "fat": 12,
+      "carbs": 123,
+      "protein": 10,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "bowl-acai-dragon-swirl-large-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Strawberry Blueberry Greek Yogurt, Regular",
+      "calories": 550,
+      "fat": 18,
+      "carbs": 74,
+      "protein": 25,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "strawberry-blueberry-greek-yogurt-regular-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Strawberry Blueberry Greek Yogurt, Large",
+      "calories": 635,
+      "fat": 18,
+      "carbs": 85,
+      "protein": 37,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "strawberry-blueberry-greek-yogurt-large-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Strawberry Blueberry, Cocowhip, Regular",
+      "calories": 580,
+      "fat": 29,
+      "carbs": 79,
+      "protein": 7,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "strawberry-blueberry-cocowhip-regular-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Strawberry Blueberry, Cocowhip, Large",
+      "calories": 695,
+      "fat": 36,
+      "carbs": 96,
+      "protein": 8,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "strawberry-blueberry-cocowhip-large-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Peanut Butter Banana plus Nutella, Cocowhip, Regular",
+      "calories": 790,
+      "fat": 41,
+      "carbs": 101,
+      "protein": 12,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "peanut-butter-banana-plus-nutella-cocowhip-regular-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Peanut Butter Banana plus Nutella, Cocowhip, Large",
+      "calories": 1035,
+      "fat": 54,
+      "carbs": 136,
+      "protein": 14,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "peanut-butter-banana-plus-nutella-cocowhip-large-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Peanut Butter Banana Nutella, Greek Yogurt, Regular",
+      "calories": 725,
+      "fat": 31,
+      "carbs": 87,
+      "protein": 30,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "peanut-butter-banana-nutella-greek-yogurt-regular-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Peanut Butter Banana Nutella, Greek Yogurt, Large",
+      "calories": 925,
+      "fat": 36,
+      "carbs": 113,
+      "protein": 44,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "peanut-butter-banana-nutella-greek-yogurt-large-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Oatmeal",
+      "calories": 250,
+      "fat": 5,
+      "carbs": 44,
+      "protein": 6,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "oatmeal-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Berry Brown Sugar",
+      "calories": 370,
+      "fat": 5,
+      "carbs": 75,
+      "protein": 6,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "berry-brown-sugar-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Strawberry + Nutella & Coconut",
+      "calories": 390,
+      "fat": 13,
+      "carbs": 58,
+      "protein": 8,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "strawberry-nutella-coconut-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Apple Cinnamon Pretzel",
+      "calories": 390,
+      "fat": 5,
+      "carbs": 78,
+      "protein": 9,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "apple-cinnamon-pretzel-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Classic Sausage , Egg + Cheese Handwich",
+      "calories": 320,
+      "fat": 23,
+      "carbs": 14,
+      "protein": 12,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "classic-sausage-egg-cheese-handwich-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Sourdough Parmesan Pretzel",
+      "calories": 420,
+      "fat": 11,
+      "carbs": 69,
+      "protein": 12,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "sourdough-parmesan-pretzel-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Belgian Style Waffle",
+      "calories": 280,
+      "fat": 14,
+      "carbs": 35,
+      "protein": 4,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "belgian-style-waffle-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Chicken Empanada - 1 Count",
+      "calories": 190,
+      "fat": 7,
+      "carbs": 21,
+      "protein": 9,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "chicken-empanada-1-count-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Chicken Empanada - 2 Count",
+      "calories": 380,
+      "fat": 14,
+      "carbs": 42,
+      "protein": 18,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "chicken-empanada-2-count-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Mozzarella and Herb Bites - 6 Count",
+      "calories": 270,
+      "fat": 20,
+      "carbs": 11,
+      "protein": 13,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "mozzarella-and-herb-bites-6-count-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Mozzarella and Herb Bites - 12 Count",
+      "calories": 540,
+      "fat": 39,
+      "carbs": 23,
+      "protein": 27,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "mozzarella-and-herb-bites-12-count-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Buzzin' Mocha Moo'd Blended Coffee, Small, 2 % Milk",
+      "calories": 350,
+      "fat": 3,
+      "carbs": 70,
+      "protein": 11,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "buzzin-mocha-mood-blended-coffee-small-2-milk-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Buzzin' Mocha Moo'd Blended Coffee, Medium 2 % Milk",
+      "calories": 455,
+      "fat": 4,
+      "carbs": 89,
+      "protein": 14,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "buzzin-mocha-mood-blended-coffee-medium-2-milk-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Buzzin' Mocha Moo'd Blended Coffee, Large 2 %",
+      "calories": 595,
+      "fat": 6,
+      "carbs": 119,
+      "protein": 18,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "buzzin-mocha-mood-blended-coffee-large-2-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Coffee Dream Machine Blended Coffee, Small, 2% Milk",
+      "calories": 275,
+      "fat": 3,
+      "carbs": 53,
+      "protein": 9,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "coffee-dream-machine-blended-coffee-small-2-milk-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Coffee Dream Machine Blended Coffee, Large, 2% Milk",
+      "calories": 500,
+      "fat": 4,
+      "carbs": 99,
+      "protein": 14,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "coffee-dream-machine-blended-coffee-large-2-milk-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Blue Lava, Small",
+      "calories": 185,
+      "fat": 0,
+      "carbs": 46,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "blue-lava-small-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Blue Lava, Medium",
+      "calories": 250,
+      "fat": 0,
+      "carbs": 63,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "blue-lava-medium-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Blue Lava, Large",
+      "calories": 330,
+      "fat": 0,
+      "carbs": 83,
+      "protein": 1,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "blue-lava-large-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Electric Ice, Small",
+      "calories": 160,
+      "fat": 0,
+      "carbs": 39,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "electric-ice-small-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Electric Ice, Medium",
+      "calories": 225,
+      "fat": 0,
+      "carbs": 56,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "electric-ice-medium-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Electric Ice, Large",
+      "calories": 285,
+      "fat": 0,
+      "carbs": 71,
+      "protein": 1,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "electric-ice-large-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Strawberry Lemon Twist, Small",
+      "calories": 185,
+      "fat": 0,
+      "carbs": 47,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "strawberry-lemon-twist-small-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Strawberry Lemon Twist, Medium",
+      "calories": 245,
+      "fat": 0,
+      "carbs": 62,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "strawberry-lemon-twist-medium-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Strawberry Lemon Twist, Large",
+      "calories": 335,
+      "fat": 0,
+      "carbs": 85,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "strawberry-lemon-twist-large-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Peachberry Blast, Small",
+      "calories": 200,
+      "fat": 0,
+      "carbs": 50,
+      "protein": 1,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "peachberry-blast-small-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Peachberry Blast, Medium",
+      "calories": 265,
+      "fat": 0,
+      "carbs": 66,
+      "protein": 1,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "peachberry-blast-medium-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Peachberry Blast, Large",
+      "calories": 360,
+      "fat": 0,
+      "carbs": 89,
+      "protein": 1,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "peachberry-blast-large-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Lemonberry Twist with Cloud Whip, Small",
+      "calories": 355,
+      "fat": 8,
+      "carbs": 75,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "lemonberry-twist-with-cloud-whip-small-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Lemonberry Twist with Cloud Whip, Medium",
+      "calories": 385,
+      "fat": 8,
+      "carbs": 82,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "lemonberry-twist-with-cloud-whip-medium-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Lemonberry Twist with Cloud Whip, Large",
+      "calories": 475,
+      "fat": 8,
+      "carbs": 105,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "lemonberry-twist-with-cloud-whip-large-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Peachberry Blast with Cloud Whip, Small",
+      "calories": 370,
+      "fat": 8,
+      "carbs": 78,
+      "protein": 1,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "peachberry-blast-with-cloud-whip-small-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Peachberry Blast with Cloud Whip, Medium",
+      "calories": 400,
+      "fat": 8,
+      "carbs": 86,
+      "protein": 1,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "peachberry-blast-with-cloud-whip-medium-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Peachberry Blast with Cloud Whip, Large",
+      "calories": 495,
+      "fat": 8,
+      "carbs": 109,
+      "protein": 1,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "peachberry-blast-with-cloud-whip-large-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Electric Ice with Cloud Whip, Small",
+      "calories": 330,
+      "fat": 8,
+      "carbs": 68,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "electric-ice-with-cloud-whip-small-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Electric Ice with Cloud Whip, Medium",
+      "calories": 360,
+      "fat": 8,
+      "carbs": 76,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "electric-ice-with-cloud-whip-medium-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Electric Ice with Cloud Whip, Large",
+      "calories": 420,
+      "fat": 8,
+      "carbs": 90,
+      "protein": 1,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "electric-ice-with-cloud-whip-large-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Blue Lava with Cloud Whip, Small",
+      "calories": 355,
+      "fat": 8,
+      "carbs": 75,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "blue-lava-with-cloud-whip-small-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Blue Lava with Cloud Whip, Medium",
+      "calories": 385,
+      "fat": 8,
+      "carbs": 83,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "blue-lava-with-cloud-whip-medium-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Blue Lava with Cloud Whip, Large",
+      "calories": 465,
+      "fat": 8,
+      "carbs": 103,
+      "protein": 1,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "blue-lava-with-cloud-whip-large-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Lemonberry Twist with Protein CloudWhip, Small",
+      "calories": 410,
+      "fat": 9,
+      "carbs": 77,
+      "protein": 10,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "lemonberry-twist-with-protein-cloudwhip-small-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Lemonberry Twist with Protein CloudWhip, Large",
+      "calories": 535,
+      "fat": 9,
+      "carbs": 107,
+      "protein": 10,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "lemonberry-twist-with-protein-cloudwhip-large-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Peachberry Blast with Protein Cloud Whip, Small",
+      "calories": 425,
+      "fat": 9,
+      "carbs": 77,
+      "protein": 10,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "peachberry-blast-with-protein-cloud-whip-small-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Peachberry Blast with Protein Cloud Whip, Large",
+      "calories": 555,
+      "fat": 9,
+      "carbs": 107,
+      "protein": 10,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "peachberry-blast-with-protein-cloud-whip-large-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Electric Ice with Protein Cloud Whip, Small",
+      "calories": 385,
+      "fat": 9,
+      "carbs": 70,
+      "protein": 10,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "electric-ice-with-protein-cloud-whip-small-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Electric Ice with Protein Cloud Whip, Medium",
+      "calories": 420,
+      "fat": 9,
+      "carbs": 78,
+      "protein": 10,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "electric-ice-with-protein-cloud-whip-medium-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Electric Ice with Protein Cloud Whip, Large",
+      "calories": 480,
+      "fat": 9,
+      "carbs": 92,
+      "protein": 10,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "electric-ice-with-protein-cloud-whip-large-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Blue Lava with Protein Cloud Whip, Small",
+      "calories": 410,
+      "fat": 9,
+      "carbs": 77,
+      "protein": 10,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "blue-lava-with-protein-cloud-whip-small-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Blue Lava with Protein Cloud Whip, Medium",
+      "calories": 445,
+      "fat": 9,
+      "carbs": 85,
+      "protein": 10,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "blue-lava-with-protein-cloud-whip-medium-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Blue Lava with Protein Cloud Whip, Large",
+      "calories": 520,
+      "fat": 9,
+      "carbs": 105,
+      "protein": 10,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "blue-lava-with-protein-cloud-whip-large-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Lemon Ginger Cayenne Shot",
+      "calories": 15,
+      "fat": 0,
+      "carbs": 4,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "lemon-ginger-cayenne-shot-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Orange Carrot Twist™ Juice, Large",
+      "calories": 350,
+      "fat": 2,
+      "carbs": 82,
+      "protein": 7,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "orange-carrot-twisttm-juice-large-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Orange Carrot Twist™ Juice, Medium",
+      "calories": 280,
+      "fat": 1.5,
+      "carbs": 64,
+      "protein": 5,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "orange-carrot-twisttm-juice-medium-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Orange Carrot Twist™ Juice, Small",
+      "calories": 200,
+      "fat": 1,
+      "carbs": 47,
+      "protein": 4,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "orange-carrot-twisttm-juice-small-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Orange Ginger Cayenne Shot",
+      "calories": 25,
+      "fat": 0,
+      "carbs": 5,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "orange-ginger-cayenne-shot-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Purely Carrot™ Juice, Large",
+      "calories": 310,
+      "fat": 2,
+      "carbs": 73,
+      "protein": 7,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "purely-carrottm-juice-large-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Purely Carrot™ Juice, Medium",
+      "calories": 250,
+      "fat": 1.5,
+      "carbs": 57,
+      "protein": 6,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "purely-carrottm-juice-medium-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Purely Carrot™ Juice, Small",
+      "calories": 180,
+      "fat": 1,
+      "carbs": 42,
+      "protein": 4,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "purely-carrottm-juice-small-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Purely Orange™ Juice, Large",
+      "calories": 390,
+      "fat": 1.5,
+      "carbs": 90,
+      "protein": 6,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "purely-orangetm-juice-large-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Purely Orange™ Juice, Medium",
+      "calories": 310,
+      "fat": 1.5,
+      "carbs": 71,
+      "protein": 5,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "purely-orangetm-juice-medium-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Purely Orange™ Juice, Small",
+      "calories": 220,
+      "fat": 1,
+      "carbs": 52,
+      "protein": 3,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "purely-orangetm-juice-small-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Wheatgrass Juice Shot",
+      "calories": 15,
+      "fat": 0,
+      "carbs": 2,
+      "protein": 1,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "wheatgrass-juice-shot-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Banana, Fresh, Topping",
+      "calories": 60,
+      "fat": 0,
+      "carbs": 15,
+      "protein": 1,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "banana-fresh-topping-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Blueberry, Fresh, Topping",
+      "calories": 10,
+      "fat": 0,
+      "carbs": 2,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "blueberry-fresh-topping-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Coconut Flakes, Topping",
+      "calories": 25,
+      "fat": 2,
+      "carbs": 1,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "coconut-flakes-topping-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "CocoWhip, Topping",
+      "calories": 55,
+      "fat": 4,
+      "carbs": 7,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "cocowhip-topping-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Granola, Topping",
+      "calories": 110,
+      "fat": 4,
+      "carbs": 16,
+      "protein": 3,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "granola-topping-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Honey, Topping",
+      "calories": 30,
+      "fat": 0,
+      "carbs": 9,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "honey-topping-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Agave, Topping",
+      "calories": 50,
+      "fat": 0,
+      "carbs": 13,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "agave-topping-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Strawberry, Fresh, Topping",
+      "calories": 10,
+      "fat": 0,
+      "carbs": 2,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "strawberry-fresh-topping-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Nutella, Topping",
+      "calories": 80,
+      "fat": 5,
+      "carbs": 8,
+      "protein": 1,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "nutella-topping-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Topping, Peanut Butter",
+      "calories": 75,
+      "fat": 6,
+      "carbs": 3,
+      "protein": 3,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "topping-peanut-butter-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "3G Energy™ + Green Caffeine® Boost",
+      "calories": 15,
+      "fat": 0,
+      "carbs": 3,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "3g-energytm-green-caffeine-boost-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Blue Spirulina Boost",
+      "calories": 0,
+      "fat": 0,
+      "carbs": 0,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "blue-spirulina-boost-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Chocolate Moo'd Powder",
+      "calories": 60,
+      "fat": 0,
+      "carbs": 15,
+      "protein": 1,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "chocolate-mood-powder-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Ginger Puree Boost",
+      "calories": 5,
+      "fat": 0,
+      "carbs": 1,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "ginger-puree-boost-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Kale Boost",
+      "calories": 15,
+      "fat": 0,
+      "carbs": 2,
+      "protein": 1,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "kale-boost-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Multivitamins (Daily Vitamin + Zinc Boost)",
+      "calories": 10,
+      "fat": 0,
+      "carbs": 2,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "multivitamins-daily-vitamin-zinc-boost-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Non-fat Greek Yogurt Boost",
+      "calories": 40,
+      "fat": 0,
+      "carbs": 3,
+      "protein": 7,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "non-fat-greek-yogurt-boost-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Peanut Butter Boost",
+      "calories": 100,
+      "fat": 9,
+      "carbs": 4,
+      "protein": 4,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "peanut-butter-boost-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Soy Protein Boost",
+      "calories": 40,
+      "fat": 0,
+      "carbs": 0,
+      "protein": 9,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "soy-protein-boost-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Spinach Boost",
+      "calories": 5,
+      "fat": 0,
+      "carbs": 1,
+      "protein": 1,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "spinach-boost-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Tajin® Large",
+      "calories": 0,
+      "fat": 0,
+      "carbs": 0,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "tajin-large-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Tajin® Medium",
+      "calories": 0,
+      "fat": 0,
+      "carbs": 0,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "tajin-medium-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Tajin® Small",
+      "calories": 0,
+      "fat": 0,
+      "carbs": 0,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "tajin-small-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Whey Protein Boost",
+      "calories": 70,
+      "fat": 1,
+      "carbs": 2,
+      "protein": 13,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "whey-protein-boost-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Protein Cloud Whip",
+      "calories": 225,
+      "fat": 9,
+      "carbs": 30,
+      "protein": 10,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "protein-cloud-whip-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "2% Milk, 8 fl oz",
+      "calories": 120,
+      "fat": 5,
+      "carbs": 12,
+      "protein": 8,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "2-milk-8-fl-oz-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Almondmilk, 8 fl oz",
+      "calories": 25,
+      "fat": 2,
+      "carbs": 1,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "almondmilk-8-fl-oz-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Oatmilk, 8 fl oz",
+      "calories": 120,
+      "fat": 5,
+      "carbs": 18,
+      "protein": 2,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "oatmilk-8-fl-oz-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Soymilk, 8 fl oz",
+      "calories": 150,
+      "fat": 0,
+      "carbs": 29,
+      "protein": 5,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "soymilk-8-fl-oz-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Vanilla Coconutmilk, 8 fl oz",
+      "calories": 80,
+      "fat": 5,
+      "carbs": 10,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "vanilla-coconutmilk-8-fl-oz-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Fat Free Vanilla Frozen Yogurt, Large",
+      "calories": 70,
+      "fat": 0,
+      "carbs": 16,
+      "protein": 2,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "fat-free-vanilla-frozen-yogurt-large-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Fat Free Vanilla Frozen Yogurt, Medium",
+      "calories": 60,
+      "fat": 0,
+      "carbs": 13,
+      "protein": 1,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "fat-free-vanilla-frozen-yogurt-medium-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Fat Free Vanilla Frozen Yogurt, Small",
+      "calories": 40,
+      "fat": 0,
+      "carbs": 8,
+      "protein": 1,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "fat-free-vanilla-frozen-yogurt-small-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Sherbet, Lime, Large",
+      "calories": 65,
+      "fat": 0,
+      "carbs": 16,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "sherbet-lime-large-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Sherbet, Orange, Large",
+      "calories": 60,
+      "fat": 0,
+      "carbs": 15,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "sherbet-orange-large-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Sherbet, Pineapple, Large",
+      "calories": 65,
+      "fat": 0,
+      "carbs": 16,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "sherbet-pineapple-large-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Sherbet, Raspberry, Large",
+      "calories": 65,
+      "fat": 0,
+      "carbs": 16,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "sherbet-raspberry-large-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Berry Fresh Fruit Cup",
+      "calories": 50,
+      "fat": 0,
+      "carbs": 12,
+      "protein": 1,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "berry-fresh-fruit-cup-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Berry Greek Yogurt Granola Parfait​",
+      "calories": 220,
+      "fat": 5,
+      "carbs": 31,
+      "protein": 15,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "berry-greek-yogurt-granola-parfait-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Tropical Greek Yogurt Granola Parfait",
+      "calories": 270,
+      "fat": 5,
+      "carbs": 43,
+      "protein": 16,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "tropical-greek-yogurt-granola-parfait-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "PB + Chocolate Chip Protein Bites (4 bites)",
+      "calories": 625,
+      "fat": 26,
+      "carbs": 77,
+      "protein": 25,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "pb-chocolate-chip-protein-bites-4-bites-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Dip Cup, Marinara",
+      "calories": 50,
+      "fat": 3,
+      "carbs": 6,
+      "protein": 1,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "dip-cup-marinara-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Dip Cup, Nutella",
+      "calories": 155,
+      "fat": 9,
+      "carbs": 16,
+      "protein": 2,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "dip-cup-nutella-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Dip Cup, Peanut Butter",
+      "calories": 175,
+      "fat": 14,
+      "carbs": 6,
+      "protein": 7,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "dip-cup-peanut-butter-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Peaches n Cream, Small",
+      "calories": 270,
+      "fat": 0,
+      "carbs": 61,
+      "protein": 6,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "peaches-n-cream-small-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Peaches n Cream, Medium",
+      "calories": 390,
+      "fat": 1,
+      "carbs": 88,
+      "protein": 9,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "peaches-n-cream-medium-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Peaches n Cream, Large",
+      "calories": 480,
+      "fat": 1,
+      "carbs": 109,
+      "protein": 10,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "peaches-n-cream-large-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Sandwich, Rotisserie Chicken Avo Ranch",
+      "calories": 925,
+      "fat": 52,
+      "carbs": 73,
+      "protein": 40,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "sandwich-rotisserie-chicken-avo-ranch-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Sandwich, Market Pesto",
+      "calories": 720,
+      "fat": 38,
+      "carbs": 65,
+      "protein": 29,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "sandwich-market-pesto-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Sandwich, Rotisserie Chicken Pesto",
+      "calories": 820,
+      "fat": 44,
+      "carbs": 70,
+      "protein": 36,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "sandwich-rotisserie-chicken-pesto-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Sandwich, J.B.S.T",
+      "calories": 525,
+      "fat": 26,
+      "carbs": 48,
+      "protein": 19,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "sandwich-j-b-s-t-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Sandwich, PB Nutella Crunch",
+      "calories": 585,
+      "fat": 23,
+      "carbs": 78,
+      "protein": 17,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "sandwich-pb-nutella-crunch-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Sandwich, Cheese Melt",
+      "calories": 680,
+      "fat": 37,
+      "carbs": 52,
+      "protein": 39,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "sandwich-cheese-melt-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Sandwich, Blueberry Dipper Cheese Melt",
+      "calories": 735,
+      "fat": 37,
+      "carbs": 66,
+      "protein": 39,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "sandwich-blueberry-dipper-cheese-melt-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Blueberry Dipper, Serving",
+      "calories": 60,
+      "fat": 0,
+      "carbs": 14,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "blueberry-dipper-serving-1-menu-serving-size-in-item-name"
+    },
+    {
+      "name": "Ranch Dressing, Serving",
+      "calories": 150,
+      "fat": 16,
+      "carbs": 1,
+      "protein": 0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "ranch-dressing-serving-1-menu-serving-size-in-item-name"
+    }
+  ],
+  "sourceDate": "2026-09",
+  "coverageNotes": {
+    "method": "Official linked US nutrition PDF; publisher serving and calories retained.",
+    "skippedNonExactRows": [
+      "Lemonberry Twist with Protein CloudWhip, Mediu",
+      "Peachberry Blast with Protein Cloud Whip, Mediu"
+    ],
+    "sourceLandingUrl": "https://www.jamba.com/",
+    "quarantinedRows": [
+      {
+        "name": "Cloud Whip",
+        "reason": "Publisher row is internally inconsistent; calories disagree materially with stated macros. Excluded pending publisher clarification."
+      }
+    ]
+  }
+}

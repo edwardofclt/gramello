@@ -1,0 +1,295 @@
+{
+  "retrievedAt": "2026-09-20",
+  "chains": 36,
+  "servings": 7768,
+  "catalogs": [
+    {
+      "catalog": "viva-chicken.json",
+      "chain": "Viva Chicken",
+      "importedServings": 57,
+      "sourceUrl": "https://vivachicken.com/wp-content/uploads/2026/05/NutritionalAllergenListVivaChicken05.26.26.pdf",
+      "sourceDate": "2019-06-07 (printed revision; current linked guide filename 2026-05-26)",
+      "sourceKind": "official"
+    },
+    {
+      "catalog": "chick-fil-a.json",
+      "chain": "Chick-fil-A",
+      "importedServings": 372,
+      "sourceUrl": "https://www.chick-fil-a.com/nutrition-allergens",
+      "sourceDate": null,
+      "sourceKind": "official"
+    },
+    {
+      "catalog": "showmars.json",
+      "chain": "Showmars",
+      "importedServings": 165,
+      "sourceUrl": "https://showmars.com/nutritional-info/",
+      "sourceDate": "Fall 2025",
+      "sourceKind": "official"
+    },
+    {
+      "catalog": "bojangles.json",
+      "chain": "Bojangles",
+      "importedServings": 149,
+      "sourceUrl": "https://storyblok.pleinaircdn.com/f/110020/x/6c7b2a7e6a/m25-099-2025_02-nutritiongudeupdates_bobitessalad_master.pdf",
+      "sourceDate": "2025",
+      "sourceKind": "official"
+    },
+    {
+      "catalog": "panera-bread.json",
+      "chain": "Panera Bread",
+      "importedServings": 594,
+      "sourceUrl": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+      "sourceDate": "2026-09-02",
+      "sourceKind": "official"
+    },
+    {
+      "catalog": "moes.json",
+      "chain": "Moe’s Southwest Grill",
+      "importedServings": 84,
+      "sourceUrl": "https://assets.ctfassets.net/zqt8tllj2cy0/229Bgcvw5c0RwcUkhyghXG/d3722a14b4b1dd925316a8936200f5bd/MOES_1906368_Nutrition_Chart_2026_R4.pdf",
+      "sourceDate": "2026",
+      "sourceKind": "official"
+    },
+    {
+      "catalog": "tropical-smoothie-cafe.json",
+      "chain": "Tropical Smoothie Cafe",
+      "importedServings": 124,
+      "sourceUrl": "https://www.tropicalsmoothiecafe.com/nutrition/nutrition-guide.pdf",
+      "sourceDate": "2026-05-14",
+      "sourceKind": "official"
+    },
+    {
+      "catalog": "chicken-salad-chick.json",
+      "chain": "Chicken Salad Chick",
+      "importedServings": 88,
+      "sourceUrl": "https://storyblok.pleinaircdn.com/f/297321/x/2be8a2157f/nutritional-and-allergy-information.pdf",
+      "sourceDate": "2026-08-03",
+      "sourceKind": "official"
+    },
+    {
+      "catalog": "salsaritas.json",
+      "chain": "Salsarita’s Fresh Mexican Grill",
+      "importedServings": 84,
+      "sourceUrl": "https://salsaritas.com/wp-content/uploads/2023/01/Nutritional-Data-Salsaritas-March2023.pdf",
+      "sourceDate": "2023-03 (filename); 2022-08 printed revision",
+      "sourceKind": "official"
+    },
+    {
+      "catalog": "jim-n-nicks.json",
+      "chain": "Jim ’N Nick’s Bar-B-Q",
+      "importedServings": 104,
+      "sourceUrl": "https://www.nutritionix.com/jim-n-nicks-bar-b-q/menu/premium",
+      "sourceDate": "2024-07-08",
+      "sourceKind": "database"
+    },
+    {
+      "catalog": "jimmy-johns.json",
+      "chain": "Jimmy John’s",
+      "importedServings": 312,
+      "sourceUrl": "https://resources.jimmyjohns.com/downloadable-files/NutritionGuide.pdf",
+      "sourceDate": "2024-07-22 (nutrition guide effective date)",
+      "sourceKind": "official"
+    },
+    {
+      "catalog": "smoothie-king.json",
+      "chain": "Smoothie King",
+      "importedServings": 367,
+      "sourceUrl": "https://www.smoothieking.com/nutrition/",
+      "sourceDate": null,
+      "sourceKind": "official"
+    },
+    {
+      "catalog": "firehouse-subs.json",
+      "chain": "Firehouse Subs",
+      "importedServings": 906,
+      "sourceUrl": "https://www.nutritionix.com/firehouse-subs/menu/premium",
+      "sourceDate": "2026-09-09",
+      "sourceKind": "database"
+    },
+    {
+      "catalog": "zaxbys.json",
+      "chain": "Zaxby’s",
+      "importedServings": 196,
+      "sourceUrl": "https://www.nutritionix.com/zaxbys/menu/premium",
+      "sourceDate": "2025-06-27",
+      "sourceKind": "database"
+    },
+    {
+      "catalog": "jersey-mikes-subs.json",
+      "chain": "Jersey Mike’s Subs",
+      "importedServings": 722,
+      "sourceUrl": "https://www.nutritionix.com/jersey-mikes-subs/menu/premium",
+      "sourceDate": "2025-09-17",
+      "sourceKind": "database"
+    },
+    {
+      "catalog": "subway.json",
+      "chain": "Subway",
+      "importedServings": 226,
+      "sourceUrl": "https://www.nutritionix.com/subway/menu/premium",
+      "sourceDate": "2025-03-22",
+      "sourceKind": "database"
+    },
+    {
+      "catalog": "cava-grill.json",
+      "chain": "CAVA",
+      "importedServings": 121,
+      "sourceUrl": "https://www.nutritionix.com/cava-grill/menu/premium",
+      "sourceDate": "2025-11-13",
+      "sourceKind": "database"
+    },
+    {
+      "catalog": "slim-chickens.json",
+      "chain": "Slim Chickens",
+      "importedServings": 146,
+      "sourceUrl": "https://www.nutritionix.com/slim-chickens/menu/premium",
+      "sourceDate": "2026-01-26",
+      "sourceKind": "database"
+    },
+    {
+      "catalog": "potbelly.json",
+      "chain": "Potbelly Sandwich Shop",
+      "importedServings": 372,
+      "sourceUrl": "https://www.nutritionix.com/potbelly/menu/premium",
+      "sourceDate": "2026-09-15",
+      "sourceKind": "database"
+    },
+    {
+      "catalog": "firebirds-wood-fired-grill.json",
+      "chain": "Firebirds Wood Fired Grill",
+      "importedServings": 217,
+      "sourceUrl": "https://www.nutritionix.com/firebirds-wood-fired-grill/menu/premium",
+      "sourceDate": "2024-09-13",
+      "sourceKind": "database"
+    },
+    {
+      "catalog": "chopt.json",
+      "chain": "Chopt Creative Salad Co.",
+      "importedServings": 136,
+      "sourceUrl": "https://www.nutritionix.com/chopt/menu/premium",
+      "sourceDate": "2024-07-08",
+      "sourceKind": "database"
+    },
+    {
+      "catalog": "tazikis-mediterranean-cafe.json",
+      "chain": "Taziki’s Mediterranean Cafe",
+      "importedServings": 251,
+      "sourceUrl": "https://www.nutritionix.com/tazikis-mediterranean-cafe/menu/premium",
+      "sourceDate": "2026-09-02",
+      "sourceKind": "database"
+    },
+    {
+      "catalog": "flower-child.json",
+      "chain": "Flower Child",
+      "importedServings": 80,
+      "sourceUrl": "https://www.nutritionix.com/flower-child/menu/premium",
+      "sourceDate": "2024-07-15",
+      "sourceKind": "database"
+    },
+    {
+      "catalog": "mellow-mushroom.json",
+      "chain": "Mellow Mushroom",
+      "importedServings": 287,
+      "sourceUrl": "https://www.nutritionix.com/mellow-mushroom/menu/premium",
+      "sourceDate": "2026-04-28",
+      "sourceKind": "database"
+    },
+    {
+      "catalog": "brixx-wood-fired-pizza.json",
+      "chain": "Brixx Wood Fired Pizza",
+      "importedServings": 93,
+      "sourceUrl": "https://www.nutritionix.com/brixx-wood-fired-pizza/menu/premium",
+      "sourceDate": "2025-09-12",
+      "sourceKind": "database"
+    },
+    {
+      "catalog": "bad-daddys-burger-bar.json",
+      "chain": "Bad Daddy’s Burger Bar",
+      "importedServings": 169,
+      "sourceUrl": "https://www.nutritionix.com/bad-daddys-burger-bar/menu/premium",
+      "sourceDate": "2025-03-09",
+      "sourceKind": "database"
+    },
+    {
+      "catalog": "nothing-but-noodles.json",
+      "chain": "Nothing But Noodles",
+      "importedServings": 67,
+      "sourceUrl": "https://www.nutritionix.com/nothing-but-noodles/menu/premium",
+      "sourceDate": "2015-03-17",
+      "sourceKind": "database"
+    },
+    {
+      "catalog": "carolina-ale-house.json",
+      "chain": "Carolina Ale House",
+      "importedServings": 215,
+      "sourceUrl": "https://www.nutritionix.com/carolina-ale-house/menu/premium",
+      "sourceDate": "2019-09-10",
+      "sourceKind": "database"
+    },
+    {
+      "catalog": "clean-juice.json",
+      "chain": "Clean Juice",
+      "importedServings": 109,
+      "sourceUrl": "https://www.nutritionix.com/clean-juice/menu/premium",
+      "sourceDate": "2024-08-05",
+      "sourceKind": "database"
+    },
+    {
+      "catalog": "eggspectation.json",
+      "chain": "Eggspectation",
+      "importedServings": 113,
+      "sourceUrl": "https://www.nutritionix.com/eggspectation/menu/premium",
+      "sourceDate": "2015-03-17",
+      "sourceKind": "database"
+    },
+    {
+      "catalog": "burger-21.json",
+      "chain": "Burger 21",
+      "importedServings": 98,
+      "sourceUrl": "https://www.nutritionix.com/burger-21/menu/premium",
+      "sourceDate": "2024-06-13",
+      "sourceKind": "database"
+    },
+    {
+      "catalog": "bb-q-chicken.json",
+      "chain": "bb.q Chicken",
+      "importedServings": 49,
+      "sourceUrl": "https://www.nutritionix.com/bb-q-chicken/menu/premium",
+      "sourceDate": "2024-07-12",
+      "sourceKind": "database"
+    },
+    {
+      "catalog": "le-peep.json",
+      "chain": "Le Peep",
+      "importedServings": 142,
+      "sourceUrl": "https://www.nutritionix.com/le-peep/menu/premium",
+      "sourceDate": "2019-01-15",
+      "sourceKind": "database"
+    },
+    {
+      "catalog": "super-chix.json",
+      "chain": "Super Chix",
+      "importedServings": 98,
+      "sourceUrl": "https://nutrition.superchix.com/menu",
+      "sourceDate": "2026-09-16",
+      "sourceKind": "official"
+    },
+    {
+      "catalog": "north-italia.json",
+      "chain": "North Italia",
+      "importedServings": 316,
+      "sourceUrl": "https://www.northitalia.com/wp-content/uploads/2026/04/North-Italia-Nutritional-Guide-04-2026-1.pdf",
+      "sourceDate": "2026-04",
+      "sourceKind": "official"
+    },
+    {
+      "catalog": "postino.json",
+      "chain": "Postino",
+      "importedServings": 139,
+      "sourceUrl": "https://app.everybite.com/widget/7d6e5b3d",
+      "sourceDate": null,
+      "sourceKind": "official"
+    }
+  ]
+}

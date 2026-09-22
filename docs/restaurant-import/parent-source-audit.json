@@ -1,0 +1,481 @@
+[
+  {
+    "slug": "cabo-fish-taco",
+    "checkedAt": "2026-09-20",
+    "status": "no_complete_nutrition_found_in_inspected_sources",
+    "reason": "No complete calories, protein, carbohydrate and fat table in the inspected official pages and linked PDFs. No estimates inferred; other uninspected sources may exist.",
+    "attemptedSources": [
+      {
+        "url": "https://www.cabofishtaco.com/fusion_element/menu-toggle/",
+        "resolvedUrl": "https://www.cabofishtaco.com/fusion_element/menu-toggle/",
+        "httpStatus": 200,
+        "nutritionText": [],
+        "nutritionOrPdfLinks": []
+      }
+    ]
+  },
+  {
+    "slug": "co",
+    "checkedAt": "2026-09-20",
+    "status": "no_complete_nutrition_found_in_inspected_sources",
+    "reason": "No complete calories, protein, carbohydrate and fat table in the inspected official pages and linked PDFs. No estimates inferred; other uninspected sources may exist.",
+    "attemptedSources": [
+      {
+        "url": "https://www.eatatco.com/location/charlotte/",
+        "resolvedUrl": "https://www.eatatco.com/location/charlotte/",
+        "httpStatus": 200,
+        "nutritionText": [],
+        "nutritionOrPdfLinks": [
+          "https://media-cdn.getbento.com/accounts/23237ff810e65dc174922ac5dc1342cb/media/v5bTaMBTQKaUAUhCyS90_CLT_9X11_011626.pdf",
+          "https://media-cdn.getbento.com/accounts/23237ff810e65dc174922ac5dc1342cb/media/SLVSp6IxRkymjp2WVUZ9_HH_DRINKS_CLT_052826_HH.pdf",
+          "https://media-cdn.getbento.com/accounts/23237ff810e65dc174922ac5dc1342cb/media/Sk1kl0zuTRSKq4CSyMRF_VGF_CLT_061825.pdf",
+          "https://media-cdn.getbento.com/accounts/23237ff810e65dc174922ac5dc1342cb/media/QN2eKgK9ROORFag8Ugs7_HH_DRINKS_CLT_052826_DRINKS.pdf",
+          "https://media-cdn.getbento.com/accounts/23237ff810e65dc174922ac5dc1342cb/media/sSCR8WoJSDijidNY7Aug_VGF_CLT_061825.pdf"
+        ]
+      },
+      {
+        "url": "https://www.eatatco.com/about/",
+        "resolvedUrl": "https://www.eatatco.com/about/",
+        "httpStatus": 200,
+        "nutritionText": [],
+        "nutritionOrPdfLinks": []
+      },
+      {
+        "url": "https://media-cdn.getbento.com/accounts/23237ff810e65dc174922ac5dc1342cb/media/v5bTaMBTQKaUAUhCyS90_CLT_9X11_011626.pdf",
+        "httpStatus": 200,
+        "textLength": 10241,
+        "nutritionText": []
+      },
+      {
+        "url": "https://media-cdn.getbento.com/accounts/23237ff810e65dc174922ac5dc1342cb/media/SLVSp6IxRkymjp2WVUZ9_HH_DRINKS_CLT_052826_HH.pdf",
+        "httpStatus": 200,
+        "textLength": 2428,
+        "nutritionText": []
+      },
+      {
+        "url": "https://media-cdn.getbento.com/accounts/23237ff810e65dc174922ac5dc1342cb/media/Sk1kl0zuTRSKq4CSyMRF_VGF_CLT_061825.pdf",
+        "httpStatus": 200,
+        "textLength": 4225,
+        "nutritionText": []
+      },
+      {
+        "url": "https://media-cdn.getbento.com/accounts/23237ff810e65dc174922ac5dc1342cb/media/QN2eKgK9ROORFag8Ugs7_HH_DRINKS_CLT_052826_DRINKS.pdf",
+        "httpStatus": 200,
+        "textLength": 3935,
+        "nutritionText": []
+      },
+      {
+        "url": "https://media-cdn.getbento.com/accounts/23237ff810e65dc174922ac5dc1342cb/media/sSCR8WoJSDijidNY7Aug_VGF_CLT_061825.pdf",
+        "httpStatus": 200,
+        "textLength": 4225,
+        "nutritionText": []
+      }
+    ]
+  },
+  {
+    "slug": "crispy-banh-mi",
+    "checkedAt": "2026-09-20",
+    "status": "no_complete_nutrition_found_in_inspected_sources",
+    "reason": "No complete calories, protein, carbohydrate and fat table in the inspected official pages and linked PDFs. No estimates inferred; other uninspected sources may exist.",
+    "attemptedSources": [
+      {
+        "url": "https://www.crispybanhmi.com/menu",
+        "resolvedUrl": "https://www.crispybanhmi.com/menu",
+        "httpStatus": 200,
+        "nutritionText": [
+          "ow More Vegetarian Rolls Our delicious vegetarian protein (wheat flour marinated with coconut water) wrapped in a clear rice paper with lettuce, ci",
+          "at $1 Add 2 Eggs $2 Show More Vegetarian Soy bean protein cooked with coconut water on a toasted french baguette with butter. Just try it, you won'",
+          "vermicelli noodle dish topped with your choice of protein. Comes with lettuce, cucumber, mint, cilantro and pickled carrots and daikon. Served with",
+          ": Chicken, Grilled Pork, Grilled Beef, Vegetarian Protein and Tofu, or Shrimp Chicken $11 Pork $11 Vegetarian + Tofu $11 Beef $14 Shrimp (3 skewers",
+          "1.50 Show More Special Noodle Bowl Your choice of protein, PLUS egg roll and one shrimp skewer Pork $14 Chicken $14 Beef $17 vegatarian +tofu $14 E"
+        ],
+        "nutritionOrPdfLinks": []
+      }
+    ]
+  },
+  {
+    "slug": "foxcroft-wine-co",
+    "checkedAt": "2026-09-20",
+    "status": "no_complete_nutrition_found_in_inspected_sources",
+    "reason": "No complete calories, protein, carbohydrate and fat table in the inspected official pages and linked PDFs. No estimates inferred; other uninspected sources may exist.",
+    "attemptedSources": [
+      {
+        "url": "https://foxcroftwine.com/pages/all-menus",
+        "resolvedUrl": "https://foxcroftwine.com/pages/all-menus",
+        "httpStatus": 200,
+        "nutritionText": [],
+        "nutritionOrPdfLinks": []
+      }
+    ]
+  },
+  {
+    "slug": "harriets-hamburgers",
+    "checkedAt": "2026-09-20",
+    "status": "no_complete_nutrition_found_in_inspected_sources",
+    "reason": "No complete calories, protein, carbohydrate and fat table in the inspected official pages and linked PDFs. No estimates inferred; other uninspected sources may exist.",
+    "attemptedSources": [
+      {
+        "url": "https://www.harrietshamburgers.com/menu",
+        "resolvedUrl": "https://www.harrietshamburgers.com/menu",
+        "httpStatus": 200,
+        "nutritionText": [],
+        "nutritionOrPdfLinks": []
+      }
+    ]
+  },
+  {
+    "slug": "hazelnuts-creperie",
+    "checkedAt": "2026-09-20",
+    "status": "no_complete_nutrition_found_in_inspected_sources",
+    "reason": "No complete calories, protein, carbohydrate and fat table in the inspected official pages and linked PDFs. No estimates inferred; other uninspected sources may exist.",
+    "attemptedSources": [
+      {
+        "url": "https://hazelnutscreperie.com/menu",
+        "resolvedUrl": "https://hazelnutscreperie.com/menu",
+        "httpStatus": 200,
+        "nutritionText": [],
+        "nutritionOrPdfLinks": []
+      }
+    ]
+  },
+  {
+    "slug": "little-mamas-italian-kitchen",
+    "checkedAt": "2026-09-20",
+    "status": "no_complete_nutrition_found_in_inspected_sources",
+    "reason": "No complete calories, protein, carbohydrate and fat table in the inspected official pages and linked PDFs. No estimates inferred; other uninspected sources may exist.",
+    "attemptedSources": [
+      {
+        "url": "https://www.littlemamas.co/",
+        "resolvedUrl": "https://www.littlemamas.co/",
+        "httpStatus": 200,
+        "nutritionText": [],
+        "nutritionOrPdfLinks": []
+      }
+    ]
+  },
+  {
+    "slug": "los-aztecas",
+    "checkedAt": "2026-09-20",
+    "status": "no_complete_nutrition_found_in_inspected_sources",
+    "reason": "No complete restaurant nutrition table found in the inspected source; this does not rule out other sources.",
+    "attemptedSources": [
+      {
+        "url": "https://losaztecassc.com/",
+        "error": "<urlopen error [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1081)>"
+      },
+      {
+        "url": "https://losaztecasindianla.wixsite.com/mysite",
+        "httpStatus": 200,
+        "nutritionText": [],
+        "nutritionOrPdfLinks": []
+      }
+    ]
+  },
+  {
+    "slug": "milk-cha-cha",
+    "checkedAt": "2026-09-20",
+    "status": "no_complete_nutrition_found_in_inspected_sources",
+    "reason": "No complete calories, protein, carbohydrate and fat table in the inspected official pages and linked PDFs. No estimates inferred; other uninspected sources may exist.",
+    "attemptedSources": [
+      {
+        "url": "https://www.milkchachausa.com/",
+        "resolvedUrl": "https://www.milkchachausa.com/",
+        "httpStatus": 200,
+        "nutritionText": [],
+        "nutritionOrPdfLinks": []
+      }
+    ]
+  },
+  {
+    "slug": "nana-morrisons-soul-food",
+    "checkedAt": "2026-09-20",
+    "status": "no_complete_nutrition_found_in_inspected_sources",
+    "reason": "Official full menu lists foods and review counts, without complete nutrient totals.",
+    "attemptedSources": [
+      {
+        "url": "https://www.nanamorrisonssoulfood.com/",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "url": "https://www.nanamorrisonssoulfood.com/menu",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "url": "https://www.nanamorrisonssoulfood.com/menu",
+        "accessMethod": "Search browser page reader",
+        "result": "Full menu read successfully. Menu item review/rating counts are not nutrition. No calorie/macro table."
+      }
+    ]
+  },
+  {
+    "slug": "napa-bistro-wine-bar",
+    "checkedAt": "2026-09-20",
+    "status": "no_complete_nutrition_found_in_inspected_sources",
+    "reason": "No complete calories, protein, carbohydrate and fat table in the inspected official pages and linked PDFs. No estimates inferred; other uninspected sources may exist.",
+    "attemptedSources": [
+      {
+        "url": "https://www.naparestaurantgroup.com/napakingsley",
+        "resolvedUrl": "https://www.naparestaurantgroup.com/napakingsley",
+        "httpStatus": 200,
+        "nutritionText": [],
+        "nutritionOrPdfLinks": [
+          "https://www.naparestaurantgroup.com/_files/ugd/edb0da_0b803ef4787b4e7982075a8013b3250b.pdf"
+        ]
+      },
+      {
+        "url": "https://www.naparestaurantgroup.com/_files/ugd/edb0da_0b803ef4787b4e7982075a8013b3250b.pdf",
+        "httpStatus": 200,
+        "textLength": 6810,
+        "nutritionText": []
+      }
+    ]
+  },
+  {
+    "slug": "olde-mecklenburg-brewery",
+    "checkedAt": "2026-09-20",
+    "status": "no_complete_nutrition_found_in_inspected_sources",
+    "reason": "No complete calories, protein, carbohydrate and fat table in the inspected official pages and linked PDFs. No estimates inferred; other uninspected sources may exist.",
+    "attemptedSources": [
+      {
+        "url": "https://www.ombbeer.com/menus/",
+        "resolvedUrl": "https://www.ombbeer.com/menus/",
+        "httpStatus": 200,
+        "nutritionText": [],
+        "nutritionOrPdfLinks": []
+      }
+    ]
+  },
+  {
+    "slug": "palm-berries",
+    "checkedAt": "2026-09-20",
+    "status": "imported",
+    "reason": "Imported all 20 complete nutrition labels in the PDF linked by the official menu; visually inspected all three pages.",
+    "attemptedSources": [
+      {
+        "url": "https://palmberriesllc.com/our-menu/",
+        "resolvedUrl": "https://palmberriesllc.com/our-menu/",
+        "httpStatus": 200,
+        "nutritionText": [
+          "ango, Coconut Flakes, Goji Berries Drizzle: Honey Protein Bowl Blend of Organic Acai, Protein, Spinach, & Bananas Toppings: Bananas, Strawberries, ",
+          "rizzle: Honey Protein Bowl Blend of Organic Acai, Protein, Spinach, & Bananas Toppings: Bananas, Strawberries, Hemp Seeds, Cacao Nibs Drizzle: Pean",
+          ": Blend of organic Acai with Banana, Spinach, and Protein Powder Pure: Organic Acai Pink: Blend of dragon fruit with strawberries, pineapples, rasp",
+          " & Apple Juice Gainz Bananas, Peanut Butter, Whey Protein, Cacao, & Almond Milk Acerola Acerola, Carrots, Pineapples, Ginger, Agave, & Orange Juice",
+          "lmond Milk, & Apple Juice Barista Cold Brew, Whey Protein, Bananas, & Peanut Butter Flamingo Pitaya, Strawberries, Pineapples, Orange Juice, Coconu",
+          "s, Orange Juice, Coconut Milk, & Agave About Blog Nutrition Catering Creators Careers Gift Cards Contact Instagram Facebook Palm Berries\u00ae. 2025. All "
+        ],
+        "nutritionOrPdfLinks": [
+          "https://palmberriesllc.com/wp-content/plugins/nutrition-facts/build/style-index.css?ver=1690341532",
+          "https://palmberriesllc.com/wp-content/uploads/2022/06/Palmberries-Nutrition-Facts.pdf"
+        ]
+      }
+    ],
+    "catalogFile": "data/restaurant-foods/palm-berries.json"
+  },
+  {
+    "slug": "pio-pio",
+    "checkedAt": "2026-09-20",
+    "status": "no_complete_nutrition_found_in_inspected_sources",
+    "reason": "No complete calories, protein, carbohydrate and fat table in the inspected official pages and linked PDFs. No estimates inferred; other uninspected sources may exist.",
+    "attemptedSources": [
+      {
+        "url": "https://piopiocharlotte.com/menu",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "url": "https://mypiopio.com/food-menu",
+        "resolvedUrl": "https://mypiopio.com/food-menu",
+        "httpStatus": 200,
+        "nutritionText": [],
+        "nutritionOrPdfLinks": []
+      }
+    ]
+  },
+  {
+    "slug": "portofinos",
+    "checkedAt": "2026-09-20",
+    "status": "no_complete_nutrition_found_in_inspected_sources",
+    "reason": "No complete calories, protein, carbohydrate and fat table in the inspected official pages and linked PDFs. No estimates inferred; other uninspected sources may exist.",
+    "attemptedSources": [
+      {
+        "url": "https://www.portofinos-us.com/",
+        "resolvedUrl": "https://www.portofinos-us.com/",
+        "httpStatus": 200,
+        "nutritionText": [],
+        "nutritionOrPdfLinks": [
+          "https://www.portofinos-us.com/s/Portofinos-Carryout-Menu-2026.pdf"
+        ]
+      },
+      {
+        "url": "https://www.portofinos-us.com/s/Portofinos-Carryout-Menu-2026.pdf",
+        "httpStatus": 200,
+        "textLength": 8124,
+        "nutritionText": []
+      }
+    ]
+  },
+  {
+    "slug": "rai-lay-asian-fusion",
+    "checkedAt": "2026-09-20",
+    "status": "no_complete_nutrition_found_in_inspected_sources",
+    "reason": "No complete calories, protein, carbohydrate and fat table in the inspected official pages and linked PDFs. No estimates inferred; other uninspected sources may exist.",
+    "attemptedSources": [
+      {
+        "url": "https://railaythai.com/menu/",
+        "resolvedUrl": "https://railaythai.com/menu/",
+        "httpStatus": 200,
+        "nutritionText": [],
+        "nutritionOrPdfLinks": []
+      }
+    ]
+  },
+  {
+    "slug": "roosters",
+    "checkedAt": "2026-09-20",
+    "status": "no_complete_nutrition_found_in_inspected_sources",
+    "reason": "No complete calories, protein, carbohydrate and fat table in the inspected official pages and linked PDFs. No estimates inferred; other uninspected sources may exist.",
+    "attemptedSources": [
+      {
+        "url": "https://roosterskitchen.com/",
+        "resolvedUrl": "https://www.roosterskitchen.com/",
+        "httpStatus": 200,
+        "nutritionText": [],
+        "nutritionOrPdfLinks": []
+      }
+    ]
+  },
+  {
+    "slug": "summit-coffee",
+    "checkedAt": "2026-09-20",
+    "status": "no_complete_nutrition_found_in_inspected_sources",
+    "reason": "No complete calories, protein, carbohydrate and fat table in the inspected official pages and linked PDFs. No estimates inferred; other uninspected sources may exist.",
+    "attemptedSources": [
+      {
+        "url": "https://www.summitcoffee.com/",
+        "resolvedUrl": "https://www.summitcoffee.com/",
+        "httpStatus": 200,
+        "nutritionText": [],
+        "nutritionOrPdfLinks": []
+      }
+    ]
+  },
+  {
+    "slug": "corndogs-by-mr-cow",
+    "checkedAt": "2026-09-20",
+    "status": "no_complete_nutrition_found_in_inspected_sources",
+    "reason": "No complete restaurant nutrition table found in the inspected source; this does not rule out other sources.",
+    "attemptedSources": [
+      {
+        "url": "https://www.corndogsbymrcow.com/",
+        "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+      },
+      {
+        "url": "https://mrcowcorndog.com/",
+        "httpStatus": 200,
+        "nutritionText": [],
+        "nutritionOrPdfLinks": []
+      }
+    ]
+  },
+  {
+    "slug": "open-rice",
+    "checkedAt": "2026-09-20",
+    "status": "no_complete_nutrition_found_in_inspected_sources",
+    "reason": "No complete calories, protein, carbohydrate and fat table in the inspected official pages and linked PDFs. No estimates inferred; other uninspected sources may exist.",
+    "attemptedSources": [
+      {
+        "url": "https://www.openriceclt.com/",
+        "resolvedUrl": "https://www.openriceclt.com/",
+        "httpStatus": 200,
+        "nutritionText": [],
+        "nutritionOrPdfLinks": []
+      }
+    ]
+  },
+  {
+    "slug": "ruby-thai",
+    "checkedAt": "2026-09-20",
+    "status": "no_complete_nutrition_found_in_inspected_sources",
+    "reason": "No complete calories, protein, carbohydrate and fat table in the inspected official pages and linked PDFs. No estimates inferred; other uninspected sources may exist.",
+    "attemptedSources": [
+      {
+        "url": "https://www.carolinaplace.com/en/directory/ruby-thai/",
+        "resolvedUrl": "https://www.carolinaplace.com/en/directory/ruby-thai/",
+        "httpStatus": 200,
+        "nutritionText": [],
+        "nutritionOrPdfLinks": []
+      }
+    ]
+  },
+  {
+    "slug": "tap-vine",
+    "checkedAt": "2026-09-20",
+    "status": "no_complete_nutrition_found_in_inspected_sources",
+    "reason": "No complete calories, protein, carbohydrate and fat table in the inspected official pages and linked PDFs. No estimates inferred; other uninspected sources may exist.",
+    "attemptedSources": [
+      {
+        "url": "https://tapandvinenc.com/",
+        "resolvedUrl": "https://tapandvinenc.com/",
+        "httpStatus": 200,
+        "nutritionText": [],
+        "nutritionOrPdfLinks": []
+      }
+    ]
+  },
+  {
+    "slug": "the-greek-grill",
+    "checkedAt": "2026-09-20",
+    "status": "no_complete_nutrition_found_in_inspected_sources",
+    "reason": "No complete restaurant nutrition table found in the inspected source; this does not rule out other sources.",
+    "attemptedSources": [
+      {
+        "url": "https://www.thegreekgrillsc.com/",
+        "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+      },
+      {
+        "url": "https://www.greekgrillsc.com/menu",
+        "httpStatus": 200,
+        "nutritionText": [],
+        "nutritionOrPdfLinks": []
+      }
+    ]
+  },
+  {
+    "slug": "the-improper-pig",
+    "checkedAt": "2026-09-20",
+    "status": "no_complete_nutrition_found_in_inspected_sources",
+    "reason": "No complete restaurant nutrition table found in the inspected source; this does not rule out other sources.",
+    "attemptedSources": [
+      {
+        "url": "https://theimproperpig.com/",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "url": "https://theimproperpig.com/",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "url": "https://theimproperpig.com/",
+        "accessMethod": "Search browser page reader",
+        "result": "Restaurant and locations page read successfully; no complete nutrient totals."
+      }
+    ]
+  },
+  {
+    "slug": "the-office-craft-bar-and-kitchen",
+    "checkedAt": "2026-09-20",
+    "status": "no_complete_nutrition_found_in_inspected_sources",
+    "reason": "No complete calories, protein, carbohydrate and fat table in the inspected official pages and linked PDFs. No estimates inferred; other uninspected sources may exist.",
+    "attemptedSources": [
+      {
+        "url": "https://ballantyne.theofficecbk.com/charlotte-the-office-craft-bar-and-kitchen-ballantyne-food-menu",
+        "resolvedUrl": "https://ballantyne.theofficecbk.com/charlotte-the-office-craft-bar-and-kitchen-ballantyne-food-menu",
+        "httpStatus": 200,
+        "nutritionText": [
+          "erved in a crispy tortilla bowl. Exec. Tip: Add a protein! Grilled or Blackened Chicken +$6 | Fried Chicken Tenders +$6 | Broiled or Fried Shrimp +",
+          ", tossed in a creamy parm sauce. Exec. Tip: Add a protein! Grilled or Blackened Chicken +$6 | Fried Chicken Tenders +$6 | Broiled or Fried Shrimp +"
+        ],
+        "nutritionOrPdfLinks": []
+      }
+    ]
+  }
+]

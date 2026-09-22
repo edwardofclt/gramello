@@ -1,0 +1,4627 @@
+{
+  "chain": "Taco Bell",
+  "sourceUrl": "https://www.nutritionix.com/taco-bell/menu/premium",
+  "source": "Nutritionix",
+  "sourceKind": "database",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "id": "nutritionix-198432",
+      "name": "Beefy Crunch Burrito",
+      "calories": 450,
+      "protein": 13,
+      "carbs": 59,
+      "fat": 19,
+      "servingLabel": "1 listed serving (New; size in item name)"
+    },
+    {
+      "id": "nutritionix-166738",
+      "name": "Caramel Apple Empanada",
+      "calories": 290,
+      "protein": 3,
+      "carbs": 38,
+      "fat": 14,
+      "servingLabel": "1 listed serving (New; size in item name)"
+    },
+    {
+      "id": "nutritionix-872851",
+      "name": "Cheesy Gordita Crunch Sliders - Beef",
+      "calories": 350,
+      "protein": 15,
+      "carbs": 30,
+      "fat": 19,
+      "servingLabel": "1 listed serving (New; size in item name)"
+    },
+    {
+      "id": "nutritionix-853312",
+      "name": "Cheesy Gordita Crunch Sliders - Chicken",
+      "calories": 340,
+      "protein": 18,
+      "carbs": 28,
+      "fat": 18,
+      "servingLabel": "1 listed serving (New; size in item name)"
+    },
+    {
+      "id": "nutritionix-872852",
+      "name": "Cheesy Gordita Crunch Sliders - Steak",
+      "calories": 340,
+      "protein": 18,
+      "carbs": 28,
+      "fat": 18,
+      "servingLabel": "1 listed serving (New; size in item name)"
+    },
+    {
+      "id": "nutritionix-927002",
+      "name": "Crispy Chicken Crunchwrap Slider - Creamy Chipotle Sauce",
+      "calories": 320,
+      "protein": 16,
+      "carbs": 36,
+      "fat": 12,
+      "servingLabel": "1 listed serving (New; size in item name)"
+    },
+    {
+      "id": "nutritionix-1171540",
+      "name": "Crispy Chicken Crunchwrap Slider - Diablo Ranch",
+      "calories": 320,
+      "protein": 16,
+      "carbs": 35,
+      "fat": 13,
+      "servingLabel": "1 listed serving (New; size in item name)"
+    },
+    {
+      "id": "nutritionix-442705",
+      "name": "Crispy Chicken Nuggets - 5 Piece",
+      "calories": 320,
+      "protein": 26,
+      "carbs": 25,
+      "fat": 13,
+      "servingLabel": "1 listed serving (New; size in item name)"
+    },
+    {
+      "id": "nutritionix-442706",
+      "name": "Crispy Chicken Nuggets - 10 Piece",
+      "calories": 640,
+      "protein": 51,
+      "carbs": 50,
+      "fat": 26,
+      "servingLabel": "1 listed serving (New; size in item name)"
+    },
+    {
+      "id": "nutritionix-1171541",
+      "name": "Diablo Ranch Steak Nacho Fries",
+      "calories": 500,
+      "protein": 14,
+      "carbs": 39,
+      "fat": 32,
+      "servingLabel": "1 listed serving (New; size in item name)"
+    },
+    {
+      "id": "nutritionix-313546",
+      "name": "Dragonfruit Freeze (16 oz)",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 41,
+      "fat": 0,
+      "servingLabel": "1 listed serving (New; size in item name)"
+    },
+    {
+      "id": "nutritionix-313547",
+      "name": "Dragonfruit Freeze (20 oz)",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 52,
+      "fat": 0,
+      "servingLabel": "1 listed serving (New; size in item name)"
+    },
+    {
+      "id": "nutritionix-313544",
+      "name": "Dragonfruit Freeze with Dragonfruit Syrup (16 oz)",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 46,
+      "fat": 0,
+      "servingLabel": "1 listed serving (New; size in item name)"
+    },
+    {
+      "id": "nutritionix-313545",
+      "name": "Dragonfruit Freeze with Dragonfruit Syrup (20 oz)",
+      "calories": 210,
+      "protein": 0,
+      "carbs": 56,
+      "fat": 0,
+      "servingLabel": "1 listed serving (New; size in item name)"
+    },
+    {
+      "id": "nutritionix-361103",
+      "name": "Naked Chicken Chalupa",
+      "calories": 430,
+      "protein": 19,
+      "carbs": 28,
+      "fat": 27,
+      "servingLabel": "1 listed serving (New; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153005",
+      "name": "Pineapple Citrus Energy Freeze (16 oz)",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 39,
+      "fat": 0,
+      "servingLabel": "1 listed serving (New; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153006",
+      "name": "Pineapple Citrus Energy Freeze (20 oz)",
+      "calories": 190,
+      "protein": 0,
+      "carbs": 49,
+      "fat": 0,
+      "servingLabel": "1 listed serving (New; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153004",
+      "name": "Pineapple Citrus Fuego Energy",
+      "calories": 50,
+      "protein": 0,
+      "carbs": 13,
+      "fat": 0,
+      "servingLabel": "1 listed serving (New; size in item name)"
+    },
+    {
+      "id": "nutritionix-907968",
+      "name": "Pineapple Dream Refresca",
+      "calories": 220,
+      "protein": 0,
+      "carbs": 55,
+      "fat": 1,
+      "servingLabel": "1 listed serving (New; size in item name)"
+    },
+    {
+      "id": "nutritionix-293586",
+      "name": "Pineapple Freeze (16 oz)",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 41,
+      "fat": 0,
+      "servingLabel": "1 listed serving (New; size in item name)"
+    },
+    {
+      "id": "nutritionix-293587",
+      "name": "Pineapple Freeze (20 oz)",
+      "calories": 190,
+      "protein": 0,
+      "carbs": 52,
+      "fat": 0,
+      "servingLabel": "1 listed serving (New; size in item name)"
+    },
+    {
+      "id": "nutritionix-1037735",
+      "name": "Pink Passionfruit Freeze (16 oz)",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 41,
+      "fat": 0,
+      "servingLabel": "1 listed serving (New; size in item name)"
+    },
+    {
+      "id": "nutritionix-1037736",
+      "name": "Pink Passionfruit Freeze (20 oz)",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 51,
+      "fat": 0,
+      "servingLabel": "1 listed serving (New; size in item name)"
+    },
+    {
+      "id": "nutritionix-1090956",
+      "name": "Pink Passionfruit Refresca Freeze (16 oz)",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 42,
+      "fat": 0,
+      "servingLabel": "1 listed serving (New; size in item name)"
+    },
+    {
+      "id": "nutritionix-1090957",
+      "name": "Pink Passionfruit Refresca Freeze (20 oz)",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 53,
+      "fat": 0,
+      "servingLabel": "1 listed serving (New; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153313",
+      "name": "Pretty Pink Baja Blast (16 oz)",
+      "calories": 250,
+      "protein": 0,
+      "carbs": 65,
+      "fat": 0,
+      "servingLabel": "1 listed serving (New; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153314",
+      "name": "Pretty Pink Baja Blast (20 oz)",
+      "calories": 310,
+      "protein": 0,
+      "carbs": 80,
+      "fat": 0,
+      "servingLabel": "1 listed serving (New; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153315",
+      "name": "Pretty Pink Baja Blast (30 oz)",
+      "calories": 470,
+      "protein": 0,
+      "carbs": 123,
+      "fat": 0,
+      "servingLabel": "1 listed serving (New; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153316",
+      "name": "Pretty Pink Baja Blast Freeze (16 oz)",
+      "calories": 180,
+      "protein": 0,
+      "carbs": 48,
+      "fat": 0,
+      "servingLabel": "1 listed serving (New; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153317",
+      "name": "Pretty Pink Baja Blast Freeze (20 oz)",
+      "calories": 220,
+      "protein": 0,
+      "carbs": 58,
+      "fat": 0,
+      "servingLabel": "1 listed serving (New; size in item name)"
+    },
+    {
+      "id": "nutritionix-889510",
+      "name": "Strawberry Dream Refresca",
+      "calories": 220,
+      "protein": 0,
+      "carbs": 57,
+      "fat": 1,
+      "servingLabel": "1 listed serving (New; size in item name)"
+    },
+    {
+      "id": "nutritionix-1153003",
+      "name": "Strawberry Tropics Fuego Energy",
+      "calories": 50,
+      "protein": 0,
+      "carbs": 13,
+      "fat": 0,
+      "servingLabel": "1 listed serving (New; size in item name)"
+    },
+    {
+      "id": "nutritionix-1112752",
+      "name": "Tajín Cheesy Gordita Crunch",
+      "calories": 460,
+      "protein": 19,
+      "carbs": 45,
+      "fat": 22,
+      "servingLabel": "1 listed serving (New; size in item name)"
+    },
+    {
+      "id": "nutritionix-1112757",
+      "name": "Tajín Pineapple Strawberry Freeze (16 oz)",
+      "calories": 180,
+      "protein": 0,
+      "carbs": 47,
+      "fat": 0,
+      "servingLabel": "1 listed serving (New; size in item name)"
+    },
+    {
+      "id": "nutritionix-1112758",
+      "name": "Tajín Pineapple Strawberry Freeze (20 oz)",
+      "calories": 220,
+      "protein": 0,
+      "carbs": 58,
+      "fat": 0,
+      "servingLabel": "1 listed serving (New; size in item name)"
+    },
+    {
+      "id": "nutritionix-830305",
+      "name": "TajínTaco",
+      "calories": 210,
+      "protein": 8,
+      "carbs": 16,
+      "fat": 12,
+      "servingLabel": "1 listed serving (New; size in item name)"
+    },
+    {
+      "id": "nutritionix-423324",
+      "name": "Cantina Chicken Bowl",
+      "calories": 580,
+      "protein": 26,
+      "carbs": 55,
+      "fat": 29,
+      "servingLabel": "1 listed serving (Cantina Chicken Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-423325",
+      "name": "Cantina Chicken Burrito",
+      "calories": 530,
+      "protein": 24,
+      "carbs": 44,
+      "fat": 28,
+      "servingLabel": "1 listed serving (Cantina Chicken Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-423320",
+      "name": "Cantina Chicken Crispy Taco",
+      "calories": 270,
+      "protein": 15,
+      "carbs": 19,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Cantina Chicken Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-752915",
+      "name": "Cantina Chicken Rolled Quesadilla",
+      "calories": 570,
+      "protein": 33,
+      "carbs": 46,
+      "fat": 28,
+      "servingLabel": "1 listed serving (Cantina Chicken Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-423323",
+      "name": "Cantina Chicken Soft Taco",
+      "calories": 210,
+      "protein": 12,
+      "carbs": 19,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Cantina Chicken Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-354869",
+      "name": "Black Bean Chalupa Supreme (V)",
+      "calories": 340,
+      "protein": 10,
+      "carbs": 36,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Tacos; size in item name)"
+    },
+    {
+      "id": "nutritionix-166739",
+      "name": "Chalupa Supreme - Beef",
+      "calories": 350,
+      "protein": 12,
+      "carbs": 32,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Tacos; size in item name)"
+    },
+    {
+      "id": "nutritionix-166740",
+      "name": "Chalupa Supreme - Chicken",
+      "calories": 330,
+      "protein": 15,
+      "carbs": 30,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Tacos; size in item name)"
+    },
+    {
+      "id": "nutritionix-166741",
+      "name": "Chalupa Supreme - Steak",
+      "calories": 340,
+      "protein": 15,
+      "carbs": 30,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Tacos; size in item name)"
+    },
+    {
+      "id": "nutritionix-354902",
+      "name": "Cheesy Gordita Crunch",
+      "calories": 480,
+      "protein": 20,
+      "carbs": 44,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Tacos; size in item name)"
+    },
+    {
+      "id": "nutritionix-166772",
+      "name": "Crunchy Taco",
+      "calories": 170,
+      "protein": 7,
+      "carbs": 13,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Tacos; size in item name)"
+    },
+    {
+      "id": "nutritionix-166774",
+      "name": "Crunchy Taco Supreme",
+      "calories": 190,
+      "protein": 8,
+      "carbs": 16,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Tacos; size in item name)"
+    },
+    {
+      "id": "nutritionix-166811",
+      "name": "Doritos Cheesy Gordita Crunch - Nacho Cheese",
+      "calories": 480,
+      "protein": 20,
+      "carbs": 43,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Tacos; size in item name)"
+    },
+    {
+      "id": "nutritionix-439526",
+      "name": "Double Stacked Taco",
+      "calories": 320,
+      "protein": 10,
+      "carbs": 34,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Tacos; size in item name)"
+    },
+    {
+      "id": "nutritionix-166781",
+      "name": "Nacho Cheese Doritos Locos Taco",
+      "calories": 170,
+      "protein": 7,
+      "carbs": 13,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Tacos; size in item name)"
+    },
+    {
+      "id": "nutritionix-166779",
+      "name": "Nacho Cheese Doritos Locos Taco Supreme",
+      "calories": 190,
+      "protein": 8,
+      "carbs": 15,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Tacos; size in item name)"
+    },
+    {
+      "id": "nutritionix-166975",
+      "name": "Soft Taco - Beef",
+      "calories": 180,
+      "protein": 9,
+      "carbs": 18,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Tacos; size in item name)"
+    },
+    {
+      "id": "nutritionix-166759",
+      "name": "Soft Taco - Chicken",
+      "calories": 160,
+      "protein": 12,
+      "carbs": 16,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Tacos; size in item name)"
+    },
+    {
+      "id": "nutritionix-354928",
+      "name": "Soft Taco Supreme - Beef",
+      "calories": 200,
+      "protein": 9,
+      "carbs": 21,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Tacos; size in item name)"
+    },
+    {
+      "id": "nutritionix-354929",
+      "name": "Soft Taco Supreme - Chicken",
+      "calories": 180,
+      "protein": 12,
+      "carbs": 19,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Tacos; size in item name)"
+    },
+    {
+      "id": "nutritionix-360539",
+      "name": "Spicy Potato Soft Taco (V)",
+      "calories": 240,
+      "protein": 5,
+      "carbs": 28,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Tacos; size in item name)"
+    },
+    {
+      "id": "nutritionix-288828",
+      "name": "Bean Burrito (V)",
+      "calories": 360,
+      "protein": 13,
+      "carbs": 54,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Burritos; size in item name)"
+    },
+    {
+      "id": "nutritionix-166718",
+      "name": "Beefy 5-Layer Burrito",
+      "calories": 490,
+      "protein": 17,
+      "carbs": 65,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Burritos; size in item name)"
+    },
+    {
+      "id": "nutritionix-384502",
+      "name": "Black Bean Grilled Cheese Burrito",
+      "calories": 680,
+      "protein": 23,
+      "carbs": 72,
+      "fat": 33,
+      "servingLabel": "1 listed serving (Burritos; size in item name)"
+    },
+    {
+      "id": "nutritionix-166727",
+      "name": "Burrito Supreme - Beef",
+      "calories": 390,
+      "protein": 16,
+      "carbs": 52,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Burritos; size in item name)"
+    },
+    {
+      "id": "nutritionix-166728",
+      "name": "Burrito Supreme - Chicken",
+      "calories": 370,
+      "protein": 19,
+      "carbs": 49,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Burritos; size in item name)"
+    },
+    {
+      "id": "nutritionix-166730",
+      "name": "Burrito Supreme - Steak",
+      "calories": 380,
+      "protein": 19,
+      "carbs": 50,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Burritos; size in item name)"
+    },
+    {
+      "id": "nutritionix-292244",
+      "name": "Cheesy Bean & Rice Burrito (V)",
+      "calories": 400,
+      "protein": 9,
+      "carbs": 56,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Burritos; size in item name)"
+    },
+    {
+      "id": "nutritionix-198433",
+      "name": "Cheesy Double Beef Burrito",
+      "calories": 560,
+      "protein": 20,
+      "carbs": 64,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Burritos; size in item name)"
+    },
+    {
+      "id": "nutritionix-436225",
+      "name": "Chicken Enchilada Burrito",
+      "calories": 370,
+      "protein": 18,
+      "carbs": 50,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Burritos; size in item name)"
+    },
+    {
+      "id": "nutritionix-167116",
+      "name": "Chili Cheese Burrito (regional)",
+      "calories": 380,
+      "protein": 15,
+      "carbs": 41,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Burritos; size in item name)"
+    },
+    {
+      "id": "nutritionix-277318",
+      "name": "Grilled Cheese Burrito",
+      "calories": 690,
+      "protein": 25,
+      "carbs": 68,
+      "fat": 36,
+      "servingLabel": "1 listed serving (Burritos; size in item name)"
+    },
+    {
+      "id": "nutritionix-420889",
+      "name": "Grilled Cheese Burrito - Chicken",
+      "calories": 670,
+      "protein": 28,
+      "carbs": 66,
+      "fat": 33,
+      "servingLabel": "1 listed serving (Burritos; size in item name)"
+    },
+    {
+      "id": "nutritionix-420881",
+      "name": "Grilled Cheese Burrito - Steak",
+      "calories": 680,
+      "protein": 28,
+      "carbs": 66,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Burritos; size in item name)"
+    },
+    {
+      "id": "nutritionix-166763",
+      "name": "Chips and Nacho Cheese Sauce (V)",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 24,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Nachos; size in item name)"
+    },
+    {
+      "id": "nutritionix-439525",
+      "name": "Loaded Beef Nachos",
+      "calories": 440,
+      "protein": 12,
+      "carbs": 45,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Nachos; size in item name)"
+    },
+    {
+      "id": "nutritionix-354931",
+      "name": "Nachos BellGrande - Beef",
+      "calories": 730,
+      "protein": 17,
+      "carbs": 81,
+      "fat": 38,
+      "servingLabel": "1 listed serving (Nachos; size in item name)"
+    },
+    {
+      "id": "nutritionix-275310",
+      "name": "Nachos BellGrande - Chicken",
+      "calories": 710,
+      "protein": 20,
+      "carbs": 79,
+      "fat": 35,
+      "servingLabel": "1 listed serving (Nachos; size in item name)"
+    },
+    {
+      "id": "nutritionix-275311",
+      "name": "Nachos BellGrande - Steak",
+      "calories": 720,
+      "protein": 20,
+      "carbs": 79,
+      "fat": 36,
+      "servingLabel": "1 listed serving (Nachos; size in item name)"
+    },
+    {
+      "id": "nutritionix-288829",
+      "name": "Quesadilla - Cheese (V)",
+      "calories": 440,
+      "protein": 18,
+      "carbs": 43,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Quesadillas; size in item name)"
+    },
+    {
+      "id": "nutritionix-166758",
+      "name": "Quesadilla - Chicken",
+      "calories": 490,
+      "protein": 26,
+      "carbs": 44,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Quesadillas; size in item name)"
+    },
+    {
+      "id": "nutritionix-166846",
+      "name": "Quesadilla - Steak",
+      "calories": 500,
+      "protein": 26,
+      "carbs": 44,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Quesadillas; size in item name)"
+    },
+    {
+      "id": "nutritionix-441180",
+      "name": "3-Cheese Chicken Flatbread Melt",
+      "calories": 320,
+      "protein": 20,
+      "carbs": 30,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Specialties; size in item name)"
+    },
+    {
+      "id": "nutritionix-292245",
+      "name": "Black Bean Crunchwrap Supreme (V)",
+      "calories": 520,
+      "protein": 13,
+      "carbs": 78,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Specialties; size in item name)"
+    },
+    {
+      "id": "nutritionix-288830",
+      "name": "Cheesy Roll Up (V)",
+      "calories": 170,
+      "protein": 8,
+      "carbs": 18,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Specialties; size in item name)"
+    },
+    {
+      "id": "nutritionix-166771",
+      "name": "Crunchwrap Supreme",
+      "calories": 530,
+      "protein": 15,
+      "carbs": 74,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Specialties; size in item name)"
+    },
+    {
+      "id": "nutritionix-166804",
+      "name": "Mexican Pizza",
+      "calories": 530,
+      "protein": 19,
+      "carbs": 51,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Specialties; size in item name)"
+    },
+    {
+      "id": "nutritionix-242452",
+      "name": "Stacker",
+      "calories": 390,
+      "protein": 17,
+      "carbs": 43,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Specialties; size in item name)"
+    },
+    {
+      "id": "nutritionix-313286",
+      "name": "Veggie Mexican Pizza (V)",
+      "calories": 460,
+      "protein": 14,
+      "carbs": 48,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Specialties; size in item name)"
+    },
+    {
+      "id": "nutritionix-288835",
+      "name": "Black Beans & Rice (V)",
+      "calories": 160,
+      "protein": 4,
+      "carbs": 25,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Sides & Sweets; size in item name)"
+    },
+    {
+      "id": "nutritionix-288836",
+      "name": "Black Beans (V)",
+      "calories": 50,
+      "protein": 3,
+      "carbs": 7,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Sides & Sweets; size in item name)"
+    },
+    {
+      "id": "nutritionix-166751",
+      "name": "Cheesy Fiesta Potatoes (V)",
+      "calories": 240,
+      "protein": 3,
+      "carbs": 29,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Sides & Sweets; size in item name)"
+    },
+    {
+      "id": "nutritionix-167371",
+      "name": "Cinnabon Delights (2 Pk) (V)",
+      "calories": 170,
+      "protein": 2,
+      "carbs": 15,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Sides & Sweets; size in item name)"
+    },
+    {
+      "id": "nutritionix-167370",
+      "name": "Cinnabon Delights (12 Pk - Serves 4) (V)",
+      "calories": 1010,
+      "protein": 11,
+      "carbs": 88,
+      "fat": 68,
+      "servingLabel": "1 listed serving (Sides & Sweets; size in item name)"
+    },
+    {
+      "id": "nutritionix-166768",
+      "name": "Cinnamon Twists (V)",
+      "calories": 170,
+      "protein": 2,
+      "carbs": 27,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Sides & Sweets; size in item name)"
+    },
+    {
+      "id": "nutritionix-314997",
+      "name": "Diablo Sauce Packet (V)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sides & Sweets; size in item name)"
+    },
+    {
+      "id": "nutritionix-314996",
+      "name": "Fire Sauce Packet (V)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sides & Sweets; size in item name)"
+    },
+    {
+      "id": "nutritionix-314995",
+      "name": "Hot Sauce Packet (V)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sides & Sweets; size in item name)"
+    },
+    {
+      "id": "nutritionix-306421",
+      "name": "Large Nacho Fries",
+      "calories": 500,
+      "protein": 6,
+      "carbs": 52,
+      "fat": 29,
+      "servingLabel": "1 listed serving (Sides & Sweets; size in item name)"
+    },
+    {
+      "id": "nutritionix-314994",
+      "name": "Mild Sauce Packet (V)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sides & Sweets; size in item name)"
+    },
+    {
+      "id": "nutritionix-244268",
+      "name": "Nacho Fries",
+      "calories": 350,
+      "protein": 4,
+      "carbs": 36,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Sides & Sweets; size in item name)"
+    },
+    {
+      "id": "nutritionix-288834",
+      "name": "Pintos N Cheese (V)",
+      "calories": 170,
+      "protein": 9,
+      "carbs": 19,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Sides & Sweets; size in item name)"
+    },
+    {
+      "id": "nutritionix-208065",
+      "name": "Blue Raspberry Freeze (16 oz)",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 30,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-208066",
+      "name": "Blue Raspberry Freeze (20 oz)",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 38,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-169300",
+      "name": "Cinnabon Delights Coffee - Hot",
+      "calories": 160,
+      "protein": 1,
+      "carbs": 34,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-169301",
+      "name": "Cinnabon Delights Coffee - Iced",
+      "calories": 160,
+      "protein": 1,
+      "carbs": 34,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-216680",
+      "name": "Lowfat Milk - CA (Regional)",
+      "calories": 100,
+      "protein": 9,
+      "carbs": 13,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-216679",
+      "name": "Lowfat Milk - Federal (Regional)",
+      "calories": 80,
+      "protein": 7,
+      "carbs": 10,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-195503",
+      "name": "Mtn Dew Baja Blast Freeze (16 oz)",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 41,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-195504",
+      "name": "Mtn Dew Baja Blast Freeze (20 oz)",
+      "calories": 190,
+      "protein": 0,
+      "carbs": 51,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-169302",
+      "name": "Orange Juice",
+      "calories": 140,
+      "protein": 2,
+      "carbs": 33,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-384493",
+      "name": "Premium Roast Coffee - Hot",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-384494",
+      "name": "Premium Roast Coffee - Iced",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-217837",
+      "name": "Water",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-809241",
+      "name": "Caramel Dulce Churro Chiller (16 oz)",
+      "calories": 560,
+      "protein": 8,
+      "carbs": 86,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Live Mas Cafe; size in item name)"
+    },
+    {
+      "id": "nutritionix-809242",
+      "name": "Caramel Dulce Churro Chiller (20 oz)",
+      "calories": 760,
+      "protein": 11,
+      "carbs": 116,
+      "fat": 29,
+      "servingLabel": "1 listed serving (Live Mas Cafe; size in item name)"
+    },
+    {
+      "id": "nutritionix-1112305",
+      "name": "Caramel Dulce Cream Cold Brew (16 oz)",
+      "calories": 140,
+      "protein": 1,
+      "carbs": 18,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Live Mas Cafe; size in item name)"
+    },
+    {
+      "id": "nutritionix-1112306",
+      "name": "Caramel Dulce Cream Cold Brew (20 oz)",
+      "calories": 150,
+      "protein": 2,
+      "carbs": 18,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Live Mas Cafe; size in item name)"
+    },
+    {
+      "id": "nutritionix-646646",
+      "name": "Cinnabon Caramel Coffee - Hot",
+      "calories": 200,
+      "protein": 2,
+      "carbs": 42,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Live Mas Cafe; size in item name)"
+    },
+    {
+      "id": "nutritionix-809253",
+      "name": "Cinnabon Caramel Coffee - Iced (16 oz)",
+      "calories": 290,
+      "protein": 3,
+      "carbs": 43,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Live Mas Cafe; size in item name)"
+    },
+    {
+      "id": "nutritionix-809254",
+      "name": "Cinnabon Caramel Coffee - Iced (20 oz)",
+      "calories": 290,
+      "protein": 4,
+      "carbs": 44,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Live Mas Cafe; size in item name)"
+    },
+    {
+      "id": "nutritionix-809247",
+      "name": "Cinnabon Caramel Latte Chiller (16 oz)",
+      "calories": 480,
+      "protein": 6,
+      "carbs": 70,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Live Mas Cafe; size in item name)"
+    },
+    {
+      "id": "nutritionix-809248",
+      "name": "Cinnabon Caramel Latte Chiller (19 oz)",
+      "calories": 620,
+      "protein": 9,
+      "carbs": 89,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Live Mas Cafe; size in item name)"
+    },
+    {
+      "id": "nutritionix-829823",
+      "name": "Dragonfruit Berry Agua Refresca",
+      "calories": 180,
+      "protein": 0,
+      "carbs": 45,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Live Mas Cafe; size in item name)"
+    },
+    {
+      "id": "nutritionix-829824",
+      "name": "Dragonfruit Berry Limonada",
+      "calories": 220,
+      "protein": 0,
+      "carbs": 57,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Live Mas Cafe; size in item name)"
+    },
+    {
+      "id": "nutritionix-889511",
+      "name": "Dragonfruit Strawberry Limonada",
+      "calories": 210,
+      "protein": 0,
+      "carbs": 56,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Live Mas Cafe; size in item name)"
+    },
+    {
+      "id": "nutritionix-829825",
+      "name": "Mango Peach Agua Refresca",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 43,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Live Mas Cafe; size in item name)"
+    },
+    {
+      "id": "nutritionix-829826",
+      "name": "Mango Peach Limonada",
+      "calories": 210,
+      "protein": 0,
+      "carbs": 56,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Live Mas Cafe; size in item name)"
+    },
+    {
+      "id": "nutritionix-809243",
+      "name": "Mexican Chocolate Churro Chiller (16 oz)",
+      "calories": 500,
+      "protein": 8,
+      "carbs": 71,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Live Mas Cafe; size in item name)"
+    },
+    {
+      "id": "nutritionix-809244",
+      "name": "Mexican Chocolate Churro Chiller (20 oz)",
+      "calories": 660,
+      "protein": 10,
+      "carbs": 94,
+      "fat": 28,
+      "servingLabel": "1 listed serving (Live Mas Cafe; size in item name)"
+    },
+    {
+      "id": "nutritionix-809259",
+      "name": "Mexican Mocha Coffee - Hot",
+      "calories": 170,
+      "protein": 2,
+      "carbs": 34,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Live Mas Cafe; size in item name)"
+    },
+    {
+      "id": "nutritionix-809255",
+      "name": "Mexican Mocha Coffee - Iced (16 oz)",
+      "calories": 290,
+      "protein": 4,
+      "carbs": 41,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Live Mas Cafe; size in item name)"
+    },
+    {
+      "id": "nutritionix-809256",
+      "name": "Mexican Mocha Coffee - Iced (20 oz)",
+      "calories": 310,
+      "protein": 4,
+      "carbs": 46,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Live Mas Cafe; size in item name)"
+    },
+    {
+      "id": "nutritionix-809249",
+      "name": "Mexican Mocha Latte Chiller (16 oz)",
+      "calories": 480,
+      "protein": 7,
+      "carbs": 68,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Live Mas Cafe; size in item name)"
+    },
+    {
+      "id": "nutritionix-809250",
+      "name": "Mexican Mocha Latte Chiller (20 oz)",
+      "calories": 620,
+      "protein": 9,
+      "carbs": 87,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Live Mas Cafe; size in item name)"
+    },
+    {
+      "id": "nutritionix-829828",
+      "name": "Pineapple Lime Rockstar Refresca",
+      "calories": 60,
+      "protein": 0,
+      "carbs": 14,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Live Mas Cafe; size in item name)"
+    },
+    {
+      "id": "nutritionix-809263",
+      "name": "Pink Lemonade Frost (20 oz)",
+      "calories": 280,
+      "protein": 1,
+      "carbs": 67,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Live Mas Cafe; size in item name)"
+    },
+    {
+      "id": "nutritionix-1112307",
+      "name": "Purple Velvet Cream Cold Brew (16 oz)",
+      "calories": 120,
+      "protein": 1,
+      "carbs": 13,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Live Mas Cafe; size in item name)"
+    },
+    {
+      "id": "nutritionix-1112308",
+      "name": "Purple Velvet Cream Cold Brew (20 oz)",
+      "calories": 120,
+      "protein": 1,
+      "carbs": 13,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Live Mas Cafe; size in item name)"
+    },
+    {
+      "id": "nutritionix-646138",
+      "name": "Strawberry Lime Refresca Freeze (16 oz)",
+      "calories": 190,
+      "protein": 0,
+      "carbs": 51,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Live Mas Cafe; size in item name)"
+    },
+    {
+      "id": "nutritionix-648317",
+      "name": "Strawberry Lime Refresca Freeze (20 oz)",
+      "calories": 230,
+      "protein": 0,
+      "carbs": 61,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Live Mas Cafe; size in item name)"
+    },
+    {
+      "id": "nutritionix-809260",
+      "name": "Strawberry Matcha Chiller (16 oz)",
+      "calories": 590,
+      "protein": 7,
+      "carbs": 87,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Live Mas Cafe; size in item name)"
+    },
+    {
+      "id": "nutritionix-809261",
+      "name": "Strawberry Matcha Chiller (20 oz)",
+      "calories": 780,
+      "protein": 10,
+      "carbs": 117,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Live Mas Cafe; size in item name)"
+    },
+    {
+      "id": "nutritionix-829821",
+      "name": "Strawberry Passionfruit Agua Refresca",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 43,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Live Mas Cafe; size in item name)"
+    },
+    {
+      "id": "nutritionix-829822",
+      "name": "Strawberry Passionfruit Limonada",
+      "calories": 210,
+      "protein": 0,
+      "carbs": 56,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Live Mas Cafe; size in item name)"
+    },
+    {
+      "id": "nutritionix-829827",
+      "name": "Tropical Punch Rockstar Refresca",
+      "calories": 80,
+      "protein": 0,
+      "carbs": 20,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Live Mas Cafe; size in item name)"
+    },
+    {
+      "id": "nutritionix-1112303",
+      "name": "Vanilla Cream Cold Brew (16 oz)",
+      "calories": 90,
+      "protein": 1,
+      "carbs": 7,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Live Mas Cafe; size in item name)"
+    },
+    {
+      "id": "nutritionix-1112304",
+      "name": "Vanilla Cream Cold Brew (20 oz)",
+      "calories": 140,
+      "protein": 1,
+      "carbs": 10,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Live Mas Cafe; size in item name)"
+    },
+    {
+      "id": "nutritionix-646644",
+      "name": "Vanilla Crema Coffee - Hot",
+      "calories": 110,
+      "protein": 2,
+      "carbs": 21,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Live Mas Cafe; size in item name)"
+    },
+    {
+      "id": "nutritionix-809257",
+      "name": "Vanilla Crema Coffee - Iced (16 oz)",
+      "calories": 240,
+      "protein": 3,
+      "carbs": 31,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Live Mas Cafe; size in item name)"
+    },
+    {
+      "id": "nutritionix-809258",
+      "name": "Vanilla Crema Coffee - Iced (20 oz)",
+      "calories": 250,
+      "protein": 3,
+      "carbs": 32,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Live Mas Cafe; size in item name)"
+    },
+    {
+      "id": "nutritionix-809251",
+      "name": "Vanilla Crema Latte Chiller (16 oz)",
+      "calories": 430,
+      "protein": 6,
+      "carbs": 59,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Live Mas Cafe; size in item name)"
+    },
+    {
+      "id": "nutritionix-809252",
+      "name": "Vanilla Crema Latte Chiller (20 oz)",
+      "calories": 580,
+      "protein": 9,
+      "carbs": 77,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Live Mas Cafe; size in item name)"
+    },
+    {
+      "id": "nutritionix-809245",
+      "name": "Wild Strawberry Churro Chiller (16 oz)",
+      "calories": 510,
+      "protein": 7,
+      "carbs": 77,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Live Mas Cafe; size in item name)"
+    },
+    {
+      "id": "nutritionix-809246",
+      "name": "Wild Strawberry Churro Chiller (20 oz)",
+      "calories": 680,
+      "protein": 10,
+      "carbs": 102,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Live Mas Cafe; size in item name)"
+    },
+    {
+      "id": "nutritionix-467398",
+      "name": "3-Cheese Chicken Flatbread Melt - Value Menu",
+      "calories": 320,
+      "protein": 20,
+      "carbs": 30,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Luxe Value Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-964760",
+      "name": "Avocado Ranch Chicken Stacker",
+      "calories": 350,
+      "protein": 16,
+      "carbs": 40,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Luxe Value Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-829438",
+      "name": "Beefy Potato Loaded Griller",
+      "calories": 480,
+      "protein": 12,
+      "carbs": 56,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Luxe Value Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-167052",
+      "name": "Cheesy Bean & Rice Burrito - Value Menu",
+      "calories": 400,
+      "protein": 9,
+      "carbs": 56,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Luxe Value Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-467400",
+      "name": "Cheesy Double Beef Burrito - Value Menu",
+      "calories": 560,
+      "protein": 20,
+      "carbs": 64,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Luxe Value Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-360534",
+      "name": "Cheesy Fiesta Potatoes - Value Menu",
+      "calories": 240,
+      "protein": 3,
+      "carbs": 29,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Luxe Value Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-167051",
+      "name": "Cheesy Roll Up - Value Menu",
+      "calories": 170,
+      "protein": 8,
+      "carbs": 18,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Luxe Value Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-467399",
+      "name": "Chicken Enchilada Burrito - Value Menu",
+      "calories": 370,
+      "protein": 18,
+      "carbs": 50,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Luxe Value Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-829440",
+      "name": "Chips and Nacho Supreme Dip",
+      "calories": 360,
+      "protein": 10,
+      "carbs": 37,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Luxe Value Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-467397",
+      "name": "Double Stacked Taco - Value Menu",
+      "calories": 320,
+      "protein": 10,
+      "carbs": 34,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Luxe Value Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-467401",
+      "name": "Loaded Beef Nachos - Value Menu",
+      "calories": 440,
+      "protein": 12,
+      "carbs": 45,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Luxe Value Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-829439",
+      "name": "Mini Taco Salad",
+      "calories": 280,
+      "protein": 9,
+      "carbs": 27,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Luxe Value Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-167055",
+      "name": "Spicy Potato Soft Taco - Value Menu",
+      "calories": 240,
+      "protein": 5,
+      "carbs": 28,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Luxe Value Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-166716",
+      "name": "Bean Burrito",
+      "calories": 360,
+      "protein": 13,
+      "carbs": 54,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Veggie Cravings; size in item name)"
+    },
+    {
+      "id": "nutritionix-313269",
+      "name": "Black Bean Chalupa Supreme",
+      "calories": 340,
+      "protein": 10,
+      "carbs": 36,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Veggie Cravings; size in item name)"
+    },
+    {
+      "id": "nutritionix-275133",
+      "name": "Black Bean Crunchwrap Supreme",
+      "calories": 520,
+      "protein": 13,
+      "carbs": 78,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Veggie Cravings; size in item name)"
+    },
+    {
+      "id": "nutritionix-166945",
+      "name": "Black Beans",
+      "calories": 50,
+      "protein": 3,
+      "carbs": 7,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Veggie Cravings; size in item name)"
+    },
+    {
+      "id": "nutritionix-166722",
+      "name": "Black Beans & Rice",
+      "calories": 160,
+      "protein": 4,
+      "carbs": 25,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Veggie Cravings; size in item name)"
+    },
+    {
+      "id": "nutritionix-166742",
+      "name": "Cheese Quesadilla",
+      "calories": 440,
+      "protein": 18,
+      "carbs": 43,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Veggie Cravings; size in item name)"
+    },
+    {
+      "id": "nutritionix-166744",
+      "name": "Cheesy Bean & Rice Burrito",
+      "calories": 400,
+      "protein": 9,
+      "carbs": 56,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Veggie Cravings; size in item name)"
+    },
+    {
+      "id": "nutritionix-360540",
+      "name": "Cheesy Fiesta Potatoes",
+      "calories": 240,
+      "protein": 3,
+      "carbs": 29,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Veggie Cravings; size in item name)"
+    },
+    {
+      "id": "nutritionix-166743",
+      "name": "Cheesy Roll Up",
+      "calories": 170,
+      "protein": 8,
+      "carbs": 18,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Veggie Cravings; size in item name)"
+    },
+    {
+      "id": "nutritionix-354896",
+      "name": "Chips and Nacho Cheese Sauce",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 24,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Veggie Cravings; size in item name)"
+    },
+    {
+      "id": "nutritionix-166766",
+      "name": "Cinnabon Delights (2 Pack)",
+      "calories": 170,
+      "protein": 2,
+      "carbs": 15,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Veggie Cravings; size in item name)"
+    },
+    {
+      "id": "nutritionix-166765",
+      "name": "Cinnabon Delights (12 Pack - Serves 4)",
+      "calories": 1010,
+      "protein": 11,
+      "carbs": 88,
+      "fat": 68,
+      "servingLabel": "1 listed serving (Veggie Cravings; size in item name)"
+    },
+    {
+      "id": "nutritionix-354895",
+      "name": "Cinnamon Twists",
+      "calories": 170,
+      "protein": 2,
+      "carbs": 27,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Veggie Cravings; size in item name)"
+    },
+    {
+      "id": "nutritionix-166950",
+      "name": "Hash Brown",
+      "calories": 170,
+      "protein": 2,
+      "carbs": 14,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Veggie Cravings; size in item name)"
+    },
+    {
+      "id": "nutritionix-166816",
+      "name": "Pintos N Cheese",
+      "calories": 170,
+      "protein": 9,
+      "carbs": 19,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Veggie Cravings; size in item name)"
+    },
+    {
+      "id": "nutritionix-166840",
+      "name": "Spicy Potato Soft Taco",
+      "calories": 240,
+      "protein": 5,
+      "carbs": 28,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Veggie Cravings; size in item name)"
+    },
+    {
+      "id": "nutritionix-166734",
+      "name": "Veggie Bowl",
+      "calories": 510,
+      "protein": 13,
+      "carbs": 60,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Veggie Cravings; size in item name)"
+    },
+    {
+      "id": "nutritionix-467404",
+      "name": "Veggie Mexican Pizza",
+      "calories": 460,
+      "protein": 14,
+      "carbs": 48,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Veggie Cravings; size in item name)"
+    },
+    {
+      "id": "nutritionix-166712",
+      "name": "Breakfast California Crunchwrap - Bacon",
+      "calories": 640,
+      "protein": 21,
+      "carbs": 54,
+      "fat": 37,
+      "servingLabel": "1 listed serving (Breakfast (Regional); size in item name)"
+    },
+    {
+      "id": "nutritionix-380011",
+      "name": "Breakfast California Crunchwrap - Sausage",
+      "calories": 700,
+      "protein": 20,
+      "carbs": 54,
+      "fat": 44,
+      "servingLabel": "1 listed serving (Breakfast (Regional); size in item name)"
+    },
+    {
+      "id": "nutritionix-166711",
+      "name": "Breakfast Crunchwrap - Bacon",
+      "calories": 660,
+      "protein": 21,
+      "carbs": 54,
+      "fat": 40,
+      "servingLabel": "1 listed serving (Breakfast (Regional); size in item name)"
+    },
+    {
+      "id": "nutritionix-420115",
+      "name": "Breakfast Crunchwrap - Sausage Patty",
+      "calories": 740,
+      "protein": 21,
+      "carbs": 55,
+      "fat": 49,
+      "servingLabel": "1 listed serving (Breakfast (Regional); size in item name)"
+    },
+    {
+      "id": "nutritionix-166715",
+      "name": "Breakfast Crunchwrap - Steak",
+      "calories": 650,
+      "protein": 24,
+      "carbs": 55,
+      "fat": 38,
+      "servingLabel": "1 listed serving (Breakfast (Regional); size in item name)"
+    },
+    {
+      "id": "nutritionix-208069",
+      "name": "Breakfast Quesadilla - Bacon",
+      "calories": 500,
+      "protein": 25,
+      "carbs": 42,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Breakfast (Regional); size in item name)"
+    },
+    {
+      "id": "nutritionix-208070",
+      "name": "Breakfast Quesadilla - Sausage",
+      "calories": 500,
+      "protein": 23,
+      "carbs": 42,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Breakfast (Regional); size in item name)"
+    },
+    {
+      "id": "nutritionix-208071",
+      "name": "Breakfast Quesadilla - Steak",
+      "calories": 500,
+      "protein": 28,
+      "carbs": 43,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Breakfast (Regional); size in item name)"
+    },
+    {
+      "id": "nutritionix-282320",
+      "name": "Cheesy Toasted Breakfast Burrito - Bacon",
+      "calories": 350,
+      "protein": 13,
+      "carbs": 38,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Breakfast (Regional); size in item name)"
+    },
+    {
+      "id": "nutritionix-282321",
+      "name": "Cheesy Toasted Breakfast Burrito - Fiesta Potato (V)",
+      "calories": 340,
+      "protein": 9,
+      "carbs": 44,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Breakfast (Regional); size in item name)"
+    },
+    {
+      "id": "nutritionix-282319",
+      "name": "Cheesy Toasted Breakfast Burrito - Sausage",
+      "calories": 350,
+      "protein": 10,
+      "carbs": 38,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Breakfast (Regional); size in item name)"
+    },
+    {
+      "id": "nutritionix-354898",
+      "name": "Cinnabon Delights (2 Pack) (V)",
+      "calories": 170,
+      "protein": 2,
+      "carbs": 15,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Breakfast (Regional); size in item name)"
+    },
+    {
+      "id": "nutritionix-354899",
+      "name": "Cinnabon Delights (12 Pack - Serves 4) (V)",
+      "calories": 1010,
+      "protein": 11,
+      "carbs": 88,
+      "fat": 68,
+      "servingLabel": "1 listed serving (Breakfast (Regional); size in item name)"
+    },
+    {
+      "id": "nutritionix-282326",
+      "name": "Grande Toasted Breakfast Burrito - Bacon",
+      "calories": 570,
+      "protein": 23,
+      "carbs": 52,
+      "fat": 29,
+      "servingLabel": "1 listed serving (Breakfast (Regional); size in item name)"
+    },
+    {
+      "id": "nutritionix-282327",
+      "name": "Grande Toasted Breakfast Burrito - Sausage",
+      "calories": 570,
+      "protein": 21,
+      "carbs": 52,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Breakfast (Regional); size in item name)"
+    },
+    {
+      "id": "nutritionix-282325",
+      "name": "Grande Toasted Breakfast Burrito - Steak",
+      "calories": 560,
+      "protein": 26,
+      "carbs": 53,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Breakfast (Regional); size in item name)"
+    },
+    {
+      "id": "nutritionix-354897",
+      "name": "Hash Brown (V)",
+      "calories": 170,
+      "protein": 2,
+      "carbs": 14,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Breakfast (Regional); size in item name)"
+    },
+    {
+      "id": "nutritionix-282322",
+      "name": "Hash Brown Toasted Breakfast Burrito - Bacon",
+      "calories": 580,
+      "protein": 20,
+      "carbs": 53,
+      "fat": 31,
+      "servingLabel": "1 listed serving (Breakfast (Regional); size in item name)"
+    },
+    {
+      "id": "nutritionix-282323",
+      "name": "Hash Brown Toasted Breakfast Burrito - Sausage",
+      "calories": 580,
+      "protein": 18,
+      "carbs": 53,
+      "fat": 32,
+      "servingLabel": "1 listed serving (Breakfast (Regional); size in item name)"
+    },
+    {
+      "id": "nutritionix-282324",
+      "name": "Hash Brown Toasted Breakfast Burrito - Steak",
+      "calories": 570,
+      "protein": 24,
+      "carbs": 54,
+      "fat": 29,
+      "servingLabel": "1 listed serving (Breakfast (Regional); size in item name)"
+    },
+    {
+      "id": "nutritionix-388308",
+      "name": "Vanilla Creamer",
+      "calories": 20,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Breakfast (Regional); size in item name)"
+    },
+    {
+      "id": "nutritionix-388823",
+      "name": "Mad Tasty Grapefruit Sparkling Water",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-388821",
+      "name": "Mad Tasty Unicorn Tears Sparkling Water",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-388822",
+      "name": "Mad Tasty Watermelon Kiwi Sparkling Water",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-388820",
+      "name": "Mad Tasty Yuzu Citrus Sparkling Water",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-216629",
+      "name": "Prosecco Sparkling Wine (350 mL)",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 9,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-216684",
+      "name": "Red Wine (6.3 fl oz)",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-216631",
+      "name": "Rum (80 proof)",
+      "calories": 70,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-216632",
+      "name": "Tequila (80 proof)",
+      "calories": 70,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-216630",
+      "name": "Vodka (80 proof)",
+      "calories": 70,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-363358",
+      "name": "Anchor Steam (16 oz)",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-381771",
+      "name": "Angel Island IPA (12 oz)",
+      "calories": 190,
+      "protein": 1,
+      "carbs": 14,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-381772",
+      "name": "Angel Island IPA (16 oz)",
+      "calories": 250,
+      "protein": 2,
+      "carbs": 19,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-363359",
+      "name": "Angry Orchard (16 oz)",
+      "calories": 260,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-390524",
+      "name": "Angry Orchard - Crisp Apple (12 oz)",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 25,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-390525",
+      "name": "Angry Orchard - Crisp Apple (16 oz)",
+      "calories": 260,
+      "protein": 0,
+      "carbs": 33,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-275167",
+      "name": "Barrio Blonde (12 oz)",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 10,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-275168",
+      "name": "Barrio Blonde (16 oz)",
+      "calories": 210,
+      "protein": 0,
+      "carbs": 13,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-273297",
+      "name": "Beach Bell Beer (12 oz)",
+      "calories": 180,
+      "protein": 0,
+      "carbs": 14,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-273298",
+      "name": "Beach Bell Beer (16 oz)",
+      "calories": 240,
+      "protein": 0,
+      "carbs": 19,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270780",
+      "name": "Beer - General (12 oz)",
+      "calories": 150,
+      "protein": 2,
+      "carbs": 13,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270822",
+      "name": "Beer - General (16 oz)",
+      "calories": 200,
+      "protein": 2,
+      "carbs": 17,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-388816",
+      "name": "Bell's Two Hearted Ale (12 oz)",
+      "calories": 210,
+      "protein": 0,
+      "carbs": 17,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-388817",
+      "name": "Bell's Two Hearted Ale (16 oz)",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 22,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-275220",
+      "name": "Bell Tower Cerveza (12 oz)",
+      "calories": 110,
+      "protein": 2,
+      "carbs": 11,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-275221",
+      "name": "Bell Tower Cerveza (16 oz)",
+      "calories": 140,
+      "protein": 2,
+      "carbs": 15,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-390522",
+      "name": "Black Abbey - The Rose (12 oz)",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 12,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-390523",
+      "name": "Black Abbey - The Rose (16 oz)",
+      "calories": 220,
+      "protein": 0,
+      "carbs": 17,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270740",
+      "name": "Blue Moon Belgian White (12 oz)",
+      "calories": 170,
+      "protein": 2,
+      "carbs": 14,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270782",
+      "name": "Blue Moon Belgian White (16 oz)",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 19,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-427270",
+      "name": "Blue Moon Belgian White (24 oz)",
+      "calories": 340,
+      "protein": 4,
+      "carbs": 28,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-420794",
+      "name": "Blue Moon Belgian White Bottle (12 oz)",
+      "calories": 170,
+      "protein": 2,
+      "carbs": 14,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-388810",
+      "name": "Blue Moon Mango Wheat (12 oz)",
+      "calories": 180,
+      "protein": 2,
+      "carbs": 16,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-388811",
+      "name": "Blue Moon Mango Wheat (16 oz)",
+      "calories": 230,
+      "protein": 3,
+      "carbs": 21,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270741",
+      "name": "Blue Point Big City Bells Pilsner (12 oz)",
+      "calories": 160,
+      "protein": 2,
+      "carbs": 10,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270783",
+      "name": "Blue Point Big City Bells Pilsner (16 oz)",
+      "calories": 210,
+      "protein": 2,
+      "carbs": 14,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-273380",
+      "name": "Blue Point Hoptical Illusion IPA (12 oz)",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 18,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-273381",
+      "name": "Blue Point Hoptical Illusion IPA (16 oz)",
+      "calories": 290,
+      "protein": 4,
+      "carbs": 24,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270742",
+      "name": "Blue Point Toasted Lager (12 oz)",
+      "calories": 150,
+      "protein": 2,
+      "carbs": 15,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270784",
+      "name": "Blue Point Toasted Lager (16 oz)",
+      "calories": 200,
+      "protein": 3,
+      "carbs": 20,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-390520",
+      "name": "Boulevard Cherry Blossom and Lime (12 oz)",
+      "calories": 90,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-390521",
+      "name": "Boulevard Cherry Blossom and Lime (16 oz)",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-390518",
+      "name": "Boulevard Space Camper Cosmic IPA (12 oz)",
+      "calories": 180,
+      "protein": 0,
+      "carbs": 14,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-390519",
+      "name": "Boulevard Space Camper Cosmic IPA (16 oz)",
+      "calories": 230,
+      "protein": 0,
+      "carbs": 19,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-390514",
+      "name": "Boulevard Unfiltered Wheat Beer (12 oz)",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 15,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-390515",
+      "name": "Boulevard Unfiltered Wheat Beer (16 oz)",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 20,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-390516",
+      "name": "Boulevard Unfiltered Wheat Beer 100 (12 oz)",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-390517",
+      "name": "Boulevard Unfiltered Wheat Beer 100 (16 oz)",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 7,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-392203",
+      "name": "Breaking Bud (12 oz)",
+      "calories": 180,
+      "protein": 2,
+      "carbs": 11,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-392204",
+      "name": "Breaking Bud (16 oz)",
+      "calories": 240,
+      "protein": 3,
+      "carbs": 15,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-280704",
+      "name": "Brooklyn Lager (12 oz)",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 13,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-280705",
+      "name": "Brooklyn Lager (16 oz)",
+      "calories": 230,
+      "protein": 0,
+      "carbs": 18,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270786",
+      "name": "Bud Light (16 oz)",
+      "calories": 150,
+      "protein": 1,
+      "carbs": 9,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270745",
+      "name": "Budweiser (12 oz)",
+      "calories": 150,
+      "protein": 1,
+      "carbs": 11,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270787",
+      "name": "Budweiser (16 oz)",
+      "calories": 190,
+      "protein": 2,
+      "carbs": 14,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-420791",
+      "name": "Budweiser Bottle (16 oz)",
+      "calories": 180,
+      "protein": 2,
+      "carbs": 14,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-388818",
+      "name": "Calicraft Coast (12 oz)",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 11,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-388819",
+      "name": "Calicraft Coast (16 oz)",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 15,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-347647",
+      "name": "Captain Lawrence Hop Commander (12 oz)",
+      "calories": 200,
+      "protein": 2,
+      "carbs": 15,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-363360",
+      "name": "Cool Kidz IPA (16 oz)",
+      "calories": 220,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270747",
+      "name": "Coors (Coors Banquet) (12 oz)",
+      "calories": 150,
+      "protein": 1,
+      "carbs": 12,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270789",
+      "name": "Coors (Coors Banquet) (16 oz)",
+      "calories": 200,
+      "protein": 1,
+      "carbs": 16,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270746",
+      "name": "Coors Light (12 oz)",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270788",
+      "name": "Coors Light (16 oz)",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 7,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-427271",
+      "name": "Coors Light (24 oz)",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 10,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-275218",
+      "name": "Copperhead Red (12 oz)",
+      "calories": 180,
+      "protein": 2,
+      "carbs": 19,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-275219",
+      "name": "Copperhead Red (16 oz)",
+      "calories": 240,
+      "protein": 3,
+      "carbs": 25,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270749",
+      "name": "Corona Extra (12 oz)",
+      "calories": 150,
+      "protein": 1,
+      "carbs": 14,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270791",
+      "name": "Corona Extra (16 oz)",
+      "calories": 200,
+      "protein": 2,
+      "carbs": 19,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-279955",
+      "name": "Corona Light (16 oz)",
+      "calories": 130,
+      "protein": 1,
+      "carbs": 7,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-276277",
+      "name": "Corona Premier (12 oz)",
+      "calories": 90,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-280004",
+      "name": "Dos Equis Lager Especial (12 oz)",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 11,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-280005",
+      "name": "Dos Equis Lager Especial (16 oz)",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 15,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270750",
+      "name": "Dos Equis Mexican Pale Ale (12 oz)",
+      "calories": 180,
+      "protein": 2,
+      "carbs": 15,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270792",
+      "name": "Dos Equis Mexican Pale Ale (16 oz)",
+      "calories": 230,
+      "protein": 3,
+      "carbs": 20,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-427272",
+      "name": "Elysian Space Dust IPA (16 oz)",
+      "calories": 310,
+      "protein": 3,
+      "carbs": 15,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-430118",
+      "name": "Elysian Space Dust IPA (24 oz)",
+      "calories": 470,
+      "protein": 5,
+      "carbs": 23,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-388826",
+      "name": "Estrella Jalisco (12 oz)",
+      "calories": 190,
+      "protein": 1,
+      "carbs": 14,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-388827",
+      "name": "Estrella Jalisco (16 oz)",
+      "calories": 250,
+      "protein": 1,
+      "carbs": 19,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-275216",
+      "name": "Fair Winds Howling Gail (12 oz)",
+      "calories": 220,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-275217",
+      "name": "Fair Winds Howling Gail (16 oz)",
+      "calories": 300,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-273382",
+      "name": "Fat Tire Amber Ale (12 oz)",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-273383",
+      "name": "Fat Tire Amber Ale (16 oz)",
+      "calories": 210,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270751",
+      "name": "Firestone 805 (12 oz)",
+      "calories": 150,
+      "protein": 2,
+      "carbs": 14,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270793",
+      "name": "Firestone 805 (16 oz)",
+      "calories": 200,
+      "protein": 2,
+      "carbs": 18,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-427267",
+      "name": "Firestone 805 (24 oz)",
+      "calories": 300,
+      "protein": 3,
+      "carbs": 27,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-422228",
+      "name": "Flybird Lime Margarita",
+      "calories": 190,
+      "protein": 0,
+      "carbs": 15,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-422231",
+      "name": "Flybird Lime Margarita (Can)",
+      "calories": 240,
+      "protein": 0,
+      "carbs": 25,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-422227",
+      "name": "Flybird Mangonada",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 13,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-422226",
+      "name": "Flybird Mojito",
+      "calories": 190,
+      "protein": 0,
+      "carbs": 16,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-422225",
+      "name": "Flybird Pina Colada",
+      "calories": 190,
+      "protein": 0,
+      "carbs": 16,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-422224",
+      "name": "Flybird Prickly Pear Margarita",
+      "calories": 190,
+      "protein": 0,
+      "carbs": 15,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-422229",
+      "name": "Flybird Strawberry Margarita",
+      "calories": 190,
+      "protein": 0,
+      "carbs": 17,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-422230",
+      "name": "Flybird Strawberry Margarita (Can)",
+      "calories": 250,
+      "protein": 0,
+      "carbs": 27,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-273384",
+      "name": "Four Peaks Kilt Lifter (12 oz)",
+      "calories": 180,
+      "protein": 2,
+      "carbs": 14,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-273385",
+      "name": "Four Peaks Kilt Lifter (16 oz)",
+      "calories": 240,
+      "protein": 3,
+      "carbs": 19,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-390250",
+      "name": "Goose Island IPA (12 oz)",
+      "calories": 190,
+      "protein": 2,
+      "carbs": 15,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-390251",
+      "name": "Goose Island IPA (16 oz)",
+      "calories": 250,
+      "protein": 3,
+      "carbs": 20,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-397806",
+      "name": "Hard Mtn Dew - Baja Blast (12 oz)",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-397807",
+      "name": "Hard Mtn Dew - Baja Blast (24 oz)",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-397804",
+      "name": "Hard Mtn Dew - Black Cherry (12 oz)",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-397805",
+      "name": "Hard Mtn Dew - Black Cherry (24 oz)",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-397802",
+      "name": "Hard Mtn Dew - Original (12 oz)",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-397803",
+      "name": "Hard Mtn Dew - Original (24 oz)",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-397808",
+      "name": "Hard Mtn Dew - Watermelon (12 oz)",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-397809",
+      "name": "Hard Mtn Dew - Watermelon (24 oz)",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-389931",
+      "name": "Harpoon IPA (12 oz)",
+      "calories": 180,
+      "protein": 2,
+      "carbs": 14,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-389932",
+      "name": "Harpoon IPA (16 oz)",
+      "calories": 240,
+      "protein": 3,
+      "carbs": 18,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270753",
+      "name": "Heineken (12 oz)",
+      "calories": 140,
+      "protein": 2,
+      "carbs": 11,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270795",
+      "name": "Heineken (16 oz)",
+      "calories": 190,
+      "protein": 3,
+      "carbs": 15,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-388824",
+      "name": "Heineken 0.0 (12 oz)",
+      "calories": 70,
+      "protein": 1,
+      "carbs": 17,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-388825",
+      "name": "Heineken 0.0 (16 oz)",
+      "calories": 100,
+      "protein": 2,
+      "carbs": 23,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-420792",
+      "name": "Heineken Bottle (12 oz)",
+      "calories": 140,
+      "protein": 2,
+      "carbs": 11,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270754",
+      "name": "Heineken Light (12 oz)",
+      "calories": 100,
+      "protein": 1,
+      "carbs": 7,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270796",
+      "name": "Heineken Light (16 oz)",
+      "calories": 130,
+      "protein": 1,
+      "carbs": 9,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-312623",
+      "name": "Hop Commander IPA (12 oz)",
+      "calories": 210,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-312624",
+      "name": "Hop Commander IPA (16 oz)",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-392207",
+      "name": "Kansas City Dunkel (12 oz)",
+      "calories": 180,
+      "protein": 2,
+      "carbs": 13,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-392208",
+      "name": "Kansas City Dunkel (16 oz)",
+      "calories": 230,
+      "protein": 3,
+      "carbs": 18,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-392205",
+      "name": "Kansas City Helles (12 oz)",
+      "calories": 180,
+      "protein": 2,
+      "carbs": 12,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-392206",
+      "name": "Kansas City Helles (16 oz)",
+      "calories": 230,
+      "protein": 3,
+      "carbs": 16,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270756",
+      "name": "Kona Big Wave Golden Ale (12 oz)",
+      "calories": 130,
+      "protein": 1,
+      "carbs": 10,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270798",
+      "name": "Kona Big Wave Golden Ale (16 oz)",
+      "calories": 180,
+      "protein": 2,
+      "carbs": 13,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-273386",
+      "name": "Lagunitas IPA (12 oz)",
+      "calories": 190,
+      "protein": 3,
+      "carbs": 14,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-273387",
+      "name": "Lagunitas IPA (16 oz)",
+      "calories": 250,
+      "protein": 4,
+      "carbs": 19,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-275214",
+      "name": "Landshark Lager (12 oz)",
+      "calories": 150,
+      "protein": 1,
+      "carbs": 13,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-275215",
+      "name": "Landshark Lager (16 oz)",
+      "calories": 200,
+      "protein": 2,
+      "carbs": 18,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-474268",
+      "name": "Loose Cannon IPA (12 oz)",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 19,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-474269",
+      "name": "Loose Cannon IPA (16 oz)",
+      "calories": 290,
+      "protein": 4,
+      "carbs": 25,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270757",
+      "name": "Michelob Original Lager (12 oz)",
+      "calories": 160,
+      "protein": 2,
+      "carbs": 14,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270799",
+      "name": "Michelob Original Lager (16 oz)",
+      "calories": 210,
+      "protein": 3,
+      "carbs": 19,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-420793",
+      "name": "Michelob Ultra Bottle (16 oz)",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270760",
+      "name": "Miller Genuine Draft (12 oz)",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 12,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270802",
+      "name": "Miller Genuine Draft (16 oz)",
+      "calories": 190,
+      "protein": 0,
+      "carbs": 16,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270761",
+      "name": "Miller High Life (12 oz)",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 12,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270803",
+      "name": "Miller High Life (16 oz)",
+      "calories": 190,
+      "protein": 0,
+      "carbs": 16,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270759",
+      "name": "Miller Lite (12 oz)",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270801",
+      "name": "Miller Lite (16 oz)",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-384305",
+      "name": "Modelo Chelada (16 oz)",
+      "calories": 190,
+      "protein": 2,
+      "carbs": 24,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270762",
+      "name": "Modelo Especial (12 oz)",
+      "calories": 150,
+      "protein": 1,
+      "carbs": 14,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270804",
+      "name": "Modelo Especial (16 oz)",
+      "calories": 200,
+      "protein": 1,
+      "carbs": 19,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-427269",
+      "name": "Modelo Especial (24 oz)",
+      "calories": 300,
+      "protein": 2,
+      "carbs": 28,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270763",
+      "name": "Modelo Negra (12 oz)",
+      "calories": 180,
+      "protein": 2,
+      "carbs": 16,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270805",
+      "name": "Modelo Negra (16 oz)",
+      "calories": 240,
+      "protein": 2,
+      "carbs": 21,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270764",
+      "name": "Motorworks Intellectual Property IPA (12 oz)",
+      "calories": 220,
+      "protein": 4,
+      "carbs": 18,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270806",
+      "name": "Motorworks Intellectual Property IPA (16 oz)",
+      "calories": 290,
+      "protein": 5,
+      "carbs": 24,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270765",
+      "name": "Motorworks Pulp Fiction IPA (12 oz)",
+      "calories": 220,
+      "protein": 4,
+      "carbs": 18,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270807",
+      "name": "Motorworks Pulp Fiction IPA (16 oz)",
+      "calories": 300,
+      "protein": 5,
+      "carbs": 24,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270766",
+      "name": "Newcastle Brown Ale (12 oz)",
+      "calories": 130,
+      "protein": 1,
+      "carbs": 10,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270808",
+      "name": "Newcastle Brown Ale (16 oz)",
+      "calories": 170,
+      "protein": 1,
+      "carbs": 13,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-283906",
+      "name": "Old Elephant IPA (12 oz)",
+      "calories": 180,
+      "protein": 3,
+      "carbs": 17,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-283907",
+      "name": "Old Elephant IPA (16 oz)",
+      "calories": 230,
+      "protein": 4,
+      "carbs": 22,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-280036",
+      "name": "Pabst Blue Ribbon Original (12 oz)",
+      "calories": 140,
+      "protein": 1,
+      "carbs": 12,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-280037",
+      "name": "Pabst Blue Ribbon Original (16 oz)",
+      "calories": 190,
+      "protein": 2,
+      "carbs": 16,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-273299",
+      "name": "Pacifico (12 oz)",
+      "calories": 140,
+      "protein": 1,
+      "carbs": 14,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-273300",
+      "name": "Pacifico (16 oz)",
+      "calories": 190,
+      "protein": 1,
+      "carbs": 19,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-275169",
+      "name": "Revolution Anti Hero (12 oz)",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 20,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-275170",
+      "name": "Revolution Anti Hero (16 oz)",
+      "calories": 290,
+      "protein": 4,
+      "carbs": 27,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270767",
+      "name": "Road 2 Ruin Double IPA (12 oz)",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 14,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270809",
+      "name": "Road 2 Ruin Double IPA (16 oz)",
+      "calories": 290,
+      "protein": 4,
+      "carbs": 19,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-347648",
+      "name": "Samuel Adams '76 (12 oz)",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 8,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-273388",
+      "name": "Samuel Adams Winter Lager (12 oz)",
+      "calories": 190,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-273389",
+      "name": "Samuel Adams Winter Lager (16 oz)",
+      "calories": 260,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270768",
+      "name": "Sea Hag IPA (12 oz)",
+      "calories": 190,
+      "protein": 3,
+      "carbs": 15,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270810",
+      "name": "Sea Hag IPA (16 oz)",
+      "calories": 250,
+      "protein": 4,
+      "carbs": 20,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270769",
+      "name": "Shock Top Belgian White (12 oz)",
+      "calories": 170,
+      "protein": 2,
+      "carbs": 15,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270811",
+      "name": "Shock Top Belgian White (16 oz)",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 19,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-406517",
+      "name": "Sierra Nevada Hazy Little Thing IPA (12 oz)",
+      "calories": 210,
+      "protein": 2,
+      "carbs": 21,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-406518",
+      "name": "Sierra Nevada Hazy Little Thing IPA (16 oz)",
+      "calories": 290,
+      "protein": 3,
+      "carbs": 27,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-280006",
+      "name": "Sol Cervesa (12 oz)",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 12,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-280007",
+      "name": "Sol Cervesa (16 oz)",
+      "calories": 180,
+      "protein": 0,
+      "carbs": 15,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-363361",
+      "name": "St. Archer (16 oz)",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270770",
+      "name": "Stella Artois (12 oz)",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 11,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270812",
+      "name": "Stella Artois (16 oz)",
+      "calories": 190,
+      "protein": 0,
+      "carbs": 15,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-427268",
+      "name": "Stella Artois (24 oz)",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 22,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-280038",
+      "name": "Sweetwater 420 Extra Pale Ale (12 oz)",
+      "calories": 170,
+      "protein": 2,
+      "carbs": 13,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-280039",
+      "name": "Sweetwater 420 Extra Pale Ale (16 oz)",
+      "calories": 220,
+      "protein": 3,
+      "carbs": 17,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-384471",
+      "name": "Tampa Bay Reef Donkey (16 oz)",
+      "calories": 240,
+      "protein": 2,
+      "carbs": 14,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270771",
+      "name": "Tecate Light (12 oz)",
+      "calories": 110,
+      "protein": 1,
+      "carbs": 7,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270813",
+      "name": "Tecate Light (16 oz)",
+      "calories": 140,
+      "protein": 1,
+      "carbs": 9,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270772",
+      "name": "Tecate Original (12 oz)",
+      "calories": 140,
+      "protein": 1,
+      "carbs": 14,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270814",
+      "name": "Tecate Original (16 oz)",
+      "calories": 190,
+      "protein": 1,
+      "carbs": 19,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-280008",
+      "name": "Victoria (12 oz)",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 13,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-280009",
+      "name": "Victoria (16 oz)",
+      "calories": 180,
+      "protein": 0,
+      "carbs": 18,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-381769",
+      "name": "Voodoo Ranger Juicy Haze IPA (12 oz)",
+      "calories": 230,
+      "protein": 0,
+      "carbs": 16,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-381770",
+      "name": "Voodoo Ranger Juicy Haze IPA (16 oz)",
+      "calories": 310,
+      "protein": 0,
+      "carbs": 21,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-290648",
+      "name": "White Claw Hard Seltzer (12 oz)",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270776",
+      "name": "Yuengling - Black and Tan (12 oz)",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 15,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270818",
+      "name": "Yuengling - Black and Tan (16 oz)",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 20,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270775",
+      "name": "Yuengling - Golden Pilsner (12 oz)",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 9,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270817",
+      "name": "Yuengling - Golden Pilsner (16 oz)",
+      "calories": 180,
+      "protein": 0,
+      "carbs": 12,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270773",
+      "name": "Yuengling - Lager (12 oz)",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 12,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270815",
+      "name": "Yuengling - Lager (16 oz)",
+      "calories": 190,
+      "protein": 0,
+      "carbs": 16,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270774",
+      "name": "Yuengling - Light Lager (12 oz)",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 9,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270816",
+      "name": "Yuengling - Light Lager (16 oz)",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 12,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270779",
+      "name": "Yuengling - Porter (12 oz)",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 15,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270821",
+      "name": "Yuengling - Porter (16 oz)",
+      "calories": 220,
+      "protein": 0,
+      "carbs": 20,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270777",
+      "name": "Yuengling - Premium (12 oz)",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 12,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270819",
+      "name": "Yuengling - Premium (16 oz)",
+      "calories": 190,
+      "protein": 0,
+      "carbs": 16,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270778",
+      "name": "Yuengling - Premium Light (12 oz)",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 7,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-270820",
+      "name": "Yuengling - Premium Light (16 oz)",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 9,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Cantina Beer, Wine and Spirits; size in item name)"
+    },
+    {
+      "id": "nutritionix-216660",
+      "name": "Mtn Dew Baja Blast Freeze (32 oz)",
+      "calories": 310,
+      "protein": 0,
+      "carbs": 82,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Las Vegas Cantina Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-258041",
+      "name": "Red Sangria - LV",
+      "calories": 330,
+      "protein": 0,
+      "carbs": 28,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Las Vegas Cantina Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-216674",
+      "name": "Rum (80 proof) - Double - LV",
+      "calories": 250,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Las Vegas Cantina Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-216673",
+      "name": "Rum (80 proof) - Single - LV",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Las Vegas Cantina Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-216676",
+      "name": "Tequila (80 proof) - Double - LV",
+      "calories": 250,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Las Vegas Cantina Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-216675",
+      "name": "Tequila (80 proof) - Single - LV",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Las Vegas Cantina Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-216672",
+      "name": "Vodka (80 proof) - Double - LV",
+      "calories": 250,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Las Vegas Cantina Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-216671",
+      "name": "Vodka (80 proof) - Single - LV",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Las Vegas Cantina Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-216678",
+      "name": "Whiskey (80 proof) - Double - LV",
+      "calories": 250,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Las Vegas Cantina Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-216677",
+      "name": "Whiskey (80 proof) - Single - LV",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Las Vegas Cantina Menu; size in item name)"
+    },
+    {
+      "id": "nutritionix-1071287",
+      "name": "Brisk Dragon Paradise Sparkling Dirty Iced Tea (16 oz)",
+      "calories": 110,
+      "protein": 0,
+      "carbs": 26,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Dirty Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1071288",
+      "name": "Brisk Dragon Paradise Sparkling Dirty Iced Tea (20 oz)",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 29,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Dirty Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1071289",
+      "name": "Brisk Dragon Paradise Sparkling Dirty Iced Tea (30 oz)",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 39,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Dirty Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1071290",
+      "name": "Brisk Mango Fiesta Dirty Iced Tea (16 oz)",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 33,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Dirty Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1071291",
+      "name": "Brisk Mango Fiesta Dirty Iced Tea (20 oz)",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 39,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Dirty Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1071292",
+      "name": "Brisk Mango Fiesta Dirty Iced Tea (30 oz)",
+      "calories": 210,
+      "protein": 0,
+      "carbs": 54,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Dirty Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1071293",
+      "name": "Diet Dr Pepper Dirty Soda (16 oz)",
+      "calories": 45,
+      "protein": 0,
+      "carbs": 9,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Dirty Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1071294",
+      "name": "Diet Dr Pepper Dirty Soda (20 oz)",
+      "calories": 50,
+      "protein": 0,
+      "carbs": 9,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Dirty Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1071295",
+      "name": "Diet Dr Pepper Dirty Soda (30 oz)",
+      "calories": 50,
+      "protein": 0,
+      "carbs": 10,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Dirty Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1071296",
+      "name": "Diet Pepsi Dirty Soda (16 oz)",
+      "calories": 45,
+      "protein": 0,
+      "carbs": 9,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Dirty Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1071297",
+      "name": "Diet Pepsi Dirty Soda (20 oz)",
+      "calories": 45,
+      "protein": 0,
+      "carbs": 9,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Dirty Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1071298",
+      "name": "Diet Pepsi Dirty Soda (30 oz)",
+      "calories": 45,
+      "protein": 0,
+      "carbs": 9,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Dirty Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1071299",
+      "name": "Dr Pepper Dirty Soda (16 oz)",
+      "calories": 240,
+      "protein": 0,
+      "carbs": 61,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Dirty Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1071300",
+      "name": "Dr Pepper Dirty Soda (20 oz)",
+      "calories": 290,
+      "protein": 0,
+      "carbs": 74,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Dirty Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1071301",
+      "name": "Dr Pepper Dirty Soda (30 oz)",
+      "calories": 400,
+      "protein": 0,
+      "carbs": 107,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Dirty Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1071305",
+      "name": "Mtn Dew Baja Blast Dirty Soda (16 oz)",
+      "calories": 270,
+      "protein": 0,
+      "carbs": 68,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Dirty Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1071306",
+      "name": "Mtn Dew Baja Blast Dirty Soda (20 oz)",
+      "calories": 320,
+      "protein": 0,
+      "carbs": 83,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Dirty Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1071307",
+      "name": "Mtn Dew Baja Blast Dirty Soda (30 oz)",
+      "calories": 460,
+      "protein": 0,
+      "carbs": 120,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Dirty Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-651914",
+      "name": "Mtn Dew Baja Blast Dirty Soda Freeze (16 oz)",
+      "calories": 190,
+      "protein": 0,
+      "carbs": 48,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Dirty Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-651915",
+      "name": "Mtn Dew Baja Blast Dirty Soda Freeze (20 oz)",
+      "calories": 230,
+      "protein": 0,
+      "carbs": 59,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Dirty Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1071308",
+      "name": "Mtn Dew Baja Blast Zero Sugar Dirty Soda (16 oz)",
+      "calories": 50,
+      "protein": 0,
+      "carbs": 9,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Dirty Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1071309",
+      "name": "Mtn Dew Baja Blast Zero Sugar Dirty Soda (20 oz)",
+      "calories": 60,
+      "protein": 0,
+      "carbs": 9,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Dirty Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1071310",
+      "name": "Mtn Dew Baja Blast Zero Sugar Dirty Soda (30 oz)",
+      "calories": 60,
+      "protein": 0,
+      "carbs": 9,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Dirty Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1071311",
+      "name": "Mtn Dew Baja Midnight Dirty Soda (16 oz)",
+      "calories": 270,
+      "protein": 0,
+      "carbs": 68,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Dirty Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1071312",
+      "name": "Mtn Dew Baja Midnight Dirty Soda (20 oz)",
+      "calories": 330,
+      "protein": 0,
+      "carbs": 83,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Dirty Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1071313",
+      "name": "Mtn Dew Baja Midnight Dirty Soda (30 oz)",
+      "calories": 470,
+      "protein": 0,
+      "carbs": 120,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Dirty Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1071302",
+      "name": "Mtn Dew Dirty Soda (16 oz)",
+      "calories": 270,
+      "protein": 0,
+      "carbs": 68,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Dirty Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1071303",
+      "name": "Mtn Dew Dirty Soda (20 oz)",
+      "calories": 330,
+      "protein": 0,
+      "carbs": 82,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Dirty Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1071304",
+      "name": "Mtn Dew Dirty Soda (30 oz)",
+      "calories": 470,
+      "protein": 0,
+      "carbs": 119,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Dirty Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1071314",
+      "name": "Mtn Dew Zero Sugar Dirty Soda (16 oz)",
+      "calories": 50,
+      "protein": 0,
+      "carbs": 9,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Dirty Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1071315",
+      "name": "Mtn Dew Zero Sugar Dirty Soda (20 oz)",
+      "calories": 50,
+      "protein": 0,
+      "carbs": 10,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Dirty Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1071317",
+      "name": "Mug Root Beer Dirty Soda (16 oz)",
+      "calories": 240,
+      "protein": 0,
+      "carbs": 60,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Dirty Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1071318",
+      "name": "Mug Root Beer Dirty Soda (20 oz)",
+      "calories": 290,
+      "protein": 0,
+      "carbs": 73,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Dirty Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1071319",
+      "name": "Mug Root Beer Dirty Soda (30 oz)",
+      "calories": 410,
+      "protein": 0,
+      "carbs": 105,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Dirty Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1071320",
+      "name": "Pepsi Dirty Soda (16 oz)",
+      "calories": 250,
+      "protein": 0,
+      "carbs": 64,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Dirty Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1071321",
+      "name": "Pepsi Dirty Soda (20 oz)",
+      "calories": 300,
+      "protein": 0,
+      "carbs": 78,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Dirty Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1071322",
+      "name": "Pepsi Dirty Soda (30 oz)",
+      "calories": 430,
+      "protein": 0,
+      "carbs": 113,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Dirty Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1071323",
+      "name": "Pepsi Wild Cherry Dirty Soda (16 oz)",
+      "calories": 250,
+      "protein": 0,
+      "carbs": 65,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Dirty Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1071324",
+      "name": "Pepsi Wild Cherry Dirty Soda (20 oz)",
+      "calories": 310,
+      "protein": 0,
+      "carbs": 80,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Dirty Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1071325",
+      "name": "Pepsi Wild Cherry Dirty Soda (30 oz)",
+      "calories": 440,
+      "protein": 0,
+      "carbs": 115,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Dirty Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1071326",
+      "name": "Pepsi Zero Sugar Dirty Soda (16 oz)",
+      "calories": 50,
+      "protein": 0,
+      "carbs": 9,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Dirty Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1071327",
+      "name": "Pepsi Zero Sugar Dirty Soda (20 oz)",
+      "calories": 50,
+      "protein": 0,
+      "carbs": 9,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Dirty Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1071328",
+      "name": "Pepsi Zero Sugar Dirty Soda (30 oz)",
+      "calories": 50,
+      "protein": 0,
+      "carbs": 10,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Dirty Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1071329",
+      "name": "Starry Dirty Soda (16 oz)",
+      "calories": 240,
+      "protein": 0,
+      "carbs": 61,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Dirty Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1071330",
+      "name": "Starry Dirty Soda (20 oz)",
+      "calories": 290,
+      "protein": 0,
+      "carbs": 74,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Dirty Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1071331",
+      "name": "Starry Dirty Soda (30 oz)",
+      "calories": 410,
+      "protein": 0,
+      "carbs": 106,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Dirty Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1071332",
+      "name": "Tropicana Dirty Lemonade (16 oz)",
+      "calories": 110,
+      "protein": 0,
+      "carbs": 25,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Dirty Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1071333",
+      "name": "Tropicana Dirty Lemonade (20 oz)",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 30,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Dirty Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-1071334",
+      "name": "Tropicana Dirty Lemonade (30 oz)",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 40,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Dirty Sodas; size in item name)"
+    },
+    {
+      "id": "nutritionix-92844",
+      "name": "Brisk Dragon Paradise Sparkling Iced Tea (16 fl oz)",
+      "calories": 60,
+      "protein": 0,
+      "carbs": 17,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Beverages (16 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-33441",
+      "name": "Brisk Mango Iced Tea (16 fl oz)",
+      "calories": 90,
+      "protein": 0,
+      "carbs": 24,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Beverages (16 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-33492",
+      "name": "Diet Dr Pepper (16 fl oz)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Beverages (16 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-33443",
+      "name": "Diet Pepsi (16 fl oz)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Beverages (16 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-33444",
+      "name": "Dr Pepper (16 fl oz)",
+      "calories": 190,
+      "protein": 0,
+      "carbs": 52,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Beverages (16 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-33728",
+      "name": "G2 - Fruit Punch (16 fl oz)",
+      "calories": 45,
+      "protein": 0,
+      "carbs": 10,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Beverages (16 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-218354",
+      "name": "Lipton Unsweetened Iced Tea (16 fl oz)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Beverages (16 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-294882",
+      "name": "Midnight Mtn Dew Baja Blast (16 fl oz)",
+      "calories": 220,
+      "protein": 0,
+      "carbs": 59,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Beverages (16 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-33449",
+      "name": "Mtn Dew (16 fl oz)",
+      "calories": 220,
+      "protein": 0,
+      "carbs": 59,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Beverages (16 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-33450",
+      "name": "Mtn Dew Baja Blast (16 fl oz)",
+      "calories": 220,
+      "protein": 0,
+      "carbs": 59,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Beverages (16 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-44567",
+      "name": "Mtn Dew Baja Blast Zero Sugar (16 fl oz)",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Beverages (16 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-110585",
+      "name": "Mtn Dew Zero Sugar (16 fl oz)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Beverages (16 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-33453",
+      "name": "Mug Root Beer (16 fl oz)",
+      "calories": 190,
+      "protein": 0,
+      "carbs": 51,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Beverages (16 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-33454",
+      "name": "Pepsi (16 fl oz)",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 55,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Beverages (16 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-33455",
+      "name": "Pepsi Wild Cherry (16 fl oz)",
+      "calories": 210,
+      "protein": 0,
+      "carbs": 56,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Beverages (16 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-33711",
+      "name": "Pepsi Zero Sugar (16 fl oz)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Beverages (16 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-110589",
+      "name": "Starry (16 fl oz)",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 52,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Beverages (16 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-33720",
+      "name": "Tropicana Original Lemonade (16 oz)",
+      "calories": 70,
+      "protein": 0,
+      "carbs": 16,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Beverages (16 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-92845",
+      "name": "Brisk Dragon Paradise Sparkling Iced Tea (20 fl oz)",
+      "calories": 80,
+      "protein": 0,
+      "carbs": 20,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Beverages (20 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-33458",
+      "name": "Brisk Mango Iced Tea (20 fl oz)",
+      "calories": 110,
+      "protein": 0,
+      "carbs": 30,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Beverages (20 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-33493",
+      "name": "Diet Dr Pepper (20 fl oz)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Beverages (20 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-33460",
+      "name": "Diet Pepsi (20 fl oz)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Beverages (20 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-33461",
+      "name": "Dr Pepper (20 fl oz)",
+      "calories": 240,
+      "protein": 0,
+      "carbs": 65,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Beverages (20 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-33729",
+      "name": "G2 - Fruit Punch (20 fl oz)",
+      "calories": 50,
+      "protein": 0,
+      "carbs": 13,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Beverages (20 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-218355",
+      "name": "Lipton Unsweetened Iced Tea (20 fl oz)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Beverages (20 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-294883",
+      "name": "Midnight Mtn Dew Baja Blast (20 fl oz)",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 74,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Beverages (20 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-33466",
+      "name": "Mtn Dew (20 fl oz)",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 73,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Beverages (20 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-33467",
+      "name": "Mtn Dew Baja Blast (20 fl oz)",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 74,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Beverages (20 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-44568",
+      "name": "Mtn Dew Baja Blast Zero Sugar (20 fl oz)",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Beverages (20 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-110586",
+      "name": "Mtn Dew Zero Sugar (20 fl oz)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Beverages (20 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-33470",
+      "name": "Mug Root Beer (20 fl oz)",
+      "calories": 240,
+      "protein": 0,
+      "carbs": 64,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Beverages (20 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-33471",
+      "name": "Pepsi (20 fl oz)",
+      "calories": 250,
+      "protein": 0,
+      "carbs": 69,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Beverages (20 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-33472",
+      "name": "Pepsi Wild Cherry (20 fl oz)",
+      "calories": 260,
+      "protein": 0,
+      "carbs": 70,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Beverages (20 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-33712",
+      "name": "Pepsi Zero Sugar (20 fl oz)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Beverages (20 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-110590",
+      "name": "Starry (20 fl oz)",
+      "calories": 240,
+      "protein": 0,
+      "carbs": 65,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Beverages (20 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-33721",
+      "name": "Tropicana Original Lemonade (20 oz)",
+      "calories": 80,
+      "protein": 0,
+      "carbs": 21,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Beverages (20 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-92846",
+      "name": "Brisk Dragon Paradise Sparkling Iced Tea (30 fl oz)",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 30,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Beverages (30 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-33475",
+      "name": "Brisk Mango Iced Tea (30 fl oz)",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 45,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Beverages (30 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-33477",
+      "name": "Diet Pepsi (30 fl oz)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Beverages (30 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-33478",
+      "name": "Dr Pepper (30 fl oz)",
+      "calories": 360,
+      "protein": 0,
+      "carbs": 98,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Beverages (30 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-33730",
+      "name": "G2 - Fruit Punch (30 fl oz)",
+      "calories": 80,
+      "protein": 0,
+      "carbs": 19,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Beverages (30 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-218356",
+      "name": "Lipton Unsweetened Iced Tea (30 fl oz)",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Beverages (30 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-294884",
+      "name": "Midnight Mtn Dew Baja Blast (30 fl oz)",
+      "calories": 420,
+      "protein": 0,
+      "carbs": 111,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Beverages (30 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-33483",
+      "name": "Mtn Dew (30 fl oz)",
+      "calories": 420,
+      "protein": 0,
+      "carbs": 110,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Beverages (30 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-33484",
+      "name": "Mtn Dew Baja Blast (30 fl oz)",
+      "calories": 420,
+      "protein": 0,
+      "carbs": 111,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Beverages (30 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-44569",
+      "name": "Mtn Dew Baja Blast Zero Sugar (30 fl oz)",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Beverages (30 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-33488",
+      "name": "Mug Root Beer (30 fl oz)",
+      "calories": 360,
+      "protein": 0,
+      "carbs": 96,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Beverages (30 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-33489",
+      "name": "Pepsi (30 fl oz)",
+      "calories": 380,
+      "protein": 0,
+      "carbs": 103,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Beverages (30 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-33490",
+      "name": "Pepsi Wild Cherry (30 fl oz)",
+      "calories": 390,
+      "protein": 0,
+      "carbs": 106,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Beverages (30 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-110591",
+      "name": "Starry (30 fl oz)",
+      "calories": 370,
+      "protein": 0,
+      "carbs": 97,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Beverages (30 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-33722",
+      "name": "Tropicana Original Lemonade (30oz)",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 31,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Fountain Beverages (30 oz); size in item name)"
+    }
+  ],
+  "sourceDate": "2026-09-17"
+}

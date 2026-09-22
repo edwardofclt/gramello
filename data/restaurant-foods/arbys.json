@@ -1,0 +1,1238 @@
+{
+  "chain": "Arby's",
+  "sourceUrl": "https://assets.ctfassets.net/30q5w5l98nbx/7tnKsXR1Kif6Uc7NiDwDmn/f1032e4b9027b7e61be6a93a911c0bf2/Arbys_Nutritional_and_Allergen_SEPT_2026.pdf",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "id": "steak-nuggets-5-79-g",
+      "name": "Steak Nuggets (5)",
+      "calories": 140,
+      "protein": 20,
+      "carbs": 2,
+      "fat": 5,
+      "servingLabel": "79 g",
+      "servingGrams": 79
+    },
+    {
+      "id": "steak-nuggets-9-142-g",
+      "name": "Steak Nuggets (9)",
+      "calories": 240,
+      "protein": 36,
+      "carbs": 3,
+      "fat": 10,
+      "servingLabel": "142 g",
+      "servingGrams": 142
+    },
+    {
+      "id": "steak-n-mac-bowl-320-g",
+      "name": "Steak ‘n Mac Bowl",
+      "calories": 680,
+      "protein": 37,
+      "carbs": 47,
+      "fat": 38,
+      "servingLabel": "320 g",
+      "servingGrams": 320
+    },
+    {
+      "id": "steak-n-potato-bowl-307-g",
+      "name": "Steak ‘n Potato Bowl",
+      "calories": 770,
+      "protein": 26,
+      "carbs": 50,
+      "fat": 47,
+      "servingLabel": "307 g",
+      "servingGrams": 307
+    },
+    {
+      "id": "steak-nuggets-party-pack-676-g",
+      "name": "Steak Nuggets Party Pack",
+      "calories": 1620,
+      "protein": 92,
+      "carbs": 140,
+      "fat": 77,
+      "servingLabel": "676 g",
+      "servingGrams": 676
+    },
+    {
+      "id": "horsey-ranch-dipping-sauce-28-g",
+      "name": "Horsey Ranch Dipping Sauce",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 13,
+      "servingLabel": "28 g",
+      "servingGrams": 28
+    },
+    {
+      "id": "shirley-n-cream-small-223-g",
+      "name": "Shirley ‘n Cream – Small",
+      "calories": 170,
+      "protein": 2,
+      "carbs": 38,
+      "fat": 1.5,
+      "servingLabel": "223 g",
+      "servingGrams": 223
+    },
+    {
+      "id": "shirley-n-cream-medium-288-g",
+      "name": "Shirley ‘n Cream – Medium",
+      "calories": 210,
+      "protein": 2,
+      "carbs": 49,
+      "fat": 1.5,
+      "servingLabel": "288 g",
+      "servingGrams": 288
+    },
+    {
+      "id": "shirley-n-cream-large-458-g",
+      "name": "Shirley ‘n Cream – Large",
+      "calories": 300,
+      "protein": 2,
+      "carbs": 71,
+      "fat": 1.5,
+      "servingLabel": "458 g",
+      "servingGrams": 458
+    },
+    {
+      "id": "classic-shirley-temple-small-202-g",
+      "name": "Classic Shirley Temple – Small",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 31,
+      "fat": 0,
+      "servingLabel": "202 g",
+      "servingGrams": 202
+    },
+    {
+      "id": "classic-shirley-temple-medium-267-g",
+      "name": "Classic Shirley Temple – Medium",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 42,
+      "fat": 0,
+      "servingLabel": "267 g",
+      "servingGrams": 267
+    },
+    {
+      "id": "classic-shirley-temple-large-437-g",
+      "name": "Classic Shirley Temple – Large",
+      "calories": 250,
+      "protein": 0,
+      "carbs": 64,
+      "fat": 0,
+      "servingLabel": "437 g",
+      "servingGrams": 437
+    },
+    {
+      "id": "classic-shirley-temple-xl-585-g",
+      "name": "Classic Shirley Temple – XL",
+      "calories": 330,
+      "protein": 0,
+      "carbs": 84,
+      "fat": 0,
+      "servingLabel": "585 g",
+      "servingGrams": 585
+    },
+    {
+      "id": "peach-cobbler-roll-1-53-g",
+      "name": "Peach Cobbler Roll (1)",
+      "calories": 170,
+      "protein": 2,
+      "carbs": 23,
+      "fat": 8,
+      "servingLabel": "53 g",
+      "servingGrams": 53
+    },
+    {
+      "id": "peach-cobbler-roll-2-105-g",
+      "name": "Peach Cobbler Roll (2)",
+      "calories": 350,
+      "protein": 4,
+      "carbs": 46,
+      "fat": 16,
+      "servingLabel": "105 g",
+      "servingGrams": 105
+    },
+    {
+      "id": "mozzarella-sticks-2-97-g",
+      "name": "Mozzarella Sticks (2)",
+      "calories": 240,
+      "protein": 10,
+      "carbs": 23,
+      "fat": 12,
+      "servingLabel": "97 g",
+      "servingGrams": 97
+    },
+    {
+      "id": "classic-beef-n-cheddar-195-g",
+      "name": "Classic Beef ‘n Cheddar",
+      "calories": 450,
+      "protein": 23,
+      "carbs": 45,
+      "fat": 20,
+      "servingLabel": "195 g",
+      "servingGrams": 195
+    },
+    {
+      "id": "double-beef-n-cheddar-301-g",
+      "name": "Double Beef ‘n Cheddar",
+      "calories": 630,
+      "protein": 39,
+      "carbs": 48,
+      "fat": 32,
+      "servingLabel": "301 g",
+      "servingGrams": 301
+    },
+    {
+      "id": "half-pound-beef-n-cheddar-358-g",
+      "name": "Half Pound Beef ‘n Cheddar",
+      "calories": 740,
+      "protein": 49,
+      "carbs": 48,
+      "fat": 39,
+      "servingLabel": "358 g",
+      "servingGrams": 358
+    },
+    {
+      "id": "classic-roast-beef-154-g",
+      "name": "Classic Roast Beef",
+      "calories": 360,
+      "protein": 23,
+      "carbs": 37,
+      "fat": 14,
+      "servingLabel": "154 g",
+      "servingGrams": 154
+    },
+    {
+      "id": "double-roast-beef-239-g",
+      "name": "Double Roast Beef",
+      "calories": 510,
+      "protein": 38,
+      "carbs": 38,
+      "fat": 24,
+      "servingLabel": "239 g",
+      "servingGrams": 239
+    },
+    {
+      "id": "half-pound-roast-beef-295-g",
+      "name": "Half Pound Roast Beef",
+      "calories": 610,
+      "protein": 48,
+      "carbs": 38,
+      "fat": 30,
+      "servingLabel": "295 g",
+      "servingGrams": 295
+    },
+    {
+      "id": "arbys-sauce-adds-14-g",
+      "name": "Arby’s Sauce Adds",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 0,
+      "servingLabel": "14 g",
+      "servingGrams": 14
+    },
+    {
+      "id": "horsey-sauce-adds-14-g",
+      "name": "Horsey Sauce Adds",
+      "calories": 60,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 5,
+      "servingLabel": "14 g",
+      "servingGrams": 14
+    },
+    {
+      "id": "classic-french-dip-swiss-au-jus-324-g",
+      "name": "Classic French Dip & Swiss/Au Jus",
+      "calories": 530,
+      "protein": 34,
+      "carbs": 50,
+      "fat": 21,
+      "servingLabel": "324 g",
+      "servingGrams": 324
+    },
+    {
+      "id": "angus-cheesesteak-290-g",
+      "name": "Angus Cheesesteak",
+      "calories": 690,
+      "protein": 38,
+      "carbs": 61,
+      "fat": 34,
+      "servingLabel": "290 g",
+      "servingGrams": 290
+    },
+    {
+      "id": "angus-half-pound-cheesesteak-489-g",
+      "name": "Angus Half Pound Cheesesteak",
+      "calories": 1110,
+      "protein": 66,
+      "carbs": 72,
+      "fat": 63,
+      "servingLabel": "489 g",
+      "servingGrams": 489
+    },
+    {
+      "id": "crispy-chicken-240-g",
+      "name": "Crispy Chicken",
+      "calories": 530,
+      "protein": 24,
+      "carbs": 59,
+      "fat": 22,
+      "servingLabel": "240 g",
+      "servingGrams": 240
+    },
+    {
+      "id": "buffalo-chicken-228-g",
+      "name": "Buffalo Chicken",
+      "calories": 530,
+      "protein": 24,
+      "carbs": 59,
+      "fat": 22,
+      "servingLabel": "228 g",
+      "servingGrams": 228
+    },
+    {
+      "id": "chicken-bacon-swiss-272-g",
+      "name": "Chicken Bacon Swiss",
+      "calories": 650,
+      "protein": 35,
+      "carbs": 61,
+      "fat": 30,
+      "servingLabel": "272 g",
+      "servingGrams": 272
+    },
+    {
+      "id": "chicken-cordon-bleu-233-g",
+      "name": "Chicken Cordon Bleu",
+      "calories": 650,
+      "protein": 35,
+      "carbs": 59,
+      "fat": 30,
+      "servingLabel": "233 g",
+      "servingGrams": 233
+    },
+    {
+      "id": "chicken-tenders-3-129-g",
+      "name": "Chicken Tenders (3)",
+      "calories": 370,
+      "protein": 23,
+      "carbs": 28,
+      "fat": 18,
+      "servingLabel": "129 g",
+      "servingGrams": 129
+    },
+    {
+      "id": "chicken-tenders-5-215-g",
+      "name": "Chicken Tenders (5)",
+      "calories": 610,
+      "protein": 39,
+      "carbs": 47,
+      "fat": 30,
+      "servingLabel": "215 g",
+      "servingGrams": 215
+    },
+    {
+      "id": "bbq-dipping-sauce-adds-36-g",
+      "name": "BBQ Dipping Sauce Adds",
+      "calories": 70,
+      "protein": 0,
+      "carbs": 16,
+      "fat": 0,
+      "servingLabel": "36 g",
+      "servingGrams": 36
+    },
+    {
+      "id": "buffalo-dipping-sauce-adds-28-g",
+      "name": "Buffalo Dipping Sauce Adds",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 1,
+      "servingLabel": "28 g",
+      "servingGrams": 28
+    },
+    {
+      "id": "honey-mustard-dipping-sauce-adds-28-g",
+      "name": "Honey Mustard Dipping Sauce Adds",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 13,
+      "servingLabel": "28 g",
+      "servingGrams": 28
+    },
+    {
+      "id": "ranch-dipping-sauce-adds-28-g",
+      "name": "Ranch Dipping Sauce Adds",
+      "calories": 100,
+      "protein": 1,
+      "carbs": 1,
+      "fat": 10,
+      "servingLabel": "28 g",
+      "servingGrams": 28
+    },
+    {
+      "id": "greek-gyro-273-g",
+      "name": "Greek Gyro",
+      "calories": 700,
+      "protein": 23,
+      "carbs": 55,
+      "fat": 44,
+      "servingLabel": "273 g",
+      "servingGrams": 273
+    },
+    {
+      "id": "reuben-308-g",
+      "name": "Reuben",
+      "calories": 680,
+      "protein": 37,
+      "carbs": 62,
+      "fat": 31,
+      "servingLabel": "308 g",
+      "servingGrams": 308
+    },
+    {
+      "id": "turkey-ranch-bacon-sandwich-360-g",
+      "name": "Turkey Ranch & Bacon Sandwich",
+      "calories": 800,
+      "protein": 46,
+      "carbs": 79,
+      "fat": 34,
+      "servingLabel": "360 g",
+      "servingGrams": 360
+    },
+    {
+      "id": "ham-swiss-melt-167-g",
+      "name": "Ham & Swiss Melt",
+      "calories": 380,
+      "protein": 26,
+      "carbs": 40,
+      "fat": 13,
+      "servingLabel": "167 g",
+      "servingGrams": 167
+    },
+    {
+      "id": "curly-fries-medium-u-128-g",
+      "name": "Curly Fries – Medium u",
+      "calories": 410,
+      "protein": 5,
+      "carbs": 49,
+      "fat": 22,
+      "servingLabel": "128 g",
+      "servingGrams": 128
+    },
+    {
+      "id": "curly-fries-large-u-170-g",
+      "name": "Curly Fries – Large u",
+      "calories": 550,
+      "protein": 6,
+      "carbs": 65,
+      "fat": 29,
+      "servingLabel": "170 g",
+      "servingGrams": 170
+    },
+    {
+      "id": "curly-fries-xl-u-185-g",
+      "name": "Curly Fries – XL u",
+      "calories": 600,
+      "protein": 7,
+      "carbs": 71,
+      "fat": 32,
+      "servingLabel": "185 g",
+      "servingGrams": 185
+    },
+    {
+      "id": "crinkle-fries-medium-u-egg-milk-soy-wheat-fish-where-available-139-g",
+      "name": "Crinkle Fries – Medium u † Egg, Milk, Soy, Wheat, Fish (where available)",
+      "calories": 390,
+      "protein": 5,
+      "carbs": 49,
+      "fat": 19,
+      "servingLabel": "139 g",
+      "servingGrams": 139
+    },
+    {
+      "id": "crinkle-fries-large-u-egg-milk-soy-wheat-fish-where-available-190-g",
+      "name": "Crinkle Fries – Large u † Egg, Milk, Soy, Wheat, Fish (where available)",
+      "calories": 530,
+      "protein": 7,
+      "carbs": 68,
+      "fat": 26,
+      "servingLabel": "190 g",
+      "servingGrams": 190
+    },
+    {
+      "id": "crinkle-fries-xl-u-egg-milk-soy-wheat-fish-where-available-227-g",
+      "name": "Crinkle Fries –XL u † Egg, Milk, Soy, Wheat, Fish (where available)",
+      "calories": 630,
+      "protein": 8,
+      "carbs": 81,
+      "fat": 31,
+      "servingLabel": "227 g",
+      "servingGrams": 227
+    },
+    {
+      "id": "potato-cakes-3-egg-milk-soy-wheat-fish-where-available-150-g",
+      "name": "Potato Cakes (3) † Egg, Milk, Soy, Wheat, Fish (where available)",
+      "calories": 370,
+      "protein": 3,
+      "carbs": 35,
+      "fat": 21,
+      "servingLabel": "150 g",
+      "servingGrams": 150
+    },
+    {
+      "id": "potato-cakes-4-egg-milk-soy-wheat-fish-where-available-200-g",
+      "name": "Potato Cakes (4) † Egg, Milk, Soy, Wheat, Fish (where available)",
+      "calories": 490,
+      "protein": 4,
+      "carbs": 46,
+      "fat": 28,
+      "servingLabel": "200 g",
+      "servingGrams": 200
+    },
+    {
+      "id": "potato-cakes-5-egg-milk-soy-wheat-fish-where-available-250-g",
+      "name": "Potato Cakes (5) † Egg, Milk, Soy, Wheat, Fish (where available)",
+      "calories": 620,
+      "protein": 5,
+      "carbs": 58,
+      "fat": 35,
+      "servingLabel": "250 g",
+      "servingGrams": 250
+    },
+    {
+      "id": "ketchup-adds-9-g",
+      "name": "Ketchup Adds",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 0,
+      "servingLabel": "9 g",
+      "servingGrams": 9
+    },
+    {
+      "id": "cheddar-cheese-sauce-adds-43-g",
+      "name": "Cheddar Cheese Sauce Adds",
+      "calories": 50,
+      "protein": 1,
+      "carbs": 4,
+      "fat": 3.5,
+      "servingLabel": "43 g",
+      "servingGrams": 43
+    },
+    {
+      "id": "mozzarella-sticks-4-137-g",
+      "name": "Mozzarella Sticks (4)",
+      "calories": 440,
+      "protein": 19,
+      "carbs": 37,
+      "fat": 23,
+      "servingLabel": "137 g",
+      "servingGrams": 137
+    },
+    {
+      "id": "mozzarella-sticks-6-206-g",
+      "name": "Mozzarella Sticks (6)",
+      "calories": 650,
+      "protein": 29,
+      "carbs": 56,
+      "fat": 35,
+      "servingLabel": "206 g",
+      "servingGrams": 206
+    },
+    {
+      "id": "marinara-sauce-adds-28-g",
+      "name": "Marinara Sauce Adds",
+      "calories": 20,
+      "protein": 1,
+      "carbs": 4,
+      "fat": 0,
+      "servingLabel": "28 g",
+      "servingGrams": 28
+    },
+    {
+      "id": "jalapeno-bites-5-110-g",
+      "name": "Jalapeno Bites (5)",
+      "calories": 290,
+      "protein": 5,
+      "carbs": 31,
+      "fat": 17,
+      "servingLabel": "110 g",
+      "servingGrams": 110
+    },
+    {
+      "id": "jalapeno-bites-8-176-g",
+      "name": "Jalapeno Bites (8)",
+      "calories": 470,
+      "protein": 8,
+      "carbs": 50,
+      "fat": 27,
+      "servingLabel": "176 g",
+      "servingGrams": 176
+    },
+    {
+      "id": "bronco-berry-sauce-adds-28-g",
+      "name": "Bronco Berry Sauce Adds",
+      "calories": 60,
+      "protein": 0,
+      "carbs": 15,
+      "fat": 0,
+      "servingLabel": "28 g",
+      "servingGrams": 28
+    },
+    {
+      "id": "white-cheddar-mac-n-cheese-227-g",
+      "name": "White Cheddar Mac ‘n Cheese",
+      "calories": 470,
+      "protein": 17,
+      "carbs": 40,
+      "fat": 27,
+      "servingLabel": "227 g",
+      "servingGrams": 227
+    },
+    {
+      "id": "jamocha-shake-small-372-g",
+      "name": "Jamocha Shake – Small",
+      "calories": 540,
+      "protein": 12,
+      "carbs": 88,
+      "fat": 16,
+      "servingLabel": "372 g",
+      "servingGrams": 372
+    },
+    {
+      "id": "jamocha-shake-medium-490-g",
+      "name": "Jamocha Shake – Medium",
+      "calories": 700,
+      "protein": 15,
+      "carbs": 116,
+      "fat": 20,
+      "servingLabel": "490 g",
+      "servingGrams": 490
+    },
+    {
+      "id": "jamocha-shake-large-687-g",
+      "name": "Jamocha Shake – Large",
+      "calories": 980,
+      "protein": 22,
+      "carbs": 161,
+      "fat": 28,
+      "servingLabel": "687 g",
+      "servingGrams": 687
+    },
+    {
+      "id": "chocolate-shake-small-372-g",
+      "name": "Chocolate Shake – Small",
+      "calories": 540,
+      "protein": 12,
+      "carbs": 86,
+      "fat": 17,
+      "servingLabel": "372 g",
+      "servingGrams": 372
+    },
+    {
+      "id": "chocolate-shake-medium-490-g",
+      "name": "Chocolate Shake – Medium",
+      "calories": 700,
+      "protein": 16,
+      "carbs": 113,
+      "fat": 21,
+      "servingLabel": "490 g",
+      "servingGrams": 490
+    },
+    {
+      "id": "chocolate-shake-large-687-g",
+      "name": "Chocolate Shake – Large",
+      "calories": 970,
+      "protein": 22,
+      "carbs": 158,
+      "fat": 29,
+      "servingLabel": "687 g",
+      "servingGrams": 687
+    },
+    {
+      "id": "vanilla-shake-small-361-g",
+      "name": "Vanilla Shake – Small",
+      "calories": 480,
+      "protein": 12,
+      "carbs": 70,
+      "fat": 17,
+      "servingLabel": "361 g",
+      "servingGrams": 361
+    },
+    {
+      "id": "vanilla-shake-medium-481-g",
+      "name": "Vanilla Shake – Medium",
+      "calories": 620,
+      "protein": 16,
+      "carbs": 93,
+      "fat": 21,
+      "servingLabel": "481 g",
+      "servingGrams": 481
+    },
+    {
+      "id": "vanilla-shake-large-672-g",
+      "name": "Vanilla Shake – Large",
+      "calories": 870,
+      "protein": 23,
+      "carbs": 129,
+      "fat": 29,
+      "servingLabel": "672 g",
+      "servingGrams": 672
+    },
+    {
+      "id": "roast-beef-slider-77-g",
+      "name": "Roast Beef Slider",
+      "calories": 180,
+      "protein": 11,
+      "carbs": 18,
+      "fat": 7,
+      "servingLabel": "77 g",
+      "servingGrams": 77
+    },
+    {
+      "id": "chicken-slider-79-g",
+      "name": "Chicken Slider",
+      "calories": 230,
+      "protein": 11,
+      "carbs": 25,
+      "fat": 9,
+      "servingLabel": "79 g",
+      "servingGrams": 79
+    },
+    {
+      "id": "ham-slider-77-g",
+      "name": "Ham Slider",
+      "calories": 170,
+      "protein": 11,
+      "carbs": 19,
+      "fat": 6,
+      "servingLabel": "77 g",
+      "servingGrams": 77
+    },
+    {
+      "id": "buffalo-chicken-slider-92-g",
+      "name": "Buffalo Chicken Slider",
+      "calories": 260,
+      "protein": 10,
+      "carbs": 26,
+      "fat": 12,
+      "servingLabel": "92 g",
+      "servingGrams": 92
+    },
+    {
+      "id": "ranch-chicken-wrap-139-g",
+      "name": "Ranch Chicken Wrap",
+      "calories": 400,
+      "protein": 16,
+      "carbs": 32,
+      "fat": 23,
+      "servingLabel": "139 g",
+      "servingGrams": 139
+    },
+    {
+      "id": "honey-mustard-chicken-wrap-139-g",
+      "name": "Honey Mustard Chicken Wrap",
+      "calories": 380,
+      "protein": 15,
+      "carbs": 34,
+      "fat": 21,
+      "servingLabel": "139 g",
+      "servingGrams": 139
+    },
+    {
+      "id": "curly-fries-small-u-77-g",
+      "name": "Curly Fries – Small u",
+      "calories": 250,
+      "protein": 3,
+      "carbs": 29,
+      "fat": 13,
+      "servingLabel": "77 g",
+      "servingGrams": 77
+    },
+    {
+      "id": "crinkle-fries-small-u-egg-milk-soy-wheat-fish-where-available-91-g",
+      "name": "Crinkle Fries – Small u † Egg, Milk, Soy, Wheat, Fish (where available)",
+      "calories": 250,
+      "protein": 3,
+      "carbs": 32,
+      "fat": 12,
+      "servingLabel": "91 g",
+      "servingGrams": 91
+    },
+    {
+      "id": "apple-turnover-128-g",
+      "name": "Apple Turnover",
+      "calories": 430,
+      "protein": 4,
+      "carbs": 65,
+      "fat": 18,
+      "servingLabel": "128 g",
+      "servingGrams": 128
+    },
+    {
+      "id": "cherry-turnover-128-g",
+      "name": "Cherry Turnover",
+      "calories": 390,
+      "protein": 4,
+      "carbs": 65,
+      "fat": 13,
+      "servingLabel": "128 g",
+      "servingGrams": 128
+    },
+    {
+      "id": "chicken-tenders-2-67-g",
+      "name": "Chicken Tenders (2)",
+      "calories": 160,
+      "protein": 13,
+      "carbs": 7,
+      "fat": 9,
+      "servingLabel": "67 g",
+      "servingGrams": 67
+    },
+    {
+      "id": "barbeque-dipping-sauce-adds-36-g",
+      "name": "Barbeque Dipping Sauce Adds",
+      "calories": 70,
+      "protein": 0,
+      "carbs": 16,
+      "fat": 0,
+      "servingLabel": "36 g",
+      "servingGrams": 36
+    },
+    {
+      "id": "tree-top-applesauce-91-g",
+      "name": "Tree Top Applesauce",
+      "calories": 45,
+      "protein": 0,
+      "carbs": 13,
+      "fat": 0,
+      "servingLabel": "91 g",
+      "servingGrams": 91
+    },
+    {
+      "id": "potato-cakes-2-egg-milk-soy-wheat-fish-where-available-100-g",
+      "name": "Potato Cakes (2) † Egg, Milk, Soy, Wheat, Fish (where available)",
+      "calories": 250,
+      "protein": 2,
+      "carbs": 23,
+      "fat": 14,
+      "servingLabel": "100 g",
+      "servingGrams": 100
+    },
+    {
+      "id": "honest-kids-apple-juice-drink-91-g",
+      "name": "Honest Kids Apple Juice Drink",
+      "calories": 45,
+      "protein": 1,
+      "carbs": 12,
+      "fat": 0,
+      "servingLabel": "91 g",
+      "servingGrams": 91
+    },
+    {
+      "id": "nestle-pure-life-bottled-water-479-g",
+      "name": "Nestle Pure Life Bottled Water",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "479 g",
+      "servingGrams": 479
+    },
+    {
+      "id": "shamrock-farms-lowfat-white-milk-214-g",
+      "name": "Shamrock Farms Lowfat White Milk",
+      "calories": 90,
+      "protein": 7,
+      "carbs": 10,
+      "fat": 2,
+      "servingLabel": "214 g",
+      "servingGrams": 214
+    },
+    {
+      "id": "shamrock-farms-lowfat-chocolate-milk-218-g",
+      "name": "• Shamrock Farms Lowfat Chocolate Milk",
+      "calories": 150,
+      "protein": 7,
+      "carbs": 26,
+      "fat": 2.5,
+      "servingLabel": "218 g",
+      "servingGrams": 218
+    },
+    {
+      "id": "sausage-biscuit-144-g",
+      "name": "• Sausage Biscuit",
+      "calories": 500,
+      "protein": 12,
+      "carbs": 36,
+      "fat": 33,
+      "servingLabel": "144 g",
+      "servingGrams": 144
+    },
+    {
+      "id": "bacon-biscuit-104-g",
+      "name": "• Bacon Biscuit",
+      "calories": 340,
+      "protein": 10,
+      "carbs": 36,
+      "fat": 17,
+      "servingLabel": "104 g",
+      "servingGrams": 104
+    },
+    {
+      "id": "ham-biscuit-140-g",
+      "name": "• Ham Biscuit",
+      "calories": 340,
+      "protein": 13,
+      "carbs": 37,
+      "fat": 16,
+      "servingLabel": "140 g",
+      "servingGrams": 140
+    },
+    {
+      "id": "chicken-biscuit-134-g",
+      "name": "• Chicken Biscuit",
+      "calories": 390,
+      "protein": 13,
+      "carbs": 44,
+      "fat": 18,
+      "servingLabel": "134 g",
+      "servingGrams": 134
+    },
+    {
+      "id": "bacon-egg-cheese-sourdough-163-g",
+      "name": "• Bacon, Egg & Cheese Sourdough",
+      "calories": 470,
+      "protein": 23,
+      "carbs": 46,
+      "fat": 22,
+      "servingLabel": "163 g",
+      "servingGrams": 163
+    },
+    {
+      "id": "bacon-egg-cheese-croissant-132-g",
+      "name": "• Bacon, Egg & Cheese Croissant",
+      "calories": 430,
+      "protein": 18,
+      "carbs": 29,
+      "fat": 26,
+      "servingLabel": "132 g",
+      "servingGrams": 132
+    },
+    {
+      "id": "bacon-egg-cheese-biscuit-166-g",
+      "name": "• Bacon, Egg & Cheese Biscuit",
+      "calories": 470,
+      "protein": 18,
+      "carbs": 37,
+      "fat": 28,
+      "servingLabel": "166 g",
+      "servingGrams": 166
+    },
+    {
+      "id": "bacon-egg-cheese-wrap-146-g",
+      "name": "• Bacon, Egg & Cheese Wrap",
+      "calories": 410,
+      "protein": 18,
+      "carbs": 29,
+      "fat": 24,
+      "servingLabel": "146 g",
+      "servingGrams": 146
+    },
+    {
+      "id": "sausage-egg-cheese-sourdough-203-g",
+      "name": "• Sausage, Egg & Cheese Sourdough",
+      "calories": 630,
+      "protein": 24,
+      "carbs": 47,
+      "fat": 38,
+      "servingLabel": "203 g",
+      "servingGrams": 203
+    },
+    {
+      "id": "sausage-egg-cheese-croissant-172-g",
+      "name": "• Sausage, Egg & Cheese Croissant",
+      "calories": 580,
+      "protein": 19,
+      "carbs": 30,
+      "fat": 43,
+      "servingLabel": "172 g",
+      "servingGrams": 172
+    },
+    {
+      "id": "sausage-egg-cheese-biscuit-206-g",
+      "name": "• Sausage, Egg & Cheese Biscuit",
+      "calories": 630,
+      "protein": 19,
+      "carbs": 39,
+      "fat": 44,
+      "servingLabel": "206 g",
+      "servingGrams": 206
+    },
+    {
+      "id": "sausage-egg-cheese-wrap-181-g",
+      "name": "• Sausage, Egg & Cheese Wrap",
+      "calories": 550,
+      "protein": 17,
+      "carbs": 30,
+      "fat": 39,
+      "servingLabel": "181 g",
+      "servingGrams": 181
+    },
+    {
+      "id": "ham-egg-cheese-sourdough-194-g",
+      "name": "• Ham, Egg & Cheese Sourdough",
+      "calories": 460,
+      "protein": 26,
+      "carbs": 47,
+      "fat": 18,
+      "servingLabel": "194 g",
+      "servingGrams": 194
+    },
+    {
+      "id": "ham-egg-cheese-croissant-162-g",
+      "name": "• Ham, Egg & Cheese Croissant",
+      "calories": 410,
+      "protein": 21,
+      "carbs": 30,
+      "fat": 23,
+      "servingLabel": "162 g",
+      "servingGrams": 162
+    },
+    {
+      "id": "ham-egg-cheese-biscuit-196-g",
+      "name": "• Ham, Egg & Cheese Biscuit",
+      "calories": 460,
+      "protein": 21,
+      "carbs": 38,
+      "fat": 24,
+      "servingLabel": "196 g",
+      "servingGrams": 196
+    },
+    {
+      "id": "ham-egg-cheese-wrap-178-g",
+      "name": "• Ham, Egg & Cheese Wrap",
+      "calories": 400,
+      "protein": 20,
+      "carbs": 31,
+      "fat": 21,
+      "servingLabel": "178 g",
+      "servingGrams": 178
+    },
+    {
+      "id": "ham-swiss-croissant-119-g",
+      "name": "• Ham & Swiss Croissant",
+      "calories": 340,
+      "protein": 17,
+      "carbs": 29,
+      "fat": 17,
+      "servingLabel": "119 g",
+      "servingGrams": 119
+    },
+    {
+      "id": "bacon-cheese-croissant-83-g",
+      "name": "• Bacon & Cheese Croissant",
+      "calories": 330,
+      "protein": 14,
+      "carbs": 27,
+      "fat": 19,
+      "servingLabel": "83 g",
+      "servingGrams": 83
+    },
+    {
+      "id": "sausage-cheese-croissant-123-g",
+      "name": "• Sausage & Cheese Croissant",
+      "calories": 490,
+      "protein": 15,
+      "carbs": 28,
+      "fat": 35,
+      "servingLabel": "123 g",
+      "servingGrams": 123
+    },
+    {
+      "id": "french-toast-sticks-191-g",
+      "name": "• French Toast Sticks",
+      "calories": 590,
+      "protein": 8,
+      "carbs": 82,
+      "fat": 25,
+      "servingLabel": "191 g",
+      "servingGrams": 191
+    },
+    {
+      "id": "sausage-gravy-biscuit-261-g",
+      "name": "• Sausage Gravy Biscuit",
+      "calories": 480,
+      "protein": 9,
+      "carbs": 48,
+      "fat": 28,
+      "servingLabel": "261 g",
+      "servingGrams": 261
+    },
+    {
+      "id": "sausage-gravy-biscuit-double-522-g",
+      "name": "• Sausage Gravy Biscuit-Double",
+      "calories": 960,
+      "protein": 18,
+      "carbs": 95,
+      "fat": 56,
+      "servingLabel": "522 g",
+      "servingGrams": 522
+    },
+    {
+      "id": "coffee-12-oz-355-g",
+      "name": "Coffee - 12 oz",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "355 g",
+      "servingGrams": 355
+    },
+    {
+      "id": "simply-orange-juice-309-g",
+      "name": "• Simply Orange Juice",
+      "calories": 160,
+      "protein": 2,
+      "carbs": 33,
+      "fat": 0,
+      "servingLabel": "309 g",
+      "servingGrams": 309
+    },
+    {
+      "id": "bacon-3-half-strips-14-g",
+      "name": "Bacon- 3 half strips",
+      "calories": 70,
+      "protein": 5,
+      "carbs": 1,
+      "fat": 5,
+      "servingLabel": "14 g",
+      "servingGrams": 14
+    },
+    {
+      "id": "red-ranch-sauce-0-5-oz-14-g",
+      "name": "Red Ranch Sauce- 0.5 oz",
+      "calories": 70,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 6,
+      "servingLabel": "14 g",
+      "servingGrams": 14
+    },
+    {
+      "id": "crispy-onions-0-5-oz-14-g",
+      "name": "Crispy Onions- 0.5 oz",
+      "calories": 70,
+      "protein": 1,
+      "carbs": 6,
+      "fat": 5,
+      "servingLabel": "14 g",
+      "servingGrams": 14
+    },
+    {
+      "id": "cheddar-cheese-mild-slice-1-slice-19-g",
+      "name": "Cheddar Cheese (Mild Slice)- 1 slice",
+      "calories": 80,
+      "protein": 5,
+      "carbs": 0,
+      "fat": 6,
+      "servingLabel": "19 g",
+      "servingGrams": 19
+    },
+    {
+      "id": "tomato-2-slices-40-g",
+      "name": "Tomato- 2 slices",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "40 g",
+      "servingGrams": 40
+    },
+    {
+      "id": "4-sesame-seed-bun-69-g",
+      "name": "4\" Sesame Seed Bun",
+      "calories": 210,
+      "protein": 7,
+      "carbs": 36,
+      "fat": 3.5,
+      "servingLabel": "69 g",
+      "servingGrams": 69
+    },
+    {
+      "id": "red-onion-2-slices-4-g",
+      "name": "Red Onion- 2 slices",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "4 g",
+      "servingGrams": 4
+    },
+    {
+      "id": "processed-swiss-1-slice-13-g",
+      "name": "Processed Swiss- 1 slice",
+      "calories": 40,
+      "protein": 3,
+      "carbs": 0,
+      "fat": 3,
+      "servingLabel": "13 g",
+      "servingGrams": 13
+    },
+    {
+      "id": "cheddar-cheese-sauce-0-75-oz-21-g",
+      "name": "Cheddar Cheese Sauce- 0.75 oz",
+      "calories": 25,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 2,
+      "servingLabel": "21 g",
+      "servingGrams": 21
+    },
+    {
+      "id": "super-roast-beef-210-g",
+      "name": "• Super Roast Beef",
+      "calories": 440,
+      "protein": 23,
+      "carbs": 43,
+      "fat": 19,
+      "servingLabel": "210 g",
+      "servingGrams": 210
+    },
+    {
+      "id": "arbys-melt-146-g",
+      "name": "• Arby’s Melt",
+      "calories": 330,
+      "protein": 18,
+      "carbs": 39,
+      "fat": 12,
+      "servingLabel": "146 g",
+      "servingGrams": 146
+    },
+    {
+      "id": "ham-swiss-sandwich-328-g",
+      "name": "• Ham & Swiss Sandwich",
+      "calories": 730,
+      "protein": 37,
+      "carbs": 81,
+      "fat": 29,
+      "servingLabel": "328 g",
+      "servingGrams": 328
+    },
+    {
+      "id": "roast-beef-gyro-273-g",
+      "name": "• Roast Beef Gyro",
+      "calories": 540,
+      "protein": 24,
+      "carbs": 48,
+      "fat": 29,
+      "servingLabel": "273 g",
+      "servingGrams": 273
+    }
+  ],
+  "sourceDate": "2026-09"
+}

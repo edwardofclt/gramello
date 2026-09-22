@@ -1,0 +1,236 @@
+[
+  {
+    "slug": "popup-bagels",
+    "checkedAt": "2026-09-20",
+    "status": "no_complete_nutrition_found_in_inspected_sources",
+    "reason": "Official menu lists bagels and schmears but no calories or complete macros; both plausible Nutritionix paths returned 404. No estimates inferred.",
+    "attemptedSources": [
+      {
+        "url": "https://www.popupbagels.com/menu",
+        "outcome": "HTTP 200; menu item/price descriptions, no numeric nutrition or nutrition-guide link found."
+      },
+      {
+        "url": "https://www.popupbagels.com/",
+        "outcome": "HTTP 200; no nutrition link found."
+      },
+      {
+        "url": "https://www.nutritionix.com/pop-up-bagels/menu/premium",
+        "outcome": "HTTP 404; no nutrition table."
+      },
+      {
+        "url": "https://www.nutritionix.com/popup-bagels/menu/premium",
+        "outcome": "HTTP 404; no nutrition table."
+      }
+    ]
+  },
+  {
+    "slug": "the-salty-donut",
+    "checkedAt": "2026-09-20",
+    "status": "no_complete_nutrition_found_in_inspected_sources",
+    "reason": "Official home/menu pages expose products and ordering but no complete calories/fat/carbohydrate/protein table. Both Nutritionix paths returned 404; source absence elsewhere is not asserted.",
+    "attemptedSources": [
+      {
+        "url": "https://www.saltydonut.com/",
+        "outcome": "HTTP 200; no nutrition link or numeric nutrition text found."
+      },
+      {
+        "url": "https://www.saltydonut.com/menu",
+        "outcome": "HTTP 200; no nutrition link or numeric nutrition text found."
+      },
+      {
+        "url": "https://www.nutritionix.com/the-salty-donut/menu/premium",
+        "outcome": "HTTP 404; no table."
+      },
+      {
+        "url": "https://www.nutritionix.com/salty-donut/menu/premium",
+        "outcome": "HTTP 404; no table."
+      }
+    ]
+  },
+  {
+    "slug": "honeysuckle-gelato",
+    "checkedAt": "2026-09-20",
+    "status": "no_complete_nutrition_found_in_inspected_sources",
+    "reason": "Official brand and shop listings describe gelato and locations without complete numeric nutrition. Nutritionix catalog path returned 404.",
+    "attemptedSources": [
+      {
+        "url": "https://www.honeysucklegelato.com/",
+        "outcome": "HTTP 200; no complete macro values or nutrition-guide link found."
+      },
+      {
+        "url": "https://www.honeysucklegelato.com/our-shops",
+        "outcome": "HTTP 200; Ballantyne branch confirmed, no complete macro values."
+      },
+      {
+        "url": "https://www.nutritionix.com/honeysuckle-gelato/menu/premium",
+        "outcome": "HTTP 404; no table."
+      }
+    ]
+  },
+  {
+    "slug": "tifa-chocolates-gelato",
+    "checkedAt": "2026-09-20",
+    "status": "no_complete_nutrition_found_in_inspected_sources",
+    "reason": "Official gelato page lists flavors and allergens, plus general nutrition marketing, but no portion-specific calories or macros. Direct download was blocked; the full indexed page was inspected with the web tool. Neither Nutritionix path supplied a catalog.",
+    "attemptedSources": [
+      {
+        "url": "https://tifachocolateandgelato.com/gelato/",
+        "outcome": "Direct HTTP 403; browser tool returned full page with flavors/allergens and no quantitative nutrition."
+      },
+      {
+        "url": "https://tifachocolateandgelato.com/menu/",
+        "outcome": "Direct HTTP 403."
+      },
+      {
+        "url": "https://www.nutritionix.com/tifa-chocolate-gelato/menu/premium",
+        "outcome": "HTTP 404; no table."
+      },
+      {
+        "url": "https://www.nutritionix.com/tifa-chocolate-and-gelato/menu/premium",
+        "outcome": "HTTP 404; no table."
+      }
+    ]
+  },
+  {
+    "slug": "haagen-dazs",
+    "checkedAt": "2026-09-20",
+    "status": "blocked_shop_portion_nutrition_not_found",
+    "reason": "Official shop menu does not publish complete macros; official FAQ routes to packaged-flavor product labels/SmartLabel. Those packaged values were not assumed to equal unspecified local shop scoops, shakes or sundaes. Nutritionix shop/brand paths returned 404. Packaged product labels remain a possible separate database import scope.",
+    "attemptedSources": [
+      {
+        "url": "https://www.icecream.com/us/en/brands/haagen-dazs/shops/menu",
+        "outcome": "HTTP 200; shop products, no complete numeric nutrition table."
+      },
+      {
+        "url": "https://www.icecream.com/us/en/brands/haagen-dazs/about/faq",
+        "outcome": "HTTP 200; nutrition directions refer to individual product pages and package QR/SmartLabel."
+      },
+      {
+        "url": "https://www.icecream.com/us/en/brands/haagen-dazs/products/vanilla-ice-cream",
+        "outcome": "Official flavor page links packaged product SmartLabel; not an assembled shop meal serving."
+      },
+      {
+        "url": "https://www.nutritionix.com/haagen-dazs-shop/menu/premium",
+        "outcome": "HTTP 404; no table."
+      },
+      {
+        "url": "https://www.nutritionix.com/haagen-dazs/menu/premium",
+        "outcome": "HTTP 404; no table."
+      }
+    ]
+  },
+  {
+    "slug": "coffee-republic",
+    "checkedAt": "2026-09-20",
+    "status": "no_complete_nutrition_found_in_inspected_sources",
+    "reason": "Current local US chain menu and its linked three-page PDF have descriptions and serving sizes, but no complete nutrition table. The distinct British Coffee Republic brand was not substituted.",
+    "attemptedSources": [
+      {
+        "url": "https://coffeerepub.com/coffee-shop/",
+        "outcome": "HTTP 200; local menu inspected, links May 2026 PDF."
+      },
+      {
+        "url": "https://coffeerepub.com/wp-content/uploads/2026/05/CRWebsiteMenu.pdf",
+        "outcome": "Downloaded and text inspected across all 3 pages; no calories/nutrition/protein/carbohydrate terms or macro table."
+      },
+      {
+        "url": "https://coffeerepub.com/ballantyne/",
+        "outcome": "Official local location evidence."
+      },
+      {
+        "url": "https://www.nutritionix.com/coffee-republic/menu/premium",
+        "outcome": "HTTP 404; no table."
+      }
+    ]
+  },
+  {
+    "slug": "bossy-beulahs",
+    "checkedAt": "2026-09-20",
+    "status": "no_complete_nutrition_found_in_inspected_sources",
+    "reason": "Official site lists menu components and current local locations, but no numeric nutrition guide. Direct ordering page access was blocked; its indexed menu also showed descriptions/prices without full macros. Nutritionix returned 404.",
+    "attemptedSources": [
+      {
+        "url": "https://www.bossybeulahs.com/",
+        "outcome": "HTTP 200; no nutrition guide/link found; Ballantyne and Fort Mill locations listed."
+      },
+      {
+        "url": "https://order.toasttab.com/online/bossy-beulahs",
+        "outcome": "Direct HTTP 403; web index exposed menu descriptions/prices, no complete macros."
+      },
+      {
+        "url": "https://www.nutritionix.com/bossy-beulahs/menu/premium",
+        "outcome": "HTTP 404; no table."
+      }
+    ]
+  },
+  {
+    "slug": "brasserie-copain",
+    "checkedAt": "2026-09-20",
+    "status": "no_complete_nutrition_found_in_inspected_sources",
+    "reason": "Official menu and three Ballantyne food-menu PDFs were checked; menus list descriptions/prices without a macro table. Brasserie Copain is the Ballantyne full-service branch of the multi-location Copain brand, rather than a separate multi-unit brasserie chain.",
+    "attemptedSources": [
+      {
+        "url": "https://www.copainbakery.com/menu",
+        "outcome": "HTTP 200; menu and official PDF links inspected."
+      },
+      {
+        "url": "https://www.copainbakery.com/pdfs/copain-ballantyne-breakfast-menu.pdf",
+        "outcome": "Downloaded; 1 page of menu descriptions/prices, no nutrition table."
+      },
+      {
+        "url": "https://www.copainbakery.com/pdfs/copain-ballantyne-lunch-menu.pdf",
+        "outcome": "Downloaded; 1 page of menu descriptions/prices, no nutrition table."
+      },
+      {
+        "url": "https://www.copainbakery.com/pdfs/copain-ballantyne-dinner-menu.pdf",
+        "outcome": "Downloaded; 1 page of menu descriptions/prices, no nutrition table."
+      },
+      {
+        "url": "https://www.nutritionix.com/brasserie-copain/menu/premium",
+        "outcome": "HTTP 404; no table."
+      }
+    ]
+  },
+  {
+    "slug": "jeffs-bagel-run",
+    "checkedAt": "2026-09-20",
+    "status": "imported_partial",
+    "reason": "All complete numeric rows except internally inconsistent Hot Pumpkin Spice Latte group. Calories and macros per listed serving; ounces are not converted into grams.",
+    "attemptedSources": [
+      {
+        "url": "https://d3i6xtoh90ar7z.cloudfront.net/website/JBR_Nutritional%20Information_120125.pdf",
+        "outcome": "Imported numeric per-serving values; see catalog coverageNotes for exclusions and methodology."
+      }
+    ],
+    "catalogFile": "data/restaurant-foods/jeffs-bagel-run.json",
+    "importedServings": 231
+  },
+  {
+    "slug": "everbowl",
+    "checkedAt": "2026-09-20",
+    "status": "imported_partial",
+    "reason": "Published base/topping portions only, not inferred customized bowl totals. Six ingredient pages and assembled bowl/smoothie labels did not expose complete values.",
+    "attemptedSources": [
+      {
+        "url": "https://www.everbowl.com/nutritionals",
+        "outcome": "Imported numeric per-serving values; see catalog coverageNotes for exclusions and methodology."
+      }
+    ],
+    "catalogFile": "data/restaurant-foods/everbowl.json",
+    "importedServings": 26
+  },
+  {
+    "slug": "jenis-splendid-ice-creams",
+    "checkedAt": "2026-09-20",
+    "status": "imported_partial",
+    "reason": "Standardized published flavor servings. Shop scoops, cones, toppings and assembled sundaes are not inferred from pint labels. Ten single-serving packaged mini-cup labels are outside this restaurant-portion batch.",
+    "attemptedSources": [
+      {
+        "url": "https://jenis.com/pages/ingredients",
+        "outcome": "Imported numeric per-serving values; see catalog coverageNotes for exclusions and methodology."
+      }
+    ],
+    "catalogFile": "data/restaurant-foods/jenis-splendid-ice-creams.json",
+    "importedServings": 38
+  }
+]

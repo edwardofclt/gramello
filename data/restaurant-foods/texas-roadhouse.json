@@ -1,0 +1,2287 @@
+{
+  "chain": "Texas Roadhouse",
+  "sourceUrl": "https://www.nutritionix.com/texas-roadhouse/menu/premium",
+  "source": "Nutritionix",
+  "sourceKind": "database",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "id": "nutritionix-361149",
+      "name": "Baked Potato Soup - Bowl (in selected stores only)",
+      "calories": 380,
+      "protein": 9,
+      "carbs": 27,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Just for Starters; size in item name)"
+    },
+    {
+      "id": "nutritionix-361148",
+      "name": "Baked Potato Soup - Cup (in selected stores only)",
+      "calories": 220,
+      "protein": 5,
+      "carbs": 16,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Just for Starters; size in item name)"
+    },
+    {
+      "id": "nutritionix-361883",
+      "name": "Boneless Buffalo Wings - Hot",
+      "calories": 760,
+      "protein": 60,
+      "carbs": 37,
+      "fat": 42,
+      "servingLabel": "1 listed serving (Just for Starters; size in item name)"
+    },
+    {
+      "id": "nutritionix-361884",
+      "name": "Boneless Buffalo Wings - Mild",
+      "calories": 860,
+      "protein": 58,
+      "carbs": 43,
+      "fat": 50,
+      "servingLabel": "1 listed serving (Just for Starters; size in item name)"
+    },
+    {
+      "id": "nutritionix-356224",
+      "name": "Cactus Blossom",
+      "calories": 2250,
+      "protein": 25,
+      "carbs": 236,
+      "fat": 135,
+      "servingLabel": "1 listed serving (Just for Starters; size in item name)"
+    },
+    {
+      "id": "nutritionix-356253",
+      "name": "Cheese Fries - Regular",
+      "calories": 1240,
+      "protein": 38,
+      "carbs": 126,
+      "fat": 65,
+      "servingLabel": "1 listed serving (Just for Starters; size in item name)"
+    },
+    {
+      "id": "nutritionix-361882",
+      "name": "Cheese Fries - Small",
+      "calories": 860,
+      "protein": 25,
+      "carbs": 90,
+      "fat": 44,
+      "servingLabel": "1 listed serving (Just for Starters; size in item name)"
+    },
+    {
+      "id": "nutritionix-443163",
+      "name": "Deviled Eggs (in selected stores only)",
+      "calories": 520,
+      "protein": 27,
+      "carbs": 12,
+      "fat": 40,
+      "servingLabel": "1 listed serving (Just for Starters; size in item name)"
+    },
+    {
+      "id": "nutritionix-744670",
+      "name": "Fire Blossom (in selected stores only)",
+      "calories": 2730,
+      "protein": 49,
+      "carbs": 248,
+      "fat": 173,
+      "servingLabel": "1 listed serving (Just for Starters; size in item name)"
+    },
+    {
+      "id": "nutritionix-356328",
+      "name": "Firecracker Shrimp (in selected stores only)",
+      "calories": 1080,
+      "protein": 20,
+      "carbs": 54,
+      "fat": 88,
+      "servingLabel": "1 listed serving (Just for Starters; size in item name)"
+    },
+    {
+      "id": "nutritionix-356329",
+      "name": "Just for Starters - Fried Pickles",
+      "calories": 550,
+      "protein": 6,
+      "carbs": 48,
+      "fat": 38,
+      "servingLabel": "1 listed serving (Just for Starters; size in item name)"
+    },
+    {
+      "id": "nutritionix-356305",
+      "name": "Grilled Shrimp",
+      "calories": 370,
+      "protein": 20,
+      "carbs": 29,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Just for Starters; size in item name)"
+    },
+    {
+      "id": "nutritionix-356373",
+      "name": "Killer Ribs",
+      "calories": 910,
+      "protein": 49,
+      "carbs": 59,
+      "fat": 53,
+      "servingLabel": "1 listed serving (Just for Starters; size in item name)"
+    },
+    {
+      "id": "nutritionix-356341",
+      "name": "Just for Starters - Rattlesnake Bites",
+      "calories": 560,
+      "protein": 25,
+      "carbs": 34,
+      "fat": 36,
+      "servingLabel": "1 listed serving (Just for Starters; size in item name)"
+    },
+    {
+      "id": "nutritionix-356344",
+      "name": "Tater Skins",
+      "calories": 1320,
+      "protein": 63,
+      "carbs": 63,
+      "fat": 88,
+      "servingLabel": "1 listed serving (Just for Starters; size in item name)"
+    },
+    {
+      "id": "nutritionix-358141",
+      "name": "Texas Red Chili (no beans) - Bowl",
+      "calories": 500,
+      "protein": 33,
+      "carbs": 23,
+      "fat": 31,
+      "servingLabel": "1 listed serving (Just for Starters; size in item name)"
+    },
+    {
+      "id": "nutritionix-358138",
+      "name": "Texas Red Chili (no beans) - Cup",
+      "calories": 250,
+      "protein": 17,
+      "carbs": 13,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Just for Starters; size in item name)"
+    },
+    {
+      "id": "nutritionix-358139",
+      "name": "Texas Red Chili (with beans) - Bowl",
+      "calories": 430,
+      "protein": 31,
+      "carbs": 25,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Just for Starters; size in item name)"
+    },
+    {
+      "id": "nutritionix-358140",
+      "name": "Texas Red Chili (with beans) - Cup",
+      "calories": 210,
+      "protein": 16,
+      "carbs": 14,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Just for Starters; size in item name)"
+    },
+    {
+      "id": "nutritionix-356298",
+      "name": "Twisted Mozzarella",
+      "calories": 710,
+      "protein": 27,
+      "carbs": 64,
+      "fat": 39,
+      "servingLabel": "1 listed serving (Just for Starters; size in item name)"
+    },
+    {
+      "id": "nutritionix-78400",
+      "name": "Just for Starters - Dipping Sauces (2 oz) - Bleu Cheese Dressing",
+      "calories": 280,
+      "protein": 2,
+      "carbs": 4,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Just for Starters - Dipping Sauces (2 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-78680",
+      "name": "Just for Starters - Sauces (3 oz) & Toppings (6 oz) - Texas Red Chili",
+      "calories": 220,
+      "protein": 15,
+      "carbs": 13,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Just for Starters - Sauces (3 oz) & Toppings (6 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-81529",
+      "name": "Boneless Wings - Hot",
+      "calories": 380,
+      "protein": 30,
+      "carbs": 18,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Just for Starters - Combo Appetizer Options; size in item name)"
+    },
+    {
+      "id": "nutritionix-81528",
+      "name": "Boneless Wings - Mild",
+      "calories": 430,
+      "protein": 29,
+      "carbs": 21,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Just for Starters - Combo Appetizer Options; size in item name)"
+    },
+    {
+      "id": "nutritionix-78682",
+      "name": "Just for Starters - Combo Appetizer Options - Fried Pickles",
+      "calories": 260,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Just for Starters - Combo Appetizer Options; size in item name)"
+    },
+    {
+      "id": "nutritionix-78683",
+      "name": "Just for Starters - Combo Appetizer Options - Rattlesnake Bites",
+      "calories": 280,
+      "protein": 13,
+      "carbs": 17,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Just for Starters - Combo Appetizer Options; size in item name)"
+    },
+    {
+      "id": "nutritionix-78397",
+      "name": "Just for Starters - Combo Appetizer Sauces (3 oz) - Texas Roadhouse Barbecue Sauce",
+      "calories": 120,
+      "protein": 0,
+      "carbs": 27,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Just for Starters - Combo Appetizer Sauces (3 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-356246",
+      "name": "Caesar Salad",
+      "calories": 440,
+      "protein": 6,
+      "carbs": 9,
+      "fat": 43,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-361154",
+      "name": "California Chicken Salad (in selected stores only)",
+      "calories": 970,
+      "protein": 74,
+      "carbs": 73,
+      "fat": 46,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-356376",
+      "name": "Chicken Caesar Salad",
+      "calories": 1100,
+      "protein": 60,
+      "carbs": 20,
+      "fat": 89,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-356231",
+      "name": "Chicken Critter Salad",
+      "calories": 690,
+      "protein": 56,
+      "carbs": 27,
+      "fat": 40,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-356230",
+      "name": "Grilled Salmon Salad",
+      "calories": 830,
+      "protein": 66,
+      "carbs": 19,
+      "fat": 55,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-361716",
+      "name": "Grilled Shrimp Salad (in selected stores only)",
+      "calories": 660,
+      "protein": 52,
+      "carbs": 20,
+      "fat": 43,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-356275",
+      "name": "House Salad",
+      "calories": 230,
+      "protein": 13,
+      "carbs": 9,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-361098",
+      "name": "Salmon Caesar Salad",
+      "calories": 1110,
+      "protein": 40,
+      "carbs": 20,
+      "fat": 99,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-361717",
+      "name": "Shrimp Caesar Salad (in selected stores only)",
+      "calories": 940,
+      "protein": 26,
+      "carbs": 21,
+      "fat": 86,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-356377",
+      "name": "Steakhouse Filet Salad",
+      "calories": 1340,
+      "protein": 71,
+      "carbs": 42,
+      "fat": 103,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-78411",
+      "name": "Salads - Made-from-Scratch Dressings (3 oz) - Caesar Dressing",
+      "calories": 540,
+      "protein": 4,
+      "carbs": 6,
+      "fat": 56,
+      "servingLabel": "1 listed serving (Salads - Made-from-Scratch Dressings (3 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-78486",
+      "name": "Salads - Made-from-Scratch Dressings (3 oz) - Honey French Dressing (in selected stores only)",
+      "calories": 270,
+      "protein": 0,
+      "carbs": 45,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Salads - Made-from-Scratch Dressings (3 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-81267",
+      "name": "Honey Lime Sauce (in selected stores only)",
+      "calories": 300,
+      "protein": 0,
+      "carbs": 57,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Salads - Made-from-Scratch Dressings (3 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-78689",
+      "name": "Salads - Made-from-Scratch Dressings (3 oz) - Honey Mustard Dressing",
+      "calories": 480,
+      "protein": 0,
+      "carbs": 16,
+      "fat": 48,
+      "servingLabel": "1 listed serving (Salads - Made-from-Scratch Dressings (3 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-78687",
+      "name": "Salads - Made-from-Scratch Dressings (3 oz) - Low Fat Ranch Dressing (in selected stores only)",
+      "calories": 240,
+      "protein": 3,
+      "carbs": 6,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Salads - Made-from-Scratch Dressings (3 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-81254",
+      "name": "Salads - Made-from-Scratch Dressings (3 oz) - Oil & Vinegar",
+      "calories": 410,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 42,
+      "servingLabel": "1 listed serving (Salads - Made-from-Scratch Dressings (3 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-84342",
+      "name": "Salads - Made-from-Scratch Dressings (3 oz) - Parmesan Peppercorn Dressing (in selected stores only)",
+      "calories": 280,
+      "protein": 4,
+      "carbs": 5,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Salads - Made-from-Scratch Dressings (3 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-78555",
+      "name": "Salads - Made-from-Scratch Dressings (3 oz) - Thousand Island Dressing",
+      "calories": 400,
+      "protein": 0,
+      "carbs": 14,
+      "fat": 39,
+      "servingLabel": "1 listed serving (Salads - Made-from-Scratch Dressings (3 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-78592",
+      "name": "Salads - Add Toppings - Bacon",
+      "calories": 70,
+      "protein": 6,
+      "carbs": 0,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Salads - Add Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-79851",
+      "name": "Bleu Cheese Crumbles",
+      "calories": 100,
+      "protein": 6,
+      "carbs": 1,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Salads - Add Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-366996",
+      "name": "Bone-In Ribeye",
+      "calories": 1480,
+      "protein": 143,
+      "carbs": 20,
+      "fat": 101,
+      "servingLabel": "1 listed serving (Hand-Cut Steaks; size in item name)"
+    },
+    {
+      "id": "nutritionix-356311",
+      "name": "Dallas Filet - 6 oz.",
+      "calories": 270,
+      "protein": 45,
+      "carbs": 6,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Hand-Cut Steaks; size in item name)"
+    },
+    {
+      "id": "nutritionix-356372",
+      "name": "Dallas Filet - 8 oz.",
+      "calories": 360,
+      "protein": 60,
+      "carbs": 8,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Hand-Cut Steaks; size in item name)"
+    },
+    {
+      "id": "nutritionix-358145",
+      "name": "Filet Medallions",
+      "calories": 760,
+      "protein": 74,
+      "carbs": 56,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Hand-Cut Steaks; size in item name)"
+    },
+    {
+      "id": "nutritionix-356378",
+      "name": "Ft. Worth Ribeye - 12 oz.",
+      "calories": 960,
+      "protein": 78,
+      "carbs": 12,
+      "fat": 72,
+      "servingLabel": "1 listed serving (Hand-Cut Steaks; size in item name)"
+    },
+    {
+      "id": "nutritionix-362016",
+      "name": "Ft. Worth Ribeye - 14 oz.",
+      "calories": 1120,
+      "protein": 90,
+      "carbs": 14,
+      "fat": 84,
+      "servingLabel": "1 listed serving (Hand-Cut Steaks; size in item name)"
+    },
+    {
+      "id": "nutritionix-356379",
+      "name": "Ft. Worth Ribeye - 16 oz.",
+      "calories": 1280,
+      "protein": 103,
+      "carbs": 16,
+      "fat": 96,
+      "servingLabel": "1 listed serving (Hand-Cut Steaks; size in item name)"
+    },
+    {
+      "id": "nutritionix-356316",
+      "name": "New York Strip - 12 oz. Traditional Cut",
+      "calories": 640,
+      "protein": 85,
+      "carbs": 1,
+      "fat": 33,
+      "servingLabel": "1 listed serving (Hand-Cut Steaks; size in item name)"
+    },
+    {
+      "id": "nutritionix-425995",
+      "name": "New York Strip - 16 oz. Traditional Cut",
+      "calories": 850,
+      "protein": 114,
+      "carbs": 2,
+      "fat": 44,
+      "servingLabel": "1 listed serving (Hand-Cut Steaks; size in item name)"
+    },
+    {
+      "id": "nutritionix-356312",
+      "name": "Porterhouse T-Bone",
+      "calories": 1040,
+      "protein": 139,
+      "carbs": 1,
+      "fat": 54,
+      "servingLabel": "1 listed serving (Hand-Cut Steaks; size in item name)"
+    },
+    {
+      "id": "nutritionix-358121",
+      "name": "Prime Rib - 12 oz.",
+      "calories": 950,
+      "protein": 74,
+      "carbs": 3,
+      "fat": 72,
+      "servingLabel": "1 listed serving (Hand-Cut Steaks; size in item name)"
+    },
+    {
+      "id": "nutritionix-397818",
+      "name": "Prime Rib - 14 oz.",
+      "calories": 1110,
+      "protein": 87,
+      "carbs": 3,
+      "fat": 84,
+      "servingLabel": "1 listed serving (Hand-Cut Steaks; size in item name)"
+    },
+    {
+      "id": "nutritionix-358122",
+      "name": "Prime Rib - 16 oz.",
+      "calories": 1260,
+      "protein": 99,
+      "carbs": 4,
+      "fat": 95,
+      "servingLabel": "1 listed serving (Hand-Cut Steaks; size in item name)"
+    },
+    {
+      "id": "nutritionix-467479",
+      "name": "Roadhouse Churrasco (in selected stores only)",
+      "calories": 1000,
+      "protein": 54,
+      "carbs": 51,
+      "fat": 62,
+      "servingLabel": "1 listed serving (Hand-Cut Steaks; size in item name)"
+    },
+    {
+      "id": "nutritionix-356383",
+      "name": "Road Kill",
+      "calories": 760,
+      "protein": 55,
+      "carbs": 10,
+      "fat": 56,
+      "servingLabel": "1 listed serving (Hand-Cut Steaks; size in item name)"
+    },
+    {
+      "id": "nutritionix-356291",
+      "name": "Steak Kabob",
+      "calories": 920,
+      "protein": 58,
+      "carbs": 78,
+      "fat": 41,
+      "servingLabel": "1 listed serving (Hand-Cut Steaks; size in item name)"
+    },
+    {
+      "id": "nutritionix-356315",
+      "name": "USDA Choice Sirloin - 6 oz.",
+      "calories": 250,
+      "protein": 46,
+      "carbs": 3,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Hand-Cut Steaks; size in item name)"
+    },
+    {
+      "id": "nutritionix-356380",
+      "name": "USDA Choice Sirloin - 8 oz.",
+      "calories": 340,
+      "protein": 61,
+      "carbs": 5,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Hand-Cut Steaks; size in item name)"
+    },
+    {
+      "id": "nutritionix-356381",
+      "name": "USDA Choice Sirloin - 11 oz.",
+      "calories": 460,
+      "protein": 84,
+      "carbs": 6,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Hand-Cut Steaks; size in item name)"
+    },
+    {
+      "id": "nutritionix-356382",
+      "name": "USDA Choice Sirloin - 16 oz.",
+      "calories": 670,
+      "protein": 122,
+      "carbs": 9,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Hand-Cut Steaks; size in item name)"
+    },
+    {
+      "id": "nutritionix-78706",
+      "name": "Peppercorn Sauce",
+      "calories": 210,
+      "protein": 1,
+      "carbs": 8,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Hand-Cut Steaks - Filet Medallions Sauces (4 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-78705",
+      "name": "Portobello Mushroom Sauce",
+      "calories": 120,
+      "protein": 3,
+      "carbs": 8,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Hand-Cut Steaks - Filet Medallions Sauces (4 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-80097",
+      "name": "Creamy Horseradish Sauce",
+      "calories": 190,
+      "protein": 1,
+      "carbs": 4,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Hand-Cut Steaks - Prime Rib Options (2 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-78487",
+      "name": "Horseradish",
+      "calories": 50,
+      "protein": 1,
+      "carbs": 8,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Hand-Cut Steaks - Prime Rib Options (2 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-78542",
+      "name": "Smother Options for Steaks Less Than 11 oz. - Fire Roasted Green Chile (in selected stores only)",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Smother Options for Steaks Less Than 11 oz.; size in item name)"
+    },
+    {
+      "id": "nutritionix-78471",
+      "name": "Green Chile Sauce (in selected stores only)",
+      "calories": 160,
+      "protein": 8,
+      "carbs": 19,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Smother Options for Steaks Less Than 11 oz.; size in item name)"
+    },
+    {
+      "id": "nutritionix-78622",
+      "name": "Smother Options for Steaks Less Than 11 oz. - Monterey Jack Cheese",
+      "calories": 100,
+      "protein": 7,
+      "carbs": 0,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Smother Options for Steaks Less Than 11 oz.; size in item name)"
+    },
+    {
+      "id": "nutritionix-79952",
+      "name": "Smother Options for Steaks Less Than 11 oz. - Mushrooms",
+      "calories": 50,
+      "protein": 1,
+      "carbs": 2,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Smother Options for Steaks Less Than 11 oz.; size in item name)"
+    },
+    {
+      "id": "nutritionix-79951",
+      "name": "Onions, Sauteed",
+      "calories": 90,
+      "protein": 1,
+      "carbs": 8,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Smother Options for Steaks 11 oz. & Larger; size in item name)"
+    },
+    {
+      "id": "nutritionix-356334",
+      "name": "Fall-off-the-Bone Ribs - Full Slab",
+      "calories": 1450,
+      "protein": 116,
+      "carbs": 15,
+      "fat": 102,
+      "servingLabel": "1 listed serving (Fall-off-the-Bone Ribs; size in item name)"
+    },
+    {
+      "id": "nutritionix-357464",
+      "name": "Fall-off-the-Bone Ribs - Half Slab",
+      "calories": 900,
+      "protein": 72,
+      "carbs": 9,
+      "fat": 63,
+      "servingLabel": "1 listed serving (Fall-off-the-Bone Ribs; size in item name)"
+    },
+    {
+      "id": "nutritionix-356433",
+      "name": "6 oz. Sirloin & Grilled Shrimp",
+      "calories": 670,
+      "protein": 66,
+      "carbs": 34,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Texas Size Combos; size in item name)"
+    },
+    {
+      "id": "nutritionix-358125",
+      "name": "6 oz. Sirloin & Ribs",
+      "calories": 800,
+      "protein": 90,
+      "carbs": 9,
+      "fat": 45,
+      "servingLabel": "1 listed serving (Texas Size Combos; size in item name)"
+    },
+    {
+      "id": "nutritionix-357463",
+      "name": "8 oz. Sirloin & Grilled Shrimp",
+      "calories": 750,
+      "protein": 81,
+      "carbs": 35,
+      "fat": 32,
+      "servingLabel": "1 listed serving (Texas Size Combos; size in item name)"
+    },
+    {
+      "id": "nutritionix-358126",
+      "name": "8 oz. Sirloin & Ribs",
+      "calories": 890,
+      "protein": 105,
+      "carbs": 10,
+      "fat": 47,
+      "servingLabel": "1 listed serving (Texas Size Combos; size in item name)"
+    },
+    {
+      "id": "nutritionix-467487",
+      "name": "8 oz. Strip & Grilled Shrimp (in selected stores only)",
+      "calories": 840,
+      "protein": 77,
+      "carbs": 31,
+      "fat": 46,
+      "servingLabel": "1 listed serving (Texas Size Combos; size in item name)"
+    },
+    {
+      "id": "nutritionix-467488",
+      "name": "8 oz. Strip & Ribs (in selected stores only)",
+      "calories": 980,
+      "protein": 101,
+      "carbs": 7,
+      "fat": 61,
+      "servingLabel": "1 listed serving (Texas Size Combos; size in item name)"
+    },
+    {
+      "id": "nutritionix-361574",
+      "name": "12 oz. Ft. Worth Ribeye & Grilled Shrimp",
+      "calories": 1370,
+      "protein": 98,
+      "carbs": 42,
+      "fat": 96,
+      "servingLabel": "1 listed serving (Texas Size Combos; size in item name)"
+    },
+    {
+      "id": "nutritionix-361573",
+      "name": "12 oz. Ft. Worth Ribeye & Ribs",
+      "calories": 1510,
+      "protein": 122,
+      "carbs": 18,
+      "fat": 111,
+      "servingLabel": "1 listed serving (Texas Size Combos; size in item name)"
+    },
+    {
+      "id": "nutritionix-871750",
+      "name": "12 oz. Strip & Grilled Shrimp (in selected stores only)",
+      "calories": 1050,
+      "protein": 106,
+      "carbs": 31,
+      "fat": 57,
+      "servingLabel": "1 listed serving (Texas Size Combos; size in item name)"
+    },
+    {
+      "id": "nutritionix-871751",
+      "name": "12 oz. Strip & Ribs (in selected stores only)",
+      "calories": 1190,
+      "protein": 130,
+      "carbs": 7,
+      "fat": 72,
+      "servingLabel": "1 listed serving (Texas Size Combos; size in item name)"
+    },
+    {
+      "id": "nutritionix-358142",
+      "name": "Chicken Critters & Ribs",
+      "calories": 820,
+      "protein": 70,
+      "carbs": 21,
+      "fat": 51,
+      "servingLabel": "1 listed serving (Texas Size Combos; size in item name)"
+    },
+    {
+      "id": "nutritionix-356432",
+      "name": "Chicken Critters & Sirloin",
+      "calories": 520,
+      "protein": 72,
+      "carbs": 19,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Texas Size Combos; size in item name)"
+    },
+    {
+      "id": "nutritionix-358130",
+      "name": "Dallas Filet & Grilled Shrimp",
+      "calories": 680,
+      "protein": 66,
+      "carbs": 36,
+      "fat": 33,
+      "servingLabel": "1 listed serving (Texas Size Combos; size in item name)"
+    },
+    {
+      "id": "nutritionix-358129",
+      "name": "Dallas Filet & Ribs",
+      "calories": 820,
+      "protein": 90,
+      "carbs": 12,
+      "fat": 49,
+      "servingLabel": "1 listed serving (Texas Size Combos; size in item name)"
+    },
+    {
+      "id": "nutritionix-358123",
+      "name": "Grilled BBQ Chicken & Ribs",
+      "calories": 890,
+      "protein": 91,
+      "carbs": 34,
+      "fat": 43,
+      "servingLabel": "1 listed serving (Texas Size Combos; size in item name)"
+    },
+    {
+      "id": "nutritionix-358124",
+      "name": "Grilled BBQ Chicken & Sirloin",
+      "calories": 590,
+      "protein": 92,
+      "carbs": 31,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Texas Size Combos; size in item name)"
+    },
+    {
+      "id": "nutritionix-361110",
+      "name": "California Chicken Dinner (in selected stores only)",
+      "calories": 490,
+      "protein": 55,
+      "carbs": 25,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Chicken Specialties; size in item name)"
+    },
+    {
+      "id": "nutritionix-871749",
+      "name": "Chicken Alfredo Penne (in selected stores only)",
+      "calories": 1200,
+      "protein": 103,
+      "carbs": 90,
+      "fat": 44,
+      "servingLabel": "1 listed serving (Chicken Specialties; size in item name)"
+    },
+    {
+      "id": "nutritionix-356321",
+      "name": "Chicken Critters",
+      "calories": 480,
+      "protein": 45,
+      "carbs": 26,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Chicken Specialties; size in item name)"
+    },
+    {
+      "id": "nutritionix-871752",
+      "name": "Chicken Parm Penne (in selected stores only)",
+      "calories": 1300,
+      "protein": 81,
+      "carbs": 123,
+      "fat": 52,
+      "servingLabel": "1 listed serving (Chicken Specialties; size in item name)"
+    },
+    {
+      "id": "nutritionix-356326",
+      "name": "Country Fried Chicken",
+      "calories": 770,
+      "protein": 48,
+      "carbs": 45,
+      "fat": 44,
+      "servingLabel": "1 listed serving (Chicken Specialties; size in item name)"
+    },
+    {
+      "id": "nutritionix-361878",
+      "name": "Green Chile Chicken (in selected stores only)",
+      "calories": 480,
+      "protein": 61,
+      "carbs": 19,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Chicken Specialties; size in item name)"
+    },
+    {
+      "id": "nutritionix-356385",
+      "name": "Grilled BBQ Chicken",
+      "calories": 300,
+      "protein": 46,
+      "carbs": 19,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Chicken Specialties; size in item name)"
+    },
+    {
+      "id": "nutritionix-356386",
+      "name": "Herb Crusted Chicken",
+      "calories": 260,
+      "protein": 47,
+      "carbs": 12,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Chicken Specialties; size in item name)"
+    },
+    {
+      "id": "nutritionix-356384",
+      "name": "Portobello Mushroom Chicken (in selected stores only)",
+      "calories": 430,
+      "protein": 58,
+      "carbs": 7,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Chicken Specialties; size in item name)"
+    },
+    {
+      "id": "nutritionix-605406",
+      "name": "San Antonio Chicken Entree (in selected stores only)",
+      "calories": 1030,
+      "protein": 71,
+      "carbs": 78,
+      "fat": 48,
+      "servingLabel": "1 listed serving (Chicken Specialties; size in item name)"
+    },
+    {
+      "id": "nutritionix-358144",
+      "name": "Smothered Chicken with Cream Gravy",
+      "calories": 330,
+      "protein": 48,
+      "carbs": 8,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Chicken Specialties; size in item name)"
+    },
+    {
+      "id": "nutritionix-363298",
+      "name": "Smothered Chicken with Jack Cheese",
+      "calories": 430,
+      "protein": 55,
+      "carbs": 8,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Chicken Specialties; size in item name)"
+    },
+    {
+      "id": "nutritionix-79955",
+      "name": "Honey Mustard",
+      "calories": 320,
+      "protein": 0,
+      "carbs": 11,
+      "fat": 32,
+      "servingLabel": "1 listed serving (Chicken Specialties - Dipping Sauces (2 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-78673",
+      "name": "Hot Sauce",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Chicken Specialties - Dipping Sauces (2 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-78674",
+      "name": "Mild Sauce",
+      "calories": 220,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Chicken Specialties - Dipping Sauces (2 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-363364",
+      "name": "Beef Tips with Mashed Potatoes",
+      "calories": 960,
+      "protein": 61,
+      "carbs": 48,
+      "fat": 58,
+      "servingLabel": "1 listed serving (Country Dinners; size in item name)"
+    },
+    {
+      "id": "nutritionix-363365",
+      "name": "Beef Tips with Seasoned Rice",
+      "calories": 1060,
+      "protein": 63,
+      "carbs": 71,
+      "fat": 57,
+      "servingLabel": "1 listed serving (Country Dinners; size in item name)"
+    },
+    {
+      "id": "nutritionix-397816",
+      "name": "Bone-In Pork Chop",
+      "calories": 920,
+      "protein": 86,
+      "carbs": 6,
+      "fat": 61,
+      "servingLabel": "1 listed serving (Country Dinners; size in item name)"
+    },
+    {
+      "id": "nutritionix-356327",
+      "name": "Country Fried Sirloin",
+      "calories": 1170,
+      "protein": 52,
+      "carbs": 72,
+      "fat": 75,
+      "servingLabel": "1 listed serving (Country Dinners; size in item name)"
+    },
+    {
+      "id": "nutritionix-356375",
+      "name": "Grilled Pork Chops - Double Chop",
+      "calories": 730,
+      "protein": 82,
+      "carbs": 13,
+      "fat": 38,
+      "servingLabel": "1 listed serving (Country Dinners; size in item name)"
+    },
+    {
+      "id": "nutritionix-356332",
+      "name": "Grilled Pork Chops - Single Chop",
+      "calories": 440,
+      "protein": 42,
+      "carbs": 10,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Country Dinners; size in item name)"
+    },
+    {
+      "id": "nutritionix-356337",
+      "name": "Pulled Pork Dinner",
+      "calories": 890,
+      "protein": 80,
+      "carbs": 54,
+      "fat": 41,
+      "servingLabel": "1 listed serving (Country Dinners; size in item name)"
+    },
+    {
+      "id": "nutritionix-356338",
+      "name": "Pulled Pork Dinner (North Carolina only)",
+      "calories": 840,
+      "protein": 80,
+      "carbs": 42,
+      "fat": 39,
+      "servingLabel": "1 listed serving (Country Dinners; size in item name)"
+    },
+    {
+      "id": "nutritionix-356339",
+      "name": "Pulled Pork Dinner (South Carolina only)",
+      "calories": 850,
+      "protein": 77,
+      "carbs": 51,
+      "fat": 38,
+      "servingLabel": "1 listed serving (Country Dinners; size in item name)"
+    },
+    {
+      "id": "nutritionix-78405",
+      "name": "Brown Gravy",
+      "calories": 210,
+      "protein": 2,
+      "carbs": 10,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Country Fried Chicken & Sirloin - Gravy Options (6 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-78444",
+      "name": "Country Fried Chicken & Sirloin - Gravy Options (6 oz) - Cream Gravy",
+      "calories": 280,
+      "protein": 6,
+      "carbs": 16,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Country Fried Chicken & Sirloin - Gravy Options (6 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-361880",
+      "name": "Fish & Chips (in selected stores only)",
+      "calories": 790,
+      "protein": 42,
+      "carbs": 71,
+      "fat": 38,
+      "servingLabel": "1 listed serving (Dockside Favorites; size in item name)"
+    },
+    {
+      "id": "nutritionix-356319",
+      "name": "Fried Catfish - 3 Piece (in selected stores only)",
+      "calories": 990,
+      "protein": 30,
+      "carbs": 35,
+      "fat": 82,
+      "servingLabel": "1 listed serving (Dockside Favorites; size in item name)"
+    },
+    {
+      "id": "nutritionix-358131",
+      "name": "Fried Catfish - 4 Piece (in selected stores only)",
+      "calories": 1170,
+      "protein": 40,
+      "carbs": 45,
+      "fat": 93,
+      "servingLabel": "1 listed serving (Dockside Favorites; size in item name)"
+    },
+    {
+      "id": "nutritionix-356387",
+      "name": "Grilled Salmon - 5 oz.",
+      "calories": 410,
+      "protein": 27,
+      "carbs": 2,
+      "fat": 33,
+      "servingLabel": "1 listed serving (Dockside Favorites; size in item name)"
+    },
+    {
+      "id": "nutritionix-356333",
+      "name": "Grilled Salmon - 8 oz.",
+      "calories": 560,
+      "protein": 45,
+      "carbs": 2,
+      "fat": 42,
+      "servingLabel": "1 listed serving (Dockside Favorites; size in item name)"
+    },
+    {
+      "id": "nutritionix-607560",
+      "name": "Grilled Shrimp Dinner (9 Shrimp)",
+      "calories": 660,
+      "protein": 29,
+      "carbs": 50,
+      "fat": 37,
+      "servingLabel": "1 listed serving (Dockside Favorites; size in item name)"
+    },
+    {
+      "id": "nutritionix-607561",
+      "name": "Grilled Shrimp Dinner (12 Shrimp)",
+      "calories": 700,
+      "protein": 37,
+      "carbs": 50,
+      "fat": 38,
+      "servingLabel": "1 listed serving (Dockside Favorites; size in item name)"
+    },
+    {
+      "id": "nutritionix-1112272",
+      "name": "Shrimp Alfredo Penne (in selected stores only)",
+      "calories": 1010,
+      "protein": 60,
+      "carbs": 91,
+      "fat": 42,
+      "servingLabel": "1 listed serving (Dockside Favorites; size in item name)"
+    },
+    {
+      "id": "nutritionix-78446",
+      "name": "Creole Mustard",
+      "calories": 450,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 49,
+      "servingLabel": "1 listed serving (Dockside Favorites - Creole Mustard Sauce (3 oz) & Tartar Sauce (2 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-78553",
+      "name": "Tartar Sauce",
+      "calories": 320,
+      "protein": 0,
+      "carbs": 9,
+      "fat": 32,
+      "servingLabel": "1 listed serving (Dockside Favorites - Creole Mustard Sauce (3 oz) & Tartar Sauce (2 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-356392",
+      "name": "All-Beef Hot Dog",
+      "calories": 390,
+      "protein": 14,
+      "carbs": 27,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Kids & Ranger Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-356396",
+      "name": "Jr. Chicken Tenders",
+      "calories": 360,
+      "protein": 31,
+      "carbs": 24,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Kids & Ranger Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-356394",
+      "name": "Kid's Grilled Chicken",
+      "calories": 110,
+      "protein": 23,
+      "carbs": 0,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Kids & Ranger Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-356395",
+      "name": "Lil' Dillo Steak Bites",
+      "calories": 170,
+      "protein": 31,
+      "carbs": 2,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Kids & Ranger Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-468670",
+      "name": "Mac and Cheese",
+      "calories": 380,
+      "protein": 17,
+      "carbs": 37,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Kids & Ranger Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-356393",
+      "name": "Mini-Cheeseburgers",
+      "calories": 670,
+      "protein": 30,
+      "carbs": 57,
+      "fat": 36,
+      "servingLabel": "1 listed serving (Kids & Ranger Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-358133",
+      "name": "Ranger Meal - Andy's Steak",
+      "calories": 250,
+      "protein": 46,
+      "carbs": 3,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Kids & Ranger Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-358132",
+      "name": "Ranger Meal - Chicken Critters Basket",
+      "calories": 340,
+      "protein": 32,
+      "carbs": 19,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Kids & Ranger Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-356398",
+      "name": "Ranger Meal - Ranger Rib Basket",
+      "calories": 550,
+      "protein": 44,
+      "carbs": 6,
+      "fat": 39,
+      "servingLabel": "1 listed serving (Kids & Ranger Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-78672",
+      "name": "Cheddar Cheese",
+      "calories": 110,
+      "protein": 7,
+      "carbs": 0,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Kids & Ranger Meals - Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-78391",
+      "name": "Applesauce",
+      "calories": 110,
+      "protein": 0,
+      "carbs": 28,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Kids & Ranger Meals - Legendary Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-78458",
+      "name": "Fresh Vegetables",
+      "calories": 190,
+      "protein": 3,
+      "carbs": 13,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Kids & Ranger Meals - Legendary Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-78469",
+      "name": "Green Beans",
+      "calories": 100,
+      "protein": 6,
+      "carbs": 13,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Kids & Ranger Meals - Legendary Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-78757",
+      "name": "Mashed Potatoes",
+      "calories": 260,
+      "protein": 3,
+      "carbs": 24,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Kids & Ranger Meals - Legendary Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-78407",
+      "name": "Seasoned Corn",
+      "calories": 190,
+      "protein": 5,
+      "carbs": 29,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Kids & Ranger Meals - Legendary Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-78610",
+      "name": "Kids & Ranger Meals - Legendary Sides - Steak Fries",
+      "calories": 180,
+      "protein": 2,
+      "carbs": 27,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Kids & Ranger Meals - Legendary Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-82935",
+      "name": "Kids Beverages - Blue Crush Lemonade",
+      "calories": 90,
+      "protein": 0,
+      "carbs": 24,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Kids Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-82907",
+      "name": "Kids Beverages - Coca-Cola",
+      "calories": 70,
+      "protein": 0,
+      "carbs": 20,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Kids Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-99285",
+      "name": "Kids Beverages - Dr Pepper",
+      "calories": 80,
+      "protein": 0,
+      "carbs": 20,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Kids Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-82933",
+      "name": "Kids Beverages - Hi-C Fruit Punch",
+      "calories": 80,
+      "protein": 0,
+      "carbs": 23,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Kids Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-82931",
+      "name": "Kids Beverages - Hi-C Orange",
+      "calories": 90,
+      "protein": 0,
+      "carbs": 25,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Kids Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-82934",
+      "name": "Kids Beverages - Minute Maid Lemonade",
+      "calories": 80,
+      "protein": 0,
+      "carbs": 22,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Kids Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-82936",
+      "name": "Kids Beverages - Red Raspberry Lemonade",
+      "calories": 90,
+      "protein": 0,
+      "carbs": 24,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Kids Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-82930",
+      "name": "Kids Beverages - Sprite",
+      "calories": 70,
+      "protein": 0,
+      "carbs": 19,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Kids Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-82937",
+      "name": "Kids Beverages - Wild Strawberry Lemonade",
+      "calories": 90,
+      "protein": 0,
+      "carbs": 24,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Kids Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-356226",
+      "name": "All-American Cheeseburger",
+      "calories": 880,
+      "protein": 50,
+      "carbs": 48,
+      "fat": 55,
+      "servingLabel": "1 listed serving (Burgers & Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-356227",
+      "name": "Bacon Cheeseburger",
+      "calories": 980,
+      "protein": 59,
+      "carbs": 48,
+      "fat": 62,
+      "servingLabel": "1 listed serving (Burgers & Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-356388",
+      "name": "BBQ Chicken Sandwich",
+      "calories": 640,
+      "protein": 55,
+      "carbs": 63,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Burgers & Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-467486",
+      "name": "Country Fried Pork Sandwich (Indiana) (in selected stores only)",
+      "calories": 1040,
+      "protein": 39,
+      "carbs": 59,
+      "fat": 73,
+      "servingLabel": "1 listed serving (Burgers & Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-361885",
+      "name": "Country Fried Pork Sandwich (Iowa) (in selected stores only)",
+      "calories": 620,
+      "protein": 39,
+      "carbs": 53,
+      "fat": 28,
+      "servingLabel": "1 listed serving (Burgers & Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-467478",
+      "name": "Fried Chicken Sandwich (in selected stores only)",
+      "calories": 830,
+      "protein": 50,
+      "carbs": 72,
+      "fat": 37,
+      "servingLabel": "1 listed serving (Burgers & Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-467477",
+      "name": "Grilled Chicken Sandwich (in selected stores only)",
+      "calories": 560,
+      "protein": 55,
+      "carbs": 45,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Burgers & Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-356390",
+      "name": "Mushroom Jack Chicken Sandwich",
+      "calories": 710,
+      "protein": 63,
+      "carbs": 48,
+      "fat": 30,
+      "servingLabel": "1 listed serving (Burgers & Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-356389",
+      "name": "Pulled Pork Sandwich",
+      "calories": 870,
+      "protein": 68,
+      "carbs": 62,
+      "fat": 40,
+      "servingLabel": "1 listed serving (Burgers & Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-361152",
+      "name": "Pulled Pork Sandwich (North Carolina only)",
+      "calories": 830,
+      "protein": 69,
+      "carbs": 52,
+      "fat": 39,
+      "servingLabel": "1 listed serving (Burgers & Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-361153",
+      "name": "Pulled Pork Sandwich (South Carolina only)",
+      "calories": 840,
+      "protein": 66,
+      "carbs": 59,
+      "fat": 38,
+      "servingLabel": "1 listed serving (Burgers & Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-356391",
+      "name": "Smokehouse Burger",
+      "calories": 1080,
+      "protein": 58,
+      "carbs": 60,
+      "fat": 67,
+      "servingLabel": "1 listed serving (Burgers & Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-356232",
+      "name": "Applesauce",
+      "calories": 110,
+      "protein": 0,
+      "carbs": 28,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Legendary Sides & Extras; size in item name)"
+    },
+    {
+      "id": "nutritionix-356234",
+      "name": "Baked Potato",
+      "calories": 380,
+      "protein": 7,
+      "carbs": 60,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Legendary Sides & Extras; size in item name)"
+    },
+    {
+      "id": "nutritionix-361150",
+      "name": "Baked Potato Soup Side - Cup (in selected stores only)",
+      "calories": 220,
+      "protein": 5,
+      "carbs": 16,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Legendary Sides & Extras; size in item name)"
+    },
+    {
+      "id": "nutritionix-358134",
+      "name": "Caesar Side Salad",
+      "calories": 440,
+      "protein": 6,
+      "carbs": 9,
+      "fat": 43,
+      "servingLabel": "1 listed serving (Legendary Sides & Extras; size in item name)"
+    },
+    {
+      "id": "nutritionix-379321",
+      "name": "Fresh-Baked Bread",
+      "calories": 200,
+      "protein": 5,
+      "carbs": 28,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Legendary Sides & Extras; size in item name)"
+    },
+    {
+      "id": "nutritionix-356269",
+      "name": "Fresh Vegetables",
+      "calories": 190,
+      "protein": 3,
+      "carbs": 13,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Legendary Sides & Extras; size in item name)"
+    },
+    {
+      "id": "nutritionix-356330",
+      "name": "Green Beans",
+      "calories": 100,
+      "protein": 6,
+      "carbs": 13,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Legendary Sides & Extras; size in item name)"
+    },
+    {
+      "id": "nutritionix-358135",
+      "name": "House Side Salad",
+      "calories": 230,
+      "protein": 13,
+      "carbs": 9,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Legendary Sides & Extras; size in item name)"
+    },
+    {
+      "id": "nutritionix-92556",
+      "name": "Mac and Cheese",
+      "calories": 380,
+      "protein": 17,
+      "carbs": 37,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Legendary Sides & Extras; size in item name)"
+    },
+    {
+      "id": "nutritionix-356371",
+      "name": "Mashed Potatoes",
+      "calories": 260,
+      "protein": 3,
+      "carbs": 24,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Legendary Sides & Extras; size in item name)"
+    },
+    {
+      "id": "nutritionix-356283",
+      "name": "Sauteed Mushrooms",
+      "calories": 120,
+      "protein": 3,
+      "carbs": 5,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Legendary Sides & Extras; size in item name)"
+    },
+    {
+      "id": "nutritionix-358137",
+      "name": "Sauteed Onions",
+      "calories": 150,
+      "protein": 2,
+      "carbs": 13,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Legendary Sides & Extras; size in item name)"
+    },
+    {
+      "id": "nutritionix-356244",
+      "name": "Seasoned Corn",
+      "calories": 190,
+      "protein": 5,
+      "carbs": 29,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Legendary Sides & Extras; size in item name)"
+    },
+    {
+      "id": "nutritionix-358136",
+      "name": "Seasoned Rice",
+      "calories": 360,
+      "protein": 6,
+      "carbs": 47,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Legendary Sides & Extras; size in item name)"
+    },
+    {
+      "id": "nutritionix-356290",
+      "name": "Legendary Sides & Extras - Steak Fries",
+      "calories": 360,
+      "protein": 5,
+      "carbs": 53,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Legendary Sides & Extras; size in item name)"
+    },
+    {
+      "id": "nutritionix-359055",
+      "name": "Steamed Broccoli",
+      "calories": 210,
+      "protein": 5,
+      "carbs": 17,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Legendary Sides & Extras; size in item name)"
+    },
+    {
+      "id": "nutritionix-356294",
+      "name": "Sweet Potato",
+      "calories": 350,
+      "protein": 6,
+      "carbs": 62,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Legendary Sides & Extras; size in item name)"
+    },
+    {
+      "id": "nutritionix-356257",
+      "name": "Texas Red Chili (no beans) Side - Cup",
+      "calories": 250,
+      "protein": 17,
+      "carbs": 13,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Legendary Sides & Extras; size in item name)"
+    },
+    {
+      "id": "nutritionix-356323",
+      "name": "Texas Red Chili (with beans) Side - Cup",
+      "calories": 210,
+      "protein": 16,
+      "carbs": 14,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Legendary Sides & Extras; size in item name)"
+    },
+    {
+      "id": "nutritionix-78563",
+      "name": "Whipped Buttery Spread",
+      "calories": 90,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Legendary Sides - Baked Potato Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-78688",
+      "name": "Italian Dressing",
+      "calories": 270,
+      "protein": 0,
+      "carbs": 12,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Legendary Sides - House Salad Made-from-Scratch Dressings (2 oz); size in item name)"
+    },
+    {
+      "id": "nutritionix-78406",
+      "name": "Brown Sugar",
+      "calories": 110,
+      "protein": 0,
+      "carbs": 28,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Legendary Sides - Sweet Potato Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-78440",
+      "name": "Cinnamon",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Legendary Sides - Sweet Potato Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-80098",
+      "name": "Honey Cinnamon Buttery Spread",
+      "calories": 90,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Legendary Sides - Sweet Potato Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-78677",
+      "name": "Honey Cinnamon Caramel Sauce",
+      "calories": 290,
+      "protein": 0,
+      "carbs": 32,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Legendary Sides - Sweet Potato Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-78678",
+      "name": "Marshmallows",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 25,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Legendary Sides - Sweet Potato Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-78526",
+      "name": "Saltines",
+      "calories": 25,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 0.5,
+      "servingLabel": "1 listed serving (Soups & Chilis - Add Saltine Crackers; size in item name)"
+    },
+    {
+      "id": "nutritionix-111893",
+      "name": "Charred Jalapenos",
+      "calories": 50,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Sidekicks; size in item name)"
+    },
+    {
+      "id": "nutritionix-78520",
+      "name": "Fall-off-the-Bone Ribs - Sidekick",
+      "calories": 550,
+      "protein": 44,
+      "carbs": 6,
+      "fat": 39,
+      "servingLabel": "1 listed serving (Sidekicks; size in item name)"
+    },
+    {
+      "id": "nutritionix-79880",
+      "name": "Grilled Shrimp - Sidekick",
+      "calories": 440,
+      "protein": 24,
+      "carbs": 35,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Sidekicks; size in item name)"
+    },
+    {
+      "id": "nutritionix-356237",
+      "name": "Big Ol' Brownie",
+      "calories": 1200,
+      "protein": 12,
+      "carbs": 203,
+      "fat": 40,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-361881",
+      "name": "Bread Pudding (in selected stores only)",
+      "calories": 1390,
+      "protein": 26,
+      "carbs": 204,
+      "fat": 53,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-356270",
+      "name": "Granny's Apple Classic",
+      "calories": 1110,
+      "protein": 9,
+      "carbs": 161,
+      "fat": 50,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-356292",
+      "name": "Strawberry Cheesecake",
+      "calories": 800,
+      "protein": 10,
+      "carbs": 76,
+      "fat": 47,
+      "servingLabel": "1 listed serving (Desserts; size in item name)"
+    },
+    {
+      "id": "nutritionix-82908",
+      "name": "Diet Coke",
+      "calories": 0,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Soft Drinks; size in item name)"
+    },
+    {
+      "id": "nutritionix-82938",
+      "name": "Iced Tea - Original Sweet",
+      "calories": 110,
+      "protein": 0,
+      "carbs": 28,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Iced Tea; size in item name)"
+    },
+    {
+      "id": "nutritionix-82939",
+      "name": "Iced Tea - Original Unsweet",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Iced Tea; size in item name)"
+    },
+    {
+      "id": "nutritionix-82940",
+      "name": "Iced Tea - Peach Sweet",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 35,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Iced Tea; size in item name)"
+    },
+    {
+      "id": "nutritionix-82941",
+      "name": "Iced Tea - Peach Unsweet",
+      "calories": 45,
+      "protein": 0,
+      "carbs": 11,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Iced Tea; size in item name)"
+    },
+    {
+      "id": "nutritionix-82942",
+      "name": "Iced Tea - Raspberry Sweet",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 35,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Iced Tea; size in item name)"
+    },
+    {
+      "id": "nutritionix-82943",
+      "name": "Iced Tea - Raspberry Unsweet",
+      "calories": 40,
+      "protein": 0,
+      "carbs": 10,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Iced Tea; size in item name)"
+    },
+    {
+      "id": "nutritionix-82944",
+      "name": "Coffee - Decaffeinated",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Other Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-82945",
+      "name": "Coffee - Regular",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Other Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-82946",
+      "name": "Dasani Bottled Water",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Other Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-82947",
+      "name": "Juice - Apple",
+      "calories": 80,
+      "protein": 0,
+      "carbs": 21,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Other Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-82948",
+      "name": "Juice - Orange",
+      "calories": 90,
+      "protein": 1,
+      "carbs": 20,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Other Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-82949",
+      "name": "Milk - Chocolate",
+      "calories": 150,
+      "protein": 7,
+      "carbs": 26,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Other Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-82950",
+      "name": "Milk - Regular",
+      "calories": 90,
+      "protein": 7,
+      "carbs": 10,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Other Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-83305",
+      "name": "Hurricane Margarita - Frozen (10 oz)",
+      "calories": 240,
+      "protein": 0,
+      "carbs": 39,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Margaritas; size in item name)"
+    },
+    {
+      "id": "nutritionix-83306",
+      "name": "Hurricane Margarita - Rocks (10 oz)",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 23,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Margaritas; size in item name)"
+    },
+    {
+      "id": "nutritionix-83308",
+      "name": "Jamaican Cowboy Margarita - Frozen (10 oz)",
+      "calories": 240,
+      "protein": 0,
+      "carbs": 33,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Margaritas; size in item name)"
+    },
+    {
+      "id": "nutritionix-83309",
+      "name": "Jamaican Cowboy Margarita - Rocks (10 oz)",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 14,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Margaritas; size in item name)"
+    },
+    {
+      "id": "nutritionix-83307",
+      "name": "Mango Margarita - Frozen (10 oz)",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 40,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Margaritas; size in item name)"
+    },
+    {
+      "id": "nutritionix-82959",
+      "name": "Mango Margarita - Frozen (18 oz)",
+      "calories": 520,
+      "protein": 0,
+      "carbs": 76,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Margaritas; size in item name)"
+    },
+    {
+      "id": "nutritionix-83279",
+      "name": "Mango Margarita - Rocks (10 oz)",
+      "calories": 220,
+      "protein": 0,
+      "carbs": 35,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Margaritas; size in item name)"
+    },
+    {
+      "id": "nutritionix-82951",
+      "name": "Original Margarita - Frozen (10 oz)",
+      "calories": 230,
+      "protein": 0,
+      "carbs": 35,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Margaritas; size in item name)"
+    },
+    {
+      "id": "nutritionix-82952",
+      "name": "Original Margarita - Frozen (18 oz)",
+      "calories": 490,
+      "protein": 0,
+      "carbs": 75,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Margaritas; size in item name)"
+    },
+    {
+      "id": "nutritionix-82953",
+      "name": "Original Margarita - Rocks (10 oz)",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 16,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Margaritas; size in item name)"
+    },
+    {
+      "id": "nutritionix-82954",
+      "name": "Original Margarita - Rocks (18 oz)",
+      "calories": 270,
+      "protein": 0,
+      "carbs": 26,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Margaritas; size in item name)"
+    },
+    {
+      "id": "nutritionix-83310",
+      "name": "Raspberry Margarita - Frozen (10 oz)",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 44,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Margaritas; size in item name)"
+    },
+    {
+      "id": "nutritionix-82960",
+      "name": "Raspberry Margarita - Frozen (18 oz)",
+      "calories": 520,
+      "protein": 0,
+      "carbs": 83,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Margaritas; size in item name)"
+    },
+    {
+      "id": "nutritionix-83276",
+      "name": "Raspberry Margarita - Rocks (10 oz)",
+      "calories": 190,
+      "protein": 0,
+      "carbs": 29,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Margaritas; size in item name)"
+    },
+    {
+      "id": "nutritionix-83283",
+      "name": "Raspberry Margarita - Rocks (18 oz)",
+      "calories": 310,
+      "protein": 0,
+      "carbs": 45,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Margaritas; size in item name)"
+    },
+    {
+      "id": "nutritionix-83311",
+      "name": "Sangria Margarita - Frozen (10 oz)",
+      "calories": 230,
+      "protein": 0,
+      "carbs": 35,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Margaritas; size in item name)"
+    },
+    {
+      "id": "nutritionix-82961",
+      "name": "Sangria Margarita - Frozen (18 oz)",
+      "calories": 440,
+      "protein": 0,
+      "carbs": 66,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Margaritas; size in item name)"
+    },
+    {
+      "id": "nutritionix-83312",
+      "name": "Sangria Margarita - Rocks (10 oz)",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 18,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Margaritas; size in item name)"
+    },
+    {
+      "id": "nutritionix-82962",
+      "name": "Sangria Margarita - Rocks (18 oz)",
+      "calories": 260,
+      "protein": 0,
+      "carbs": 28,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Margaritas; size in item name)"
+    },
+    {
+      "id": "nutritionix-83313",
+      "name": "Strawberry Margarita - Frozen (10 oz)",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 45,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Margaritas; size in item name)"
+    },
+    {
+      "id": "nutritionix-82963",
+      "name": "Strawberry Margarita - Frozen (18 oz)",
+      "calories": 520,
+      "protein": 0,
+      "carbs": 85,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Margaritas; size in item name)"
+    },
+    {
+      "id": "nutritionix-83277",
+      "name": "Strawberry Margarita - Rocks (10 oz)",
+      "calories": 190,
+      "protein": 0,
+      "carbs": 29,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Margaritas; size in item name)"
+    },
+    {
+      "id": "nutritionix-83282",
+      "name": "Strawberry Margarita - Rocks (18 oz)",
+      "calories": 310,
+      "protein": 0,
+      "carbs": 46,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Margaritas; size in item name)"
+    },
+    {
+      "id": "nutritionix-82964",
+      "name": "The Legend Margarita",
+      "calories": 270,
+      "protein": 0,
+      "carbs": 26,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Margaritas; size in item name)"
+    },
+    {
+      "id": "nutritionix-82965",
+      "name": "1800 Kicker",
+      "calories": 60,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Margarita Kickers; size in item name)"
+    },
+    {
+      "id": "nutritionix-82966",
+      "name": "Patron Kicker",
+      "calories": 60,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Margarita Kickers; size in item name)"
+    },
+    {
+      "id": "nutritionix-82967",
+      "name": "Armadillo Punch",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 17,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Signature Cocktails; size in item name)"
+    },
+    {
+      "id": "nutritionix-82969",
+      "name": "Island Cooler",
+      "calories": 290,
+      "protein": 0,
+      "carbs": 40,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Signature Cocktails; size in item name)"
+    },
+    {
+      "id": "nutritionix-82968",
+      "name": "Long Island Iced Tea",
+      "calories": 270,
+      "protein": 0,
+      "carbs": 55,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Signature Cocktails; size in item name)"
+    },
+    {
+      "id": "nutritionix-83281",
+      "name": "Southern Whiskey Long Island Iced Tea",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 34,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Signature Cocktails; size in item name)"
+    },
+    {
+      "id": "nutritionix-82973",
+      "name": "Top Shelf Long Island Iced Tea",
+      "calories": 340,
+      "protein": 0,
+      "carbs": 55,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Signature Cocktails; size in item name)"
+    },
+    {
+      "id": "nutritionix-82970",
+      "name": "Island Kicker",
+      "calories": 45,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Signature Cocktails - Kicker; size in item name)"
+    },
+    {
+      "id": "nutritionix-82974",
+      "name": "Blush Wine (6 oz glass, 4 glasses per bottle)",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 10,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Wine; size in item name)"
+    },
+    {
+      "id": "nutritionix-82975",
+      "name": "Blush Wine (9 oz Texas Pour)",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 15,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Wine; size in item name)"
+    },
+    {
+      "id": "nutritionix-82976",
+      "name": "Red Wine (6 oz glass, 4 glasses per bottle)",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Wine; size in item name)"
+    },
+    {
+      "id": "nutritionix-82977",
+      "name": "Red Wine (9 oz Texas Pour)",
+      "calories": 230,
+      "protein": 0,
+      "carbs": 8,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Wine; size in item name)"
+    },
+    {
+      "id": "nutritionix-82978",
+      "name": "White Wine (6 oz glass, 4 glasses per bottle)",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Wine; size in item name)"
+    },
+    {
+      "id": "nutritionix-82979",
+      "name": "White Wine (9 oz Texas Pour)",
+      "calories": 230,
+      "protein": 0,
+      "carbs": 8,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Wine; size in item name)"
+    }
+  ],
+  "sourceDate": "2026-09-17"
+}

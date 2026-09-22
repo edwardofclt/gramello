@@ -1,0 +1,1165 @@
+{
+  "chain": "Auntie Anne's",
+  "sourceUrl": "https://assets.ctfassets.net/zqt8tllj2cy0/10Ezjc1ozMDByK7cBBikSn/4ca91079eaac12bb63fcec420cd0ca46/AA_2103518_NutritionAllergenGuide_W2andW3_2026_HIGHRES-1.pdf",
+  "sourceKind": "restaurant",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "name": "Crispy Cheesy Mini Dogs (small)",
+      "calories": 690,
+      "fat": 39,
+      "carbs": 59,
+      "protein": 27,
+      "servingLabel": "Approx 8 pieces",
+      "id": "crispy-cheesy-mini-dogs-small-approx-8-pieces"
+    },
+    {
+      "name": "Crispy Cheesy Mini Dogs (regular)",
+      "calories": 950,
+      "fat": 54,
+      "carbs": 81,
+      "protein": 37,
+      "servingLabel": "Approx 11 pieces",
+      "id": "crispy-cheesy-mini-dogs-regular-approx-11-pieces"
+    },
+    {
+      "name": "Crispy Cheesy Mini Dogs (bucket)",
+      "calories": 690,
+      "fat": 39,
+      "carbs": 59,
+      "protein": 27,
+      "servingLabel": "1 serving (8 pieces; bucket contains 5 servings)",
+      "id": "crispy-cheesy-mini-dogs-bucket-1-serving-8-pieces-bucket-contains-5-servings"
+    },
+    {
+      "name": "Lemonade Mixer, Peach",
+      "calories": 260,
+      "fat": 0,
+      "carbs": 65,
+      "protein": 0,
+      "servingLabel": "Small (16 fl oz)",
+      "id": "lemonade-mixer-peach-small-16-fl-oz"
+    },
+    {
+      "name": "Lemonade Mixer, Peach",
+      "calories": 310,
+      "fat": 0,
+      "carbs": 77,
+      "protein": 0,
+      "servingLabel": "Med (20 fl oz)",
+      "id": "lemonade-mixer-peach-med-20-fl-oz"
+    },
+    {
+      "name": "Lemonade Mixer, Peach",
+      "calories": 470,
+      "fat": 0,
+      "carbs": 117,
+      "protein": 0,
+      "servingLabel": "Large (30 fl oz)",
+      "id": "lemonade-mixer-peach-large-30-fl-oz"
+    },
+    {
+      "name": "Frozen Lemonade Mixer, Peach",
+      "calories": 370,
+      "fat": 0,
+      "carbs": 92,
+      "protein": 0,
+      "servingLabel": "Small (16 fl oz)",
+      "id": "frozen-lemonade-mixer-peach-small-16-fl-oz"
+    },
+    {
+      "name": "Frozen Lemonade Mixer, Peach",
+      "calories": 430,
+      "fat": 0,
+      "carbs": 106,
+      "protein": 0,
+      "servingLabel": "Med (20 fl oz)",
+      "id": "frozen-lemonade-mixer-peach-med-20-fl-oz"
+    },
+    {
+      "name": "Frozen Lemonade Mixer, Peach",
+      "calories": 610,
+      "fat": 0,
+      "carbs": 153,
+      "protein": 0,
+      "servingLabel": "Large (30 fl oz)",
+      "id": "frozen-lemonade-mixer-peach-large-30-fl-oz"
+    },
+    {
+      "name": "Lemonade Spritz, Peach",
+      "calories": 250,
+      "fat": 0,
+      "carbs": 61,
+      "protein": 0,
+      "servingLabel": "Small (16 fl oz)",
+      "id": "lemonade-spritz-peach-small-16-fl-oz"
+    },
+    {
+      "name": "Lemonade Spritz, Peach",
+      "calories": 280,
+      "fat": 0,
+      "carbs": 70,
+      "protein": 0,
+      "servingLabel": "Med (20 fl oz)",
+      "id": "lemonade-spritz-peach-med-20-fl-oz"
+    },
+    {
+      "name": "Lemonade Spritz, Peach",
+      "calories": 450,
+      "fat": 0,
+      "carbs": 113,
+      "protein": 0,
+      "servingLabel": "Large (30 fl oz)",
+      "id": "lemonade-spritz-peach-large-30-fl-oz"
+    },
+    {
+      "name": "Mozzarella Stuffed Nuggets (small)",
+      "calories": 540,
+      "fat": 17,
+      "carbs": 75,
+      "protein": 21,
+      "servingLabel": "Approx 10 pieces",
+      "id": "mozzarella-stuffed-nuggets-small-approx-10-pieces"
+    },
+    {
+      "name": "Mozzarella Stuffed Nuggets (regular)",
+      "calories": 700,
+      "fat": 22,
+      "carbs": 97,
+      "protein": 27,
+      "servingLabel": "Approx 13 pieces",
+      "id": "mozzarella-stuffed-nuggets-regular-approx-13-pieces"
+    },
+    {
+      "name": "Mozzarella Stuffed Nuggets (bucket)",
+      "calories": 540,
+      "fat": 17,
+      "carbs": 75,
+      "protein": 21,
+      "servingLabel": "1 serving (10 pieces; bucket contains 4 servings)",
+      "id": "mozzarella-stuffed-nuggets-bucket-1-serving-10-pieces-bucket-contains-4-servings"
+    },
+    {
+      "name": "(Coke) Twisted Sip",
+      "calories": 260,
+      "fat": 6,
+      "carbs": 54,
+      "protein": 0,
+      "servingLabel": "Med (20 fl oz)",
+      "id": "coke-twisted-sip-med-20-fl-oz"
+    },
+    {
+      "name": "(Coke) Twisted Sip Mixer, Strawberry",
+      "calories": 300,
+      "fat": 6,
+      "carbs": 64,
+      "protein": 0,
+      "servingLabel": "Med (20 fl oz)",
+      "id": "coke-twisted-sip-mixer-strawberry-med-20-fl-oz"
+    },
+    {
+      "name": "(Coke) Twisted Lemonade Sip",
+      "calories": 280,
+      "fat": 6,
+      "carbs": 60,
+      "protein": 0,
+      "servingLabel": "Med (20 fl oz)",
+      "id": "coke-twisted-lemonade-sip-med-20-fl-oz"
+    },
+    {
+      "name": "(Coke) Twisted Lemonade Sip Mixer, Strawberry",
+      "calories": 310,
+      "fat": 6,
+      "carbs": 68,
+      "protein": 0,
+      "servingLabel": "Med (20 fl oz)",
+      "id": "coke-twisted-lemonade-sip-mixer-strawberry-med-20-fl-oz"
+    },
+    {
+      "name": "(Coke) Twisted Frozen Lemonade Sip",
+      "calories": 350,
+      "fat": 6,
+      "carbs": 78,
+      "protein": 0,
+      "servingLabel": "Med (20 fl oz)",
+      "id": "coke-twisted-frozen-lemonade-sip-med-20-fl-oz"
+    },
+    {
+      "name": "(Coke) Twisted Frozen Lemonade Sip Mixer, Strawberry",
+      "calories": 390,
+      "fat": 6,
+      "carbs": 86,
+      "protein": 0,
+      "servingLabel": "Med (20 fl oz)",
+      "id": "coke-twisted-frozen-lemonade-sip-mixer-strawberry-med-20-fl-oz"
+    },
+    {
+      "name": "(Diet Coke) Twisted Sip",
+      "calories": 100,
+      "fat": 6,
+      "carbs": 12,
+      "protein": 0,
+      "servingLabel": "Med (20 fl oz)",
+      "id": "diet-coke-twisted-sip-med-20-fl-oz"
+    },
+    {
+      "name": "(Diet Coke) Twisted Sip Mixer, Strawberry",
+      "calories": 140,
+      "fat": 6,
+      "carbs": 22,
+      "protein": 0,
+      "servingLabel": "Med (20 fl oz)",
+      "id": "diet-coke-twisted-sip-mixer-strawberry-med-20-fl-oz"
+    },
+    {
+      "name": "(Diet Coke) Twisted Lemonade Sip",
+      "calories": 170,
+      "fat": 6,
+      "carbs": 30,
+      "protein": 0,
+      "servingLabel": "Med (20 fl oz)",
+      "id": "diet-coke-twisted-lemonade-sip-med-20-fl-oz"
+    },
+    {
+      "name": "(Diet Coke) Twisted Lemonade Sip Mixer, Strawberry",
+      "calories": 200,
+      "fat": 6,
+      "carbs": 38,
+      "protein": 0,
+      "servingLabel": "Med (20 fl oz)",
+      "id": "diet-coke-twisted-lemonade-sip-mixer-strawberry-med-20-fl-oz"
+    },
+    {
+      "name": "(Diet Coke) Twisted Frozen Lemonade Sip",
+      "calories": 240,
+      "fat": 6,
+      "carbs": 49,
+      "protein": 0,
+      "servingLabel": "Med (20 fl oz)",
+      "id": "diet-coke-twisted-frozen-lemonade-sip-med-20-fl-oz"
+    },
+    {
+      "name": "(Diet Coke) Twisted Frozen Lemonade Sip Mixer, Strawberry",
+      "calories": 280,
+      "fat": 6,
+      "carbs": 57,
+      "protein": 0,
+      "servingLabel": "Med (20 fl oz)",
+      "id": "diet-coke-twisted-frozen-lemonade-sip-mixer-strawberry-med-20-fl-oz"
+    },
+    {
+      "name": "(Sprite) Twisted Sip",
+      "calories": 250,
+      "fat": 6,
+      "carbs": 53,
+      "protein": 0,
+      "servingLabel": "Med (20 fl oz)",
+      "id": "sprite-twisted-sip-med-20-fl-oz"
+    },
+    {
+      "name": "(Sprite) Twisted Sip Mixer, Strawberry",
+      "calories": 290,
+      "fat": 6,
+      "carbs": 63,
+      "protein": 0,
+      "servingLabel": "Med (20 fl oz)",
+      "id": "sprite-twisted-sip-mixer-strawberry-med-20-fl-oz"
+    },
+    {
+      "name": "(Sprite) Twisted Lemonade Sip",
+      "calories": 250,
+      "fat": 6,
+      "carbs": 53,
+      "protein": 0,
+      "servingLabel": "Med (20 fl oz)",
+      "id": "sprite-twisted-lemonade-sip-med-20-fl-oz"
+    },
+    {
+      "name": "(Sprite) Twisted Lemonade Sip Mixer, Strawberry",
+      "calories": 310,
+      "fat": 6,
+      "carbs": 67,
+      "protein": 0,
+      "servingLabel": "Med (20 fl oz)",
+      "id": "sprite-twisted-lemonade-sip-mixer-strawberry-med-20-fl-oz"
+    },
+    {
+      "name": "(Sprite) Twisted Frozen Lemonade Sip",
+      "calories": 350,
+      "fat": 6,
+      "carbs": 77,
+      "protein": 0,
+      "servingLabel": "Med (20 fl oz)",
+      "id": "sprite-twisted-frozen-lemonade-sip-med-20-fl-oz"
+    },
+    {
+      "name": "(Sprite) Twisted Frozen Lemonade Sip Mixer, Strawberry",
+      "calories": 380,
+      "fat": 6,
+      "carbs": 86,
+      "protein": 0,
+      "servingLabel": "Med (20 fl oz)",
+      "id": "sprite-twisted-frozen-lemonade-sip-mixer-strawberry-med-20-fl-oz"
+    },
+    {
+      "name": "Original Nuggets Small - 16 oz cup",
+      "calories": 430,
+      "fat": 9,
+      "carbs": 78,
+      "protein": 10,
+      "servingLabel": "Approx 19 pieces",
+      "id": "original-nuggets-small-16-oz-cup-approx-19-pieces"
+    },
+    {
+      "name": "Original Nuggets Regular - 21oz cup",
+      "calories": 580,
+      "fat": 12,
+      "carbs": 106,
+      "protein": 13,
+      "servingLabel": "Approx 26 pieces",
+      "id": "original-nuggets-regular-21oz-cup-approx-26-pieces"
+    },
+    {
+      "name": "Original Nuggets Bucket",
+      "calories": 430,
+      "fat": 9,
+      "carbs": 78,
+      "protein": 10,
+      "servingLabel": "1 serving (19 pieces; bucket contains 5 servings)",
+      "id": "original-nuggets-bucket-1-serving-19-pieces-bucket-contains-5-servings"
+    },
+    {
+      "name": "Cinnamon Sugar Nuggets Small - 16 oz cup",
+      "calories": 500,
+      "fat": 9,
+      "carbs": 96,
+      "protein": 10,
+      "servingLabel": "Approx 19 pieces",
+      "id": "cinnamon-sugar-nuggets-small-16-oz-cup-approx-19-pieces"
+    },
+    {
+      "name": "Cinnamon Sugar Nuggets Regular - 21oz cup",
+      "calories": 680,
+      "fat": 12,
+      "carbs": 131,
+      "protein": 13,
+      "servingLabel": "Approx 26 pieces",
+      "id": "cinnamon-sugar-nuggets-regular-21oz-cup-approx-26-pieces"
+    },
+    {
+      "name": "Cinnamon Sugar Nuggets Bucket",
+      "calories": 500,
+      "fat": 9,
+      "carbs": 96,
+      "protein": 10,
+      "servingLabel": "1 serving (19 pieces; bucket contains 5 servings)",
+      "id": "cinnamon-sugar-nuggets-bucket-1-serving-19-pieces-bucket-contains-5-servings"
+    },
+    {
+      "name": "Pepperoni Nuggets Small - 16 oz cup",
+      "calories": 480,
+      "fat": 20,
+      "carbs": 58,
+      "protein": 16,
+      "servingLabel": "Approx 14 pieces",
+      "id": "pepperoni-nuggets-small-16-oz-cup-approx-14-pieces"
+    },
+    {
+      "name": "Pepperoni Nuggets Regular - 21oz cup",
+      "calories": 650,
+      "fat": 28,
+      "carbs": 79,
+      "protein": 22,
+      "servingLabel": "Approx 19 pieces",
+      "id": "pepperoni-nuggets-regular-21oz-cup-approx-19-pieces"
+    },
+    {
+      "name": "Pepperoni Nuggets Bucket",
+      "calories": 480,
+      "fat": 20,
+      "carbs": 58,
+      "protein": 16,
+      "servingLabel": "1 serving (14 pieces; bucket contains 5 servings)",
+      "id": "pepperoni-nuggets-bucket-1-serving-14-pieces-bucket-contains-5-servings"
+    },
+    {
+      "name": "Mini Pretzel Dogs Small - 16 oz cup",
+      "calories": 700,
+      "fat": 37,
+      "carbs": 73,
+      "protein": 21,
+      "servingLabel": "Approx 10 pieces",
+      "id": "mini-pretzel-dogs-small-16-oz-cup-approx-10-pieces"
+    },
+    {
+      "name": "Mini Pretzel Dogs Regular - 21oz cup",
+      "calories": 980,
+      "fat": 51,
+      "carbs": 102,
+      "protein": 29,
+      "servingLabel": "Approx 14 pieces",
+      "id": "mini-pretzel-dogs-regular-21oz-cup-approx-14-pieces"
+    },
+    {
+      "name": "Mini Pretzel Dogs Bucket",
+      "calories": 700,
+      "fat": 37,
+      "carbs": 73,
+      "protein": 21,
+      "servingLabel": "1 serving (10 pieces; bucket contains 5 servings)",
+      "id": "mini-pretzel-dogs-bucket-1-serving-10-pieces-bucket-contains-5-servings"
+    },
+    {
+      "name": "Original Pretzel Dog",
+      "calories": 360,
+      "fat": 20,
+      "carbs": 35,
+      "protein": 10,
+      "servingLabel": "1 each",
+      "id": "original-pretzel-dog-1-each"
+    },
+    {
+      "name": "Cheese Pretzel Dog",
+      "calories": 390,
+      "fat": 22,
+      "carbs": 34,
+      "protein": 13,
+      "servingLabel": "1 each",
+      "id": "cheese-pretzel-dog-1-each"
+    },
+    {
+      "name": "Jalapeno Cheese Pretzel Dog",
+      "calories": 400,
+      "fat": 23,
+      "carbs": 36,
+      "protein": 13,
+      "servingLabel": "1 each",
+      "id": "jalapeno-cheese-pretzel-dog-1-each"
+    },
+    {
+      "name": "Original Pretzel",
+      "calories": 350,
+      "fat": 5,
+      "carbs": 68,
+      "protein": 8,
+      "servingLabel": "1 each",
+      "id": "original-pretzel-1-each"
+    },
+    {
+      "name": "Cinnamon Sugar Pretzel",
+      "calories": 480,
+      "fat": 11,
+      "carbs": 88,
+      "protein": 9,
+      "servingLabel": "1 each",
+      "id": "cinnamon-sugar-pretzel-1-each"
+    },
+    {
+      "name": "Sweet Almond Pretzel",
+      "calories": 400,
+      "fat": 6,
+      "carbs": 77,
+      "protein": 9,
+      "servingLabel": "1 each",
+      "id": "sweet-almond-pretzel-1-each"
+    },
+    {
+      "name": "Pepperoni Pretzel",
+      "calories": 500,
+      "fat": 17,
+      "carbs": 69,
+      "protein": 16,
+      "servingLabel": "1 each",
+      "id": "pepperoni-pretzel-1-each"
+    },
+    {
+      "name": "Jalapeno Pretzel",
+      "calories": 350,
+      "fat": 5,
+      "carbs": 69,
+      "protein": 8,
+      "servingLabel": "1 each",
+      "id": "jalapeno-pretzel-1-each"
+    },
+    {
+      "name": "Cheese Dip",
+      "calories": 120,
+      "fat": 10,
+      "carbs": 5,
+      "protein": 2,
+      "servingLabel": "1 dip cup (1.7 oz)",
+      "id": "cheese-dip-1-dip-cup-1-7-oz"
+    },
+    {
+      "name": "Sweet Glaze Dip",
+      "calories": 160,
+      "fat": 0,
+      "carbs": 35,
+      "protein": 0,
+      "servingLabel": "1 dip cup (1.7 oz)",
+      "id": "sweet-glaze-dip-1-dip-cup-1-7-oz"
+    },
+    {
+      "name": "Hot Salsa Cheese Dip",
+      "calories": 120,
+      "fat": 10,
+      "carbs": 6,
+      "protein": 2,
+      "servingLabel": "1 dip cup (1.4 oz)",
+      "id": "hot-salsa-cheese-dip-1-dip-cup-1-4-oz"
+    },
+    {
+      "name": "Honey Mustard Dip",
+      "calories": 300,
+      "fat": 27,
+      "carbs": 14,
+      "protein": 1,
+      "servingLabel": "1 dip cup (2 oz)",
+      "id": "honey-mustard-dip-1-dip-cup-2-oz"
+    },
+    {
+      "name": "Cream Cheese Dip",
+      "calories": 70,
+      "fat": 7,
+      "carbs": 1,
+      "protein": 1,
+      "servingLabel": "1 dip cup (1 oz)",
+      "id": "cream-cheese-dip-1-dip-cup-1-oz"
+    },
+    {
+      "name": "Marinara Dip",
+      "calories": 50,
+      "fat": 1,
+      "carbs": 10,
+      "protein": 2,
+      "servingLabel": "1 dip cup (2 oz)",
+      "id": "marinara-dip-1-dip-cup-2-oz"
+    },
+    {
+      "name": "Caramel Dip",
+      "calories": 160,
+      "fat": 2,
+      "carbs": 37,
+      "protein": 1,
+      "servingLabel": "1 dip cup (1.7 oz)",
+      "id": "caramel-dip-1-dip-cup-1-7-oz"
+    },
+    {
+      "name": "Ranch Dip",
+      "calories": 240,
+      "fat": 26,
+      "carbs": 3,
+      "protein": 1,
+      "servingLabel": "1 dip cup (2 oz)",
+      "id": "ranch-dip-1-dip-cup-2-oz"
+    },
+    {
+      "name": "Melted Cheese Dip",
+      "calories": 150,
+      "fat": 11,
+      "carbs": 6,
+      "protein": 5,
+      "servingLabel": "1 dip cup (1.25 oz)",
+      "id": "melted-cheese-dip-1-dip-cup-1-25-oz"
+    },
+    {
+      "name": "Egg & Cheese Sandwich",
+      "calories": 330,
+      "fat": 11,
+      "carbs": 45,
+      "protein": 12,
+      "servingLabel": "1 each",
+      "id": "egg-cheese-sandwich-1-each"
+    },
+    {
+      "name": "Bacon, Egg & Cheese Sandwich",
+      "calories": 420,
+      "fat": 18,
+      "carbs": 45,
+      "protein": 17,
+      "servingLabel": "1 each",
+      "id": "bacon-egg-cheese-sandwich-1-each"
+    },
+    {
+      "name": "Sausage, Egg & Cheese Sandwich",
+      "calories": 480,
+      "fat": 25,
+      "carbs": 46,
+      "protein": 18,
+      "servingLabel": "1 each",
+      "id": "sausage-egg-cheese-sandwich-1-each"
+    },
+    {
+      "name": "Original Lemonade",
+      "calories": 180,
+      "fat": 0,
+      "carbs": 47,
+      "protein": 0,
+      "servingLabel": "Small (16 fl oz)",
+      "id": "original-lemonade-small-16-fl-oz"
+    },
+    {
+      "name": "Original Lemonade",
+      "calories": 250,
+      "fat": 0,
+      "carbs": 63,
+      "protein": 0,
+      "servingLabel": "Med (20 fl oz)",
+      "id": "original-lemonade-med-20-fl-oz"
+    },
+    {
+      "name": "Original Lemonade",
+      "calories": 350,
+      "fat": 0,
+      "carbs": 89,
+      "protein": 0,
+      "servingLabel": "Large (30 fl oz)",
+      "id": "original-lemonade-large-30-fl-oz"
+    },
+    {
+      "name": "Lemonade Mixer, Blue Raspberry",
+      "calories": 220,
+      "fat": 0,
+      "carbs": 55,
+      "protein": 0,
+      "servingLabel": "Small (16 fl oz)",
+      "id": "lemonade-mixer-blue-raspberry-small-16-fl-oz"
+    },
+    {
+      "name": "Lemonade Mixer, Blue Raspberry",
+      "calories": 290,
+      "fat": 0,
+      "carbs": 72,
+      "protein": 0,
+      "servingLabel": "Med (20 fl oz)",
+      "id": "lemonade-mixer-blue-raspberry-med-20-fl-oz"
+    },
+    {
+      "name": "Lemonade Mixer, Blue Raspberry",
+      "calories": 430,
+      "fat": 0,
+      "carbs": 107,
+      "protein": 0,
+      "servingLabel": "Large (30 fl oz)",
+      "id": "lemonade-mixer-blue-raspberry-large-30-fl-oz"
+    },
+    {
+      "name": "Lemonade Mixer, Mango",
+      "calories": 230,
+      "fat": 0,
+      "carbs": 59,
+      "protein": 0,
+      "servingLabel": "Small (16 fl oz)",
+      "id": "lemonade-mixer-mango-small-16-fl-oz"
+    },
+    {
+      "name": "Lemonade Mixer, Mango",
+      "calories": 300,
+      "fat": 0,
+      "carbs": 78,
+      "protein": 0,
+      "servingLabel": "Med (20 fl oz)",
+      "id": "lemonade-mixer-mango-med-20-fl-oz"
+    },
+    {
+      "name": "Lemonade Mixer, Mango",
+      "calories": 450,
+      "fat": 0,
+      "carbs": 115,
+      "protein": 0,
+      "servingLabel": "Large (30 fl oz)",
+      "id": "lemonade-mixer-mango-large-30-fl-oz"
+    },
+    {
+      "name": "Lemonade Mixer, Strawberry",
+      "calories": 230,
+      "fat": 0,
+      "carbs": 58,
+      "protein": 0,
+      "servingLabel": "Small (16 fl oz)",
+      "id": "lemonade-mixer-strawberry-small-16-fl-oz"
+    },
+    {
+      "name": "Lemonade Mixer, Strawberry",
+      "calories": 300,
+      "fat": 0,
+      "carbs": 75,
+      "protein": 0,
+      "servingLabel": "Med (20 fl oz)",
+      "id": "lemonade-mixer-strawberry-med-20-fl-oz"
+    },
+    {
+      "name": "Lemonade Mixer, Strawberry",
+      "calories": 440,
+      "fat": 0,
+      "carbs": 111,
+      "protein": 0,
+      "servingLabel": "Large (30 fl oz)",
+      "id": "lemonade-mixer-strawberry-large-30-fl-oz"
+    },
+    {
+      "name": "Frozen Lemonade, Original",
+      "calories": 230,
+      "fat": 0,
+      "carbs": 59,
+      "protein": 0,
+      "servingLabel": "Small (16 fl oz)",
+      "id": "frozen-lemonade-original-small-16-fl-oz"
+    },
+    {
+      "name": "Frozen Lemonade, Original",
+      "calories": 290,
+      "fat": 0,
+      "carbs": 73,
+      "protein": 0,
+      "servingLabel": "Med (20 fl oz)",
+      "id": "frozen-lemonade-original-med-20-fl-oz"
+    },
+    {
+      "name": "Frozen Lemonade, Original",
+      "calories": 430,
+      "fat": 0,
+      "carbs": 109,
+      "protein": 0,
+      "servingLabel": "Large (30 fl oz)",
+      "id": "frozen-lemonade-original-large-30-fl-oz"
+    },
+    {
+      "name": "Frozen Lemonade Mixer, Blue Raspberry",
+      "calories": 270,
+      "fat": 0,
+      "carbs": 67,
+      "protein": 0,
+      "servingLabel": "Small (16 fl oz)",
+      "id": "frozen-lemonade-mixer-blue-raspberry-small-16-fl-oz"
+    },
+    {
+      "name": "Frozen Lemonade Mixer, Blue Raspberry",
+      "calories": 340,
+      "fat": 0,
+      "carbs": 86,
+      "protein": 0,
+      "servingLabel": "Med (20 fl oz)",
+      "id": "frozen-lemonade-mixer-blue-raspberry-med-20-fl-oz"
+    },
+    {
+      "name": "Frozen Lemonade Mixer, Blue Raspberry",
+      "calories": 500,
+      "fat": 0,
+      "carbs": 126,
+      "protein": 0,
+      "servingLabel": "Large (30 fl oz)",
+      "id": "frozen-lemonade-mixer-blue-raspberry-large-30-fl-oz"
+    },
+    {
+      "name": "Frozen Lemonade Mixer, Mango",
+      "calories": 280,
+      "fat": 0,
+      "carbs": 71,
+      "protein": 0,
+      "servingLabel": "Small (16 fl oz)",
+      "id": "frozen-lemonade-mixer-mango-small-16-fl-oz"
+    },
+    {
+      "name": "Frozen Lemonade Mixer, Mango",
+      "calories": 360,
+      "fat": 0,
+      "carbs": 92,
+      "protein": 0,
+      "servingLabel": "Med (20 fl oz)",
+      "id": "frozen-lemonade-mixer-mango-med-20-fl-oz"
+    },
+    {
+      "name": "Frozen Lemonade Mixer, Mango",
+      "calories": 520,
+      "fat": 0,
+      "carbs": 134,
+      "protein": 0,
+      "servingLabel": "Large (30 fl oz)",
+      "id": "frozen-lemonade-mixer-mango-large-30-fl-oz"
+    },
+    {
+      "name": "Frozen Lemonade Mixer, Strawberry",
+      "calories": 270,
+      "fat": 0,
+      "carbs": 69,
+      "protein": 0,
+      "servingLabel": "Small (16 fl oz)",
+      "id": "frozen-lemonade-mixer-strawberry-small-16-fl-oz"
+    },
+    {
+      "name": "Frozen Lemonade Mixer, Strawberry",
+      "calories": 350,
+      "fat": 0,
+      "carbs": 89,
+      "protein": 0,
+      "servingLabel": "Med (20 fl oz)",
+      "id": "frozen-lemonade-mixer-strawberry-med-20-fl-oz"
+    },
+    {
+      "name": "Frozen Lemonade Mixer, Strawberry",
+      "calories": 510,
+      "fat": 0,
+      "carbs": 130,
+      "protein": 0,
+      "servingLabel": "Large (30 fl oz)",
+      "id": "frozen-lemonade-mixer-strawberry-large-30-fl-oz"
+    },
+    {
+      "name": "Lemonade Spritz, Strawberry",
+      "calories": 190,
+      "fat": 0,
+      "carbs": 50,
+      "protein": 0,
+      "servingLabel": "Small (16 fl oz)",
+      "id": "lemonade-spritz-strawberry-small-16-fl-oz"
+    },
+    {
+      "name": "Lemonade Spritz, Strawberry",
+      "calories": 260,
+      "fat": 0,
+      "carbs": 67,
+      "protein": 0,
+      "servingLabel": "Med (20 fl oz)",
+      "id": "lemonade-spritz-strawberry-med-20-fl-oz"
+    },
+    {
+      "name": "Lemonade Spritz, Strawberry",
+      "calories": 380,
+      "fat": 0,
+      "carbs": 99,
+      "protein": 0,
+      "servingLabel": "Large (30 fl oz)",
+      "id": "lemonade-spritz-strawberry-large-30-fl-oz"
+    },
+    {
+      "name": "Lemonade Spritz, Mango",
+      "calories": 200,
+      "fat": 0,
+      "carbs": 51,
+      "protein": 0,
+      "servingLabel": "Small (16 fl oz)",
+      "id": "lemonade-spritz-mango-small-16-fl-oz"
+    },
+    {
+      "name": "Lemonade Spritz, Mango",
+      "calories": 260,
+      "fat": 0,
+      "carbs": 68,
+      "protein": 0,
+      "servingLabel": "Med (20 fl oz)",
+      "id": "lemonade-spritz-mango-med-20-fl-oz"
+    },
+    {
+      "name": "Lemonade Spritz, Mango",
+      "calories": 310,
+      "fat": 0,
+      "carbs": 79,
+      "protein": 0,
+      "servingLabel": "Large (30 fl oz)",
+      "id": "lemonade-spritz-mango-large-30-fl-oz"
+    },
+    {
+      "name": "Lemonade Spritz, Blue Raspberry",
+      "calories": 190,
+      "fat": 0,
+      "carbs": 48,
+      "protein": 0,
+      "servingLabel": "Small (16 fl oz)",
+      "id": "lemonade-spritz-blue-raspberry-small-16-fl-oz"
+    },
+    {
+      "name": "Lemonade Spritz, Blue Raspberry",
+      "calories": 250,
+      "fat": 0,
+      "carbs": 64,
+      "protein": 0,
+      "servingLabel": "Med (20 fl oz)",
+      "id": "lemonade-spritz-blue-raspberry-med-20-fl-oz"
+    },
+    {
+      "name": "Lemonade Spritz, Blue Raspberry",
+      "calories": 370,
+      "fat": 0,
+      "carbs": 95,
+      "protein": 0,
+      "servingLabel": "Large (30 fl oz)",
+      "id": "lemonade-spritz-blue-raspberry-large-30-fl-oz"
+    },
+    {
+      "name": "Strawberry Smoothie",
+      "calories": 290,
+      "fat": 0,
+      "carbs": 70,
+      "protein": 0,
+      "servingLabel": "Small (16 fl oz)",
+      "id": "strawberry-smoothie-small-16-fl-oz"
+    },
+    {
+      "name": "Strawberry Smoothie",
+      "calories": 350,
+      "fat": 0,
+      "carbs": 86,
+      "protein": 0,
+      "servingLabel": "Med (20 fl oz)",
+      "id": "strawberry-smoothie-med-20-fl-oz"
+    },
+    {
+      "name": "Strawberry Smoothie",
+      "calories": 530,
+      "fat": 0,
+      "carbs": 130,
+      "protein": 0,
+      "servingLabel": "Large (30 fl oz)",
+      "id": "strawberry-smoothie-large-30-fl-oz"
+    },
+    {
+      "name": "Strawberry Banana Smoothie",
+      "calories": 290,
+      "fat": 0,
+      "carbs": 70,
+      "protein": 0,
+      "servingLabel": "Small (16 fl oz)",
+      "id": "strawberry-banana-smoothie-small-16-fl-oz"
+    },
+    {
+      "name": "Strawberry Banana Smoothie",
+      "calories": 350,
+      "fat": 0,
+      "carbs": 86,
+      "protein": 0,
+      "servingLabel": "Med (20 fl oz)",
+      "id": "strawberry-banana-smoothie-med-20-fl-oz"
+    },
+    {
+      "name": "Strawberry Banana Smoothie",
+      "calories": 530,
+      "fat": 0,
+      "carbs": 130,
+      "protein": 0,
+      "servingLabel": "Large (30 fl oz)",
+      "id": "strawberry-banana-smoothie-large-30-fl-oz"
+    },
+    {
+      "name": "Mango Smoothie",
+      "calories": 290,
+      "fat": 0,
+      "carbs": 75,
+      "protein": 0,
+      "servingLabel": "Small (16 fl oz)",
+      "id": "mango-smoothie-small-16-fl-oz"
+    },
+    {
+      "name": "Mango Smoothie",
+      "calories": 350,
+      "fat": 0,
+      "carbs": 93,
+      "protein": 0,
+      "servingLabel": "Med (20 fl oz)",
+      "id": "mango-smoothie-med-20-fl-oz"
+    },
+    {
+      "name": "Mango Smoothie",
+      "calories": 530,
+      "fat": 0,
+      "carbs": 139,
+      "protein": 0,
+      "servingLabel": "Large (30 fl oz)",
+      "id": "mango-smoothie-large-30-fl-oz"
+    },
+    {
+      "name": "Coca-Cola",
+      "calories": 150,
+      "fat": 0,
+      "carbs": 42,
+      "protein": 0,
+      "servingLabel": "Small (16 oz)",
+      "id": "coca-cola-small-16-oz"
+    },
+    {
+      "name": "Coca-Cola",
+      "calories": 210,
+      "fat": 0,
+      "carbs": 56,
+      "protein": 0,
+      "servingLabel": "Medium (21 oz)",
+      "id": "coca-cola-medium-21-oz"
+    },
+    {
+      "name": "Coca-Cola",
+      "calories": 290,
+      "fat": 0,
+      "carbs": 80,
+      "protein": 0,
+      "servingLabel": "Large (30 oz)",
+      "id": "coca-cola-large-30-oz"
+    },
+    {
+      "name": "Diet Coke",
+      "calories": 0,
+      "fat": 0,
+      "carbs": 0,
+      "protein": 0,
+      "servingLabel": "Small (16 oz)",
+      "id": "diet-coke-small-16-oz"
+    },
+    {
+      "name": "Diet Coke",
+      "calories": 0,
+      "fat": 0,
+      "carbs": 0,
+      "protein": 0,
+      "servingLabel": "Medium (21 oz)",
+      "id": "diet-coke-medium-21-oz"
+    },
+    {
+      "name": "Diet Coke",
+      "calories": 0,
+      "fat": 0,
+      "carbs": 0,
+      "protein": 0,
+      "servingLabel": "Large (30 oz)",
+      "id": "diet-coke-large-30-oz"
+    },
+    {
+      "name": "Dr. Pepper",
+      "calories": 140,
+      "fat": 0,
+      "carbs": 37,
+      "protein": 0,
+      "servingLabel": "Small (16 oz)",
+      "id": "dr-pepper-small-16-oz"
+    },
+    {
+      "name": "Dr. Pepper",
+      "calories": 190,
+      "fat": 0,
+      "carbs": 49,
+      "protein": 0,
+      "servingLabel": "Medium (21 oz)",
+      "id": "dr-pepper-medium-21-oz"
+    },
+    {
+      "name": "Dr. Pepper",
+      "calories": 260,
+      "fat": 0,
+      "carbs": 70,
+      "protein": 0,
+      "servingLabel": "Large (30 oz)",
+      "id": "dr-pepper-large-30-oz"
+    },
+    {
+      "name": "Fanta Orange",
+      "calories": 150,
+      "fat": 0,
+      "carbs": 42,
+      "protein": 0,
+      "servingLabel": "Small (16 oz)",
+      "id": "fanta-orange-small-16-oz"
+    },
+    {
+      "name": "Fanta Orange",
+      "calories": 210,
+      "fat": 0,
+      "carbs": 56,
+      "protein": 0,
+      "servingLabel": "Medium (21 oz)",
+      "id": "fanta-orange-medium-21-oz"
+    },
+    {
+      "name": "Fanta Orange",
+      "calories": 300,
+      "fat": 0,
+      "carbs": 79,
+      "protein": 0,
+      "servingLabel": "Large (30 oz)",
+      "id": "fanta-orange-large-30-oz"
+    },
+    {
+      "name": "Root Beer",
+      "calories": 160,
+      "fat": 0,
+      "carbs": 42,
+      "protein": 0,
+      "servingLabel": "Small (16 oz)",
+      "id": "root-beer-small-16-oz"
+    },
+    {
+      "name": "Root Beer",
+      "calories": 210,
+      "fat": 0,
+      "carbs": 57,
+      "protein": 0,
+      "servingLabel": "Medium (21 oz)",
+      "id": "root-beer-medium-21-oz"
+    },
+    {
+      "name": "Root Beer",
+      "calories": 300,
+      "fat": 0,
+      "carbs": 81,
+      "protein": 0,
+      "servingLabel": "Large (30 oz)",
+      "id": "root-beer-large-30-oz"
+    },
+    {
+      "name": "Sprite",
+      "calories": 140,
+      "fat": 0,
+      "carbs": 38,
+      "protein": 0,
+      "servingLabel": "Small (16 oz)",
+      "id": "sprite-small-16-oz"
+    },
+    {
+      "name": "Sprite",
+      "calories": 190,
+      "fat": 0,
+      "carbs": 51,
+      "protein": 0,
+      "servingLabel": "Medium (21 oz)",
+      "id": "sprite-medium-21-oz"
+    },
+    {
+      "name": "Sprite",
+      "calories": 270,
+      "fat": 0,
+      "carbs": 73,
+      "protein": 0,
+      "servingLabel": "Large (30 oz)",
+      "id": "sprite-large-30-oz"
+    },
+    {
+      "name": "Cherry Coke",
+      "calories": 160,
+      "fat": 0,
+      "carbs": 44,
+      "protein": 0,
+      "servingLabel": "Small (16 oz)",
+      "id": "cherry-coke-small-16-oz"
+    },
+    {
+      "name": "Cherry Coke",
+      "calories": 220,
+      "fat": 0,
+      "carbs": 59,
+      "protein": 0,
+      "servingLabel": "Medium (21 oz)",
+      "id": "cherry-coke-medium-21-oz"
+    },
+    {
+      "name": "Cherry Coke",
+      "calories": 310,
+      "fat": 0,
+      "carbs": 84,
+      "protein": 0,
+      "servingLabel": "Large (30 oz)",
+      "id": "cherry-coke-large-30-oz"
+    }
+  ],
+  "sourceDate": "2026",
+  "coverageNotes": {
+    "method": "Row-aligned tables in official linked US guide. Bucket values are per stated serving, not entire bucket.",
+    "sourceLandingUrl": "https://www.auntieannes.com/"
+  }
+}

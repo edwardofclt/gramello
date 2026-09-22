@@ -13,6 +13,17 @@ const soup: MealInput = {
 };
 
 describe('custom meal portions', () => {
+  it('preserves per-serving restaurant nutrition in recipes with a measured batch weight', () => {
+    const bowl = { ...food, calories: 600, protein: 30, carbs: 65, fat: 25, nutritionBasis: 'serving' as const, servingGrams: null, servingLabel: '1 bowl' };
+    const recipe = { ...soup, ingredients: [{ food: bowl, quantity: .5, unit: 'serving' as const }], totalGrams: 200, servingGrams: 100 };
+    const parsed = mealInputSchema.parse(recipe);
+    expect(parsed.ingredients[0].food.nutritionBasis).toBe('serving');
+    expect(summarizeMeal(parsed).portion).toEqual({ calories: 150, protein: 7.5, carbs: 16.25, fat: 6.25 });
+    expect(mealInputSchema.safeParse({ ...recipe, totalGrams: null }).success).toBe(false);
+    expect(scaleFood(bowl, 100, 'grams')).toBeNull();
+    expect(scaleFood({ ...bowl, servingGrams: 200 }, 200 / 28.349523125, 'ounces')?.calories).toBeCloseTo(600);
+    expect(mealFood({ ...parsed, id: 'restaurant-recipe', updatedAt: 'today' }).verified).toBe(false);
+  });
   it('turns a 64 oz, 1200 kcal batch into four 16 oz, 300 kcal portions', () => {
     const summary = summarizeMeal(soup);
     expect(summary.totals).toEqual({ calories: 1200, protein: 120, carbs: 60, fat: 30 });
@@ -71,7 +82,7 @@ describe('volume amounts and recipes', () => {
     expect(scaleFood(liquid, 1, 'ounces')).toBeNull();
     expect(scaleFood(liquid, 0, 'milliliters')).toBeNull();
     expect(scaleFood(liquid, Infinity, 'serving')).toBeNull();
-    expect(scaleFood({ ...liquid, calories: 0 }, 1, 'serving')).toMatchObject({ grams: 0, calories: 0 });
+    expect(scaleFood({ ...liquid, calories: 0 }, 1, 'serving')).toMatchObject({ grams: null, calories: 0 });
   });
   it('preserves volume ingredients and requires measured recipe yield', () => {
     const recipe = { ...soup, ingredients: [...soup.ingredients, { food: liquid, quantity: 1, unit: 'serving' }] };

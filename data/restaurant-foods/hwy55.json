@@ -1,0 +1,514 @@
+{
+  "chain": "Hwy 55",
+  "sourceUrl": "https://www.nutritionix.com/hwy55/menu/premium",
+  "source": "Nutritionix",
+  "sourceKind": "database",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "id": "nutritionix-552339",
+      "name": "All-American Cheesesteak",
+      "calories": 880,
+      "protein": 44,
+      "carbs": 63,
+      "fat": 47,
+      "servingLabel": "1 listed serving (Burgers & Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-552340",
+      "name": "All-American Chicken Cheesesteak",
+      "calories": 880,
+      "protein": 47,
+      "carbs": 65,
+      "fat": 45,
+      "servingLabel": "1 listed serving (Burgers & Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-552327",
+      "name": "Andy's Bacon Cheeseburger",
+      "calories": 1120,
+      "protein": 67,
+      "carbs": 47,
+      "fat": 70,
+      "servingLabel": "1 listed serving (Burgers & Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-550264",
+      "name": "Andy's Cheeseburger",
+      "calories": 760,
+      "protein": 40,
+      "carbs": 47,
+      "fat": 42,
+      "servingLabel": "1 listed serving (Burgers & Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-552328",
+      "name": "Andy's Double Cheeseburger",
+      "calories": 1250,
+      "protein": 72,
+      "carbs": 47,
+      "fat": 80,
+      "servingLabel": "1 listed serving (Burgers & Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-550263",
+      "name": "Andy's Hamburger",
+      "calories": 670,
+      "protein": 36,
+      "carbs": 46,
+      "fat": 36,
+      "servingLabel": "1 listed serving (Burgers & Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-552331",
+      "name": "Andy's John Boy & Billy BBQ Bacon Burger",
+      "calories": 1190,
+      "protein": 71,
+      "carbs": 55,
+      "fat": 73,
+      "servingLabel": "1 listed serving (Burgers & Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-552330",
+      "name": "Andy's Pimento Cheeseburger",
+      "calories": 1170,
+      "protein": 70,
+      "carbs": 42,
+      "fat": 77,
+      "servingLabel": "1 listed serving (Burgers & Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-552332",
+      "name": "Andy's Shrimp Burger",
+      "calories": 480,
+      "protein": 31,
+      "carbs": 67,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Burgers & Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-552329",
+      "name": "Andy's Triple Cheeseburger",
+      "calories": 1740,
+      "protein": 104,
+      "carbs": 48,
+      "fat": 117,
+      "servingLabel": "1 listed serving (Burgers & Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-552349",
+      "name": "BLT",
+      "calories": 910,
+      "protein": 53,
+      "carbs": 36,
+      "fat": 60,
+      "servingLabel": "1 listed serving (Burgers & Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-552345",
+      "name": "Chicken Sandwich",
+      "calories": 250,
+      "protein": 34,
+      "carbs": 12,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Burgers & Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-552347",
+      "name": "Grilled Cheese",
+      "calories": 380,
+      "protein": 15,
+      "carbs": 33,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Burgers & Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-552346",
+      "name": "Hot Dog",
+      "calories": 400,
+      "protein": 12,
+      "carbs": 37,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Burgers & Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-552341",
+      "name": "Jalapeno Jack Cheesesteak",
+      "calories": 870,
+      "protein": 50,
+      "carbs": 62,
+      "fat": 47,
+      "servingLabel": "1 listed serving (Burgers & Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-552344",
+      "name": "John Boy & Billy Chicken Sandwich",
+      "calories": 520,
+      "protein": 52,
+      "carbs": 21,
+      "fat": 28,
+      "servingLabel": "1 listed serving (Burgers & Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-552335",
+      "name": "Lil' Bacon Cheeseburger",
+      "calories": 550,
+      "protein": 36,
+      "carbs": 8,
+      "fat": 40,
+      "servingLabel": "1 listed serving (Burgers & Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-552334",
+      "name": "Lil' Cheeseburger",
+      "calories": 310,
+      "protein": 18,
+      "carbs": 8,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Burgers & Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-552333",
+      "name": "Lil' Hamburger",
+      "calories": 270,
+      "protein": 16,
+      "carbs": 8,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Burgers & Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-552337",
+      "name": "Lil' John Boy & Billy BBQ Bacon Burger",
+      "calories": 620,
+      "protein": 38,
+      "carbs": 17,
+      "fat": 43,
+      "servingLabel": "1 listed serving (Burgers & Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-552336",
+      "name": "Lil' Pimento Cheeseburger",
+      "calories": 550,
+      "protein": 37,
+      "carbs": 3,
+      "fat": 42,
+      "servingLabel": "1 listed serving (Burgers & Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-552338",
+      "name": "Lil' Shrimp Burger",
+      "calories": 170,
+      "protein": 13,
+      "carbs": 20,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Burgers & Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-552348",
+      "name": "Pimento Cheese and Bacon Sandwich",
+      "calories": 780,
+      "protein": 41,
+      "carbs": 34,
+      "fat": 52,
+      "servingLabel": "1 listed serving (Burgers & Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-552343",
+      "name": "Shrimp Po'Boy",
+      "calories": 750,
+      "protein": 49,
+      "carbs": 87,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Burgers & Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-552342",
+      "name": "The Moose",
+      "calories": 1150,
+      "protein": 74,
+      "carbs": 61,
+      "fat": 67,
+      "servingLabel": "1 listed serving (Burgers & Sandwiches; size in item name)"
+    },
+    {
+      "id": "nutritionix-552352",
+      "name": "4-Piece Chicken Platter",
+      "calories": 890,
+      "protein": 54,
+      "carbs": 107,
+      "fat": 32,
+      "servingLabel": "1 listed serving (Platters; size in item name)"
+    },
+    {
+      "id": "nutritionix-552353",
+      "name": "6-Piece Chicken Platter",
+      "calories": 1020,
+      "protein": 76,
+      "carbs": 114,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Platters; size in item name)"
+    },
+    {
+      "id": "nutritionix-552351",
+      "name": "Hamburger Steak Platter",
+      "calories": 1310,
+      "protein": 53,
+      "carbs": 109,
+      "fat": 72,
+      "servingLabel": "1 listed serving (Platters; size in item name)"
+    },
+    {
+      "id": "nutritionix-552350",
+      "name": "Shrimp Platter",
+      "calories": 880,
+      "protein": 47,
+      "carbs": 109,
+      "fat": 29,
+      "servingLabel": "1 listed serving (Platters; size in item name)"
+    },
+    {
+      "id": "nutritionix-552357",
+      "name": "Cobb Salad",
+      "calories": 690,
+      "protein": 52,
+      "carbs": 27,
+      "fat": 42,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-552354",
+      "name": "Garden Salad",
+      "calories": 360,
+      "protein": 9,
+      "carbs": 15,
+      "fat": 28,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-552355",
+      "name": "Garden Salad with Chicken",
+      "calories": 610,
+      "protein": 46,
+      "carbs": 26,
+      "fat": 37,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-552356",
+      "name": "Spicy Shrimp Salad",
+      "calories": 510,
+      "protein": 36,
+      "carbs": 16,
+      "fat": 31,
+      "servingLabel": "1 listed serving (Salads; size in item name)"
+    },
+    {
+      "id": "nutritionix-552359",
+      "name": "Cheeseburger Kids Meal",
+      "calories": 470,
+      "protein": 20,
+      "carbs": 38,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Kids Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-552360",
+      "name": "Chicken Tenders Kids Meal",
+      "calories": 350,
+      "protein": 26,
+      "carbs": 44,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Kids Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-552361",
+      "name": "Grilled Cheese Kids Meal",
+      "calories": 610,
+      "protein": 18,
+      "carbs": 70,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Kids Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-552358",
+      "name": "Hot Dog Kids Meal",
+      "calories": 570,
+      "protein": 14,
+      "carbs": 67,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Kids Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-552365",
+      "name": "Chili Cheese Fries",
+      "calories": 440,
+      "protein": 10,
+      "carbs": 61,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Sides & Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-552362",
+      "name": "French Fries",
+      "calories": 390,
+      "protein": 5,
+      "carbs": 71,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Sides & Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-552367",
+      "name": "Fried Pickles",
+      "calories": 290,
+      "protein": 2,
+      "carbs": 29,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Sides & Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-552366",
+      "name": "Gravy Fries",
+      "calories": 370,
+      "protein": 5,
+      "carbs": 64,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Sides & Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-552369",
+      "name": "Half-n-Half",
+      "calories": 480,
+      "protein": 7,
+      "carbs": 57,
+      "fat": 26,
+      "servingLabel": "1 listed serving (Sides & Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-552364",
+      "name": "Onion Rings",
+      "calories": 630,
+      "protein": 9,
+      "carbs": 60,
+      "fat": 40,
+      "servingLabel": "1 listed serving (Sides & Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-552371",
+      "name": "Orangeade",
+      "calories": 430,
+      "protein": 2,
+      "carbs": 109,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sides & Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-552370",
+      "name": "Shake",
+      "calories": 700,
+      "protein": 11,
+      "carbs": 90,
+      "fat": 33,
+      "servingLabel": "1 listed serving (Sides & Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-552368",
+      "name": "Side Salad",
+      "calories": 290,
+      "protein": 6,
+      "carbs": 10,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Sides & Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-552363",
+      "name": "Tots",
+      "calories": 35,
+      "protein": 0,
+      "carbs": 8,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sides & Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-552372",
+      "name": "1 Scoop Cone",
+      "calories": 280,
+      "protein": 5,
+      "carbs": 41,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Frozen Custard; size in item name)"
+    },
+    {
+      "id": "nutritionix-552373",
+      "name": "2 Scoop Cone",
+      "calories": 500,
+      "protein": 9,
+      "carbs": 70,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Frozen Custard; size in item name)"
+    },
+    {
+      "id": "nutritionix-552374",
+      "name": "Banana Split",
+      "calories": 890,
+      "protein": 15,
+      "carbs": 116,
+      "fat": 42,
+      "servingLabel": "1 listed serving (Frozen Custard; size in item name)"
+    },
+    {
+      "id": "nutritionix-552375",
+      "name": "Brownie Sundae",
+      "calories": 1140,
+      "protein": 18,
+      "carbs": 146,
+      "fat": 55,
+      "servingLabel": "1 listed serving (Frozen Custard; size in item name)"
+    },
+    {
+      "id": "nutritionix-552376",
+      "name": "Concrete with 1 Topping",
+      "calories": 650,
+      "protein": 12,
+      "carbs": 67,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Frozen Custard; size in item name)"
+    },
+    {
+      "id": "nutritionix-552377",
+      "name": "Lil Concrete with 1 Topping",
+      "calories": 360,
+      "protein": 7,
+      "carbs": 35,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Frozen Custard; size in item name)"
+    },
+    {
+      "id": "nutritionix-552378",
+      "name": "Lil Sundae with 1 Topping",
+      "calories": 400,
+      "protein": 7,
+      "carbs": 40,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Frozen Custard; size in item name)"
+    },
+    {
+      "id": "nutritionix-552379",
+      "name": "Root Beer Float",
+      "calories": 240,
+      "protein": 4,
+      "carbs": 31,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Frozen Custard; size in item name)"
+    },
+    {
+      "id": "nutritionix-552380",
+      "name": "Sundae with 1 Topping",
+      "calories": 840,
+      "protein": 15,
+      "carbs": 105,
+      "fat": 42,
+      "servingLabel": "1 listed serving (Frozen Custard; size in item name)"
+    }
+  ],
+  "sourceDate": "2025-04-27"
+}

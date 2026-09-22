@@ -22,6 +22,27 @@
       "when": 1789873826994,
       "tag": "0002_custom_meals",
       "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1789948758855,
+      "tag": "0003_food_catalog",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1789948801009,
+      "tag": "0004_restaurant_catalog",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "6",
+      "when": 1790081829913,
+      "tag": "0005_water_tracking",
+      "breakpoints": true
     }
   ]
 }

@@ -1,0 +1,307 @@
+{
+  "chain": "Naf Naf Grill",
+  "sourceUrl": "https://www.nutritionix.com/naf-naf-grill/menu/premium",
+  "source": "Nutritionix",
+  "sourceKind": "database",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "id": "nutritionix-522786",
+      "name": "Baba Ghanoush",
+      "calories": 150,
+      "protein": 5,
+      "carbs": 15,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Base; size in item name)"
+    },
+    {
+      "id": "nutritionix-522787",
+      "name": "Basmati Rice",
+      "calories": 290,
+      "protein": 7,
+      "carbs": 45,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Base; size in item name)"
+    },
+    {
+      "id": "nutritionix-522788",
+      "name": "Couscous",
+      "calories": 230,
+      "protein": 5,
+      "carbs": 40,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Base; size in item name)"
+    },
+    {
+      "id": "nutritionix-522789",
+      "name": "Hummus",
+      "calories": 400,
+      "protein": 5,
+      "carbs": 20,
+      "fat": 35,
+      "servingLabel": "1 listed serving (Base; size in item name)"
+    },
+    {
+      "id": "nutritionix-522790",
+      "name": "Pita Bread (1)",
+      "calories": 260,
+      "protein": 8,
+      "carbs": 49,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Base; size in item name)"
+    },
+    {
+      "id": "nutritionix-522791",
+      "name": "Salad",
+      "calories": 15,
+      "protein": 1,
+      "carbs": 3,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Base; size in item name)"
+    },
+    {
+      "id": "nutritionix-522792",
+      "name": "Chicken Shawarma",
+      "calories": 200,
+      "protein": 28,
+      "carbs": 0,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Protein; size in item name)"
+    },
+    {
+      "id": "nutritionix-522794",
+      "name": "Falafel (Bowl)",
+      "calories": 360,
+      "protein": 12,
+      "carbs": 40,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Protein; size in item name)"
+    },
+    {
+      "id": "nutritionix-522793",
+      "name": "Falafel (In A Pita)",
+      "calories": 290,
+      "protein": 10,
+      "carbs": 32,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Protein; size in item name)"
+    },
+    {
+      "id": "nutritionix-522795",
+      "name": "Steak",
+      "calories": 280,
+      "protein": 28,
+      "carbs": 0,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Protein; size in item name)"
+    },
+    {
+      "id": "nutritionix-522796",
+      "name": "Chopped Salad",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-522797",
+      "name": "Garlic Sauce",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-522798",
+      "name": "Harissa",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-522799",
+      "name": "Pickles",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-522800",
+      "name": "Purple Cabbage",
+      "calories": 50,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-522801",
+      "name": "S'Khug",
+      "calories": 20,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-522802",
+      "name": "Sumac Onions",
+      "calories": 10,
+      "protein": 1,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-522803",
+      "name": "Tahini Sauce",
+      "calories": 70,
+      "protein": 2,
+      "carbs": 3,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-522804",
+      "name": "Kid'S Meal Chicken",
+      "calories": 490,
+      "protein": 23,
+      "carbs": 54,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Kid's Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-522806",
+      "name": "Kid'S Meal Falafel",
+      "calories": 480,
+      "protein": 8,
+      "carbs": 67,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Kid's Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-522805",
+      "name": "Kid'S Meal Steak",
+      "calories": 480,
+      "protein": 21,
+      "carbs": 55,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Kid's Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-522808",
+      "name": "Baba Ghanoush (Add Bowl)",
+      "calories": 90,
+      "protein": 3,
+      "carbs": 12,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Sides & Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-522810",
+      "name": "Baba Ghanoush (Large)",
+      "calories": 240,
+      "protein": 8,
+      "carbs": 24,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Sides & Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-522809",
+      "name": "Baba Ghanoush (Small)",
+      "calories": 120,
+      "protein": 4,
+      "carbs": 12,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Sides & Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-522807",
+      "name": "Baba Ghanoush (Swipe In A Pita)",
+      "calories": 15,
+      "protein": 1,
+      "carbs": 2,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Sides & Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-522811",
+      "name": "Basmati Rice (Side)",
+      "calories": 180,
+      "protein": 4,
+      "carbs": 28,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Sides & Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-522812",
+      "name": "Falafel (Individual)",
+      "calories": 70,
+      "protein": 3,
+      "carbs": 8,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Sides & Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-522813",
+      "name": "Fries",
+      "calories": 360,
+      "protein": 4,
+      "carbs": 48,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Sides & Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-522815",
+      "name": "Hummus (Add Bowl)",
+      "calories": 240,
+      "protein": 3,
+      "carbs": 12,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Sides & Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-522817",
+      "name": "Hummus (Large)",
+      "calories": 640,
+      "protein": 8,
+      "carbs": 32,
+      "fat": 56,
+      "servingLabel": "1 listed serving (Sides & Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-522816",
+      "name": "Hummus (Small)",
+      "calories": 320,
+      "protein": 4,
+      "carbs": 16,
+      "fat": 28,
+      "servingLabel": "1 listed serving (Sides & Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-522814",
+      "name": "Hummus (Swipe In A Pita)",
+      "calories": 40,
+      "protein": 1,
+      "carbs": 2,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Sides & Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-522818",
+      "name": "Lentil Soup",
+      "calories": 200,
+      "protein": 8,
+      "carbs": 32,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Sides & Beverages; size in item name)"
+    }
+  ],
+  "sourceDate": "2024-06-12"
+}

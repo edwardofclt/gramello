@@ -1,0 +1,730 @@
+{
+  "chain": "Flower Child",
+  "sourceUrl": "https://www.nutritionix.com/flower-child/menu/premium",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "name": "Add Raw Veggies",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 40.0,
+      "fat": 0.0,
+      "carbs": 9.0,
+      "protein": 2.0,
+      "id": "add-raw-veggies-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Avocado Hummus Includes Pita",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 540.0,
+      "fat": 31.0,
+      "carbs": 58.0,
+      "protein": 14.0,
+      "id": "avocado-hummus-includes-pita-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Classic Hummus Includes Pita",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 520.0,
+      "fat": 24.0,
+      "carbs": 67.0,
+      "protein": 17.0,
+      "id": "classic-hummus-includes-pita-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Crushed Avocado Toast",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 400.0,
+      "fat": 26.0,
+      "carbs": 31.0,
+      "protein": 14.0,
+      "id": "crushed-avocado-toast-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kinda Spicy Green Chili Queso",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 760.0,
+      "fat": 49.0,
+      "carbs": 59.0,
+      "protein": 24.0,
+      "id": "kinda-spicy-green-chili-queso-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Mexican Shrimp Cocktail",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 260.0,
+      "fat": 15.0,
+      "carbs": 16.0,
+      "protein": 16.0,
+      "id": "mexican-shrimp-cocktail-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Sub Gluten-Free Pita",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 140.0,
+      "fat": 5.0,
+      "carbs": 34.0,
+      "protein": 2.0,
+      "id": "sub-gluten-free-pita-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "All-Natural Chicken & Organic Brown Rice Soup",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 160.0,
+      "fat": 3.5,
+      "carbs": 15.0,
+      "protein": 16.0,
+      "id": "all-natural-chicken-organic-brown-rice-soup-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "All-Natural Chicken & White Bean with Roasted Poblano Soup",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 160.0,
+      "fat": 3.0,
+      "carbs": 20.0,
+      "protein": 12.0,
+      "id": "all-natural-chicken-white-bean-with-roasted-poblano-soup-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Butternut Squash & Parsnip Soup",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 280.0,
+      "fat": 20.0,
+      "carbs": 20.0,
+      "protein": 5.0,
+      "id": "butternut-squash-parsnip-soup-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Butternut Squash with Lemongrass & Thai Basil Soup",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 170.0,
+      "fat": 11.0,
+      "carbs": 15.0,
+      "protein": 4.0,
+      "id": "butternut-squash-with-lemongrass-thai-basil-soup-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chicken Tortilla with Organic Blue Corn Soup",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 130.0,
+      "fat": 3.5,
+      "carbs": 15.0,
+      "protein": 9.0,
+      "id": "chicken-tortilla-with-organic-blue-corn-soup-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Green Chile & Sweet Corn Stew with Heirloom Bean & Cilantro",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 160.0,
+      "fat": 3.0,
+      "carbs": 29.0,
+      "protein": 8.0,
+      "id": "green-chile-sweet-corn-stew-with-heirloom-bean-cilantro-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Green Curry Cauliflower with Coconut & Thai Basil Soup",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 220.0,
+      "fat": 14.0,
+      "carbs": 18.0,
+      "protein": 4.0,
+      "id": "green-curry-cauliflower-with-coconut-thai-basil-soup-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Heirloom Bean with Organic Tomato & Jalapeño Soup",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 260.0,
+      "fat": 4.5,
+      "carbs": 40.0,
+      "protein": 14.0,
+      "id": "heirloom-bean-with-organic-tomato-jalapeno-soup-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Indian Lentil with Dukka Soup",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 280.0,
+      "fat": 8.0,
+      "carbs": 38.0,
+      "protein": 14.0,
+      "id": "indian-lentil-with-dukka-soup-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Miso Mushroom with Tofu Soup",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 110.0,
+      "fat": 3.5,
+      "carbs": 12.0,
+      "protein": 9.0,
+      "id": "miso-mushroom-with-tofu-soup-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Moroccan Sweet Potato with Chickpea & Cilantro Soup",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 210.0,
+      "fat": 7.0,
+      "carbs": 31.0,
+      "protein": 7.0,
+      "id": "moroccan-sweet-potato-with-chickpea-cilantro-soup-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Red Quinoa & White Bean Minestrone Soup",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 200.0,
+      "fat": 5.0,
+      "carbs": 29.0,
+      "protein": 9.0,
+      "id": "red-quinoa-white-bean-minestrone-soup-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Roasted Chicken Muligatawny Soup",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 320.0,
+      "fat": 18.0,
+      "carbs": 22.0,
+      "protein": 22.0,
+      "id": "roasted-chicken-muligatawny-soup-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Sprouted Barley with Grass Fed Beef & Wild Mushroom Soup",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 130.0,
+      "fat": 3.5,
+      "carbs": 14.0,
+      "protein": 11.0,
+      "id": "sprouted-barley-with-grass-fed-beef-wild-mushroom-soup-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Summer Squash & Organic Tomato with Sweet Corn & Thyme Soup",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 90.0,
+      "fat": 2.0,
+      "carbs": 15.0,
+      "protein": 4.0,
+      "id": "summer-squash-organic-tomato-with-sweet-corn-thyme-soup-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Thai Chicken Curry with Mushroom, Coconut & Lime Soup",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 240.0,
+      "fat": 11.0,
+      "carbs": 9.0,
+      "protein": 27.0,
+      "id": "thai-chicken-curry-with-mushroom-coconut-lime-soup-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Turkey Chili with Heirloom Beans, Greek Yogurt & Cilantro",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 290.0,
+      "fat": 11.0,
+      "carbs": 29.0,
+      "protein": 21.0,
+      "id": "turkey-chili-with-heirloom-beans-greek-yogurt-cilantro-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Tuscan Chicken Tomato Fennel & Kale Soup",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 160.0,
+      "fat": 4.5,
+      "carbs": 14.0,
+      "protein": 15.0,
+      "id": "tuscan-chicken-tomato-fennel-kale-soup-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Yellow Curried Potato with Dukka Soup",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 300.0,
+      "fat": 20.0,
+      "carbs": 24.0,
+      "protein": 6.0,
+      "id": "yellow-curried-potato-with-dukka-soup-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Avocado Caesar Salad with Dressing",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 350.0,
+      "fat": 31.0,
+      "carbs": 14.0,
+      "protein": 7.0,
+      "id": "avocado-caesar-salad-with-dressing-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Avocado Caesar Without Dressing Salad",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 150.0,
+      "fat": 11.0,
+      "carbs": 11.0,
+      "protein": 5.0,
+      "id": "avocado-caesar-without-dressing-salad-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Brussels Sprouts And Organic Kale Salad with Dressing",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 580.0,
+      "fat": 45.0,
+      "carbs": 36.0,
+      "protein": 15.0,
+      "id": "brussels-sprouts-and-organic-kale-salad-with-dressing-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Brussels Sprouts And Organic Kale Without Dressing Salad",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 290.0,
+      "fat": 14.0,
+      "carbs": 33.0,
+      "protein": 13.0,
+      "id": "brussels-sprouts-and-organic-kale-without-dressing-salad-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chopped Vegetable Salad with Dressing",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 270.0,
+      "fat": 19.0,
+      "carbs": 23.0,
+      "protein": 5.0,
+      "id": "chopped-vegetable-salad-with-dressing-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chopped Vegetable Without Dressing Salad",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 120.0,
+      "fat": 5.0,
+      "carbs": 16.0,
+      "protein": 4.0,
+      "id": "chopped-vegetable-without-dressing-salad-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Ginger Miso Crunch Salad with Dressing",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 280.0,
+      "fat": 17.0,
+      "carbs": 29.0,
+      "protein": 9.0,
+      "id": "ginger-miso-crunch-salad-with-dressing-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Ginger Miso Crunch Without Dressing Salad",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 150.0,
+      "fat": 8.0,
+      "carbs": 18.0,
+      "protein": 6.0,
+      "id": "ginger-miso-crunch-without-dressing-salad-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Sub Our Lemon-Avocado Dressing Salad",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 190.0,
+      "fat": 21.0,
+      "carbs": 2.0,
+      "protein": 0.0,
+      "id": "sub-our-lemon-avocado-dressing-salad-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Taco Salad with Dressing",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 670.0,
+      "fat": 38.0,
+      "carbs": 70.0,
+      "protein": 18.0,
+      "id": "taco-salad-with-dressing-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Taco Without Dressing Salad",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 550.0,
+      "fat": 27.0,
+      "carbs": 66.0,
+      "protein": 17.0,
+      "id": "taco-without-dressing-salad-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Turkey And Avocado Cobb Salad with Dressing",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 740.0,
+      "fat": 59.0,
+      "carbs": 24.0,
+      "protein": 34.0,
+      "id": "turkey-and-avocado-cobb-salad-with-dressing-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Turkey And Avocado Cobb Without Dressing Salad",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 420.0,
+      "fat": 26.0,
+      "carbs": 21.0,
+      "protein": 32.0,
+      "id": "turkey-and-avocado-cobb-without-dressing-salad-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "“Forbidden Rice” Bowl",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 670.0,
+      "fat": 33.0,
+      "carbs": 85.0,
+      "protein": 12.0,
+      "id": "forbidden-rice-bowl-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chicken Enchilada Bowl",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 810.0,
+      "fat": 50.0,
+      "carbs": 47.0,
+      "protein": 47.0,
+      "id": "chicken-enchilada-bowl-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chicken Yakisoba Noodles Bowl",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 770.0,
+      "fat": 29.0,
+      "carbs": 77.0,
+      "protein": 52.0,
+      "id": "chicken-yakisoba-noodles-bowl-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Glow Bowl Bowl",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 520.0,
+      "fat": 33.0,
+      "carbs": 51.0,
+      "protein": 10.0,
+      "id": "glow-bowl-bowl-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Mediterranean Chicken Kabob Bowl",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 660.0,
+      "fat": 35.0,
+      "carbs": 47.0,
+      "protein": 40.0,
+      "id": "mediterranean-chicken-kabob-bowl-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Mother Earth Bowl",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 560.0,
+      "fat": 28.0,
+      "carbs": 68.0,
+      "protein": 12.0,
+      "id": "mother-earth-bowl-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Cauliflower Risotto",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 110.0,
+      "fat": 2.5,
+      "carbs": 16.0,
+      "protein": 7.0,
+      "id": "cauliflower-risotto-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Gluten-Free Mac & Cheese",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 570.0,
+      "fat": 36.0,
+      "carbs": 46.0,
+      "protein": 16.0,
+      "id": "gluten-free-mac-cheese-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kale Salad",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 270.0,
+      "fat": 23.0,
+      "carbs": 11.0,
+      "protein": 9.0,
+      "id": "kale-salad-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kale Salad Without Dressing",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 120.0,
+      "fat": 7.0,
+      "carbs": 10.0,
+      "protein": 9.0,
+      "id": "kale-salad-without-dressing-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Organic Brown Rice",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 160.0,
+      "fat": 1.0,
+      "carbs": 33.0,
+      "protein": 3.0,
+      "id": "organic-brown-rice-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Pineapple, Clementine, Grapes",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 100.0,
+      "fat": 0.0,
+      "carbs": 27.0,
+      "protein": 1.0,
+      "id": "pineapple-clementine-grapes-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Red Chili Glazed Sweet Potato",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 210.0,
+      "fat": 10.0,
+      "carbs": 28.0,
+      "protein": 4.0,
+      "id": "red-chili-glazed-sweet-potato-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Roasted Broccoli",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 250.0,
+      "fat": 16.0,
+      "carbs": 17.0,
+      "protein": 11.0,
+      "id": "roasted-broccoli-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Shishito Peppers",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 150.0,
+      "fat": 10.0,
+      "carbs": 13.0,
+      "protein": 5.0,
+      "id": "shishito-peppers-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Smashed Gold Potato",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 420.0,
+      "fat": 30.0,
+      "carbs": 31.0,
+      "protein": 5.0,
+      "id": "smashed-gold-potato-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Sticky Thai Watermelon",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 80.0,
+      "fat": 0.0,
+      "carbs": 19.0,
+      "protein": 2.0,
+      "id": "sticky-thai-watermelon-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Sweet Corn & Quinoa",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 380.0,
+      "fat": 19.0,
+      "carbs": 40.0,
+      "protein": 11.0,
+      "id": "sweet-corn-quinoa-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Sweet Potato Fries",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 460.0,
+      "fat": 29.0,
+      "carbs": 43.0,
+      "protein": 5.0,
+      "id": "sweet-potato-fries-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "All-Natural Chicken",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 140.0,
+      "fat": 4.0,
+      "carbs": 0.0,
+      "protein": 26.0,
+      "id": "all-natural-chicken-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Grass-Fed Steak",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 180.0,
+      "fat": 7.0,
+      "carbs": 0.0,
+      "protein": 27.0,
+      "id": "grass-fed-steak-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Organic Non-Gmo Tofu",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 150.0,
+      "fat": 9.0,
+      "carbs": 2.0,
+      "protein": 15.0,
+      "id": "organic-non-gmo-tofu-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Shrimp",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 90.0,
+      "fat": 1.5,
+      "carbs": 4.0,
+      "protein": 16.0,
+      "id": "shrimp-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Sustainable Salmon",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 190.0,
+      "fat": 10.0,
+      "carbs": 0.0,
+      "protein": 24.0,
+      "id": "sustainable-salmon-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Black Bean Falafel Wrap with Side Salad",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 600.0,
+      "fat": 24.0,
+      "carbs": 92.0,
+      "protein": 21.0,
+      "id": "black-bean-falafel-wrap-with-side-salad-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Carolina Bbq Chicken Wrap with Side Salad",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 740.0,
+      "fat": 40.0,
+      "carbs": 58.0,
+      "protein": 36.0,
+      "id": "carolina-bbq-chicken-wrap-with-side-salad-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Flying Avocado Wrap with Side Salad",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 650.0,
+      "fat": 36.0,
+      "carbs": 50.0,
+      "protein": 36.0,
+      "id": "flying-avocado-wrap-with-side-salad-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Sub Gluten-Free Pita for Wrap",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 140.0,
+      "fat": 5.0,
+      "carbs": 34.0,
+      "protein": 2.0,
+      "id": "sub-gluten-free-pita-for-wrap-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "The Rebel Wrap with Side Salad",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 810.0,
+      "fat": 48.0,
+      "carbs": 57.0,
+      "protein": 41.0,
+      "id": "the-rebel-wrap-with-side-salad-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chocolate Chip Cookie",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 330.0,
+      "fat": 18.0,
+      "carbs": 38.0,
+      "protein": 4.0,
+      "id": "chocolate-chip-cookie-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Lemon Olive Oil Cake",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 380.0,
+      "fat": 20.0,
+      "carbs": 49.0,
+      "protein": 2.0,
+      "id": "lemon-olive-oil-cake-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Vegan Dark Chocolate Pudding",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 420.0,
+      "fat": 16.0,
+      "carbs": 68.0,
+      "protein": 3.0,
+      "id": "vegan-dark-chocolate-pudding-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids All Natural Chicken",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 100.0,
+      "fat": 3.0,
+      "carbs": 0.0,
+      "protein": 19.0,
+      "id": "kids-all-natural-chicken-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Grass-Fed Steak",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 130.0,
+      "fat": 5.0,
+      "carbs": 0.0,
+      "protein": 19.0,
+      "id": "kids-grass-fed-steak-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Organic Non-Gmo Tofu",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 110.0,
+      "fat": 6.0,
+      "carbs": 1.0,
+      "protein": 11.0,
+      "id": "kids-organic-non-gmo-tofu-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Sustainable Salmon",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 110.0,
+      "fat": 6.0,
+      "carbs": 1.0,
+      "protein": 11.0,
+      "id": "kids-sustainable-salmon-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Broccoli with Parmesan",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 90.0,
+      "fat": 3.0,
+      "carbs": 4.0,
+      "protein": 5.0,
+      "id": "kids-broccoli-with-parmesan-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Gluten-Free Mac & Cheese",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 570.0,
+      "fat": 36.0,
+      "carbs": 46.0,
+      "protein": 16.0,
+      "id": "kids-gluten-free-mac-cheese-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Pineapple, Clementine, Grapes",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 60.0,
+      "fat": 0.0,
+      "carbs": 15.0,
+      "protein": 1.0,
+      "id": "kids-pineapple-clementine-grapes-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Smashed Potato",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 380.0,
+      "fat": 19.0,
+      "carbs": 40.0,
+      "protein": 11.0,
+      "id": "kids-smashed-potato-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Kids Sweet Corn & Quinoa",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 320.0,
+      "fat": 22.0,
+      "carbs": 23.0,
+      "protein": 9.0,
+      "id": "kids-sweet-corn-quinoa-1-menu-serving-size-in-name"
+    }
+  ],
+  "source": "Nutritionix",
+  "sourceKind": "database",
+  "sourceDate": "2024-07-15"
+}

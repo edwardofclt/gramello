@@ -1,0 +1,701 @@
+{
+  "chain": "Tacos 4 Life",
+  "sourceUrl": "https://cdn.prod.website-files.com/6058f6299e37a624883ccdf6/6410a88f681c3d32d93b7c59_NutritionalGuideMarch2023_smaller.pdf",
+  "sourceDate": "2023-03",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "name": "Tacos - Fajita Chicken",
+      "calories": 350.0,
+      "fat": 19.0,
+      "carbs": 20.0,
+      "protein": 23.0,
+      "servingLabel": "1 taco",
+      "id": "tacos-fajita-chicken"
+    },
+    {
+      "name": "Tacos - Grilled Chicken",
+      "calories": 400.0,
+      "fat": 23.0,
+      "carbs": 23.0,
+      "protein": 23.0,
+      "servingLabel": "1 taco",
+      "id": "tacos-grilled-chicken"
+    },
+    {
+      "name": "Tacos - Mango Habanero",
+      "calories": 290.0,
+      "fat": 13.0,
+      "carbs": 22.0,
+      "protein": 22.0,
+      "servingLabel": "1 taco",
+      "id": "tacos-mango-habanero"
+    },
+    {
+      "name": "Tacos - Chicken Bacon Ranch",
+      "calories": 480.0,
+      "fat": 32.0,
+      "carbs": 23.0,
+      "protein": 25.0,
+      "servingLabel": "1 taco",
+      "id": "tacos-chicken-bacon-ranch"
+    },
+    {
+      "name": "Tacos - Fried Chicken",
+      "calories": 490.0,
+      "fat": 29.0,
+      "carbs": 45.0,
+      "protein": 15.0,
+      "servingLabel": "1 taco",
+      "id": "tacos-fried-chicken"
+    },
+    {
+      "name": "Tacos - Classic Beef",
+      "calories": 500.0,
+      "fat": 36.0,
+      "carbs": 24.0,
+      "protein": 20.0,
+      "servingLabel": "1 taco",
+      "id": "tacos-classic-beef"
+    },
+    {
+      "name": "Tacos - Korean BBQ Steak",
+      "calories": 340.0,
+      "fat": 20.0,
+      "carbs": 27.0,
+      "protein": 15.0,
+      "servingLabel": "1 taco",
+      "id": "tacos-korean-bbq-steak"
+    },
+    {
+      "name": "Tacos - Chipotle Steak",
+      "calories": 480.0,
+      "fat": 34.0,
+      "carbs": 25.0,
+      "protein": 18.0,
+      "servingLabel": "1 taco",
+      "id": "tacos-chipotle-steak"
+    },
+    {
+      "name": "Tacos - Carnitas",
+      "calories": 450.0,
+      "fat": 36.0,
+      "carbs": 25.0,
+      "protein": 25.0,
+      "servingLabel": "1 taco",
+      "id": "tacos-carnitas"
+    },
+    {
+      "name": "Tacos - Spicy Chorizo",
+      "calories": 400.0,
+      "fat": 22.0,
+      "carbs": 31.0,
+      "protein": 20.0,
+      "servingLabel": "1 taco",
+      "id": "tacos-spicy-chorizo"
+    },
+    {
+      "name": "Tacos - Blackened Mahi-Mahi",
+      "calories": 270.0,
+      "fat": 15.0,
+      "carbs": 20.0,
+      "protein": 16.0,
+      "servingLabel": "1 taco",
+      "id": "tacos-blackened-mahi-mahi"
+    },
+    {
+      "name": "Tacos - Hawaiian Shrimp with Grilled Shrimp",
+      "calories": 240.0,
+      "fat": 10.0,
+      "carbs": 27.0,
+      "protein": 11.0,
+      "servingLabel": "1 taco",
+      "id": "tacos-hawaiian-shrimp-with-grilled-shrimp"
+    },
+    {
+      "name": "Tacos - Hawaiian Shrimp with Fried Shrimp",
+      "calories": 250.0,
+      "fat": 12.0,
+      "carbs": 26.0,
+      "protein": 8.0,
+      "servingLabel": "1 taco",
+      "id": "tacos-hawaiian-shrimp-with-fried-shrimp"
+    },
+    {
+      "name": "Tacos - Seared Tofu",
+      "calories": 330.0,
+      "fat": 18.0,
+      "carbs": 32.0,
+      "protein": 13.0,
+      "servingLabel": "1 taco",
+      "id": "tacos-seared-tofu"
+    },
+    {
+      "name": "Tacos - Crispy Eggplant",
+      "calories": 650.0,
+      "fat": 59.0,
+      "carbs": 32.0,
+      "protein": 6.0,
+      "servingLabel": "1 taco",
+      "id": "tacos-crispy-eggplant"
+    },
+    {
+      "name": "Mexican Cobb Salad",
+      "calories": 630.0,
+      "fat": 45.0,
+      "carbs": 47.0,
+      "protein": 19.0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "mexican-cobb-salad"
+    },
+    {
+      "name": "Southwest Rice Bowl",
+      "calories": 1910.0,
+      "fat": 112.0,
+      "carbs": 202.0,
+      "protein": 37.0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "southwest-rice-bowl"
+    },
+    {
+      "name": "Southwest Half and Half",
+      "calories": 1270.0,
+      "fat": 79.0,
+      "carbs": 125.0,
+      "protein": 28.0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "southwest-half-and-half"
+    },
+    {
+      "name": "Tropical Bowl with Citrus Vinaigrette Dressing",
+      "calories": 1610.0,
+      "fat": 105.0,
+      "carbs": 123.0,
+      "protein": 53.0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "tropical-bowl-with-citrus-vinaigrette-dressing"
+    },
+    {
+      "name": "Tropical Half and Half with Citrus Vinaigrette Dressing",
+      "calories": 1160.0,
+      "fat": 80.0,
+      "carbs": 72.0,
+      "protein": 47.0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "tropical-half-and-half-with-citrus-vinaigrette-dressing"
+    },
+    {
+      "name": "Tropical Salad",
+      "calories": 710.0,
+      "fat": 54.0,
+      "carbs": 22.0,
+      "protein": 41.0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "tropical-salad"
+    },
+    {
+      "name": "Korean BBQ Bowl",
+      "calories": 840.0,
+      "fat": 36.0,
+      "carbs": 97.0,
+      "protein": 33.0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "korean-bbq-bowl"
+    },
+    {
+      "name": "Ultimate Nachos",
+      "calories": 1000.0,
+      "fat": 59.0,
+      "carbs": 90.0,
+      "protein": 24.0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "ultimate-nachos"
+    },
+    {
+      "name": "Chicken and Queso Rice Bowl",
+      "calories": 1080.0,
+      "fat": 38.0,
+      "carbs": 125.0,
+      "protein": 57.0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "chicken-and-queso-rice-bowl"
+    },
+    {
+      "name": "Quesadilla without Side",
+      "calories": 770.0,
+      "fat": 60.0,
+      "carbs": 42.0,
+      "protein": 15.0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "quesadilla-without-side"
+    },
+    {
+      "name": "Chicken Bacon Ranch Quesadilla without Side",
+      "calories": 890.0,
+      "fat": 57.0,
+      "carbs": 42.0,
+      "protein": 54.0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "chicken-bacon-ranch-quesadilla-without-side"
+    },
+    {
+      "name": "Dips and Shareables - Ultimate Trio",
+      "calories": 1340.0,
+      "fat": 79.0,
+      "carbs": 131.0,
+      "protein": 28.0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "dips-and-shareables-ultimate-trio"
+    },
+    {
+      "name": "Dips and Shareables - Large Queso",
+      "calories": 1260.0,
+      "fat": 73.0,
+      "carbs": 117.0,
+      "protein": 32.0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "dips-and-shareables-large-queso"
+    },
+    {
+      "name": "Dips and Shareables - Small Queso",
+      "calories": 590.0,
+      "fat": 36.0,
+      "carbs": 48.0,
+      "protein": 18.0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "dips-and-shareables-small-queso"
+    },
+    {
+      "name": "Dips and Shareables - Large Guac",
+      "calories": 1240.0,
+      "fat": 76.0,
+      "carbs": 131.0,
+      "protein": 16.0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "dips-and-shareables-large-guac"
+    },
+    {
+      "name": "Dips and Shareables - Small Guac",
+      "calories": 540.0,
+      "fat": 34.0,
+      "carbs": 55.0,
+      "protein": 7.0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "dips-and-shareables-small-guac"
+    },
+    {
+      "name": "Dips and Shareables - Large Salsa",
+      "calories": 920.0,
+      "fat": 42.0,
+      "carbs": 120.0,
+      "protein": 13.0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "dips-and-shareables-large-salsa"
+    },
+    {
+      "name": "Dips and Shareables - Small Salsa",
+      "calories": 370.0,
+      "fat": 17.0,
+      "carbs": 49.0,
+      "protein": 5.0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "dips-and-shareables-small-salsa"
+    },
+    {
+      "name": "Dips and Shareables - Extra Chips",
+      "calories": 860.0,
+      "fat": 42.0,
+      "carbs": 109.0,
+      "protein": 11.0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "dips-and-shareables-extra-chips"
+    },
+    {
+      "name": "Sides - Black Beans",
+      "calories": 120.0,
+      "fat": 0.0,
+      "carbs": 22.0,
+      "protein": 7.0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "sides-black-beans"
+    },
+    {
+      "name": "Sides - Refried Black Beans",
+      "calories": 210.0,
+      "fat": 8.0,
+      "carbs": 24.0,
+      "protein": 9.0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "sides-refried-black-beans"
+    },
+    {
+      "name": "Sides - Cilantro Pesto Rice",
+      "calories": 270.0,
+      "fat": 13.0,
+      "carbs": 35.0,
+      "protein": 4.0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "sides-cilantro-pesto-rice"
+    },
+    {
+      "name": "Sides - Mexican Creamed Corn",
+      "calories": 200.0,
+      "fat": 11.0,
+      "carbs": 25.0,
+      "protein": 6.0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "sides-mexican-creamed-corn"
+    },
+    {
+      "name": "Sides - House Salad",
+      "calories": 80.0,
+      "fat": 4.0,
+      "carbs": 6.0,
+      "protein": 4.0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "sides-house-salad"
+    },
+    {
+      "name": "Sides - Queso Rice",
+      "calories": 210.0,
+      "fat": 5.0,
+      "carbs": 35.0,
+      "protein": 6.0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "sides-queso-rice"
+    },
+    {
+      "name": "Kids - Beef and Cheese Tacos (no drink)",
+      "calories": 1170.0,
+      "fat": 77.0,
+      "carbs": 63.0,
+      "protein": 53.0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "kids-beef-and-cheese-tacos-no-drink"
+    },
+    {
+      "name": "Kids - Bean and Cheese Burritos (no drink)",
+      "calories": 810.0,
+      "fat": 45.0,
+      "carbs": 70.0,
+      "protein": 30.0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "kids-bean-and-cheese-burritos-no-drink"
+    },
+    {
+      "name": "Kids - Cheese Quesadilla (no drink)",
+      "calories": 720.0,
+      "fat": 42.0,
+      "carbs": 59.0,
+      "protein": 26.0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "kids-cheese-quesadilla-no-drink"
+    },
+    {
+      "name": "Chocolate Chunk Cookie",
+      "calories": 190.0,
+      "fat": 9.0,
+      "carbs": 25.0,
+      "protein": 3.0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "chocolate-chunk-cookie"
+    },
+    {
+      "name": "Snickerdoodle Cookie",
+      "calories": 170.0,
+      "fat": 6.0,
+      "carbs": 25.0,
+      "protein": 3.0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "snickerdoodle-cookie"
+    },
+    {
+      "name": "Sweet Tea - 21 oz",
+      "calories": 300.0,
+      "fat": 0.0,
+      "carbs": 77.0,
+      "protein": 0.0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "sweet-tea-21-oz"
+    },
+    {
+      "name": "Sweet Tea - 32 oz",
+      "calories": 450.0,
+      "fat": 0.0,
+      "carbs": 117.0,
+      "protein": 0.0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "sweet-tea-32-oz"
+    },
+    {
+      "name": "Sweet Tea - Kids",
+      "calories": 230.0,
+      "fat": 0.0,
+      "carbs": 58.0,
+      "protein": 0.0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "sweet-tea-kids"
+    },
+    {
+      "name": "Unsweet Tea - 21 oz",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "unsweet-tea-21-oz"
+    },
+    {
+      "name": "Unsweet Tea - 32 oz",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "unsweet-tea-32-oz"
+    },
+    {
+      "name": "Unsweet Tea - Kids",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "unsweet-tea-kids"
+    },
+    {
+      "name": "Jarritos Pineapple",
+      "calories": 140.0,
+      "fat": 0.0,
+      "carbs": 35.0,
+      "protein": 0.0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "jarritos-pineapple"
+    },
+    {
+      "name": "Jarritos Mandarin",
+      "calories": 140.0,
+      "fat": 0.0,
+      "carbs": 36.0,
+      "protein": 0.0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "jarritos-mandarin"
+    },
+    {
+      "name": "Paradise Punch - Kids",
+      "calories": 200.0,
+      "fat": 0.0,
+      "carbs": 52.0,
+      "protein": 0.0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "paradise-punch-kids"
+    },
+    {
+      "name": "Family Pack - Taco Pack with Chicken",
+      "calories": 4670.0,
+      "fat": 219.0,
+      "carbs": 418.0,
+      "protein": 240.0,
+      "servingLabel": "1 whole family pack",
+      "id": "family-pack-taco-pack-with-chicken"
+    },
+    {
+      "name": "Family Pack - Taco Pack with Beef",
+      "calories": 5470.0,
+      "fat": 312.0,
+      "carbs": 432.0,
+      "protein": 212.0,
+      "servingLabel": "1 whole family pack",
+      "id": "family-pack-taco-pack-with-beef"
+    },
+    {
+      "name": "Family Pack - Deluxe Taco Pack with Chicken",
+      "calories": 7630.0,
+      "fat": 259.0,
+      "carbs": 1027.0,
+      "protein": 287.0,
+      "servingLabel": "1 whole family pack",
+      "id": "family-pack-deluxe-taco-pack-with-chicken"
+    },
+    {
+      "name": "Family Pack - Deluxe Taco Pack with Beef",
+      "calories": 8430.0,
+      "fat": 353.0,
+      "carbs": 1040.0,
+      "protein": 259.0,
+      "servingLabel": "1 whole family pack",
+      "id": "family-pack-deluxe-taco-pack-with-beef"
+    },
+    {
+      "name": "Family Pack - Nacho Pack with Chicken",
+      "calories": 3820.0,
+      "fat": 217.0,
+      "carbs": 245.0,
+      "protein": 216.0,
+      "servingLabel": "1 whole family pack",
+      "id": "family-pack-nacho-pack-with-chicken"
+    },
+    {
+      "name": "Family Pack - Nacho Pack with Beef",
+      "calories": 4620.0,
+      "fat": 310.0,
+      "carbs": 259.0,
+      "protein": 188.0,
+      "servingLabel": "1 whole family pack",
+      "id": "family-pack-nacho-pack-with-beef"
+    },
+    {
+      "name": "Family Pack - Rice Bowl Pack with Chicken",
+      "calories": 5470.0,
+      "fat": 306.0,
+      "carbs": 475.0,
+      "protein": 227.0,
+      "servingLabel": "1 whole family pack",
+      "id": "family-pack-rice-bowl-pack-with-chicken"
+    },
+    {
+      "name": "Family Pack - Rice Bowl Pack with Beef",
+      "calories": 6270.0,
+      "fat": 399.0,
+      "carbs": 488.0,
+      "protein": 199.0,
+      "servingLabel": "1 whole family pack",
+      "id": "family-pack-rice-bowl-pack-with-beef"
+    },
+    {
+      "name": "Soft Flour Tortilla",
+      "calories": 100.0,
+      "fat": 2.5,
+      "carbs": 16.0,
+      "protein": 2.0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "soft-flour-tortilla"
+    },
+    {
+      "name": "Puffy Tortilla",
+      "calories": 200.0,
+      "fat": 12.0,
+      "carbs": 20.0,
+      "protein": 3.0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "puffy-tortilla"
+    },
+    {
+      "name": "Southwest Ranch - 2 oz",
+      "calories": 110.0,
+      "fat": 12.0,
+      "carbs": 3.0,
+      "protein": 1.0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "southwest-ranch-2-oz"
+    },
+    {
+      "name": "Salsa - 2 oz",
+      "calories": 15.0,
+      "fat": 0.0,
+      "carbs": 3.0,
+      "protein": 0.0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "salsa-2-oz"
+    },
+    {
+      "name": "Cilantro Citrus Vinaigrette - 2 oz",
+      "calories": 160.0,
+      "fat": 17.0,
+      "carbs": 3.0,
+      "protein": 0.0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "cilantro-citrus-vinaigrette-2-oz"
+    },
+    {
+      "name": "Ranch - 2 oz",
+      "calories": 220.0,
+      "fat": 24.0,
+      "carbs": 3.0,
+      "protein": 1.0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "ranch-2-oz"
+    },
+    {
+      "name": "Add Chicken - 4 oz",
+      "calories": 240.0,
+      "fat": 12.0,
+      "carbs": 1.0,
+      "protein": 33.0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "add-chicken-4-oz"
+    },
+    {
+      "name": "Add Beef - 4 oz",
+      "calories": 440.0,
+      "fat": 35.0,
+      "carbs": 5.0,
+      "protein": 26.0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "add-beef-4-oz"
+    },
+    {
+      "name": "Add Steak - 4 oz",
+      "calories": 220.0,
+      "fat": 13.0,
+      "carbs": 3.0,
+      "protein": 23.0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "add-steak-4-oz"
+    },
+    {
+      "name": "Add Grilled Shrimp",
+      "calories": 160.0,
+      "fat": 11.0,
+      "carbs": 2.0,
+      "protein": 17.0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "add-grilled-shrimp"
+    },
+    {
+      "name": "Add Fried Shrimp",
+      "calories": 170.0,
+      "fat": 14.0,
+      "carbs": 1.0,
+      "protein": 12.0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "add-fried-shrimp"
+    },
+    {
+      "name": "Add Mahi-Mahi - 4 oz",
+      "calories": 160.0,
+      "fat": 4.5,
+      "carbs": 0.0,
+      "protein": 28.0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "add-mahi-mahi-4-oz"
+    },
+    {
+      "name": "Add Avocado - 1 tbsp",
+      "calories": 30.0,
+      "fat": 3.0,
+      "carbs": 2.0,
+      "protein": 0.0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "add-avocado-1-tbsp"
+    },
+    {
+      "name": "Add Queso - 1 oz",
+      "calories": 50.0,
+      "fat": 4.0,
+      "carbs": 1.0,
+      "protein": 3.0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "add-queso-1-oz"
+    },
+    {
+      "name": "Add Sauteed Onions and Peppers - 1 oz",
+      "calories": 15.0,
+      "fat": 1.0,
+      "carbs": 2.0,
+      "protein": 0.0,
+      "servingLabel": "1 menu serving (size in item name)",
+      "id": "add-sauteed-onions-and-peppers-1-oz"
+    }
+  ]
+}

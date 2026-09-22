@@ -1,0 +1,739 @@
+{
+  "chain": "TCBY",
+  "sourceUrl": "https://www.nutritionix.com/tcby/menu/premium",
+  "source": "Nutritionix",
+  "sourceKind": "database",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "id": "nutritionix-777432",
+      "name": "Soft Serve, Bananas Foster",
+      "calories": 120,
+      "protein": 4,
+      "carbs": 26,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Soft Serve; size in item name)"
+    },
+    {
+      "id": "nutritionix-777433",
+      "name": "Soft Serve, Butter Pecan (No Sugar Added)",
+      "calories": 80,
+      "protein": 4,
+      "carbs": 19,
+      "fat": 0.5,
+      "servingLabel": "1 listed serving (Soft Serve; size in item name)"
+    },
+    {
+      "id": "nutritionix-777434",
+      "name": "Soft Serve, Cake Batter",
+      "calories": 120,
+      "protein": 4,
+      "carbs": 25,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Soft Serve; size in item name)"
+    },
+    {
+      "id": "nutritionix-777435",
+      "name": "Soft Serve, Chocolate",
+      "calories": 120,
+      "protein": 4,
+      "carbs": 24,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Soft Serve; size in item name)"
+    },
+    {
+      "id": "nutritionix-777436",
+      "name": "Soft Serve, Chocolate (No Sugar Added)",
+      "calories": 80,
+      "protein": 4,
+      "carbs": 19,
+      "fat": 0.5,
+      "servingLabel": "1 listed serving (Soft Serve; size in item name)"
+    },
+    {
+      "id": "nutritionix-777437",
+      "name": "Soft Serve, Coffee",
+      "calories": 130,
+      "protein": 4,
+      "carbs": 23,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Soft Serve; size in item name)"
+    },
+    {
+      "id": "nutritionix-777438",
+      "name": "Soft Serve, Cookies & Cream",
+      "calories": 150,
+      "protein": 3,
+      "carbs": 29,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Soft Serve; size in item name)"
+    },
+    {
+      "id": "nutritionix-777439",
+      "name": "Soft Serve, Dairy-Free Chocolate Almond",
+      "calories": 120,
+      "protein": 1,
+      "carbs": 31,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Soft Serve; size in item name)"
+    },
+    {
+      "id": "nutritionix-777440",
+      "name": "Soft Serve, Golden Vanilla",
+      "calories": 120,
+      "protein": 4,
+      "carbs": 25,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Soft Serve; size in item name)"
+    },
+    {
+      "id": "nutritionix-777441",
+      "name": "Soft Serve, Graham Cracker",
+      "calories": 130,
+      "protein": 4,
+      "carbs": 26,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Soft Serve; size in item name)"
+    },
+    {
+      "id": "nutritionix-777442",
+      "name": "Soft Serve, Greek Honey Vanilla",
+      "calories": 110,
+      "protein": 8,
+      "carbs": 21,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Soft Serve; size in item name)"
+    },
+    {
+      "id": "nutritionix-777443",
+      "name": "Soft Serve, Italian Tart",
+      "calories": 110,
+      "protein": 2,
+      "carbs": 25,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Soft Serve; size in item name)"
+    },
+    {
+      "id": "nutritionix-777444",
+      "name": "Soft Serve, Mango Dairy-Free Sorbet",
+      "calories": 110,
+      "protein": 0,
+      "carbs": 26,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Soft Serve; size in item name)"
+    },
+    {
+      "id": "nutritionix-777445",
+      "name": "Soft Serve, Mountain Blackberry (No Sugar Added)",
+      "calories": 80,
+      "protein": 4,
+      "carbs": 19,
+      "fat": 0.5,
+      "servingLabel": "1 listed serving (Soft Serve; size in item name)"
+    },
+    {
+      "id": "nutritionix-777446",
+      "name": "Soft Serve, New York Cheesecake",
+      "calories": 130,
+      "protein": 3,
+      "carbs": 25,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Soft Serve; size in item name)"
+    },
+    {
+      "id": "nutritionix-777447",
+      "name": "Soft Serve, Orange Dairy-Free Sorbet",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 25,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Soft Serve; size in item name)"
+    },
+    {
+      "id": "nutritionix-777448",
+      "name": "Soft Serve, Peanut Butter",
+      "calories": 130,
+      "protein": 5,
+      "carbs": 28,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Soft Serve; size in item name)"
+    },
+    {
+      "id": "nutritionix-777449",
+      "name": "Soft Serve, Pink Lemonade Dairy-Free Sorbet",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 26,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Soft Serve; size in item name)"
+    },
+    {
+      "id": "nutritionix-777450",
+      "name": "Soft Serve, Roasty Toasty Marshmallow",
+      "calories": 140,
+      "protein": 3,
+      "carbs": 29,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Soft Serve; size in item name)"
+    },
+    {
+      "id": "nutritionix-777451",
+      "name": "Soft Serve, Ruby Red Grapefruit Dairy-Free Sorbet",
+      "calories": 110,
+      "protein": 0,
+      "carbs": 27,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Soft Serve; size in item name)"
+    },
+    {
+      "id": "nutritionix-777452",
+      "name": "Soft Serve, Salted Caramel (No Sugar Added)",
+      "calories": 80,
+      "protein": 4,
+      "carbs": 20,
+      "fat": 0.5,
+      "servingLabel": "1 listed serving (Soft Serve; size in item name)"
+    },
+    {
+      "id": "nutritionix-777453",
+      "name": "Soft Serve, Strawberry",
+      "calories": 130,
+      "protein": 3,
+      "carbs": 27,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Soft Serve; size in item name)"
+    },
+    {
+      "id": "nutritionix-777454",
+      "name": "Soft Serve, Strawberry (No Sugar Added)",
+      "calories": 80,
+      "protein": 4,
+      "carbs": 19,
+      "fat": 0.5,
+      "servingLabel": "1 listed serving (Soft Serve; size in item name)"
+    },
+    {
+      "id": "nutritionix-777455",
+      "name": "Soft Serve, Strawberry Kiwi Dairy-Free Sorbet",
+      "calories": 100,
+      "protein": 0,
+      "carbs": 25,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Soft Serve; size in item name)"
+    },
+    {
+      "id": "nutritionix-777456",
+      "name": "Soft Serve, Vanilla (No Sugar Added)",
+      "calories": 80,
+      "protein": 4,
+      "carbs": 19,
+      "fat": 0.5,
+      "servingLabel": "1 listed serving (Soft Serve; size in item name)"
+    },
+    {
+      "id": "nutritionix-777457",
+      "name": "Soft Serve, Watermelon Sorbet",
+      "calories": 110,
+      "protein": 0,
+      "carbs": 25,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Soft Serve; size in item name)"
+    },
+    {
+      "id": "nutritionix-777458",
+      "name": "Soft Serve, White Chocolate Mousse",
+      "calories": 140,
+      "protein": 4,
+      "carbs": 26,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Soft Serve; size in item name)"
+    },
+    {
+      "id": "nutritionix-777459",
+      "name": "Hand Scooped, Butter Pecan",
+      "calories": 220,
+      "protein": 5,
+      "carbs": 27,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Hand Scooped; size in item name)"
+    },
+    {
+      "id": "nutritionix-777460",
+      "name": "Hand Scooped, Chewy Brownie",
+      "calories": 220,
+      "protein": 5,
+      "carbs": 35,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Hand Scooped; size in item name)"
+    },
+    {
+      "id": "nutritionix-777461",
+      "name": "Hand Scooped, Chocolate Chocolate",
+      "calories": 120,
+      "protein": 5,
+      "carbs": 20,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Hand Scooped; size in item name)"
+    },
+    {
+      "id": "nutritionix-777462",
+      "name": "Hand Scooped, Chunky Chocolate Cookie Dough",
+      "calories": 220,
+      "protein": 5,
+      "carbs": 33,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Hand Scooped; size in item name)"
+    },
+    {
+      "id": "nutritionix-777463",
+      "name": "Hand Scooped, Cold Brew Coffee",
+      "calories": 170,
+      "protein": 5,
+      "carbs": 28,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Hand Scooped; size in item name)"
+    },
+    {
+      "id": "nutritionix-777464",
+      "name": "Hand Scooped, Cookies & Cream",
+      "calories": 200,
+      "protein": 5,
+      "carbs": 32,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Hand Scooped; size in item name)"
+    },
+    {
+      "id": "nutritionix-777465",
+      "name": "Hand Scooped, Cotton Candy",
+      "calories": 170,
+      "protein": 5,
+      "carbs": 28,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Hand Scooped; size in item name)"
+    },
+    {
+      "id": "nutritionix-777466",
+      "name": "Hand Scooped, Dairy-Free Psychedelic Sorbet",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 33,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Hand Scooped; size in item name)"
+    },
+    {
+      "id": "nutritionix-777467",
+      "name": "Hand Scooped, Mint Chocolate Chunk",
+      "calories": 200,
+      "protein": 5,
+      "carbs": 30,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Hand Scooped; size in item name)"
+    },
+    {
+      "id": "nutritionix-777468",
+      "name": "Hand Scooped, Mocha Almond Fudge",
+      "calories": 200,
+      "protein": 5,
+      "carbs": 30,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Hand Scooped; size in item name)"
+    },
+    {
+      "id": "nutritionix-777469",
+      "name": "Hand Scooped, Peanut Butter Delight",
+      "calories": 250,
+      "protein": 7,
+      "carbs": 30,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Hand Scooped; size in item name)"
+    },
+    {
+      "id": "nutritionix-777470",
+      "name": "Hand Scooped, Pralines & Cream",
+      "calories": 210,
+      "protein": 4,
+      "carbs": 27,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Hand Scooped; size in item name)"
+    },
+    {
+      "id": "nutritionix-777471",
+      "name": "Hand Scooped, Rainbow Cream",
+      "calories": 170,
+      "protein": 5,
+      "carbs": 27,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Hand Scooped; size in item name)"
+    },
+    {
+      "id": "nutritionix-777472",
+      "name": "Hand Scooped, Sea Salt Caramel Truffle",
+      "calories": 200,
+      "protein": 5,
+      "carbs": 32,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Hand Scooped; size in item name)"
+    },
+    {
+      "id": "nutritionix-777473",
+      "name": "Hand Scooped, Strawberries And Cream",
+      "calories": 160,
+      "protein": 4,
+      "carbs": 28,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Hand Scooped; size in item name)"
+    },
+    {
+      "id": "nutritionix-777474",
+      "name": "Hand Scooped, Vanilla Bean",
+      "calories": 170,
+      "protein": 5,
+      "carbs": 27,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Hand Scooped; size in item name)"
+    },
+    {
+      "id": "nutritionix-777475",
+      "name": "Toppings, Almonds",
+      "calories": 100,
+      "protein": 3,
+      "carbs": 3,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-777476",
+      "name": "Toppings, Banana",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-777477",
+      "name": "Toppings, Blackberries",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-777478",
+      "name": "Toppings, Blueberries",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-777479",
+      "name": "Toppings, Brownie Bites",
+      "calories": 70,
+      "protein": 1,
+      "carbs": 9,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-777480",
+      "name": "Toppings, Butterfinger",
+      "calories": 80,
+      "protein": 1,
+      "carbs": 12,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-777482",
+      "name": "Toppings, Cheesecake",
+      "calories": 90,
+      "protein": 1,
+      "carbs": 8,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-777483",
+      "name": "Toppings, Chocolate (NSA, fat free)",
+      "calories": 60,
+      "protein": 0,
+      "carbs": 13,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-777484",
+      "name": "Toppings, Chocolate Sprinkles",
+      "calories": 70,
+      "protein": 0,
+      "carbs": 13,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-777485",
+      "name": "Toppings, Coconut Flakes",
+      "calories": 60,
+      "protein": 1,
+      "carbs": 6,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-777486",
+      "name": "Toppings, Cookie Dough",
+      "calories": 90,
+      "protein": 1,
+      "carbs": 13,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-777488",
+      "name": "Toppings, Graham Crackers",
+      "calories": 25,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 0.5,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-777489",
+      "name": "Toppings, Granola",
+      "calories": 50,
+      "protein": 2,
+      "carbs": 8,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-777490",
+      "name": "Toppings, Gummy Bears",
+      "calories": 110,
+      "protein": 0,
+      "carbs": 28,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-777491",
+      "name": "Toppings, Heath Bar",
+      "calories": 90,
+      "protein": 1,
+      "carbs": 11,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-777492",
+      "name": "Toppings, Hot Fudge",
+      "calories": 70,
+      "protein": 1,
+      "carbs": 10,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-777494",
+      "name": "Toppings, Marshmallow",
+      "calories": 25,
+      "protein": 0,
+      "carbs": 9,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-777496",
+      "name": "Toppings, Milk Chocolate Chips",
+      "calories": 80,
+      "protein": 1,
+      "carbs": 9,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-777497",
+      "name": "Toppings, Mini M&Ms",
+      "calories": 140,
+      "protein": 2,
+      "carbs": 20,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-777499",
+      "name": "Toppings, Non-dairy Whipped Topping",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-777500",
+      "name": "Toppings, Oreo",
+      "calories": 50,
+      "protein": 0,
+      "carbs": 8,
+      "fat": 2.5,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-777501",
+      "name": "Toppings, Peanut Butter Topping",
+      "calories": 110,
+      "protein": 2,
+      "carbs": 4,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-777502",
+      "name": "Toppings, Pineapple",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-777503",
+      "name": "Toppings, Rainbow Sprinkles",
+      "calories": 80,
+      "protein": 0,
+      "carbs": 14,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-777504",
+      "name": "Toppings, Raspberries",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-777505",
+      "name": "Toppings, Reese's Peanut Butter Cups",
+      "calories": 70,
+      "protein": 1,
+      "carbs": 8,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-777506",
+      "name": "Toppings, Reese's Pieces",
+      "calories": 80,
+      "protein": 2,
+      "carbs": 9,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-777507",
+      "name": "Toppings, Snickers",
+      "calories": 70,
+      "protein": 1,
+      "carbs": 9,
+      "fat": 3.5,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-777508",
+      "name": "Toppings, Strawberries",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-777509",
+      "name": "Toppings, Walnuts In Syrup",
+      "calories": 90,
+      "protein": 1,
+      "carbs": 10,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Toppings; size in item name)"
+    },
+    {
+      "id": "nutritionix-777510",
+      "name": "Cappuccino Chillers",
+      "calories": 1230,
+      "protein": 21,
+      "carbs": 208,
+      "fat": 40,
+      "servingLabel": "1 listed serving (Specialty Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-777511",
+      "name": "Frappe Chillers",
+      "calories": 520,
+      "protein": 10,
+      "carbs": 74,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Specialty Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-777512",
+      "name": "Milkshakes",
+      "calories": 1100,
+      "protein": 33,
+      "carbs": 118,
+      "fat": 60,
+      "servingLabel": "1 listed serving (Specialty Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-777514",
+      "name": "Smoothies",
+      "calories": 120,
+      "protein": 1,
+      "carbs": 28,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Specialty Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-777513",
+      "name": "Sorbet Fizz",
+      "calories": 610,
+      "protein": 0,
+      "carbs": 153,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Specialty Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-777516",
+      "name": "Parfaits",
+      "calories": 700,
+      "protein": 13,
+      "carbs": 108,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Specialty Treats; size in item name)"
+    },
+    {
+      "id": "nutritionix-777517",
+      "name": "Shivers",
+      "calories": 1830,
+      "protein": 43,
+      "carbs": 207,
+      "fat": 102,
+      "servingLabel": "1 listed serving (Specialty Treats; size in item name)"
+    },
+    {
+      "id": "nutritionix-777518",
+      "name": "Sundaes",
+      "calories": 1010,
+      "protein": 14,
+      "carbs": 135,
+      "fat": 48,
+      "servingLabel": "1 listed serving (Specialty Treats; size in item name)"
+    }
+  ],
+  "sourceDate": "2025-05-05"
+}

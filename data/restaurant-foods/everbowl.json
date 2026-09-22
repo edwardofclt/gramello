@@ -1,0 +1,311 @@
+{
+  "chain": "Everbowl",
+  "sourceUrl": "https://www.everbowl.com/nutritionals",
+  "sourceKind": "restaurant",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "name": "Acai base",
+      "servingLabel": "2oz scoop",
+      "calories": 80.0,
+      "fat": 1.0,
+      "carbs": 17.0,
+      "protein": 0.0,
+      "sourceUrl": "https://www.everbowl.com/nutritionals/acai-base",
+      "id": "acai-base-2oz-scoop"
+    },
+    {
+      "name": "Cacao Wow Base",
+      "servingLabel": "2oz scoop",
+      "calories": 100.0,
+      "fat": 6.0,
+      "carbs": 13.0,
+      "protein": 1.0,
+      "sourceUrl": "https://www.everbowl.com/nutritionals/cacao-wow-base",
+      "id": "cacao-wow-base-2oz-scoop"
+    },
+    {
+      "name": "Blue Majic Base",
+      "servingLabel": "2oz scoop",
+      "calories": 80.0,
+      "fat": 5.0,
+      "carbs": 9.0,
+      "protein": 1.0,
+      "sourceUrl": "https://www.everbowl.com/nutritionals/blue-majic-base",
+      "id": "blue-majic-base-2oz-scoop"
+    },
+    {
+      "name": "Coco Love Base",
+      "servingLabel": "2oz scoop",
+      "calories": 100.0,
+      "fat": 6.0,
+      "carbs": 13.0,
+      "protein": 0.0,
+      "sourceUrl": "https://www.everbowl.com/nutritionals/coco-love-base",
+      "id": "coco-love-base-2oz-scoop"
+    },
+    {
+      "name": "Pitaya Base",
+      "servingLabel": "2oz scoop",
+      "calories": 45.0,
+      "fat": 1.0,
+      "carbs": 10.0,
+      "protein": 0.0,
+      "sourceUrl": "https://www.everbowl.com/nutritionals/pitaya-base",
+      "id": "pitaya-base-2oz-scoop"
+    },
+    {
+      "name": "Vanilla Base",
+      "servingLabel": "2oz scoop",
+      "calories": 163.0,
+      "fat": 8.0,
+      "carbs": 17.0,
+      "protein": 0.0,
+      "sourceUrl": "https://www.everbowl.com/nutritionals/vanilla-base",
+      "id": "vanilla-base-2oz-scoop"
+    },
+    {
+      "name": "Granola",
+      "servingLabel": "50g",
+      "calories": 220.0,
+      "fat": 8.0,
+      "carbs": 33.0,
+      "protein": 6.0,
+      "sourceUrl": "https://www.everbowl.com/nutritionals/granola",
+      "servingGrams": 50,
+      "id": "granola-50g"
+    },
+    {
+      "name": "Chia Pudding",
+      "servingLabel": "40g",
+      "calories": 35.0,
+      "fat": 2.5,
+      "carbs": 3.0,
+      "protein": 1.0,
+      "sourceUrl": "https://www.everbowl.com/nutritionals/chia-pudding",
+      "servingGrams": 40,
+      "id": "chia-pudding-40g"
+    },
+    {
+      "name": "Everoats",
+      "servingLabel": "60g",
+      "calories": 110.0,
+      "fat": 2.0,
+      "carbs": 20.0,
+      "protein": 3.0,
+      "sourceUrl": "https://www.everbowl.com/nutritionals/everoats",
+      "servingGrams": 60,
+      "id": "everoats-60g"
+    },
+    {
+      "name": "Strawberry",
+      "servingLabel": "1 scoop",
+      "calories": 10.0,
+      "fat": 0.0,
+      "carbs": 3.0,
+      "protein": 0.0,
+      "sourceUrl": "https://www.everbowl.com/nutritionals/strawberry",
+      "id": "strawberry-1-scoop"
+    },
+    {
+      "name": "Banana",
+      "servingLabel": "1 scoop",
+      "calories": 20.0,
+      "fat": 0.0,
+      "carbs": 6.0,
+      "protein": 0.0,
+      "sourceUrl": "https://www.everbowl.com/nutritionals/banana",
+      "id": "banana-1-scoop"
+    },
+    {
+      "name": "Pineapple",
+      "servingLabel": "1 scoop",
+      "calories": 20.0,
+      "fat": 0.0,
+      "carbs": 4.0,
+      "protein": 0.0,
+      "sourceUrl": "https://www.everbowl.com/nutritionals/pineapple",
+      "id": "pineapple-1-scoop"
+    },
+    {
+      "name": "Kiwi",
+      "servingLabel": "1 scoop",
+      "calories": 10.0,
+      "fat": 0.0,
+      "carbs": 3.0,
+      "protein": 0.0,
+      "sourceUrl": "https://www.everbowl.com/nutritionals/kiwi",
+      "id": "kiwi-1-scoop"
+    },
+    {
+      "name": "Blueberry",
+      "servingLabel": "1 scoop",
+      "calories": 15.0,
+      "fat": 0.0,
+      "carbs": 4.0,
+      "protein": 0.0,
+      "sourceUrl": "https://www.everbowl.com/nutritionals/blueberry",
+      "id": "blueberry-1-scoop"
+    },
+    {
+      "name": "Cinnamon Apples",
+      "servingLabel": "1 scoop",
+      "calories": 60.0,
+      "fat": 0.0,
+      "carbs": 16.0,
+      "protein": 0.0,
+      "sourceUrl": "https://www.everbowl.com/nutritionals/cinnamon-apples",
+      "id": "cinnamon-apples-1-scoop"
+    },
+    {
+      "name": "Peanut Butter",
+      "servingLabel": "1 drizzle",
+      "calories": 60.0,
+      "fat": 4.5,
+      "carbs": 2.0,
+      "protein": 2.0,
+      "sourceUrl": "https://www.everbowl.com/nutritionals/peanut-butter",
+      "id": "peanut-butter-1-drizzle"
+    },
+    {
+      "name": "Almond Butter",
+      "servingLabel": "1 drizzle",
+      "calories": 60.0,
+      "fat": 5.0,
+      "carbs": 2.0,
+      "protein": 2.0,
+      "sourceUrl": "https://www.everbowl.com/nutritionals/almond-butter",
+      "id": "almond-butter-1-drizzle"
+    },
+    {
+      "name": "Cacao Nibs",
+      "servingLabel": "1 scoop",
+      "calories": 30.0,
+      "fat": 2.0,
+      "carbs": 3.0,
+      "protein": 0.0,
+      "sourceUrl": "https://www.everbowl.com/nutritionals/cacao-nibs",
+      "id": "cacao-nibs-1-scoop"
+    },
+    {
+      "name": "Coconut Flakes",
+      "servingLabel": "1 scoop",
+      "calories": 45.0,
+      "fat": 2.5,
+      "carbs": 5.0,
+      "protein": 0.0,
+      "sourceUrl": "https://www.everbowl.com/nutritionals/coconut-flakes",
+      "id": "coconut-flakes-1-scoop"
+    },
+    {
+      "name": "Goji Berry",
+      "servingLabel": "1 scoop",
+      "calories": 15.0,
+      "fat": 0.0,
+      "carbs": 3.0,
+      "protein": 1.0,
+      "sourceUrl": "https://www.everbowl.com/nutritionals/goji-berry",
+      "id": "goji-berry-1-scoop"
+    },
+    {
+      "name": "Chia Seeds",
+      "servingLabel": "1 scoop",
+      "calories": 10.0,
+      "fat": 0.5,
+      "carbs": 1.0,
+      "protein": 0.0,
+      "sourceUrl": "https://www.everbowl.com/nutritionals/chia-seeds",
+      "id": "chia-seeds-1-scoop"
+    },
+    {
+      "name": "Bee Pollen",
+      "servingLabel": "1 scoop",
+      "calories": 15.0,
+      "fat": 0.0,
+      "carbs": 2.0,
+      "protein": 1.0,
+      "sourceUrl": "https://www.everbowl.com/nutritionals/bee-pollen",
+      "id": "bee-pollen-1-scoop"
+    },
+    {
+      "name": "Hemp Seeds",
+      "servingLabel": "1 scoop",
+      "calories": 10.0,
+      "fat": 1.0,
+      "carbs": 0.0,
+      "protein": 1.0,
+      "sourceUrl": "https://www.everbowl.com/nutritionals/hemp-seeds",
+      "id": "hemp-seeds-1-scoop"
+    },
+    {
+      "name": "Agave",
+      "servingLabel": "1 drizzle",
+      "calories": 15.0,
+      "fat": 0.0,
+      "carbs": 4.0,
+      "protein": 0.0,
+      "sourceUrl": "https://www.everbowl.com/nutritionals/agave",
+      "id": "agave-1-drizzle"
+    },
+    {
+      "name": "Dates",
+      "servingLabel": "1 scoop",
+      "calories": 50.0,
+      "fat": 0.0,
+      "carbs": 12.0,
+      "protein": 0.0,
+      "sourceUrl": "https://www.everbowl.com/nutritionals/dates",
+      "id": "dates-1-scoop"
+    },
+    {
+      "name": "Honey",
+      "servingLabel": "1 drizzle",
+      "calories": 15.0,
+      "fat": 0.0,
+      "carbs": 4.0,
+      "protein": 0.0,
+      "sourceUrl": "https://www.everbowl.com/nutritionals/honey",
+      "id": "honey-1-drizzle"
+    }
+  ],
+  "coverageNotes": {
+    "method": "Named columns from first-party ingredient nutrition HTML tables.",
+    "scope": "Published base/topping portions only, not inferred customized bowl totals. Six ingredient pages and assembled bowl/smoothie labels did not expose complete values.",
+    "skippedIngredientPages": [
+      {
+        "name": "Mango Base",
+        "url": "https://www.everbowl.com/nutritionals/mango-base",
+        "reason": "No nutrition table returned by published ingredient page."
+      },
+      {
+        "name": "Passion Fruit Base",
+        "url": "https://www.everbowl.com/nutritionals/passion-fruit-base",
+        "reason": "No nutrition table returned by published ingredient page."
+      },
+      {
+        "name": "Pineapple Base",
+        "url": "https://www.everbowl.com/nutritionals/pineapple-base",
+        "reason": "No nutrition table returned by published ingredient page."
+      },
+      {
+        "name": "Ube Base",
+        "url": "https://www.everbowl.com/nutritionals/ube-base",
+        "reason": "No nutrition table returned by published ingredient page."
+      },
+      {
+        "name": "Guava Base",
+        "url": "https://www.everbowl.com/nutritionals/guava-base",
+        "reason": "No nutrition table returned by published ingredient page."
+      },
+      {
+        "name": "Nutella",
+        "url": "https://www.everbowl.com/nutritionals/nutella",
+        "reason": "No nutrition table returned by published ingredient page."
+      }
+    ],
+    "unavailablePdf": {
+      "url": "https://admin.everbowl.com/uploads/Nutritional_Information_Chart_091d1f7dec.pdf",
+      "reason": "Direct fetch failed due to expired TLS certificate; browser retrieval returned 502."
+    }
+  }
+}

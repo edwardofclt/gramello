@@ -1,0 +1,1288 @@
+{
+  "chain": "Le Peep",
+  "sourceUrl": "https://www.nutritionix.com/le-peep/menu/premium",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "name": "Aspen Fruit Blintz with Apple",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 960.0,
+      "fat": 75.0,
+      "carbs": 52.0,
+      "protein": 23.0,
+      "id": "aspen-fruit-blintz-with-apple-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Aspen Fruit Blintz with Banana",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 980.0,
+      "fat": 73.0,
+      "carbs": 63.0,
+      "protein": 24.0,
+      "id": "aspen-fruit-blintz-with-banana-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Aspen Fruit Blintz with Blueberry",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 920.0,
+      "fat": 73.0,
+      "carbs": 45.0,
+      "protein": 22.0,
+      "id": "aspen-fruit-blintz-with-blueberry-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Aspen Fruit Blintz with Strawberry",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 900.0,
+      "fat": 73.0,
+      "carbs": 42.0,
+      "protein": 23.0,
+      "id": "aspen-fruit-blintz-with-strawberry-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Berry Nutty Oatmeal without Condiments",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 760.0,
+      "fat": 19.0,
+      "carbs": 128.0,
+      "protein": 25.0,
+      "id": "berry-nutty-oatmeal-without-condiments-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Biscuits And Gravy",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 580.0,
+      "fat": 31.0,
+      "carbs": 59.0,
+      "protein": 11.0,
+      "id": "biscuits-and-gravy-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Breakfast Banana Split",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 360.0,
+      "fat": 6.0,
+      "carbs": 69.0,
+      "protein": 14.0,
+      "id": "breakfast-banana-split-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Gooey Buns",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 530.0,
+      "fat": 33.0,
+      "carbs": 53.0,
+      "protein": 10.0,
+      "id": "gooey-buns-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Le Petit French Toast",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 680.0,
+      "fat": 37.0,
+      "carbs": 44.0,
+      "protein": 39.0,
+      "id": "le-petit-french-toast-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Pancake Sandwich",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 450.0,
+      "fat": 27.0,
+      "carbs": 37.0,
+      "protein": 15.0,
+      "id": "pancake-sandwich-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Dawnbreaker",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 840.0,
+      "fat": 55.0,
+      "carbs": 49.0,
+      "protein": 38.0,
+      "id": "dawnbreaker-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Hen Pen with Bacon",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 680.0,
+      "fat": 41.0,
+      "carbs": 38.0,
+      "protein": 36.0,
+      "id": "hen-pen-with-bacon-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Hen Pen with Corned Beef Hash",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 820.0,
+      "fat": 57.0,
+      "carbs": 53.0,
+      "protein": 26.0,
+      "id": "hen-pen-with-corned-beef-hash-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Hen Pen with Ham",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 590.0,
+      "fat": 28.0,
+      "carbs": 48.0,
+      "protein": 36.0,
+      "id": "hen-pen-with-ham-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Hen Pen with Meatless",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 470.0,
+      "fat": 24.0,
+      "carbs": 46.0,
+      "protein": 18.0,
+      "id": "hen-pen-with-meatless-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Hen Pen with Sausage",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 890.0,
+      "fat": 52.0,
+      "carbs": 61.0,
+      "protein": 46.0,
+      "id": "hen-pen-with-sausage-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Hen Pen with Sausage Patty",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 890.0,
+      "fat": 52.0,
+      "carbs": 61.0,
+      "protein": 46.0,
+      "id": "hen-pen-with-sausage-patty-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Hen Pen with Turkey Sausage",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 780.0,
+      "fat": 43.0,
+      "carbs": 51.0,
+      "protein": 48.0,
+      "id": "hen-pen-with-turkey-sausage-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Homestead Breakfast",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 920.0,
+      "fat": 54.0,
+      "carbs": 79.0,
+      "protein": 26.0,
+      "id": "homestead-breakfast-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Rock Lobster Scramble",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 840.0,
+      "fat": 53.0,
+      "carbs": 57.0,
+      "protein": 36.0,
+      "id": "rock-lobster-scramble-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Eggs Benedict",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 680.0,
+      "fat": 34.0,
+      "carbs": 58.0,
+      "protein": 39.0,
+      "id": "eggs-benedict-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Harvest Benedict",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 780.0,
+      "fat": 48.0,
+      "carbs": 64.0,
+      "protein": 26.0,
+      "id": "harvest-benedict-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Belgian Combo with Turkey Sausage",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 900.0,
+      "fat": 48.0,
+      "carbs": 75.0,
+      "protein": 38.0,
+      "id": "belgian-combo-with-turkey-sausage-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Belgian Waffle",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 390.0,
+      "fat": 16.0,
+      "carbs": 49.0,
+      "protein": 8.0,
+      "id": "belgian-waffle-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Belgian Waffle Combo with Sausage Links",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 960.0,
+      "fat": 51.0,
+      "carbs": 81.0,
+      "protein": 41.0,
+      "id": "belgian-waffle-combo-with-sausage-links-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Belgian Waffle Combo with Sausage Patties",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 960.0,
+      "fat": 51.0,
+      "carbs": 81.0,
+      "protein": 41.0,
+      "id": "belgian-waffle-combo-with-sausage-patties-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Belgian Waffle Combo with Turkey Sausage",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 850.0,
+      "fat": 43.0,
+      "carbs": 74.0,
+      "protein": 39.0,
+      "id": "belgian-waffle-combo-with-turkey-sausage-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Eighteen Wheeler with Turkey Sausage",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 970.0,
+      "fat": 49.0,
+      "carbs": 79.0,
+      "protein": 51.0,
+      "id": "eighteen-wheeler-with-turkey-sausage-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Eigtheen Wheeler with Ham",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 890.0,
+      "fat": 42.0,
+      "carbs": 79.0,
+      "protein": 44.0,
+      "id": "eigtheen-wheeler-with-ham-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Pancakes with Bananas",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 920.0,
+      "fat": 44.0,
+      "carbs": 112.0,
+      "protein": 22.0,
+      "id": "pancakes-with-bananas-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Pancakes with Blueberries",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 460.0,
+      "fat": 22.0,
+      "carbs": 56.0,
+      "protein": 11.0,
+      "id": "pancakes-with-blueberries-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Pancakes with Wheat Germ",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 960.0,
+      "fat": 47.0,
+      "carbs": 112.0,
+      "protein": 25.0,
+      "id": "pancakes-with-wheat-germ-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Plain Cakes",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 910.0,
+      "fat": 46.0,
+      "carbs": 105.0,
+      "protein": 22.0,
+      "id": "plain-cakes-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Build Your Own Omelet, Artichoke",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 40.0,
+      "fat": 3.0,
+      "carbs": 5.0,
+      "protein": 2.0,
+      "id": "build-your-own-omelet-artichoke-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Build Your Own Omelet, Avocado",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 70.0,
+      "fat": 6.0,
+      "carbs": 4.0,
+      "protein": 1.0,
+      "id": "build-your-own-omelet-avocado-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Build Your Own Omelet, Bacon",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 230.0,
+      "fat": 20.0,
+      "carbs": 0.0,
+      "protein": 11.0,
+      "id": "build-your-own-omelet-bacon-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Build Your Own Omelet, Bell Pepper",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 10.0,
+      "fat": 0.0,
+      "carbs": 2.0,
+      "protein": 0.0,
+      "id": "build-your-own-omelet-bell-pepper-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Build Your Own Omelet, Brie",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 120.0,
+      "fat": 11.0,
+      "carbs": 2.0,
+      "protein": 6.0,
+      "id": "build-your-own-omelet-brie-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Build Your Own Omelet, Broccoli",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 10.0,
+      "fat": 0.0,
+      "carbs": 2.0,
+      "protein": 1.0,
+      "id": "build-your-own-omelet-broccoli-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Build Your Own Omelet, Cheddar Jack",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 170.0,
+      "fat": 14.0,
+      "carbs": 0.0,
+      "protein": 10.0,
+      "id": "build-your-own-omelet-cheddar-jack-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Build Your Own Omelet, Chicken",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 60.0,
+      "fat": 1.5,
+      "carbs": 0.0,
+      "protein": 13.0,
+      "id": "build-your-own-omelet-chicken-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Build Your Own Omelet, Chorizo",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 100.0,
+      "fat": 7.0,
+      "carbs": 3.0,
+      "protein": 7.0,
+      "id": "build-your-own-omelet-chorizo-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Build Your Own Omelet, Cream Cheese",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 150.0,
+      "fat": 15.0,
+      "carbs": 2.0,
+      "protein": 3.0,
+      "id": "build-your-own-omelet-cream-cheese-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Build Your Own Omelet, Feta",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 110.0,
+      "fat": 9.0,
+      "carbs": 2.0,
+      "protein": 6.0,
+      "id": "build-your-own-omelet-feta-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Build Your Own Omelet, Ham",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 40.0,
+      "fat": 1.5,
+      "carbs": 0.0,
+      "protein": 7.0,
+      "id": "build-your-own-omelet-ham-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Build Your Own Omelet, Hollandaise Sauce",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 160.0,
+      "fat": 16.0,
+      "carbs": 4.0,
+      "protein": 1.0,
+      "id": "build-your-own-omelet-hollandaise-sauce-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Build Your Own Omelet, Jalapenos",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 10.0,
+      "fat": 0.0,
+      "carbs": 3.0,
+      "protein": 0.0,
+      "id": "build-your-own-omelet-jalapenos-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Build Your Own Omelet, Lobster",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 4.0,
+      "protein": 5.0,
+      "id": "build-your-own-omelet-lobster-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Build Your Own Omelet, Mozzarella",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 110.0,
+      "fat": 7.0,
+      "carbs": 1.0,
+      "protein": 10.0,
+      "id": "build-your-own-omelet-mozzarella-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Build Your Own Omelet, Mushrooms",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 10.0,
+      "fat": 0.0,
+      "carbs": 1.0,
+      "protein": 1.0,
+      "id": "build-your-own-omelet-mushrooms-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Build Your Own Omelet, Onion",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 15.0,
+      "fat": 0.0,
+      "carbs": 4.0,
+      "protein": 0.0,
+      "id": "build-your-own-omelet-onion-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Build Your Own Omelet, Pork Green Chili",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 40.0,
+      "fat": 2.5,
+      "carbs": 2.0,
+      "protein": 2.0,
+      "id": "build-your-own-omelet-pork-green-chili-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Build Your Own Omelet, Salsa",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 10.0,
+      "fat": 0.0,
+      "carbs": 2.0,
+      "protein": 0.0,
+      "id": "build-your-own-omelet-salsa-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Build Your Own Omelet, Sausage",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 100.0,
+      "fat": 7.0,
+      "carbs": 3.0,
+      "protein": 7.0,
+      "id": "build-your-own-omelet-sausage-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Build Your Own Omelet, Sausage Gravy",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 50.0,
+      "fat": 4.0,
+      "carbs": 3.0,
+      "protein": 1.0,
+      "id": "build-your-own-omelet-sausage-gravy-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Build Your Own Omelet, Spinach",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 10.0,
+      "fat": 0.0,
+      "carbs": 2.0,
+      "protein": 1.0,
+      "id": "build-your-own-omelet-spinach-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Build Your Own Omelet, Swiss",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 160.0,
+      "fat": 12.0,
+      "carbs": 2.0,
+      "protein": 11.0,
+      "id": "build-your-own-omelet-swiss-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Build Your Own Omelet, Tomatilla Sauce",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 15.0,
+      "fat": 0.0,
+      "carbs": 3.0,
+      "protein": 0.0,
+      "id": "build-your-own-omelet-tomatilla-sauce-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Build Your Own Omelet, Tomatoes",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 10.0,
+      "fat": 0.0,
+      "carbs": 2.0,
+      "protein": 0.0,
+      "id": "build-your-own-omelet-tomatoes-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Build Your Own Omelet, Turkey",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 40.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 8.0,
+      "id": "build-your-own-omelet-turkey-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Build Your Own Omelet, Turkey Sausage",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 70.0,
+      "fat": 4.5,
+      "carbs": 0.0,
+      "protein": 7.0,
+      "id": "build-your-own-omelet-turkey-sausage-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Colorado Omelet",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 500.0,
+      "fat": 16.0,
+      "carbs": 48.0,
+      "protein": 39.0,
+      "id": "colorado-omelet-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Create Your Own Omelet, Plain",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 570.0,
+      "fat": 29.0,
+      "carbs": 51.0,
+      "protein": 24.0,
+      "id": "create-your-own-omelet-plain-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Create Your Own Omelet, Plain with Egg Whites",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 400.0,
+      "fat": 11.0,
+      "carbs": 49.0,
+      "protein": 25.0,
+      "id": "create-your-own-omelet-plain-with-egg-whites-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Mini Denver Omelet",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 620.0,
+      "fat": 31.0,
+      "carbs": 47.0,
+      "protein": 37.0,
+      "id": "mini-denver-omelet-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Mini Greek Goddess",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 380.0,
+      "fat": 12.0,
+      "carbs": 49.0,
+      "protein": 21.0,
+      "id": "mini-greek-goddess-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Mini Veggie Omelet",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 420.0,
+      "fat": 12.0,
+      "carbs": 53.0,
+      "protein": 25.0,
+      "id": "mini-veggie-omelet-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Spinnaker Omelet",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 580.0,
+      "fat": 19.0,
+      "carbs": 61.0,
+      "protein": 39.0,
+      "id": "spinnaker-omelet-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "White Lightening Omelet",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 610.0,
+      "fat": 19.0,
+      "carbs": 63.0,
+      "protein": 46.0,
+      "id": "white-lightening-omelet-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Breakfast Enchiladas",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 740.0,
+      "fat": 43.0,
+      "carbs": 37.0,
+      "protein": 48.0,
+      "id": "breakfast-enchiladas-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Desperado",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 900.0,
+      "fat": 44.0,
+      "carbs": 79.0,
+      "protein": 44.0,
+      "id": "desperado-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Drifter Skillet",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 730.0,
+      "fat": 34.0,
+      "carbs": 71.0,
+      "protein": 36.0,
+      "id": "drifter-skillet-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Gypsy Skillet",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 820.0,
+      "fat": 38.0,
+      "carbs": 72.0,
+      "protein": 48.0,
+      "id": "gypsy-skillet-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Burger, Add Avocado",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 100.0,
+      "fat": 9.0,
+      "carbs": 5.0,
+      "protein": 1.0,
+      "id": "burger-add-avocado-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Burger, Add Bacon",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 370.0,
+      "fat": 28.0,
+      "carbs": 0.0,
+      "protein": 28.0,
+      "id": "burger-add-bacon-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Burger, Add Combo Cheese",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 60.0,
+      "fat": 4.5,
+      "carbs": 0.0,
+      "protein": 3.0,
+      "id": "burger-add-combo-cheese-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Burger, Add Green Chilies",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 1.0,
+      "protein": 0.0,
+      "id": "burger-add-green-chilies-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Burger, Add Grilled Onions",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 110.0,
+      "fat": 12.0,
+      "carbs": 3.0,
+      "protein": 0.0,
+      "id": "burger-add-grilled-onions-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Burger, Add Mozzarella",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 35.0,
+      "fat": 2.5,
+      "carbs": 0.0,
+      "protein": 3.0,
+      "id": "burger-add-mozzarella-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Burger, Add Pork Green Chili",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 60.0,
+      "fat": 3.5,
+      "carbs": 2.0,
+      "protein": 3.0,
+      "id": "burger-add-pork-green-chili-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Burger, Add Sauteed Mushrooms",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 110.0,
+      "fat": 12.0,
+      "carbs": 1.0,
+      "protein": 1.0,
+      "id": "burger-add-sauteed-mushrooms-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Burger, Add Swiss Cheese",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 50.0,
+      "fat": 4.0,
+      "carbs": 1.0,
+      "protein": 4.0,
+      "id": "burger-add-swiss-cheese-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Signature Burger with Side Salad",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 840.0,
+      "fat": 44.0,
+      "carbs": 50.0,
+      "protein": 61.0,
+      "id": "signature-burger-with-side-salad-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Triple Decker Sandwich with Side Salad",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 830.0,
+      "fat": 51.0,
+      "carbs": 59.0,
+      "protein": 49.0,
+      "id": "triple-decker-sandwich-with-side-salad-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Turkey Apple Brie Melt with Side Salad",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 860.0,
+      "fat": 42.0,
+      "carbs": 93.0,
+      "protein": 30.0,
+      "id": "turkey-apple-brie-melt-with-side-salad-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Cobb Salad",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 830.0,
+      "fat": 43.0,
+      "carbs": 48.0,
+      "protein": 65.0,
+      "id": "cobb-salad-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Bagel",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 310.0,
+      "fat": 1.0,
+      "carbs": 65.0,
+      "protein": 11.0,
+      "id": "bagel-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Cheese Potatoes",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 520.0,
+      "fat": 30.0,
+      "carbs": 42.0,
+      "protein": 19.0,
+      "id": "cheese-potatoes-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Cheesy Peasant Potatoes",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 510.0,
+      "fat": 28.0,
+      "carbs": 42.0,
+      "protein": 19.0,
+      "id": "cheesy-peasant-potatoes-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Corned Beef Hash",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 520.0,
+      "fat": 45.0,
+      "carbs": 16.0,
+      "protein": 15.0,
+      "id": "corned-beef-hash-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Cup of Oatmel",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 330.0,
+      "fat": 5.0,
+      "carbs": 62.0,
+      "protein": 11.0,
+      "id": "cup-of-oatmel-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "English Muffin",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 120.0,
+      "fat": 1.0,
+      "carbs": 25.0,
+      "protein": 4.0,
+      "id": "english-muffin-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "English Muffin, Honey Wheat",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 130.0,
+      "fat": 0.5,
+      "carbs": 26.0,
+      "protein": 5.0,
+      "id": "english-muffin-honey-wheat-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "French Fries, Sandwich Side",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 440.0,
+      "fat": 50.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "french-fries-sandwich-side-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Peasant Potatoes, Entree Side",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 140.0,
+      "fat": 4.0,
+      "carbs": 23.0,
+      "protein": 3.0,
+      "id": "peasant-potatoes-entree-side-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Side of Bacon",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 750.0,
+      "fat": 56.0,
+      "carbs": 0.0,
+      "protein": 56.0,
+      "id": "side-of-bacon-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Side of Eggs (One)",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 120.0,
+      "fat": 11.0,
+      "carbs": 0.0,
+      "protein": 5.0,
+      "id": "side-of-eggs-one-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Side of Eggs (Two)",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 200.0,
+      "fat": 17.0,
+      "carbs": 1.0,
+      "protein": 10.0,
+      "id": "side-of-eggs-two-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Side of French Fries",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 260.0,
+      "fat": 30.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "side-of-french-fries-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Side of Fruit",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 80.0,
+      "fat": 0.0,
+      "carbs": 21.0,
+      "protein": 1.0,
+      "id": "side-of-fruit-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Side of Ham",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 120.0,
+      "fat": 5.0,
+      "carbs": 1.0,
+      "protein": 18.0,
+      "id": "side-of-ham-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Side of Hash Browns",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 240.0,
+      "fat": 14.0,
+      "carbs": 25.0,
+      "protein": 3.0,
+      "id": "side-of-hash-browns-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Side of Peasant Potatoes",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 290.0,
+      "fat": 10.0,
+      "carbs": 42.0,
+      "protein": 5.0,
+      "id": "side-of-peasant-potatoes-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Side of Peasant Potatoes without Sour Cream",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 250.0,
+      "fat": 7.0,
+      "carbs": 41.0,
+      "protein": 5.0,
+      "id": "side-of-peasant-potatoes-without-sour-cream-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Side of Potatoes",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 140.0,
+      "fat": 4.0,
+      "carbs": 23.0,
+      "protein": 3.0,
+      "id": "side-of-potatoes-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Side of Refried Beans",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 100.0,
+      "fat": 8.0,
+      "carbs": 4.0,
+      "protein": 3.0,
+      "id": "side-of-refried-beans-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Side of Salad",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 90.0,
+      "fat": 3.0,
+      "carbs": 15.0,
+      "protein": 3.0,
+      "id": "side-of-salad-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Side of Salmon",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 240.0,
+      "fat": 10.0,
+      "carbs": 1.0,
+      "protein": 34.0,
+      "id": "side-of-salmon-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Side of Sausage Links",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 380.0,
+      "fat": 26.0,
+      "carbs": 12.0,
+      "protein": 26.0,
+      "id": "side-of-sausage-links-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Side of Sausage Patties",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 380.0,
+      "fat": 26.0,
+      "carbs": 12.0,
+      "protein": 26.0,
+      "id": "side-of-sausage-patties-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Side of Sweet Potato Fries",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 640.0,
+      "fat": 58.0,
+      "carbs": 33.0,
+      "protein": 2.0,
+      "id": "side-of-sweet-potato-fries-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Side of Toast, White",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 300.0,
+      "fat": 5.0,
+      "carbs": 52.0,
+      "protein": 11.0,
+      "id": "side-of-toast-white-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Side of Turkey Sausage",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 220.0,
+      "fat": 14.0,
+      "carbs": 1.0,
+      "protein": 23.0,
+      "id": "side-of-turkey-sausage-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Cappuccino",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 70.0,
+      "fat": 2.5,
+      "carbs": 8.0,
+      "protein": 5.0,
+      "id": "cappuccino-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Carmel Macchiato",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 190.0,
+      "fat": 3.5,
+      "carbs": 32.0,
+      "protein": 7.0,
+      "id": "carmel-macchiato-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Coffee, House Blend",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 5.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 1.0,
+      "id": "coffee-house-blend-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Espresso",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 10.0,
+      "fat": 0.0,
+      "carbs": 2.0,
+      "protein": 0.0,
+      "id": "espresso-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Hot Chocolate, Large",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 200.0,
+      "fat": 4.5,
+      "carbs": 30.0,
+      "protein": 9.0,
+      "id": "hot-chocolate-large-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Hot Chocolate, Small",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 120.0,
+      "fat": 3.0,
+      "carbs": 16.0,
+      "protein": 6.0,
+      "id": "hot-chocolate-small-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Hot Tea",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 5.0,
+      "fat": 0.0,
+      "carbs": 1.0,
+      "protein": 0.0,
+      "id": "hot-tea-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Latte",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 110.0,
+      "fat": 3.5,
+      "carbs": 11.0,
+      "protein": 7.0,
+      "id": "latte-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Mocha",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 180.0,
+      "fat": 4.5,
+      "carbs": 28.0,
+      "protein": 6.0,
+      "id": "mocha-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Apple Juice, Large",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 230.0,
+      "fat": 0.0,
+      "carbs": 55.0,
+      "protein": 0.0,
+      "id": "apple-juice-large-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Apple Juice, Small",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 110.0,
+      "fat": 0.0,
+      "carbs": 27.0,
+      "protein": 0.0,
+      "id": "apple-juice-small-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Arnold Palmer",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 90.0,
+      "fat": 0.0,
+      "carbs": 21.0,
+      "protein": 2.0,
+      "id": "arnold-palmer-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chocolate Milk, Large",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 310.0,
+      "fat": 8.0,
+      "carbs": 41.0,
+      "protein": 17.0,
+      "id": "chocolate-milk-large-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Chocolate Milk, Small",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 160.0,
+      "fat": 4.0,
+      "carbs": 20.0,
+      "protein": 8.0,
+      "id": "chocolate-milk-small-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Cranberry Juice, Large",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 250.0,
+      "fat": 0.0,
+      "carbs": 62.0,
+      "protein": 0.0,
+      "id": "cranberry-juice-large-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Cranberry Juice, Small",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 120.0,
+      "fat": 0.0,
+      "carbs": 31.0,
+      "protein": 0.0,
+      "id": "cranberry-juice-small-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Diet Pepsi",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "diet-pepsi-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Flavored Iced Tea",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 40.0,
+      "fat": 0.0,
+      "carbs": 11.0,
+      "protein": 0.0,
+      "id": "flavored-iced-tea-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Lemonade",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 180.0,
+      "fat": 0.0,
+      "carbs": 43.0,
+      "protein": 3.0,
+      "id": "lemonade-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Milk, Large",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 250.0,
+      "fat": 9.0,
+      "carbs": 25.0,
+      "protein": 18.0,
+      "id": "milk-large-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Milk, Small",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 130.0,
+      "fat": 4.5,
+      "carbs": 12.0,
+      "protein": 9.0,
+      "id": "milk-small-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Mountain Dew",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 190.0,
+      "fat": 0.0,
+      "carbs": 51.0,
+      "protein": 0.0,
+      "id": "mountain-dew-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Orange Crush",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 190.0,
+      "fat": 0.0,
+      "carbs": 50.0,
+      "protein": 0.0,
+      "id": "orange-crush-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Orange Juice, Large",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 210.0,
+      "fat": 0.0,
+      "carbs": 49.0,
+      "protein": 4.0,
+      "id": "orange-juice-large-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Orange Juice, Small",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 100.0,
+      "fat": 0.0,
+      "carbs": 25.0,
+      "protein": 2.0,
+      "id": "orange-juice-small-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Pepsi",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 180.0,
+      "fat": 0.0,
+      "carbs": 48.0,
+      "protein": 0.0,
+      "id": "pepsi-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Sierra Mist",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 130.0,
+      "fat": 0.0,
+      "carbs": 34.0,
+      "protein": 0.0,
+      "id": "sierra-mist-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Tomato Juice, Large",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 90.0,
+      "fat": 0.0,
+      "carbs": 19.0,
+      "protein": 4.0,
+      "id": "tomato-juice-large-1-menu-serving-size-in-name"
+    },
+    {
+      "name": "Tomato Juice, Small",
+      "servingLabel": "1 menu serving (size in name)",
+      "calories": 45.0,
+      "fat": 0.0,
+      "carbs": 9.0,
+      "protein": 2.0,
+      "id": "tomato-juice-small-1-menu-serving-size-in-name"
+    }
+  ],
+  "source": "Nutritionix",
+  "sourceKind": "database",
+  "sourceDate": "2019-01-15"
+}

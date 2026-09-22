@@ -23,12 +23,12 @@ for (const unit of ['serving', 'milliliters', 'fluid-ounces'] as const) {
     const response = page.waitForResponse(r => r.url().endsWith('/api/entries') && r.request().method() === 'POST');
     await page.getByRole('button', { name: 'Add to Lunch', exact: true }).click();
     const entry = await (await response).json();
-    expect(entry).toMatchObject({ sourceId: 'off-0810128528191', meal: 'Lunch', quantity: Number(amount), unit, grams: 0 });
+    expect(entry).toMatchObject({ sourceId: 'off-0810128528191', meal: 'Lunch', quantity: Number(amount), unit, grams: null });
     expect(entry.calories).toBeCloseTo(5, 4);
     expect(entry.carbs).toBeCloseTo(1, 4);
     await page.reload();
     await expect(page.locator('.food-row')).toContainText('Energy Drink');
-    await expect(page.locator('.food-row')).toContainText(unit === 'serving' ? '0.5 servings' : unit === 'milliliters' ? '236.59 mL' : '8 US fl oz');
+    await expect(page.locator('.food-row')).toContainText(unit === 'serving' ? '0.5 × 16 fl oz' : unit === 'milliliters' ? '236.59 mL' : '8 US fl oz');
     await expect(page.locator('.food-cal')).toHaveText('5');
   });
 }

@@ -1,0 +1,1108 @@
+{
+  "chain": "Baskin-Robbins",
+  "sourceUrl": "https://www.nutritionix.com/baskin-robbins/menu/premium",
+  "source": "Nutritionix",
+  "sourceKind": "database",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "id": "nutritionix-852445",
+      "name": "Baseball Nut, 2.5 oz Scoop",
+      "calories": 170,
+      "protein": 3,
+      "carbs": 21,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852446",
+      "name": "Baseball Nut, 4 oz Scoop",
+      "calories": 280,
+      "protein": 5,
+      "carbs": 34,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852437",
+      "name": "Beach Day, 2.5 oz Scoop",
+      "calories": 200,
+      "protein": 3,
+      "carbs": 24,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852438",
+      "name": "Beach Day, 4 oz Scoop",
+      "calories": 320,
+      "protein": 4,
+      "carbs": 39,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852449",
+      "name": "Cherries Jubilee, 2.5 oz Scoop",
+      "calories": 150,
+      "protein": 2,
+      "carbs": 20,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852450",
+      "name": "Cherries Jubilee, 4 oz Scoop",
+      "calories": 240,
+      "protein": 4,
+      "carbs": 31,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852451",
+      "name": "Chocolate, 2.5 oz Scoop",
+      "calories": 170,
+      "protein": 3,
+      "carbs": 20,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852452",
+      "name": "Chocolate, 4 oz Scoop",
+      "calories": 260,
+      "protein": 5,
+      "carbs": 32,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852453",
+      "name": "Chocolate Almond, 2.5 oz Scoop",
+      "calories": 190,
+      "protein": 4,
+      "carbs": 20,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852454",
+      "name": "Chocolate Almond, 4 oz Scoop",
+      "calories": 300,
+      "protein": 7,
+      "carbs": 31,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852455",
+      "name": "Chocolate Chip, 2.5 oz Scoop",
+      "calories": 150,
+      "protein": 3,
+      "carbs": 15,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852456",
+      "name": "Chocolate Chip, 4 oz Scoop",
+      "calories": 250,
+      "protein": 5,
+      "carbs": 23,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852457",
+      "name": "Chocolate Chip Cookie Dough, 2.5 oz Scoop",
+      "calories": 180,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852458",
+      "name": "Chocolate Chip Cookie Dough, 4 oz Scoop",
+      "calories": 290,
+      "protein": 5,
+      "carbs": 36,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852459",
+      "name": "Chocolate Fudge, 2.5 oz Scoop",
+      "calories": 150,
+      "protein": 3,
+      "carbs": 17,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852460",
+      "name": "Chocolate Fudge, 4 oz Scoop",
+      "calories": 240,
+      "protein": 4,
+      "carbs": 27,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852461",
+      "name": "Chocolate Mousse Royale, 2.5 oz Scoop",
+      "calories": 190,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852462",
+      "name": "Chocolate Mousse Royale, 4 oz Scoop",
+      "calories": 310,
+      "protein": 5,
+      "carbs": 35,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852463",
+      "name": "Cookie Monster, 2.5 oz Scoop",
+      "calories": 190,
+      "protein": 3,
+      "carbs": 24,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852464",
+      "name": "Cookie Monster, 4 oz Scoop",
+      "calories": 310,
+      "protein": 5,
+      "carbs": 38,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852465",
+      "name": "Cotton Candy, 2.5 oz Scoop",
+      "calories": 160,
+      "protein": 3,
+      "carbs": 20,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852466",
+      "name": "Cotton Candy, 4 oz Scoop",
+      "calories": 250,
+      "protein": 4,
+      "carbs": 32,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852467",
+      "name": "Daiquiri Ice, 2.5 oz Scoop",
+      "calories": 90,
+      "protein": 0,
+      "carbs": 22,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852468",
+      "name": "Daiquiri Ice, 4 oz Scoop",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 35,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852469",
+      "name": "Gold Medal Ribbon, 2.5 oz Scoop",
+      "calories": 160,
+      "protein": 3,
+      "carbs": 21,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852470",
+      "name": "Gold Medal Ribbon, 4 oz Scoop",
+      "calories": 260,
+      "protein": 5,
+      "carbs": 34,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852471",
+      "name": "Icing on the Cake, 2.5 oz Scoop",
+      "calories": 210,
+      "protein": 3,
+      "carbs": 24,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852472",
+      "name": "Icing on the Cake, 4 oz Scoop",
+      "calories": 330,
+      "protein": 4,
+      "carbs": 39,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852473",
+      "name": "Jamoca, 2.5 oz Scoop",
+      "calories": 150,
+      "protein": 3,
+      "carbs": 16,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852474",
+      "name": "Jamoca, 4 oz Scoop",
+      "calories": 240,
+      "protein": 5,
+      "carbs": 26,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852475",
+      "name": "Jamoca Almond Fudge, 2.5 oz Scoop",
+      "calories": 170,
+      "protein": 3,
+      "carbs": 19,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852476",
+      "name": "Jamoca Almond Fudge, 4 oz Scoop",
+      "calories": 270,
+      "protein": 5,
+      "carbs": 31,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852439",
+      "name": "Lemon Sorbet, 2.5 oz Scoop",
+      "calories": 80,
+      "protein": 0,
+      "carbs": 21,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852440",
+      "name": "Lemon Sorbet, 4 oz Scoop",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 34,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852477",
+      "name": "Mint Chocolate Chip, 2.5 oz Scoop",
+      "calories": 150,
+      "protein": 3,
+      "carbs": 14,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852478",
+      "name": "Mint Chocolate Chip, 4 oz Scoop",
+      "calories": 250,
+      "protein": 5,
+      "carbs": 23,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852479",
+      "name": "Mom's Makin' Cookies, 2.5 oz Scoop",
+      "calories": 200,
+      "protein": 3,
+      "carbs": 26,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852480",
+      "name": "Mom's Makin' Cookies, 4 oz Scoop",
+      "calories": 310,
+      "protein": 4,
+      "carbs": 42,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852435",
+      "name": "Non-Dairy Cookies 'n Creme, 2.5 oz Scoop",
+      "calories": 200,
+      "protein": 1,
+      "carbs": 24,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852436",
+      "name": "Non-Dairy Cookies 'n Creme, 4 oz Scoop",
+      "calories": 310,
+      "protein": 2,
+      "carbs": 37,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852447",
+      "name": "No Sugar Added Caramel Turtle Truffle, 2.5 oz Scoop",
+      "calories": 120,
+      "protein": 3,
+      "carbs": 24,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852448",
+      "name": "No Sugar Added Caramel Turtle Truffle, 4 oz Scoop",
+      "calories": 200,
+      "protein": 5,
+      "carbs": 38,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852489",
+      "name": "No Sugar Added Pineapple Coconut, 2.5 oz Scoop",
+      "calories": 100,
+      "protein": 3,
+      "carbs": 18,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852490",
+      "name": "No Sugar Added Pineapple Coconut, 4 oz Scoop",
+      "calories": 160,
+      "protein": 5,
+      "carbs": 29,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852481",
+      "name": "Nutty Coconut, 2.5 oz Scoop",
+      "calories": 190,
+      "protein": 4,
+      "carbs": 18,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852482",
+      "name": "Nutty Coconut, 4 oz Scoop",
+      "calories": 300,
+      "protein": 6,
+      "carbs": 28,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852483",
+      "name": "Old Fashioned Butter Pecan, 2.5 oz Scoop",
+      "calories": 180,
+      "protein": 3,
+      "carbs": 16,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852484",
+      "name": "Old Fashioned Butter Pecan, 4 oz Scoop",
+      "calories": 280,
+      "protein": 5,
+      "carbs": 25,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852485",
+      "name": "Oreo 'n Cold Brew, 2.5 oz Scoop",
+      "calories": 200,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852486",
+      "name": "Oreo 'n Cold Brew, 4 oz Scoop",
+      "calories": 320,
+      "protein": 5,
+      "carbs": 35,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852443",
+      "name": "Oreo Cookies 'n Cream, 2.5 oz Scoop",
+      "calories": 180,
+      "protein": 3,
+      "carbs": 20,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852444",
+      "name": "Oreo Cookies 'n Cream, 4 oz Scoop",
+      "calories": 280,
+      "protein": 5,
+      "carbs": 32,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852487",
+      "name": "Peanut Butter 'n Chocolate, 2.5 oz Scoop",
+      "calories": 200,
+      "protein": 5,
+      "carbs": 19,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852488",
+      "name": "Peanut Butter 'n Chocolate, 4 oz Scoop",
+      "calories": 320,
+      "protein": 7,
+      "carbs": 30,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852491",
+      "name": "Pink Bubblegum, 2.5 oz Scoop",
+      "calories": 170,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852492",
+      "name": "Pink Bubblegum, 4 oz Scoop",
+      "calories": 260,
+      "protein": 4,
+      "carbs": 35,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852493",
+      "name": "Pistachio Almond, 2.5 oz Scoop",
+      "calories": 180,
+      "protein": 4,
+      "carbs": 16,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852494",
+      "name": "Pistachio Almond, 4 oz Scoop",
+      "calories": 290,
+      "protein": 7,
+      "carbs": 25,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852495",
+      "name": "Pralines 'n Cream, 2.5 oz Scoop",
+      "calories": 180,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852496",
+      "name": "Pralines 'n Cream, 4 oz Scoop",
+      "calories": 290,
+      "protein": 4,
+      "carbs": 35,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852497",
+      "name": "Rainbow Sherbet, 2.5 oz Scoop",
+      "calories": 100,
+      "protein": 1,
+      "carbs": 22,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852498",
+      "name": "Rainbow Sherbet, 4 oz Scoop",
+      "calories": 160,
+      "protein": 1,
+      "carbs": 35,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852499",
+      "name": "Reese's Peanut Butter Cup, 2.5 oz Scoop",
+      "calories": 190,
+      "protein": 4,
+      "carbs": 20,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852500",
+      "name": "Reese's Peanut Butter Cup, 4 oz Scoop",
+      "calories": 300,
+      "protein": 6,
+      "carbs": 31,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852501",
+      "name": "Rocky Road, 2.5 oz Scoop",
+      "calories": 180,
+      "protein": 4,
+      "carbs": 22,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852502",
+      "name": "Rocky Road, 4 oz Scoop",
+      "calories": 290,
+      "protein": 6,
+      "carbs": 35,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852503",
+      "name": "Strawberry Cheesecake, 2.5 oz Scoop",
+      "calories": 160,
+      "protein": 3,
+      "carbs": 20,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852504",
+      "name": "Strawberry Cheesecake, 4 oz Scoop",
+      "calories": 260,
+      "protein": 4,
+      "carbs": 32,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852505",
+      "name": "Strawberry Tres Leches, 2.5 oz Scoop",
+      "calories": 160,
+      "protein": 2,
+      "carbs": 21,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852506",
+      "name": "Strawberry Tres Leches, 4 oz Scoop",
+      "calories": 250,
+      "protein": 4,
+      "carbs": 34,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852507",
+      "name": "Triple Mango, 2.5 oz Scoop",
+      "calories": 130,
+      "protein": 2,
+      "carbs": 22,
+      "fat": 4.5,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852508",
+      "name": "Triple Mango, 4 oz Scoop",
+      "calories": 210,
+      "protein": 2,
+      "carbs": 35,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852433",
+      "name": "Trolli Sour Blast, 2.5 oz Scoop",
+      "calories": 170,
+      "protein": 2,
+      "carbs": 24,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852434",
+      "name": "Trolli Sour Blast, 4 oz Scoop",
+      "calories": 270,
+      "protein": 2,
+      "carbs": 38,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852509",
+      "name": "Twix Caramel Crunch, 2.5 oz Scoop",
+      "calories": 190,
+      "protein": 3,
+      "carbs": 24,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852510",
+      "name": "Twix Caramel Crunch, 4 oz Scoop",
+      "calories": 300,
+      "protein": 5,
+      "carbs": 39,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852511",
+      "name": "Vanilla Ice Cream, 2.5 oz Scoop",
+      "calories": 170,
+      "protein": 3,
+      "carbs": 17,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852512",
+      "name": "Vanilla Ice Cream, 4 oz Scoop",
+      "calories": 260,
+      "protein": 4,
+      "carbs": 26,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852441",
+      "name": "Very Berry Strawberry, 2.5 oz Scoop",
+      "calories": 140,
+      "protein": 2,
+      "carbs": 17,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852442",
+      "name": "Very Berry Strawberry, 4 oz Scoop",
+      "calories": 220,
+      "protein": 4,
+      "carbs": 28,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852513",
+      "name": "Wild 'n Reckless Sherbet, 2.5 oz Scoop",
+      "calories": 80,
+      "protein": 1,
+      "carbs": 16,
+      "fat": 1.5,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852514",
+      "name": "Wild 'n Reckless Sherbet, 4 oz Scoop",
+      "calories": 130,
+      "protein": 2,
+      "carbs": 26,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852515",
+      "name": "World Class Chocolate, 2.5 oz Scoop",
+      "calories": 180,
+      "protein": 3,
+      "carbs": 20,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852516",
+      "name": "World Class Chocolate, 4 oz Scoop",
+      "calories": 280,
+      "protein": 5,
+      "carbs": 31,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Flavors; size in item name)"
+    },
+    {
+      "id": "nutritionix-852528",
+      "name": "Caramel Cappuccino Blast, Large",
+      "calories": 1040,
+      "protein": 13,
+      "carbs": 176,
+      "fat": 32,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-852527",
+      "name": "Caramel Cappuccino Blast, Medium",
+      "calories": 790,
+      "protein": 10,
+      "carbs": 130,
+      "fat": 25,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-852526",
+      "name": "Caramel Cappuccino Blast, Small",
+      "calories": 500,
+      "protein": 6,
+      "carbs": 81,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-852522",
+      "name": "Lava Colada, Large",
+      "calories": 1010,
+      "protein": 3,
+      "carbs": 220,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-852521",
+      "name": "Lava Colada, Medium",
+      "calories": 700,
+      "protein": 2,
+      "carbs": 152,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-852520",
+      "name": "Lava Colada, Small",
+      "calories": 510,
+      "protein": 2,
+      "carbs": 110,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-852519",
+      "name": "Mangonada, Large",
+      "calories": 680,
+      "protein": 2,
+      "carbs": 167,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-852518",
+      "name": "Mangonada, Medium",
+      "calories": 470,
+      "protein": 1,
+      "carbs": 116,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-852517",
+      "name": "Mangonada, Small",
+      "calories": 340,
+      "protein": 1,
+      "carbs": 84,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-852540",
+      "name": "Mango Smoothie, Large",
+      "calories": 610,
+      "protein": 2,
+      "carbs": 152,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-852539",
+      "name": "Mango Smoothie, Medium",
+      "calories": 460,
+      "protein": 1,
+      "carbs": 114,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-852538",
+      "name": "Mango Smoothie, Small",
+      "calories": 310,
+      "protein": 1,
+      "carbs": 76,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-852531",
+      "name": "Mocha Cappuccino Blast, Large",
+      "calories": 760,
+      "protein": 11,
+      "carbs": 127,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-852530",
+      "name": "Mocha Cappuccino Blast, Medium",
+      "calories": 590,
+      "protein": 9,
+      "carbs": 97,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-852529",
+      "name": "Mocha Cappuccino Blast, Small",
+      "calories": 390,
+      "protein": 6,
+      "carbs": 64,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-852534",
+      "name": "Oreo 'N Cookies Cappuccino Blast, Large",
+      "calories": 940,
+      "protein": 15,
+      "carbs": 136,
+      "fat": 39,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-852533",
+      "name": "Oreo 'N Cookies Cappuccino Blast, Medium",
+      "calories": 730,
+      "protein": 11,
+      "carbs": 105,
+      "fat": 31,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-852532",
+      "name": "Oreo 'N Cookies Cappuccino Blast, Small",
+      "calories": 490,
+      "protein": 7,
+      "carbs": 70,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-852525",
+      "name": "Original Cappuccino Blast, Large",
+      "calories": 600,
+      "protein": 11,
+      "carbs": 79,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-852524",
+      "name": "Original Cappuccino Blast, Medium",
+      "calories": 470,
+      "protein": 9,
+      "carbs": 61,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-852523",
+      "name": "Original Cappuccino Blast, Small",
+      "calories": 310,
+      "protein": 6,
+      "carbs": 40,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-852543",
+      "name": "Strawberry Smoothie, Large",
+      "calories": 540,
+      "protein": 3,
+      "carbs": 137,
+      "fat": 1,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-852542",
+      "name": "Strawberry Smoothie, Medium",
+      "calories": 410,
+      "protein": 2,
+      "carbs": 103,
+      "fat": 0.5,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-852541",
+      "name": "Strawberry Smoothie, Small",
+      "calories": 270,
+      "protein": 1,
+      "carbs": 68,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-852546",
+      "name": "Trolli Sour Blast Fizz, Large",
+      "calories": 1240,
+      "protein": 10,
+      "carbs": 200,
+      "fat": 45,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-852545",
+      "name": "Trolli Sour Blast Fizz, Medium",
+      "calories": 930,
+      "protein": 7,
+      "carbs": 150,
+      "fat": 34,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-852544",
+      "name": "Trolli Sour Blast Fizz, Small",
+      "calories": 620,
+      "protein": 5,
+      "carbs": 100,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-852537",
+      "name": "Turtle Cappuccino Blast, Large",
+      "calories": 1010,
+      "protein": 12,
+      "carbs": 182,
+      "fat": 28,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-852536",
+      "name": "Turtle Cappuccino Blast, Medium",
+      "calories": 820,
+      "protein": 10,
+      "carbs": 148,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-852535",
+      "name": "Turtle Cappuccino Blast, Small",
+      "calories": 540,
+      "protein": 6,
+      "carbs": 96,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-852549",
+      "name": "Chocolate Chip Cookie Dough Layered Sundae",
+      "calories": 1440,
+      "protein": 19,
+      "carbs": 202,
+      "fat": 64,
+      "servingLabel": "1 listed serving (Sundaes; size in item name)"
+    },
+    {
+      "id": "nutritionix-852550",
+      "name": "Oreo Layered Sundae",
+      "calories": 1110,
+      "protein": 14,
+      "carbs": 160,
+      "fat": 47,
+      "servingLabel": "1 listed serving (Sundaes; size in item name)"
+    },
+    {
+      "id": "nutritionix-852551",
+      "name": "Reese'S Peanut Butter Cup Layered Sundae",
+      "calories": 1320,
+      "protein": 29,
+      "carbs": 116,
+      "fat": 87,
+      "servingLabel": "1 listed serving (Sundaes; size in item name)"
+    },
+    {
+      "id": "nutritionix-852547",
+      "name": "Trolli Dirt 'N Worms 2 Scoop Sundae",
+      "calories": 620,
+      "protein": 10,
+      "carbs": 90,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Sundaes; size in item name)"
+    },
+    {
+      "id": "nutritionix-852548",
+      "name": "Trolli Dirt 'N Worms 3 Scoop Sundae",
+      "calories": 870,
+      "protein": 14,
+      "carbs": 125,
+      "fat": 38,
+      "servingLabel": "1 listed serving (Sundaes; size in item name)"
+    },
+    {
+      "id": "nutritionix-852553",
+      "name": "Dragon Creature Creation",
+      "calories": 350,
+      "protein": 4,
+      "carbs": 39,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Creature Creations; size in item name)"
+    },
+    {
+      "id": "nutritionix-852552",
+      "name": "Elf Creature Creation",
+      "calories": 360,
+      "protein": 5,
+      "carbs": 40,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Creature Creations; size in item name)"
+    },
+    {
+      "id": "nutritionix-852554",
+      "name": "Wizard Creature Creation",
+      "calories": 350,
+      "protein": 4,
+      "carbs": 39,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Creature Creations; size in item name)"
+    }
+  ],
+  "sourceDate": "2025-07-26"
+}

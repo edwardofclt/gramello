@@ -1,0 +1,1012 @@
+[
+  {
+    "catalogFile": "data/restaurant-foods/andys-frozen-custard.json",
+    "chain": "Andy's Frozen Custard",
+    "foods": 206,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/andys-frozen-custard/menu/premium",
+    "sourceDate": "2025-04-23",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/applebees.json",
+    "chain": "Applebee's",
+    "foods": 438,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/applebees/menu/premium",
+    "sourceDate": "2026-09-11",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/arbys.json",
+    "chain": "Arby's",
+    "foods": 123,
+    "source": "Arby's",
+    "sourceKind": "restaurant",
+    "sourceUrl": "https://assets.ctfassets.net/30q5w5l98nbx/7tnKsXR1Kif6Uc7NiDwDmn/f1032e4b9027b7e61be6a93a911c0bf2/Arbys_Nutritional_and_Allergen_SEPT_2026.pdf",
+    "sourceDate": "2026-09",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/baskin-robbins.json",
+    "chain": "Baskin-Robbins",
+    "foods": 122,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/baskin-robbins/menu/premium",
+    "sourceDate": "2025-07-26",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/bonefish-grill.json",
+    "chain": "Bonefish Grill",
+    "foods": 222,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/bonefish-grill/menu/premium",
+    "sourceDate": "2025-04-29",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/brueggers.json",
+    "chain": "Bruegger's Bagels",
+    "foods": 183,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/brueggers/menu/premium",
+    "sourceDate": "2025-05-14",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/brusters-real-ice-cream.json",
+    "chain": "Bruster's Real Ice Cream",
+    "foods": 2871,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/brusters-real-ice-cream/menu/premium",
+    "sourceDate": "2026-08-14",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/buca-di-beppo.json",
+    "chain": "Buca di Beppo",
+    "foods": 91,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/buca-di-beppo/menu/premium",
+    "sourceDate": "2024-06-25",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/buffalo-wild-wings.json",
+    "chain": "Buffalo Wild Wings",
+    "foods": 679,
+    "source": "Buffalo Wild Wings",
+    "sourceKind": "restaurant",
+    "sourceUrl": "https://assets.ctfassets.net/6dxmiqksdkqb/2XgznB5cOqQ9l1r7PQAasB/dd312340082cc00107545e7ab21318a7/BWW_Nutrition_Guide__08-18-2026_-_11-17-2026_.pdf",
+    "sourceDate": "2026-08-18",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/buffalo-wings-rings.json",
+    "chain": "Buffalo Wings & Rings",
+    "foods": 998,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/buffalo-wings-rings/menu/premium",
+    "sourceDate": "2024-06-21",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/burger-king.json",
+    "chain": "Burger King",
+    "foods": 210,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/burger-king/menu/premium",
+    "sourceDate": "2026-07-20",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/chilis.json",
+    "chain": "Chili's",
+    "foods": 356,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/chilis/menu/premium",
+    "sourceDate": "2026-08-11",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/chipotle.json",
+    "chain": "Chipotle",
+    "foods": 112,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/chipotle/menu/premium",
+    "sourceDate": "2024-06-27",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/chuck-e-cheeses.json",
+    "chain": "Chuck E. Cheese",
+    "foods": 228,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/chuck-e-cheeses/menu/premium",
+    "sourceDate": "2025-03-05",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/chuys.json",
+    "chain": "Chuy's",
+    "foods": 124,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/chuys/menu/premium",
+    "sourceDate": "2024-09-20",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/cicis-pizza.json",
+    "chain": "Cicis",
+    "foods": 224,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/cicis-pizza/menu/premium",
+    "sourceDate": "2024-05-15",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/city-barbeque.json",
+    "chain": "City Barbeque",
+    "foods": 91,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/city-barbeque/menu/premium",
+    "sourceDate": "2025-01-31",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/cold-stone-creamery.json",
+    "chain": "Cold Stone Creamery",
+    "foods": 738,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/cold-stone-creamery/menu/premium",
+    "sourceDate": "2025-05-20",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/condado-tacos.json",
+    "chain": "Condado Tacos",
+    "foods": 93,
+    "source": "Condado Tacos",
+    "sourceKind": "restaurant",
+    "sourceUrl": "https://condadotacos.com/menu-food/nutrition/",
+    "sourceDate": null,
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/cook-out.json",
+    "chain": "Cook Out",
+    "foods": 141,
+    "source": "Cook Out",
+    "sourceKind": "restaurant",
+    "sourceUrl": "https://cookout.com/wp-content/uploads/Cook-Out-Nutrition1.pdf",
+    "sourceDate": null,
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/cracker-barrel.json",
+    "chain": "Cracker Barrel",
+    "foods": 321,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/cracker-barrel/menu/premium",
+    "sourceDate": "2025-08-05",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/crumbl-cookies.json",
+    "chain": "Crumbl Cookies",
+    "foods": 199,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/crumbl-cookies/menu/premium",
+    "sourceDate": "2024-06-14",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/culvers.json",
+    "chain": "Culver's",
+    "foods": 221,
+    "source": "Culver's",
+    "sourceKind": "restaurant",
+    "sourceUrl": "https://cdn.culvers.com/menu/docs/guide-nutrition-allergen.pdf",
+    "sourceDate": null,
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/dairy-queen.json",
+    "chain": "Dairy Queen",
+    "foods": 435,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/dairy-queen/menu/premium",
+    "sourceDate": "2025-07-18",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/dave-busters.json",
+    "chain": "Dave & Buster's",
+    "foods": 77,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/dave-busters/menu/premium",
+    "sourceDate": "2025-10-31",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/del-taco.json",
+    "chain": "Del Taco",
+    "foods": 101,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/del-taco/menu/premium",
+    "sourceDate": "2025-06-05",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/dickeys-barbecue-pit.json",
+    "chain": "Dickey's Barbecue Pit",
+    "foods": 1080,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/dickeys-barbecue-pit/menu/premium",
+    "sourceDate": "2025-07-15",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/dominos.json",
+    "chain": "Domino's",
+    "foods": 729,
+    "source": "Domino's",
+    "sourceKind": "restaurant",
+    "sourceUrl": "https://www.dominos.com/cms/assets/7d2e19df-e360-41eb-a367-5ab794ab2ebc",
+    "sourceDate": "2026-01",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/dunkin.json",
+    "chain": "Dunkin'",
+    "foods": 975,
+    "source": "Dunkin'",
+    "sourceKind": "restaurant",
+    "sourceUrl": "https://assets.ctfassets.net/ubkcphxhphh0/4zSgulxInizXp52K1eizxO/8874a0423b75607ac0e0182cbf48fcf2/DD_W6_nutrition_guide.pdf",
+    "sourceDate": null,
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/eggs-up-grill.json",
+    "chain": "Eggs Up Grill",
+    "foods": 39,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/eggs-up-grill/menu/premium",
+    "sourceDate": "2025-04-27",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/einstein-bros-bagels.json",
+    "chain": "Einstein Bros. Bagels",
+    "foods": 229,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/einstein-bros-bagels/menu/premium",
+    "sourceDate": "2025-06-19",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/famous-daves.json",
+    "chain": "Famous Dave's",
+    "foods": 257,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/famous-daves/menu/premium",
+    "sourceDate": "2024-09-09",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/first-watch.json",
+    "chain": "First Watch",
+    "foods": 149,
+    "source": "First Watch",
+    "sourceKind": "restaurant",
+    "sourceUrl": "https://firstwatch.com/nutrition-and-allergens",
+    "sourceDate": null,
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/five-guys.json",
+    "chain": "Five Guys",
+    "foods": 66,
+    "source": "Five Guys",
+    "sourceKind": "restaurant",
+    "sourceUrl": "https://www.fiveguys.com/wp-content/uploads/2026/09/Five-Guys-US-Nutrition-Allergen-Guide-English-September-2026.pdf",
+    "sourceDate": "2026-09",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/foxs-pizza-den.json",
+    "chain": "Fox's Pizza Den",
+    "foods": 52,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/foxs-pizza-den/menu/premium",
+    "sourceDate": "2024-06-03",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/freddys.json",
+    "chain": "Freddy's Frozen Custard & Steakburgers",
+    "foods": 306,
+    "source": "Freddy's Frozen Custard & Steakburgers",
+    "sourceKind": "restaurant",
+    "sourceUrl": "https://www.freddys.com/nutrition-and-allergens",
+    "sourceDate": null,
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/fresh-monkee.json",
+    "chain": "Fresh Monkee",
+    "foods": 84,
+    "source": "Fresh Monkee",
+    "sourceKind": "restaurant",
+    "sourceUrl": "https://freshmonkee.com/wp-content/uploads/2026/06/Fresh-Monkee-Nutrition-Guide.pdf",
+    "sourceDate": "2026-06",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/fuzzys-taco-shop.json",
+    "chain": "Fuzzy's Taco Shop",
+    "foods": 218,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/fuzzys-taco-shop/menu/premium",
+    "sourceDate": "2025-01-23",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/golden-corral.json",
+    "chain": "Golden Corral",
+    "foods": 1039,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/golden-corral/menu/premium",
+    "sourceDate": "2025-05-06",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/handels-homemade-ice-cream.json",
+    "chain": "Handel’s Homemade Ice Cream",
+    "foods": 133,
+    "source": "Handel’s Homemade Ice Cream",
+    "sourceKind": "restaurant",
+    "sourceUrl": "https://handelsicecream.com/nutritional-info/",
+    "sourceDate": null,
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/hardees.json",
+    "chain": "Hardee's",
+    "foods": 67,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/hardees/menu/premium",
+    "sourceDate": "2024-09-13",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/honeybaked-ham.json",
+    "chain": "Honey Baked Ham",
+    "foods": 395,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/honeybaked-ham/menu/premium",
+    "sourceDate": "2026-09-17",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/hooters.json",
+    "chain": "Hooters",
+    "foods": 779,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/hooters/menu/premium",
+    "sourceDate": "2024-06-11",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/hungry-howies.json",
+    "chain": "Hungry Howie's",
+    "foods": 279,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/hungry-howies/menu/premium",
+    "sourceDate": "2025-06-22",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/hwy55.json",
+    "chain": "Hwy 55",
+    "foods": 56,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/hwy55/menu/premium",
+    "sourceDate": "2025-04-27",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/ihop.json",
+    "chain": "IHOP",
+    "foods": 383,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/ihop/menu/premium",
+    "sourceDate": "2026-09-15",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/jack-in-the-box.json",
+    "chain": "Jack in the Box",
+    "foods": 180,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/jack-in-the-box/menu/premium",
+    "sourceDate": "2025-04-28",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/jasons-deli.json",
+    "chain": "Jason's Deli",
+    "foods": 182,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/jasons-deli/menu/premium",
+    "sourceDate": "2025-05-20",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/jets-pizza.json",
+    "chain": "Jet's Pizza",
+    "foods": 246,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/jets-pizza/menu/premium",
+    "sourceDate": "2026-07-27",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/kfc.json",
+    "chain": "KFC",
+    "foods": 217,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/kfc/menu/premium",
+    "sourceDate": "2026-09-15",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/krispy-kreme.json",
+    "chain": "Krispy Kreme",
+    "foods": 143,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/krispy-kreme/menu/premium",
+    "sourceDate": "2025-03-07",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/kura-sushi.json",
+    "chain": "Kura Sushi",
+    "foods": 138,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/kura-sushi/menu/premium",
+    "sourceDate": "2024-08-05",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/lean-kitchen.json",
+    "chain": "Lean Kitchen",
+    "foods": 10,
+    "source": "Lean Kitchen",
+    "sourceKind": "restaurant",
+    "sourceUrl": "https://leankitchenco.com/charlotte/",
+    "sourceDate": null,
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/little-caesars.json",
+    "chain": "Little Caesars",
+    "foods": 80,
+    "source": "Little Caesars",
+    "sourceKind": "restaurant",
+    "sourceUrl": "https://littlecaesars.com/static/usnutritionguide.pdf",
+    "sourceDate": null,
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/longhorn-steakhouse.json",
+    "chain": "LongHorn Steakhouse",
+    "foods": 186,
+    "source": "LongHorn Steakhouse",
+    "sourceKind": "restaurant",
+    "sourceUrl": "https://media.longhornsteakhouse.com/en_us/pdf/nutrition_allergen_guide.pdf",
+    "sourceDate": "2026-08-10",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/manhattan-bagel.json",
+    "chain": "Manhattan Bagel",
+    "foods": 264,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/manhattan-bagel/menu/premium",
+    "sourceDate": "2024-06-26",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/marble-slab-creamery.json",
+    "chain": "Marble Slab Creamery",
+    "foods": 665,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/marble-slab-creamery/menu/premium",
+    "sourceDate": "2024-05-31",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/marcos-pizza.json",
+    "chain": "Marco's Pizza",
+    "foods": 502,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/marcos-pizza/menu/premium",
+    "sourceDate": "2026-08-13",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/mcalisters-deli.json",
+    "chain": "McAlister's Deli",
+    "foods": 290,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/mcalisters-deli/menu/premium",
+    "sourceDate": "2026-06-18",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/mcdonalds.json",
+    "chain": "McDonald's",
+    "foods": 120,
+    "source": "McDonald's",
+    "sourceKind": "restaurant",
+    "sourceUrl": "https://www.mcdonalds.com/us/en-us/full-menu.html",
+    "sourceDate": null,
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/mod-pizza.json",
+    "chain": "MOD Pizza",
+    "foods": 198,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/mod-pizza/menu/premium",
+    "sourceDate": "2025-06-19",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/naf-naf-grill.json",
+    "chain": "Naf Naf Grill",
+    "foods": 33,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/naf-naf-grill/menu/premium",
+    "sourceDate": "2024-06-12",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/noodles-company.json",
+    "chain": "Noodles & Company",
+    "foods": 58,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/noodles-company/menu/premium",
+    "sourceDate": "2025-04-30",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/olive-garden.json",
+    "chain": "Olive Garden",
+    "foods": 276,
+    "source": "Olive Garden",
+    "sourceKind": "restaurant",
+    "sourceUrl": "https://media.olivegarden.com/en_us/pdf/olive_garden_nutrition.pdf",
+    "sourceDate": null,
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/outback-steakhouse.json",
+    "chain": "Outback Steakhouse",
+    "foods": 494,
+    "source": "Outback Steakhouse",
+    "sourceKind": "restaurant",
+    "sourceUrl": "https://edge.sitecorecloud.io/osirestaurantpartners-piq24hos/media/Project/BBI/outback/files/obs-full-nutrition-information.pdf",
+    "sourceDate": "2026-09",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/panda-express.json",
+    "chain": "Panda Express",
+    "foods": 184,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/panda-express/menu/premium",
+    "sourceDate": "2025-01-23",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/papa-johns.json",
+    "chain": "Papa Johns",
+    "foods": 724,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/papa-johns/menu/premium",
+    "sourceDate": "2024-12-18",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/papa-murphys.json",
+    "chain": "Papa Murphy's",
+    "foods": 176,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/papa-murphys/menu/premium",
+    "sourceDate": "2026-08-17",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/paris-baguette.json",
+    "chain": "Paris Baguette",
+    "foods": 122,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/paris-baguette/menu/premium",
+    "sourceDate": "2024-07-10",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/pei-wei-asian-diner.json",
+    "chain": "Pei Wei",
+    "foods": 60,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/pei-wei-asian-diner/menu/premium",
+    "sourceDate": "2025-05-05",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/penn-station-east-coast-subs.json",
+    "chain": "Penn Station",
+    "foods": 138,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/penn-station-east-coast-subs/menu/premium",
+    "sourceDate": "2024-06-18",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/pizza-hut.json",
+    "chain": "Pizza Hut",
+    "foods": 824,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/pizza-hut/menu/premium",
+    "sourceDate": "2026-09-17",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/pollo-campero.json",
+    "chain": "Pollo Campero",
+    "foods": 88,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/pollo-campero/menu/premium",
+    "sourceDate": "2026-06-18",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/popeyes.json",
+    "chain": "Popeyes",
+    "foods": 67,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/popeyes/menu/premium",
+    "sourceDate": "2025-09-29",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/qdoba.json",
+    "chain": "Qdoba",
+    "foods": 135,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/qdoba/menu/premium",
+    "sourceDate": "2025-03-20",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/raising-canes.json",
+    "chain": "Raising Cane's",
+    "foods": 108,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/raising-canes/menu/premium",
+    "sourceDate": "2025-10-14",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/red-lobster.json",
+    "chain": "Red Lobster",
+    "foods": 276,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/red-lobster/menu/premium",
+    "sourceDate": "2025-06-03",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/red-robin.json",
+    "chain": "Red Robin",
+    "foods": 445,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/red-robin/menu/premium",
+    "sourceDate": "2024-07-29",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/ruby-tuesday.json",
+    "chain": "Ruby Tuesday",
+    "foods": 191,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/ruby-tuesday/menu/premium",
+    "sourceDate": "2025-04-04",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/salata.json",
+    "chain": "Salata",
+    "foods": 263,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/salata/menu/premium",
+    "sourceDate": "2024-07-02",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/shake-shack.json",
+    "chain": "Shake Shack",
+    "foods": 214,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/shake-shack/menu/premium",
+    "sourceDate": "2025-04-22",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/smashburger.json",
+    "chain": "Smashburger",
+    "foods": 45,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/smashburger/menu/premium",
+    "sourceDate": "2025-05-15",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/sonic.json",
+    "chain": "Sonic Drive-In",
+    "foods": 579,
+    "source": "Sonic Drive-In",
+    "sourceKind": "restaurant",
+    "sourceUrl": "https://assets.ctfassets.net/whnlxz6bna9d/665Hn9SdgyT53pJgF9cmkK/090ae5fe05d8cd9643fb98fcde32ef1a/61667-1_FEE_0926_NUTBRO_SEPTEMBER_FA_rg_WCAG.pdf",
+    "sourceDate": "2026-09",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/sonnys-bbq.json",
+    "chain": "Sonny's BBQ",
+    "foods": 164,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/sonnys-bbq/menu/premium",
+    "sourceDate": "2026-06-22",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/south-block.json",
+    "chain": "South Block",
+    "foods": 29,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/south-block/menu/premium",
+    "sourceDate": "2025-05-15",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/starbucks.json",
+    "chain": "Starbucks",
+    "foods": 3625,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/starbucks/menu/premium",
+    "sourceDate": "2026-07-16",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/steak-n-shake.json",
+    "chain": "Steak 'n Shake",
+    "foods": 110,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/steak-n-shake/menu/premium",
+    "sourceDate": "2025-06-24",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/sweetfrog.json",
+    "chain": "sweetFrog",
+    "foods": 274,
+    "source": "sweetFrog",
+    "sourceKind": "restaurant",
+    "sourceUrl": "https://www.sweetfrog.com/menu/nutrition/index.php",
+    "sourceDate": null,
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/swig.json",
+    "chain": "Swig",
+    "foods": 247,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/swig/menu/premium",
+    "sourceDate": "2026-07-01",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/taco-bell.json",
+    "chain": "Taco Bell",
+    "foods": 513,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/taco-bell/menu/premium",
+    "sourceDate": "2026-09-17",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/tacos-4-life.json",
+    "chain": "Tacos 4 Life",
+    "foods": 77,
+    "source": "Tacos 4 Life",
+    "sourceKind": "restaurant",
+    "sourceUrl": "https://cdn.prod.website-files.com/6058f6299e37a624883ccdf6/6410a88f681c3d32d93b7c59_NutritionalGuideMarch2023_smaller.pdf",
+    "sourceDate": "2023-03",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/tcby.json",
+    "chain": "TCBY",
+    "foods": 81,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/tcby/menu/premium",
+    "sourceDate": "2025-05-05",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/teds-montana-grill.json",
+    "chain": "Ted's Montana Grill",
+    "foods": 220,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/teds-montana-grill/menu/premium",
+    "sourceDate": "2023-06-08",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/texas-roadhouse.json",
+    "chain": "Texas Roadhouse",
+    "foods": 253,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/texas-roadhouse/menu/premium",
+    "sourceDate": "2026-09-17",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/the-habit-burger-grill.json",
+    "chain": "Habit Burger & Grill",
+    "foods": 88,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/the-habit-burger-grill/menu/premium",
+    "sourceDate": "2025-05-02",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/twin-peaks.json",
+    "chain": "Twin Peaks",
+    "foods": 314,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/twin-peaks/menu/premium",
+    "sourceDate": "2025-03-08",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/waffle-house.json",
+    "chain": "Waffle House",
+    "foods": 163,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/waffle-house/menu/premium",
+    "sourceDate": "2025-09-29",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/wendys.json",
+    "chain": "Wendy's",
+    "foods": 222,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/wendys/menu/premium",
+    "sourceDate": "2025-08-05",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/whataburger.json",
+    "chain": "Whataburger",
+    "foods": 238,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/whataburger/menu/premium",
+    "sourceDate": "2024-10-08",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/which-wich.json",
+    "chain": "Which Wich",
+    "foods": 374,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/which-wich/menu/premium",
+    "sourceDate": "2025-04-30",
+    "retrievedAt": "2026-09-20"
+  },
+  {
+    "catalogFile": "data/restaurant-foods/wingstop.json",
+    "chain": "Wingstop",
+    "foods": 94,
+    "source": "Nutritionix",
+    "sourceKind": "database",
+    "sourceUrl": "https://www.nutritionix.com/wingstop/menu/premium",
+    "sourceDate": "2025-03-24",
+    "retrievedAt": "2026-09-20"
+  }
+]

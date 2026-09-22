@@ -52,6 +52,8 @@
   .topbar .add-food span { display: none; }
 }
 
+.food-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}.source-pills{flex-wrap:wrap}.food-verification{display:inline-flex!important;align-items:center;gap:4px;font-size:.68rem!important;line-height:1.5;font-weight:650;width:fit-content}.food-verification svg{width:13px;height:13px}.food-verification.verified{color:#6ee7c7!important}.food-verification.unverified{color:#ffbd66!important}.nutrition-source{color:#8bc8ff;font-size:.72rem;text-decoration:underline;margin-top:4px}.food-error{color:#ffacac;background:#361e28;border-radius:12px;padding:12px;font-size:.85rem}.food-notice{color:#ffce8c;font-size:.78rem;line-height:1.5;margin:12px 0}.custom-food-form{display:grid;gap:16px}.custom-food-form>p{font-size:.85rem;color:#a6bac7;line-height:1.6}.custom-food-fields{display:grid;grid-template-columns:1fr 1fr;gap:14px}.custom-food-fields label{display:grid;gap:6px;color:#a6bac7;font-size:.8rem}.custom-food-fields .wide{grid-column:1/-1}.custom-food-fields input{min-height:44px}.selected-food section{min-width:0}.selected-food strong{overflow-wrap:anywhere}.result-row strong{white-space:normal!important;overflow-wrap:anywhere}.result-row small{white-space:normal}.food-row>div:nth-child(2){min-width:0}.food-row .food-verification{margin-top:3px}
+@media(max-width:400px){.custom-food-fields{grid-template-columns:1fr}.food-actions{flex-direction:column}.custom-food-fields .wide{grid-column:auto}}
 /* Saved meals share the food dialog and remain usable in short mobile viewports. */
 .food-picker,.meal-builder{display:flex;flex-direction:column;gap:14px;min-width:0}
 .meal-builder h3,.amount-panel h3{font-size:1.15rem;font-weight:700;margin:8px 0}
@@ -77,3 +79,14 @@
 .amount-panel .field-grid{margin-top:14px}
 .amount-panel .field-grid input{height:44px}
 @media(max-width:760px){.food-dialog select{font-size:16px}.ingredient-row{grid-template-columns:minmax(0,1fr) 70px 36px}}
+
+/* Water tracking uses the same diary card and control palette. */
+.water-card{background:#0d2434;border:1px solid #213b4d;border-radius:22px;padding:24px;display:flex;flex-direction:column;gap:14px}
+.water-heading,.water-heading>div,.water-total,.water-presets,.water-custom>div,.water-log li{display:flex;align-items:center;gap:12px}
+.water-heading{justify-content:space-between;flex-wrap:wrap}.water-heading h2{font-size:1.2rem;font-weight:700}.water-heading svg{color:#78a9ff;width:22px}
+.water-total{flex-wrap:wrap;gap:8px}.water-total strong{font-size:1.7rem}.water-total span,.water-status,.water-custom label,.water-goal-form label{color:#8ca1b2;font-size:.875rem}
+.water-meter{height:8px;background:#152f41;border-radius:8px;overflow:hidden}.water-meter>span{display:block;height:100%;background:#78a9ff;border-radius:8px;transition:width .2s}
+.water-presets{flex-wrap:wrap}.water-presets button{flex:1;min-width:90px;min-height:44px}.water-custom{display:flex;flex-direction:column;gap:8px}.water-custom input{min-width:0;flex:1}.water-custom button{min-height:44px}
+.water-log summary{color:#8ca1b2;cursor:pointer;padding:8px 0}.water-log ul{display:grid;gap:4px;max-height:240px;overflow:auto}.water-log li{justify-content:space-between;border-top:1px solid #213b4d}.water-log button{min-width:44px;min-height:44px}
+.water-error{color:#ff9b9b;font-size:.875rem}.water-goal-form,.water-goal-form label{display:flex;flex-direction:column;gap:12px}.water-goal-form{gap:20px}.water-goal-form select{color:#f4f8fb;background:#071927;border:1px solid #213b4d;border-radius:10px;min-height:44px;padding:10px}
+@media(max-width:600px){.water-card{padding:18px}.water-heading{gap:4px}.water-heading>button{padding-inline:8px}.water-presets{gap:8px}.water-presets button{font-size:.8rem;padding-inline:8px}}

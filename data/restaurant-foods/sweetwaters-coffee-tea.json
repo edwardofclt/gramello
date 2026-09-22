@@ -1,0 +1,5646 @@
+{
+  "chain": "Sweetwaters Coffee & Tea",
+  "sourceUrl": "https://www.sweetwaterscafe.com/sc-columbia-park-st/wp-content/uploads/2018/05/SW_BeverageFood_Nutrition_Sheet_1-30-2020.pdf",
+  "sourceDate": "2020-01-30; guide still linked on official cafe page at retrieval",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "id": "abianno-fiore-single",
+      "name": "Abianno Fiore",
+      "servingLabel": "Single",
+      "calories": 35.0,
+      "protein": 1.0,
+      "carbs": 6.0,
+      "fat": 0.5
+    },
+    {
+      "id": "abianno-fiore-double",
+      "name": "Abianno Fiore",
+      "servingLabel": "Double",
+      "calories": 70.0,
+      "protein": 1.0,
+      "carbs": 11.0,
+      "fat": 1.5
+    },
+    {
+      "id": "abianno-fiore-triple",
+      "name": "Abianno Fiore",
+      "servingLabel": "Triple",
+      "calories": 100.0,
+      "protein": 2.0,
+      "carbs": 17.0,
+      "fat": 2.0
+    },
+    {
+      "id": "americano-single",
+      "name": "Americano",
+      "servingLabel": "Single",
+      "calories": 0.0,
+      "protein": 0.0,
+      "carbs": 0.0,
+      "fat": 0.0
+    },
+    {
+      "id": "americano-double",
+      "name": "Americano",
+      "servingLabel": "Double",
+      "calories": 5.0,
+      "protein": 0.0,
+      "carbs": 0.0,
+      "fat": 0.0
+    },
+    {
+      "id": "americano-triple",
+      "name": "Americano",
+      "servingLabel": "Triple",
+      "calories": 5.0,
+      "protein": 0.0,
+      "carbs": 0.0,
+      "fat": 0.0
+    },
+    {
+      "id": "cafe-au-lait-single",
+      "name": "Café au Lait",
+      "servingLabel": "Single",
+      "calories": 60.0,
+      "protein": 4.0,
+      "carbs": 6.0,
+      "fat": 2.5
+    },
+    {
+      "id": "cafe-au-lait-double",
+      "name": "Café au Lait",
+      "servingLabel": "Double",
+      "calories": 90.0,
+      "protein": 6.0,
+      "carbs": 9.0,
+      "fat": 3.5
+    },
+    {
+      "id": "cafe-au-lait-triple",
+      "name": "Café au Lait",
+      "servingLabel": "Triple",
+      "calories": 120.0,
+      "protein": 8.0,
+      "carbs": 11.0,
+      "fat": 5.0
+    },
+    {
+      "id": "cafe-au-lait-almond-single",
+      "name": "Café au Lait - Almond",
+      "servingLabel": "Single",
+      "calories": 70.0,
+      "protein": 0.0,
+      "carbs": 5.0,
+      "fat": 2.0
+    },
+    {
+      "id": "cafe-au-lait-almond-double",
+      "name": "Café au Lait - Almond",
+      "servingLabel": "Double",
+      "calories": 60.0,
+      "protein": 1.0,
+      "carbs": 7.0,
+      "fat": 3.0
+    },
+    {
+      "id": "cafe-au-lait-almond-triple",
+      "name": "Café au Lait - Almond",
+      "servingLabel": "Triple",
+      "calories": 70.0,
+      "protein": 1.0,
+      "carbs": 10.0,
+      "fat": 4.0
+    },
+    {
+      "id": "cafe-au-lait-skim-single",
+      "name": "Café au Lait - Skim",
+      "servingLabel": "Single",
+      "calories": 40.0,
+      "protein": 4.0,
+      "carbs": 6.0,
+      "fat": 0.0
+    },
+    {
+      "id": "cafe-au-lait-skim-double",
+      "name": "Café au Lait - Skim",
+      "servingLabel": "Double",
+      "calories": 60.0,
+      "protein": 6.0,
+      "carbs": 9.0,
+      "fat": 0.0
+    },
+    {
+      "id": "cafe-au-lait-skim-triple",
+      "name": "Café au Lait - Skim",
+      "servingLabel": "Triple",
+      "calories": 80.0,
+      "protein": 8.0,
+      "carbs": 11.0,
+      "fat": 0.0
+    },
+    {
+      "id": "cafe-au-lait-soy-single",
+      "name": "Café au Lait - Soy",
+      "servingLabel": "Single",
+      "calories": 55.0,
+      "protein": 4.0,
+      "carbs": 6.0,
+      "fat": 2.0
+    },
+    {
+      "id": "cafe-au-lait-soy-double",
+      "name": "Café au Lait - Soy",
+      "servingLabel": "Double",
+      "calories": 80.0,
+      "protein": 6.0,
+      "carbs": 9.0,
+      "fat": 3.0
+    },
+    {
+      "id": "cafe-au-lait-soy-triple",
+      "name": "Café au Lait - Soy",
+      "servingLabel": "Triple",
+      "calories": 110.0,
+      "protein": 8.0,
+      "carbs": 11.0,
+      "fat": 4.0
+    },
+    {
+      "id": "cappuccino-single",
+      "name": "Cappuccino",
+      "servingLabel": "Single",
+      "calories": 90.0,
+      "protein": 6.0,
+      "carbs": 8.0,
+      "fat": 3.5
+    },
+    {
+      "id": "cappuccino-double",
+      "name": "Cappuccino",
+      "servingLabel": "Double",
+      "calories": 120.0,
+      "protein": 8.0,
+      "carbs": 11.0,
+      "fat": 5.0
+    },
+    {
+      "id": "cappuccino-triple",
+      "name": "Cappuccino",
+      "servingLabel": "Triple",
+      "calories": 150.0,
+      "protein": 10.0,
+      "carbs": 15.0,
+      "fat": 6.0
+    },
+    {
+      "id": "cappuccino-almond-single",
+      "name": "Cappuccino - Almond",
+      "servingLabel": "Single",
+      "calories": 60.0,
+      "protein": 1.0,
+      "carbs": 7.0,
+      "fat": 3.0
+    },
+    {
+      "id": "cappuccino-almond-double",
+      "name": "Cappuccino - Almond",
+      "servingLabel": "Double",
+      "calories": 80.0,
+      "protein": 1.0,
+      "carbs": 9.0,
+      "fat": 4.0
+    },
+    {
+      "id": "cappuccino-almond-triple",
+      "name": "Cappuccino - Almond",
+      "servingLabel": "Triple",
+      "calories": 100.0,
+      "protein": 1.0,
+      "carbs": 12.0,
+      "fat": 5.0
+    },
+    {
+      "id": "cappuccino-skim-single",
+      "name": "Cappuccino - Skim",
+      "servingLabel": "Single",
+      "calories": 60.0,
+      "protein": 6.0,
+      "carbs": 8.0,
+      "fat": 0.0
+    },
+    {
+      "id": "cappuccino-skim-double",
+      "name": "Cappuccino - Skim",
+      "servingLabel": "Double",
+      "calories": 80.0,
+      "protein": 8.0,
+      "carbs": 11.0,
+      "fat": 0.0
+    },
+    {
+      "id": "cappuccino-skim-triple",
+      "name": "Cappuccino - Skim",
+      "servingLabel": "Triple",
+      "calories": 100.0,
+      "protein": 10.0,
+      "carbs": 15.0,
+      "fat": 0.0
+    },
+    {
+      "id": "cappuccino-soy-single",
+      "name": "Cappuccino - Soy",
+      "servingLabel": "Single",
+      "calories": 85.0,
+      "protein": 6.0,
+      "carbs": 8.0,
+      "fat": 3.0
+    },
+    {
+      "id": "cappuccino-soy-double",
+      "name": "Cappuccino - Soy",
+      "servingLabel": "Double",
+      "calories": 110.0,
+      "protein": 8.0,
+      "carbs": 11.0,
+      "fat": 4.0
+    },
+    {
+      "id": "cappuccino-soy-triple",
+      "name": "Cappuccino - Soy",
+      "servingLabel": "Triple",
+      "calories": 140.0,
+      "protein": 10.0,
+      "carbs": 15.0,
+      "fat": 5.0
+    },
+    {
+      "id": "cocoa-cappuccino-single",
+      "name": "Cocoa Cappuccino",
+      "servingLabel": "Single",
+      "calories": 140.0,
+      "protein": 6.0,
+      "carbs": 21.0,
+      "fat": 4.0
+    },
+    {
+      "id": "cocoa-cappuccino-double",
+      "name": "Cocoa Cappuccino",
+      "servingLabel": "Double",
+      "calories": 220.0,
+      "protein": 9.0,
+      "carbs": 36.0,
+      "fat": 5.0
+    },
+    {
+      "id": "cocoa-cappuccino-triple",
+      "name": "Cocoa Cappuccino",
+      "servingLabel": "Triple",
+      "calories": 300.0,
+      "protein": 11.0,
+      "carbs": 52.0,
+      "fat": 7.0
+    },
+    {
+      "id": "cocoa-cappuccino-almond-single",
+      "name": "Cocoa Cappuccino - Almond",
+      "servingLabel": "Single",
+      "calories": 110.0,
+      "protein": 1.0,
+      "carbs": 19.0,
+      "fat": 3.0
+    },
+    {
+      "id": "cocoa-cappuccino-almond-double",
+      "name": "Cocoa Cappuccino - Almond",
+      "servingLabel": "Double",
+      "calories": 180.0,
+      "protein": 2.0,
+      "carbs": 34.0,
+      "fat": 4.5
+    },
+    {
+      "id": "cocoa-cappuccino-almond-triple",
+      "name": "Cocoa Cappuccino - Almond",
+      "servingLabel": "Triple",
+      "calories": 250.0,
+      "protein": 3.0,
+      "carbs": 50.0,
+      "fat": 6.0
+    },
+    {
+      "id": "cocoa-cappuccino-skim-single",
+      "name": "Cocoa Cappuccino - Skim",
+      "servingLabel": "Single",
+      "calories": 110.0,
+      "protein": 6.0,
+      "carbs": 21.0,
+      "fat": 0.0
+    },
+    {
+      "id": "cocoa-cappuccino-skim-double",
+      "name": "Cocoa Cappuccino - Skim",
+      "servingLabel": "Double",
+      "calories": 180.0,
+      "protein": 9.0,
+      "carbs": 36.0,
+      "fat": 0.0
+    },
+    {
+      "id": "cocoa-cappuccino-skim-triple",
+      "name": "Cocoa Cappuccino - Skim",
+      "servingLabel": "Triple",
+      "calories": 250.0,
+      "protein": 11.0,
+      "carbs": 52.0,
+      "fat": 1.0
+    },
+    {
+      "id": "cocoa-cappuccino-soy-single",
+      "name": "Cocoa Cappuccino - Soy",
+      "servingLabel": "Single",
+      "calories": 130.0,
+      "protein": 6.0,
+      "carbs": 21.0,
+      "fat": 4.0
+    },
+    {
+      "id": "cocoa-cappuccino-soy-double",
+      "name": "Cocoa Cappuccino - Soy",
+      "servingLabel": "Double",
+      "calories": 210.0,
+      "protein": 9.0,
+      "carbs": 36.0,
+      "fat": 5.0
+    },
+    {
+      "id": "cocoa-cappuccino-soy-triple",
+      "name": "Cocoa Cappuccino - Soy",
+      "servingLabel": "Triple",
+      "calories": 290.0,
+      "protein": 11.0,
+      "carbs": 52.0,
+      "fat": 6.0
+    },
+    {
+      "id": "cortado-single",
+      "name": "Cortado",
+      "servingLabel": "Single",
+      "calories": 25.0,
+      "protein": 1.0,
+      "carbs": 2.0,
+      "fat": 1.0
+    },
+    {
+      "id": "cortado-double",
+      "name": "Cortado",
+      "servingLabel": "Double",
+      "calories": 40.0,
+      "protein": 2.0,
+      "carbs": 4.0,
+      "fat": 1.5
+    },
+    {
+      "id": "cortado-triple",
+      "name": "Cortado",
+      "servingLabel": "Triple",
+      "calories": 65.0,
+      "protein": 4.0,
+      "carbs": 3.0,
+      "fat": 2.5
+    },
+    {
+      "id": "cortado-almond-single",
+      "name": "Cortado - Almond",
+      "servingLabel": "Single",
+      "calories": 15.0,
+      "protein": 0.0,
+      "carbs": 2.0,
+      "fat": 1.0
+    },
+    {
+      "id": "cortado-almond-double",
+      "name": "Cortado - Almond",
+      "servingLabel": "Double",
+      "calories": 25.0,
+      "protein": 0.0,
+      "carbs": 3.0,
+      "fat": 1.0
+    },
+    {
+      "id": "cortado-almond-triple",
+      "name": "Cortado - Almond",
+      "servingLabel": "Triple",
+      "calories": 40.0,
+      "protein": 0.0,
+      "carbs": 5.0,
+      "fat": 2.0
+    },
+    {
+      "id": "cortado-skim-single",
+      "name": "Cortado - Skim",
+      "servingLabel": "Single",
+      "calories": 15.0,
+      "protein": 1.0,
+      "carbs": 2.0,
+      "fat": 0.0
+    },
+    {
+      "id": "cortado-skim-double",
+      "name": "Cortado - Skim",
+      "servingLabel": "Double",
+      "calories": 30.0,
+      "protein": 2.0,
+      "carbs": 4.0,
+      "fat": 0.0
+    },
+    {
+      "id": "cortado-skim-triple",
+      "name": "Cortado - Skim",
+      "servingLabel": "Triple",
+      "calories": 45.0,
+      "protein": 4.0,
+      "carbs": 6.0,
+      "fat": 0.0
+    },
+    {
+      "id": "cortado-soy-single",
+      "name": "Cortado - Soy",
+      "servingLabel": "Single",
+      "calories": 25.0,
+      "protein": 1.0,
+      "carbs": 2.0,
+      "fat": 1.0
+    },
+    {
+      "id": "cortado-soy-double",
+      "name": "Cortado - Soy",
+      "servingLabel": "Double",
+      "calories": 40.0,
+      "protein": 3.0,
+      "carbs": 4.0,
+      "fat": 1.0
+    },
+    {
+      "id": "cortado-soy-triple",
+      "name": "Cortado - Soy",
+      "servingLabel": "Triple",
+      "calories": 60.0,
+      "protein": 4.0,
+      "carbs": 6.0,
+      "fat": 2.0
+    },
+    {
+      "id": "creme-caramel-single",
+      "name": "Crème Caramel",
+      "servingLabel": "Single",
+      "calories": 320.0,
+      "protein": 8.0,
+      "carbs": 39.0,
+      "fat": 15.0
+    },
+    {
+      "id": "creme-caramel-double",
+      "name": "Crème Caramel",
+      "servingLabel": "Double",
+      "calories": 380.0,
+      "protein": 11.0,
+      "carbs": 49.0,
+      "fat": 16.0
+    },
+    {
+      "id": "creme-caramel-triple",
+      "name": "Crème Caramel",
+      "servingLabel": "Triple",
+      "calories": 430.0,
+      "protein": 12.0,
+      "carbs": 57.0,
+      "fat": 17.0
+    },
+    {
+      "id": "creme-caramel-almond-single",
+      "name": "Crème Caramel - Almond",
+      "servingLabel": "Single",
+      "calories": 270.0,
+      "protein": 2.0,
+      "carbs": 38.0,
+      "fat": 14.0
+    },
+    {
+      "id": "creme-caramel-almond-double",
+      "name": "Crème Caramel - Almond",
+      "servingLabel": "Double",
+      "calories": 320.0,
+      "protein": 2.0,
+      "carbs": 46.0,
+      "fat": 15.0
+    },
+    {
+      "id": "creme-caramel-almond-triple",
+      "name": "Crème Caramel - Almond",
+      "servingLabel": "Triple",
+      "calories": 360.0,
+      "protein": 2.0,
+      "carbs": 54.0,
+      "fat": 16.0
+    },
+    {
+      "id": "creme-caramel-almond-no-whip-single",
+      "name": "Crème Caramel - Almond No Whip",
+      "servingLabel": "Single",
+      "calories": 170.0,
+      "protein": 1.0,
+      "carbs": 35.0,
+      "fat": 5.0
+    },
+    {
+      "id": "creme-caramel-almond-no-whip-double",
+      "name": "Crème Caramel - Almond No Whip",
+      "servingLabel": "Double",
+      "calories": 220.0,
+      "protein": 1.0,
+      "carbs": 43.0,
+      "fat": 6.0
+    },
+    {
+      "id": "creme-caramel-almond-no-whip-triple",
+      "name": "Crème Caramel - Almond No Whip",
+      "servingLabel": "Triple",
+      "calories": 260.0,
+      "protein": 1.0,
+      "carbs": 51.0,
+      "fat": 7.0
+    },
+    {
+      "id": "creme-caramel-no-whip-double",
+      "name": "Crème Caramel - No Whip",
+      "servingLabel": "Double",
+      "calories": 280.0,
+      "protein": 10.0,
+      "carbs": 46.0,
+      "fat": 7.0
+    },
+    {
+      "id": "creme-caramel-no-whip-triple",
+      "name": "Crème Caramel - No Whip",
+      "servingLabel": "Triple",
+      "calories": 330.0,
+      "protein": 11.0,
+      "carbs": 54.0,
+      "fat": 8.0
+    },
+    {
+      "id": "creme-caramel-skim-single",
+      "name": "Crème Caramel - Skim",
+      "servingLabel": "Single",
+      "calories": 280.0,
+      "protein": 8.0,
+      "carbs": 39.0,
+      "fat": 10.0
+    },
+    {
+      "id": "creme-caramel-skim-double",
+      "name": "Crème Caramel - Skim",
+      "servingLabel": "Double",
+      "calories": 330.0,
+      "protein": 11.0,
+      "carbs": 49.0,
+      "fat": 10.0
+    },
+    {
+      "id": "creme-caramel-skim-triple",
+      "name": "Crème Caramel - Skim",
+      "servingLabel": "Triple",
+      "calories": 370.0,
+      "protein": 12.0,
+      "carbs": 57.0,
+      "fat": 10.0
+    },
+    {
+      "id": "creme-caramel-soy-single",
+      "name": "Crème Caramel - Soy",
+      "servingLabel": "Single",
+      "calories": 310.0,
+      "protein": 8.0,
+      "carbs": 39.0,
+      "fat": 14.0
+    },
+    {
+      "id": "creme-caramel-soy-double",
+      "name": "Crème Caramel - Soy",
+      "servingLabel": "Double",
+      "calories": 370.0,
+      "protein": 11.0,
+      "carbs": 49.0,
+      "fat": 15.0
+    },
+    {
+      "id": "creme-caramel-soy-triple",
+      "name": "Crème Caramel - Soy",
+      "servingLabel": "Triple",
+      "calories": 410.0,
+      "protein": 12.0,
+      "carbs": 57.0,
+      "fat": 16.0
+    },
+    {
+      "id": "creme-caramel-soy-no-whip-single",
+      "name": "Crème Caramel - Soy No Whip",
+      "servingLabel": "Single",
+      "calories": 210.0,
+      "protein": 7.0,
+      "carbs": 36.0,
+      "fat": 5.0
+    },
+    {
+      "id": "creme-caramel-soy-no-whip-double",
+      "name": "Crème Caramel - Soy No Whip",
+      "servingLabel": "Double",
+      "calories": 270.0,
+      "protein": 10.0,
+      "carbs": 46.0,
+      "fat": 6.0
+    },
+    {
+      "id": "creme-caramel-soy-no-whip-triple",
+      "name": "Crème Caramel - Soy No Whip",
+      "servingLabel": "Triple",
+      "calories": 310.0,
+      "protein": 11.0,
+      "carbs": 53.0,
+      "fat": 7.0
+    },
+    {
+      "id": "dirty-triple",
+      "name": "Dirty",
+      "servingLabel": "Triple",
+      "calories": 180.0,
+      "protein": 2.0,
+      "carbs": 21.0,
+      "fat": 10.0
+    },
+    {
+      "id": "dirty-almond-triple",
+      "name": "Dirty - Almond",
+      "servingLabel": "Triple",
+      "calories": 80.0,
+      "protein": 1.0,
+      "carbs": 19.0,
+      "fat": 0.5
+    },
+    {
+      "id": "dirty-skim-triple",
+      "name": "Dirty - Skim",
+      "servingLabel": "Triple",
+      "calories": 80.0,
+      "protein": 1.0,
+      "carbs": 19.0,
+      "fat": 0.0
+    },
+    {
+      "id": "dirty-soy-triple",
+      "name": "Dirty - Soy",
+      "servingLabel": "Triple",
+      "calories": 80.0,
+      "protein": 1.0,
+      "carbs": 19.0,
+      "fat": 0.0
+    },
+    {
+      "id": "dragon-eye-single",
+      "name": "Dragon Eye",
+      "servingLabel": "Single",
+      "calories": 130.0,
+      "protein": 3.0,
+      "carbs": 22.0,
+      "fat": 3.0
+    },
+    {
+      "id": "dragon-eye-double",
+      "name": "Dragon Eye",
+      "servingLabel": "Double",
+      "calories": 200.0,
+      "protein": 4.0,
+      "carbs": 34.0,
+      "fat": 5.0
+    },
+    {
+      "id": "dragon-eye-triple",
+      "name": "Dragon Eye",
+      "servingLabel": "Triple",
+      "calories": 270.0,
+      "protein": 6.0,
+      "carbs": 45.0,
+      "fat": 6.0
+    },
+    {
+      "id": "dreamy-triple",
+      "name": "Dreamy",
+      "servingLabel": "Triple",
+      "calories": 190.0,
+      "protein": 1.0,
+      "carbs": 25.0,
+      "fat": 10.0
+    },
+    {
+      "id": "dreamy-almond-triple",
+      "name": "Dreamy - Almond",
+      "servingLabel": "Triple",
+      "calories": 90.0,
+      "protein": 0.0,
+      "carbs": 23.0,
+      "fat": 0.0
+    },
+    {
+      "id": "dreamy-skim-triple",
+      "name": "Dreamy - Skim",
+      "servingLabel": "Triple",
+      "calories": 95.0,
+      "protein": 0.0,
+      "carbs": 23.0,
+      "fat": 0.0
+    },
+    {
+      "id": "dreamy-soy-triple",
+      "name": "Dreamy - Soy",
+      "servingLabel": "Triple",
+      "calories": 90.0,
+      "protein": 0.0,
+      "carbs": 23.0,
+      "fat": 0.0
+    },
+    {
+      "id": "espresso-single",
+      "name": "Espresso",
+      "servingLabel": "Single",
+      "calories": 0.0,
+      "protein": 0.0,
+      "carbs": 0.0,
+      "fat": 0.0
+    },
+    {
+      "id": "espresso-double",
+      "name": "Espresso",
+      "servingLabel": "Double",
+      "calories": 5.0,
+      "protein": 0.0,
+      "carbs": 0.0,
+      "fat": 0.0
+    },
+    {
+      "id": "espresso-triple",
+      "name": "Espresso",
+      "servingLabel": "Triple",
+      "calories": 5.0,
+      "protein": 0.0,
+      "carbs": 1.0,
+      "fat": 0.0
+    },
+    {
+      "id": "flat-white-single",
+      "name": "Flat White",
+      "servingLabel": "Single",
+      "calories": 45.0,
+      "protein": 3.0,
+      "carbs": 4.0,
+      "fat": 2.0
+    },
+    {
+      "id": "flat-white-double",
+      "name": "Flat White",
+      "servingLabel": "Double",
+      "calories": 65.0,
+      "protein": 4.0,
+      "carbs": 6.0,
+      "fat": 2.5
+    },
+    {
+      "id": "flat-white-triple",
+      "name": "Flat White",
+      "servingLabel": "Triple",
+      "calories": 95.0,
+      "protein": 6.0,
+      "carbs": 9.0,
+      "fat": 3.5
+    },
+    {
+      "id": "flat-white-almond-single",
+      "name": "Flat White - Almond",
+      "servingLabel": "Single",
+      "calories": 30.0,
+      "protein": 0.0,
+      "carbs": 3.0,
+      "fat": 1.5
+    },
+    {
+      "id": "flat-white-almond-double",
+      "name": "Flat White - Almond",
+      "servingLabel": "Double",
+      "calories": 40.0,
+      "protein": 0.0,
+      "carbs": 5.0,
+      "fat": 2.0
+    },
+    {
+      "id": "flat-white-almond-triple",
+      "name": "Flat White - Almond",
+      "servingLabel": "Triple",
+      "calories": 60.0,
+      "protein": 1.0,
+      "carbs": 8.0,
+      "fat": 3.0
+    },
+    {
+      "id": "flat-white-skim-single",
+      "name": "Flat White - Skim",
+      "servingLabel": "Single",
+      "calories": 30.0,
+      "protein": 3.0,
+      "carbs": 4.0,
+      "fat": 0.0
+    },
+    {
+      "id": "flat-white-skim-double",
+      "name": "Flat White - Skim",
+      "servingLabel": "Double",
+      "calories": 45.0,
+      "protein": 4.0,
+      "carbs": 6.0,
+      "fat": 0.0
+    },
+    {
+      "id": "flat-white-skim-triple",
+      "name": "Flat White - Skim",
+      "servingLabel": "Triple",
+      "calories": 65.0,
+      "protein": 6.0,
+      "carbs": 9.0,
+      "fat": 0.0
+    },
+    {
+      "id": "flat-white-soy-single",
+      "name": "Flat White - Soy",
+      "servingLabel": "Single",
+      "calories": 40.0,
+      "protein": 3.0,
+      "carbs": 4.0,
+      "fat": 1.5
+    },
+    {
+      "id": "flat-white-soy-double",
+      "name": "Flat White - Soy",
+      "servingLabel": "Double",
+      "calories": 60.0,
+      "protein": 4.0,
+      "carbs": 6.0,
+      "fat": 2.0
+    },
+    {
+      "id": "flat-white-soy-triple",
+      "name": "Flat White - Soy",
+      "servingLabel": "Triple",
+      "calories": 90.0,
+      "protein": 6.0,
+      "carbs": 9.0,
+      "fat": 3.0
+    },
+    {
+      "id": "french-vietnamese-au-lait-single",
+      "name": "French Vietnamese au Lait",
+      "servingLabel": "Single",
+      "calories": 150.0,
+      "protein": 3.0,
+      "carbs": 25.0,
+      "fat": 3.0
+    },
+    {
+      "id": "french-vietnamese-au-lait-double",
+      "name": "French Vietnamese au Lait",
+      "servingLabel": "Double",
+      "calories": 190.0,
+      "protein": 4.0,
+      "carbs": 33.0,
+      "fat": 4.0
+    },
+    {
+      "id": "french-vietnamese-au-lait-triple",
+      "name": "French Vietnamese au Lait",
+      "servingLabel": "Triple",
+      "calories": 240.0,
+      "protein": 5.0,
+      "carbs": 40.0,
+      "fat": 5.0
+    },
+    {
+      "id": "house-blend-coffee-single",
+      "name": "House Blend Coffee",
+      "servingLabel": "Single",
+      "calories": 5.0,
+      "protein": 0.0,
+      "carbs": 1.0,
+      "fat": 0.0
+    },
+    {
+      "id": "house-blend-coffee-double",
+      "name": "House Blend Coffee",
+      "servingLabel": "Double",
+      "calories": 5.0,
+      "protein": 0.0,
+      "carbs": 1.0,
+      "fat": 0.0
+    },
+    {
+      "id": "house-blend-coffee-triple",
+      "name": "House Blend Coffee",
+      "servingLabel": "Triple",
+      "calories": 10.0,
+      "protein": 0.0,
+      "carbs": 1.0,
+      "fat": 0.0
+    },
+    {
+      "id": "latte-single",
+      "name": "Latte",
+      "servingLabel": "Single",
+      "calories": 120.0,
+      "protein": 8.0,
+      "carbs": 11.0,
+      "fat": 5.0
+    },
+    {
+      "id": "latte-double",
+      "name": "Latte",
+      "servingLabel": "Double",
+      "calories": 170.0,
+      "protein": 11.0,
+      "carbs": 16.0,
+      "fat": 7.0
+    },
+    {
+      "id": "latte-triple",
+      "name": "Latte",
+      "servingLabel": "Triple",
+      "calories": 200.0,
+      "protein": 13.0,
+      "carbs": 19.0,
+      "fat": 8.0
+    },
+    {
+      "id": "latte-almond-single",
+      "name": "Latte - Almond",
+      "servingLabel": "Single",
+      "calories": 70.0,
+      "protein": 1.0,
+      "carbs": 9.0,
+      "fat": 4.0
+    },
+    {
+      "id": "latte-almond-double",
+      "name": "Latte - Almond",
+      "servingLabel": "Double",
+      "calories": 100.0,
+      "protein": 1.0,
+      "carbs": 13.0,
+      "fat": 5.0
+    },
+    {
+      "id": "latte-almond-triple",
+      "name": "Latte - Almond",
+      "servingLabel": "Triple",
+      "calories": 120.0,
+      "protein": 2.0,
+      "carbs": 15.0,
+      "fat": 6.0
+    },
+    {
+      "id": "latte-skim-single",
+      "name": "Latte - Skim",
+      "servingLabel": "Single",
+      "calories": 80.0,
+      "protein": 8.0,
+      "carbs": 11.0,
+      "fat": 0.0
+    },
+    {
+      "id": "latte-skim-double",
+      "name": "Latte - Skim",
+      "servingLabel": "Double",
+      "calories": 110.0,
+      "protein": 11.0,
+      "carbs": 16.0,
+      "fat": 0.0
+    },
+    {
+      "id": "latte-skim-triple",
+      "name": "Latte - Skim",
+      "servingLabel": "Triple",
+      "calories": 130.0,
+      "protein": 13.0,
+      "carbs": 19.0,
+      "fat": 0.0
+    },
+    {
+      "id": "latte-soy-single",
+      "name": "Latte - Soy",
+      "servingLabel": "Single",
+      "calories": 110.0,
+      "protein": 8.0,
+      "carbs": 11.0,
+      "fat": 4.0
+    },
+    {
+      "id": "latte-soy-double",
+      "name": "Latte - Soy",
+      "servingLabel": "Double",
+      "calories": 150.0,
+      "protein": 11.0,
+      "carbs": 16.0,
+      "fat": 6.0
+    },
+    {
+      "id": "latte-soy-triple",
+      "name": "Latte - Soy",
+      "servingLabel": "Triple",
+      "calories": 180.0,
+      "protein": 13.0,
+      "carbs": 19.0,
+      "fat": 7.0
+    },
+    {
+      "id": "macchiato-single",
+      "name": "Macchiato",
+      "servingLabel": "Single",
+      "calories": 15.0,
+      "protein": 1.0,
+      "carbs": 2.0,
+      "fat": 0.5
+    },
+    {
+      "id": "macchiato-double",
+      "name": "Macchiato",
+      "servingLabel": "Double",
+      "calories": 20.0,
+      "protein": 1.0,
+      "carbs": 2.0,
+      "fat": 0.5
+    },
+    {
+      "id": "macchiato-triple",
+      "name": "Macchiato",
+      "servingLabel": "Triple",
+      "calories": 30.0,
+      "protein": 1.0,
+      "carbs": 3.0,
+      "fat": 1.0
+    },
+    {
+      "id": "macchiato-almond-single",
+      "name": "Macchiato - Almond",
+      "servingLabel": "Single",
+      "calories": 10.0,
+      "protein": 0.0,
+      "carbs": 1.0,
+      "fat": 0.5
+    },
+    {
+      "id": "macchiato-almond-double",
+      "name": "Macchiato - Almond",
+      "servingLabel": "Double",
+      "calories": 15.0,
+      "protein": 0.0,
+      "carbs": 2.0,
+      "fat": 0.5
+    },
+    {
+      "id": "macchiato-almond-triple",
+      "name": "Macchiato - Almond",
+      "servingLabel": "Triple",
+      "calories": 20.0,
+      "protein": 0.0,
+      "carbs": 3.0,
+      "fat": 1.0
+    },
+    {
+      "id": "macchiato-skim-single",
+      "name": "Macchiato - Skim",
+      "servingLabel": "Single",
+      "calories": 10.0,
+      "protein": 1.0,
+      "carbs": 2.0,
+      "fat": 0.0
+    },
+    {
+      "id": "macchiato-skim-double",
+      "name": "Macchiato - Skim",
+      "servingLabel": "Double",
+      "calories": 15.0,
+      "protein": 1.0,
+      "carbs": 2.0,
+      "fat": 0.0
+    },
+    {
+      "id": "macchiato-skim-triple",
+      "name": "Macchiato - Skim",
+      "servingLabel": "Triple",
+      "calories": 20.0,
+      "protein": 1.0,
+      "carbs": 3.0,
+      "fat": 0.0
+    },
+    {
+      "id": "macchiato-soy-single",
+      "name": "Macchiato - Soy",
+      "servingLabel": "Single",
+      "calories": 15.0,
+      "protein": 1.0,
+      "carbs": 2.0,
+      "fat": 0.5
+    },
+    {
+      "id": "macchiato-soy-double",
+      "name": "Macchiato - Soy",
+      "servingLabel": "Double",
+      "calories": 20.0,
+      "protein": 1.0,
+      "carbs": 2.0,
+      "fat": 0.5
+    },
+    {
+      "id": "macchiato-soy-triple",
+      "name": "Macchiato - Soy",
+      "servingLabel": "Triple",
+      "calories": 25.0,
+      "protein": 2.0,
+      "carbs": 3.0,
+      "fat": 1.0
+    },
+    {
+      "id": "mocha-single",
+      "name": "Mocha",
+      "servingLabel": "Single",
+      "calories": 260.0,
+      "protein": 9.0,
+      "carbs": 26.0,
+      "fat": 14.0
+    },
+    {
+      "id": "mocha-double",
+      "name": "Mocha",
+      "servingLabel": "Double",
+      "calories": 350.0,
+      "protein": 12.0,
+      "carbs": 42.0,
+      "fat": 16.0
+    },
+    {
+      "id": "mocha-triple",
+      "name": "Mocha",
+      "servingLabel": "Triple",
+      "calories": 430.0,
+      "protein": 14.0,
+      "carbs": 57.0,
+      "fat": 17.0
+    },
+    {
+      "id": "mocha-almond-single",
+      "name": "Mocha - Almond",
+      "servingLabel": "Single",
+      "calories": 220.0,
+      "protein": 2.0,
+      "carbs": 24.0,
+      "fat": 13.0
+    },
+    {
+      "id": "mocha-almond-double",
+      "name": "Mocha - Almond",
+      "servingLabel": "Double",
+      "calories": 290.0,
+      "protein": 3.0,
+      "carbs": 40.0,
+      "fat": 15.0
+    },
+    {
+      "id": "mocha-almond-triple",
+      "name": "Mocha - Almond",
+      "servingLabel": "Triple",
+      "calories": 360.0,
+      "protein": 4.0,
+      "carbs": 54.0,
+      "fat": 16.0
+    },
+    {
+      "id": "mocha-almond-no-whip-single",
+      "name": "Mocha - Almond No Whip",
+      "servingLabel": "Single",
+      "calories": 120.0,
+      "protein": 1.0,
+      "carbs": 21.0,
+      "fat": 4.0
+    },
+    {
+      "id": "mocha-almond-no-whip-double",
+      "name": "Mocha - Almond No Whip",
+      "servingLabel": "Double",
+      "calories": 190.0,
+      "protein": 2.0,
+      "carbs": 37.0,
+      "fat": 6.0
+    },
+    {
+      "id": "mocha-almond-no-whip-triple",
+      "name": "Mocha - Almond No Whip",
+      "servingLabel": "Triple",
+      "calories": 260.0,
+      "protein": 3.0,
+      "carbs": 51.0,
+      "fat": 7.0
+    },
+    {
+      "id": "mocha-no-whip-single",
+      "name": "Mocha - No Whip",
+      "servingLabel": "Single",
+      "calories": 160.0,
+      "protein": 8.0,
+      "carbs": 23.0,
+      "fat": 5.0
+    },
+    {
+      "id": "mocha-no-whip-double",
+      "name": "Mocha - No Whip",
+      "servingLabel": "Double",
+      "calories": 250.0,
+      "protein": 11.0,
+      "carbs": 39.0,
+      "fat": 7.0
+    },
+    {
+      "id": "mocha-no-whip-triple",
+      "name": "Mocha - No Whip",
+      "servingLabel": "Triple",
+      "calories": 330.0,
+      "protein": 13.0,
+      "carbs": 54.0,
+      "fat": 8.0
+    },
+    {
+      "id": "mocha-skim-single",
+      "name": "Mocha - Skim",
+      "servingLabel": "Single",
+      "calories": 230.0,
+      "protein": 9.0,
+      "carbs": 26.0,
+      "fat": 10.0
+    },
+    {
+      "id": "mocha-skim-double",
+      "name": "Mocha - Skim",
+      "servingLabel": "Double",
+      "calories": 300.0,
+      "protein": 12.0,
+      "carbs": 42.0,
+      "fat": 10.0
+    },
+    {
+      "id": "mocha-skim-triple",
+      "name": "Mocha - Skim",
+      "servingLabel": "Triple",
+      "calories": 370.0,
+      "protein": 14.0,
+      "carbs": 57.0,
+      "fat": 10.0
+    },
+    {
+      "id": "mocha-soy-single",
+      "name": "Mocha - Soy",
+      "servingLabel": "Single",
+      "calories": 250.0,
+      "protein": 9.0,
+      "carbs": 26.0,
+      "fat": 14.0
+    },
+    {
+      "id": "mocha-soy-double",
+      "name": "Mocha - Soy",
+      "servingLabel": "Double",
+      "calories": 340.0,
+      "protein": 12.0,
+      "carbs": 42.0,
+      "fat": 15.0
+    },
+    {
+      "id": "mocha-soy-triple",
+      "name": "Mocha - Soy",
+      "servingLabel": "Triple",
+      "calories": 410.0,
+      "protein": 14.0,
+      "carbs": 57.0,
+      "fat": 16.0
+    },
+    {
+      "id": "mocha-soy-no-whip-single",
+      "name": "Mocha - Soy No Whip",
+      "servingLabel": "Single",
+      "calories": 150.0,
+      "protein": 8.0,
+      "carbs": 23.0,
+      "fat": 5.0
+    },
+    {
+      "id": "mocha-soy-no-whip-double",
+      "name": "Mocha - Soy No Whip",
+      "servingLabel": "Double",
+      "calories": 240.0,
+      "protein": 11.0,
+      "carbs": 39.0,
+      "fat": 6.0
+    },
+    {
+      "id": "mocha-soy-no-whip-triple",
+      "name": "Mocha - Soy No Whip",
+      "servingLabel": "Triple",
+      "calories": 310.0,
+      "protein": 13.0,
+      "carbs": 54.0,
+      "fat": 7.0
+    },
+    {
+      "id": "red-eye-single",
+      "name": "Red Eye",
+      "servingLabel": "Single",
+      "calories": 5.0,
+      "protein": 0.0,
+      "carbs": 1.0,
+      "fat": 0.0
+    },
+    {
+      "id": "red-eye-double",
+      "name": "Red Eye",
+      "servingLabel": "Double",
+      "calories": 10.0,
+      "protein": 0.0,
+      "carbs": 1.0,
+      "fat": 0.0
+    },
+    {
+      "id": "red-eye-triple",
+      "name": "Red Eye",
+      "servingLabel": "Triple",
+      "calories": 10.0,
+      "protein": 0.0,
+      "carbs": 2.0,
+      "fat": 0.0
+    },
+    {
+      "id": "straight-up-triple",
+      "name": "Straight Up",
+      "servingLabel": "Triple",
+      "calories": 5.0,
+      "protein": 0.0,
+      "carbs": 0.0,
+      "fat": 0.0
+    },
+    {
+      "id": "vanilla-cappuccino-single",
+      "name": "Vanilla Cappuccino",
+      "servingLabel": "Single",
+      "calories": 130.0,
+      "protein": 6.0,
+      "carbs": 20.0,
+      "fat": 3.5
+    },
+    {
+      "id": "vanilla-cappuccino-double",
+      "name": "Vanilla Cappuccino",
+      "servingLabel": "Double",
+      "calories": 190.0,
+      "protein": 8.0,
+      "carbs": 29.0,
+      "fat": 5.0
+    },
+    {
+      "id": "vanilla-cappuccino-triple",
+      "name": "Vanilla Cappuccino",
+      "servingLabel": "Triple",
+      "calories": 240.0,
+      "protein": 10.0,
+      "carbs": 38.0,
+      "fat": 6.0
+    },
+    {
+      "id": "vanilla-cappuccino-almond-single",
+      "name": "Vanilla Cappuccino - Almond",
+      "servingLabel": "Single",
+      "calories": 100.0,
+      "protein": 1.0,
+      "carbs": 18.0,
+      "fat": 3.0
+    },
+    {
+      "id": "vanilla-cappuccino-almond-double",
+      "name": "Vanilla Cappuccino - Almond",
+      "servingLabel": "Double",
+      "calories": 150.0,
+      "protein": 1.0,
+      "carbs": 27.0,
+      "fat": 4.0
+    },
+    {
+      "id": "vanilla-cappuccino-almond-triple",
+      "name": "Vanilla Cappuccino - Almond",
+      "servingLabel": "Triple",
+      "calories": 190.0,
+      "protein": 1.0,
+      "carbs": 35.0,
+      "fat": 5.0
+    },
+    {
+      "id": "vanilla-cappuccino-skim-single",
+      "name": "Vanilla Cappuccino - Skim",
+      "servingLabel": "Single",
+      "calories": 100.0,
+      "protein": 6.0,
+      "carbs": 20.0,
+      "fat": 0.0
+    },
+    {
+      "id": "vanilla-cappuccino-skim-double",
+      "name": "Vanilla Cappuccino - Skim",
+      "servingLabel": "Double",
+      "calories": 150.0,
+      "protein": 8.0,
+      "carbs": 29.0,
+      "fat": 0.0
+    },
+    {
+      "id": "vanilla-cappuccino-skim-triple",
+      "name": "Vanilla Cappuccino - Skim",
+      "servingLabel": "Triple",
+      "calories": 190.0,
+      "protein": 10.0,
+      "carbs": 38.0,
+      "fat": 0.0
+    },
+    {
+      "id": "vanilla-cappuccino-soy-single",
+      "name": "Vanilla Cappuccino - Soy",
+      "servingLabel": "Single",
+      "calories": 130.0,
+      "protein": 6.0,
+      "carbs": 20.0,
+      "fat": 3.0
+    },
+    {
+      "id": "vanilla-cappuccino-soy-double",
+      "name": "Vanilla Cappuccino - Soy",
+      "servingLabel": "Double",
+      "calories": 180.0,
+      "protein": 8.0,
+      "carbs": 29.0,
+      "fat": 4.0
+    },
+    {
+      "id": "vanilla-cappuccino-soy-triple",
+      "name": "Vanilla Cappuccino - Soy",
+      "servingLabel": "Triple",
+      "calories": 230.0,
+      "protein": 10.0,
+      "carbs": 38.0,
+      "fat": 5.0
+    },
+    {
+      "id": "white-mocha-single",
+      "name": "White Mocha",
+      "servingLabel": "Single",
+      "calories": 260.0,
+      "protein": 9.0,
+      "carbs": 26.0,
+      "fat": 14.0
+    },
+    {
+      "id": "white-mocha-double",
+      "name": "White Mocha",
+      "servingLabel": "Double",
+      "calories": 350.0,
+      "protein": 12.0,
+      "carbs": 41.0,
+      "fat": 16.0
+    },
+    {
+      "id": "white-mocha-triple",
+      "name": "White Mocha",
+      "servingLabel": "Triple",
+      "calories": 430.0,
+      "protein": 14.0,
+      "carbs": 56.0,
+      "fat": 17.0
+    },
+    {
+      "id": "white-mocha-almond-single",
+      "name": "White Mocha - Almond",
+      "servingLabel": "Single",
+      "calories": 220.0,
+      "protein": 2.0,
+      "carbs": 24.0,
+      "fat": 13.0
+    },
+    {
+      "id": "white-mocha-almond-double",
+      "name": "White Mocha - Almond",
+      "servingLabel": "Double",
+      "calories": 290.0,
+      "protein": 3.0,
+      "carbs": 39.0,
+      "fat": 15.0
+    },
+    {
+      "id": "white-mocha-almond-triple",
+      "name": "White Mocha - Almond",
+      "servingLabel": "Triple",
+      "calories": 360.0,
+      "protein": 4.0,
+      "carbs": 53.0,
+      "fat": 16.0
+    },
+    {
+      "id": "white-mocha-almond-no-whip-single",
+      "name": "White Mocha - Almond No Whip",
+      "servingLabel": "Single",
+      "calories": 120.0,
+      "protein": 1.0,
+      "carbs": 21.0,
+      "fat": 4.0
+    },
+    {
+      "id": "white-mocha-almond-no-whip-double",
+      "name": "White Mocha - Almond No Whip",
+      "servingLabel": "Double",
+      "calories": 190.0,
+      "protein": 2.0,
+      "carbs": 36.0,
+      "fat": 6.0
+    },
+    {
+      "id": "white-mocha-almond-no-whip-triple",
+      "name": "White Mocha - Almond No Whip",
+      "servingLabel": "Triple",
+      "calories": 260.0,
+      "protein": 3.0,
+      "carbs": 50.0,
+      "fat": 7.0
+    },
+    {
+      "id": "white-mocha-no-whip-single",
+      "name": "White Mocha - No Whip",
+      "servingLabel": "Single",
+      "calories": 160.0,
+      "protein": 8.0,
+      "carbs": 23.0,
+      "fat": 5.0
+    },
+    {
+      "id": "white-mocha-no-whip-double",
+      "name": "White Mocha - No Whip",
+      "servingLabel": "Double",
+      "calories": 250.0,
+      "protein": 11.0,
+      "carbs": 38.0,
+      "fat": 7.0
+    },
+    {
+      "id": "white-mocha-no-whip-triple",
+      "name": "White Mocha - No Whip",
+      "servingLabel": "Triple",
+      "calories": 330.0,
+      "protein": 13.0,
+      "carbs": 53.0,
+      "fat": 8.0
+    },
+    {
+      "id": "white-mocha-skim-single",
+      "name": "White Mocha - Skim",
+      "servingLabel": "Single",
+      "calories": 230.0,
+      "protein": 9.0,
+      "carbs": 26.0,
+      "fat": 10.0
+    },
+    {
+      "id": "white-mocha-skim-double",
+      "name": "White Mocha - Skim",
+      "servingLabel": "Double",
+      "calories": 300.0,
+      "protein": 12.0,
+      "carbs": 41.0,
+      "fat": 10.0
+    },
+    {
+      "id": "white-mocha-skim-triple",
+      "name": "White Mocha - Skim",
+      "servingLabel": "Triple",
+      "calories": 370.0,
+      "protein": 14.0,
+      "carbs": 56.0,
+      "fat": 10.0
+    },
+    {
+      "id": "white-mocha-soy-single",
+      "name": "White Mocha - Soy",
+      "servingLabel": "Single",
+      "calories": 250.0,
+      "protein": 9.0,
+      "carbs": 26.0,
+      "fat": 14.0
+    },
+    {
+      "id": "white-mocha-soy-double",
+      "name": "White Mocha - Soy",
+      "servingLabel": "Double",
+      "calories": 340.0,
+      "protein": 12.0,
+      "carbs": 41.0,
+      "fat": 15.0
+    },
+    {
+      "id": "white-mocha-soy-triple",
+      "name": "White Mocha - Soy",
+      "servingLabel": "Triple",
+      "calories": 410.0,
+      "protein": 14.0,
+      "carbs": 56.0,
+      "fat": 16.0
+    },
+    {
+      "id": "white-mocha-soy-no-whip-single",
+      "name": "White Mocha - Soy No Whip",
+      "servingLabel": "Single",
+      "calories": 150.0,
+      "protein": 8.0,
+      "carbs": 23.0,
+      "fat": 5.0
+    },
+    {
+      "id": "white-mocha-soy-no-whip-double",
+      "name": "White Mocha - Soy No Whip",
+      "servingLabel": "Double",
+      "calories": 240.0,
+      "protein": 11.0,
+      "carbs": 38.0,
+      "fat": 6.0
+    },
+    {
+      "id": "white-mocha-soy-no-whip-triple",
+      "name": "White Mocha - Soy No Whip",
+      "servingLabel": "Triple",
+      "calories": 310.0,
+      "protein": 13.0,
+      "carbs": 53.0,
+      "fat": 7.0
+    },
+    {
+      "id": "chocolate-milkshake-double",
+      "name": "Chocolate Milkshake",
+      "servingLabel": "Double",
+      "calories": 670.0,
+      "protein": 10.0,
+      "carbs": 81.0,
+      "fat": 33.0
+    },
+    {
+      "id": "chocolate-milkshake-triple",
+      "name": "Chocolate Milkshake",
+      "servingLabel": "Triple",
+      "calories": 870.0,
+      "protein": 13.0,
+      "carbs": 110.0,
+      "fat": 41.0
+    },
+    {
+      "id": "chocolate-milkshake-no-whip-double",
+      "name": "Chocolate Milkshake - No Whip",
+      "servingLabel": "Double",
+      "calories": 670.0,
+      "protein": 9.0,
+      "carbs": 78.0,
+      "fat": 24.0
+    },
+    {
+      "id": "chocolate-milkshake-no-whip-triple",
+      "name": "Chocolate Milkshake - No Whip",
+      "servingLabel": "Triple",
+      "calories": 870.0,
+      "protein": 12.0,
+      "carbs": 107.0,
+      "fat": 32.0
+    },
+    {
+      "id": "coco-cafe-double",
+      "name": "Coco Café",
+      "servingLabel": "Double",
+      "calories": 660.0,
+      "protein": 9.0,
+      "carbs": 81.0,
+      "fat": 33.0
+    },
+    {
+      "id": "coco-cafe-triple",
+      "name": "Coco Café",
+      "servingLabel": "Triple",
+      "calories": 840.0,
+      "protein": 11.0,
+      "carbs": 108.0,
+      "fat": 40.0
+    },
+    {
+      "id": "coco-cafe-no-whip-double",
+      "name": "Coco Café - No Whip",
+      "servingLabel": "Double",
+      "calories": 660.0,
+      "protein": 8.0,
+      "carbs": 78.0,
+      "fat": 24.0
+    },
+    {
+      "id": "coco-cafe-no-whip-triple",
+      "name": "Coco Café - No Whip",
+      "servingLabel": "Triple",
+      "calories": 740.0,
+      "protein": 10.0,
+      "carbs": 105.0,
+      "fat": 31.0
+    },
+    {
+      "id": "frappe-double",
+      "name": "Frappe",
+      "servingLabel": "Double",
+      "calories": 560.0,
+      "protein": 8.0,
+      "carbs": 56.0,
+      "fat": 32.0
+    },
+    {
+      "id": "frappe-triple",
+      "name": "Frappe",
+      "servingLabel": "Triple",
+      "calories": 690.0,
+      "protein": 10.0,
+      "carbs": 71.0,
+      "fat": 39.0
+    },
+    {
+      "id": "frappe-no-whip-double",
+      "name": "Frappe - No Whip",
+      "servingLabel": "Double",
+      "calories": 460.0,
+      "protein": 7.0,
+      "carbs": 53.0,
+      "fat": 23.0
+    },
+    {
+      "id": "frappe-no-whip-triple",
+      "name": "Frappe - No Whip",
+      "servingLabel": "Triple",
+      "calories": 590.0,
+      "protein": 9.0,
+      "carbs": 68.0,
+      "fat": 30.0
+    },
+    {
+      "id": "napali-brew-double",
+      "name": "Napali Brew",
+      "servingLabel": "Double",
+      "calories": 630.0,
+      "protein": 8.0,
+      "carbs": 73.0,
+      "fat": 32.0
+    },
+    {
+      "id": "napali-brew-triple",
+      "name": "Napali Brew",
+      "servingLabel": "Triple",
+      "calories": 780.0,
+      "protein": 10.0,
+      "carbs": 93.0,
+      "fat": 39.0
+    },
+    {
+      "id": "napali-brew-no-whip-double",
+      "name": "Napali Brew - No Whip",
+      "servingLabel": "Double",
+      "calories": 530.0,
+      "protein": 7.0,
+      "carbs": 70.0,
+      "fat": 23.0
+    },
+    {
+      "id": "napali-brew-no-whip-triple",
+      "name": "Napali Brew - No Whip",
+      "servingLabel": "Triple",
+      "calories": 680.0,
+      "protein": 9.0,
+      "carbs": 90.0,
+      "fat": 30.0
+    },
+    {
+      "id": "sunshine-shake-double",
+      "name": "Sunshine Shake",
+      "servingLabel": "Double",
+      "calories": 770.0,
+      "protein": 8.0,
+      "carbs": 127.0,
+      "fat": 24.0
+    },
+    {
+      "id": "sunshine-shake-triple",
+      "name": "Sunshine Shake",
+      "servingLabel": "Triple",
+      "calories": 980.0,
+      "protein": 11.0,
+      "carbs": 157.0,
+      "fat": 31.0
+    },
+    {
+      "id": "vanilla-milkshake-double",
+      "name": "Vanilla Milkshake",
+      "servingLabel": "Double",
+      "calories": 600.0,
+      "protein": 11.0,
+      "carbs": 59.0,
+      "fat": 34.0
+    },
+    {
+      "id": "vanilla-milkshake-triple",
+      "name": "Vanilla Milkshake",
+      "servingLabel": "Triple",
+      "calories": 740.0,
+      "protein": 13.0,
+      "carbs": 74.0,
+      "fat": 41.0
+    },
+    {
+      "id": "vanilla-milkshake-no-whip-double",
+      "name": "Vanilla Milkshake - No Whip",
+      "servingLabel": "Double",
+      "calories": 500.0,
+      "protein": 10.0,
+      "carbs": 56.0,
+      "fat": 25.0
+    },
+    {
+      "id": "vanilla-milkshake-no-whip-triple",
+      "name": "Vanilla Milkshake - No Whip",
+      "servingLabel": "Triple",
+      "calories": 640.0,
+      "protein": 12.0,
+      "carbs": 71.0,
+      "fat": 32.0
+    },
+    {
+      "id": "caramel-ice-dragon-double",
+      "name": "Caramel Ice Dragon",
+      "servingLabel": "Double",
+      "calories": 460.0,
+      "protein": 9.0,
+      "carbs": 68.0,
+      "fat": 17.0
+    },
+    {
+      "id": "caramel-ice-dragon-triple",
+      "name": "Caramel Ice Dragon",
+      "servingLabel": "Triple",
+      "calories": 600.0,
+      "protein": 11.0,
+      "carbs": 94.0,
+      "fat": 20.0
+    },
+    {
+      "id": "caramel-ice-dragon-almond-double",
+      "name": "Caramel Ice Dragon - Almond",
+      "servingLabel": "Double",
+      "calories": 440.0,
+      "protein": 5.0,
+      "carbs": 67.0,
+      "fat": 17.0
+    },
+    {
+      "id": "caramel-ice-dragon-almond-triple",
+      "name": "Caramel Ice Dragon - Almond",
+      "servingLabel": "Triple",
+      "calories": 570.0,
+      "protein": 7.0,
+      "carbs": 93.0,
+      "fat": 19.0
+    },
+    {
+      "id": "caramel-ice-dragon-almond-no-whip-double",
+      "name": "Caramel Ice Dragon - Almond No Whip",
+      "servingLabel": "Double",
+      "calories": 340.0,
+      "protein": 4.0,
+      "carbs": 62.0,
+      "fat": 8.0
+    },
+    {
+      "id": "caramel-ice-dragon-almond-no-whip-triple",
+      "name": "Caramel Ice Dragon - Almond No Whip",
+      "servingLabel": "Triple",
+      "calories": 470.0,
+      "protein": 6.0,
+      "carbs": 90.0,
+      "fat": 10.0
+    },
+    {
+      "id": "caramel-ice-dragon-no-whip-double",
+      "name": "Caramel Ice Dragon - No Whip",
+      "servingLabel": "Double",
+      "calories": 360.0,
+      "protein": 8.0,
+      "carbs": 65.0,
+      "fat": 8.0
+    },
+    {
+      "id": "caramel-ice-dragon-no-whip-triple",
+      "name": "Caramel Ice Dragon - No Whip",
+      "servingLabel": "Triple",
+      "calories": 500.0,
+      "protein": 10.0,
+      "carbs": 91.0,
+      "fat": 12.0
+    },
+    {
+      "id": "caramel-ice-dragon-skim-triple",
+      "name": "Caramel Ice Dragon - Skim",
+      "servingLabel": "Triple",
+      "calories": 570.0,
+      "protein": 11.0,
+      "carbs": 94.0,
+      "fat": 16.0
+    },
+    {
+      "id": "caramel-ice-dragon-soy-double",
+      "name": "Caramel Ice Dragon - Soy",
+      "servingLabel": "Double",
+      "calories": 460.0,
+      "protein": 9.0,
+      "carbs": 68.0,
+      "fat": 17.0
+    },
+    {
+      "id": "caramel-ice-dragon-soy-triple",
+      "name": "Caramel Ice Dragon - Soy",
+      "servingLabel": "Triple",
+      "calories": 590.0,
+      "protein": 12.0,
+      "carbs": 94.0,
+      "fat": 19.0
+    },
+    {
+      "id": "caramel-ice-dragon-soy-no-whip-double",
+      "name": "Caramel Ice Dragon - Soy No Whip",
+      "servingLabel": "Double",
+      "calories": 360.0,
+      "protein": 8.0,
+      "carbs": 65.0,
+      "fat": 8.0
+    },
+    {
+      "id": "caramel-ice-dragon-soy-no-whip-triple",
+      "name": "Caramel Ice Dragon - Soy No Whip",
+      "servingLabel": "Triple",
+      "calories": 490.0,
+      "protein": 11.0,
+      "carbs": 91.0,
+      "fat": 10.0
+    },
+    {
+      "id": "coffee-ice-dragon-double",
+      "name": "Coffee Ice Dragon",
+      "servingLabel": "Double",
+      "calories": 340.0,
+      "protein": 9.0,
+      "carbs": 40.0,
+      "fat": 16.0
+    },
+    {
+      "id": "coffee-ice-dragon-triple",
+      "name": "Coffee Ice Dragon",
+      "servingLabel": "Triple",
+      "calories": 420.0,
+      "protein": 11.0,
+      "carbs": 50.0,
+      "fat": 18.0
+    },
+    {
+      "id": "coffee-ice-dragon-almond-double",
+      "name": "Coffee Ice Dragon - Almond",
+      "servingLabel": "Double",
+      "calories": 320.0,
+      "protein": 5.0,
+      "carbs": 38.0,
+      "fat": 16.0
+    },
+    {
+      "id": "coffee-ice-dragon-almond-triple",
+      "name": "Coffee Ice Dragon - Almond",
+      "servingLabel": "Triple",
+      "calories": 390.0,
+      "protein": 7.0,
+      "carbs": 49.0,
+      "fat": 17.0
+    },
+    {
+      "id": "coffee-ice-dragon-almond-no-whip-double",
+      "name": "Coffee Ice Dragon - Almond No Whip",
+      "servingLabel": "Double",
+      "calories": 220.0,
+      "protein": 4.0,
+      "carbs": 35.0,
+      "fat": 9.0
+    },
+    {
+      "id": "coffee-ice-dragon-almond-no-whip-triple",
+      "name": "Coffee Ice Dragon - Almond No Whip",
+      "servingLabel": "Triple",
+      "calories": 290.0,
+      "protein": 6.0,
+      "carbs": 46.0,
+      "fat": 8.0
+    },
+    {
+      "id": "coffee-ice-dragon-no-whip-double",
+      "name": "Coffee Ice Dragon - No Whip",
+      "servingLabel": "Double",
+      "calories": 240.0,
+      "protein": 8.0,
+      "carbs": 37.0,
+      "fat": 7.0
+    },
+    {
+      "id": "coffee-ice-dragon-no-whip-triple",
+      "name": "Coffee Ice Dragon - No Whip",
+      "servingLabel": "Triple",
+      "calories": 320.0,
+      "protein": 10.0,
+      "carbs": 47.0,
+      "fat": 9.0
+    },
+    {
+      "id": "coffee-ice-dragon-skim-double",
+      "name": "Coffee Ice Dragon - Skim",
+      "servingLabel": "Double",
+      "calories": 320.0,
+      "protein": 9.0,
+      "carbs": 39.0,
+      "fat": 14.0
+    },
+    {
+      "id": "coffee-ice-dragon-skim-triple",
+      "name": "Coffee Ice Dragon - Skim",
+      "servingLabel": "Triple",
+      "calories": 390.0,
+      "protein": 11.0,
+      "carbs": 50.0,
+      "fat": 15.0
+    },
+    {
+      "id": "coffee-ice-dragon-soy-double",
+      "name": "Coffee Ice Dragon - Soy",
+      "servingLabel": "Double",
+      "calories": 340.0,
+      "protein": 9.0,
+      "carbs": 39.0,
+      "fat": 16.0
+    },
+    {
+      "id": "coffee-ice-dragon-soy-triple",
+      "name": "Coffee Ice Dragon - Soy",
+      "servingLabel": "Triple",
+      "calories": 410.0,
+      "protein": 11.0,
+      "carbs": 50.0,
+      "fat": 18.0
+    },
+    {
+      "id": "coffee-ice-dragon-soy-no-whip-double",
+      "name": "Coffee Ice Dragon - Soy No Whip",
+      "servingLabel": "Double",
+      "calories": 240.0,
+      "protein": 8.0,
+      "carbs": 36.0,
+      "fat": 7.0
+    },
+    {
+      "id": "coffee-ice-dragon-soy-no-whip-triple",
+      "name": "Coffee Ice Dragon - Soy No Whip",
+      "servingLabel": "Triple",
+      "calories": 310.0,
+      "protein": 10.0,
+      "carbs": 47.0,
+      "fat": 9.0
+    },
+    {
+      "id": "lemonade-freeze-double",
+      "name": "Lemonade Freeze",
+      "servingLabel": "Double",
+      "calories": 250.0,
+      "protein": 0.0,
+      "carbs": 69.0,
+      "fat": 0.0
+    },
+    {
+      "id": "lemonade-freeze-triple",
+      "name": "Lemonade Freeze",
+      "servingLabel": "Triple",
+      "calories": 360.0,
+      "protein": 0.0,
+      "carbs": 98.0,
+      "fat": 0.0
+    },
+    {
+      "id": "lychee-ice-dragon-double",
+      "name": "Lychee Ice Dragon",
+      "servingLabel": "Double",
+      "calories": 300.0,
+      "protein": 5.0,
+      "carbs": 64.0,
+      "fat": 3.0
+    },
+    {
+      "id": "lychee-ice-dragon-triple",
+      "name": "Lychee Ice Dragon",
+      "servingLabel": "Triple",
+      "calories": 370.0,
+      "protein": 7.0,
+      "carbs": 78.0,
+      "fat": 4.0
+    },
+    {
+      "id": "lychee-ice-dragon-almond-double",
+      "name": "Lychee Ice Dragon - Almond",
+      "servingLabel": "Double",
+      "calories": 270.0,
+      "protein": 0.0,
+      "carbs": 63.0,
+      "fat": 2.5
+    },
+    {
+      "id": "lychee-ice-dragon-almond-triple",
+      "name": "Lychee Ice Dragon - Almond",
+      "servingLabel": "Triple",
+      "calories": 330.0,
+      "protein": 1.0,
+      "carbs": 77.0,
+      "fat": 3.5
+    },
+    {
+      "id": "lychee-ice-dragon-skim-double",
+      "name": "Lychee Ice Dragon - Skim",
+      "servingLabel": "Double",
+      "calories": 270.0,
+      "protein": 5.0,
+      "carbs": 64.0,
+      "fat": 0.0
+    },
+    {
+      "id": "lychee-ice-dragon-skim-triple",
+      "name": "Lychee Ice Dragon - Skim",
+      "servingLabel": "Triple",
+      "calories": 340.0,
+      "protein": 7.0,
+      "carbs": 78.0,
+      "fat": 0.0
+    },
+    {
+      "id": "lychee-ice-dragon-soy-triple",
+      "name": "Lychee Ice Dragon - Soy",
+      "servingLabel": "Triple",
+      "calories": 360.0,
+      "protein": 7.0,
+      "carbs": 78.0,
+      "fat": 4.0
+    },
+    {
+      "id": "matcha-ice-dragon-double",
+      "name": "Matcha Ice Dragon",
+      "servingLabel": "Double",
+      "calories": 340.0,
+      "protein": 9.0,
+      "carbs": 42.0,
+      "fat": 15.0
+    },
+    {
+      "id": "matcha-ice-dragon-triple",
+      "name": "Matcha Ice Dragon",
+      "servingLabel": "Triple",
+      "calories": 460.0,
+      "protein": 13.0,
+      "carbs": 61.0,
+      "fat": 18.0
+    },
+    {
+      "id": "matcha-ice-dragon-almond-double",
+      "name": "Matcha Ice Dragon - Almond",
+      "servingLabel": "Double",
+      "calories": 320.0,
+      "protein": 5.0,
+      "carbs": 41.0,
+      "fat": 14.0
+    },
+    {
+      "id": "matcha-ice-dragon-almond-triple",
+      "name": "Matcha Ice Dragon - Almond",
+      "servingLabel": "Triple",
+      "calories": 420.0,
+      "protein": 7.0,
+      "carbs": 60.0,
+      "fat": 17.0
+    },
+    {
+      "id": "matcha-ice-dragon-almond-no-whip-double",
+      "name": "Matcha Ice Dragon - Almond No Whip",
+      "servingLabel": "Double",
+      "calories": 220.0,
+      "protein": 4.0,
+      "carbs": 37.0,
+      "fat": 5.0
+    },
+    {
+      "id": "matcha-ice-dragon-almond-no-whip-triple",
+      "name": "Matcha Ice Dragon - Almond No Whip",
+      "servingLabel": "Triple",
+      "calories": 320.0,
+      "protein": 6.0,
+      "carbs": 57.0,
+      "fat": 8.0
+    },
+    {
+      "id": "matcha-ice-dragon-no-whip-double",
+      "name": "Matcha Ice Dragon - No Whip",
+      "servingLabel": "Double",
+      "calories": 240.0,
+      "protein": 8.0,
+      "carbs": 39.0,
+      "fat": 6.0
+    },
+    {
+      "id": "matcha-ice-dragon-no-whip-triple",
+      "name": "Matcha Ice Dragon - No Whip",
+      "servingLabel": "Triple",
+      "calories": 360.0,
+      "protein": 12.0,
+      "carbs": 58.0,
+      "fat": 9.0
+    },
+    {
+      "id": "matcha-ice-dragon-skim-double",
+      "name": "Matcha Ice Dragon - Skim",
+      "servingLabel": "Double",
+      "calories": 320.0,
+      "protein": 9.0,
+      "carbs": 42.0,
+      "fat": 12.0
+    },
+    {
+      "id": "matcha-ice-dragon-skim-triple",
+      "name": "Matcha Ice Dragon - Skim",
+      "servingLabel": "Triple",
+      "calories": 430.0,
+      "protein": 13.0,
+      "carbs": 61.0,
+      "fat": 14.0
+    },
+    {
+      "id": "matcha-ice-dragon-soy-double",
+      "name": "Matcha Ice Dragon - Soy",
+      "servingLabel": "Double",
+      "calories": 330.0,
+      "protein": 9.0,
+      "carbs": 42.0,
+      "fat": 15.0
+    },
+    {
+      "id": "matcha-ice-dragon-soy-triple",
+      "name": "Matcha Ice Dragon - Soy",
+      "servingLabel": "Triple",
+      "calories": 450.0,
+      "protein": 13.0,
+      "carbs": 61.0,
+      "fat": 17.0
+    },
+    {
+      "id": "matcha-ice-dragon-soy-no-whip-double",
+      "name": "Matcha Ice Dragon - Soy No Whip",
+      "servingLabel": "Double",
+      "calories": 230.0,
+      "protein": 8.0,
+      "carbs": 39.0,
+      "fat": 6.0
+    },
+    {
+      "id": "matcha-ice-dragon-soy-no-whip-triple",
+      "name": "Matcha Ice Dragon - Soy No Whip",
+      "servingLabel": "Triple",
+      "calories": 350.0,
+      "protein": 12.0,
+      "carbs": 58.0,
+      "fat": 8.0
+    },
+    {
+      "id": "mocha-ice-dragon-double",
+      "name": "Mocha Ice Dragon",
+      "servingLabel": "Double",
+      "calories": 440.0,
+      "protein": 10.0,
+      "carbs": 64.0,
+      "fat": 17.0
+    },
+    {
+      "id": "mocha-ice-dragon-triple",
+      "name": "Mocha Ice Dragon",
+      "servingLabel": "Triple",
+      "calories": 570.0,
+      "protein": 13.0,
+      "carbs": 88.0,
+      "fat": 19.0
+    },
+    {
+      "id": "mocha-ice-dragon-almond-double",
+      "name": "Mocha Ice Dragon - Almond",
+      "servingLabel": "Double",
+      "calories": 420.0,
+      "protein": 6.0,
+      "carbs": 63.0,
+      "fat": 16.0
+    },
+    {
+      "id": "mocha-ice-dragon-almond-triple",
+      "name": "Mocha Ice Dragon - Almond",
+      "servingLabel": "Triple",
+      "calories": 540.0,
+      "protein": 8.0,
+      "carbs": 87.0,
+      "fat": 18.0
+    },
+    {
+      "id": "mocha-ice-dragon-almond-no-whip-double",
+      "name": "Mocha Ice Dragon - Almond No Whip",
+      "servingLabel": "Double",
+      "calories": 320.0,
+      "protein": 5.0,
+      "carbs": 60.0,
+      "fat": 7.0
+    },
+    {
+      "id": "mocha-ice-dragon-almond-no-whip-triple",
+      "name": "Mocha Ice Dragon - Almond No Whip",
+      "servingLabel": "Triple",
+      "calories": 440.0,
+      "protein": 7.0,
+      "carbs": 85.0,
+      "fat": 9.0
+    },
+    {
+      "id": "mocha-ice-dragon-no-whip-double",
+      "name": "Mocha Ice Dragon - No Whip",
+      "servingLabel": "Double",
+      "calories": 340.0,
+      "protein": 9.0,
+      "carbs": 61.0,
+      "fat": 8.0
+    },
+    {
+      "id": "mocha-ice-dragon-no-whip-triple",
+      "name": "Mocha Ice Dragon - No Whip",
+      "servingLabel": "Triple",
+      "calories": 470.0,
+      "protein": 12.0,
+      "carbs": 85.0,
+      "fat": 10.0
+    },
+    {
+      "id": "mocha-ice-dragon-skim-double",
+      "name": "Mocha Ice Dragon - Skim",
+      "servingLabel": "Double",
+      "calories": 420.0,
+      "protein": 10.0,
+      "carbs": 64.0,
+      "fat": 14.0
+    },
+    {
+      "id": "mocha-ice-dragon-skim-triple",
+      "name": "Mocha Ice Dragon - Skim",
+      "servingLabel": "Triple",
+      "calories": 540.0,
+      "protein": 13.0,
+      "carbs": 88.0,
+      "fat": 16.0
+    },
+    {
+      "id": "mocha-ice-dragon-soy-double",
+      "name": "Mocha Ice Dragon - Soy",
+      "servingLabel": "Double",
+      "calories": 440.0,
+      "protein": 10.0,
+      "carbs": 64.0,
+      "fat": 16.0
+    },
+    {
+      "id": "mocha-ice-dragon-soy-triple",
+      "name": "Mocha Ice Dragon - Soy",
+      "servingLabel": "Triple",
+      "calories": 560.0,
+      "protein": 13.0,
+      "carbs": 88.0,
+      "fat": 18.0
+    },
+    {
+      "id": "mocha-ice-dragon-soy-no-whip-double",
+      "name": "Mocha Ice Dragon - Soy No Whip",
+      "servingLabel": "Double",
+      "calories": 340.0,
+      "protein": 9.0,
+      "carbs": 61.0,
+      "fat": 7.0
+    },
+    {
+      "id": "mocha-ice-dragon-soy-no-whip-triple",
+      "name": "Mocha Ice Dragon - Soy No Whip",
+      "servingLabel": "Triple",
+      "calories": 460.0,
+      "protein": 12.0,
+      "carbs": 85.0,
+      "fat": 9.0
+    },
+    {
+      "id": "strawberry-bliss-double",
+      "name": "Strawberry Bliss",
+      "servingLabel": "Double",
+      "calories": 240.0,
+      "protein": 6.0,
+      "carbs": 46.0,
+      "fat": 4.0
+    },
+    {
+      "id": "strawberry-bliss-triple",
+      "name": "Strawberry Bliss",
+      "servingLabel": "Triple",
+      "calories": 410.0,
+      "protein": 10.0,
+      "carbs": 75.0,
+      "fat": 8.0
+    },
+    {
+      "id": "strawberry-lemon-freeze-double",
+      "name": "Strawberry Lemon Freeze",
+      "servingLabel": "Double",
+      "calories": 280.0,
+      "protein": 0.0,
+      "carbs": 76.0,
+      "fat": 0.0
+    },
+    {
+      "id": "strawberry-lemon-freeze-triple",
+      "name": "Strawberry Lemon Freeze",
+      "servingLabel": "Triple",
+      "calories": 400.0,
+      "protein": 1.0,
+      "carbs": 108.0,
+      "fat": 0.0
+    },
+    {
+      "id": "caramel-steamer-single",
+      "name": "Caramel Steamer",
+      "servingLabel": "Single",
+      "calories": 180.0,
+      "protein": 8.0,
+      "carbs": 25.0,
+      "fat": 5.0
+    },
+    {
+      "id": "caramel-steamer-double",
+      "name": "Caramel Steamer",
+      "servingLabel": "Double",
+      "calories": 300.0,
+      "protein": 12.0,
+      "carbs": 45.0,
+      "fat": 8.0
+    },
+    {
+      "id": "caramel-steamer-triple",
+      "name": "Caramel Steamer",
+      "servingLabel": "Triple",
+      "calories": 420.0,
+      "protein": 16.0,
+      "carbs": 65.0,
+      "fat": 11.0
+    },
+    {
+      "id": "caramel-steamer-almond-single",
+      "name": "Caramel Steamer - Almond",
+      "servingLabel": "Single",
+      "calories": 130.0,
+      "protein": 1.0,
+      "carbs": 23.0,
+      "fat": 4.5
+    },
+    {
+      "id": "caramel-steamer-almond-double",
+      "name": "Caramel Steamer - Almond",
+      "servingLabel": "Double",
+      "calories": 230.0,
+      "protein": 1.0,
+      "carbs": 42.0,
+      "fat": 7.0
+    },
+    {
+      "id": "caramel-steamer-almond-triple",
+      "name": "Caramel Steamer - Almond",
+      "servingLabel": "Triple",
+      "calories": 320.0,
+      "protein": 2.0,
+      "carbs": 61.0,
+      "fat": 9.0
+    },
+    {
+      "id": "caramel-steamer-skim-single",
+      "name": "Caramel Steamer - Skim",
+      "servingLabel": "Single",
+      "calories": 140.0,
+      "protein": 8.0,
+      "carbs": 25.0,
+      "fat": 0.0
+    },
+    {
+      "id": "caramel-steamer-skim-double",
+      "name": "Caramel Steamer - Skim",
+      "servingLabel": "Double",
+      "calories": 240.0,
+      "protein": 12.0,
+      "carbs": 45.0,
+      "fat": 1.0
+    },
+    {
+      "id": "caramel-steamer-skim-triple",
+      "name": "Caramel Steamer - Skim",
+      "servingLabel": "Triple",
+      "calories": 340.0,
+      "protein": 16.0,
+      "carbs": 65.0,
+      "fat": 1.0
+    },
+    {
+      "id": "caramel-steamer-soy-single",
+      "name": "Caramel Steamer - Soy",
+      "servingLabel": "Single",
+      "calories": 170.0,
+      "protein": 8.0,
+      "carbs": 25.0,
+      "fat": 5.0
+    },
+    {
+      "id": "caramel-steamer-soy-double",
+      "name": "Caramel Steamer - Soy",
+      "servingLabel": "Double",
+      "calories": 280.0,
+      "protein": 12.0,
+      "carbs": 45.0,
+      "fat": 8.0
+    },
+    {
+      "id": "caramel-steamer-soy-triple",
+      "name": "Caramel Steamer - Soy",
+      "servingLabel": "Triple",
+      "calories": 400.0,
+      "protein": 16.0,
+      "carbs": 65.0,
+      "fat": 10.0
+    },
+    {
+      "id": "ginger-fizz-triple",
+      "name": "Ginger Fizz",
+      "servingLabel": "Triple",
+      "calories": 180.0,
+      "protein": 0.0,
+      "carbs": 44.0,
+      "fat": 0.0
+    },
+    {
+      "id": "hot-chocolate-single",
+      "name": "Hot Chocolate",
+      "servingLabel": "Single",
+      "calories": 290.0,
+      "protein": 9.0,
+      "carbs": 33.0,
+      "fat": 15.0
+    },
+    {
+      "id": "hot-chocolate-double",
+      "name": "Hot Chocolate",
+      "servingLabel": "Double",
+      "calories": 380.0,
+      "protein": 14.0,
+      "carbs": 44.0,
+      "fat": 17.0
+    },
+    {
+      "id": "hot-chocolate-triple",
+      "name": "Hot Chocolate",
+      "servingLabel": "Triple",
+      "calories": 490.0,
+      "protein": 18.0,
+      "carbs": 62.0,
+      "fat": 20.0
+    },
+    {
+      "id": "hot-chocolate-almond-single",
+      "name": "Hot Chocolate - Almond",
+      "servingLabel": "Single",
+      "calories": 250.0,
+      "protein": 2.0,
+      "carbs": 31.0,
+      "fat": 14.0
+    },
+    {
+      "id": "hot-chocolate-almond-double",
+      "name": "Hot Chocolate - Almond",
+      "servingLabel": "Double",
+      "calories": 310.0,
+      "protein": 3.0,
+      "carbs": 41.0,
+      "fat": 16.0
+    },
+    {
+      "id": "hot-chocolate-almond-triple",
+      "name": "Hot Chocolate - Almond",
+      "servingLabel": "Triple",
+      "calories": 390.0,
+      "protein": 4.0,
+      "carbs": 58.0,
+      "fat": 18.0
+    },
+    {
+      "id": "hot-chocolate-almond-no-whip-single",
+      "name": "Hot Chocolate - Almond No Whip",
+      "servingLabel": "Single",
+      "calories": 150.0,
+      "protein": 1.0,
+      "carbs": 28.0,
+      "fat": 5.0
+    },
+    {
+      "id": "hot-chocolate-almond-no-whip-double",
+      "name": "Hot Chocolate - Almond No Whip",
+      "servingLabel": "Double",
+      "calories": 210.0,
+      "protein": 2.0,
+      "carbs": 38.0,
+      "fat": 7.0
+    },
+    {
+      "id": "hot-chocolate-almond-no-whip-triple",
+      "name": "Hot Chocolate - Almond No Whip",
+      "servingLabel": "Triple",
+      "calories": 290.0,
+      "protein": 3.0,
+      "carbs": 55.0,
+      "fat": 9.0
+    },
+    {
+      "id": "hot-chocolate-no-whip-single",
+      "name": "Hot Chocolate - No Whip",
+      "servingLabel": "Single",
+      "calories": 190.0,
+      "protein": 8.0,
+      "carbs": 30.0,
+      "fat": 6.0
+    },
+    {
+      "id": "hot-chocolate-no-whip-double",
+      "name": "Hot Chocolate - No Whip",
+      "servingLabel": "Double",
+      "calories": 280.0,
+      "protein": 13.0,
+      "carbs": 41.0,
+      "fat": 8.0
+    },
+    {
+      "id": "hot-chocolate-no-whip-triple",
+      "name": "Hot Chocolate - No Whip",
+      "servingLabel": "Triple",
+      "calories": 390.0,
+      "protein": 17.0,
+      "carbs": 59.0,
+      "fat": 11.0
+    },
+    {
+      "id": "hot-chocolate-skim-single",
+      "name": "Hot Chocolate - Skim",
+      "servingLabel": "Single",
+      "calories": 250.0,
+      "protein": 9.0,
+      "carbs": 33.0,
+      "fat": 10.0
+    },
+    {
+      "id": "hot-chocolate-skim-double",
+      "name": "Hot Chocolate - Skim",
+      "servingLabel": "Double",
+      "calories": 320.0,
+      "protein": 14.0,
+      "carbs": 44.0,
+      "fat": 10.0
+    },
+    {
+      "id": "hot-chocolate-skim-triple",
+      "name": "Hot Chocolate - Skim",
+      "servingLabel": "Triple",
+      "calories": 410.0,
+      "protein": 18.0,
+      "carbs": 62.0,
+      "fat": 10.0
+    },
+    {
+      "id": "hot-chocolate-soy-single",
+      "name": "Hot Chocolate - Soy",
+      "servingLabel": "Single",
+      "calories": 280.0,
+      "protein": 10.0,
+      "carbs": 33.0,
+      "fat": 14.0
+    },
+    {
+      "id": "hot-chocolate-soy-double",
+      "name": "Hot Chocolate - Soy",
+      "servingLabel": "Double",
+      "calories": 360.0,
+      "protein": 14.0,
+      "carbs": 44.0,
+      "fat": 17.0
+    },
+    {
+      "id": "hot-chocolate-soy-triple",
+      "name": "Hot Chocolate - Soy",
+      "servingLabel": "Triple",
+      "calories": 470.0,
+      "protein": 18.0,
+      "carbs": 62.0,
+      "fat": 19.0
+    },
+    {
+      "id": "hot-chocolate-soy-no-whip-single",
+      "name": "Hot Chocolate - Soy No Whip",
+      "servingLabel": "Single",
+      "calories": 180.0,
+      "protein": 9.0,
+      "carbs": 30.0,
+      "fat": 5.0
+    },
+    {
+      "id": "hot-chocolate-soy-no-whip-double",
+      "name": "Hot Chocolate - Soy No Whip",
+      "servingLabel": "Double",
+      "calories": 260.0,
+      "protein": 13.0,
+      "carbs": 41.0,
+      "fat": 8.0
+    },
+    {
+      "id": "hot-chocolate-soy-no-whip-triple",
+      "name": "Hot Chocolate - Soy No Whip",
+      "servingLabel": "Triple",
+      "calories": 370.0,
+      "protein": 17.0,
+      "carbs": 59.0,
+      "fat": 10.0
+    },
+    {
+      "id": "iced-tea-lemonade-triple",
+      "name": "Iced Tea Lemonade",
+      "servingLabel": "Triple",
+      "calories": 90.0,
+      "protein": 0.0,
+      "carbs": 25.0,
+      "fat": 0.0
+    },
+    {
+      "id": "italian-soda-triple",
+      "name": "Italian Soda",
+      "servingLabel": "Triple",
+      "calories": 150.0,
+      "protein": 0.0,
+      "carbs": 40.0,
+      "fat": 0.0
+    },
+    {
+      "id": "jade-matcha-lemonade-triple",
+      "name": "Jade Matcha Lemonade",
+      "servingLabel": "Triple",
+      "calories": 170.0,
+      "protein": 1.0,
+      "carbs": 45.0,
+      "fat": 0.0
+    },
+    {
+      "id": "lemonade-triple",
+      "name": "Lemonade",
+      "servingLabel": "Triple",
+      "calories": 180.0,
+      "protein": 0.0,
+      "carbs": 50.0,
+      "fat": 0.0
+    },
+    {
+      "id": "passion-berry-lemonade-triple",
+      "name": "Passion Berry Lemonade",
+      "servingLabel": "Triple",
+      "calories": 180.0,
+      "protein": 0.0,
+      "carbs": 48.0,
+      "fat": 0.0
+    },
+    {
+      "id": "poured-milk-single",
+      "name": "Poured milk",
+      "servingLabel": "Single",
+      "calories": 180.0,
+      "protein": 12.0,
+      "carbs": 16.0,
+      "fat": 7.0
+    },
+    {
+      "id": "poured-milk-double",
+      "name": "Poured milk",
+      "servingLabel": "Double",
+      "calories": 240.0,
+      "protein": 16.0,
+      "carbs": 22.0,
+      "fat": 10.0
+    },
+    {
+      "id": "poured-milk-triple",
+      "name": "Poured milk",
+      "servingLabel": "Triple",
+      "calories": 300.0,
+      "protein": 20.0,
+      "carbs": 27.0,
+      "fat": 12.0
+    },
+    {
+      "id": "poured-milk-almond-single",
+      "name": "Poured milk - Almond",
+      "servingLabel": "Single",
+      "calories": 100.0,
+      "protein": 1.0,
+      "carbs": 13.0,
+      "fat": 6.0
+    },
+    {
+      "id": "poured-milk-almond-double",
+      "name": "Poured milk - Almond",
+      "servingLabel": "Double",
+      "calories": 140.0,
+      "protein": 2.0,
+      "carbs": 18.0,
+      "fat": 8.0
+    },
+    {
+      "id": "poured-milk-almond-triple",
+      "name": "Poured milk - Almond",
+      "servingLabel": "Triple",
+      "calories": 180.0,
+      "protein": 2.0,
+      "carbs": 22.0,
+      "fat": 10.0
+    },
+    {
+      "id": "poured-milk-skim-single",
+      "name": "Poured milk - Skim",
+      "servingLabel": "Single",
+      "calories": 120.0,
+      "protein": 12.0,
+      "carbs": 16.0,
+      "fat": 0.0
+    },
+    {
+      "id": "poured-milk-skim-double",
+      "name": "Poured milk - Skim",
+      "servingLabel": "Double",
+      "calories": 160.0,
+      "protein": 13.0,
+      "carbs": 22.0,
+      "fat": 0.0
+    },
+    {
+      "id": "poured-milk-skim-triple",
+      "name": "Poured milk - Skim",
+      "servingLabel": "Triple",
+      "calories": 200.0,
+      "protein": 20.0,
+      "carbs": 27.0,
+      "fat": 0.0
+    },
+    {
+      "id": "poured-milk-soy-single",
+      "name": "Poured milk - Soy",
+      "servingLabel": "Single",
+      "calories": 160.0,
+      "protein": 12.0,
+      "carbs": 16.0,
+      "fat": 7.0
+    },
+    {
+      "id": "poured-milk-soy-double",
+      "name": "Poured milk - Soy",
+      "servingLabel": "Double",
+      "calories": 220.0,
+      "protein": 16.0,
+      "carbs": 22.0,
+      "fat": 9.0
+    },
+    {
+      "id": "poured-milk-soy-triple",
+      "name": "Poured milk - Soy",
+      "servingLabel": "Triple",
+      "calories": 270.0,
+      "protein": 20.0,
+      "carbs": 27.0,
+      "fat": 11.0
+    },
+    {
+      "id": "pup-cup-single",
+      "name": "Pup Cup",
+      "servingLabel": "Single",
+      "calories": 100.0,
+      "protein": 1.0,
+      "carbs": 3.0,
+      "fat": 9.0
+    },
+    {
+      "id": "summer-strawberry-lemonade-triple",
+      "name": "Summer Strawberry Lemonade",
+      "servingLabel": "Triple",
+      "calories": 180.0,
+      "protein": 0.0,
+      "carbs": 48.0,
+      "fat": 0.0
+    },
+    {
+      "id": "super-green-triple",
+      "name": "Super Green",
+      "servingLabel": "Triple",
+      "calories": 120.0,
+      "protein": 1.0,
+      "carbs": 31.0,
+      "fat": 0.0
+    },
+    {
+      "id": "vanilla-steamer-single",
+      "name": "Vanilla Steamer",
+      "servingLabel": "Single",
+      "calories": 160.0,
+      "protein": 8.0,
+      "carbs": 22.0,
+      "fat": 5.0
+    },
+    {
+      "id": "vanilla-steamer-double",
+      "name": "Vanilla Steamer",
+      "servingLabel": "Double",
+      "calories": 250.0,
+      "protein": 12.0,
+      "carbs": 33.0,
+      "fat": 7.0
+    },
+    {
+      "id": "vanilla-steamer-triple",
+      "name": "Vanilla Steamer",
+      "servingLabel": "Triple",
+      "calories": 330.0,
+      "protein": 16.0,
+      "carbs": 45.0,
+      "fat": 10.0
+    },
+    {
+      "id": "vanilla-steamer-almond-single",
+      "name": "Vanilla Steamer - Almond",
+      "servingLabel": "Single",
+      "calories": 120.0,
+      "protein": 1.0,
+      "carbs": 20.0,
+      "fat": 4.0
+    },
+    {
+      "id": "vanilla-steamer-almond-double",
+      "name": "Vanilla Steamer - Almond",
+      "servingLabel": "Double",
+      "calories": 170.0,
+      "protein": 1.0,
+      "carbs": 30.0,
+      "fat": 6.0
+    },
+    {
+      "id": "vanilla-steamer-almond-triple",
+      "name": "Vanilla Steamer - Almond",
+      "servingLabel": "Triple",
+      "calories": 230.0,
+      "protein": 2.0,
+      "carbs": 41.0,
+      "fat": 8.0
+    },
+    {
+      "id": "vanilla-steamer-skim-single",
+      "name": "Vanilla Steamer - Skim",
+      "servingLabel": "Single",
+      "calories": 120.0,
+      "protein": 8.0,
+      "carbs": 22.0,
+      "fat": 0.0
+    },
+    {
+      "id": "vanilla-steamer-skim-double",
+      "name": "Vanilla Steamer - Skim",
+      "servingLabel": "Double",
+      "calories": 180.0,
+      "protein": 12.0,
+      "carbs": 33.0,
+      "fat": 0.0
+    },
+    {
+      "id": "vanilla-steamer-skim-triple",
+      "name": "Vanilla Steamer - Skim",
+      "servingLabel": "Triple",
+      "calories": 250.0,
+      "protein": 16.0,
+      "carbs": 45.0,
+      "fat": 0.0
+    },
+    {
+      "id": "vanilla-steamer-soy-single",
+      "name": "Vanilla Steamer - Soy",
+      "servingLabel": "Single",
+      "calories": 150.0,
+      "protein": 8.0,
+      "carbs": 22.0,
+      "fat": 4.0
+    },
+    {
+      "id": "vanilla-steamer-soy-double",
+      "name": "Vanilla Steamer - Soy",
+      "servingLabel": "Double",
+      "calories": 230.0,
+      "protein": 12.0,
+      "carbs": 33.0,
+      "fat": 7.0
+    },
+    {
+      "id": "vanilla-steamer-soy-triple",
+      "name": "Vanilla Steamer - Soy",
+      "servingLabel": "Triple",
+      "calories": 310.0,
+      "protein": 16.0,
+      "carbs": 45.0,
+      "fat": 9.0
+    },
+    {
+      "id": "white-hot-chocolate-single",
+      "name": "White Hot Chocolate",
+      "servingLabel": "Single",
+      "calories": 270.0,
+      "protein": 9.0,
+      "carbs": 26.0,
+      "fat": 15.0
+    },
+    {
+      "id": "white-hot-chocolate-double",
+      "name": "White Hot Chocolate",
+      "servingLabel": "Double",
+      "calories": 380.0,
+      "protein": 14.0,
+      "carbs": 43.0,
+      "fat": 17.0
+    },
+    {
+      "id": "white-hot-chocolate-triple",
+      "name": "White Hot Chocolate",
+      "servingLabel": "Triple",
+      "calories": 490.0,
+      "protein": 18.0,
+      "carbs": 61.0,
+      "fat": 20.0
+    },
+    {
+      "id": "white-hot-chocolate-almond-single",
+      "name": "White Hot Chocolate - Almond",
+      "servingLabel": "Single",
+      "calories": 220.0,
+      "protein": 2.0,
+      "carbs": 24.0,
+      "fat": 14.0
+    },
+    {
+      "id": "white-hot-chocolate-almond-double",
+      "name": "White Hot Chocolate - Almond",
+      "servingLabel": "Double",
+      "calories": 310.0,
+      "protein": 3.0,
+      "carbs": 40.0,
+      "fat": 16.0
+    },
+    {
+      "id": "white-hot-chocolate-almond-triple",
+      "name": "White Hot Chocolate - Almond",
+      "servingLabel": "Triple",
+      "calories": 390.0,
+      "protein": 4.0,
+      "carbs": 57.0,
+      "fat": 18.0
+    },
+    {
+      "id": "white-hot-chocolate-almond-no-whip-single",
+      "name": "White Hot Chocolate - Almond No Whip",
+      "servingLabel": "Single",
+      "calories": 120.0,
+      "protein": 1.0,
+      "carbs": 21.0,
+      "fat": 5.0
+    },
+    {
+      "id": "white-hot-chocolate-almond-no-whip-double",
+      "name": "White Hot Chocolate - Almond No Whip",
+      "servingLabel": "Double",
+      "calories": 210.0,
+      "protein": 2.0,
+      "carbs": 37.0,
+      "fat": 7.0
+    },
+    {
+      "id": "white-hot-chocolate-almond-no-whip-triple",
+      "name": "White Hot Chocolate - Almond No Whip",
+      "servingLabel": "Triple",
+      "calories": 290.0,
+      "protein": 3.0,
+      "carbs": 54.0,
+      "fat": 9.0
+    },
+    {
+      "id": "white-hot-chocolate-no-whip-single",
+      "name": "White Hot Chocolate - No Whip",
+      "servingLabel": "Single",
+      "calories": 170.0,
+      "protein": 8.0,
+      "carbs": 23.0,
+      "fat": 6.0
+    },
+    {
+      "id": "white-hot-chocolate-no-whip-double",
+      "name": "White Hot Chocolate - No Whip",
+      "servingLabel": "Double",
+      "calories": 280.0,
+      "protein": 13.0,
+      "carbs": 40.0,
+      "fat": 8.0
+    },
+    {
+      "id": "white-hot-chocolate-no-whip-triple",
+      "name": "White Hot Chocolate - No Whip",
+      "servingLabel": "Triple",
+      "calories": 390.0,
+      "protein": 17.0,
+      "carbs": 58.0,
+      "fat": 11.0
+    },
+    {
+      "id": "white-hot-chocolate-skim-single",
+      "name": "White Hot Chocolate - Skim",
+      "servingLabel": "Single",
+      "calories": 230.0,
+      "protein": 9.0,
+      "carbs": 26.0,
+      "fat": 10.0
+    },
+    {
+      "id": "white-hot-chocolate-skim-double",
+      "name": "White Hot Chocolate - Skim",
+      "servingLabel": "Double",
+      "calories": 320.0,
+      "protein": 14.0,
+      "carbs": 43.0,
+      "fat": 10.0
+    },
+    {
+      "id": "white-hot-chocolate-skim-triple",
+      "name": "White Hot Chocolate - Skim",
+      "servingLabel": "Triple",
+      "calories": 410.0,
+      "protein": 18.0,
+      "carbs": 61.0,
+      "fat": 10.0
+    },
+    {
+      "id": "white-hot-chocolate-soy-single",
+      "name": "White Hot Chocolate - Soy",
+      "servingLabel": "Single",
+      "calories": 260.0,
+      "protein": 9.0,
+      "carbs": 26.0,
+      "fat": 14.0
+    },
+    {
+      "id": "white-hot-chocolate-soy-double",
+      "name": "White Hot Chocolate - Soy",
+      "servingLabel": "Double",
+      "calories": 360.0,
+      "protein": 14.0,
+      "carbs": 43.0,
+      "fat": 17.0
+    },
+    {
+      "id": "white-hot-chocolate-soy-triple",
+      "name": "White Hot Chocolate - Soy",
+      "servingLabel": "Triple",
+      "calories": 470.0,
+      "protein": 18.0,
+      "carbs": 61.0,
+      "fat": 19.0
+    },
+    {
+      "id": "white-hot-chocolate-soy-no-whip-single",
+      "name": "White Hot Chocolate - Soy No Whip",
+      "servingLabel": "Single",
+      "calories": 160.0,
+      "protein": 8.0,
+      "carbs": 23.0,
+      "fat": 5.0
+    },
+    {
+      "id": "white-hot-chocolate-soy-no-whip-double",
+      "name": "White Hot Chocolate - Soy No Whip",
+      "servingLabel": "Double",
+      "calories": 260.0,
+      "protein": 13.0,
+      "carbs": 40.0,
+      "fat": 8.0
+    },
+    {
+      "id": "white-hot-chocolate-soy-no-whip-triple",
+      "name": "White Hot Chocolate - Soy No Whip",
+      "servingLabel": "Triple",
+      "calories": 370.0,
+      "protein": 17.0,
+      "carbs": 58.0,
+      "fat": 10.0
+    },
+    {
+      "id": "candy-cane-cocoa-single",
+      "name": "Candy Cane Cocoa",
+      "servingLabel": "Single",
+      "calories": 270.0,
+      "protein": 9.0,
+      "carbs": 26.0,
+      "fat": 14.0
+    },
+    {
+      "id": "candy-cane-cocoa-double",
+      "name": "Candy Cane Cocoa",
+      "servingLabel": "Double",
+      "calories": 350.0,
+      "protein": 14.0,
+      "carbs": 37.0,
+      "fat": 17.0
+    },
+    {
+      "id": "candy-cane-cocoa-triple",
+      "name": "Candy Cane Cocoa",
+      "servingLabel": "Triple",
+      "calories": 440.0,
+      "protein": 18.0,
+      "carbs": 49.0,
+      "fat": 19.0
+    },
+    {
+      "id": "candy-cane-cocoa-almond-single",
+      "name": "Candy Cane Cocoa - Almond",
+      "servingLabel": "Single",
+      "calories": 220.0,
+      "protein": 2.0,
+      "carbs": 24.0,
+      "fat": 13.0
+    },
+    {
+      "id": "candy-cane-cocoa-almond-double",
+      "name": "Candy Cane Cocoa - Almond",
+      "servingLabel": "Double",
+      "calories": 280.0,
+      "protein": 3.0,
+      "carbs": 34.0,
+      "fat": 15.0
+    },
+    {
+      "id": "candy-cane-cocoa-almond-triple",
+      "name": "Candy Cane Cocoa - Almond",
+      "servingLabel": "Triple",
+      "calories": 340.0,
+      "protein": 4.0,
+      "carbs": 45.0,
+      "fat": 17.0
+    },
+    {
+      "id": "candy-cane-cocoa-almond-no-whip-single",
+      "name": "Candy Cane Cocoa - Almond No Whip",
+      "servingLabel": "Single",
+      "calories": 120.0,
+      "protein": 1.0,
+      "carbs": 21.0,
+      "fat": 4.0
+    },
+    {
+      "id": "candy-cane-cocoa-almond-no-whip-double",
+      "name": "Candy Cane Cocoa - Almond No Whip",
+      "servingLabel": "Double",
+      "calories": 180.0,
+      "protein": 2.0,
+      "carbs": 31.0,
+      "fat": 6.0
+    },
+    {
+      "id": "candy-cane-cocoa-almond-no-whip-triple",
+      "name": "Candy Cane Cocoa - Almond No Whip",
+      "servingLabel": "Triple",
+      "calories": 240.0,
+      "protein": 3.0,
+      "carbs": 42.0,
+      "fat": 8.0
+    },
+    {
+      "id": "candy-cane-cocoa-no-whip-single",
+      "name": "Candy Cane Cocoa - No Whip",
+      "servingLabel": "Single",
+      "calories": 170.0,
+      "protein": 8.0,
+      "carbs": 23.0,
+      "fat": 5.0
+    },
+    {
+      "id": "candy-cane-cocoa-no-whip-double",
+      "name": "Candy Cane Cocoa - No Whip",
+      "servingLabel": "Double",
+      "calories": 260.0,
+      "protein": 13.0,
+      "carbs": 34.0,
+      "fat": 8.0
+    },
+    {
+      "id": "candy-cane-cocoa-no-whip-triple",
+      "name": "Candy Cane Cocoa - No Whip",
+      "servingLabel": "Triple",
+      "calories": 340.0,
+      "protein": 17.0,
+      "carbs": 46.0,
+      "fat": 10.0
+    },
+    {
+      "id": "candy-cane-cocoa-skim-single",
+      "name": "Candy Cane Cocoa - Skim",
+      "servingLabel": "Single",
+      "calories": 230.0,
+      "protein": 9.0,
+      "carbs": 26.0,
+      "fat": 10.0
+    },
+    {
+      "id": "candy-cane-cocoa-skim-double",
+      "name": "Candy Cane Cocoa - Skim",
+      "servingLabel": "Double",
+      "calories": 290.0,
+      "protein": 13.0,
+      "carbs": 37.0,
+      "fat": 10.0
+    },
+    {
+      "id": "candy-cane-cocoa-skim-triple",
+      "name": "Candy Cane Cocoa - Skim",
+      "servingLabel": "Triple",
+      "calories": 360.0,
+      "protein": 18.0,
+      "carbs": 49.0,
+      "fat": 10.0
+    },
+    {
+      "id": "candy-cane-cocoa-soy-single",
+      "name": "Candy Cane Cocoa - Soy",
+      "servingLabel": "Single",
+      "calories": 260.0,
+      "protein": 9.0,
+      "carbs": 26.0,
+      "fat": 14.0
+    },
+    {
+      "id": "candy-cane-cocoa-soy-double",
+      "name": "Candy Cane Cocoa - Soy",
+      "servingLabel": "Double",
+      "calories": 340.0,
+      "protein": 14.0,
+      "carbs": 37.0,
+      "fat": 16.0
+    },
+    {
+      "id": "candy-cane-cocoa-soy-triple",
+      "name": "Candy Cane Cocoa - Soy",
+      "servingLabel": "Triple",
+      "calories": 420.0,
+      "protein": 18.0,
+      "carbs": 49.0,
+      "fat": 18.0
+    },
+    {
+      "id": "candy-cane-cocoa-soy-no-whip-single",
+      "name": "Candy Cane Cocoa - Soy No Whip",
+      "servingLabel": "Single",
+      "calories": 160.0,
+      "protein": 8.0,
+      "carbs": 23.0,
+      "fat": 5.0
+    },
+    {
+      "id": "candy-cane-cocoa-soy-no-whip-double",
+      "name": "Candy Cane Cocoa - Soy No Whip",
+      "servingLabel": "Double",
+      "calories": 240.0,
+      "protein": 13.0,
+      "carbs": 34.0,
+      "fat": 7.0
+    },
+    {
+      "id": "candy-cane-cocoa-soy-no-whip-triple",
+      "name": "Candy Cane Cocoa - Soy No Whip",
+      "servingLabel": "Triple",
+      "calories": 320.0,
+      "protein": 17.0,
+      "carbs": 46.0,
+      "fat": 9.0
+    },
+    {
+      "id": "cider-single",
+      "name": "Cider",
+      "servingLabel": "Single",
+      "calories": 180.0,
+      "protein": 0.0,
+      "carbs": 45.0,
+      "fat": 0.0
+    },
+    {
+      "id": "cider-double",
+      "name": "Cider",
+      "servingLabel": "Double",
+      "calories": 240.0,
+      "protein": 0.0,
+      "carbs": 60.0,
+      "fat": 0.0
+    },
+    {
+      "id": "cider-triple",
+      "name": "Cider",
+      "servingLabel": "Triple",
+      "calories": 300.0,
+      "protein": 0.0,
+      "carbs": 75.0,
+      "fat": 0.0
+    },
+    {
+      "id": "great-pumpkin-latte-single",
+      "name": "Great Pumpkin Latte",
+      "servingLabel": "Single",
+      "calories": 330.0,
+      "protein": 9.0,
+      "carbs": 44.0,
+      "fat": 14.0
+    },
+    {
+      "id": "great-pumpkin-latte-double",
+      "name": "Great Pumpkin Latte",
+      "servingLabel": "Double",
+      "calories": 460.0,
+      "protein": 12.0,
+      "carbs": 71.0,
+      "fat": 16.0
+    },
+    {
+      "id": "great-pumpkin-latte-triple",
+      "name": "Great Pumpkin Latte",
+      "servingLabel": "Triple",
+      "calories": 560.0,
+      "protein": 14.0,
+      "carbs": 91.0,
+      "fat": 17.0
+    },
+    {
+      "id": "great-pumpkin-latte-almond-single",
+      "name": "Great Pumpkin Latte - Almond",
+      "servingLabel": "Single",
+      "calories": 290.0,
+      "protein": 3.0,
+      "carbs": 42.0,
+      "fat": 13.0
+    },
+    {
+      "id": "great-pumpkin-latte-almond-double",
+      "name": "Great Pumpkin Latte - Almond",
+      "servingLabel": "Double",
+      "calories": 400.0,
+      "protein": 4.0,
+      "carbs": 68.0,
+      "fat": 14.0
+    },
+    {
+      "id": "great-pumpkin-latte-almond-triple",
+      "name": "Great Pumpkin Latte - Almond",
+      "servingLabel": "Triple",
+      "calories": 490.0,
+      "protein": 4.0,
+      "carbs": 88.0,
+      "fat": 15.0
+    },
+    {
+      "id": "great-pumpkin-latte-almond-no-whip-single",
+      "name": "Great Pumpkin Latte - Almond No Whip",
+      "servingLabel": "Single",
+      "calories": 190.0,
+      "protein": 2.0,
+      "carbs": 39.0,
+      "fat": 4.0
+    },
+    {
+      "id": "great-pumpkin-latte-almond-no-whip-double",
+      "name": "Great Pumpkin Latte - Almond No Whip",
+      "servingLabel": "Double",
+      "calories": 300.0,
+      "protein": 3.0,
+      "carbs": 65.0,
+      "fat": 5.0
+    },
+    {
+      "id": "great-pumpkin-latte-almond-no-whip-triple",
+      "name": "Great Pumpkin Latte - Almond No Whip",
+      "servingLabel": "Triple",
+      "calories": 390.0,
+      "protein": 3.0,
+      "carbs": 85.0,
+      "fat": 6.0
+    },
+    {
+      "id": "great-pumpkin-latte-no-whip-single",
+      "name": "Great Pumpkin Latte - No Whip",
+      "servingLabel": "Single",
+      "calories": 230.0,
+      "protein": 8.0,
+      "carbs": 41.0,
+      "fat": 5.0
+    },
+    {
+      "id": "great-pumpkin-latte-no-whip-double",
+      "name": "Great Pumpkin Latte - No Whip",
+      "servingLabel": "Double",
+      "calories": 360.0,
+      "protein": 11.0,
+      "carbs": 68.0,
+      "fat": 7.0
+    },
+    {
+      "id": "great-pumpkin-latte-no-whip-triple",
+      "name": "Great Pumpkin Latte - No Whip",
+      "servingLabel": "Triple",
+      "calories": 460.0,
+      "protein": 13.0,
+      "carbs": 88.0,
+      "fat": 8.0
+    },
+    {
+      "id": "great-pumpkin-latte-skim-single",
+      "name": "Great Pumpkin Latte - Skim",
+      "servingLabel": "Single",
+      "calories": 300.0,
+      "protein": 9.0,
+      "carbs": 44.0,
+      "fat": 10.0
+    },
+    {
+      "id": "great-pumpkin-latte-skim-double",
+      "name": "Great Pumpkin Latte - Skim",
+      "servingLabel": "Double",
+      "calories": 410.0,
+      "protein": 12.0,
+      "carbs": 71.0,
+      "fat": 10.0
+    },
+    {
+      "id": "great-pumpkin-latte-skim-triple",
+      "name": "Great Pumpkin Latte - Skim",
+      "servingLabel": "Triple",
+      "calories": 500.0,
+      "protein": 14.0,
+      "carbs": 91.0,
+      "fat": 10.0
+    },
+    {
+      "id": "great-pumpkin-latte-soy-single",
+      "name": "Great Pumpkin Latte - Soy",
+      "servingLabel": "Single",
+      "calories": 320.0,
+      "protein": 9.0,
+      "carbs": 44.0,
+      "fat": 14.0
+    },
+    {
+      "id": "great-pumpkin-latte-soy-double",
+      "name": "Great Pumpkin Latte - Soy",
+      "servingLabel": "Double",
+      "calories": 450.0,
+      "protein": 12.0,
+      "carbs": 71.0,
+      "fat": 15.0
+    },
+    {
+      "id": "great-pumpkin-latte-soy-triple",
+      "name": "Great Pumpkin Latte - Soy",
+      "servingLabel": "Triple",
+      "calories": 540.0,
+      "protein": 14.0,
+      "carbs": 91.0,
+      "fat": 16.0
+    },
+    {
+      "id": "great-pumpkin-latte-soy-no-whip-single",
+      "name": "Great Pumpkin Latte - Soy No Whip",
+      "servingLabel": "Single",
+      "calories": 220.0,
+      "protein": 8.0,
+      "carbs": 41.0,
+      "fat": 5.0
+    },
+    {
+      "id": "great-pumpkin-latte-soy-no-whip-double",
+      "name": "Great Pumpkin Latte - Soy No Whip",
+      "servingLabel": "Double",
+      "calories": 350.0,
+      "protein": 11.0,
+      "carbs": 68.0,
+      "fat": 6.0
+    },
+    {
+      "id": "great-pumpkin-latte-soy-no-whip-triple",
+      "name": "Great Pumpkin Latte - Soy No Whip",
+      "servingLabel": "Triple",
+      "calories": 440.0,
+      "protein": 13.0,
+      "carbs": 88.0,
+      "fat": 7.0
+    },
+    {
+      "id": "imperial-milk-tea-single",
+      "name": "Imperial Milk Tea",
+      "servingLabel": "Single",
+      "calories": 119.0,
+      "protein": 1.0,
+      "carbs": 20.0,
+      "fat": 4.0
+    },
+    {
+      "id": "imperial-milk-tea-double",
+      "name": "Imperial Milk Tea",
+      "servingLabel": "Double",
+      "calories": 159.0,
+      "protein": 2.0,
+      "carbs": 26.0,
+      "fat": 5.0
+    },
+    {
+      "id": "imperial-milk-tea-triple",
+      "name": "Imperial Milk Tea",
+      "servingLabel": "Triple",
+      "calories": 199.0,
+      "protein": 2.0,
+      "carbs": 33.0,
+      "fat": 7.0
+    },
+    {
+      "id": "let-it-snow-latte-single",
+      "name": "Let it Snow Latte",
+      "servingLabel": "Single",
+      "calories": 210.0,
+      "protein": 8.0,
+      "carbs": 34.0,
+      "fat": 4.5
+    },
+    {
+      "id": "let-it-snow-latte-double",
+      "name": "Let it Snow Latte",
+      "servingLabel": "Double",
+      "calories": 300.0,
+      "protein": 11.0,
+      "carbs": 50.0,
+      "fat": 6.0
+    },
+    {
+      "id": "let-it-snow-latte-triple",
+      "name": "Let it Snow Latte",
+      "servingLabel": "Triple",
+      "calories": 370.0,
+      "protein": 13.0,
+      "carbs": 64.0,
+      "fat": 7.0
+    },
+    {
+      "id": "let-it-snow-latte-almond-single",
+      "name": "Let it Snow Latte - Almond",
+      "servingLabel": "Single",
+      "calories": 170.0,
+      "protein": 1.0,
+      "carbs": 32.0,
+      "fat": 3.5
+    },
+    {
+      "id": "let-it-snow-latte-almond-double",
+      "name": "Let it Snow Latte - Almond",
+      "servingLabel": "Double",
+      "calories": 240.0,
+      "protein": 2.0,
+      "carbs": 47.0,
+      "fat": 5.0
+    },
+    {
+      "id": "let-it-snow-latte-almond-triple",
+      "name": "Let it Snow Latte - Almond",
+      "servingLabel": "Triple",
+      "calories": 300.0,
+      "protein": 3.0,
+      "carbs": 61.0,
+      "fat": 6.0
+    },
+    {
+      "id": "let-it-snow-latte-skim-single",
+      "name": "Let it Snow Latte - Skim",
+      "servingLabel": "Single",
+      "calories": 170.0,
+      "protein": 8.0,
+      "carbs": 34.0,
+      "fat": 0.0
+    },
+    {
+      "id": "let-it-snow-latte-skim-double",
+      "name": "Let it Snow Latte - Skim",
+      "servingLabel": "Double",
+      "calories": 250.0,
+      "protein": 11.0,
+      "carbs": 50.0,
+      "fat": 0.0
+    },
+    {
+      "id": "let-it-snow-latte-skim-triple",
+      "name": "Let it Snow Latte - Skim",
+      "servingLabel": "Triple",
+      "calories": 310.0,
+      "protein": 13.0,
+      "carbs": 64.0,
+      "fat": 0.0
+    },
+    {
+      "id": "let-it-snow-latte-soy-single",
+      "name": "Let it Snow Latte - Soy",
+      "servingLabel": "Single",
+      "calories": 200.0,
+      "protein": 8.0,
+      "carbs": 34.0,
+      "fat": 4.0
+    },
+    {
+      "id": "let-it-snow-latte-soy-double",
+      "name": "Let it Snow Latte - Soy",
+      "servingLabel": "Double",
+      "calories": 290.0,
+      "protein": 11.0,
+      "carbs": 50.0,
+      "fat": 5.0
+    },
+    {
+      "id": "let-it-snow-latte-soy-triple",
+      "name": "Let it Snow Latte - Soy",
+      "servingLabel": "Triple",
+      "calories": 360.0,
+      "protein": 13.0,
+      "carbs": 64.0,
+      "fat": 6.0
+    },
+    {
+      "id": "matcha-truffle-single",
+      "name": "Matcha Truffle",
+      "servingLabel": "Single",
+      "calories": 240.0,
+      "protein": 7.0,
+      "carbs": 25.0,
+      "fat": 13.0
+    },
+    {
+      "id": "matcha-truffle-double",
+      "name": "Matcha Truffle",
+      "servingLabel": "Double",
+      "calories": 310.0,
+      "protein": 10.0,
+      "carbs": 37.0,
+      "fat": 14.0
+    },
+    {
+      "id": "matcha-truffle-triple",
+      "name": "Matcha Truffle",
+      "servingLabel": "Triple",
+      "calories": 350.0,
+      "protein": 11.0,
+      "carbs": 45.0,
+      "fat": 15.0
+    },
+    {
+      "id": "matcha-truffle-almond-single",
+      "name": "Matcha Truffle - Almond",
+      "servingLabel": "Single",
+      "calories": 210.0,
+      "protein": 3.0,
+      "carbs": 24.0,
+      "fat": 12.0
+    },
+    {
+      "id": "matcha-truffle-almond-double",
+      "name": "Matcha Truffle - Almond",
+      "servingLabel": "Double",
+      "calories": 270.0,
+      "protein": 4.0,
+      "carbs": 35.0,
+      "fat": 13.0
+    },
+    {
+      "id": "matcha-truffle-almond-triple",
+      "name": "Matcha Truffle - Almond",
+      "servingLabel": "Triple",
+      "calories": 300.0,
+      "protein": 4.0,
+      "carbs": 43.0,
+      "fat": 14.0
+    },
+    {
+      "id": "matcha-truffle-almond-no-whip-single",
+      "name": "Matcha Truffle - Almond No Whip",
+      "servingLabel": "Single",
+      "calories": 110.0,
+      "protein": 2.0,
+      "carbs": 21.0,
+      "fat": 3.0
+    },
+    {
+      "id": "matcha-truffle-almond-no-whip-double",
+      "name": "Matcha Truffle - Almond No Whip",
+      "servingLabel": "Double",
+      "calories": 170.0,
+      "protein": 3.0,
+      "carbs": 32.0,
+      "fat": 4.0
+    },
+    {
+      "id": "matcha-truffle-almond-no-whip-triple",
+      "name": "Matcha Truffle - Almond No Whip",
+      "servingLabel": "Triple",
+      "calories": 200.0,
+      "protein": 3.0,
+      "carbs": 40.0,
+      "fat": 5.0
+    },
+    {
+      "id": "matcha-truffle-no-whip-single",
+      "name": "Matcha Truffle - No Whip",
+      "servingLabel": "Single",
+      "calories": 140.0,
+      "protein": 6.0,
+      "carbs": 22.0,
+      "fat": 4.0
+    },
+    {
+      "id": "matcha-truffle-no-whip-double",
+      "name": "Matcha Truffle - No Whip",
+      "servingLabel": "Double",
+      "calories": 210.0,
+      "protein": 9.0,
+      "carbs": 34.0,
+      "fat": 5.0
+    },
+    {
+      "id": "matcha-truffle-no-whip-triple",
+      "name": "Matcha Truffle - No Whip",
+      "servingLabel": "Triple",
+      "calories": 250.0,
+      "protein": 10.0,
+      "carbs": 41.0,
+      "fat": 6.0
+    },
+    {
+      "id": "matcha-truffle-skim-single",
+      "name": "Matcha Truffle - Skim",
+      "servingLabel": "Single",
+      "calories": 210.0,
+      "protein": 7.0,
+      "carbs": 25.0,
+      "fat": 10.0
+    },
+    {
+      "id": "matcha-truffle-skim-double",
+      "name": "Matcha Truffle - Skim",
+      "servingLabel": "Double",
+      "calories": 270.0,
+      "protein": 10.0,
+      "carbs": 37.0,
+      "fat": 10.0
+    },
+    {
+      "id": "matcha-truffle-skim-triple",
+      "name": "Matcha Truffle - Skim",
+      "servingLabel": "Triple",
+      "calories": 310.0,
+      "protein": 11.0,
+      "carbs": 45.0,
+      "fat": 10.0
+    },
+    {
+      "id": "matcha-truffle-soy-single",
+      "name": "Matcha Truffle - Soy",
+      "servingLabel": "Single",
+      "calories": 230.0,
+      "protein": 7.0,
+      "carbs": 25.0,
+      "fat": 12.0
+    },
+    {
+      "id": "matcha-truffle-soy-double",
+      "name": "Matcha Truffle - Soy",
+      "servingLabel": "Double",
+      "calories": 300.0,
+      "protein": 10.0,
+      "carbs": 37.0,
+      "fat": 14.0
+    },
+    {
+      "id": "matcha-truffle-soy-triple",
+      "name": "Matcha Truffle - Soy",
+      "servingLabel": "Triple",
+      "calories": 340.0,
+      "protein": 11.0,
+      "carbs": 45.0,
+      "fat": 14.0
+    },
+    {
+      "id": "matcha-truffle-soy-no-whip-single",
+      "name": "Matcha Truffle - Soy No Whip",
+      "servingLabel": "Single",
+      "calories": 130.0,
+      "protein": 6.0,
+      "carbs": 22.0,
+      "fat": 3.0
+    },
+    {
+      "id": "matcha-truffle-soy-no-whip-double",
+      "name": "Matcha Truffle - Soy No Whip",
+      "servingLabel": "Double",
+      "calories": 200.0,
+      "protein": 9.0,
+      "carbs": 34.0,
+      "fat": 5.0
+    },
+    {
+      "id": "matcha-truffle-soy-no-whip-triple",
+      "name": "Matcha Truffle - Soy No Whip",
+      "servingLabel": "Triple",
+      "calories": 240.0,
+      "protein": 10.0,
+      "carbs": 42.0,
+      "fat": 5.0
+    },
+    {
+      "id": "mint-julep-cold-brew-triple",
+      "name": "Mint Julep Cold Brew",
+      "servingLabel": "Triple",
+      "calories": 180.0,
+      "protein": 1.0,
+      "carbs": 21.0,
+      "fat": 10.0
+    },
+    {
+      "id": "mint-julep-cold-brew-almond-triple",
+      "name": "Mint Julep Cold Brew - Almond",
+      "servingLabel": "Triple",
+      "calories": 100.0,
+      "protein": 0.0,
+      "carbs": 20.0,
+      "fat": 0.5
+    },
+    {
+      "id": "mint-julep-cold-brew-skim-triple",
+      "name": "Mint Julep Cold Brew - Skim",
+      "servingLabel": "Triple",
+      "calories": 95.0,
+      "protein": 1.0,
+      "carbs": 20.0,
+      "fat": 0.0
+    },
+    {
+      "id": "mint-julep-cold-brew-soy-triple",
+      "name": "Mint Julep Cold Brew - Soy",
+      "servingLabel": "Triple",
+      "calories": 100.0,
+      "protein": 1.0,
+      "carbs": 20.0,
+      "fat": 0.5
+    },
+    {
+      "id": "mint-matcha-latte-single",
+      "name": "Mint Matcha Latte",
+      "servingLabel": "Single",
+      "calories": 140.0,
+      "protein": 6.0,
+      "carbs": 24.0,
+      "fat": 3.0
+    },
+    {
+      "id": "mint-matcha-latte-double",
+      "name": "Mint Matcha Latte",
+      "servingLabel": "Double",
+      "calories": 210.0,
+      "protein": 8.0,
+      "carbs": 35.0,
+      "fat": 4.0
+    },
+    {
+      "id": "mint-matcha-latte-triple",
+      "name": "Mint Matcha Latte",
+      "servingLabel": "Triple",
+      "calories": 260.0,
+      "protein": 10.0,
+      "carbs": 45.0,
+      "fat": 5.0
+    },
+    {
+      "id": "mint-matcha-latte-almond-single",
+      "name": "Mint Matcha Latte - Almond",
+      "servingLabel": "Single",
+      "calories": 120.0,
+      "protein": 1.0,
+      "carbs": 22.0,
+      "fat": 2.5
+    },
+    {
+      "id": "mint-matcha-latte-almond-double",
+      "name": "Mint Matcha Latte - Almond",
+      "servingLabel": "Double",
+      "calories": 170.0,
+      "protein": 2.0,
+      "carbs": 33.0,
+      "fat": 3.5
+    },
+    {
+      "id": "mint-matcha-latte-almond-triple",
+      "name": "Mint Matcha Latte - Almond",
+      "servingLabel": "Triple",
+      "calories": 210.0,
+      "protein": 3.0,
+      "carbs": 43.0,
+      "fat": 4.0
+    },
+    {
+      "id": "mint-matcha-latte-skim-single",
+      "name": "Mint Matcha Latte - Skim",
+      "servingLabel": "Single",
+      "calories": 120.0,
+      "protein": 6.0,
+      "carbs": 24.0,
+      "fat": 0.0
+    },
+    {
+      "id": "mint-matcha-latte-skim-double",
+      "name": "Mint Matcha Latte - Skim",
+      "servingLabel": "Double",
+      "calories": 180.0,
+      "protein": 8.0,
+      "carbs": 35.0,
+      "fat": 0.0
+    },
+    {
+      "id": "mint-matcha-latte-skim-triple",
+      "name": "Mint Matcha Latte - Skim",
+      "servingLabel": "Triple",
+      "calories": 220.0,
+      "protein": 10.0,
+      "carbs": 45.0,
+      "fat": 0.0
+    },
+    {
+      "id": "mint-matcha-latte-soy-single",
+      "name": "Mint Matcha Latte - Soy",
+      "servingLabel": "Single",
+      "calories": 140.0,
+      "protein": 6.0,
+      "carbs": 24.0,
+      "fat": 2.5
+    },
+    {
+      "id": "mint-matcha-latte-soy-double",
+      "name": "Mint Matcha Latte - Soy",
+      "servingLabel": "Double",
+      "calories": 200.0,
+      "protein": 9.0,
+      "carbs": 35.0,
+      "fat": 4.0
+    },
+    {
+      "id": "mint-matcha-latte-soy-triple",
+      "name": "Mint Matcha Latte - Soy",
+      "servingLabel": "Triple",
+      "calories": 250.0,
+      "protein": 10.0,
+      "carbs": 45.0,
+      "fat": 4.0
+    },
+    {
+      "id": "peppy-bark-mocha-single",
+      "name": "Peppy Bark Mocha",
+      "servingLabel": "Single",
+      "calories": 340.0,
+      "protein": 10.0,
+      "carbs": 44.0,
+      "fat": 14.0
+    },
+    {
+      "id": "peppy-bark-mocha-double",
+      "name": "Peppy Bark Mocha",
+      "servingLabel": "Double",
+      "calories": 430.0,
+      "protein": 13.0,
+      "carbs": 60.0,
+      "fat": 16.0
+    },
+    {
+      "id": "peppy-bark-mocha-triple",
+      "name": "Peppy Bark Mocha",
+      "servingLabel": "Triple",
+      "calories": 500.0,
+      "protein": 15.0,
+      "carbs": 75.0,
+      "fat": 17.0
+    },
+    {
+      "id": "peppy-bark-mocha-almond-single",
+      "name": "Peppy Bark Mocha - Almond",
+      "servingLabel": "Single",
+      "calories": 290.0,
+      "protein": 3.0,
+      "carbs": 42.0,
+      "fat": 13.0
+    },
+    {
+      "id": "peppy-bark-mocha-almond-double",
+      "name": "Peppy Bark Mocha - Almond",
+      "servingLabel": "Double",
+      "calories": 370.0,
+      "protein": 4.0,
+      "carbs": 58.0,
+      "fat": 15.0
+    },
+    {
+      "id": "peppy-bark-mocha-almond-triple",
+      "name": "Peppy Bark Mocha - Almond",
+      "servingLabel": "Triple",
+      "calories": 430.0,
+      "protein": 5.0,
+      "carbs": 72.0,
+      "fat": 16.0
+    },
+    {
+      "id": "peppy-bark-mocha-almond-no-whip-single",
+      "name": "Peppy Bark Mocha - Almond No Whip",
+      "servingLabel": "Single",
+      "calories": 190.0,
+      "protein": 2.0,
+      "carbs": 39.0,
+      "fat": 4.0
+    },
+    {
+      "id": "peppy-bark-mocha-almond-no-whip-double",
+      "name": "Peppy Bark Mocha - Almond No Whip",
+      "servingLabel": "Double",
+      "calories": 270.0,
+      "protein": 3.0,
+      "carbs": 55.0,
+      "fat": 6.0
+    },
+    {
+      "id": "peppy-bark-mocha-almond-no-whip-triple",
+      "name": "Peppy Bark Mocha - Almond No Whip",
+      "servingLabel": "Triple",
+      "calories": 330.0,
+      "protein": 4.0,
+      "carbs": 69.0,
+      "fat": 7.0
+    },
+    {
+      "id": "peppy-bark-mocha-no-whip-single",
+      "name": "Peppy Bark Mocha - No Whip",
+      "servingLabel": "Single",
+      "calories": 240.0,
+      "protein": 9.0,
+      "carbs": 41.0,
+      "fat": 5.0
+    },
+    {
+      "id": "peppy-bark-mocha-no-whip-double",
+      "name": "Peppy Bark Mocha - No Whip",
+      "servingLabel": "Double",
+      "calories": 330.0,
+      "protein": 12.0,
+      "carbs": 57.0,
+      "fat": 7.0
+    },
+    {
+      "id": "peppy-bark-mocha-no-whip-triple",
+      "name": "Peppy Bark Mocha - No Whip",
+      "servingLabel": "Triple",
+      "calories": 400.0,
+      "protein": 14.0,
+      "carbs": 72.0,
+      "fat": 8.0
+    },
+    {
+      "id": "peppy-bark-mocha-skim-single",
+      "name": "Peppy Bark Mocha - Skim",
+      "servingLabel": "Single",
+      "calories": 300.0,
+      "protein": 10.0,
+      "carbs": 44.0,
+      "fat": 10.0
+    },
+    {
+      "id": "peppy-bark-mocha-skim-double",
+      "name": "Peppy Bark Mocha - Skim",
+      "servingLabel": "Double",
+      "calories": 380.0,
+      "protein": 13.0,
+      "carbs": 60.0,
+      "fat": 10.0
+    },
+    {
+      "id": "peppy-bark-mocha-skim-triple",
+      "name": "Peppy Bark Mocha - Skim",
+      "servingLabel": "Triple",
+      "calories": 450.0,
+      "protein": 15.0,
+      "carbs": 75.0,
+      "fat": 10.0
+    },
+    {
+      "id": "peppy-bark-mocha-soy-single",
+      "name": "Peppy Bark Mocha - Soy",
+      "servingLabel": "Single",
+      "calories": 330.0,
+      "protein": 10.0,
+      "carbs": 44.0,
+      "fat": 14.0
+    },
+    {
+      "id": "peppy-bark-mocha-soy-double",
+      "name": "Peppy Bark Mocha - Soy",
+      "servingLabel": "Double",
+      "calories": 420.0,
+      "protein": 13.0,
+      "carbs": 60.0,
+      "fat": 15.0
+    },
+    {
+      "id": "peppy-bark-mocha-soy-triple",
+      "name": "Peppy Bark Mocha - Soy",
+      "servingLabel": "Triple",
+      "calories": 490.0,
+      "protein": 15.0,
+      "carbs": 75.0,
+      "fat": 16.0
+    },
+    {
+      "id": "peppy-bark-mocha-soy-no-whip-single",
+      "name": "Peppy Bark Mocha - Soy No Whip",
+      "servingLabel": "Single",
+      "calories": 230.0,
+      "protein": 9.0,
+      "carbs": 41.0,
+      "fat": 5.0
+    },
+    {
+      "id": "peppy-bark-mocha-soy-no-whip-double",
+      "name": "Peppy Bark Mocha - Soy No Whip",
+      "servingLabel": "Double",
+      "calories": 320.0,
+      "protein": 12.0,
+      "carbs": 57.0,
+      "fat": 6.0
+    },
+    {
+      "id": "peppy-bark-mocha-soy-no-whip-triple",
+      "name": "Peppy Bark Mocha - Soy No Whip",
+      "servingLabel": "Triple",
+      "calories": 390.0,
+      "protein": 14.0,
+      "carbs": 72.0,
+      "fat": 7.0
+    },
+    {
+      "id": "spiced-caramel-apple-single",
+      "name": "Spiced Caramel Apple",
+      "servingLabel": "Single",
+      "calories": 348.0,
+      "protein": 0.96,
+      "carbs": 63.82,
+      "fat": 10.1
+    },
+    {
+      "id": "spiced-caramel-apple-double",
+      "name": "Spiced Caramel Apple",
+      "servingLabel": "Double",
+      "calories": 453.0,
+      "protein": 0.96,
+      "carbs": 89.57,
+      "fat": 10.35
+    },
+    {
+      "id": "spiced-caramel-apple-triple",
+      "name": "Spiced Caramel Apple",
+      "servingLabel": "Triple",
+      "calories": 678.0,
+      "protein": 0.96,
+      "carbs": 144.32,
+      "fat": 11.6
+    },
+    {
+      "id": "spiced-caramel-apple-no-whip-single",
+      "name": "Spiced Caramel Apple - No Whip",
+      "servingLabel": "Single",
+      "calories": 248.0,
+      "protein": 0.0,
+      "carbs": 60.82,
+      "fat": 1.1
+    },
+    {
+      "id": "spiced-caramel-apple-no-whip-double",
+      "name": "Spiced Caramel Apple - No Whip",
+      "servingLabel": "Double",
+      "calories": 353.0,
+      "protein": 0.0,
+      "carbs": 86.57,
+      "fat": 1.35
+    },
+    {
+      "id": "spiced-caramel-apple-no-whip-triple",
+      "name": "Spiced Caramel Apple - No Whip",
+      "servingLabel": "Triple",
+      "calories": 578.0,
+      "protein": 0.0,
+      "carbs": 141.32,
+      "fat": 2.6
+    },
+    {
+      "id": "sugar-spice-white-mocha-single",
+      "name": "Sugar & Spice White Mocha",
+      "servingLabel": "Single",
+      "calories": 280.0,
+      "protein": 9.0,
+      "carbs": 30.0,
+      "fat": 14.0
+    },
+    {
+      "id": "sugar-spice-white-mocha-double",
+      "name": "Sugar & Spice White Mocha",
+      "servingLabel": "Double",
+      "calories": 360.0,
+      "protein": 12.0,
+      "carbs": 43.0,
+      "fat": 16.0
+    },
+    {
+      "id": "sugar-spice-white-mocha-triple",
+      "name": "Sugar & Spice White Mocha",
+      "servingLabel": "Triple",
+      "calories": 420.0,
+      "protein": 13.0,
+      "carbs": 53.0,
+      "fat": 17.0
+    },
+    {
+      "id": "sugar-spice-white-mocha-almond-single",
+      "name": "Sugar & Spice White Mocha - Almond",
+      "servingLabel": "Single",
+      "calories": 240.0,
+      "protein": 2.0,
+      "carbs": 28.0,
+      "fat": 13.0
+    },
+    {
+      "id": "sugar-spice-white-mocha-almond-double",
+      "name": "Sugar & Spice White Mocha - Almond",
+      "servingLabel": "Double",
+      "calories": 300.0,
+      "protein": 3.0,
+      "carbs": 40.0,
+      "fat": 15.0
+    },
+    {
+      "id": "sugar-spice-white-mocha-almond-triple",
+      "name": "Sugar & Spice White Mocha - Almond",
+      "servingLabel": "Triple",
+      "calories": 350.0,
+      "protein": 3.0,
+      "carbs": 50.0,
+      "fat": 16.0
+    },
+    {
+      "id": "sugar-spice-white-mocha-almond-no-whip-single",
+      "name": "Sugar & Spice White Mocha - Almond No Whip",
+      "servingLabel": "Single",
+      "calories": 140.0,
+      "protein": 1.0,
+      "carbs": 25.0,
+      "fat": 4.0
+    },
+    {
+      "id": "sugar-spice-white-mocha-almond-no-whip-double",
+      "name": "Sugar & Spice White Mocha - Almond No Whip",
+      "servingLabel": "Double",
+      "calories": 200.0,
+      "protein": 2.0,
+      "carbs": 37.0,
+      "fat": 6.0
+    },
+    {
+      "id": "sugar-spice-white-mocha-almond-no-whip-triple",
+      "name": "Sugar & Spice White Mocha - Almond No Whip",
+      "servingLabel": "Triple",
+      "calories": 250.0,
+      "protein": 2.0,
+      "carbs": 47.0,
+      "fat": 7.0
+    },
+    {
+      "id": "sugar-spice-white-mocha-no-whip-single",
+      "name": "Sugar & Spice White Mocha - No Whip",
+      "servingLabel": "Single",
+      "calories": 180.0,
+      "protein": 8.0,
+      "carbs": 27.0,
+      "fat": 5.0
+    },
+    {
+      "id": "sugar-spice-white-mocha-no-whip-double",
+      "name": "Sugar & Spice White Mocha - No Whip",
+      "servingLabel": "Double",
+      "calories": 260.0,
+      "protein": 11.0,
+      "carbs": 40.0,
+      "fat": 7.0
+    },
+    {
+      "id": "sugar-spice-white-mocha-no-whip-triple",
+      "name": "Sugar & Spice White Mocha - No Whip",
+      "servingLabel": "Triple",
+      "calories": 320.0,
+      "protein": 12.0,
+      "carbs": 50.0,
+      "fat": 8.0
+    },
+    {
+      "id": "sugar-spice-white-mocha-skim-single",
+      "name": "Sugar & Spice White Mocha - Skim",
+      "servingLabel": "Single",
+      "calories": 250.0,
+      "protein": 9.0,
+      "carbs": 30.0,
+      "fat": 10.0
+    },
+    {
+      "id": "sugar-spice-white-mocha-skim-double",
+      "name": "Sugar & Spice White Mocha - Skim",
+      "servingLabel": "Double",
+      "calories": 310.0,
+      "protein": 12.0,
+      "carbs": 43.0,
+      "fat": 10.0
+    },
+    {
+      "id": "sugar-spice-white-mocha-skim-triple",
+      "name": "Sugar & Spice White Mocha - Skim",
+      "servingLabel": "Triple",
+      "calories": 360.0,
+      "protein": 13.0,
+      "carbs": 53.0,
+      "fat": 10.0
+    },
+    {
+      "id": "sugar-spice-white-mocha-soy-single",
+      "name": "Sugar & Spice White Mocha - Soy",
+      "servingLabel": "Single",
+      "calories": 270.0,
+      "protein": 9.0,
+      "carbs": 30.0,
+      "fat": 14.0
+    },
+    {
+      "id": "sugar-spice-white-mocha-soy-double",
+      "name": "Sugar & Spice White Mocha - Soy",
+      "servingLabel": "Double",
+      "calories": 350.0,
+      "protein": 12.0,
+      "carbs": 43.0,
+      "fat": 15.0
+    },
+    {
+      "id": "sugar-spice-white-mocha-soy-triple",
+      "name": "Sugar & Spice White Mocha - Soy",
+      "servingLabel": "Triple",
+      "calories": 400.0,
+      "protein": 14.0,
+      "carbs": 53.0,
+      "fat": 16.0
+    },
+    {
+      "id": "sugar-spice-white-mocha-soy-no-whip-single",
+      "name": "Sugar & Spice White Mocha - Soy No Whip",
+      "servingLabel": "Single",
+      "calories": 170.0,
+      "protein": 8.0,
+      "carbs": 27.0,
+      "fat": 5.0
+    },
+    {
+      "id": "sugar-spice-white-mocha-soy-no-whip-double",
+      "name": "Sugar & Spice White Mocha - Soy No Whip",
+      "servingLabel": "Double",
+      "calories": 250.0,
+      "protein": 11.0,
+      "carbs": 40.0,
+      "fat": 6.0
+    },
+    {
+      "id": "sugar-spice-white-mocha-soy-no-whip-triple",
+      "name": "Sugar & Spice White Mocha - Soy No Whip",
+      "servingLabel": "Triple",
+      "calories": 300.0,
+      "protein": 13.0,
+      "carbs": 50.0,
+      "fat": 7.0
+    },
+    {
+      "id": "chai-almond-single",
+      "name": "Chai - Almond",
+      "servingLabel": "Single",
+      "calories": 150.0,
+      "protein": 0.0,
+      "carbs": 30.0,
+      "fat": 3.0
+    },
+    {
+      "id": "chai-almond-double",
+      "name": "Chai - Almond",
+      "servingLabel": "Double",
+      "calories": 190.0,
+      "protein": 1.0,
+      "carbs": 39.0,
+      "fat": 3.5
+    },
+    {
+      "id": "chai-almond-triple",
+      "name": "Chai - Almond",
+      "servingLabel": "Triple",
+      "calories": 240.0,
+      "protein": 1.0,
+      "carbs": 48.0,
+      "fat": 4.5
+    },
+    {
+      "id": "chai-soy-single",
+      "name": "Chai - Soy",
+      "servingLabel": "Single",
+      "calories": 170.0,
+      "protein": 5.0,
+      "carbs": 31.0,
+      "fat": 3.0
+    },
+    {
+      "id": "chai-soy-double",
+      "name": "Chai - Soy",
+      "servingLabel": "Double",
+      "calories": 230.0,
+      "protein": 7.0,
+      "carbs": 41.0,
+      "fat": 4.0
+    },
+    {
+      "id": "chai-soy-triple",
+      "name": "Chai - Soy",
+      "servingLabel": "Triple",
+      "calories": 280.0,
+      "protein": 9.0,
+      "carbs": 50.0,
+      "fat": 5.0
+    },
+    {
+      "id": "chai-skim-single",
+      "name": "Chai - Skim",
+      "servingLabel": "Single",
+      "calories": 150.0,
+      "protein": 5.0,
+      "carbs": 31.0,
+      "fat": 0.0
+    },
+    {
+      "id": "chai-skim-double",
+      "name": "Chai - Skim",
+      "servingLabel": "Double",
+      "calories": 200.0,
+      "protein": 7.0,
+      "carbs": 41.0,
+      "fat": 0.0
+    },
+    {
+      "id": "chai-skim-triple",
+      "name": "Chai - Skim",
+      "servingLabel": "Triple",
+      "calories": 240.0,
+      "protein": 9.0,
+      "carbs": 50.0,
+      "fat": 0.0
+    },
+    {
+      "id": "chai-spiced-cider-single",
+      "name": "Chai Spiced Cider",
+      "servingLabel": "Single",
+      "calories": 227.0,
+      "protein": 0.0,
+      "carbs": 56.0,
+      "fat": 0.0
+    },
+    {
+      "id": "chai-spiced-cider-double",
+      "name": "Chai Spiced Cider",
+      "servingLabel": "Double",
+      "calories": 303.0,
+      "protein": 0.0,
+      "carbs": 75.0,
+      "fat": 0.0
+    },
+    {
+      "id": "chai-spiced-cider-triple",
+      "name": "Chai Spiced Cider",
+      "servingLabel": "Triple",
+      "calories": 379.0,
+      "protein": 0.0,
+      "carbs": 93.0,
+      "fat": 0.0
+    },
+    {
+      "id": "ginger-lemon-tea-single",
+      "name": "Ginger Lemon Tea",
+      "servingLabel": "Single",
+      "calories": 140.0,
+      "protein": 0.0,
+      "carbs": 35.0,
+      "fat": 0.0
+    },
+    {
+      "id": "ginger-lemon-tea-double",
+      "name": "Ginger Lemon Tea",
+      "servingLabel": "Double",
+      "calories": 190.0,
+      "protein": 0.0,
+      "carbs": 47.0,
+      "fat": 0.0
+    },
+    {
+      "id": "ginger-lemon-tea-triple",
+      "name": "Ginger Lemon Tea",
+      "servingLabel": "Triple",
+      "calories": 240.0,
+      "protein": 0.0,
+      "carbs": 58.0,
+      "fat": 0.0
+    },
+    {
+      "id": "iced-tea-triple",
+      "name": "Iced Tea",
+      "servingLabel": "Triple",
+      "calories": 0.0,
+      "protein": 0.0,
+      "carbs": 0.0,
+      "fat": 0.0
+    },
+    {
+      "id": "matcha-latte-single",
+      "name": "Matcha Latte",
+      "servingLabel": "Single",
+      "calories": 110.0,
+      "protein": 5.0,
+      "carbs": 17.0,
+      "fat": 3.0
+    },
+    {
+      "id": "matcha-latte-double",
+      "name": "Matcha Latte",
+      "servingLabel": "Double",
+      "calories": 180.0,
+      "protein": 7.0,
+      "carbs": 29.0,
+      "fat": 4.0
+    },
+    {
+      "id": "matcha-latte-triple",
+      "name": "Matcha Latte",
+      "servingLabel": "Triple",
+      "calories": 220.0,
+      "protein": 8.0,
+      "carbs": 38.0,
+      "fat": 5.0
+    },
+    {
+      "id": "matcha-latte-almond-single",
+      "name": "Matcha Latte - Almond",
+      "servingLabel": "Single",
+      "calories": 80.0,
+      "protein": 0.0,
+      "carbs": 16.0,
+      "fat": 2.5
+    },
+    {
+      "id": "matcha-latte-almond-double",
+      "name": "Matcha Latte - Almond",
+      "servingLabel": "Double",
+      "calories": 140.0,
+      "protein": 1.0,
+      "carbs": 27.0,
+      "fat": 3.5
+    },
+    {
+      "id": "matcha-latte-almond-triple",
+      "name": "Matcha Latte - Almond",
+      "servingLabel": "Triple",
+      "calories": 170.0,
+      "protein": 1.0,
+      "carbs": 35.0,
+      "fat": 4.0
+    },
+    {
+      "id": "matcha-latte-skim-single",
+      "name": "Matcha Latte - Skim",
+      "servingLabel": "Single",
+      "calories": 90.0,
+      "protein": 5.0,
+      "carbs": 17.0,
+      "fat": 0.0
+    },
+    {
+      "id": "matcha-latte-skim-double",
+      "name": "Matcha Latte - Skim",
+      "servingLabel": "Double",
+      "calories": 140.0,
+      "protein": 7.0,
+      "carbs": 29.0,
+      "fat": 0.0
+    },
+    {
+      "id": "matcha-latte-skim-triple",
+      "name": "Matcha Latte - Skim",
+      "servingLabel": "Triple",
+      "calories": 180.0,
+      "protein": 8.0,
+      "carbs": 38.0,
+      "fat": 0.0
+    },
+    {
+      "id": "matcha-latte-soy-single",
+      "name": "Matcha Latte - Soy",
+      "servingLabel": "Single",
+      "calories": 110.0,
+      "protein": 5.0,
+      "carbs": 17.0,
+      "fat": 2.5
+    },
+    {
+      "id": "matcha-latte-soy-double",
+      "name": "Matcha Latte - Soy",
+      "servingLabel": "Double",
+      "calories": 170.0,
+      "protein": 7.0,
+      "carbs": 29.0,
+      "fat": 3.5
+    },
+    {
+      "id": "matcha-latte-soy-triple",
+      "name": "Matcha Latte - Soy",
+      "servingLabel": "Triple",
+      "calories": 210.0,
+      "protein": 8.0,
+      "carbs": 38.0,
+      "fat": 4.0
+    },
+    {
+      "id": "premium-teas-triple",
+      "name": "Premium Teas",
+      "servingLabel": "Triple",
+      "calories": 0.0,
+      "protein": 0.0,
+      "carbs": 0.0,
+      "fat": 0.0
+    },
+    {
+      "id": "real-tea-latte-triple",
+      "name": "Real Tea Latte",
+      "servingLabel": "Triple",
+      "calories": 170.0,
+      "protein": 8.0,
+      "carbs": 24.0,
+      "fat": 5.0
+    },
+    {
+      "id": "real-tea-latte-almond-triple",
+      "name": "Real Tea Latte - Almond",
+      "servingLabel": "Triple",
+      "calories": 120.0,
+      "protein": 1.0,
+      "carbs": 22.0,
+      "fat": 4.0
+    },
+    {
+      "id": "real-tea-latte-skim-triple",
+      "name": "Real Tea Latte - Skim",
+      "servingLabel": "Triple",
+      "calories": 130.0,
+      "protein": 8.0,
+      "carbs": 24.0,
+      "fat": 0.0
+    },
+    {
+      "id": "real-tea-latte-soy-triple",
+      "name": "Real Tea Latte - Soy",
+      "servingLabel": "Triple",
+      "calories": 160.0,
+      "protein": 8.0,
+      "carbs": 24.0,
+      "fat": 4.0
+    },
+    {
+      "id": "select-teas-triple",
+      "name": "Select Teas",
+      "servingLabel": "Triple",
+      "calories": 0.0,
+      "protein": 0.0,
+      "carbs": 0.0,
+      "fat": 0.0
+    },
+    {
+      "id": "thai-iced-tea-double",
+      "name": "Thai Iced Tea",
+      "servingLabel": "Double",
+      "calories": 140.0,
+      "protein": 1.0,
+      "carbs": 25.0,
+      "fat": 4.5
+    },
+    {
+      "id": "thai-iced-tea-triple",
+      "name": "Thai Iced Tea",
+      "servingLabel": "Triple",
+      "calories": 180.0,
+      "protein": 2.0,
+      "carbs": 32.0,
+      "fat": 6.0
+    },
+    {
+      "id": "thai-iced-tea-almond-double",
+      "name": "Thai Iced Tea - Almond",
+      "servingLabel": "Double",
+      "calories": 100.0,
+      "protein": 0.0,
+      "carbs": 25.0,
+      "fat": 0.5
+    },
+    {
+      "id": "thai-iced-tea-almond-triple",
+      "name": "Thai Iced Tea - Almond",
+      "servingLabel": "Triple",
+      "calories": 130.0,
+      "protein": 0.0,
+      "carbs": 33.0,
+      "fat": 1.0
+    },
+    {
+      "id": "thai-iced-tea-skim-double",
+      "name": "Thai Iced Tea - Skim",
+      "servingLabel": "Double",
+      "calories": 100.0,
+      "protein": 1.0,
+      "carbs": 25.0,
+      "fat": 0.0
+    },
+    {
+      "id": "thai-iced-tea-skim-triple",
+      "name": "Thai Iced Tea - Skim",
+      "servingLabel": "Triple",
+      "calories": 130.0,
+      "protein": 2.0,
+      "carbs": 33.0,
+      "fat": 0.0
+    },
+    {
+      "id": "thai-iced-tea-soy-double",
+      "name": "Thai Iced Tea - Soy",
+      "servingLabel": "Double",
+      "calories": 110.0,
+      "protein": 1.0,
+      "carbs": 25.0,
+      "fat": 1.0
+    },
+    {
+      "id": "thai-iced-tea-soy-triple",
+      "name": "Thai Iced Tea - Soy",
+      "servingLabel": "Triple",
+      "calories": 140.0,
+      "protein": 2.0,
+      "carbs": 33.0,
+      "fat": 1.0
+    },
+    {
+      "id": "fortune-cookies-shang-pin-1-cookies-5-7g-0-2oz",
+      "name": "Fortune Cookies (Shang Pin)",
+      "servingLabel": "1 cookies 5.7g/0.2oz",
+      "calories": 22.0,
+      "protein": 0.0,
+      "carbs": 5.0,
+      "fat": 0.0,
+      "servingGrams": 5.7
+    },
+    {
+      "id": "manner-vanilla-cream-filled-wafer-cookies-5-wafers-36g",
+      "name": "Manner Vanilla Cream Filled Wafer Cookies",
+      "servingLabel": "5 wafers (36g)",
+      "calories": 190.0,
+      "protein": 2.0,
+      "carbs": 22.0,
+      "fat": 11.0,
+      "servingGrams": 36.0
+    },
+    {
+      "id": "manner-hazelnut-cream-filled-wafer-cookies-5-wafers-36g",
+      "name": "Manner Hazelnut Cream Filled Wafer Cookies",
+      "servingLabel": "5 wafers (36g)",
+      "calories": 180.0,
+      "protein": 2.0,
+      "carbs": 24.0,
+      "fat": 8.0,
+      "servingGrams": 36.0
+    },
+    {
+      "id": "manner-lemon-cream-filled-wafer-cookies-6-wafers-36g",
+      "name": "Manner Lemon Cream Filled Wafer Cookies",
+      "servingLabel": "6 wafers (36g)",
+      "calories": 190.0,
+      "protein": 0.5,
+      "carbs": 23.0,
+      "fat": 10.0,
+      "servingGrams": 36.0
+    },
+    {
+      "id": "manner-chocolate-cream-filled-wafer-cookies-5-wafers-36g",
+      "name": "Manner Chocolate Cream Filled Wafer Cookies",
+      "servingLabel": "5 wafers (36g)",
+      "calories": 180.0,
+      "protein": 2.0,
+      "carbs": 21.0,
+      "fat": 10.0,
+      "servingGrams": 36.0
+    },
+    {
+      "id": "organic-hard-candies-5pc-16g",
+      "name": "Organic Hard Candies",
+      "servingLabel": "5pc (16g)",
+      "calories": 60.0,
+      "protein": 0.0,
+      "carbs": 15.0,
+      "fat": 0.0,
+      "servingGrams": 16.0
+    },
+    {
+      "id": "peanut-butter-cups-4pc-39g",
+      "name": "Peanut Butter Cups",
+      "servingLabel": "4pc (39g)",
+      "calories": 220.0,
+      "protein": 5.0,
+      "carbs": 16.0,
+      "fat": 17.0,
+      "servingGrams": 39.0
+    },
+    {
+      "id": "peanut-butter-cups-caramelized-banana-4pc-39g",
+      "name": "Peanut Butter Cups, Caramelized Banana",
+      "servingLabel": "4pc (39g)",
+      "calories": 220.0,
+      "protein": 4.0,
+      "carbs": 19.0,
+      "fat": 15.0,
+      "servingGrams": 39.0
+    },
+    {
+      "id": "sahale-snacks-pomegranate-flavored-pistachios-1-bag-42-5g",
+      "name": "Sahale Snacks - Pomegranate flavored pistachios",
+      "servingLabel": "1 bag (42.5g)",
+      "calories": 220.0,
+      "protein": 7.0,
+      "carbs": 18.0,
+      "fat": 15.0,
+      "servingGrams": 42.5
+    },
+    {
+      "id": "sahale-snacks-honey-almonds-1-bag-42-5g",
+      "name": "Sahale Snacks - Honey Almonds",
+      "servingLabel": "1 bag (42.5g)",
+      "calories": 230.0,
+      "protein": 7.0,
+      "carbs": 16.0,
+      "fat": 17.0,
+      "servingGrams": 42.5
+    },
+    {
+      "id": "apple-pie-245g-8-64oz",
+      "name": "Apple Pie",
+      "servingLabel": "245g/8.64oz",
+      "calories": 610.0,
+      "protein": 5.0,
+      "carbs": 92.0,
+      "fat": 25.0,
+      "servingGrams": 245.0
+    },
+    {
+      "id": "blueberry-cheesecake-169g-5-96oz",
+      "name": "Blueberry Cheesecake",
+      "servingLabel": "169g/5.96oz",
+      "calories": 630.0,
+      "protein": 7.0,
+      "carbs": 51.0,
+      "fat": 44.0,
+      "servingGrams": 169.0
+    },
+    {
+      "id": "chocolate-cheesecake-187g-1-slice",
+      "name": "Chocolate Cheesecake",
+      "servingLabel": "187g/1 slice",
+      "calories": 680.0,
+      "protein": 9.0,
+      "carbs": 62.0,
+      "fat": 46.0,
+      "servingGrams": 187.0
+    },
+    {
+      "id": "chocolate-joy-nut-bars-83g-2-93oz",
+      "name": "Chocolate Joy Nut Bars",
+      "servingLabel": "83g/2.93oz",
+      "calories": 380.0,
+      "protein": 5.0,
+      "carbs": 41.0,
+      "fat": 24.0,
+      "servingGrams": 83.0
+    },
+    {
+      "id": "chocolate-magic-cake-202g-7-14oz",
+      "name": "Chocolate Magic Cake",
+      "servingLabel": "202g/7.14oz",
+      "calories": 930.0,
+      "protein": 10.0,
+      "carbs": 79.0,
+      "fat": 40.0,
+      "servingGrams": 202.0
+    },
+    {
+      "id": "classic-cheesecake-120g-4-24oz",
+      "name": "Classic Cheesecake",
+      "servingLabel": "120g/4.24oz",
+      "calories": 430.0,
+      "protein": 7.0,
+      "carbs": 35.0,
+      "fat": 29.0,
+      "servingGrams": 120.0
+    },
+    {
+      "id": "classic-carrot-120g-4-25oz",
+      "name": "Classic Carrot",
+      "servingLabel": "120g/4.25oz",
+      "calories": 900.0,
+      "protein": 9.0,
+      "carbs": 80.0,
+      "fat": 62.0,
+      "servingGrams": 120.0
+    },
+    {
+      "id": "enchanted-cupcakes-66g-2-34oz",
+      "name": "Enchanted Cupcakes",
+      "servingLabel": "66g/2.34oz",
+      "calories": 290.0,
+      "protein": 2.0,
+      "carbs": 33.0,
+      "fat": 16.0,
+      "servingGrams": 66.0
+    },
+    {
+      "id": "french-macarons-3pc-30g",
+      "name": "French Macarons",
+      "servingLabel": "3pc - 30g",
+      "calories": 120.0,
+      "protein": 2.0,
+      "carbs": 15.0,
+      "fat": 5.0,
+      "servingGrams": 30.0
+    },
+    {
+      "id": "key-lime-pie-160g-5-64oz",
+      "name": "Key Lime Pie",
+      "servingLabel": "160g/5.64oz",
+      "calories": 550.0,
+      "protein": 6.0,
+      "carbs": 47.0,
+      "fat": 37.0,
+      "servingGrams": 160.0
+    },
+    {
+      "id": "lemon-bars-100g-3-5oz",
+      "name": "Lemon Bars",
+      "servingLabel": "100g/3.5oz",
+      "calories": 370.0,
+      "protein": 4.0,
+      "carbs": 44.0,
+      "fat": 20.0,
+      "servingGrams": 100.0
+    },
+    {
+      "id": "nutella-torte-117g-4-14oz",
+      "name": "Nutella Torte",
+      "servingLabel": "117g/4.14oz",
+      "calories": 500.0,
+      "protein": 7.0,
+      "carbs": 57.0,
+      "fat": 24.0,
+      "servingGrams": 117.0
+    },
+    {
+      "id": "omg-cake-227g-8oz",
+      "name": "OMG Cake",
+      "servingLabel": "227g/8oz",
+      "calories": 750.0,
+      "protein": 9.0,
+      "carbs": 84.0,
+      "fat": 45.0,
+      "servingGrams": 227.0
+    },
+    {
+      "id": "peanut-butter-pie-142g-5oz",
+      "name": "Peanut Butter Pie",
+      "servingLabel": "142g/5oz",
+      "calories": 660.0,
+      "protein": 9.0,
+      "carbs": 43.0,
+      "fat": 51.0,
+      "servingGrams": 142.0
+    },
+    {
+      "id": "red-velvet-cake-251g-8-85oz",
+      "name": "Red Velvet Cake",
+      "servingLabel": "251g/8.85oz",
+      "calories": 1000.0,
+      "protein": 9.0,
+      "carbs": 119.0,
+      "fat": 55.0,
+      "servingGrams": 251.0
+    },
+    {
+      "id": "tiramisu-113g-4oz",
+      "name": "Tiramisu",
+      "servingLabel": "113g/4oz",
+      "calories": 320.0,
+      "protein": 4.0,
+      "carbs": 31.0,
+      "fat": 19.0,
+      "servingGrams": 113.0
+    },
+    {
+      "id": "tropical-hawaiian-cake-213g-7-50oz",
+      "name": "Tropical Hawaiian Cake",
+      "servingLabel": "213g/7.50oz",
+      "calories": 770.0,
+      "protein": 7.0,
+      "carbs": 67.0,
+      "fat": 53.0,
+      "servingGrams": 213.0
+    },
+    {
+      "id": "bagel-breakfast-sandwich-egg-ham-cheese-234g",
+      "name": "Bagel Breakfast Sandwich (egg, ham & cheese)",
+      "servingLabel": "234g",
+      "calories": 520.0,
+      "protein": 30.0,
+      "carbs": 66.0,
+      "fat": 17.5,
+      "servingGrams": 234.0
+    },
+    {
+      "id": "bagel-breakfast-sandwich-egg-bacon-cheese-207g",
+      "name": "Bagel Breakfast Sandwich (egg, bacon & cheese)",
+      "servingLabel": "207g",
+      "calories": 535.0,
+      "protein": 24.5,
+      "carbs": 63.0,
+      "fat": 22.0,
+      "servingGrams": 207.0
+    },
+    {
+      "id": "bagel-breakfast-sandwich-egg-cheese-177g",
+      "name": "Bagel Breakfast Sandwich (egg & cheese)",
+      "servingLabel": "177g",
+      "calories": 460.0,
+      "protein": 20.0,
+      "carbs": 63.0,
+      "fat": 16.0,
+      "servingGrams": 177.0
+    },
+    {
+      "id": "butter-croissant-85-05g-3oz",
+      "name": "Butter Croissant",
+      "servingLabel": "85.05g/3oz",
+      "calories": 300.0,
+      "protein": 4.0,
+      "carbs": 33.0,
+      "fat": 17.0,
+      "servingGrams": 85.05
+    },
+    {
+      "id": "chocolate-croissant-81-65g-2-88oz",
+      "name": "Chocolate Croissant",
+      "servingLabel": "81.65g/2.88oz",
+      "calories": 310.0,
+      "protein": 4.0,
+      "carbs": 33.0,
+      "fat": 17.0,
+      "servingGrams": 81.65
+    },
+    {
+      "id": "chocolate-chip-cookie-136g-4-8oz",
+      "name": "Chocolate Chip Cookie",
+      "servingLabel": "136g/4.8oz",
+      "calories": 380.0,
+      "protein": 5.0,
+      "carbs": 50.0,
+      "fat": 20.0,
+      "servingGrams": 136.0
+    },
+    {
+      "id": "cinnamon-swirl-1-pc-70g",
+      "name": "Cinnamon Swirl",
+      "servingLabel": "1 pc (70g)",
+      "calories": 300.0,
+      "protein": 4.0,
+      "carbs": 34.0,
+      "fat": 17.0,
+      "servingGrams": 70.0
+    },
+    {
+      "id": "lemon-danish-1-pc-80g",
+      "name": "Lemon Danish",
+      "servingLabel": "1 pc (80g)",
+      "calories": 280.0,
+      "protein": 3.0,
+      "carbs": 29.0,
+      "fat": 17.0,
+      "servingGrams": 80.0
+    },
+    {
+      "id": "multi-grain-croissant-62-37g-2-20oz",
+      "name": "Multi-grain Croissant",
+      "servingLabel": "62.37g/2.20oz",
+      "calories": 210.0,
+      "protein": 5.0,
+      "carbs": 24.0,
+      "fat": 10.0,
+      "servingGrams": 62.37
+    },
+    {
+      "id": "nutty-danish-1-pc-78g",
+      "name": "Nutty Danish",
+      "servingLabel": "1 pc (78g)",
+      "calories": 360.0,
+      "protein": 3.0,
+      "carbs": 34.0,
+      "fat": 23.0,
+      "servingGrams": 78.0
+    },
+    {
+      "id": "oatmeal-raisin-cookie-127g-4-4oz",
+      "name": "Oatmeal Raisin Cookie",
+      "servingLabel": "127g/4.4oz",
+      "calories": 420.0,
+      "protein": 5.0,
+      "carbs": 51.0,
+      "fat": 14.0,
+      "servingGrams": 127.0
+    },
+    {
+      "id": "pb-cookie-125g-4-4oz",
+      "name": "PB Cookie",
+      "servingLabel": "125g/4.4oz",
+      "calories": 400.0,
+      "protein": 7.0,
+      "carbs": 45.0,
+      "fat": 22.0,
+      "servingGrams": 125.0
+    },
+    {
+      "id": "pretzel-melt-ham-cheese-162g-5-7oz",
+      "name": "Pretzel Melt Ham & Cheese",
+      "servingLabel": "162g/5.7oz",
+      "calories": 410.0,
+      "protein": 20.0,
+      "carbs": 43.0,
+      "fat": 17.0,
+      "servingGrams": 162.0
+    },
+    {
+      "id": "pretzel-melt-spinach-feta-142g-5oz",
+      "name": "Pretzel Melt Spinach Feta",
+      "servingLabel": "142g/5oz",
+      "calories": 420.0,
+      "protein": 12.0,
+      "carbs": 43.0,
+      "fat": 22.0,
+      "servingGrams": 142.0
+    },
+    {
+      "id": "pretzel-melt-turkey-provolone-147g-5-2oz",
+      "name": "Pretzel Melt Turkey Provolone",
+      "servingLabel": "147g/5.2oz",
+      "calories": 400.0,
+      "protein": 23.0,
+      "carbs": 44.0,
+      "fat": 14.0,
+      "servingGrams": 147.0
+    },
+    {
+      "id": "raspberry-danish-1-pc-78g",
+      "name": "Raspberry Danish",
+      "servingLabel": "1 pc (78g)",
+      "calories": 280.0,
+      "protein": 4.0,
+      "carbs": 29.0,
+      "fat": 17.0,
+      "servingGrams": 78.0
+    },
+    {
+      "id": "savory-croissants-spinach-85-05g-3oz",
+      "name": "Savory Croissants Spinach",
+      "servingLabel": "85.05g/3oz",
+      "calories": 230.0,
+      "protein": 7.0,
+      "carbs": 21.0,
+      "fat": 13.0,
+      "servingGrams": 85.05
+    },
+    {
+      "id": "savory-croissant-egg-bacon-85-05g-3oz",
+      "name": "Savory Croissant Egg/Bacon",
+      "servingLabel": "85.05g/3oz",
+      "calories": 280.0,
+      "protein": 9.0,
+      "carbs": 23.0,
+      "fat": 17.0,
+      "servingGrams": 85.05
+    },
+    {
+      "id": "savory-croissant-ham-cheese-85-05g-3oz",
+      "name": "Savory Croissant Ham/Cheese",
+      "servingLabel": "85.05g/3oz",
+      "calories": 260.0,
+      "protein": 6.0,
+      "carbs": 22.0,
+      "fat": 17.0,
+      "servingGrams": 85.05
+    },
+    {
+      "id": "bagels-plain-1-bagel-113g-4oz",
+      "name": "Bagels - Plain",
+      "servingLabel": "1 bagel 113g/4oz",
+      "calories": 290.0,
+      "protein": 10.0,
+      "carbs": 62.0,
+      "fat": 1.0,
+      "servingGrams": 113.0
+    },
+    {
+      "id": "bagels-everything-1-bagel-113g-4oz",
+      "name": "Bagels -Everything",
+      "servingLabel": "1 bagel 113g/4oz",
+      "calories": 290.0,
+      "protein": 10.0,
+      "carbs": 62.0,
+      "fat": 1.0,
+      "servingGrams": 113.0
+    },
+    {
+      "id": "bagels-asiago-1-bagel-113g-4oz",
+      "name": "Bagels - Asiago",
+      "servingLabel": "1 bagel 113g/4oz",
+      "calories": 300.0,
+      "protein": 11.0,
+      "carbs": 59.0,
+      "fat": 2.5,
+      "servingGrams": 113.0
+    },
+    {
+      "id": "banana-oat-bread-104g-3-66oz",
+      "name": "Banana Oat Bread",
+      "servingLabel": "104g/3.66oz",
+      "calories": 300.0,
+      "protein": 4.0,
+      "carbs": 44.0,
+      "fat": 12.0,
+      "servingGrams": 104.0
+    },
+    {
+      "id": "blueberry-oat-loaf-107g-3-76oz",
+      "name": "Blueberry Oat Loaf",
+      "servingLabel": "107g/3.76oz",
+      "calories": 350.0,
+      "protein": 5.0,
+      "carbs": 48.0,
+      "fat": 15.0,
+      "servingGrams": 107.0
+    },
+    {
+      "id": "charlie-brownies-72g-2-5oz",
+      "name": "Charlie Brownies",
+      "servingLabel": "72g/2.5oz",
+      "calories": 320.0,
+      "protein": 4.0,
+      "carbs": 38.0,
+      "fat": 17.0,
+      "servingGrams": 72.0
+    },
+    {
+      "id": "cookies-chocolate-chunk-cookie-86g-3-02oz",
+      "name": "Cookies: Chocolate Chunk Cookie",
+      "servingLabel": "86g/3.02oz",
+      "calories": 380.0,
+      "protein": 5.0,
+      "carbs": 50.0,
+      "fat": 19.0,
+      "servingGrams": 86.0
+    },
+    {
+      "id": "cookies-salted-caramel-cookie-84g-2-94oz",
+      "name": "Cookies: Salted Caramel Cookie",
+      "servingLabel": "84g/2.94oz",
+      "calories": 390.0,
+      "protein": 4.0,
+      "carbs": 57.0,
+      "fat": 17.0,
+      "servingGrams": 84.0
+    },
+    {
+      "id": "cran-orange-bread-96g-3-4oz",
+      "name": "Cran-Orange Bread",
+      "servingLabel": "96g/3.4oz",
+      "calories": 310.0,
+      "protein": 5.0,
+      "carbs": 45.0,
+      "fat": 12.0,
+      "servingGrams": 96.0
+    },
+    {
+      "id": "gluten-free-honduran-brownie-83g-2-92oz",
+      "name": "Gluten Free Honduran Brownie",
+      "servingLabel": "83g/2.92oz",
+      "calories": 350.0,
+      "protein": 4.0,
+      "carbs": 61.0,
+      "fat": 18.0,
+      "servingGrams": 83.0
+    },
+    {
+      "id": "marshmallow-bars-60g-2-1oz",
+      "name": "Marshmallow Bars",
+      "servingLabel": "60g/2.1oz",
+      "calories": 250.0,
+      "protein": 2.0,
+      "carbs": 43.0,
+      "fat": 5.0,
+      "servingGrams": 60.0
+    },
+    {
+      "id": "mini-french-donuts-plain-16g-1-donut",
+      "name": "Mini French Donuts - Plain",
+      "servingLabel": "16g/1 donut",
+      "calories": 70.0,
+      "protein": 1.0,
+      "carbs": 6.0,
+      "fat": 4.5,
+      "servingGrams": 16.0
+    },
+    {
+      "id": "mini-french-donuts-chocolate-hazelnut-25g-1-donut",
+      "name": "Mini French Donuts - Chocolate Hazelnut",
+      "servingLabel": "25g/1 donut",
+      "calories": 110.0,
+      "protein": 2.0,
+      "carbs": 12.0,
+      "fat": 7.0,
+      "servingGrams": 25.0
+    },
+    {
+      "id": "mini-french-donuts-red-fruit-21g-1-donut",
+      "name": "Mini French Donuts - Red Fruit",
+      "servingLabel": "21g/1 donut",
+      "calories": 80.0,
+      "protein": 2.0,
+      "carbs": 8.0,
+      "fat": 4.0,
+      "servingGrams": 21.0
+    },
+    {
+      "id": "pumpkin-chai-swirl-95g-3-36oz",
+      "name": "Pumpkin Chai Swirl",
+      "servingLabel": "95g/3.36oz",
+      "calories": 290.0,
+      "protein": 5.0,
+      "carbs": 43.0,
+      "fat": 11.0,
+      "servingGrams": 95.0
+    },
+    {
+      "id": "scones-blueberry-99g-3-5oz",
+      "name": "Scones - Blueberry",
+      "servingLabel": "99g/3.5oz",
+      "calories": 360.0,
+      "protein": 6.0,
+      "carbs": 44.0,
+      "fat": 18.0,
+      "servingGrams": 99.0
+    },
+    {
+      "id": "scones-cinnamon-99g-3-5oz",
+      "name": "Scones - Cinnamon",
+      "servingLabel": "99g/3.5oz",
+      "calories": 410.0,
+      "protein": 6.0,
+      "carbs": 48.0,
+      "fat": 22.0,
+      "servingGrams": 99.0
+    },
+    {
+      "id": "scones-cranberry-orange-99g-3-5oz",
+      "name": "Scones - Cranberry Orange",
+      "servingLabel": "99g/3.5oz",
+      "calories": 370.0,
+      "protein": 5.0,
+      "carbs": 45.0,
+      "fat": 19.0,
+      "servingGrams": 99.0
+    },
+    {
+      "id": "sour-cream-pecan-coffee-cake-97g-3-4oz",
+      "name": "Sour Cream Pecan Coffee Cake",
+      "servingLabel": "97g/3.4oz",
+      "calories": 390.0,
+      "protein": 5.0,
+      "carbs": 41.0,
+      "fat": 23.0,
+      "servingGrams": 97.0
+    },
+    {
+      "id": "toffee-blondie-80g-2-8oz",
+      "name": "Toffee Blondie",
+      "servingLabel": "80g/2.8oz",
+      "calories": 350.0,
+      "protein": 4.0,
+      "carbs": 46.0,
+      "fat": 17.0,
+      "servingGrams": 80.0
+    },
+    {
+      "id": "zucchini-raisin-bread-170g-3-76oz",
+      "name": "Zucchini Raisin Bread",
+      "servingLabel": "170g/3.76oz",
+      "calories": 320.0,
+      "protein": 4.0,
+      "carbs": 54.0,
+      "fat": 9.0,
+      "servingGrams": 170.0
+    }
+  ]
+}

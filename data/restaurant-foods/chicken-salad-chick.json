@@ -1,0 +1,800 @@
+{
+  "chain": "Chicken Salad Chick",
+  "sourceUrl": "https://storyblok.pleinaircdn.com/f/297321/x/2be8a2157f/nutritional-and-allergy-information.pdf",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "name": "Barbie Q",
+      "servingLabel": "4 oz chicken salad scoop",
+      "calories": 380.0,
+      "fat": 29.0,
+      "carbs": 10.0,
+      "protein": 18.0,
+      "id": "barbie-q-4-oz-chicken-salad-scoop"
+    },
+    {
+      "name": "Buffalo Barclay",
+      "servingLabel": "4 oz chicken salad scoop",
+      "calories": 390.0,
+      "fat": 34.0,
+      "carbs": 1.0,
+      "protein": 18.0,
+      "id": "buffalo-barclay-4-oz-chicken-salad-scoop"
+    },
+    {
+      "name": "Classic Carol",
+      "servingLabel": "4 oz chicken salad scoop",
+      "calories": 410.0,
+      "fat": 35.0,
+      "carbs": 0.0,
+      "protein": 22.0,
+      "id": "classic-carol-4-oz-chicken-salad-scoop"
+    },
+    {
+      "name": "Cranberry Kelli",
+      "servingLabel": "4 oz chicken salad scoop",
+      "calories": 450.0,
+      "fat": 36.0,
+      "carbs": 10.0,
+      "protein": 21.0,
+      "id": "cranberry-kelli-4-oz-chicken-salad-scoop"
+    },
+    {
+      "name": "Dixie Chick",
+      "servingLabel": "4 oz chicken salad scoop",
+      "calories": 370.0,
+      "fat": 31.0,
+      "carbs": 2.0,
+      "protein": 19.0,
+      "id": "dixie-chick-4-oz-chicken-salad-scoop"
+    },
+    {
+      "name": "Fancy Nancy",
+      "servingLabel": "4 oz chicken salad scoop",
+      "calories": 380.0,
+      "fat": 33.0,
+      "carbs": 5.0,
+      "protein": 18.0,
+      "id": "fancy-nancy-4-oz-chicken-salad-scoop"
+    },
+    {
+      "name": "Fruity Fran",
+      "servingLabel": "4 oz chicken salad scoop",
+      "calories": 330.0,
+      "fat": 26.0,
+      "carbs": 6.0,
+      "protein": 16.0,
+      "id": "fruity-fran-4-oz-chicken-salad-scoop"
+    },
+    {
+      "name": "Jalapeño Holly",
+      "servingLabel": "4 oz chicken salad scoop",
+      "calories": 380.0,
+      "fat": 32.0,
+      "carbs": 1.0,
+      "protein": 20.0,
+      "id": "jalapeno-holly-4-oz-chicken-salad-scoop"
+    },
+    {
+      "name": "Kickin Kay Lynne",
+      "servingLabel": "4 oz chicken salad scoop",
+      "calories": 400.0,
+      "fat": 34.0,
+      "carbs": 1.0,
+      "protein": 20.0,
+      "id": "kickin-kay-lynne-4-oz-chicken-salad-scoop"
+    },
+    {
+      "name": "Lauryn's Lemon Basil",
+      "servingLabel": "4 oz chicken salad scoop",
+      "calories": 410.0,
+      "fat": 35.0,
+      "carbs": 1.0,
+      "protein": 20.0,
+      "id": "lauryn-s-lemon-basil-4-oz-chicken-salad-scoop"
+    },
+    {
+      "name": "Olivia's Old South",
+      "servingLabel": "4 oz chicken salad scoop",
+      "calories": 360.0,
+      "fat": 28.0,
+      "carbs": 5.0,
+      "protein": 18.0,
+      "id": "olivia-s-old-south-4-oz-chicken-salad-scoop"
+    },
+    {
+      "name": "Sassy Scotty",
+      "servingLabel": "4 oz chicken salad scoop",
+      "calories": 430.0,
+      "fat": 38.0,
+      "carbs": 1.0,
+      "protein": 21.0,
+      "id": "sassy-scotty-4-oz-chicken-salad-scoop"
+    },
+    {
+      "name": "Deck the Holly",
+      "servingLabel": "4 oz chicken salad scoop",
+      "calories": 350.0,
+      "fat": 27.0,
+      "carbs": 10.0,
+      "protein": 16.0,
+      "id": "deck-the-holly-4-oz-chicken-salad-scoop"
+    },
+    {
+      "name": "Dill-icious Diva",
+      "servingLabel": "4 oz chicken salad scoop",
+      "calories": 370.0,
+      "fat": 32.0,
+      "carbs": 1.0,
+      "protein": 20.0,
+      "id": "dill-icious-diva-4-oz-chicken-salad-scoop"
+    },
+    {
+      "name": "Greek Goddess",
+      "servingLabel": "4 oz chicken salad scoop",
+      "calories": 400.0,
+      "fat": 35.0,
+      "carbs": 3.0,
+      "protein": 16.0,
+      "id": "greek-goddess-4-oz-chicken-salad-scoop"
+    },
+    {
+      "name": "Jill Pickle",
+      "servingLabel": "4 oz chicken salad scoop",
+      "calories": 290.0,
+      "fat": 25.0,
+      "carbs": 0.0,
+      "protein": 15.0,
+      "id": "jill-pickle-4-oz-chicken-salad-scoop"
+    },
+    {
+      "name": "Maui Mama",
+      "servingLabel": "4 oz chicken salad scoop",
+      "calories": 280.0,
+      "fat": 22.0,
+      "carbs": 6.0,
+      "protein": 15.0,
+      "id": "maui-mama-4-oz-chicken-salad-scoop"
+    },
+    {
+      "name": "Nashville Hottie",
+      "servingLabel": "4 oz chicken salad scoop",
+      "calories": 400.0,
+      "fat": 33.0,
+      "carbs": 4.0,
+      "protein": 21.0,
+      "id": "nashville-hottie-4-oz-chicken-salad-scoop"
+    },
+    {
+      "name": "Pam's Parmesan Caesar",
+      "servingLabel": "4 oz chicken salad scoop",
+      "calories": 450.0,
+      "fat": 40.0,
+      "carbs": 1.0,
+      "protein": 20.0,
+      "id": "pam-s-parmesan-caesar-4-oz-chicken-salad-scoop"
+    },
+    {
+      "name": "Patti Thai'rific",
+      "servingLabel": "4 oz chicken salad scoop",
+      "calories": 430.0,
+      "fat": 37.0,
+      "carbs": 7.0,
+      "protein": 17.0,
+      "id": "patti-thai-rific-4-oz-chicken-salad-scoop"
+    },
+    {
+      "name": "Southwest Señorita",
+      "servingLabel": "4 oz chicken salad scoop",
+      "calories": 330.0,
+      "fat": 27.0,
+      "carbs": 3.0,
+      "protein": 17.0,
+      "id": "southwest-senorita-4-oz-chicken-salad-scoop"
+    },
+    {
+      "name": "Southern Pimento Cheese",
+      "servingLabel": "4 oz pimento cheese scoop",
+      "calories": 450.0,
+      "fat": 40.0,
+      "carbs": 3.0,
+      "protein": 19.0,
+      "id": "southern-pimento-cheese-4-oz-pimento-cheese-scoop"
+    },
+    {
+      "name": "Jalapeño Pimento Cheese",
+      "servingLabel": "4 oz pimento cheese scoop",
+      "calories": 420.0,
+      "fat": 37.0,
+      "carbs": 4.0,
+      "protein": 17.0,
+      "id": "jalapeno-pimento-cheese-4-oz-pimento-cheese-scoop"
+    },
+    {
+      "name": "Sandwich: On Croissant (excludes chicken salad)",
+      "servingLabel": "1 listed sandwich component",
+      "calories": 220.0,
+      "fat": 6.0,
+      "carbs": 35.0,
+      "protein": 6.0,
+      "id": "sandwich-on-croissant-excludes-chicken-salad-1-listed-sandwich-component"
+    },
+    {
+      "name": "Sandwich: On Wheat (excludes chicken salad)",
+      "servingLabel": "1 listed sandwich component",
+      "calories": 280.0,
+      "fat": 3.0,
+      "carbs": 52.0,
+      "protein": 10.0,
+      "id": "sandwich-on-wheat-excludes-chicken-salad-1-listed-sandwich-component"
+    },
+    {
+      "name": "Sandwich: On White (excludes chicken salad)",
+      "servingLabel": "1 listed sandwich component",
+      "calories": 280.0,
+      "fat": 3.0,
+      "carbs": 52.0,
+      "protein": 8.0,
+      "id": "sandwich-on-white-excludes-chicken-salad-1-listed-sandwich-component"
+    },
+    {
+      "name": "Add: Lettuce and Tomato",
+      "servingLabel": "1 listed sandwich component",
+      "calories": 15.0,
+      "fat": 0.0,
+      "carbs": 3.0,
+      "protein": 1.0,
+      "id": "add-lettuce-and-tomato-1-listed-sandwich-component"
+    },
+    {
+      "name": "Add: Bacon",
+      "servingLabel": "1 listed sandwich component",
+      "calories": 90.0,
+      "fat": 6.0,
+      "carbs": 0.0,
+      "protein": 8.0,
+      "id": "add-bacon-1-listed-sandwich-component"
+    },
+    {
+      "name": "Signature BLT (excludes chicken salad)",
+      "servingLabel": "1 listed sandwich component",
+      "calories": 100.0,
+      "fat": 7.0,
+      "carbs": 3.0,
+      "protein": 8.0,
+      "id": "signature-blt-excludes-chicken-salad-1-listed-sandwich-component"
+    },
+    {
+      "name": "Turkey Club (no bread)",
+      "servingLabel": "1 listed sandwich component",
+      "calories": 390.0,
+      "fat": 25.0,
+      "carbs": 5.0,
+      "protein": 38.0,
+      "id": "turkey-club-no-bread-1-listed-sandwich-component"
+    },
+    {
+      "name": "Melt with Cheddar (excludes chicken salad)",
+      "servingLabel": "1 listed sandwich component",
+      "calories": 310.0,
+      "fat": 13.0,
+      "carbs": 35.0,
+      "protein": 12.0,
+      "id": "melt-with-cheddar-excludes-chicken-salad-1-listed-sandwich-component"
+    },
+    {
+      "name": "Melt with Provolone (excludes chicken salad)",
+      "servingLabel": "1 listed sandwich component",
+      "calories": 290.0,
+      "fat": 12.0,
+      "carbs": 35.0,
+      "protein": 11.0,
+      "id": "melt-with-provolone-excludes-chicken-salad-1-listed-sandwich-component"
+    },
+    {
+      "name": "Pickle Spear",
+      "servingLabel": "1 pickle spear",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "pickle-spear-1-pickle-spear"
+    },
+    {
+      "name": "Crackers",
+      "servingLabel": "1 serving crackers",
+      "calories": 35.0,
+      "fat": 1.5,
+      "carbs": 5.0,
+      "protein": 1.0,
+      "id": "crackers-1-serving-crackers"
+    },
+    {
+      "name": "Broccoli Salad",
+      "servingLabel": "4 oz side",
+      "calories": 230.0,
+      "fat": 18.0,
+      "carbs": 11.0,
+      "protein": 8.0,
+      "id": "broccoli-salad-4-oz-side"
+    },
+    {
+      "name": "Fresh Fruit",
+      "servingLabel": "4 oz side",
+      "calories": 60.0,
+      "fat": 0.0,
+      "carbs": 16.0,
+      "protein": 1.0,
+      "id": "fresh-fruit-4-oz-side"
+    },
+    {
+      "name": "Grape Salad with Topping",
+      "servingLabel": "4 oz side",
+      "calories": 170.0,
+      "fat": 8.0,
+      "carbs": 27.0,
+      "protein": 2.0,
+      "id": "grape-salad-with-topping-4-oz-side"
+    },
+    {
+      "name": "Pasta Salad",
+      "servingLabel": "4 oz side",
+      "calories": 230.0,
+      "fat": 6.0,
+      "carbs": 36.0,
+      "protein": 7.0,
+      "id": "pasta-salad-4-oz-side"
+    },
+    {
+      "name": "Baked Lays",
+      "servingLabel": "1 bag chips",
+      "calories": 140.0,
+      "fat": 4.0,
+      "carbs": 24.0,
+      "protein": 2.0,
+      "id": "baked-lays-1-bag-chips"
+    },
+    {
+      "name": "Doritos",
+      "servingLabel": "1 bag chips",
+      "calories": 270.0,
+      "fat": 14.0,
+      "carbs": 32.0,
+      "protein": 4.0,
+      "id": "doritos-1-bag-chips"
+    },
+    {
+      "name": "BBQ Chips",
+      "servingLabel": "1 bag chips",
+      "calories": 200.0,
+      "fat": 11.0,
+      "carbs": 23.0,
+      "protein": 3.0,
+      "id": "bbq-chips-1-bag-chips"
+    },
+    {
+      "name": "Jalapeño Chips",
+      "servingLabel": "1 bag chips",
+      "calories": 200.0,
+      "fat": 11.0,
+      "carbs": 23.0,
+      "protein": 3.0,
+      "id": "jalapeno-chips-1-bag-chips"
+    },
+    {
+      "name": "Sea Salt Chips",
+      "servingLabel": "1 bag chips",
+      "calories": 210.0,
+      "fat": 12.0,
+      "carbs": 23.0,
+      "protein": 3.0,
+      "id": "sea-salt-chips-1-bag-chips"
+    },
+    {
+      "name": "Salt and Vinegar Chips",
+      "servingLabel": "1 bag chips",
+      "calories": 200.0,
+      "fat": 11.0,
+      "carbs": 23.0,
+      "protein": 3.0,
+      "id": "salt-and-vinegar-chips-1-bag-chips"
+    },
+    {
+      "name": "Spicy Dill Pickle Chips (LTO)",
+      "servingLabel": "1 bag chips",
+      "calories": 200.0,
+      "fat": 11.0,
+      "carbs": 23.0,
+      "protein": 2.0,
+      "id": "spicy-dill-pickle-chips-lto-1-bag-chips"
+    },
+    {
+      "name": "Broccoli & Cheese",
+      "servingLabel": "1 cup soup",
+      "calories": 330.0,
+      "fat": 19.0,
+      "carbs": 31.0,
+      "protein": 9.0,
+      "id": "broccoli-cheese-1-cup-soup"
+    },
+    {
+      "name": "Chicken Poblano",
+      "servingLabel": "1 cup soup",
+      "calories": 330.0,
+      "fat": 17.0,
+      "carbs": 34.0,
+      "protein": 9.0,
+      "id": "chicken-poblano-1-cup-soup"
+    },
+    {
+      "name": "Chicken Tortilla",
+      "servingLabel": "1 cup soup",
+      "calories": 280.0,
+      "fat": 13.0,
+      "carbs": 31.0,
+      "protein": 10.0,
+      "id": "chicken-tortilla-1-cup-soup"
+    },
+    {
+      "name": "Creamy Chicken & Wild Rice",
+      "servingLabel": "1 cup soup",
+      "calories": 370.0,
+      "fat": 22.0,
+      "carbs": 33.0,
+      "protein": 9.0,
+      "id": "creamy-chicken-wild-rice-1-cup-soup"
+    },
+    {
+      "name": "Loaded Potato",
+      "servingLabel": "1 cup soup",
+      "calories": 360.0,
+      "fat": 21.0,
+      "carbs": 35.0,
+      "protein": 9.0,
+      "id": "loaded-potato-1-cup-soup"
+    },
+    {
+      "name": "Tomato Bisque",
+      "servingLabel": "1 cup soup",
+      "calories": 250.0,
+      "fat": 11.0,
+      "carbs": 32.0,
+      "protein": 4.0,
+      "id": "tomato-bisque-1-cup-soup"
+    },
+    {
+      "name": "Mac ‘n Cheese",
+      "servingLabel": "1 cup soup",
+      "calories": 270.0,
+      "fat": 13.0,
+      "carbs": 25.0,
+      "protein": 11.0,
+      "id": "mac-n-cheese-1-cup-soup"
+    },
+    {
+      "name": "Broccoli & Cheese",
+      "servingLabel": "1 bowl soup",
+      "calories": 530.0,
+      "fat": 32.0,
+      "carbs": 48.0,
+      "protein": 16.0,
+      "id": "broccoli-cheese-1-bowl-soup"
+    },
+    {
+      "name": "Chicken Poblano",
+      "servingLabel": "1 bowl soup",
+      "calories": 520.0,
+      "fat": 28.0,
+      "carbs": 54.0,
+      "protein": 15.0,
+      "id": "chicken-poblano-1-bowl-soup"
+    },
+    {
+      "name": "Chicken Tortilla",
+      "servingLabel": "1 bowl soup",
+      "calories": 450.0,
+      "fat": 21.0,
+      "carbs": 50.0,
+      "protein": 17.0,
+      "id": "chicken-tortilla-1-bowl-soup"
+    },
+    {
+      "name": "Creamy Chicken & Wild Rice",
+      "servingLabel": "1 bowl soup",
+      "calories": 590.0,
+      "fat": 35.0,
+      "carbs": 51.0,
+      "protein": 15.0,
+      "id": "creamy-chicken-wild-rice-1-bowl-soup"
+    },
+    {
+      "name": "Loaded Potato",
+      "servingLabel": "1 bowl soup",
+      "calories": 600.0,
+      "fat": 35.0,
+      "carbs": 55.0,
+      "protein": 17.0,
+      "id": "loaded-potato-1-bowl-soup"
+    },
+    {
+      "name": "Tomato Bisque",
+      "servingLabel": "1 bowl soup",
+      "calories": 390.0,
+      "fat": 18.0,
+      "carbs": 50.0,
+      "protein": 7.0,
+      "id": "tomato-bisque-1-bowl-soup"
+    },
+    {
+      "name": "Mac ‘n Cheese",
+      "servingLabel": "1 bowl soup",
+      "calories": 450.0,
+      "fat": 21.0,
+      "carbs": 42.0,
+      "protein": 19.0,
+      "id": "mac-n-cheese-1-bowl-soup"
+    },
+    {
+      "name": "Kids Mac ‘n Cheese",
+      "servingLabel": "kids portion",
+      "calories": 270.0,
+      "fat": 13.0,
+      "carbs": 25.0,
+      "protein": 11.0,
+      "id": "kids-mac-n-cheese-kids-portion"
+    },
+    {
+      "name": "Kids Turkey Sandwich (No Bread)",
+      "servingLabel": "kids portion",
+      "calories": 100.0,
+      "fat": 3.5,
+      "carbs": 1.0,
+      "protein": 15.0,
+      "id": "kids-turkey-sandwich-no-bread-kids-portion"
+    },
+    {
+      "name": "Kids Half Sandwich: On Wheat (excludes chicken salad)",
+      "servingLabel": "kids portion",
+      "calories": 140.0,
+      "fat": 1.5,
+      "carbs": 26.0,
+      "protein": 5.0,
+      "id": "kids-half-sandwich-on-wheat-excludes-chicken-salad-kids-portion"
+    },
+    {
+      "name": "Kids Half Sandwich: On White (excludes chicken salad)",
+      "servingLabel": "kids portion",
+      "calories": 140.0,
+      "fat": 1.5,
+      "carbs": 26.0,
+      "protein": 4.0,
+      "id": "kids-half-sandwich-on-white-excludes-chicken-salad-kids-portion"
+    },
+    {
+      "name": "Kids Half Sandwich: On Croissant (excludes chicken salad)",
+      "servingLabel": "kids portion",
+      "calories": 110.0,
+      "fat": 3.0,
+      "carbs": 18.0,
+      "protein": 3.0,
+      "id": "kids-half-sandwich-on-croissant-excludes-chicken-salad-kids-portion"
+    },
+    {
+      "name": "Kids Barbie Q",
+      "servingLabel": "kids portion",
+      "calories": 190.0,
+      "fat": 15.0,
+      "carbs": 5.0,
+      "protein": 9.0,
+      "id": "kids-barbie-q-kids-portion"
+    },
+    {
+      "name": "Kids Buffalo Barclay",
+      "servingLabel": "kids portion",
+      "calories": 190.0,
+      "fat": 17.0,
+      "carbs": 0.0,
+      "protein": 9.0,
+      "id": "kids-buffalo-barclay-kids-portion"
+    },
+    {
+      "name": "Kids Classic Carol",
+      "servingLabel": "kids portion",
+      "calories": 210.0,
+      "fat": 18.0,
+      "carbs": 0.0,
+      "protein": 11.0,
+      "id": "kids-classic-carol-kids-portion"
+    },
+    {
+      "name": "Kids Cranberry Kelli",
+      "servingLabel": "kids portion",
+      "calories": 220.0,
+      "fat": 18.0,
+      "carbs": 5.0,
+      "protein": 10.0,
+      "id": "kids-cranberry-kelli-kids-portion"
+    },
+    {
+      "name": "Kids Dixie Chick",
+      "servingLabel": "kids portion",
+      "calories": 180.0,
+      "fat": 15.0,
+      "carbs": 1.0,
+      "protein": 10.0,
+      "id": "kids-dixie-chick-kids-portion"
+    },
+    {
+      "name": "Kids Fancy Nancy",
+      "servingLabel": "kids portion",
+      "calories": 190.0,
+      "fat": 16.0,
+      "carbs": 2.0,
+      "protein": 9.0,
+      "id": "kids-fancy-nancy-kids-portion"
+    },
+    {
+      "name": "Kids Fruity Fran",
+      "servingLabel": "kids portion",
+      "calories": 160.0,
+      "fat": 13.0,
+      "carbs": 3.0,
+      "protein": 8.0,
+      "id": "kids-fruity-fran-kids-portion"
+    },
+    {
+      "name": "Kids Jalapeño Holly",
+      "servingLabel": "kids portion",
+      "calories": 190.0,
+      "fat": 16.0,
+      "carbs": 0.0,
+      "protein": 10.0,
+      "id": "kids-jalapeno-holly-kids-portion"
+    },
+    {
+      "name": "Kids Kickin Kay Lynne",
+      "servingLabel": "kids portion",
+      "calories": 200.0,
+      "fat": 17.0,
+      "carbs": 0.0,
+      "protein": 10.0,
+      "id": "kids-kickin-kay-lynne-kids-portion"
+    },
+    {
+      "name": "Kids Lauryn's Lemon Basil",
+      "servingLabel": "kids portion",
+      "calories": 200.0,
+      "fat": 18.0,
+      "carbs": 0.0,
+      "protein": 10.0,
+      "id": "kids-lauryn-s-lemon-basil-kids-portion"
+    },
+    {
+      "name": "Kids Olivia's Old South",
+      "servingLabel": "kids portion",
+      "calories": 180.0,
+      "fat": 14.0,
+      "carbs": 2.0,
+      "protein": 9.0,
+      "id": "kids-olivia-s-old-south-kids-portion"
+    },
+    {
+      "name": "Kids Southern Pimento Cheese",
+      "servingLabel": "kids portion",
+      "calories": 220.0,
+      "fat": 20.0,
+      "carbs": 2.0,
+      "protein": 9.0,
+      "id": "kids-southern-pimento-cheese-kids-portion"
+    },
+    {
+      "name": "Kids Sassy Scotty",
+      "servingLabel": "kids portion",
+      "calories": 220.0,
+      "fat": 19.0,
+      "carbs": 0.0,
+      "protein": 11.0,
+      "id": "kids-sassy-scotty-kids-portion"
+    },
+    {
+      "name": "Kids Jalapeño Pimento Cheese",
+      "servingLabel": "kids portion",
+      "calories": 210.0,
+      "fat": 19.0,
+      "carbs": 2.0,
+      "protein": 9.0,
+      "id": "kids-jalapeno-pimento-cheese-kids-portion"
+    },
+    {
+      "name": "Small Buttercream Cookie",
+      "servingLabel": "1 listed dessert",
+      "calories": 90.0,
+      "fat": 3.5,
+      "carbs": 11.0,
+      "protein": 1.0,
+      "id": "small-buttercream-cookie-1-listed-dessert"
+    },
+    {
+      "name": "Large Buttercream Flower Cookie",
+      "servingLabel": "1 listed dessert",
+      "calories": 170.0,
+      "fat": 6.0,
+      "carbs": 28.0,
+      "protein": 2.0,
+      "id": "large-buttercream-flower-cookie-1-listed-dessert"
+    },
+    {
+      "name": "Lemon Cookie",
+      "servingLabel": "1 listed dessert",
+      "calories": 180.0,
+      "fat": 6.0,
+      "carbs": 28.0,
+      "protein": 2.0,
+      "id": "lemon-cookie-1-listed-dessert"
+    },
+    {
+      "name": "Chocolate Crispy Treat",
+      "servingLabel": "1 listed dessert",
+      "calories": 390.0,
+      "fat": 9.0,
+      "carbs": 76.0,
+      "protein": 3.0,
+      "id": "chocolate-crispy-treat-1-listed-dessert"
+    },
+    {
+      "name": "Pumpkin Spice Cake Slice",
+      "servingLabel": "1 listed dessert",
+      "calories": 1120.0,
+      "fat": 53.0,
+      "carbs": 158.0,
+      "protein": 8.0,
+      "id": "pumpkin-spice-cake-slice-1-listed-dessert"
+    },
+    {
+      "name": "Pumpkin Spice Cake Whole",
+      "servingLabel": "1 listed dessert",
+      "calories": 11200.0,
+      "fat": 531.0,
+      "carbs": 1580.0,
+      "protein": 81.0,
+      "id": "pumpkin-spice-cake-whole-1-listed-dessert"
+    },
+    {
+      "name": "Red Velvet Cake Slice",
+      "servingLabel": "1 listed dessert",
+      "calories": 1250.0,
+      "fat": 66.0,
+      "carbs": 159.0,
+      "protein": 9.0,
+      "id": "red-velvet-cake-slice-1-listed-dessert"
+    },
+    {
+      "name": "Red Velvet Cake Whole",
+      "servingLabel": "1 listed dessert",
+      "calories": 12470.0,
+      "fat": 658.0,
+      "carbs": 1591.0,
+      "protein": 94.0,
+      "id": "red-velvet-cake-whole-1-listed-dessert"
+    },
+    {
+      "name": "White Chocolate Cake Slice",
+      "servingLabel": "1 listed dessert",
+      "calories": 1250.0,
+      "fat": 57.0,
+      "carbs": 175.0,
+      "protein": 10.0,
+      "id": "white-chocolate-cake-slice-1-listed-dessert"
+    },
+    {
+      "name": "White Chocolate Cake Whole",
+      "servingLabel": "1 listed dessert",
+      "calories": 12460.0,
+      "fat": 573.0,
+      "carbs": 1752.0,
+      "protein": 104.0,
+      "id": "white-chocolate-cake-whole-1-listed-dessert"
+    }
+  ],
+  "sourceDate": "2026-08-03"
+}

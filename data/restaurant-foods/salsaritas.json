@@ -1,0 +1,764 @@
+{
+  "chain": "Salsarita’s Fresh Mexican Grill",
+  "sourceUrl": "https://salsaritas.com/wp-content/uploads/2023/01/Nutritional-Data-Salsaritas-March2023.pdf",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "name": "6\" Tortilla (Taco)",
+      "servingLabel": "1 ea.",
+      "calories": 90.0,
+      "fat": 2.5,
+      "carbs": 14.0,
+      "protein": 2.0,
+      "id": "6-tortilla-taco-1-ea"
+    },
+    {
+      "name": "10\" Tortilla (Small Entrée)",
+      "servingLabel": "1 ea.",
+      "calories": 200.0,
+      "fat": 6.0,
+      "carbs": 34.0,
+      "protein": 6.0,
+      "id": "10-tortilla-small-entree-1-ea"
+    },
+    {
+      "name": "10\" Wheat Tortilla (Small Entrée)",
+      "servingLabel": "1 ea.",
+      "calories": 210.0,
+      "fat": 6.0,
+      "carbs": 34.0,
+      "protein": 5.0,
+      "id": "10-wheat-tortilla-small-entree-1-ea"
+    },
+    {
+      "name": "12\" Tortilla (Regular Entrée)",
+      "servingLabel": "1 ea.",
+      "calories": 290.0,
+      "fat": 8.0,
+      "carbs": 48.0,
+      "protein": 8.0,
+      "id": "12-tortilla-regular-entree-1-ea"
+    },
+    {
+      "name": "Taco Salad Shell",
+      "servingLabel": "1 ea.",
+      "calories": 420.0,
+      "fat": 24.0,
+      "carbs": 39.0,
+      "protein": 8.0,
+      "id": "taco-salad-shell-1-ea"
+    },
+    {
+      "name": "Crispy Taco Shell",
+      "servingLabel": "1 ea.",
+      "calories": 80.0,
+      "fat": 5.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "id": "crispy-taco-shell-1-ea"
+    },
+    {
+      "name": "Chips",
+      "servingLabel": "1 oz. by weight",
+      "calories": 160.0,
+      "fat": 11.0,
+      "carbs": 12.0,
+      "protein": 1.0,
+      "id": "chips-1-oz-by-weight"
+    },
+    {
+      "name": "Brown Rice",
+      "servingLabel": "1 oz. by volume",
+      "calories": 35.0,
+      "fat": 0.0,
+      "carbs": 7.0,
+      "protein": 1.0,
+      "id": "brown-rice-1-oz-by-volume"
+    },
+    {
+      "name": "Cilantro Lime Rice",
+      "servingLabel": "1 oz. by volume",
+      "calories": 45.0,
+      "fat": 0.0,
+      "carbs": 9.0,
+      "protein": 1.0,
+      "id": "cilantro-lime-rice-1-oz-by-volume"
+    },
+    {
+      "name": "Mexican Rice",
+      "servingLabel": "1 oz. by volume",
+      "calories": 40.0,
+      "fat": 0.0,
+      "carbs": 8.0,
+      "protein": 1.0,
+      "id": "mexican-rice-1-oz-by-volume"
+    },
+    {
+      "name": "Black Beans",
+      "servingLabel": "1 oz. by volume",
+      "calories": 25.0,
+      "fat": 0.0,
+      "carbs": 5.0,
+      "protein": 2.0,
+      "id": "black-beans-1-oz-by-volume"
+    },
+    {
+      "name": "Pinto Beans",
+      "servingLabel": "1 oz. by volume",
+      "calories": 30.0,
+      "fat": 0.0,
+      "carbs": 5.0,
+      "protein": 2.0,
+      "id": "pinto-beans-1-oz-by-volume"
+    },
+    {
+      "name": "Refried Beans",
+      "servingLabel": "1 oz. by volume",
+      "calories": 30.0,
+      "fat": 5.0,
+      "carbs": 5.0,
+      "protein": 2.0,
+      "id": "refried-beans-1-oz-by-volume"
+    },
+    {
+      "name": "Plant Based Chorizo",
+      "servingLabel": "1 oz. by volume",
+      "calories": 55.0,
+      "fat": 4.0,
+      "carbs": 3.0,
+      "protein": 5.0,
+      "id": "plant-based-chorizo-1-oz-by-volume"
+    },
+    {
+      "name": "Chicken",
+      "servingLabel": "1 oz. by volume",
+      "calories": 34.0,
+      "fat": 1.0,
+      "carbs": 1.0,
+      "protein": 5.0,
+      "id": "chicken-1-oz-by-volume"
+    },
+    {
+      "name": "Ground Beef",
+      "servingLabel": "1 oz. by volume",
+      "calories": 68.0,
+      "fat": 5.0,
+      "carbs": 1.0,
+      "protein": 5.0,
+      "id": "ground-beef-1-oz-by-volume"
+    },
+    {
+      "name": "Pork",
+      "servingLabel": "1 oz. by volume",
+      "calories": 25.0,
+      "fat": 1.0,
+      "carbs": 0.0,
+      "protein": 5.0,
+      "id": "pork-1-oz-by-volume"
+    },
+    {
+      "name": "Shrimp",
+      "servingLabel": "1 oz. by volume",
+      "calories": 20.0,
+      "fat": 0.5,
+      "carbs": 0.0,
+      "protein": 2.0,
+      "id": "shrimp-1-oz-by-volume"
+    },
+    {
+      "name": "Steak",
+      "servingLabel": "1 oz. by volume",
+      "calories": 57.0,
+      "fat": 3.7,
+      "carbs": 1.0,
+      "protein": 5.0,
+      "id": "steak-1-oz-by-volume"
+    },
+    {
+      "name": "Fajita Veggies",
+      "servingLabel": "1 oz. by volume",
+      "calories": 5.0,
+      "fat": 0.0,
+      "carbs": 1.0,
+      "protein": 0.0,
+      "id": "fajita-veggies-1-oz-by-volume"
+    },
+    {
+      "name": "Queso - 1oz. Portion",
+      "servingLabel": "1 oz. by volume",
+      "calories": 59.0,
+      "fat": 5.0,
+      "carbs": 1.4,
+      "protein": 1.7,
+      "id": "queso-1oz-portion-1-oz-by-volume"
+    },
+    {
+      "name": "Queso - 4oz. Portion",
+      "servingLabel": "4 oz. by volume",
+      "calories": 236.0,
+      "fat": 20.0,
+      "carbs": 5.6,
+      "protein": 6.8,
+      "id": "queso-4oz-portion-4-oz-by-volume"
+    },
+    {
+      "name": "Salsa- Pico de Gallo",
+      "servingLabel": "1 oz. by volume",
+      "calories": 5.0,
+      "fat": 0.0,
+      "carbs": 1.0,
+      "protein": 0.0,
+      "id": "salsa-pico-de-gallo-1-oz-by-volume"
+    },
+    {
+      "name": "Salsa- Mild",
+      "servingLabel": "1 oz. by volume",
+      "calories": 5.0,
+      "fat": 0.0,
+      "carbs": 1.0,
+      "protein": 0.0,
+      "id": "salsa-mild-1-oz-by-volume"
+    },
+    {
+      "name": "Salsa- Medium (Roja)",
+      "servingLabel": "1 oz. by volume",
+      "calories": 5.0,
+      "fat": 0.0,
+      "carbs": 1.0,
+      "protein": 0.0,
+      "id": "salsa-medium-roja-1-oz-by-volume"
+    },
+    {
+      "name": "Salsa- Hot",
+      "servingLabel": "1 oz. by volume",
+      "calories": 5.0,
+      "fat": 0.0,
+      "carbs": 1.0,
+      "protein": 0.0,
+      "id": "salsa-hot-1-oz-by-volume"
+    },
+    {
+      "name": "Salsa- Tomatillo",
+      "servingLabel": "1 oz. by volume",
+      "calories": 10.0,
+      "fat": 0.0,
+      "carbs": 2.0,
+      "protein": 0.0,
+      "id": "salsa-tomatillo-1-oz-by-volume"
+    },
+    {
+      "name": "Salsa- Pineapple (Seasonal)",
+      "servingLabel": "1 oz. by volume",
+      "calories": 10.0,
+      "fat": 0.0,
+      "carbs": 3.0,
+      "protein": 0.0,
+      "id": "salsa-pineapple-seasonal-1-oz-by-volume"
+    },
+    {
+      "name": "Salsa- Creamy Cholula Corn",
+      "servingLabel": "1 oz. by volume",
+      "calories": 20.0,
+      "fat": 0.0,
+      "carbs": 4.0,
+      "protein": 1.0,
+      "id": "salsa-creamy-cholula-corn-1-oz-by-volume"
+    },
+    {
+      "name": "Salsa- Pueblo Corn",
+      "servingLabel": "1 oz. by volume",
+      "calories": 20.0,
+      "fat": 0.0,
+      "carbs": 5.0,
+      "protein": 1.0,
+      "id": "salsa-pueblo-corn-1-oz-by-volume"
+    },
+    {
+      "name": "Black Olives",
+      "servingLabel": "1 oz. by volume",
+      "calories": 45.0,
+      "fat": 4.0,
+      "carbs": 2.0,
+      "protein": 0.0,
+      "id": "black-olives-1-oz-by-volume"
+    },
+    {
+      "name": "Cilantro",
+      "servingLabel": "1 oz. by volume",
+      "calories": 8.0,
+      "fat": 0.0,
+      "carbs": 1.0,
+      "protein": 0.0,
+      "id": "cilantro-1-oz-by-volume"
+    },
+    {
+      "name": "Citrus Vinaigrette Dressing",
+      "servingLabel": "1 oz. by volume",
+      "calories": 70.0,
+      "fat": 6.0,
+      "carbs": 5.0,
+      "protein": 0.0,
+      "id": "citrus-vinaigrette-dressing-1-oz-by-volume"
+    },
+    {
+      "name": "Diced Fresh Jalapenos",
+      "servingLabel": "1 oz. by volume",
+      "calories": 3.0,
+      "fat": 0.0,
+      "carbs": 0.75,
+      "protein": 0.0,
+      "id": "diced-fresh-jalapenos-1-oz-by-volume"
+    },
+    {
+      "name": "Guacamole - 1oz. Portion",
+      "servingLabel": "1 oz. by volume",
+      "calories": 50.0,
+      "fat": 4.0,
+      "carbs": 3.0,
+      "protein": 1.0,
+      "id": "guacamole-1oz-portion-1-oz-by-volume"
+    },
+    {
+      "name": "Guacamole - 2oz. Portion",
+      "servingLabel": "2oz. by volume",
+      "calories": 100.0,
+      "fat": 8.0,
+      "carbs": 6.0,
+      "protein": 2.0,
+      "id": "guacamole-2oz-portion-2oz-by-volume"
+    },
+    {
+      "name": "Guacamole - 4oz. Portion",
+      "servingLabel": "4oz. by volume",
+      "calories": 200.0,
+      "fat": 16.0,
+      "carbs": 12.0,
+      "protein": 4.0,
+      "id": "guacamole-4oz-portion-4oz-by-volume"
+    },
+    {
+      "name": "Jalapeno Ranch (Dressing)",
+      "servingLabel": "1 oz. by volume",
+      "calories": 110.0,
+      "fat": 12.0,
+      "carbs": 2.0,
+      "protein": 1.0,
+      "id": "jalapeno-ranch-dressing-1-oz-by-volume"
+    },
+    {
+      "name": "Jalapenos (Pickled)",
+      "servingLabel": "1 oz. by volume",
+      "calories": 5.0,
+      "fat": 0.0,
+      "carbs": 1.0,
+      "protein": 0.5,
+      "id": "jalapenos-pickled-1-oz-by-volume"
+    },
+    {
+      "name": "Shredded Lettuce",
+      "servingLabel": "1 oz. by volume",
+      "calories": 4.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "shredded-lettuce-1-oz-by-volume"
+    },
+    {
+      "name": "Lettuce (Romaine)",
+      "servingLabel": "1 oz. by weight",
+      "calories": 5.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "lettuce-romaine-1-oz-by-weight"
+    },
+    {
+      "name": "Onions (Red)",
+      "servingLabel": "1 oz. by volume",
+      "calories": 11.0,
+      "fat": 0.0,
+      "carbs": 3.0,
+      "protein": 0.0,
+      "id": "onions-red-1-oz-by-volume"
+    },
+    {
+      "name": "Tomatoes (diced)",
+      "servingLabel": "1 oz. by volume",
+      "calories": 3.5,
+      "fat": 0.0,
+      "carbs": 1.0,
+      "protein": 0.0,
+      "id": "tomatoes-diced-1-oz-by-volume"
+    },
+    {
+      "name": "Shredded Cheese",
+      "servingLabel": "1 oz. by volume",
+      "calories": 20.0,
+      "fat": 1.5,
+      "carbs": 0.0,
+      "protein": 1.0,
+      "id": "shredded-cheese-1-oz-by-volume"
+    },
+    {
+      "name": "Chocolate Chunk Cookie",
+      "servingLabel": "1 each",
+      "calories": 520.0,
+      "fat": 24.0,
+      "carbs": 72.0,
+      "protein": 4.0,
+      "id": "chocolate-chunk-cookie-1-each"
+    },
+    {
+      "name": "White Chocolate Macadamia",
+      "servingLabel": "1 each",
+      "calories": 520.0,
+      "fat": 24.0,
+      "carbs": 68.0,
+      "protein": 8.0,
+      "id": "white-chocolate-macadamia-1-each"
+    },
+    {
+      "name": "Double Chocolate Cookie",
+      "servingLabel": "1 each",
+      "calories": 480.0,
+      "fat": 20.0,
+      "carbs": 68.0,
+      "protein": 8.0,
+      "id": "double-chocolate-cookie-1-each"
+    },
+    {
+      "name": "Chocolate Chunk Brownie",
+      "servingLabel": "1 each",
+      "calories": 290.0,
+      "fat": 16.0,
+      "carbs": 34.0,
+      "protein": 4.0,
+      "id": "chocolate-chunk-brownie-1-each"
+    },
+    {
+      "name": "Rice Krispy",
+      "servingLabel": "1 each",
+      "calories": 230.0,
+      "fat": 5.0,
+      "carbs": 45.0,
+      "protein": 2.0,
+      "id": "rice-krispy-1-each"
+    },
+    {
+      "name": "Frozen Margarita",
+      "servingLabel": "167g",
+      "calories": 300.0,
+      "fat": 0.0,
+      "carbs": 49.0,
+      "protein": 0.0,
+      "id": "frozen-margarita-167g"
+    },
+    {
+      "name": "Margarita (classic)",
+      "servingLabel": "461 g",
+      "calories": 360.0,
+      "fat": 0.0,
+      "carbs": 63.0,
+      "protein": 0.0,
+      "id": "margarita-classic-461-g"
+    },
+    {
+      "name": "Amber Ale",
+      "servingLabel": "12oz.",
+      "calories": 166.0,
+      "fat": 0.0,
+      "carbs": 14.5,
+      "protein": 1.3,
+      "id": "amber-ale-12oz"
+    },
+    {
+      "name": "Budweiser",
+      "servingLabel": "12oz.",
+      "calories": 170.0,
+      "fat": 0.0,
+      "carbs": 12.0,
+      "protein": 0.0,
+      "id": "budweiser-12oz"
+    },
+    {
+      "name": "Bud Light",
+      "servingLabel": "12oz.",
+      "calories": 102.7,
+      "fat": 0.0,
+      "carbs": 5.8,
+      "protein": 0.8,
+      "id": "bud-light-12oz"
+    },
+    {
+      "name": "Larger",
+      "servingLabel": "12oz.",
+      "calories": 171.0,
+      "fat": 0.0,
+      "carbs": 17.2,
+      "protein": 1.9,
+      "id": "larger-12oz"
+    },
+    {
+      "name": "Pale Ale",
+      "servingLabel": "12oz.",
+      "calories": 179.0,
+      "fat": 0.0,
+      "carbs": 16.7,
+      "protein": 2.2,
+      "id": "pale-ale-12oz"
+    },
+    {
+      "name": "Barrilitos Mango Lime",
+      "servingLabel": "24oz.",
+      "calories": 180.0,
+      "fat": 0.0,
+      "carbs": 48.0,
+      "protein": 0.0,
+      "id": "barrilitos-mango-lime-24oz"
+    },
+    {
+      "name": "Coca Cola",
+      "servingLabel": "24oz.",
+      "calories": 285.0,
+      "fat": 0.0,
+      "carbs": 78.0,
+      "protein": 0.0,
+      "id": "coca-cola-24oz"
+    },
+    {
+      "name": "Coke Zero",
+      "servingLabel": "24oz.",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "coke-zero-24oz"
+    },
+    {
+      "name": "Diet Coke",
+      "servingLabel": "24oz.",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "diet-coke-24oz"
+    },
+    {
+      "name": "Cherry Coke",
+      "servingLabel": "24oz.",
+      "calories": 300.0,
+      "fat": 0.0,
+      "carbs": 84.0,
+      "protein": 0.0,
+      "id": "cherry-coke-24oz"
+    },
+    {
+      "name": "Hi-C Fruit Punch",
+      "servingLabel": "24oz.",
+      "calories": 360.0,
+      "fat": 0.0,
+      "carbs": 96.0,
+      "protein": 0.0,
+      "id": "hi-c-fruit-punch-24oz"
+    },
+    {
+      "name": "Minute Maid Lemonade",
+      "servingLabel": "24oz.",
+      "calories": 330.0,
+      "fat": 0.0,
+      "carbs": 90.0,
+      "protein": 0.0,
+      "id": "minute-maid-lemonade-24oz"
+    },
+    {
+      "name": "Minute Maid Light Lemonade",
+      "servingLabel": "24oz.",
+      "calories": 45.0,
+      "fat": 0.0,
+      "carbs": 12.0,
+      "protein": 0.0,
+      "id": "minute-maid-light-lemonade-24oz"
+    },
+    {
+      "name": "Minute Maid Raspberry Lemonade",
+      "servingLabel": "24oz.",
+      "calories": 360.0,
+      "fat": 0.0,
+      "carbs": 96.0,
+      "protein": 0.0,
+      "id": "minute-maid-raspberry-lemonade-24oz"
+    },
+    {
+      "name": "Mr. Pibb",
+      "servingLabel": "24oz.",
+      "calories": 240.0,
+      "fat": 0.0,
+      "carbs": 78.0,
+      "protein": 0.0,
+      "id": "mr-pibb-24oz"
+    },
+    {
+      "name": "Root Beer",
+      "servingLabel": "24oz.",
+      "calories": 320.0,
+      "fat": 0.0,
+      "carbs": 90.0,
+      "protein": 0.0,
+      "id": "root-beer-24oz"
+    },
+    {
+      "name": "Sprite",
+      "servingLabel": "24oz.",
+      "calories": 268.0,
+      "fat": 0.0,
+      "carbs": 69.0,
+      "protein": 0.0,
+      "id": "sprite-24oz"
+    },
+    {
+      "name": "Sweet Tea",
+      "servingLabel": "24oz.",
+      "calories": 360.0,
+      "fat": 0.0,
+      "carbs": 96.0,
+      "protein": 0.0,
+      "id": "sweet-tea-24oz"
+    },
+    {
+      "name": "Unsweet Tea",
+      "servingLabel": "24oz.",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "unsweet-tea-24oz"
+    },
+    {
+      "name": "Barrilitos Mango Lime",
+      "servingLabel": "12oz.",
+      "calories": 90.0,
+      "fat": 0.0,
+      "carbs": 24.0,
+      "protein": 0.0,
+      "id": "barrilitos-mango-lime-12oz"
+    },
+    {
+      "name": "Coca Cola",
+      "servingLabel": "12oz.",
+      "calories": 143.0,
+      "fat": 0.0,
+      "carbs": 39.0,
+      "protein": 0.0,
+      "id": "coca-cola-12oz"
+    },
+    {
+      "name": "Coke Zero",
+      "servingLabel": "12oz.",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "coke-zero-12oz"
+    },
+    {
+      "name": "Diet Coke",
+      "servingLabel": "12oz.",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "diet-coke-12oz"
+    },
+    {
+      "name": "Cherry Coke",
+      "servingLabel": "12oz.",
+      "calories": 150.0,
+      "fat": 0.0,
+      "carbs": 42.0,
+      "protein": 0.0,
+      "id": "cherry-coke-12oz"
+    },
+    {
+      "name": "Hi-C Fruit Punch",
+      "servingLabel": "12oz.",
+      "calories": 180.0,
+      "fat": 0.0,
+      "carbs": 48.0,
+      "protein": 0.0,
+      "id": "hi-c-fruit-punch-12oz"
+    },
+    {
+      "name": "Minute Maid Lemonade",
+      "servingLabel": "12oz.",
+      "calories": 165.0,
+      "fat": 0.0,
+      "carbs": 45.0,
+      "protein": 0.0,
+      "id": "minute-maid-lemonade-12oz"
+    },
+    {
+      "name": "Minute Maid Light Lemonade",
+      "servingLabel": "12oz.",
+      "calories": 23.0,
+      "fat": 0.0,
+      "carbs": 6.0,
+      "protein": 0.0,
+      "id": "minute-maid-light-lemonade-12oz"
+    },
+    {
+      "name": "Minute Maid Raspberry Lemonade",
+      "servingLabel": "12oz.",
+      "calories": 180.0,
+      "fat": 0.0,
+      "carbs": 48.0,
+      "protein": 0.0,
+      "id": "minute-maid-raspberry-lemonade-12oz"
+    },
+    {
+      "name": "Mr. Pibb",
+      "servingLabel": "12oz.",
+      "calories": 140.0,
+      "fat": 0.0,
+      "carbs": 39.0,
+      "protein": 0.0,
+      "id": "mr-pibb-12oz"
+    },
+    {
+      "name": "Root Beer",
+      "servingLabel": "12oz.",
+      "calories": 160.0,
+      "fat": 0.0,
+      "carbs": 45.0,
+      "protein": 0.0,
+      "id": "root-beer-12oz"
+    },
+    {
+      "name": "Sprite",
+      "servingLabel": "12oz.",
+      "calories": 134.0,
+      "fat": 0.0,
+      "carbs": 35.0,
+      "protein": 0.0,
+      "id": "sprite-12oz"
+    },
+    {
+      "name": "Sweet Tea",
+      "servingLabel": "12oz.",
+      "calories": 180.0,
+      "fat": 0.0,
+      "carbs": 48.0,
+      "protein": 0.0,
+      "id": "sweet-tea-12oz"
+    },
+    {
+      "name": "Unsweet Tea",
+      "servingLabel": "12oz.",
+      "calories": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "protein": 0.0,
+      "id": "unsweet-tea-12oz"
+    }
+  ],
+  "sourceDate": "2023-03 (filename); 2022-08 printed revision"
+}

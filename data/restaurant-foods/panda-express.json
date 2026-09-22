@@ -1,0 +1,1666 @@
+{
+  "chain": "Panda Express",
+  "sourceUrl": "https://www.nutritionix.com/panda-express/menu/premium",
+  "source": "Nutritionix",
+  "sourceKind": "database",
+  "retrievedAt": "2026-09-20",
+  "foods": [
+    {
+      "id": "nutritionix-661347",
+      "name": "Chow Fun",
+      "calories": 410,
+      "protein": 9,
+      "carbs": 73,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-661348",
+      "name": "Chow Fun for Cub Meal",
+      "calories": 300,
+      "protein": 6,
+      "carbs": 53,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-661339",
+      "name": "Chow Mein",
+      "calories": 600,
+      "protein": 15,
+      "carbs": 94,
+      "fat": 23,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-661340",
+      "name": "Chow Mein for Cub Meal",
+      "calories": 440,
+      "protein": 11,
+      "carbs": 57,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-661341",
+      "name": "Fried Rice",
+      "calories": 620,
+      "protein": 13,
+      "carbs": 101,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-661342",
+      "name": "Fried Rice for Cub Meal",
+      "calories": 470,
+      "protein": 9,
+      "carbs": 76,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-661345",
+      "name": "Super Greens",
+      "calories": 130,
+      "protein": 9,
+      "carbs": 14,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-661346",
+      "name": "Super Greens for Cub Meal",
+      "calories": 90,
+      "protein": 6,
+      "carbs": 10,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-661343",
+      "name": "White Steamed Rice",
+      "calories": 520,
+      "protein": 10,
+      "carbs": 118,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-661344",
+      "name": "White Steamed Rice for Cub Meal",
+      "calories": 390,
+      "protein": 8,
+      "carbs": 87,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Sides; size in item name)"
+    },
+    {
+      "id": "nutritionix-661351",
+      "name": "Eggplant Tofu",
+      "calories": 340,
+      "protein": 7,
+      "carbs": 23,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Vegetables; size in item name)"
+    },
+    {
+      "id": "nutritionix-661352",
+      "name": "Eggplant Tofu for Cub Meal",
+      "calories": 250,
+      "protein": 5,
+      "carbs": 17,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Vegetables; size in item name)"
+    },
+    {
+      "id": "nutritionix-661349",
+      "name": "Super Greens Entree",
+      "calories": 90,
+      "protein": 6,
+      "carbs": 10,
+      "fat": 3,
+      "servingLabel": "1 listed serving (Vegetables; size in item name)"
+    },
+    {
+      "id": "nutritionix-661350",
+      "name": "Super Greens for Cub Meal Entree",
+      "calories": 60,
+      "protein": 4,
+      "carbs": 7,
+      "fat": 2,
+      "servingLabel": "1 listed serving (Vegetables; size in item name)"
+    },
+    {
+      "id": "nutritionix-661353",
+      "name": "Beyond Orange Chicken",
+      "calories": 440,
+      "protein": 13,
+      "carbs": 47,
+      "fat": 22,
+      "servingLabel": "1 listed serving (Specialty; size in item name)"
+    },
+    {
+      "id": "nutritionix-661354",
+      "name": "Beyond Orange Chicken for Cub Meal",
+      "calories": 330,
+      "protein": 10,
+      "carbs": 36,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Specialty; size in item name)"
+    },
+    {
+      "id": "nutritionix-661355",
+      "name": "Black Pepper Chicken",
+      "calories": 280,
+      "protein": 13,
+      "carbs": 15,
+      "fat": 19,
+      "servingLabel": "1 listed serving (Chicken; size in item name)"
+    },
+    {
+      "id": "nutritionix-661356",
+      "name": "Black Pepper Chicken for Cub Meal",
+      "calories": 200,
+      "protein": 10,
+      "carbs": 11,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Chicken; size in item name)"
+    },
+    {
+      "id": "nutritionix-661359",
+      "name": "Grilled Teriyaki Chicken",
+      "calories": 280,
+      "protein": 33,
+      "carbs": 14,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Chicken; size in item name)"
+    },
+    {
+      "id": "nutritionix-661360",
+      "name": "Grilled Teriyaki Chicken for Cub Meal",
+      "calories": 210,
+      "protein": 25,
+      "carbs": 11,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Chicken; size in item name)"
+    },
+    {
+      "id": "nutritionix-661357",
+      "name": "Kung Pao Chicken",
+      "calories": 320,
+      "protein": 17,
+      "carbs": 15,
+      "fat": 21,
+      "servingLabel": "1 listed serving (Chicken; size in item name)"
+    },
+    {
+      "id": "nutritionix-661358",
+      "name": "Kung Pao Chicken for Cub Meal",
+      "calories": 220,
+      "protein": 12,
+      "carbs": 11,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Chicken; size in item name)"
+    },
+    {
+      "id": "nutritionix-661363",
+      "name": "Mushroom Chicken",
+      "calories": 220,
+      "protein": 13,
+      "carbs": 10,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Chicken; size in item name)"
+    },
+    {
+      "id": "nutritionix-661364",
+      "name": "Mushroom Chicken for Cub Meal",
+      "calories": 170,
+      "protein": 10,
+      "carbs": 8,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Chicken; size in item name)"
+    },
+    {
+      "id": "nutritionix-661365",
+      "name": "Orange Chicken",
+      "calories": 510,
+      "protein": 26,
+      "carbs": 53,
+      "fat": 24,
+      "servingLabel": "1 listed serving (Chicken; size in item name)"
+    },
+    {
+      "id": "nutritionix-661366",
+      "name": "Orange Chicken for Cub Meal",
+      "calories": 380,
+      "protein": 20,
+      "carbs": 39,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Chicken; size in item name)"
+    },
+    {
+      "id": "nutritionix-661367",
+      "name": "Potato Chicken",
+      "calories": 190,
+      "protein": 8,
+      "carbs": 18,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Chicken; size in item name)"
+    },
+    {
+      "id": "nutritionix-661368",
+      "name": "Potato Chicken for Cub Meal",
+      "calories": 140,
+      "protein": 6,
+      "carbs": 15,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Chicken; size in item name)"
+    },
+    {
+      "id": "nutritionix-661361",
+      "name": "Teriyaki Chicken",
+      "calories": 340,
+      "protein": 41,
+      "carbs": 14,
+      "fat": 13,
+      "servingLabel": "1 listed serving (Chicken; size in item name)"
+    },
+    {
+      "id": "nutritionix-661362",
+      "name": "Teriyaki Chicken for Cub Meal",
+      "calories": 250,
+      "protein": 31,
+      "carbs": 10,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Chicken; size in item name)"
+    },
+    {
+      "id": "nutritionix-661369",
+      "name": "Honey Sesame Chicken Breast",
+      "calories": 340,
+      "protein": 16,
+      "carbs": 35,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Chicken Breast; size in item name)"
+    },
+    {
+      "id": "nutritionix-661370",
+      "name": "Honey Sesame Chicken Breast for Cub Meal",
+      "calories": 250,
+      "protein": 12,
+      "carbs": 26,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Chicken Breast; size in item name)"
+    },
+    {
+      "id": "nutritionix-661371",
+      "name": "String Bean Chicken Breast",
+      "calories": 210,
+      "protein": 12,
+      "carbs": 13,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Chicken Breast; size in item name)"
+    },
+    {
+      "id": "nutritionix-661372",
+      "name": "String Bean Chicken Breast for Cub Meal",
+      "calories": 160,
+      "protein": 9,
+      "carbs": 10,
+      "fat": 9,
+      "servingLabel": "1 listed serving (Chicken Breast; size in item name)"
+    },
+    {
+      "id": "nutritionix-661375",
+      "name": "Sweet & Sour Chicken Breast",
+      "calories": 300,
+      "protein": 10,
+      "carbs": 40,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Chicken Breast; size in item name)"
+    },
+    {
+      "id": "nutritionix-661376",
+      "name": "Sweet & Sour Chicken Breast for Cub Meal",
+      "calories": 270,
+      "protein": 9,
+      "carbs": 35,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Chicken Breast; size in item name)"
+    },
+    {
+      "id": "nutritionix-661373",
+      "name": "Sweetfire Chicken Breast",
+      "calories": 360,
+      "protein": 15,
+      "carbs": 40,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Chicken Breast; size in item name)"
+    },
+    {
+      "id": "nutritionix-661374",
+      "name": "Sweetfire Chicken Breast for Cub Meal",
+      "calories": 270,
+      "protein": 11,
+      "carbs": 30,
+      "fat": 11,
+      "servingLabel": "1 listed serving (Chicken Breast; size in item name)"
+    },
+    {
+      "id": "nutritionix-661377",
+      "name": "Beijing Beef",
+      "calories": 480,
+      "protein": 14,
+      "carbs": 46,
+      "fat": 27,
+      "servingLabel": "1 listed serving (Beef; size in item name)"
+    },
+    {
+      "id": "nutritionix-661378",
+      "name": "Beijing Beef for Cub Meal",
+      "calories": 360,
+      "protein": 11,
+      "carbs": 35,
+      "fat": 20,
+      "servingLabel": "1 listed serving (Beef; size in item name)"
+    },
+    {
+      "id": "nutritionix-661379",
+      "name": "Black Pepper Sirloin Steak",
+      "calories": 210,
+      "protein": 19,
+      "carbs": 13,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Beef; size in item name)"
+    },
+    {
+      "id": "nutritionix-661380",
+      "name": "Black Pepper Sirloin Steak for Cub Meal",
+      "calories": 160,
+      "protein": 14,
+      "carbs": 10,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Beef; size in item name)"
+    },
+    {
+      "id": "nutritionix-661381",
+      "name": "Broccoli Beef",
+      "calories": 150,
+      "protein": 9,
+      "carbs": 13,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Beef; size in item name)"
+    },
+    {
+      "id": "nutritionix-661382",
+      "name": "Broccoli Beef for Cub Meal",
+      "calories": 110,
+      "protein": 7,
+      "carbs": 10,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Beef; size in item name)"
+    },
+    {
+      "id": "nutritionix-661383",
+      "name": "Chili Crisp Shrimp",
+      "calories": 210,
+      "protein": 13,
+      "carbs": 19,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Seafood; size in item name)"
+    },
+    {
+      "id": "nutritionix-661384",
+      "name": "Chili Crisp Shrimp for Cub Meal",
+      "calories": 160,
+      "protein": 10,
+      "carbs": 14,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Seafood; size in item name)"
+    },
+    {
+      "id": "nutritionix-661389",
+      "name": "Golden Treasure Shrimp",
+      "calories": 360,
+      "protein": 14,
+      "carbs": 35,
+      "fat": 18,
+      "servingLabel": "1 listed serving (Seafood; size in item name)"
+    },
+    {
+      "id": "nutritionix-661390",
+      "name": "Golden Treasure Shrimp for Cub Meal",
+      "calories": 210,
+      "protein": 8,
+      "carbs": 20,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Seafood; size in item name)"
+    },
+    {
+      "id": "nutritionix-661385",
+      "name": "Honey Walnut Shrimp",
+      "calories": 430,
+      "protein": 13,
+      "carbs": 32,
+      "fat": 28,
+      "servingLabel": "1 listed serving (Seafood; size in item name)"
+    },
+    {
+      "id": "nutritionix-661386",
+      "name": "Honey Walnut Shrimp for Cub Meal",
+      "calories": 240,
+      "protein": 7,
+      "carbs": 17,
+      "fat": 15,
+      "servingLabel": "1 listed serving (Seafood; size in item name)"
+    },
+    {
+      "id": "nutritionix-661391",
+      "name": "Steamed Ginger Fish",
+      "calories": 200,
+      "protein": 15,
+      "carbs": 8,
+      "fat": 12,
+      "servingLabel": "1 listed serving (Seafood; size in item name)"
+    },
+    {
+      "id": "nutritionix-661392",
+      "name": "Steamed Ginger Fish for Cub Meal",
+      "calories": 70,
+      "protein": 5,
+      "carbs": 3,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Seafood; size in item name)"
+    },
+    {
+      "id": "nutritionix-661387",
+      "name": "Wok-Fired Shrimp",
+      "calories": 190,
+      "protein": 17,
+      "carbs": 19,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Seafood; size in item name)"
+    },
+    {
+      "id": "nutritionix-661388",
+      "name": "Wok-Fired Shrimp for Cub Meal",
+      "calories": 140,
+      "protein": 13,
+      "carbs": 15,
+      "fat": 4,
+      "servingLabel": "1 listed serving (Seafood; size in item name)"
+    },
+    {
+      "id": "nutritionix-661393",
+      "name": "Chicken Egg Roll (1 Roll)",
+      "calories": 200,
+      "protein": 6,
+      "carbs": 20,
+      "fat": 10,
+      "servingLabel": "1 listed serving (Appetizers; size in item name)"
+    },
+    {
+      "id": "nutritionix-661394",
+      "name": "Chicken Potsticker (3 Pieces)",
+      "calories": 160,
+      "protein": 6,
+      "carbs": 20,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Appetizers; size in item name)"
+    },
+    {
+      "id": "nutritionix-661395",
+      "name": "Cream Cheese Rangoon (3 Pieces)",
+      "calories": 190,
+      "protein": 5,
+      "carbs": 24,
+      "fat": 8,
+      "servingLabel": "1 listed serving (Appetizers; size in item name)"
+    },
+    {
+      "id": "nutritionix-661396",
+      "name": "Vegetable Spring Roll (2 Rolls)",
+      "calories": 240,
+      "protein": 4,
+      "carbs": 24,
+      "fat": 14,
+      "servingLabel": "1 listed serving (Appetizers; size in item name)"
+    },
+    {
+      "id": "nutritionix-661399",
+      "name": "Broccoli Beef Cub Meal",
+      "calories": 300,
+      "protein": 11,
+      "carbs": 49,
+      "fat": 7,
+      "servingLabel": "1 listed serving (Cub Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-661398",
+      "name": "Grilled Teriyaki Chicken Cub Meal",
+      "calories": 400,
+      "protein": 28,
+      "carbs": 36,
+      "fat": 16,
+      "servingLabel": "1 listed serving (Cub Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-661397",
+      "name": "Orange Chicken Cub Meal",
+      "calories": 580,
+      "protein": 22,
+      "carbs": 84,
+      "fat": 17,
+      "servingLabel": "1 listed serving (Cub Meals; size in item name)"
+    },
+    {
+      "id": "nutritionix-661401",
+      "name": "Apple Pie Roll",
+      "calories": 150,
+      "protein": 2,
+      "carbs": 30,
+      "fat": 3,
+      "servingLabel": "1 listed serving (More; size in item name)"
+    },
+    {
+      "id": "nutritionix-661403",
+      "name": "Chili Sauce",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (More; size in item name)"
+    },
+    {
+      "id": "nutritionix-661409",
+      "name": "Chocolate Chunk Cookie",
+      "calories": 160,
+      "protein": 2,
+      "carbs": 25,
+      "fat": 7,
+      "servingLabel": "1 listed serving (More; size in item name)"
+    },
+    {
+      "id": "nutritionix-661408",
+      "name": "Fortune Cookie",
+      "calories": 20,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 0,
+      "servingLabel": "1 listed serving (More; size in item name)"
+    },
+    {
+      "id": "nutritionix-661406",
+      "name": "Hot Mustard",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 1,
+      "servingLabel": "1 listed serving (More; size in item name)"
+    },
+    {
+      "id": "nutritionix-661407",
+      "name": "Plum Sauce",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 0,
+      "servingLabel": "1 listed serving (More; size in item name)"
+    },
+    {
+      "id": "nutritionix-661405",
+      "name": "Potsticker Sauce",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 0,
+      "servingLabel": "1 listed serving (More; size in item name)"
+    },
+    {
+      "id": "nutritionix-661404",
+      "name": "Soy Sauce",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (More; size in item name)"
+    },
+    {
+      "id": "nutritionix-661402",
+      "name": "Sweet & Sour Sauce",
+      "calories": 70,
+      "protein": 0,
+      "carbs": 21,
+      "fat": 0,
+      "servingLabel": "1 listed serving (More; size in item name)"
+    },
+    {
+      "id": "nutritionix-661400",
+      "name": "Teriyaki Sauce",
+      "calories": 70,
+      "protein": 0,
+      "carbs": 16,
+      "fat": 0,
+      "servingLabel": "1 listed serving (More; size in item name)"
+    },
+    {
+      "id": "nutritionix-661410",
+      "name": "Tree Top Apple Crisps",
+      "calories": 40,
+      "protein": 0,
+      "carbs": 10,
+      "fat": 0,
+      "servingLabel": "1 listed serving (More; size in item name)"
+    },
+    {
+      "id": "nutritionix-661412",
+      "name": "Hot & Sour Soup, Bowl",
+      "calories": 170,
+      "protein": 10,
+      "carbs": 20,
+      "fat": 6,
+      "servingLabel": "1 listed serving (Soup; size in item name)"
+    },
+    {
+      "id": "nutritionix-661411",
+      "name": "Hot & Sour Soup, Cup",
+      "calories": 120,
+      "protein": 7,
+      "carbs": 14,
+      "fat": 5,
+      "servingLabel": "1 listed serving (Soup; size in item name)"
+    },
+    {
+      "id": "nutritionix-661415",
+      "name": "Barq's Root Beer, Kids",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 44,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661413",
+      "name": "Barq's Root Beer, Large",
+      "calories": 560,
+      "protein": 0,
+      "carbs": 153,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661414",
+      "name": "Barq's Root Beer, Small",
+      "calories": 290,
+      "protein": 0,
+      "carbs": 80,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661419",
+      "name": "Black Tea, Kids",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661416",
+      "name": "Black Tea, Large",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661417",
+      "name": "Black Tea, Medium",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661418",
+      "name": "Black Tea, Small",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661423",
+      "name": "Cherry Coca-Cola, Kids",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 42,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661420",
+      "name": "Cherry Coca-Cola, Large",
+      "calories": 540,
+      "protein": 0,
+      "carbs": 147,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661421",
+      "name": "Cherry Coca-Cola, Medium",
+      "calories": 380,
+      "protein": 0,
+      "carbs": 105,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661422",
+      "name": "Cherry Coca-Cola, Small",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 77,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661427",
+      "name": "Coca-Cola, Kids",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 40,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661424",
+      "name": "Coca-Cola, Large",
+      "calories": 510,
+      "protein": 0,
+      "carbs": 140,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661425",
+      "name": "Coca-Cola, Medium",
+      "calories": 370,
+      "protein": 0,
+      "carbs": 100,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661426",
+      "name": "Coca-Cola, Small",
+      "calories": 270,
+      "protein": 0,
+      "carbs": 73,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661431",
+      "name": "Coca-Cola Zero Sugar, Kids",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661428",
+      "name": "Coca-Cola Zero Sugar, Large",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661429",
+      "name": "Coca-Cola Zero Sugar, Medium",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661430",
+      "name": "Coca-Cola Zero Sugar, Small",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661435",
+      "name": "Diet Coke, Kids",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661432",
+      "name": "Diet Coke, Large",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661433",
+      "name": "Diet Coke, Medium",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661434",
+      "name": "Diet Coke, Small",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661439",
+      "name": "Dr Pepper, Kids",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 39,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661436",
+      "name": "Dr Pepper, Large",
+      "calories": 500,
+      "protein": 0,
+      "carbs": 137,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661437",
+      "name": "Dr Pepper, Medium",
+      "calories": 360,
+      "protein": 0,
+      "carbs": 98,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661438",
+      "name": "Dr Pepper, Small",
+      "calories": 260,
+      "protein": 0,
+      "carbs": 72,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661443",
+      "name": "Fanta Fruit Punch, Kids",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 42,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661440",
+      "name": "Fanta Fruit Punch, Large",
+      "calories": 530,
+      "protein": 0,
+      "carbs": 145,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661441",
+      "name": "Fanta Fruit Punch, Medium",
+      "calories": 380,
+      "protein": 0,
+      "carbs": 104,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661442",
+      "name": "Fanta Fruit Punch, Small",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 76,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661450",
+      "name": "Fanta Orange (PR Only), Kids",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 42,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661447",
+      "name": "Fanta Orange (PR Only), Large",
+      "calories": 570,
+      "protein": 0,
+      "carbs": 147,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661448",
+      "name": "Fanta Orange (PR Only), Medium",
+      "calories": 410,
+      "protein": 0,
+      "carbs": 105,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661449",
+      "name": "Fanta Orange (PR Only), Small",
+      "calories": 300,
+      "protein": 0,
+      "carbs": 77,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661446",
+      "name": "Fanta Orange, Kids",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 40,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661444",
+      "name": "Fanta Orange, Large",
+      "calories": 520,
+      "protein": 0,
+      "carbs": 142,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661445",
+      "name": "Fanta Orange, Medium",
+      "calories": 370,
+      "protein": 0,
+      "carbs": 101,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661451",
+      "name": "Fanta Orange, Small",
+      "calories": 270,
+      "protein": 0,
+      "carbs": 74,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661459",
+      "name": "Fanta Strawberry (TX Only), Kids",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 44,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661456",
+      "name": "Fanta Strawberry (TX Only), Large",
+      "calories": 570,
+      "protein": 0,
+      "carbs": 155,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661457",
+      "name": "Fanta Strawberry (TX Only), Medium",
+      "calories": 410,
+      "protein": 0,
+      "carbs": 111,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661458",
+      "name": "Fanta Strawberry (TX Only), Small",
+      "calories": 300,
+      "protein": 0,
+      "carbs": 81,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661455",
+      "name": "Fanta Strawberry, Kids",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 43,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661452",
+      "name": "Fanta Strawberry, Large",
+      "calories": 550,
+      "protein": 0,
+      "carbs": 150,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661453",
+      "name": "Fanta Strawberry, Medium",
+      "calories": 390,
+      "protein": 0,
+      "carbs": 107,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661454",
+      "name": "Fanta Strawberry, Small",
+      "calories": 290,
+      "protein": 0,
+      "carbs": 79,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661463",
+      "name": "Fuze Lemon Black Tea, Kids",
+      "calories": 80,
+      "protein": 0,
+      "carbs": 22,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661460",
+      "name": "Fuze Lemon Black Tea, Large",
+      "calories": 300,
+      "protein": 0,
+      "carbs": 78,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661461",
+      "name": "Fuze Lemon Black Tea, Medium",
+      "calories": 210,
+      "protein": 0,
+      "carbs": 56,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661462",
+      "name": "Fuze Lemon Black Tea, Small",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 41,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661467",
+      "name": "Fuze Raspberry Tea, Kids",
+      "calories": 80,
+      "protein": 0,
+      "carbs": 22,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661464",
+      "name": "Fuze Raspberry Tea, Large",
+      "calories": 300,
+      "protein": 0,
+      "carbs": 78,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661465",
+      "name": "Fuze Raspberry Tea, Medium",
+      "calories": 210,
+      "protein": 0,
+      "carbs": 56,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661466",
+      "name": "Fuze Raspberry Tea, Small",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 41,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661471",
+      "name": "Glaceau Vitaminwater Squeezed Zero, Kids",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661468",
+      "name": "Glaceau Vitaminwater Squeezed Zero, Large",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661469",
+      "name": "Glaceau Vitaminwater Squeezed Zero, Medium",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661470",
+      "name": "Glaceau Vitaminwater Squeezed Zero, Small",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661475",
+      "name": "Gold Peak Premium Unsweetened Tea, Kids",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661472",
+      "name": "Gold Peak Premium Unsweetened Tea, Large",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661473",
+      "name": "Gold Peak Premium Unsweetened Tea, Medium",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661474",
+      "name": "Gold Peak Premium Unsweetened Tea, Small",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661479",
+      "name": "Hi-C Flashin Fruit Punch, Kids",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 42,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661476",
+      "name": "Hi-C Flashin Fruit Punch, Large",
+      "calories": 540,
+      "protein": 0,
+      "carbs": 148,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661477",
+      "name": "Hi-C Flashin Fruit Punch, Medium",
+      "calories": 390,
+      "protein": 0,
+      "carbs": 106,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661478",
+      "name": "Hi-C Flashin Fruit Punch, Small",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 78,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661480",
+      "name": "Lemon Green Tea, Large",
+      "calories": 15,
+      "protein": 3,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661481",
+      "name": "Lemon Green Tea, Medium",
+      "calories": 10,
+      "protein": 2,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661482",
+      "name": "Lemon Green Tea, Small",
+      "calories": 10,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661484",
+      "name": "Mango Guava Tea",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 46,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661488",
+      "name": "Minute Maid Lemonade, Kids",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 39,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661485",
+      "name": "Minute Maid Lemonade, Large",
+      "calories": 550,
+      "protein": 0,
+      "carbs": 138,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661486",
+      "name": "Minute Maid Lemonade, Medium",
+      "calories": 390,
+      "protein": 0,
+      "carbs": 99,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661487",
+      "name": "Minute Maid Lemonade, Small",
+      "calories": 290,
+      "protein": 0,
+      "carbs": 72,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661489",
+      "name": "Minute Maid Light Lemonade, Kids",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661490",
+      "name": "Minute Maid Light Lemonade, Large",
+      "calories": 20,
+      "protein": 0,
+      "carbs": 7,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661491",
+      "name": "Minute Maid Light Lemonade, Medium",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661492",
+      "name": "Minute Maid Light Lemonade, Small",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661496",
+      "name": "Passionfruit Mango Black Tea, Kids",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661493",
+      "name": "Passionfruit Mango Black Tea, Large",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661494",
+      "name": "Passionfruit Mango Black Tea, Medium",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661495",
+      "name": "Passionfruit Mango Black Tea, Small",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661497",
+      "name": "Peach Lychee Refresher",
+      "calories": 210,
+      "protein": 0,
+      "carbs": 53,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661498",
+      "name": "Pomegranate Pineapple Lemonade",
+      "calories": 240,
+      "protein": 0,
+      "carbs": 62,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661502",
+      "name": "Powerade Fruit Punch, Kids",
+      "calories": 80,
+      "protein": 0,
+      "carbs": 21,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661499",
+      "name": "Powerade Fruit Punch, Large",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 75,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661500",
+      "name": "Powerade Fruit Punch, Medium",
+      "calories": 200,
+      "protein": 0,
+      "carbs": 53,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661501",
+      "name": "Powerade Fruit Punch, Small",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 39,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661506",
+      "name": "Powerade Mountain Berry Blast, Kids",
+      "calories": 80,
+      "protein": 0,
+      "carbs": 22,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661503",
+      "name": "Powerade Mountain Berry Blast, Large",
+      "calories": 290,
+      "protein": 0,
+      "carbs": 77,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661504",
+      "name": "Powerade Mountain Berry Blast, Medium",
+      "calories": 210,
+      "protein": 0,
+      "carbs": 55,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661505",
+      "name": "Powerade Mountain Berry Blast, Small",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 40,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661510",
+      "name": "Seagram's Ginger Ale, Kids",
+      "calories": 130,
+      "protein": 0,
+      "carbs": 35,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661507",
+      "name": "Seagram's Ginger Ale, Large",
+      "calories": 450,
+      "protein": 0,
+      "carbs": 121,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661508",
+      "name": "Seagram's Ginger Ale, Medium",
+      "calories": 320,
+      "protein": 0,
+      "carbs": 87,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661509",
+      "name": "Seagram's Ginger Ale, Small",
+      "calories": 240,
+      "protein": 0,
+      "carbs": 64,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661514",
+      "name": "Sprite, Kids",
+      "calories": 140,
+      "protein": 0,
+      "carbs": 37,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661511",
+      "name": "Sprite, Large",
+      "calories": 470,
+      "protein": 0,
+      "carbs": 129,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661512",
+      "name": "Sprite, Medium",
+      "calories": 340,
+      "protein": 0,
+      "carbs": 92,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661513",
+      "name": "Sprite, Small",
+      "calories": 250,
+      "protein": 0,
+      "carbs": 68,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661518",
+      "name": "Sprite Zero, Kids",
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661515",
+      "name": "Sprite Zero, Large",
+      "calories": 10,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661516",
+      "name": "Sprite Zero, Medium",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661517",
+      "name": "Sprite Zero, Small",
+      "calories": 5,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661522",
+      "name": "Sweet Tea, Kids",
+      "calories": 150,
+      "protein": 0,
+      "carbs": 39,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661519",
+      "name": "Sweet Tea, Large",
+      "calories": 510,
+      "protein": 0,
+      "carbs": 129,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661520",
+      "name": "Sweet Tea, Medium",
+      "calories": 410,
+      "protein": 0,
+      "carbs": 103,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661521",
+      "name": "Sweet Tea, Small",
+      "calories": 280,
+      "protein": 0,
+      "carbs": 71,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    },
+    {
+      "id": "nutritionix-661523",
+      "name": "Watermelon Mango Refresher",
+      "calories": 210,
+      "protein": 0,
+      "carbs": 53,
+      "fat": 0,
+      "servingLabel": "1 listed serving (Beverages; size in item name)"
+    }
+  ],
+  "sourceDate": "2025-01-23"
+}
