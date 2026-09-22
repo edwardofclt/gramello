@@ -1,3 +1,9 @@
+## [1.7.0](https://github.com/edwardofclt/nourish/compare/v1.6.1...v1.7.0) (2026-09-22)
+
+### Features
+
+* add daily water goals and intake tracking ([4fa2d19](https://github.com/edwardofclt/nourish/commit/4fa2d19431552e271fc125411c1be793c43b8c17))
+
 ## [1.6.1](https://github.com/edwardofclt/nourish/compare/v1.6.0...v1.6.1) (2026-09-21)
 
 ### Bug Fixes
