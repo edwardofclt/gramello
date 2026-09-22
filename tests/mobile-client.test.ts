@@ -2,7 +2,7 @@ import { afterEach, describe, expect, it, vi } from 'vitest';
 import { createApiClient, SessionExpiredError } from '../mobile/src/lib/api';
 import { localDate, shiftDate, scaleFood } from '../mobile/src/lib/nutrition';
 
-afterEach(() => vi.unstubAllGlobals());
+afterEach(() => { vi.unstubAllGlobals(); vi.useRealTimers(); });
 
 describe('mobile API contract', () => {
   it('sends the current access token without cookies or user identity fields', async () => {
@@ -43,6 +43,61 @@ describe('mobile API contract', () => {
     await expect(api('https://evil.example/api/day')).rejects.toThrow();
     await expect(api('//evil.example/api/day')).rejects.toThrow();
     expect(fetcher).not.toHaveBeenCalled();
+  });
+
+  it('releases a stalled custom-food save without replaying it or signing out', async () => {
+    vi.useFakeTimers();
+    const expired = vi.fn();
+    const fetcher = vi.fn(() => new Promise<Response>(() => {}));
+    vi.stubGlobal('fetch', fetcher);
+    const api = createApiClient('https://nourish.example', async () => 'token', expired);
+    const result = expect(api('/api/foods/custom', { method: 'POST', body: {} })).rejects.toThrow(/Check whether your changes were saved/);
+    await vi.advanceTimersByTimeAsync(20_000);
+    await result;
+    expect(fetcher).toHaveBeenCalledOnce();
+    expect((fetcher.mock.calls[0] as unknown as [string, RequestInit])[1].signal?.aborted).toBe(true);
+    expect(expired).not.toHaveBeenCalled();
+    expect(vi.getTimerCount()).toBe(0);
+    fetcher.mockResolvedValue(Response.json({ entries: [] }));
+    expect(await api('/api/day')).toEqual({ entries: [] });
+    expect(vi.getTimerCount()).toBe(0);
+  });
+
+  it('times out a stalled credential lookup and never sends a late write', async () => {
+    vi.useFakeTimers();
+    let finish!: (value: string) => void;
+    const fetcher = vi.fn();
+    vi.stubGlobal('fetch', fetcher);
+    const api = createApiClient('https://nourish.example', () => new Promise(resolve => { finish = resolve; }), () => {});
+    const result = expect(api('/api/foods/custom', { method: 'POST', body: {} })).rejects.toThrow(/too long/);
+    await vi.advanceTimersByTimeAsync(20_000);
+    await result;
+    finish('late-token');
+    await vi.advanceTimersByTimeAsync(0);
+    expect(fetcher).not.toHaveBeenCalled();
+  });
+
+  it('bounds a response body that stalls after headers arrive', async () => {
+    vi.useFakeTimers();
+    vi.stubGlobal('fetch', async () => ({ status: 200, ok: true, json: () => new Promise(() => {}) }));
+    const api = createApiClient('https://nourish.example', async () => 'token', () => {});
+    const result = expect(api('/api/day')).rejects.toThrow(/too long/);
+    await vi.advanceTimersByTimeAsync(20_000);
+    await result;
+  });
+
+  it('cancels during credential lookup without waiting for credentials or sending a request', async () => {
+    vi.useFakeTimers();
+    const fetcher = vi.fn();
+    vi.stubGlobal('fetch', fetcher);
+    const api = createApiClient('https://nourish.example', () => new Promise(() => {}), () => {});
+    const controller = new AbortController();
+    const result = expect(api('/api/day', { signal: controller.signal })).rejects.toMatchObject({ name: 'AbortError' });
+    controller.abort();
+    await vi.advanceTimersByTimeAsync(0);
+    await result;
+    expect(fetcher).not.toHaveBeenCalled();
+    expect(vi.getTimerCount()).toBe(0);
   });
 });
 
