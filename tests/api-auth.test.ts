@@ -14,7 +14,7 @@ vi.mock("next/headers.js", () => ({
 
 import { GET as day } from "@/app/api/day/route";
 import { PUT as goals } from "@/app/api/goals/route";
-import { POST as add, DELETE as remove } from "@/app/api/entries/route";
+import { POST as add, PUT as editEntry, DELETE as remove } from "@/app/api/entries/route";
 import { GET as trends } from "@/app/api/trends/route";
 import { GET as search } from "@/app/api/foods/search/route";
 import { POST as customFood } from "@/app/api/foods/custom/route";
@@ -76,6 +76,7 @@ const routes = [
   ["GET", "/api/foods/barcode?code=012345678905", barcode, undefined],
   ["PUT", "/api/goals", goals, targets],
   ["POST", "/api/entries", add, food],
+  ["PUT", "/api/entries?id=example", editEntry, { meal: 'Lunch', quantity: 2, unit: 'serving' }],
   ["POST", "/api/foods/custom", customFood, food],
   ["DELETE", "/api/entries?id=example", remove, undefined],
 ] as const;
@@ -110,6 +111,23 @@ afterAll(() => database.close());
 afterEach(() => vi.unstubAllGlobals());
 
 describe("private API authentication", () => {
+  it('updates only the owner’s existing food snapshot and rejects invalid edits', async () => {
+    const created = await (await call(add, '/api/entries', { method: 'POST', body: food, user: 'auth0|alice' })).json() as EntryInput & { id: string };
+    const url = `/api/entries?id=${created.id}`;
+    const body = { meal: 'Dinner', quantity: 2, unit: 'serving', calories: 1, verified: true, name: 'Forged' };
+    expect((await call(editEntry, url, { method: 'PUT', body, user: 'auth0|bob' })).status).toBe(404);
+    expect((await call(editEntry, url, { method: 'PUT', body, user: 'auth0|alice', headers: { origin: 'https://evil.test' } })).status).toBe(403);
+    const response = await call(editEntry, url, { method: 'PUT', body, user: 'auth0|alice' });
+    expect(response.status).toBe(200);
+    expect(await response.json()).toMatchObject({ id: created.id, meal: 'Dinner', name: 'Oats', quantity: 2, grams: 100, calories: 380, protein: 14, carbs: 66, fat: 6, verified: false });
+    for (const invalid of [{ ...body, quantity: 0 }, { ...body, quantity: '2' }, { ...body, unit: 'milliliters' }, { ...body, meal: 'Invalid' }]) {
+      expect((await call(editEntry, url, { method: 'PUT', body: invalid, user: 'auth0|alice' })).status).toBe(400);
+    }
+    expect((await call(editEntry, url, { method: 'PUT', user: 'auth0|alice' })).status).toBe(400);
+    const saved = await (await call(day, '/api/day?date=2026-09-19', { user: 'auth0|alice' })).json() as { entries: (EntryInput & { id: string })[] };
+    expect(saved.entries).toHaveLength(1);
+    expect(saved.entries[0]).toMatchObject({ id: created.id, calories: 380, meal: 'Dinner' });
+  });
   it("reads an anonymous session without relying on identity headers", async () => {
     context.request = new NextRequest("https://gramello.test", { headers: { "oai-authenticated-user-id": "forged" } });
     expect(await getCurrentUser()).toBeNull();

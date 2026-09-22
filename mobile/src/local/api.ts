@@ -13,6 +13,7 @@ export function createLocalApi(repo: LocalRepository): ApiClient {
       case 'GET /api/day': value = await repo.getDay(q('date')); break;
       case 'PUT /api/goals': value = await repo.saveGoals(options.body); break;
       case 'POST /api/entries': value = await repo.addEntry(options.body); break;
+      case 'PUT /api/entries': value = await repo.updateEntry(q('id'), options.body); break;
       case 'DELETE /api/entries': value = await repo.removeEntry(q('id')); break;
       case 'GET /api/trends': value = { days: await repo.getTrends(Number(q('days'))) }; break;
       case 'GET /api/foods/search': value = await repo.searchFoods(q('q'), { online: q('online') !== '0', signal: options.signal }); break;

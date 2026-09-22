@@ -2,6 +2,7 @@ import { z } from 'zod';
 import { parseCustomFood, scaleFood, type Food } from '../../../lib/food';
 import { mealFood, type CustomMeal } from '../../../lib/meals';
 import { localDate } from '../../../lib/diary-date';
+import { editedPortion, entryEditSchema } from '../../../lib/entry-edit';
 import { foodSearchIssue, type FoodSearchIssue } from '../../../lib/food-search';
 import { defaultWaterGoal, waterDateSchema, waterEntrySchema, waterGoalSchema, type WaterDay } from '../../../lib/water';
 import { serialized, transaction, type SqliteConnection } from './database';
@@ -62,6 +63,15 @@ export async function createLocalRepository(db: SqliteConnection, catalog: FoodC
       if (!portion) throw new Error('Choose a supported serving amount.');
       const value = entrySchema.parse({ ...body, ...portion, id: uuid(), createdAt: new Date().toISOString(), name: food.name, brand: food.brand, source: food.source, verified: food.verified, sourceUrl: food.sourceUrl, servingLabel: food.servingLabel });
       await put({ kind: 'entry', id: value.id, date: value.date, value }); return value;
+    }),
+    updateEntry: (id: string, input: unknown) => serialized(db, async () => {
+      const body = entryEditSchema.parse(input);
+      const existing = await read<z.infer<typeof entrySchema>>('entry', id);
+      if (!existing) throw new Error('Food entry not found.');
+      const portion = editedPortion(existing, body.quantity, body.unit);
+      if (!portion) throw new Error('Choose a valid amount and measure.');
+      const value = entrySchema.parse({ ...existing, ...body, ...portion });
+      await put({ kind: 'entry', id, date: value.date, value }); return value;
     }),
     removeEntry: (id: string) => remove('entry', id),
     getTrends: (days: number, today = localDate()) => serialized(db, async () => {

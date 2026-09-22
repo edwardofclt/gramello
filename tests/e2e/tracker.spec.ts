@@ -22,6 +22,48 @@ async function search(page: Page, results = foods) {
   await expect(page.locator('.result-row')).toHaveCount(results.length);
 }
 
+test('edits a logged food in place, retries a failed save, and persists after reload', async ({ page }) => {
+  await openDiary(page);
+  await search(page);
+  await page.getByRole('button', { name: /Rolled oats USDA reference/ }).click();
+  await page.getByRole('button', { name: 'Add to Breakfast', exact: true }).click();
+  await expect(page.getByRole('dialog')).toBeHidden();
+  const item = page.getByRole('button', { name: 'Edit Rolled oats', exact: true });
+  await item.focus();
+  await page.keyboard.press('Enter');
+  const amount = page.getByRole('spinbutton', { name: 'Servings', exact: true });
+  await expect(amount).toHaveValue('1');
+  await amount.fill('0');
+  await expect(page.getByRole('button', { name: 'Save changes' })).toBeDisabled();
+  await amount.fill('2');
+  await page.getByRole('button', { name: 'Cancel', exact: true }).click();
+  await expect(page.locator('.calorie-focus h2')).toContainText('160');
+  await item.click();
+  await expect(amount).toHaveValue('1');
+  await amount.fill('2');
+  await page.getByRole('combobox', { name: 'Meal', exact: true }).selectOption('Dinner');
+  await page.route('**/api/entries?id=*', async route => {
+    if (route.request().method() === 'PUT') await route.fulfill({ status: 503, json: { error: 'Please try saving again.' } });
+    else await route.continue();
+  });
+  await page.getByRole('button', { name: 'Save changes' }).click();
+  await expect(page.getByRole('alert')).toContainText('Please try saving again.');
+  await expect(amount).toHaveValue('2');
+  await page.unroute('**/api/entries?id=*');
+  const saved = page.waitForResponse(response => response.url().includes('/api/entries?id=') && response.request().method() === 'PUT');
+  await page.getByRole('button', { name: 'Save changes' }).click();
+  expect((await saved).status()).toBe(200);
+  await expect(page.getByRole('dialog')).toBeHidden();
+  await expect(page.locator('.food-row')).toHaveCount(1);
+  await expect(page.locator('.meal-card').filter({ has: page.getByRole('heading', { name: 'Dinner', exact: true }) })).toContainText('Rolled oats');
+  await expect(page.locator('.calorie-focus h2')).toContainText('320');
+  await openDiary(page);
+  await item.click();
+  await expect(amount).toHaveValue('2');
+  await expect(page.getByRole('combobox', { name: 'Meal', exact: true })).toHaveValue('Dinner');
+  await page.screenshot({ path: 'test-results/edit-food-web.png' });
+});
+
 test('generic and branded foods scale by servings and grams and survive reload', async ({ page }) => {
   await openDiary(page);
   await search(page);

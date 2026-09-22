@@ -4,6 +4,10 @@ A calorie, macro, and water tracker with a daily diary, serving and weight
 controls, custom foods and meals, editable goals, and 7-day, 30-day, and
 6-month trends.
 
+Click or tap a logged food to edit its amount, measure, or meal, then choose
+**Save changes**. Totals update using the nutrition saved with that entry,
+even if its original food or recipe has since changed or been removed.
+
 The native iOS/Android app works offline with personal data stored on the device
 and no account. This repository also retains the self-hostable, authenticated
 web app and an Expo browser client. They use separate data stores:
