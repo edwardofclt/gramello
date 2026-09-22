@@ -14,7 +14,7 @@ The app remains **Prepare for Submission**; it has not been submitted or release
 | Primary localization | English (U.S.) |
 | Prepared listing version | 1.8.0 |
 | Attached build | 1.8.0 (12), Ready to Submit in TestFlight |
-| Price | US$0.99; base country United States |
+| Price | US$1.99; base country United States |
 | Availability | United States only; all other countries/regions unavailable |
 | New regions | Automatic availability disabled |
 | Age rating | 13+ in the current system; 12+ on operating systems before version 26 |
