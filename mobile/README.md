@@ -6,6 +6,61 @@ daily diary, food search with serving/gram controls, meal logging/removal, 7-day
 Gramello API at `https://nourish-api.fly.dev` by default, so the same Auth0 account
 sees the same data on web and mobile.
 
+## Anonymous usage analytics
+
+iOS and Android use [Segment Analytics React Native](https://github.com/segmentio/analytics-react-native).
+Set `EXPO_PUBLIC_SEGMENT_WRITE_KEY` in `mobile/.env` to a Segment React Native
+source's **write key**. Leaving it unset or blank disables analytics. The public
+production write key is configured in `eas.json`; the iOS `production` and Android
+`production-apk` profiles both use it. To disable analytics in those builds,
+remove that variable or set it to an empty string. Use a separate Segment
+source/key for development. This key is bundled in the app; never use a Segment
+workspace access token here.
+
+Rebuild the native app with `pnpm mobile:ios` or `pnpm mobile:android` (or EAS)
+after installing the new native dependencies. An OTA JavaScript update alone
+cannot add these modules. Segment supports development builds, not Expo Go.
+The Expo browser build and the marketing website do not send these events.
+
+Segment generates a random `anonymousId` and persists it using Sovran and
+AsyncStorage. It survives app restarts and sign-in/sign-out. It is never derived
+from Auth0, email, or a hardware identifier. An installation is the analytics
+identity: accounts sharing one installation share this ID, and the same account
+on another device has a different ID. Clearing app storage creates a new ID;
+restoring a device backup can restore the stored ID. There are no `identify`,
+`alias`, or account traits calls.
+
+| Events | When recorded |
+| --- | --- |
+| Application Installed / Updated / Opened / Backgrounded | Segment's native lifecycle hooks |
+| Welcome, Diary, Trends, Settings, Add Food, Goals | Screen changes, including returning from the food sheet |
+| Food Searched / Barcode Looked Up | Successful lookup; no query or barcode |
+| Food Logged / Removed, Custom Food Created, Meal Created / Updated / Deleted | Successful API writes |
+| Goals Updated, Water Logged / Removed, Water Goal Updated | Successful API writes |
+
+`src/analytics/events.ts` filters every event before delivery. Only fixed event
+and screen names, the anonymous ID, event ID/time, app name/version/build/bundle
+ID, OS name/version, and SDK name/version survive. All event properties, account
+IDs/traits, food and meal details, nutrition/water values, diary dates, device
+identifiers/names, location, locale, timezone, and deep links are excluded.
+`context.ip` is set to `0.0.0.0` to prevent IP enrichment in analytics events;
+Segment still receives the network connection. See
+[Segment's IP anonymization guidance](https://www.twilio.com/docs/segment/connections/sources/catalog/libraries/mobile/android#anonymizing-ip).
+
+SDK errors never block app actions. Segment queues events locally and retries
+delivery using its default flush settings. Only the Segment destination is
+installed in the app; review cloud destinations configured on the source before
+enabling it. Keep this source restricted to anonymous product analytics.
+
+Verification: `pnpm test`, `pnpm --filter @gramello/mobile typecheck`,
+`pnpm lint:mobile`, and `pnpm --filter @gramello/mobile export`. With a real write
+key and rebuilt native app, check the Segment source debugger: open the diary,
+log food/water, close/reopen the app, and sign out/in. Confirm `anonymousId`
+remains stable, `userId` and traits are absent, properties are empty, and the IP
+is `0.0.0.0`. Failed API writes should not appear as successful actions. Repeat
+on both iOS and Android. Update App Store privacy disclosures for the next
+analytics-enabled build; see `docs/app-store-preparation.md`.
+
 ## Barcode scanning
 
 In **Add food**, choose **Scan barcode**, allow camera access, and center a

@@ -3,6 +3,7 @@ import { useAuth0 } from 'react-native-auth0';
 import { configuration } from '../lib/config';
 import { createApiClient, errorMessage, type ApiClient } from '../lib/api';
 import { CredentialSession, requiresSignIn } from './credentials';
+import { withAnalytics } from '../analytics/api';
 
 type Session = {
   api: ApiClient; name: string; email?: string; signedIn: boolean; loading: boolean;
@@ -24,14 +25,14 @@ export function SessionProvider({ children }: { children: ReactNode }) {
     setMessage('Your session has expired. Sign in to pick up where you left off.');
     void credentials.clear().catch(() => {});
   }, [credentials]);
-  const api = useMemo(() => createApiClient(configuration.apiUrl, async () => {
+  const api = useMemo(() => withAnalytics(createApiClient(configuration.apiUrl, async () => {
     try {
       return await credentials.getToken(version);
     } catch (error) {
       if (credentials.isCurrent(version) && requiresSignIn(error)) expired();
       throw error;
     }
-  }, expired, () => credentials.isCurrent(version)), [credentials, version, expired]);
+  }, expired, () => credentials.isCurrent(version))), [credentials, version, expired]);
 
   const signIn = async () => {
     if (operationLock.current) return;

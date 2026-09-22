@@ -15,6 +15,9 @@
     "@expo/metro-runtime": "~57.0.15",
     "@gluestack-ui/core": "5.0.15",
     "@gluestack-ui/utils": "5.0.6",
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "@segment/analytics-react-native": "2.24.0",
+    "@segment/sovran-react-native": "1.1.4",
     "expo": "57.0.22",
     "expo-camera": "~57.0.5",
     "expo-dev-client": "~57.0.19",
@@ -24,6 +27,7 @@
     "react-dom": "19.2.3",
     "react-native": "0.86.3",
     "react-native-auth0": "5.11.1",
+    "react-native-get-random-values": "2.0.0",
     "react-native-safe-area-context": "~5.7.0",
     "react-native-svg": "15.15.4",
     "react-native-web": "~0.21.0"
