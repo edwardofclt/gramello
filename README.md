@@ -1,17 +1,107 @@
 # Gramello
 
-A self-hostable calorie and macro tracker with a fast daily diary, precise serving and weight controls, goal tracking, and 7-day, 30-day, and 6-month analytics.
+A calorie, macro, and water tracker with a daily diary, serving and weight
+controls, custom foods and meals, editable goals, and 7-day, 30-day, and
+6-month trends.
+
+The native iOS/Android app works offline with personal data stored on the device
+and no account. This repository also retains the self-hostable, authenticated
+web app and an Expo browser client. They use separate data stores:
+
+| Behavior | Native iOS/Android | Hosted web and Expo browser |
+| --- | --- | --- |
+| Sign-in | None | Auth0 |
+| Diary, meals, and goals | Local SQLite on each device | Server database, scoped to the signed-in account |
+| Food search | Installed USDA catalog and private custom foods | Live USDA/Open Food Facts, imported restaurant menus, and shared custom foods |
+| Moving data | User-directed backup export/import | Same-account access to the hosted diary |
+
+Native data does not sync with the hosted diary or other devices. Migration
+from an existing hosted account into the native app is not implemented.
 
 The source repository is [edwardofclt/gramello](https://github.com/edwardofclt/gramello).
 For product help and data requests, see [support](docs/support.md) and the
 [privacy policy](docs/privacy.md). App Store preparation is tracked in
 [the release checklist](docs/app-store-preparation.md).
 
-Food search combines:
+## Native app
+
+The [React Native app](mobile/README.md) uses Expo and gluestack-ui. From the
+repository root, use Node.js 24 and the pinned pnpm 11.25.0:
+
+```bash
+corepack enable
+pnpm install --frozen-lockfile
+pnpm mobile:ios
+# Or, with an Android emulator/device and Android SDK:
+pnpm mobile:android
+```
+
+iOS requires macOS, Xcode, and CocoaPods. Android requires Android Studio/SDK
+and a compatible JDK. These commands build a development app; use that instead
+of Expo Go. Later, run `pnpm mobile` to start Metro for the installed build.
+Rebuild after changing native dependencies. Native builds require no Auth0
+configuration or running API. See the [mobile guide](mobile/README.md) for
+physical-device setup and the retained Expo browser client.
+
+### Local data and backups
+
+Diary entries, recipes, custom foods, water history, and goals live in the
+device's `gramello-personal.sqlite` database. In **Settings → Advanced → Your data**:
+
+- **Export backup** saves a complete `.gramello` archive through the OS share/save interface.
+- **Export diary CSV** and **Export water CSV** create spreadsheet exports. CSV cannot restore the complete diary.
+- **Import backup** previews a `.gramello` archive and requires confirmation to replace the device's personal data. Imports do not merge diaries.
+- **Recover previous diary** restores the recovery copy retained before replacement.
+
+Backups work between native iOS and Android installations and are readable by
+anyone with access to the file. Portable backups are limited to 32 MiB and
+200,000 records. Catalog databases are separate from personal data and are not
+included in backups. Gramello has no automatic personal-data cloud sync; choose
+where to save exports using the device's sharing options.
+
+### Offline food catalog
+
+The app bundles [7,793 USDA SR Legacy foods](data/food-catalog/README.md), so
+name search works on first launch without a network connection. This starter
+has no packaged-food barcode records and excludes the repository's restaurant
+snapshots. Native search and barcode lookup use the installed catalog; they do
+not query the live USDA or Open Food Facts APIs. Unknown barcodes offer name
+search or custom entry.
+
+The app checks for signed catalog updates at launch and when returning to the
+foreground. Successful checks defer the next automatic check by 24–25 hours;
+**Settings → Advanced → Food catalog → Check for updates** checks immediately. Updates
+validate the signature, download hash, and SQLite contents before activation.
+Installed foods remain usable during an outage, and an invalid or purged cache
+falls back to the bundled catalog.
+
+Downloadable updates require the `CATALOG_SIGNING_KEY` repository secret and a
+published signed manifest. Without the secret, the **Publish food catalog**
+workflow skips publication; the bundled catalog still works. See
+[catalog signing, publishing, and recovery](docs/client-only-implementation.md)
+for setup and release checks.
+
+### Anonymous usage analytics
+
+Native analytics uses Segment when `EXPO_PUBLIC_SEGMENT_WRITE_KEY` is set.
+The production EAS profiles configure a public write key. Events use a random
+installation ID and fixed action/screen names; the allowlist excludes diary
+contents, search terms, barcodes, nutrition values, and account identities.
+Leaving the key blank disables analytics in a build. See
+[analytics configuration and event details](mobile/README.md#anonymous-usage-analytics).
+
+## Hosted food search
+
+The web app and hosted Expo browser client combine:
 
 - [USDA FoodData Central](https://fdc.nal.usda.gov/) for generic and branded foods
 - [Open Food Facts](https://world.openfoodfacts.org/) for its open, community-maintained product database and images
 - A small built-in USDA reference fallback for common staples
+- Imported restaurant menus and user-created foods in the server catalog
+
+The live USDA request currently uses `DEMO_KEY` in `lib/food-providers.ts`;
+there is no configurable USDA API-key setting. Provider failures are reported
+as partial results while matching server-catalog foods remain available.
 
 Choose **Add food → Scan barcode** to scan a packaged food with your camera or
 type the printed barcode. Gramello looks up the exact product in Open Food Facts,
@@ -37,17 +127,19 @@ portion weight in grams or ounces. A 64 oz batch with 1,200 kcal makes four
 16 oz portions at 300 kcal each. Recipe portion ounces mean weight, and
 portions assume the ingredients are evenly distributed.
 
-Saved meals sync through your account. Reopen **My meals** to log any weight or
+Native meals stay on the device and are included in backups. Hosted meals are
+saved to the signed-in account. Reopen **My meals** to log any weight or
 fractional serving, edit ingredients or yield, or delete a recipe. Edits and
 deletions leave previously logged diary nutrition unchanged.
 
-Existing installations need the `0002_custom_meals.sql` migration. Docker/Fly
-apply migrations on startup; local databases need this migration applied with
-the same Wrangler configuration and state directory used for the app.
+Existing hosted installations need the `0002_custom_meals.sql` migration.
+Docker/Fly apply migrations on startup; local hosted databases need this
+migration applied with the same Wrangler configuration and state directory
+used for the app. Native SQLite initializes its own schema.
 
 ## Restaurant menus and custom foods
 
-Food search also includes imported restaurant menus for chains found within a
+Hosted food search includes imported restaurant menus for chains found within a
 10-mile straight-line radius of the Census reference point for ZIP 29707. The
 [coverage audit](docs/restaurant-import/coverage.md) distinguishes confirmed
 locations, map candidates, and unresolved locations. The
@@ -65,17 +157,20 @@ calculations, so client-supplied values cannot forge a verified entry.
 
 Choose **Add food → Add custom food** on web or mobile. Enter a name, a serving
 description, and total calories, protein, carbs, and fat for that serving.
-Serving weight is optional. The food becomes searchable by all signed-in users
-and always shows **Unverified**. A custom food saves to the shared catalog
-before you choose how much to add to your private diary; contributor identities
-are not exposed in search. Calories are kept as entered, independently of the
-macro totals.
+Serving weight is optional. Native custom foods are private to the device and
+appear as **My foods**. Hosted custom foods save to the shared server catalog
+and become searchable by all signed-in users; contributor identities are not
+exposed in search. Both show **Unverified** and save before you choose how much
+to log. Calories are kept as entered, independently of the macro totals.
 
 Restaurant/custom foods can be logged by servings even when no weight is known.
-Grams are offered only when a source provides a weight. Search retains local
-catalog results during upstream outages and indicates when results are partial.
+Grams are offered only when a source provides a weight. Hosted search retains
+server-catalog results during upstream outages and indicates when results are partial.
 
-### Maintaining the imported catalog
+### Maintaining the hosted restaurant catalog
+
+These imports populate the hosted database. They are excluded from the native
+distributable catalog pending redistribution review.
 
 Curated source snapshots live in `data/restaurant-foods/`, with provenance,
 exclusions, source dates, location evidence, and extraction notes in
@@ -108,14 +203,11 @@ It is a separate static GitHub Pages site; the authenticated diary stays on Fly.
 See [website development and publishing](website/README.md) for local preview,
 content sources, and the automatic Pages deployment.
 
-## Mobile app
+## Run the hosted web app with Docker Compose
 
-The native iOS/Android app now stores its diary locally in SQLite, works without an account, automatically updates a separate USDA food catalog, and supports user-directed backup/CSV export and import. See [native local-data implementation](docs/client-only-implementation.md) for catalog signing, publishing, recovery, and release checks. The browser edition retains the hosted account model.
-
-The React Native app in [`mobile/`](mobile/README.md) uses Expo and gluestack-ui.
-See its setup guide for iOS/Android run commands and hosted browser configuration.
-
-## Run with Docker Compose
+The web app uses React, Next.js-compatible routes through Vite/vinext, and
+Drizzle with a Cloudflare D1 binding. Docker/Fly run the built Worker through
+Wrangler with a persistent local SQLite database.
 
 Configure Auth0 using the steps below, then:
 
@@ -129,11 +221,11 @@ legacy volume name when updating an installation so it uses the same diary data.
 
 ## Fly.io deployment
 
-The Gramello API and web app currently run at
-[https://nourish-api.fly.dev](https://nourish-api.fly.dev). This hostname is a
-live service address; changing the GitHub repository name does not move it.
-`fly.toml` deploys the existing Docker image in `iad` with the SQLite database
-and migration markers stored on the encrypted `nourish_data` volume at `/data`.
+The hosted API/web deployment is configured for
+[https://nourish-api.fly.dev](https://nourish-api.fly.dev). Renaming the GitHub
+repository does not change this service address. `fly.toml` deploys the Docker
+image in `iad` with the SQLite database and migration markers stored on the
+encrypted `nourish_data` volume at `/data`.
 Daily volume snapshots are retained for 14 days. This is a single-Machine
 deployment: do not scale horizontally without adding database replication,
 because Fly volumes do not share data between Machines. Deploys and restarts
@@ -141,9 +233,9 @@ briefly interrupt service. Keep separate database exports for long-term backups.
 
 The four web-authentication `AUTH0_*` settings are runtime Fly secrets.
 `APP_BASE_URL` is set in `fly.toml`. The optional `AUTH0_AUDIENCE` and
-`AUTH0_MOBILE_CLIENT_ID` bindings default to empty strings; set Fly secrets with
-the configured API audience and Native Application client ID to enable mobile
-authentication on the next deployment. The Auth0 web application must allow
+`AUTH0_MOBILE_CLIENT_ID` bindings default to empty strings. They enable bearer
+authentication for retained hosted clients when configured; the current native
+app does not use them. The Auth0 web application must allow
 `https://nourish-api.fly.dev/auth/callback` as a callback URL and
 `https://nourish-api.fly.dev` as a logout URL.
 
@@ -161,28 +253,36 @@ replacing the application container. To roll back application code, redeploy a
 previous image with `fly deploy --ha=false --image <previous-image>`; this does
 not reverse database migrations, so check schema compatibility first.
 
-## Local development
+## Hosted web development
 
-Requires Node.js 22+ and pnpm.
+Use Node.js 24, matching CI, and pnpm 11.25.0. The root package declares a
+minimum Node.js version of 22.13.0. Configure Auth0 below before signing in.
 
 ```bash
 corepack enable
-pnpm install
+pnpm install --frozen-lockfile
+if [ ! -f .env.local ]; then cp .env.example .env.local; fi
+# Fill in the web Auth0 settings in .env.local before running the app.
 pnpm run build
 for migration in drizzle/*.sql; do
-  pnpm exec wrangler d1 execute DB --local --config dist/server/wrangler.json --file "$migration"
+  pnpm exec wrangler d1 execute DB --local --config dist/server/wrangler.json --persist-to .wrangler/state --file "$migration"
 done
 pnpm dev
 ```
 
 Open [http://localhost:5173](http://localhost:5173). The build creates the Wrangler
-configuration used to initialize a new local database; run the migration loop
-only once per database. `pnpm dev` loads `.env.local` at runtime.
+configuration used to initialize a new local database; run the full migration
+loop only once per database. For an existing database, apply only unapplied
+SQL files using the same configuration and `.wrangler/state` directory.
+`pnpm dev` loads `.env.local` at runtime.
 To serve a production build locally instead, run
 `pnpm start --env-file ../../.env.local --port 5173` (Wrangler resolves env files
 relative to `dist/server/wrangler.json`).
 
-## Auth0 setup
+## Hosted Auth0 setup
+
+This section applies to the hosted web app and API. Native iOS/Android builds
+do not require an account or Auth0 settings.
 
 1. In the [Auth0 dashboard](https://manage.auth0.com/), create or select a
    **Regular Web Application**. Enable the login connections you want to offer
@@ -191,42 +291,34 @@ relative to `dist/server/wrangler.json`).
    `http://localhost:5173/auth/callback, http://localhost:3000/auth/callback`.
    Add these **Allowed Logout URLs**:
    `http://localhost:5173, http://localhost:3000`.
-3. Copy `.env.example` to `.env.local`. Set `AUTH0_DOMAIN`, `AUTH0_CLIENT_ID`, and
-   `AUTH0_CLIENT_SECRET` from the application's settings. Generate `AUTH0_SECRET`
+3. Copy `.env.example` to `.env.local` if it does not already exist. Set
+   `AUTH0_DOMAIN`, `AUTH0_CLIENT_ID`, and `AUTH0_CLIENT_SECRET` from the
+   application's settings. Generate `AUTH0_SECRET`
    with `openssl rand -hex 32`. Keep this key stable across restarts and replicas;
    replacing it signs everyone out. Never commit `.env.local`.
-4. Set `APP_BASE_URL=http://localhost:5173` for development. Docker Compose reads
-   `.env.local` and overrides the base URL to `http://localhost:3000`. For a
-   deployment behind an HTTPS reverse proxy, set `APP_BASE_URL=https://your-host`
+4. Set `APP_BASE_URL=http://localhost:5173` for development. For web-only use,
+   leave `AUTH0_AUDIENCE` and `AUTH0_MOBILE_CLIENT_ID` empty instead of keeping
+   the example placeholders. Docker Compose reads `.env.local` and defaults
+   the base URL to `http://localhost:3000`. For a deployment behind an HTTPS
+   reverse proxy, set `APP_BASE_URL=https://your-host`
    in the Compose environment and register that host's `/auth/callback` and root
    URL in Auth0. Use a single canonical origin, with no path or query string.
 
-### Native API authentication
+### Retained hosted clients and security
 
-The iOS and Android app uses a separate Auth0 **Native Application** and the
-same tenant and enabled connections as the web application. In Auth0:
+The API still supports RS256 bearer tokens for the Expo browser client and
+legacy native clients. `AUTH0_AUDIENCE` selects the API identifier and
+`AUTH0_MOBILE_CLIENT_ID` restricts the authorized client. These hosted clients
+need public Auth0/API configuration; see
+[hosted browser authentication](mobile/README.md#hosted-browser-authentication).
+The Expo browser client also needs its origin registered in Auth0 and either
+same-origin hosting or an API gateway with appropriate CORS support.
 
-1. Create an API for the Gramello server. Use a stable URL-style identifier such
-   as `https://api.gramello.example` (it need not resolve on the public internet),
-   select RS256 signing, and enable offline access for the API.
-2. Create a Native Application. Enable Refresh Token Rotation with reuse
-   detection, and enable the same database, social, or enterprise connections
-   used by the Regular Web Application. Register the native callback and logout
-   URLs documented in `mobile/README.md` for the `nourish` scheme.
-3. Set server bindings `AUTH0_AUDIENCE` to the API identifier and
-   `AUTH0_MOBILE_CLIENT_ID` to the Native Application client ID. The server uses
-   these values to accept only access tokens issued for this API and native app.
-4. Give the mobile app the Auth0 domain, Native Application client ID, API
-   audience, and Gramello API base URL. Request `openid profile email
-   offline_access`. These are public identifiers. Never put
-   `AUTH0_CLIENT_SECRET`, `AUTH0_SECRET`, or any other client secret in the app.
+Hosted clients sharing a diary must resolve to the same verified Auth0 `sub`.
+Changing tenants, connections, or account-linking behavior can produce a
+different subject and therefore a separate hosted diary.
 
-Both Auth0 applications must use the same tenant connections so the same person
-receives the same Auth0 `sub` on web and mobile. Gramello uses that exact verified
-subject as the database owner; changing tenants, connections, or account-linking
-behavior can produce a different subject and therefore a separate diary.
-
-The five web settings and two optional native API settings are server-side
+The five web settings and two optional bearer API settings are server-side
 bindings. The Docker image builds without credentials;
 Compose supplies them at runtime. Do not prefix these variables with
 `NEXT_PUBLIC_` or include them in build arguments. For a hosted Cloudflare Worker,
@@ -237,43 +329,47 @@ For web-only use, leave `AUTH0_AUDIENCE` and `AUTH0_MOBILE_CLIENT_ID` empty in
 the environment file (or define empty runtime bindings). Bearer requests then
 receive `503` while cookie sessions continue to work.
 
-The app uses the [official Auth0 Next.js SDK](https://auth0.github.io/nextjs-auth0/)
+The server-rendered web app uses the [Auth0 Next.js SDK](https://auth0.github.io/nextjs-auth0/)
 for authorization-code login, callback validation, encrypted HTTP-only cookies,
 and logout. HTTPS enables secure cookies. Sessions expire after one day of
-inactivity or seven days in total. The app does not expose access tokens to the
-browser. APIs return JSON `401` when the session expires and `503` if sign-in
+inactivity or seven days in total. This cookie-based UI does not expose access
+tokens to the browser. APIs return JSON `401` when the session expires and `503` if sign-in
 configuration is unavailable. Cookie-authenticated writes require an `Origin`
-matching `APP_BASE_URL`. Native writes authenticate with the bearer token and do
+matching `APP_BASE_URL`. Hosted bearer writes authenticate with the token and do
 not require a browser Origin header. Responses vary by both Cookie and
 Authorization so caches cannot mix identities.
 
-Each user's data belongs to their verified Auth0 `sub`. Incoming
+Hosted personal data belongs to each user's verified Auth0 `sub`. Incoming
 `oai-authenticated-user-*` headers and client-supplied user IDs cannot select a
 diary. Existing `site-owner` or ChatGPT data stays in the database, but is not
-automatically assigned to an Auth0 user. To migrate it, back up the database,
-verify the intended owner's Auth0 subject, and deliberately reassign that user's
-rows in both `goals` and `entries`; resolve any existing goal row first.
+automatically assigned to an Auth0 user. Any reassignment requires a database
+backup and a deliberate migration of the intended owner's records, including
+meals and water data where present. This does not migrate data into the current
+native app.
 
 ## Water intake
 
 The web and native diaries include a water card for the selected local date.
 Quick-add 250/500/750 mL or 8/16/24 US fl oz, enter a custom amount, review entries,
-and remove mistakes. **Edit water goal** saves a daily target and preferred unit
-across devices. The initial target is an editable 2,000 mL; it is not a personalized
-recommendation. Goals apply across the diary, including past dates.
+and remove mistakes. On native, **Settings** holds calorie, macro, and water
+goals, including the preferred water unit; water logging stays in the diary.
+On web, **Edit water goal** opens the water target and unit controls. Goals save
+on the native device or in the hosted account. The initial water target is an
+editable 2,000 mL; it is not a personalized recommendation. Goals apply across
+the diary, including past dates.
 
 Water is stored separately from food, calories and macros. Existing mobile clients
 can continue saving nutrition goals without changing hydration settings. Volume is
 stored in mL without rounding; US fl oz uses 29.5735295625 mL per fluid ounce.
 
-Deploy `drizzle/0005_water_tracking.sql` before serving the updated backend.
+Hosted installations need `drizzle/0005_water_tracking.sql` before serving the backend.
 Docker/Fly apply it through the existing startup migration runner. For other D1
 installations, apply it to the intended database using the existing migration
 procedure. This migration only creates `water_goals`, `water_entries`, and a
-user/date index; it does not rewrite food or nutrition data. An updated native
-build is required to display the water card on iOS/Android.
+user/date index; it does not rewrite food or nutrition data. Native water data
+uses the local SQLite repository and does not require server migrations.
 
-Authenticated endpoints:
+Authenticated hosted endpoints:
 
 - `GET /api/water?date=YYYY-MM-DD`: goal, entries and total for that date.
 - `POST /api/water`: `{ "date": "YYYY-MM-DD", "amountMl": 250 }`.
@@ -285,21 +381,34 @@ Authenticated endpoints:
 ```bash
 pnpm test
 pnpm exec tsc --noEmit
+pnpm --filter @gramello/mobile typecheck
 pnpm lint
+pnpm --filter @gramello/mobile export
 pnpm build
 pnpm test:smoke
 ```
 
-Tests exercise the real Auth0 cookie/session code and database queries with two
-users, including anonymous requests, spoofed headers, expired cookies, CSRF, and
-deletion ownership. The smoke check runs the built Worker with temporary
+Tests cover native SQLite persistence, backups/import/recovery, signed catalog
+updates, nutrition calculations, and the hosted Auth0/database paths, including
+anonymous requests, spoofed headers, expired cookies, CSRF, and deletion
+ownership. The smoke check runs the built Worker with temporary
 credentials and an isolated local database; it does not modify your diary or
 contact Auth0. Complete a real login and logout with your configured tenant
-before deploying.
+before deploying the hosted app.
+
+For browser interaction checks, install Chromium with
+`pnpm exec playwright install chromium`, then run `pnpm test:e2e` after building
+and `pnpm test:mobile:ui` for the Expo browser screens. See the
+[web test guide](tests/e2e/README.md) and [mobile verification guide](mobile/README.md#verify).
+Native JS exports and browser tests do not replace device checks for scanning,
+restart persistence, file sharing/import/recovery, or interrupted catalog downloads.
 
 ## Releases
 
-Commits use the [Conventional Commits](https://www.conventionalcommits.org/) format. Merges to `main` run semantic-release, generate release notes and the changelog, create a GitHub release, and publish multi-architecture Docker images to GitHub Container Registry:
+Commits use the [Conventional Commits](https://www.conventionalcommits.org/) format.
+Pushes to `main` run semantic-release. When releasable changes exist, it updates
+the changelog and creates a GitHub release; follow-up jobs publish the website
+and multi-architecture Docker images to GitHub Container Registry:
 
 ```text
 ghcr.io/<owner>/<repository>:latest
@@ -308,10 +417,20 @@ ghcr.io/<owner>/<repository>:<version>
 
 Use `fix:` for patch releases, `feat:` for minor releases, and a `BREAKING CHANGE:` footer for major releases.
 
-Stable releases also build the iOS app on Expo EAS and submit it to TestFlight.
-The build uses the release tag's code and version; EAS increments the build number.
-The repository's `EXPO_TOKEN` Actions secret authenticates the build robot.
-See [mobile TestFlight setup](mobile/README.md#testflight) for credentials and manual reruns.
+Stable releases also use Expo EAS to build and submit iOS to TestFlight and
+build a signed Android AAB. Android upload/submission to Google Play remains a
+separate release task; TestFlight submission does not publish an App Store release.
+The builds use the release tag's code and version, with EAS incrementing build
+numbers. The repository's `EXPO_TOKEN` Actions secret authenticates the jobs.
+Signed APK distribution is a separate manual workflow that attaches the APK to
+an existing stable GitHub release. See
+[store builds and manual APKs](mobile/README.md#store-builds-and-manual-apks)
+for signing credentials and reruns.
+
+Catalog publication is independent: **Publish food catalog** runs manually or
+on approved catalog-input changes on `main`, publishing to the `food-catalog`
+prerelease when signing is configured. It does not trigger native app releases.
+The release workflow does not deploy the hosted Fly app; use `fly deploy` above.
 
 The iOS bundle identifier, Android package, Auth0 callback scheme and API
 audience, Expo project slug, Fly hostname, and database volume names still use
