@@ -1,3 +1,9 @@
+## [1.9.0](https://github.com/edwardofclt/gramello/compare/v1.8.0...v1.9.0) (2026-09-22)
+
+### Features
+
+* add anonymous Segment analytics to mobile app ([#19](https://github.com/edwardofclt/gramello/issues/19)) ([3dcf8ba](https://github.com/edwardofclt/gramello/commit/3dcf8ba394f03e371f50b083f32e82def55cbf17))
+
 ## [1.8.0](https://github.com/edwardofclt/gramello/compare/v1.7.0...v1.8.0) (2026-09-22)
 
 ### Features
