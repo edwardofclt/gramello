@@ -1,3 +1,9 @@
+## [1.11.1](https://github.com/edwardofclt/gramello/compare/v1.11.0...v1.11.1) (2026-09-22)
+
+### Bug Fixes
+
+* restore offline food catalogs and barcode lookup ([3ba561b](https://github.com/edwardofclt/gramello/commit/3ba561b475cad6f119486951032588ecd372fd97))
+
 ## [1.11.0](https://github.com/edwardofclt/gramello/compare/v1.10.0...v1.11.0) (2026-09-22)
 
 ### Features
