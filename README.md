@@ -98,6 +98,16 @@ Run `SMOKE_BROWSER=1 pnpm test:smoke` after building to verify real migrations,
 source verification, custom-food persistence, and the web flow in an isolated
 local database. This does not modify the production diary.
 
+## Public website and legal pages
+
+The [Gramello website](https://edwardofclt.github.io/gramello/) includes the
+[privacy policy](https://edwardofclt.github.io/gramello/privacy/),
+[terms and conditions](https://edwardofclt.github.io/gramello/terms/), and
+[support and data requests](https://edwardofclt.github.io/gramello/support/).
+It is a separate static GitHub Pages site; the authenticated diary stays on Fly.io.
+See [website development and publishing](website/README.md) for local preview,
+content sources, and the automatic Pages deployment.
+
 ## Mobile app
 
 The React Native app in [`mobile/`](mobile/README.md) uses Expo, gluestack-ui,
