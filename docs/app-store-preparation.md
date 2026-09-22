@@ -12,7 +12,8 @@ The app remains **Prepare for Submission**; it has not been submitted or release
 | Primary category | Health & Fitness |
 | Secondary category | Food & Drink |
 | Primary localization | English (U.S.) |
-| Prepared listing version | 1.6.0 |
+| Prepared listing version | 1.8.0 |
+| Attached build | 1.8.0 (12), Ready to Submit in TestFlight |
 | Price | US$0.99; base country United States |
 | Availability | United States only; all other countries/regions unavailable |
 | New regions | Automatic availability disabled |
@@ -21,9 +22,10 @@ The app remains **Prepare for Submission**; it has not been submitted or release
 | Support/privacy contact | gramello@edwardofclt.com |
 
 Description, promotional text, keywords, copyright, support URL, and App Review
-notes/contact email were entered in the version listing. The privacy-policy URL
-was entered in App Privacy. Public GitHub commit permalinks to `support.md` and
-`privacy.md` allow these links to work before this documentation PR is merged.
+notes/contact email were entered in the version listing. The listing copy and
+review notes include water tracking. The privacy-policy URL was entered in App
+Privacy. Public GitHub commit permalinks to `support.md` and `privacy.md` allow
+these links to work before this documentation PR is merged.
 The repository is now [edwardofclt/gramello](https://github.com/edwardofclt/gramello).
 
 The age questionnaire includes health/wellness topics, infrequent alcohol
@@ -63,15 +65,13 @@ device location permission.
   an ordinary account-based App Store app.
 - Expose the privacy policy and support contact inside the app.
 - Review shared custom-food moderation/reporting safeguards against Apple's
-  user-generated-content requirements before submitting version 1.6 or later.
+  user-generated-content requirements before submitting version 1.8.0.
 - Provide App Review with a working dedicated demo account and verify the review
   contact details in App Store Connect. Do not commit credentials to this repo.
 - Upload accurate native iPhone and iPad screenshots for the release build.
-- Align the prepared 1.6.0 listing with the intended release version. The
-  repository has since released version 1.8.0, including water tracking;
-  confirm which native build is available in TestFlight before attaching it.
-- Test the final native build, its authentication, account deletion, food search,
-  barcode scanning, and server deployment before submitting for review.
+- Confirm the attached 1.8.0 build 12 matches the intended final release. Test
+  its authentication, account deletion, diary and water tracking, food search,
+  barcode scanning, and server deployment on native devices before review.
 
 ## References
 
