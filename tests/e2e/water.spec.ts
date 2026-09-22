@@ -1,0 +1,53 @@
+import { test, expect } from './fixtures';
+
+test('water goals, units and entries persist across reloads and diary dates', async ({ page }) => {
+  await page.goto('/');
+  const card = page.getByRole('region', { name: 'Water intake' });
+  await expect(card.locator('.water-total')).toHaveText('0 mLof 2000 mL');
+  await card.getByRole('button', { name: '+ 250 mL', exact: true }).click();
+  await expect(card.locator('.water-total')).toHaveText('250 mLof 2000 mL');
+  await card.getByLabel('Custom amount (mL)').fill('350.5');
+  await card.getByRole('button', { name: 'Add water', exact: true }).click();
+  await expect(card.locator('.water-total')).toHaveText('600.5 mLof 2000 mL');
+  await card.getByRole('button', { name: 'Edit water goal' }).click();
+  const dialog = page.getByRole('dialog');
+  await dialog.getByLabel('Water unit').selectOption('fl-oz');
+  await dialog.getByLabel('Daily water goal', { exact: true }).fill('64');
+  await dialog.getByRole('button', { name: 'Save water goal' }).click();
+  await expect(dialog).not.toBeVisible();
+  await expect(card.locator('.water-total')).toHaveText('20.3 US fl ozof 64 US fl oz');
+  await page.reload();
+  await expect(card.locator('.water-total')).toHaveText('20.3 US fl ozof 64 US fl oz');
+  await page.getByRole('button', { name: 'Previous day' }).click();
+  await expect(card.locator('.water-total')).toHaveText('0 US fl ozof 64 US fl oz');
+  await card.getByRole('button', { name: '+ 16 US fl oz', exact: true }).click();
+  await expect(card.locator('.water-total')).toHaveText('16 US fl ozof 64 US fl oz');
+  await card.getByLabel('Custom amount (US fl oz)').fill('64');
+  await card.getByRole('button', { name: 'Add water', exact: true }).click();
+  await expect(card.getByText('Water goal reached!')).toBeVisible();
+  await expect(card.getByRole('progressbar')).toHaveAttribute('aria-valuenow', '100');
+  await card.getByText('Water entries (2)', { exact: true }).click();
+  await card.getByRole('button', { name: 'Remove 64 US fl oz water', exact: true }).click();
+  await expect(card.locator('.water-total')).toHaveText('16 US fl ozof 64 US fl oz');
+  await page.getByRole('button', { name: 'Next day' }).click();
+  await expect(card.locator('.water-total')).toHaveText('20.3 US fl ozof 64 US fl oz');
+  await page.screenshot({ path: `test-results/water-${test.info().project.name}.png`, fullPage: true });
+});
+
+test('a failed water save retains the draft and does not change progress', async ({ page }) => {
+  await page.goto('/');
+  const card = page.getByRole('region', { name: 'Water intake' });
+  await expect(card.locator('.water-total')).toHaveText('0 mLof 2000 mL');
+  await page.route('**/api/water', route => route.fulfill({ status: 503, json: { error: 'Water intake could not be saved.' } }));
+  const input = card.getByLabel('Custom amount (mL)');
+  await input.fill('-5');
+  await expect(card.getByRole('button', { name: 'Add water', exact: true })).toBeDisabled();
+  await input.fill('375');
+  await card.getByRole('button', { name: 'Add water', exact: true }).click();
+  await expect(card.getByRole('alert')).toContainText('could not be saved');
+  await expect(input).toHaveValue('375');
+  await expect(card.locator('.water-total')).toHaveText('0 mLof 2000 mL');
+  await page.unroute('**/api/water');
+  await card.getByRole('button', { name: 'Add water', exact: true }).click();
+  await expect(card.locator('.water-total')).toHaveText('375 mLof 2000 mL');
+});

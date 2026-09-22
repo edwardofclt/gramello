@@ -25,6 +25,9 @@ import { ghostProduct } from './fixtures/ghost-energy';
 import { GET as listMeals, POST as createMeal, PUT as updateMeal, DELETE as deleteMeal } from "@/app/api/meals/route";
 import type { CustomMeal } from "@/lib/meals";
 import { getCurrentUser } from "@/lib/auth";
+import { GET as waterDay, POST as addWater, DELETE as removeWater } from '@/app/api/water/route';
+import { PUT as waterGoal } from '@/app/api/water/goals/route';
+import type { WaterDay } from '@/lib/water';
 
 const secret = "0123456789abcdef".repeat(4);
 const database = new DatabaseSync(":memory:");
@@ -59,6 +62,10 @@ const mealDraft = { name: "Soup", totalGrams: 1814.36948, servingGrams: 453.5923
   { food: { id: "beef", name: "Beef", source: "Test", servingGrams: 100, servingLabel: "100 g", calories: 200, protein: 20, carbs: 10, fat: 5 }, quantity: 600, unit: "grams" },
 ] };
 const routes = [
+  ['GET', '/api/water?date=2026-09-19', waterDay, undefined],
+  ['POST', '/api/water', addWater, { date: '2026-09-19', amountMl: 250 }],
+  ['DELETE', '/api/water?id=example', removeWater, undefined],
+  ['PUT', '/api/water/goals', waterGoal, { goalMl: 2500, unit: 'ml' }],
   ["GET", "/api/meals", listMeals, undefined],
   ["POST", "/api/meals", createMeal, mealDraft],
   ["PUT", "/api/meals?id=example", updateMeal, mealDraft],
@@ -96,7 +103,7 @@ async function call(handler: (request: Request) => Promise<Response>, path: stri
 }
 
 beforeEach(() => {
-  database.exec("DELETE FROM entries; DELETE FROM goals; DELETE FROM foods; DELETE FROM custom_meals;");
+  database.exec("DELETE FROM entries; DELETE FROM goals; DELETE FROM foods; DELETE FROM custom_meals; DELETE FROM water_entries; DELETE FROM water_goals;");
   Object.assign(runtime.env, configuration);
 });
 afterAll(() => database.close());
@@ -266,5 +273,60 @@ describe("saved meals", () => {
       expect((await call(handler, "/api/meals?id=anything", { method, user: "auth0|alice", body: mealDraft, headers: { origin: "https://evil.test" } })).status).toBe(403);
     }
     expect(database.prepare("SELECT * FROM custom_meals").all()).toEqual([]);
+  });
+});
+
+describe('water intake', () => {
+  const read = async (user = 'auth0|alice', date = '2026-09-19') =>
+    (await call(waterDay, `/api/water?date=${date}`, { user })).json() as Promise<WaterDay>;
+
+  it('persists account goals and date-specific entries, prevents cross-account deletion, and leaves nutrition unchanged', async () => {
+    expect(await read()).toEqual({ date: '2026-09-19', goal: { goalMl: 2000, unit: 'ml' }, entries: [], totalMl: 0 });
+    await call(goals, '/api/goals', { method: 'PUT', body: targets, user: 'auth0|alice' });
+    const target = { goalMl: 64 * 29.5735295625, unit: 'fl-oz' };
+    expect((await call(waterGoal, '/api/water/goals', { method: 'PUT', body: { ...target, userId: 'auth0|bob' }, user: 'auth0|alice' })).status).toBe(200);
+    const response = await call(addWater, '/api/water', { method: 'POST', body: { date: '2026-09-19', amountMl: 16 * 29.5735295625, userId: 'auth0|bob' }, user: 'auth0|alice' });
+    expect(response.status).toBe(201);
+    const { id } = await response.json() as { id: string };
+    await call(addWater, '/api/water', { method: 'POST', body: { date: '2026-09-19', amountMl: 250 }, user: 'auth0|alice' });
+    expect(await read()).toMatchObject({ goal: target, totalMl: 723.176473, entries: [{ id }, { amountMl: 250 }] });
+    expect(await read('auth0|bob')).toMatchObject({ goal: { goalMl: 2000, unit: 'ml' }, entries: [], totalMl: 0 });
+    expect(await read('auth0|alice', '2026-09-18')).toMatchObject({ goal: target, entries: [], totalMl: 0 });
+    await call(removeWater, `/api/water?id=${id}`, { method: 'DELETE', user: 'auth0|bob' });
+    expect((await read()).entries).toHaveLength(2);
+    await call(removeWater, `/api/water?id=${id}`, { method: 'DELETE', user: 'auth0|alice' });
+    expect(await read()).toMatchObject({ entries: [{ amountMl: 250 }], totalMl: 250 });
+    // Old mobile clients still save nutrition goals without resetting hydration.
+    await call(goals, '/api/goals', { method: 'PUT', body: targets, user: 'auth0|alice' });
+    expect((await read()).goal).toEqual(target);
+    expect(await (await call(day, '/api/day?date=2026-09-19', { user: 'auth0|alice' })).json()).toEqual({ goals: targets, entries: [] });
+  });
+
+  it.each([
+    { date: '2026-02-30', amountMl: 250 }, { date: 'bad', amountMl: 250 },
+    { date: '2026-09-19', amountMl: 0 }, { date: '2026-09-19', amountMl: -10 },
+    { date: '2026-09-19', amountMl: 10001 }, { date: '2026-09-19', amountMl: '250' },
+    { date: '2026-09-19', amountMl: null }, { amountMl: 250 },
+  ])('rejects invalid entries without writing: %j', async body => {
+    expect((await call(addWater, '/api/water', { method: 'POST', body, user: 'auth0|alice' })).status).toBe(400);
+    expect((await read()).totalMl).toBe(0);
+  });
+
+  it('rejects invalid goals, missing dates and malformed bodies', async () => {
+    for (const body of [{ goalMl: 0, unit: 'ml' }, { goalMl: 2000, unit: 'oz' }, { goalMl: 10001, unit: 'ml' }, { goalMl: null, unit: 'ml' }]) {
+      expect((await call(waterGoal, '/api/water/goals', { method: 'PUT', body, user: 'auth0|alice' })).status).toBe(400);
+    }
+    expect((await call(waterDay, '/api/water', { user: 'auth0|alice' })).status).toBe(400);
+    expect((await call(waterDay, '/api/water?date=2026-02-30', { user: 'auth0|alice' })).status).toBe(400);
+    expect((await call(removeWater, '/api/water', { method: 'DELETE', user: 'auth0|alice' })).status).toBe(400);
+    expect((await call(addWater, '/api/water', { method: 'POST', user: 'auth0|alice' })).status).toBe(400);
+    expect((await read()).goal.goalMl).toBe(2000);
+  });
+
+  it('protects all water mutations against cross-origin cookie requests', async () => {
+    for (const [method, path, handler, body] of routes.filter(([method, path]) => method !== 'GET' && path.startsWith('/api/water'))) {
+      expect((await call(handler, path, { method, body, user: 'auth0|alice', headers: { origin: 'https://evil.test' } })).status).toBe(403);
+    }
+    expect((await read()).entries).toEqual([]);
   });
 });

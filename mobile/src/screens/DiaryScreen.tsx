@@ -7,6 +7,7 @@ import { useSession } from '../auth/Session';
 import { Action, colors, ErrorNotice, isWeb, Loading, Meter, styles, useLayout } from '../components/ui';
 import { AppDialog } from '../components/AppDialog';
 import { CalorieRing } from '../components/CalorieRing';
+import { WaterTracker } from '../components/WaterTracker';
 import { errorMessage } from '../lib/api';
 import { formatDate, localDate, shiftDate, sumNutrition } from '../lib/nutrition';
 import { meals, type Day, type Entry, type Meal } from '../lib/types';
@@ -72,6 +73,7 @@ export function DiaryScreen({ date, onDate, onAdd, onGoals }: {
             </View>)}
           </View>
         </View>
+        <WaterTracker key={date} date={date} />
         <View style={[styles.between, { marginTop: 12 }]}><View style={{ gap: 5 }}><Text style={styles.eyebrow}>MEALS</Text><Text accessibilityRole="header" style={[styles.heading, { fontSize: 23 }]}>Food diary</Text></View>
           <Action quiet secondary compact label="Edit goals" onPress={onGoals}><Target size={16} color={colors.muted} /><Text style={styles.muted}>Edit goals</Text></Action>
         </View>

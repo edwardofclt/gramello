@@ -95,6 +95,23 @@ try {
   assert.equal((await request("/api/goals", { method: "PUT", headers: { Cookie: alice }, body: JSON.stringify(goals) })).status, 200);
   assert.deepEqual((await readDay(alice)).goals, goals);
   assert.equal((await readDay(bob)).goals.calories, 2400);
+  const readWater = async (session, selected = date) => (await request(`/api/water?date=${selected}`, { headers: { Cookie: session } })).json();
+  assert.equal((await request(`/api/water?date=${date}`)).status, 401);
+  assert.equal((await request('/api/water', { method: 'POST', headers: { Cookie: alice, Origin: 'https://evil.test' }, body: JSON.stringify({ date, amountMl: 250 }) })).status, 403);
+  const waterGoal = { goalMl: 1892.705892, unit: 'fl-oz' };
+  assert.equal((await request('/api/water/goals', { method: 'PUT', headers: { Cookie: alice }, body: JSON.stringify(waterGoal) })).status, 200);
+  const waterResponse = await request('/api/water', { method: 'POST', headers: { Cookie: alice }, body: JSON.stringify({ date, amountMl: 473.176473, userId: 'auth0|bob' }) });
+  assert.equal(waterResponse.status, 201);
+  const waterEntry = await waterResponse.json();
+  assert.equal((await readWater(alice)).totalMl, 473.176473);
+  assert.equal((await readWater(bob)).totalMl, 0);
+  assert.equal((await readWater(alice, '2000-01-01')).totalMl, 0);
+  assert.deepEqual((await readWater(alice)).goal, waterGoal);
+  await request(`/api/water?id=${waterEntry.id}`, { method: 'DELETE', headers: { Cookie: bob } });
+  assert.equal((await readWater(alice)).entries.length, 1);
+  await request(`/api/water?id=${waterEntry.id}`, { method: 'DELETE', headers: { Cookie: alice } });
+  assert.equal((await readWater(alice)).totalMl, 0);
+  assert.deepEqual((await readDay(alice)).goals, goals);
   const trend = await (await request("/api/trends", { headers: { Cookie: alice } })).json();
   assert.equal(trend.days[0].calories, 190);
   assert.equal((await request("/api/entries", { method: "POST", headers: { Cookie: alice, Origin: "https://evil.test" }, body: JSON.stringify(food) })).status, 403);
@@ -153,7 +170,7 @@ try {
       await page.screenshot({ path: "work/food-catalog/web-viva-search.png", fullPage: true });
     } finally { await browser.close(); }
   }
-  console.log("PASS: compiled Worker sign-in page, private API guards, encrypted sessions, callback failures, account isolation, goals, trends, CSRF, deletion ownership, shared custom foods, verified restaurant imports, and server-side portion calculations.");
+  console.log("PASS: compiled Worker sign-in page, private API guards, encrypted sessions, callback failures, account isolation, goals, trends, CSRF, deletion ownership, shared custom foods, verified restaurant imports, server-side portion calculations, water goals, date isolation, and water deletion ownership.");
 } catch (error) {
   // Wrangler logs binding names, but redact the fixture key defensively.
   console.error(log.replaceAll(secret, "[redacted]").split("\n").slice(-35).join("\n"));

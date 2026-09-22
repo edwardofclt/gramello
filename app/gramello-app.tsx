@@ -11,6 +11,7 @@ import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { ProfileMenu } from "@/components/profile-menu";
+import { WaterTracker } from "@/components/water-tracker";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Toaster, toast } from "sonner";
 import { changeGoal, macroPercent } from "./goal-math";
@@ -158,6 +159,7 @@ export default function GramelloApp({ user }: { user: AuthUser }){
           <div className="macro-grid"><MacroProgress label="Protein" current={total.protein} target={goals.protein} color="#6ee7c7"/><MacroProgress label="Carbs" current={total.carbs} target={goals.carbs} color="#78a9ff"/><MacroProgress label="Fat" current={total.fat} target={goals.fat} color="#ffbd66"/></div>
         </div>
 
+        <WaterTracker key={date} date={date} authFetch={authFetch}/>
         <div className="diary-heading"><div><span className="eyebrow">MEALS</span><h2>Food diary</h2></div><button onClick={openGoals}><Target/>Edit goals</button></div>
         {loading?<div className="loading-card"><Loader2 className="spin"/>Loading your diary…</div>:<div className="meal-list">{meals.map(name=>{const items=entries.filter(e=>e.meal===name);const c=items.reduce((s,e)=>s+e.calories,0);return <article className="meal-card" key={name}><header><div><span className={`meal-icon ${name.toLowerCase()}`}><Utensils/></span><div><h3>{name}</h3><p>{items.length?`${items.length} item${items.length===1?"":"s"}`:"Nothing logged yet"}</p></div></div><div><strong>{round(c)}</strong><span>kcal</span><button aria-label={`Add ${name}`} onClick={()=>{setMeal(name);openFood()}}><Plus/></button></div></header>{items.length>0&&<div className="food-rows">{items.map(item=><div className="food-row" key={item.id}><div className="food-thumb">{item.name.charAt(0)}</div><div><strong>{item.name}</strong><span>{item.brand?`${item.brand} · `:""}{entryAmountLabel(item)} · {item.source}</span><FoodVerification verified={item.verified}/></div><div className="food-macros"><span><b>{round(item.protein)}g</b>P</span><span><b>{round(item.carbs)}g</b>C</span><span><b>{round(item.fat)}g</b>F</span></div><strong className="food-cal">{round(item.calories)}</strong><button className="delete" aria-label={`Remove ${item.name}`} onClick={()=>void deleteEntry(item.id)}><Trash2/></button></div>)}</div>}</article>})}</div>}
       </section>:<Trends range={range} setRange={setRange} trends={trends} loading={trendLoading} goals={goals}/>} 
