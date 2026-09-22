@@ -57,6 +57,96 @@ Before release, verify on a physical iPhone with the installed native build:
 5. Test each published phrase with Siri, plus the shortcut from Shortcuts. Natural
    language routing must be tested on-device even when compilation and unit tests pass.
 
+## Siri meal and snack suggestions (iOS)
+
+Say **“Hey Siri, suggest an easy meal in Gramello”** or **“Hey Siri, suggest an easy
+snack in Gramello.”** You can also use **Shortcuts → App Shortcuts → Gramello →
+Meal or snack idea**, or add **Suggest an easy meal or snack** to a shortcut and
+choose its **Meal or snack** parameter. Settings lists both voice phrases.
+
+Each invocation reads today's entries and current goals from the same local,
+read-only SQLite snapshot used by the macro check-in. Today follows the device's
+current timezone. Remaining amounts are goals minus logged intake; yesterday and
+future entries are excluded. An empty day is identified, and unsaved goals are
+explicitly described as defaults. No suggestion is logged automatically.
+
+The intent chooses one of 11 built-in quick ideas, including yogurt, cottage
+cheese, tuna toast, and chicken or chickpea rice bowls. It gives ingredient weights,
+simple preparation instructions, and estimated calories, protein, carbs, and fat.
+Ready-cooked ingredients keep the bowls and egg toast quick. Nutrition comes from
+the USDA records already in `data/food-catalog/usda-core.json`; the Swift catalog
+retains their IDs. Brand differences, added ingredients, and actual portions can
+change the nutrition. Dietary preferences and allergies are not stored or filtered;
+review the stated ingredients for your needs.
+
+Only options that fit **all four** remaining amounts qualify, using unrounded
+values. Normal and half portions are considered, with a 200-calorie minimum for
+meals and a 50-calorie minimum for snacks. Among matches, the intent favors reducing
+the largest remaining fractions of daily goals, with a stable order for ties. An
+already-exceeded target prevents a fit. When no option qualifies, Siri says so
+without implying that food should be skipped; a meal request can suggest asking for
+a snack. These are estimates based on logged food, which may be incomplete.
+
+The feature runs on-device with no new runtime dependency, LLM, network call, diary
+write, or analytics event. It uses device authentication, supports iOS 16.4+, and
+requires a **native rebuild**, like the macro check-in. Parameterized shortcut
+phrases follow Apple's [App Shortcuts](https://developer.apple.com/documentation/appintents/appshortcut)
+and [AppEnum](https://developer.apple.com/documentation/appintents/app-enums) APIs.
+
+The same native tests, iOS compile check, and config-plugin integration test above
+cover this intent. Before release on a physical iPhone, verify both voice phrases
+and the Shortcuts parameter, compare a suggestion with today's remaining amounts,
+then edit goals or entries and invoke again. Also check an empty diary, a budget
+with no matching option, local midnight, and a locked device. Full native builds
+and on-device invocation remain necessary to verify Siri routing and presentation.
+
+## More Siri diary actions (iOS)
+
+These actions use the same native build and device authentication as the check-in.
+Say the app's name in the phrase; **Settings → Ask Siri** lists examples. All dates
+use the device's local calendar and timezone.
+
+| Action | Example phrase | Behavior |
+| --- | --- | --- |
+| Remaining macros | “What macros do I have left today in Gramello?” | Reports remaining calories, protein, carbs, and fat; explicitly reports any amount over a goal. |
+| Today's summary | “Give me today's summary in Gramello.” | Reports logged intake against current goals. “How much protein have I logged today in Gramello?” selects one nutrient; calories, carbs, and fat also work. |
+| Log water | “Log water in Gramello.” | Asks for amount and unit (milliliters or US fluid ounces), then logs today. Shortcuts can supply both parameters. |
+| Log saved meal | “Log a saved meal in Gramello.” | Asks which meal from My meals and which diary meal (breakfast, lunch, dinner, snacks). Defaults to one serving; the Shortcuts action supports fractional or multiple servings. |
+| Repeat yesterday | “Add yesterday's lunch to today in Gramello.” | Copies every logged entry from that meal yesterday to the same meal today. Breakfast, dinner, and snacks work too. |
+
+Saved meals are resolved by their persistent ID and read again before logging, so
+edits are respected and a deleted meal is not logged from a stale shortcut. Siri
+can search saved names when it asks which meal to use; duplicate names remain
+separate choices. No saved names are proactively donated or indexed in Spotlight.
+Recipe nutrition matches the app's weight, volume, and per-serving calculations,
+including measured batch yield. A repeated meal preserves its original logged
+nutrition and portions, even if the saved recipe has changed or was deleted.
+
+The three logging actions write to the existing personal SQLite database using
+Expo's SQLite runtime, an independent connection, and `BEGIN IMMEDIATE`
+transactions. They never create or migrate a diary. Unknown schema versions,
+invalid input, and a busy database fail without logging. Repeating a meal commits
+all entries together or rolls back all of them. Existing entries are retained;
+**each successful invocation adds new entries**, so running a shortcut twice logs
+twice. Entries can be removed through the regular diary UI. The app reloads its
+diary when returning to the foreground; pull to refresh if needed.
+
+Water uses the existing 1–10,000 mL input bounds and exact US-fluid-ounce
+conversion. These are product input limits, not intake recommendations. Read-only
+summaries identify empty logs and default goals. No intent sends analytics or
+makes a network call; Siri's system processing follows the device's settings.
+
+`pnpm test tests/mobile-siri-storage.test.ts` compiles the actual Swift sources on
+macOS and checks their writes through the JavaScript repository, recipe math,
+backup import/export, and deletion paths. This test is skipped on Linux and run
+by the Siri CI workflow on macOS. Native tests also cover rollback after a partial
+copy, write contention, missing diaries, local dates, and invalid amounts.
+
+Before release, use an installed native build on an iPhone to check all phrases
+and Shortcuts parameters, a locked device, ambiguous/deleted saved meals, one and
+fractional servings, both water units, empty yesterday meals, and app refresh
+after Siri writes. A native rebuild is required; an OTA update cannot add intents.
+
 ## Anonymous usage analytics
 
 iOS and Android use [Segment Analytics React Native](https://github.com/segmentio/analytics-react-native).

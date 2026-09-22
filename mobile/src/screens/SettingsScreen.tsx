@@ -75,8 +75,20 @@ export function SettingsScreen({ onAdvanced }: { onAdvanced: () => void }) {
       {local && Platform.OS === 'ios' && <Card>
         <Text accessibilityRole="header" style={styles.heading}>Ask Siri</Text>
         <Text selectable style={styles.body}>“Hey Siri, give me my macro check-in in Gramello.”</Text>
-        <Text style={styles.muted}>Hear how your logged-day averages compare with your current goals over the seven completed days before today. Siri will ask you to unlock your device when needed.</Text>
-        <Text style={styles.muted}>You can also find Macro check-in under Gramello in the Shortcuts app.</Text>
+        <Text style={styles.muted}>Hear how your logged-day averages compare with your current goals over the seven completed days before today.</Text>
+        <Text selectable style={styles.body}>“Hey Siri, suggest an easy meal in Gramello.”</Text>
+        <Text selectable style={styles.body}>“Hey Siri, suggest an easy snack in Gramello.”</Text>
+        <Text style={styles.muted}>Get a quick idea with portions and estimated nutrition that fits today’s remaining calories, protein, carbs, and fat, based on your logged food. Check the ingredients for your dietary needs.</Text>
+        <Text selectable style={styles.body}>“What macros do I have left today in Gramello?”</Text>
+        <Text selectable style={styles.body}>“Give me today’s summary in Gramello.”</Text>
+        <Text style={styles.muted}>Ask about a single nutrient too: “How much protein have I logged today in Gramello?”</Text>
+        <Text selectable style={styles.body}>“Log water in Gramello.”</Text>
+        <Text style={styles.muted}>Siri asks for the amount and unit: milliliters or US fluid ounces.</Text>
+        <Text selectable style={styles.body}>“Log a saved meal in Gramello.”</Text>
+        <Text style={styles.muted}>Choose a meal from My meals and where to log it. One serving is the default; customize servings in Shortcuts.</Text>
+        <Text selectable style={styles.body}>“Add yesterday’s lunch to today in Gramello.”</Text>
+        <Text style={styles.muted}>Copies the logged entries into today. You can also repeat breakfast, dinner, or snacks. Each run adds new entries.</Text>
+        <Text style={styles.muted}>Find all these actions under Gramello in the Shortcuts app. Siri will ask you to unlock your device when needed. Remove any logged entry in your diary as usual.</Text>
       </Card>}
       {local ? <Action secondary quiet label="Advanced" onPress={onAdvanced} style={{ justifyContent: 'space-between', paddingHorizontal: 0 }}>
         <View style={{ flex: 1, gap: 4 }}><Text style={styles.body}>Advanced</Text><Text style={styles.muted}>Food catalog updates, export, and import</Text></View>

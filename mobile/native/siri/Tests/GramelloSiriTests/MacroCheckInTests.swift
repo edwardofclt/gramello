@@ -146,4 +146,50 @@ final class MacroCheckInTests: XCTestCase {
         try sql("DELETE FROM records;")
         XCTAssertNil(try read().averages)
     }
+
+    func testTodayBudgetSubtractsOnlyTodaysEntriesFromSavedGoals() throws {
+        try sql("INSERT INTO records VALUES('goals','default',NULL,'{\"calories\":2000,\"protein\":150,\"carbs\":220,\"fat\":60}');")
+        try entry("2026-09-21", calories: 9000)
+        try entry("2026-09-23", calories: 9000)
+        try entry("2026-09-22", calories: 1000, protein: 80, carbs: 100, fat: 20)
+        try entry("2026-09-22", calories: 400, protein: 20, carbs: 50, fat: 15)
+        let budget = try MacroCheckInReader.readToday(databaseURL: databaseURL, now: now, timeZone: zone)
+        XCTAssertEqual(budget.date, "2026-09-22")
+        XCTAssertEqual(budget.remaining, MacroAmounts(calories: 600, protein: 50, carbs: 70, fat: 25))
+        XCTAssertTrue(budget.hasEntries)
+        XCTAssertTrue(budget.hasSavedGoals)
+    }
+
+    func testTodayBudgetUsesLocalDateAcrossMidnightAndDST() throws {
+        let instant = ISO8601DateFormatter().date(from: "2026-03-09T03:30:00Z")!
+        try entry("2026-03-08", calories: 100)
+        try entry("2026-03-09", calories: 300)
+        let local = try MacroCheckInReader.readToday(databaseURL: databaseURL, now: instant, timeZone: zone)
+        let tokyo = try MacroCheckInReader.readToday(databaseURL: databaseURL, now: instant, timeZone: TimeZone(identifier: "Asia/Tokyo")!)
+        XCTAssertEqual(local.date, "2026-03-08")
+        XCTAssertEqual(local.consumed.calories, 100)
+        XCTAssertEqual(tokyo.date, "2026-03-09")
+        XCTAssertEqual(tokyo.consumed.calories, 300)
+    }
+
+    func testTodayBudgetReadsFreshCommittedDataAndDefaults() throws {
+        let empty = try MacroCheckInReader.readToday(databaseURL: databaseURL, now: now, timeZone: zone)
+        XCTAssertFalse(empty.hasEntries)
+        XCTAssertFalse(empty.hasSavedGoals)
+        XCTAssertEqual(empty.remaining, .defaults)
+        try sql("BEGIN IMMEDIATE;")
+        try entry("2026-09-22")
+        XCTAssertFalse(try MacroCheckInReader.readToday(databaseURL: databaseURL, now: now, timeZone: zone).hasEntries)
+        try sql("COMMIT;")
+        XCTAssertEqual(try MacroCheckInReader.readToday(databaseURL: databaseURL, now: now, timeZone: zone).consumed.calories, 100)
+        try sql("DELETE FROM records;")
+        XCTAssertFalse(try MacroCheckInReader.readToday(databaseURL: databaseURL, now: now, timeZone: zone).hasEntries)
+    }
+
+    func testTodayBudgetRejectsInvalidDiaryData() throws {
+        try entry("2026-09-22", protein: -1)
+        XCTAssertThrowsError(try MacroCheckInReader.readToday(databaseURL: databaseURL, now: now, timeZone: zone)) {
+            XCTAssertEqual($0 as? MacroCheckInError, .invalidData)
+        }
+    }
 }

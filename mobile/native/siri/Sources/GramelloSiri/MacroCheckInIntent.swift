@@ -37,5 +37,34 @@ struct GramelloShortcuts: AppShortcutsProvider {
             shortTitle: "Macro check-in",
             systemImageName: "chart.bar.xaxis"
         )
+        AppShortcut(
+            intent: FoodRecommendationIntent(),
+            phrases: [
+                "Suggest an easy \(\.$kind) in \(.applicationName)",
+                "Recommend a \(\.$kind) in \(.applicationName)",
+                "Find a \(\.$kind) that fits my macros in \(.applicationName)"
+            ],
+            shortTitle: "Meal or snack idea",
+            systemImageName: "fork.knife"
+        )
+        AppShortcut(intent: RemainingMacrosIntent(), phrases: [
+            "What macros do I have left today in \(.applicationName)",
+            "Check my remaining macros in \(.applicationName)"
+        ], shortTitle: "Remaining macros", systemImageName: "chart.pie")
+        AppShortcut(intent: TodaySummaryIntent(), phrases: [
+            "Give me today's summary in \(.applicationName)",
+            "How much \(\.$metric) have I logged today in \(.applicationName)"
+        ], shortTitle: "Today's summary", systemImageName: "list.bullet.clipboard")
+        AppShortcut(intent: LogWaterIntent(), phrases: [
+            "Log water in \(.applicationName)",
+            "Log water in \(\.$unit) in \(.applicationName)"
+        ], shortTitle: "Log water", systemImageName: "drop")
+        AppShortcut(intent: LogSavedMealIntent(), phrases: [
+            "Log a saved meal in \(.applicationName)"
+        ], shortTitle: "Log saved meal", systemImageName: "book.closed")
+        AppShortcut(intent: RepeatMealIntent(), phrases: [
+            "Repeat yesterday's meal in \(.applicationName)",
+            "Add yesterday's \(\.$meal) to today in \(.applicationName)"
+        ], shortTitle: "Repeat yesterday", systemImageName: "arrow.clockwise")
     }
 }
