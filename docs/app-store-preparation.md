@@ -32,6 +32,15 @@ The age questionnaire includes health/wellness topics, infrequent alcohol
 references in food results, and user-generated content for shared custom foods.
 Regional age-rating tables do not enable distribution outside the United States.
 
+## Mobile purchase model
+
+Confirmed by the owner on September 22, 2026: the web version is being retired.
+Android and iOS will each be a separate one-time purchase, with all app features
+included and no subscriptions or additional feature paywalls. The website marks
+paid mobile releases as coming soon until official purchase listings are ready.
+This describes the product plan; it does not change store billing configuration
+or remove the existing web service or Android release artifacts.
+
 ## Published privacy label
 
 These seven categories are configured for **App Functionality**, **linked to the
