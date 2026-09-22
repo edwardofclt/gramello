@@ -39,11 +39,13 @@ on `main` also republishes the site.
   an initial draft for legal review, not a certification of legal compliance.
 - Operator/contact come from the existing launch documents: Edward Herbert II,
   gramello@edwardofclt.com. No location or jurisdiction has been invented.
-- The owner is retiring the web version. Marketing calls to action lead to the
-  mobile purchase section. No web-app or free-APK download links are advertised.
-- Paid Android and iOS releases are marked “coming soon” until their official
-  purchase listings are available. Add real store links when confirmed; do not
-  imply one platform purchase also includes the other.
+- The owner is retiring the web version. App-opening and download calls to
+  action use https://onelink.to/7cj5kw, the owner's shared link for routing
+  visitors to Google Play or the Apple App Store. No web-app or free-APK
+  download links are advertised.
+- Keep release availability wording aligned with confirmed store availability.
+  OneLink configuration is managed separately from this site. Do not imply
+  one platform purchase also includes the other.
 
 ## Design and assets
 
