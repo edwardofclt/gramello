@@ -62,8 +62,19 @@ account, synchronize saved entries and meals, calculate nutrition totals and
 trends, retrieve food information, respond to support requests, and operate and
 protect the service.
 
-Gramello does not include third-party advertising or advertising-tracking SDKs.
 We do not sell your nutrition diary data or use it for targeted advertising.
+
+## Usage analytics and advertising
+
+We plan to add usage analytics to understand how people use Gramello and improve
+the product. Advertising may also be introduced in future versions. These
+integrations are not active in the current app or website.
+
+Before introducing analytics or advertising, we will update this policy with
+the actual providers, information collected, purposes, sharing, retention, and
+available user choices. We will provide any required notices and obtain consent
+where required before new collection or sharing begins. These plans do not
+change the current data practices described in this policy.
 
 ## Service providers and external services
 
@@ -92,9 +103,9 @@ and its users.
 ## Website and cookies
 
 The Gramello marketing, support, and legal website is hosted on GitHub Pages.
-It does not ask you to sign in, submit a form, or enter diary information. We do
-not add analytics scripts, advertising trackers, or cookies to these pages.
-Fonts and website images are served with the site. GitHub receives connection
+It does not ask you to sign in, submit a form, or enter diary information.
+Fonts and website images are served with the site. Planned analytics and
+possible future advertising are described above. GitHub receives connection
 information when it serves a page, including your IP address; see the
 [GitHub Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
 

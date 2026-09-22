@@ -50,8 +50,12 @@ on `main` also republishes the site.
 The site combines Gramello's existing navy/mint bowl mark and app palette with
 editorial serif headings and food photography. The diary and charts are clearly
 marked illustrations with sample data; they do not contain customer records.
-All fonts are local system fonts. No cookies, analytics scripts, or embedded
-third-party assets are added. The FAQ works with native HTML without JavaScript;
+All fonts are local system fonts, and images are served with the site. Usage
+analytics is planned, and advertising may be introduced in the future; neither
+integration is currently implemented. The privacy policy must describe the
+actual providers, data practices, and applicable user choices before activation.
+Avoid marketing promises of a permanently ad-free or tracker-free product.
+The FAQ works with native HTML without JavaScript;
 JavaScript only keeps one answer open at a time. Reduced motion is respected.
 
 `assets/gramello-mark.png`, `assets/favicon-32.png`, and
@@ -81,6 +85,7 @@ new static website. Reference checks on September 22, 2026:
 - [GitHub Pages publishing](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
 - [GitHub Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement)
 - [Apple privacy guidelines](https://developer.apple.com/app-store/review/guidelines/#privacy)
+- [FTC guidance on changes to privacy commitments](https://www.ftc.gov/policy/advocacy-research/tech-at-ftc/2024/02/ai-other-companies-quietly-changing-your-terms-service-could-be-unfair-or-deceptive)
 - [FTC mobile health app guidance](https://www.ftc.gov/business-guidance/resources/mobile-health-apps-interactive-tool)
 
 Publishing the website does not complete App Store submission requirements;

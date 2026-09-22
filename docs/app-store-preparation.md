@@ -58,9 +58,12 @@ release build and provider configuration, then update the label if data
 practices change.
 
 Camera frames are processed on-device for barcodes; the food lookup receives the
-barcode, not camera images. The code does not include advertising or advertising
-tracking SDKs. Auth0 logging is included even though the app does not request
-device location permission.
+barcode, not camera images. The build reviewed on September 22, 2026 has no
+advertising or product-usage analytics integration. Usage analytics is planned,
+and advertising may be introduced later. Reassess privacy labels, disclosures,
+and required permissions/consent before enabling either; the current labels
+are a snapshot of the reviewed build. Auth0 logging is included even though
+the app does not request device location permission.
 
 ## Remaining release work
 
