@@ -59,14 +59,23 @@ practices change.
 
 Camera frames are processed on-device for barcodes; the food lookup receives the
 barcode, not camera images. The build reviewed on September 22, 2026 has no
-advertising or product-usage analytics integration. Usage analytics is planned,
-and advertising may be introduced later. Reassess privacy labels, disclosures,
+advertising or product-usage analytics integration. Anonymous Segment analytics
+is configured for the next native build, and advertising may be introduced
+later. Reassess privacy labels, disclosures,
 and required permissions/consent before enabling either; the current labels
 are a snapshot of the reviewed build. Auth0 logging is included even though
 the app does not request device location permission.
 
 ## Remaining release work
 
+- Review App Privacy for the next Segment-enabled build. The published label
+  above predates anonymous product analytics. Review Product Interaction and
+  identifier disclosures against the final build and Segment destination
+  settings; the new events use a persistent random installation ID, exclude
+  Auth0 identity and diary contents, and are used for analytics. Publish the
+  updated privacy policy with that release. See `mobile/README.md` for the exact
+  event list and payload fields. No App Store Connect settings were changed by
+  this integration.
 - Accept Apple's Paid Apps Agreement in **Business**, then complete any banking
   and tax setup Apple requires. The agreement currently shows **New**.
 - Confirm third-party content rights and complete the Content Rights declaration.

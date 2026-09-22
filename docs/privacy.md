@@ -43,6 +43,17 @@ or requests.
   does not request your device's location permission for this purpose.
 - **Support information:** Information you choose to email us, including your
   contact details and any details you supply to investigate an issue.
+- **Anonymous app usage:** When analytics is enabled in an iOS or Android build,
+  Segment receives app lifecycle events, screen names, and actions such as
+  completing a search or saving/removing a diary entry, meal, goal, or water
+  entry. These events include a random identifier stored for that installation,
+  event identifiers and times, and app, operating-system, and analytics-library
+  versions. They do not include your account identifier, name, email, sign-in
+  tokens, search terms, barcodes, food/recipe contents, nutrition or water values,
+  or diary dates. The app does not send device identifiers or device names to
+  Segment. Analytics event IP addresses are replaced with 0.0.0.0; Segment still
+  receives the network connection needed to deliver the events. The random ID
+  is not linked to your Gramello account and is not shared across devices.
 
 ## Camera and device permissions
 
@@ -66,20 +77,25 @@ We do not sell your nutrition diary data or use it for targeted advertising.
 
 ## Usage analytics and advertising
 
-We plan to add usage analytics to understand how people use Gramello and improve
-the product. Advertising may also be introduced in future versions. These
-integrations are not active in the current app or website.
+Enabled iOS and Android builds use the anonymous Segment analytics described
+in this policy to understand which features people use and improve the app.
+We do not use these analytics events for advertising. The browser app and
+marketing website do not include this analytics integration.
 
-Before introducing analytics or advertising, we will update this policy with
-the actual providers, information collected, purposes, sharing, retention, and
-available user choices. We will provide any required notices and obtain consent
-where required before new collection or sharing begins. These plans do not
-change the current data practices described in this policy.
+Advertising may be introduced in future versions; it is not active in the
+current app or website. Before introducing advertising or changing analytics
+data practices, we will update this policy with the actual providers,
+information collected, purposes, sharing, retention, and available user choices.
+We will provide any required notices and obtain consent where required before
+new collection or sharing begins.
 
 ## Service providers and external services
 
 - **Auth0** handles sign-in and account authentication.
 - **Fly.io** hosts the connected Gramello service and its diary storage.
+- **Twilio Segment** processes anonymous usage analytics from enabled iOS and
+  Android builds. Its SDK stores the random installation identifier and queued
+  events on the device so events can be sent when connectivity returns.
 - **USDA FoodData Central and Open Food Facts** supply food-search and product
   information. Product images may load directly from their external image hosts,
   which receive the network information needed to serve those images.
@@ -104,8 +120,8 @@ and its users.
 
 The Gramello marketing, support, and legal website is hosted on GitHub Pages.
 It does not ask you to sign in, submit a form, or enter diary information.
-Fonts and website images are served with the site. Planned analytics and
-possible future advertising are described above. GitHub receives connection
+Fonts and website images are served with the site. The native app's analytics
+and possible future advertising are described above. GitHub receives connection
 information when it serves a page, including your IP address; see the
 [GitHub Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
 
@@ -119,6 +135,13 @@ such as GitHub releases or Apple purchase support, follow their own policies.
 Nutrition and water records are stored on the server under your account
 identifier. The native app uses the operating-system-backed credentials manager for sign-in
 credentials. The web app uses authentication cookies to maintain a session.
+
+The analytics installation identifier persists across app restarts and sign-in
+or sign-out. Accounts using the same installation share that identifier.
+Clearing the app's stored data removes the local identifier and event queue;
+restoring a device backup may restore them. Clearing local data does not delete
+events already delivered to Segment. These events are not indexed by your
+Gramello account identifier.
 
 Diary entries, water entries, and saved meals remain stored until you remove
 them or request their deletion. Removing a saved recipe does not remove previously logged diary

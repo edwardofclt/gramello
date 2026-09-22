@@ -17,7 +17,7 @@ const config: ExpoConfig = {
     config: { usesNonExemptEncryption: false },
     supportsTablet: true,
   },
-  android: { package: 'com.nourish.tracker' },
+  android: { package: 'com.nourish.tracker', permissions: ['android.permission.ACCESS_NETWORK_STATE'] },
   extra: { eas: { projectId: 'c23e01dd-d5d1-4f70-8786-e63e2f04a888' } },
   plugins: [
     ['expo-camera', {
