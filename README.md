@@ -413,13 +413,7 @@ restart persistence, file sharing/import/recovery, or interrupted catalog downlo
 
 Commits use the [Conventional Commits](https://www.conventionalcommits.org/) format.
 Pushes to `main` run semantic-release. When releasable changes exist, it updates
-the changelog and creates a GitHub release; follow-up jobs publish the website
-and multi-architecture Docker images to GitHub Container Registry:
-
-```text
-ghcr.io/<owner>/<repository>:latest
-ghcr.io/<owner>/<repository>:<version>
-```
+the changelog and creates a GitHub release; a follow-up job publishes the website.
 
 Use `fix:` for patch releases, `feat:` for minor releases, and a `BREAKING CHANGE:` footer for major releases.
 
