@@ -66,8 +66,15 @@ email [gramello@edwardofclt.com](mailto:gramello@edwardofclt.com) from the email
 associated with your account. We may need to verify ownership before acting.
 Account deletion currently requires contacting support.
 
-## App Store purchases
+## Mobile apps and purchases
 
+Gramello's paid Android and iOS apps are coming soon. Each platform is a
+separate one-time purchase, with all app features included. There are no
+subscriptions or additional feature paywalls. An iOS purchase does not include
+the Android app, and an Android purchase does not include the iOS app.
+
+The price and availability will be shown in the relevant purchase listing.
+For billing or refunds, use the store or seller where you made the purchase.
 Apple handles App Store purchases and billing. For an Apple purchase or refund
 request, visit [Apple's Report a Problem service](https://reportaproblem.apple.com/).
 

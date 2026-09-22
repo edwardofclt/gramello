@@ -2,7 +2,8 @@
 
 A static marketing website with privacy, terms, support, and an accessible 404
 page. Published at https://gramello.com/ using GitHub Pages.
-The connected diary remains at https://nourish-api.fly.dev.
+The public site presents Android and iOS as separate one-time purchases, with
+all app features included and no subscriptions or additional feature paywalls.
 
 ## Preview and build
 
@@ -38,9 +39,11 @@ on `main` also republishes the site.
   an initial draft for legal review, not a certification of legal compliance.
 - Operator/contact come from the existing launch documents: Edward Herbert II,
   gramello@edwardofclt.com. No location or jurisdiction has been invented.
-- Android links point to the latest official GitHub release. iOS remains
-  “coming soon” until an actual public App Store release is confirmed. No App
-  Store badge or public availability claim is displayed prematurely.
+- The owner is retiring the web version. Marketing calls to action lead to the
+  mobile purchase section. No web-app or free-APK download links are advertised.
+- Paid Android and iOS releases are marked “coming soon” until their official
+  purchase listings are available. Add real store links when confirmed; do not
+  imply one platform purchase also includes the other.
 
 ## Design and assets
 

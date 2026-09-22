@@ -94,15 +94,19 @@ account deletion.
 
 ## Downloads, purchases, and third-party services
 
-Availability and prices depend on the platform and the listing shown at the
-time of purchase. App Store purchases and refunds are handled by Apple under
-Apple's applicable terms. See [Apple's Report a Problem service](https://reportaproblem.apple.com/)
-for help with an Apple purchase. These terms do not limit any mandatory refund
-or consumer rights. We do not receive full payment-card details from Apple.
+Android and iOS are each offered as a separate one-time purchase, with all app
+features included. There are no subscriptions or additional feature paywalls.
+A purchase for one platform does not include the app on the other platform.
 
-The iOS app is being prepared for release; the website does not promise a
-release date. Android downloads are currently provided through the project's
-GitHub releases. Use the official links on our website.
+The paid mobile releases are being prepared; the website does not promise a
+release date. Availability and prices are shown in the relevant purchase listing.
+Use the official purchase links on our website when they become available.
+
+Purchases and refunds are handled by the store or seller where you buy the app,
+under its applicable terms. Apple handles App Store purchases and refunds;
+see [Apple's Report a Problem service](https://reportaproblem.apple.com/) for help
+with an Apple purchase. These terms do not limit any mandatory refund or consumer
+rights. We do not receive full payment-card details from Apple.
 
 Authentication, hosting, and food information involve third-party services.
 Their terms and privacy policies apply to your use of their services. A link to
