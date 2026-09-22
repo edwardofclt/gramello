@@ -95,9 +95,10 @@ local database. This does not modify the production diary.
 
 ## Mobile app
 
-The React Native app in [`mobile/`](mobile/README.md) uses Expo, gluestack-ui,
-and the same Auth0 tenant and diary API. See its setup guide for native Auth0
-registration, environment values, and iOS/Android run commands.
+The native iOS/Android app now stores its diary locally in SQLite, works without an account, automatically updates a separate USDA food catalog, and supports user-directed backup/CSV export and import. See [native local-data implementation](docs/client-only-implementation.md) for catalog signing, publishing, recovery, and release checks. The browser edition retains the hosted account model.
+
+The React Native app in [`mobile/`](mobile/README.md) uses Expo and gluestack-ui.
+See its setup guide for iOS/Android run commands and hosted browser configuration.
 
 ## Run with Docker Compose
 

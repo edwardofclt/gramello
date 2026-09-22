@@ -22,5 +22,7 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - run: pnpm test
       - run: pnpm exec tsc --noEmit
+      - run: pnpm --filter @nourish/mobile typecheck
+      - run: pnpm --filter @nourish/mobile export
       - run: pnpm build
       - run: pnpm test:smoke

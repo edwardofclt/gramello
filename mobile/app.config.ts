@@ -26,10 +26,7 @@ const config: ExpoConfig = {
       recordAudioAndroid: false,
       barcodeScannerEnabled: true,
     }],
-    ['react-native-auth0', {
-      domain: process.env.EXPO_PUBLIC_AUTH0_DOMAIN || 'configure-auth0.invalid',
-      customScheme: 'nourish',
-    }],
+    ['expo-sqlite', { enableFTS: true }],
   ],
 };
 export default config;

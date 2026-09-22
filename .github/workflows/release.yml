@@ -71,10 +71,10 @@ jobs:
             ghcr.io/${{ github.repository }}:${{ needs.release.outputs.version }}
           platforms: linux/amd64,linux/arm64
 
-  android-apk:
+  android-store:
     needs: release
     if: needs.release.outputs.published == 'true'
-    uses: ./.github/workflows/android-apk.yml
+    uses: ./.github/workflows/android-store.yml
     with:
       release_tag: ${{ needs.release.outputs.tag }}
     secrets:

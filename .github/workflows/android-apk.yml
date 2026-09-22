@@ -1,4 +1,4 @@
-name: Android APK
+name: Android APK (manual distribution)
 
 on:
   workflow_call:
@@ -15,8 +15,6 @@ on:
         description: Published release tag to build (for example v1.8.0)
         required: true
         type: string
-  release:
-    types: [published]
 
 permissions:
   contents: write

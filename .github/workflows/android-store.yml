@@ -1,0 +1,57 @@
+name: Android store bundle
+
+on:
+  workflow_call:
+    inputs:
+      release_tag:
+        required: true
+        type: string
+    secrets:
+      EXPO_TOKEN:
+        required: true
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: Stable application tag (for example v1.9.0)
+        required: true
+        type: string
+
+permissions:
+  contents: read
+concurrency:
+  group: android-store-${{ inputs.release_tag }}
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      RELEASE_TAG: ${{ inputs.release_tag }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: refs/tags/${{ inputs.release_tag }}
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+      - name: Apply release version
+        run: |
+          node --input-type=module <<'JS'
+          import {readFileSync,writeFileSync} from 'node:fs';
+          if (!/^v\d+\.\d+\.\d+$/.test(process.env.RELEASE_TAG)) throw new Error('A stable application tag is required');
+          const path='mobile/package.json';
+          const pkg=JSON.parse(readFileSync(path,'utf8'));
+          pkg.version=process.env.RELEASE_TAG.slice(1);
+          writeFileSync(path,JSON.stringify(pkg,null,2)+'\n');
+          JS
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm --filter @nourish/mobile typecheck
+      - uses: expo/expo-github-action@v8
+        with:
+          eas-version: 24.7.0
+          token: ${{ secrets.EXPO_TOKEN }}
+      - name: Build signed AAB for Play Console
+        working-directory: mobile
+        run: eas build --platform android --profile production --non-interactive --wait --message "Store bundle $RELEASE_TAG"

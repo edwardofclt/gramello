@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { ScrollView, Text, View } from 'react-native';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import { StatusBar } from 'expo-status-bar';
@@ -7,14 +6,9 @@ import { OverlayProvider } from '@gluestack-ui/core/overlay/creator';
 import { Utensils } from 'lucide-react-native';
 import { SessionProvider, useSession } from './src/auth/Session';
 import { Action, Card, colors, ErrorNotice, isWeb, Loading, styles } from './src/components/ui';
-import { Brand, TrackerShell, type Tab } from './src/components/TrackerShell';
+import { Brand } from './src/components/TrackerShell';
+import { Tracker } from './src/components/Tracker';
 import { configuration, configurationError } from './src/lib/config';
-import { localDate } from './src/lib/nutrition';
-import type { Meal } from './src/lib/types';
-import { DiaryScreen } from './src/screens/DiaryScreen';
-import { TrendsScreen } from './src/screens/TrendsScreen';
-import { GoalsDialog, SettingsScreen } from './src/screens/SettingsScreen';
-import { FoodSheet } from './src/screens/FoodSheet';
 
 function Welcome() {
   const { signIn, busy, message } = useSession();
@@ -36,24 +30,6 @@ function Welcome() {
   </ScrollView>;
 }
 
-function Tracker() {
-  const [tab, setTab] = useState<Tab>('diary');
-  const [date, setDate] = useState(localDate);
-  const [range, setRange] = useState(7);
-  const [meal, setMeal] = useState<Meal | null>(null);
-  const [goalsOpen, setGoalsOpen] = useState(false);
-  const [revision, setRevision] = useState(0);
-  const refresh = () => setRevision(value => value + 1);
-  const editGoals = () => isWeb ? setGoalsOpen(true) : setTab('settings');
-  return <>
-    <TrackerShell tab={tab} onTab={setTab} onAdd={() => setMeal('Breakfast')} onGoals={editGoals}>
-      {tab === 'diary' ? <DiaryScreen key={revision} date={date} onDate={setDate} onAdd={setMeal} onGoals={editGoals} />
-        : tab === 'trends' ? <TrendsScreen key={revision} range={range} onRange={setRange} /> : <SettingsScreen />}
-    </TrackerShell>
-    {meal && <FoodSheet date={date} initialMeal={meal} onClose={() => setMeal(null)} onSaved={() => { setMeal(null); refresh(); }} />}
-    {goalsOpen && <GoalsDialog onClose={() => setGoalsOpen(false)} onSaved={() => { setGoalsOpen(false); refresh(); }} />}
-  </>;
-}
 
 function AuthenticatedApp() {
   const { signedIn, loading } = useSession();

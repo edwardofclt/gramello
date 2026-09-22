@@ -60,3 +60,8 @@ mobile/dist/
 # Python extraction script bytecode.
 __pycache__/
 *.pyc
+
+# Local catalog downloads and signing material.
+/.catalog-work/
+mobile/.sites-runtime/
+/catalog-release/

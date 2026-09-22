@@ -2,7 +2,7 @@ import { useRef, useState } from 'react';
 import { Text, View } from 'react-native';
 import { customFoodFields, customFoodInput, emptyCustomFood } from '../../../lib/custom-food-form';
 import type { Food } from '../../../lib/food';
-import { Action, ErrorNotice, Field, styles } from './ui';
+import { Action, ErrorNotice, Field, isWeb, styles } from './ui';
 import type { useSession } from '../auth/Session';
 
 export function CustomFoodForm({ initialName, api, onSaved, onBack, onBusy }: {
@@ -24,7 +24,7 @@ export function CustomFoodForm({ initialName, api, onSaved, onBack, onBusy }: {
   }
   return <View style={{ gap: 16 }}>
     <Action quiet secondary disabled={saving} onPress={onBack}>Back to search</Action>
-    <Text style={styles.muted}>Enter the total nutrition for one serving as described below. This food will be searchable by everyone and labeled Unverified.</Text>
+    <Text style={styles.muted}>Enter the total nutrition for one serving as described below. {isWeb ? 'This food will be searchable by everyone and labeled Unverified.' : 'This food stays on your device and is labeled Unverified.'}</Text>
     {customFoodFields.map(([key, label, type]) => <Field key={key} label={label} value={draft[key]} editable={!saving} autoFocus={key === 'name'}
       maxLength={key === 'name' ? 200 : 120} keyboardType={type === 'number' ? 'decimal-pad' : 'default'}
       placeholder={key === 'servingLabel' ? 'e.g. 1 bowl or 2 slices' : key === 'servingGrams' ? 'Leave blank if unknown' : type === 'number' ? '0' : undefined}

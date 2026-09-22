@@ -4,7 +4,8 @@ import { configuration } from '../lib/config';
 import { createApiClient, errorMessage, type ApiClient } from '../lib/api';
 import { CredentialSession, requiresSignIn } from './credentials';
 
-type Session = {
+export type Session = {
+  local?: import('../local/services').LocalServices;
   api: ApiClient; name: string; email?: string; signedIn: boolean; loading: boolean;
   busy: boolean; message: string | null; signIn: () => Promise<void>; signOut: () => Promise<void>;
 };
