@@ -9,6 +9,21 @@ export const goals = sqliteTable("goals", {
   updatedAt: text("updated_at").notNull(),
 });
 
+export const waterGoals = sqliteTable('water_goals', {
+  userId: text('user_id').primaryKey(),
+  goalMl: real('goal_ml').notNull().default(2000),
+  unit: text('unit').notNull().default('ml'),
+  updatedAt: text('updated_at').notNull(),
+});
+
+export const waterEntries = sqliteTable('water_entries', {
+  id: text('id').primaryKey(),
+  userId: text('user_id').notNull(),
+  entryDate: text('entry_date').notNull(),
+  amountMl: real('amount_ml').notNull(),
+  createdAt: text('created_at').notNull(),
+}, table => [index('idx_water_entries_user_date').on(table.userId, table.entryDate)]);
+
 export const entries = sqliteTable("entries", {
   id: text("id").primaryKey(), userId: text("user_id").notNull(), entryDate: text("entry_date").notNull(), meal: text("meal").notNull(),
   foodName: text("food_name").notNull(), brand: text("brand"), source: text("source").notNull(), sourceId: text("source_id"),

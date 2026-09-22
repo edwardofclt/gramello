@@ -234,6 +234,32 @@ automatically assigned to an Auth0 user. To migrate it, back up the database,
 verify the intended owner's Auth0 subject, and deliberately reassign that user's
 rows in both `goals` and `entries`; resolve any existing goal row first.
 
+## Water intake
+
+The web and native diaries include a water card for the selected local date.
+Quick-add 250/500/750 mL or 8/16/24 US fl oz, enter a custom amount, review entries,
+and remove mistakes. **Edit water goal** saves a daily target and preferred unit
+across devices. The initial target is an editable 2,000 mL; it is not a personalized
+recommendation. Goals apply across the diary, including past dates.
+
+Water is stored separately from food, calories and macros. Existing mobile clients
+can continue saving nutrition goals without changing hydration settings. Volume is
+stored in mL without rounding; US fl oz uses 29.5735295625 mL per fluid ounce.
+
+Deploy `drizzle/0005_water_tracking.sql` before serving the updated backend.
+Docker/Fly apply it through the existing startup migration runner. For other D1
+installations, apply it to the intended database using the existing migration
+procedure. This migration only creates `water_goals`, `water_entries`, and a
+user/date index; it does not rewrite food or nutrition data. An updated native
+build is required to display the water card on iOS/Android.
+
+Authenticated endpoints:
+
+- `GET /api/water?date=YYYY-MM-DD`: goal, entries and total for that date.
+- `POST /api/water`: `{ "date": "YYYY-MM-DD", "amountMl": 250 }`.
+- `DELETE /api/water?id=<entry-id>`: remove an entry belonging to the signed-in user.
+- `PUT /api/water/goals`: `{ "goalMl": 2000, "unit": "ml" }` (`ml` or `fl-oz`).
+
 ## Verification
 
 ```bash
