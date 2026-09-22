@@ -1,3 +1,9 @@
+## [1.13.0](https://github.com/edwardofclt/gramello/compare/v1.12.1...v1.13.0) (2026-09-22)
+
+### Features
+
+* add Siri meal recommendations and diary actions ([#31](https://github.com/edwardofclt/gramello/issues/31)) ([55cce21](https://github.com/edwardofclt/gramello/commit/55cce210aaf492daec50b3f348f422959a7eb229))
+
 ## [1.12.1](https://github.com/edwardofclt/gramello/compare/v1.12.0...v1.12.1) (2026-09-22)
 
 ### Bug Fixes
