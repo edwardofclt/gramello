@@ -1,6 +1,6 @@
 # Gramello privacy policy
 
-Effective date: September 20, 2026
+Effective date: September 22, 2026
 
 Gramello is a food diary and calorie/macronutrient tracker provided by Edward
 Herbert II. This policy explains how the Gramello app and its connected service
@@ -19,6 +19,9 @@ or requests.
   and custom-meal names, ingredients and yields. These records and their
   timestamps are stored with your account identifier so they can be loaded on
   your signed-in devices.
+- **Water intake information:** Daily water goals, preferred display units,
+  water amounts, entry dates, and timestamps are stored with your account
+  identifier and synchronized across your signed-in devices.
 - **Shared custom foods:** When you save a custom food to the shared food catalog,
   its name, brand, serving description, serving weight if supplied, and nutrition
   values become searchable by other users. The service stores your account
@@ -69,6 +72,10 @@ We do not sell your nutrition diary data or use it for targeted advertising.
 - **USDA FoodData Central and Open Food Facts** supply food-search and product
   information. Product images may load directly from their external image hosts,
   which receive the network information needed to serve those images.
+- **Restaurant nutrition sources** supply the published menu data included in
+  the app's food catalog. Catalog snapshots and source details are recorded in
+  the public repository; searching that catalog does not send your account
+  details to the restaurants.
 - **Apple** handles App Store purchases and distribution. Gramello does not
   receive your full payment-card details. Apple handles payment information
   under its own policies.
@@ -84,12 +91,12 @@ and its users.
 
 ## Storage and retention
 
-Nutrition records are stored on the server under your account identifier. The
-native app uses the operating-system-backed credentials manager for sign-in
+Nutrition and water records are stored on the server under your account
+identifier. The native app uses the operating-system-backed credentials manager for sign-in
 credentials. The web app uses authentication cookies to maintain a session.
 
-Diary entries and saved meals remain stored until you remove them or request
-their deletion. Removing a saved recipe does not remove previously logged diary
+Diary entries, water entries, and saved meals remain stored until you remove
+them or request their deletion. Removing a saved recipe does not remove previously logged diary
 entries. You can edit your saved goals. Signing out or uninstalling the app does
 not delete server records or the authentication account.
 

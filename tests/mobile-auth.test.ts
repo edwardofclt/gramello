@@ -17,15 +17,15 @@ import { GET as day } from "@/app/api/day/route";
 import { POST as add, DELETE as remove } from "@/app/api/entries/route";
 
 const secret = "0123456789abcdef".repeat(4);
-const issuer = "https://nourish-tests.us.auth0.com/";
-const audience = "https://api.nourish.test";
-const mobileClientId = "nourish-native";
+const issuer = "https://gramello-tests.us.auth0.com/";
+const audience = "https://api.gramello.test";
+const mobileClientId = "gramello-native";
 const configuration = {
-  AUTH0_DOMAIN: "nourish-tests.us.auth0.com",
-  AUTH0_CLIENT_ID: "nourish-web",
+  AUTH0_DOMAIN: "gramello-tests.us.auth0.com",
+  AUTH0_CLIENT_ID: "gramello-web",
   AUTH0_CLIENT_SECRET: "test-client-secret",
   AUTH0_SECRET: secret,
-  APP_BASE_URL: "https://nourish.test",
+  APP_BASE_URL: "https://gramello.test",
   AUTH0_AUDIENCE: audience,
   AUTH0_MOBILE_CLIENT_ID: mobileClientId,
 };
@@ -88,7 +88,7 @@ async function call(handler: (request: Request) => Promise<Response>, path: stri
   if (options.origin !== undefined) headers.origin = options.origin;
   if (options.bearer !== undefined) headers.authorization = options.bearer;
   if (session) headers.cookie = `__session=${session}`;
-  const request = new NextRequest(`https://nourish.test${path}`, {
+  const request = new NextRequest(`https://gramello.test${path}`, {
     method: options.method ?? "GET",
     headers,
     body: options.body ? JSON.stringify(options.body) : undefined,

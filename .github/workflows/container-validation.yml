@@ -19,6 +19,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
       - name: Start released image
         run: |
+          # Historical 1.0.0 fixture remains under the original GHCR package name.
           docker pull ghcr.io/edwardofclt/nourish:1.0.0
           docker volume create nourish-validation
           docker run -d --name nourish-validation -p 127.0.0.1:3000:3000 -v nourish-validation:/data ghcr.io/edwardofclt/nourish:1.0.0

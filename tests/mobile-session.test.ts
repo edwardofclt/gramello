@@ -24,7 +24,7 @@ it('ignores an old 401 after the session changes', async () => {
   let current = true;
   const expired = vi.fn();
   vi.stubGlobal('fetch', () => new Promise(resolve => { finish = resolve; }));
-  const api = createApiClient('https://nourish.example', async () => 'old-token', expired, () => current);
+  const api = createApiClient('https://gramello.example', async () => 'old-token', expired, () => current);
   const response = api('/api/day');
   const rejected = expect(response).rejects.toBeInstanceOf(SessionExpiredError);
   await Promise.resolve();

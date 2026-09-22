@@ -1,7 +1,7 @@
 # Gramello support
 
-Gramello helps you keep a food diary, track calories and macros, save custom meals,
-and review your nutrition trends.
+Gramello helps you keep a food diary, track calories, macros, and water intake,
+save custom meals, and review your nutrition trends.
 
 ## Contact
 
@@ -14,7 +14,7 @@ version, and the steps that caused the problem. Do not send your password,
 sign-in codes, access tokens, or payment-card details. Share only the diary
 information needed to explain your issue.
 
-You can also [report a general issue on GitHub](https://github.com/edwardofclt/nourish/issues).
+You can also [report a general issue on GitHub](https://github.com/edwardofclt/gramello/issues).
 GitHub issues are public. Send account questions and personal or nutrition
 information by email instead.
 
@@ -52,6 +52,10 @@ Use **Add food → My meals → Create meal** to combine ingredients and save a 
 Enter the finished batch weight when needed, then log a serving or a portion by
 weight. Editing or deleting a saved recipe does not change food already logged
 in your diary. Daily calorie and macro targets can be changed in settings.
+
+The **Water intake** card lets you add or remove entries for a selected day and
+set a daily water goal in milliliters or US fluid ounces. Water entries are
+separate from food, calories, and macros.
 
 ## Privacy and deletion requests
 

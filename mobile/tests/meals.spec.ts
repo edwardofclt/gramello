@@ -8,7 +8,7 @@ for (const width of [390, 1440]) {
     page.on('pageerror', error => errors.push(error.message));
     const entries: Record<string, unknown>[] = [];
     let meals: CustomMeal[] = [];
-    await page.route('https://nourish.test/api/**', async route => {
+    await page.route('https://gramello.test/api/**', async route => {
       const request = route.request();
       const path = new URL(request.url()).pathname;
       const headers = { 'access-control-allow-origin': '*', 'access-control-allow-headers': 'authorization,content-type', 'access-control-allow-methods': 'GET,POST,PUT,DELETE' };
@@ -82,7 +82,7 @@ for (const width of [390, 1440]) {
 test('a custom ingredient without a weight can be saved in a meal after weighing the batch', async ({ page }) => {
   let savedMeal: CustomMeal | undefined;
   const entries: Record<string, unknown>[] = [];
-  await page.route('https://nourish.test/api/**', async route => {
+  await page.route('https://gramello.test/api/**', async route => {
     const request = route.request();
     const path = new URL(request.url()).pathname;
     const headers = { 'access-control-allow-origin': '*', 'access-control-allow-headers': 'authorization,content-type', 'access-control-allow-methods': 'GET,POST' };
@@ -103,7 +103,7 @@ test('a custom ingredient without a weight can be saved in a meal after weighing
     return route.fulfill({ headers, json: { foods: [] } });
   });
   await page.goto('/');
-  await page.getByRole('button', { name: 'Sign in to Nourish', exact: true }).click();
+  await page.getByRole('button', { name: 'Sign in to Gramello', exact: true }).click();
   await page.getByRole('button', { name: 'Add Dinner', exact: true }).click();
   await page.getByRole('button', { name: 'My meals', exact: true }).click();
   await page.getByRole('button', { name: 'Create meal', exact: true }).click();

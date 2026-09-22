@@ -13,16 +13,16 @@ describe('mobile API contract', () => {
       return Response.json({ calories: 2000 });
     });
     vi.stubGlobal('fetch', fetcher);
-    const api = createApiClient('https://nourish.example', async () => 'refreshed-token', () => {});
+    const api = createApiClient('https://gramello.example', async () => 'refreshed-token', () => {});
     expect(await api('/api/goals', { method: 'PUT', body: { calories: 2000 } })).toEqual({ calories: 2000 });
-    expect(fetcher.mock.calls[0][0]).toBe('https://nourish.example/api/goals');
+    expect(fetcher.mock.calls[0][0]).toBe('https://gramello.example/api/goals');
   });
 
   it('invalidates the protected session on 401 without retrying a write', async () => {
     const expired = vi.fn();
     const fetcher = vi.fn(async () => Response.json({ error: 'Unauthorized' }, { status: 401 }));
     vi.stubGlobal('fetch', fetcher);
-    const api = createApiClient('https://nourish.example', async () => 'token', expired);
+    const api = createApiClient('https://gramello.example', async () => 'token', expired);
     await expect(api('/api/entries', { method: 'POST', body: {} })).rejects.toBeInstanceOf(SessionExpiredError);
     expect(expired).toHaveBeenCalledOnce();
     expect(fetcher).toHaveBeenCalledOnce();
@@ -31,7 +31,7 @@ describe('mobile API contract', () => {
   it('surfaces service failure without treating it as a sign-out', async () => {
     const expired = vi.fn();
     vi.stubGlobal('fetch', async () => Response.json({ error: 'Diary unavailable' }, { status: 503 }));
-    const api = createApiClient('https://nourish.example', async () => 'token', expired);
+    const api = createApiClient('https://gramello.example', async () => 'token', expired);
     await expect(api('/api/day')).rejects.toThrow('Diary unavailable');
     expect(expired).not.toHaveBeenCalled();
   });
@@ -39,7 +39,7 @@ describe('mobile API contract', () => {
   it('never sends credentials to an absolute or protocol-relative URL', async () => {
     const fetcher = vi.fn();
     vi.stubGlobal('fetch', fetcher);
-    const api = createApiClient('https://nourish.example', async () => 'token', () => {});
+    const api = createApiClient('https://gramello.example', async () => 'token', () => {});
     await expect(api('https://evil.example/api/day')).rejects.toThrow();
     await expect(api('//evil.example/api/day')).rejects.toThrow();
     expect(fetcher).not.toHaveBeenCalled();
