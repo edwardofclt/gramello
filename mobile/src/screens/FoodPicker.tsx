@@ -13,7 +13,7 @@ import { meals, type Food, type Meal } from '../lib/types';
 import { foodUnits, servingQuantity, unitLabels, amountLabels, type AmountUnit, type Ingredient } from '../../../lib/meals';
 
 export function FoodPicker({ date, initialMeal, onSaved, initialFood, onIngredient, onBusy, onTitle }: { date: string; initialMeal: Meal; onSaved: () => void; initialFood?: Food; onIngredient?: (ingredient: Ingredient) => void; onBusy?: (busy: boolean) => void; onTitle?: (title: string) => void }) {
-  const { api } = useSession();
+  const { api, local } = useSession();
   const { width } = useLayout();
   const [meal, setMeal] = useState(initialMeal);
   const [query, setQuery] = useState('');
@@ -72,7 +72,7 @@ export function FoodPicker({ date, initialMeal, onSaved, initialFood, onIngredie
               onChangeText={value => { setQuery(value); setResults([]); setError(null); setPartial(false); setHasMore(false); setSearching(value.trim().length >= 2); }} />
             <Action secondary label="Scan barcode" onPress={() => { setScanning(true); setSearching(false); setError(null); }}><ScanBarcode size={20} color={colors.mint} /><Text style={styles.body}>Scan barcode</Text></Action>
             <Action secondary onPress={() => { setCustom(true); setSearching(false); setError(null); }}>Add custom food</Action>
-            <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 7 }}>{['Restaurant menus', 'USDA', 'Open Food Facts', 'Community foods'].map(source => <Text key={source} style={{ color: colors.muted, fontSize: 11, backgroundColor: colors.raised, borderRadius: 20, paddingVertical: 5, paddingHorizontal: 9 }}>{source}</Text>)}</View>
+            <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 7 }}>{(local ? ['Downloaded catalog', 'My foods'] : ['Restaurant menus', 'USDA', 'Open Food Facts', 'Community foods']).map(source => <Text key={source} style={{ color: colors.muted, fontSize: 11, backgroundColor: colors.raised, borderRadius: 20, paddingVertical: 5, paddingHorizontal: 9 }}>{source}</Text>)}</View>
             {partial && <Text accessibilityRole="alert" style={{ color: colors.amber, fontSize: 12 }}>Some nutrition databases are unavailable. Showing available matches from the catalog and other sources.</Text>}
             {searching ? <View style={styles.center}><ActivityIndicator color={colors.mint} /><Text style={styles.muted}>Searching food databases…</Text></View>
               : !results.length && !error ? <View style={styles.center}><Search size={36} color={colors.mint} /><Text style={styles.heading}>{query.trim().length < 2 ? 'Find your next bite' : 'No matches yet'}</Text><Text style={[styles.muted, { textAlign: 'center' }]}>{query.trim().length < 2 ? 'Search by food, brand, or product name.' : 'Try another name, or add a custom food above.'}</Text></View> : null}

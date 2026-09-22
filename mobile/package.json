@@ -19,8 +19,15 @@
     "@segment/analytics-react-native": "2.24.0",
     "@segment/sovran-react-native": "1.1.4",
     "expo": "57.0.22",
+    "expo-asset": "57.0.17",
     "expo-camera": "~57.0.5",
+    "expo-constants": "57.0.18",
+    "expo-crypto": "57.0.3",
     "expo-dev-client": "~57.0.19",
+    "expo-document-picker": "57.0.2",
+    "expo-file-system": "57.0.7",
+    "expo-sharing": "57.0.20",
+    "expo-sqlite": "57.0.3",
     "expo-status-bar": "~57.0.1",
     "lucide-react-native": "^0.577.0",
     "react": "19.2.3",
@@ -30,7 +37,8 @@
     "react-native-get-random-values": "2.0.0",
     "react-native-safe-area-context": "~5.7.0",
     "react-native-svg": "15.15.4",
-    "react-native-web": "~0.21.0"
+    "react-native-web": "~0.21.0",
+    "tweetnacl": "1.0.3"
   },
   "devDependencies": {
     "@types/react": "~19.2.14",

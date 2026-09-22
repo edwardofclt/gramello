@@ -1,0 +1,67 @@
+name: Publish food catalog
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - data/food-catalog/**
+      - scripts/food-catalog.mjs
+      - mobile/catalog-config.json
+      - .github/workflows/food-catalog.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: food-catalog
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Check catalog signing setup
+        id: signing
+        env:
+          CATALOG_SIGNING_KEY: ${{ secrets.CATALOG_SIGNING_KEY }}
+        run: |
+          if [ -n "$CATALOG_SIGNING_KEY" ]; then
+            echo "configured=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "::warning::Catalog publication skipped. Configure CATALOG_SIGNING_KEY and rerun this workflow; bundled foods remain available."
+            echo "configured=false" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Build and sign approved-source catalog
+        if: steps.signing.outputs.configured == 'true'
+        env:
+          CATALOG_SIGNING_KEY: ${{ secrets.CATALOG_SIGNING_KEY }}
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          version="usda-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+          mkdir -p catalog-release
+          node scripts/food-catalog.mjs data/food-catalog/usda-core.json \
+            "catalog-release/foods-${version}.sqlite" "$version" \
+            "https://github.com/${REPOSITORY}/releases/download/food-catalog/foods-${version}.sqlite"
+          cp data/food-catalog/README.md catalog-release/SOURCES.md
+      - name: Publish database before advertising it in the manifest
+        if: steps.signing.outputs.configured == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          if ! gh release view food-catalog >/dev/null 2>&1; then
+            gh release create food-catalog --target "$GITHUB_SHA" --prerelease --latest=false \
+              --title "Food catalog data" --notes "USDA CC0 food data for Gramello. The app installs compatible signed catalog updates automatically."
+          fi
+          gh release upload food-catalog catalog-release/*.sqlite
+          gh release upload food-catalog catalog-release/SOURCES.md --clobber
+          gh release upload food-catalog catalog-release/manifest.json --clobber

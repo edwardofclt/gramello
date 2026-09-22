@@ -1,10 +1,12 @@
 # Gramello for iOS, Android, and web
 
-An Expo / React Native companion using gluestack-ui core 5. The native app has a
-daily diary, food search with serving/gram controls, meal logging/removal, 7-day /
-30-day / 6-month trends, and editable calorie/macro goals. It calls the existing
-Gramello API at `https://nourish-api.fly.dev` by default, so the same Auth0 account
-sees the same data on web and mobile.
+**Native iOS/Android now run locally with SQLite and no sign-in.** Food catalogs update automatically; Settings offers an immediate update check, complete backup export/import, CSV export, and recovery after replacement. See [local-data setup and publishing](../docs/client-only-implementation.md). The Auth0 instructions below apply to the retained browser edition and legacy hosted clients.
+
+Production Android builds produce Play Store AABs. GitHub APK distribution is manual. Catalog signing setup is required before the first downloadable catalog release.
+
+An Expo / React Native app using gluestack-ui core 5, with a daily diary,
+food search, recipes, water tracking, trends, and editable nutrition goals.
+Native builds use local SQLite; the browser edition uses the hosted API.
 
 ## Anonymous usage analytics
 
@@ -35,8 +37,8 @@ restoring a device backup can restore the stored ID. There are no `identify`,
 | Application Installed / Updated / Opened / Backgrounded | Segment's native lifecycle hooks |
 | Welcome, Diary, Trends, Settings, Add Food, Goals | Screen changes, including returning from the food sheet |
 | Food Searched / Barcode Looked Up | Successful lookup; no query or barcode |
-| Food Logged / Removed, Custom Food Created, Meal Created / Updated / Deleted | Successful API writes |
-| Goals Updated, Water Logged / Removed, Water Goal Updated | Successful API writes |
+| Food Logged / Removed, Custom Food Created, Meal Created / Updated / Deleted | Successful local writes |
+| Goals Updated, Water Logged / Removed, Water Goal Updated | Successful local writes |
 
 `src/analytics/events.ts` filters every event before delivery. Only fixed event
 and screen names, the anonymous ID, event ID/time, app name/version/build/bundle
@@ -55,17 +57,20 @@ enabling it. Keep this source restricted to anonymous product analytics.
 Verification: `pnpm test`, `pnpm --filter @gramello/mobile typecheck`,
 `pnpm lint:mobile`, and `pnpm --filter @gramello/mobile export`. With a real write
 key and rebuilt native app, check the Segment source debugger: open the diary,
-log food/water, close/reopen the app, and sign out/in. Confirm `anonymousId`
+log food/water and close/reopen the app. Confirm `anonymousId`
 remains stable, `userId` and traits are absent, properties are empty, and the IP
-is `0.0.0.0`. Failed API writes should not appear as successful actions. Repeat
+is `0.0.0.0`. Failed local writes should not appear as successful actions. Repeat
 on both iOS and Android. Update App Store privacy disclosures for the next
 analytics-enabled build; see `docs/app-store-preparation.md`.
+
 
 ## Barcode scanning
 
 In **Add food**, choose **Scan barcode**, allow camera access, and center a
 packaged food's UPC-A, EAN-8, EAN-13, or ITF-14 barcode. You can also enter the
-printed number manually. Open Food Facts supplies the product details; review
+printed number manually. Native lookup searches the downloaded catalog; the
+USDA starter contains no packaged-food barcodes, so use name search or custom
+foods when a code is unknown. The hosted browser uses Open Food Facts. Review
 the serving size and meal before adding. Unknown products or products without
 complete nutrition can be searched by name instead. Drinks with volume-based
 nutrition support servings, mL, and US fluid ounces; their diary entries display
@@ -101,205 +106,69 @@ The diary date and trend range are retained when switching views. Chart values
 can be inspected with pointer hover, touch, or the previous/next day buttons.
 Charts and averages use logged days, matching the original web app.
 
-## Connect Auth0 and the API
+## Hosted browser authentication
 
-1. In the **existing Auth0 tenant**, create a **Native Application**, and enable
-   the same database/social connections used by the web application. Use the
-   same account and connection to retain the same Auth0 `sub`. Do not reuse the
-   web application client ID or put its client secret in the mobile app.
-2. Register an Auth0 **API** with identifier `https://nourish-api` (or your chosen
-   stable identifier), signing algorithm **RS256**, the **Auth0 token profile**,
-   and **Allow Offline Access**. Enable Authorization Code and Refresh Token
-   grants for the Native Application; enable refresh-token rotation. If API
-   application access policies require approval, authorize the Native Application.
-3. In the Native Application's **Allowed Callback URLs** and **Allowed Logout
-   URLs**, add both URLs below, replacing `YOUR_AUTH0_DOMAIN` with the same domain
-   used by the web server. All values must be lowercase:
-
-   ```text
-   nourish://YOUR_AUTH0_DOMAIN/ios/com.edwardofclt.nourish/callback
-   nourish://YOUR_AUTH0_DOMAIN/android/com.nourish.tracker/callback
-   ```
-
-4. In the **server's** `.env.local` or runtime bindings, retain all existing web
-   auth settings and add `AUTH0_AUDIENCE=https://nourish-api` and
-   `AUTH0_MOBILE_CLIENT_ID=<native client ID>`. Rebuild/restart the API with this
-   change; the updated Wrangler config declares these bindings. A native token's
-   signature, issuer, audience, expiration, subject, and client are verified before
-   accessing the existing diary. Web cookie authentication still requires CSRF
-   origin checks.
-5. Copy `mobile/.env.example` to `mobile/.env` and fill the three **public Auth0**
-   values. The app defaults to `https://nourish-api.fly.dev`; leave
-   `EXPO_PUBLIC_API_URL` as supplied or unset it to use that deployment. Override
-   it only to use another API origin, with no `/api` suffix. Existing `.env`
-   files pointing to a temporary tunnel must be updated or have this override
-   removed. The audience/domain/native client ID must match the server.
-   `AUTH0_SECRET` and `AUTH0_CLIENT_SECRET` must never appear here.
-
-The Auth0 SDK uses Universal Login with authorization code + PKCE, restores and
-refreshes credentials using the OS-backed secure credentials manager, and clears
-local credentials on logout/session expiry. The server keys all data by verified
-`sub`, never by an email or client-provided user ID. The native app does not copy
-web cookies. Password/social options are controlled in Auth0, as on the web.
+Native builds require no Auth0 or API environment variables. For the retained
+browser edition, copy `.env.example` to `.env` and configure its public Auth0
+values and API origin. Configure the browser origin in Auth0 and allow it in
+the API gateway's CORS settings. Keep secrets in the server environment only.
+The existing hosted API continues to accept its configured legacy mobile clients.
 
 ## Run on a simulator or device
 
-From the repository root, with Node.js 22.13+ and pnpm 11.25:
+From the repository root, with Node.js 24 and pnpm 11.25:
 
 ```bash
-pnpm install
-cp mobile/.env.example mobile/.env
-# Fill mobile/.env and configure the Auth0 URLs above first.
+pnpm install --frozen-lockfile
 pnpm mobile:ios
 # Or, with an Android emulator/device and Android SDK:
 pnpm mobile:android
 ```
 
-`expo run:ios` needs Xcode and CocoaPods; `expo run:android` needs Android Studio /
-SDK and a compatible JDK. They generate ignored native projects and install a
-development build. **Expo Go cannot run react-native-auth0**. On later runs, start
-Metro with `pnpm mobile`, then open the installed development build. Rebuild it
-after changing the Auth0 domain, scheme, bundle ID, or native dependencies.
+Native builds need no account configuration or running API. `expo run:ios` needs
+Xcode and CocoaPods; `expo run:android` needs Android Studio / SDK and a compatible
+JDK. Both generate ignored native projects. On later runs, start Metro with
+`pnpm mobile`, then open the installed development build. Rebuild after changing
+native dependencies. Use a development build instead of Expo Go.
 
-For a physical iPhone, connect and unlock it, trust the Mac if prompted, then run
-`pnpm mobile:ios --device` and select the phone. Xcode must have a development
-signing team configured; the phone may also prompt you to enable Developer Mode.
-Open the installed **Gramello** app to connect to Metro. Scanning the QR code in
-**Expo Go** cannot load Auth0 and produces `A0Auth0 could not be found`; reloading
-JavaScript cannot add a native module to Expo Go. A simulator build also cannot
-be installed on a physical phone.
+For a physical iPhone, connect and unlock it, trust the Mac, and run
+`pnpm mobile:ios --device`. Xcode needs a development signing team. The phone may
+ask you to enable Developer Mode. To install a missing iOS platform, use Xcode >
+Settings > Components or `xcodebuild -downloadPlatform iOS`.
 
-If `xcodebuild` exits with code 70 and says an iOS platform is not installed,
-install the platform required by your selected Xcode before retrying:
+Bundle ID `com.edwardofclt.nourish`, Android package `com.nourish.tracker`, and
+scheme `nourish` are retained so existing installs and the linked EAS project
+continue to work. `eas.json` provides development (iOS simulator), preview
+(internal devices), production (store), and production-apk profiles.
 
-```bash
-xcodebuild -downloadPlatform iOS
-pnpm mobile:ios --device
-```
+## Store builds and manual APKs
 
-Choose an available iPhone simulator from the device picker. An existing simulator
-can appear in `xcrun simctl list devices` while Xcode still reports it as an
-ineligible build destination. Check eligibility with `xcodebuild -workspace
-mobile/ios/Gramello.xcworkspace -scheme Gramello -showdestinations` from the repository
-root. Apple also provides the download in **Xcode > Settings > Components**; see
-[Apple's component installation guide](https://developer.apple.com/documentation/xcode/downloading-and-installing-additional-xcode-components).
+Stable releases call **TestFlight** for an iOS build/submission and **Android store bundle** for an AAB. The Android workflow builds without submitting; Google
+Play service-account setup and upload remain release tasks. Set a paid-download
+price in each store console; there is no subscription or entitlement server.
 
-The deployed Fly.io API works on physical phones and simulators without a local
-API or tunnel. For local API work, override `EXPO_PUBLIC_API_URL`: iOS Simulator
-can use `http://localhost:5173`, and Android Emulator can use
-`http://10.0.2.2:5173`, with the web API running and reachable. HTTP is restricted
-to these loopback/emulator origins in development; production requires HTTPS.
-
-On a physical phone, `localhost` refers to the phone itself. A successful Auth0
-login does not prove that the phone can reach the diary API. Set
-`EXPO_PUBLIC_API_URL=https://nourish-api.fly.dev` and restart Metro with
-`pnpm mobile --clear`, then reload the installed Gramello app.
-
-For temporary device testing, run the updated production API locally using the
-root README's `pnpm build` / `pnpm start` instructions, then expose its port with
-`cloudflared tunnel --url http://127.0.0.1:5180` (use the API's actual port).
-Copy the generated HTTPS origin into `mobile/.env`. The API must load all seven
-server auth settings and use the same initialized database as the web app; when
-running from another checkout, point Wrangler's `--persist-to` at the web app's
-existing `.wrangler/state` directory. Keep the API, tunnel, and Metro running.
-[Cloudflare Quick Tunnels](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/do-more-with-tunnels/trycloudflare/)
-are temporary: a new tunnel gets a new URL, which must also be updated in the app.
-
-The iOS bundle ID is `com.edwardofclt.nourish`, the Android package is
-`com.nourish.tracker`, and the scheme is `nourish`. Update Auth0's callback and
-logout URLs whenever changing these IDs in `app.config.ts`. These identifiers
-are intentionally retained so existing installs,
-Auth0 callbacks, and the linked EAS project continue to work.
-`eas.json` includes development (iOS simulator), preview
-(internal device), and production profiles. The production profile includes the
-public Auth0 and Fly.io settings. Supply the public Auth0 variables separately for
-development and preview builds. Keep all client secrets out of mobile configuration.
-
-## Android release APK
-
-Every stable release created by **Release** calls
-`.github/workflows/android-apk.yml` to build a signed, standalone Android APK on
-EAS and attach `gramello-vX.Y.Z.apk` to that GitHub release. It checks out the exact
-tag and sets the app version from it. The `production-apk` profile inherits the
-production API/Auth0 settings and automatic remote Android version-code increments,
-with internal distribution and an explicit APK build type. It does not require
-Metro or Expo Go and does not submit to Google Play.
-
-The workflow uses the same `EXPO_TOKEN` Actions secret as TestFlight. Android
-signing credentials must also exist in the linked EAS project. Before the first
-CI build, sign in to Expo from a checkout containing the APK profile and run:
+The workflows use the existing `EXPO_TOKEN` secret. Keep iOS and Android signing
+credentials in EAS; never commit them. Repair expired Apple credentials with
+`npx eas-cli@24.7.0 credentials:configure-build --platform ios --profile production`
+from `mobile/`. Before the first Android CI build, provision its keystore with:
 
 ```bash
 cd mobile
-npx eas-cli@24.7.0 build --platform android --profile production-apk
+npx eas-cli@24.7.0 build --platform android --profile production
 ```
 
-If prompted, select the existing Android keystore or let EAS generate and store
-one. Retain that keystore so subsequent APKs can update existing installs; never
-commit signing keys. Complete this first build successfully so later CI builds
-can run without prompts. See [Expo's CI setup guide](https://docs.expo.dev/build/building-on-ci/).
+Retain the keystore so subsequent releases can update installed apps. TestFlight
+submission does not release the app publicly. The store profiles contain no
+Auth0/API environment values.
 
-Ensure the Native Auth0 application's **Allowed Callback URLs** and **Allowed
-Logout URLs** both include
-`nourish://dev-rgk5sso4.auth0.com/android/com.nourish.tracker/callback`.
+For direct APK distribution, manually run **Android APK (manual distribution)**
+in Actions with a stable release tag containing the `production-apk` profile.
+It builds a signed APK and attaches it to that release. Stable releases no longer
+start APK builds automatically. APKs are for direct installation; Play uses AABs.
 
-Publishing a stable release manually also starts the APK workflow. To retry one,
-choose **Actions > Android APK > Run workflow** and enter a published stable tag
-that includes the `production-apk` profile. Drafts and prereleases are rejected.
-Rerunning builds a new APK with an incremented version code and replaces only
-that release's matching APK asset. Build, download, validation, or upload failures
-fail the job; an AAB is never uploaded as an APK. The Release workflow calls this
-workflow explicitly because releases created with `GITHUB_TOKEN` do not trigger
-another release-event workflow.
-
-Download the APK from the release's **Assets** on your Android device, allow
-installation from that source if prompted, and open **Gramello**.
-
-## TestFlight
-
-The Apple Developer App ID is `com.edwardofclt.nourish`, under team `6SHL6PHRS9`.
-The App Store Connect record is
-[Gramello: Calories & Macros](https://appstoreconnect.apple.com/apps/6814035327/distribution)
-(Apple ID `6814035327`). The App Store Connect name is saved as
-**Gramello: Calories & Macros**; new builds display **Gramello**.
-`eas.json` targets this record with the production submission profile. The linked
-Expo project is [@edwardofclt/nourish-mobile](https://expo.dev/accounts/edwardofclt/projects/nourish-mobile).
-Apple distribution signing and App Store Connect submission credentials are
-managed by EAS. The native Auth0 application's callback and logout allowlists include
-`nourish://dev-rgk5sso4.auth0.com/ios/com.edwardofclt.nourish/callback`.
-
-### GitHub releases
-
-Every stable release published by the **Release** workflow calls
-`.github/workflows/testflight.yml`. Publishing a stable release manually in GitHub
-also triggers it. The job checks out the exact release tag, sets the mobile
-package version from that tag, builds on EAS, and submits to TestFlight. EAS
-increments the iOS build number remotely so reruns use a new build number. The
-GitHub job waits for both build and submission and fails if either fails.
-
-The repository's `EXPO_TOKEN` Actions secret belongs to the **nourish-github**
-Expo robot with the Developer role. Rotate that token in Expo and replace the
-GitHub secret if needed. No Apple passwords or signing keys are stored in this
-repository. If Apple signing credentials expire, repair them with
-`npx eas-cli@24.7.0 credentials:configure-build --platform ios --profile production`
-from `mobile/` before rerunning the workflow.
-
-To rebuild an existing stable release, choose **Actions > TestFlight > Run workflow**
-and enter its tag (for example, `v1.2.0`). Prereleases and drafts are excluded.
-The explicit call from the Release workflow is required because releases created
-with `GITHUB_TOKEN` don't trigger another release-event workflow.
-
-For a manual build of your current checkout, sign in to Expo and run from `mobile/`:
-
-```bash
-npx eas-cli@24.7.0 build --platform ios --profile production --auto-submit
-```
-
-Use the production profile for TestFlight; the preview profile uses internal
-device distribution. After Apple processes the uploaded build, it can be tested
-through the app's **Internal Testing** group in TestFlight, with automatic build
-distribution enabled. Submission does not release the app publicly. See
-[Expo's TestFlight guide](https://docs.expo.dev/submit/testflight/).
+Catalog publication is separate from binary releases. Follow
+[signing and publication setup](../docs/client-only-implementation.md) before the
+first release. The bundled catalog works offline before that setup is complete.
 
 ## Verify
 
@@ -320,9 +189,8 @@ logout at phone and desktop sizes, plus tablet/narrow layouts, short dialogs,
 Escape/focus restoration, and chart inspection. `MOBILE_TEST_PORT=8087 pnpm
 test:mobile:ui` selects another port when 8082 is occupied.
 `GRAMELLO_UI_TEST=1` is set only by its dedicated server
-configuration; do not set it for normal development or builds. It does not prove
-native browser callbacks or secure storage: verify login, restart/restore,
-refresh, and logout on both devices with your configured Auth0 tenant.
+configuration; do not set it for normal development or builds. Native file pickers, share destinations, restart persistence, and catalog
+download interruption also need checks on physical iOS and Android devices.
 
 Expo and Metro are pinned to compatible patches that satisfy the repository's
 seven-day dependency-release policy. `expo install --check` may recommend newer
@@ -332,4 +200,5 @@ patches before that window has passed. `EXPO_OFFLINE=1 pnpm --filter
 UI code is in `src/screens`, gluestack-based controls in `src/components/ui.tsx`,
 Auth0/session coordination in `src/auth`, and API/calendar/nutrition helpers in
 `src/lib`. Goal calculations are shared with the web app's `app/goal-math.ts`.
-No diary data or access/refresh tokens are persisted in ordinary app storage.
+Native personal data is persisted in SQLite under `src/local`; catalog code lives
+in `src/catalog`. There are no native login tokens.

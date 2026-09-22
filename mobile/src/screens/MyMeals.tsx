@@ -2,7 +2,7 @@ import { unitHint } from '../../../lib/meals';
 import { useRef, useState } from 'react';
 import { ActivityIndicator, Text, View } from 'react-native';
 import { useSession } from '../auth/Session';
-import { Action, Card, colors, ErrorNotice, Field, styles } from '../components/ui';
+import { Action, Card, colors, ErrorNotice, Field, isWeb, styles } from '../components/ui';
 import { FoodPicker } from './FoodPicker';
 import { useMealDraft } from '../../../hooks/use-meal-draft';
 import { useMealLibrary } from '../../../hooks/use-meal-library';
@@ -19,7 +19,7 @@ export function MyMeals({ date, initialMeal, onChoose, onBusy }: { date: string;
   if (editing) return <MealEditor date={date} initialMeal={initialMeal} initial={editing === 'new' ? undefined : editing} onBusy={onBusy} onBack={() => setEditing(null)} onSaved={() => { setEditing(null); library.reload(); setNotice('Meal saved. Choose it below to log any portion.'); }} />;
   return <>
     <Action onPress={() => { setNotice(''); setEditing('new'); }}>Create meal</Action>
-    <Text style={styles.muted}>Combine ingredients once, then log any portion. Your meals are saved to your account.</Text>
+    <Text style={styles.muted}>Combine ingredients once, then log any portion. {isWeb ? 'Your meals are saved to your account.' : 'Your meals are saved on this device.'}</Text>
     {!!notice && <Text accessibilityRole="alert" style={styles.body}>{notice}</Text>}
     <Field label="Search my meals" value={filter} onChangeText={setFilter} placeholder="Search my meals…" />
     {library.error && <ErrorNotice message={library.error} retry={library.reload} />}
