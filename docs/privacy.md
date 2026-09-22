@@ -89,6 +89,20 @@ States or other locations where the relevant providers operate. We may disclose
 information when required by applicable law or necessary to protect the service
 and its users.
 
+## Website and cookies
+
+The Gramello marketing, support, and legal website is hosted on GitHub Pages.
+It does not ask you to sign in, submit a form, or enter diary information. We do
+not add analytics scripts, advertising trackers, or cookies to these pages.
+Fonts and website images are served with the site. GitHub receives connection
+information when it serves a page, including your IP address; see the
+[GitHub Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
+
+Opening the connected Gramello app takes you to a separate service, where
+necessary authentication cookies maintain your web session. The native app
+uses its credentials manager instead. External services you choose to visit,
+such as GitHub releases or Apple purchase support, follow their own policies.
+
 ## Storage and retention
 
 Nutrition and water records are stored on the server under your account
