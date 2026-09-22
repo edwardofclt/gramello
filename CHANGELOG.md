@@ -1,3 +1,9 @@
+## [1.8.0](https://github.com/edwardofclt/nourish/compare/v1.7.0...v1.8.0) (2026-09-22)
+
+### Features
+
+* publish Android APKs as GitHub release assets ([df6f3c3](https://github.com/edwardofclt/nourish/commit/df6f3c309d6cedf8edc58b863186a4a45e0d0523))
+
 ## [1.7.0](https://github.com/edwardofclt/nourish/compare/v1.6.1...v1.7.0) (2026-09-22)
 
 ### Features
