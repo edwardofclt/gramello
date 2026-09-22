@@ -1,6 +1,6 @@
 # Gramello for iOS, Android, and web
 
-**Native iOS/Android now run locally with SQLite and no sign-in.** Food catalogs update automatically; Settings offers an immediate update check, complete backup export/import, CSV export, and recovery after replacement. See [local-data setup and publishing](../docs/client-only-implementation.md). The Auth0 instructions below apply to the retained browser edition and legacy hosted clients.
+**Native iOS/Android now run locally with SQLite and no sign-in.** Settings holds daily calorie, macro, and water goals, including the preferred water unit. Water logging stays in the diary. Food catalogs update automatically; **Settings → Advanced** offers an immediate update check, complete backup export/import, CSV export, and recovery after replacement. See [local-data setup and publishing](../docs/client-only-implementation.md). The Auth0 instructions below apply to the retained browser edition and legacy hosted clients.
 
 Production Android builds produce Play Store AABs. GitHub APK distribution is manual. Catalog signing setup is required before the first downloadable catalog release.
 
@@ -35,7 +35,7 @@ restoring a device backup can restore the stored ID. There are no `identify`,
 | Events | When recorded |
 | --- | --- |
 | Application Installed / Updated / Opened / Backgrounded | Segment's native lifecycle hooks |
-| Welcome, Diary, Trends, Settings, Add Food, Goals | Screen changes, including returning from the food sheet |
+| Welcome, Diary, Trends, Settings, Advanced, Add Food, Goals | Screen changes, including returning from the food sheet |
 | Food Searched / Barcode Looked Up | Successful lookup; no query or barcode |
 | Food Logged / Removed, Custom Food Created, Meal Created / Updated / Deleted | Successful local writes |
 | Goals Updated, Water Logged / Removed, Water Goal Updated | Successful local writes |
