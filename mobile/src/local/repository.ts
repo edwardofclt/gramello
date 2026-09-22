@@ -2,6 +2,7 @@ import { z } from 'zod';
 import { parseCustomFood, scaleFood, type Food } from '../../../lib/food';
 import { mealFood, type CustomMeal } from '../../../lib/meals';
 import { localDate } from '../../../lib/diary-date';
+import { foodSearchIssue, type FoodSearchIssue } from '../../../lib/food-search';
 import { defaultWaterGoal, waterDateSchema, waterEntrySchema, waterGoalSchema, type WaterDay } from '../../../lib/water';
 import { serialized, transaction, type SqliteConnection } from './database';
 import { entrySchema, goalsSchema, mealSchema, parseArchive, validateRecord, units, type Archive, type PersonalRecord } from './records';
@@ -77,14 +78,16 @@ export async function createLocalRepository(db: SqliteConnection, catalog: FoodC
       if (query.trim().length < 2) return { foods: [], partial: false, hasMore: false };
       const tokens = query.toLowerCase().trim().split(/\s+/);
       const custom = (await serialized(db, () => list<Food>('food'))).filter(food => tokens.every(t => `${food.name} ${food.brand ?? ''}`.toLowerCase().includes(t)));
-      let found: Food[], partial = false;
+      let found: Food[];
+      const issues: FoodSearchIssue[] = [];
       try { found = await catalog.search(query, options); }
       catch (error) {
         if (!options?.online || options.signal?.aborted) throw error;
-        found = await catalog.search(query); partial = true;
+        found = await catalog.search(query, { signal: options.signal });
+        issues.push(foodSearchIssue('Open Food Facts', error));
       }
       const foods = [...custom, ...found];
-      return { foods: foods.slice(0,100), hasMore: foods.length > 100, partial };
+      return { foods: foods.slice(0,100), hasMore: foods.length > 100, partial: issues.length > 0, issues };
     },
     // Network lookups must not hold the diary connection's transaction queue.
     lookupBarcode: async (code: string, signal?: AbortSignal) => { const food = await catalog.barcode(code, signal); if (!food) throw new Error('No product found for this barcode. Try searching online by name or add a custom food.'); return { food }; },

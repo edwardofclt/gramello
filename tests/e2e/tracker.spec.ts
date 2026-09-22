@@ -140,11 +140,20 @@ test('saved food survives a real container restart', async ({ page, request }) =
 
 test('shows catalog provenance and notices, and resets the portion when choosing another food', async ({ page }) => {
   const restaurant = { ...foods[0], id: 'restaurant-fixture', name: 'Restaurant bowl fixture', source: 'Official menu', sourceKind: 'restaurant', nutritionBasis: 'serving', servingLabel: '1 bowl', servingGrams: null, calories: 650, verified: true, sourceUrl: 'https://example.com/nutrition' };
-  await page.route('**/api/foods/search?*', route => route.fulfill({ json: { foods: [foods[0], restaurant], partial: true, hasMore: true } }));
+  await page.route('**/api/foods/search?*', route => route.fulfill({ json: { foods: [foods[0], restaurant], partial: true, hasMore: true, issues: [{ source: 'USDA FoodData Central', message: 'Too many requests. Try again in a minute.' }] } }));
   await openDiary(page);
   await page.getByRole('button', { name: 'Add Lunch', exact: true }).click();
   await page.getByRole('textbox', { name: 'Search foods', exact: true }).fill('fixture');
   await expect(page.getByRole('status')).toContainText('Some nutrition databases are unavailable');
+  const warning = page.getByRole('button', { name: 'Some nutrition databases are unavailable.' });
+  await expect(warning).toHaveAttribute('aria-expanded', 'false');
+  await expect(page.getByText(/Too many requests/)).toBeHidden();
+  await warning.focus();
+  await page.keyboard.press('Enter');
+  await expect(page.getByRole('status')).toContainText('USDA FoodData Central: Too many requests');
+  await expect(page.getByText(/Too many requests/)).toBeVisible();
+  await warning.click();
+  await expect(page.getByText(/Too many requests/)).toBeHidden();
   await expect(page.getByText('Showing the first 100 matches. Add an item name to narrow your search.')).toBeVisible();
   const bowl = page.getByRole('button', { name: /Restaurant bowl fixture Official menu/ });
   await expect(bowl).toContainText('Verified');

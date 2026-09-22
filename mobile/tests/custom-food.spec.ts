@@ -19,7 +19,7 @@ for (const width of [390, 1440]) {
         custom = { ...request.postDataJSON(), id: 'custom-bowl', source: 'Community submitted', sourceKind: 'custom', verified: false, nutritionBasis: 'serving' };
         return route.fulfill({ status: 201, headers, json: { food: custom } });
       }
-      if (path === '/api/foods/search') return route.fulfill({ headers, json: { foods: custom ? [custom] : [], partial: true, hasMore: true } });
+      if (path === '/api/foods/search') return route.fulfill({ headers, json: { foods: custom ? [custom] : [], partial: true, hasMore: true, issues: [{ source: 'Open Food Facts', message: 'The database took too long to respond. Try searching again.' }] } });
       if (path === '/api/entries') {
         const entry = { ...request.postDataJSON(), id: 'entry-1', verified: false, servingLabel: custom!.servingLabel };
         entries.push(entry); return route.fulfill({ status: 201, headers, json: entry });
@@ -52,8 +52,16 @@ for (const width of [390, 1440]) {
     await page.getByRole('textbox', { name: 'Search foods' }).fill('My dinner bowl');
     await expect(page.getByRole('button', { name: /My dinner bowl/ })).toBeVisible();
     await expect(page.getByText(/Some nutrition databases are unavailable/)).toBeVisible();
+    const warning = page.getByRole('button', { name: 'Some nutrition databases are unavailable.' });
+    await expect(warning).toHaveAttribute('aria-expanded', 'false');
+    await expect(page.getByText(/The database took too long/)).toBeHidden();
+    await warning.click();
+    await expect(warning).toHaveAttribute('aria-expanded', 'true');
+    await expect(page.getByText(/Open Food Facts: The database took too long/)).toBeVisible();
     await expect(page.getByText(/Showing the first 100 matches/)).toBeVisible();
     await page.screenshot({ path: `test-results/custom-food-${width}-search.png`, fullPage: true });
+    await warning.click();
+    await expect(page.getByText(/The database took too long/)).toBeHidden();
     expect(custom).toMatchObject({ calories: 605, protein: 30, carbs: 65, fat: 25, servingGrams: null });
     expect(errors).toEqual([]);
   });

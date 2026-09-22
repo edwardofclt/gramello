@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useEffect, useRef, useState, type ReactNode } from 'react';
+import { useCallback, useEffect, useId, useRef, useState, type ReactNode } from 'react';
 import { ChevronLeft, ChevronRight, Loader2, Plus, ScanBarcode, Search } from 'lucide-react';
 import { BarcodeScanner } from './barcode-scanner';
 import { CustomFoodForm } from './custom-food-form';
@@ -10,6 +10,7 @@ import { Input } from './ui/input';
 import { nutritionLabel } from '@/lib/food';
 import { scaleFood, nutrientKeys, foodUnits, servingQuantity, unitLabels, amountLabels, type AmountUnit, type Food, type Ingredient } from '@/lib/meals';
 import type { FoodApi } from '@/lib/food-api';
+import type { FoodSearchIssue, FoodSearchResult } from '@/lib/food-search';
 
 export function NutritionPreview({ nutrition }: { nutrition: { calories: number; protein: number; carbs: number; fat: number } | null }) {
   return <div className="nutrition-preview">{nutrientKeys.map(key => <div key={key}><strong>{nutrition ? Math.round(nutrition[key]) : '—'}{key !== 'calories' ? 'g' : ''}</strong><span>{key === 'calories' ? 'kcal' : key}</span></div>)}</div>;
@@ -27,6 +28,9 @@ export function FoodPicker({ api, initialFood, onChoose, actionLabel, children, 
   const [unit, setUnit] = useState<AmountUnit>('serving');
   const [searching, setSearching] = useState(false);
   const [partial, setPartial] = useState(false);
+  const [issues, setIssues] = useState<FoodSearchIssue[]>([]);
+  const [showSearchDetails, setShowSearchDetails] = useState(false);
+  const searchDetailsId = useId();
   const [hasMore, setHasMore] = useState(false);
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -39,8 +43,8 @@ export function FoodPicker({ api, initialFood, onChoose, actionLabel, children, 
     const controller = new AbortController();
     const timer = setTimeout(() => {
       setSearching(true);
-      void api<{ foods: Food[]; partial?: boolean; hasMore?: boolean }>(`/api/foods/search?q=${encodeURIComponent(query.trim())}`, { signal: controller.signal })
-        .then(data => { if (!controller.signal.aborted) { setResults(data.foods); setPartial(!!data.partial); setHasMore(!!data.hasMore); } })
+      void api<FoodSearchResult>(`/api/foods/search?q=${encodeURIComponent(query.trim())}`, { signal: controller.signal })
+        .then(data => { if (!controller.signal.aborted) { setResults(data.foods); setPartial(!!data.partial); setIssues(data.issues ?? []); setHasMore(!!data.hasMore); } })
         .catch(error => { if (!controller.signal.aborted) setError(error instanceof Error ? error.message : 'Food search is unavailable.'); })
         .finally(() => { if (!controller.signal.aborted) setSearching(false); });
     }, 350);
@@ -73,10 +77,18 @@ export function FoodPicker({ api, initialFood, onChoose, actionLabel, children, 
       {!scaled && <p className="meal-hint">Enter an amount greater than zero.</p>}
       <Button className="confirm-button" disabled={!scaled || saving} onClick={() => void submit()}>{saving && <Loader2 className="spin" />}{actionLabel}</Button>
     </div> : <>
-      <div className="search-box"><Search /><Input aria-label="Search foods" autoFocus value={query} onChange={event => { setQuery(event.target.value); setResults([]); setPartial(false); setHasMore(false); setError(null); setSearching(event.target.value.trim().length >= 2); }} placeholder="Try chicken breast, oats, or a brand…" />{searching && <Loader2 className="spin" />}</div>
+      <div className="search-box"><Search /><Input aria-label="Search foods" autoFocus value={query} onChange={event => { setQuery(event.target.value); setResults([]); setPartial(false); setIssues([]); setShowSearchDetails(false); setHasMore(false); setError(null); setSearching(event.target.value.trim().length >= 2); }} placeholder="Try chicken breast, oats, or a brand…" />{searching && <Loader2 className="spin" />}</div>
       <div className="food-actions"><Button variant="outline" onClick={() => { setMode('scan'); setSearching(false); setError(null); }}><ScanBarcode />Scan barcode</Button><Button variant="outline" onClick={() => { setMode('custom'); setSearching(false); setError(null); }}><Plus />Add custom food</Button></div>
       <div className="source-pills"><span>Restaurant menus</span><span>USDA</span><span>Open Food Facts</span><span>Community foods</span></div>
-      {partial && <p className="food-notice" role="status">Some nutrition databases are unavailable. Showing available matches from the catalog and other sources.</p>}
+      {partial && <div className="food-notice" role="status">
+        <button type="button" className="food-notice-toggle" aria-label="Some nutrition databases are unavailable." aria-expanded={showSearchDetails} aria-controls={searchDetailsId} onClick={() => setShowSearchDetails(value => !value)}>
+          <span>Some nutrition databases are unavailable.<small>{showSearchDetails ? 'Hide details' : 'Show details'}</small></span><ChevronRight aria-hidden="true" />
+        </button>
+        <div id={searchDetailsId} className="food-notice-details" hidden={!showSearchDetails}>
+          {issues.length ? <ul>{issues.map(issue => <li key={issue.source}><strong>{issue.source}: </strong>{issue.message}</li>)}</ul> : <p>The search service did not provide details about which databases failed. Try searching again.</p>}
+          <p>Showing available matches from the catalog and other sources. You can still choose a result or add a custom food.</p>
+        </div>
+      </div>}
       <div className="search-results">{results.map(food => <button className="result-row" key={food.id} onClick={() => choose(food)}>{food.image ? <img src={food.image} alt="" /> : <div className="result-fallback">{food.name.charAt(0)}</div>}<div><strong>{food.name}</strong><span>{food.brand ? `${food.brand} · ` : ''}{food.source}</span><FoodVerification verified={food.verified} /><small>{Math.round(food.calories)} kcal · P {Math.round(food.protein)}g · C {Math.round(food.carbs)}g · F {Math.round(food.fat)}g {nutritionLabel(food)}</small></div><ChevronRight /></button>)}
         {!results.length && !error && <div className="search-empty"><Search /><strong>{searching ? 'Searching food databases…' : query.trim().length < 2 ? 'Find any food' : 'No matches yet'}</strong><span>{query.trim().length < 2 ? 'Search by food, brand, or restaurant.' : 'Try another name, or add a custom food above.'}</span></div>}
         {hasMore && <p className="food-notice">Showing the first 100 matches. Add an item name to narrow your search.</p>}

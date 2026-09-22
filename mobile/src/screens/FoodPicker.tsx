@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { ActivityIndicator, Image, Linking, Text, View } from 'react-native';
+import { ActivityIndicator, Image, Linking, Pressable, Text, View } from 'react-native';
 import { ChevronLeft, ChevronRight, Minus, Plus, ScanBarcode, Search } from 'lucide-react-native';
 import { useSession } from '../auth/Session';
 import { Action, Card, colors, ErrorNotice, Field, styles, useLayout } from '../components/ui';
@@ -7,6 +7,7 @@ import { BarcodeScanner } from '../components/BarcodeScanner';
 import { CustomFoodForm } from '../components/CustomFoodForm';
 import { FoodVerification } from '../components/FoodVerification';
 import { nutritionLabel } from '../../../lib/food';
+import type { FoodSearchIssue, FoodSearchResult } from '../../../lib/food-search';
 import { errorMessage } from '../lib/api';
 import { scaleFood } from '../lib/nutrition';
 import { meals, type Food, type Meal } from '../lib/types';
@@ -22,6 +23,8 @@ export function FoodPicker({ date, initialMeal, onSaved, initialFood, onIngredie
   const [scanning, setScanning] = useState(false);
   const [custom, setCustom] = useState(false);
   const [partial, setPartial] = useState(false);
+  const [issues, setIssues] = useState<FoodSearchIssue[]>([]);
+  const [showSearchDetails, setShowSearchDetails] = useState(false);
   const [hasMore, setHasMore] = useState(false);
   const [quantity, setQuantity] = useState('1');
   const [unit, setUnit] = useState<AmountUnit>('serving');
@@ -29,7 +32,6 @@ export function FoodPicker({ date, initialMeal, onSaved, initialFood, onIngredie
   const [error, setError] = useState<string | null>(null);
   const [saving, setSaving] = useState(false);
   const [searchRevision, setSearchRevision] = useState(0);
-  const onlineSearch = useRef(false);
   const saveLock = useRef(false);
   const scaled = selected ? scaleFood(selected, Number(quantity), unit) : null;
   useEffect(() => { onTitle?.(selected ? 'Choose amount' : custom ? 'Add custom food' : scanning ? 'Scan barcode' : 'Add food'); }, [selected, scanning, custom, onTitle]);
@@ -43,12 +45,11 @@ export function FoodPicker({ date, initialMeal, onSaved, initialFood, onIngredie
 
   useEffect(() => {
     if (custom || scanning || selected || query.trim().length < 2) return;
-    const online = onlineSearch.current; onlineSearch.current = false;
     const controller = new AbortController();
     const timer = setTimeout(() => {
       setSearching(true); setError(null);
-      void api<{ foods: Food[]; partial?: boolean; hasMore?: boolean }>(`/api/foods/search?q=${encodeURIComponent(query.trim())}${online ? '&online=1' : ''}`, { signal: controller.signal })
-        .then(data => { if (!controller.signal.aborted) { setResults(data.foods); setPartial(!!data.partial); setHasMore(!!data.hasMore); } })
+      void api<FoodSearchResult>(`/api/foods/search?q=${encodeURIComponent(query.trim())}`, { signal: controller.signal })
+        .then(data => { if (!controller.signal.aborted) { setResults(data.foods); setPartial(!!data.partial); setIssues(data.issues ?? []); setHasMore(!!data.hasMore); } })
         .catch(error => { if (!controller.signal.aborted) setError(errorMessage(error)); })
         .finally(() => { if (!controller.signal.aborted) setSearching(false); });
     }, 350);
@@ -71,13 +72,22 @@ export function FoodPicker({ date, initialMeal, onSaved, initialFood, onIngredie
           {custom ? <CustomFoodForm initialName={query} api={api} onSaved={selectFood} onBack={() => setCustom(false)} onBusy={busy => { setSaving(busy); onBusy?.(busy); }}/>
             : scanning ? <BarcodeScanner lookup={lookupBarcode} onFound={selectFood} onBack={() => { setScanning(false); setSearching(false); }} /> : !selected ? <>
             <Field label="Search foods" placeholder="Try oats, chicken, or a brand…" autoFocus autoCorrect={false} returnKeyType="search" value={query}
-              onChangeText={value => { onlineSearch.current = false; setQuery(value); setResults([]); setError(null); setPartial(false); setHasMore(false); setSearching(value.trim().length >= 2); }} />
-            {local && query.trim().length >= 2 && <Action secondary disabled={searching} onPress={() => { onlineSearch.current = true; setSearchRevision(value => value + 1); }}>Search Open Food Facts online</Action>}
+              onChangeText={value => { setQuery(value); setResults([]); setError(null); setPartial(false); setIssues([]); setShowSearchDetails(false); setHasMore(false); setSearching(value.trim().length >= 2); }} />
             <Action secondary label="Scan barcode" onPress={() => { setScanning(true); setSearching(false); setError(null); }}><ScanBarcode size={20} color={colors.mint} /><Text style={styles.body}>Scan barcode</Text></Action>
             <Action secondary onPress={() => { setCustom(true); setSearching(false); setError(null); }}>Add custom food</Action>
-            <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 7 }}>{(local ? ['Restaurant menus', 'Downloaded foods', 'Saved lookups', 'My foods'] : ['Restaurant menus', 'USDA', 'Open Food Facts', 'Community foods']).map(source => <Text key={source} style={{ color: colors.muted, fontSize: 11, backgroundColor: colors.raised, borderRadius: 20, paddingVertical: 5, paddingHorizontal: 9 }}>{source}</Text>)}</View>
-            {local && <Text style={styles.muted}>Searches use foods on your device. Missing barcodes are looked up online and saved for offline use.</Text>}
-            {partial && <Text accessibilityRole="alert" style={{ color: colors.amber, fontSize: 12 }}>Some nutrition databases are unavailable. Showing available matches from the catalog and other sources.</Text>}
+            <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 7 }}>{(local ? ['Restaurant menus', 'Downloaded foods', 'Saved lookups', 'Open Food Facts', 'My foods'] : ['Restaurant menus', 'USDA', 'Open Food Facts', 'Community foods']).map(source => <Text key={source} style={{ color: colors.muted, fontSize: 11, backgroundColor: colors.raised, borderRadius: 20, paddingVertical: 5, paddingHorizontal: 9 }}>{source}</Text>)}</View>
+            {local && <Text style={styles.muted}>Searches automatically include Open Food Facts. Online results are saved for offline use.</Text>}
+            {partial && <View accessibilityLiveRegion="polite" style={{ gap: 8 }}>
+              <Pressable accessibilityRole="button" accessibilityLabel="Some nutrition databases are unavailable." accessibilityHint="Show or hide database details" aria-expanded={showSearchDetails} onPress={() => setShowSearchDetails(value => !value)}
+                style={{ flexDirection: 'row', alignItems: 'center', gap: 8, minHeight: 48 }}>
+                <View style={{ flex: 1, gap: 3 }}><Text style={{ color: colors.amber, fontSize: 12 }}>Some nutrition databases are unavailable.</Text><Text style={{ color: colors.amber, fontSize: 11, textDecorationLine: 'underline' }}>{showSearchDetails ? 'Hide details' : 'Show details'}</Text></View>
+                <ChevronRight color={colors.amber} size={18} style={{ transform: [{ rotate: showSearchDetails ? '90deg' : '0deg' }] }} />
+              </Pressable>
+              {showSearchDetails && <View style={{ gap: 8, padding: 12, borderRadius: 12, backgroundColor: colors.raised }}>
+                {issues.length ? issues.map(issue => <Text key={issue.source} style={styles.muted}><Text style={{ color: colors.amber, fontWeight: '600' }}>{issue.source}: </Text>{issue.message}</Text>) : <Text style={styles.muted}>The search service did not provide details about which databases failed. Try searching again.</Text>}
+                <Text style={styles.muted}>Showing available matches from the catalog and other sources. You can still choose a result or add a custom food.</Text>
+              </View>}
+            </View>}
             {searching ? <View style={styles.center}><ActivityIndicator color={colors.mint} /><Text style={styles.muted}>Searching food databases…</Text></View>
               : !results.length && !error ? <View style={styles.center}><Search size={36} color={colors.mint} /><Text style={styles.heading}>{query.trim().length < 2 ? 'Find your next bite' : 'No matches yet'}</Text><Text style={[styles.muted, { textAlign: 'center' }]}>{query.trim().length < 2 ? 'Search by food, brand, or product name.' : 'Try another name, or add a custom food above.'}</Text></View> : null}
             {results.map(food => <Action key={food.id} quiet secondary style={{ paddingHorizontal: 0, justifyContent: 'flex-start', borderBottomWidth: 1, borderColor: colors.border }} onPress={() => selectFood(food)}>

@@ -229,6 +229,19 @@ describe("shared food catalog", () => {
     const result = await response.json() as { partial: boolean; foods: Food[] };
     expect(result.partial).toBe(true);
     expect(result.foods).toHaveLength(1);
+    expect(result).toMatchObject({ issues: [
+      { source: 'USDA FoodData Central', message: expect.stringMatching(/connection/i) },
+      { source: 'Open Food Facts', message: expect.stringMatching(/connection/i) },
+    ] });
+  });
+  it('identifies only the unavailable provider and explains its rate limit', async () => {
+    vi.stubGlobal('fetch', async (url: string) => url.includes('api.nal.usda.gov')
+      ? new Response('', { status: 429 }) : Response.json({ products: [ghostProduct] }));
+    const response = await call(search, '/api/foods/search?q=Energy', { user: 'auth0|alice' });
+    expect(await response.json()).toMatchObject({
+      partial: true, foods: [expect.objectContaining({ id: `off-${ghostProduct.code}` })],
+      issues: [{ source: 'USDA FoodData Central', message: expect.stringMatching(/too many requests/i) }],
+    });
   });
 });
 

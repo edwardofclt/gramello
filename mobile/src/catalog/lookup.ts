@@ -2,6 +2,7 @@ import { normalizeBarcode } from '../../../lib/barcode';
 import { lookupBarcode } from '../../../lib/barcode-food';
 import { searchOpenFoodFacts } from '../../../lib/food-providers';
 import type { Food } from '../../../lib/food';
+import { FoodProviderError } from '../../../lib/food-search';
 import type { FoodCatalog } from '../local/repository';
 import { serialized, transaction, type SqliteConnection } from '../local/database';
 import { foodSchema } from '../local/records';
@@ -25,7 +26,7 @@ export async function createFoodLookup(catalog: FoodCatalog, cache: SqliteConnec
   function reserve(kind: keyof typeof requests) {
     const now = Date.now(), times = requests[kind];
     while (times.length && times[0] <= now - 60_000) times.shift();
-    if (times.length >= (kind === 'barcode' ? 15 : 10)) throw new Error('Too many online lookups. Try again in a minute; downloaded foods are still available.');
+    if (times.length >= (kind === 'barcode' ? 15 : 10)) throw new FoodProviderError('Too many online lookups. Try again in a minute; downloaded foods are still available.', 429);
     times.push(now);
   }
   const save = (foods: Food[], requestedCode?: string) => serialized(cache, () => transaction(cache, async () => {

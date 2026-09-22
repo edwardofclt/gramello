@@ -12,7 +12,7 @@ web app and an Expo browser client. They use separate data stores:
 | --- | --- | --- |
 | Sign-in | None | Auth0 |
 | Diary, meals, and goals | Local SQLite on each device | Server database, scoped to the signed-in account |
-| Food search | Offline USDA and restaurant catalogs, cached lookups, private custom foods; Open Food Facts for missing barcodes and explicit online searches | Live USDA/Open Food Facts, imported restaurant menus, and shared custom foods |
+| Food search | Offline USDA and restaurant catalogs, cached lookups, private custom foods; automatic Open Food Facts searches and missing-barcode lookups | Live USDA/Open Food Facts, imported restaurant menus, and shared custom foods |
 | Moving data | User-directed backup export/import | Same-account access to the hosted diary |
 
 Native data does not sync with the hosted diary or other devices. Migration
@@ -66,8 +66,10 @@ foods and all 42,529 previously imported restaurant foods across 150 catalogs.
 Name search works on first launch without a network connection. Barcode lookup
 checks installed and cached foods first, then queries Open Food Facts directly
 for missing codes and saves successful matches for offline use. Typing a name
-searches on-device foods; **Search Open Food Facts online** requests additional
-matches and caches them. Unknown products offer name search or custom entry.
+searches on-device foods and automatically includes Open Food Facts matches,
+which are cached for offline use. If an online database is unavailable, available
+foods remain usable; tap the warning to see the affected source and failure details.
+Unknown products offer name search or custom entry.
 
 The app checks for signed catalog updates at launch and when returning to the
 foreground. Successful checks defer the next automatic check by 24–25 hours;
