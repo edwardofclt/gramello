@@ -5,12 +5,18 @@ import path from 'node:path';
 const source = path.dirname(fileURLToPath(import.meta.url));
 const root = path.dirname(source);
 const output = path.join(root, 'out', 'website');
-const origin = 'https://edwardofclt.github.io/gramello';
+const siteUrl = new URL(process.env.SITE_URL || 'https://gramello.com');
+if (siteUrl.protocol !== 'https:' || siteUrl.username || siteUrl.password || siteUrl.search || siteUrl.hash) {
+  throw new Error('SITE_URL must be a public HTTPS URL without credentials, query, or fragment');
+}
+const origin = siteUrl.href.replace(/\/$/, '');
+const basePath = siteUrl.pathname.replace(/\/$/, '');
 await rm(output, { recursive: true, force: true });
 await mkdir(output, { recursive: true });
 for (const file of ['index.html', 'styles.css', 'site.js', 'assets']) {
   await cp(path.join(source, file), path.join(output, file), { recursive: true });
 }
+await writeFile(path.join(output, 'index.html'), (await readFile(path.join(source, 'index.html'), 'utf8')).replaceAll('https://gramello.com', origin));
 const escape = value => value.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;');
 const slug = value => value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 const legalLinks = { 'privacy.md': '../privacy/', 'support.md': '../support/', 'terms.md': '../terms/' };
@@ -66,7 +72,7 @@ for (const page of pages) {
   await writeFile(path.join(output, page.route, 'index.html'), chrome(page.title, page.description, content, page.route));
 }
 // Absolute project paths keep assets and navigation working even on an unknown nested URL.
-const notFound = chrome('A little off the menu.', 'That page could not be found. Let’s get you back to your day.', '<section class="not-found"><a class="button" href="../">Back to Gramello <span aria-hidden="true">↗</span></a></section>', '404').replaceAll('href="../', 'href="/gramello/').replaceAll('src="../', 'src="/gramello/').replace(/<link rel="canonical"[^>]+>/, '<meta name="robots" content="noindex">');
+const notFound = chrome('A little off the menu.', 'That page could not be found. Let’s get you back to your day.', '<section class="not-found"><a class="button" href="../">Back to Gramello <span aria-hidden="true">↗</span></a></section>', '404').replaceAll('href="../', `href="${basePath}/`).replaceAll('src="../', `src="${basePath}/`).replace(/<link rel="canonical"[^>]+>/, '<meta name="robots" content="noindex">');
 await writeFile(path.join(output, '404.html'), notFound);
 await writeFile(path.join(output, '.nojekyll'), '');
 await writeFile(path.join(output, 'robots.txt'), `User-agent: *\nAllow: /\nSitemap: ${origin}/sitemap.xml\n`);

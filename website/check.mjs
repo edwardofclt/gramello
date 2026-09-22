@@ -3,7 +3,9 @@ import { readFile, readdir, stat } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 const root = fileURLToPath(new URL('../out/website/', import.meta.url));
-const base = 'https://edwardofclt.github.io/gramello/';
+const homeHtml = await readFile(path.join(root, 'index.html'), 'utf8');
+const base = homeHtml.match(/<link rel="canonical" href="([^"]+)"/)[1];
+const basePath = new URL(base).pathname;
 let checked = 0;
 async function walk(dir) {
   const files = [];
@@ -25,8 +27,8 @@ for (const file of (await walk(root)).filter(file => file.endsWith('.html'))) {
   for (const [, target] of html.matchAll(/(?:href|src)="([^"]+)"/g)) {
     const url = new URL(target, page);
     if (url.origin !== new URL(base).origin || url.protocol !== 'https:') continue;
-    assert(url.pathname.startsWith('/gramello/'), `${file}: link escapes project base: ${target}`);
-    let local = path.join(root, decodeURIComponent(url.pathname.slice('/gramello/'.length)));
+    assert(url.pathname.startsWith(basePath), `${file}: link escapes project base: ${target}`);
+    let local = path.join(root, decodeURIComponent(url.pathname.slice(basePath.length)));
     const info = await stat(local).catch(() => null);
     assert(info, `${file}: missing local target ${target}`);
     if (info.isDirectory()) local = path.join(local, 'index.html');

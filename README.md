@@ -100,10 +100,10 @@ local database. This does not modify the production diary.
 
 ## Public website and legal pages
 
-The [Gramello website](https://edwardofclt.github.io/gramello/) includes the
-[privacy policy](https://edwardofclt.github.io/gramello/privacy/),
-[terms and conditions](https://edwardofclt.github.io/gramello/terms/), and
-[support and data requests](https://edwardofclt.github.io/gramello/support/).
+The [Gramello website](https://gramello.com/) includes the
+[privacy policy](https://gramello.com/privacy/),
+[terms and conditions](https://gramello.com/terms/), and
+[support and data requests](https://gramello.com/support/).
 It is a separate static GitHub Pages site; the authenticated diary stays on Fly.io.
 See [website development and publishing](website/README.md) for local preview,
 content sources, and the automatic Pages deployment.

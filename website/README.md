@@ -1,7 +1,7 @@
 # Gramello public website
 
 A static marketing website with privacy, terms, support, and an accessible 404
-page. Published at https://edwardofclt.github.io/gramello/ using GitHub Pages.
+page. Published at https://gramello.com/ using GitHub Pages.
 The connected diary remains at https://nourish-api.fly.dev.
 
 ## Preview and build
@@ -16,7 +16,9 @@ python3 -m http.server 4173 --directory out/website
 
 Open http://localhost:4173. Generated output is ignored by Git. Only `out/website`
 is uploaded; app source, development docs, and server files are not published.
-All links support GitHub Pages' `/gramello/` project prefix.
+The default public origin is `https://gramello.com`. Set `SITE_URL` when building
+for a different HTTPS origin or a GitHub Pages project prefix; canonical URLs,
+sitemaps, and 404 navigation follow that value.
 
 The `Gramello website` workflow validates pull requests. After a matching change
 merges into `main`, it builds and deploys the same static output. GitHub Pages
