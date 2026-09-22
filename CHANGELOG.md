@@ -1,3 +1,9 @@
+## [1.12.1](https://github.com/edwardofclt/gramello/compare/v1.12.0...v1.12.1) (2026-09-22)
+
+### Bug Fixes
+
+* automate food searches and explain provider outages ([#29](https://github.com/edwardofclt/gramello/issues/29)) ([09e1d65](https://github.com/edwardofclt/gramello/commit/09e1d65bc3765f1aff5f55dbfe66d814ddf79cb2))
+
 ## [1.12.0](https://github.com/edwardofclt/gramello/compare/v1.11.1...v1.12.0) (2026-09-22)
 
 ### Features
