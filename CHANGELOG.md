@@ -1,3 +1,9 @@
+## [1.12.0](https://github.com/edwardofclt/gramello/compare/v1.11.1...v1.12.0) (2026-09-22)
+
+### Features
+
+* add Siri macro check-in ([#28](https://github.com/edwardofclt/gramello/issues/28)) ([cbce3e5](https://github.com/edwardofclt/gramello/commit/cbce3e58504c8d769551ecc188eaf8f818fd5db0))
+
 ## [1.11.1](https://github.com/edwardofclt/gramello/compare/v1.11.0...v1.11.1) (2026-09-22)
 
 ### Bug Fixes
