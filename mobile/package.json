@@ -9,6 +9,8 @@
     "android": "expo run:android",
     "web": "expo start --web",
     "typecheck": "tsc --noEmit",
+    "test:siri": "swift test --package-path native/siri",
+    "test:siri:ios": "bash native/siri/typecheck-ios.sh",
     "export": "expo export --platform ios --platform android"
   },
   "dependencies": {

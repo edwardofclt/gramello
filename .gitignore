@@ -56,6 +56,8 @@ mobile/.expo/
 mobile/ios/
 mobile/android/
 mobile/dist/
+mobile/native/siri/.build/
+mobile/native/siri/.swiftpm/
 
 # Python extraction script bytecode.
 __pycache__/

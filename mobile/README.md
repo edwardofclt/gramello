@@ -8,6 +8,55 @@ An Expo / React Native app using gluestack-ui core 5, with a daily diary,
 food search, recipes, water tracking, trends, and editable nutrition goals.
 Native builds use local SQLite; the browser edition uses the hosted API.
 
+## Siri macro check-in (iOS)
+
+After installing a native build with this feature, open Gramello once and say:
+**“Hey Siri, give me my macro check-in in Gramello.”** You can also run
+**Shortcuts → App Shortcuts → Gramello → Macro check-in**. Settings includes the
+voice phrase. Siri requests device authentication when necessary.
+
+The check-in compares logged-day averages for calories, protein, carbs, and fat
+against current daily goals over the **seven completed local calendar days before
+today**. Days without entries are excluded, and Siri reports how many days had
+entries. Logging something does not establish that the whole day was logged; the
+response explicitly notes that logs may be incomplete. Unsaved goals are labeled
+as defaults. Goal history is not stored, so previous goals are not inferred.
+
+This is a read-only App Intent with a calculated spoken response. It uses no LLM,
+API key, AI service, or new runtime dependency. It supports the app's existing
+iOS minimum (16.4+) and does not require Apple Intelligence. Siri's own availability
+and processing depend on system settings. Arbitrary questions without the app's
+name are not guaranteed to invoke this shortcut.
+
+The Expo config plugin `plugins/withSiriCheckIn.cjs` installs the Swift files from
+`native/siri/Sources/GramelloSiri` into the generated main app target, including
+App Intents metadata. **Rebuild the native app**; Expo Go and OTA JavaScript
+updates cannot add this capability. No SiriKit extension or App Group is needed.
+The intent opens Expo's personal SQLite database in read-only mode and reads a
+transactional snapshot, so edits, imports, and recovery are reflected on the next
+invocation without maintaining a second copy of the diary. No personal content is
+indexed into Spotlight or sent to analytics by the intent.
+
+On macOS with Xcode, run `pnpm --filter @gramello/mobile test:siri` for native
+SQLite and summary tests. `pnpm test` includes the config-plugin integration test.
+Run `pnpm --filter @gramello/mobile test:siri:ios` to compile-check against Expo's
+actual SQLite headers and the iOS simulator SDK. The Siri CI workflow runs both
+native checks. A full native build additionally verifies linking and shortcut metadata.
+The reader must be reviewed when the local storage filename, schema, default
+goals, or SQLite configuration changes.
+
+Before release, verify on a physical iPhone with the installed native build:
+
+1. Run the shortcut with no prior diary, then with entries on several prior days.
+2. Compare the spoken numbers against the diary and current goals; check that
+   today and days with no entries are excluded.
+3. Change goals, delete an entry, import a backup, and restore the previous diary;
+   invoke again after each operation and verify fresh results.
+4. Invoke while the app is closed and while the device is locked; verify the
+   authentication prompt and spoken response.
+5. Test each published phrase with Siri, plus the shortcut from Shortcuts. Natural
+   language routing must be tested on-device even when compilation and unit tests pass.
+
 ## Anonymous usage analytics
 
 iOS and Android use [Segment Analytics React Native](https://github.com/segmentio/analytics-react-native).
