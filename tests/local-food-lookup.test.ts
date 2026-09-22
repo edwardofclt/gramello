@@ -60,23 +60,38 @@ describe('native food discovery', () => {
     await expect(api('/api/foods/search?q=038000590993&online=1')).resolves.toMatchObject({ foods: [expect.objectContaining({ id: 'off-0038000590993' })], partial: false });
     expect(String(fetch.mock.calls[0]?.[0])).toContain('/product/038000590993?');
   });
-  it('prefers installed barcode records and keeps ordinary name searches offline', async () => {
+  it('prefers installed barcode records and supports explicitly offline name searches', async () => {
     const food: Food = { id: 'usda-1', name: 'Rice', source: 'USDA', servingGrams: 100, servingLabel: '100 g', calories: 130, protein: 3, carbs: 28, fat: 0 };
     const fetch = vi.fn(() => { throw new Error('offline'); }); vi.stubGlobal('fetch', fetch);
     const { api } = await setup({ getFood: async () => food, search: async () => [food], barcode: async () => food });
     await expect(api('/api/foods/barcode?code=038000590993')).resolves.toEqual({ food });
-    await expect(api('/api/foods/search?q=rice')).resolves.toMatchObject({ foods: [food], partial: false });
+    await expect(api('/api/foods/search?q=rice&online=0')).resolves.toMatchObject({ foods: [food], partial: false });
     expect(fetch).not.toHaveBeenCalled();
   });
-  it('searches online only when requested and makes those products available to offline barcode lookup', async () => {
+  it('automatically searches online and keeps the products available when the provider is unreachable', async () => {
     const fetch = vi.fn(async () => Response.json({ products: [product] })); vi.stubGlobal('fetch', fetch);
     const { api, reopen } = await setup();
-    await expect(api('/api/foods/search?q=rice%20krispies&online=1')).resolves.toMatchObject({ foods: expect.arrayContaining([expect.objectContaining({ id: 'off-0038000590993' })]), partial: false });
+    await expect(api('/api/foods/search?q=rice%20krispies')).resolves.toMatchObject({ foods: expect.arrayContaining([expect.objectContaining({ id: 'off-0038000590993' })]), partial: false });
     expect(fetch).toHaveBeenCalledTimes(1);
     vi.stubGlobal('fetch', vi.fn(() => { throw new Error('offline'); }));
     const next = await reopen();
     await expect(next.api('/api/foods/barcode?code=038000590993')).resolves.toMatchObject({ food: { id: 'off-0038000590993' } });
-    await expect(next.api('/api/foods/search?q=rice%20krispies&online=1')).resolves.toMatchObject({ foods: expect.arrayContaining([expect.objectContaining({ id: 'off-0038000590993' })]), partial: true });
+    await expect(next.api('/api/foods/search?q=rice%20krispies')).resolves.toMatchObject({
+      foods: expect.arrayContaining([expect.objectContaining({ id: 'off-0038000590993' })]), partial: true,
+      issues: [{ source: 'Open Food Facts', message: expect.stringMatching(/connection/i) }],
+    });
+  });
+  it.each([
+    ['rate limit', () => Promise.resolve(new Response('', { status: 429 })), /too many requests/i],
+    ['service failure', () => Promise.resolve(new Response('', { status: 503 })), /service problem/i],
+    ['timeout', () => Promise.reject(new DOMException('Timed out', 'TimeoutError')), /too long/i],
+  ])('explains a search %s while preserving downloaded foods', async (_name, fetch, message) => {
+    vi.stubGlobal('fetch', fetch);
+    const { api } = await setup();
+    await expect(api('/api/foods/search?q=banana')).resolves.toMatchObject({
+      foods: expect.arrayContaining([expect.objectContaining({ id: 'usda-173944' })]), partial: true,
+      issues: [{ source: 'Open Food Facts', message: expect.stringMatching(message) }],
+    });
   });
   it('keeps cached products visible offline when a broad query has hundreds of catalog matches', async () => {
     vi.stubGlobal('fetch', vi.fn(async () => Response.json({ products: [{ ...product, product_name: 'Chocolate cereal bar' }] })));
@@ -136,6 +151,6 @@ describe('native food discovery', () => {
     const { api } = await setup();
     for (let i = 0; i < 15; i++) await expect(api('/api/foods/barcode?code=038000590962')).rejects.toThrow('No product found');
     await expect(api('/api/foods/barcode?code=038000590962')).rejects.toThrow('Too many');
-    await expect(api('/api/foods/search?q=banana')).resolves.toMatchObject({ foods: expect.arrayContaining([expect.objectContaining({ id: 'usda-173944' })]), partial: false });
+    await expect(api('/api/foods/search?q=banana&online=0')).resolves.toMatchObject({ foods: expect.arrayContaining([expect.objectContaining({ id: 'usda-173944' })]), partial: false });
   });
 });

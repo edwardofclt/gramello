@@ -73,6 +73,7 @@
 .ingredient-row>div{display:flex;flex-direction:column;gap:5px;min-width:0}
 .ingredient-row strong{font-size:.85rem;overflow-wrap:anywhere}
 .ingredient-row span{color:#9cb0bd;font-size:.75rem}
+.food-notice-toggle{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;min-height:44px;text-align:left;color:inherit;border-radius:8px;cursor:pointer}.food-notice-toggle small{display:block;font-size:.72rem;text-decoration:underline;margin-top:2px}.food-notice-toggle svg{width:18px;height:18px;flex-shrink:0}.food-notice-toggle[aria-expanded=true] svg{transform:rotate(90deg)}.food-notice-toggle:focus-visible{outline:2px solid #ffce8c;outline-offset:4px}.food-notice-details{margin-top:8px;padding:12px;background:#132f41;border-radius:12px;color:#a6bac7}.food-notice-details ul{display:grid;gap:8px;list-style:none;padding:0;margin:0 0 10px}.food-notice-details strong{color:#ffce8c}
 .batch-summary{padding:16px;background:#132f41;border-radius:14px;color:#9cb0bd;font-size:.8rem;line-height:1.8}
 .batch-summary strong{color:#6ee7c7;font-size:1rem}
 .meal-builder > .nutrition-preview{margin:0}

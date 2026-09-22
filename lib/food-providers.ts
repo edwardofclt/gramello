@@ -1,5 +1,6 @@
 import type { Food } from './food';
 import { productFood, productFields, type Product } from './barcode-food';
+import { FoodProviderError } from './food-search';
 
 function number(value: unknown): number | null {
   if ((typeof value !== 'number' && typeof value !== 'string') || (typeof value === 'string' && !value.trim())) return null;
@@ -18,7 +19,7 @@ export async function searchOpenFoodFacts(query: string, signal: AbortSignal): P
   const fields = productFields;
   const params = new URLSearchParams({ search_terms:query, search_simple:'1', action:'process', json:'1', page_size:'20', fields });
   const response = await fetch(`https://world.openfoodfacts.org/cgi/search.pl?${params}`, { headers:{'User-Agent':'GramelloTracker/1.0 (personal food diary)'}, signal });
-  if (!response.ok) throw new Error(`Open Food Facts ${response.status}`);
+  if (!response.ok) throw new FoodProviderError(`Open Food Facts ${response.status}`, response.status);
   const data = await response.json() as { products?: Product[] };
   return (data.products ?? []).flatMap(product => {
     if (!product.code) return [];
@@ -29,7 +30,7 @@ export async function searchOpenFoodFacts(query: string, signal: AbortSignal): P
 
 export async function searchUsda(query: string, signal: AbortSignal): Promise<Food[]> {
   const response = await fetch(`https://api.nal.usda.gov/fdc/v1/foods/search?api_key=DEMO_KEY&query=${encodeURIComponent(query)}&pageSize=20`, { signal });
-  if (!response.ok) throw new Error(`USDA ${response.status}`);
+  if (!response.ok) throw new FoodProviderError(`USDA ${response.status}`, response.status);
   const data = await response.json() as { foods?: Array<{ fdcId?:number; description?:string; brandOwner?:string; servingSize?:unknown; servingSizeUnit?:string; householdServingFullText?:string; foodNutrients?:Array<{nutrientName?:string;unitName?:string;value?:unknown}> }> };
   return (data.foods ?? []).flatMap(product => {
     const nutrients = product.foodNutrients ?? [];
