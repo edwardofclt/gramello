@@ -3,7 +3,11 @@ const { copyFile, mkdir } = require('node:fs/promises');
 const path = require('node:path');
 const { IOSConfig, withXcodeProject } = require('expo/config-plugins');
 
-const sourceNames = ['MacroCheckIn.swift', 'MacroCheckInReader.swift', 'MacroCheckInIntent.swift'];
+const sourceNames = [
+  'MacroCheckIn.swift', 'MacroCheckInReader.swift', 'MacroCheckInIntent.swift',
+  'FoodRecommendation.swift', 'RecommendationCatalog.swift', 'FoodRecommendationIntent.swift',
+  'DiaryActions.swift', 'SavedDiaryMeal.swift', 'DiaryIntents.swift',
+];
 
 async function installSiriSources({ project, projectName, platformProjectRoot }) {
   const destination = path.join(platformProjectRoot, projectName, 'Siri');

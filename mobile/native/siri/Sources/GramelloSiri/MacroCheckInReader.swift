@@ -36,23 +36,47 @@ enum MacroCheckInReader {
               let end = calendar.date(byAdding: .day, value: -1, to: today) else {
             throw MacroCheckInError.unavailable
         }
+        let formatter = dateFormatter(timeZone: timeZone)
+        let startDate = formatter.string(from: start), endDate = formatter.string(from: end)
+        let snapshot = try readSnapshot(databaseURL: databaseURL, startDate: startDate, endDate: endDate, formatter: formatter)
+        let total = snapshot.days.values.reduce(MacroAmounts.zero) { $0.adding($1) }
+        return MacroCheckIn(startDate: startDate, endDate: endDate, loggedDays: snapshot.days.count,
+                            averages: snapshot.days.isEmpty ? nil : total.divided(by: snapshot.days.count),
+                            goals: snapshot.savedGoals ?? .defaults, hasSavedGoals: snapshot.savedGoals != nil)
+    }
+
+    static func readToday(databaseURL: URL, now: Date = Date(), timeZone: TimeZone = .current) throws -> DailyMacroBudget {
+        let formatter = dateFormatter(timeZone: timeZone)
+        let today = formatter.string(from: now)
+        let snapshot = try readSnapshot(databaseURL: databaseURL, startDate: today, endDate: today, formatter: formatter)
+        return DailyMacroBudget(date: today, consumed: snapshot.days[today] ?? .zero,
+                                goals: snapshot.savedGoals ?? .defaults, hasEntries: snapshot.days[today] != nil,
+                                hasSavedGoals: snapshot.savedGoals != nil)
+    }
+
+    private static func dateFormatter(timeZone: TimeZone) -> DateFormatter {
         let formatter = DateFormatter()
         formatter.locale = Locale(identifier: "en_US_POSIX")
-        formatter.calendar = calendar
+        formatter.calendar = Calendar(identifier: .gregorian)
         formatter.timeZone = timeZone
         formatter.dateFormat = "yyyy-MM-dd"
-        let startDate = formatter.string(from: start), endDate = formatter.string(from: end)
+        return formatter
+    }
 
+    private struct DiarySnapshot {
+        let days: [String: MacroAmounts]
+        let savedGoals: MacroAmounts?
+    }
+
+    private static func readSnapshot(databaseURL: URL, startDate: String, endDate: String,
+                                     formatter: DateFormatter) throws -> DiarySnapshot {
         guard FileManager.default.fileExists(atPath: databaseURL.path) else { throw MacroCheckInError.noDiary }
-        let database = try CheckInDatabase(url: databaseURL)
+        let database = try SiriDatabase(url: databaseURL)
         // Schema, goals, and diary entries must come from the same snapshot,
         // including while the JavaScript repository replaces a backup.
         try database.execute("BEGIN DEFERRED TRANSACTION")
         defer { try? database.execute("ROLLBACK") }
-        var version = 0
-        try database.query("PRAGMA user_version") { statement in version = Int(sqlite3_column_int(statement, 0)) }
-        guard version != 0 else { throw MacroCheckInError.noDiary }
-        guard version == 1 else { throw MacroCheckInError.unsupportedSchema }
+        try database.validateSchema()
 
         var savedGoals: MacroAmounts?
         try database.query("SELECT value FROM records WHERE kind='goals' AND id='default'") { statement in
@@ -73,10 +97,7 @@ enum MacroCheckInReader {
                   formatter.string(from: parsedDate) == date else { throw MacroCheckInError.invalidData }
             days[date] = (days[date] ?? .zero).adding(amounts)
         }
-        let total = days.values.reduce(MacroAmounts.zero) { $0.adding($1) }
-        return MacroCheckIn(startDate: startDate, endDate: endDate, loggedDays: days.count,
-                            averages: days.isEmpty ? nil : total.divided(by: days.count),
-                            goals: savedGoals ?? .defaults, hasSavedGoals: savedGoals != nil)
+        return DiarySnapshot(days: days, savedGoals: savedGoals)
     }
 
     private struct EntryIdentity: Decodable {
@@ -90,11 +111,13 @@ enum MacroCheckInReader {
     }
 }
 
-private final class CheckInDatabase {
+final class SiriDatabase {
     private var handle: OpaquePointer?
 
-    init(url: URL) throws {
-        let result = sqlite3_open_v2(url.path, &handle, SQLITE_OPEN_READONLY | SQLITE_OPEN_FULLMUTEX, nil)
+    init(url: URL, writable: Bool = false) throws {
+        guard FileManager.default.fileExists(atPath: url.path) else { throw MacroCheckInError.noDiary }
+        // Never create a new diary from Siri. Expo and Siri use the same SQLite runtime.
+        let result = sqlite3_open_v2(url.path, &handle, (writable ? SQLITE_OPEN_READWRITE : SQLITE_OPEN_READONLY) | SQLITE_OPEN_FULLMUTEX, nil)
         guard result == SQLITE_OK else {
             _ = sqlite3_close(handle)
             handle = nil
@@ -104,6 +127,22 @@ private final class CheckInDatabase {
     }
 
     deinit { _ = sqlite3_close(handle) }
+
+    func validateSchema() throws {
+        var version = 0
+        try query("PRAGMA user_version") { version = Int(sqlite3_column_int($0, 0)) }
+        guard version != 0 else { throw MacroCheckInError.noDiary }
+        guard version == 1 else { throw MacroCheckInError.unsupportedSchema }
+    }
+
+    func transaction<T>(writable: Bool, _ work: () throws -> T) throws -> T {
+        try execute(writable ? "BEGIN IMMEDIATE" : "BEGIN DEFERRED TRANSACTION")
+        defer { try? execute("ROLLBACK") }
+        try validateSchema()
+        let result = try work()
+        try execute("COMMIT")
+        return result
+    }
 
     func execute(_ sql: String) throws {
         guard sqlite3_exec(handle, sql, nil, nil, nil) == SQLITE_OK else { throw MacroCheckInError.unavailable }

@@ -27,9 +27,10 @@ it('includes each Siri source in the app build once, and refreshes copied files 
 
   const target = project.getTarget('com.apple.product-type.application');
   const sources = project.pbxSourcesBuildPhaseObj(target.uuid).files;
-  const nativeNames = ['MacroCheckIn.swift', 'MacroCheckInReader.swift', 'MacroCheckInIntent.swift'];
+  const nativeNames = ['MacroCheckIn.swift', 'MacroCheckInReader.swift', 'MacroCheckInIntent.swift', 'FoodRecommendation.swift', 'RecommendationCatalog.swift', 'FoodRecommendationIntent.swift', 'DiaryActions.swift', 'SavedDiaryMeal.swift', 'DiaryIntents.swift'];
   for (const name of nativeNames) {
     expect(sources.filter((file: { comment: string }) => file.comment === `${name} in Sources`)).toHaveLength(1);
+    expect(readFileSync(path.join(root, 'ios', 'HelloWorld', 'Siri', name), 'utf8')).toBe(readFileSync(new URL(`../mobile/native/siri/Sources/GramelloSiri/${name}`, import.meta.url), 'utf8'));
   }
   // Round-trip the actual Xcode serialization: the project must remain parseable.
   writeFileSync(projectFile, project.writeSync());

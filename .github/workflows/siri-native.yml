@@ -5,6 +5,10 @@ on:
     paths:
       - 'mobile/native/siri/**'
       - 'mobile/plugins/withSiriCheckIn.cjs'
+      - 'tests/mobile-siri-*.test.ts'
+      - 'lib/food.ts'
+      - 'lib/meals.ts'
+      - 'lib/water.ts'
       - 'mobile/src/local/**'
       - 'mobile/package.json'
       - 'pnpm-lock.yaml'
@@ -14,6 +18,10 @@ on:
     paths:
       - 'mobile/native/siri/**'
       - 'mobile/plugins/withSiriCheckIn.cjs'
+      - 'tests/mobile-siri-*.test.ts'
+      - 'lib/food.ts'
+      - 'lib/meals.ts'
+      - 'lib/water.ts'
       - 'mobile/src/local/**'
       - 'mobile/package.json'
       - 'pnpm-lock.yaml'
@@ -38,3 +46,5 @@ jobs:
         run: swift test --package-path mobile/native/siri
       - name: Type-check the iOS App Intents against Expo SQLite
         run: pnpm --filter @gramello/mobile test:siri:ios
+      - name: Verify native writes against the app repository and backup format
+        run: pnpm test tests/mobile-siri-storage.test.ts tests/mobile-siri-plugin.test.ts
