@@ -3,6 +3,11 @@
   "build": {
     "development": { "developmentClient": true, "distribution": "internal", "ios": { "simulator": true } },
     "preview": { "distribution": "internal" },
+    "production-apk": {
+      "extends": "production",
+      "distribution": "internal",
+      "android": { "buildType": "apk", "credentialsSource": "remote" }
+    },
     "production": {
       "distribution": "store",
       "autoIncrement": true,
