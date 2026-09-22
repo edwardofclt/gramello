@@ -1,3 +1,9 @@
+## [1.10.0](https://github.com/edwardofclt/gramello/compare/v1.9.0...v1.10.0) (2026-09-22)
+
+### Features
+
+* move native diary and food catalogs onto the device ([#24](https://github.com/edwardofclt/gramello/issues/24)) ([646f176](https://github.com/edwardofclt/gramello/commit/646f1760c822102fe134ec03353bf43e412f9cb9))
+
 ## [1.9.0](https://github.com/edwardofclt/gramello/compare/v1.8.0...v1.9.0) (2026-09-22)
 
 ### Features
