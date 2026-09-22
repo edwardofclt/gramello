@@ -44,7 +44,7 @@ async function setup(page: Page, camera: boolean | 'pending' | 'blank' = false) 
       return stream;
     } });
   }, { camera });
-  await page.route('https://nourish.test/api/**', async route => {
+  await page.route('https://gramello.test/api/**', async route => {
     const request = route.request();
     const url = new URL(request.url());
     const headers = { 'access-control-allow-origin': '*', 'access-control-allow-headers': 'authorization,content-type', 'access-control-allow-methods': 'GET,POST,PUT,DELETE' };
@@ -141,7 +141,7 @@ test('returning to search cancels a pending lookup and ignores its late result',
   await setup(page);
   let release: () => void = () => {};
   const responseGate = new Promise<void>(resolve => { release = resolve; });
-  await page.route('https://nourish.test/api/foods/barcode?*', async route => {
+  await page.route('https://gramello.test/api/foods/barcode?*', async route => {
     if (route.request().method() === 'OPTIONS') return route.fulfill({ status: 204, headers: { 'access-control-allow-origin': '*', 'access-control-allow-headers': 'authorization' } });
     await responseGate;
     await route.fulfill({ json: { food: product }, headers: { 'access-control-allow-origin': '*', 'access-control-allow-headers': 'authorization' } }).catch(() => {});

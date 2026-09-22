@@ -35,11 +35,11 @@ for (const file of readdirSync(new URL("../drizzle/", import.meta.url)).filter(f
   database.exec(readFileSync(new URL(`../drizzle/${file}`, import.meta.url), "utf8"));
 }
 const configuration = {
-  AUTH0_DOMAIN: "nourish-tests.us.auth0.com",
+  AUTH0_DOMAIN: "gramello-tests.us.auth0.com",
   AUTH0_CLIENT_ID: "test-client",
   AUTH0_CLIENT_SECRET: "test-client-secret",
   AUTH0_SECRET: secret,
-  APP_BASE_URL: "https://nourish.test",
+  APP_BASE_URL: "https://gramello.test",
 };
 Object.assign(runtime.env, configuration, {
   DB: {
@@ -93,9 +93,9 @@ async function call(handler: (request: Request) => Promise<Response>, path: stri
     internal: { sid: "test-session", createdAt: Math.floor(Date.now() / 1000) },
   }, { secret }) : undefined;
   if (options.expired) vi.useRealTimers();
-  const request = new NextRequest(`https://nourish.test${path}`, {
+  const request = new NextRequest(`https://gramello.test${path}`, {
     method: options.method ?? "GET",
-    headers: { origin: "https://nourish.test", "content-type": "application/json", ...(cookie ? { cookie: `__session=${cookie}` } : {}), ...options.headers },
+    headers: { origin: "https://gramello.test", "content-type": "application/json", ...(cookie ? { cookie: `__session=${cookie}` } : {}), ...options.headers },
     body: options.body ? JSON.stringify(options.body) : undefined,
   });
   context.request = request;
@@ -111,7 +111,7 @@ afterEach(() => vi.unstubAllGlobals());
 
 describe("private API authentication", () => {
   it("reads an anonymous session without relying on identity headers", async () => {
-    context.request = new NextRequest("https://nourish.test", { headers: { "oai-authenticated-user-id": "forged" } });
+    context.request = new NextRequest("https://gramello.test", { headers: { "oai-authenticated-user-id": "forged" } });
     expect(await getCurrentUser()).toBeNull();
   });
   for (const [method, path, handler, body] of routes) {

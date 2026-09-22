@@ -7,7 +7,7 @@ test(`logs food, saves goals, reads trends, and signs out at ${width}px`, async 
   page.on('pageerror', error => errors.push(error.message));
   const entries: Record<string, unknown>[] = [];
   let goals = { calories: 2000, protein: 150, carbs: 200, fat: 67 };
-  await page.route('https://nourish.test/api/**', async route => {
+  await page.route('https://gramello.test/api/**', async route => {
     const request = route.request();
     const url = new URL(request.url());
     const headers = { 'access-control-allow-origin': '*', 'access-control-allow-headers': 'authorization,content-type', 'access-control-allow-methods': 'GET,POST,PUT,DELETE' };

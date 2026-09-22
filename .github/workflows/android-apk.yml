@@ -70,7 +70,7 @@ jobs:
           console.log(`Building Android version ${pkg.version} from ${process.env.RELEASE_TAG}`);
           NODE
       - run: pnpm install --frozen-lockfile
-      - run: pnpm --filter @nourish/mobile typecheck
+      - run: pnpm --filter @gramello/mobile typecheck
       - name: Set up Expo
         uses: expo/expo-github-action@v8
         with:

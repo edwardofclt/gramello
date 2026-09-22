@@ -8,7 +8,7 @@ for (const width of [390, 1440]) {
     let failures = 1;
     const errors: string[] = [];
     page.on('pageerror', error => errors.push(error.message));
-    await page.route('https://nourish.test/api/**', async route => {
+    await page.route('https://gramello.test/api/**', async route => {
       const request = route.request();
       const path = new URL(request.url()).pathname;
       const headers = { 'access-control-allow-origin': '*', 'access-control-allow-headers': 'authorization,content-type', 'access-control-allow-methods': 'GET,POST' };
@@ -27,7 +27,7 @@ for (const width of [390, 1440]) {
       return route.fulfill({ headers, json: {} });
     });
     await page.goto('/');
-    await page.getByRole('button', { name: 'Sign in to Nourish' }).click();
+    await page.getByRole('button', { name: 'Sign in to Gramello' }).click();
     await page.getByRole('button', { name: 'Add Dinner', exact: true }).click();
     await page.getByRole('button', { name: 'Add custom food', exact: true }).click();
     await page.getByRole('button', { name: 'Save custom food' }).click();
@@ -63,7 +63,7 @@ test('choosing a serving-only restaurant food resets a previous weight amount', 
   const weighted = { id: 'oats', name: 'Rolled oats', source: 'USDA', verified: true, nutritionBasis: '100g', servingGrams: 40, servingLabel: '40 g', calories: 400, protein: 10, carbs: 60, fat: 10 };
   const restaurant = { id: 'restaurant-bowl', name: 'Restaurant bowl', brand: 'Test Kitchen', source: 'Restaurant menu', verified: true, sourceKind: 'restaurant', sourceUrl: 'https://example.com/nutrition', nutritionBasis: 'serving', servingGrams: null, servingLabel: '1 bowl', calories: 600, protein: 30, carbs: 60, fat: 20 };
   const entries: Record<string, unknown>[] = [];
-  await page.route('https://nourish.test/api/**', async route => {
+  await page.route('https://gramello.test/api/**', async route => {
     const request = route.request();
     const path = new URL(request.url()).pathname;
     const headers = { 'access-control-allow-origin': '*', 'access-control-allow-headers': 'authorization,content-type', 'access-control-allow-methods': 'GET,POST' };
@@ -77,7 +77,7 @@ test('choosing a serving-only restaurant food resets a previous weight amount', 
     return route.fulfill({ headers, json: {} });
   });
   await page.goto('/');
-  await page.getByRole('button', { name: 'Sign in to Nourish' }).click();
+  await page.getByRole('button', { name: 'Sign in to Gramello' }).click();
   await page.getByRole('button', { name: 'Add Dinner', exact: true }).click();
   await page.getByRole('textbox', { name: 'Search foods' }).fill('bowl');
   await page.getByRole('button', { name: /Rolled oats/ }).click();

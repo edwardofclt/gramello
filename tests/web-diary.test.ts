@@ -25,7 +25,7 @@ beforeEach(() => {
   entryDate = '2026-09-19';
   requestedDates = [];
   vi.stubGlobal('fetch', async (input: string) => {
-    const url = new URL(input, 'https://nourish.test');
+    const url = new URL(input, 'https://gramello.test');
     if (url.pathname === '/api/water') return Response.json({ date: url.searchParams.get('date'), goal: { goalMl: 2000, unit: 'ml' }, entries: [], totalMl: 0 });
     if (url.pathname === '/api/day') {
       const date = url.searchParams.get('date')!;
@@ -174,7 +174,7 @@ it('preserves a failed custom food draft, disables navigation while saving, and 
   const customFood = { id: 'custom-test', name: 'My dinner bowl', source: 'Community submitted', sourceKind: 'custom', verified: false,
     nutritionBasis: 'serving', servingGrams: null, servingLabel: '1 bowl', calories: 605, protein: 30, carbs: 65, fat: 25 };
   vi.stubGlobal('fetch', async (path: string, init?: RequestInit) => {
-    if (path.startsWith('/api/water?')) return Response.json({ date: new URL(path, 'https://nourish.test').searchParams.get('date'), goal: { goalMl: 2000, unit: 'ml' }, entries: [], totalMl: 0 });
+    if (path.startsWith('/api/water?')) return Response.json({ date: new URL(path, 'https://gramello.test').searchParams.get('date'), goal: { goalMl: 2000, unit: 'ml' }, entries: [], totalMl: 0 });
     if (path.startsWith('/api/day')) return Response.json({ goals, entries: [] });
     if (path.startsWith('/api/foods/search')) return Response.json({ foods: [] });
     const body = JSON.parse(String(init?.body));

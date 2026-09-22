@@ -36,7 +36,7 @@ dialogs, and calorie and macro trend charts. Below 761px it switches to a
 single-column diary and bottom navigation. iOS and Android use the shared screens
 with native safe areas, keyboard handling, and page sheets.
 
-With the public environment values configured, run `pnpm --filter @nourish/mobile
+With the public environment values configured, run `pnpm --filter @gramello/mobile
 web`. Live browser login requires the browser origin to be configured in Auth0;
 cross-origin API requests also require an API gateway with appropriate CORS
 support, or deployment of the app and API on the same origin. The browser tests
@@ -153,7 +153,7 @@ are temporary: a new tunnel gets a new URL, which must also be updated in the ap
 The iOS bundle ID is `com.edwardofclt.nourish`, the Android package is
 `com.nourish.tracker`, and the scheme is `nourish`. Update Auth0's callback and
 logout URLs whenever changing these IDs in `app.config.ts`. These identifiers
-are intentionally retained for the Gramello branding trial so existing installs,
+are intentionally retained so existing installs,
 Auth0 callbacks, and the linked EAS project continue to work.
 `eas.json` includes development (iOS simulator), preview
 (internal device), and production profiles. The production profile includes the
@@ -250,10 +250,10 @@ distribution enabled. Submission does not release the app publicly. See
 
 ```bash
 pnpm test
-pnpm --filter @nourish/mobile typecheck
+pnpm --filter @gramello/mobile typecheck
 pnpm lint:mobile
-pnpm --filter @nourish/mobile export
-pnpm --filter @nourish/mobile exec expo export --platform web
+pnpm --filter @gramello/mobile export
+pnpm --filter @gramello/mobile exec expo export --platform web
 pnpm exec playwright install chromium
 pnpm test:mobile:ui
 ```
@@ -264,7 +264,7 @@ It exercises sign-in, food search/scaling/add/remove, coupled goals, trends, and
 logout at phone and desktop sizes, plus tablet/narrow layouts, short dialogs,
 Escape/focus restoration, and chart inspection. `MOBILE_TEST_PORT=8087 pnpm
 test:mobile:ui` selects another port when 8082 is occupied.
-`NOURISH_UI_TEST=1` is set only by its dedicated server
+`GRAMELLO_UI_TEST=1` is set only by its dedicated server
 configuration; do not set it for normal development or builds. It does not prove
 native browser callbacks or secure storage: verify login, restart/restore,
 refresh, and logout on both devices with your configured Auth0 tenant.
@@ -272,7 +272,7 @@ refresh, and logout on both devices with your configured Auth0 tenant.
 Expo and Metro are pinned to compatible patches that satisfy the repository's
 seven-day dependency-release policy. `expo install --check` may recommend newer
 patches before that window has passed. `EXPO_OFFLINE=1 pnpm --filter
-@nourish/mobile exec expo install --check` checks the installed SDK's matrix.
+@gramello/mobile exec expo install --check` checks the installed SDK's matrix.
 
 UI code is in `src/screens`, gluestack-based controls in `src/components/ui.tsx`,
 Auth0/session coordination in `src/auth`, and API/calendar/nutrition helpers in

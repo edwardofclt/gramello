@@ -2,7 +2,7 @@ import { expect, test } from '@playwright/test';
 
 test('desktop diary keeps its selected day through navigation and opens centered dialogs', async ({ page }) => {
   await page.setViewportSize({ width: 1440, height: 1000 });
-  await page.route('https://nourish.test/api/**', route => route.fulfill({
+  await page.route('https://gramello.test/api/**', route => route.fulfill({
     headers: { 'access-control-allow-origin': '*', 'access-control-allow-headers': 'authorization,content-type' },
     json: { goals: { calories: 2000, protein: 150, carbs: 200, fat: 67 }, entries: [], days: [] },
   }));
@@ -60,7 +60,7 @@ test('diary and interactive trends adapt from desktop through tablet to a narrow
     { id: '4', meal: 'Snacks', name: 'Apple with almond butter', source: 'USDA reference', quantity: 200, unit: 'grams', grams: 200, calories: 240, protein: 6, carbs: 28, fat: 13 },
   ];
   const days = [2100, 2380, 2450, 2200, 2500, 1980, 2350].map((calories, i) => ({ date: `2026-09-${13 + i}`, calories, protein: 140 + i * 9, carbs: 210 + i * 8, fat: 55 + i * 2 }));
-  await page.route('https://nourish.test/api/**', route => {
+  await page.route('https://gramello.test/api/**', route => {
     const url = new URL(route.request().url());
     if (url.pathname === '/api/trends' && route.request().method() !== 'OPTIONS') requests.push(Number(url.searchParams.get('days')));
     return route.fulfill({ headers: { 'access-control-allow-origin': '*', 'access-control-allow-headers': 'authorization,content-type' }, json: { goals, entries, days } });
@@ -89,10 +89,12 @@ test('diary and interactive trends adapt from desktop through tablet to a narrow
   for (const width of [820, 760, 320]) {
     await page.setViewportSize({ width, height: 900 });
     await expect(page.getByTestId('meal-Breakfast')).toBeVisible();
+    await expect.poll(async () => {
+      const breakfast = (await page.getByTestId('meal-Breakfast').boundingBox())!;
+      const lunch = (await page.getByTestId('meal-Lunch').boundingBox())!;
+      return width > 760 ? lunch.y === breakfast.y : lunch.y >= breakfast.y + breakfast.height;
+    }).toBe(true);
     const breakfast = (await page.getByTestId('meal-Breakfast').boundingBox())!;
-    const lunch = (await page.getByTestId('meal-Lunch').boundingBox())!;
-    if (width > 760) expect(lunch.y).toBe(breakfast.y);
-    else expect(lunch.y).toBeGreaterThanOrEqual(breakfast.y + breakfast.height);
     expect(breakfast.x).toBeGreaterThanOrEqual(0);
     expect(breakfast.x + breakfast.width).toBeLessThanOrEqual(width);
     await expect(page.getByRole('navigation', { name: 'Main navigation' })).toHaveCount(width > 760 ? 1 : 0);
@@ -104,7 +106,7 @@ test('diary and interactive trends adapt from desktop through tablet to a narrow
 test('food amount and goals remain reachable in short browser dialogs', async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 568 });
   let saved: Record<string, unknown> | undefined;
-  await page.route('https://nourish.test/api/**', route => {
+  await page.route('https://gramello.test/api/**', route => {
     const request = route.request();
     if (request.method() === 'POST') saved = request.postDataJSON();
     return route.fulfill({ headers: { 'access-control-allow-origin': '*', 'access-control-allow-headers': 'authorization,content-type', 'access-control-allow-methods': 'GET,POST,PUT' },

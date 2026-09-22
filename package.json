@@ -1,5 +1,5 @@
 {
-  "name": "nourish-calorie-tracker",
+  "name": "gramello-calorie-tracker",
   "version": "0.1.0",
   "private": true,
   "engines": {
@@ -16,9 +16,9 @@
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
     "db:generate": "drizzle-kit generate",
     "release": "semantic-release",
-    "mobile": "pnpm --filter @nourish/mobile start",
-    "mobile:ios": "pnpm --filter @nourish/mobile ios",
-    "mobile:android": "pnpm --filter @nourish/mobile android",
+    "mobile": "pnpm --filter @gramello/mobile start",
+    "mobile:ios": "pnpm --filter @gramello/mobile ios",
+    "mobile:android": "pnpm --filter @gramello/mobile android",
     "lint:mobile": "eslint mobile lib/mobile-auth.ts lib/auth.ts tests/mobile-*.test.ts playwright.mobile.config.ts",
     "test:mobile:ui": "playwright test --config playwright.mobile.config.ts"
   },
