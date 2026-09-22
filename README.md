@@ -12,7 +12,7 @@ web app and an Expo browser client. They use separate data stores:
 | --- | --- | --- |
 | Sign-in | None | Auth0 |
 | Diary, meals, and goals | Local SQLite on each device | Server database, scoped to the signed-in account |
-| Food search | Installed USDA catalog and private custom foods | Live USDA/Open Food Facts, imported restaurant menus, and shared custom foods |
+| Food search | Offline USDA and restaurant catalogs, cached lookups, private custom foods; Open Food Facts for missing barcodes and explicit online searches | Live USDA/Open Food Facts, imported restaurant menus, and shared custom foods |
 | Moving data | User-directed backup export/import | Same-account access to the hosted diary |
 
 Native data does not sync with the hosted diary or other devices. Migration
@@ -61,19 +61,21 @@ where to save exports using the device's sharing options.
 
 ### Offline food catalog
 
-The app bundles [7,793 USDA SR Legacy foods](data/food-catalog/README.md), so
-name search works on first launch without a network connection. This starter
-has no packaged-food barcode records and excludes the repository's restaurant
-snapshots. Native search and barcode lookup use the installed catalog; they do
-not query the live USDA or Open Food Facts APIs. Unknown barcodes offer name
-search or custom entry.
+The app bundles [50,322 foods](data/food-catalog/README.md): 7,793 USDA SR Legacy
+foods and all 42,529 previously imported restaurant foods across 150 catalogs.
+Name search works on first launch without a network connection. Barcode lookup
+checks installed and cached foods first, then queries Open Food Facts directly
+for missing codes and saves successful matches for offline use. Typing a name
+searches on-device foods; **Search Open Food Facts online** requests additional
+matches and caches them. Unknown products offer name search or custom entry.
 
 The app checks for signed catalog updates at launch and when returning to the
 foreground. Successful checks defer the next automatic check by 24–25 hours;
 **Settings → Advanced → Food catalog → Check for updates** checks immediately. Updates
 validate the signature, download hash, and SQLite contents before activation.
 Installed foods remain usable during an outage, and an invalid or purged cache
-falls back to the bundled catalog.
+falls back to the bundled catalog. Bundled foods also remain available beneath
+older downloaded catalogs, so a narrower update cannot hide the restaurants.
 
 Downloadable updates require the `CATALOG_SIGNING_KEY` repository secret and a
 published signed manifest. Without the secret, the **Publish food catalog**
@@ -169,8 +171,10 @@ server-catalog results during upstream outages and indicates when results are pa
 
 ### Maintaining the hosted restaurant catalog
 
-These imports populate the hosted database. They are excluded from the native
-distributable catalog pending redistribution review.
+These imports populate the hosted database and the native offline catalog.
+Native catalog builds use the exact catalogs listed in the import summary,
+preserve their source information, and record mixed provenance rather than
+labeling restaurant data as USDA CC0.
 
 Curated source snapshots live in `data/restaurant-foods/`, with provenance,
 exclusions, source dates, location evidence, and extraction notes in

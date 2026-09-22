@@ -8,8 +8,8 @@ import { entrySchema, goalsSchema, mealSchema, parseArchive, validateRecord, uni
 
 export interface FoodCatalog {
   getFood(id: string): Promise<Food | null>;
-  search(query: string): Promise<Food[]>;
-  barcode(code: string): Promise<Food | null>;
+  search(query: string, options?: { online?: boolean; signal?: AbortSignal }): Promise<Food[]>;
+  barcode(code: string, signal?: AbortSignal): Promise<Food | null>;
 }
 const defaults = { calories: 2400, protein: 180, carbs: 250, fat: 70 };
 export async function createLocalRepository(db: SqliteConnection, catalog: FoodCatalog, uuid: () => string = () => globalThis.crypto.randomUUID()) {
@@ -72,15 +72,22 @@ export async function createLocalRepository(db: SqliteConnection, catalog: FoodC
         ROUND(SUM(json_extract(value,'$.carbs'))+1e-9,1) carbs, ROUND(SUM(json_extract(value,'$.fat'))+1e-9,1) fat
         FROM records WHERE kind='entry' AND date BETWEEN ? AND ? GROUP BY date ORDER BY date`, start.toISOString().slice(0,10), end);
     }),
-    searchFoods: (query: string) => serialized(db, async () => {
+    searchFoods: async (query: string, options?: { online?: boolean; signal?: AbortSignal }) => {
       if (query.length > 200) throw new Error('Search with a shorter name.');
       if (query.trim().length < 2) return { foods: [], partial: false, hasMore: false };
       const tokens = query.toLowerCase().trim().split(/\s+/);
-      const custom = (await list<Food>('food')).filter(food => tokens.every(t => `${food.name} ${food.brand ?? ''}`.toLowerCase().includes(t)));
-      const foods = [...custom, ...await catalog.search(query)];
-      return { foods: foods.slice(0,100), hasMore: foods.length > 100, partial: false };
-    }),
-    lookupBarcode: (code: string) => serialized(db, async () => { const food = await catalog.barcode(code); if (!food) throw new Error('This barcode is not in the downloaded catalog. Search by name or add a custom food.'); return { food }; }),
+      const custom = (await serialized(db, () => list<Food>('food'))).filter(food => tokens.every(t => `${food.name} ${food.brand ?? ''}`.toLowerCase().includes(t)));
+      let found: Food[], partial = false;
+      try { found = await catalog.search(query, options); }
+      catch (error) {
+        if (!options?.online || options.signal?.aborted) throw error;
+        found = await catalog.search(query); partial = true;
+      }
+      const foods = [...custom, ...found];
+      return { foods: foods.slice(0,100), hasMore: foods.length > 100, partial };
+    },
+    // Network lookups must not hold the diary connection's transaction queue.
+    lookupBarcode: async (code: string, signal?: AbortSignal) => { const food = await catalog.barcode(code, signal); if (!food) throw new Error('No product found for this barcode. Try searching online by name or add a custom food.'); return { food }; },
     createFood: (input: unknown) => serialized(db, async () => {
       const food: Food = { ...parseCustomFood(input), id: `custom-${uuid()}`, source: 'My foods', sourceKind: 'custom', verified: false, nutritionBasis: 'serving' };
       await put({ kind: 'food', id: food.id, date: null, value: food }); return { food };

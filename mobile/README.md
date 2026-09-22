@@ -68,9 +68,11 @@ analytics-enabled build; see `docs/app-store-preparation.md`.
 
 In **Add food**, choose **Scan barcode**, allow camera access, and center a
 packaged food's UPC-A, EAN-8, EAN-13, or ITF-14 barcode. You can also enter the
-printed number manually. Native lookup searches the downloaded catalog; the
-USDA starter contains no packaged-food barcodes, so use name search or custom
-foods when a code is unknown. The hosted browser uses Open Food Facts. Review
+printed number manually. Native lookup checks installed and previously cached
+foods first, then queries Open Food Facts directly and saves successful matches
+for offline use. The bundled catalog includes all previously imported restaurant
+menus. Typing a food name searches on-device foods; choose **Search Open Food Facts
+online** for more matches, which are also saved offline. The hosted browser uses Open Food Facts. Review
 the serving size and meal before adding. Unknown products or products without
 complete nutrition can be searched by name instead. Drinks with volume-based
 nutrition support servings, mL, and US fluid ounces; their diary entries display

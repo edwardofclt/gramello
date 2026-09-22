@@ -12,6 +12,7 @@ import { serialized, type SqliteConnection } from './database';
 import { archiveCsv, MAX_ARCHIVE_BYTES, parseArchive } from './records';
 import { createCatalogUpdater, type UpdateState } from '../catalog/updater';
 import { createCatalogReader, inspectCatalog } from '../catalog/queries';
+import { createFoodLookup } from '../catalog/lookup';
 
 async function openRuntime() {
   const personal = await SQLite.openDatabaseAsync('gramello-personal.sqlite');
@@ -38,19 +39,21 @@ async function openRuntime() {
       catch { await active?.closeAsync().catch(() => {}); active = null; }
     }
   }
-  if (!active) {
-    // Metro packages this database with the native app, including offline installs.
-    // Metro requires a static require to bundle this SQLite asset.
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const asset = await Asset.fromModule(require('../../assets/catalog.sqlite')).downloadAsync();
-    const seed = new File(directory,'starter.sqlite');
-    if (seed.exists) seed.delete();
-    await new File(asset.localUri ?? asset.uri).copy(seed);
-    active = await openCatalog(seed); activeVersion = (await inspectCatalog(active)).version; activeName = seed.name;
-  }
+  // Keep the current app's bundled foods available even when a previously
+  // installed catalog (or older release) covers fewer restaurants/products.
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  const asset = await Asset.fromModule(require('../../assets/catalog.sqlite')).downloadAsync();
+  const seed = new File(directory,'starter.sqlite');
+  if (seed.exists) seed.delete();
+  await new File(asset.localUri ?? asset.uri).copy(seed);
+  const bundled = await openCatalog(seed), bundledInfo = await inspectCatalog(bundled);
+  if (!active) { active = bundled; activeVersion = bundledInfo.version; activeName = seed.name; }
   // The catalog queue keeps an old connection alive until its readers finish.
   const catalogLock = {} as SqliteConnection;
-  const catalog = createCatalogReader(work => serialized(catalogLock, () => work(active!)));
+  const bundledReader = createCatalogReader(work => work(bundled));
+  const downloaded = createCatalogReader(work => serialized(catalogLock, () => work(active!)), bundledReader);
+  const foodCache = await SQLite.openDatabaseAsync('gramello-food-cache.sqlite');
+  const catalog = await createFoodLookup(downloaded, foodCache);
   const repository = await createLocalRepository(personal, catalog, Crypto.randomUUID);
   const updater = createCatalogUpdater({
     async load() {
@@ -82,7 +85,7 @@ async function openRuntime() {
         await serialized(catalogLock, async () => {
           const previous = active!, previousName = activeName;
           active = candidate; candidate = null; activeVersion = manifest.version; activeName = file.name;
-          await previous.closeAsync().catch(() => {});
+          if (previous !== bundled) await previous.closeAsync().catch(() => {});
           // Keep one previous complete catalog; remove older downloads on next install.
           for (const entry of directory.list()) if (entry instanceof File && entry.name !== activeName && entry.name !== previousName && entry.name !== 'starter.sqlite') {
             try { entry.delete(); } catch { /* Cached files can be cleaned later. */ }
