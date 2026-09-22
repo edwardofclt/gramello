@@ -1,3 +1,9 @@
+## [1.11.0](https://github.com/edwardofclt/gramello/compare/v1.10.0...v1.11.0) (2026-09-22)
+
+### Features
+
+* focus native settings on daily goals ([#26](https://github.com/edwardofclt/gramello/issues/26)) ([41123ec](https://github.com/edwardofclt/gramello/commit/41123ecb2c71ebe699c1c2fb7f99271a17d21ffe))
+
 ## [1.10.0](https://github.com/edwardofclt/gramello/compare/v1.9.0...v1.10.0) (2026-09-22)
 
 ### Features
