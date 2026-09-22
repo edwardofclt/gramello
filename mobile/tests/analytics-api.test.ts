@@ -1,14 +1,14 @@
 import { afterEach, describe, expect, it, vi } from 'vitest';
-import { createApiClient, SessionExpiredError } from '../src/lib/api';
+import { createApiClient } from '../src/lib/api';
 import { withAnalytics } from '../src/analytics/api';
 import { trackEvent } from '../src/analytics/client';
 
 vi.mock('../src/analytics/client', () => ({ trackEvent: vi.fn() }));
 afterEach(() => { vi.unstubAllGlobals(); vi.clearAllMocks(); });
 
-function setup(status = 200, isCurrent = () => true) {
+function setup(status = 200) {
   vi.stubGlobal('fetch', vi.fn(async () => new Response(JSON.stringify(status === 200 ? { saved: true } : { error: 'Failed' }), { status })));
-  return withAnalytics(createApiClient('https://gramello.test', async () => 'private-token', () => {}, isCurrent));
+  return withAnalytics(createApiClient('https://gramello.test'));
 }
 
 describe('mobile action analytics', () => {
@@ -31,11 +31,10 @@ describe('mobile action analytics', () => {
     expect(trackEvent).not.toHaveBeenCalled();
   });
 
-  it('does not count cancelled requests or requests from expired sessions', async () => {
+  it('does not count cancelled requests', async () => {
     const api = setup();
     const controller = new AbortController(); controller.abort();
     await expect(api('/api/entries', { method: 'POST', signal: controller.signal })).rejects.toThrow();
-    await expect(setup(200, () => false)('/api/entries', { method: 'POST' })).rejects.toBeInstanceOf(SessionExpiredError);
     expect(trackEvent).not.toHaveBeenCalled();
   });
 

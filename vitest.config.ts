@@ -3,6 +3,5 @@ import { defineConfig } from "vitest/config";
 
 export default defineConfig({
   resolve: { alias: { "@": fileURLToPath(new URL(".", import.meta.url)) } },
-  ssr: { noExternal: ["@auth0/nextjs-auth0"] },
   test: { environment: "node", include: ["tests/**/*.test.ts", "mobile/tests/**/*.test.ts"] },
 });

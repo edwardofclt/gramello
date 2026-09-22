@@ -9,36 +9,32 @@ for (const width of [390, 1440]) {
     let failSave = true;
     const errors: string[] = [];
     page.on('pageerror', error => errors.push(error.message));
-    await page.route('https://gramello.test/api/**', async route => {
+    await page.route('**/api/**', async route => {
       const request = route.request();
       const url = new URL(request.url());
-      const headers = { 'access-control-allow-origin': '*', 'access-control-allow-headers': 'authorization,content-type', 'access-control-allow-methods': 'GET,POST,PUT,DELETE' };
-      if (request.method() === 'OPTIONS') return route.fulfill({ status: 204, headers });
-      expect(request.headers().authorization).toBe('Bearer ui-test-access-token');
-      if (url.pathname === '/api/day') return route.fulfill({ headers, json: { goals: { calories: 2400, protein: 180, carbs: 250, fat: 70 }, entries: [] } });
+      if (url.pathname === '/api/day') return route.fulfill({ json: { goals: { calories: 2400, protein: 180, carbs: 250, fat: 70 }, entries: [] } });
       if (url.pathname === '/api/water/goals') {
         goal = request.postDataJSON();
-        return route.fulfill({ headers, json: goal });
+        return route.fulfill({ json: goal });
       }
       if (url.pathname === '/api/water') {
         if (request.method() === 'POST') {
-          if (failSave) { failSave = false; return route.fulfill({ headers, status: 503, json: { error: 'Water save failed. Try again.' } }); }
+          if (failSave) { failSave = false; return route.fulfill({ status: 503, json: { error: 'Water save failed. Try again.' } }); }
           const entry = { id: `water-${entries.length}`, createdAt: new Date().toISOString(), ...request.postDataJSON() };
           entries.push(entry);
-          return route.fulfill({ headers, status: 201, json: entry });
+          return route.fulfill({ status: 201, json: entry });
         }
         if (request.method() === 'DELETE') {
           entries = entries.filter(entry => entry.id !== url.searchParams.get('id'));
-          return route.fulfill({ headers, json: { ok: true } });
+          return route.fulfill({ json: { ok: true } });
         }
         const date = url.searchParams.get('date');
         const selected = entries.filter(entry => entry.date === date);
-        return route.fulfill({ headers, json: { date, goal, entries: selected, totalMl: selected.reduce((sum, entry) => sum + entry.amountMl, 0) } });
+        return route.fulfill({ json: { date, goal, entries: selected, totalMl: selected.reduce((sum, entry) => sum + entry.amountMl, 0) } });
       }
-      return route.fulfill({ headers, json: {} });
+      return route.fulfill({ json: {} });
     });
     await page.goto('/');
-    await page.getByRole('button', { name: 'Sign in to Gramello' }).click();
     const total = page.getByTestId('water-total');
     await expect(total).toHaveText('0 mL of 2000 mL');
     await page.getByRole('textbox', { name: 'Custom water amount (mL)' }).fill('375');

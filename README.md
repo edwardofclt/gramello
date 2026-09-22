@@ -5,18 +5,20 @@ controls, custom foods and meals, editable goals, and 7-day, 30-day, and
 6-month trends.
 
 The native iOS/Android app works offline with personal data stored on the device
-and no account. This repository also retains the self-hostable, authenticated
-web app and an Expo browser client. They use separate data stores:
+and no account. The self-hostable web app and Expo browser client also open
+the diary directly, without login. They use separate data stores:
 
 | Behavior | Native iOS/Android | Hosted web and Expo browser |
 | --- | --- | --- |
-| Sign-in | None | Auth0 |
-| Diary, meals, and goals | Local SQLite on each device | Server database, scoped to the signed-in account |
+| Sign-in | None | None |
+| Diary, meals, and goals | Local SQLite on each device | Server database, scoped to an anonymous browser cookie |
 | Food search | Offline USDA and restaurant catalogs, cached lookups, private custom foods; automatic Open Food Facts searches and missing-barcode lookups | Live USDA/Open Food Facts, imported restaurant menus, and shared custom foods |
-| Moving data | User-directed backup export/import | Same-account access to the hosted diary |
+| Moving data | User-directed backup export/import | A separate diary for each browser cookie |
 
-Native data does not sync with the hosted diary or other devices. Migration
-from an existing hosted account into the native app is not implemented.
+Native data does not sync with the hosted diary or other devices. Clearing the
+browser cookie loses access to that browser's hosted diary. Existing records from
+older account-based versions remain untouched and are not exposed to anonymous
+browsers; no account migration is performed.
 
 The source repository is [edwardofclt/gramello](https://github.com/edwardofclt/gramello).
 For product help and data requests, see [support](docs/support.md) and the
@@ -39,7 +41,7 @@ pnpm mobile:android
 iOS requires macOS, Xcode, and CocoaPods. Android requires Android Studio/SDK
 and a compatible JDK. These commands build a development app; use that instead
 of Expo Go. Later, run `pnpm mobile` to start Metro for the installed build.
-Rebuild after changing native dependencies. Native builds require no Auth0
+Rebuild after changing native dependencies. Native builds require no account
 configuration or running API. See the [mobile guide](mobile/README.md) for
 physical-device setup and the retained Expo browser client.
 
@@ -132,7 +134,7 @@ portion weight in grams or ounces. A 64 oz batch with 1,200 kcal makes four
 portions assume the ingredients are evenly distributed.
 
 Native meals stay on the device and are included in backups. Hosted meals are
-saved to the signed-in account. Reopen **My meals** to log any weight or
+saved to the current browser's diary. Reopen **My meals** to log any weight or
 fractional serving, edit ingredients or yield, or delete a recipe. Edits and
 deletions leave previously logged diary nutrition unchanged.
 
@@ -163,7 +165,7 @@ Choose **Add food → Add custom food** on web or mobile. Enter a name, a servin
 description, and total calories, protein, carbs, and fat for that serving.
 Serving weight is optional. Native custom foods are private to the device and
 appear as **My foods**. Hosted custom foods save to the shared server catalog
-and become searchable by all signed-in users; contributor identities are not
+and become searchable by all hosted browsers; contributor identities are not
 exposed in search. Both show **Unverified** and save before you choose how much
 to log. Calories are kept as entered, independently of the macro totals.
 
@@ -205,7 +207,7 @@ The [Gramello website](https://gramello.com/) includes the
 [privacy policy](https://gramello.com/privacy/),
 [terms and conditions](https://gramello.com/terms/), and
 [support and data requests](https://gramello.com/support/).
-It is a separate static GitHub Pages site; the authenticated diary stays on Fly.io.
+It is a separate static GitHub Pages site; the hosted diary stays on Fly.io.
 See [website development and publishing](website/README.md) for local preview,
 content sources, and the automatic Pages deployment.
 
@@ -215,7 +217,7 @@ The web app uses React, Next.js-compatible routes through Vite/vinext, and
 Drizzle with a Cloudflare D1 binding. Docker/Fly run the built Worker through
 Wrangler with a persistent local SQLite database.
 
-Configure Auth0 using the steps below, then:
+Start the web app:
 
 ```bash
 docker compose up --build
@@ -237,13 +239,8 @@ deployment: do not scale horizontally without adding database replication,
 because Fly volumes do not share data between Machines. Deploys and restarts
 briefly interrupt service. Keep separate database exports for long-term backups.
 
-The four web-authentication `AUTH0_*` settings are runtime Fly secrets.
-`APP_BASE_URL` is set in `fly.toml`. The optional `AUTH0_AUDIENCE` and
-`AUTH0_MOBILE_CLIENT_ID` bindings default to empty strings. They enable bearer
-authentication for retained hosted clients when configured; the current native
-app does not use them. The Auth0 web application must allow
-`https://nourish-api.fly.dev/auth/callback` as a callback URL and
-`https://nourish-api.fly.dev` as a logout URL.
+`APP_BASE_URL` is set in `fly.toml` and defines the trusted browser origin for
+writes. No identity provider, client credentials, or login setup is required.
 
 To deploy changes from this checkout:
 
@@ -262,13 +259,13 @@ not reverse database migrations, so check schema compatibility first.
 ## Hosted web development
 
 Use Node.js 24, matching CI, and pnpm 11.25.0. The root package declares a
-minimum Node.js version of 22.13.0. Configure Auth0 below before signing in.
+minimum Node.js version of 22.13.0. The diary opens without an account.
 
 ```bash
 corepack enable
 pnpm install --frozen-lockfile
 if [ ! -f .env.local ]; then cp .env.example .env.local; fi
-# Fill in the web Auth0 settings in .env.local before running the app.
+# APP_BASE_URL defaults to the local browser origin in .env.example.
 pnpm run build
 for migration in drizzle/*.sql; do
   pnpm exec wrangler d1 execute DB --local --config dist/server/wrangler.json --persist-to .wrangler/state --file "$migration"
@@ -285,73 +282,31 @@ To serve a production build locally instead, run
 `pnpm start --env-file ../../.env.local --port 5173` (Wrangler resolves env files
 relative to `dist/server/wrangler.json`).
 
-## Hosted Auth0 setup
+## Hosted browser data and configuration
 
-This section applies to the hosted web app and API. Native iOS/Android builds
-do not require an account or Auth0 settings.
+Set `APP_BASE_URL` to the single canonical browser origin, without a path or query
+string. The example uses `http://localhost:5173`; Docker Compose defaults to
+`http://localhost:3000`. For an HTTPS reverse proxy, set
+`APP_BASE_URL=https://your-host` in the Compose environment. This is a server
+runtime value and does not require a build-time secret.
 
-1. In the [Auth0 dashboard](https://manage.auth0.com/), create or select a
-   **Regular Web Application**. Enable the login connections you want to offer
-   through Universal Login, such as email/password or Google.
-2. Add these **Allowed Callback URLs**:
-   `http://localhost:5173/auth/callback, http://localhost:3000/auth/callback`.
-   Add these **Allowed Logout URLs**:
-   `http://localhost:5173, http://localhost:3000`.
-3. Copy `.env.example` to `.env.local` if it does not already exist. Set
-   `AUTH0_DOMAIN`, `AUTH0_CLIENT_ID`, and `AUTH0_CLIENT_SECRET` from the
-   application's settings. Generate `AUTH0_SECRET`
-   with `openssl rand -hex 32`. Keep this key stable across restarts and replicas;
-   replacing it signs everyone out. Never commit `.env.local`.
-4. Set `APP_BASE_URL=http://localhost:5173` for development. For web-only use,
-   leave `AUTH0_AUDIENCE` and `AUTH0_MOBILE_CLIENT_ID` empty instead of keeping
-   the example placeholders. Docker Compose reads `.env.local` and defaults
-   the base URL to `http://localhost:3000`. For a deployment behind an HTTPS
-   reverse proxy, set `APP_BASE_URL=https://your-host`
-   in the Compose environment and register that host's `/auth/callback` and root
-   URL in Auth0. Use a single canonical origin, with no path or query string.
+The web and Expo browser apps open the diary automatically. A random, HttpOnly
+`gramello_diary` cookie selects that browser's records in the server database.
+The cookie uses `SameSite=Lax` and is secure on HTTPS. Each browser with a new
+cookie gets a separate diary. Clearing cookies or using another browser loses
+access to the original diary; there is no account recovery or cross-device sync.
+Clearing the cookie does not delete the stored server records.
 
-### Retained hosted clients and security
+Keep the browser client and `/api` on the same origin. Writes require an `Origin`
+matching `APP_BASE_URL`; the API does not support cross-origin browser clients.
+For a separately built Expo browser UI, place it behind a reverse proxy that
+serves its API requests on that same origin. See
+[hosted browser setup](mobile/README.md#hosted-browser-setup).
 
-The API still supports RS256 bearer tokens for the Expo browser client and
-legacy native clients. `AUTH0_AUDIENCE` selects the API identifier and
-`AUTH0_MOBILE_CLIENT_ID` restricts the authorized client. These hosted clients
-need public Auth0/API configuration; see
-[hosted browser authentication](mobile/README.md#hosted-browser-authentication).
-The Expo browser client also needs its origin registered in Auth0 and either
-same-origin hosting or an API gateway with appropriate CORS support.
-
-Hosted clients sharing a diary must resolve to the same verified Auth0 `sub`.
-Changing tenants, connections, or account-linking behavior can produce a
-different subject and therefore a separate hosted diary.
-
-The five web settings and two optional bearer API settings are server-side
-bindings. The Docker image builds without credentials;
-Compose supplies them at runtime. Do not prefix these variables with
-`NEXT_PUBLIC_` or include them in build arguments. For a hosted Cloudflare Worker,
-set the applicable values as runtime bindings. The generated Wrangler
-configuration declares all seven names without embedding their values, so
-Wrangler loads them from local environment files as well as runtime bindings.
-For web-only use, leave `AUTH0_AUDIENCE` and `AUTH0_MOBILE_CLIENT_ID` empty in
-the environment file (or define empty runtime bindings). Bearer requests then
-receive `503` while cookie sessions continue to work.
-
-The server-rendered web app uses the [Auth0 Next.js SDK](https://auth0.github.io/nextjs-auth0/)
-for authorization-code login, callback validation, encrypted HTTP-only cookies,
-and logout. HTTPS enables secure cookies. Sessions expire after one day of
-inactivity or seven days in total. This cookie-based UI does not expose access
-tokens to the browser. APIs return JSON `401` when the session expires and `503` if sign-in
-configuration is unavailable. Cookie-authenticated writes require an `Origin`
-matching `APP_BASE_URL`. Hosted bearer writes authenticate with the token and do
-not require a browser Origin header. Responses vary by both Cookie and
-Authorization so caches cannot mix identities.
-
-Hosted personal data belongs to each user's verified Auth0 `sub`. Incoming
-`oai-authenticated-user-*` headers and client-supplied user IDs cannot select a
-diary. Existing `site-owner` or ChatGPT data stays in the database, but is not
-automatically assigned to an Auth0 user. Any reassignment requires a database
-backup and a deliberate migration of the intended owner's records, including
-meals and water data where present. This does not migrate data into the current
-native app.
+The browser cookie cannot select records from older account-based versions.
+Those records remain untouched in the database and are not migrated or exposed
+to anonymous diaries. Native iOS/Android data remains in local SQLite and does
+not use this cookie or the hosted API.
 
 ## Water intake
 
@@ -360,8 +315,8 @@ Quick-add 250/500/750 mL or 8/16/24 US fl oz, enter a custom amount, review entr
 and remove mistakes. On native, **Settings** holds calorie, macro, and water
 goals, including the preferred water unit; water logging stays in the diary.
 On web, **Edit water goal** opens the water target and unit controls. Goals save
-on the native device or in the hosted account. The initial water target is an
-editable 2,000 mL; it is not a personalized recommendation. Goals apply across
+on the native device or in the current browser's hosted diary. The initial water
+target is an editable 2,000 mL; it is not a personalized recommendation. Goals apply across
 the diary, including past dates.
 
 Water is stored separately from food, calories and macros. Existing mobile clients
@@ -375,11 +330,11 @@ procedure. This migration only creates `water_goals`, `water_entries`, and a
 user/date index; it does not rewrite food or nutrition data. Native water data
 uses the local SQLite repository and does not require server migrations.
 
-Authenticated hosted endpoints:
+Hosted endpoints scoped to the current browser diary:
 
 - `GET /api/water?date=YYYY-MM-DD`: goal, entries and total for that date.
 - `POST /api/water`: `{ "date": "YYYY-MM-DD", "amountMl": 250 }`.
-- `DELETE /api/water?id=<entry-id>`: remove an entry belonging to the signed-in user.
+- `DELETE /api/water?id=<entry-id>`: remove an entry belonging to the current browser diary.
 - `PUT /api/water/goals`: `{ "goalMl": 2000, "unit": "ml" }` (`ml` or `fl-oz`).
 
 ## Verification
@@ -395,12 +350,10 @@ pnpm test:smoke
 ```
 
 Tests cover native SQLite persistence, backups/import/recovery, signed catalog
-updates, nutrition calculations, and the hosted Auth0/database paths, including
-anonymous requests, spoofed headers, expired cookies, CSRF, and deletion
-ownership. The smoke check runs the built Worker with temporary
-credentials and an isolated local database; it does not modify your diary or
-contact Auth0. Complete a real login and logout with your configured tenant
-before deploying the hosted app.
+updates, nutrition calculations, and the hosted browser/database paths, including
+cookie creation, diary isolation, same-origin writes, and deletion ownership.
+The smoke check runs the built Worker with an isolated local database; it does
+not modify your diary.
 
 For browser interaction checks, install Chromium with
 `pnpm exec playwright install chromium`, then run `pnpm test:e2e` after building
@@ -438,7 +391,7 @@ on approved catalog-input changes on `main`, publishing to the `food-catalog`
 prerelease when signing is configured. It does not trigger native app releases.
 The release workflow does not deploy the hosted Fly app; use `fly deploy` above.
 
-The iOS bundle identifier, Android package, Auth0 callback scheme and API
-audience, Expo project slug, Fly hostname, and database volume names still use
-their original internal IDs. They identify existing installs, sign-in flows, or
-stored data; the public app and GitHub repository are Gramello.
+The iOS bundle identifier, Android package, app scheme, Expo project slug, Fly
+hostname, and database volume names still use their original internal IDs. They
+identify existing installs or stored data; the public app and GitHub repository
+are Gramello.

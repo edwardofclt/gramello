@@ -1,4 +1,4 @@
-import { withAuthenticatedUser } from '@/lib/auth';
+import { withBrowserDiary } from '@/lib/browser-diary';
 import { addEntry, removeEntry, type EntryInput } from '@/db/store';
 import { getFood } from '@/db/foods';
 import { getMeal } from '@/db/meals';
@@ -6,7 +6,7 @@ import { scaleFood, type AmountUnit } from '@/lib/food';
 import { mealFood } from '@/lib/meals';
 
 export async function POST(request: Request) {
-  return withAuthenticatedUser(request, async ({ userId }) => {
+  return withBrowserDiary(request, async ({ userId }) => {
     let b: EntryInput;
     try { b = await request.json(); }
     catch { return Response.json({ error: 'That food entry is incomplete.' }, { status: 400 }); }
@@ -44,7 +44,7 @@ export async function POST(request: Request) {
   });
 }
 export async function DELETE(request: Request) {
-  return withAuthenticatedUser(request, async ({ userId }) => {
+  return withBrowserDiary(request, async ({ userId }) => {
     try {
       const id = new URL(request.url).searchParams.get('id');
       if (!id) return Response.json({ error: 'Missing food entry.' }, { status: 400 });

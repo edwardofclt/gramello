@@ -1,9 +1,9 @@
-import { withAuthenticatedUser } from '@/lib/auth';
+import { withBrowserDiary } from '@/lib/browser-diary';
 import { cacheDatabaseFoods } from '@/db/foods';
 import { lookupBarcode } from '@/lib/barcode-food';
 
 export async function GET(request: Request) {
-  return withAuthenticatedUser(request, async () => {
+  return withBrowserDiary(request, async () => {
     const result = await lookupBarcode(new URL(request.url).searchParams.get('code') ?? '', request.signal);
     if ('food' in result) {
       try { await cacheDatabaseFoods([result.food]); }

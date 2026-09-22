@@ -1,6 +1,6 @@
 # Restaurant catalog and custom foods implementation plan
 
-**Goal:** Import published nutrition for chains within ten miles of ZIP 29707 and let authenticated users contribute reusable, unverified foods.
+**Goal:** Import published nutrition for chains within ten miles of ZIP 29707 and let hosted browser users contribute reusable, unverified foods.
 
 **Architecture:** Store restaurant imports, database search results, and user submissions in a shared SQLite/D1 food catalog. Use explicit nutrition bases (per 100 g, per 100 mL, or per serving) and optional serving weights. Derive verification on the server, preserve it in diary snapshots, and show it on web and mobile.
 
@@ -12,7 +12,7 @@
 
 - Radius: 10 straight-line miles from the Census representative point for ZIP/ZCTA 29707, with evidence and honest coverage gaps recorded.
 - Official restaurant and nutrition database records are verified; custom submissions are always unverified. Here verified describes the source, not a laboratory measurement of an individual meal.
-- Custom foods are shared/searchable by all signed-in users. Submission requires a name, serving description, total calories, protein, carbs, and fat for that serving. Weight is optional.
+- Custom foods are shared/searchable by all hosted browser users. Submission requires a name, serving description, total calories, protein, carbs, and fat for that serving. Weight is optional.
 - Do not fabricate missing nutrients, weights, dates, or source evidence. Do not derive missing macros from calories.
 - Database/cache failure must not silently become an empty successful search.
 - Keep existing diary data and authentication boundaries intact; do not let client-supplied source labels or booleans confer verification.
@@ -31,7 +31,7 @@
 - All 167 unit tests passed. Web and mobile TypeScript checks, production build, and lint passed (zero lint errors; three warnings).
 - Web browser suite: 21 passed, 3 expected skips, zero failures. Skips cover one mobile-only test on desktop and optional Docker restart checks on both viewports when no container was configured.
 - Mobile browser suite: all 20 cases passed across the initial run and the corrected layout-fixture rerun.
-- Compiled Worker smoke test with browser checks passed, including real migrations, account boundaries, shared custom foods, verified Viva Chicken results, and canonical portion logging.
+- Compiled Worker smoke test with browser checks passed, including real migrations, diary boundaries, shared custom foods, verified Viva Chicken results, and canonical portion logging.
 - Independently applied all five migrations and compared all 42,529 seed rows against the source JSON nutrition, portions, source URLs, provenance, and catalog counts. Reapplying the seed preserved the row count.
 - Independent code review found no remaining actionable findings after the integration fixes.
 

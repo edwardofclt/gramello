@@ -6,7 +6,6 @@ minimumReleaseAgeIgnoreMissingTime: false
 trustLockfile: false
 strictDepBuilds: true
 allowBuilds:
-  browser-tabs-lock: false
   esbuild: true
   fsevents: true
   sharp: true

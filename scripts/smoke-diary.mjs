@@ -1,33 +1,20 @@
 import assert from "node:assert/strict";
-import { randomBytes } from "node:crypto";
-import { mkdir, mkdtemp, readdir, rm, writeFile } from "node:fs/promises";
+import { mkdir, mkdtemp, readdir, rm } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { spawn, spawnSync } from "node:child_process";
 import { setTimeout as delay } from "node:timers/promises";
 import { once } from "node:events";
-import { generateSessionCookie } from "@auth0/nextjs-auth0/testing";
 
-const directory = await mkdtemp(join(tmpdir(), "gramello-auth-smoke-"));
-const secret = randomBytes(32).toString("hex");
+const directory = await mkdtemp(join(tmpdir(), "gramello-diary-smoke-"));
 const port = process.env.SMOKE_PORT ?? "5197";
 const base = `http://localhost:${port}`;
-const envFile = join(directory, ".env.test");
 const state = join(directory, "data");
 const cli = ["--import", "./scripts/sites-env.mjs", "./node_modules/wrangler/bin/wrangler.js"];
 let server;
 let log = "";
 
 try {
-  await writeFile(envFile, [
-    "AUTH0_DOMAIN=smoke-test.invalid",
-    "AUTH0_CLIENT_ID=smoke-test",
-    "AUTH0_CLIENT_SECRET=smoke-test-secret",
-    `AUTH0_SECRET=${secret}`,
-    `APP_BASE_URL=${base}`,
-    "AUTH0_AUDIENCE=https://gramello-api",
-    "AUTH0_MOBILE_CLIENT_ID=smoke-native-client",
-  ].join("\n"), { mode: 0o600 });
   for (const migration of (await readdir("drizzle")).filter((name) => name.endsWith(".sql")).sort()) {
     const result = spawnSync(process.execPath, [...cli, "d1", "execute", "DB", "--local",
       "--config", "dist/server/wrangler.json", "--persist-to", state,
@@ -35,7 +22,7 @@ try {
     assert.equal(result.status, 0, `Migration failed: ${result.stderr}`);
   }
   server = spawn(process.execPath, [...cli, "dev", "--config", "dist/server/wrangler.json",
-    "--local", "--persist-to", state, "--env-file", envFile,
+    "--local", "--persist-to", state, "--var", `APP_BASE_URL:${base}`,
     "--ip", "127.0.0.1", "--port", port, "--inspector-port", "0"], { stdio: ["ignore", "pipe", "pipe"] });
   for (const stream of [server.stdout, server.stderr]) stream.on("data", (chunk) => { log += chunk; });
   let ready = false;
@@ -43,49 +30,39 @@ try {
     if (server.exitCode !== null) throw new Error("Worker exited during startup");
     try {
       const response = await fetch(`${base}/api/day`);
-      assert.equal(response.status, 401);
+      assert.equal(response.status, 200);
       ready = true;
       break;
     } catch { await delay(500); }
   }
-  assert.ok(ready, "Worker did not become ready with authentication enabled");
-  const cookie = async (sub) => `__session=${await generateSessionCookie({
-    user: { sub, name: sub === "auth0|alice" ? "Alice Smoke" : "Bob Smoke" },
-    tokenSet: { accessToken: "unused", expiresAt: Math.floor(Date.now() / 1000) + 3600 },
-  }, { secret })}`;
-  const alice = await cookie("auth0|alice");
-  const bob = await cookie("auth0|bob");
+  assert.ok(ready, "Worker did not become ready without login");
   const request = (path, options = {}) => fetch(`${base}${path}`, {
     ...options, redirect: "manual", headers: { "Content-Type": "application/json", Origin: base, ...options.headers },
   });
-
-  const page = await request("/");
-  assert.equal(page.status, 200);
-  assert.match(await page.text(), /Sign in to Gramello/);
-  const signedIn = await request("/", { headers: { Cookie: alice } });
-  assert.equal(signedIn.status, 200);
-  assert.match(await signedIn.text(), /Alice Smoke/);
-  assert.match(signedIn.headers.get("cache-control"), /no-store/);
-  assert.match(signedIn.headers.get("set-cookie"), /HttpOnly/i);
-  for (const [method, path] of [["POST", "/api/foods/custom"], ["GET", "/api/day"], ["GET", "/api/trends"], ["GET", "/api/foods/search?q=a"], ["GET", "/api/foods/barcode?code=3017620422003"], ["POST", "/api/entries"], ["PUT", "/api/goals"], ["DELETE", "/api/entries?id=unknown"]]) {
-    const response = await request(path, { method, headers: { "oai-authenticated-user-id": "auth0|alice" } });
-    assert.equal(response.status, 401, `${method} ${path}`);
-    assert.match(response.headers.get("cache-control"), /no-store/);
+  const openDiary = async () => {
+    const response = await request('/');
+    assert.equal(response.status, 200);
+    const html = await response.text();
+    assert.match(html, /Today’s fuel/);
+    assert.doesNotMatch(html, /Sign in|Sign out|\/auth\/login/);
+    assert.match(response.headers.get('cache-control'), /no-store/);
+    assert.match(response.headers.get('set-cookie'), /HttpOnly/i);
+    return response.headers.get('set-cookie').split(';')[0];
+  };
+  const alice = await openDiary();
+  const bob = await openDiary();
+  assert.notEqual(alice, bob);
+  assert.equal((await request('/api/day')).status, 200);
+  assert.equal((await request('/api/day', { headers: { Cookie: '__session=invalid', Authorization: 'Bearer obsolete' } })).status, 200);
+  assert.equal((await request('/api/entries', { method: 'POST', body: '{}' })).status, 400);
+  assert.equal((await request('/api/foods/barcode?code=invalid', { headers: { Cookie: alice } })).status, 400);
+  for (const path of ['/auth/login', '/auth/logout', '/auth/callback', '/auth/access-token']) {
+    assert.equal((await request(path)).status, 404);
   }
-  assert.equal((await request("/api/day", { headers: { Cookie: "__session=invalid" } })).status, 401);
-  assert.equal((await request("/api/foods/barcode?code=invalid", { headers: { Cookie: alice } })).status, 400);
-  // Also verifies the compiled Worker loads the native configuration bindings.
-  // Missing native configuration would yield 503 instead of invalid-token 401.
-  assert.equal((await request("/api/day", { headers: { Authorization: "Bearer invalid-token", Cookie: alice } })).status, 401);
-  const callback = await request("/auth/callback?error=access_denied&error_description=PRIVATE_ERROR");
-  assert.equal(callback.status, 307);
-  assert.equal(new URL(callback.headers.get("location"), base).href, `${base}/?auth_error=1`);
-  assert.ok(!(await callback.text()).includes("PRIVATE_ERROR"));
-  assert.equal((await request("/auth/access-token", { headers: { Cookie: alice } })).status, 404);
 
   const date = new Date().toISOString().slice(0, 10);
-  const food = { date, meal: "Breakfast", name: "Smoke oats", source: "custom", quantity: 1, unit: "serving", grams: 50, calories: 190, protein: 7, carbs: 33, fat: 3, userId: "auth0|bob" };
-  const added = await request("/api/entries", { method: "POST", headers: { Cookie: alice, "oai-authenticated-user-id": "auth0|bob" }, body: JSON.stringify(food) });
+  const food = { date, meal: "Breakfast", name: "Smoke oats", source: "custom", quantity: 1, unit: "serving", grams: 50, calories: 190, protein: 7, carbs: 33, fat: 3, userId: "other-browser" };
+  const added = await request("/api/entries", { method: "POST", headers: { Cookie: alice, "oai-authenticated-user-id": "other-browser" }, body: JSON.stringify(food) });
   assert.equal(added.status, 201);
   const { id } = await added.json();
   const readDay = async (session) => (await request(`/api/day?date=${date}`, { headers: { Cookie: session } })).json();
@@ -96,11 +73,11 @@ try {
   assert.deepEqual((await readDay(alice)).goals, goals);
   assert.equal((await readDay(bob)).goals.calories, 2400);
   const readWater = async (session, selected = date) => (await request(`/api/water?date=${selected}`, { headers: { Cookie: session } })).json();
-  assert.equal((await request(`/api/water?date=${date}`)).status, 401);
+  assert.equal((await request(`/api/water?date=${date}`)).status, 200);
   assert.equal((await request('/api/water', { method: 'POST', headers: { Cookie: alice, Origin: 'https://evil.test' }, body: JSON.stringify({ date, amountMl: 250 }) })).status, 403);
   const waterGoal = { goalMl: 1892.705892, unit: 'fl-oz' };
   assert.equal((await request('/api/water/goals', { method: 'PUT', headers: { Cookie: alice }, body: JSON.stringify(waterGoal) })).status, 200);
-  const waterResponse = await request('/api/water', { method: 'POST', headers: { Cookie: alice }, body: JSON.stringify({ date, amountMl: 473.176473, userId: 'auth0|bob' }) });
+  const waterResponse = await request('/api/water', { method: 'POST', headers: { Cookie: alice }, body: JSON.stringify({ date, amountMl: 473.176473, userId: 'other-browser' }) });
   assert.equal(waterResponse.status, 201);
   const waterEntry = await waterResponse.json();
   assert.equal((await readWater(alice)).totalMl, 473.176473);
@@ -147,7 +124,7 @@ try {
     const browser = await chromium.launch();
     try {
       const context = await browser.newContext({ viewport: { width: 390, height: 844 } });
-      await context.addCookies([{ name: "__session", value: alice.slice("__session=".length), url: base }]);
+      await context.addCookies([{ name: "gramello_diary", value: alice.slice("gramello_diary=".length), url: base }]);
       const page = await context.newPage();
       await page.goto(base);
       await page.getByRole("button", { name: "Add food", exact: true }).click();
@@ -170,10 +147,9 @@ try {
       await page.screenshot({ path: "work/food-catalog/web-viva-search.png", fullPage: true });
     } finally { await browser.close(); }
   }
-  console.log("PASS: compiled Worker sign-in page, private API guards, encrypted sessions, callback failures, account isolation, goals, trends, CSRF, deletion ownership, shared custom foods, verified restaurant imports, server-side portion calculations, water goals, date isolation, and water deletion ownership.");
+  console.log("PASS: compiled Worker without login, automatic private browser cookies, browser diary isolation, goals, trends, CSRF, deletion ownership, shared custom foods, verified restaurant imports, server-side portion calculations, water goals, date isolation, and water deletion ownership.");
 } catch (error) {
-  // Wrangler logs binding names, but redact the fixture key defensively.
-  console.error(log.replaceAll(secret, "[redacted]").split("\n").slice(-35).join("\n"));
+  console.error(log.split("\n").slice(-35).join("\n"));
   throw error;
 } finally {
   if (server && server.exitCode === null) {

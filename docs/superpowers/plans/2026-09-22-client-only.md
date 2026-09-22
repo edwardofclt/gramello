@@ -15,7 +15,7 @@
 - One active device; moving data is manual export/import. No personal-data uploads or provider sign-in.
 - Catalog download/check/install is automatic; Settings has an immediate check action.
 - Preserve historical nutrition and recipe ingredient snapshots.
-- Keep hosted web working during migration. Native startup cannot depend on Auth0/API configuration.
+- Keep hosted web working during migration. Native startup cannot depend on hosted-service configuration.
 - Only USDA/public-domain data enters the distributable starter catalog; existing restaurant imports stay with the hosted edition pending rights review.
 
 ## Review focus
@@ -35,7 +35,7 @@
 - `mobile/src/catalog/format.ts`: food-pack and signed-manifest formats, compatible-version checks.
 - `mobile/src/catalog/updater.ts`: single-flight update state machine with injected storage/network and signature verification.
 - `mobile/src/local/native.ts`: Expo SQLite/filesystem wiring, catalog installation and lookup, archive file I/O.
-- `mobile/src/auth/Session.native.tsx`, `mobile/App.native.tsx`: native startup and local provider.
+- `mobile/src/diary/Session.native.tsx`, `mobile/App.native.tsx`: native startup and local provider.
 - `mobile/src/components/LocalDataSettings.tsx`: update status, archive/CSV export, import confirmation and recovery.
 - `scripts/food-catalog.mjs`, `scripts/import-usda.py`: deterministic approved data conversion, SQLite generation and signing.
 - `.github/workflows/food-catalog.yml`: validate/build/publish catalog assets independently of binaries.
@@ -79,7 +79,7 @@ Network/filesystem adapters stage and inspect a pack before activation; failure 
 
 - [x] Defer hosted migration/export: user explicitly excluded all browser work during implementation.
 - [x] Add a reusable catalog publishing workflow and document signing-key/configuration setup.
-- [x] Remove Auth0 configuration from native store profiles; retain store AAB production builds.
+- [x] Remove hosted-service configuration from native store profiles; retain store AAB production builds.
 - [x] Update README/setup, catalog sources and portability format documentation.
 
 ## Task 5: Verification and review

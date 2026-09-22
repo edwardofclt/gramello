@@ -7,7 +7,7 @@ export const actionEvents = [
 ] as const;
 export type ActionEvent = typeof actionEvents[number];
 
-export const screenNames = ['Welcome', 'Diary', 'Trends', 'Settings', 'Advanced', 'Add Food', 'Goals'] as const;
+export const screenNames = ['Diary', 'Trends', 'Settings', 'Advanced', 'Add Food', 'Goals'] as const;
 export type ScreenName = typeof screenNames[number];
 
 const allowedEvents = new Set<string>([

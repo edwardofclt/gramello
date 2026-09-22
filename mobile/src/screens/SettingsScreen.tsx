@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react';
 import { KeyboardAvoidingView, Platform, ScrollView, Text, View } from 'react-native';
-import { ChevronRight, LogOut, Target } from 'lucide-react-native';
-import { useSession } from '../auth/Session';
+import { ChevronRight, Target } from 'lucide-react-native';
+import { useSession } from '../diary/Session';
 import { Action, Card, colors, ErrorNotice, Field, Loading, styles } from '../components/ui';
 import { AppDialog } from '../components/AppDialog';
 import { WaterGoalSettings } from '../components/WaterGoalSettings';
@@ -43,7 +43,7 @@ function GoalsEditor({ goals, onSaved, onSavingChange }: { goals: Goals; onSaved
       <Text style={styles.muted}>Protein & carbs: 4 kcal/g · Fat: 9 kcal/g. A zero-macro draft starts with a 30/40/30 split when you set calories.</Text>
     </Card>
     {error && <ErrorNotice message={error} />}
-    {saved && <Text accessibilityRole="alert" style={{ color: colors.mint, textAlign: 'center' }}>{local ? 'Daily goals saved on this device.' : 'Daily goals saved. Your web diary uses these too.'}</Text>}
+    {saved && <Text accessibilityRole="alert" style={{ color: colors.mint, textAlign: 'center' }}>{local ? 'Daily goals saved on this device.' : 'Daily goals saved.'}</Text>}
     <Action busy={saving} disabled={!valid} onPress={() => void save()}>Save daily goals</Action>
   </>;
 }
@@ -61,13 +61,13 @@ export function GoalsDialog({ onClose, onSaved }: { onClose: () => void; onSaved
 }
 
 export function SettingsScreen({ onAdvanced }: { onAdvanced: () => void }) {
-  const { api, name, email, signOut, busy, local } = useSession();
+  const { api, local } = useSession();
   const [date] = useState(localDate);
   // An editor owns its draft until saved or left; foregrounding must not reset it.
   const { data, error, loading, reload } = useResource<Day>(api, `/api/day?date=${date}`, false);
   return <KeyboardAvoidingView style={{ flex: 1 }} behavior={Platform.OS === 'ios' ? 'padding' : 'height'}>
     <ScrollView contentContainerStyle={styles.content} keyboardShouldPersistTaps="handled">
-      <View><Text style={styles.eyebrow}>MAKE IT YOURS</Text><Text accessibilityRole="header" style={styles.title}>Settings</Text><Text style={styles.muted}>{local ? 'Your daily calorie, macro, and water goals.' : 'Your goals and account.'}</Text></View>
+      <View><Text style={styles.eyebrow}>MAKE IT YOURS</Text><Text accessibilityRole="header" style={styles.title}>Settings</Text><Text style={styles.muted}>Your daily calorie, macro, and water goals.</Text></View>
       {loading && <Loading label="Loading your goals…" />}
       {error && <ErrorNotice message={error} retry={reload} />}
       {data && <GoalsEditor goals={data.goals} />}
@@ -78,10 +78,10 @@ export function SettingsScreen({ onAdvanced }: { onAdvanced: () => void }) {
         <Text style={styles.muted}>Hear how your logged-day averages compare with your current goals over the seven completed days before today. Siri will ask you to unlock your device when needed.</Text>
         <Text style={styles.muted}>You can also find Macro check-in under Gramello in the Shortcuts app.</Text>
       </Card>}
-      {local ? <Action secondary quiet label="Advanced" onPress={onAdvanced} style={{ justifyContent: 'space-between', paddingHorizontal: 0 }}>
+      {local && <Action secondary quiet label="Advanced" onPress={onAdvanced} style={{ justifyContent: 'space-between', paddingHorizontal: 0 }}>
         <View style={{ flex: 1, gap: 4 }}><Text style={styles.body}>Advanced</Text><Text style={styles.muted}>Food catalog updates, export, and import</Text></View>
         <ChevronRight color={colors.muted} size={20} />
-      </Action> : <Card><Text style={styles.eyebrow}>YOUR ACCOUNT</Text><View><Text style={styles.heading}>{name}</Text>{email && email !== name && <Text style={styles.muted}>{email}</Text>}</View><Text style={styles.muted}>Your diary stays in sync with Gramello on the web.</Text><Action secondary busy={busy} onPress={() => void signOut()}><LogOut color={colors.muted} size={18} /><Text style={styles.body}>Sign out</Text></Action></Card>}
+      </Action>}
     </ScrollView>
   </KeyboardAvoidingView>;
 }

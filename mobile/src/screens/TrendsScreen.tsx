@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { ScrollView, Text, View } from 'react-native';
 import { TrendingUp } from 'lucide-react-native';
-import { useSession } from '../auth/Session';
+import { useSession } from '../diary/Session';
 import { Action, Card, colors, ErrorNotice, isWeb, Loading, styles, useLayout } from '../components/ui';
 import { NutritionChart } from '../components/NutritionChart';
 import { localDate, sumNutrition } from '../lib/nutrition';
