@@ -21,10 +21,25 @@ The default public origin is `https://gramello.com`. Set `SITE_URL` when buildin
 for a different HTTPS origin or a GitHub Pages project prefix; canonical URLs,
 sitemaps, and 404 navigation follow that value.
 
-The `Gramello website` workflow validates pull requests. After a matching change
-merges into `main`, it builds and deploys the same static output. GitHub Pages
-must use **GitHub Actions** as its publishing source. A manual workflow dispatch
-on `main` also republishes the site.
+The `Gramello website` workflow validates pull requests and publishes automatically:
+
+- Each stable release created by the `Release` workflow calls the website
+  workflow directly, building and deploying the published release tag. This is
+  necessary because releases created with `GITHUB_TOKEN` do not trigger another
+  workflow through the `release` event.
+- A manually published stable GitHub release also triggers publication. Drafts
+  and prereleases do not publish the production website.
+- Website, policy, or publishing-workflow changes merged into `main` continue to
+  publish immediately, without requiring a new app release.
+- A manual workflow dispatch on `main` republishes that commit, or a published
+  stable release when the optional `release_tag` input is supplied.
+
+GitHub Pages must use **GitHub Actions** as its publishing source. The
+`github-pages` environment must allow the `main` branch and `v*` tags. Release
+tags are checked against the published release and must use `vMAJOR.MINOR.PATCH`.
+Production publication runs share a concurrency group. Only a successful build
+and site check can proceed to deployment; app-store build failures do not block
+the independent website publication job.
 
 ## Content
 

@@ -1,6 +1,13 @@
 name: Gramello website
 
 on:
+  workflow_call:
+    inputs:
+      release_tag:
+        required: true
+        type: string
+  release:
+    types: [published]
   push:
     branches: [main]
     paths:
@@ -9,6 +16,7 @@ on:
       - 'docs/support.md'
       - 'docs/terms.md'
       - '.github/workflows/website.yml'
+      - '.github/workflows/release.yml'
   pull_request:
     paths:
       - 'website/**'
@@ -16,20 +24,41 @@ on:
       - 'docs/support.md'
       - 'docs/terms.md'
       - '.github/workflows/website.yml'
+      - '.github/workflows/release.yml'
   workflow_dispatch:
+    inputs:
+      release_tag:
+        description: Optional published stable release tag; leave blank to publish this commit
+        required: false
+        type: string
 
 permissions:
   contents: read
 
 concurrency:
-  group: website-${{ github.ref }}
+  group: website-${{ github.event_name == 'pull_request' && github.ref || 'production' }}
   cancel-in-progress: false
 
 jobs:
   build:
+    if: github.event_name != 'release' || !github.event.release.prerelease
     runs-on: ubuntu-latest
+    env:
+      RELEASE_TAG: ${{ inputs.release_tag || github.event.release.tag_name }}
     steps:
+      - name: Verify published stable release
+        if: env.RELEASE_TAG != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [[ ! "$RELEASE_TAG" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            echo "::error::Expected a stable release tag like v1.8.0."
+            exit 1
+          fi
+          gh release view "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" --json isDraft,isPrerelease --jq 'if .isDraft or .isPrerelease then error("A published stable release is required") else "Verified stable release" end'
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ env.RELEASE_TAG && format('refs/tags/{0}', env.RELEASE_TAG) || github.sha }}
       - uses: actions/setup-node@v4
         with:
           node-version: 24
@@ -40,7 +69,7 @@ jobs:
           path: out/website
 
   deploy:
-    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    if: github.event_name != 'pull_request' && (github.ref == 'refs/heads/main' || github.event_name == 'release')
     needs: build
     runs-on: ubuntu-latest
     permissions:
