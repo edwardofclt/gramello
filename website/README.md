@@ -46,6 +46,11 @@ on `main` also republishes the site.
 - Keep release availability wording aligned with confirmed store availability.
   OneLink configuration is managed separately from this site. Do not imply
   one platform purchase also includes the other.
+- The owner has directed the site and policies to describe the account-free
+  mobile product: personal tracking data stays on the device, with no Gramello
+  account or server-side diary storage. Account-based syncing, shared user-food
+  submissions, and support-based account deletion are not advertised. This
+  content change does not implement the app's storage transition.
 
 ## Design and assets
 
