@@ -289,7 +289,14 @@ describe('water intake', () => {
     expect(response.status).toBe(201);
     const { id } = await response.json() as { id: string };
     await call(addWater, '/api/water', { method: 'POST', body: { date: '2026-09-19', amountMl: 250 }, user: 'auth0|alice' });
-    expect(await read()).toMatchObject({ goal: target, totalMl: 723.176473, entries: [{ id }, { amountMl: 250 }] });
+    const savedDay = await read();
+    expect(savedDay).toMatchObject({ goal: target, totalMl: 723.176473 });
+    // Entries created in the same millisecond are ordered by ID, not insertion.
+    expect(savedDay.entries).toHaveLength(2);
+    expect(savedDay.entries).toEqual(expect.arrayContaining([
+      expect.objectContaining({ id, amountMl: 473.176473 }),
+      expect.objectContaining({ amountMl: 250 }),
+    ]));
     expect(await read('auth0|bob')).toMatchObject({ goal: { goalMl: 2000, unit: 'ml' }, entries: [], totalMl: 0 });
     expect(await read('auth0|alice', '2026-09-18')).toMatchObject({ goal: target, entries: [], totalMl: 0 });
     await call(removeWater, `/api/water?id=${id}`, { method: 'DELETE', user: 'auth0|bob' });
