@@ -3,16 +3,16 @@ import { NextRequest } from "next/server";
 import { afterEach, beforeEach, expect, it, vi } from "vitest";
 
 const runtime = vi.hoisted(() => ({ env: {
-  AUTH0_DOMAIN: "nourish-tests.us.auth0.com",
+  AUTH0_DOMAIN: "gramello-tests.us.auth0.com",
   AUTH0_CLIENT_ID: "test-client",
   AUTH0_CLIENT_SECRET: "test-client-secret",
   AUTH0_SECRET: "0123456789abcdef".repeat(4),
-  APP_BASE_URL: "https://nourish.test",
+  APP_BASE_URL: "https://gramello.test",
 } }));
 vi.mock("cloudflare:workers", () => runtime);
 
-const issuer = "https://nourish-tests.us.auth0.com/";
-const base = "https://nourish.test";
+const issuer = "https://gramello-tests.us.auth0.com/";
+const base = "https://gramello.test";
 const { privateKey, publicKey } = generateKeyPairSync("rsa", { modulusLength: 2048 });
 let authorization: URL;
 let invalidNonce = false;
@@ -61,7 +61,7 @@ async function startLogin() {
   const response = await proxy(new NextRequest(`${base}/auth/login?returnTo=https://evil.test`));
   expect(response.status).toBe(307);
   authorization = new URL(response.headers.get("location")!);
-  expect(authorization.origin).toBe("https://nourish-tests.us.auth0.com");
+  expect(authorization.origin).toBe("https://gramello-tests.us.auth0.com");
   expect(authorization.searchParams.get("client_id")).toBe("test-client");
   expect(authorization.searchParams.get("redirect_uri")).toBe(`${base}/auth/callback`);
   expect(authorization.searchParams.get("response_type")).toBe("code");
@@ -87,7 +87,7 @@ it("completes authorization code + PKCE login, restricts redirects, and clears t
   expect((await getAuth0().getSession(sessionRequest))?.user.sub).toBe("auth0|alice");
   const logout = await proxy(new NextRequest(`${base}/auth/logout`, { headers: sessionRequest.headers }));
   expect(logout.status).toBe(307);
-  expect(new URL(logout.headers.get("location")!).origin).toBe("https://nourish-tests.us.auth0.com");
+  expect(new URL(logout.headers.get("location")!).origin).toBe("https://gramello-tests.us.auth0.com");
   expect(logout.headers.getSetCookie().some((value) => value.startsWith("__session=;") && /max-age=0/i.test(value))).toBe(true);
 });
 

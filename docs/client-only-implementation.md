@@ -1,6 +1,6 @@
 # Native local-data implementation
 
-The iOS/Android entry point is `mobile/App.native.tsx`. Metro resolves `Session.native.tsx`, whose API adapter invokes a SQLite repository in process. The existing Expo browser app and hosted web edition retain their authenticated API. No Auth0 configuration is needed for native builds.
+The iOS/Android entry point is `mobile/App.native.tsx`. Metro resolves `Session.native.tsx`, whose API adapter invokes a SQLite repository in process. The existing Expo browser app and hosted web edition retain their authenticated API. No Auth0 configuration is needed for native builds. The anonymous usage analytics already present on `main` is retained: fixed action/screen names only, with diary contents excluded by its existing allowlist. Leaving the Segment write key unset disables it.
 
 ## Storage and recovery
 
@@ -38,6 +38,8 @@ Changing the signing key requires an application update; keep the current key st
 
 ## Release and verification
 
+Without `CATALOG_SIGNING_KEY`, the publisher explicitly skips publication with a setup notice. Configure the secret and rerun the workflow to enable public catalog updates.
+
 Production EAS Android builds produce an AAB. Application releases now build store bundles instead of automatically publishing unrestricted APKs. Manual APK distribution remains an explicit workflow. iOS TestFlight continues through the existing workflow. Store pricing, agreements, screenshots, actual store submission, and customer migration timing remain release operations.
 
 Run:
@@ -45,9 +47,9 @@ Run:
 ```sh
 pnpm test
 pnpm exec tsc --noEmit
-pnpm --filter @nourish/mobile typecheck
+pnpm --filter @gramello/mobile typecheck
 pnpm lint
-pnpm --filter @nourish/mobile export
+pnpm --filter @gramello/mobile export
 ```
 
 Before a store submission, validate on real iOS/Android devices: first launch without network, local persistence after process termination, import cancellation/confirmation/recovery, save destinations including installed cloud providers, barcode scanning, and a signed catalog update over a slow/interrupted connection. JS bundle export alone is not a native runtime test.

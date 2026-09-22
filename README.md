@@ -2,6 +2,11 @@
 
 A self-hostable calorie and macro tracker with a fast daily diary, precise serving and weight controls, goal tracking, and 7-day, 30-day, and 6-month analytics.
 
+The source repository is [edwardofclt/gramello](https://github.com/edwardofclt/gramello).
+For product help and data requests, see [support](docs/support.md) and the
+[privacy policy](docs/privacy.md). App Store preparation is tracked in
+[the release checklist](docs/app-store-preparation.md).
+
 Food search combines:
 
 - [USDA FoodData Central](https://fdc.nal.usda.gov/) for generic and branded foods
@@ -93,6 +98,16 @@ Run `SMOKE_BROWSER=1 pnpm test:smoke` after building to verify real migrations,
 source verification, custom-food persistence, and the web flow in an isolated
 local database. This does not modify the production diary.
 
+## Public website and legal pages
+
+The [Gramello website](https://gramello.com/) includes the
+[privacy policy](https://gramello.com/privacy/),
+[terms and conditions](https://gramello.com/terms/), and
+[support and data requests](https://gramello.com/support/).
+It is a separate static GitHub Pages site; the authenticated diary stays on Fly.io.
+See [website development and publishing](website/README.md) for local preview,
+content sources, and the automatic Pages deployment.
+
 ## Mobile app
 
 The native iOS/Android app now stores its diary locally in SQLite, works without an account, automatically updates a separate USDA food catalog, and supports user-directed backup/CSV export and import. See [native local-data implementation](docs/client-only-implementation.md) for catalog signing, publishing, recovery, and release checks. The browser edition retains the hosted account model.
@@ -108,11 +123,15 @@ Configure Auth0 using the steps below, then:
 docker compose up --build
 ```
 
-Open [http://localhost:3000](http://localhost:3000). Diary data is stored in the named `nourish-data` volume and survives container restarts.
+Open [http://localhost:3000](http://localhost:3000). Diary data is stored in
+the existing `nourish-data` volume and survives container restarts. Keep this
+legacy volume name when updating an installation so it uses the same diary data.
 
 ## Fly.io deployment
 
-The API and web app run at [https://nourish-api.fly.dev](https://nourish-api.fly.dev).
+The Gramello API and web app currently run at
+[https://nourish-api.fly.dev](https://nourish-api.fly.dev). This hostname is a
+live service address; changing the GitHub repository name does not move it.
 `fly.toml` deploys the existing Docker image in `iad` with the SQLite database
 and migration markers stored on the encrypted `nourish_data` volume at `/data`.
 Daily volume snapshots are retained for 14 days. This is a single-Machine
@@ -188,7 +207,7 @@ The iOS and Android app uses a separate Auth0 **Native Application** and the
 same tenant and enabled connections as the web application. In Auth0:
 
 1. Create an API for the Gramello server. Use a stable URL-style identifier such
-   as `https://api.nourish.example` (it need not resolve on the public internet),
+   as `https://api.gramello.example` (it need not resolve on the public internet),
    select RS256 signing, and enable offline access for the API.
 2. Create a Native Application. Enable Refresh Token Rotation with reuse
    detection, and enable the same database, social, or enterprise connections
@@ -293,3 +312,8 @@ Stable releases also build the iOS app on Expo EAS and submit it to TestFlight.
 The build uses the release tag's code and version; EAS increments the build number.
 The repository's `EXPO_TOKEN` Actions secret authenticates the build robot.
 See [mobile TestFlight setup](mobile/README.md#testflight) for credentials and manual reruns.
+
+The iOS bundle identifier, Android package, Auth0 callback scheme and API
+audience, Expo project slug, Fly hostname, and database volume names still use
+their original internal IDs. They identify existing installs, sign-in flows, or
+stored data; the public app and GitHub repository are Gramello.

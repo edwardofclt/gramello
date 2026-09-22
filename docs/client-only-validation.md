@@ -13,9 +13,10 @@ and browser UI validation were explicitly removed at the user's request.
 - Ruling: `.gramello` backups are versioned UTF-8 JSON; CSV is a separate export.
   The complete archive is portable without a ZIP dependency. Cost: larger backup
   files; imported backups are capped at 32 MiB.
-- Ruling: keep the change uncommitted and unpublished for review. Store submission,
-  signing-secret provisioning, and public catalog publication remain release steps.
-  Cost: automatic downloads begin only after the first signed release exists.
+- Ruling: prepare implementation before release configuration. The user subsequently
+  authorized opening and merging a PR. Signing-secret provisioning and public
+  catalog publication remain release steps. Cost: automatic downloads begin only
+  after the first signed release exists.
 - Ruling: only approved USDA public-domain records ship in the starter. Restaurant
   data needs redistribution clearance before inclusion. Cost: less initial food
   coverage and no packaged-product barcodes in this seed.
@@ -83,3 +84,17 @@ install/restart, the imported banana entry and 250 mL water entry remained intac
 On the final simulator build, recovery restored the earlier 250 mL water total
 from a later 750 mL state, retaining the banana entry. The six-month Trends view
 also loaded successfully after recovery.
+
+## PR integration
+
+Merged current `main` into the implementation branch, preserving the Gramello
+package/tooling rename, existing anonymous Segment analytics, and unrelated
+website/release changes. The local API adapter uses the existing analytics filter;
+no diary contents enter analytics. Production keeps the existing public Segment
+write key while dropping native Auth0/API configuration.
+
+On the combined source: **237/237 tests passed**; root/mobile TypeScript, ESLint,
+and iOS/Android Hermes exports passed. The catalog workflow now skips explicitly
+when its signing secret is absent, so merging an unfinished release setup does
+not attempt an unsigned publication. The prior simulator checks preceded this
+integration; the combined native bundles include the retained analytics modules.

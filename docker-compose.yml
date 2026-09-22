@@ -1,7 +1,7 @@
 services:
-  nourish:
+  gramello:
     build: .
-    image: nourish:local
+    image: gramello:local
     env_file:
       - .env.local
     environment:

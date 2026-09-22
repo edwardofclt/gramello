@@ -8,7 +8,7 @@ import { setTimeout as delay } from "node:timers/promises";
 import { once } from "node:events";
 import { generateSessionCookie } from "@auth0/nextjs-auth0/testing";
 
-const directory = await mkdtemp(join(tmpdir(), "nourish-auth-smoke-"));
+const directory = await mkdtemp(join(tmpdir(), "gramello-auth-smoke-"));
 const secret = randomBytes(32).toString("hex");
 const port = process.env.SMOKE_PORT ?? "5197";
 const base = `http://localhost:${port}`;
@@ -25,7 +25,7 @@ try {
     "AUTH0_CLIENT_SECRET=smoke-test-secret",
     `AUTH0_SECRET=${secret}`,
     `APP_BASE_URL=${base}`,
-    "AUTH0_AUDIENCE=https://nourish-api",
+    "AUTH0_AUDIENCE=https://gramello-api",
     "AUTH0_MOBILE_CLIENT_ID=smoke-native-client",
   ].join("\n"), { mode: 0o600 });
   for (const migration of (await readdir("drizzle")).filter((name) => name.endsWith(".sql")).sort()) {

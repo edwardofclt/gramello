@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { ScrollView, Text, View } from 'react-native';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import { StatusBar } from 'expo-status-bar';
@@ -8,10 +9,13 @@ import { SessionProvider, useSession } from './src/auth/Session';
 import { Action, Card, colors, ErrorNotice, isWeb, Loading, styles } from './src/components/ui';
 import { Brand } from './src/components/TrackerShell';
 import { Tracker } from './src/components/Tracker';
+import { initializeAnalytics } from './src/analytics/client';
+import { useAnalyticsScreen } from './src/analytics/useScreen';
 import { configuration, configurationError } from './src/lib/config';
 
 function Welcome() {
   const { signIn, busy, message } = useSession();
+  useAnalyticsScreen('Welcome');
   if (isWeb) return <ScrollView contentContainerStyle={{ flexGrow: 1, padding: 24, justifyContent: 'center', alignItems: 'center' }}>
     <Card style={{ width: '100%', maxWidth: 460, padding: 36, gap: 24, boxShadow: '0 18px 55px #020b1166' }}>
       <Brand /><Text accessibilityRole="header" style={[styles.title, { fontSize: 40, lineHeight: 45, marginTop: 8 }]}>Your nutrition,{`\n`}in one place.</Text>
@@ -39,6 +43,7 @@ function AuthenticatedApp() {
 }
 
 export default function App() {
+  useEffect(() => { initializeAnalytics(); }, []);
   const error = configurationError();
   return <SafeAreaProvider><OverlayProvider><StatusBar style="light" />
     {error ? <SafeAreaView style={styles.screen}><View style={[styles.content, { flex: 1, justifyContent: 'center' }]}><Brand /><Text style={styles.title}>Let’s connect Gramello</Text><ErrorNotice message={error} /><Text style={styles.muted}>Setup instructions are in mobile/README.md. Your diary will appear after sign-in.</Text></View></SafeAreaView>

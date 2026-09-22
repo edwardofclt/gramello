@@ -28,6 +28,9 @@
       "environment": "production",
       "android": {
         "buildType": "app-bundle"
+      },
+      "env": {
+        "EXPO_PUBLIC_SEGMENT_WRITE_KEY": "hOJeJfTSpjVxNkNc50UDobEhBvjPnpg7"
       }
     }
   },

@@ -3,7 +3,7 @@ import { mkdtemp, readdir, rm, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { spawn, spawnSync } from 'node:child_process';
-const directory = await mkdtemp(join(tmpdir(), 'nourish-browser-'));
+const directory = await mkdtemp(join(tmpdir(), 'gramello-browser-'));
 const state = join(directory, 'data');
 const envFile = join(directory, '.env.test');
 const args = ['--import', './scripts/sites-env.mjs', './node_modules/wrangler/bin/wrangler.js'];

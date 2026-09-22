@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useAnalyticsScreen } from '../analytics/useScreen';
 import { TrackerShell, type Tab } from './TrackerShell';
 import { isWeb } from './ui';
 import { localDate } from '../lib/nutrition';
@@ -15,6 +16,7 @@ export function Tracker() {
   const [meal, setMeal] = useState<Meal | null>(null);
   const [goalsOpen, setGoalsOpen] = useState(false);
   const [revision, setRevision] = useState(0);
+  useAnalyticsScreen(meal ? 'Add Food' : goalsOpen ? 'Goals' : tab === 'diary' ? 'Diary' : tab === 'trends' ? 'Trends' : 'Settings');
   const refresh = () => setRevision(value => value + 1);
   const editGoals = () => isWeb ? setGoalsOpen(true) : setTab('settings');
   return <>

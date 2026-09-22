@@ -7,6 +7,7 @@ import * as DocumentPicker from 'expo-document-picker';
 import catalogConfig from '../../catalog-config.json';
 import { createLocalRepository } from './repository';
 import { createLocalApi } from './api';
+import { withAnalytics } from '../analytics/api';
 import { serialized, type SqliteConnection } from './database';
 import { archiveCsv, MAX_ARCHIVE_BYTES, parseArchive } from './records';
 import { createCatalogUpdater, type UpdateState } from '../catalog/updater';
@@ -94,7 +95,7 @@ async function openRuntime() {
     },
   },catalogConfig.publicKey);
   return {
-    repository, updater, api:createLocalApi(repository),
+    repository, updater, api:withAnalytics(createLocalApi(repository)),
     async exportFile(format: 'backup' | 'diary' | 'water') {
       const archive = await repository.exportArchive();
       const text = format === 'backup' ? JSON.stringify(archive) : archiveCsv(archive)[format];

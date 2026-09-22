@@ -27,7 +27,19 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 24
+      - name: Check catalog signing setup
+        id: signing
+        env:
+          CATALOG_SIGNING_KEY: ${{ secrets.CATALOG_SIGNING_KEY }}
+        run: |
+          if [ -n "$CATALOG_SIGNING_KEY" ]; then
+            echo "configured=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "::warning::Catalog publication skipped. Configure CATALOG_SIGNING_KEY and rerun this workflow; bundled foods remain available."
+            echo "configured=false" >> "$GITHUB_OUTPUT"
+          fi
       - name: Build and sign approved-source catalog
+        if: steps.signing.outputs.configured == 'true'
         env:
           CATALOG_SIGNING_KEY: ${{ secrets.CATALOG_SIGNING_KEY }}
           REPOSITORY: ${{ github.repository }}
@@ -40,6 +52,7 @@ jobs:
             "https://github.com/${REPOSITORY}/releases/download/food-catalog/foods-${version}.sqlite"
           cp data/food-catalog/README.md catalog-release/SOURCES.md
       - name: Publish database before advertising it in the manifest
+        if: steps.signing.outputs.configured == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}

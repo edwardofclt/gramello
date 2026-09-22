@@ -9,7 +9,7 @@ for (const width of [390, 1440]) {
     let failSave = true;
     const errors: string[] = [];
     page.on('pageerror', error => errors.push(error.message));
-    await page.route('https://nourish.test/api/**', async route => {
+    await page.route('https://gramello.test/api/**', async route => {
       const request = route.request();
       const url = new URL(request.url());
       const headers = { 'access-control-allow-origin': '*', 'access-control-allow-headers': 'authorization,content-type', 'access-control-allow-methods': 'GET,POST,PUT,DELETE' };
