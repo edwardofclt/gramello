@@ -1,0 +1,40 @@
+name: Check Siri integration
+
+on:
+  pull_request:
+    paths:
+      - 'mobile/native/siri/**'
+      - 'mobile/plugins/withSiriCheckIn.cjs'
+      - 'mobile/src/local/**'
+      - 'mobile/package.json'
+      - 'pnpm-lock.yaml'
+      - '.github/workflows/siri-native.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'mobile/native/siri/**'
+      - 'mobile/plugins/withSiriCheckIn.cjs'
+      - 'mobile/src/local/**'
+      - 'mobile/package.json'
+      - 'pnpm-lock.yaml'
+      - '.github/workflows/siri-native.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  native-tests:
+    runs-on: macos-15
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: Test the native SQLite reader and spoken summary
+        run: swift test --package-path mobile/native/siri
+      - name: Type-check the iOS App Intents against Expo SQLite
+        run: pnpm --filter @gramello/mobile test:siri:ios

@@ -72,6 +72,12 @@ export function SettingsScreen({ onAdvanced }: { onAdvanced: () => void }) {
       {error && <ErrorNotice message={error} retry={reload} />}
       {data && <GoalsEditor goals={data.goals} />}
       <WaterGoalSettings />
+      {local && Platform.OS === 'ios' && <Card>
+        <Text accessibilityRole="header" style={styles.heading}>Ask Siri</Text>
+        <Text selectable style={styles.body}>“Hey Siri, give me my macro check-in in Gramello.”</Text>
+        <Text style={styles.muted}>Hear how your logged-day averages compare with your current goals over the seven completed days before today. Siri will ask you to unlock your device when needed.</Text>
+        <Text style={styles.muted}>You can also find Macro check-in under Gramello in the Shortcuts app.</Text>
+      </Card>}
       {local ? <Action secondary quiet label="Advanced" onPress={onAdvanced} style={{ justifyContent: 'space-between', paddingHorizontal: 0 }}>
         <View style={{ flex: 1, gap: 4 }}><Text style={styles.body}>Advanced</Text><Text style={styles.muted}>Food catalog updates, export, and import</Text></View>
         <ChevronRight color={colors.muted} size={20} />
