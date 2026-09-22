@@ -2,22 +2,11 @@ import { useEffect, useState } from 'react';
 import { AppState, Text, View } from 'react-native';
 import { Droplets, Trash2 } from 'lucide-react-native';
 import { useSession } from '../auth/Session';
-import { Action, Card, colors, ErrorNotice, Field, Loading, Meter, styles } from './ui';
+import { Action, Card, colors, ErrorNotice, Field, isWeb, Loading, Meter, styles } from './ui';
 import { AppDialog } from './AppDialog';
-import { useWater, useWaterGoalDraft } from '../../../lib/use-water';
-import { waterAmountSchema, waterLabel, waterPresets, waterToMl, waterUnitLabel, type WaterGoal } from '../../../lib/water';
-
-function WaterGoalEditor({ goal, busy, error, onSave }: { goal: WaterGoal; busy: boolean; error: string | null; onSave: (goal: WaterGoal) => Promise<void> }) {
-  const draft = useWaterGoalDraft(goal);
-  return <>
-    <Text style={styles.muted}>Water unit</Text>
-    <View style={styles.row}>{(['ml', 'fl-oz'] as const).map(unit => <Action key={unit} secondary={draft.unit !== unit} disabled={busy} label={`Use ${waterUnitLabel(unit)}`} onPress={() => draft.changeUnit(unit)}>{waterUnitLabel(unit)}</Action>)}</View>
-    <Field label={`Daily water goal (${waterUnitLabel(draft.unit)})`} keyboardType="decimal-pad" value={draft.amount} onChangeText={draft.changeAmount} editable={!busy} selectTextOnFocus />
-    {!draft.valid && <ErrorNotice message="Enter a goal between 1 and 10,000 mL (or the equivalent in US fl oz)." />}
-    {error && <ErrorNotice message={error} />}
-    <Action busy={busy} disabled={!draft.valid} onPress={() => void onSave(draft.goal)}>Save water goal</Action>
-  </>;
-}
+import { WaterGoalEditor } from './WaterGoalSettings';
+import { useWater } from '../../../lib/use-water';
+import { waterAmountSchema, waterLabel, waterPresets, waterToMl, waterUnitLabel } from '../../../lib/water';
 
 export function WaterTracker({ date }: { date: string }) {
   const { api } = useSession();
@@ -37,7 +26,7 @@ export function WaterTracker({ date }: { date: string }) {
 
   return <>
     <Card>
-      <View style={[styles.between, { flexWrap: 'wrap' }]}><View style={styles.row}><Droplets color={colors.blue} size={22} /><Text accessibilityRole="header" style={styles.heading}>Water intake</Text></View><Action quiet secondary compact disabled={disabled} onPress={() => setEditingGoal(true)}>Edit water goal</Action></View>
+      <View style={[styles.between, { flexWrap: 'wrap' }]}><View style={styles.row}><Droplets color={colors.blue} size={22} /><Text accessibilityRole="header" style={styles.heading}>Water intake</Text></View>{isWeb && <Action quiet secondary compact disabled={disabled} onPress={() => setEditingGoal(true)}>Edit water goal</Action>}</View>
       {water.error && !editingGoal && <ErrorNotice message={water.error} retry={water.busy ? undefined : water.reload} />}
       {!data && water.loading && <Loading label="Loading water intake…" />}
       {data && <>
@@ -54,6 +43,6 @@ export function WaterTracker({ date }: { date: string }) {
         </> : <Text style={styles.muted}>No water logged for this day yet.</Text>}
       </>}
     </Card>
-    {editingGoal && data && <AppDialog title="Daily water goal" description="Choose your own daily target and preferred unit. Your goal applies across your diary." busy={water.busy} onClose={() => setEditingGoal(false)}><WaterGoalEditor goal={data.goal} busy={water.busy} error={water.error} onSave={async goal => { if (await water.saveGoal(goal)) { setAmount(''); setEditingGoal(false); } }} /></AppDialog>}
+    {isWeb && editingGoal && data && <AppDialog title="Daily water goal" description="Choose your own daily target and preferred unit. Your goal applies across your diary." busy={water.busy} onClose={() => setEditingGoal(false)}><WaterGoalEditor goal={data.goal} busy={water.busy} error={water.error} onSave={async goal => { const saved = await water.saveGoal(goal); if (saved) { setAmount(''); setEditingGoal(false); } return saved; }} /></AppDialog>}
   </>;
 }

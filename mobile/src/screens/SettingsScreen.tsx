@@ -1,10 +1,10 @@
-import { LocalDataSettings } from '../components/LocalDataSettings';
 import { useRef, useState } from 'react';
 import { KeyboardAvoidingView, Platform, ScrollView, Text, View } from 'react-native';
-import { LogOut, Target } from 'lucide-react-native';
+import { ChevronRight, LogOut, Target } from 'lucide-react-native';
 import { useSession } from '../auth/Session';
 import { Action, Card, colors, ErrorNotice, Field, Loading, styles } from '../components/ui';
 import { AppDialog } from '../components/AppDialog';
+import { WaterGoalSettings } from '../components/WaterGoalSettings';
 import { errorMessage } from '../lib/api';
 import { changeGoal, localDate, macroPercent } from '../lib/nutrition';
 import type { Day, Goals } from '../lib/types';
@@ -60,18 +60,22 @@ export function GoalsDialog({ onClose, onSaved }: { onClose: () => void; onSaved
   </AppDialog>;
 }
 
-export function SettingsScreen() {
+export function SettingsScreen({ onAdvanced }: { onAdvanced: () => void }) {
   const { api, name, email, signOut, busy, local } = useSession();
   const [date] = useState(localDate);
   // An editor owns its draft until saved or left; foregrounding must not reset it.
   const { data, error, loading, reload } = useResource<Day>(api, `/api/day?date=${date}`, false);
   return <KeyboardAvoidingView style={{ flex: 1 }} behavior={Platform.OS === 'ios' ? 'padding' : 'height'}>
     <ScrollView contentContainerStyle={styles.content} keyboardShouldPersistTaps="handled">
-      <View><Text style={styles.eyebrow}>MAKE IT YOURS</Text><Text style={styles.title}>Settings</Text><Text style={styles.muted}>{local ? 'Your goals, food catalog, and saved data.' : 'Your goals and account.'}</Text></View>
+      <View><Text style={styles.eyebrow}>MAKE IT YOURS</Text><Text accessibilityRole="header" style={styles.title}>Settings</Text><Text style={styles.muted}>{local ? 'Your daily calorie, macro, and water goals.' : 'Your goals and account.'}</Text></View>
       {loading && <Loading label="Loading your goals…" />}
       {error && <ErrorNotice message={error} retry={reload} />}
       {data && <GoalsEditor goals={data.goals} />}
-      {local ? <LocalDataSettings local={local} /> : <Card><Text style={styles.eyebrow}>YOUR ACCOUNT</Text><View><Text style={styles.heading}>{name}</Text>{email && email !== name && <Text style={styles.muted}>{email}</Text>}</View><Text style={styles.muted}>Your diary stays in sync with Gramello on the web.</Text><Action secondary busy={busy} onPress={() => void signOut()}><LogOut color={colors.muted} size={18} /><Text style={styles.body}>Sign out</Text></Action></Card>}
+      <WaterGoalSettings />
+      {local ? <Action secondary quiet label="Advanced" onPress={onAdvanced} style={{ justifyContent: 'space-between', paddingHorizontal: 0 }}>
+        <View style={{ flex: 1, gap: 4 }}><Text style={styles.body}>Advanced</Text><Text style={styles.muted}>Food catalog updates, export, and import</Text></View>
+        <ChevronRight color={colors.muted} size={20} />
+      </Action> : <Card><Text style={styles.eyebrow}>YOUR ACCOUNT</Text><View><Text style={styles.heading}>{name}</Text>{email && email !== name && <Text style={styles.muted}>{email}</Text>}</View><Text style={styles.muted}>Your diary stays in sync with Gramello on the web.</Text><Action secondary busy={busy} onPress={() => void signOut()}><LogOut color={colors.muted} size={18} /><Text style={styles.body}>Sign out</Text></Action></Card>}
     </ScrollView>
   </KeyboardAvoidingView>;
 }

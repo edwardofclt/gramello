@@ -6,7 +6,7 @@ The iOS/Android entry point is `mobile/App.native.tsx`. Metro resolves `Session.
 
 `gramello-personal.sqlite` is persistent application data. Versioned, validated JSON records are indexed by kind and calendar date. Repository operations serialize on the connection so import/export transactions cannot capture another UI write. Native IDs come from Expo Crypto. Failed writes/imports roll back.
 
-A `.gramello` file is UTF-8 JSON with `format: "gramello"`, `version: 1`, `exportedAt`, and `records`. Each record has `kind`, `id`, `date`, and validated `value`. It contains food and recipe snapshots, goals, diary and hydration. It contains no credentials or catalog databases. Portable archives are limited to 32 MiB and 200,000 records. Imports reject unsupported formats, duplicate keys, impossible dates and files above those limits. Oversize exports fail explicitly; replacement is refused before mutation if the current diary cannot fit in a restorable recovery archive. Import is replacement after confirmation, not merge. A SQLite recovery row preserves the previous diary and Settings exposes recovery. Both platforms use the same format.
+A `.gramello` file is UTF-8 JSON with `format: "gramello"`, `version: 1`, `exportedAt`, and `records`. Each record has `kind`, `id`, `date`, and validated `value`. It contains food and recipe snapshots, goals, diary and hydration. It contains no credentials or catalog databases. Portable archives are limited to 32 MiB and 200,000 records. Imports reject unsupported formats, duplicate keys, impossible dates and files above those limits. Oversize exports fail explicitly; replacement is refused before mutation if the current diary cannot fit in a restorable recovery archive. Import is replacement after confirmation, not merge. A SQLite recovery row preserves the previous diary and Settings → Advanced exposes recovery. Both platforms use the same format.
 
 CSV exports quote fields and neutralize leading spreadsheet formula characters. Exports go through the OS share/save interface; Gramello has no personal cloud-data integration. Temporary exports stay in the OS-managed cache because Android share targets may read them after the sharing call returns.
 
@@ -18,7 +18,7 @@ The starter is 7,793 USDA SR Legacy foods. It has no comprehensive barcode cover
 
 Each update envelope contains an exact UTF-8 `payload` string and a hex Ed25519 `signature`. The payload defines schema version, catalog version/date, HTTPS asset URL, byte count, SHA-256 and food count. The app verifies signature, download length/hash, SQLite integrity, schema, search count, and every food before activation. An atomic SQLite metadata write selects the next database for future launches. The old connection remains available until active readers finish.
 
-At first launch and on foregrounding, an eligible check runs silently. Successful checks defer the next automatic check by 24–25 hours; errors retry with bounded backoff on a later foreground opportunity. Settings bypasses the interval. There is no promise of downloads while an app is closed. Existing data remains usable throughout failures.
+At first launch and on foregrounding, an eligible check runs silently. Successful checks defer the next automatic check by 24–25 hours; errors retry with bounded backoff on a later foreground opportunity. The update check in Settings → Advanced bypasses the interval. There is no promise of downloads while an app is closed. Existing data remains usable throughout failures.
 
 The current 4.9 MB pack is shipped uncompressed to avoid adding a native decompression dependency. Release filenames are unique per workflow run. The mutable `food-catalog` prerelease contains immutable database assets plus a replaceable signed `manifest.json`. It does not become GitHub's latest application release or trigger native app builds. Configuration is in `mobile/catalog-config.json`; a dedicated catalog repository can be substituted by changing that origin and workflow destination.
 
@@ -32,7 +32,7 @@ Set the repository Actions secret `CATALOG_SIGNING_KEY` from that PEM file. The 
 gh secret set CATALOG_SIGNING_KEY --repo edwardofclt/gramello < .catalog-work/signing-key.pem
 ```
 
-After merging, run **Publish food catalog** on `main`. The workflow also runs on changes to the approved catalog inputs. It uploads the database before replacing the manifest. Until that release exists, native builds use their bundled foods and show a recoverable update error only in Settings.
+After merging, run **Publish food catalog** on `main`. The workflow also runs on changes to the approved catalog inputs. It uploads the database before replacing the manifest. Until that release exists, native builds use their bundled foods and show a recoverable update error only in Settings → Advanced.
 
 Changing the signing key requires an application update; keep the current key stable. Changing the USDA snapshot requires regenerating the normalized input and, when desired, the bundled SQLite seed. Do not regenerate the database at runtime or ship restaurant data without cleared redistribution rights.
 
