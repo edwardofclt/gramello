@@ -1,3 +1,9 @@
+## [1.15.1](https://github.com/edwardofclt/gramello/compare/v1.15.0...v1.15.1) (2026-09-23)
+
+### Bug Fixes
+
+* **website:** disclose current anonymous app analytics ([#37](https://github.com/edwardofclt/gramello/issues/37)) ([f944489](https://github.com/edwardofclt/gramello/commit/f94448983a5900565e86c907b667807ae2d6c95d))
+
 ## [1.15.0](https://github.com/edwardofclt/gramello/compare/v1.14.0...v1.15.0) (2026-09-23)
 
 ### Features
