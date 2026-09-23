@@ -53,6 +53,9 @@ jobs:
           distribution: temurin
           java-version: 17
       - uses: android-actions/setup-android@v3
+        with:
+          # The action's default includes the obsolete, unavailable `tools` package.
+          packages: platform-tools
       - run: pnpm install --frozen-lockfile
       - run: pnpm --filter @gramello/mobile exec expo prebuild --platform android --no-install
       - name: Test provider data and build the app with merged widget resources
