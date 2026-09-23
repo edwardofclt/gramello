@@ -3,6 +3,12 @@
 Gramello helps you keep a food diary, track calories, macros, and water intake,
 save custom meals, and review your nutrition trends.
 
+## User guides
+
+Browse the [Gramello user guides](../website/guides/) for step-by-step help with your
+first day, food logging, saved meals, water and goals, trends, backups, and Siri.
+If you are new, start with [your first day with Gramello](../website/guides/getting-started.md).
+
 ## Contact
 
 Email [gramello@edwardofclt.com](mailto:gramello@edwardofclt.com) for help with

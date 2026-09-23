@@ -15,7 +15,8 @@ async function walk(dir) {
   }
   return files;
 }
-for (const file of (await walk(root)).filter(file => file.endsWith('.html'))) {
+const htmlFiles = (await walk(root)).filter(file => file.endsWith('.html'));
+for (const file of htmlFiles) {
   const html = await readFile(file, 'utf8');
   assert.equal((html.match(/<h1\b/g) ?? []).length, 1, `${file}: expected one h1`);
   assert.match(html, /<html lang="en">/, `${file}: missing language`);
@@ -38,4 +39,4 @@ for (const file of (await walk(root)).filter(file => file.endsWith('.html'))) {
   }
   for (const match of html.matchAll(/<img\b[^>]*>/g)) assert.match(match[0], /\balt="[^"]*"/, `${file}: image needs alt text`);
 }
-console.log(`Website checks passed: five pages, ${checked} local links/assets/anchors, titles, language, and image alternatives.`);
+console.log(`Website checks passed: ${htmlFiles.length} pages, ${checked} local links/assets/anchors, headings, language, and image alternatives.`);
