@@ -122,7 +122,8 @@ struct StoredDiaryEntry: Decodable {
         do {
             let data = Data(json.utf8)
             // The app requires this field even when the weight is explicitly null.
-            guard let object = try JSONSerialization.jsonObject(with: data) as? [String: Any], object["grams"] != nil else {
+            guard let object = try JSONSerialization.jsonObject(with: data) as? [String: Any], object["grams"] != nil,
+                  ["sourceId","brand","sourceUrl","servingLabel","verified"].allSatisfy({ !(object[$0] is NSNull) }) else {
                 throw DiaryActionError.invalidRecord
             }
             let entry = try JSONDecoder().decode(Self.self, from: data)
@@ -140,11 +141,29 @@ struct StoredDiaryEntry: Decodable {
     }
 }
 
+struct StoredWaterEntry: Decodable {
+    let id: String
+    let date: String
+    let createdAt: String
+    let amountMl: Double
+
+    static func decode(_ json: String) throws -> Self {
+        let water = try JSONDecoder().decode(Self.self,from:Data(json.utf8))
+        guard validText(water.id,max:200), validTimestamp(water.createdAt),
+              water.amountMl.isFinite, water.amountMl >= 1, water.amountMl <= 10000 else {
+            throw DiaryActionError.invalidRecord
+        }
+        return water
+    }
+}
+
 private func validQuantity(_ value: Double) -> Bool { value.isFinite && value > 0 && value <= 1e6 }
 private func validText(_ value: String, max: Int) -> Bool { !value.isEmpty && value.utf16.count <= max }
 private func validTimestamp(_ value: String) -> Bool {
-    let formatter = ISO8601DateFormatter()
-    if formatter.date(from: value) != nil { return true }
-    formatter.formatOptions = [.withInternetDateTime, .withFractionalSeconds]
-    return formatter.date(from: value) != nil
+    // Match records.ts's Zod datetime({ offset: true }): valid Gregorian dates,
+    // optional seconds/fractional precision, and either Z or a numeric offset.
+    // ISO8601DateFormatter normalizes invalid dates and rejects supported minute-only values.
+    let date = #"(([0-9][0-9][2468][048]|[0-9][0-9][13579][26]|[0-9][0-9]0[48]|[02468][048]00|[13579][26]00)-02-29|[0-9]{4}-((0[13578]|1[02])-(0[1-9]|[12][0-9]|3[01])|(0[469]|11)-(0[1-9]|[12][0-9]|30)|(02)-(0[1-9]|1[0-9]|2[0-8])))"#
+    let time = #"([01][0-9]|2[0-3]):[0-5][0-9](:[0-5][0-9](\.[0-9]+)?)?"#
+    return value.range(of:"^\(date)T\(time)(Z|[+-][0-9]{2}:?[0-9]{2})$",options:.regularExpression) != nil
 }

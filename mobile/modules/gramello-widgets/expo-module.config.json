@@ -1,0 +1,5 @@
+{
+  "platforms": ["apple", "android"],
+  "apple": { "modules": ["GramelloWidgetsModule"], "podspecPath": "GramelloWidgets.podspec" },
+  "android": { "modules": ["com.gramello.widgets.GramelloWidgetsModule"] }
+}

@@ -161,7 +161,11 @@ struct RepeatMealIntent: AppIntent {
 }
 
 private func diaryIntentMessage(writing: Bool = false, _ action: () throws -> String) -> String {
-    do { return try action() }
+    do {
+        let message = try action()
+        if writing { WidgetPublisher.refresh() }
+        return message
+    }
     catch let error as DiaryActionError { return error.localizedDescription }
     catch {
         let failure: String

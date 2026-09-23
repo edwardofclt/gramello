@@ -7,6 +7,7 @@ const sourceNames = [
   'MacroCheckIn.swift', 'MacroCheckInReader.swift', 'MacroCheckInIntent.swift',
   'FoodRecommendation.swift', 'RecommendationCatalog.swift', 'FoodRecommendationIntent.swift',
   'DiaryActions.swift', 'SavedDiaryMeal.swift', 'DiaryIntents.swift',
+  'WidgetSnapshot.swift', 'WidgetPublisher.swift',
 ];
 
 async function installSiriSources({ project, projectName, platformProjectRoot }) {

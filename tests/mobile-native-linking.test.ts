@@ -17,3 +17,15 @@ it.each(['android', 'ios'])('does not link Auth0 into the local %s app', platfor
 
   expect(config.dependencies).not.toHaveProperty('react-native-auth0');
 }, 15_000);
+
+it.each(['apple','android'])('discovers the local widget module in %s native builds', platform => {
+  const config = JSON.parse(execFileSync(process.execPath,[autolinking,'resolve','--project-root',projectRoot,'--platform',platform,'--json'],{cwd:projectRoot,encoding:'utf8'}));
+  const widget = config.modules.find((module: {packageName:string}) => module.packageName === 'gramello-widgets');
+  expect(widget).toBeDefined();
+  if (platform === 'apple') {
+    expect(widget.pods).toEqual(expect.arrayContaining([expect.objectContaining({podName:'GramelloWidgets'})]));
+    expect(widget.modules).toEqual(expect.arrayContaining([expect.objectContaining({class:'GramelloWidgetsModule'})]));
+  } else {
+    expect(widget.projects[0].modules).toEqual(expect.arrayContaining([expect.objectContaining({classifier:'com.gramello.widgets.GramelloWidgetsModule'})]));
+  }
+},15_000);
