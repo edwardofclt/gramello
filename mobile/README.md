@@ -8,6 +8,53 @@ An Expo / React Native app using gluestack-ui core 5, with a daily diary,
 food search, recipes, water tracking, trends, and editable nutrition goals.
 Native builds use local SQLite; the browser edition uses the hosted API.
 
+## Home Screen and Lock Screen widgets
+
+**iPhone/iPad:** touch and hold the Home Screen, choose **Edit → Add Widget**,
+and search for **Gramello**. **Today** comes in small (calories) and medium
+(calories, macros, and water) sizes. **Water** shows logged volume against your
+goal. To add Lock Screen widgets, touch and hold the Lock Screen and choose
+**Customize → Add Widgets**. Calories supports circular/inline sizes, Water
+supports circular/rectangular/inline sizes, and Macros uses a rectangular layout.
+
+**Android:** touch and hold an empty Home Screen area, choose **Widgets**, and
+find Gramello. Add **Today** or **Water**. Widen Today to reveal macros and water.
+Launcher menus and available sizes vary by device.
+
+Open Gramello once after installing the native build to initialize the widgets.
+Every widget opens today's diary, including when the app was showing another
+date. The widgets show logged intake, not estimates of unlogged food. Default
+goals and empty logs are identified. Water uses your saved mL or US-fl-oz unit.
+
+App edits, saved goals, backup import/recovery, and iOS Siri logging publish a
+new aggregate summary and request widget updates. The operating system controls
+rendering times. iOS supplies a midnight expiry entry; Android rechecks dates on
+periodic updates and time/timezone changes. Android displays the snapshot date
+because battery restrictions and force-stop can delay refreshes. An expired
+summary asks you to open Gramello rather than presenting yesterday as today.
+
+The diary database stays in its existing location. The local Expo module at
+`modules/gramello-widgets` publishes only totals/goals, timestamps, and units.
+iOS uses `group.com.edwardofclt.nourish.widgets`; its extension bundle identifier
+is `com.edwardofclt.nourish.widgets`. `plugins/withWidgets.cjs` installs the
+WidgetKit extension and declares its App Group entitlement to EAS. The Swift
+publisher is shared with Siri and serializes read/publication through a file lock.
+Android's module supplies its providers, layouts, and merged manifest, storing
+the snapshot in private no-backup app storage. Widgets make no network requests.
+
+**Rebuild both native apps**; Expo Go and OTA updates cannot add widgets. EAS
+must provision the App Group for both iOS targets and sign the extension. Open
+the rebuilt app before adding widgets. On-device checks remain necessary for
+gallery discovery, Lock Screen privacy, system tinting, refresh timing, Siri
+updates while closed, Android resizing, and cold/warm widget taps.
+
+Checks: `pnpm test tests/mobile-widgets.test.ts tests/mobile-widgets-plugin.test.ts`,
+`pnpm --filter @gramello/mobile test:siri`, and
+`pnpm --filter @gramello/mobile test:widgets:ios`. With Android SDK tools installed,
+prebuild Android and run `./gradlew :gramello-widgets:testDebugUnitTest
+:gramello-widgets:assembleDebug` from `mobile/android`. Full native app builds
+also verify module linking, manifest merging, and extension embedding.
+
 ## Siri macro check-in (iOS)
 
 After installing a native build with this feature, open Gramello once and say:

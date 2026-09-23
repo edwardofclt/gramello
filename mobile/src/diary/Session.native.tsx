@@ -18,7 +18,9 @@ export function SessionProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     if (!runtime) return;
     void runtime.updater.check();
-    const sub = AppState.addEventListener('change', state => { if (state === 'active') void runtime.updater.check(); });
+    const sub = AppState.addEventListener('change', state => {
+      if (state === 'active') { void runtime.updater.check(); void runtime.repository.refreshWidgets(); }
+    });
     return () => sub.remove();
   }, [runtime]);
   if (!runtime) return <View style={[styles.content,{ flex:1,justifyContent:'center' }]}>{error ? <ErrorNotice message={error} retry={() => setAttempt(a => a+1)} /> : <Loading label="Opening your diary…" />}</View>;

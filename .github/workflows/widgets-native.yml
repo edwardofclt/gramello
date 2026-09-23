@@ -1,0 +1,60 @@
+name: Check native widgets
+
+on:
+  pull_request:
+    paths:
+      - 'mobile/modules/gramello-widgets/**'
+      - 'mobile/native/widgets/**'
+      - 'mobile/native/siri/**'
+      - 'mobile/plugins/**'
+      - 'mobile/app.config.ts'
+      - 'mobile/src/widgets/**'
+      - 'tests/mobile-widgets*'
+      - 'pnpm-lock.yaml'
+      - '.github/workflows/widgets-native.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  ios:
+    runs-on: macos-15
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm --filter @gramello/mobile test:widgets:ios
+      - run: pnpm --filter @gramello/mobile test:siri
+      - run: pnpm test tests/mobile-widgets.test.ts tests/mobile-widgets-plugin.test.ts tests/mobile-siri-storage.test.ts
+      - run: pnpm --filter @gramello/mobile exec expo prebuild --platform ios --no-install
+      - run: pod install
+        working-directory: mobile/ios
+      - name: Build app and embedded widget extension
+        run: xcodebuild -workspace Gramello.xcworkspace -scheme Gramello -configuration Debug -sdk iphonesimulator -destination 'generic/platform=iOS Simulator' CODE_SIGNING_ALLOWED=NO build
+        working-directory: mobile/ios
+  android:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+      - uses: android-actions/setup-android@v3
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm --filter @gramello/mobile exec expo prebuild --platform android --no-install
+      - name: Test provider data and build the app with merged widget resources
+        run: ./gradlew :gramello-widgets:testDebugUnitTest :gramello-widgets:lintDebug :app:assembleDebug -PreactNativeArchitectures=arm64-v8a
+        working-directory: mobile/android

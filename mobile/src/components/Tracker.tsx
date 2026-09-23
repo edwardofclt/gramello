@@ -1,4 +1,6 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { Linking, Platform } from 'react-native';
+import { isTodayWidgetLink } from '../widgets/links';
 import { useAnalyticsScreen } from '../analytics/useScreen';
 import { useSession } from '../diary/Session';
 import { TrackerShell, type Tab } from './TrackerShell';
@@ -13,6 +15,7 @@ import { FoodSheet } from '../screens/FoodSheet';
 
 export function Tracker() {
   const { local } = useSession();
+  const refreshWidgets = local?.refreshWidgets;
   const [tab, setTab] = useState<Tab>('diary');
   const [advancedOpen, setAdvancedOpen] = useState(false);
   const [date, setDate] = useState(localDate);
@@ -20,6 +23,21 @@ export function Tracker() {
   const [meal, setMeal] = useState<Meal | null>(null);
   const [goalsOpen, setGoalsOpen] = useState(false);
   const [revision, setRevision] = useState(0);
+  useEffect(() => {
+    if (Platform.OS === 'web') return;
+    let mounted = true;
+    const open = (url: string | null) => {
+      if (!mounted || !isTodayWidgetLink(url)) return;
+      setTab('diary'); setAdvancedOpen(false); setMeal(null); setGoalsOpen(false);
+      setDate(localDate()); setRevision(value => value + 1);
+      void refreshWidgets?.();
+    };
+    const subscription = Linking.addEventListener('url', event => open(event.url));
+    void Linking.getInitialURL().then(open).catch(() => {});
+    return () => { mounted = false; subscription.remove(); };
+  // Session's local wrapper is recreated after imports. Capture only the stable
+  // refresh function so a rerender cannot replay the initial URL over navigation.
+  }, [refreshWidgets]);
   useAnalyticsScreen(meal ? 'Add Food' : goalsOpen ? 'Goals' : tab === 'diary' ? 'Diary' : tab === 'trends' ? 'Trends' : advancedOpen && local ? 'Advanced' : 'Settings');
   const refresh = () => setRevision(value => value + 1);
   const selectTab = (next: Tab) => { setAdvancedOpen(false); setTab(next); };

@@ -7,6 +7,7 @@ import { foodSearchIssue, type FoodSearchIssue } from '../../../lib/food-search'
 import { defaultWaterGoal, waterDateSchema, waterEntrySchema, waterGoalSchema, type WaterDay } from '../../../lib/water';
 import { serialized, transaction, type SqliteConnection } from './database';
 import { entrySchema, goalsSchema, mealSchema, parseArchive, validateRecord, units, type Archive, type PersonalRecord } from './records';
+import { readWidgetSummary } from '../widgets/summary';
 
 export interface FoodCatalog {
   getFood(id: string): Promise<Food | null>;
@@ -53,6 +54,7 @@ export async function createLocalRepository(db: SqliteConnection, catalog: FoodC
   };
   const remove = (kind: string, id: string) => serialized(db, async () => { await db.runAsync('DELETE FROM records WHERE kind=? AND id=?', kind, id); return { ok: true }; });
   return {
+    getWidgetSummary: (now?: Date, timeZone?: string) => readWidgetSummary(db,defaults,now,timeZone),
     getDay: (date: string) => serialized(db, async () => ({ goals: await read<typeof defaults>('goals', 'default') ?? defaults, entries: await list<z.infer<typeof entrySchema>>('entry', waterDateSchema.parse(date)) })),
     saveGoals: (input: unknown) => serialized(db, async () => { const value = goalsSchema.parse(input); await put({ kind: 'goals', id: 'default', date: null, value }); return value; }),
     addEntry: (input: unknown) => serialized(db, async () => {

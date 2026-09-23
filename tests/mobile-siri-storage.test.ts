@@ -1,5 +1,5 @@
 import { execFileSync } from 'node:child_process';
-import { mkdtempSync, readdirSync, rmSync, writeFileSync } from 'node:fs';
+import { mkdtempSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -44,11 +44,15 @@ for meal in try DiaryActions.savedMeals(databaseURL: url) {
 }
 _ = try DiaryActions.repeatYesterday(databaseURL: url, meal: .lunch, now: now, timeZone: zone)
 _ = try DiaryActions.logWater(databaseURL: url, amount: 16, unit: .fluidOunces, now: now, timeZone: zone)
+try WidgetPublisher.publish(databaseURL: url, directory: url.deletingLastPathComponent(), now: now, timeZone: zone)
 `);
     const sources = fileURLToPath(new URL('../mobile/native/siri/Sources/GramelloSiri/', import.meta.url));
     const executable = path.join(directory, 'diary-actions');
     execFileSync('xcrun', ['swiftc', ...readdirSync(sources).filter(name => name.endsWith('.swift')).map(name => path.join(sources, name)), main, '-o', executable], { timeout: 60000, stdio: 'pipe' });
     execFileSync(executable, [databasePath], { timeout: 10000, stdio: 'pipe' });
+    // Both native Siri publication and Android's repository reader use one wire contract.
+    expect(JSON.parse(readFileSync(path.join(directory,'summary.json'),'utf8'))).toEqual(
+      await repository.getWidgetSummary(new Date('2026-03-09T03:30:00Z'),'America/New_York'));
 
     const entries = (await repository.getDay(today)).entries;
     expect(entries).toHaveLength(meals.length);
