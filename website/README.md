@@ -1,6 +1,6 @@
 # Gramello public website
 
-A static marketing website with privacy, terms, support, and an accessible 404
+A static marketing website with user guides, privacy, terms, support, and an accessible 404
 page. Published at https://gramello.com/ using GitHub Pages.
 The public site presents Android and iOS as separate one-time purchases, with
 all app features included and no subscriptions or additional feature paywalls.
@@ -44,10 +44,17 @@ the independent website publication job.
 ## Content
 
 - Homepage and responsive design: `website/index.html` and `website/styles.css`.
+- User guide hub: `/guides/`. Individual walkthroughs live in
+  `website/guides/*.md`; their titles, descriptions, order, and routes are defined
+  by `guides` in `website/build.mjs`. Only those listed guides are published.
+  Check instructions and button names against `mobile/src` when updating them.
+  Each guide gets a table of contents, breadcrumb, next-guide link, and sitemap
+  entry. Use `../guide-slug/` for links between guides and `../../support/` for
+  support. Keep these focused on using the mobile apps, not developer setup.
 - Privacy/support/terms: `docs/privacy.md`, `docs/support.md`, `docs/terms.md`.
   The build renders these documents, so the site and repository share one source.
 - `website/build.mjs` intentionally supports headings, paragraphs, unordered
-  lists, bold text, and links. It escapes raw HTML and fails on unsupported
+  and numbered lists, bold text, and links. It escapes raw HTML and fails on unsupported
   block syntax rather than silently losing legal content.
 - Update the effective dates when policies materially change. Keep disclosures
   aligned with actual code, services, and operating practices. The terms are
