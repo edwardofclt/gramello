@@ -44,28 +44,24 @@ async function setup(page: Page, camera: boolean | 'pending' | 'blank' = false) 
       return stream;
     } });
   }, { camera });
-  await page.route('https://gramello.test/api/**', async route => {
+  await page.route('**/api/**', async route => {
     const request = route.request();
     const url = new URL(request.url());
-    const headers = { 'access-control-allow-origin': '*', 'access-control-allow-headers': 'authorization,content-type', 'access-control-allow-methods': 'GET,POST,PUT,DELETE' };
-    if (request.method() === 'OPTIONS') return route.fulfill({ status: 204, headers });
-    expect(request.headers().authorization).toBe('Bearer ui-test-access-token');
-    if (url.pathname === '/api/day') return route.fulfill({ json: { goals: { calories: 2000, protein: 150, carbs: 200, fat: 67 }, entries }, headers });
-    if (url.pathname === '/api/foods/search') return route.fulfill({ json: { foods: [product] }, headers });
+    if (url.pathname === '/api/day') return route.fulfill({ json: { goals: { calories: 2000, protein: 150, carbs: 200, fat: 67 }, entries } });
+    if (url.pathname === '/api/foods/search') return route.fulfill({ json: { foods: [product] } });
     if (url.pathname === '/api/foods/barcode') {
       codes.push(url.searchParams.get('code')!);
-      if (codes.at(-1) === '000000000000') return route.fulfill({ status: 404, json: { error: 'No product found for this barcode. Try another barcode or search by name.' }, headers });
-      return route.fulfill({ json: { food: codes.at(-1) === '810128528191' ? productFood(ghostProduct, '810128528191') : product }, headers });
+      if (codes.at(-1) === '000000000000') return route.fulfill({ status: 404, json: { error: 'No product found for this barcode. Try another barcode or search by name.' } });
+      return route.fulfill({ json: { food: codes.at(-1) === '810128528191' ? productFood(ghostProduct, '810128528191') : product } });
     }
     if (url.pathname === '/api/entries' && request.method() === 'POST') {
       const entry = { id: 'entry-1', ...request.postDataJSON() };
       entries.push(entry);
-      return route.fulfill({ status: 201, json: entry, headers });
+      return route.fulfill({ status: 201, json: entry });
     }
-    return route.fulfill({ json: {}, headers });
+    return route.fulfill({ json: {} });
   });
   await page.goto('/');
-  await page.getByRole('button', { name: 'Sign in to Gramello' }).click();
   await page.getByRole('button', { name: 'Add Lunch', exact: true }).click();
   await page.getByRole('button', { name: 'Scan barcode', exact: true }).click();
   return { entries, codes };
@@ -141,10 +137,9 @@ test('returning to search cancels a pending lookup and ignores its late result',
   await setup(page);
   let release: () => void = () => {};
   const responseGate = new Promise<void>(resolve => { release = resolve; });
-  await page.route('https://gramello.test/api/foods/barcode?*', async route => {
-    if (route.request().method() === 'OPTIONS') return route.fulfill({ status: 204, headers: { 'access-control-allow-origin': '*', 'access-control-allow-headers': 'authorization' } });
+  await page.route('**/api/foods/barcode?*', async route => {
     await responseGate;
-    await route.fulfill({ json: { food: product }, headers: { 'access-control-allow-origin': '*', 'access-control-allow-headers': 'authorization' } }).catch(() => {});
+    await route.fulfill({ json: { food: product }, }).catch(() => {});
   });
   await page.getByRole('textbox', { name: 'Barcode number' }).fill('3017620422003');
   const request = page.waitForRequest(request => request.url().includes('/api/foods/barcode?') && request.method() === 'GET');

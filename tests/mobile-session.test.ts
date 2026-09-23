@@ -1,43 +1,24 @@
-import { expect, it } from 'vitest';
-import { CredentialSession, requiresSignIn } from '../mobile/src/auth/credentials';
-import { createApiClient, SessionExpiredError } from '../mobile/src/lib/api';
-import { vi, afterEach } from 'vitest';
+import { afterEach, expect, it, vi } from 'vitest';
+import { createApiClient } from '../mobile/src/lib/api';
 
 afterEach(() => vi.unstubAllGlobals());
 
-it('drains an in-flight credential refresh before clearing the credential store', async () => {
-  let finish!: (value: string) => void;
-  const events: string[] = [];
-  const session = new CredentialSession(() => new Promise(resolve => { finish = resolve; events.push('refresh'); }), async () => { events.push('clear'); });
-  const token = session.getToken(0);
-  const rejected = expect(token).rejects.toBeInstanceOf(SessionExpiredError);
-  await Promise.resolve();
-  session.advance();
-  const clearing = session.clear();
-  finish('old-token');
-  await rejected; await clearing; await session.settled();
-  expect(events).toEqual(['refresh', 'clear']);
+it('does not send a request that was already cancelled', async () => {
+  const fetcher = vi.fn();
+  vi.stubGlobal('fetch', fetcher);
+  const controller = new AbortController();
+  controller.abort();
+  await expect(createApiClient()('/api/day', { signal: controller.signal })).rejects.toMatchObject({ name: 'AbortError' });
+  expect(fetcher).not.toHaveBeenCalled();
 });
 
-it('ignores an old 401 after the session changes', async () => {
+it('ignores a response after its request is cancelled', async () => {
   let finish!: (value: Response) => void;
-  let current = true;
-  const expired = vi.fn();
   vi.stubGlobal('fetch', () => new Promise(resolve => { finish = resolve; }));
-  const api = createApiClient('https://gramello.example', async () => 'old-token', expired, () => current);
-  const response = api('/api/day');
-  const rejected = expect(response).rejects.toBeInstanceOf(SessionExpiredError);
-  await Promise.resolve();
-  current = false;
-  finish(Response.json({ error: 'expired' }, { status: 401 }));
+  const controller = new AbortController();
+  const response = createApiClient()('/api/day', { signal: controller.signal });
+  const rejected = expect(response).rejects.toMatchObject({ name: 'AbortError' });
+  controller.abort();
+  finish(Response.json({ entries: [] }));
   await rejected;
-  expect(expired).not.toHaveBeenCalled();
-});
-
-it.each(['NO_CREDENTIALS', 'NO_REFRESH_TOKEN', 'INVALID_CREDENTIALS', 'SESSION_EXPIRED', 'RENEW_FAILED'])('prompts sign-in for normalized Auth0 credential error %s', type => {
-  expect(requiresSignIn({ type, code: 'platformSpecificCode' })).toBe(true);
-});
-
-it.each(['NO_NETWORK', 'API_ERROR', 'BIOMETRICS_FAILED'])('keeps a recoverable session on %s', type => {
-  expect(requiresSignIn({ type })).toBe(false);
 });

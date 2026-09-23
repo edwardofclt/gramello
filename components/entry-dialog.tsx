@@ -13,15 +13,15 @@ import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from './ui/dialog';
 
-export function EntryDialog({ entry, authFetch, onClose, onSaved }: {
-  entry: DiaryEntry; authFetch: typeof fetch; onClose: () => void; onSaved: (entry: DiaryEntry) => void;
+export function EntryDialog({ entry, diaryFetch, onClose, onSaved }: {
+  entry: DiaryEntry; diaryFetch: typeof fetch; onClose: () => void; onSaved: (entry: DiaryEntry) => void;
 }) {
   const api = useCallback<FoodApi>(async <T,>(path: string, options: Parameters<FoodApi>[1] = {}) => {
-    const response = await authFetch(path, { method: options.method, headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(options.body) });
+    const response = await diaryFetch(path, { method: options.method, headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(options.body) });
     const data = await response.json() as T & { error?: string };
     if (!response.ok) throw new Error(data?.error || 'Food could not be updated. Try again.');
     return data as T;
-  }, [authFetch]);
+  }, [diaryFetch]);
   const edit = useEntryEdit(entry, api, onSaved);
   return <Dialog open onOpenChange={open => { if (!open && !edit.saving) onClose(); }}><DialogContent className="food-dialog"><DialogHeader><DialogTitle>Edit food</DialogTitle><DialogDescription>Update the amount or meal for this logged food.</DialogDescription></DialogHeader>
     <form className="amount-panel" onSubmit={event => { event.preventDefault(); void edit.save(); }}>

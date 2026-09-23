@@ -91,7 +91,7 @@ Merged current `main` into the implementation branch, preserving the Gramello
 package/tooling rename, existing anonymous Segment analytics, and unrelated
 website/release changes. The local API adapter uses the existing analytics filter;
 no diary contents enter analytics. Production keeps the existing public Segment
-write key while dropping native Auth0/API configuration.
+write key while dropping native hosted-service configuration.
 
 On the combined source: **237/237 tests passed**; root/mobile TypeScript, ESLint,
 and iOS/Android Hermes exports passed. The catalog workflow now skips explicitly

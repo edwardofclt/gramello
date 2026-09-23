@@ -20,7 +20,7 @@ export function MyMeals({ api, onChoose, onBusy }: { api: FoodApi; onChoose: (fo
   if (editing) return <MealEditor api={api} initial={editing === 'new' ? undefined : editing} onBusy={onBusy} onBack={() => setEditing(null)} onSaved={() => { setEditing(null); library.reload(); setNotice('Meal saved. Choose it below to log any portion.'); }} />;
   return <div className="meal-builder">
     <Button onClick={() => { setNotice(''); setEditing('new'); }}><Plus />Create meal</Button>
-    <p className="meal-hint">Combine ingredients once, then log any portion. Your meals are saved to your account.</p>
+    <p className="meal-hint">Combine ingredients once, then log any portion. Your meals are saved in this browser’s diary.</p>
     {notice && <p role="status" className="meal-hint">{notice}</p>}
     <Input aria-label="Search my meals" placeholder="Search my meals…" value={filter} onChange={event => setFilter(event.target.value)} />
     {library.error && <div role="alert" className="meal-error">{library.error}<Button variant="outline" onClick={library.reload}>Try again</Button></div>}

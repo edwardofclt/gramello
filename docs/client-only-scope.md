@@ -44,7 +44,7 @@ Use app-shipped migrations for personal data and a separate catalog schema versi
 | --- | --- | --- |
 | Native UI | Expo 57; diary, trends, goals, recipes, water, camera scanning | Retain screens; remove sign-in dependency |
 | Persistence | SQLite schema, but queries use server-side Cloudflare D1 bindings | Port query execution and migrations to device SQLite |
-| Mobile data access | `useSession().api`, HTTP route strings, bearer tokens | Replace with typed local repositories and refresh after local writes |
+| Mobile data access | `useSession().api` and HTTP route strings | Replace with typed local repositories and refresh after local writes |
 | Nutrition rules | Shared serving, weight, volume, and recipe calculations | Reuse; move remaining route-level validation into shared services |
 | Food discovery | Server combines local restaurants, USDA API, and Open Food Facts | Local catalog search/barcode index; optional online lookup considered separately |
 

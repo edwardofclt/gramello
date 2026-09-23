@@ -2,7 +2,7 @@ import { Text, View } from 'react-native';
 import { useEntryEdit } from '../../../hooks/use-entry-edit';
 import { entryMeals } from '../../../lib/entry-edit';
 import { amountLabels, nutrientKeys, unitLabels } from '../../../lib/meals';
-import { useSession } from '../auth/Session';
+import { useSession } from '../diary/Session';
 import { AppDialog } from '../components/AppDialog';
 import { FoodVerification } from '../components/FoodVerification';
 import { Action, ErrorNotice, Field, styles } from '../components/ui';

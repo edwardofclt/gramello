@@ -8,14 +8,11 @@ for (const width of [390, 1440]) {
     page.on('pageerror', error => errors.push(error.message));
     const entries: Record<string, unknown>[] = [];
     let meals: CustomMeal[] = [];
-    await page.route('https://gramello.test/api/**', async route => {
+    await page.route('**/api/**', async route => {
       const request = route.request();
       const path = new URL(request.url()).pathname;
-      const headers = { 'access-control-allow-origin': '*', 'access-control-allow-headers': 'authorization,content-type', 'access-control-allow-methods': 'GET,POST,PUT,DELETE' };
-      if (request.method() === 'OPTIONS') return route.fulfill({ status: 204, headers });
-      expect(request.headers().authorization).toBe('Bearer ui-test-access-token');
-      if (path === '/api/day') return route.fulfill({ headers, json: { goals: { calories: 2400, protein: 180, carbs: 250, fat: 70 }, entries } });
-      if (path === '/api/foods/search') return route.fulfill({ headers, json: { foods: ['Beef', 'Tomatoes'].map(name => ({ id: name, name, source: 'Test fixture', calories: 200, protein: 20, carbs: 10, fat: 5, servingGrams: 100, servingLabel: '100 g' })) } });
+      if (path === '/api/day') return route.fulfill({ json: { goals: { calories: 2400, protein: 180, carbs: 250, fat: 70 }, entries } });
+      if (path === '/api/foods/search') return route.fulfill({ json: { foods: ['Beef', 'Tomatoes'].map(name => ({ id: name, name, source: 'Test fixture', calories: 200, protein: 20, carbs: 10, fat: 5, servingGrams: 100, servingLabel: '100 g' })) } });
       if (path === '/api/meals') {
         if (request.method() === 'POST') {
           const draft = request.postDataJSON();
@@ -24,19 +21,18 @@ for (const width of [390, 1440]) {
           expect(draft.ingredients).toHaveLength(2);
           const meal = { ...draft, id: 'my-soup', updatedAt: 'today' };
           meals = [meal];
-          return route.fulfill({ headers, status: 201, json: { meal } });
+          return route.fulfill({ status: 201, json: { meal } });
         }
-        return route.fulfill({ headers, json: { meals } });
+        return route.fulfill({ json: { meals } });
       }
       if (path === '/api/entries' && request.method() === 'POST') {
         const entry = { id: 'entry-1', ...request.postDataJSON() };
         entries.push(entry);
-        return route.fulfill({ headers, status: 201, json: entry });
+        return route.fulfill({ status: 201, json: entry });
       }
-      return route.fulfill({ headers, json: {} });
+      return route.fulfill({ json: {} });
     });
     await page.goto('/');
-    await page.getByRole('button', { name: 'Sign in to Gramello', exact: true }).click();
     await page.getByRole('button', { name: 'Add Lunch', exact: true }).click();
     await page.getByRole('button', { name: 'My meals', exact: true }).click();
     await page.getByRole('button', { name: 'Create meal', exact: true }).click();
@@ -82,28 +78,25 @@ for (const width of [390, 1440]) {
 test('a custom ingredient without a weight can be saved in a meal after weighing the batch', async ({ page }) => {
   let savedMeal: CustomMeal | undefined;
   const entries: Record<string, unknown>[] = [];
-  await page.route('https://gramello.test/api/**', async route => {
+  await page.route('**/api/**', async route => {
     const request = route.request();
     const path = new URL(request.url()).pathname;
-    const headers = { 'access-control-allow-origin': '*', 'access-control-allow-headers': 'authorization,content-type', 'access-control-allow-methods': 'GET,POST' };
-    if (request.method() === 'OPTIONS') return route.fulfill({ status: 204, headers });
-    if (path === '/api/day') return route.fulfill({ headers, json: { goals: { calories: 2400, protein: 180, carbs: 250, fat: 70 }, entries } });
-    if (path === '/api/foods/custom') return route.fulfill({ status: 201, headers, json: { food: { ...request.postDataJSON(), id: 'custom-sauce', source: 'Community submitted', sourceKind: 'custom', verified: false, nutritionBasis: 'serving' } } });
+    if (path === '/api/day') return route.fulfill({ json: { goals: { calories: 2400, protein: 180, carbs: 250, fat: 70 }, entries } });
+    if (path === '/api/foods/custom') return route.fulfill({ status: 201, json: { food: { ...request.postDataJSON(), id: 'custom-sauce', source: 'Community submitted', sourceKind: 'custom', verified: false, nutritionBasis: 'serving' } } });
     if (path === '/api/meals') {
       if (request.method() === 'POST') {
         savedMeal = { ...request.postDataJSON(), id: 'custom-meal', updatedAt: 'today' };
-        return route.fulfill({ headers, status: 201, json: { meal: savedMeal } });
+        return route.fulfill({ status: 201, json: { meal: savedMeal } });
       }
-      return route.fulfill({ headers, json: { meals: savedMeal ? [savedMeal] : [] } });
+      return route.fulfill({ json: { meals: savedMeal ? [savedMeal] : [] } });
     }
     if (path === '/api/entries') {
       entries.push({ ...request.postDataJSON(), id: 'entry-custom-meal' });
-      return route.fulfill({ headers, status: 201, json: entries[0] });
+      return route.fulfill({ status: 201, json: entries[0] });
     }
-    return route.fulfill({ headers, json: { foods: [] } });
+    return route.fulfill({ json: { foods: [] } });
   });
   await page.goto('/');
-  await page.getByRole('button', { name: 'Sign in to Gramello', exact: true }).click();
   await page.getByRole('button', { name: 'Add Dinner', exact: true }).click();
   await page.getByRole('button', { name: 'My meals', exact: true }).click();
   await page.getByRole('button', { name: 'Create meal', exact: true }).click();

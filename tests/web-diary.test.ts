@@ -6,7 +6,6 @@ import { afterEach, beforeEach, expect, it, vi } from 'vitest';
 import GramelloApp from '../app/gramello-app';
 import { localDate } from '../mobile/src/lib/nutrition';
 
-const user = { userId: 'auth0|diary-test', displayName: 'Diary Test', email: null };
 const goals = { calories: 2400, protein: 180, carbs: 250, fat: 70 };
 const lunch = { id: 'mobile-lunch', meal: 'Lunch', name: 'Lunch from phone', source: 'custom',
   quantity: 1, unit: 'serving', grams: 100, calories: 400, protein: 25, carbs: 40, fat: 15 };
@@ -52,7 +51,7 @@ afterEach(async () => {
 async function mount() {
   await act(async () => {
     root = createRoot(container);
-    root.render(createElement(GramelloApp, { user }));
+    root.render(createElement(GramelloApp));
   });
 }
 
@@ -88,13 +87,13 @@ it.each([
 ])('hydrates a UTC server page into the mobile diary date in %s', async (zone, now, expectedDate) => {
   vi.setSystemTime(new Date(now));
   vi.stubEnv('TZ', 'UTC');
-  container.innerHTML = renderToString(createElement(GramelloApp, { user }));
+  container.innerHTML = renderToString(createElement(GramelloApp));
   vi.stubEnv('TZ', zone);
   entryDate = expectedDate;
   entries = [lunch];
   const hydrationError = vi.fn();
   await act(async () => {
-    root = hydrateRoot(container, createElement(GramelloApp, { user }), { onRecoverableError: hydrationError });
+    root = hydrateRoot(container, createElement(GramelloApp), { onRecoverableError: hydrationError });
   });
 
   expect(localDate()).toBe(expectedDate);
@@ -111,7 +110,7 @@ it.each([
   expect(container.querySelector('.food-row')?.textContent ?? '').toContain('Lunch from phone');
 });
 
-it.each(['focus', 'visibilitychange'])('shows food added on another device after %s', async event => {
+it.each(['focus', 'visibilitychange'])('shows food added in another tab after %s', async event => {
   await mount();
   expect(container.querySelector('.food-row')).toBeNull();
   entries = [lunch];

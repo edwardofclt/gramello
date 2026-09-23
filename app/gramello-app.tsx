@@ -11,14 +11,11 @@ import { BrandMark as Logo } from "@/components/brand-mark";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
-import { ProfileMenu } from "@/components/profile-menu";
 import { WaterTracker } from "@/components/water-tracker";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Toaster, toast } from "sonner";
 import { changeGoal, macroPercent } from "./goal-math";
 import { localDate as today } from "@/lib/diary-date";
-import type { AuthUser } from "@/lib/auth";
-import SignIn from "./sign-in";
 
 type Goals={calories:number;protein:number;carbs:number;fat:number};
 type Entry=DiaryEntry;
@@ -36,14 +33,9 @@ function MacroProgress({label,current,target,color}:{label:string;current:number
   return <div className="macro-progress"><div className="macro-progress-top"><span><i style={{background:color}}/>{label}</span><strong>{round(current)} <small>/ {target}g</small></strong></div><div className="track"><span style={{width:`${clamp(pct)}%`,background:color}}/></div></div>;
 }
 
-export default function GramelloApp({ user }: { user: AuthUser }){
-  const [sessionExpired, setSessionExpired] = useState(false);
-  const authFetch = useCallback(async (input: RequestInfo | URL, init?: RequestInit) => {
+export default function GramelloApp(){
+  const diaryFetch = useCallback(async (input: RequestInfo | URL, init?: RequestInit) => {
     const response = await fetch(input, { ...init, cache: "no-store" });
-    if (response.status === 401) {
-      setSessionExpired(true);
-      throw new Error("Your session has expired. Please sign in again.");
-    }
     return response;
   }, []);
   const [view,setView]=useState<"today"|"trends">("today");
@@ -64,7 +56,7 @@ export default function GramelloApp({ user }: { user: AuthUser }){
   const loadDay=useCallback(async(signal:AbortSignal)=>{
     setLoading(true);
     try {
-      const r=await authFetch(`/api/day?date=${date}`,{signal});
+      const r=await diaryFetch(`/api/day?date=${date}`,{signal});
       const data=await r.json() as { error?: string; entries: Entry[]; goals: Goals };
       if(signal.aborted)return;
       if(!r.ok)throw new Error(data.error);
@@ -75,9 +67,8 @@ export default function GramelloApp({ user }: { user: AuthUser }){
     } finally {
       if(!signal.aborted)setLoading(false);
     }
-  },[date,authFetch]);
+  },[date,diaryFetch]);
   useEffect(()=>{
-    if(sessionExpired)return;
     let controller:AbortController;
     const reload=()=>{
       controller?.abort();
@@ -94,7 +85,7 @@ export default function GramelloApp({ user }: { user: AuthUser }){
       window.removeEventListener("focus",resume);
       document.removeEventListener("visibilitychange",resume);
     };
-  },[loadDay,view,sessionExpired]);
+  },[loadDay,view]);
 
   useEffect(()=>{
     if(view!=="trends")return;
@@ -102,7 +93,7 @@ export default function GramelloApp({ user }: { user: AuthUser }){
     const load=async()=>{
       setTrendLoading(true);
       try {
-        const response=await authFetch(`/api/trends?days=${range}`,{signal:controller.signal});
+        const response=await diaryFetch(`/api/trends?days=${range}`,{signal:controller.signal});
         const data=await response.json() as {error?:string;days:Trend[]};
         if(!response.ok)throw new Error(data.error);
         if(!controller.signal.aborted)setTrends(data.days);
@@ -111,7 +102,7 @@ export default function GramelloApp({ user }: { user: AuthUser }){
     };
     void load();
     return()=>controller.abort();
-  },[view,range,authFetch]);
+  },[view,range,diaryFetch]);
 
   const total=useMemo(()=>entries.reduce((a,e)=>({calories:a.calories+e.calories,protein:a.protein+e.protein,carbs:a.carbs+e.carbs,fat:a.fat+e.fat}),{calories:0,protein:0,carbs:0,fat:0}),[entries]);
   const remaining=Math.max(0,goals.calories-total.calories);
@@ -120,8 +111,8 @@ export default function GramelloApp({ user }: { user: AuthUser }){
   const shiftDate=(days:number)=>{const d=new Date(`${date}T12:00:00Z`);d.setUTCDate(d.getUTCDate()+days);setDate(d.toISOString().slice(0,10))};
   const openGoals=()=>{setDraftGoals(goals);setGoalOpen(true)};
   const openFood=()=>setAddOpen(true);
-  const deleteEntry=async(id:string)=>{const previous=entries;setEntries(x=>x.filter(e=>e.id!==id));try{const r=await authFetch(`/api/entries?id=${id}`,{method:"DELETE"});if(!r.ok)throw new Error("Could not remove food");toast.success("Food removed")}catch{setEntries(previous);toast.error("Could not remove food")}};
-  const updateGoals=async()=>{setSaving(true);try{const r=await authFetch("/api/goals",{method:"PUT",headers:{"content-type":"application/json"},body:JSON.stringify(draftGoals)});const d=await r.json() as Goals & { error?: string };if(!r.ok)throw new Error(d.error);setGoals(d);setGoalOpen(false);toast.success("Daily goals updated")}catch(e){toast.error(e instanceof Error?e.message:"Could not save goals")}finally{setSaving(false)}};
+  const deleteEntry=async(id:string)=>{const previous=entries;setEntries(x=>x.filter(e=>e.id!==id));try{const r=await diaryFetch(`/api/entries?id=${id}`,{method:"DELETE"});if(!r.ok)throw new Error("Could not remove food");toast.success("Food removed")}catch{setEntries(previous);toast.error("Could not remove food")}};
+  const updateGoals=async()=>{setSaving(true);try{const r=await diaryFetch("/api/goals",{method:"PUT",headers:{"content-type":"application/json"},body:JSON.stringify(draftGoals)});const d=await r.json() as Goals & { error?: string };if(!r.ok)throw new Error(d.error);setGoals(d);setGoalOpen(false);toast.success("Daily goals updated")}catch(e){toast.error(e instanceof Error?e.message:"Could not save goals")}finally{setSaving(false)}};
 
   useEffect(()=>{
     const ctx=(document as Document & {modelContext?:{registerTool:(tool:unknown,opts:{signal:AbortSignal})=>void}}).modelContext;if(!ctx?.registerTool)return;const c=new AbortController();
@@ -129,7 +120,6 @@ export default function GramelloApp({ user }: { user: AuthUser }){
     ctx.registerTool({name:"show_nutrition_trends",title:"Show nutrition trends",description:"Open nutrition trend charts for 7, 30, or 183 days.",inputSchema:{type:"object",properties:{days:{type:"number",enum:[7,30,183]}},required:["days"],additionalProperties:false},annotations:{readOnlyHint:true,untrustedContentHint:false},execute:(input:unknown)=>{const days=(input as {days:number}).days;if(![7,30,183].includes(days))throw new Error("Days must be 7, 30, or 183");setRange(days);setView("trends");return{opened:true,days}}},{signal:c.signal});return()=>c.abort();
   },[date]);
 
-  if (sessionExpired) return <SignIn expired />;
 
   return <div className="app-shell">
     <aside className="sidebar">
@@ -148,7 +138,6 @@ export default function GramelloApp({ user }: { user: AuthUser }){
         <div><p>{view==="today"?"DAILY DIARY":"NUTRITION ANALYTICS"}</p><h1>{view==="today"?"Today’s fuel":"Your progress"}</h1></div>
         <div className="topbar-actions">
           <Button onClick={openFood} className="add-food" aria-label="Add food"><Plus/><span>Add food</span></Button>
-          <ProfileMenu displayName={user.displayName} email={user.email}/>
         </div>
       </header>
 
@@ -161,16 +150,16 @@ export default function GramelloApp({ user }: { user: AuthUser }){
           <div className="macro-grid"><MacroProgress label="Protein" current={total.protein} target={goals.protein} color="#6ee7c7"/><MacroProgress label="Carbs" current={total.carbs} target={goals.carbs} color="#78a9ff"/><MacroProgress label="Fat" current={total.fat} target={goals.fat} color="#ffbd66"/></div>
         </div>
 
-        <WaterTracker key={date} date={date} authFetch={authFetch}/>
+        <WaterTracker key={date} date={date} diaryFetch={diaryFetch}/>
         <div className="diary-heading"><div><span className="eyebrow">MEALS</span><h2>Food diary</h2></div><button onClick={openGoals}><Target/>Edit goals</button></div>
         {loading?<div className="loading-card"><Loader2 className="spin"/>Loading your diary…</div>:<div className="meal-list">{meals.map(name=>{const items=entries.filter(e=>e.meal===name);const c=items.reduce((s,e)=>s+e.calories,0);return <article className="meal-card" key={name}><header><div><span className={`meal-icon ${name.toLowerCase()}`}><Utensils/></span><div><h3>{name}</h3><p>{items.length?`${items.length} item${items.length===1?"":"s"}`:"Nothing logged yet"}</p></div></div><div><strong>{round(c)}</strong><span>kcal</span><button aria-label={`Add ${name}`} onClick={()=>{setMeal(name);openFood()}}><Plus/></button></div></header>{items.length>0&&<div className="food-rows">{items.map(item=><div className="food-row" key={item.id}><button type="button" className="food-entry" aria-label={`Edit ${item.name}`} onClick={()=>setEditingEntry(item)}><span className="food-thumb">{item.name.charAt(0)}</span><span className="food-entry-details"><strong>{item.name}</strong><span>{item.brand?`${item.brand} · `:""}{entryAmountLabel(item)} · {item.source}</span><FoodVerification verified={item.verified}/></span><span className="food-macros"><span><b>{round(item.protein)}g</b>P</span><span><b>{round(item.carbs)}g</b>C</span><span><b>{round(item.fat)}g</b>F</span></span><strong className="food-cal">{round(item.calories)}</strong></button><button className="delete" aria-label={`Remove ${item.name}`} onClick={()=>void deleteEntry(item.id)}><Trash2/></button></div>)}</div>}</article>})}</div>}
       </section>:<Trends range={range} setRange={setRange} trends={trends} loading={trendLoading} goals={goals}/>} 
     </main>
 
-    {addOpen && <FoodDialog date={date} initialMeal={meal} authFetch={authFetch} onClose={()=>setAddOpen(false)} onAdded={entry=>{setEntries(prev=>[...prev,entry]);setAddOpen(false);toast.success(`${entry.name} added to ${entry.meal.toLowerCase()}`)}}/>}
+    {addOpen && <FoodDialog date={date} initialMeal={meal} diaryFetch={diaryFetch} onClose={()=>setAddOpen(false)} onAdded={entry=>{setEntries(prev=>[...prev,entry]);setAddOpen(false);toast.success(`${entry.name} added to ${entry.meal.toLowerCase()}`)}}/>}
 
     <Dialog open={goalOpen} onOpenChange={setGoalOpen}><DialogContent className="goal-dialog"><DialogHeader><DialogTitle>Daily targets</DialogTitle><DialogDescription>Macro grams update calories automatically. Changing calories keeps your current macro percentage split.</DialogDescription></DialogHeader><div className="goal-fields">{(["calories","protein","carbs","fat"] as const).map(k=><label key={k}><span>{k.charAt(0).toUpperCase()+k.slice(1)}{k!=="calories"&&<small style={{display:"block",color:"#6ee7c7",fontSize:".8rem"}}>{macroPercent(draftGoals,k).toFixed(1)}%</small>}</span><div><Input type="number" min="0" step="any" value={Math.round(draftGoals[k]*100)/100} onChange={e=>setDraftGoals(g=>changeGoal(g,k,Number(e.target.value)))}/><span>{k==="calories"?"kcal":"g"}</span></div></label>)}</div><p style={{fontSize:".875rem",color:"#8ca1b2"}}>Protein & carbs: 4 kcal/g · Fat: 9 kcal/g. Grams are displayed rounded to two decimals. If all macros are zero, changing calories starts a 30/40/30 split.</p><Button className="confirm-button" onClick={()=>void updateGoals()} disabled={saving||draftGoals.calories<=0}>{saving&&<Loader2 className="spin"/>}Save goals</Button></DialogContent></Dialog>
-    {editingEntry&&<EntryDialog key={editingEntry.id} entry={editingEntry} authFetch={authFetch} onClose={()=>setEditingEntry(null)} onSaved={saved=>{setEntries(current=>current.map(entry=>entry.id===saved.id?saved:entry));setEditingEntry(null);toast.success("Food updated")}}/>}
+    {editingEntry&&<EntryDialog key={editingEntry.id} entry={editingEntry} diaryFetch={diaryFetch} onClose={()=>setEditingEntry(null)} onSaved={saved=>{setEntries(current=>current.map(entry=>entry.id===saved.id?saved:entry));setEditingEntry(null);toast.success("Food updated")}}/>}
     <Toaster richColors position="bottom-right"/>
   </div>
 }

@@ -2,12 +2,10 @@ import { expect, test } from '@playwright/test';
 
 test('desktop diary keeps its selected day through navigation and opens centered dialogs', async ({ page }) => {
   await page.setViewportSize({ width: 1440, height: 1000 });
-  await page.route('https://gramello.test/api/**', route => route.fulfill({
-    headers: { 'access-control-allow-origin': '*', 'access-control-allow-headers': 'authorization,content-type' },
+  await page.route('**/api/**', route => route.fulfill({
     json: { goals: { calories: 2000, protein: 150, carbs: 200, fat: 67 }, entries: [], days: [] },
   }));
-  await page.goto('/?testName=Alexandria%20Longdisplayname');
-  await page.getByRole('button', { name: /Continue with Gramello|Sign in to Gramello/ }).click();
+  await page.goto('/');
   await expect(page.getByRole('navigation', { name: 'Main navigation' })).toBeVisible();
   const breakfast = await page.getByTestId('meal-Breakfast').boundingBox();
   const lunch = await page.getByTestId('meal-Lunch').boundingBox();
@@ -37,16 +35,13 @@ test('desktop diary keeps its selected day through navigation and opens centered
   await page.setViewportSize({ width: 761, height: 1000 });
   await page.getByRole('button', { name: 'Trends tab', exact: true }).click();
   await expect.poll(() => page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(761);
-  const account = page.getByRole('button', { name: 'Account menu', exact: true });
-  await account.focus();
+  const goals = page.getByRole('button', { name: 'Daily goals', exact: true });
+  await goals.focus();
   await page.keyboard.press('Enter');
-  const popup = page.getByRole('group', { name: 'Your account' });
-  await expect(popup.getByText('Alexandria Longdisplayname')).toBeVisible();
-  await page.keyboard.press('Tab');
-  await expect(popup.getByRole('button', { name: 'Daily goals' })).toBeFocused();
+  await expect(page.getByRole('textbox', { name: 'Calories (kcal)' })).toBeVisible();
   await page.keyboard.press('Escape');
-  await expect(popup).toHaveCount(0);
-  await expect(account).toBeFocused();
+  await expect(page.getByTestId('app-dialog')).toHaveCount(0);
+  await expect(goals).toBeFocused();
 });
 
 test('diary and interactive trends adapt from desktop through tablet to a narrow phone', async ({ page }) => {
@@ -60,13 +55,12 @@ test('diary and interactive trends adapt from desktop through tablet to a narrow
     { id: '4', meal: 'Snacks', name: 'Apple with almond butter', source: 'USDA reference', quantity: 200, unit: 'grams', grams: 200, calories: 240, protein: 6, carbs: 28, fat: 13 },
   ];
   const days = [2100, 2380, 2450, 2200, 2500, 1980, 2350].map((calories, i) => ({ date: `2026-09-${13 + i}`, calories, protein: 140 + i * 9, carbs: 210 + i * 8, fat: 55 + i * 2 }));
-  await page.route('https://gramello.test/api/**', route => {
+  await page.route('**/api/**', route => {
     const url = new URL(route.request().url());
-    if (url.pathname === '/api/trends' && route.request().method() !== 'OPTIONS') requests.push(Number(url.searchParams.get('days')));
-    return route.fulfill({ headers: { 'access-control-allow-origin': '*', 'access-control-allow-headers': 'authorization,content-type' }, json: { goals, entries, days } });
+    if (url.pathname === '/api/trends') requests.push(Number(url.searchParams.get('days')));
+    return route.fulfill({ json: { goals, entries, days } });
   });
   await page.goto('/');
-  await page.getByRole('button', { name: 'Sign in to Gramello' }).click();
   await expect(page.getByText('Chicken & avocado bowl')).toBeVisible();
   await page.screenshot({ path: 'test-results/web-desktop-populated.png', fullPage: true });
   await page.getByRole('button', { name: 'Trends tab', exact: true }).click();
@@ -106,14 +100,12 @@ test('diary and interactive trends adapt from desktop through tablet to a narrow
 test('food amount and goals remain reachable in short browser dialogs', async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 568 });
   let saved: Record<string, unknown> | undefined;
-  await page.route('https://gramello.test/api/**', route => {
+  await page.route('**/api/**', route => {
     const request = route.request();
     if (request.method() === 'POST') saved = request.postDataJSON();
-    return route.fulfill({ headers: { 'access-control-allow-origin': '*', 'access-control-allow-headers': 'authorization,content-type', 'access-control-allow-methods': 'GET,POST,PUT' },
-      json: { goals: { calories: 2000, protein: 150, carbs: 200, fat: 67 }, entries: [], foods: [{ id: 'oats', name: 'Rolled oats with a long product name for a narrow display', source: 'USDA reference', servingLabel: '40 g', servingGrams: 40, calories: 380, protein: 14, carbs: 66, fat: 6 }] } });
+    return route.fulfill({ json: { goals: { calories: 2000, protein: 150, carbs: 200, fat: 67 }, entries: [], foods: [{ id: 'oats', name: 'Rolled oats with a long product name for a narrow display', source: 'USDA reference', servingLabel: '40 g', servingGrams: 40, calories: 380, protein: 14, carbs: 66, fat: 6 }] } });
   });
   await page.goto('/');
-  await page.getByRole('button', { name: 'Sign in to Gramello' }).click();
   await page.getByRole('button', { name: 'Add food', exact: true }).click();
   await page.getByRole('textbox', { name: 'Search foods' }).fill('oats');
   await page.getByRole('button', { name: /Rolled oats/ }).click();

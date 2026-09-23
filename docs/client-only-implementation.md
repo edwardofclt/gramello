@@ -1,6 +1,6 @@
 # Native local-data implementation
 
-The iOS/Android entry point is `mobile/App.native.tsx`. Metro resolves `Session.native.tsx`, whose API adapter invokes a SQLite repository in process. The existing Expo browser app and hosted web edition retain their authenticated API. No Auth0 configuration is needed for native builds. The anonymous usage analytics already present on `main` is retained: fixed action/screen names only, with diary contents excluded by its existing allowlist. Leaving the Segment write key unset disables it.
+The iOS/Android entry point is `mobile/App.native.tsx`. Metro resolves `Session.native.tsx`, whose API adapter invokes a SQLite repository in process. The Expo browser app and hosted web edition open without login and use an anonymous browser cookie for their separate server-stored diaries. Native builds do not use the hosted API. The anonymous usage analytics already present on `main` is retained: fixed action/screen names only, with diary contents excluded by its existing allowlist. Leaving the Segment write key unset disables it.
 
 ## Storage and recovery
 

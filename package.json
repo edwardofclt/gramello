@@ -7,7 +7,7 @@
   },
   "scripts": {
     "test": "vitest run",
-    "test:smoke": "node scripts/smoke-auth.mjs",
+    "test:smoke": "node scripts/smoke-diary.mjs",
     "test:e2e": "playwright test",
     "install:ci": "bash scripts/install-pnpm.sh",
     "dev": "node scripts/run-framework.mjs dev",
@@ -19,11 +19,10 @@
     "mobile": "pnpm --filter @gramello/mobile start",
     "mobile:ios": "pnpm --filter @gramello/mobile ios",
     "mobile:android": "pnpm --filter @gramello/mobile android",
-    "lint:mobile": "eslint mobile lib/mobile-auth.ts lib/auth.ts tests/mobile-*.test.ts playwright.mobile.config.ts",
+    "lint:mobile": "eslint mobile tests/mobile-*.test.ts playwright.mobile.config.ts",
     "test:mobile:ui": "playwright test --config playwright.mobile.config.ts"
   },
   "dependencies": {
-    "@auth0/nextjs-auth0": "^4.29.0",
     "@base-ui/react": "^1.7.0",
     "@hookform/resolvers": "^5.7.1",
     "@shadcn/react": "^0.3.0",
@@ -36,7 +35,6 @@
     "drizzle-orm": "0.45.2",
     "embla-carousel-react": "^8.6.0",
     "input-otp": "^1.4.2",
-    "jose": "^6.2.12",
     "lucide-react": "^1.31.0",
     "next": "16.3.4",
     "next-themes": "^0.4.6",

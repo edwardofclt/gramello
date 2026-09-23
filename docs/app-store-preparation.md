@@ -28,9 +28,11 @@ Privacy. Public GitHub commit permalinks to `support.md` and `privacy.md` allow
 these links to work before this documentation PR is merged.
 The repository is now [edwardofclt/gramello](https://github.com/edwardofclt/gramello).
 
-The age questionnaire includes health/wellness topics, infrequent alcohol
-references in food results, and user-generated content for shared custom foods.
-Regional age-rating tables do not enable distribution outside the United States.
+The saved age questionnaire includes health/wellness topics, infrequent alcohol
+references in food results, and shared custom foods from the earlier build.
+The current native build keeps custom foods private on the device; recheck the
+questionnaire against the final build. Regional age-rating tables do not enable
+distribution outside the United States.
 
 ## Mobile purchase model
 
@@ -41,65 +43,50 @@ paid mobile releases as coming soon until official purchase listings are ready.
 This describes the product plan; it does not change store billing configuration
 or remove the existing web service or Android release artifacts.
 
-## Published privacy label
+## Privacy label and current native behavior
 
-These seven categories are configured for **App Functionality**, **linked to the
-user**, and **not used for tracking**:
+The published App Privacy label is a snapshot of an earlier hosted-data build
+and must be reviewed against the final native release. Updating repository
+files does not change App Store Connect disclosures.
 
-- Name and email address: Auth0 account profile.
-- User ID: authentication and ownership of stored records.
-- Health: diary entries, nutrient amounts, and nutrition goals.
-- Other User Content: saved recipes and shared custom-food submissions.
-- Coarse Location: approximate sign-in location derived from IP addresses by Auth0.
-- Other Diagnostic Data: authentication and service operational/security logs.
+The current iOS/Android app opens directly without an account. Diary entries,
+water, goals, recipes, and custom foods live in local SQLite. Native builds do
+not upload a personal diary to the hosted web service. Export/import uses files
+chosen through the operating system's share/save interface; exported files are
+readable by anyone who can access them.
 
-App Store Connect shows these disclosures as published. Recheck the final
-release build and provider configuration, then update the label if data
-practices change.
-
-Camera frames are processed on-device for barcodes; the food lookup receives the
-barcode, not camera images. The build reviewed on September 22, 2026 has no
-advertising or product-usage analytics integration. Anonymous Segment analytics
-is configured for the next native build, and advertising may be introduced
-later. Reassess privacy labels, disclosures,
-and required permissions/consent before enabling either; the current labels
-are a snapshot of the reviewed build. Auth0 logging is included even though
-the app does not request device location permission.
+Camera frames are processed on-device for barcodes; an online food lookup
+receives the barcode, not camera images. Catalog downloads and online lookups
+use external services. Segment usage analytics, when a public write key is
+configured, uses a persistent random installation ID and fixed event names.
+The allowlist excludes diary contents, search terms, barcodes, nutrition values,
+and personal identity. See [the mobile analytics guide](../mobile/README.md#anonymous-usage-analytics)
+for the exact event and payload fields. There is no advertising integration.
 
 ## Remaining release work
 
-- Review App Privacy for the next Segment-enabled build. The published label
-  above predates anonymous product analytics. Review Product Interaction and
-  identifier disclosures against the final build and Segment destination
-  settings; the new events use a persistent random installation ID, exclude
-  Auth0 identity and diary contents, and are used for analytics. Publish the
-  updated privacy policy with that release. See `mobile/README.md` for the exact
-  event list and payload fields. No App Store Connect settings were changed by
-  this integration.
+- Review App Privacy for the final native build and Segment destination settings.
+  Reconcile the earlier hosted-data disclosures with local storage and the
+  configured anonymous analytics. Publish matching privacy-policy text before
+  release; the existing policy still describes analytics as planned.
 - Accept Apple's Paid Apps Agreement in **Business**, then complete any banking
   and tax setup Apple requires. The agreement currently shows **New**.
 - Confirm third-party content rights and complete the Content Rights declaration.
   Review attribution/license requirements for Open Food Facts data and images,
   USDA data, and the newly merged restaurant sources.
-- Add in-app account-deletion initiation and ensure deletion covers Auth0 and
-  account-linked server data. Email-only deletion support is not sufficient for
-  an ordinary account-based App Store app.
-- Expose the privacy policy and support contact inside the app.
-- Review shared custom-food moderation/reporting safeguards against Apple's
-  user-generated-content requirements before submitting version 1.8.0.
-- Provide App Review with a working dedicated demo account and verify the review
-  contact details in App Store Connect. Do not commit credentials to this repo.
-- Upload accurate native iPhone and iPad screenshots for the release build.
-- Confirm the attached 1.8.0 build 12 matches the intended final release. Test
-  its authentication, account deletion, diary and water tracking, food search,
-  barcode scanning, and server deployment on native devices before review.
+- Expose the privacy policy and support contact inside the app. Verify that the
+  local-storage, export/import, and data-removal guidance matches the release.
+- Update App Review notes to explain that the native diary opens directly and
+  works offline. No demo account is required. Verify the review contact details
+  and upload accurate native iPhone and iPad screenshots.
+- Replace the attached 1.8.0 build 12 if it does not match the intended final
+  release. On native devices, test first launch offline, diary and water tracking,
+  food search, barcode scanning, restart persistence, backup export/import and
+  recovery, and signed catalog updates.
 
 ## References
 
-- [Apple: account deletion](https://developer.apple.com/support/offering-account-deletion-in-your-app/)
 - [Apple: App Review Guidelines](https://developer.apple.com/app-store/review/guidelines/)
 - [Apple: privacy disclosures](https://developer.apple.com/app-store/app-privacy-details/)
 - [Apple: managing App Privacy](https://developer.apple.com/help/app-store-connect/manage-app-information/manage-app-privacy)
-- [Auth0: personal information in logs](https://auth0.com/docs/deploy-monitor/logs/pii-in-logs)
-- [Auth0: login history and location](https://auth0.com/docs/manage-users/user-accounts/view-user-details)
 - [Open Food Facts terms](https://world.openfoodfacts.org/terms-of-use)

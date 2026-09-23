@@ -20,7 +20,7 @@ describe('native analytics initialization', () => {
   it.each([undefined, '', '   '])('does not start the SDK with write key %j', async key => {
     vi.stubEnv('EXPO_PUBLIC_SEGMENT_WRITE_KEY', key);
     const analytics = await import('../src/analytics/client');
-    analytics.initializeAnalytics(); analytics.trackScreen('Welcome'); analytics.trackEvent('Food Logged');
+    analytics.initializeAnalytics(); analytics.trackScreen('Diary'); analytics.trackEvent('Food Logged');
     expect(sdk.createClient).not.toHaveBeenCalled();
     expect(sdk.track).not.toHaveBeenCalled(); expect(sdk.screen).not.toHaveBeenCalled();
   });

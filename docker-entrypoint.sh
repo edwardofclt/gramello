@@ -9,4 +9,5 @@ for migration in drizzle/*.sql; do
   touch "$marker"
 done
 
-exec node --import ./scripts/sites-env.mjs ./node_modules/wrangler/bin/wrangler.js dev --config dist/server/wrangler.json --local --persist-to /data --ip 0.0.0.0 --port 3000
+# Pass the public origin explicitly through to the Worker behind Fly's TLS proxy.
+exec node --import ./scripts/sites-env.mjs ./node_modules/wrangler/bin/wrangler.js dev --config dist/server/wrangler.json --local --persist-to /data --ip 0.0.0.0 --port 3000 --var "APP_BASE_URL:${APP_BASE_URL:-}"

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { AppState, Text, View } from 'react-native';
 import { Droplets, Trash2 } from 'lucide-react-native';
-import { useSession } from '../auth/Session';
+import { useSession } from '../diary/Session';
 import { Action, Card, colors, ErrorNotice, Field, isWeb, Loading, Meter, styles } from './ui';
 import { AppDialog } from './AppDialog';
 import { WaterGoalEditor } from './WaterGoalSettings';

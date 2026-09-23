@@ -7,23 +7,20 @@ for (const width of [390, 1440]) {
     let entry = { ...original };
     let failSave = true;
     const writes: unknown[] = [];
-    await page.route('https://gramello.test/api/**', async route => {
+    await page.route('**/api/**', async route => {
       const request = route.request(), url = new URL(request.url());
-      const headers = { 'access-control-allow-origin': '*', 'access-control-allow-headers': 'authorization,content-type', 'access-control-allow-methods': 'GET,POST,PUT,DELETE' };
-      if (request.method() === 'OPTIONS') return route.fulfill({ status: 204, headers });
       let body: unknown = {};
       if (url.pathname === '/api/day') body = { goals: { calories: 2000, protein: 150, carbs: 200, fat: 67 }, entries: [entry] };
       if (url.pathname === '/api/water') body = { date: '2026-09-22', goal: { goalMl: 2000, unit: 'ml' }, entries: [], totalMl: 0 };
       if (url.pathname === '/api/entries' && request.method() === 'PUT') {
         writes.push({ id: url.searchParams.get('id'), ...request.postDataJSON() });
-        if (failSave) { failSave = false; return route.fulfill({ status: 503, headers, json: { error: 'Please try saving again.' } }); }
+        if (failSave) { failSave = false; return route.fulfill({ status: 503, json: { error: 'Please try saving again.' } }); }
         entry = { ...entry, ...request.postDataJSON(), grams: 100, calories: 380, protein: 14, carbs: 66, fat: 6 };
         body = entry;
       }
-      return route.fulfill({ headers, json: body });
+      return route.fulfill({ json: body });
     });
     await page.goto('/');
-    await page.getByRole('button', { name: 'Sign in to Gramello' }).click();
     const edit = page.getByRole('button', { name: 'Edit Rolled oats', exact: true });
     await edit.click();
     const amount = page.getByRole('textbox', { name: 'Weight in grams', exact: true });
