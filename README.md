@@ -143,7 +143,7 @@ fractional serving, edit ingredients or yield, or delete a recipe. Edits and
 deletions leave previously logged diary nutrition unchanged.
 
 Existing hosted installations need the `0002_custom_meals.sql` migration.
-Docker/Fly apply migrations on startup; local hosted databases need this
+Docker containers apply migrations on startup; local hosted databases need this
 migration applied with the same Wrangler configuration and state directory
 used for the app. Native SQLite initializes its own schema.
 
@@ -211,14 +211,14 @@ The [Gramello website](https://gramello.com/) includes the
 [privacy policy](https://gramello.com/privacy/),
 [terms and conditions](https://gramello.com/terms/), and
 [support and data requests](https://gramello.com/support/).
-It is a separate static GitHub Pages site; the hosted diary stays on Fly.io.
+It is a static GitHub Pages site, separate from the self-hostable diary.
 See [website development and publishing](website/README.md) for local preview,
 content sources, and the automatic Pages deployment.
 
 ## Run the hosted web app with Docker Compose
 
 The web app uses React, Next.js-compatible routes through Vite/vinext, and
-Drizzle with a Cloudflare D1 binding. Docker/Fly run the built Worker through
+Drizzle with a Cloudflare D1 binding. Docker runs the built Worker through
 Wrangler with a persistent local SQLite database.
 
 Start the web app:
@@ -230,35 +230,6 @@ docker compose up --build
 Open [http://localhost:3000](http://localhost:3000). Diary data is stored in
 the existing `nourish-data` volume and survives container restarts. Keep this
 legacy volume name when updating an installation so it uses the same diary data.
-
-## Fly.io deployment
-
-The hosted API/web deployment is configured for
-[https://nourish-api.fly.dev](https://nourish-api.fly.dev). Renaming the GitHub
-repository does not change this service address. `fly.toml` deploys the Docker
-image in `iad` with the SQLite database and migration markers stored on the
-encrypted `nourish_data` volume at `/data`.
-Daily volume snapshots are retained for 14 days. This is a single-Machine
-deployment: do not scale horizontally without adding database replication,
-because Fly volumes do not share data between Machines. Deploys and restarts
-briefly interrupt service. Keep separate database exports for long-term backups.
-
-`APP_BASE_URL` is set in `fly.toml` and defines the trusted browser origin for
-writes. No identity provider, client credentials, or login setup is required.
-
-To deploy changes from this checkout:
-
-```bash
-fly deploy --ha=false
-fly status
-fly checks list
-```
-
-Migrations run on the mounted volume before the HTTP server starts. Keep exactly
-one Machine attached to the existing volume; do not delete the volume when
-replacing the application container. To roll back application code, redeploy a
-previous image with `fly deploy --ha=false --image <previous-image>`; this does
-not reverse database migrations, so check schema compatibility first.
 
 ## Hosted web development
 
@@ -328,7 +299,7 @@ can continue saving nutrition goals without changing hydration settings. Volume 
 stored in mL without rounding; US fl oz uses 29.5735295625 mL per fluid ounce.
 
 Hosted installations need `drizzle/0005_water_tracking.sql` before serving the backend.
-Docker/Fly apply it through the existing startup migration runner. For other D1
+Docker containers apply it through the existing startup migration runner. For other D1
 installations, apply it to the intended database using the existing migration
 procedure. This migration only creates `water_goals`, `water_entries`, and a
 user/date index; it does not rewrite food or nutrition data. Native water data
@@ -390,9 +361,9 @@ for signing credentials and reruns.
 Catalog publication is independent: **Publish food catalog** runs manually or
 on approved catalog-input changes on `main`, publishing to the `food-catalog`
 prerelease when signing is configured. It does not trigger native app releases.
-The release workflow does not deploy the hosted Fly app; use `fly deploy` above.
+The release workflow does not deploy the self-hosted web app.
 
-The iOS bundle identifier, Android package, app scheme, Expo project slug, Fly
-hostname, and database volume names still use their original internal IDs. They
+The iOS bundle identifier, Android package, app scheme, Expo project slug,
+and database volume names still use their original internal IDs. They
 identify existing installs or stored data; the public app and GitHub repository
 are Gramello.
