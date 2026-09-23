@@ -11,8 +11,4 @@ config.resolver.resolveRequest = (context, name, platform) => {
   }
   return context.resolveRequest(context, name, platform);
 };
-// The browser test runner explicitly opts into an external Auth0 test double.
-// This is never enabled by the native/EAS build profiles.
-module.exports = process.env.GRAMELLO_UI_TEST === '1'
-  ? require('./tests/metro.cjs')(config)
-  : config;
+module.exports = config;

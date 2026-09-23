@@ -9,9 +9,6 @@ kill_timeout = "30s"
 [env]
   NODE_ENV = "production"
   APP_BASE_URL = "https://nourish-api.fly.dev"
-  # Set matching Fly secrets to enable native bearer-token authentication.
-  AUTH0_AUDIENCE = ""
-  AUTH0_MOBILE_CLIENT_ID = ""
 
 # The container's SQLite database and migration markers must survive deploys.
 # Keep one Machine: these volumes do not replicate between Machines.

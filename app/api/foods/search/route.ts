@@ -1,10 +1,10 @@
-import { withAuthenticatedUser } from '@/lib/auth';
+import { withBrowserDiary } from '@/lib/browser-diary';
 import { cacheDatabaseFoods, findFoods } from '@/db/foods';
 import { referenceFoods, searchOpenFoodFacts, searchUsda } from '@/lib/food-providers';
 import { foodSearchIssue } from '@/lib/food-search';
 
 export async function GET(request: Request) {
-  return withAuthenticatedUser(request, async () => {
+  return withBrowserDiary(request, async () => {
     const query = new URL(request.url).searchParams.get('q')?.trim() ?? '';
     if (query.length < 2) return Response.json({ foods: [], partial: false });
     if (query.length > 200) return Response.json({ error: 'Search with a shorter food or restaurant name.' }, { status: 400 });

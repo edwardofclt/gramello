@@ -16,13 +16,13 @@ and branded search results, diary writes/deletion, goals, reload persistence,
 Food search responses use deterministic fixtures; database APIs are real.
 This suite does not certify live USDA/Open Food Facts availability.
 
-Each test uses an encrypted Auth0 session for a unique test account. The server
-uses test-only credentials and a temporary database, applies all migrations,
-and removes the database when the run ends. Custom meal tests cover batch
-nutrition, ounces, fractional portions, persistence, failed saves, editing, and
+Each test uses a separate anonymous browser diary cookie. The server uses a
+temporary database, applies all migrations, and removes the database when the
+run ends. Custom meal tests cover batch nutrition, ounces, fractional portions,
+persistence, failed saves, editing, and
 deletion without changing diary history. Never point this at production.
 `PLAYWRIGHT_BASE_URL` skips the test server and requires an explicitly configured
-disposable instance with matching test credentials.
+disposable instance configured for that browser origin.
 
 To also verify an actual restart (Docker CLI access required):
 

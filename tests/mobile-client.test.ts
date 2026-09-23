@@ -1,47 +1,51 @@
 import { afterEach, describe, expect, it, vi } from 'vitest';
-import { createApiClient, SessionExpiredError } from '../mobile/src/lib/api';
+import { createApiClient } from '../mobile/src/lib/api';
 import { localDate, shiftDate, scaleFood } from '../mobile/src/lib/nutrition';
 
 afterEach(() => vi.unstubAllGlobals());
 
 describe('mobile API contract', () => {
-  it('sends the current access token without cookies or user identity fields', async () => {
+  it('sends the diary cookie without bearer tokens or user identity fields', async () => {
     const fetcher = vi.fn(async (_url: string, init: RequestInit) => {
-      expect(init.credentials).toBe('omit');
-      expect(new Headers(init.headers).get('Authorization')).toBe('Bearer refreshed-token');
+      expect(init.credentials).toBe('include');
+      expect(new Headers(init.headers).has('Authorization')).toBe(false);
       expect(JSON.parse(init.body as string)).toEqual({ calories: 2000 });
       return Response.json({ calories: 2000 });
     });
     vi.stubGlobal('fetch', fetcher);
-    const api = createApiClient('https://gramello.example', async () => 'refreshed-token', () => {});
+    const api = createApiClient('https://gramello.example');
     expect(await api('/api/goals', { method: 'PUT', body: { calories: 2000 } })).toEqual({ calories: 2000 });
     expect(fetcher.mock.calls[0][0]).toBe('https://gramello.example/api/goals');
   });
 
-  it('invalidates the protected session on 401 without retrying a write', async () => {
-    const expired = vi.fn();
-    const fetcher = vi.fn(async () => Response.json({ error: 'Unauthorized' }, { status: 401 }));
+  it('surfaces API errors without retrying a write', async () => {
+    const fetcher = vi.fn(async () => Response.json({ error: 'Diary unavailable' }, { status: 503 }));
     vi.stubGlobal('fetch', fetcher);
-    const api = createApiClient('https://gramello.example', async () => 'token', expired);
-    await expect(api('/api/entries', { method: 'POST', body: {} })).rejects.toBeInstanceOf(SessionExpiredError);
-    expect(expired).toHaveBeenCalledOnce();
+    const api = createApiClient('https://gramello.example');
+    await expect(api('/api/entries', { method: 'POST', body: {} })).rejects.toThrow('Diary unavailable');
     expect(fetcher).toHaveBeenCalledOnce();
   });
 
-  it('surfaces service failure without treating it as a sign-out', async () => {
-    const expired = vi.fn();
-    vi.stubGlobal('fetch', async () => Response.json({ error: 'Diary unavailable' }, { status: 503 }));
-    const api = createApiClient('https://gramello.example', async () => 'token', expired);
-    await expect(api('/api/day')).rejects.toThrow('Diary unavailable');
-    expect(expired).not.toHaveBeenCalled();
+  it('uses the current browser origin by default', async () => {
+    const fetcher = vi.fn(async () => Response.json({ entries: [] }));
+    vi.stubGlobal('fetch', fetcher);
+    await expect(createApiClient()('/api/day')).resolves.toEqual({ entries: [] });
+    expect(fetcher).toHaveBeenCalledExactlyOnceWith('/api/day', expect.objectContaining({ credentials: 'include' }));
+  });
+
+  it('reports unreadable responses', async () => {
+    vi.stubGlobal('fetch', async () => new Response('not json'));
+    await expect(createApiClient()('/api/day')).rejects.toThrow('unreadable response');
   });
 
   it('never sends credentials to an absolute or protocol-relative URL', async () => {
     const fetcher = vi.fn();
     vi.stubGlobal('fetch', fetcher);
-    const api = createApiClient('https://gramello.example', async () => 'token', () => {});
+    const api = createApiClient('https://gramello.example');
     await expect(api('https://evil.example/api/day')).rejects.toThrow();
     await expect(api('//evil.example/api/day')).rejects.toThrow();
+    await expect(api('/api/../../other')).rejects.toThrow();
+    await expect(api('/api/%2e%2e/other')).rejects.toThrow();
     expect(fetcher).not.toHaveBeenCalled();
   });
 });

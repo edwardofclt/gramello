@@ -3,7 +3,7 @@ import { entryAmountLabel } from '../../../lib/meals';
 import { useRef, useState } from 'react';
 import { RefreshControl, ScrollView, Text, View } from 'react-native';
 import { CalendarDays, ChevronLeft, ChevronRight, Coffee, Moon, Plus, Sun, Target, Trash2, Utensils } from 'lucide-react-native';
-import { useSession } from '../auth/Session';
+import { useSession } from '../diary/Session';
 import { Action, colors, ErrorNotice, isWeb, Loading, Meter, styles, useLayout } from '../components/ui';
 import { AppDialog } from '../components/AppDialog';
 import { CalorieRing } from '../components/CalorieRing';

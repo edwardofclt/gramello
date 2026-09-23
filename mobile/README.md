@@ -1,6 +1,6 @@
 # Gramello for iOS, Android, and web
 
-**Native iOS/Android now run locally with SQLite and no sign-in.** Settings holds daily calorie, macro, and water goals, including the preferred water unit. Water logging stays in the diary. Food catalogs update automatically; **Settings → Advanced** offers an immediate update check, complete backup export/import, CSV export, and recovery after replacement. See [local-data setup and publishing](../docs/client-only-implementation.md). The Auth0 instructions below apply to the retained browser edition and legacy hosted clients.
+**Native iOS/Android now run locally with SQLite and no sign-in.** Settings holds daily calorie, macro, and water goals, including the preferred water unit. Water logging stays in the diary. Food catalogs update automatically; **Settings → Advanced** offers an immediate update check, complete backup export/import, CSV export, and recovery after replacement. See [local-data setup and publishing](../docs/client-only-implementation.md). The browser edition also opens directly, with a hosted diary tied to that browser's anonymous cookie.
 
 Production Android builds produce Play Store AABs. GitHub APK distribution is manual. Catalog signing setup is required before the first downloadable catalog release.
 
@@ -164,11 +164,9 @@ cannot add these modules. Segment supports development builds, not Expo Go.
 The Expo browser build and the marketing website do not send these events.
 
 Segment generates a random `anonymousId` and persists it using Sovran and
-AsyncStorage. It survives app restarts and sign-in/sign-out. It is never derived
-from Auth0, email, or a hardware identifier. An installation is the analytics
-identity: accounts sharing one installation share this ID, and the same account
-on another device has a different ID. Clearing app storage creates a new ID;
-restoring a device backup can restore the stored ID. There are no `identify`,
+AsyncStorage. It survives app restarts and is never derived from email or a
+hardware identifier. Each installation has its own analytics identity. Clearing
+app storage creates a new ID; restoring a device backup can restore the stored ID. There are no `identify`,
 `alias`, or account traits calls.
 
 | Events | When recorded |
@@ -238,23 +236,30 @@ dialogs, and calorie and macro trend charts. Below 761px it switches to a
 single-column diary and bottom navigation. iOS and Android use the shared screens
 with native safe areas, keyboard handling, and page sheets.
 
-With the public environment values configured, run `pnpm --filter @gramello/mobile
-web`. Live browser login requires the browser origin to be configured in Auth0;
-cross-origin API requests also require an API gateway with appropriate CORS
-support, or deployment of the app and API on the same origin. The browser tests
-below use isolated Auth0/API fixtures, not a live account.
+Run `pnpm --filter @gramello/mobile web` to open the Expo browser UI. The diary
+opens without login. Serve the browser UI and its `/api` requests on one origin,
+using a reverse proxy when the Expo and API servers run separately. The browser
+tests below use isolated API fixtures.
 
 The diary date and trend range are retained when switching views. Chart values
 can be inspected with pointer hover, touch, or the previous/next day buttons.
 Charts and averages use logged days, matching the original web app.
 
-## Hosted browser authentication
+## Hosted browser setup
 
-Native builds require no Auth0 or API environment variables. For the retained
-browser edition, copy `.env.example` to `.env` and configure its public Auth0
-values and API origin. Configure the browser origin in Auth0 and allow it in
-the API gateway's CORS settings. Keep secrets in the server environment only.
-The existing hosted API continues to accept its configured legacy mobile clients.
+Native builds require no API environment variables or running server. For the
+browser edition, copy `mobile/.env.example` to `mobile/.env` if needed.
+`EXPO_PUBLIC_API_URL` is optional and defaults to the current browser origin;
+keep any override on that same origin. Configure the API server's `APP_BASE_URL`
+to match the browser origin. Cross-origin API requests are not supported.
+
+The API creates an HttpOnly `gramello_diary` cookie automatically. That cookie
+keeps each browser's hosted diary separate. Clearing it, using another browser,
+or opening a new private browsing session creates a separate diary; there is no
+account or recovery login. Clearing the cookie does not delete the server's
+records. Data from older account-based versions remains untouched and is not
+assigned to anonymous diaries. Native SQLite data and backups are independent
+of hosted browser data.
 
 ## Run on a simulator or device
 
@@ -301,7 +306,7 @@ npx eas-cli@24.7.0 build --platform android --profile production
 
 Retain the keystore so subsequent releases can update installed apps. TestFlight
 submission does not release the app publicly. The store profiles contain no
-Auth0/API environment values.
+hosted API environment values.
 
 For direct APK distribution, manually run **Android APK (manual distribution)**
 in Actions with a stable release tag containing the `production-apk` profile.
@@ -325,9 +330,9 @@ pnpm test:mobile:ui
 ```
 
 The browser interaction test runs the **real Expo/React Native screens and
-gluestack components**, replacing Auth0 and HTTP responses with isolated fixtures.
-It exercises sign-in, food search/scaling/add/remove, coupled goals, trends, and
-logout at phone and desktop sizes, plus tablet/narrow layouts, short dialogs,
+gluestack components**, replacing HTTP responses with isolated fixtures.
+It exercises direct diary startup, food search/scaling/add/remove, coupled goals,
+and trends at phone and desktop sizes, plus tablet/narrow layouts, short dialogs,
 Escape/focus restoration, and chart inspection. `MOBILE_TEST_PORT=8087 pnpm
 test:mobile:ui` selects another port when 8082 is occupied.
 `GRAMELLO_UI_TEST=1` is set only by its dedicated server
@@ -340,7 +345,7 @@ patches before that window has passed. `EXPO_OFFLINE=1 pnpm --filter
 @gramello/mobile exec expo install --check` checks the installed SDK's matrix.
 
 UI code is in `src/screens`, gluestack-based controls in `src/components/ui.tsx`,
-Auth0/session coordination in `src/auth`, and API/calendar/nutrition helpers in
+diary data providers in `src/diary`, and API/calendar/nutrition helpers in
 `src/lib`. Goal calculations are shared with the web app's `app/goal-math.ts`.
 Native personal data is persisted in SQLite under `src/local`; catalog code lives
-in `src/catalog`. There are no native login tokens.
+in `src/catalog`. All platforms open without login.

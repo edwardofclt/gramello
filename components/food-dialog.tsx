@@ -10,19 +10,19 @@ import type { EntryInput } from '@/db/store';
 import type { FoodApi } from '@/lib/food-api';
 
 export type DiaryEntry = EntryInput & { id: string };
-export function FoodDialog({ date, initialMeal, authFetch, onClose, onAdded }: {
-  date: string; initialMeal: string; authFetch: typeof fetch; onClose: () => void; onAdded: (entry: DiaryEntry) => void;
+export function FoodDialog({ date, initialMeal, diaryFetch, onClose, onAdded }: {
+  date: string; initialMeal: string; diaryFetch: typeof fetch; onClose: () => void; onAdded: (entry: DiaryEntry) => void;
 }) {
   const [view, setView] = useState<'search' | 'meals'>('search');
   const [selected, setSelected] = useState<Food | undefined>();
   const [meal, setMeal] = useState(initialMeal);
   const [busy, setBusy] = useState(false);
   const api = useCallback<FoodApi>(async <T,>(path: string, options: Parameters<FoodApi>[1] = {}) => {
-    const response = await authFetch(path, { method: options.method, signal: options.signal, ...(options.body !== undefined ? { headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(options.body) } : {}) });
+    const response = await diaryFetch(path, { method: options.method, signal: options.signal, ...(options.body !== undefined ? { headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(options.body) } : {}) });
     const data = await response.json();
     if (!response.ok) throw new Error((data as { error?: string } | null)?.error || 'Could not complete this request. Try again.');
     return data as T;
-  }, [authFetch]);
+  }, [diaryFetch]);
   async function add({ food, quantity, unit }: Ingredient) {
     const scaled = scaleFood(food, quantity, unit);
     if (!scaled) return;

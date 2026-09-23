@@ -1,16 +1,16 @@
-import { withAuthenticatedUser } from '@/lib/auth';
+import { withBrowserDiary } from '@/lib/browser-diary';
 import { deleteMeal, listMeals, saveMeal } from '@/db/meals';
 import { mealInputSchema } from '@/lib/meal-validation';
 import { mealFood } from '@/lib/meals';
 
 export async function GET(request: Request) {
-  return withAuthenticatedUser(request, async ({ userId }) => {
+  return withBrowserDiary(request, async ({ userId }) => {
     try { return Response.json({ meals: await listMeals(userId) }); }
     catch (error) { console.error(error); return Response.json({ error: 'Saved meals could not be loaded. Try again.' }, { status: 503 }); }
   });
 }
 async function write(request: Request, editing: boolean) {
-  return withAuthenticatedUser(request, async ({ userId }) => {
+  return withBrowserDiary(request, async ({ userId }) => {
     const id = new URL(request.url).searchParams.get('id');
     if (editing && !id) return Response.json({ error: 'Missing saved meal.' }, { status: 400 });
     const parsed = mealInputSchema.safeParse(await request.json().catch(() => null));
@@ -25,7 +25,7 @@ async function write(request: Request, editing: boolean) {
 export const POST = (request: Request) => write(request, false);
 export const PUT = (request: Request) => write(request, true);
 export async function DELETE(request: Request) {
-  return withAuthenticatedUser(request, async ({ userId }) => {
+  return withBrowserDiary(request, async ({ userId }) => {
     const id = new URL(request.url).searchParams.get('id');
     if (!id) return Response.json({ error: 'Missing saved meal.' }, { status: 400 });
     try {

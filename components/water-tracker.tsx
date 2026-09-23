@@ -19,14 +19,14 @@ function WaterGoalEditor({ goal, busy, error, onSave }: { goal: WaterGoal; busy:
   </form>;
 }
 
-export function WaterTracker({ date, authFetch }: { date: string; authFetch: typeof fetch }) {
+export function WaterTracker({ date, diaryFetch }: { date: string; diaryFetch: typeof fetch }) {
   const api: WaterApi = useCallback(async <T,>(path: string, options: Parameters<WaterApi>[1] = {}) => {
-    const response = await authFetch(path, { method: options.method, signal: options.signal,
+    const response = await diaryFetch(path, { method: options.method, signal: options.signal,
       ...(options.body !== undefined ? { headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(options.body) } : {}) });
     const data = await response.json() as T & { error?: string };
     if (!response.ok) throw new Error(data.error || 'Water intake could not be updated.');
     return data as T;
-  }, [authFetch]);
+  }, [diaryFetch]);
   const water = useWater(api, date);
   const { reload } = water;
   const [amount, setAmount] = useState('');

@@ -26,7 +26,7 @@ export function SessionProvider({ children }: { children: ReactNode }) {
     async importFile(text: string) { await runtime.repository.importArchive(text); setRevision(r => r+1); },
     async restorePrevious() { await runtime.repository.restorePrevious(); setRevision(r => r+1); },
   };
-  return <Context.Provider value={{ api:runtime.api,local,name:'This device',signedIn:true,loading:false,busy:false,message:null,signIn:async () => {},signOut:async () => {} }}>
+  return <Context.Provider value={{ api:runtime.api,local }}>
     <Fragment key={revision}>{children}</Fragment>
   </Context.Provider>;
 }

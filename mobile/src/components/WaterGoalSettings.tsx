@@ -3,7 +3,7 @@ import { Text, View } from 'react-native';
 import { Droplets } from 'lucide-react-native';
 import { useWater, useWaterGoalDraft } from '../../../lib/use-water';
 import { waterUnitLabel, type WaterGoal } from '../../../lib/water';
-import { useSession } from '../auth/Session';
+import { useSession } from '../diary/Session';
 import { localDate } from '../lib/nutrition';
 import { Action, Card, colors, ErrorNotice, Field, Loading, styles } from './ui';
 

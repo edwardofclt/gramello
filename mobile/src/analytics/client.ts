@@ -41,7 +41,7 @@ function send(method: 'track' | 'screen', name: string) {
   } catch { /* Analytics must never turn a successful action into a UI error. */ }
 }
 
-// No identify/alias/reset API is exposed. Signing in or out keeps the same
-// installation ID, without tying it to Auth0 or merging identities across devices.
+// No identify/alias/reset API is exposed. The installation ID remains anonymous
+// and is never merged with identities across devices.
 export function trackEvent(name: ActionEvent) { send('track', name); }
 export function trackScreen(name: ScreenName) { send('screen', name); }

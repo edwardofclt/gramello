@@ -11,7 +11,7 @@ const event = (overrides: Record<string, unknown> = {}) => ({
 describe('anonymous analytics payloads', () => {
   it('retains the anonymous ID but removes account, nutrition, device and network data', () => {
     const input = event({
-      userId: 'auth0|private', properties: { name: 'Private meal', calories: 450, date: '2026-09-21', query: 'private query' },
+      userId: 'private-user', properties: { name: 'Private meal', calories: 450, date: '2026-09-21', query: 'private query' },
       context: {
         traits: { email: 'private@example.com' }, ip: '192.0.2.1',
         device: { id: 'hardware-id', advertisingId: 'ad-id', name: 'Personal phone' },
@@ -30,7 +30,7 @@ describe('anonymous analytics payloads', () => {
         os: { name: 'iOS', version: '26' }, library: { name: 'analytics-react-native', version: '2.24.0' },
       },
     });
-    expect(input.userId).toBe('auth0|private');
+    expect(input.userId).toBe('private-user');
   });
 
   it.each(['identify', 'alias', 'group'])('drops %s events entirely', type => {

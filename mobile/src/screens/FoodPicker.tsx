@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { ActivityIndicator, Image, Linking, Pressable, Text, View } from 'react-native';
 import { ChevronLeft, ChevronRight, Minus, Plus, ScanBarcode, Search } from 'lucide-react-native';
-import { useSession } from '../auth/Session';
+import { useSession } from '../diary/Session';
 import { Action, Card, colors, ErrorNotice, Field, styles, useLayout } from '../components/ui';
 import { BarcodeScanner } from '../components/BarcodeScanner';
 import { CustomFoodForm } from '../components/CustomFoodForm';

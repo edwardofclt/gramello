@@ -8,26 +8,23 @@ for (const width of [390, 1440]) {
     let failures = 1;
     const errors: string[] = [];
     page.on('pageerror', error => errors.push(error.message));
-    await page.route('https://gramello.test/api/**', async route => {
+    await page.route('**/api/**', async route => {
       const request = route.request();
       const path = new URL(request.url()).pathname;
-      const headers = { 'access-control-allow-origin': '*', 'access-control-allow-headers': 'authorization,content-type', 'access-control-allow-methods': 'GET,POST' };
-      if (request.method() === 'OPTIONS') return route.fulfill({ status: 204, headers });
-      if (path === '/api/day') return route.fulfill({ headers, json: { goals: { calories: 2400, protein: 180, carbs: 250, fat: 70 }, entries } });
+      if (path === '/api/day') return route.fulfill({ json: { goals: { calories: 2400, protein: 180, carbs: 250, fat: 70 }, entries } });
       if (path === '/api/foods/custom') {
-        if (failures--) return route.fulfill({ status: 503, headers, json: { error: 'Temporary save failure. Try again.' } });
+        if (failures--) return route.fulfill({ status: 503, json: { error: 'Temporary save failure. Try again.' } });
         custom = { ...request.postDataJSON(), id: 'custom-bowl', source: 'Community submitted', sourceKind: 'custom', verified: false, nutritionBasis: 'serving' };
-        return route.fulfill({ status: 201, headers, json: { food: custom } });
+        return route.fulfill({ status: 201, json: { food: custom } });
       }
-      if (path === '/api/foods/search') return route.fulfill({ headers, json: { foods: custom ? [custom] : [], partial: true, hasMore: true, issues: [{ source: 'Open Food Facts', message: 'The database took too long to respond. Try searching again.' }] } });
+      if (path === '/api/foods/search') return route.fulfill({ json: { foods: custom ? [custom] : [], partial: true, hasMore: true, issues: [{ source: 'Open Food Facts', message: 'The database took too long to respond. Try searching again.' }] } });
       if (path === '/api/entries') {
         const entry = { ...request.postDataJSON(), id: 'entry-1', verified: false, servingLabel: custom!.servingLabel };
-        entries.push(entry); return route.fulfill({ status: 201, headers, json: entry });
+        entries.push(entry); return route.fulfill({ status: 201, json: entry });
       }
-      return route.fulfill({ headers, json: {} });
+      return route.fulfill({ json: {} });
     });
     await page.goto('/');
-    await page.getByRole('button', { name: 'Sign in to Gramello' }).click();
     await page.getByRole('button', { name: 'Add Dinner', exact: true }).click();
     await page.getByRole('button', { name: 'Add custom food', exact: true }).click();
     await page.getByRole('button', { name: 'Save custom food' }).click();
@@ -71,21 +68,18 @@ test('choosing a serving-only restaurant food resets a previous weight amount', 
   const weighted = { id: 'oats', name: 'Rolled oats', source: 'USDA', verified: true, nutritionBasis: '100g', servingGrams: 40, servingLabel: '40 g', calories: 400, protein: 10, carbs: 60, fat: 10 };
   const restaurant = { id: 'restaurant-bowl', name: 'Restaurant bowl', brand: 'Test Kitchen', source: 'Restaurant menu', verified: true, sourceKind: 'restaurant', sourceUrl: 'https://example.com/nutrition', nutritionBasis: 'serving', servingGrams: null, servingLabel: '1 bowl', calories: 600, protein: 30, carbs: 60, fat: 20 };
   const entries: Record<string, unknown>[] = [];
-  await page.route('https://gramello.test/api/**', async route => {
+  await page.route('**/api/**', async route => {
     const request = route.request();
     const path = new URL(request.url()).pathname;
-    const headers = { 'access-control-allow-origin': '*', 'access-control-allow-headers': 'authorization,content-type', 'access-control-allow-methods': 'GET,POST' };
-    if (request.method() === 'OPTIONS') return route.fulfill({ status: 204, headers });
-    if (path === '/api/day') return route.fulfill({ headers, json: { goals: { calories: 2400, protein: 180, carbs: 250, fat: 70 }, entries } });
-    if (path === '/api/foods/search') return route.fulfill({ headers, json: { foods: [weighted, restaurant] } });
+    if (path === '/api/day') return route.fulfill({ json: { goals: { calories: 2400, protein: 180, carbs: 250, fat: 70 }, entries } });
+    if (path === '/api/foods/search') return route.fulfill({ json: { foods: [weighted, restaurant] } });
     if (path === '/api/entries') {
       entries.push({ ...request.postDataJSON(), id: 'entry-bowl', verified: true, servingLabel: restaurant.servingLabel });
-      return route.fulfill({ status: 201, headers, json: entries[0] });
+      return route.fulfill({ status: 201, json: entries[0] });
     }
-    return route.fulfill({ headers, json: {} });
+    return route.fulfill({ json: {} });
   });
   await page.goto('/');
-  await page.getByRole('button', { name: 'Sign in to Gramello' }).click();
   await page.getByRole('button', { name: 'Add Dinner', exact: true }).click();
   await page.getByRole('textbox', { name: 'Search foods' }).fill('bowl');
   await page.getByRole('button', { name: /Rolled oats/ }).click();

@@ -6,7 +6,7 @@ import { formatDate } from '../lib/nutrition';
 import type { Food, Meal } from '../lib/types';
 import { FoodPicker } from './FoodPicker';
 import { MyMeals } from './MyMeals';
-import { useSession } from '../auth/Session';
+import { useSession } from '../diary/Session';
 
 export function FoodSheet({ date, initialMeal, onClose, onSaved }: { date: string; initialMeal: Meal; onClose: () => void; onSaved: () => void }) {
   const { local } = useSession();

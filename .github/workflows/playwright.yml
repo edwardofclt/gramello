@@ -23,7 +23,7 @@ jobs:
       - run: pnpm exec playwright install --with-deps chromium
       - name: Build current checkout
         run: pnpm build
-      - name: Test with disposable authenticated Worker
+      - name: Test with disposable browser diary Worker
         run: pnpm test:e2e
       - uses: actions/upload-artifact@v4
         if: always()

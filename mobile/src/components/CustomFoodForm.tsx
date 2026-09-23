@@ -3,7 +3,7 @@ import { Text, View } from 'react-native';
 import { customFoodFields, customFoodInput, emptyCustomFood } from '../../../lib/custom-food-form';
 import type { Food } from '../../../lib/food';
 import { Action, ErrorNotice, Field, isWeb, styles } from './ui';
-import type { useSession } from '../auth/Session';
+import type { useSession } from '../diary/Session';
 
 export function CustomFoodForm({ initialName, api, onSaved, onBack, onBusy }: {
   initialName: string; api: ReturnType<typeof useSession>['api']; onSaved: (food: Food) => void; onBack: () => void; onBusy: (busy: boolean) => void;

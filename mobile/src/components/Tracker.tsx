@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useAnalyticsScreen } from '../analytics/useScreen';
-import { useSession } from '../auth/Session';
+import { useSession } from '../diary/Session';
 import { TrackerShell, type Tab } from './TrackerShell';
 import { isWeb } from './ui';
 import { localDate } from '../lib/nutrition';
