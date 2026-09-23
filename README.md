@@ -370,7 +370,10 @@ restart persistence, file sharing/import/recovery, or interrupted catalog downlo
 
 Commits use the [Conventional Commits](https://www.conventionalcommits.org/) format.
 Pushes to `main` run semantic-release. When releasable changes exist, it updates
-the changelog and creates a GitHub release; a follow-up job publishes the website.
+the changelog and creates a GitHub release. A follow-up job publishes the website
+from that release tag only when the website, policies, or publishing workflows
+have changed since the previous stable version. Website changes on `main` wait
+for a stable release instead of deploying separately on push.
 
 Use `fix:` for patch releases, `feat:` for minor releases, and a `BREAKING CHANGE:` footer for major releases.
 
