@@ -14,6 +14,7 @@ function setup(status = 200) {
 describe('mobile action analytics', () => {
   it.each([
     ['POST', '/api/entries', 'Food Logged'], ['DELETE', '/api/entries?id=private', 'Food Removed'],
+    ['PUT', '/api/entries?id=private', 'Food Updated'],
     ['PUT', '/api/goals', 'Goals Updated'], ['POST', '/api/foods/custom', 'Custom Food Created'],
     ['POST', '/api/meals', 'Meal Created'], ['PUT', '/api/meals?id=private', 'Meal Updated'],
     ['DELETE', '/api/meals?id=private', 'Meal Deleted'], ['POST', '/api/water', 'Water Logged'],
@@ -28,6 +29,7 @@ describe('mobile action analytics', () => {
   it.each([401, 422, 500])('does not count a rejected request (%s)', async status => {
     const api = setup(status);
     await expect(api('/api/entries', { method: 'POST' })).rejects.toThrow();
+    await expect(api('/api/entries?id=private', { method: 'PUT' })).rejects.toThrow();
     expect(trackEvent).not.toHaveBeenCalled();
   });
 
@@ -35,6 +37,7 @@ describe('mobile action analytics', () => {
     const api = setup();
     const controller = new AbortController(); controller.abort();
     await expect(api('/api/entries', { method: 'POST', signal: controller.signal })).rejects.toThrow();
+    await expect(api('/api/entries?id=private', { method: 'PUT', signal: controller.signal })).rejects.toThrow();
     expect(trackEvent).not.toHaveBeenCalled();
   });
 

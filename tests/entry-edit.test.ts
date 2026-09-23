@@ -24,6 +24,16 @@ it('edits servings without weight and offers only known conversions', () => {
   expect(entryUnits({ ...entry, unit: 'grams' })).toEqual(['grams', 'ounces']);
 });
 
+it.each([
+  { unit: 'grams', grams: null }, { unit: 'grams', grams: 0 },
+  { unit: 'ounces', grams: null }, { unit: 'ounces', grams: 0 },
+] as const)('keeps a legacy $unit entry editable when grams is $grams', ({ unit, grams }) => {
+  const legacy = { ...entry, unit, grams };
+  expect(entryUnits(legacy)).toEqual([unit]);
+  expect(editedPortion(legacy, 1, unit)).toEqual({ grams, calories: 160, protein: 4, carbs: 24, fat: 4 });
+  expect(editedPortion(legacy, 1, unit === 'grams' ? 'ounces' : 'grams')).toBeNull();
+});
+
 it.each([0, -1, Infinity, NaN, 1_000_001])('rejects invalid quantities: %s', quantity => {
   expect(editedPortion(entry, quantity, 'serving')).toBeNull();
 });

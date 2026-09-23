@@ -14,7 +14,7 @@ export type EntrySnapshot = FoodPortion & { quantity: number; unit: string };
 // Offer only conversions supported by the saved snapshot, without a catalog lookup.
 export function entryUnits(entry: EntrySnapshot): AmountUnit[] {
   if (entry.unit === 'milliliters' || entry.unit === 'fluid-ounces') return ['milliliters', 'fluid-ounces'];
-  if (entry.unit === 'grams' || entry.unit === 'ounces') return ['grams', 'ounces'];
+  if (entry.unit === 'grams' || entry.unit === 'ounces') return entry.grams !== null && entry.grams > 0 ? ['grams', 'ounces'] : [entry.unit];
   return entry.grams !== null && entry.grams > 0 ? ['serving', 'grams', 'ounces'] : ['serving'];
 }
 

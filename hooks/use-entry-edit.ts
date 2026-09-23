@@ -12,6 +12,7 @@ export function useEntryEdit<T extends EntrySnapshot & { id: string; meal: strin
   const lock = useRef(false);
   const portion = editedPortion(entry, Number(quantity), unit);
   function changeUnit(next: AmountUnit) {
+    if (next === unit || !entryUnits(entry).includes(next)) return;
     const amount = (measure: AmountUnit) => measure === 'serving' ? entry.quantity
       : measure === 'grams' ? entry.grams! : measure === 'ounces' ? entry.grams! / GRAMS_PER_OUNCE
       : entry.quantity * (entry.unit === 'fluid-ounces' ? ML_PER_FLUID_OUNCE : 1) / (measure === 'fluid-ounces' ? ML_PER_FLUID_OUNCE : 1);
