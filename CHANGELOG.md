@@ -1,3 +1,14 @@
+## [1.14.0](https://github.com/edwardofclt/gramello/compare/v1.13.0...v1.14.0) (2026-09-23)
+
+### Features
+
+* edit logged food entries on web and mobile ([#33](https://github.com/edwardofclt/gramello/issues/33)) ([fe00448](https://github.com/edwardofclt/gramello/commit/fe004489977a213596cb1e291c3f638bba17c85f))
+
+### Bug Fixes
+
+* prevent native crash when replacing food catalog ([#27](https://github.com/edwardofclt/gramello/issues/27)) [skip ci] ([fb6951a](https://github.com/edwardofclt/gramello/commit/fb6951a142d6ae3453b027c92e4e6bf648f92250))
+* remove Auth0 and login requirements ([#30](https://github.com/edwardofclt/gramello/issues/30)) ([3e9c240](https://github.com/edwardofclt/gramello/commit/3e9c240d6d474ea0636527182efaf4bcb55267f3))
+
 ## [1.13.0](https://github.com/edwardofclt/gramello/compare/v1.12.1...v1.13.0) (2026-09-22)
 
 ### Features
