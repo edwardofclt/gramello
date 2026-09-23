@@ -58,8 +58,6 @@ mobile/android/
 mobile/dist/
 mobile/native/siri/.build/
 mobile/native/siri/.swiftpm/
-mobile/modules/gramello-widgets/ios/Generated/
-mobile/modules/gramello-widgets/android/build/
 
 # Python extraction script bytecode.
 __pycache__/

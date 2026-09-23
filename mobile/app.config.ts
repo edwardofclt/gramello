@@ -21,7 +21,6 @@ const config: ExpoConfig = {
   extra: { eas: { projectId: 'c23e01dd-d5d1-4f70-8786-e63e2f04a888' } },
   plugins: [
     './plugins/withSiriCheckIn.cjs',
-    './plugins/withWidgets.cjs',
     ['expo-camera', {
       cameraPermission: 'Allow Gramello to scan food barcodes with your camera.',
       microphonePermission: false,
