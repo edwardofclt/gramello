@@ -72,14 +72,6 @@ export function SettingsScreen({ onAdvanced }: { onAdvanced: () => void }) {
       {error && <ErrorNotice message={error} retry={reload} />}
       {data && <GoalsEditor goals={data.goals} />}
       <WaterGoalSettings />
-      {local && <Card>
-        <Text accessibilityRole="header" style={styles.heading}>Widgets</Text>
-        <Text style={styles.body}>See your logged calories, macros, and water at a glance.</Text>
-        <Text style={styles.muted}>{Platform.OS === 'ios'
-          ? 'Touch and hold your Home Screen, choose Edit → Add Widget, and search for Gramello. Choose Today or Water. For Lock Screen widgets, touch and hold your Lock Screen, tap Customize, then Add Widgets.'
-          : 'Touch and hold an empty area of your Home Screen, choose Widgets, and find Gramello. Add Today or Water. Resize Today to see macros and water too.'}</Text>
-        <Text style={styles.muted}>Tap a widget to open today’s diary. Your device controls refresh timing; the update time shows when the totals were last read.</Text>
-      </Card>}
       {local && Platform.OS === 'ios' && <Card>
         <Text accessibilityRole="header" style={styles.heading}>Ask Siri</Text>
         <Text selectable style={styles.body}>“Hey Siri, give me my macro check-in in Gramello.”</Text>

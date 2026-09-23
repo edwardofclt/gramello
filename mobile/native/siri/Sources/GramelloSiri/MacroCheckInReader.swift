@@ -170,10 +170,6 @@ final class SiriDatabase {
         }
     }
 
-    func isNull(_ statement: OpaquePointer, _ column: Int32) -> Bool {
-        sqlite3_column_type(statement,column) == SQLITE_NULL
-    }
-
     func text(_ statement: OpaquePointer, _ column: Int32) throws -> String {
         guard sqlite3_column_type(statement, column) == SQLITE_TEXT,
               let value = sqlite3_column_text(statement, column) else { throw MacroCheckInError.invalidData }

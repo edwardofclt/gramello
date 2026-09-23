@@ -13,8 +13,6 @@ import { archiveCsv, MAX_ARCHIVE_BYTES, parseArchive } from './records';
 import { createCatalogUpdater, type UpdateState } from '../catalog/updater';
 import { createCatalogReader, inspectCatalog } from '../catalog/queries';
 import { createFoodLookup } from '../catalog/lookup';
-import { withWidgetRefresh } from '../widgets/sync';
-import { refreshWidgets } from '../../modules/gramello-widgets';
 
 async function openRuntime() {
   const personal = await SQLite.openDatabaseAsync('gramello-personal.sqlite');
@@ -61,9 +59,7 @@ async function openRuntime() {
   const downloaded = createCatalogReader(work => serialized(catalogLock, () => work(active!)), bundledReader);
   const foodCache = await SQLite.openDatabaseAsync('gramello-food-cache.sqlite');
   const catalog = await createFoodLookup(downloaded, foodCache);
-  const baseRepository = await createLocalRepository(personal, catalog, Crypto.randomUUID);
-  const repository = withWidgetRefresh(baseRepository, () => refreshWidgets(() => baseRepository.getWidgetSummary()));
-  void repository.refreshWidgets();
+  const repository = await createLocalRepository(personal, catalog, Crypto.randomUUID);
   const updater = createCatalogUpdater({
     async load() {
       const state = await metadata<UpdateState>('catalogUpdate') ?? {};
@@ -107,7 +103,7 @@ async function openRuntime() {
     },
   },catalogConfig.publicKey);
   return {
-    repository, updater, refreshWidgets:repository.refreshWidgets, api:withAnalytics(createLocalApi(repository)),
+    repository, updater, api:withAnalytics(createLocalApi(repository)),
     async exportFile(format: 'backup' | 'diary' | 'water') {
       const archive = await repository.exportArchive();
       const text = format === 'backup' ? JSON.stringify(archive) : archiveCsv(archive)[format];

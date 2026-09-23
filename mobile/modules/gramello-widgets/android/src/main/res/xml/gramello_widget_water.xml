@@ -1,6 +1,0 @@
-<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
-  android:minWidth="140dp" android:minHeight="140dp" android:minResizeWidth="140dp" android:minResizeHeight="140dp"
-  android:targetCellWidth="2" android:targetCellHeight="2" android:resizeMode="horizontal|vertical"
-  android:updatePeriodMillis="1800000" android:widgetCategory="home_screen"
-  android:initialLayout="@layout/gramello_widget" android:previewLayout="@layout/gramello_water_preview"
-  android:previewImage="@drawable/gramello_widget_preview" android:description="@string/gramello_widget_water_description" />
