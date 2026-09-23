@@ -25,7 +25,12 @@ async function openRuntime() {
   const directory = new Directory(Paths.cache,'gramello-catalogs');
   directory.create({ intermediates:true,idempotent:true });
   const openCatalog = async (file: File) => {
-    const db = await SQLite.openDatabaseAsync(file.name,{ useNewConnection:true },directory.uri);
+    // FTS5 owns internal statements that Expo's close-time sweep would finalize
+    // twice. Our query helpers already finalize their own statements.
+    // https://github.com/expo/expo/issues/38168
+    const db = await SQLite.openDatabaseAsync(file.name,{
+      useNewConnection:true, finalizeUnusedStatementsBeforeClosing:false,
+    },directory.uri);
     try { await db.execAsync('PRAGMA query_only=ON; PRAGMA trusted_schema=OFF;'); return db; }
     catch (error) { await db.closeAsync(); throw error; }
   };
