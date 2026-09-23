@@ -4,6 +4,7 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import { Area, AreaChart, Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip as ChartTooltip, XAxis, YAxis } from "recharts";
 import { Activity, CalendarDays, ChevronLeft, ChevronRight, LayoutDashboard, Loader2, Plus, Settings2, Sparkles, Target, Trash2, TrendingUp, Utensils } from "lucide-react";
 import { FoodDialog, type DiaryEntry } from "@/components/food-dialog";
+import { EntryDialog } from "@/components/entry-dialog";
 import { FoodVerification } from "@/components/food-verification";
 import { entryAmountLabel } from "@/lib/meals";
 import { BrandMark as Logo } from "@/components/brand-mark";
@@ -43,6 +44,7 @@ export default function GramelloApp(){
   const [entries,setEntries]=useState<Entry[]>([]);
   const [loading,setLoading]=useState(true);
   const [addOpen,setAddOpen]=useState(false);
+  const [editingEntry,setEditingEntry]=useState<Entry|null>(null);
   const [goalOpen,setGoalOpen]=useState(false);
   const [meal,setMeal]=useState("Breakfast");
   const [saving,setSaving]=useState(false);
@@ -150,13 +152,14 @@ export default function GramelloApp(){
 
         <WaterTracker key={date} date={date} diaryFetch={diaryFetch}/>
         <div className="diary-heading"><div><span className="eyebrow">MEALS</span><h2>Food diary</h2></div><button onClick={openGoals}><Target/>Edit goals</button></div>
-        {loading?<div className="loading-card"><Loader2 className="spin"/>Loading your diary…</div>:<div className="meal-list">{meals.map(name=>{const items=entries.filter(e=>e.meal===name);const c=items.reduce((s,e)=>s+e.calories,0);return <article className="meal-card" key={name}><header><div><span className={`meal-icon ${name.toLowerCase()}`}><Utensils/></span><div><h3>{name}</h3><p>{items.length?`${items.length} item${items.length===1?"":"s"}`:"Nothing logged yet"}</p></div></div><div><strong>{round(c)}</strong><span>kcal</span><button aria-label={`Add ${name}`} onClick={()=>{setMeal(name);openFood()}}><Plus/></button></div></header>{items.length>0&&<div className="food-rows">{items.map(item=><div className="food-row" key={item.id}><div className="food-thumb">{item.name.charAt(0)}</div><div><strong>{item.name}</strong><span>{item.brand?`${item.brand} · `:""}{entryAmountLabel(item)} · {item.source}</span><FoodVerification verified={item.verified}/></div><div className="food-macros"><span><b>{round(item.protein)}g</b>P</span><span><b>{round(item.carbs)}g</b>C</span><span><b>{round(item.fat)}g</b>F</span></div><strong className="food-cal">{round(item.calories)}</strong><button className="delete" aria-label={`Remove ${item.name}`} onClick={()=>void deleteEntry(item.id)}><Trash2/></button></div>)}</div>}</article>})}</div>}
+        {loading?<div className="loading-card"><Loader2 className="spin"/>Loading your diary…</div>:<div className="meal-list">{meals.map(name=>{const items=entries.filter(e=>e.meal===name);const c=items.reduce((s,e)=>s+e.calories,0);return <article className="meal-card" key={name}><header><div><span className={`meal-icon ${name.toLowerCase()}`}><Utensils/></span><div><h3>{name}</h3><p>{items.length?`${items.length} item${items.length===1?"":"s"}`:"Nothing logged yet"}</p></div></div><div><strong>{round(c)}</strong><span>kcal</span><button aria-label={`Add ${name}`} onClick={()=>{setMeal(name);openFood()}}><Plus/></button></div></header>{items.length>0&&<div className="food-rows">{items.map(item=><div className="food-row" key={item.id}><button type="button" className="food-entry" aria-label={`Edit ${item.name}`} onClick={()=>setEditingEntry(item)}><span className="food-thumb">{item.name.charAt(0)}</span><span className="food-entry-details"><strong>{item.name}</strong><span>{item.brand?`${item.brand} · `:""}{entryAmountLabel(item)} · {item.source}</span><FoodVerification verified={item.verified}/></span><span className="food-macros"><span><b>{round(item.protein)}g</b>P</span><span><b>{round(item.carbs)}g</b>C</span><span><b>{round(item.fat)}g</b>F</span></span><strong className="food-cal">{round(item.calories)}</strong></button><button className="delete" aria-label={`Remove ${item.name}`} onClick={()=>void deleteEntry(item.id)}><Trash2/></button></div>)}</div>}</article>})}</div>}
       </section>:<Trends range={range} setRange={setRange} trends={trends} loading={trendLoading} goals={goals}/>} 
     </main>
 
     {addOpen && <FoodDialog date={date} initialMeal={meal} diaryFetch={diaryFetch} onClose={()=>setAddOpen(false)} onAdded={entry=>{setEntries(prev=>[...prev,entry]);setAddOpen(false);toast.success(`${entry.name} added to ${entry.meal.toLowerCase()}`)}}/>}
 
     <Dialog open={goalOpen} onOpenChange={setGoalOpen}><DialogContent className="goal-dialog"><DialogHeader><DialogTitle>Daily targets</DialogTitle><DialogDescription>Macro grams update calories automatically. Changing calories keeps your current macro percentage split.</DialogDescription></DialogHeader><div className="goal-fields">{(["calories","protein","carbs","fat"] as const).map(k=><label key={k}><span>{k.charAt(0).toUpperCase()+k.slice(1)}{k!=="calories"&&<small style={{display:"block",color:"#6ee7c7",fontSize:".8rem"}}>{macroPercent(draftGoals,k).toFixed(1)}%</small>}</span><div><Input type="number" min="0" step="any" value={Math.round(draftGoals[k]*100)/100} onChange={e=>setDraftGoals(g=>changeGoal(g,k,Number(e.target.value)))}/><span>{k==="calories"?"kcal":"g"}</span></div></label>)}</div><p style={{fontSize:".875rem",color:"#8ca1b2"}}>Protein & carbs: 4 kcal/g · Fat: 9 kcal/g. Grams are displayed rounded to two decimals. If all macros are zero, changing calories starts a 30/40/30 split.</p><Button className="confirm-button" onClick={()=>void updateGoals()} disabled={saving||draftGoals.calories<=0}>{saving&&<Loader2 className="spin"/>}Save goals</Button></DialogContent></Dialog>
+    {editingEntry&&<EntryDialog key={editingEntry.id} entry={editingEntry} diaryFetch={diaryFetch} onClose={()=>setEditingEntry(null)} onSaved={saved=>{setEntries(current=>current.map(entry=>entry.id===saved.id?saved:entry));setEditingEntry(null);toast.success("Food updated")}}/>}
     <Toaster richColors position="bottom-right"/>
   </div>
 }

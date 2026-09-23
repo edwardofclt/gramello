@@ -1,7 +1,7 @@
 import type { SegmentEvent } from '@segment/analytics-react-native';
 
 export const actionEvents = [
-  'Food Searched', 'Barcode Looked Up', 'Food Logged', 'Food Removed',
+  'Food Searched', 'Barcode Looked Up', 'Food Logged', 'Food Updated', 'Food Removed',
   'Custom Food Created', 'Meal Created', 'Meal Updated', 'Meal Deleted',
   'Goals Updated', 'Water Logged', 'Water Removed', 'Water Goal Updated',
 ] as const;

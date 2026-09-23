@@ -174,7 +174,7 @@ app storage creates a new ID; restoring a device backup can restore the stored I
 | Application Installed / Updated / Opened / Backgrounded | Segment's native lifecycle hooks |
 | Welcome, Diary, Trends, Settings, Advanced, Add Food, Goals | Screen changes, including returning from the food sheet |
 | Food Searched / Barcode Looked Up | Successful lookup; no query or barcode |
-| Food Logged / Removed, Custom Food Created, Meal Created / Updated / Deleted | Successful local writes |
+| Food Logged / Updated / Removed, Custom Food Created, Meal Created / Updated / Deleted | Successful local writes |
 | Goals Updated, Water Logged / Removed, Water Goal Updated | Successful local writes |
 
 `src/analytics/events.ts` filters every event before delivery. Only fixed event

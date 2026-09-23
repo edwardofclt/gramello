@@ -1,5 +1,6 @@
 import { withBrowserDiary } from '@/lib/browser-diary';
-import { addEntry, removeEntry, type EntryInput } from '@/db/store';
+import { addEntry, removeEntry, updateEntry, type EntryInput } from '@/db/store';
+import { entryEditSchema } from '@/lib/entry-edit';
 import { getFood } from '@/db/foods';
 import { getMeal } from '@/db/meals';
 import { scaleFood, type AmountUnit } from '@/lib/food';
@@ -43,6 +44,22 @@ export async function POST(request: Request) {
     } catch (error) { console.error(error); return Response.json({ error: 'Food could not be added.' }, { status: 503 }); }
   });
 }
+export async function PUT(request: Request) {
+  return withBrowserDiary(request, async ({ userId }) => {
+    const id = new URL(request.url).searchParams.get('id');
+    if (!id) return Response.json({ error: 'Missing food entry.' }, { status: 400 });
+    const body = entryEditSchema.safeParse(await request.json().catch(() => null));
+    if (!body.success) return Response.json({ error: 'Choose a valid meal and amount greater than zero.' }, { status: 400 });
+    try {
+      const entry = await updateEntry(userId, id, body.data);
+      return entry ? Response.json(entry) : Response.json({ error: 'Food entry not found.' }, { status: 404 });
+    } catch (error) {
+      if (error instanceof RangeError) return Response.json({ error: error.message }, { status: 400 });
+      console.error(error); return Response.json({ error: 'Food could not be updated. Try again.' }, { status: 503 });
+    }
+  });
+}
+
 export async function DELETE(request: Request) {
   return withBrowserDiary(request, async ({ userId }) => {
     try {

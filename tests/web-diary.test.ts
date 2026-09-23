@@ -61,6 +61,25 @@ async function navigate(label: 'Today' | 'Trends') {
   await act(async () => button.click());
 }
 
+it('opens a logged food with its saved amount and cancels without changing the diary', async () => {
+  entries = [lunch];
+  await mount();
+  const edit = container.querySelector<HTMLButtonElement>('[aria-label="Edit Lunch from phone"]');
+  expect(edit).not.toBeNull();
+  await act(async () => edit!.click());
+  const amount = document.querySelector<HTMLInputElement>('input[aria-label="Servings"]')!;
+  expect(amount.value).toBe('1');
+  await act(async () => {
+    Object.getOwnPropertyDescriptor(HTMLInputElement.prototype, 'value')!.set!.call(amount, '2');
+    amount.dispatchEvent(new Event('input', { bubbles: true }));
+  });
+  expect(document.querySelector('.nutrition-preview')?.textContent).toContain('800');
+  const cancel = [...document.querySelectorAll<HTMLButtonElement>('button')].find(button => button.textContent === 'Cancel')!;
+  await act(async () => cancel.click());
+  expect(document.querySelector('input[aria-label="Servings"]')).toBeNull();
+  expect(container.querySelector('.food-row')?.textContent).toContain('400');
+});
+
 it.each([
   ['America/New_York', '2026-09-20T01:00:00Z', '2026-09-19'],
   ['Asia/Tokyo', '2026-09-19T16:00:00Z', '2026-09-20'],

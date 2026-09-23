@@ -9,8 +9,9 @@ const event = (overrides: Record<string, unknown> = {}) => ({
 }) as SegmentEvent;
 
 describe('anonymous analytics payloads', () => {
-  it('retains the anonymous ID but removes account, nutrition, device and network data', () => {
+  it.each(['Food Logged', 'Food Updated'])('%s retains the anonymous ID but removes account, nutrition, device and network data', name => {
     const input = event({
+      event: name,
       userId: 'private-user', properties: { name: 'Private meal', calories: 450, date: '2026-09-21', query: 'private query' },
       context: {
         traits: { email: 'private@example.com' }, ip: '192.0.2.1',
@@ -22,7 +23,7 @@ describe('anonymous analytics payloads', () => {
       extra: 'private', enrichment: () => event({ userId: 'injected' }),
     });
     expect(anonymousEvent(input)).toEqual({
-      type: 'track', event: 'Food Logged', anonymousId: 'random-install-id',
+      type: 'track', event: name, anonymousId: 'random-install-id',
       messageId: 'event-id', timestamp: '2026-09-22T16:00:00Z', properties: {},
       context: {
         ip: '0.0.0.0',

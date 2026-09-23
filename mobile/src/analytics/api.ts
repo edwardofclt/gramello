@@ -6,6 +6,7 @@ const actions: Record<string, ActionEvent> = {
   'GET /api/foods/search': 'Food Searched',
   'GET /api/foods/barcode': 'Barcode Looked Up',
   'POST /api/entries': 'Food Logged',
+  'PUT /api/entries': 'Food Updated',
   'DELETE /api/entries': 'Food Removed',
   'POST /api/foods/custom': 'Custom Food Created',
   'POST /api/meals': 'Meal Created',

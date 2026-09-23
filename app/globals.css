@@ -75,3 +75,14 @@
 .water-log summary{color:#8ca1b2;cursor:pointer;padding:8px 0}.water-log ul{display:grid;gap:4px;max-height:240px;overflow:auto}.water-log li{justify-content:space-between;border-top:1px solid #213b4d}.water-log button{min-width:44px;min-height:44px}
 .water-error{color:#ff9b9b;font-size:.875rem}.water-goal-form,.water-goal-form label{display:flex;flex-direction:column;gap:12px}.water-goal-form{gap:20px}.water-goal-form select{color:#f4f8fb;background:#071927;border:1px solid #213b4d;border-radius:10px;min-height:44px;padding:10px}
 @media(max-width:600px){.water-card{padding:18px}.water-heading{gap:4px}.water-heading>button{padding-inline:8px}.water-presets{gap:8px}.water-presets button{font-size:.8rem;padding-inline:8px}}
+
+/* Logged food opens an editor; removal stays a separate control. */
+.food-row{grid-template-columns:minmax(0,1fr) 28px;padding:0 16px 0 0}
+.food-entry{display:grid;grid-template-columns:36px minmax(0,1fr) auto auto;gap:10px;align-items:center;min-width:0;width:100%;padding:13px 0 13px 16px;border:0;background:transparent;color:inherit;font:inherit;text-align:left}
+.food-entry:hover{background:#153143}
+.food-entry:focus-visible{outline:2px solid #6ee7c7;outline-offset:-2px;border-radius:8px}
+.food-entry-details{min-width:0;display:flex;flex-direction:column}
+.food-entry-details>strong{font-size:.8rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.food-entry-details>span{font-size:.65rem;color:#718b9d;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.food-row:focus-within .delete{opacity:1}
+@media(max-width:760px){.food-entry{grid-template-columns:36px minmax(0,1fr) auto}}

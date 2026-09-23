@@ -16,6 +16,20 @@ async function setup() {
 afterEach(() => { for (const db of opened.splice(0)) db.raw.close(); });
 
 describe('device SQLite diary', () => {
+  it('edits a logged snapshot in place without consulting a changed catalog', async () => {
+    const { db, api } = await setup();
+    const original = await api<{ id: string; createdAt: string }>('/api/entries', { method: 'POST', body: { date: '2026-09-22', meal: 'Lunch', sourceId: rice.id, quantity: 150, unit: 'grams' } });
+    const reopened = await createLocalRepository(db, { ...catalog, getFood: async () => { throw new Error('Offline'); } });
+    const nextApi = createLocalApi(reopened);
+    await nextApi(`/api/entries?id=${original.id}`, { method: 'PUT', body: { meal: 'Dinner', quantity: 300, unit: 'grams', calories: 999, name: 'Forged' } });
+    expect((await reopened.getDay('2026-09-22')).entries).toEqual([expect.objectContaining({ id: original.id, createdAt: original.createdAt, name: 'Rice', meal: 'Dinner', quantity: 300, grams: 300, calories: 390, carbs: 84, verified: true })]);
+    expect(await reopened.getTrends(7, '2026-09-22')).toEqual([{ date: '2026-09-22', calories: 390, protein: 8.1, carbs: 84, fat: .9 }]);
+    for (const body of [{ meal: 'Dinner', quantity: 0, unit: 'grams' }, { meal: 'Dinner', quantity: 100, unit: 'milliliters' }, { meal: 'Invalid', quantity: 100, unit: 'grams' }]) {
+      await expect(nextApi(`/api/entries?id=${original.id}`, { method: 'PUT', body })).rejects.toThrow();
+    }
+    await expect(nextApi('/api/entries?id=missing', { method: 'PUT', body: { meal: 'Lunch', quantity: 1, unit: 'serving' } })).rejects.toThrow('Food entry not found');
+    expect((await reopened.getDay('2026-09-22')).entries[0].calories).toBe(390);
+  });
   it('supports every trend range exposed by the native screen', async () => {
     const { api } = await setup();
     for (const days of [7,30,183]) await expect(api(`/api/trends?days=${days}`)).resolves.toEqual({ days:[] });

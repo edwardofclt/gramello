@@ -7,7 +7,7 @@ vi.mock("cloudflare:workers", () => runtime);
 
 import { GET as day } from "@/app/api/day/route";
 import { PUT as goals } from "@/app/api/goals/route";
-import { POST as add, DELETE as remove } from "@/app/api/entries/route";
+import { POST as add, PUT as editEntry, DELETE as remove } from "@/app/api/entries/route";
 import { GET as trends } from "@/app/api/trends/route";
 import { GET as search } from "@/app/api/foods/search/route";
 import { POST as customFood } from "@/app/api/foods/custom/route";
@@ -63,6 +63,7 @@ const routes = [
   ["GET", "/api/foods/barcode?code=012345678905", barcode, undefined],
   ["PUT", "/api/goals", goals, targets],
   ["POST", "/api/entries", add, food],
+  ["PUT", "/api/entries?id=example", editEntry, { meal: 'Lunch', quantity: 2, unit: 'serving' }],
   ["POST", "/api/foods/custom", customFood, food],
   ["DELETE", "/api/entries?id=example", remove, undefined],
 ] as const;
@@ -87,6 +88,23 @@ afterAll(() => database.close());
 afterEach(() => vi.unstubAllGlobals());
 
 describe("browser diary without login", () => {
+  it('updates only the owner’s existing food snapshot and rejects invalid edits', async () => {
+    const created = await (await call(add, '/api/entries', { method: 'POST', body: food, user: aliceId })).json() as EntryInput & { id: string };
+    const url = `/api/entries?id=${created.id}`;
+    const body = { meal: 'Dinner', quantity: 2, unit: 'serving', calories: 1, verified: true, name: 'Forged' };
+    expect((await call(editEntry, url, { method: 'PUT', body, user: bobId })).status).toBe(404);
+    expect((await call(editEntry, url, { method: 'PUT', body, user: aliceId, headers: { origin: 'https://evil.test' } })).status).toBe(403);
+    const response = await call(editEntry, url, { method: 'PUT', body, user: aliceId });
+    expect(response.status).toBe(200);
+    expect(await response.json()).toMatchObject({ id: created.id, meal: 'Dinner', name: 'Oats', quantity: 2, grams: 100, calories: 380, protein: 14, carbs: 66, fat: 6, verified: false });
+    for (const invalid of [{ ...body, quantity: 0 }, { ...body, quantity: '2' }, { ...body, unit: 'milliliters' }, { ...body, meal: 'Invalid' }]) {
+      expect((await call(editEntry, url, { method: 'PUT', body: invalid, user: aliceId })).status).toBe(400);
+    }
+    expect((await call(editEntry, url, { method: 'PUT', user: aliceId })).status).toBe(400);
+    const saved = await (await call(day, '/api/day?date=2026-09-19', { user: aliceId })).json() as { entries: (EntryInput & { id: string })[] };
+    expect(saved.entries).toHaveLength(1);
+    expect(saved.entries[0]).toMatchObject({ id: created.id, calories: 380, meal: 'Dinner' });
+  });
   it('keeps cookies secure when the public HTTPS origin terminates at an HTTP proxy', async () => {
     const response = await day(new Request('http://127.0.0.1:3000/api/day'));
     expect(response.status).toBe(200);
