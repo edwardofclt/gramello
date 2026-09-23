@@ -1,3 +1,13 @@
+## [1.15.0](https://github.com/edwardofclt/gramello/compare/v1.14.0...v1.15.0) (2026-09-23)
+
+### Features
+
+* add home and lock screen widgets ([#36](https://github.com/edwardofclt/gramello/issues/36)) ([055ae1b](https://github.com/edwardofclt/gramello/commit/055ae1be04a704c7e69000fe4c46119abc25cbe0)), closes [mobile/README.md#home-screen-and-lock-screen-widgets](https://github.com/mobile/README.md/issues/home-screen-and-lock-screen-widgets)
+
+### Bug Fixes
+
+* **ci:** deploy website only for releases with site changes ([#35](https://github.com/edwardofclt/gramello/issues/35)) [skip ci] ([c086055](https://github.com/edwardofclt/gramello/commit/c08605535767269a56dc93bbabe91afa40b20c8e))
+
 ## [1.14.0](https://github.com/edwardofclt/gramello/compare/v1.13.0...v1.14.0) (2026-09-23)
 
 ### Features
