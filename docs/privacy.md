@@ -17,9 +17,10 @@ There is no Gramello account to delete, and we cannot access, export, recover,
 or delete a copy of your diary from our servers because we do not hold one.
 
 This does not mean that using Gramello involves no information processing.
-Online food lookups, website visits, purchases, and support requests involve the
-information described below. Planned analytics and possible future advertising
-are described separately.
+The native apps send limited usage analytics, described below. Online food
+lookups, website visits, purchases, and support requests also involve the
+information described in this policy. Your health and nutrition records are
+not included in usage analytics.
 
 ## Information used by Gramello
 
@@ -38,6 +39,10 @@ are described separately.
 - **Support information:** Information you choose to email us, including your
   contact details and the details you supply to investigate an issue. Share only
   the personal or diary information needed to explain your request.
+- **Usage analytics:** A randomly generated installation identifier, fixed action
+  and screen names, event identifiers and timestamps, and app, operating-system,
+  and analytics-library versions. These events contain no diary contents or
+  health information. See Usage analytics below.
 
 ## Camera and device permissions
 
@@ -59,19 +64,44 @@ technical information helps providers operate and protect their services.
 
 We do not sell your nutrition diary data or use it for targeted advertising.
 
-## Usage analytics and advertising
+## Usage analytics
 
-We plan to add usage analytics to understand how people use Gramello and improve
-the product. Advertising may also be introduced in future versions. These
-integrations are not active in the current app or website.
+The native iOS and Android apps use Twilio Segment for product analytics. This
+helps us understand which features are used and improve Gramello. For example,
+an event can record that someone opened Trends, searched for food, or logged
+water. It does not contain what they searched for, ate, or drank, or any amounts.
 
-Before introducing analytics or advertising, we will update this policy with
-the actual providers, information collected, purposes, sharing, retention, and
-available user choices. We will provide any required notices and obtain consent
-where required before new collection or sharing begins.
+The app creates a random installation identifier to group these events. It is
+not derived from your name, email address, advertising identifier, or hardware
+identifier. Gramello has no account to associate it with. We do not match this
+identifier to your real-world identity or combine it with other companies' data
+for advertising.
+
+Analytics events include only that identifier, fixed event or screen names,
+event identifiers and timestamps, app name/version/build, operating-system
+name/version, and analytics-library name/version. They exclude food and water
+entries, nutrition values, goals, saved meals, custom foods, diary dates, search
+text, barcodes, names, email addresses, account profiles, device identifiers,
+device names, and location. The event's IP-address field is replaced with
+0.0.0.0; Segment still receives the network connection needed to process a
+request.
+
+Segment is currently the only recipient of these app analytics events; no
+downstream analytics destinations are connected. These events are used only for
+product analytics. We do not use them for
+targeted advertising, cross-app advertising tracking, or identity matching, and
+we do not send them to advertising destinations or data brokers. The marketing
+website does not include this analytics integration. There are no advertising
+integrations in the current app or website.
+
+If these practices change, we will update this policy and provide the notices
+and user choices required for the new collection or sharing.
 
 ## External services
 
+- **Twilio Segment** receives the limited app usage events described above.
+  No downstream analytics destinations are currently connected. See
+  [Segment's privacy tools and policies](https://www.twilio.com/docs/segment/privacy).
 - **USDA FoodData Central and Open Food Facts** supply food-search and product
   information. Product images may load directly from their external image hosts,
   which receive the network information needed to serve those images.
@@ -99,8 +129,8 @@ law or necessary to protect the service and its users.
 
 The Gramello marketing, support, and legal website is hosted on GitHub Pages.
 It does not ask you to sign in, submit a form, or enter diary information.
-Fonts and website images are served with the site. Planned analytics and
-possible future advertising are described above. GitHub receives connection
+Fonts and website images are served with the site. The website does not send
+the native app's Segment events or run advertising integrations. GitHub receives connection
 information when it serves a page, including your IP address; see the
 [GitHub Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
 
@@ -121,17 +151,38 @@ applicable obligations. External providers may retain their own technical,
 purchase, or support records under their policies. There is no Gramello account
 record or server-stored diary retained by us.
 
+The random analytics identifier persists in app storage across launches.
+Clearing app storage creates a new identifier; restoring a device backup may
+restore the previous one. Events may be queued on the device until they can be
+sent. Clearing local data does not delete events already sent to an analytics
+service. Segment retains received events under its
+[Data Retention and Deletion Policy](https://www.twilio.com/docs/segment/privacy/data-retention-policy)
+and the retention settings for our workspace's plan. There is no separate
+downstream analytics store connected. Contact us with questions about analytics
+retention or deletion.
+
 ## Your choices and requests
 
 You can manage diary entries, water entries, goals, and saved meals in the app,
 and change camera permission in your device settings. Use your device and
 backup settings to manage app storage and any separately retained backups.
 
+Version 1.14.0 sends the limited usage events described above automatically and
+does not have an in-app analytics switch. Camera permission controls barcode
+scanning; it does not control analytics. We will update this section when
+additional analytics controls are available.
+
 For help or a privacy request concerning information you have sent us, email
 [gramello@edwardofclt.com](mailto:gramello@edwardofclt.com). We may ask for the
 information needed to identify and handle your request. Do not send passwords,
 sign-in codes, or payment-card details. We cannot supply a server export of your
 diary because we do not store one.
+
+Analytics records use the random installation identifier, not your name or
+email. An email address alone does not identify those records. Contact us for
+help with an analytics request; we will explain what information is needed and
+what records we can identify. You do not need to send your diary to make a
+privacy request.
 
 ## Children
 

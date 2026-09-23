@@ -71,10 +71,19 @@ There is no Gramello account to delete. You can manage individual food and water
 entries, saved meals, and goals in the app. Use your device and backup settings
 to manage app storage and any separate backups.
 
+The native apps also send limited product-analytics events through Twilio
+Segment using a random installation identifier. These events do not include
+health information, diary contents, search text, barcodes, or nutrition values.
+Version 1.14.0 does not have an in-app analytics switch. See the privacy policy
+for the fields sent and the available choices.
+
 We do not hold a server-side copy of your diary to access, export, or delete.
-For help managing your data, or a privacy request about information you have
-emailed us, contact
+For help managing your data, or a privacy request about support information or
+analytics, contact
 [gramello@edwardofclt.com](mailto:gramello@edwardofclt.com).
+An email address alone does not identify anonymous analytics records; we will
+explain what information is needed to handle your request. Do not send your
+diary just to identify an analytics record.
 
 ## Mobile apps and purchases
 
