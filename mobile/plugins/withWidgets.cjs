@@ -39,6 +39,7 @@ async function installWidgetTarget({ project, platformProjectRoot, teamId, versi
   objects.PBXTargetDependency ??= {}; objects.PBXContainerItemProxy ??= {};
   let id = Object.entries(project.pbxNativeTargetSection()).find(([,v]) => typeof v === 'object' && v.name?.replaceAll('"','') === targetName)?.[0];
   if (!id) {
+    // node-xcode also adds the containing app's target dependency and PlugIns copy phase.
     id = project.addTarget(targetName,'app_extension',targetName,bundle).uuid;
     project.addBuildPhase([],'PBXSourcesBuildPhase','Sources',id);
     project.addBuildPhase([],'PBXFrameworksBuildPhase','Frameworks',id);

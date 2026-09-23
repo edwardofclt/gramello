@@ -6,7 +6,7 @@ writes, and open today's diary. The existing SQLite database was not moved.
 
 ## Automated checks
 
-- Repository suite: 252 tests pass, including snapshot calculations, successful
+- Repository suite: 253 tests pass, including snapshot calculations, successful
   and failed mutations (including food edits), backup replacement/recovery, ordered publication,
   widget links, local-module discovery, and repeatable Xcode generation.
 - Swift suite: 36 tests pass, including the existing Siri coverage plus widget
@@ -38,6 +38,23 @@ above the app's API 24 minimum, and stale TalkBack descriptions after expiry.
 Supported layouts and API-24-compatible date formatting replace those paths;
 the rendering tests reproduce the original failures and pass with the fixes.
 The reviewer checked the fixes and reported no remaining findings in that scope.
+
+## Copilot review follow-up
+
+- Fixed the native snapshot reader to validate complete stored food/water records
+  before accumulating totals, including identity, timestamps, optional fields, and
+  amounts. Global goals must have a null record date. A Swift/JavaScript SQLite
+  regression matrix verifies matching acceptance and unavailable publication for
+  corrupt rows.
+- Expanded the native workflow filters to cover repository/session/deep-link
+  integration, shared water validation, package configuration, and native tests.
+- Kept Android receivers non-exported: the system AppWidgetService sends widget
+  lifecycle broadcasts, and non-exported receivers still accept system broadcasts.
+  See the [Android receiver contract](https://developer.android.com/guide/topics/manifest/receiver-element#exported)
+  and [AppWidgetService implementation](https://github.com/aosp-mirror/platform_frameworks_base/blob/main/services/appwidget/java/com/android/server/appwidget/AppWidgetServiceImpl.java).
+- Kept extension setup through node-xcode's `addTarget(..., 'app_extension', ...)`,
+  which already adds the host dependency and PlugIns copy phase. The plugin test
+  now verifies both relationships on the containing app after repeated prebuilds.
 
 ## Release/device checks
 

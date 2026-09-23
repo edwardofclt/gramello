@@ -80,3 +80,64 @@ try WidgetPublisher.publish(databaseURL: url, directory: url.deletingLastPathCom
     rmSync(directory, { recursive: true, force: true });
   }
 }, 90000);
+
+it.runIf(process.platform === 'darwin')('native widget publication agrees with repository validation for corrupt stored rows', async () => {
+  const directory = mkdtempSync(path.join(tmpdir(), 'gramello-widget-validation-'));
+  const databasePath = path.join(directory, 'diary.sqlite');
+  const { db, raw } = testDatabase(databasePath);
+  try {
+    const repository = await createLocalRepository(db, { getFood: async () => null, search: async () => [], barcode: async () => null });
+    const main = path.join(directory, 'main.swift');
+    writeFileSync(main, `
+import Foundation
+let url = URL(fileURLWithPath: CommandLine.arguments[1])
+let now = ISO8601DateFormatter().date(from: "2026-03-09T03:30:00Z")!
+let zone = TimeZone(identifier: "America/New_York")!
+do {
+    _ = try WidgetPublisher.read(databaseURL: url, now: now, timeZone: zone)
+    print("ready")
+} catch { print("invalid") }
+try WidgetPublisher.publish(databaseURL: url, directory: url.deletingLastPathComponent(), now: now, timeZone: zone)
+print(try WidgetSnapshot.load(from: url.deletingLastPathComponent().appendingPathComponent("summary.json")).status)
+`);
+    const sources = fileURLToPath(new URL('../mobile/native/siri/Sources/GramelloSiri/', import.meta.url));
+    const executable = path.join(directory, 'widget-validation');
+    execFileSync('xcrun', ['swiftc', ...readdirSync(sources).filter(name => name.endsWith('.swift')).map(name => path.join(sources, name)), main, '-o', executable], { timeout: 60000, stdio: 'pipe' });
+    const date = '2026-03-08';
+    const entry = { id:'a',date,createdAt:'2026-03-08T12:00:00.000Z',meal:'Lunch',name:'Soup',source:'My foods',quantity:1,unit:'serving',grams:null,calories:300,protein:20,carbs:40,fat:5 };
+    const water = { id:'a',date,createdAt:entry.createdAt,amountMl:250 };
+    const cases: {name:string;kind:string;value:Record<string,unknown>;date:string|null;id?:string;valid:boolean}[] = [
+      {name:'valid entry',kind:'entry',value:entry,date,valid:true},
+      {name:'valid water',kind:'water',value:water,date,valid:true},
+      {name:'dated nutrition goals',kind:'goals',id:'default',value:{calories:2400,protein:180,carbs:250,fat:70},date,valid:false},
+      {name:'dated water goals',kind:'waterGoal',id:'default',value:{goalMl:2000,unit:'ml'},date,valid:false},
+    ];
+    for (const [kind, value] of [['entry',entry],['water',water]] as const) {
+      for (const field of Object.keys(value)) {
+        const missing: Record<string,unknown> = {...value}; delete missing[field];
+        cases.push({name:`${kind} missing ${field}`,kind,value:missing,date,valid:false});
+      }
+      for (const id of ['', 'x'.repeat(201)]) cases.push({name:`${kind} invalid ID length ${id.length}`,kind,id,value:{...value,id},date,valid:false});
+      for (const createdAt of ['invalid','2026-02-30T12:00:00Z','2026-03-08T24:00:00Z']) {
+        cases.push({name:`${kind} invalid timestamp ${createdAt}`,kind,value:{...value,createdAt},date,valid:false});
+      }
+      for (const createdAt of ['2026-03-08T12:00Z','2026-03-08T12:00:00+0500','2026-03-08T12:00:00.123456+05:00']) {
+        cases.push({name:`${kind} supported timestamp ${createdAt}`,kind,value:{...value,createdAt},date,valid:true});
+      }
+    }
+    for (const [field,value] of Object.entries({unit:'cups',meal:'Brunch',quantity:0,grams:-1,calories:1e13,name:'',source:'x'.repeat(201),brand:null,sourceId:null,sourceUrl:null,verified:null,servingLabel:null})) {
+      cases.push({name:`invalid entry ${field}`,kind:'entry',value:{...entry,[field]:value},date,valid:false});
+    }
+    for (const test of cases) {
+      raw.exec('DELETE FROM records');
+      raw.prepare('INSERT INTO records VALUES(?,?,?,?)').run(test.kind,test.id ?? 'a',test.date,JSON.stringify(test.value));
+      const summary = repository.getWidgetSummary(new Date('2026-03-09T03:30:00Z'),'America/New_York');
+      if (test.valid) await expect(summary,test.name).resolves.toMatchObject({status:'ready'});
+      else await expect(summary,test.name).rejects.toThrow();
+      expect(execFileSync(executable,[databasePath],{timeout:10000,encoding:'utf8'}).trim(),test.name)
+        .toBe(test.valid ? 'ready\nready' : 'invalid\nunavailable');
+    }
+  } finally {
+    raw.close(); rmSync(directory,{recursive:true,force:true});
+  }
+}, 90000);

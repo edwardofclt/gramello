@@ -1,5 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
   <application>
+    <!-- AppWidgetService and time-change broadcasts come from the system, which can
+         reach non-exported receivers. Other apps do not need direct access. -->
     <receiver android:name=".TodayWidgetProvider" android:exported="false" android:label="@string/gramello_widget_today">
       <intent-filter>
         <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />

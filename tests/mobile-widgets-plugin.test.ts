@@ -22,7 +22,7 @@ it('embeds exactly one widget extension across repeated prebuilds and preserves 
   const reloaded = IOSConfig.XcodeUtils.getPbxproj(root);
   const targets = Object.entries(reloaded.pbxNativeTargetSection()).filter(([,v]) => typeof v === 'object' && (v as {name:string}).name?.replaceAll('"','') === 'GramelloWidgets');
   expect(targets).toHaveLength(1);
-  const [id,target] = targets[0] as [string,{buildConfigurationList:string}];
+  const [id,target] = targets[0] as [string,{buildConfigurationList:string;productReference:string}];
   const sources = reloaded.pbxSourcesBuildPhaseObj(id).files;
   expect(sources).toHaveLength(2);
   const groupId = reloaded.findPBXGroupKey({name:'GramelloWidgets'});
@@ -44,6 +44,14 @@ it('embeds exactly one widget extension across repeated prebuilds and preserves 
   }
   const phases = Object.values(reloaded.hash.project.objects.PBXCopyFilesBuildPhase).filter(v => typeof v === 'object') as {files:{comment:string}[]}[];
   expect(phases.flatMap(p => p.files).filter(f => f.comment.includes('GramelloWidgets'))).toHaveLength(1);
+  // addTarget(app_extension) must wire these relationships to the containing app.
+  const objects = reloaded.hash.project.objects;
+  const main = reloaded.getFirstTarget().firstTarget;
+  expect(main.dependencies.filter((ref: {value:string}) => objects.PBXTargetDependency[ref.value].target === id)).toHaveLength(1);
+  const hostEmbeds = main.buildPhases.map((ref: {value:string}) => objects.PBXCopyFilesBuildPhase[ref.value])
+    .filter((phase: {files:{value:string}[]} | undefined) => phase?.files.some(ref => objects.PBXBuildFile[ref.value].fileRef === target.productReference));
+  expect(hostEmbeds).toHaveLength(1);
+  expect(Number(hostEmbeds[0].dstSubfolderSpec)).toBe(13); // App.app/PlugIns
   expect(readFileSync(path.join(root,'ios','GramelloWidgets','WidgetSnapshot.swift'),'utf8')).toContain('struct WidgetSnapshot');
 });
 

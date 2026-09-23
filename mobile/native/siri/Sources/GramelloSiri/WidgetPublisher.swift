@@ -45,33 +45,30 @@ enum WidgetPublisher {
             var summary = WidgetSnapshot.empty(now:now,timeZone:timeZone,status:"ready")
             try db.query("SELECT kind,id,date,value FROM records WHERE (kind IN ('goals','waterGoal') AND id='default') OR (kind IN ('entry','water') AND date=?)",parameters:[summary.date]) { row in
                 let kind = try db.text(row,0), id = try db.text(row,1)
-                let data = Data(try db.text(row,3).utf8)
+                let json = try db.text(row,3), data = Data(json.utf8)
                 switch kind {
                 case "goals":
+                    guard db.isNull(row,2) else { throw WidgetSnapshot.Failure.invalid }
                     summary.goals = try JSONDecoder().decode(WidgetNutrition.self,from:data)
                     summary.hasSavedGoals = true
                 case "waterGoal":
+                    guard db.isNull(row,2) else { throw WidgetSnapshot.Failure.invalid }
                     let goal = try JSONDecoder().decode(WaterGoal.self,from:data)
                     summary.waterGoalMl = goal.goalMl; summary.waterUnit = goal.unit; summary.hasSavedWaterGoal = true
-                case "entry", "water":
-                    let identity = try JSONDecoder().decode(Identity.self,from:data)
-                    guard identity.id == id, identity.date == summary.date, try db.text(row,2) == summary.date else { throw WidgetSnapshot.Failure.invalid }
-                    if kind == "entry" {
-                        let value = try JSONDecoder().decode(WidgetNutrition.self,from:data)
-                        guard value.valid, [value.calories,value.protein,value.carbs,value.fat].allSatisfy({$0 <= 1e12}) else { throw WidgetSnapshot.Failure.invalid }
-                        summary.consumed = summary.consumed.adding(value); summary.hasFood = true
-                    } else {
-                        let water = try JSONDecoder().decode(Water.self,from:data)
-                        guard water.amountMl.isFinite, water.amountMl >= 1, water.amountMl <= 10000 else { throw WidgetSnapshot.Failure.invalid }
-                        summary.waterMl += water.amountMl; summary.hasWater = true
-                    }
+                case "entry":
+                    let entry = try StoredDiaryEntry.decode(json)
+                    guard entry.id == id, entry.date == summary.date, try db.text(row,2) == summary.date else { throw WidgetSnapshot.Failure.invalid }
+                    let value = WidgetNutrition(calories:entry.calories,protein:entry.protein,carbs:entry.carbs,fat:entry.fat)
+                    summary.consumed = summary.consumed.adding(value); summary.hasFood = true
+                case "water":
+                    let water = try StoredWaterEntry.decode(json)
+                    guard water.id == id, water.date == summary.date, try db.text(row,2) == summary.date else { throw WidgetSnapshot.Failure.invalid }
+                    summary.waterMl += water.amountMl; summary.hasWater = true
                 default: throw WidgetSnapshot.Failure.invalid
                 }
             }
             try summary.validate(); return summary
         }
     }
-    private struct Identity: Decodable { let id: String; let date: String }
-    private struct Water: Decodable { let amountMl: Double }
     private struct WaterGoal: Decodable { let goalMl: Double; let unit: String }
 }

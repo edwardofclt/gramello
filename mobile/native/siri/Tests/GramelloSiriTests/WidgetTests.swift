@@ -15,9 +15,9 @@ final class WidgetTests: XCTestCase {
         let sql = """
         PRAGMA user_version=1;
         CREATE TABLE records(kind TEXT,id TEXT,date TEXT,value TEXT);
-        INSERT INTO records VALUES('entry','a','2026-03-08','{"id":"a","date":"2026-03-08","calories":450,"protein":30,"carbs":60,"fat":7.5}');
-        INSERT INTO records VALUES('entry','b','2026-03-09','{"id":"b","date":"2026-03-09","calories":900,"protein":60,"carbs":120,"fat":15}');
-        INSERT INTO records VALUES('water','w','2026-03-08','{"id":"w","date":"2026-03-08","amountMl":236.5882365}');
+        INSERT INTO records VALUES('entry','a','2026-03-08','{"id":"a","date":"2026-03-08","createdAt":"2026-03-08T12:00:00Z","meal":"Lunch","name":"Soup","source":"My foods","quantity":1.5,"unit":"serving","grams":null,"calories":450,"protein":30,"carbs":60,"fat":7.5}');
+        INSERT INTO records VALUES('entry','b','2026-03-09','{"id":"b","date":"2026-03-09","createdAt":"2026-03-09T12:00:00Z","meal":"Lunch","name":"Soup","source":"My foods","quantity":3,"unit":"serving","grams":null,"calories":900,"protein":60,"carbs":120,"fat":15}');
+        INSERT INTO records VALUES('water','w','2026-03-08','{"id":"w","date":"2026-03-08","createdAt":"2026-03-08T12:00:00Z","amountMl":236.5882365}');
         INSERT INTO records VALUES('waterGoal','default',NULL,'{"goalMl":1800,"unit":"fl-oz"}');
         """
         XCTAssertEqual(sqlite3_exec(db, sql, nil, nil, nil), SQLITE_OK)
