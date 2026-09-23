@@ -21,18 +21,25 @@ The default public origin is `https://gramello.com`. Set `SITE_URL` when buildin
 for a different HTTPS origin or a GitHub Pages project prefix; canonical URLs,
 sitemaps, and 404 navigation follow that value.
 
-The `Gramello website` workflow validates pull requests and publishes automatically:
+The `Gramello website` workflow validates pull requests and publishes website
+changes only with stable releases:
 
 - Each stable release created by the `Release` workflow calls the website
-  workflow directly, building and deploying the published release tag. This is
+  workflow directly, checking the published release tag for website changes. This is
   necessary because releases created with `GITHUB_TOKEN` do not trigger another
   workflow through the `release` event.
-- A manually published stable GitHub release also triggers publication. Drafts
+- A manually published stable GitHub release runs the same change check. Drafts
   and prereleases do not publish the production website.
-- Website, policy, or publishing-workflow changes merged into `main` continue to
-  publish immediately, without requiring a new app release.
-- A manual workflow dispatch on `main` republishes that commit, or a published
-  stable release when the optional `release_tag` input is supplied.
+- The workflow compares the release with the highest stable version tag in its
+  parent history, ignoring prerelease and catalog tags. Changes under `website/`
+  (including user guides), the three policy documents, or either publishing
+  workflow trigger a build and deployment. Unchanged releases skip the build,
+  artifact upload, and deployment. The first stable release publishes the site.
+- Website changes merged into `main` wait for the next stable release; pushes
+  do not deploy the website separately. Use a releasable commit such as `fix:`
+  when a website update needs a new release immediately.
+- A manual workflow dispatch on `main` requires a published stable `release_tag`
+  and runs the same change check. Rerun a failed publication for that tag to retry.
 
 GitHub Pages must use **GitHub Actions** as its publishing source. The
 `github-pages` environment must allow the `main` branch and `v*` tags. Release
