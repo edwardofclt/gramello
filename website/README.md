@@ -88,9 +88,11 @@ editorial serif headings and food photography. The diary and charts are clearly
 marked illustrations with sample data; they do not contain customer records.
 All fonts are local system fonts, and images are served with the site. Anonymous
 Segment analytics is configured for native app builds; this website does not
-include that integration. Advertising may be introduced in the future and is
-not currently implemented. The privacy policy must describe the actual
-providers, data practices, and applicable user choices before activation.
+include that integration. The privacy policy describes the native app's
+generated installation ID and fixed usage events, excludes health and diary
+contents from analytics, and identifies the current absence of an in-app
+analytics switch. Advertising is not currently implemented. Keep provider,
+retention, and user-choice disclosures aligned with actual settings and builds.
 Avoid marketing promises of a permanently ad-free or tracker-free product.
 The FAQ works with native HTML without JavaScript;
 JavaScript only keeps one answer open at a time. Reduced motion is respected.
