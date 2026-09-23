@@ -1,3 +1,9 @@
+## [1.15.2](https://github.com/edwardofclt/gramello/compare/v1.15.1...v1.15.2) (2026-09-23)
+
+### Bug Fixes
+
+* **mobile:** revert widgets introduced in [#36](https://github.com/edwardofclt/gramello/issues/36) ([be3fd5b](https://github.com/edwardofclt/gramello/commit/be3fd5b5f1ee81a185ac9f1c6eaf6c51e8751669))
+
 ## [1.15.1](https://github.com/edwardofclt/gramello/compare/v1.15.0...v1.15.1) (2026-09-23)
 
 ### Bug Fixes
