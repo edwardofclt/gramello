@@ -1,5 +1,7 @@
 import { normalizeBarcode } from '../../../lib/barcode';
 import type { Food } from '../../../lib/food';
+import { FOOD_SEARCH_CANDIDATE_LIMIT, foodSearchLikeTerms, foodSearchMatch, rankFoodSearch } from '../../../lib/food-search-ranking';
+import { preferredFoodServing } from '../../../lib/food-servings';
 import type { SqliteConnection } from '../local/database';
 import { foodSchema } from '../local/records';
 import type { FoodCatalog } from '../local/repository';
@@ -20,26 +22,35 @@ export async function inspectCatalog(db: SqliteConnection, manifest?: CatalogMan
   return { version: info.value, count: count.count };
 }
 export function createCatalogReader(withDatabase: <T>(work: (db: SqliteConnection) => Promise<T>) => Promise<T>, fallback?: FoodCatalog): FoodCatalog {
-  const decode = (row: { food: string } | null): Food | null => row ? foodSchema.parse(JSON.parse(row.food)) : null;
+  const decode = (row: { food: string } | null): Food | null => row ? preferredFoodServing(foodSchema.parse(JSON.parse(row.food))) : null;
   return {
     getFood: id => withDatabase(async db => decode(await db.getFirstAsync('SELECT food FROM foods WHERE id=?',id))).then(async food => food ?? await fallback?.getFood(id) ?? null),
     search: query => withDatabase(async db => {
-      const tokens = query.match(/[\p{L}\p{N}]+/gu)?.slice(0,10) ?? [];
-      if (!tokens.length) return [];
-      const match = tokens.map(t => `"${t}"*`).join(' AND ');
-      const rows = await db.getAllAsync<{ food: string }>('SELECT f.food FROM food_search s JOIN foods f ON f.id=s.id WHERE food_search MATCH ? ORDER BY rank,f.name LIMIT 101',match);
-      const primary = rows.map(row => decode(row)!);
+      const match = foodSearchMatch(query);
+      if (!match) return [];
+      const rows = await db.getAllAsync<{ food: string }>('SELECT f.food FROM food_search s JOIN foods f ON f.id=s.id WHERE food_search MATCH ? ORDER BY rank,f.name LIMIT ?', match, FOOD_SEARCH_CANDIDATE_LIMIT);
+      // Existing signed catalogs index internal apostrophes as token boundaries.
+      // Also retrieve their joined spelling, so obrien finds O’Brien without
+      // requiring a catalog replacement or guessing where punctuation belongs.
+      const text = "s.name || ' ' || coalesce(s.brand, '')";
+      const joined = `lower(replace(replace(replace(replace(${text}, '''', ''), '’', ''), '‘', ''), 'ʼ', ''))`;
+      const terms = foodSearchLikeTerms(query);
+      const where = terms.map(forms => `(${forms.map(() => `${joined} LIKE ? ESCAPE '~'`).join(' OR ')})`).join(' AND ');
+      const patterns = terms.flat().map(term => `%${term.replace(/[~%_]/g, value => `~${value}`)}%`);
+      const punctuated = await db.getAllAsync<{ food: string }>(`SELECT f.food FROM food_search s JOIN foods f ON f.id=s.id
+        WHERE (${text}) GLOB '*[''’‘ʼ]*' AND ${where} ORDER BY f.name LIMIT ?`, ...patterns, FOOD_SEARCH_CANDIDATE_LIMIT);
+      const primary = rankFoodSearch([...rows, ...punctuated].map(row => decode(row)!), query);
       const bundled = await fallback?.search(query) ?? [];
       const current = new Map(primary.map(food => [food.id, food]));
       const matches = new Map<string, Food>();
-      // Reserve visibility for both catalogs before the UI's 100-result cap.
-      // The installed record still wins when the same food exists in both.
+      // Interleave ties from both catalogs before ranking. The installed record
+      // still wins when the same food exists in both.
       for (let i = 0; i < Math.max(primary.length, bundled.length); i++) {
         for (const food of [primary[i], bundled[i]]) {
           if (food && !matches.has(food.id)) matches.set(food.id, current.get(food.id) ?? food);
         }
       }
-      return [...matches.values()].slice(0, 101);
+      return rankFoodSearch([...matches.values()], query).slice(0, 101);
     }),
     barcode: code => withDatabase(async db => {
       const normalized = normalizeBarcode(code);

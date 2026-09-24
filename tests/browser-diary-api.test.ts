@@ -13,6 +13,8 @@ import { GET as search } from "@/app/api/foods/search/route";
 import { POST as customFood } from "@/app/api/foods/custom/route";
 import { GET as barcode } from "@/app/api/foods/barcode/route";
 import type { Food } from "@/lib/food";
+import { preferredFoodServing } from '@/lib/food-servings';
+import { selectFoodServing } from '@/lib/serving-options';
 import type { EntryInput } from "@/db/store";
 import { ghostProduct } from './fixtures/ghost-energy';
 import { GET as listMeals, POST as createMeal, PUT as updateMeal, DELETE as deleteMeal } from "@/app/api/meals/route";
@@ -271,6 +273,70 @@ it("prioritizes an exact restaurant brand over unrelated branded products", asyn
   const response = await call(search, "/api/foods/search?q=Viva%20Chicken", { user: aliceId });
   const result = await response.json() as { foods: Food[] };
   expect(result.foods.map(item => item.id)).toEqual(['restaurant-viva-test', 'off-unrelated']);
+});
+
+it('finds the reference egg for a plural query and excludes unrelated online foods', async () => {
+  vi.stubGlobal('fetch', async () => Response.json({ foods: [], products: [ghostProduct] }));
+  const response = await call(search, '/api/foods/search?q=Eggs', { user: aliceId });
+  const result = await response.json() as { foods: Food[] };
+  expect(result.foods.map(food => food.id)).toEqual(['usda-171287']);
+  expect(database.prepare("SELECT id FROM foods WHERE id LIKE 'off-%'").all()).toEqual([]);
+  vi.stubGlobal('fetch', async () => { throw new Error('offline'); });
+  const fallback = await (await call(search, '/api/foods/search?q=Eggs', { user: aliceId })).json();
+  expect(fallback).toMatchObject({ foods: [expect.objectContaining({ id: 'usda-171287' })], partial: true });
+});
+
+it('finds Thomas’ bread regardless of apostrophes and hyphens in the query', async () => {
+  const bread = { ...ghostProduct, product_name: 'Thomas’ Cinnamon Raisin Bread', brands: "Thomas'" };
+  vi.stubGlobal('fetch', async () => Response.json({ foods: [], products: [bread] }));
+  const first = await (await call(search, '/api/foods/search?q=Thomas', { user: aliceId })).json();
+  expect(first).toMatchObject({ foods: [expect.objectContaining({ id: `off-${bread.code}` })] });
+  vi.stubGlobal('fetch', async () => Response.json({ foods: [], products: [] }));
+  for (const query of ['Thomas', 'Thomas’', "Thomas'", 'Thomas cinnamon-raisin']) {
+    const result = await (await call(search, `/api/foods/search?q=${encodeURIComponent(query)}`, { user: aliceId })).json();
+    expect(result).toMatchObject({ foods: [expect.objectContaining({ id: `off-${bread.code}` })] });
+  }
+});
+
+it('retrieves plural variants and preserves searches for accented stored names', async () => {
+  for (const name of ['Strawberry', 'Strawberries', 'Crème brûlée']) {
+    await call(customFood, '/api/foods/custom', { method: 'POST', user: aliceId, body: { name, servingLabel: '1 serving', calories: 100, protein: 1, carbs: 20, fat: 2 } });
+  }
+  vi.stubGlobal('fetch', async () => Response.json({ foods: [], products: [] }));
+  for (const query of ['strawberry', 'strawberries']) {
+    const result = await (await call(search, `/api/foods/search?q=${query}`, { user: aliceId })).json() as { foods: Food[] };
+    expect(result.foods.map(food => food.name).sort()).toEqual(['Strawberries', 'Strawberry']);
+  }
+  const accented = await (await call(search, `/api/foods/search?q=${encodeURIComponent('Crème brûlée')}`, { user: aliceId })).json();
+  expect(accented).toMatchObject({ foods: [expect.objectContaining({ name: 'Crème brûlée' })] });
+});
+
+it('logs two eggs as 100 g even when an older cached USDA record defaults to a cup', async () => {
+  database.exec("INSERT INTO foods (id,name,source,source_kind,verified,nutrition_basis,serving_label,serving_grams,calories,protein,carbs,fat,created_at) VALUES ('usda-171287','Egg, whole, raw, fresh','USDA FoodData Central','database',1,'100g','1 cup (243 g)',243,143,12.56,0.72,9.51,'today')");
+  const result = await call(add, '/api/entries', { method: 'POST', user: aliceId, body: { date: '2026-09-23', meal: 'Breakfast', sourceId: 'usda-171287', quantity: 2, unit: 'serving' } });
+  expect(result.status).toBe(201);
+  expect(await result.json()).toMatchObject({ grams:100, calories:143, protein:12.56, servingLabel:'1 large (50 g)' });
+});
+
+it('logs and edits the chosen egg size and rejects a portion from another food', async () => {
+  const egg: Food = preferredFoodServing({ id: 'usda-171287', name: 'Egg, whole, raw, fresh', source: 'USDA FoodData Central', nutritionBasis: '100g', servingGrams: 243, servingLabel: '1 cup (243 g)', calories: 143, protein: 12.56, carbs: .72, fat: 9.51 });
+  const medium = egg.servingOptions!.find(option => option.label === '1 medium (44 g)')!;
+  database.exec("INSERT INTO foods (id,name,source,source_kind,verified,nutrition_basis,serving_label,serving_grams,calories,protein,carbs,fat,created_at) VALUES ('usda-171287','Egg, whole, raw, fresh','USDA FoodData Central','database',1,'100g','1 cup (243 g)',243,143,12.56,0.72,9.51,'today')");
+  const body = { date: '2026-09-23', meal: 'Breakfast', sourceId: egg.id, quantity: 2, unit: 'serving', servingId: medium.id, grams: 999, calories: 999 };
+  const result = await call(add, '/api/entries', { method: 'POST', user: aliceId, body });
+  expect(result.status).toBe(201);
+  const entry = await result.json() as EntryInput & { id: string };
+  expect(entry).toMatchObject({ grams: 88, servingLabel: medium.label });
+  expect(entry.calories).toBeCloseTo(125.84);
+  const edited = await call(editEntry, `/api/entries?id=${entry.id}`, { method: 'PUT', user: aliceId, body: { meal: 'Breakfast', quantity: 3, unit: 'serving' } });
+  expect(await edited.json()).toMatchObject({ grams: 132, servingLabel: medium.label });
+  expect((await call(add, '/api/entries', { method: 'POST', user: aliceId, body: { ...body, servingId: 'another-foods-portion' } })).status).toBe(400);
+
+  const selected = selectFoodServing(egg, medium.id)!;
+  const saved = await call(createMeal, '/api/meals', { method: 'POST', user: aliceId, body: { name: 'Egg breakfast', ingredients: [{ food: selected, quantity: 2, unit: 'serving' }], totalGrams: null, servingGrams: 88 } });
+  expect(saved.status).toBe(201);
+  const own = await (await call(listMeals, '/api/meals', { user: aliceId })).json() as { meals: CustomMeal[] };
+  expect(own.meals[0].ingredients[0].food).toMatchObject({ selectedServingId: medium.id, servingGrams: 44, servingOptions: egg.servingOptions });
 });
 describe("saved meals", () => {
   it("logs the owner's saved recipe canonically and keeps it unverified", async () => {

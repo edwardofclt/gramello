@@ -26,7 +26,7 @@ export function FoodDialog({ date, initialMeal, diaryFetch, onClose, onAdded }: 
   async function add({ food, quantity, unit }: Ingredient) {
     const scaled = scaleFood(food, quantity, unit);
     if (!scaled) return;
-    const entry = await api<DiaryEntry>('/api/entries', { method: 'POST', body: { date, meal, name: food.name, brand: food.brand, source: food.source, sourceId: food.id, servingLabel: food.servingLabel, quantity, unit, ...scaled } });
+    const entry = await api<DiaryEntry>('/api/entries', { method: 'POST', body: { date, meal, name: food.name, brand: food.brand, source: food.source, sourceId: food.id, servingId: food.selectedServingId, servingLabel: food.servingLabel, quantity, unit, ...scaled } });
     onAdded(entry);
   }
   return <Dialog open onOpenChange={open => { if (!open && !busy) onClose(); }}><DialogContent className="food-dialog"><DialogHeader><DialogTitle>{view === 'meals' ? 'My meals' : 'Add food'}</DialogTitle><DialogDescription>{view === 'meals' ? 'Build a meal, save it, and portion it your way.' : 'Search foods, restaurants, and community submissions, or reuse one of your meals.'}</DialogDescription></DialogHeader>

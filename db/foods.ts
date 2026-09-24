@@ -1,26 +1,29 @@
 import { env } from 'cloudflare:workers';
 import type { CustomFoodInput, Food } from '../lib/food';
+import { FOOD_SEARCH_CANDIDATE_LIMIT, foodSearchLikeTerms, foodSearchTerms, rankFoodSearch } from '../lib/food-search-ranking';
+import { preferredFoodServing } from '../lib/food-servings';
 
 const columns = `id, name, brand, source, source_kind as sourceKind, source_url as sourceUrl, verified,
   nutrition_basis as nutritionBasis, serving_grams as servingGrams, serving_ml as servingMl, serving_label as servingLabel,
   calories, protein, carbs, fat, image, checked_at as checkedAt`;
 function database() { if (!env.DB) throw new Error('Food catalog unavailable'); return env.DB; }
 function fromRow(row: Omit<Food, 'verified'> & { verified?: boolean | number }): Food {
-  return { ...row, verified: row.verified === true || row.verified === 1,
+  return preferredFoodServing({ ...row, verified: row.verified === true || row.verified === 1,
     ...(row.nutritionBasis === '100ml' ? { nutritionUnit: 'ml' as const } : {}), servingMl: row.servingMl ?? undefined,
-    brand: row.brand ?? undefined, sourceUrl: row.sourceUrl ?? undefined, image: row.image ?? undefined, checkedAt: row.checkedAt ?? undefined };
+    brand: row.brand ?? undefined, sourceUrl: row.sourceUrl ?? undefined, image: row.image ?? undefined, checkedAt: row.checkedAt ?? undefined });
 }
 export async function getFood(id: string): Promise<Food | null> {
   const row = await database().prepare(`SELECT ${columns} FROM foods WHERE id = ?`).bind(id).first<Food>();
   return row ? fromRow(row) : null;
 }
 export async function findFoods(query: string, limit = 100): Promise<Food[]> {
-  const tokens = query.toLowerCase().replace(/[’']/g, '').split(/\s+/).filter(Boolean).slice(0, 10);
+  const tokens = foodSearchLikeTerms(query);
   if (!tokens.length) return [];
-  const where = tokens.map(() => "lower(replace(replace(name || ' ' || coalesce(brand, ''), '''', ''), '’', '')) LIKE ? ESCAPE '~'").join(' AND ');
-  const patterns = tokens.map(token => `%${token.replace(/[~%_]/g, value => `~${value}`)}%`);
-  const rows = await database().prepare(`SELECT ${columns} FROM foods WHERE ${where} ORDER BY CASE WHEN lower(replace(replace(coalesce(brand,''), '''', ''), '’', '')) = ? THEN 0 WHEN lower(name) = ? THEN 1 ELSE 2 END, verified DESC, brand, name, id LIMIT ?`).bind(...patterns, tokens.join(' '), query.toLowerCase(), limit).all<Food>();
-  return (rows.results ?? []).map(fromRow);
+  const searchable = "lower(replace(replace(replace(replace(name || ' ' || coalesce(brand, ''), '''', ''), '’', ''), '‘', ''), 'ʼ', ''))";
+  const where = tokens.map(forms => `(${forms.map(() => `${searchable} LIKE ? ESCAPE '~'`).join(' OR ')})`).join(' AND ');
+  const patterns = tokens.flat().map(token => `%${token.replace(/[~%_]/g, value => `~${value}`)}%`);
+  const rows = await database().prepare(`SELECT ${columns} FROM foods WHERE ${where} ORDER BY CASE WHEN lower(replace(replace(coalesce(brand,''), '''', ''), '’', '')) = ? THEN 0 WHEN lower(name) = ? THEN 1 ELSE 2 END, verified DESC, brand, name, id LIMIT ?`).bind(...patterns, foodSearchTerms(query).join(' '), query.toLowerCase(), Math.max(limit, FOOD_SEARCH_CANDIDATE_LIMIT)).all<Food>();
+  return rankFoodSearch((rows.results ?? []).map(fromRow), query).slice(0, limit);
 }
 async function writeFood(food: Food, createdBy: string | null) {
   await database().prepare(`INSERT INTO foods (id,name,brand,source,source_kind,source_url,verified,nutrition_basis,serving_grams,serving_ml,serving_label,calories,protein,carbs,fat,image,created_by,checked_at,created_at)

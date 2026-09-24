@@ -17,6 +17,11 @@ export const unitHint = (unit: AmountUnit) => ({ serving: 'servings', grams: 'g'
 export const servingQuantity = (food: Food, unit: AmountUnit) => unit === 'serving' ? 1
   : unit === 'milliliters' ? food.servingMl ?? 100 : unit === 'fluid-ounces' ? (food.servingMl ?? 100) / ML_PER_FLUID_OUNCE
   : unit === 'ounces' ? (food.servingGrams ?? 100) / GRAMS_PER_OUNCE : food.servingGrams ?? 100;
+export function convertFoodQuantity(food: Food, quantity: number, from: AmountUnit, to: AmountUnit): number {
+  if (from === to) return quantity;
+  if (!scaleFood(food, quantity, from) || !foodUnits(food).includes(to)) return servingQuantity(food, to);
+  return quantity / servingQuantity(food, from) * servingQuantity(food, to);
+}
 export const entryAmountLabel = entryAmount;
 
 export function scaleNutrition(nutrition: Nutrition, factor: number): Nutrition {

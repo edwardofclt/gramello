@@ -233,6 +233,6 @@ it('preserves a failed custom food draft, disables navigation while saving, and 
   expect(document.querySelector('.nutrition-preview')?.textContent).toContain('605');
   await act(async () => button('Add to Breakfast')!.click());
   expect(container.querySelector('.food-row')?.textContent).toContain('Unverified');
-  expect(container.querySelector('.food-row')?.textContent).toContain('1 × 1 bowl');
+  expect(container.querySelector('.food-row')?.textContent).toContain('1 bowl');
   expect(container.querySelector('.food-row')?.textContent).not.toContain('0 g');
 });

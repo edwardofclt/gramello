@@ -1,8 +1,11 @@
-import { useEffect, useState, type ReactNode } from 'react';
+import { createContext, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import { KeyboardAvoidingView, Modal, Platform, Pressable, ScrollView, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { X } from 'lucide-react-native';
 import { Action, colors, isWeb, styles, useLayout } from './ui';
+
+const DialogScroll = createContext<{ offset: () => number; scrollTo: (y: number) => void } | null>(null);
+export const useDialogScroll = () => useContext(DialogScroll);
 
 // React Native Web's Modal owns focus trapping and Escape.
 // Only the presentation changes: a centered web dialog or a native page sheet.
@@ -11,6 +14,14 @@ export function AppDialog({ title, description, children, onClose, busy = false 
 }) {
   const { height, desktop } = useLayout();
   const [presented, setPresented] = useState(isWeb);
+  const scroll = useRef<ScrollView>(null);
+  const offset = useRef(0);
+  const frame = useRef<number | undefined>(undefined);
+  const navigation = useMemo(() => ({ offset: () => offset.current, scrollTo: (y: number) => {
+    if (frame.current !== undefined) cancelAnimationFrame(frame.current);
+    frame.current = requestAnimationFrame(() => { scroll.current?.scrollTo({ y, animated: false }); frame.current = undefined; });
+  } }), []);
+  useEffect(() => () => { if (frame.current !== undefined) cancelAnimationFrame(frame.current); }, []);
   // Capture before the search input auto-focuses. RN Web's own effect runs
   // after that focus and would otherwise try to restore the removed input.
   const [trigger] = useState(() => isWeb && document.activeElement instanceof HTMLElement ? document.activeElement : null);
@@ -31,10 +42,10 @@ export function AppDialog({ title, description, children, onClose, busy = false 
             <View style={{ gap: 5, flex: 1 }}><Text accessibilityRole="header" style={styles.heading}>{title}</Text>{description && <Text style={styles.muted}>{description}</Text>}</View>
             <Action quiet secondary compact disabled={busy} label={`Close ${title.toLowerCase()}`} onPress={close}><X size={20} color={colors.muted} /></Action>
           </View>
-          <ScrollView style={{ flexShrink: 1 }} contentContainerStyle={[styles.content, { paddingTop: 8, paddingHorizontal: isWeb ? 24 : 20 }]} keyboardShouldPersistTaps="handled" keyboardDismissMode={isWeb ? 'none' : 'on-drag'}>
+          <ScrollView ref={scroll} onScroll={event => { offset.current = event.nativeEvent.contentOffset.y; }} scrollEventThrottle={16} style={{ flexShrink: 1 }} contentContainerStyle={[styles.content, { paddingTop: 8, paddingHorizontal: isWeb ? 24 : 20 }]} keyboardShouldPersistTaps="handled" keyboardDismissMode={isWeb ? 'none' : 'on-drag'}>
             {/* Native autoFocus must wait until the sheet's presentation finishes.
                 Opening the keyboard during that transition can interrupt the sheet. */}
-            {presented && children}
+            {presented && <DialogScroll.Provider value={navigation}>{children}</DialogScroll.Provider>}
           </ScrollView>
         </KeyboardAvoidingView>
       </SafeAreaView>

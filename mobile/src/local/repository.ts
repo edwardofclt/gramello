@@ -1,9 +1,12 @@
 import { z } from 'zod';
-import { parseCustomFood, scaleFood, type Food } from '../../../lib/food';
+import { parseCustomFood, scaleFood, servingIdSchema, type Food } from '../../../lib/food';
+import { selectFoodServing } from '../../../lib/serving-options';
 import { mealFood, type CustomMeal } from '../../../lib/meals';
 import { localDate } from '../../../lib/diary-date';
 import { editedPortion, entryEditSchema } from '../../../lib/entry-edit';
 import { foodSearchIssue, type FoodSearchIssue } from '../../../lib/food-search';
+import { rankFoodSearch } from '../../../lib/food-search-ranking';
+import { normalizeBarcode } from '../../../lib/barcode';
 import { defaultWaterGoal, waterDateSchema, waterEntrySchema, waterGoalSchema, type WaterDay } from '../../../lib/water';
 import { serialized, transaction, type SqliteConnection } from './database';
 import { entrySchema, goalsSchema, mealSchema, parseArchive, validateRecord, units, type Archive, type PersonalRecord } from './records';
@@ -56,9 +59,11 @@ export async function createLocalRepository(db: SqliteConnection, catalog: FoodC
     getDay: (date: string) => serialized(db, async () => ({ goals: await read<typeof defaults>('goals', 'default') ?? defaults, entries: await list<z.infer<typeof entrySchema>>('entry', waterDateSchema.parse(date)) })),
     saveGoals: (input: unknown) => serialized(db, async () => { const value = goalsSchema.parse(input); await put({ kind: 'goals', id: 'default', date: null, value }); return value; }),
     addEntry: (input: unknown) => serialized(db, async () => {
-      const body = z.object({ date: waterDateSchema, meal: z.enum(['Breakfast', 'Lunch', 'Dinner', 'Snacks']), sourceId: z.string().min(1), quantity: z.number().positive().max(1e6), unit: units }).parse(input);
-      const food = await findFood(body.sourceId);
-      if (!food) throw new Error('Food not found. Search again or create a custom food.');
+      const body = z.object({ date: waterDateSchema, meal: z.enum(['Breakfast', 'Lunch', 'Dinner', 'Snacks']), sourceId: z.string().min(1), quantity: z.number().positive().max(1e6), unit: units, servingId: servingIdSchema.optional() }).parse(input);
+      const found = await findFood(body.sourceId);
+      if (!found) throw new Error('Food not found. Search again or create a custom food.');
+      const food = selectFoodServing(found, body.servingId);
+      if (!food) throw new Error('That serving size is unavailable. Choose a serving again.');
       const portion = scaleFood(food, body.quantity, body.unit);
       if (!portion) throw new Error('Choose a supported serving amount.');
       const value = entrySchema.parse({ ...body, ...portion, id: uuid(), createdAt: new Date().toISOString(), name: food.name, brand: food.brand, source: food.source, verified: food.verified, sourceUrl: food.sourceUrl, servingLabel: food.servingLabel });
@@ -86,8 +91,7 @@ export async function createLocalRepository(db: SqliteConnection, catalog: FoodC
     searchFoods: async (query: string, options?: { online?: boolean; signal?: AbortSignal }) => {
       if (query.length > 200) throw new Error('Search with a shorter name.');
       if (query.trim().length < 2) return { foods: [], partial: false, hasMore: false };
-      const tokens = query.toLowerCase().trim().split(/\s+/);
-      const custom = (await serialized(db, () => list<Food>('food'))).filter(food => tokens.every(t => `${food.name} ${food.brand ?? ''}`.toLowerCase().includes(t)));
+      const custom = rankFoodSearch(await serialized(db, () => list<Food>('food')), query);
       let found: Food[];
       const issues: FoodSearchIssue[] = [];
       try { found = await catalog.search(query, options); }
@@ -96,7 +100,8 @@ export async function createLocalRepository(db: SqliteConnection, catalog: FoodC
         found = await catalog.search(query, { signal: options.signal });
         issues.push(foodSearchIssue('Open Food Facts', error));
       }
-      const foods = [...custom, ...found];
+      // Barcode lookups already resolve identity and need no name matching.
+      const foods = normalizeBarcode(query) ? found : rankFoodSearch([...custom, ...found], query);
       return { foods: foods.slice(0,100), hasMore: foods.length > 100, partial: issues.length > 0, issues };
     },
     // Network lookups must not hold the diary connection's transaction queue.

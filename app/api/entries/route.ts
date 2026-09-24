@@ -3,24 +3,28 @@ import { addEntry, removeEntry, updateEntry, type EntryInput } from '@/db/store'
 import { entryEditSchema } from '@/lib/entry-edit';
 import { getFood } from '@/db/foods';
 import { getMeal } from '@/db/meals';
-import { scaleFood, type AmountUnit } from '@/lib/food';
+import { scaleFood, servingIdSchema, type AmountUnit } from '@/lib/food';
+import { selectFoodServing } from '@/lib/serving-options';
 import { mealFood } from '@/lib/meals';
 
 export async function POST(request: Request) {
   return withBrowserDiary(request, async ({ userId }) => {
-    let b: EntryInput;
+    let b: EntryInput & { servingId?: string };
     try { b = await request.json(); }
     catch { return Response.json({ error: 'That food entry is incomplete.' }, { status: 400 }); }
     if (!b || typeof b.date !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(b.date) || !['Breakfast', 'Lunch', 'Dinner', 'Snacks'].includes(b.meal)
       || typeof b.quantity !== 'number' || !Number.isFinite(b.quantity) || b.quantity <= 0 || b.quantity > 100_000 || !['serving', 'grams', 'ounces', 'milliliters', 'fluid-ounces'].includes(b.unit)
-      || (b.sourceId !== undefined && typeof b.sourceId !== 'string')) {
+      || (b.sourceId !== undefined && typeof b.sourceId !== 'string')
+      || (b.servingId !== undefined && !servingIdSchema.safeParse(b.servingId).success)) {
       return Response.json({ error: 'That food entry is incomplete.' }, { status: 400 });
     }
     try {
       const recipeId = b.sourceId?.startsWith('meal-') ? b.sourceId.slice(5) : null;
       const recipe = recipeId ? await getMeal(userId, recipeId) : null;
       if (recipeId && !recipe) return Response.json({ error: 'Saved meal not found. Choose a meal from your library.' }, { status: 404 });
-      const food = recipe ? mealFood(recipe) : b.sourceId ? await getFood(b.sourceId) : null;
+      const found = recipe ? mealFood(recipe) : b.sourceId ? await getFood(b.sourceId) : null;
+      const food = found ? selectFoodServing(found, b.servingId) : null;
+      if (b.servingId !== undefined && !food) return Response.json({ error: 'That serving size is unavailable. Choose a serving again.' }, { status: 400 });
       let item: EntryInput;
       if (food) {
         const portion = scaleFood(food, b.quantity, b.unit as AmountUnit);
