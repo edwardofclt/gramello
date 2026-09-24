@@ -1,3 +1,9 @@
+## [1.16.0](https://github.com/edwardofclt/gramello/compare/v1.15.2...v1.16.0) (2026-09-24)
+
+### Features
+
+* **food:** improve search relevance, serving choices, and back navigation ([#39](https://github.com/edwardofclt/gramello/issues/39)) ([44ca71c](https://github.com/edwardofclt/gramello/commit/44ca71c7292b56d14dd420e24208bf9058581f6c))
+
 ## [1.15.2](https://github.com/edwardofclt/gramello/compare/v1.15.1...v1.15.2) (2026-09-23)
 
 ### Bug Fixes
