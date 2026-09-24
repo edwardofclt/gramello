@@ -1,12 +1,14 @@
 import { z } from 'zod';
 
 export type Nutrition = { calories: number; protein: number; carbs: number; fat: number };
+export type FoodServing = { id: string; label: string; grams?: number; ml?: number };
 export type Food = Nutrition & {
   id: string; name: string; brand?: string; source: string; sourceUrl?: string;
   // Older saved meal ingredients omit provenance and use a per-100g default.
   sourceKind?: 'database' | 'restaurant' | 'custom'; verified?: boolean;
   nutritionBasis?: '100g' | 'serving' | '100ml'; servingGrams: number | null; servingLabel: string;
   nutritionUnit?: 'g' | 'ml'; servingMl?: number;
+  servingOptions?: FoodServing[]; selectedServingId?: string;
   image?: string; checkedAt?: string;
 };
 export type FoodPortion = Nutrition & { grams: number | null };
@@ -15,6 +17,15 @@ export const GRAMS_PER_OUNCE = 28.349523125;
 export const ML_PER_FLUID_OUNCE = 29.5735295625;
 
 const nutrient = z.number().finite().min(0).max(100_000);
+export const servingIdSchema = z.string().min(1).max(100);
+export const foodServingFields = {
+  servingOptions: z.array(z.object({
+    id: servingIdSchema, label: z.string().min(1).max(200),
+    grams: z.number().finite().positive().max(1e6).optional(),
+    ml: z.number().finite().positive().max(1e6).optional(),
+  }).refine(portion => (portion.grams !== undefined) !== (portion.ml !== undefined))).max(100).optional(),
+  selectedServingId: servingIdSchema.optional(),
+};
 const customFoodSchema = z.object({
   name: z.string().trim().min(1, 'Enter a food name.').max(200),
   brand: z.string().trim().max(120).optional(),
@@ -44,10 +55,11 @@ export function nutritionLabel(food: Pick<Food, 'nutritionBasis' | 'nutritionUni
   return food.nutritionBasis === 'serving' ? `per ${food.servingLabel}` : food.nutritionBasis === '100ml' || food.nutritionUnit === 'ml' ? 'per 100 mL' : 'per 100 g';
 }
 export function entryAmount(entry: { grams: number | null; quantity: number; unit: string; servingLabel?: string | null }) {
+  const quantity = Number(entry.quantity.toFixed(2));
+  if (entry.unit === 'serving' && entry.servingLabel) return quantity === 1 ? entry.servingLabel : `${quantity} × ${entry.servingLabel}`;
   if (entry.unit === 'milliliters') return `${Number(entry.quantity.toFixed(2))} mL`;
   if (entry.unit === 'fluid-ounces') return `${Number(entry.quantity.toFixed(2))} US fl oz`;
   if (entry.grams !== null && entry.grams !== undefined && entry.grams > 0) return `${Math.round(entry.grams)} g`;
-  const quantity = Number(entry.quantity.toFixed(2));
   if (entry.grams === 0 && !entry.servingLabel) return `${quantity} serving${quantity === 1 ? '' : 's'}`;
   return `${entry.quantity} × ${entry.servingLabel || 'serving'}`;
 }

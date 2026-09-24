@@ -6,16 +6,19 @@ import { Action, Card, colors, ErrorNotice, Field, styles, useLayout } from '../
 import { BarcodeScanner } from '../components/BarcodeScanner';
 import { CustomFoodForm } from '../components/CustomFoodForm';
 import { FoodVerification } from '../components/FoodVerification';
+import { ServingPicker } from '../components/ServingPicker';
+import { useDialogScroll } from '../components/AppDialog';
 import { nutritionLabel } from '../../../lib/food';
 import type { FoodSearchIssue, FoodSearchResult } from '../../../lib/food-search';
 import { errorMessage } from '../lib/api';
 import { scaleFood } from '../lib/nutrition';
 import { meals, type Food, type Meal } from '../lib/types';
-import { foodUnits, servingQuantity, unitLabels, amountLabels, type AmountUnit, type Ingredient } from '../../../lib/meals';
+import { foodUnits, convertFoodQuantity, displayAmount, unitLabels, amountLabels, type AmountUnit, type Ingredient } from '../../../lib/meals';
 
 export function FoodPicker({ date, initialMeal, onSaved, initialFood, onIngredient, onBusy, onTitle }: { date: string; initialMeal: Meal; onSaved: () => void; initialFood?: Food; onIngredient?: (ingredient: Ingredient) => void; onBusy?: (busy: boolean) => void; onTitle?: (title: string) => void }) {
   const { api, local } = useSession();
   const { width } = useLayout();
+  const scroll = useDialogScroll();
   const [meal, setMeal] = useState(initialMeal);
   const [query, setQuery] = useState('');
   const [results, setResults] = useState<Food[]>([]);
@@ -33,6 +36,10 @@ export function FoodPicker({ date, initialMeal, onSaved, initialFood, onIngredie
   const [saving, setSaving] = useState(false);
   const [searchRevision, setSearchRevision] = useState(0);
   const saveLock = useRef(false);
+  const completedSearch = useRef<string | null>(null);
+  const searchScroll = useRef(0);
+  const page = selected ? 'amount' : custom ? 'custom' : scanning ? 'scan' : 'search';
+  useEffect(() => { scroll?.scrollTo(page === 'search' ? searchScroll.current : 0); }, [page, scroll]);
   const scaled = selected ? scaleFood(selected, Number(quantity), unit) : null;
   useEffect(() => { onTitle?.(selected ? 'Choose amount' : custom ? 'Add custom food' : scanning ? 'Scan barcode' : 'Add food'); }, [selected, scanning, custom, onTitle]);
   const lookupBarcode = useCallback(async (code: string, signal: AbortSignal) => {
@@ -40,16 +47,17 @@ export function FoodPicker({ date, initialMeal, onSaved, initialFood, onIngredie
     return result.food;
   }, [api]);
   const selectFood = useCallback((food: Food) => {
-    setSelected(food); setScanning(false); setCustom(false); setQuantity('1'); setUnit('serving'); setError(null);
-  }, []);
+    if (page === 'search') searchScroll.current = scroll?.offset() ?? 0;
+    setSelected(food); setScanning(false); setCustom(false); setSearching(false); setQuantity('1'); setUnit('serving'); setError(null);
+  }, [page, scroll]);
 
   useEffect(() => {
-    if (custom || scanning || selected || query.trim().length < 2) return;
+    if (custom || scanning || selected || query.trim().length < 2 || completedSearch.current === query.trim()) return;
     const controller = new AbortController();
     const timer = setTimeout(() => {
       setSearching(true); setError(null);
       void api<FoodSearchResult>(`/api/foods/search?q=${encodeURIComponent(query.trim())}`, { signal: controller.signal })
-        .then(data => { if (!controller.signal.aborted) { setResults(data.foods); setPartial(!!data.partial); setIssues(data.issues ?? []); setHasMore(!!data.hasMore); } })
+        .then(data => { if (!controller.signal.aborted) { completedSearch.current = query.trim(); setResults(data.foods); setPartial(!!data.partial); setIssues(data.issues ?? []); setHasMore(!!data.hasMore); } })
         .catch(error => { if (!controller.signal.aborted) setError(errorMessage(error)); })
         .finally(() => { if (!controller.signal.aborted) setSearching(false); });
     }, 350);
@@ -61,20 +69,20 @@ export function FoodPicker({ date, initialMeal, onSaved, initialFood, onIngredie
     if (onIngredient) { onIngredient({ food: selected, quantity: Number(quantity), unit }); return; }
     saveLock.current = true; setSaving(true); onBusy?.(true); setError(null);
     try {
-      await api('/api/entries', { method: 'POST', body: { date, meal, name: selected.name, brand: selected.brand, source: selected.source, sourceId: selected.id, quantity: Number(quantity), unit, ...scaled } });
+      await api('/api/entries', { method: 'POST', body: { date, meal, name: selected.name, brand: selected.brand, source: selected.source, sourceId: selected.id, servingId: selected.selectedServingId, quantity: Number(quantity), unit, ...scaled } });
       onSaved();
     } catch (error) { setError(errorMessage(error)); }
     finally { saveLock.current = false; setSaving(false); onBusy?.(false); }
   }
 
   return <>
-          {error && <ErrorNotice message={error} retry={selected ? undefined : () => setSearchRevision(value => value + 1)} />}
-          {custom ? <CustomFoodForm initialName={query} api={api} onSaved={selectFood} onBack={() => setCustom(false)} onBusy={busy => { setSaving(busy); onBusy?.(busy); }}/>
-            : scanning ? <BarcodeScanner lookup={lookupBarcode} onFound={selectFood} onBack={() => { setScanning(false); setSearching(false); }} /> : !selected ? <>
-            <Field label="Search foods" placeholder="Try oats, chicken, or a brand…" autoFocus autoCorrect={false} returnKeyType="search" value={query}
-              onChangeText={value => { setQuery(value); setResults([]); setError(null); setPartial(false); setIssues([]); setShowSearchDetails(false); setHasMore(false); setSearching(value.trim().length >= 2); }} />
-            <Action secondary label="Scan barcode" onPress={() => { setScanning(true); setSearching(false); setError(null); }}><ScanBarcode size={20} color={colors.mint} /><Text style={styles.body}>Scan barcode</Text></Action>
-            <Action secondary onPress={() => { setCustom(true); setSearching(false); setError(null); }}>Add custom food</Action>
+          {error && <ErrorNotice message={error} retry={selected ? undefined : () => { completedSearch.current = null; setSearchRevision(value => value + 1); }} />}
+          {custom ? <CustomFoodForm initialName={query} api={api} onSaved={food => { completedSearch.current = null; selectFood(food); }} onBack={() => setCustom(false)} onBusy={busy => { setSaving(busy); onBusy?.(busy); }}/>
+            : scanning ? <BarcodeScanner lookup={lookupBarcode} onFound={food => { completedSearch.current = null; selectFood(food); }} onBack={() => { setScanning(false); setSearching(false); }} /> : !selected ? <>
+            <Field label="Search foods" placeholder="Try oats, chicken, or a brand…" autoFocus={!query} autoCorrect={false} returnKeyType="search" value={query}
+              onChangeText={value => { if (value === query) return; completedSearch.current = null; setQuery(value); setResults([]); setError(null); setPartial(false); setIssues([]); setShowSearchDetails(false); setHasMore(false); setSearching(value.trim().length >= 2); }} />
+            <Action secondary label="Scan barcode" onPress={() => { searchScroll.current = scroll?.offset() ?? 0; setScanning(true); setSearching(false); setError(null); }}><ScanBarcode size={20} color={colors.mint} /><Text style={styles.body}>Scan barcode</Text></Action>
+            <Action secondary onPress={() => { searchScroll.current = scroll?.offset() ?? 0; setCustom(true); setSearching(false); setError(null); }}>Add custom food</Action>
             <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 7 }}>{(local ? ['Restaurant menus', 'Downloaded foods', 'Saved lookups', 'Open Food Facts', 'My foods'] : ['Restaurant menus', 'USDA', 'Open Food Facts', 'Community foods']).map(source => <Text key={source} style={{ color: colors.muted, fontSize: 11, backgroundColor: colors.raised, borderRadius: 20, paddingVertical: 5, paddingHorizontal: 9 }}>{source}</Text>)}</View>
             {local && <Text style={styles.muted}>Searches automatically include Open Food Facts. Online results are saved for offline use.</Text>}
             {partial && <View accessibilityLiveRegion="polite" style={{ gap: 8 }}>
@@ -102,13 +110,15 @@ export function FoodPicker({ date, initialMeal, onSaved, initialFood, onIngredie
             <Card style={{ flexDirection: 'row', alignItems: 'center', backgroundColor: colors.background, borderWidth: 0, padding: 15 }}><FoodThumbnail food={selected} /><View style={{ flex: 1, gap: 4 }}><Text style={styles.heading}>{selected.name}</Text><Text style={styles.muted}>{selected.brand || selected.source} · {selected.servingLabel}</Text><FoodVerification verified={selected.verified}/>{selected.sourceUrl && <Text accessibilityRole="link" style={{ color: colors.blue, textDecorationLine: 'underline', fontSize: 12 }} onPress={() => { void Linking.openURL(selected.sourceUrl!).catch(() => setError('Could not open the nutrition source.')); }}>View nutrition source</Text>}</View></Card>
             {!onIngredient && <><Text style={styles.eyebrow}>ADD TO MEAL</Text>
             <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 8 }}>{meals.map(item => <Action key={item} compact secondary={meal !== item} disabled={saving} onPress={() => setMeal(item)}>{item}</Action>)}</View></>}
-            <View style={styles.row}>{foodUnits(selected).map(item => <View style={{ flex: 1 }} key={item}><Action secondary={unit !== item} disabled={saving} onPress={() => { setUnit(item); setQuantity(String(servingQuantity(selected, item))); }}>{unitLabels[item]}</Action></View>)}</View>
+            <View style={styles.row}>{foodUnits(selected).map(item => <View style={{ flex: 1 }} key={item}><Action secondary={unit !== item} disabled={saving} onPress={() => { setQuantity(String(convertFoodQuantity(selected, Number(quantity), unit, item))); setUnit(item); }}>{unitLabels[item]}</Action></View>)}</View>
+            {unit === 'serving' && <ServingPicker food={selected} disabled={saving} onChange={food => { setSelected(food); setError(null); }} />}
             <View style={[styles.row, { alignItems: 'flex-end' }]}>
               <Action secondary compact disabled={saving} label="Decrease amount" onPress={() => setQuantity(String(Math.max((unit === 'grams' || unit === 'milliliters') ? 1 : .25, (Number(quantity) || 0) - ((unit === 'grams' || unit === 'milliliters') ? 5 : .25))))}><Minus size={18} color={colors.muted} /></Action>
               <View style={{ flex: 1 }}><Field label={unit === 'serving' ? `Servings (${selected.servingLabel})` : amountLabels[unit]} value={quantity} onChangeText={setQuantity} keyboardType="decimal-pad" editable={!saving} selectTextOnFocus /></View>
               <Action secondary compact disabled={saving} label="Increase amount" onPress={() => setQuantity(String((Number(quantity) || 0) + ((unit === 'grams' || unit === 'milliliters') ? 5 : .25)))}><Plus size={18} color={colors.muted} /></Action>
             </View>
             {unit === 'ounces' && <Text style={styles.muted}>Ounces by weight, not fluid ounces.</Text>}
+            {unit === 'serving' && scaled && <Text style={styles.muted} accessibilityLiveRegion="polite">{displayAmount(Number(quantity))} × {selected.servingLabel}{scaled.grams !== null ? ` = ${displayAmount(scaled.grams)} g total` : selected.servingMl ? ` = ${displayAmount(Number(quantity) * selected.servingMl)} mL total` : ''}</Text>}
             <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 8 }}>{(['calories', 'protein', 'carbs', 'fat'] as const).map(key => <View style={{ flexGrow: 1, flexBasis: width > 550 ? '22%' : '46%', gap: 4, alignItems: 'center', backgroundColor: colors.raised, padding: 12, borderRadius: 12 }} key={key}><Text style={[styles.heading, { fontSize: 20 }]}>{scaled ? Math.round(scaled[key]) : '—'}{key !== 'calories' ? 'g' : ''}</Text><Text style={styles.muted}>{key}</Text></View>)}</View>
             {!scaled && <Text style={styles.muted}>Enter an amount greater than zero.</Text>}
             <Action busy={saving} disabled={!scaled} onPress={() => void save()}>{onIngredient ? 'Add ingredient' : `Add to ${meal.toLowerCase()}`}</Action>

@@ -1,9 +1,11 @@
 import { z } from 'zod';
 import { summarizeMeal } from './meals';
+import { foodServingFields } from './food';
 
 const positive = z.number().finite().positive().max(1_000_000);
 const nutrient = z.number().finite().nonnegative().max(100_000);
 const food = z.object({
+  ...foodServingFields,
   id: z.string().min(1).max(200), name: z.string().trim().min(1).max(300),
   source: z.string().min(1).max(100), brand: z.string().max(300).optional(),
   servingGrams: z.number().finite().nonnegative().max(1_000_000).nullable(), servingLabel: z.string().max(200),

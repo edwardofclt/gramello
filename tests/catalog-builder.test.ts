@@ -86,6 +86,13 @@ describe('releasable food catalogs', () => {
       calories:210, protein:5, carbs:23, fat:10,
     });
   });
+  it('includes practical USDA servings when building future downloadable catalogs', () => {
+    const foods = loadOfflineFoods();
+    expect(foods.find((food: { id:string }) => food.id === 'usda-171287')).toMatchObject({ servingGrams:50, servingLabel:'1 large (50 g)', calories:143, protein:12.6 });
+    expect(foods.find((food: { id:string }) => food.id === 'usda-173944')).toMatchObject({ servingGrams:118, servingLabel:expect.stringContaining('1 medium') });
+    expect(foods.find((food: { id:string }) => food.id === 'usda-171688')).toMatchObject({ servingGrams:182 });
+    expect(foods.find((food: { id:string }) => food.id === 'usda-168878')).toMatchObject({ servingGrams:158, servingLabel:expect.stringContaining('cup') });
+  });
   it('accepts documented restaurant sources without describing the mixed catalog as CC0', () => {
     const restaurant = { ...food, id:'restaurant-example-1', brand:'Example', source:'Official restaurant nutrition',
       sourceUrl:'https://example.com/menu', sourceKind:'restaurant', nutritionBasis:'serving', servingGrams:null,

@@ -29,6 +29,40 @@ async function setup(override?: FoodCatalog) {
 afterEach(() => { vi.unstubAllGlobals(); for (const db of databases.splice(0)) db.raw.close(); });
 
 describe('native food discovery', () => {
+  it('finds Thomas’ bread by name or brand online, from saved lookups, and in private foods', async () => {
+    const bread = { ...product, product_name: 'Thomas’ Cinnamon Raisin Bread', brands: 'Thomas’' };
+    vi.stubGlobal('fetch', vi.fn(async () => Response.json({ products: [bread] })));
+    const { api, reopen } = await setup();
+    await expect(api('/api/foods/search?q=Thomas')).resolves.toMatchObject({ foods: expect.arrayContaining([expect.objectContaining({ id: `off-${bread.code}` })]) });
+    const { api: offline } = await reopen();
+    const custom = await offline<{ food: Food }>('/api/foods/custom', { method: 'POST', body: { name: 'Cinnamon-Raisin Bread', brand: "Thomas'", servingLabel: '1 slice', calories: 100, protein: 3, carbs: 20, fat: 1 } });
+    for (const query of ['Thomas', 'Thomas’', "Thomas'", 'Thomas cinnamon-raisin']) {
+      const result = await offline<{ foods: Food[] }>(`/api/foods/search?q=${encodeURIComponent(query)}&online=0`);
+      expect(result.foods).toEqual(expect.arrayContaining([expect.objectContaining({ id: `off-${bread.code}` }), expect.objectContaining({ id: custom.food.id })]));
+    }
+  });
+  it('keeps real eggs first online and offline and does not cache unrelated provider matches', async () => {
+    const egg = { ...product, code: '012345678905', product_name: 'Large eggs', brands: 'Test farm' };
+    const mayo = { ...product, code: '012345678912', product_name: "Mayonnaise Classique à l’huile de colza", brands: 'Lesieur' };
+    vi.stubGlobal('fetch', vi.fn(async () => Response.json({ products: [mayo, egg] })));
+    const { api, reopen } = await setup();
+    const online = await api<{ foods: Food[] }>('/api/foods/search?q=Eggs');
+    expect(online.foods.slice(0, 10).some(food => food.id === 'usda-171287')).toBe(true);
+    expect(online.foods.some(food => food.id === `off-${egg.code}`)).toBe(true);
+    expect(online.foods.some(food => food.id === `off-${mayo.code}`)).toBe(false);
+    const next = await reopen();
+    const offline = await next.api<{ foods: Food[] }>('/api/foods/search?q=eggs&online=0');
+    expect(offline.foods.slice(0, 10).some(food => food.id === 'usda-171287')).toBe(true);
+    expect(offline.foods.some(food => food.id === `off-${egg.code}`)).toBe(true);
+    await expect(next.api('/api/foods/search?q=mayonnaise&online=0')).resolves.not.toMatchObject({ foods: expect.arrayContaining([expect.objectContaining({ id: `off-${mayo.code}` })]) });
+    await expect(next.api('/api/entries', { method: 'POST', body: { date: '2026-09-23', meal: 'Breakfast', sourceId: 'usda-171287', quantity: 1, unit: 'serving' } })).resolves.toMatchObject({ sourceId: 'usda-171287' });
+  });
+  it('matches private singular foods for plural queries and ranks them with catalog matches', async () => {
+    const { api } = await setup();
+    const created = await api<{ food: Food }>('/api/foods/custom', { method: 'POST', body: { name: 'Egg', servingLabel: '1 egg', calories: 72, protein: 6, carbs: 0, fat: 5 } });
+    const results = await api<{ foods: Food[] }>('/api/foods/search?q=eggs&online=0');
+    expect(results.foods[0].id).toBe(created.food.id);
+  });
   it('supports native AbortSignals without the browser throwIfAborted method', async () => {
     const descriptor = Object.getOwnPropertyDescriptor(AbortSignal.prototype, 'throwIfAborted')!;
     Object.defineProperty(AbortSignal.prototype, 'throwIfAborted', { value: undefined, configurable: true });
@@ -93,14 +127,16 @@ describe('native food discovery', () => {
       issues: [{ source: 'Open Food Facts', message: expect.stringMatching(message) }],
     });
   });
-  it('keeps cached products visible offline when a broad query has hundreds of catalog matches', async () => {
+  it('can narrow a broad search to a cached product while offline', async () => {
     vi.stubGlobal('fetch', vi.fn(async () => Response.json({ products: [{ ...product, product_name: 'Chocolate cereal bar' }] })));
     const { api, reopen } = await setup();
     await api('/api/foods/search?q=chocolate&online=1');
     const next = await reopen();
-    const result = await next.api<{ foods: Food[] }>('/api/foods/search?q=chocolate');
+    const result = await next.api<{ foods: Food[]; hasMore: boolean }>('/api/foods/search?q=chocolate&online=0');
     expect(result.foods).toHaveLength(100);
-    expect(result.foods.some(food => food.id === 'off-0038000590993')).toBe(true);
+    expect(result.hasMore).toBe(true);
+    const narrowed = await next.api<{ foods: Food[] }>('/api/foods/search?q=chocolate%20cereal&online=0');
+    expect(narrowed.foods.some(food => food.id === 'off-0038000590993')).toBe(true);
   });
   it('returns fresh provider nutrition instead of overwriting it with an older cached match', async () => {
     const fetch = vi.fn(async () => Response.json({ products: [product] })); vi.stubGlobal('fetch', fetch);

@@ -7,7 +7,8 @@ import { validateCatalog } from './restaurant-catalog.mjs';
 
 export function loadOfflineFoods(root = process.cwd()) {
   const read = path => JSON.parse(readFileSync(resolve(root, path), 'utf8'));
-  const foods = read('data/food-catalog/usda-core.json');
+  const servings = read('data/food-catalog/usda-serving-defaults.json').foods;
+  const foods = read('data/food-catalog/usda-core.json').map(food => ({ ...food, ...servings[food.id] }));
   const summary = read('docs/restaurant-import/import-summary.json');
   if (!Array.isArray(summary.imported) || summary.catalogCount !== summary.imported.length) throw new Error('Invalid restaurant import summary');
   let restaurantCount = 0;

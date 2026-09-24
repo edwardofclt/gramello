@@ -3,6 +3,7 @@ import { lookupBarcode } from '../../../lib/barcode-food';
 import { searchOpenFoodFacts } from '../../../lib/food-providers';
 import type { Food } from '../../../lib/food';
 import { FoodProviderError } from '../../../lib/food-search';
+import { rankFoodSearch } from '../../../lib/food-search-ranking';
 import type { FoodCatalog } from '../local/repository';
 import { serialized, transaction, type SqliteConnection } from '../local/database';
 import { foodSchema } from '../local/records';
@@ -55,7 +56,7 @@ export async function createFoodLookup(catalog: FoodCatalog, cache: SqliteConnec
           : await catalog.barcode(code) ?? await cached.barcode(code);
         return food ? [food] : [];
       }
-      const local = merge(await cached.search(query), await catalog.search(query));
+      const local = rankFoodSearch(merge(await cached.search(query), await catalog.search(query)), query);
       if (!options?.online) return local;
       reserve('search');
       const timeout = AbortSignal.timeout(10_000);
@@ -66,8 +67,8 @@ export async function createFoodLookup(catalog: FoodCatalog, cache: SqliteConnec
       });
       checkCancelled(signal);
       await save(found);
-      // Keep newly found products visible even for broad queries with 100 local matches.
-      return merge(found, local);
+      // Fresh nutrition wins duplicate IDs; relevance decides display order.
+      return rankFoodSearch(merge(found, local), query);
     },
     barcode: async (input, signal) => {
       checkCancelled(signal);

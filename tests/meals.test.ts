@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { mealFood, summarizeMeal, scaleFood, entryAmountLabel, type MealInput } from '../lib/meals';
+import { mealFood, summarizeMeal, scaleFood, convertFoodQuantity, entryAmountLabel, type MealInput } from '../lib/meals';
 import { mealInputSchema } from '../lib/meal-validation';
 
 // Deliberately simple nutrition fixtures: 400 g at 200 kcal/100 g plus
@@ -11,6 +11,24 @@ const soup: MealInput = {
     { food: { ...food, id: 'tomatoes', name: 'Tomatoes' }, quantity: 200, unit: 'grams' },
   ], totalGrams: 1814.36948, servingGrams: 453.59237,
 };
+
+it('preserves the amount when switching between servings, weight, and volume measures', () => {
+  const mediumEgg = { ...food, servingGrams: 44 };
+  expect(convertFoodQuantity(mediumEgg, 2, 'serving', 'grams')).toBe(88);
+  expect(convertFoodQuantity(mediumEgg, 88, 'grams', 'serving')).toBe(2);
+  expect(convertFoodQuantity(mediumEgg, 2, 'serving', 'serving')).toBe(2);
+  const ounces = convertFoodQuantity(mediumEgg, 2, 'serving', 'ounces');
+  expect(convertFoodQuantity(mediumEgg, ounces, 'ounces', 'serving')).toBeCloseTo(2);
+  const drink = { ...food, servingGrams: null, nutritionBasis: '100ml' as const, servingMl: 150 };
+  expect(convertFoodQuantity(drink, 2, 'serving', 'milliliters')).toBe(300);
+  expect(convertFoodQuantity(drink, 300, 'milliliters', 'serving')).toBe(2);
+});
+
+it('keeps a logged human portion visible while retaining weight-only and legacy labels', () => {
+  expect(entryAmountLabel({ quantity: 2, unit: 'serving', grams: 88, servingLabel: '1 medium (44 g)' })).toBe('2 × 1 medium (44 g)');
+  expect(entryAmountLabel({ quantity: 1, unit: 'serving', grams: 44, servingLabel: '1 medium (44 g)' })).toBe('1 medium (44 g)');
+  expect(entryAmountLabel({ quantity: 88, unit: 'grams', grams: 88, servingLabel: '1 medium (44 g)' })).toBe('88 g');
+});
 
 describe('custom meal portions', () => {
   it('preserves per-serving restaurant nutrition in recipes with a measured batch weight', () => {

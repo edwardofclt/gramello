@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useEffect, useId, useRef, useState, type ReactNode } from 'react';
+import { useCallback, useEffect, useId, useLayoutEffect, useRef, useState, type ReactNode } from 'react';
 import { ChevronLeft, ChevronRight, Loader2, Plus, ScanBarcode, Search } from 'lucide-react';
 import { BarcodeScanner } from './barcode-scanner';
 import { CustomFoodForm } from './custom-food-form';
@@ -8,7 +8,8 @@ import { FoodVerification } from './food-verification';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { nutritionLabel } from '@/lib/food';
-import { scaleFood, nutrientKeys, foodUnits, servingQuantity, unitLabels, amountLabels, type AmountUnit, type Food, type Ingredient } from '@/lib/meals';
+import { ServingPicker } from './serving-picker';
+import { scaleFood, nutrientKeys, foodUnits, convertFoodQuantity, displayAmount, unitLabels, amountLabels, type AmountUnit, type Food, type Ingredient } from '@/lib/meals';
 import type { FoodApi } from '@/lib/food-api';
 import type { FoodSearchIssue, FoodSearchResult } from '@/lib/food-search';
 
@@ -35,16 +36,27 @@ export function FoodPicker({ api, initialFood, onChoose, actionLabel, children, 
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const lock = useRef(false);
+  const completedSearch = useRef<string | null>(null);
+  const picker = useRef<HTMLDivElement>(null);
+  const searchScroll = useRef(0);
+  const page = selected ? 'amount' : mode;
   const scaled = selected ? scaleFood(selected, Number(quantity), unit) : null;
-  const choose = useCallback((food: Food) => { setSelected(food); setMode('search'); setSearching(false); setQuantity('1'); setUnit('serving'); setError(null); }, []);
+  const choose = useCallback((food: Food) => {
+    if (page === 'search') searchScroll.current = picker.current?.closest('[role="dialog"]')?.scrollTop ?? 0;
+    setSelected(food); setMode('search'); setSearching(false); setQuantity('1'); setUnit('serving'); setError(null);
+  }, [page]);
+  useLayoutEffect(() => {
+    const dialog = picker.current?.closest('[role="dialog"]');
+    if (dialog) dialog.scrollTop = page === 'search' ? searchScroll.current : 0;
+  }, [page]);
   const lookup = useCallback(async (code: string, signal: AbortSignal) => (await api<{ food: Food }>(`/api/foods/barcode?code=${encodeURIComponent(code)}`, { signal })).food, [api]);
   useEffect(() => {
-    if (selected || mode !== 'search' || query.trim().length < 2) return;
+    if (selected || mode !== 'search' || query.trim().length < 2 || completedSearch.current === query.trim()) return;
     const controller = new AbortController();
     const timer = setTimeout(() => {
       setSearching(true);
       void api<FoodSearchResult>(`/api/foods/search?q=${encodeURIComponent(query.trim())}`, { signal: controller.signal })
-        .then(data => { if (!controller.signal.aborted) { setResults(data.foods); setPartial(!!data.partial); setIssues(data.issues ?? []); setHasMore(!!data.hasMore); } })
+        .then(data => { if (!controller.signal.aborted) { completedSearch.current = query.trim(); setResults(data.foods); setPartial(!!data.partial); setIssues(data.issues ?? []); setHasMore(!!data.hasMore); } })
         .catch(error => { if (!controller.signal.aborted) setError(error instanceof Error ? error.message : 'Food search is unavailable.'); })
         .finally(() => { if (!controller.signal.aborted) setSearching(false); });
     }, 350);
@@ -57,28 +69,30 @@ export function FoodPicker({ api, initialFood, onChoose, actionLabel, children, 
     catch (error) { setError(error instanceof Error ? error.message : 'Could not save this food.'); }
     finally { lock.current = false; setSaving(false); onBusy?.(false); }
   }
-  return <div className="food-picker">
+  return <div className="food-picker" ref={picker}>
     {error && <p role="alert" className="meal-error">{error}</p>}
     {mode === 'custom' ? <>
       <h3>Add custom food</h3>
-      <CustomFoodForm initialName={query} onBusy={busy => { setSaving(busy); onBusy?.(busy); }} onBack={() => setMode('search')} onSaved={choose} submit={async input => (await api<{ food: Food }>('/api/foods/custom', { method: 'POST', body: input })).food} />
-    </> : mode === 'scan' ? <BarcodeScanner lookup={lookup} onFound={choose} onBack={() => setMode('search')} /> : selected ? <div className="amount-panel">
+      <CustomFoodForm initialName={query} onBusy={busy => { setSaving(busy); onBusy?.(busy); }} onBack={() => setMode('search')} onSaved={food => { completedSearch.current = null; choose(food); }} submit={async input => (await api<{ food: Food }>('/api/foods/custom', { method: 'POST', body: input })).food} />
+    </> : mode === 'scan' ? <BarcodeScanner lookup={lookup} onFound={food => { completedSearch.current = null; choose(food); }} onBack={() => setMode('search')} /> : selected ? <div className="amount-panel">
       <button className="back-link" disabled={saving} onClick={() => { setSelected(null); setError(null); }}><ChevronLeft />Back to results</button>
       <h3>Choose amount</h3>
       <div className="selected-food">{selected.image ? <img src={selected.image} alt="" /> : <div>{selected.name.charAt(0)}</div>}<section><strong>{selected.name}</strong><span>{selected.brand ?? selected.source} · {selected.servingLabel}</span><FoodVerification verified={selected.verified} />
         {selected.sourceUrl && <a className="nutrition-source" href={selected.sourceUrl} target="_blank" rel="noreferrer">View nutrition source</a>}
       </section></div>
       {children}
+      {unit === 'serving' && <ServingPicker food={selected} disabled={saving} onChange={food => { setSelected(food); setError(null); }} />}
       <div className="field-grid">
-        <label>Measure<select aria-label="Measure" value={unit} disabled={saving} onChange={event => { const next = event.target.value as AmountUnit; setUnit(next); setQuantity(String(servingQuantity(selected, next))); }}>{foodUnits(selected).map(item => <option key={item} value={item}>{item === 'serving' ? `Servings (${selected.servingLabel})` : item === 'ounces' ? 'Ounces (weight)' : unitLabels[item]}</option>)}</select></label>
+        <label>Measure<select aria-label="Measure" value={unit} disabled={saving} onChange={event => { const next = event.target.value as AmountUnit; setQuantity(String(convertFoodQuantity(selected, Number(quantity), unit, next))); setUnit(next); }}>{foodUnits(selected).map(item => <option key={item} value={item}>{item === 'serving' ? `Servings (${selected.servingLabel})` : item === 'ounces' ? 'Ounces (weight)' : unitLabels[item]}</option>)}</select></label>
         <label>{amountLabels[unit]}<Input type="number" step="any" min="0" value={quantity} disabled={saving} onChange={event => setQuantity(event.target.value)} /></label>
       </div>
+      {unit === 'serving' && scaled && <p className="meal-hint" role="status">{displayAmount(Number(quantity))} × {selected.servingLabel}{scaled.grams !== null ? ` = ${displayAmount(scaled.grams)} g total` : selected.servingMl ? ` = ${displayAmount(Number(quantity) * selected.servingMl)} mL total` : ''}</p>}
       <NutritionPreview nutrition={scaled} />
       {!scaled && <p className="meal-hint">Enter an amount greater than zero.</p>}
       <Button className="confirm-button" disabled={!scaled || saving} onClick={() => void submit()}>{saving && <Loader2 className="spin" />}{actionLabel}</Button>
     </div> : <>
-      <div className="search-box"><Search /><Input aria-label="Search foods" autoFocus value={query} onChange={event => { setQuery(event.target.value); setResults([]); setPartial(false); setIssues([]); setShowSearchDetails(false); setHasMore(false); setError(null); setSearching(event.target.value.trim().length >= 2); }} placeholder="Try chicken breast, oats, or a brand…" />{searching && <Loader2 className="spin" />}</div>
-      <div className="food-actions"><Button variant="outline" onClick={() => { setMode('scan'); setSearching(false); setError(null); }}><ScanBarcode />Scan barcode</Button><Button variant="outline" onClick={() => { setMode('custom'); setSearching(false); setError(null); }}><Plus />Add custom food</Button></div>
+      <div className="search-box"><Search /><Input aria-label="Search foods" autoFocus={!query} value={query} onChange={event => { if (event.target.value === query) return; completedSearch.current = null; searchScroll.current = 0; setQuery(event.target.value); setResults([]); setPartial(false); setIssues([]); setShowSearchDetails(false); setHasMore(false); setError(null); setSearching(event.target.value.trim().length >= 2); }} placeholder="Try chicken breast, oats, or a brand…" />{searching && <Loader2 className="spin" />}</div>
+      <div className="food-actions"><Button variant="outline" onClick={() => { searchScroll.current = picker.current?.closest('[role="dialog"]')?.scrollTop ?? 0; setMode('scan'); setSearching(false); setError(null); }}><ScanBarcode />Scan barcode</Button><Button variant="outline" onClick={() => { searchScroll.current = picker.current?.closest('[role="dialog"]')?.scrollTop ?? 0; setMode('custom'); setSearching(false); setError(null); }}><Plus />Add custom food</Button></div>
       <div className="source-pills"><span>Restaurant menus</span><span>USDA</span><span>Open Food Facts</span><span>Community foods</span></div>
       {partial && <div className="food-notice" role="status">
         <button type="button" className="food-notice-toggle" aria-label="Some nutrition databases are unavailable." aria-expanded={showSearchDetails} aria-controls={searchDetailsId} onClick={() => setShowSearchDetails(value => !value)}>

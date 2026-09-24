@@ -4,6 +4,7 @@ import { ActivityIndicator, Text, View } from 'react-native';
 import { useSession } from '../diary/Session';
 import { Action, Card, colors, ErrorNotice, Field, isWeb, styles } from '../components/ui';
 import { FoodPicker } from './FoodPicker';
+import { ServingPicker } from '../components/ServingPicker';
 import { useMealDraft } from '../../../hooks/use-meal-draft';
 import { useMealLibrary } from '../../../hooks/use-meal-library';
 import { displayAmount, GRAMS_PER_OUNCE, mealFood, nutrientKeys, scaleFood, summarizeMeal, type CustomMeal, type Food } from '../../../lib/meals';
@@ -58,6 +59,7 @@ function MealEditor({ date, initialMeal, initial, onSaved, onBack, onBusy }: { d
     <Text style={styles.eyebrow}>INGREDIENTS</Text>
     {draft.ingredients.map((ingredient, index) => <Card key={index}>
       <Text style={styles.body}>{ingredient.food.name}</Text>
+      {ingredient.unit === 'serving' && <ServingPicker food={ingredient.food} disabled={saving} onChange={food => draft.setIngredients(items => items.map((item, i) => i === index ? { ...item, food } : item))} />}
       <Field label={`Amount of ${ingredient.food.name}`} hint={ingredient.unit === 'serving' ? ingredient.food.servingLabel : unitHint(ingredient.unit)} keyboardType="decimal-pad" value={ingredient.amountText ?? String(ingredient.quantity)} editable={!saving} onChangeText={value => draft.setIngredients(items => items.map((item, i) => i === index ? { ...item, quantity: Number(value), amountText: value } : item))} />
       <Action secondary label={`Remove ingredient ${ingredient.food.name}`} disabled={saving} onPress={() => draft.setIngredients(items => items.filter((_, i) => i !== index))}>Remove ingredient</Action>
     </Card>)}

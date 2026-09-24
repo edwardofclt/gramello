@@ -2,6 +2,7 @@ import { withBrowserDiary } from '@/lib/browser-diary';
 import { cacheDatabaseFoods, findFoods } from '@/db/foods';
 import { referenceFoods, searchOpenFoodFacts, searchUsda } from '@/lib/food-providers';
 import { foodSearchIssue } from '@/lib/food-search';
+import { rankFoodSearch } from '@/lib/food-search-ranking';
 
 export async function GET(request: Request) {
   return withBrowserDiary(request, async () => {
@@ -13,12 +14,11 @@ export async function GET(request: Request) {
       const providers = await Promise.allSettled([searchUsda(query, signal), searchOpenFoodFacts(query, signal)]);
       const sources = ['USDA FoodData Central', 'Open Food Facts'];
       const issues = providers.flatMap((result, index) => result.status === 'rejected' ? [foodSearchIssue(sources[index], result.reason)] : []);
-      const reference = referenceFoods.filter(food => food.name.toLowerCase().includes(query.toLowerCase()));
+      const reference = rankFoodSearch(referenceFoods, query);
       const fetched = providers.flatMap(result => result.status === 'fulfilled' ? result.value : []);
       await cacheDatabaseFoods([...reference, ...fetched]);
       const local = await findFoods(query, 101);
-      // Providers may match synonyms that aren't literal substrings. Keep those too.
-      const foods = [...new Map([...local, ...fetched].map(food => [food.id, food])).values()];
+      const foods = rankFoodSearch([...fetched, ...local], query);
       return Response.json({ foods: foods.slice(0, 100), hasMore: foods.length > 100, partial: issues.length > 0, issues });
     } catch (error) {
       console.error('Food search failed', error);

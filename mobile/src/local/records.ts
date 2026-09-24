@@ -1,5 +1,6 @@
 import { z } from 'zod';
 import { summarizeMeal } from '../../../lib/meals';
+import { foodServingFields } from '../../../lib/food';
 import { waterDateSchema, waterGoalSchema, waterEntrySchema } from '../../../lib/water';
 
 export const MAX_ARCHIVE_BYTES = 32 * 1024 * 1024;
@@ -9,6 +10,7 @@ export const nutritionSchema = z.object({ calories: finite, protein: finite, car
 export const goalsSchema = nutritionSchema.extend({ calories: z.number().finite().positive().max(100000) });
 const timestamp = z.string().datetime({ offset: true });
 export const foodSchema = nutritionSchema.extend({
+  ...foodServingFields,
   id, name: z.string().min(1).max(300), source: z.string().min(1).max(200), brand: z.string().max(300).optional(),
   sourceUrl: z.string().url().max(2000).optional(), sourceKind: z.enum(['database', 'restaurant', 'custom']).optional(), verified: z.boolean().optional(),
   servingGrams: z.number().finite().nonnegative().max(1e6).nullable(), servingLabel: z.string().max(200),

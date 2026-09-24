@@ -6,6 +6,7 @@ import { ChevronLeft, Loader2, Plus, Trash2 } from 'lucide-react';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { FoodPicker, NutritionPreview } from './food-picker';
+import { ServingPicker } from './serving-picker';
 import { useMealDraft } from '@/hooks/use-meal-draft';
 import { useMealLibrary } from '@/hooks/use-meal-library';
 import { displayAmount, GRAMS_PER_OUNCE, mealFood, scaleFood, summarizeMeal, type CustomMeal, type Food } from '@/lib/meals';
@@ -58,7 +59,9 @@ function MealEditor({ api, initial, onSaved, onBack, onBusy }: { api: FoodApi; i
     <label className="meal-field">Meal name<Input value={draft.name} maxLength={150} disabled={saving} onChange={event => draft.setName(event.target.value)} placeholder="Beef & vegetable soup" /></label>
     <section className="meal-builder"><h4>Ingredients</h4>
       {draft.ingredients.map((ingredient, index) => <div className="ingredient-row" key={index}>
-        <div><strong>{ingredient.food.name}</strong><span>{ingredient.unit === 'serving' ? ingredient.food.servingLabel : unitHint(ingredient.unit)}</span></div>
+        <div><strong>{ingredient.food.name}</strong><span>{ingredient.unit === 'serving' ? ingredient.food.servingLabel : unitHint(ingredient.unit)}</span>
+          {ingredient.unit === 'serving' && <ServingPicker food={ingredient.food} disabled={saving} onChange={food => draft.setIngredients(items => items.map((item, i) => i === index ? { ...item, food } : item))} />}
+        </div>
         <Input aria-label={`Amount of ${ingredient.food.name}`} type="number" min="0" step="any" disabled={saving} value={ingredient.amountText ?? String(ingredient.quantity)} onChange={event => draft.setIngredients(items => items.map((item, i) => i === index ? { ...item, quantity: Number(event.target.value), amountText: event.target.value } : item))} />
         <Button variant="ghost" aria-label={`Remove ingredient ${ingredient.food.name}`} disabled={saving} onClick={() => draft.setIngredients(items => items.filter((_, i) => i !== index))}><Trash2 /></Button>
       </div>)}
