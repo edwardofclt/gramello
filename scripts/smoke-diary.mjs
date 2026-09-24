@@ -29,16 +29,28 @@ try {
   for (let attempt = 0; attempt < 120; attempt++) {
     if (server.exitCode !== null) throw new Error("Worker exited during startup");
     try {
-      const response = await fetch(`${base}/api/day`);
+      const response = await fetch(`${base}/api/day`, { signal: AbortSignal.timeout(2_000) });
+      await response.arrayBuffer();
       assert.equal(response.status, 200);
       ready = true;
       break;
     } catch { await delay(500); }
   }
   assert.ok(ready, "Worker did not become ready without login");
-  const request = (path, options = {}) => fetch(`${base}${path}`, {
-    ...options, redirect: "manual", headers: { "Content-Type": "application/json", Origin: base, ...options.headers },
-  });
+  const request = async (path, options = {}) => {
+    try {
+      const response = await fetch(`${base}${path}`, {
+        ...options, signal: AbortSignal.timeout(20_000), redirect: "manual",
+        headers: { "Content-Type": "application/json", Origin: base, ...options.headers },
+      });
+      // Many checks only inspect status. Drain every network response so those
+      // checks release their connection too, rather than relying on GC.
+      const body = await response.arrayBuffer();
+      return new Response(body.byteLength ? body : null, {
+        status: response.status, statusText: response.statusText, headers: response.headers,
+      });
+    } catch (cause) { throw new Error(`Smoke request failed: ${options.method ?? 'GET'} ${path}`, { cause }); }
+  };
   const openDiary = async () => {
     const response = await request('/');
     assert.equal(response.status, 200);
