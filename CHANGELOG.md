@@ -1,3 +1,9 @@
+## [1.16.1](https://github.com/edwardofclt/gramello/compare/v1.16.0...v1.16.1) (2026-09-26)
+
+### Bug Fixes
+
+* **android:** attach installable APK to each release ([e6a9bda](https://github.com/edwardofclt/gramello/commit/e6a9bda891678e24f075139ada3263ea11e2300f))
+
 ## [1.16.0](https://github.com/edwardofclt/gramello/compare/v1.15.2...v1.16.0) (2026-09-24)
 
 ### Features
