@@ -2,7 +2,7 @@
 
 **Native iOS/Android now run locally with SQLite and no sign-in.** Settings holds daily calorie, macro, and water goals, including the preferred water unit. Water logging stays in the diary. Food catalogs update automatically; **Settings → Advanced** offers an immediate update check, complete backup export/import, CSV export, and recovery after replacement. See [local-data setup and publishing](../docs/client-only-implementation.md). The browser edition also opens directly, with a hosted diary tied to that browser's anonymous cookie.
 
-Production Android builds produce Play Store AABs. GitHub APK distribution is manual. Catalog signing setup is required before the first downloadable catalog release.
+Production Android builds produce Play Store AABs. Stable GitHub releases also include an installable APK. Catalog signing setup is required before the first downloadable catalog release.
 
 An Expo / React Native app using gluestack-ui core 5, with a daily diary,
 food search, recipes, water tracking, trends, and editable nutrition goals.
@@ -288,7 +288,7 @@ scheme `nourish` are retained so existing installs and the linked EAS project
 continue to work. `eas.json` provides development (iOS simulator), preview
 (internal devices), production (store), and production-apk profiles.
 
-## Store builds and manual APKs
+## Store builds and release APKs
 
 Stable releases call **TestFlight** for an iOS build/submission and **Android store bundle** for an AAB. The Android workflow builds without submitting; Google
 Play service-account setup and upload remain release tasks. Set a paid-download
@@ -308,10 +308,12 @@ Retain the keystore so subsequent releases can update installed apps. TestFlight
 submission does not release the app publicly. The store profiles contain no
 hosted API environment values.
 
-For direct APK distribution, manually run **Android APK (manual distribution)**
-in Actions with a stable release tag containing the `production-apk` profile.
-It builds a signed APK and attaches it to that release. Stable releases no longer
-start APK builds automatically. APKs are for direct installation; Play uses AABs.
+Stable releases also call **Android APK (release distribution)**, which uses the
+`production-apk` profile to build a signed APK and attach
+`gramello-<release-tag>.apk` to the GitHub release. APKs are for direct
+installation; Play uses AABs. To retry APK distribution for an existing stable
+release, manually run the APK workflow in Actions with its release tag. The
+workflow replaces the APK asset on reruns.
 
 Catalog publication is separate from binary releases. Follow
 [signing and publication setup](../docs/client-only-implementation.md) before the

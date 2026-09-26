@@ -44,7 +44,7 @@ Changing the signing key requires an application update; keep the current key st
 
 Without `CATALOG_SIGNING_KEY`, the publisher explicitly skips publication with a setup notice. Configure the secret and rerun the workflow to enable public catalog updates.
 
-Production EAS Android builds produce an AAB. Application releases now build store bundles instead of automatically publishing unrestricted APKs. Manual APK distribution remains an explicit workflow. iOS TestFlight continues through the existing workflow. Store pricing, agreements, screenshots, actual store submission, and customer migration timing remain release operations.
+Production EAS Android builds produce an AAB for Google Play. Application releases also build a signed APK with the `production-apk` profile and attach it to the GitHub release for direct installation. The APK workflow supports manual reruns for existing stable releases. iOS TestFlight continues through the existing workflow. Store pricing, agreements, screenshots, actual store submission, and customer migration timing remain release operations.
 
 Run:
 

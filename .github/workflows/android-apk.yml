@@ -1,4 +1,4 @@
-name: Android APK (manual distribution)
+name: Android APK (release distribution)
 
 on:
   workflow_call:

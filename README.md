@@ -353,9 +353,10 @@ build a signed Android AAB. Android upload/submission to Google Play remains a
 separate release task; TestFlight submission does not publish an App Store release.
 The builds use the release tag's code and version, with EAS incrementing build
 numbers. The repository's `EXPO_TOKEN` Actions secret authenticates the jobs.
-Signed APK distribution is a separate manual workflow that attaches the APK to
-an existing stable GitHub release. See
-[store builds and manual APKs](mobile/README.md#store-builds-and-manual-apks)
+Stable releases also build a signed APK and attach `gramello-<release-tag>.apk`
+to the GitHub release for direct installation on Android. The APK workflow can
+be rerun manually for an existing stable release. See
+[store builds and release APKs](mobile/README.md#store-builds-and-release-apks)
 for signing credentials and reruns.
 
 Catalog publication is independent: **Publish food catalog** runs manually or

@@ -57,6 +57,17 @@ jobs:
     with:
       release_tag: ${{ needs.release.outputs.tag }}
 
+  android-apk:
+    needs: release
+    if: needs.release.outputs.published == 'true'
+    permissions:
+      contents: write
+    uses: ./.github/workflows/android-apk.yml
+    with:
+      release_tag: ${{ needs.release.outputs.tag }}
+    secrets:
+      EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
+
   android-store:
     needs: release
     if: needs.release.outputs.published == 'true'
