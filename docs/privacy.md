@@ -1,6 +1,6 @@
 # Gramello privacy policy
 
-Effective date: September 22, 2026
+Effective date: September 26, 2026
 
 Gramello is a food diary and calorie/macronutrient tracker provided by Edward
 Herbert II. This policy describes Gramello's account-free Android and iOS apps
@@ -8,13 +8,22 @@ and its website. Contact
 [gramello@edwardofclt.com](mailto:gramello@edwardofclt.com) with privacy questions
 or requests.
 
-## No Gramello account or server-stored diary
+## No Gramello account; local diary storage
 
 You do not need a Gramello account. Your diary, water entries, goals, saved meals,
 and custom foods are stored on your device. We do not keep a server-side copy of
-your personal tracking data or provide account-based syncing between devices.
-There is no Gramello account to delete, and we cannot access, export, recover,
-or delete a copy of your diary from our servers because we do not hold one.
+new personal tracking data in the native or main web app, or provide
+account-based syncing between devices. The main web app stores its diary in this
+browser's IndexedDB storage. Export a backup before clearing site data.
+
+Earlier hosted-web versions and the retained Expo browser client use an
+anonymous browser cookie and server storage. Those existing records are retained
+for recovery. Custom foods created through the retained Expo browser client or
+compatibility API are shared in the server food catalog and searchable by other
+clients using that API. The main web app copies an existing hosted diary into an
+empty local diary on first use, without deleting the server copy. Its Settings screen
+can download that hosted diary while the original cookie is available. There is
+no account login for recovery.
 
 This does not mean that using Gramello involves no information processing.
 The native apps send limited usage analytics, described below. Online food
@@ -25,9 +34,11 @@ not included in usage analytics.
 ## Information used by Gramello
 
 - **Personal tracking information:** Food and water entries, amounts, nutrition
-  values, goals, saved meals, and custom foods are used on your device to provide
-  your diary, totals, and trends. They are not uploaded as a personal diary to
-  Gramello's servers.
+  values, goals, saved meals, and custom foods provide your diary, totals, and
+  trends. Native and main-web apps keep this data locally and do not upload it
+  as a personal diary to Gramello's servers. The retained Expo browser client
+  sends its diary changes to the compatibility server and shares custom foods
+  through that server's food catalog, as described above.
 - **Search and barcode information:** Online food-search terms and product
   barcodes are sent to food-lookup services, including USDA FoodData Central
   and/or Open Food Facts as appropriate, to retrieve nutrition information.
@@ -57,9 +68,10 @@ precise location, contacts, or photo library.
 
 ## How information is used
 
-Personal tracking data is used on your device to save entries and meals,
-calculate nutrition totals, and show trends. Online requests retrieve food
-information. Support messages help us answer questions and investigate problems;
+Personal tracking data is used to save entries and meals, calculate nutrition
+totals, and show trends. Native and main-web apps perform these operations
+locally; the retained Expo browser client uses the hosted API. Online requests
+retrieve food information. Support messages help us answer questions and investigate problems;
 technical information helps providers operate and protect their services.
 
 We do not sell your nutrition diary data or use it for targeted advertising.
@@ -134,22 +146,29 @@ the native app's Segment events or run advertising integrations. GitHub receives
 information when it serves a page, including your IP address; see the
 [GitHub Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
 
+The main tracker retains an anonymous diary cookie to recover older hosted data.
+It uses IndexedDB and a service worker to store the local diary and offline app
+assets. Personal API responses are not cached by the service worker. The retained
+Expo browser client continues to use cookie-scoped hosted diary storage.
 Gramello does not use account-authentication cookies. External services you
 choose to visit, including OneLink and the app stores, follow their own cookie
 and privacy policies.
 
 ## Storage and retention
 
-Personal tracking records are stored on your device. You control the device
-and any backups available through your operating system or other backup tools.
+Native and main-web personal tracking records are stored on your device or in
+your browser. You control the device and any backups available through your
+operating system or other backup tools.
 Backup and removal behavior depends on your platform and settings; removing
-the app may not remove a separate device backup. We do not keep a server backup
-of your diary and cannot restore it for you.
+the app may not remove a separate device backup. New native and main-web diary changes have no automatic server backup.
+Use Settings to export a portable backup. Earlier hosted records are retained as
+described above; new local changes are never added to that server copy.
 
 Support correspondence is retained as needed to address your request and meet
 applicable obligations. External providers may retain their own technical,
 purchase, or support records under their policies. There is no Gramello account
-record or server-stored diary retained by us.
+record. Earlier hosted diary records and the retained Expo browser client's
+records remain in server storage until removed by the host.
 
 The random analytics identifier persists in app storage across launches.
 Clearing app storage creates a new identifier; restoring a device backup may
@@ -175,8 +194,8 @@ additional analytics controls are available.
 For help or a privacy request concerning information you have sent us, email
 [gramello@edwardofclt.com](mailto:gramello@edwardofclt.com). We may ask for the
 information needed to identify and handle your request. Do not send passwords,
-sign-in codes, or payment-card details. We cannot supply a server export of your
-diary because we do not store one.
+sign-in codes, or payment-card details. We cannot supply a server export of new local diary changes. Earlier hosted
+records can be exported through the original browser cookie as described above.
 
 Analytics records use the random installation identifier, not your name or
 email. An email address alone does not identify those records. Contact us for

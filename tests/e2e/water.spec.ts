@@ -1,7 +1,7 @@
-import { test, expect } from './fixtures';
+import { test, expect, openDiary } from './fixtures';
 
 test('water goals, units and entries persist across reloads and diary dates', async ({ page }) => {
-  await page.goto('/');
+  await openDiary(page);
   const card = page.getByRole('region', { name: 'Water intake' });
   await expect(card.locator('.water-total')).toHaveText('0 mLof 2000 mL');
   await card.getByRole('button', { name: '+ 250 mL', exact: true }).click();
@@ -34,20 +34,19 @@ test('water goals, units and entries persist across reloads and diary dates', as
   await page.screenshot({ path: `test-results/water-${test.info().project.name}.png`, fullPage: true });
 });
 
-test('a failed water save retains the draft and does not change progress', async ({ page }) => {
-  await page.goto('/');
+test('invalid water amounts do not change progress, and a corrected amount persists', async ({ page }) => {
+  await openDiary(page);
   const card = page.getByRole('region', { name: 'Water intake' });
   await expect(card.locator('.water-total')).toHaveText('0 mLof 2000 mL');
-  await page.route('**/api/water', route => route.fulfill({ status: 503, json: { error: 'Water intake could not be saved.' } }));
   const input = card.getByLabel('Custom amount (mL)');
   await input.fill('-5');
   await expect(card.getByRole('button', { name: 'Add water', exact: true })).toBeDisabled();
+  await input.fill('10001');
+  await expect(card.getByRole('button', { name: 'Add water', exact: true })).toBeDisabled();
+  await expect(card.locator('.water-total')).toHaveText('0 mLof 2000 mL');
   await input.fill('375');
   await card.getByRole('button', { name: 'Add water', exact: true }).click();
-  await expect(card.getByRole('alert')).toContainText('could not be saved');
-  await expect(input).toHaveValue('375');
-  await expect(card.locator('.water-total')).toHaveText('0 mLof 2000 mL');
-  await page.unroute('**/api/water');
-  await card.getByRole('button', { name: 'Add water', exact: true }).click();
+  await expect(card.locator('.water-total')).toHaveText('375 mLof 2000 mL');
+  await openDiary(page);
   await expect(card.locator('.water-total')).toHaveText('375 mLof 2000 mL');
 });

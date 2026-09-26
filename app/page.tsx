@@ -1,7 +1,7 @@
-import GramelloApp from "./gramello-app";
+import { BrowserApp } from "@/components/browser-app";
 
 export const dynamic = "force-dynamic";
 
 export default function Home() {
-  return <GramelloApp />;
+  return <BrowserApp />;
 }

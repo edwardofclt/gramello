@@ -24,7 +24,7 @@ export function CustomFoodForm({ initialName, submit, onSaved, onBack, onBusy }:
   }
   return <form className="custom-food-form" onSubmit={event => { event.preventDefault(); void save(); }} noValidate>
     <button type="button" className="back-link" onClick={onBack} disabled={saving}>Back to search</button>
-    <p>Enter the total nutrition for <strong>one serving</strong> as described below. This food will be searchable by everyone and labeled <strong>Unverified</strong>.</p>
+    <p>Enter the total nutrition for <strong>one serving</strong> as described below. This food stays in your browser and is labeled <strong>Unverified</strong>.</p>
     <div className="custom-food-fields">{customFoodFields.map(([key, label, type]) => <label key={key} className={type === 'text' ? 'wide' : ''}>
       <span>{label}</span><Input aria-label={label} type={type} min={key === 'servingGrams' ? '0.01' : '0'} step="any" disabled={saving}
         maxLength={key === 'name' ? 200 : 120} value={draft[key]} autoFocus={key === 'name'}

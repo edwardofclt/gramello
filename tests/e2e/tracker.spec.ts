@@ -1,31 +1,21 @@
 import { type Page } from '@playwright/test';
-import { test, expect } from './fixtures';
-import { execFileSync } from 'node:child_process';
+import { test, expect, openDiary, seedDiary, savedEntries, localDiary } from './fixtures';
 
 const foods = [
-  { id: 'test-oats', name: 'Rolled oats', source: 'USDA reference', calories: 400, protein: 10, carbs: 60, fat: 10, servingGrams: 40, servingLabel: '40 g' },
-  { id: 'test-brand', name: 'Brand granola', brand: 'Test Kitchen', source: 'Open Food Facts', calories: 500, protein: 12, carbs: 65, fat: 20, servingGrams: 30, servingLabel: '30 g' },
+  { id: 'test-oats', name: 'Rolled oats', brand: 'e2eprivate', source: 'USDA reference', calories: 400, protein: 10, carbs: 60, fat: 10, servingGrams: 40, servingLabel: '40 g' },
+  { id: 'test-brand', name: 'Brand granola', brand: 'Test Kitchen e2eprivate', source: 'Open Food Facts', calories: 500, protein: 12, carbs: 65, fat: 20, servingGrams: 30, servingLabel: '30 g' },
 ];
 
-async function openDiary(page: Page) {
-  const loaded = page.waitForResponse(r => r.url().includes('/api/day') && r.ok());
-  await page.goto('/');
-  await loaded;
-  await expect(page.getByText('Loading your diary…')).toBeHidden();
-}
-
-async function search(page: Page, results = foods) {
-  // Only food search is stubbed: external providers are rate-limited and change data.
-  await page.route('**/api/foods/search?*', route => route.fulfill({ json: { foods: results } }));
+async function search(page: Page, count = foods.length) {
   await page.getByRole('button', { name: 'Add Breakfast', exact: true }).click();
-  await page.getByPlaceholder('Try chicken breast, oats, or a brand…').fill('oats');
-  await expect(page.locator('.result-row')).toHaveCount(results.length);
+  await page.getByPlaceholder('Try chicken breast, oats, or a brand…').fill('e2eprivate');
+  await expect(page.locator('.result-row')).toHaveCount(count);
 }
 
-test('edits a logged food in place, retries a failed save, and persists after reload', async ({ page }) => {
-  await openDiary(page);
+test('edits a logged food in place, cancels a draft, and persists after reload', async ({ page }) => {
+  await seedDiary(page, foods);
   await search(page);
-  await page.getByRole('button', { name: /Rolled oats USDA reference/ }).click();
+  await page.getByRole('button', { name: /Rolled oats e2eprivate/ }).click();
   await page.getByRole('button', { name: 'Add to Breakfast', exact: true }).click();
   await expect(page.getByRole('dialog')).toBeHidden();
   const item = page.getByRole('button', { name: 'Edit Rolled oats', exact: true });
@@ -42,17 +32,7 @@ test('edits a logged food in place, retries a failed save, and persists after re
   await expect(amount).toHaveValue('1');
   await amount.fill('2');
   await page.getByRole('combobox', { name: 'Meal', exact: true }).selectOption('Dinner');
-  await page.route('**/api/entries?id=*', async route => {
-    if (route.request().method() === 'PUT') await route.fulfill({ status: 503, json: { error: 'Please try saving again.' } });
-    else await route.continue();
-  });
   await page.getByRole('button', { name: 'Save changes' }).click();
-  await expect(page.getByRole('alert')).toContainText('Please try saving again.');
-  await expect(amount).toHaveValue('2');
-  await page.unroute('**/api/entries?id=*');
-  const saved = page.waitForResponse(response => response.url().includes('/api/entries?id=') && response.request().method() === 'PUT');
-  await page.getByRole('button', { name: 'Save changes' }).click();
-  expect((await saved).status()).toBe(200);
   await expect(page.getByRole('dialog')).toBeHidden();
   await expect(page.locator('.food-row')).toHaveCount(1);
   await expect(page.locator('.meal-card').filter({ has: page.getByRole('heading', { name: 'Dinner', exact: true }) })).toContainText('Rolled oats');
@@ -65,29 +45,32 @@ test('edits a logged food in place, retries a failed save, and persists after re
 });
 
 test('generic and branded foods scale by servings and grams and survive reload', async ({ page }) => {
-  await openDiary(page);
+  await seedDiary(page, foods);
   await search(page);
-  await page.getByRole('button', { name: /Rolled oats USDA reference/ }).click();
+  await page.getByRole('button', { name: /Rolled oats e2eprivate/ }).click();
   await page.getByRole('spinbutton').fill('2');
   await expect(page.locator('.nutrition-preview')).toContainText('320');
-  const saved = page.waitForResponse(r => r.url().endsWith('/api/entries') && r.request().method() === 'POST');
   await page.getByRole('button', { name: 'Add to Breakfast', exact: true }).click();
-  expect((await saved).status()).toBe(201);
-  expect(await (await saved).json()).toMatchObject({ grams: 80, calories: 320, protein: 8, carbs: 48, fat: 8 });
+  await expect(page.getByRole('dialog')).toBeHidden();
+  expect((await savedEntries(page))[0]).toMatchObject({ grams: 80, calories: 320, protein: 8, carbs: 48, fat: 8 });
   await search(page);
   await page.getByRole('button', { name: /Brand granola Test Kitchen/ }).click();
   await page.getByRole('combobox').nth(1).selectOption('grams');
   await page.getByRole('spinbutton').fill('60');
   await expect(page.locator('.nutrition-preview')).toContainText('300');
-  const branded = page.waitForResponse(r => r.url().endsWith('/api/entries') && r.request().method() === 'POST');
   await page.getByRole('button', { name: 'Add to Breakfast', exact: true }).click();
-  const brandedEntry = await (await branded).json();
+  await expect(page.getByRole('dialog')).toBeHidden();
+  const brandedEntry = (await savedEntries(page)).find(entry => entry.name === 'Brand granola')!;
   expect(brandedEntry).toMatchObject({ grams: 60, calories: 300, carbs: 39, fat: 12 });
   expect(brandedEntry.protein).toBeCloseTo(7.2, 6);
   await openDiary(page);
   await expect(page.locator('.food-row')).toHaveCount(2);
   await expect(page.locator('.calorie-focus h2')).toContainText('620');
   await page.getByRole('button', { name: 'Remove Rolled oats', exact: true }).click();
+  await page.getByRole('button', { name: 'Cancel', exact: true }).click();
+  await expect(page.locator('.food-row')).toHaveCount(2);
+  await page.getByRole('button', { name: 'Remove Rolled oats', exact: true }).click();
+  await page.getByRole('button', { name: 'Remove food', exact: true }).click();
   await expect(page.locator('.food-row')).toHaveCount(1);
   await openDiary(page);
   await expect(page.locator('.food-row')).toHaveCount(1);
@@ -119,8 +102,8 @@ test('macro edits recalculate calories; calorie edits preserve percentages and s
 test('search and serving dialogs scroll on a short mobile viewport', async ({ page, isMobile }) => {
   test.skip(!isMobile, 'Mobile regression');
   await page.setViewportSize({ width: 390, height: 500 });
-  await openDiary(page);
-  await search(page, Array.from({ length: 24 }, (_, i) => ({ ...foods[0], id: `food-${i}`, name: `Oats item ${i}` })));
+  await seedDiary(page, Array.from({ length: 24 }, (_, i) => ({ ...foods[0], id: `food-${String(i).padStart(2, '0')}`, name: `Oats item ${String(i).padStart(2, '0')}` })));
+  await search(page, 24);
   const dialog = page.getByRole('dialog');
   async function checkScrolling() {
     const geometry = await dialog.evaluate(el => {
@@ -134,7 +117,7 @@ test('search and serving dialogs scroll on a short mobile viewport', async ({ pa
     expect(geometry.after).toBeGreaterThan(geometry.before);
   }
   await checkScrolling();
-  const last = page.getByRole('button', { name: /Oats item 23 USDA/ });
+  const last = page.getByRole('button', { name: /Oats item 23 e2eprivate/ });
   await expect(last).toBeInViewport();
   await last.click();
   await expect(page.getByRole('heading', { name: 'Choose amount' })).toBeVisible();
@@ -146,62 +129,77 @@ test('search and serving dialogs scroll on a short mobile viewport', async ({ pa
   await expect(page.locator('.food-row')).toContainText('Oats item 23');
 });
 
-test('week, month and six-month views request the right range and render charts', async ({ page }) => {
-  await openDiary(page);
+test('week, month and six-month views render charts and a keyboard-accessible day readout', async ({ page }) => {
+  await seedDiary(page, foods);
+  const historicalDates = await page.evaluate(() => [10, 90].map(days => {
+    const date = new Date(); date.setDate(date.getDate() - days);
+    return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+  }));
+  for (const [index, date] of historicalDates.entries()) {
+    await localDiary(page, 'addEntry', [{ date, meal: 'Breakfast', sourceId: 'test-oats', quantity: index + 2, unit: 'serving' }]);
+  }
   await search(page);
-  await page.getByRole('button', { name: /Rolled oats USDA reference/ }).click();
+  await page.getByRole('button', { name: /Rolled oats e2eprivate/ }).click();
   await page.getByRole('button', { name: 'Add to Breakfast', exact: true }).click();
   await expect(page.getByRole('dialog')).toBeHidden();
-  const loaded = page.waitForResponse(r => r.url().includes('/api/trends?days=7') && r.ok());
   await page.getByRole('button', { name: 'Trends', exact: true }).filter({ visible: true }).click();
-  await loaded;
-  for (const [label, days] of [['30 days', 30], ['6 months', 183], ['7 days', 7]] as const) {
-    const response = page.waitForResponse(r => r.url().includes(`/api/trends?days=${days}`) && r.ok());
+  for (const [label, average] of [['30 days', '240'], ['6 months', '320'], ['7 days', '160']] as const) {
     await page.getByRole('tab', { name: label, exact: true }).click();
-    expect((await (await response).json()).days.length).toBeGreaterThan(0);
     await expect(page.getByRole('tab', { name: label, exact: true })).toHaveAttribute('aria-selected', 'true');
     await expect(page.locator('.chart-wrap svg').first()).toBeVisible();
+    await expect(page.locator('.stat-grid > div').first().locator('strong')).toHaveText(average);
+    const inspector = page.getByRole('group', { name: 'Logged day details' });
+    await expect(inspector).toContainText('160 kcal');
+    const previous = inspector.getByRole('button', { name: 'Previous day' });
+    if (label === '7 days') await expect(previous).toBeDisabled();
+    else {
+      await previous.focus();
+      await page.keyboard.press('ArrowLeft');
+      await expect(inspector).toContainText('320 kcal');
+      await expect(inspector.locator('time')).toHaveAttribute('datetime', historicalDates[0]);
+      if (label === '6 months') {
+        await page.keyboard.press('ArrowLeft');
+        await expect(inspector).toContainText('480 kcal');
+        await expect(inspector.locator('time')).toHaveAttribute('datetime', historicalDates[1]);
+      }
+      await expect(previous).toBeDisabled();
+    }
   }
 });
 
-test('saved food survives a real container restart', async ({ page, request }) => {
-  test.setTimeout(90_000);
-  test.skip(!process.env.E2E_CONTAINER_NAME, 'Set E2E_CONTAINER_NAME to a disposable local Docker container');
-  await openDiary(page);
+test('saved food survives closing and reopening the browser tab', async ({ page, context }) => {
+  await seedDiary(page, foods);
   await search(page);
-  await page.getByRole('button', { name: /Rolled oats USDA reference/ }).click();
+  await page.getByRole('button', { name: /Rolled oats e2eprivate/ }).click();
   await page.getByRole('button', { name: 'Add to Breakfast', exact: true }).click();
   await expect(page.getByRole('dialog')).toBeHidden();
-  execFileSync('docker', ['restart', process.env.E2E_CONTAINER_NAME!], { timeout: 30_000 });
-  await expect.poll(async () => {
-    try { return (await request.get('/api/day', { timeout: 2000 })).status(); } catch { return 0; }
-  }, { timeout: 30_000 }).toBe(200);
-  await openDiary(page);
-  await expect(page.locator('.food-row')).toContainText('Rolled oats');
+  await page.close();
+  const reopened = await context.newPage();
+  await openDiary(reopened);
+  await expect(reopened.locator('.food-row')).toContainText('Rolled oats');
 });
 
 test('shows catalog provenance and notices, and resets the portion when choosing another food', async ({ page }) => {
-  const restaurant = { ...foods[0], id: 'restaurant-fixture', name: 'Restaurant bowl fixture', source: 'Official menu', sourceKind: 'restaurant', nutritionBasis: 'serving', servingLabel: '1 bowl', servingGrams: null, calories: 650, verified: true, sourceUrl: 'https://example.com/nutrition' };
-  await page.route('**/api/foods/search?*', route => route.fulfill({ json: { foods: [foods[0], restaurant], partial: true, hasMore: true, issues: [{ source: 'USDA FoodData Central', message: 'Too many requests. Try again in a minute.' }] } }));
-  await openDiary(page);
+  const restaurant = { ...foods[0], id: 'restaurant-fixture', name: 'Restaurant bowl fixture', source: 'Official menu', sourceKind: 'restaurant' as const, nutritionBasis: 'serving' as const, servingLabel: '1 bowl', servingGrams: null, calories: 650, verified: true, sourceUrl: 'https://example.com/nutrition' };
+  await seedDiary(page, [foods[0], restaurant]);
+  await page.context().route('https://world.openfoodfacts.org/cgi/search.pl?*', route => route.fulfill({ status: 429, headers: { 'access-control-allow-origin': '*' }, json: { error: 'rate limited' } }));
   await page.getByRole('button', { name: 'Add Lunch', exact: true }).click();
-  await page.getByRole('textbox', { name: 'Search foods', exact: true }).fill('fixture');
+  await page.getByRole('textbox', { name: 'Search foods', exact: true }).fill('e2eprivate');
   await expect(page.getByRole('status')).toContainText('Some nutrition databases are unavailable');
   const warning = page.getByRole('button', { name: 'Some nutrition databases are unavailable.' });
   await expect(warning).toHaveAttribute('aria-expanded', 'false');
   await expect(page.getByText(/Too many requests/)).toBeHidden();
   await warning.focus();
   await page.keyboard.press('Enter');
-  await expect(page.getByRole('status')).toContainText('USDA FoodData Central: Too many requests');
+  await expect(page.getByRole('status')).toContainText('Open Food Facts: Too many requests');
   await expect(page.getByText(/Too many requests/)).toBeVisible();
   await warning.click();
   await expect(page.getByText(/Too many requests/)).toBeHidden();
-  await expect(page.getByText('Showing the first 100 matches. Add an item name to narrow your search.')).toBeVisible();
-  const bowl = page.getByRole('button', { name: /Restaurant bowl fixture Official menu/ });
+  const bowl = page.getByRole('button', { name: /Restaurant bowl fixture e2eprivate/ });
   await expect(bowl).toContainText('Verified');
   await expect(bowl).toContainText('650 kcal');
   await expect(bowl).toContainText('per 1 bowl');
-  await page.getByRole('button', { name: /Rolled oats USDA reference/ }).click();
+  await page.getByRole('button', { name: /Rolled oats e2eprivate/ }).click();
   await page.getByLabel('Measure', { exact: true }).selectOption('ounces');
   await page.getByRole('spinbutton', { name: 'Weight in ounces' }).fill('8');
   await page.getByRole('button', { name: 'Back to results', exact: true }).click();

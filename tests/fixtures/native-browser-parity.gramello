@@ -1,0 +1,112 @@
+{
+  "format": "gramello",
+  "version": 1,
+  "exportedAt": "2026-09-26T15:54:30.642Z",
+  "records": [
+    {
+      "id": "6ff89dc9-1397-42e1-a3f2-5feb32397406",
+      "date": "2026-09-26",
+      "kind": "entry",
+      "value": {
+        "calories": 300,
+        "protein": 22.5,
+        "carbs": 37.5,
+        "fat": 7.5,
+        "id": "6ff89dc9-1397-42e1-a3f2-5feb32397406",
+        "date": "2026-09-26",
+        "createdAt": "2026-09-26T15:54:30.640Z",
+        "meal": "Lunch",
+        "name": "Native soup",
+        "source": "My foods",
+        "sourceId": "custom-b1929ba5-52fb-485a-bcfc-238e77dd2bb3",
+        "quantity": 1.5,
+        "unit": "serving",
+        "grams": 300,
+        "verified": false,
+        "servingLabel": "1 bowl"
+      }
+    },
+    {
+      "id": "custom-b1929ba5-52fb-485a-bcfc-238e77dd2bb3",
+      "date": null,
+      "kind": "food",
+      "value": {
+        "calories": 200,
+        "protein": 15,
+        "carbs": 25,
+        "fat": 5,
+        "id": "custom-b1929ba5-52fb-485a-bcfc-238e77dd2bb3",
+        "name": "Native soup",
+        "source": "My foods",
+        "sourceKind": "custom",
+        "verified": false,
+        "servingGrams": 200,
+        "servingLabel": "1 bowl",
+        "nutritionBasis": "serving"
+      }
+    },
+    {
+      "id": "default",
+      "date": null,
+      "kind": "goals",
+      "value": {
+        "calories": 1800,
+        "protein": 150,
+        "carbs": 180,
+        "fat": 60
+      }
+    },
+    {
+      "id": "ce539496-a07e-4299-92a0-f06b556dffb4",
+      "date": null,
+      "kind": "meal",
+      "value": {
+        "id": "ce539496-a07e-4299-92a0-f06b556dffb4",
+        "updatedAt": "2026-09-26T15:54:30.641Z",
+        "name": "Native recipe",
+        "ingredients": [
+          {
+            "food": {
+              "calories": 200,
+              "protein": 15,
+              "carbs": 25,
+              "fat": 5,
+              "id": "custom-b1929ba5-52fb-485a-bcfc-238e77dd2bb3",
+              "name": "Native soup",
+              "source": "My foods",
+              "sourceKind": "custom",
+              "verified": false,
+              "servingGrams": 200,
+              "servingLabel": "1 bowl",
+              "nutritionBasis": "serving"
+            },
+            "quantity": 2,
+            "unit": "serving"
+          }
+        ],
+        "totalGrams": 400,
+        "servingGrams": 100
+      }
+    },
+    {
+      "id": "09e600ed-7c32-4a8b-8c27-1a2a3b0085e2",
+      "date": "2026-09-26",
+      "kind": "water",
+      "value": {
+        "date": "2026-09-26",
+        "amountMl": 236.5882365,
+        "id": "09e600ed-7c32-4a8b-8c27-1a2a3b0085e2",
+        "createdAt": "2026-09-26T15:54:30.641Z"
+      }
+    },
+    {
+      "id": "default",
+      "date": null,
+      "kind": "waterGoal",
+      "value": {
+        "goalMl": 2400,
+        "unit": "fl-oz"
+      }
+    }
+  ]
+}

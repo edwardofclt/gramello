@@ -8,21 +8,30 @@ Click or tap a logged food to edit its amount, measure, or meal, then choose
 **Save changes**. Totals update using the nutrition saved with that entry,
 even if its original food or recipe has since changed or been removed.
 
-The native iOS/Android app works offline with personal data stored on the device
-and no account. The self-hostable web app and Expo browser client also open
-the diary directly, without login. They use separate data stores:
+The native iOS/Android app and the main web app store personal data locally,
+without an account. The web app works offline after its first complete online
+load. Its SQLite worker uses IndexedDB storage, with locks that preserve writes
+from multiple browser tabs.
 
-| Behavior | Native iOS/Android | Hosted web and Expo browser |
-| --- | --- | --- |
-| Sign-in | None | None |
-| Diary, meals, and goals | Local SQLite on each device | Server database, scoped to an anonymous browser cookie |
-| Food search | Offline USDA and restaurant catalogs, cached lookups, private custom foods; automatic Open Food Facts searches and missing-barcode lookups | Live USDA/Open Food Facts, imported restaurant menus, and shared custom foods |
-| Moving data | User-directed backup export/import | A separate diary for each browser cookie |
+| Behavior | Native iOS/Android | Main web app | Retained Expo browser client |
+| --- | --- | --- | --- |
+| Diary, meals, goals and custom foods | Local SQLite on the device | Local SQLite snapshots in this browser | Anonymous-cookie-scoped server database |
+| Food search | Bundled USDA/restaurant catalog, cached and online Open Food Facts | Same catalog and lookup rules as native | Hosted live USDA/Open Food Facts and server catalog |
+| Custom food visibility | Private | Private | Shared server catalog |
+| Backups | Settings → Advanced | Settings → Your data | Hosted export API |
+| Offline use | Available on installation | Available after Settings reports **Ready to use offline** | Requires the hosted server |
 
-Native data does not sync with the hosted diary or other devices. Clearing the
-browser cookie loses access to that browser's hosted diary. Existing records from
-older account-based versions remain untouched and are not exposed to anonymous
-browsers; no account migration is performed.
+Data does not sync automatically. Native and main-web `.gramello` backups are
+interchangeable; importing replaces the local diary and keeps a recovery copy.
+Clearing the main web app's site data removes that browser's diary. Export a
+backup first. Separate browser profiles and private windows have separate data.
+
+On first opening the updated main web app, an empty local diary imports the full
+previous hosted diary identified by the original browser cookie. This never
+deletes hosted records or overwrites existing local entries. If it cannot run,
+a retry notice is shown. **Settings → Recover a previous web diary** can download
+the original server data for manual import. Clearing the old cookie loses access
+to that hosted copy; account-era records are never assigned to anonymous users.
 
 The source repository is [edwardofclt/gramello](https://github.com/edwardofclt/gramello).
 For product help and data requests, see [support](docs/support.md) and the
@@ -59,7 +68,7 @@ device's `gramello-personal.sqlite` database. In **Settings → Advanced → You
 - **Import backup** previews a `.gramello` archive and requires confirmation to replace the device's personal data. Imports do not merge diaries.
 - **Recover previous diary** restores the recovery copy retained before replacement.
 
-Backups work between native iOS and Android installations and are readable by
+Backups work between web, native iOS, and Android installations and are readable by
 anyone with access to the file. Portable backups are limited to 32 MiB and
 200,000 records. Catalog databases are separate from personal data and are not
 included in backups. Gramello has no automatic personal-data cloud sync; choose
@@ -100,9 +109,24 @@ contents, search terms, barcodes, nutrition values, and account identities.
 Leaving the key blank disables analytics in a build. See
 [analytics configuration and event details](mobile/README.md#anonymous-usage-analytics).
 
-## Hosted food search
+## Browser offline support
 
-The web app and hosted Expo browser client combine:
+The main web app requires HTTPS (or localhost), WebAssembly, IndexedDB, Web Locks,
+and a current browser supporting gzip decompression. No cross-origin isolation
+headers are required. The service worker caches the application shell, worker,
+WASM engine, and compressed catalog; it never caches personal hosted API
+responses. A failed storage write is reported without showing unpersisted data
+as saved. Settings includes `.gramello` import/export, diary/water CSV exports,
+replacement recovery, and signed catalog updates. Siri and Shortcuts remain
+native iOS integrations.
+
+The web build generates its worker and catalog assets from source automatically.
+Run the standard `pnpm build` before production browser tests. Development mode
+supports local persistence; offline reload is verified with the production build.
+
+## Retained hosted food search
+
+The compatibility API and retained Expo browser client combine:
 
 - [USDA FoodData Central](https://fdc.nal.usda.gov/) for generic and branded foods
 - [Open Food Facts](https://world.openfoodfacts.org/) for its open, community-maintained product database and images
@@ -137,8 +161,8 @@ portion weight in grams or ounces. A 64 oz batch with 1,200 kcal makes four
 16 oz portions at 300 kcal each. Recipe portion ounces mean weight, and
 portions assume the ingredients are evenly distributed.
 
-Native meals stay on the device and are included in backups. Hosted meals are
-saved to the current browser's diary. Reopen **My meals** to log any weight or
+Native and main-web meals stay in local storage and are included in backups.
+Meals in the retained Expo browser client use the cookie-scoped hosted diary. Reopen **My meals** to log any weight or
 fractional serving, edit ingredients or yield, or delete a recipe. Edits and
 deletions leave previously logged diary nutrition unchanged.
 
@@ -162,16 +186,20 @@ search, portion selection, and the diary. This badge identifies the source;
 it is not an independent laboratory measurement or a promise that a snapshot
 matches every location's current menu. Source URLs and retrieval dates are
 retained. Historical diary snapshots without validated catalog provenance stay
-unverified. Logging a catalog food uses server-side nutrition and portion
-calculations, so client-supplied values cannot forge a verified entry.
+unverified. Native and main-web apps calculate portions locally from catalog
+records; saved entries and imported backups retain their recorded provenance.
+The retained compatibility API validates catalog nutrition and calculates
+portions on the server.
 
 Choose **Add food → Add custom food** on web or mobile. Enter a name, a serving
 description, and total calories, protein, carbs, and fat for that serving.
-Serving weight is optional. Native custom foods are private to the device and
-appear as **My foods**. Hosted custom foods save to the shared server catalog
-and become searchable by all hosted browsers; contributor identities are not
-exposed in search. Both show **Unverified** and save before you choose how much
-to log. Calories are kept as entered, independently of the macro totals.
+Serving weight is optional. Native and main-web custom foods are private to the
+device or browser and appear as **My foods**. Custom foods created through the
+retained Expo browser client or compatibility API save to the shared server
+catalog and become searchable by other clients using that API; contributor
+identities are not exposed in search. All custom foods show **Unverified** and
+save before you choose how much to log. Calories are kept as entered,
+independently of the macro totals.
 
 Restaurant/custom foods can be logged by servings even when no weight is known.
 Grams are offered only when a source provides a weight. Hosted search retains
@@ -217,9 +245,10 @@ content sources, and the automatic Pages deployment.
 
 ## Run the hosted web app with Docker Compose
 
-The web app uses React, Next.js-compatible routes through Vite/vinext, and
-Drizzle with a Cloudflare D1 binding. Docker runs the built Worker through
-Wrangler with a persistent local SQLite database.
+The web app uses React and Next.js-compatible routes through Vite/vinext.
+Docker serves the main web app and retained compatibility API through Wrangler.
+The API uses Drizzle with a Cloudflare D1 binding backed by persistent SQLite
+for earlier hosted diaries and the retained Expo browser client.
 
 Start the web app:
 
@@ -227,9 +256,11 @@ Start the web app:
 docker compose up --build
 ```
 
-Open [http://localhost:3000](http://localhost:3000). Diary data is stored in
-the existing `nourish-data` volume and survives container restarts. Keep this
-legacy volume name when updating an installation so it uses the same diary data.
+Open [http://localhost:3000](http://localhost:3000). New main-web diary data stays
+in that browser's IndexedDB storage; use Settings to export its backup. Earlier
+hosted diaries and retained Expo-client data remain in the existing
+`nourish-data` volume and survive container restarts. Keep this legacy volume
+name when updating an installation to preserve those server records.
 
 ## Hosted web development
 
@@ -265,15 +296,19 @@ string. The example uses `http://localhost:5173`; Docker Compose defaults to
 `APP_BASE_URL=https://your-host` in the Compose environment. This is a server
 runtime value and does not require a build-time secret.
 
-The web and Expo browser apps open the diary automatically. A random, HttpOnly
-`gramello_diary` cookie selects that browser's records in the server database.
-The cookie uses `SameSite=Lax` and is secure on HTTPS. Each browser with a new
-cookie gets a separate diary. Clearing cookies or using another browser loses
-access to the original diary; there is no account recovery or cross-device sync.
-Clearing the cookie does not delete the stored server records.
+The main web and retained Expo browser apps open automatically. A random,
+HttpOnly `gramello_diary` cookie selects records in the compatibility server
+database. The retained Expo browser client uses these records for its diary;
+the main web app uses this cookie only to migrate or recover earlier hosted
+data. The cookie uses `SameSite=Lax` and is secure on HTTPS. A new cookie selects
+a separate hosted diary. Losing the original cookie loses access to that server
+copy without deleting it; there is no account recovery or cross-device sync.
+The cookie does not select the main web app's local diary. Clearing all site
+data removes that local diary, so export a backup first.
 
-Keep the browser client and `/api` on the same origin. Writes require an `Origin`
-matching `APP_BASE_URL`; the API does not support cross-origin browser clients.
+Keep the browser client and `/api` on the same origin. Hosted API writes require
+an `Origin` matching `APP_BASE_URL`; the API does not support cross-origin
+browser clients. Main-web personal-data changes are saved locally.
 For a separately built Expo browser UI, place it behind a reverse proxy that
 serves its API requests on that same origin. See
 [hosted browser setup](mobile/README.md#hosted-browser-setup).
@@ -289,8 +324,10 @@ The web and native diaries include a water card for the selected local date.
 Quick-add 250/500/750 mL or 8/16/24 US fl oz, enter a custom amount, review entries,
 and remove mistakes. On native, **Settings** holds calorie, macro, and water
 goals, including the preferred water unit; water logging stays in the diary.
-On web, **Edit water goal** opens the water target and unit controls. Goals save
-on the native device or in the current browser's hosted diary. The initial water
+On the main web app, **Edit water goal** and **Settings** provide the water
+target and unit controls. Native and main-web goals save on the device or in
+the current browser's local diary. The retained Expo browser client saves its
+goals in the cookie-scoped hosted diary. The initial water
 target is an editable 2,000 mL; it is not a personalized recommendation. Goals apply across
 the diary, including past dates.
 

@@ -86,3 +86,13 @@
 .food-entry-details>span{font-size:.65rem;color:#718b9d;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .food-row:focus-within .delete{opacity:1}
 @media(max-width:760px){.food-entry{grid-template-columns:36px minmax(0,1fr) auto}}
+
+/* Local browser data controls share the diary card palette. */
+.local-startup{min-height:100dvh;display:grid;place-content:center;gap:20px;padding:24px;text-align:center;background:#071927;color:#f4f8fb}
+.local-startup h1{font-size:2rem;font-weight:700}.local-startup p{max-width:540px;line-height:1.6}
+.local-notice{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin:16px 28px 0;padding:16px;border:1px solid #6d542f;border-radius:14px;background:#312817;color:#ffce8c;font-size:.875rem}.local-notice p{flex:1;min-width:200px}
+.data-settings{display:grid;gap:20px;max-width:980px}.data-settings h2{font-size:1.65rem;font-weight:700}.data-settings p{color:#a6bac7;font-size:.9rem;line-height:1.65}.data-settings .food-error{color:#ff9b9b}
+.settings-card{display:grid;gap:16px;background:#0d2434;border:1px solid #213b4d;border-radius:22px;padding:24px}.settings-card h3{display:flex;align-items:center;gap:10px;font-size:1.1rem;font-weight:700}.settings-card>button{justify-self:start}.settings-card .water-goal-form{max-width:420px}.settings-actions{display:flex;flex-wrap:wrap;gap:12px}.settings-actions button,.settings-card>button{min-height:44px}.settings-card details{border-top:1px solid #213b4d;padding-top:16px}.settings-card summary{cursor:pointer;color:#9bc3e0;min-height:44px}.settings-card details p{margin-bottom:16px}.backup-dialog{z-index:51;max-height:calc(100dvh - 32px);overflow-y:auto}.backup-dialog p{line-height:1.6;color:#a6bac7}.backup-dialog .food-error{color:#ff9b9b}
+@media(max-width:760px){.settings-card{padding:18px;border-radius:18px}.settings-actions{display:grid;grid-template-columns:1fr;width:100%}.settings-actions button{width:100%}.local-notice{margin:12px 16px 0}.data-settings .water-goal-form select,.data-settings .water-goal-form input{font-size:16px}}
+
+@media(max-width:760px){.mobile-tabs{grid-template-columns:repeat(3,minmax(0,1fr))}}

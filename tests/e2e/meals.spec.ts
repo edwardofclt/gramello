@@ -1,4 +1,4 @@
-import { test, expect } from './fixtures';
+import { test, expect, seedDiary, openDiary, savedEntries } from './fixtures';
 import type { Page } from '@playwright/test';
 
 const food = { id: 'beef', name: 'Beef fixture', source: 'USDA reference', calories: 200, protein: 20, carbs: 10, fat: 5, servingGrams: 100, servingLabel: '100 g' };
@@ -12,8 +12,7 @@ async function ingredient(page: Page, name: string, grams: string) {
 }
 
 test('builds, portions, reuses, edits and deletes a saved meal without changing diary history', async ({ page }) => {
-  await page.route('**/api/foods/search?*', route => route.fulfill({ json: { foods: [food, { ...food, id: 'tomatoes', name: 'Tomatoes fixture' }] } }));
-  await page.goto('/');
+  await seedDiary(page, [food, { ...food, id: 'tomatoes', name: 'Tomatoes fixture' }]);
   await page.getByRole('button', { name: 'Add Lunch', exact: true }).click();
   await page.getByRole('button', { name: 'My meals', exact: true }).click();
   await page.getByRole('button', { name: 'Create meal', exact: true }).click();
@@ -41,9 +40,9 @@ test('builds, portions, reuses, edits and deletes a saved meal without changing 
   await page.getByLabel('Measure', { exact: true }).selectOption('ounces');
   await page.getByRole('spinbutton', { name: 'Weight in ounces' }).fill('16');
   await expect(page.locator('.nutrition-preview')).toContainText('300');
-  const response = page.waitForResponse(r => r.url().endsWith('/api/entries') && r.request().method() === 'POST');
   await page.getByRole('button', { name: 'Add to Lunch', exact: true }).click();
-  const entry = await (await response).json();
+  await expect(page.getByRole('dialog')).toBeHidden();
+  const entry = (await savedEntries(page))[0];
   expect(entry.calories).toBeCloseTo(300, 8);
   expect(entry).toMatchObject({ meal: 'Lunch', source: 'My meals', quantity: 16, unit: 'ounces', protein: 30, carbs: 15, fat: 7.5 });
   await page.getByRole('button', { name: 'Add Lunch', exact: true }).click();
@@ -61,24 +60,18 @@ test('builds, portions, reuses, edits and deletes a saved meal without changing 
   await expect(page.locator('.food-cal')).toHaveText('300');
 });
 
-test('keeps a meal draft after a failed save and supports fractional servings', async ({ page }) => {
-  await page.route('**/api/foods/search?*', route => route.fulfill({ json: { foods: [food] } }));
-  await page.goto('/');
+test('keeps a meal draft while correcting invalid portions and supports fractional servings', async ({ page }) => {
+  await seedDiary(page, [food]);
   await page.getByRole('button', { name: 'Add Breakfast', exact: true }).click();
   await page.getByRole('button', { name: 'My meals', exact: true }).click();
   await page.getByRole('button', { name: 'Create meal', exact: true }).click();
   await page.getByRole('textbox', { name: 'Meal name' }).fill('Saved later');
   await ingredient(page, 'Beef', '600');
+  await page.getByRole('spinbutton', { name: 'Number of servings' }).fill('0');
+  await expect(page.getByRole('button', { name: 'Save meal', exact: true })).toBeDisabled();
+  await expect(page.getByRole('textbox', { name: 'Meal name' })).toHaveValue('Saved later');
   await page.getByRole('spinbutton', { name: 'Number of servings' }).fill('4');
   await expect(page.locator('.nutrition-preview')).toContainText('300');
-  await page.route('**/api/meals', async route => {
-    if (route.request().method() === 'POST') return route.fulfill({ status: 503, json: { error: 'Test storage is temporarily unavailable.' } });
-    return route.continue();
-  });
-  await page.getByRole('button', { name: 'Save meal', exact: true }).click();
-  await expect(page.getByRole('alert')).toContainText('temporarily unavailable');
-  await expect(page.getByRole('textbox', { name: 'Meal name' })).toHaveValue('Saved later');
-  await page.unroute('**/api/meals');
   await page.getByRole('button', { name: 'Save meal', exact: true }).click();
   await page.getByRole('button', { name: /Saved later 1 ingredients/ }).click();
   await page.getByRole('spinbutton', { name: 'Servings', exact: true }).fill('0.5');
@@ -87,8 +80,8 @@ test('keeps a meal draft after a failed save and supports fractional servings', 
   await expect(page.locator('.food-cal')).toHaveText('150');
 });
 
-test('creates a shared custom food inside a private meal and portions its serving nutrition', async ({ page }) => {
-  await page.goto('/');
+test('creates a private custom food inside a saved meal and portions its serving nutrition', async ({ page }) => {
+  await openDiary(page);
   await page.getByRole('button', { name: 'Add Dinner', exact: true }).click();
   await page.getByRole('button', { name: 'My meals', exact: true }).click();
   await page.getByRole('button', { name: 'Create meal', exact: true }).click();
@@ -101,11 +94,7 @@ test('creates a shared custom food inside a private meal and portions its servin
   await page.getByLabel('Protein (g)').fill('30');
   await page.getByLabel('Carbs (g)').fill('75');
   await page.getByLabel('Fat (g)').fill('20');
-  const created = page.waitForResponse(response => response.url().endsWith('/api/foods/custom') && response.request().method() === 'POST');
   await page.getByRole('button', { name: 'Save custom food', exact: true }).click();
-  const customResponse = await created;
-  expect(customResponse.status()).toBe(201);
-  expect((await customResponse.json()).food).toMatchObject({ name: 'Homemade bowl fixture', nutritionBasis: 'serving', servingGrams: null, verified: false });
   await expect(page.locator('.selected-food')).toContainText('Unverified');
   await expect(page.getByLabel('Measure', { exact: true }).locator('option')).toHaveText(['Servings (1 bowl)']);
   await page.getByRole('spinbutton', { name: 'Servings', exact: true }).fill('2');

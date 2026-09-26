@@ -8,7 +8,7 @@ import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } f
 import { useWater, useWaterGoalDraft, type WaterApi } from '@/lib/use-water';
 import { waterAmountSchema, waterLabel, waterPresets, waterToMl, waterUnitLabel, type WaterGoal, type WaterUnit } from '@/lib/water';
 
-function WaterGoalEditor({ goal, busy, error, onSave }: { goal: WaterGoal; busy: boolean; error: string | null; onSave: (goal: WaterGoal) => Promise<void> }) {
+export function WaterGoalEditor({ goal, busy, error, onSave }: { goal: WaterGoal; busy: boolean; error: string | null; onSave: (goal: WaterGoal) => Promise<void> }) {
   const draft = useWaterGoalDraft(goal);
   return <form className="water-goal-form" onSubmit={event => { event.preventDefault(); if (draft.valid) void onSave(draft.goal); }}>
     <label>Water unit<select aria-label="Water unit" value={draft.unit} disabled={busy} onChange={event => draft.changeUnit(event.target.value as WaterUnit)}><option value="ml">mL</option><option value="fl-oz">US fl oz</option></select></label>
@@ -34,8 +34,9 @@ export function WaterTracker({ date, diaryFetch }: { date: string; diaryFetch: t
   useEffect(() => {
     const refresh = () => { if (document.visibilityState === 'visible') reload(); };
     window.addEventListener('focus', refresh);
+    window.addEventListener('gramello-data-change', refresh);
     document.addEventListener('visibilitychange', refresh);
-    return () => { window.removeEventListener('focus', refresh); document.removeEventListener('visibilitychange', refresh); };
+    return () => { window.removeEventListener('focus', refresh); window.removeEventListener('gramello-data-change', refresh); document.removeEventListener('visibilitychange', refresh); };
   }, [reload]);
   const { data } = water;
   const unit = data?.goal.unit ?? 'ml';

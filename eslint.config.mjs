@@ -17,6 +17,7 @@ const eslintConfig = defineConfig([
     "work/**",
     "tmp/**",
     ".sites-runtime/**",
+    "public/offline/**",
   ]),
   {
     files: ["components/ui/**/*.{ts,tsx}", "hooks/use-mobile.ts"],

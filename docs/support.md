@@ -6,7 +6,7 @@ save custom meals, and review your nutrition trends.
 ## User guides
 
 Browse the [Gramello user guides](../website/guides/) for step-by-step help with your
-first day, food logging, saved meals, water and goals, trends, backups, and Siri.
+first day, food logging, saved meals, water and goals, trends, backups, and Siri on iOS.
 If you are new, start with [your first day with Gramello](../website/guides/getting-started.md).
 
 ## Contact
@@ -26,13 +26,20 @@ information by email instead.
 
 ## Your device and your data
 
-No Gramello account or sign-in is required. Your diary, water entries, goals,
-saved meals, and custom foods stay on your device. Gramello does not store a copy
-of your personal tracking data on its servers or provide account-based syncing
-between devices. Online food searches and barcode lookups need an internet
-connection.
+No Gramello account or sign-in is required. In native and main-web apps, your
+diary, water entries, goals, saved meals, and custom foods stay on your device
+or in your browser. These changes are not copied to a server and do not sync
+between devices. The retained Expo browser client uses cookie-scoped server
+storage instead. In native and main-web apps, Settings
+provides portable backup import/export, CSV exports, and recovery after import.
+Clearing site data removes the local browser diary. Downloaded foods and cached
+barcode matches work offline in native and main-web apps. Retrieving new online
+search matches or looking up an uncached barcode requires an internet connection.
 
-We cannot restore your diary from a Gramello server backup. Device backups and
+There is no automatic server backup of new local diary changes. An earlier
+hosted web diary can be recovered using **Settings → Recover a previous web
+diary** while its original browser cookie is available. Automatic first-use
+migration never deletes that server copy or overwrites existing local data. Device backups and
 app-data removal depend on your operating system and settings. A separate device
 backup may retain app data after you remove the app.
 
@@ -50,8 +57,10 @@ saving. Food-database information can be incomplete or incorrect. Foods measured
 by weight support grams and weight ounces; volume-based drinks support
 milliliters and US fluid ounces.
 
-Custom foods you add are part of your device-stored data. To report an incorrect
-food-database result, email support with the food name, brand, and source.
+Custom foods added in native and main-web apps are private to your device or
+browser. The retained Expo browser client adds custom foods to a shared server
+catalog, searchable by other clients using the compatibility API. To report an
+incorrect food-database result, email support with the food name, brand, and source.
 
 ## Custom meals and goals
 
@@ -77,7 +86,9 @@ health information, diary contents, search text, barcodes, or nutrition values.
 Version 1.14.0 does not have an in-app analytics switch. See the privacy policy
 for the fields sent and the available choices.
 
-We do not hold a server-side copy of your diary to access, export, or delete.
+We do not hold a server-side copy of new native or main-web diary changes.
+Earlier hosted data and the retained Expo browser client still use cookie-scoped
+server storage; the host controls those retained records.
 For help managing your data, or a privacy request about support information or
 analytics, contact
 [gramello@edwardofclt.com](mailto:gramello@edwardofclt.com).
