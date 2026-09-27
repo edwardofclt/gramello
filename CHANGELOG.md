@@ -1,3 +1,9 @@
+## [1.17.1](https://github.com/edwardofclt/gramello/compare/v1.17.0...v1.17.1) (2026-09-27)
+
+### Bug Fixes
+
+* use mobile app screenshots and improve diary layouts ([#40](https://github.com/edwardofclt/gramello/issues/40)) ([1787c1c](https://github.com/edwardofclt/gramello/commit/1787c1c41ada3f600d25e7d0209710dc6c40029e))
+
 ## [1.17.0](https://github.com/edwardofclt/gramello/compare/v1.16.1...v1.17.0) (2026-09-27)
 
 ### Features
