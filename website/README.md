@@ -84,8 +84,10 @@ the independent website publication job.
 ## Design and assets
 
 The site combines Gramello's existing navy/mint bowl mark and app palette with
-editorial serif headings and food photography. The diary and charts are clearly
-marked illustrations with sample data; they do not contain customer records.
+editorial serif headings and food photography. The diary, food search, portion
+selector, saved meals, and trends use screenshots of the real web app at mobile
+dimensions, clearly labeled as web-app views with sample data. They do not
+contain customer records.
 All fonts are local system fonts, and images are served with the site. Anonymous
 Segment analytics is configured for native app builds; this website does not
 include that integration. The privacy policy describes the native app's
@@ -96,6 +98,38 @@ retention, and user-choice disclosures aligned with actual settings and builds.
 Avoid marketing promises of a permanently ad-free or tracker-free product.
 The FAQ works with native HTML without JavaScript;
 JavaScript only keeps one answer open at a time. Reduced motion is respected.
+
+### Refresh the app screenshots
+
+The five files in `assets/screenshots/` are lossless WebP captures of the main
+web app (`app/page.tsx`), using a **390 × 844 CSS-pixel viewport at 2× resolution**
+(780 × 1688 image pixels). The website preserves each complete portrait frame.
+These are mobile browser screenshots, not native-app screenshots or HTML
+recreations. The trends capture scrolls the actual viewport to the calorie chart.
+
+With the repository dependencies and Playwright Chromium installed:
+
+```sh
+pnpm install --frozen-lockfile
+pnpm exec playwright install chromium
+pnpm dev
+# In a second terminal:
+node website/capture-screenshots.mjs
+node website/build.mjs
+node website/check.mjs
+```
+
+The capture script defaults to `http://localhost:5173`; use
+`SCREENSHOT_APP_URL=http://localhost:PORT` for another local preview. It creates
+an isolated browser context, seeds a week ending on the current local day, and imports
+synthetic diary, water, and meal records through the app's real SQLite worker.
+It blocks external requests and supplies an empty legacy hosted backup, so no
+personal diary or live provider is needed. The UI, search, portion calculations,
+and charts render through the production app components. The capture serves the
+generated catalog gzip file as raw bytes to avoid Vite's development-only
+`Content-Encoding` decoding. WebP encoding reuses
+the pinned Sharp dependency included with Wrangler/Miniflare. Screenshot capture
+is an optional maintenance step; the static website build still needs only Node.
 
 `assets/gramello-mark.png`, `assets/favicon-32.png`, and
 `assets/apple-touch-icon.png` reuse the existing app branding.
