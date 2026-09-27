@@ -1,3 +1,10 @@
+## [1.17.0](https://github.com/edwardofclt/gramello/compare/v1.16.1...v1.17.0) (2026-09-27)
+
+### Features
+
+* **search:** unify food discovery and align gramello branding ([0dbd5fe](https://github.com/edwardofclt/gramello/commit/0dbd5fef8befac2f6a3f63adaeb3b8df4b414fdb))
+* **web:** bring browser app to mobile parity [skip ci] ([266c58c](https://github.com/edwardofclt/gramello/commit/266c58cbefad57bd11ad5189f0013d53c9f3577d))
+
 ## [1.16.1](https://github.com/edwardofclt/gramello/compare/v1.16.0...v1.16.1) (2026-09-26)
 
 ### Bug Fixes
