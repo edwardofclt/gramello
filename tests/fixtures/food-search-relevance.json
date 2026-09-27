@@ -1,0 +1,826 @@
+{
+  "version": 1,
+  "judgmentMethod": "Agent-authored relevance judgments from source food descriptions and explicit restaurant intent, independent of ranking output. No human ratings or held-out claim. Development regression set; subsequent tuning uses these judgments.",
+  "queries": [
+    {
+      "query": "egg",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-171287",
+        "usda-173424",
+        "usda-172187",
+        "usda-173423"
+      ],
+      "judgment": "Relevant target: Egg, whole, raw, fresh; Egg, whole, cooked, hard-boiled; Egg, whole, cooked, scrambled; Egg, whole, cooked, fried"
+    },
+    {
+      "query": "eggs",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-171287",
+        "usda-173424",
+        "usda-172187",
+        "usda-173423"
+      ],
+      "judgment": "Relevant target: Egg, whole, raw, fresh; Egg, whole, cooked, hard-boiled; Egg, whole, cooked, scrambled; Egg, whole, cooked, fried"
+    },
+    {
+      "query": "egg raw",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-171287"
+      ],
+      "judgment": "Relevant target: Egg, whole, raw, fresh"
+    },
+    {
+      "query": "scrambled egg",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-172187"
+      ],
+      "judgment": "Relevant target: Egg, whole, cooked, scrambled"
+    },
+    {
+      "query": "boiled egg",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-173424"
+      ],
+      "judgment": "Relevant target: Egg, whole, cooked, hard-boiled"
+    },
+    {
+      "query": "rice",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-168878",
+        "usda-169704"
+      ],
+      "judgment": "Relevant target: Rice, white, long-grain, regular, enriched, cooked; Rice, brown, long-grain, cooked (Includes foods for USDA's Food Distribution Program)"
+    },
+    {
+      "query": "white rice",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-168878"
+      ],
+      "judgment": "Relevant target: Rice, white, long-grain, regular, enriched, cooked"
+    },
+    {
+      "query": "brown rice",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-169704"
+      ],
+      "judgment": "Relevant target: Rice, brown, long-grain, cooked (Includes foods for USDA's Food Distribution Program)"
+    },
+    {
+      "query": "rice cooked",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-168878",
+        "usda-169704"
+      ],
+      "judgment": "Relevant target: Rice, white, long-grain, regular, enriched, cooked; Rice, brown, long-grain, cooked (Includes foods for USDA's Food Distribution Program)"
+    },
+    {
+      "query": "rice raw",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-168877"
+      ],
+      "judgment": "Relevant target: Rice, white, long-grain, regular, raw, enriched"
+    },
+    {
+      "query": "chicken",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-171477",
+        "usda-171077",
+        "usda-171534",
+        "usda-171052",
+        "usda-171054"
+      ],
+      "judgment": "Relevant target: Chicken, broilers or fryers, breast, meat only, cooked, roasted; Chicken, broiler or fryers, breast, skinless, boneless, meat only, raw; Chicken, broiler or fryers, breast, skinless, boneless, meat only, cooked, grilled; Chicken, broilers or fryers, meat only, raw; Chicken, broilers or fryers, meat only, cooked, roasted"
+    },
+    {
+      "query": "chicken breast",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-171477",
+        "usda-171077",
+        "usda-171534"
+      ],
+      "judgment": "Relevant target: Chicken, broilers or fryers, breast, meat only, cooked, roasted; Chicken, broiler or fryers, breast, skinless, boneless, meat only, raw; Chicken, broiler or fryers, breast, skinless, boneless, meat only, cooked, grilled"
+    },
+    {
+      "query": "chicken breast raw",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-171077"
+      ],
+      "judgment": "Relevant target: Chicken, broiler or fryers, breast, skinless, boneless, meat only, raw"
+    },
+    {
+      "query": "grilled chicken breast",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-171534"
+      ],
+      "judgment": "Relevant target: Chicken, broiler or fryers, breast, skinless, boneless, meat only, cooked, grilled"
+    },
+    {
+      "query": "roasted chicken breast",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-171477"
+      ],
+      "judgment": "Relevant target: Chicken, broilers or fryers, breast, meat only, cooked, roasted"
+    },
+    {
+      "query": "breaded chicken breast",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-171514",
+        "usda-171515"
+      ],
+      "judgment": "Relevant target: Chicken breast tenders, breaded, cooked, microwaved; Chicken breast tenders, breaded, uncooked"
+    },
+    {
+      "query": "banana",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-173944"
+      ],
+      "judgment": "Relevant target: Bananas, raw"
+    },
+    {
+      "query": "bananas",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-173944"
+      ],
+      "judgment": "Relevant target: Bananas, raw"
+    },
+    {
+      "query": "banana raw",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-173944"
+      ],
+      "judgment": "Relevant target: Bananas, raw"
+    },
+    {
+      "query": "apple",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-171688",
+        "usda-171689",
+        "usda-168202"
+      ],
+      "judgment": "Relevant target: Apples, raw, with skin (Includes foods for USDA's Food Distribution Program); Apples, raw, without skin; Apples, raw, golden delicious, with skin"
+    },
+    {
+      "query": "apples",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-171688",
+        "usda-171689",
+        "usda-168202"
+      ],
+      "judgment": "Relevant target: Apples, raw, with skin (Includes foods for USDA's Food Distribution Program); Apples, raw, without skin; Apples, raw, golden delicious, with skin"
+    },
+    {
+      "query": "orange",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-169918",
+        "usda-169916"
+      ],
+      "judgment": "Relevant target: Oranges, raw, Florida; Oranges, raw, California, valencias"
+    },
+    {
+      "query": "avocado",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-171705",
+        "usda-171706",
+        "usda-171707"
+      ],
+      "judgment": "Relevant target: Avocados, raw, all commercial varieties; Avocados, raw, California; Avocados, raw, Florida"
+    },
+    {
+      "query": "potato",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-170026"
+      ],
+      "judgment": "Relevant target: Potatoes, flesh and skin, raw"
+    },
+    {
+      "query": "potatoes",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-170026"
+      ],
+      "judgment": "Relevant target: Potatoes, flesh and skin, raw"
+    },
+    {
+      "query": "tomato raw",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-170457",
+        "usda-170456",
+        "usda-170096"
+      ],
+      "judgment": "Relevant target: Tomatoes, red, ripe, raw, year round average; Tomatoes, green, raw; Tomatoes, yellow, raw"
+    },
+    {
+      "query": "carrot",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-170393"
+      ],
+      "judgment": "Relevant target: Carrots, raw"
+    },
+    {
+      "query": "broccoli",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-170379"
+      ],
+      "judgment": "Relevant target: Broccoli, raw"
+    },
+    {
+      "query": "spinach",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-168462"
+      ],
+      "judgment": "Relevant target: Spinach, raw"
+    },
+    {
+      "query": "lettuce",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-168431",
+        "usda-169249",
+        "usda-169247"
+      ],
+      "judgment": "Relevant target: Lettuce, red leaf, raw; Lettuce, green leaf, raw; Lettuce, cos or romaine, raw"
+    },
+    {
+      "query": "cucumber",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-169225",
+        "usda-168409"
+      ],
+      "judgment": "Relevant target: Cucumber, peeled, raw; Cucumber, with peel, raw"
+    },
+    {
+      "query": "mushroom",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-169251"
+      ],
+      "judgment": "Relevant target: Mushrooms, white, raw"
+    },
+    {
+      "query": "strawberry",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-167762"
+      ],
+      "judgment": "Relevant target: Strawberries, raw"
+    },
+    {
+      "query": "strawberries",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-167762"
+      ],
+      "judgment": "Relevant target: Strawberries, raw"
+    },
+    {
+      "query": "blueberry",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-171711"
+      ],
+      "judgment": "Relevant target: Blueberries, raw"
+    },
+    {
+      "query": "blueberries",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-171711"
+      ],
+      "judgment": "Relevant target: Blueberries, raw"
+    },
+    {
+      "query": "grapes",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-174682",
+        "usda-173040"
+      ],
+      "judgment": "Relevant target: Grapes, american type (slip skin), raw; Grapes, muscadine, raw"
+    },
+    {
+      "query": "peach",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-169928"
+      ],
+      "judgment": "Relevant target: Peaches, yellow, raw"
+    },
+    {
+      "query": "pear",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-169118",
+        "usda-167777"
+      ],
+      "judgment": "Relevant target: Pears, raw; Pears, raw, red anjou"
+    },
+    {
+      "query": "pineapple",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-169124",
+        "usda-168194"
+      ],
+      "judgment": "Relevant target: Pineapple, raw, all varieties; Pineapple, raw, extra sweet variety"
+    },
+    {
+      "query": "mango",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-169910"
+      ],
+      "judgment": "Relevant target: Mangos, raw"
+    },
+    {
+      "query": "watermelon",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-167765"
+      ],
+      "judgment": "Relevant target: Watermelon, raw"
+    },
+    {
+      "query": "milk",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-171265",
+        "usda-172217",
+        "usda-171269"
+      ],
+      "judgment": "Relevant target: Milk, whole, 3.25% milkfat, with added vitamin D; Milk, whole, 3.25% milkfat, without added vitamin A and vitamin D; Milk, nonfat, fluid, with added vitamin A and vitamin D (fat free or skim)"
+    },
+    {
+      "query": "whole milk",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-171265",
+        "usda-172217"
+      ],
+      "judgment": "Relevant target: Milk, whole, 3.25% milkfat, with added vitamin D; Milk, whole, 3.25% milkfat, without added vitamin A and vitamin D"
+    },
+    {
+      "query": "skim milk",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-171269",
+        "usda-171270"
+      ],
+      "judgment": "Relevant target: Milk, nonfat, fluid, with added vitamin A and vitamin D (fat free or skim); Milk, nonfat, fluid, with added nonfat milk solids, vitamin A and vitamin D (fat free or skim)"
+    },
+    {
+      "query": "cheddar cheese",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-173414",
+        "usda-170899"
+      ],
+      "judgment": "Relevant target: Cheese, cheddar (Includes foods for USDA's Food Distribution Program); Cheese, cheddar, sharp, sliced"
+    },
+    {
+      "query": "butter",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-173410",
+        "usda-173430"
+      ],
+      "judgment": "Relevant target: Butter, salted; Butter, without salt"
+    },
+    {
+      "query": "olive oil",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-171413"
+      ],
+      "judgment": "Relevant target: Oil, olive, salad or cooking"
+    },
+    {
+      "query": "peanut butter",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-172470",
+        "usda-174266",
+        "usda-174265"
+      ],
+      "judgment": "Relevant target: Peanut butter, smooth style, without salt; Peanut butter, smooth style, with salt (Includes foods for USDA's Food Distribution Program); Peanut butter, chunk style, with salt"
+    },
+    {
+      "query": "almond",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-170567"
+      ],
+      "judgment": "Relevant target: Nuts, almonds"
+    },
+    {
+      "query": "walnuts",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-170187"
+      ],
+      "judgment": "Relevant target: Nuts, walnuts, english"
+    },
+    {
+      "query": "oats",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-169705"
+      ],
+      "judgment": "Relevant target: Oats (Includes foods for USDA's Food Distribution Program)"
+    },
+    {
+      "query": "quinoa",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-168917",
+        "usda-168874"
+      ],
+      "judgment": "Relevant target: Quinoa, cooked; Quinoa, uncooked"
+    },
+    {
+      "query": "lentils",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-172420",
+        "usda-172421",
+        "usda-175254"
+      ],
+      "judgment": "Relevant target: Lentils, raw; Lentils, mature seeds, cooked, boiled, without salt; Lentils, mature seeds, cooked, boiled, with salt"
+    },
+    {
+      "query": "black beans",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-173734",
+        "usda-173735",
+        "usda-175237"
+      ],
+      "judgment": "Relevant target: Beans, black, mature seeds, raw; Beans, black, mature seeds, cooked, boiled, without salt; Beans, black, mature seeds, cooked, boiled, with salt"
+    },
+    {
+      "query": "chickpeas",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-173756",
+        "usda-173800",
+        "usda-173799"
+      ],
+      "judgment": "Relevant target: Chickpeas (garbanzo beans, bengal gram), mature seeds, raw; Chickpeas (garbanzo beans, bengal gram), mature seeds, canned, drained solids; Chickpeas (garbanzo beans, bengal gram), mature seeds, cooked, boiled, with salt"
+    },
+    {
+      "query": "salmon",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-173686",
+        "usda-175167",
+        "usda-171998"
+      ],
+      "judgment": "Relevant target: Fish, salmon, Atlantic, wild, raw; Fish, salmon, Atlantic, farmed, raw; Fish, salmon, Atlantic, wild, cooked, dry heat"
+    },
+    {
+      "query": "tuna canned",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-171986",
+        "usda-173709"
+      ],
+      "judgment": "Relevant target: Fish, tuna, light, canned in water, without salt, drained solids; Fish, tuna, light, canned in water, drained solids (Includes foods for USDA's Food Distribution Program)"
+    },
+    {
+      "query": "whole wheat bread",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-172688",
+        "usda-172690"
+      ],
+      "judgment": "Relevant target: Bread, whole-wheat, commercially prepared; Bread, whole-wheat, prepared from recipe"
+    },
+    {
+      "query": "pasta cooked",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-169751",
+        "usda-172014",
+        "usda-169737"
+      ],
+      "judgment": "Relevant target: Pasta, cooked, enriched, with added salt; Pasta, cooked, unenriched, with added salt; Pasta, cooked, enriched, without added salt"
+    },
+    {
+      "query": "coffee brewed",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-171881",
+        "usda-171889",
+        "usda-171890"
+      ],
+      "judgment": "Relevant target: Beverages, coffee, brewed, breakfast blend; Beverages, coffee, brewed, prepared with tap water, decaffeinated; Beverages, coffee, brewed, prepared with tap water"
+    },
+    {
+      "query": "greek yogurt",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-170903",
+        "usda-171304",
+        "usda-170894"
+      ],
+      "judgment": "Relevant target: Yogurt, Greek, plain, lowfat; Yogurt, Greek, plain, whole milk; Yogurt, Greek, plain, nonfat (Includes foods for USDA's Food Distribution Program)"
+    },
+    {
+      "query": "greek yogurt plain",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-170903",
+        "usda-171304",
+        "usda-170894"
+      ],
+      "judgment": "Relevant target: Yogurt, Greek, plain, lowfat; Yogurt, Greek, plain, whole milk; Yogurt, Greek, plain, nonfat (Includes foods for USDA's Food Distribution Program)"
+    },
+    {
+      "query": "chicken breast cooked",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-171477",
+        "usda-171534"
+      ],
+      "judgment": "Relevant target: Chicken, broilers or fryers, breast, meat only, cooked, roasted; Chicken, broiler or fryers, breast, skinless, boneless, meat only, cooked, grilled"
+    },
+    {
+      "query": "rice brown cooked",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-169704"
+      ],
+      "judgment": "Relevant target: Rice, brown, long-grain, cooked (Includes foods for USDA's Food Distribution Program)"
+    },
+    {
+      "query": "egg hard boiled",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-173424"
+      ],
+      "judgment": "Relevant target: Egg, whole, cooked, hard-boiled"
+    },
+    {
+      "query": "banana RAW",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-173944"
+      ],
+      "judgment": "Relevant target: Bananas, raw"
+    },
+    {
+      "query": "\u00e9gg",
+      "kind": "alias",
+      "relevantIds": [
+        "usda-171287",
+        "usda-173424",
+        "usda-172187"
+      ],
+      "judgment": "Relevant target: Egg, whole, raw, fresh; Egg, whole, cooked, hard-boiled; Egg, whole, cooked, scrambled"
+    },
+    {
+      "query": "greek yoghurt",
+      "kind": "alias",
+      "relevantIds": [
+        "usda-170903",
+        "usda-171304",
+        "usda-170894"
+      ],
+      "judgment": "Relevant target: Yogurt, Greek, plain, lowfat; Yogurt, Greek, plain, whole milk; Yogurt, Greek, plain, nonfat (Includes foods for USDA's Food Distribution Program)"
+    },
+    {
+      "query": "chikcen breast",
+      "kind": "alias",
+      "relevantIds": [
+        "usda-171477",
+        "usda-171077",
+        "usda-171534"
+      ],
+      "judgment": "Relevant target: Chicken, broilers or fryers, breast, meat only, cooked, roasted; Chicken, broiler or fryers, breast, skinless, boneless, meat only, raw; Chicken, broiler or fryers, breast, skinless, boneless, meat only, cooked, grilled"
+    },
+    {
+      "query": "strawberry raw",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-167762"
+      ],
+      "judgment": "Relevant target: Strawberries, raw"
+    },
+    {
+      "query": "garbanzo beans",
+      "kind": "alias",
+      "relevantIds": [
+        "usda-173756",
+        "usda-173800",
+        "usda-173799"
+      ],
+      "judgment": "Relevant target: Chickpeas (garbanzo beans, bengal gram), mature seeds, raw; Chickpeas (garbanzo beans, bengal gram), mature seeds, canned, drained solids; Chickpeas (garbanzo beans, bengal gram), mature seeds, cooked, boiled, with salt"
+    },
+    {
+      "query": "tomatoes raw",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-170457",
+        "usda-170456",
+        "usda-170096"
+      ],
+      "judgment": "Relevant target: Tomatoes, red, ripe, raw, year round average; Tomatoes, green, raw; Tomatoes, yellow, raw"
+    },
+    {
+      "query": "almonds",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-170567"
+      ],
+      "judgment": "Relevant target: Nuts, almonds"
+    },
+    {
+      "query": "yogurt greek plain",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-170903",
+        "usda-171304",
+        "usda-170894"
+      ],
+      "judgment": "Relevant target: Yogurt, Greek, plain, lowfat; Yogurt, Greek, plain, whole milk; Yogurt, Greek, plain, nonfat (Includes foods for USDA's Food Distribution Program)"
+    },
+    {
+      "query": "mcdonalds",
+      "kind": "restaurant",
+      "relevantBrand": "McDonald's",
+      "judgment": "Explicit restaurant intent: a menu item from McDonald's"
+    },
+    {
+      "query": "McDonald's",
+      "kind": "restaurant",
+      "relevantBrand": "McDonald's",
+      "judgment": "Explicit restaurant intent: a menu item from McDonald's"
+    },
+    {
+      "query": "chickfila",
+      "kind": "restaurant",
+      "relevantBrand": "Chick-fil-A",
+      "judgment": "Explicit restaurant intent: a menu item from Chick-fil-A"
+    },
+    {
+      "query": "Chick-fil-A",
+      "kind": "restaurant",
+      "relevantBrand": "Chick-fil-A",
+      "judgment": "Explicit restaurant intent: a menu item from Chick-fil-A"
+    },
+    {
+      "query": "cookout",
+      "kind": "restaurant",
+      "relevantBrand": "Cook Out",
+      "judgment": "Explicit restaurant intent: a menu item from Cook Out"
+    },
+    {
+      "query": "Cook Out",
+      "kind": "restaurant",
+      "relevantBrand": "Cook Out",
+      "judgment": "Explicit restaurant intent: a menu item from Cook Out"
+    },
+    {
+      "query": "Firehouse Subs",
+      "kind": "restaurant",
+      "relevantBrand": "Firehouse Subs",
+      "judgment": "Explicit restaurant intent: a menu item from Firehouse Subs"
+    },
+    {
+      "query": "Burger King",
+      "kind": "restaurant",
+      "relevantBrand": "Burger King",
+      "judgment": "Explicit restaurant intent: a menu item from Burger King"
+    },
+    {
+      "query": "Chipotle",
+      "kind": "restaurant",
+      "relevantBrand": "Chipotle",
+      "judgment": "Explicit restaurant intent: a menu item from Chipotle"
+    },
+    {
+      "query": "CAVA",
+      "kind": "restaurant",
+      "relevantBrand": "CAVA",
+      "judgment": "Explicit restaurant intent: a menu item from CAVA"
+    },
+    {
+      "query": "KFC",
+      "kind": "restaurant",
+      "relevantBrand": "KFC",
+      "judgment": "Explicit restaurant intent: a menu item from KFC"
+    },
+    {
+      "query": "Starbucks",
+      "kind": "restaurant",
+      "relevantBrand": "Starbucks",
+      "judgment": "Explicit restaurant intent: a menu item from Starbucks"
+    },
+    {
+      "query": "Subway",
+      "kind": "restaurant",
+      "relevantBrand": "Subway",
+      "judgment": "Explicit restaurant intent: a menu item from Subway"
+    },
+    {
+      "query": "Taco Bell",
+      "kind": "restaurant",
+      "relevantBrand": "Taco Bell",
+      "judgment": "Explicit restaurant intent: a menu item from Taco Bell"
+    },
+    {
+      "query": "Wendy's",
+      "kind": "restaurant",
+      "relevantBrand": "Wendy's",
+      "judgment": "Explicit restaurant intent: a menu item from Wendy's"
+    },
+    {
+      "query": "Bojangles",
+      "kind": "restaurant",
+      "relevantBrand": "Bojangles",
+      "judgment": "Explicit restaurant intent: a menu item from Bojangles"
+    },
+    {
+      "query": "Panera Bread",
+      "kind": "restaurant",
+      "relevantBrand": "Panera Bread",
+      "judgment": "Explicit restaurant intent: a menu item from Panera Bread"
+    },
+    {
+      "query": "Dunkin",
+      "kind": "restaurant",
+      "relevantBrand": "Dunkin'",
+      "judgment": "Explicit restaurant intent: a menu item from Dunkin'"
+    },
+    {
+      "query": "Panda Express",
+      "kind": "restaurant",
+      "relevantBrand": "Panda Express",
+      "judgment": "Explicit restaurant intent: a menu item from Panda Express"
+    },
+    {
+      "query": "Dairy Queen",
+      "kind": "restaurant",
+      "relevantBrand": "Dairy Queen",
+      "judgment": "Explicit restaurant intent: a menu item from Dairy Queen"
+    },
+    {
+      "query": "Buffalo Wild Wings",
+      "kind": "restaurant",
+      "relevantBrand": "Buffalo Wild Wings",
+      "judgment": "Explicit restaurant intent: a menu item from Buffalo Wild Wings"
+    },
+    {
+      "query": "Five Guys",
+      "kind": "restaurant",
+      "relevantBrand": "Five Guys",
+      "judgment": "Explicit restaurant intent: a menu item from Five Guys"
+    },
+    {
+      "query": "Pizza Hut",
+      "kind": "restaurant",
+      "relevantBrand": "Pizza Hut",
+      "judgment": "Explicit restaurant intent: a menu item from Pizza Hut"
+    },
+    {
+      "query": "Olive Garden",
+      "kind": "restaurant",
+      "relevantBrand": "Olive Garden",
+      "judgment": "Explicit restaurant intent: a menu item from Olive Garden"
+    },
+    {
+      "query": "Eggspectation",
+      "kind": "restaurant",
+      "relevantBrand": "Eggspectation",
+      "judgment": "Explicit restaurant intent: a menu item from Eggspectation"
+    }
+  ]
+}

@@ -2,7 +2,7 @@ import type { ExpoConfig } from 'expo/config';
 import mobilePackage from './package.json';
 
 const config: ExpoConfig = {
-  name: 'Gramello',
+  name: 'gramello.',
   slug: 'nourish-mobile',
   owner: 'edwardofclt',
   version: mobilePackage.version,

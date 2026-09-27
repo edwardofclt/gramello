@@ -24,7 +24,9 @@ Restaurant items retain the IDs, names, serving descriptions, per-serving nutrie
 Rebuild the bundled seed from the checked-in inputs:
 
 ```sh
-node scripts/food-catalog.mjs offline /tmp/gramello-offline.sqlite offline-2026-09-v1
+node scripts/food-catalog.mjs offline /tmp/gramello-offline.sqlite offline-2026-09-search-v1
 ```
 
 The importer rejects missing nutrients and duplicate IDs. UPC/EAN barcode keys in future approved data are canonicalized to 14-digit strings so leading zeros survive. The database contains no user diary or account data.
+
+The September 25 search revision restores product names for 35 Cook Out beverage servings from the original table headings. Food IDs, nutrients, serving labels, counts, and schema version remain unchanged. See the [reviewed correction evidence](../../docs/restaurant-import/search-description-repairs.json).

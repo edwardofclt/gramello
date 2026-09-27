@@ -37,10 +37,13 @@ describe('practical food servings', () => {
   });
 
   it('upgrades installed/bundled catalog reads, preserves existing logs, and keeps new portions consistent', async () => {
-    const catalogDb = testDatabase('mobile/assets/catalog.sqlite'), personal = testDatabase();
+    const catalogDb = testDatabase(), personal = testDatabase();
     try {
+      // Model an older installed v1 catalog independently of the rebuilt bundle.
+      catalogDb.raw.exec('CREATE TABLE foods(id TEXT PRIMARY KEY,name TEXT,food TEXT); CREATE VIRTUAL TABLE food_search USING fts5(id UNINDEXED,name,brand);');
+      catalogDb.raw.prepare('INSERT INTO foods VALUES(?,?,?)').run(egg.id, egg.name, JSON.stringify(egg));
+      catalogDb.raw.prepare('INSERT INTO food_search VALUES(?,?,?)').run(egg.id, egg.name, '');
       const catalog = createCatalogReader(work => work(catalogDb.db));
-      // The shipped seed still contains the older first-portion choice.
       expect(JSON.parse((catalogDb.raw.prepare('SELECT food FROM foods WHERE id=?').get(egg.id) as { food: string }).food).servingGrams).toBe(243);
       await expect(catalog.getFood(egg.id)).resolves.toMatchObject({ servingGrams: 50, servingLabel: '1 large (50 g)' });
       expect((await catalog.search('eggs')).find(food => food.id === egg.id)).toMatchObject({ servingGrams: 50 });

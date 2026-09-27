@@ -1,0 +1,399 @@
+{
+  "fixtureFile": "tests/fixtures/food-search-validation.json",
+  "catalogSha256": "e05d76232a9e00ff6ff272f754c5215c76421bfb596e75e06875e1253540865a",
+  "fixtureSha256": "ea9da48dc948444d32526a53e232044d4aab67bd49fc194397eef88334505008",
+  "catalogVersion": "offline-2026-09-search-v1",
+  "queryCount": 40,
+  "judgmentMethod": "Independent final blind validation, authored by a separate agent after reading only the two earlier fixtures to exclude their query/food/restaurant families, raw USDA and restaurant source JSON, and read-only canonical foods rows in mobile/assets/catalog.sqlite. No implementation, earlier benchmark reports, FTS queries or ranking output were inspected before labels were frozen. This is one fresh 40-query sample with source-grounded labels fixed before evaluation; no human ratings, random sample or user-population inference is claimed. Food families denote the same named food/item across spelling and preparation variants, not entire nutritional groups such as all vegetables or all cheese types. Known canonical alternatives with the same stated intent were included before any run. No queries, labels or engine changes may be selected from this validation outcome.",
+  "evaluationPhase": "Development evaluation",
+  "method": "Same SQLite catalog and fixed judgments. Legacy: original FTS prefix AND, rank/name order, first 100. Current: actual createCatalogReader.search, window=100 per candidate lane, shared rank; evaluate same top-k. Candidate success has different bounded budgets by design.",
+  "legacy": {
+    "successAt1": 20,
+    "successAt3": 25,
+    "successAt5": 25,
+    "successAt10": 26,
+    "successAt20": 26,
+    "candidateSuccess": 26,
+    "zeroResults": 13,
+    "mrrAt20": 0.5661
+  },
+  "current": {
+    "successAt1": 29,
+    "successAt3": 35,
+    "successAt5": 36,
+    "successAt10": 36,
+    "successAt20": 36,
+    "candidateSuccess": 36,
+    "zeroResults": 3,
+    "mrrAt20": 0.7967
+  },
+  "currentLatencyMs": {
+    "median": 1.7,
+    "p95": 33.43,
+    "environment": "Node v24.15.0, darwin/arm64; local synchronous SQLite adapter, not device timing"
+  },
+  "diagnostics": [],
+  "regressions": [],
+  "observations": [
+    {
+      "query": "honey",
+      "kind": "generic",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 100,
+      "currentCount": 143,
+      "currentMs": 33.428916
+    },
+    {
+      "query": "maple syrup",
+      "kind": "generic",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 7,
+      "currentCount": 7,
+      "currentMs": 1.3003750000000025
+    },
+    {
+      "query": "tofu",
+      "kind": "generic",
+      "legacyRank": 2,
+      "currentRank": 1,
+      "legacyCount": 52,
+      "currentCount": 52,
+      "currentMs": 4.336500000000001
+    },
+    {
+      "query": "cabbage",
+      "kind": "generic",
+      "legacyRank": 2,
+      "currentRank": 2,
+      "legacyCount": 54,
+      "currentCount": 54,
+      "currentMs": 5.611916000000008
+    },
+    {
+      "query": "fresh radishes",
+      "kind": "generic",
+      "legacyRank": null,
+      "currentRank": 1,
+      "legacyCount": 0,
+      "currentCount": 4,
+      "currentMs": 2.945166999999998
+    },
+    {
+      "query": "grapefruit",
+      "kind": "generic",
+      "legacyRank": 7,
+      "currentRank": 3,
+      "legacyCount": 44,
+      "currentCount": 44,
+      "currentMs": 3.273750000000007
+    },
+    {
+      "query": "cantaloupe",
+      "kind": "generic",
+      "legacyRank": 2,
+      "currentRank": 2,
+      "legacyCount": 3,
+      "currentCount": 3,
+      "currentMs": 0.3685419999999908
+    },
+    {
+      "query": "fresh plums",
+      "kind": "generic",
+      "legacyRank": null,
+      "currentRank": 1,
+      "legacyCount": 0,
+      "currentCount": 3,
+      "currentMs": 1.2521250000000066
+    },
+    {
+      "query": "sour cream",
+      "kind": "generic",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 59,
+      "currentCount": 59,
+      "currentMs": 5.682707999999991
+    },
+    {
+      "query": "beets",
+      "kind": "generic",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 16,
+      "currentCount": 21,
+      "currentMs": 1.6838330000000212
+    },
+    {
+      "query": "boiled green peas",
+      "kind": "preparation",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 4,
+      "currentCount": 4,
+      "currentMs": 1.994542000000024
+    },
+    {
+      "query": "millet cooked",
+      "kind": "preparation",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 1,
+      "currentCount": 1,
+      "currentMs": 1.0945839999999976
+    },
+    {
+      "query": "roasted duck",
+      "kind": "preparation",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 4,
+      "currentCount": 4,
+      "currentMs": 0.7934170000000051
+    },
+    {
+      "query": "halibut cooked",
+      "kind": "preparation",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 3,
+      "currentCount": 3,
+      "currentMs": 0.767707999999999
+    },
+    {
+      "query": "okra boiled",
+      "kind": "preparation",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 4,
+      "currentCount": 4,
+      "currentMs": 0.8539159999999981
+    },
+    {
+      "query": "boiled turnips",
+      "kind": "preparation",
+      "legacyRank": 2,
+      "currentRank": 2,
+      "legacyCount": 7,
+      "currentCount": 11,
+      "currentMs": 1.3721670000000188
+    },
+    {
+      "query": "baked plantain",
+      "kind": "preparation",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 1,
+      "currentCount": 1,
+      "currentMs": 0.3859170000000063
+    },
+    {
+      "query": "crab cooked",
+      "kind": "preparation",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 4,
+      "currentCount": 4,
+      "currentMs": 0.7272920000000056
+    },
+    {
+      "query": "Malt O Meal frosted flakes",
+      "kind": "packaged",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 1,
+      "currentCount": 1,
+      "currentMs": 7.141374999999982
+    },
+    {
+      "query": "Clif bar",
+      "kind": "packaged",
+      "legacyRank": 2,
+      "currentRank": 2,
+      "legacyCount": 2,
+      "currentCount": 2,
+      "currentMs": 0.9403750000000173
+    },
+    {
+      "query": "Gatorade G2",
+      "kind": "packaged",
+      "legacyRank": 1,
+      "currentRank": 5,
+      "legacyCount": 5,
+      "currentCount": 5,
+      "currentMs": 0.4889579999999967
+    },
+    {
+      "query": "V8 Splash berry blend",
+      "kind": "packaged",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 2,
+      "currentCount": 2,
+      "currentMs": 0.8532079999999951
+    },
+    {
+      "query": "Campbells chunky clam chowder",
+      "kind": "packaged",
+      "legacyRank": null,
+      "currentRank": 1,
+      "legacyCount": 0,
+      "currentCount": 1,
+      "currentMs": 2.5789170000000183
+    },
+    {
+      "query": "Keebler chocolate grahams",
+      "kind": "packaged",
+      "legacyRank": null,
+      "currentRank": 1,
+      "legacyCount": 0,
+      "currentCount": 1,
+      "currentMs": 1.1639169999999979
+    },
+    {
+      "query": "papa johns",
+      "kind": "restaurant",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 100,
+      "currentCount": 195,
+      "currentMs": 45.807208
+    },
+    {
+      "query": "jersey mikes",
+      "kind": "restaurant",
+      "legacyRank": null,
+      "currentRank": 1,
+      "legacyCount": 0,
+      "currentCount": 101,
+      "currentMs": 32.291458999999975
+    },
+    {
+      "query": "zaxbys",
+      "kind": "restaurant",
+      "legacyRank": null,
+      "currentRank": 1,
+      "legacyCount": 0,
+      "currentCount": 101,
+      "currentMs": 29.806250000000034
+    },
+    {
+      "query": "tropical smoothie cafe",
+      "kind": "restaurant",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 100,
+      "currentCount": 101,
+      "currentMs": 4.7045420000000036
+    },
+    {
+      "query": "chilis oldtimer burger with cheese",
+      "kind": "restaurant",
+      "legacyRank": null,
+      "currentRank": 1,
+      "legacyCount": 0,
+      "currentCount": 1,
+      "currentMs": 26.546416000000022
+    },
+    {
+      "query": "outback bloomin onion",
+      "kind": "restaurant",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 1,
+      "currentCount": 1,
+      "currentMs": 0.6567079999999805
+    },
+    {
+      "query": "krispy kreme original glazed doughnut",
+      "kind": "restaurant",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 4,
+      "currentCount": 4,
+      "currentMs": 1.1854580000000396
+    },
+    {
+      "query": "shake shack single shackburger",
+      "kind": "restaurant",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 2,
+      "currentCount": 2,
+      "currentMs": 0.5283330000000319
+    },
+    {
+      "query": "green onions",
+      "kind": "alias",
+      "legacyRank": null,
+      "currentRank": null,
+      "legacyCount": 7,
+      "currentCount": 16,
+      "currentMs": 1.96387500000003
+    },
+    {
+      "query": "rocket leaves",
+      "kind": "alias",
+      "legacyRank": null,
+      "currentRank": null,
+      "legacyCount": 0,
+      "currentCount": 0,
+      "currentMs": 0.2189159999999788
+    },
+    {
+      "query": "red capsicum raw",
+      "kind": "alias",
+      "legacyRank": null,
+      "currentRank": null,
+      "legacyCount": 0,
+      "currentCount": 0,
+      "currentMs": 1.7041250000000332
+    },
+    {
+      "query": "filberts",
+      "kind": "alias",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 3,
+      "currentCount": 3,
+      "currentMs": 0.5199170000000208
+    },
+    {
+      "query": "fresh aprcots",
+      "kind": "recovery",
+      "legacyRank": null,
+      "currentRank": 1,
+      "legacyCount": 0,
+      "currentCount": 1,
+      "currentMs": 2.495208000000048
+    },
+    {
+      "query": "fetta cheese",
+      "kind": "recovery",
+      "legacyRank": null,
+      "currentRank": null,
+      "legacyCount": 0,
+      "currentCount": 0,
+      "currentMs": 2.466875000000016
+    },
+    {
+      "query": "tahni",
+      "kind": "recovery",
+      "legacyRank": null,
+      "currentRank": 3,
+      "legacyCount": 0,
+      "currentCount": 12,
+      "currentMs": 2.8489580000000387
+    },
+    {
+      "query": "peacans",
+      "kind": "recovery",
+      "legacyRank": null,
+      "currentRank": 1,
+      "legacyCount": 0,
+      "currentCount": 114,
+      "currentMs": 10.963792000000012
+    }
+  ]
+}

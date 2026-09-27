@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Gramello — Calorie & Macro Tracker",
+  title: "gramello. — Calorie & Macro Tracker",
+  applicationName: "gramello.",
+  appleWebApp: { title: "gramello." },
   description: "Track calories and macros with food database search, daily goals, and long-term nutrition trends.",
   icons: {
     icon: [

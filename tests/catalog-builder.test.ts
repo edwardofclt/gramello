@@ -14,7 +14,7 @@ describe('releasable food catalogs', () => {
   it('inspects the bundled starter using the same schema validation as native startup', async () => {
     const { db, raw } = testDatabase('mobile/assets/catalog.sqlite');
     try {
-      await expect(inspectCatalog(db)).resolves.toEqual({ version:'offline-2026-09-v1',count:50322 });
+      await expect(inspectCatalog(db)).resolves.toEqual({ version:'offline-2026-09-search-v1',count:50322 });
       const reader = createCatalogReader(work => work(db));
       const result = await reader.search('banana raw');
       expect(result.some(item => item.name.toLowerCase().includes('bananas, raw'))).toBe(true);

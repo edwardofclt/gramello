@@ -8,6 +8,7 @@ import { MyMeals } from './my-meals';
 import { scaleFood, type Food, type Ingredient } from '@/lib/meals';
 import type { EntryInput } from '@/db/store';
 import type { FoodApi } from '@/lib/food-api';
+import { foodRevision } from '@/lib/food-revision';
 
 export type DiaryEntry = EntryInput & { id: string };
 export function FoodDialog({ date, initialMeal, diaryFetch, onClose, onAdded }: {
@@ -26,7 +27,7 @@ export function FoodDialog({ date, initialMeal, diaryFetch, onClose, onAdded }: 
   async function add({ food, quantity, unit }: Ingredient) {
     const scaled = scaleFood(food, quantity, unit);
     if (!scaled) return;
-    const entry = await api<DiaryEntry>('/api/entries', { method: 'POST', body: { date, meal, name: food.name, brand: food.brand, source: food.source, sourceId: food.id, servingId: food.selectedServingId, servingLabel: food.servingLabel, quantity, unit, ...scaled } });
+    const entry = await api<DiaryEntry>('/api/entries', { method: 'POST', body: { date, meal, name: food.name, brand: food.brand, source: food.source, sourceId: food.id, servingId: food.selectedServingId, servingLabel: food.servingLabel, quantity, unit, ...scaled, ...(food.sourceKind && { foodRevision: foodRevision(food) }) } });
     onAdded(entry);
   }
   return <Dialog open onOpenChange={open => { if (!open && !busy) onClose(); }}><DialogContent className="food-dialog"><DialogHeader><DialogTitle>{view === 'meals' ? 'My meals' : 'Add food'}</DialogTitle><DialogDescription>{view === 'meals' ? 'Build a meal, save it, and portion it your way.' : 'Search your downloaded catalog and private custom foods, or reuse one of your meals.'}</DialogDescription></DialogHeader>

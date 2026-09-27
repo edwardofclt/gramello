@@ -1,0 +1,187 @@
+{
+  "sourceUrl": "https://cookout.com/wp-content/uploads/Cook-Out-Nutrition1.pdf",
+  "sourceSha256": "289a561c5604268e22e5450c772954393b9cfebbd11fe263dcad785a210006a2",
+  "reviewedAt": "2026-09-25",
+  "pages": [
+    2,
+    3
+  ],
+  "scope": "Restored missing beverage parent headings; names only, IDs/nutrition/servings unchanged. Previously omitted duplicate rows are not recreated.",
+  "corrections": [
+    {
+      "id": "restaurant-cook-out-large-24-oz-680-4-g",
+      "previousName": "Large",
+      "name": "Coca-Cola Large"
+    },
+    {
+      "id": "restaurant-cook-out-sides-other-menu-items-regular-16-oz-453-6-g",
+      "previousName": "Sides/Other Menu Items - Regular",
+      "name": "Coca-Cola Regular"
+    },
+    {
+      "id": "restaurant-cook-out-sides-other-menu-items-small-12-oz-340-19-g",
+      "previousName": "Sides/Other Menu Items - Small",
+      "name": "Coca-Cola Small"
+    },
+    {
+      "id": "restaurant-cook-out-large-24-oz-680-4-g-2",
+      "previousName": "Large",
+      "name": "Diet Coke Large"
+    },
+    {
+      "id": "restaurant-cook-out-sides-other-menu-items-regular-16-oz-453-6-g-2",
+      "previousName": "Sides/Other Menu Items - Regular",
+      "name": "Diet Coke Regular"
+    },
+    {
+      "id": "restaurant-cook-out-sides-other-menu-items-small-12-oz-340-19-g-2",
+      "previousName": "Sides/Other Menu Items - Small",
+      "name": "Diet Coke Small"
+    },
+    {
+      "id": "restaurant-cook-out-large-24-oz-680-4-g-3",
+      "previousName": "Large",
+      "name": "Sprite Large"
+    },
+    {
+      "id": "restaurant-cook-out-sides-other-menu-items-regular-16-oz-453-6-g-3",
+      "previousName": "Sides/Other Menu Items - Regular",
+      "name": "Sprite Regular"
+    },
+    {
+      "id": "restaurant-cook-out-sides-other-menu-items-small-12-oz-340-19-g-3",
+      "previousName": "Sides/Other Menu Items - Small",
+      "name": "Sprite Small"
+    },
+    {
+      "id": "restaurant-cook-out-large-24-oz-680-4-g-4",
+      "previousName": "Large",
+      "name": "Pibb Xtra Large"
+    },
+    {
+      "id": "restaurant-cook-out-sides-other-menu-items-regular-16-oz-453-6-g-4",
+      "previousName": "Sides/Other Menu Items - Regular",
+      "name": "Pibb Xtra Regular"
+    },
+    {
+      "id": "restaurant-cook-out-sides-other-menu-items-small-12-oz-340-19-g-4",
+      "previousName": "Sides/Other Menu Items - Small",
+      "name": "Pibb Xtra Small"
+    },
+    {
+      "id": "restaurant-cook-out-large-24-oz-680-4-g-5",
+      "previousName": "Large",
+      "name": "Mellow Yellow Large"
+    },
+    {
+      "id": "restaurant-cook-out-sides-other-menu-items-regular-16-oz-453-6-g-5",
+      "previousName": "Sides/Other Menu Items - Regular",
+      "name": "Mellow Yellow Regular"
+    },
+    {
+      "id": "restaurant-cook-out-sides-other-menu-items-small-12-oz-340-19-g-5",
+      "previousName": "Sides/Other Menu Items - Small",
+      "name": "Mellow Yellow Small"
+    },
+    {
+      "id": "restaurant-cook-out-large-24-oz-680-4-g-6",
+      "previousName": "Large",
+      "name": "Fanta Orange Large"
+    },
+    {
+      "id": "restaurant-cook-out-sides-other-menu-items-regular-16-oz-453-6-g-6",
+      "previousName": "Sides/Other Menu Items - Regular",
+      "name": "Fanta Orange Regular"
+    },
+    {
+      "id": "restaurant-cook-out-sides-other-menu-items-small-12-oz-340-19-g-6",
+      "previousName": "Sides/Other Menu Items - Small",
+      "name": "Fanta Orange Small"
+    },
+    {
+      "id": "restaurant-cook-out-large-24-oz-680-4-g-7",
+      "previousName": "Large",
+      "name": "Hi-C Poppin' Pink Lemonade Large"
+    },
+    {
+      "id": "restaurant-cook-out-sides-other-menu-items-regular-16-oz-453-6-g-7",
+      "previousName": "Sides/Other Menu Items - Regular",
+      "name": "Hi-C Poppin' Pink Lemonade Regular"
+    },
+    {
+      "id": "restaurant-cook-out-sides-other-menu-items-small-12-oz-340-19-g-7",
+      "previousName": "Sides/Other Menu Items - Small",
+      "name": "Hi-C Poppin' Pink Lemonade Small"
+    },
+    {
+      "id": "restaurant-cook-out-large-24-oz-680-4-g-8",
+      "previousName": "Large",
+      "name": "Hi-C Fruit Punch Large"
+    },
+    {
+      "id": "restaurant-cook-out-sides-other-menu-items-regular-16-oz-453-6-g-8",
+      "previousName": "Sides/Other Menu Items - Regular",
+      "name": "Hi-C Fruit Punch Regular"
+    },
+    {
+      "id": "restaurant-cook-out-sides-other-menu-items-small-12-oz-340-19-g-8",
+      "previousName": "Sides/Other Menu Items - Small",
+      "name": "Hi-C Fruit Punch Small"
+    },
+    {
+      "id": "restaurant-cook-out-large-24-oz-680-4-g-9",
+      "previousName": "Large",
+      "name": "Fresh Brewed Sweet Tea Large"
+    },
+    {
+      "id": "restaurant-cook-out-sides-other-menu-items-regular-16-oz-453-6-g-9",
+      "previousName": "Sides/Other Menu Items - Regular",
+      "name": "Fresh Brewed Sweet Tea Regular"
+    },
+    {
+      "id": "restaurant-cook-out-sides-other-menu-items-small-12-oz-340-19-g-9",
+      "previousName": "Sides/Other Menu Items - Small",
+      "name": "Fresh Brewed Sweet Tea Small"
+    },
+    {
+      "id": "restaurant-cook-out-large-24-oz-680-4-g-10",
+      "previousName": "Large",
+      "name": "Dr. Pepper Large"
+    },
+    {
+      "id": "restaurant-cook-out-sides-other-menu-items-small-12-oz-340-19-g-10",
+      "previousName": "Sides/Other Menu Items - Small",
+      "name": "Dr. Pepper Small"
+    },
+    {
+      "id": "restaurant-cook-out-large-24-oz-680-4-g-11",
+      "previousName": "Large",
+      "name": "Cheerwine Large"
+    },
+    {
+      "id": "restaurant-cook-out-sides-other-menu-items-regular-16-oz-453-6-g-10",
+      "previousName": "Sides/Other Menu Items - Regular",
+      "name": "Cheerwine Regular"
+    },
+    {
+      "id": "restaurant-cook-out-sides-other-menu-items-small-12-oz-340-19-g-11",
+      "previousName": "Sides/Other Menu Items - Small",
+      "name": "Cheerwine Small"
+    },
+    {
+      "id": "restaurant-cook-out-large-24-oz-680-4-g-12",
+      "previousName": "Large",
+      "name": "Powerade Mountain Blast Large"
+    },
+    {
+      "id": "restaurant-cook-out-sides-other-menu-items-regular-16-oz-453-6-g-11",
+      "previousName": "Sides/Other Menu Items - Regular",
+      "name": "Powerade Mountain Blast Regular"
+    },
+    {
+      "id": "restaurant-cook-out-sides-other-menu-items-small-12-oz-340-19-g-12",
+      "previousName": "Sides/Other Menu Items - Small",
+      "name": "Powerade Mountain Blast Small"
+    }
+  ]
+}

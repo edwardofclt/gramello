@@ -9,7 +9,7 @@ export type Tab = 'diary' | 'trends' | 'settings';
 export function Brand() {
   return <View style={[styles.row, { gap: 11 }]}>
     <Image source={gramelloMark} alt="" accessible={false} style={{ width: 44, height: 44, borderRadius: 12 }} />
-    <Text style={{ color: colors.text, fontSize: 20, fontWeight: '700', letterSpacing: -.5 }}>Gramello</Text>
+    <Text accessible accessibilityLabel="gramello." style={{ color: colors.text, fontSize: 20, fontWeight: '700', letterSpacing: -.5 }}>gramello<Text accessible={false} style={{ color: colors.mint }}>.</Text></Text>
   </View>;
 }
 

@@ -16,7 +16,7 @@ from multiple browser tabs.
 | Behavior | Native iOS/Android | Main web app | Retained Expo browser client |
 | --- | --- | --- | --- |
 | Diary, meals, goals and custom foods | Local SQLite on the device | Local SQLite snapshots in this browser | Anonymous-cookie-scoped server database |
-| Food search | Bundled USDA/restaurant catalog, cached and online Open Food Facts | Same catalog and lookup rules as native | Hosted live USDA/Open Food Facts and server catalog |
+| Food search | Immediate indexed catalog search, filters, and automatic Open Food Facts expansion | Same local catalog, ranking, filters and automatic expansion as native | Indexed server catalog with configured USDA/Open Food Facts expansion |
 | Custom food visibility | Private | Private | Shared server catalog |
 | Backups | Settings → Advanced | Settings → Your data | Hosted export API |
 | Offline use | Available on installation | Available after Settings reports **Ready to use offline** | Requires the hosted server |
@@ -81,8 +81,8 @@ foods and all 42,529 previously imported restaurant foods across 150 catalogs.
 Name search works on first launch without a network connection. Barcode lookup
 checks installed and cached foods first, then queries Open Food Facts directly
 for missing codes and saves successful matches for offline use. Typing a name
-searches on-device foods and automatically includes Open Food Facts matches,
-which are cached for offline use. If an online database is unavailable, available
+searches on-device foods immediately, then automatically checks Open Food Facts
+after a short pause. Additional matches are cached for offline use. If an online database is unavailable, available
 foods remain usable; tap the warning to see the affected source and failure details.
 Unknown products offer name search or custom entry.
 
@@ -128,14 +128,28 @@ supports local persistence; offline reload is verified with the production build
 
 The compatibility API and retained Expo browser client combine:
 
-- [USDA FoodData Central](https://fdc.nal.usda.gov/) for generic and branded foods
+- An indexed USDA core for immediate generic food search, plus optional live
+  [USDA FoodData Central](https://fdc.nal.usda.gov/) expansion
 - [Open Food Facts](https://world.openfoodfacts.org/) for its open, community-maintained product database and images
-- A small built-in USDA reference fallback for common staples
 - Imported restaurant menus and user-created foods in the server catalog
 
-The live USDA request currently uses `DEMO_KEY` in `lib/food-providers.ts`;
-there is no configurable USDA API-key setting. Provider failures are reported
-as partial results while matching server-catalog foods remain available.
+Typing searches the server catalog first, then automatically checks configured
+providers after a short pause. Restaurant and custom-food filters stay local.
+Category and brand/restaurant filters refine the results; **Load more** continues
+the current list and **Find more matches** expands its candidate window. Common
+spelling variations and food aliases are supported. Clearly identified menu
+variants can be expanded to select an exact size; ambiguous source descriptions
+are flagged instead of merged.
+
+Automatic expansion requests additional matches. Configure `USDA_API_KEY` as a
+server runtime secret to enable live USDA search. `OFF_SEARCH_ENABLED=1` enables
+hosted Open Food Facts search with an atomic shared D1 quota; leave it unset to
+use local/cached products without live name searches. Barcode lookup remains
+available. New installations apply migrations `0006`–`0008` for full-text search,
+the USDA core, and reviewed restaurant name corrections. Existing installations
+apply only unapplied migrations. Provider failures leave local matches usable.
+Neither configuration value is needed for native or main-web offline USDA search
+or their direct Open Food Facts lookups. See `.env.example` for hosted configuration.
 
 Choose **Add food → Scan barcode** to scan a packaged food with your camera or
 type the printed barcode. Gramello looks up the exact product in Open Food Facts,

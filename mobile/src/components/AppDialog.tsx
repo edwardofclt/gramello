@@ -1,11 +1,12 @@
-import { createContext, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
+import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import { KeyboardAvoidingView, Modal, Platform, Pressable, ScrollView, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { X } from 'lucide-react-native';
 import { Action, colors, isWeb, styles, useLayout } from './ui';
 
-const DialogScroll = createContext<{ offset: () => number; scrollTo: (y: number) => void } | null>(null);
-export const useDialogScroll = () => useContext(DialogScroll);
+type DialogScrollControl = { capture: () => number; restore: (offset: number) => void; showTop: () => void };
+const DialogScrollContext = createContext<DialogScrollControl | null>(null);
+export const useDialogScroll = () => useContext(DialogScrollContext);
 
 // React Native Web's Modal owns focus trapping and Escape.
 // Only the presentation changes: a centered web dialog or a native page sheet.
@@ -17,11 +18,30 @@ export function AppDialog({ title, description, children, onClose, busy = false 
   const scroll = useRef<ScrollView>(null);
   const offset = useRef(0);
   const frame = useRef<number | undefined>(undefined);
-  const navigation = useMemo(() => ({ offset: () => offset.current, scrollTo: (y: number) => {
-    if (frame.current !== undefined) cancelAnimationFrame(frame.current);
-    frame.current = requestAnimationFrame(() => { scroll.current?.scrollTo({ y, animated: false }); frame.current = undefined; });
-  } }), []);
+  const contentHeight = useRef(0);
+  const viewportHeight = useRef(0);
+  const contentRevision = useRef(0);
+  const pendingOffset = useRef<{ offset: number; revision: number } | null>(null);
+  const applyRestore = useCallback(() => {
+    const target = pendingOffset.current;
+    // Wait for the returning list to lay out, rather than letting the shorter
+    // amount/scanner/form content clamp the requested search position.
+    if (target === null) return;
+    const maximum = Math.max(0, contentHeight.current - viewportHeight.current);
+    if (maximum + 2 < target.offset && contentRevision.current <= target.revision) return;
+    // A refreshed result set may be shorter; restore as far as it allows.
+    scroll.current?.scrollTo({ y: Math.min(target.offset, maximum), animated: false });
+    pendingOffset.current = null;
+  }, []);
+  const scheduleRestore = useCallback(() => { if (pendingOffset.current !== null) { if (frame.current !== undefined) cancelAnimationFrame(frame.current); frame.current = requestAnimationFrame(() => { frame.current = undefined; applyRestore(); }); } }, [applyRestore]);
   useEffect(() => () => { if (frame.current !== undefined) cancelAnimationFrame(frame.current); }, []);
+  const capture = useCallback(() => {
+    if (isWeb) { const node = scroll.current?.getScrollableNode(); if (node instanceof HTMLElement) return node.scrollTop; }
+    return offset.current;
+  }, []);
+  const restore = useCallback((value: number) => { pendingOffset.current = { offset: value, revision: contentRevision.current }; scheduleRestore(); }, [scheduleRestore]);
+  const showTop = useCallback(() => { pendingOffset.current = null; scroll.current?.scrollTo({ y: 0, animated: false }); }, []);
+  const scrollControl = useMemo(() => ({ capture, restore, showTop }), [capture, restore, showTop]);
   // Capture before the search input auto-focuses. RN Web's own effect runs
   // after that focus and would otherwise try to restore the removed input.
   const [trigger] = useState(() => isWeb && document.activeElement instanceof HTMLElement ? document.activeElement : null);
@@ -42,10 +62,14 @@ export function AppDialog({ title, description, children, onClose, busy = false 
             <View style={{ gap: 5, flex: 1 }}><Text accessibilityRole="header" style={styles.heading}>{title}</Text>{description && <Text style={styles.muted}>{description}</Text>}</View>
             <Action quiet secondary compact disabled={busy} label={`Close ${title.toLowerCase()}`} onPress={close}><X size={20} color={colors.muted} /></Action>
           </View>
-          <ScrollView ref={scroll} onScroll={event => { offset.current = event.nativeEvent.contentOffset.y; }} scrollEventThrottle={16} style={{ flexShrink: 1 }} contentContainerStyle={[styles.content, { paddingTop: 8, paddingHorizontal: isWeb ? 24 : 20 }]} keyboardShouldPersistTaps="handled" keyboardDismissMode={isWeb ? 'none' : 'on-drag'}>
+          <ScrollView ref={scroll} testID="app-dialog-scroll" scrollEventThrottle={16}
+            onScroll={event => { offset.current = event.nativeEvent.contentOffset.y; }}
+            onLayout={event => { viewportHeight.current = event.nativeEvent.layout.height; scheduleRestore(); }}
+            onContentSizeChange={(_width, height) => { contentHeight.current = height; contentRevision.current++; scheduleRestore(); }}
+            style={{ flexShrink: 1 }} contentContainerStyle={[styles.content, { paddingTop: 8, paddingHorizontal: isWeb ? 24 : 20 }]} keyboardShouldPersistTaps="handled" keyboardDismissMode={isWeb ? 'none' : 'on-drag'}>
             {/* Native autoFocus must wait until the sheet's presentation finishes.
                 Opening the keyboard during that transition can interrupt the sheet. */}
-            {presented && <DialogScroll.Provider value={navigation}>{children}</DialogScroll.Provider>}
+            <DialogScrollContext.Provider value={scrollControl}>{presented && children}</DialogScrollContext.Provider>
           </ScrollView>
         </KeyboardAvoidingView>
       </SafeAreaView>

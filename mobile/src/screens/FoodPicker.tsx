@@ -5,11 +5,13 @@ import { useSession } from '../diary/Session';
 import { Action, Card, colors, ErrorNotice, Field, styles, useLayout } from '../components/ui';
 import { BarcodeScanner } from '../components/BarcodeScanner';
 import { CustomFoodForm } from '../components/CustomFoodForm';
+import { useDialogScroll } from '../components/AppDialog';
 import { FoodVerification } from '../components/FoodVerification';
 import { ServingPicker } from '../components/ServingPicker';
-import { useDialogScroll } from '../components/AppDialog';
+import { foodRevision } from '../../../lib/food-revision';
 import { nutritionLabel } from '../../../lib/food';
-import type { FoodSearchIssue, FoodSearchResult } from '../../../lib/food-search';
+import { groupSearchHits, searchCategories, searchHits, useFoodSearch } from '../../../hooks/use-food-search';
+import type { FoodSearchHit } from '../../../lib/food-search';
 import { errorMessage } from '../lib/api';
 import { scaleFood } from '../lib/nutrition';
 import { meals, type Food, type Meal } from '../lib/types';
@@ -18,28 +20,27 @@ import { foodUnits, convertFoodQuantity, displayAmount, unitLabels, amountLabels
 export function FoodPicker({ date, initialMeal, onSaved, initialFood, onIngredient, onBusy, onTitle }: { date: string; initialMeal: Meal; onSaved: () => void; initialFood?: Food; onIngredient?: (ingredient: Ingredient) => void; onBusy?: (busy: boolean) => void; onTitle?: (title: string) => void }) {
   const { api, local } = useSession();
   const { width } = useLayout();
-  const scroll = useDialogScroll();
+  const dialogScroll = useDialogScroll();
+  const resultScroll = useRef(0);
+  const refreshOnBack = useRef(false);
+  const [expandedGroups, setExpandedGroups] = useState<Record<string, boolean>>({});
   const [meal, setMeal] = useState(initialMeal);
-  const [query, setQuery] = useState('');
-  const [results, setResults] = useState<Food[]>([]);
+  const search = useFoodSearch(api);
+  const { query, setQuery, results: searchResult, busy: searching, pause } = search;
+  const { partial, issues = [] } = searchResult;
   const [selected, setSelected] = useState<Food | null>(initialFood ?? null);
   const [scanning, setScanning] = useState(false);
   const [custom, setCustom] = useState(false);
-  const [partial, setPartial] = useState(false);
-  const [issues, setIssues] = useState<FoodSearchIssue[]>([]);
+
   const [showSearchDetails, setShowSearchDetails] = useState(false);
-  const [hasMore, setHasMore] = useState(false);
+
   const [quantity, setQuantity] = useState('1');
   const [unit, setUnit] = useState<AmountUnit>('serving');
-  const [searching, setSearching] = useState(false);
+
   const [error, setError] = useState<string | null>(null);
   const [saving, setSaving] = useState(false);
-  const [searchRevision, setSearchRevision] = useState(0);
+
   const saveLock = useRef(false);
-  const completedSearch = useRef<string | null>(null);
-  const searchScroll = useRef(0);
-  const page = selected ? 'amount' : custom ? 'custom' : scanning ? 'scan' : 'search';
-  useEffect(() => { scroll?.scrollTo(page === 'search' ? searchScroll.current : 0); }, [page, scroll]);
   const scaled = selected ? scaleFood(selected, Number(quantity), unit) : null;
   useEffect(() => { onTitle?.(selected ? 'Choose amount' : custom ? 'Add custom food' : scanning ? 'Scan barcode' : 'Add food'); }, [selected, scanning, custom, onTitle]);
   const lookupBarcode = useCallback(async (code: string, signal: AbortSignal) => {
@@ -47,44 +48,39 @@ export function FoodPicker({ date, initialMeal, onSaved, initialFood, onIngredie
     return result.food;
   }, [api]);
   const selectFood = useCallback((food: Food) => {
-    if (page === 'search') searchScroll.current = scroll?.offset() ?? 0;
-    setSelected(food); setScanning(false); setCustom(false); setSearching(false); setQuantity('1'); setUnit('serving'); setError(null);
-  }, [page, scroll]);
-
-  useEffect(() => {
-    if (custom || scanning || selected || query.trim().length < 2 || completedSearch.current === query.trim()) return;
-    const controller = new AbortController();
-    const timer = setTimeout(() => {
-      setSearching(true); setError(null);
-      void api<FoodSearchResult>(`/api/foods/search?q=${encodeURIComponent(query.trim())}`, { signal: controller.signal })
-        .then(data => { if (!controller.signal.aborted) { completedSearch.current = query.trim(); setResults(data.foods); setPartial(!!data.partial); setIssues(data.issues ?? []); setHasMore(!!data.hasMore); } })
-        .catch(error => { if (!controller.signal.aborted) setError(errorMessage(error)); })
-        .finally(() => { if (!controller.signal.aborted) setSearching(false); });
-    }, 350);
-    return () => { clearTimeout(timer); controller.abort(); };
-  }, [api, query, searchRevision, scanning, selected, custom]);
+    pause();
+    if (!scanning && !custom) resultScroll.current = dialogScroll?.capture() ?? 0;
+    dialogScroll?.showTop();
+    setSelected(food); setScanning(false); setCustom(false); setQuantity('1'); setUnit('serving'); setError(null);
+  }, [dialogScroll, scanning, custom, pause]);
+  const leaveSearch = () => { search.pause(); resultScroll.current = dialogScroll?.capture() ?? 0; dialogScroll?.showTop(); };
+  const returnToResults = () => { dialogScroll?.restore(resultScroll.current); };
 
   async function save() {
     if (!selected || !scaled || saveLock.current) return;
     if (onIngredient) { onIngredient({ food: selected, quantity: Number(quantity), unit }); return; }
     saveLock.current = true; setSaving(true); onBusy?.(true); setError(null);
     try {
-      await api('/api/entries', { method: 'POST', body: { date, meal, name: selected.name, brand: selected.brand, source: selected.source, sourceId: selected.id, servingId: selected.selectedServingId, quantity: Number(quantity), unit, ...scaled } });
+      await api('/api/entries', { method: 'POST', body: { date, meal, name: selected.name, brand: selected.brand, source: selected.source, sourceId: selected.id, servingId: selected.selectedServingId, ...(selected.sourceKind ? { foodRevision: foodRevision(selected) } : {}), quantity: Number(quantity), unit, ...scaled } });
       onSaved();
     } catch (error) { setError(errorMessage(error)); }
     finally { saveLock.current = false; setSaving(false); onBusy?.(false); }
   }
 
   return <>
-          {error && <ErrorNotice message={error} retry={selected ? undefined : () => { completedSearch.current = null; setSearchRevision(value => value + 1); }} />}
-          {custom ? <CustomFoodForm initialName={query} api={api} onSaved={food => { completedSearch.current = null; selectFood(food); }} onBack={() => setCustom(false)} onBusy={busy => { setSaving(busy); onBusy?.(busy); }}/>
-            : scanning ? <BarcodeScanner lookup={lookupBarcode} onFound={food => { completedSearch.current = null; selectFood(food); }} onBack={() => { setScanning(false); setSearching(false); }} /> : !selected ? <>
-            <Field label="Search foods" placeholder="Try oats, chicken, or a brand…" autoFocus={!query} autoCorrect={false} returnKeyType="search" value={query}
-              onChangeText={value => { if (value === query) return; completedSearch.current = null; setQuery(value); setResults([]); setError(null); setPartial(false); setIssues([]); setShowSearchDetails(false); setHasMore(false); setSearching(value.trim().length >= 2); }} />
-            <Action secondary label="Scan barcode" onPress={() => { searchScroll.current = scroll?.offset() ?? 0; setScanning(true); setSearching(false); setError(null); }}><ScanBarcode size={20} color={colors.mint} /><Text style={styles.body}>Scan barcode</Text></Action>
-            <Action secondary onPress={() => { searchScroll.current = scroll?.offset() ?? 0; setCustom(true); setSearching(false); setError(null); }}>Add custom food</Action>
-            <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 7 }}>{(local ? ['Restaurant menus', 'Downloaded foods', 'Saved lookups', 'Open Food Facts', 'My foods'] : ['Restaurant menus', 'USDA', 'Open Food Facts', 'Community foods']).map(source => <Text key={source} style={{ color: colors.muted, fontSize: 11, backgroundColor: colors.raised, borderRadius: 20, paddingVertical: 5, paddingHorizontal: 9 }}>{source}</Text>)}</View>
-            {local && <Text style={styles.muted}>Searches automatically include Open Food Facts. Online results are saved for offline use.</Text>}
+          {error && <ErrorNotice message={error} />}
+          {custom ? <CustomFoodForm initialName={query} api={api} onSaved={food => { refreshOnBack.current = true; selectFood(food); }} onBack={() => { returnToResults(); setCustom(false); }} onBusy={busy => { setSaving(busy); onBusy?.(busy); }}/>
+            : scanning ? <BarcodeScanner lookup={lookupBarcode} onFound={food => { refreshOnBack.current = true; selectFood(food); }} onBack={() => { returnToResults(); setScanning(false); }} /> : !selected ? <>
+            <Field label="Search foods" placeholder="Try oats, chicken, or a brand…" autoFocus={!query} autoCorrect={false} returnKeyType="search" maxLength={200} value={query}
+              onSubmitEditing={search.submitSearch} onChangeText={value => { setQuery(value); setError(null); setShowSearchDetails(false); }} />
+            <Action secondary label="Scan barcode" onPress={() => { leaveSearch(); setScanning(true); setError(null); }}><ScanBarcode size={20} color={colors.mint} /><Text style={styles.body}>Scan barcode</Text></Action>
+            <Action secondary onPress={() => { leaveSearch(); setCustom(true); setError(null); }}>Add custom food</Action>
+            <View accessibilityLabel="Food categories" style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 7 }}>{searchCategories.map(([value, label]) => <Pressable key={value} accessibilityRole="button" accessibilityState={{ selected: search.category === value }} aria-pressed={search.category === value} onPress={() => search.setCategory(value)} style={{ minHeight: 44, paddingHorizontal: 12, justifyContent: 'center', borderRadius: 20, backgroundColor: search.category === value ? '#235b57' : colors.raised }}><Text style={{ color: search.category === value ? colors.mint : colors.muted, fontSize: 12 }}>{label === 'Custom' ? local ? 'My foods' : 'Community foods' : label}</Text></Pressable>)}</View>
+            {(search.brand || !!searchResult.brands?.length) && <><Text style={styles.eyebrow}>BRAND OR RESTAURANT</Text><View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 7 }}>{['', ...Array.from(new Set([...(searchResult.brands ?? []), ...(search.brand ? [search.brand] : [])]))].map(brand => <Pressable key={brand} accessibilityRole="button" accessibilityState={{ selected: search.brand === brand }} aria-pressed={search.brand === brand} onPress={() => search.setBrand(brand)} style={{ minHeight: 44, paddingHorizontal: 12, justifyContent: 'center', borderRadius: 20, backgroundColor: search.brand === brand ? '#235b57' : colors.raised }}><Text style={{ color: search.brand === brand ? colors.mint : colors.muted, fontSize: 12 }}>{brand || 'All brands and restaurants'}</Text></Pressable>)}</View></>}
+            {(search.category !== 'all' || search.brand) && <Action quiet secondary onPress={search.clearFilters}>Clear filters</Action>}
+            {searchResult.correction && <View><Text style={styles.muted}>Also searching for “{searchResult.correction}”.</Text><Action quiet secondary onPress={() => setQuery(searchResult.correction!)}>Use this spelling</Action></View>}
+            {search.error && <ErrorNotice message={search.error} retry={search.retry} />}
+            {search.notice && <Text accessibilityLiveRegion="polite" style={styles.muted}>{search.notice}</Text>}
             {partial && <View accessibilityLiveRegion="polite" style={{ gap: 8 }}>
               <Pressable accessibilityRole="button" accessibilityLabel="Some nutrition databases are unavailable." accessibilityHint="Show or hide database details" aria-expanded={showSearchDetails} onPress={() => setShowSearchDetails(value => !value)}
                 style={{ flexDirection: 'row', alignItems: 'center', gap: 8, minHeight: 48 }}>
@@ -96,17 +92,15 @@ export function FoodPicker({ date, initialMeal, onSaved, initialFood, onIngredie
                 <Text style={styles.muted}>Showing available matches from the catalog and other sources. You can still choose a result or add a custom food.</Text>
               </View>}
             </View>}
-            {searching ? <View style={styles.center}><ActivityIndicator color={colors.mint} /><Text style={styles.muted}>Searching food databases…</Text></View>
-              : !results.length && !error ? <View style={styles.center}><Search size={36} color={colors.mint} /><Text style={styles.heading}>{query.trim().length < 2 ? 'Find your next bite' : 'No matches yet'}</Text><Text style={[styles.muted, { textAlign: 'center' }]}>{query.trim().length < 2 ? 'Search by food, brand, or product name.' : 'Try another name, or add a custom food above.'}</Text></View> : null}
-            {results.map(food => <Action key={food.id} quiet secondary style={{ paddingHorizontal: 0, justifyContent: 'flex-start', borderBottomWidth: 1, borderColor: colors.border }} onPress={() => selectFood(food)}>
-              <View style={[styles.between, { flex: 1, paddingVertical: 12 }]}>
-                <FoodThumbnail food={food} />
-                <View style={{ flex: 1, gap: 5 }}><Text style={[styles.body, { fontWeight: '600' }]}>{food.name}</Text><Text style={styles.muted}>{food.brand ? `${food.brand} · ` : ''}{food.source}</Text><FoodVerification verified={food.verified}/><Text style={[styles.muted, { fontSize: 11 }]}>{Math.round(food.calories)} kcal · P {Math.round(food.protein)}g · C {Math.round(food.carbs)}g · F {Math.round(food.fat)}g {nutritionLabel(food)}</Text></View><ChevronRight color={colors.muted} size={18} />
-              </View>
-            </Action>)}
-            {hasMore && <Text style={styles.muted}>Showing the first 100 matches. Add an item name to narrow your search.</Text>}
+            {searchResult.sourceStatus?.filter(status => status.message && (status.state !== 'unavailable' || !issues.some(issue => issue.source === status.source))).map(status => <Text key={status.source} accessibilityLiveRegion="polite" style={styles.muted}>{status.source}: {status.message}</Text>)}
+            {searching && <View accessibilityLiveRegion="polite" style={styles.center}><ActivityIndicator color={colors.mint} /><Text style={styles.muted}>Finding more matches…</Text></View>}
+            {!searchResult.foods.length && !searching && <View style={styles.center}><Search size={36} color={colors.mint} /><Text style={styles.heading}>{!search.validQuery ? 'Find your next bite' : search.category !== 'all' || search.brand ? 'No matches with these filters' : 'No matches yet'}</Text><Text style={[styles.muted, { textAlign: 'center' }]}>{!search.validQuery ? 'Enter at least two characters. Search by food, brand, or product name.' : 'Try a shorter name, check the spelling, or add a custom food.'}</Text></View>}
+            <FoodSearchRows hits={searchHits(searchResult)} onChoose={selectFood} expanded={expandedGroups} onExpand={key => setExpandedGroups(previous => ({ ...previous, [key]: !previous[key] }))} />
+            {searchResult.nextCursor && <Action secondary busy={searching === 'more'} disabled={searching === 'local' || searching === 'more'} onPress={() => void search.loadMore()}>Load more</Action>}
+            {!searchResult.nextCursor && search.canExpand && <Action secondary busy={searching === 'more'} disabled={searching === 'local' || searching === 'more'} onPress={() => void search.findMore()}>Find more matches</Action>}
+            {!searchResult.nextCursor && searchResult.hasMore && !search.canExpand && <Text style={styles.muted}>Refine your search by preparation, brand, or restaurant for more precise matches.</Text>}
           </> : <>
-            <Action quiet secondary style={{ justifyContent: 'flex-start', paddingHorizontal: 0 }} disabled={saving} onPress={() => { setSelected(null); setError(null); }}><ChevronLeft size={18} color={colors.muted} /><Text style={styles.muted}>Back to results</Text></Action>
+            <Action quiet secondary style={{ justifyContent: 'flex-start', paddingHorizontal: 0 }} disabled={saving} onPress={() => { if (error?.startsWith('This food changed')) resultScroll.current = 0; if (refreshOnBack.current || error?.startsWith('This food changed')) { refreshOnBack.current = false; search.retry(); } returnToResults(); setSelected(null); setError(null); }}><ChevronLeft size={18} color={colors.muted} /><Text style={styles.muted}>{error?.startsWith('This food changed') ? 'Back and refresh results' : 'Back to results'}</Text></Action>
             <Card style={{ flexDirection: 'row', alignItems: 'center', backgroundColor: colors.background, borderWidth: 0, padding: 15 }}><FoodThumbnail food={selected} /><View style={{ flex: 1, gap: 4 }}><Text style={styles.heading}>{selected.name}</Text><Text style={styles.muted}>{selected.brand || selected.source} · {selected.servingLabel}</Text><FoodVerification verified={selected.verified}/>{selected.sourceUrl && <Text accessibilityRole="link" style={{ color: colors.blue, textDecorationLine: 'underline', fontSize: 12 }} onPress={() => { void Linking.openURL(selected.sourceUrl!).catch(() => setError('Could not open the nutrition source.')); }}>View nutrition source</Text>}</View></Card>
             {!onIngredient && <><Text style={styles.eyebrow}>ADD TO MEAL</Text>
             <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 8 }}>{meals.map(item => <Action key={item} compact secondary={meal !== item} disabled={saving} onPress={() => setMeal(item)}>{item}</Action>)}</View></>}
@@ -130,4 +124,9 @@ function FoodThumbnail({ food }: { food: Food }) {
   const [failed, setFailed] = useState(false);
   return food.image && !failed ? <Image source={{ uri: food.image }} alt="" accessibilityIgnoresInvertColors onError={() => setFailed(true)} style={{ width: 52, height: 52, borderRadius: 12 }} />
     : <View style={{ width: 52, height: 52, borderRadius: 12, backgroundColor: '#19394b', alignItems: 'center', justifyContent: 'center' }}><Text style={{ color: colors.mint, fontSize: 20, fontWeight: '800' }}>{food.name.charAt(0)}</Text></View>;
+}
+
+function FoodSearchRows({ hits, onChoose, expanded, onExpand }: { hits: FoodSearchHit[]; onChoose: (food: Food) => void; expanded: Record<string, boolean>; onExpand: (key: string) => void }) {
+  const row = (hit: FoodSearchHit) => { const food = hit.food; return <Action key={food.id} quiet secondary style={{ paddingHorizontal: 0, justifyContent: 'flex-start', borderBottomWidth: 1, borderColor: colors.border }} onPress={() => onChoose(food)}><View style={[styles.between, { flex: 1, paddingVertical: 12 }]}><FoodThumbnail food={food} /><View style={{ flex: 1, gap: 5 }}><Text style={[styles.body, { fontWeight: '600' }]}>{food.name}</Text><Text style={styles.muted}>{food.brand ? `${food.brand} · ` : ''}{food.source}</Text><Text style={styles.muted}>Serving: {food.servingLabel}</Text><FoodVerification verified={food.verified}/><Text style={[styles.muted, { fontSize: 11 }]}>{Math.round(food.calories)} kcal · P {Math.round(food.protein)}g · C {Math.round(food.carbs)}g · F {Math.round(food.fat)}g {nutritionLabel(food)}</Text>{hit.warning && <Text style={{ color: colors.amber, fontSize: 12 }}>{hit.warning}</Text>}</View><ChevronRight color={colors.muted} size={18} /></View></Action>; };
+  return <>{groupSearchHits(hits).map(group => group.hits.length > 1 ? <View key={group.key}><Pressable accessibilityRole="button" aria-expanded={!!expanded[group.key]} onPress={() => onExpand(group.key)} style={{ minHeight: 48, justifyContent: 'center' }}><Text style={styles.body}>{group.label ?? group.hits[0].food.name} · {group.hits.length} variants — choose preparation or size</Text></Pressable>{expanded[group.key] && group.hits.map(row)}</View> : row(group.hits[0]))}</>;
 }

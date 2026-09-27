@@ -1,3 +1,4 @@
+import { parseFoodSearchOptions } from '../../../lib/search/pagination';
 import type { ApiClient } from '../lib/api';
 import type { LocalRepository } from './repository';
 // Transitional screen adapter: these route names are dispatched in-process.
@@ -16,7 +17,7 @@ export function createLocalApi(repo: LocalRepository): ApiClient {
       case 'PUT /api/entries': value = await repo.updateEntry(q('id'), options.body); break;
       case 'DELETE /api/entries': value = await repo.removeEntry(q('id')); break;
       case 'GET /api/trends': value = { days: await repo.getTrends(Number(q('days'))) }; break;
-      case 'GET /api/foods/search': value = await repo.searchFoods(q('q'), { online: q('online') !== '0', signal: options.signal }); break;
+      case 'GET /api/foods/search': value = await repo.searchFoods(q('q'), { ...parseFoodSearchOptions(url.searchParams), signal: options.signal }); break;
       case 'GET /api/foods/barcode': value = await repo.lookupBarcode(q('code'), options.signal); break;
       case 'POST /api/foods/custom': value = await repo.createFood(options.body); break;
       case 'GET /api/meals': value = await repo.listMeals(); break;

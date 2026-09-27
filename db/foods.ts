@@ -1,7 +1,8 @@
 import { env } from 'cloudflare:workers';
 import type { CustomFoodInput, Food } from '../lib/food';
-import { FOOD_SEARCH_CANDIDATE_LIMIT, foodSearchLikeTerms, foodSearchTerms, rankFoodSearch } from '../lib/food-search-ranking';
 import { preferredFoodServing } from '../lib/food-servings';
+import type { FoodSearchOptions } from '../lib/food-search';
+import { analyzeFoodQuery, foodSearchTerms, rankFoodSearch, stapleFoodIds } from '../lib/search';
 
 const columns = `id, name, brand, source, source_kind as sourceKind, source_url as sourceUrl, verified,
   nutrition_basis as nutritionBasis, serving_grams as servingGrams, serving_ml as servingMl, serving_label as servingLabel,
@@ -16,14 +17,44 @@ export async function getFood(id: string): Promise<Food | null> {
   const row = await database().prepare(`SELECT ${columns} FROM foods WHERE id = ?`).bind(id).first<Food>();
   return row ? fromRow(row) : null;
 }
-export async function findFoods(query: string, limit = 100): Promise<Food[]> {
-  const tokens = foodSearchLikeTerms(query);
-  if (!tokens.length) return [];
-  const searchable = "lower(replace(replace(replace(replace(name || ' ' || coalesce(brand, ''), '''', ''), '’', ''), '‘', ''), 'ʼ', ''))";
-  const where = tokens.map(forms => `(${forms.map(() => `${searchable} LIKE ? ESCAPE '~'`).join(' OR ')})`).join(' AND ');
-  const patterns = tokens.flat().map(token => `%${token.replace(/[~%_]/g, value => `~${value}`)}%`);
-  const rows = await database().prepare(`SELECT ${columns} FROM foods WHERE ${where} ORDER BY CASE WHEN lower(replace(replace(coalesce(brand,''), '''', ''), '’', '')) = ? THEN 0 WHEN lower(name) = ? THEN 1 ELSE 2 END, verified DESC, brand, name, id LIMIT ?`).bind(...patterns, foodSearchTerms(query).join(' '), query.toLowerCase(), Math.max(limit, FOOD_SEARCH_CANDIDATE_LIMIT)).all<Food>();
-  return rankFoodSearch((rows.results ?? []).map(fromRow), query).slice(0, limit);
+export async function findFoodsWindow(query: string, options: FoodSearchOptions | number = {}): Promise<{ foods: Food[]; canExpand: boolean }> {
+  const settings = typeof options === 'number' ? { window: options } : options;
+  const budget = Math.max(1, Math.min(1000, settings.window ?? 100));
+  const analysis = analyzeFoodQuery(query);
+  const matches = analysis.variants.map(variant => (variant.match(/[\p{L}\p{N}]+/gu) ?? []).slice(0,10).map(token => `"${token}"*`).join(' AND ')).filter(Boolean);
+  if (!matches.length) return { foods: [], canExpand: false };
+  const queryMatch = matches.map(value => `(${value})`).join(' OR ');
+  // Use lexical brand aliases without spelling correction, matching shared ranking.
+  // Search name as well as brand so historical USDA embedded brands remain eligible.
+  const brandTokens = foodSearchTerms(settings.brand ?? '').slice(0, 10);
+  const match = [`(${queryMatch})`, ...brandTokens.map(token => `"${token}"*`)].join(' AND ');
+  const category = `CASE WHEN id LIKE 'restaurant-%' OR source_kind='restaurant' THEN 'restaurant'
+    WHEN id LIKE 'custom-%' OR source_kind='custom' THEN 'custom'
+    WHEN id LIKE 'off-%' OR trim(coalesce(brand,''))<>'' THEN 'packaged' ELSE 'generic' END`;
+  const categories = settings.category && settings.category !== 'all' ? [settings.category] : ['generic','packaged','restaurant','custom'];
+  const groups = await Promise.all(categories.map(async group => {
+    // Include unbranded USDA names in packaged retrieval; metadata recognizes embedded brands.
+    const pool = group === 'packaged' ? `(${category}=? OR id LIKE 'usda-%')` : `${category}=?`;
+    const rows = await database().prepare(`SELECT ${columns} FROM foods WHERE rowid IN
+      (SELECT rowid FROM food_search WHERE food_search MATCH ?) AND ${pool}
+      ORDER BY CASE WHEN lower(name)=? THEN 0 WHEN lower(name) LIKE ? THEN 1 ELSE 2 END, verified DESC, name, id LIMIT ?`)
+      .bind(match, group, analysis.normalized, `${analysis.normalized}%`, budget + 1).all<Food>();
+    return (rows.results ?? []).map(fromRow);
+  }));
+  const anchors = await Promise.all(stapleFoodIds(query).map(getFood));
+  return { foods: rankFoodSearch(query, [...groups.flat(), ...anchors.filter((food): food is Food => !!food)], settings).foods, canExpand: budget < 1000 && groups.some(group => group.length > budget) };
+}
+export async function findFoods(query: string, options: FoodSearchOptions | number = {}): Promise<Food[]> {
+  return (await findFoodsWindow(query, options)).foods;
+}
+// D1 serializes this atomic conditional upsert across isolates. The interval is
+// deliberately conservative (one search per 7 seconds, including failed calls).
+export async function reserveHostedOffSearch(): Promise<boolean> {
+  const now = Date.now();
+  const row = await database().prepare(`INSERT INTO food_provider_quota(provider,next_allowed_at) VALUES('off',?)
+    ON CONFLICT(provider) DO UPDATE SET next_allowed_at=excluded.next_allowed_at
+    WHERE food_provider_quota.next_allowed_at<=? RETURNING provider`).bind(now + 7000, now).first();
+  return !!row;
 }
 async function writeFood(food: Food, createdBy: string | null) {
   await database().prepare(`INSERT INTO foods (id,name,brand,source,source_kind,source_url,verified,nutrition_basis,serving_grams,serving_ml,serving_label,calories,protein,carbs,fat,image,created_by,checked_at,created_at)

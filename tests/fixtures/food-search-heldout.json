@@ -1,0 +1,373 @@
+{
+  "version": 1,
+  "judgmentMethod": "Agent-authored source-description relevance judgments, frozen before any ranking evaluation. The author read the development fixture only to exclude its food and restaurant families, inspected raw USDA/restaurant data and canonical IDs, and did not inspect ranker implementation or search results while choosing queries or labels. This is a small source-grounded held-out stress set, not human-rated or sampled user traffic. No tuning is permitted against this set.",
+  "queries": [
+    {
+      "query": "celery",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-169988",
+        "usda-169989",
+        "usda-169342"
+      ],
+      "judgment": "Plain celery, raw or simply boiled, is acceptable; soups and seed seasoning are not. Relevant source descriptions: Celery, raw; Celery, cooked, boiled, drained, without salt; Celery, cooked, boiled, drained, with salt"
+    },
+    {
+      "query": "kale",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-168421",
+        "usda-169238",
+        "usda-169239",
+        "usda-169240",
+        "usda-169355",
+        "usda-169356"
+      ],
+      "judgment": "Plain fresh or frozen kale, raw or simply boiled, is acceptable. Relevant source descriptions: Kale, raw; Kale, cooked, boiled, drained, without salt; Kale, frozen, unprepared; Kale, frozen, cooked, boiled, drained, without salt; Kale, cooked, boiled, drained, with salt; Kale, frozen, cooked, boiled, drained, with salt"
+    },
+    {
+      "query": "fresh raspberries",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-167755",
+        "usda-168997"
+      ],
+      "judgment": "Fresh whole raspberries; sweetened, puree and canned products are excluded. Relevant source descriptions: Raspberries, raw; Raspberries, wild (Northern Plains Indians)"
+    },
+    {
+      "query": "fresh cherries",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-171719",
+        "usda-173954"
+      ],
+      "judgment": "Fresh sweet or sour cherries; preserved and dried products are excluded. Relevant source descriptions: Cherries, sweet, raw; Cherries, sour, red, raw"
+    },
+    {
+      "query": "kiwi fruit",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-168153",
+        "usda-168211"
+      ],
+      "judgment": "Whole kiwifruit, either green or gold. Relevant source descriptions: Kiwifruit, green, raw; Kiwifruit, ZESPRI SunGold, raw"
+    },
+    {
+      "query": "dates",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-168191",
+        "usda-171726"
+      ],
+      "judgment": "Plain dates, either named variety. Relevant source descriptions: Dates, medjool; Dates, deglet noor"
+    },
+    {
+      "query": "raisins",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-168164",
+        "usda-168165",
+        "usda-168166"
+      ],
+      "judgment": "Plain raisins, golden or dark, seeded or seedless; confectionery and baked goods excluded. Relevant source descriptions: Raisins, golden, seedless; Raisins, dark, seedless (Includes foods for USDA's Food Distribution Program); Raisins, seeded"
+    },
+    {
+      "query": "couscous",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-169699",
+        "usda-169700"
+      ],
+      "judgment": "No preparation specified, so both dry and cooked plain couscous are acceptable. Relevant source descriptions: Couscous, dry; Couscous, cooked"
+    },
+    {
+      "query": "tempeh",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-172467",
+        "usda-174272"
+      ],
+      "judgment": "Plain tempeh, either cooked or unspecified. Relevant source descriptions: Tempeh, cooked; Tempeh"
+    },
+    {
+      "query": "cashew nuts",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-169421",
+        "usda-169422",
+        "usda-170162",
+        "usda-170571",
+        "usda-170572"
+      ],
+      "judgment": "Whole raw or roasted cashew nuts, with or without salt; cashew butter excluded. Relevant source descriptions: Nuts, cashew nuts, dry roasted, with salt added; Nuts, cashew nuts, oil roasted, with salt added; Nuts, cashew nuts, raw; Nuts, cashew nuts, dry roasted, without salt added; Nuts, cashew nuts, oil roasted, without salt added"
+    },
+    {
+      "query": "boiled asparagus",
+      "kind": "preparation",
+      "relevantIds": [
+        "usda-168390",
+        "usda-168494",
+        "usda-169209",
+        "usda-169313"
+      ],
+      "judgment": "Boiled asparagus, fresh or frozen, with or without salt; raw and canned-only descriptions excluded. Relevant source descriptions: Asparagus, cooked, boiled, drained; Asparagus, frozen, cooked, boiled, drained, with salt; Asparagus, frozen, cooked, boiled, drained, without salt; Asparagus, cooked, boiled, drained, with salt"
+    },
+    {
+      "query": "frozen brussels sprouts cooked",
+      "kind": "preparation",
+      "relevantIds": [
+        "usda-169332",
+        "usda-169973"
+      ],
+      "judgment": "Both frozen origin and cooked preparation must be present. Relevant source descriptions: Brussels sprouts, frozen, cooked, boiled, drained, with salt; Brussels sprouts, frozen, cooked, boiled, drained, without salt"
+    },
+    {
+      "query": "cooked pearled barley",
+      "kind": "preparation",
+      "relevantIds": [
+        "usda-170285"
+      ],
+      "judgment": "Cooked pearled barley, excluding raw barley and flour. Relevant source descriptions: Barley, pearled, cooked"
+    },
+    {
+      "query": "cod cooked",
+      "kind": "preparation",
+      "relevantIds": [
+        "usda-171956",
+        "usda-171990",
+        "usda-175178"
+      ],
+      "judgment": "Cooked cod without breading; Atlantic or Pacific are acceptable; raw, canned and dried-salted excluded. Relevant source descriptions: Fish, cod, Atlantic, cooked, dry heat; Fish, cod, Pacific, cooked, dry heat (may contain additives to retain moisture); Fish, cod, Pacific, cooked"
+    },
+    {
+      "query": "roasted pork tenderloin",
+      "kind": "preparation",
+      "relevantIds": [
+        "usda-167905",
+        "usda-168250",
+        "usda-169180",
+        "usda-169185"
+      ],
+      "judgment": "Roasted pork tenderloin, lean-only or lean-and-fat and with or without added solution. Relevant source descriptions: Pork, fresh, loin, tenderloin, separable lean and fat, cooked, roasted; Pork, fresh, loin, tenderloin, separable lean only, cooked, roasted; Pork, fresh, loin, tenderloin, separable lean only, with added solution, cooked, roasted; Pork, fresh, loin, tenderloin, separable lean and fat, with added solution, cooked, roasted"
+    },
+    {
+      "query": "roasted turkey breast without skin",
+      "kind": "preparation",
+      "relevantIds": [
+        "usda-171496",
+        "usda-174514",
+        "usda-174516",
+        "usda-174519"
+      ],
+      "judgment": "Roasted turkey breast described as meat only corresponds to the requested skinless portion. Relevant source descriptions: Turkey, whole, breast, meat only, cooked, roasted; Turkey, retail parts, breast, meat only, with added solution, cooked, roasted; Turkey, retail parts, breast, meat only, cooked, roasted; Turkey, breast, from whole bird, meat only, with added solution, roasted"
+    },
+    {
+      "query": "90% lean ground beef cooked",
+      "kind": "preparation",
+      "relevantIds": [
+        "usda-171793",
+        "usda-171794",
+        "usda-171795",
+        "usda-174031"
+      ],
+      "judgment": "Cooked 90% lean / 10% fat ground beef in patty, crumble or loaf form; raw and other lean percentages excluded. Relevant source descriptions: Beef, ground, 90% lean meat / 10% fat, patty, cooked, pan-broiled; Beef, ground, 90% lean meat / 10% fat, crumbles, cooked, pan-browned; Beef, ground, 90% lean meat / 10% fat, loaf, cooked, baked; Beef, ground, 90% lean meat / 10% fat, patty, cooked, broiled"
+    },
+    {
+      "query": "boiled sweet corn",
+      "kind": "preparation",
+      "relevantIds": [
+        "usda-168399",
+        "usda-168401",
+        "usda-168525",
+        "usda-168539",
+        "usda-168540",
+        "usda-168545",
+        "usda-169348",
+        "usda-169349",
+        "usda-169364",
+        "usda-169366",
+        "usda-169367",
+        "usda-169999"
+      ],
+      "judgment": "Boiled sweet corn, white or yellow, fresh or frozen, with or without salt. Relevant source descriptions: Corn, sweet, yellow, frozen, kernels cut off cob, boiled, drained, without salt; Corn, sweet, yellow, frozen, kernels on cob, cooked, boiled, drained, without salt; Corn, sweet, yellow, cooked, boiled, drained, with salt; Corn, sweet, white, cooked, boiled, drained, without salt; Corn, sweet, white, cooked, boiled, drained, with salt; Corn, sweet, white, frozen, kernels cut off cob, boiled, drained, without salt; Corn, sweet, yellow, frozen, kernels, cut off cob, boiled, drained, with salt; Corn, sweet, yellow, frozen, kernels on cob, cooked, boiled, drained, with salt; Corn, sweet, white, frozen, kernels cut off cob, boiled, drained, with salt; Corn, sweet, white, frozen, kernels on cob, cooked, boiled, drained, without salt; Corn, sweet, white, frozen, kernels on cob, cooked, boiled, drained, with salt; Corn, sweet, yellow, cooked, boiled, drained, without salt"
+    },
+    {
+      "query": "Cheerios cereal",
+      "kind": "packaged",
+      "relevantIds": [
+        "usda-173884"
+      ],
+      "judgment": "The original General Mills Cheerios source entry. Relevant source descriptions: Cereals ready-to-eat, GENERAL MILLS, CHEERIOS"
+    },
+    {
+      "query": "Ritz crackers",
+      "kind": "packaged",
+      "relevantIds": [
+        "usda-173258"
+      ],
+      "judgment": "Nabisco Ritz crackers; other crackers are not substitutes. Relevant source descriptions: Nabisco, Nabisco Ritz Crackers"
+    },
+    {
+      "query": "Kit Kat wafer bar",
+      "kind": "packaged",
+      "relevantIds": [
+        "usda-167992",
+        "usda-169629"
+      ],
+      "judgment": "Kit Kat wafer candy bars, including Big Kat size. Relevant source descriptions: Candies, KIT KAT Wafer Bar; Candies, HERSHEY, KIT KAT BIG KAT Bar"
+    },
+    {
+      "query": "Snickers original bar",
+      "kind": "packaged",
+      "relevantIds": [
+        "usda-169589"
+      ],
+      "judgment": "The standard Snickers Bar source entry, excluding almond, Marathon and other named formulations. Relevant source descriptions: Candies, MARS SNACKFOOD US, SNICKERS Bar"
+    },
+    {
+      "query": "Pillsbury cinnamon rolls",
+      "kind": "packaged",
+      "relevantIds": [
+        "usda-167513"
+      ],
+      "judgment": "The Pillsbury refrigerated cinnamon-roll dough with icing named by the source. Relevant source descriptions: Pillsbury, Cinnamon Rolls with Icing, refrigerated dough"
+    },
+    {
+      "query": "Twix caramel cookie bars",
+      "kind": "packaged",
+      "relevantIds": [
+        "usda-168768"
+      ],
+      "judgment": "The caramel Twix formulation, excluding peanut-butter and chocolate-fudge alternatives. Relevant source descriptions: Candies, MARS SNACKFOOD US, TWIX Caramel Cookie Bars"
+    },
+    {
+      "query": "arbys",
+      "kind": "restaurant",
+      "relevantBrand": "Arby's",
+      "judgment": "Restaurant browsing intent. Any menu item with the exact source brand Arby's is acceptable."
+    },
+    {
+      "query": "dominos",
+      "kind": "restaurant",
+      "relevantBrand": "Domino's",
+      "judgment": "Restaurant browsing intent. Any menu item with the exact source brand Domino's is acceptable."
+    },
+    {
+      "query": "qdoba",
+      "kind": "restaurant",
+      "relevantBrand": "Qdoba",
+      "judgment": "Restaurant browsing intent. Any menu item with the exact source brand Qdoba is acceptable."
+    },
+    {
+      "query": "jimmy johns",
+      "kind": "restaurant",
+      "relevantBrand": "Jimmy John’s",
+      "judgment": "Restaurant browsing intent. Any menu item with the exact source brand Jimmy John’s is acceptable."
+    },
+    {
+      "query": "raising canes box combo",
+      "kind": "restaurant",
+      "relevantIds": [
+        "restaurant-raising-canes-nutritionix-946221"
+      ],
+      "judgment": "Exact standard Box Combo from Raising Cane's; the Posty Way variant is excluded. Relevant source descriptions: Box Combo"
+    },
+    {
+      "query": "sonic medium cherry limeade",
+      "kind": "restaurant",
+      "relevantIds": [
+        "restaurant-sonic-cherry-limeade-medium-1-menu-serving-size-in-item-name"
+      ],
+      "judgment": "Medium regular Cherry Limeade from Sonic Drive-In; diet formulation and other sizes excluded. Relevant source descriptions: CHERRY LIMEADE MEDIUM"
+    },
+    {
+      "query": "cinnabon classic roll",
+      "kind": "restaurant",
+      "relevantIds": [
+        "restaurant-cinnabon-classic-roll-1-roll"
+      ],
+      "judgment": "The standard Classic Roll from Cinnabon; decorated variants and MiniBon are excluded. Relevant source descriptions: Classic Roll"
+    },
+    {
+      "query": "waffle house regular hashbrowns",
+      "kind": "restaurant",
+      "relevantIds": [
+        "restaurant-waffle-house-nutritionix-597459"
+      ],
+      "judgment": "Regular-size plain hashbrowns from Waffle House; add-ons, bowls and other sizes excluded. Relevant source descriptions: Hashbrowns, Regular"
+    },
+    {
+      "query": "courgette raw",
+      "kind": "alias",
+      "relevantIds": [
+        "usda-169291",
+        "usda-168565"
+      ],
+      "judgment": "Courgette is the regional name for zucchini. Raw mature or baby zucchini is acceptable. Relevant source descriptions: Squash, summer, zucchini, includes skin, raw; Squash, zucchini, baby, raw"
+    },
+    {
+      "query": "aubergine raw",
+      "kind": "alias",
+      "relevantIds": [
+        "usda-169228"
+      ],
+      "judgment": "Aubergine is the regional name for eggplant; raw preparation is required. Relevant source descriptions: Eggplant, raw"
+    },
+    {
+      "query": "fresh cilantro",
+      "kind": "alias",
+      "relevantIds": [
+        "usda-169997"
+      ],
+      "judgment": "Fresh cilantro corresponds to the source's raw coriander (cilantro) leaves; dried leaf and seeds excluded. Relevant source descriptions: Coriander (cilantro) leaves, raw"
+    },
+    {
+      "query": "prawns cooked",
+      "kind": "alias",
+      "relevantIds": [
+        "usda-171971",
+        "usda-175180"
+      ],
+      "judgment": "Common food-log usage of prawns for shrimp is accepted; plain cooked shrimp is the target, excluding breaded, canned and imitation products. Relevant source descriptions: Crustaceans, shrimp, mixed species, cooked, moist heat (may contain additives to retain moisture); Crustaceans, shrimp, cooked"
+    },
+    {
+      "query": "cauliflwer raw",
+      "kind": "recovery",
+      "relevantIds": [
+        "usda-169986",
+        "usda-169389"
+      ],
+      "judgment": "Single omitted letter in cauliflower; raw white or green cauliflower is acceptable. Relevant source descriptions: Cauliflower, raw; Cauliflower, green, raw"
+    },
+    {
+      "query": "cocunut oil",
+      "kind": "recovery",
+      "relevantIds": [
+        "usda-171412"
+      ],
+      "judgment": "Single wrong vowel in coconut. Plain edible coconut oil is required; industrial confectionery fats are excluded. Relevant source descriptions: Oil, coconut"
+    },
+    {
+      "query": "mozzarela cheese",
+      "kind": "recovery",
+      "relevantIds": [
+        "usda-167735",
+        "usda-169051",
+        "usda-170845",
+        "usda-170846",
+        "usda-170847",
+        "usda-170900",
+        "usda-171244"
+      ],
+      "judgment": "Single omitted letter in mozzarella. Plain mozzarella cheese of any fat or moisture level is acceptable; sticks, filled sandwiches and substitutes excluded. Relevant source descriptions: Cheese, mozzarella, low sodium; Cheese, mozzarella, nonfat; Cheese, mozzarella, whole milk; Cheese, mozzarella, whole milk, low moisture; Cheese, mozzarella, part skim milk; Cheese, mozzarella, low moisture, part-skim, shredded; Cheese, mozzarella, low moisture, part-skim"
+    },
+    {
+      "query": "pistachois raw",
+      "kind": "recovery",
+      "relevantIds": [
+        "usda-170184"
+      ],
+      "judgment": "Transposed letters in pistachios; raw pistachio nuts are required. Relevant source descriptions: Nuts, pistachio nuts, raw"
+    }
+  ]
+}

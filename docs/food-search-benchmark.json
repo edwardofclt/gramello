@@ -1,0 +1,1026 @@
+{
+  "fixtureFile": "tests/fixtures/food-search-relevance.json",
+  "catalogSha256": "e05d76232a9e00ff6ff272f754c5215c76421bfb596e75e06875e1253540865a",
+  "fixtureSha256": "74667c42b22e5a4ccd3ffde0114a264603632cd1770db0bcded8dc752517b5e3",
+  "catalogVersion": "offline-2026-09-search-v1",
+  "queryCount": 100,
+  "judgmentMethod": "Agent-authored relevance judgments from source food descriptions and explicit restaurant intent, independent of ranking output. No human ratings or held-out claim. Development regression set; subsequent tuning uses these judgments.",
+  "evaluationPhase": "Development evaluation",
+  "method": "Same SQLite catalog and fixed judgments. Legacy: original FTS prefix AND, rank/name order, first 100. Current: actual createCatalogReader.search, window=100 per candidate lane, shared rank; evaluate same top-k. Candidate success has different bounded budgets by design.",
+  "legacy": {
+    "successAt1": 39,
+    "successAt3": 57,
+    "successAt5": 63,
+    "successAt10": 68,
+    "successAt20": 74,
+    "candidateSuccess": 85,
+    "zeroResults": 5,
+    "mrrAt20": 0.4912
+  },
+  "current": {
+    "successAt1": 76,
+    "successAt3": 89,
+    "successAt5": 97,
+    "successAt10": 100,
+    "successAt20": 100,
+    "candidateSuccess": 100,
+    "zeroResults": 0,
+    "mrrAt20": 0.8379
+  },
+  "currentLatencyMs": {
+    "median": 4.74,
+    "p95": 30.71,
+    "environment": "Node v24.15.0, darwin/arm64; local synchronous SQLite adapter, not device timing"
+  },
+  "diagnostics": [
+    {
+      "query": "egg",
+      "kind": "generic",
+      "legacyRank": null,
+      "currentRank": 1,
+      "legacyCount": 100,
+      "currentCount": 200,
+      "currentMs": 30.711624999999998,
+      "legacyUncappedRank": 116,
+      "legacyUncappedCount": 1020,
+      "diagnosticId": "usda-171287",
+      "legacyDiagnosticRank": 120,
+      "currentDiagnosticRank": 1
+    },
+    {
+      "query": "rice",
+      "kind": "generic",
+      "legacyRank": null,
+      "currentRank": 1,
+      "legacyCount": 100,
+      "currentCount": 214,
+      "currentMs": 12.50762499999999,
+      "legacyUncappedRank": 206,
+      "legacyUncappedCount": 327,
+      "diagnosticId": "usda-168878",
+      "legacyDiagnosticRank": 206,
+      "currentDiagnosticRank": 2
+    },
+    {
+      "query": "chicken breast",
+      "kind": "generic",
+      "legacyRank": 54,
+      "currentRank": 1,
+      "legacyCount": 85,
+      "currentCount": 85,
+      "currentMs": 5.279082999999986,
+      "legacyUncappedRank": 54,
+      "legacyUncappedCount": 85,
+      "diagnosticId": "usda-171477",
+      "legacyDiagnosticRank": 54,
+      "currentDiagnosticRank": 1
+    },
+    {
+      "query": "mcdonalds",
+      "kind": "restaurant",
+      "legacyRank": null,
+      "currentRank": 1,
+      "legacyCount": 0,
+      "currentCount": 146,
+      "currentMs": 32.46825000000001,
+      "legacyUncappedRank": null,
+      "legacyUncappedCount": 0
+    },
+    {
+      "query": "chickfila",
+      "kind": "restaurant",
+      "legacyRank": null,
+      "currentRank": 1,
+      "legacyCount": 0,
+      "currentCount": 104,
+      "currentMs": 10.426333,
+      "legacyUncappedRank": null,
+      "legacyUncappedCount": 0
+    },
+    {
+      "query": "greek yoghurt",
+      "kind": "alias",
+      "legacyRank": null,
+      "currentRank": 1,
+      "legacyCount": 0,
+      "currentCount": 57,
+      "currentMs": 2.629000000000019,
+      "legacyUncappedRank": null,
+      "legacyUncappedCount": 0
+    },
+    {
+      "query": "chikcen breast",
+      "kind": "alias",
+      "legacyRank": null,
+      "currentRank": 1,
+      "legacyCount": 0,
+      "currentCount": 85,
+      "currentMs": 9.865290999999957,
+      "legacyUncappedRank": null,
+      "legacyUncappedCount": 0
+    }
+  ],
+  "regressions": [],
+  "observations": [
+    {
+      "query": "egg",
+      "kind": "generic",
+      "legacyRank": null,
+      "currentRank": 1,
+      "legacyCount": 100,
+      "currentCount": 200,
+      "currentMs": 30.711624999999998
+    },
+    {
+      "query": "eggs",
+      "kind": "generic",
+      "legacyRank": null,
+      "currentRank": 1,
+      "legacyCount": 100,
+      "currentCount": 235,
+      "currentMs": 18.96558300000001
+    },
+    {
+      "query": "egg raw",
+      "kind": "generic",
+      "legacyRank": 3,
+      "currentRank": 1,
+      "legacyCount": 14,
+      "currentCount": 13,
+      "currentMs": 1.8804580000000044
+    },
+    {
+      "query": "scrambled egg",
+      "kind": "generic",
+      "legacyRank": 3,
+      "currentRank": 2,
+      "legacyCount": 28,
+      "currentCount": 28,
+      "currentMs": 1.8882079999999917
+    },
+    {
+      "query": "boiled egg",
+      "kind": "generic",
+      "legacyRank": 2,
+      "currentRank": 1,
+      "legacyCount": 10,
+      "currentCount": 10,
+      "currentMs": 1.0971250000000055
+    },
+    {
+      "query": "rice",
+      "kind": "generic",
+      "legacyRank": null,
+      "currentRank": 1,
+      "legacyCount": 100,
+      "currentCount": 214,
+      "currentMs": 12.50762499999999
+    },
+    {
+      "query": "white rice",
+      "kind": "generic",
+      "legacyRank": 25,
+      "currentRank": 1,
+      "legacyCount": 46,
+      "currentCount": 46,
+      "currentMs": 3.383250000000004
+    },
+    {
+      "query": "brown rice",
+      "kind": "generic",
+      "legacyRank": 44,
+      "currentRank": 1,
+      "legacyCount": 50,
+      "currentCount": 50,
+      "currentMs": 3.0944999999999823
+    },
+    {
+      "query": "rice cooked",
+      "kind": "generic",
+      "legacyRank": 12,
+      "currentRank": 1,
+      "legacyCount": 21,
+      "currentCount": 21,
+      "currentMs": 2.1670420000000092
+    },
+    {
+      "query": "rice raw",
+      "kind": "generic",
+      "legacyRank": 5,
+      "currentRank": 1,
+      "legacyCount": 8,
+      "currentCount": 8,
+      "currentMs": 1.1017080000000021
+    },
+    {
+      "query": "chicken",
+      "kind": "generic",
+      "legacyRank": null,
+      "currentRank": 1,
+      "legacyCount": 100,
+      "currentCount": 268,
+      "currentMs": 37.62733399999999
+    },
+    {
+      "query": "chicken breast",
+      "kind": "generic",
+      "legacyRank": 54,
+      "currentRank": 1,
+      "legacyCount": 85,
+      "currentCount": 85,
+      "currentMs": 5.279082999999986
+    },
+    {
+      "query": "chicken breast raw",
+      "kind": "generic",
+      "legacyRank": 2,
+      "currentRank": 1,
+      "legacyCount": 3,
+      "currentCount": 3,
+      "currentMs": 1.6679589999999962
+    },
+    {
+      "query": "grilled chicken breast",
+      "kind": "generic",
+      "legacyRank": 17,
+      "currentRank": 1,
+      "legacyCount": 18,
+      "currentCount": 18,
+      "currentMs": 2.1269169999999917
+    },
+    {
+      "query": "roasted chicken breast",
+      "kind": "generic",
+      "legacyRank": 3,
+      "currentRank": 1,
+      "legacyCount": 4,
+      "currentCount": 4,
+      "currentMs": 1.6265420000000006
+    },
+    {
+      "query": "breaded chicken breast",
+      "kind": "generic",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 2,
+      "currentCount": 2,
+      "currentMs": 1.3635830000000055
+    },
+    {
+      "query": "banana",
+      "kind": "generic",
+      "legacyRank": 3,
+      "currentRank": 5,
+      "legacyCount": 100,
+      "currentCount": 159,
+      "currentMs": 9.66149999999999
+    },
+    {
+      "query": "bananas",
+      "kind": "generic",
+      "legacyRank": 1,
+      "currentRank": 5,
+      "legacyCount": 44,
+      "currentCount": 176,
+      "currentMs": 10.241792000000004
+    },
+    {
+      "query": "banana raw",
+      "kind": "generic",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 2,
+      "currentCount": 2,
+      "currentMs": 0.6171659999999974
+    },
+    {
+      "query": "apple",
+      "kind": "generic",
+      "legacyRank": 64,
+      "currentRank": 4,
+      "legacyCount": 100,
+      "currentCount": 213,
+      "currentMs": 14.816374999999994
+    },
+    {
+      "query": "apples",
+      "kind": "generic",
+      "legacyRank": 11,
+      "currentRank": 4,
+      "legacyCount": 76,
+      "currentCount": 229,
+      "currentMs": 16.323958000000005
+    },
+    {
+      "query": "orange",
+      "kind": "generic",
+      "legacyRank": 10,
+      "currentRank": 3,
+      "legacyCount": 100,
+      "currentCount": 161,
+      "currentMs": 10.312542000000008
+    },
+    {
+      "query": "avocado",
+      "kind": "generic",
+      "legacyRank": 16,
+      "currentRank": 1,
+      "legacyCount": 100,
+      "currentCount": 105,
+      "currentMs": 3.3112499999999727
+    },
+    {
+      "query": "potato",
+      "kind": "generic",
+      "legacyRank": null,
+      "currentRank": 1,
+      "legacyCount": 100,
+      "currentCount": 237,
+      "currentMs": 16.197082999999964
+    },
+    {
+      "query": "potatoes",
+      "kind": "generic",
+      "legacyRank": 48,
+      "currentRank": 1,
+      "legacyCount": 100,
+      "currentCount": 295,
+      "currentMs": 19.786959000000024
+    },
+    {
+      "query": "tomato raw",
+      "kind": "generic",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 4,
+      "currentCount": 4,
+      "currentMs": 0.720875000000035
+    },
+    {
+      "query": "carrot",
+      "kind": "generic",
+      "legacyRank": 2,
+      "currentRank": 2,
+      "legacyCount": 85,
+      "currentCount": 85,
+      "currentMs": 3.7125839999999926
+    },
+    {
+      "query": "broccoli",
+      "kind": "generic",
+      "legacyRank": 1,
+      "currentRank": 2,
+      "legacyCount": 100,
+      "currentCount": 121,
+      "currentMs": 4.114540999999974
+    },
+    {
+      "query": "spinach",
+      "kind": "generic",
+      "legacyRank": 2,
+      "currentRank": 1,
+      "legacyCount": 100,
+      "currentCount": 125,
+      "currentMs": 4.6970830000000205
+    },
+    {
+      "query": "lettuce",
+      "kind": "generic",
+      "legacyRank": 20,
+      "currentRank": 3,
+      "legacyCount": 100,
+      "currentCount": 101,
+      "currentMs": 4.983208999999988
+    },
+    {
+      "query": "cucumber",
+      "kind": "generic",
+      "legacyRank": 3,
+      "currentRank": 1,
+      "legacyCount": 53,
+      "currentCount": 53,
+      "currentMs": 1.782083
+    },
+    {
+      "query": "mushroom",
+      "kind": "generic",
+      "legacyRank": 32,
+      "currentRank": 10,
+      "legacyCount": 100,
+      "currentCount": 143,
+      "currentMs": 7.612958999999989
+    },
+    {
+      "query": "strawberry",
+      "kind": "generic",
+      "legacyRank": null,
+      "currentRank": 5,
+      "legacyCount": 100,
+      "currentCount": 152,
+      "currentMs": 19.280791999999963
+    },
+    {
+      "query": "strawberries",
+      "kind": "generic",
+      "legacyRank": 1,
+      "currentRank": 5,
+      "legacyCount": 69,
+      "currentCount": 209,
+      "currentMs": 21.702750000000037
+    },
+    {
+      "query": "blueberry",
+      "kind": "generic",
+      "legacyRank": null,
+      "currentRank": 3,
+      "legacyCount": 100,
+      "currentCount": 143,
+      "currentMs": 8.12983399999996
+    },
+    {
+      "query": "blueberries",
+      "kind": "generic",
+      "legacyRank": 2,
+      "currentRank": 3,
+      "legacyCount": 22,
+      "currentCount": 148,
+      "currentMs": 8.626500000000021
+    },
+    {
+      "query": "grapes",
+      "kind": "generic",
+      "legacyRank": 2,
+      "currentRank": 4,
+      "legacyCount": 16,
+      "currentCount": 153,
+      "currentMs": 7.0841669999999795
+    },
+    {
+      "query": "peach",
+      "kind": "generic",
+      "legacyRank": 6,
+      "currentRank": 2,
+      "legacyCount": 100,
+      "currentCount": 147,
+      "currentMs": 7.514124999999979
+    },
+    {
+      "query": "pear",
+      "kind": "generic",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 70,
+      "currentCount": 70,
+      "currentMs": 4.030791000000022
+    },
+    {
+      "query": "pineapple",
+      "kind": "generic",
+      "legacyRank": 22,
+      "currentRank": 5,
+      "legacyCount": 100,
+      "currentCount": 143,
+      "currentMs": 6.943125000000009
+    },
+    {
+      "query": "mango",
+      "kind": "generic",
+      "legacyRank": 1,
+      "currentRank": 3,
+      "legacyCount": 100,
+      "currentCount": 113,
+      "currentMs": 5.207417000000021
+    },
+    {
+      "query": "watermelon",
+      "kind": "generic",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 95,
+      "currentCount": 95,
+      "currentMs": 2.851167000000032
+    },
+    {
+      "query": "milk",
+      "kind": "generic",
+      "legacyRank": 44,
+      "currentRank": 1,
+      "legacyCount": 100,
+      "currentCount": 220,
+      "currentMs": 29.08654199999995
+    },
+    {
+      "query": "whole milk",
+      "kind": "generic",
+      "legacyRank": 34,
+      "currentRank": 1,
+      "legacyCount": 100,
+      "currentCount": 163,
+      "currentMs": 12.027500000000032
+    },
+    {
+      "query": "skim milk",
+      "kind": "generic",
+      "legacyRank": null,
+      "currentRank": 1,
+      "legacyCount": 100,
+      "currentCount": 109,
+      "currentMs": 5.218334000000027
+    },
+    {
+      "query": "cheddar cheese",
+      "kind": "generic",
+      "legacyRank": 9,
+      "currentRank": 1,
+      "legacyCount": 97,
+      "currentCount": 97,
+      "currentMs": 4.7973329999999805
+    },
+    {
+      "query": "butter",
+      "kind": "generic",
+      "legacyRank": 3,
+      "currentRank": 1,
+      "legacyCount": 100,
+      "currentCount": 202,
+      "currentMs": 15.813499999999976
+    },
+    {
+      "query": "olive oil",
+      "kind": "generic",
+      "legacyRank": 7,
+      "currentRank": 1,
+      "legacyCount": 52,
+      "currentCount": 52,
+      "currentMs": 1.9734580000000506
+    },
+    {
+      "query": "peanut butter",
+      "kind": "generic",
+      "legacyRank": 63,
+      "currentRank": 9,
+      "legacyCount": 100,
+      "currentCount": 146,
+      "currentMs": 7.901708000000099
+    },
+    {
+      "query": "almond",
+      "kind": "generic",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 100,
+      "currentCount": 143,
+      "currentMs": 10.360041000000024
+    },
+    {
+      "query": "walnuts",
+      "kind": "generic",
+      "legacyRank": 2,
+      "currentRank": 1,
+      "legacyCount": 15,
+      "currentCount": 54,
+      "currentMs": 2.111417000000074
+    },
+    {
+      "query": "oats",
+      "kind": "generic",
+      "legacyRank": 14,
+      "currentRank": 1,
+      "legacyCount": 27,
+      "currentCount": 204,
+      "currentMs": 9.730374999999981
+    },
+    {
+      "query": "quinoa",
+      "kind": "generic",
+      "legacyRank": 1,
+      "currentRank": 2,
+      "legacyCount": 17,
+      "currentCount": 17,
+      "currentMs": 0.6881250000000136
+    },
+    {
+      "query": "lentils",
+      "kind": "generic",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 9,
+      "currentCount": 14,
+      "currentMs": 1.153332999999975
+    },
+    {
+      "query": "black beans",
+      "kind": "generic",
+      "legacyRank": 5,
+      "currentRank": 1,
+      "legacyCount": 44,
+      "currentCount": 69,
+      "currentMs": 3.9216670000000704
+    },
+    {
+      "query": "chickpeas",
+      "kind": "generic",
+      "legacyRank": 4,
+      "currentRank": 2,
+      "legacyCount": 12,
+      "currentCount": 17,
+      "currentMs": 1.2683749999999918
+    },
+    {
+      "query": "salmon",
+      "kind": "generic",
+      "legacyRank": 33,
+      "currentRank": 6,
+      "legacyCount": 100,
+      "currentCount": 149,
+      "currentMs": 6.323417000000063
+    },
+    {
+      "query": "tuna canned",
+      "kind": "generic",
+      "legacyRank": 5,
+      "currentRank": 2,
+      "legacyCount": 8,
+      "currentCount": 8,
+      "currentMs": 0.8790410000000293
+    },
+    {
+      "query": "whole wheat bread",
+      "kind": "generic",
+      "legacyRank": 2,
+      "currentRank": 1,
+      "legacyCount": 9,
+      "currentCount": 9,
+      "currentMs": 1.3384999999999536
+    },
+    {
+      "query": "pasta cooked",
+      "kind": "generic",
+      "legacyRank": 4,
+      "currentRank": 1,
+      "legacyCount": 16,
+      "currentCount": 16,
+      "currentMs": 1.8750420000000076
+    },
+    {
+      "query": "coffee brewed",
+      "kind": "generic",
+      "legacyRank": 6,
+      "currentRank": 1,
+      "legacyCount": 100,
+      "currentCount": 106,
+      "currentMs": 3.6053339999999707
+    },
+    {
+      "query": "greek yogurt",
+      "kind": "generic",
+      "legacyRank": 2,
+      "currentRank": 1,
+      "legacyCount": 57,
+      "currentCount": 57,
+      "currentMs": 2.2584170000000086
+    },
+    {
+      "query": "greek yogurt plain",
+      "kind": "generic",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 5,
+      "currentCount": 5,
+      "currentMs": 0.6440829999999096
+    },
+    {
+      "query": "chicken breast cooked",
+      "kind": "generic",
+      "legacyRank": 3,
+      "currentRank": 1,
+      "legacyCount": 14,
+      "currentCount": 14,
+      "currentMs": 2.442874999999958
+    },
+    {
+      "query": "rice brown cooked",
+      "kind": "generic",
+      "legacyRank": 4,
+      "currentRank": 1,
+      "legacyCount": 5,
+      "currentCount": 5,
+      "currentMs": 1.106416999999965
+    },
+    {
+      "query": "egg hard boiled",
+      "kind": "generic",
+      "legacyRank": 2,
+      "currentRank": 1,
+      "legacyCount": 8,
+      "currentCount": 8,
+      "currentMs": 1.2286249999999654
+    },
+    {
+      "query": "banana RAW",
+      "kind": "generic",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 2,
+      "currentCount": 2,
+      "currentMs": 0.6000000000000227
+    },
+    {
+      "query": "égg",
+      "kind": "alias",
+      "legacyRank": null,
+      "currentRank": 1,
+      "legacyCount": 100,
+      "currentCount": 200,
+      "currentMs": 15.661833999999999
+    },
+    {
+      "query": "greek yoghurt",
+      "kind": "alias",
+      "legacyRank": null,
+      "currentRank": 1,
+      "legacyCount": 0,
+      "currentCount": 57,
+      "currentMs": 2.629000000000019
+    },
+    {
+      "query": "chikcen breast",
+      "kind": "alias",
+      "legacyRank": null,
+      "currentRank": 1,
+      "legacyCount": 0,
+      "currentCount": 85,
+      "currentMs": 9.865290999999957
+    },
+    {
+      "query": "strawberry raw",
+      "kind": "generic",
+      "legacyRank": null,
+      "currentRank": 1,
+      "legacyCount": 1,
+      "currentCount": 2,
+      "currentMs": 1.3707910000000538
+    },
+    {
+      "query": "garbanzo beans",
+      "kind": "alias",
+      "legacyRank": 3,
+      "currentRank": 2,
+      "legacyCount": 10,
+      "currentCount": 20,
+      "currentMs": 1.9941660000000638
+    },
+    {
+      "query": "tomatoes raw",
+      "kind": "generic",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 4,
+      "currentCount": 4,
+      "currentMs": 1.245166999999924
+    },
+    {
+      "query": "almonds",
+      "kind": "generic",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 55,
+      "currentCount": 170,
+      "currentMs": 12.801833999999985
+    },
+    {
+      "query": "yogurt greek plain",
+      "kind": "generic",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 5,
+      "currentCount": 5,
+      "currentMs": 0.6544170000000804
+    },
+    {
+      "query": "mcdonalds",
+      "kind": "restaurant",
+      "legacyRank": null,
+      "currentRank": 1,
+      "legacyCount": 0,
+      "currentCount": 146,
+      "currentMs": 32.46825000000001
+    },
+    {
+      "query": "McDonald's",
+      "kind": "restaurant",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 100,
+      "currentCount": 146,
+      "currentMs": 32.46804200000008
+    },
+    {
+      "query": "chickfila",
+      "kind": "restaurant",
+      "legacyRank": null,
+      "currentRank": 1,
+      "legacyCount": 0,
+      "currentCount": 104,
+      "currentMs": 10.426333
+    },
+    {
+      "query": "Chick-fil-A",
+      "kind": "restaurant",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 100,
+      "currentCount": 104,
+      "currentMs": 11.18587500000001
+    },
+    {
+      "query": "cookout",
+      "kind": "restaurant",
+      "legacyRank": null,
+      "currentRank": 1,
+      "legacyCount": 0,
+      "currentCount": 100,
+      "currentMs": 4.975709000000052
+    },
+    {
+      "query": "Cook Out",
+      "kind": "restaurant",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 100,
+      "currentCount": 100,
+      "currentMs": 4.73858400000006
+    },
+    {
+      "query": "Firehouse Subs",
+      "kind": "restaurant",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 100,
+      "currentCount": 101,
+      "currentMs": 7.2892080000000306
+    },
+    {
+      "query": "Burger King",
+      "kind": "restaurant",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 100,
+      "currentCount": 119,
+      "currentMs": 4.982500000000073
+    },
+    {
+      "query": "Chipotle",
+      "kind": "restaurant",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 100,
+      "currentCount": 101,
+      "currentMs": 3.8103340000000117
+    },
+    {
+      "query": "CAVA",
+      "kind": "restaurant",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 100,
+      "currentCount": 102,
+      "currentMs": 3.3327500000000327
+    },
+    {
+      "query": "KFC",
+      "kind": "restaurant",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 100,
+      "currentCount": 123,
+      "currentMs": 5.1014169999999694
+    },
+    {
+      "query": "Starbucks",
+      "kind": "restaurant",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 100,
+      "currentCount": 101,
+      "currentMs": 17.27637500000003
+    },
+    {
+      "query": "Subway",
+      "kind": "restaurant",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 100,
+      "currentCount": 112,
+      "currentMs": 4.348292000000015
+    },
+    {
+      "query": "Taco Bell",
+      "kind": "restaurant",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 100,
+      "currentCount": 112,
+      "currentMs": 5.6108749999999645
+    },
+    {
+      "query": "Wendy's",
+      "kind": "restaurant",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 100,
+      "currentCount": 114,
+      "currentMs": 30.936040999999932
+    },
+    {
+      "query": "Bojangles",
+      "kind": "restaurant",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 100,
+      "currentCount": 101,
+      "currentMs": 3.875917000000072
+    },
+    {
+      "query": "Panera Bread",
+      "kind": "restaurant",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 100,
+      "currentCount": 101,
+      "currentMs": 5.251375000000053
+    },
+    {
+      "query": "Dunkin",
+      "kind": "restaurant",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 100,
+      "currentCount": 101,
+      "currentMs": 6.573000000000093
+    },
+    {
+      "query": "Panda Express",
+      "kind": "restaurant",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 100,
+      "currentCount": 101,
+      "currentMs": 2.902541999999926
+    },
+    {
+      "query": "Dairy Queen",
+      "kind": "restaurant",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 100,
+      "currentCount": 101,
+      "currentMs": 4.390582999999992
+    },
+    {
+      "query": "Buffalo Wild Wings",
+      "kind": "restaurant",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 100,
+      "currentCount": 101,
+      "currentMs": 11.588124999999991
+    },
+    {
+      "query": "Five Guys",
+      "kind": "restaurant",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 66,
+      "currentCount": 66,
+      "currentMs": 1.6281669999999622
+    },
+    {
+      "query": "Pizza Hut",
+      "kind": "restaurant",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 100,
+      "currentCount": 119,
+      "currentMs": 8.738833999999997
+    },
+    {
+      "query": "Olive Garden",
+      "kind": "restaurant",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 100,
+      "currentCount": 106,
+      "currentMs": 3.48920899999996
+    },
+    {
+      "query": "Eggspectation",
+      "kind": "restaurant",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 100,
+      "currentCount": 101,
+      "currentMs": 2.2460829999999987
+    }
+  ]
+}

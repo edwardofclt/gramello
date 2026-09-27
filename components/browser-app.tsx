@@ -6,6 +6,7 @@ import { getBrowserRuntime, type BrowserRuntime } from '@/lib/browser-local/clie
 import { localDiaryFetch, migratePreviousDiary } from '@/lib/browser-startup';
 import { prepareOffline } from '@/lib/offline-setup';
 import { Button } from './ui/button';
+import { BrandWordmark } from './brand-mark';
 
 export function BrowserApp() {
   const [runtime, setRuntime] = useState<BrowserRuntime | null>(null);
@@ -66,7 +67,7 @@ export function BrowserApp() {
     finally { setRetrying(false); }
   }
 
-  if (!runtime || !client) return <main className="local-startup"><h1>Gramello</h1>
+  if (!runtime || !client) return <main className="local-startup"><h1><BrandWordmark/></h1>
     {error ? <><p role="alert">{error}</p><Button onClick={() => { setError(''); setAttempt(value => value + 1); }}>Try again</Button></> : <p role="status">Opening your local diary…</p>}
   </main>;
   return <GramelloApp key={revision} diaryClient={client} runtime={runtime} offlineStatus={offlineStatus} onOfflineRetry={() => { setOfflineStatus('Preparing offline access…'); setOfflineAttempt(value => value + 1); }}

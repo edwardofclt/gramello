@@ -1,9 +1,10 @@
 import { normalizeBarcode } from '../../../lib/barcode';
 import { lookupBarcode } from '../../../lib/barcode-food';
-import { searchOpenFoodFacts } from '../../../lib/food-providers';
+import { searchOpenFoodFactsPage } from '../../../lib/food-providers';
+import { rankFoodSearch } from '../../../lib/search';
+import { createProviderCache } from '../../../lib/search/provider-cache';
 import type { Food } from '../../../lib/food';
-import { FoodProviderError } from '../../../lib/food-search';
-import { rankFoodSearch } from '../../../lib/food-search-ranking';
+import { FoodProviderError, foodSearchIssue } from '../../../lib/food-search';
 import type { FoodCatalog } from '../local/repository';
 import { serialized, transaction, type SqliteConnection } from '../local/database';
 import { foodSchema } from '../local/records';
@@ -23,6 +24,8 @@ export async function createFoodLookup(catalog: FoodCatalog, cache: SqliteConnec
     CREATE TABLE IF NOT EXISTS barcodes(code TEXT NOT NULL,food_id TEXT NOT NULL,PRIMARY KEY(code,food_id));
   `));
   const cached = createCatalogReader(work => serialized(cache, () => work(cache)));
+  type SearchWindow = Awaited<ReturnType<NonNullable<FoodCatalog['searchWindow']>>>;
+  const searches = createProviderCache<SearchWindow>();
   const requests = { barcode: [] as number[], search: [] as number[] };
   function reserve(kind: keyof typeof requests) {
     const now = Date.now(), times = requests[kind];
@@ -47,34 +50,53 @@ export async function createFoodLookup(catalog: FoodCatalog, cache: SqliteConnec
     return [...foods.values()];
   };
   const lookup: FoodCatalog = {
-    getFood: async id => await catalog.getFood(id) ?? await cached.getFood(id),
-    search: async (query, options) => {
+    getFood: async id => await cached.getFood(id) ?? await catalog.getFood(id),
+    search: async (query, options) => (await lookup.searchWindow!(query, options)).foods,
+    searchWindow: async (query, options) => {
       checkCancelled(options?.signal);
       const code = normalizeBarcode(query);
       if (code) {
         const food = options?.online ? await lookup.barcode(code, options.signal)
-          : await catalog.barcode(code) ?? await cached.barcode(code);
-        return food ? [food] : [];
+          : await cached.barcode(code) ?? await catalog.barcode(code);
+        return { foods: food ? [food] : [], canExpand: false };
       }
-      const local = rankFoodSearch(merge(await cached.search(query), await catalog.search(query)), query);
-      if (!options?.online) return local;
-      reserve('search');
-      const timeout = AbortSignal.timeout(10_000);
-      const signal = options.signal ? AbortSignal.any([options.signal, timeout]) : timeout;
-      const found = (await searchOpenFoodFacts(query, signal)).flatMap(food => {
-        const parsed = foodSchema.safeParse(food);
-        return parsed.success ? [parsed.data] : [];
-      });
-      checkCancelled(signal);
-      await save(found);
-      // Fresh nutrition wins duplicate IDs; relevance decides display order.
-      return rankFoodSearch(merge(found, local), query);
+      const localWindows: SearchWindow[] = await Promise.all([cached, catalog].map(async source => source.searchWindow
+        ? source.searchWindow(query, options)
+        : { foods: await source.search(query, options), canExpand: false }));
+      const local = merge(...localWindows.map(result => result.foods));
+      const canExpand = localWindows.some(result => result.canExpand);
+      const issues = localWindows.flatMap(result => result.issues ?? []);
+      const sourceStatus = localWindows.flatMap(result => result.sourceStatus ?? []);
+      const localResult = { foods: rankFoodSearch(query, local, options).foods, canExpand, issues };
+      if (!options?.online || options.category === 'custom' || options.category === 'restaurant') return { ...localResult, sourceStatus: [...sourceStatus, { source: 'Open Food Facts', state: 'not-requested', ...(options?.online ? { message: 'This category uses the saved catalog. Online providers do not add restaurant menus or custom foods.' } : {}) }] };
+      const size = Math.min(100, options.window ?? 100);
+      try {
+        const found = options.cursor !== undefined ? searches.peek('off', `${size}:${query}`) : await searches.get('off', `${size}:${query}`, async signal => {
+          reserve('search');
+          const page = await searchOpenFoodFactsPage(query, signal, size);
+          const foods = page.foods.flatMap(food => {
+            const parsed = foodSchema.safeParse(food);
+            return parsed.success ? [parsed.data] : [];
+          });
+          return { foods, canExpand: page.hasMore && size < 100, sourceStatus: [{ source: 'Open Food Facts', state: 'ready', ...(page.hasMore && size >= 100 ? { message: 'Online search shows up to 100 matches from this provider. Use a more specific name to narrow the results.' } : {}) }], issues: page.rejectedCount ? [{ source: 'Open Food Facts', message: `${page.rejectedCount} online matches had incomplete nutrition and were omitted.` }] : [] };
+        }, options.signal);
+        checkCancelled(options.signal);
+        if (!found) return { ...localResult, sourceStatus: [...sourceStatus, { source: 'Open Food Facts', state: 'not-requested' }] };
+        // Persist per caller while its snapshot connection is still active. Query
+        // cache hits must repeat this write after an earlier durable commit failed.
+        await save(found.foods);
+        return { foods: rankFoodSearch(query, merge(found.foods, local), options).foods, canExpand: canExpand || found.canExpand, issues: [...issues, ...(found.issues ?? [])], sourceStatus: [...sourceStatus, ...(found.sourceStatus ?? [])] };
+      } catch (error) {
+        if (options.signal?.aborted) throw error;
+        const issue = foodSearchIssue('Open Food Facts', error);
+        return { ...localResult, issues: [...issues, issue], sourceStatus: [...sourceStatus, { source: issue.source, state: 'unavailable', message: issue.message }] };
+      }
     },
     barcode: async (input, signal) => {
       checkCancelled(signal);
       const code = normalizeBarcode(input);
       if (!code) throw new Error('Enter an 8, 12, 13, or 14 digit product barcode.');
-      const local = await catalog.barcode(code) ?? await cached.barcode(code);
+      const local = await cached.barcode(code) ?? await catalog.barcode(code);
       checkCancelled(signal);
       if (local) return local;
       reserve('barcode');

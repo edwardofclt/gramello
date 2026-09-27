@@ -8,7 +8,7 @@ describe('verified database values', () => {
       { nutrientName:'Energy', unitName:'KCAL', value:143 }, { nutrientName:'Protein', unitName:'G', value:12.56 },
       { nutrientName:'Carbohydrate, by difference', unitName:'G', value:.72 }, { nutrientName:'Total lipid (fat)', unitName:'G', value:9.51 },
     ] }] }));
-    const results = await searchUsda('eggs', new AbortController().signal);
+    const results = await searchUsda('eggs', new AbortController().signal, 'test-server-key');
     expect(results[0]).toMatchObject({ servingGrams:50, servingLabel:'1 large (50 g)', calories:143, nutritionBasis:'100g' });
   });
   it('uses the same online query with or without apostrophes and punctuation', async () => {
@@ -16,7 +16,7 @@ describe('verified database values', () => {
     vi.stubGlobal('fetch', fetch);
     for (const query of ['Thomas', 'Thomas’', "Thomas'", '“Thomas!”']) {
       await searchOpenFoodFacts(query, new AbortController().signal);
-      await searchUsda(query, new AbortController().signal);
+      await searchUsda(query, new AbortController().signal, 'test-server-key');
     }
     for (const [url] of fetch.mock.calls) {
       const params = new URL(String(url)).searchParams;
@@ -46,7 +46,13 @@ describe('verified database values', () => {
       { nutrientName: 'Energy', unitName: 'kJ', value: 251 }, { nutrientName: 'Energy', unitName: 'KCAL', value: 60 },
       { nutrientName: 'Protein', unitName: 'G', value: 3 }, { nutrientName: 'Carbohydrate, by difference', unitName: 'G', value: 5 }, { nutrientName: 'Total lipid (fat)', unitName: 'G', value: 3 },
     ] }] }));
-    const foods = await searchUsda('milk', new AbortController().signal);
+    const foods = await searchUsda('milk', new AbortController().signal, 'test-server-key');
     expect(foods[0]).toMatchObject({ calories: 60, servingGrams: 100, servingLabel: '100 g', verified: true, nutritionBasis: '100g' });
   });
+});
+
+it('does not contact USDA without a configured server key', async () => {
+  const fetch = vi.fn(); vi.stubGlobal('fetch', fetch);
+  await expect(searchUsda('rice', new AbortController().signal)).rejects.toThrow('server API key');
+  expect(fetch).not.toHaveBeenCalled();
 });

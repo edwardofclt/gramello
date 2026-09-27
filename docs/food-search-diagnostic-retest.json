@@ -1,0 +1,399 @@
+{
+  "fixtureFile": "tests/fixtures/food-search-heldout.json",
+  "catalogSha256": "e05d76232a9e00ff6ff272f754c5215c76421bfb596e75e06875e1253540865a",
+  "fixtureSha256": "70ba174f4fe80fa989993348afadf3bfada06a2dfdcebb47421b9c08836cb992",
+  "catalogVersion": "offline-2026-09-search-v1",
+  "queryCount": 40,
+  "judgmentMethod": "Agent-authored source-description relevance judgments, frozen before any ranking evaluation. The author read the development fixture only to exclude its food and restaurant families, inspected raw USDA/restaurant data and canonical IDs, and did not inspect ranker implementation or search results while choosing queries or labels. This is a small source-grounded held-out stress set, not human-rated or sampled user traffic. No tuning is permitted against this set. This rerun occurs after the set was unblinded and used for development; the original no-tuning evaluation is preserved separately. These rerun results are diagnostic only.",
+  "evaluationPhase": "Diagnostic/development retest after unblinding; not held-out evidence",
+  "method": "Same SQLite catalog and fixed judgments. Legacy: original FTS prefix AND, rank/name order, first 100. Current: actual createCatalogReader.search, window=100 per candidate lane, shared rank; evaluate same top-k. Candidate success has different bounded budgets by design.",
+  "legacy": {
+    "successAt1": 23,
+    "successAt3": 24,
+    "successAt5": 24,
+    "successAt10": 24,
+    "successAt20": 24,
+    "candidateSuccess": 24,
+    "zeroResults": 14,
+    "mrrAt20": 0.5875
+  },
+  "current": {
+    "successAt1": 38,
+    "successAt3": 39,
+    "successAt5": 39,
+    "successAt10": 39,
+    "successAt20": 39,
+    "candidateSuccess": 39,
+    "zeroResults": 1,
+    "mrrAt20": 0.9625
+  },
+  "currentLatencyMs": {
+    "median": 1.38,
+    "p95": 30,
+    "environment": "Node v24.15.0, darwin/arm64; local synchronous SQLite adapter, not device timing"
+  },
+  "diagnostics": [],
+  "regressions": [],
+  "observations": [
+    {
+      "query": "celery",
+      "kind": "generic",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 43,
+      "currentCount": 43,
+      "currentMs": 15.276042000000004
+    },
+    {
+      "query": "kale",
+      "kind": "generic",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 48,
+      "currentCount": 48,
+      "currentMs": 2.7815419999999875
+    },
+    {
+      "query": "fresh raspberries",
+      "kind": "generic",
+      "legacyRank": null,
+      "currentRank": 1,
+      "legacyCount": 0,
+      "currentCount": 1,
+      "currentMs": 1.833042000000006
+    },
+    {
+      "query": "fresh cherries",
+      "kind": "generic",
+      "legacyRank": null,
+      "currentRank": 1,
+      "legacyCount": 0,
+      "currentCount": 4,
+      "currentMs": 2.1150420000000025
+    },
+    {
+      "query": "kiwi fruit",
+      "kind": "generic",
+      "legacyRank": null,
+      "currentRank": 1,
+      "legacyCount": 1,
+      "currentCount": 2,
+      "currentMs": 0.7001249999999999
+    },
+    {
+      "query": "dates",
+      "kind": "generic",
+      "legacyRank": 2,
+      "currentRank": 2,
+      "legacyCount": 5,
+      "currentCount": 8,
+      "currentMs": 0.9324999999999903
+    },
+    {
+      "query": "raisins",
+      "kind": "generic",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 19,
+      "currentCount": 133,
+      "currentMs": 6.721000000000004
+    },
+    {
+      "query": "couscous",
+      "kind": "generic",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 3,
+      "currentCount": 3,
+      "currentMs": 0.38845900000001166
+    },
+    {
+      "query": "tempeh",
+      "kind": "generic",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 2,
+      "currentCount": 2,
+      "currentMs": 0.3251669999999933
+    },
+    {
+      "query": "cashew nuts",
+      "kind": "generic",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 7,
+      "currentCount": 7,
+      "currentMs": 0.8051250000000039
+    },
+    {
+      "query": "boiled asparagus",
+      "kind": "preparation",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 4,
+      "currentCount": 4,
+      "currentMs": 0.5152909999999906
+    },
+    {
+      "query": "frozen brussels sprouts cooked",
+      "kind": "preparation",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 2,
+      "currentCount": 2,
+      "currentMs": 1.591417000000007
+    },
+    {
+      "query": "cooked pearled barley",
+      "kind": "preparation",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 1,
+      "currentCount": 1,
+      "currentMs": 0.5493749999999977
+    },
+    {
+      "query": "cod cooked",
+      "kind": "preparation",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 3,
+      "currentCount": 3,
+      "currentMs": 0.6998329999999839
+    },
+    {
+      "query": "roasted pork tenderloin",
+      "kind": "preparation",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 4,
+      "currentCount": 4,
+      "currentMs": 0.8169169999999895
+    },
+    {
+      "query": "roasted turkey breast without skin",
+      "kind": "preparation",
+      "legacyRank": null,
+      "currentRank": 1,
+      "legacyCount": 0,
+      "currentCount": 4,
+      "currentMs": 2.2058339999999816
+    },
+    {
+      "query": "90% lean ground beef cooked",
+      "kind": "preparation",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 4,
+      "currentCount": 4,
+      "currentMs": 1.3217500000000086
+    },
+    {
+      "query": "boiled sweet corn",
+      "kind": "preparation",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 12,
+      "currentCount": 12,
+      "currentMs": 1.708375000000018
+    },
+    {
+      "query": "Cheerios cereal",
+      "kind": "packaged",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 1,
+      "currentCount": 1,
+      "currentMs": 0.34854100000001154
+    },
+    {
+      "query": "Ritz crackers",
+      "kind": "packaged",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 1,
+      "currentCount": 1,
+      "currentMs": 0.4689160000000072
+    },
+    {
+      "query": "Kit Kat wafer bar",
+      "kind": "packaged",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 1,
+      "currentCount": 1,
+      "currentMs": 0.8740420000000029
+    },
+    {
+      "query": "Snickers original bar",
+      "kind": "packaged",
+      "legacyRank": null,
+      "currentRank": null,
+      "legacyCount": 0,
+      "currentCount": 0,
+      "currentMs": 1.4616660000000081
+    },
+    {
+      "query": "Pillsbury cinnamon rolls",
+      "kind": "packaged",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 1,
+      "currentCount": 1,
+      "currentMs": 0.6465000000000032
+    },
+    {
+      "query": "Twix caramel cookie bars",
+      "kind": "packaged",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 1,
+      "currentCount": 1,
+      "currentMs": 0.6673749999999927
+    },
+    {
+      "query": "arbys",
+      "kind": "restaurant",
+      "legacyRank": null,
+      "currentRank": 1,
+      "legacyCount": 0,
+      "currentCount": 102,
+      "currentMs": 30.00150000000002
+    },
+    {
+      "query": "dominos",
+      "kind": "restaurant",
+      "legacyRank": null,
+      "currentRank": 1,
+      "legacyCount": 0,
+      "currentCount": 111,
+      "currentMs": 33.265874999999994
+    },
+    {
+      "query": "qdoba",
+      "kind": "restaurant",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 100,
+      "currentCount": 101,
+      "currentMs": 2.9350000000000023
+    },
+    {
+      "query": "jimmy johns",
+      "kind": "restaurant",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 7,
+      "currentCount": 101,
+      "currentMs": 27.225374999999985
+    },
+    {
+      "query": "raising canes box combo",
+      "kind": "restaurant",
+      "legacyRank": null,
+      "currentRank": 1,
+      "legacyCount": 0,
+      "currentCount": 2,
+      "currentMs": 22.25037499999999
+    },
+    {
+      "query": "sonic medium cherry limeade",
+      "kind": "restaurant",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 2,
+      "currentCount": 2,
+      "currentMs": 1.3795829999999683
+    },
+    {
+      "query": "cinnabon classic roll",
+      "kind": "restaurant",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 6,
+      "currentCount": 6,
+      "currentMs": 0.6570830000000001
+    },
+    {
+      "query": "waffle house regular hashbrowns",
+      "kind": "restaurant",
+      "legacyRank": 1,
+      "currentRank": 1,
+      "legacyCount": 1,
+      "currentCount": 1,
+      "currentMs": 1.7929580000000556
+    },
+    {
+      "query": "courgette raw",
+      "kind": "alias",
+      "legacyRank": null,
+      "currentRank": 1,
+      "legacyCount": 0,
+      "currentCount": 2,
+      "currentMs": 0.7980000000000018
+    },
+    {
+      "query": "aubergine raw",
+      "kind": "alias",
+      "legacyRank": null,
+      "currentRank": 1,
+      "legacyCount": 0,
+      "currentCount": 1,
+      "currentMs": 0.6990829999999733
+    },
+    {
+      "query": "fresh cilantro",
+      "kind": "alias",
+      "legacyRank": null,
+      "currentRank": 1,
+      "legacyCount": 2,
+      "currentCount": 1,
+      "currentMs": 0.8728750000000218
+    },
+    {
+      "query": "prawns cooked",
+      "kind": "alias",
+      "legacyRank": null,
+      "currentRank": 1,
+      "legacyCount": 0,
+      "currentCount": 3,
+      "currentMs": 1.004458999999997
+    },
+    {
+      "query": "cauliflwer raw",
+      "kind": "recovery",
+      "legacyRank": null,
+      "currentRank": 1,
+      "legacyCount": 0,
+      "currentCount": 2,
+      "currentMs": 2.051208000000031
+    },
+    {
+      "query": "cocunut oil",
+      "kind": "recovery",
+      "legacyRank": null,
+      "currentRank": 1,
+      "legacyCount": 0,
+      "currentCount": 4,
+      "currentMs": 2.176917000000003
+    },
+    {
+      "query": "mozzarela cheese",
+      "kind": "recovery",
+      "legacyRank": null,
+      "currentRank": 1,
+      "legacyCount": 0,
+      "currentCount": 31,
+      "currentMs": 4.011957999999993
+    },
+    {
+      "query": "pistachois raw",
+      "kind": "recovery",
+      "legacyRank": null,
+      "currentRank": 1,
+      "legacyCount": 0,
+      "currentCount": 1,
+      "currentMs": 1.4277500000000032
+    }
+  ]
+}

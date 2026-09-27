@@ -47,7 +47,8 @@ it('cancels removal without changing the diary and removes only after confirmati
   await act(async () => button('Cancel').click());
   expect(document.querySelector('[role="dialog"]')).toBeNull();
   expect(container.textContent).toContain('Banana');
-  expect(document.activeElement).toBe(button('Banana'));
+  // Radix restores focus from its deferred unmount autofocus callback.
+  await vi.waitFor(() => expect(document.activeElement).toBe(button('Banana')));
   await act(async () => button('Banana').click());
   await act(async () => button('Remove food').click());
   expect(document.querySelector('[role="dialog"]')).toBeNull();

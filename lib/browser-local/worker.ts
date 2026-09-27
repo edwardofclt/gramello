@@ -10,6 +10,7 @@ import catalogConfig from '../../mobile/catalog-config.json';
 import { openSnapshotStore, withSnapshot, type SnapshotStore } from './persistence';
 import { openMemoryDatabase, type SqliteModule } from './sqlite';
 import type { WorkerRequest, WorkerResponse } from './protocol';
+import { createBrowserCatalogSource, createBrowserFoodCatalog } from './food-catalog';
 
 const scope = globalThis as unknown as { postMessage(message: WorkerResponse): void; onmessage: ((event: MessageEvent<WorkerRequest>) => void) | null };
 const emit = (message: WorkerResponse) => scope.postMessage(message);
@@ -106,20 +107,7 @@ async function catalogs(): Promise<FoodCatalog> {
   if (seed) return seed.reader;
   throw seedError ?? new Error('The offline food catalog is unavailable.');
 }
-const baseCatalog: FoodCatalog = {
-  getFood: id => catalogTask(async () => {
-    try { return await (await catalogs()).getFood(id); }
-    catch (error) { catalogFailure(error); return null; }
-  }),
-  search: query => catalogTask(async () => {
-    try { return await (await catalogs()).search(query); }
-    catch (error) { catalogFailure(error); return []; }
-  }),
-  barcode: (code, signal) => catalogTask(async () => {
-    try { return await (await catalogs()).barcode(code, signal); }
-    catch (error) { catalogFailure(error); return null; }
-  }),
-};
+const baseCatalog = createBrowserCatalogSource(catalogs, catalogTask, catalogFailure);
 function catalogFailure(error: unknown) {
   emit({ event: 'catalog', status: { phase: 'error', error: error instanceof Error ? error.message : 'Offline foods are unavailable. Try updating the food catalog.' } });
 }
@@ -149,11 +137,7 @@ function withCache<T>(write: boolean, work: (catalog: FoodCatalog) => Promise<T>
     },
   });
 }
-const foodCatalog: FoodCatalog = {
-  getFood: id => withCache(false, catalog => catalog.getFood(id)),
-  search: (query, options) => withCache(Boolean(options?.online), catalog => catalog.search(query, options)),
-  barcode: (code, signal) => withCache(true, catalog => catalog.barcode(code, signal)),
-};
+const foodCatalog = createBrowserFoodCatalog(withCache);
 function withRepository<T>(write: boolean, work: (repository: LocalRepository, db: Database, extra: Array<readonly [string, unknown]>) => Promise<T>) {
   return withSnapshot({ key: 'personal', store: storage, lock, open: bytes => openMemoryDatabase(sqlite, bytes), write,
     work: async (db, extra) => {

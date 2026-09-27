@@ -208,8 +208,10 @@ packaged food's UPC-A, EAN-8, EAN-13, or ITF-14 barcode. You can also enter the
 printed number manually. Native lookup checks installed and previously cached
 foods first, then queries Open Food Facts directly and saves successful matches
 for offline use. The bundled catalog includes all previously imported restaurant
-menus. Typing a food name automatically searches on-device foods and Open Food Facts;
-online matches are saved for offline use. If a database is unavailable, tap the warning
+menus. Typing a food name searches on-device foods immediately, then automatically
+checks Open Food Facts after a short pause and saves additional matches for offline use.
+Category and restaurant/brand filters help distinguish relevant foods, and
+**Load more** continues the results. If a database is unavailable, tap the warning
 for the affected source and failure details. The hosted browser uses Open Food Facts. Review
 the serving size and meal before adding. Unknown products or products without
 complete nutrition can be searched by name instead. Drinks with volume-based

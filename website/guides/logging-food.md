@@ -7,9 +7,13 @@ an earlier day.
 ## Search and choose a portion
 
 1. In **Search foods**, enter at least two characters of a food, brand, or product
-   name. Add a specific item name to narrow a long list of results.
+   name. Matches appear as you type, with more added automatically after a short
+   pause. Use the food-category and brand/restaurant filters to narrow a long list.
+   **Load more** shows the next results; **Find more matches**
+   expands a broad search.
 2. Select a match. Check the brand, source, serving description, and nutrition.
-   Use **View nutrition source** when it is available.
+   Expand a size group to choose the exact serving. Check any spelling suggestion
+   or missing-description warning. Use **View nutrition source** when available.
 3. Choose Breakfast, Lunch, Dinner, or Snacks under **Add to meal**.
 4. Choose an available unit and enter your amount. Review the updated calories,
    protein, carbs, and fat before saving.

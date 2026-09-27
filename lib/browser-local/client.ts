@@ -79,7 +79,10 @@ async function openRuntime(): Promise<BrowserRuntime> {
     updateEntry: (id, input) => rpc('updateEntry', [id, input]),
     removeEntry: id => rpc('removeEntry', [id]),
     getTrends: (days, today) => rpc('getTrends', [days, today]),
-    searchFoods: (query, options) => rpc('searchFoods', [query, { online: options?.online }], options?.signal),
+    searchFoods: (query, options) => {
+      const { signal, ...searchOptions } = options ?? {};
+      return rpc('searchFoods', [query, searchOptions], signal);
+    },
     lookupBarcode: (code, signal) => rpc('lookupBarcode', [code], signal),
     createFood: input => rpc('createFood', [input]),
     listMeals: () => rpc('listMeals'),

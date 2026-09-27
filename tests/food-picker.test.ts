@@ -6,8 +6,8 @@ import { FoodPicker } from '../components/food-picker';
 import type { Food } from '../lib/food';
 import type { FoodApi } from '../lib/food-api';
 
-vi.mock('../components/barcode-scanner', () => ({ BarcodeScanner: () => null }));
-vi.mock('../components/custom-food-form', () => ({ CustomFoodForm: ({ onSaved }: { onSaved: (food: Food) => void }) => createElement('button', { className: 'save-custom', onClick: () => onSaved(egg) }, 'Save custom food') }));
+vi.mock('../components/barcode-scanner', () => ({ BarcodeScanner: ({ onBack }: { onBack: () => void }) => createElement('button', { className: 'return-search', onClick: onBack }, 'Back') }));
+vi.mock('../components/custom-food-form', () => ({ CustomFoodForm: ({ onSaved, onBack }: { onSaved: (food: Food) => void; onBack: () => void }) => createElement('div', null, createElement('button', { className: 'save-custom', onClick: () => onSaved(egg) }, 'Save custom food'), createElement('button', { className: 'return-search', onClick: onBack }, 'Back')) }));
 
 const egg: Food = { id: 'egg', name: 'Egg', source: 'Test', calories: 143, protein: 12.56, carbs: .72, fat: 9.51,
   nutritionBasis: '100g', servingGrams: 50, servingLabel: '1 large (50 g)', servingOptions: [
@@ -16,7 +16,7 @@ const egg: Food = { id: 'egg', name: 'Egg', source: 'Test', calories: 143, prote
 let container: HTMLDivElement, root: Root;
 beforeEach(() => {
   vi.useFakeTimers(); vi.stubGlobal('IS_REACT_ACT_ENVIRONMENT', true);
-  container = document.createElement('div'); container.setAttribute('role', 'dialog'); document.body.appendChild(container);
+  container = document.createElement('div'); container.setAttribute('role', 'dialog'); container.className = 'food-dialog'; document.body.appendChild(container);
   root = createRoot(container);
 });
 afterEach(async () => {
@@ -35,6 +35,48 @@ async function select(label: string, value: string) {
   });
 }
 async function click(selector: string) { await act(async () => container.querySelector<HTMLElement>(selector)!.click()); }
+
+it('uses one search field without an online action and lets Enter find more matches sooner', async () => {
+  const api = vi.fn().mockResolvedValue({ foods: [egg] });
+  await act(async () => root.render(createElement(FoodPicker, { api: api as FoodApi, onChoose: vi.fn(), actionLabel: 'Add food' })));
+  expect(container.textContent).not.toContain('Search online');
+  expect(container.textContent).not.toContain('downloaded foods');
+  await input('eggs');
+  await act(async () => container.querySelector('form')!.dispatchEvent(new Event('submit', { bubbles: true, cancelable: true })));
+  await act(async () => vi.advanceTimersByTimeAsync(350));
+  expect(api.mock.calls.some(([path]) => new URL(path, 'http://localhost').searchParams.get('online') === '1')).toBe(true);
+});
+
+it.each(['first-child', 'last-child'])('pauses pending work while opening scanner or custom food (%s) and returning', async action => {
+  const api = vi.fn().mockResolvedValue({ foods: [egg] });
+  await act(async () => root.render(createElement(FoodPicker, { api: api as FoodApi, onChoose: vi.fn(), actionLabel: 'Add food' })));
+  await input('eggs');
+  await act(async () => vi.advanceTimersByTimeAsync(350));
+  await click(`.food-actions button:${action}`);
+  await act(async () => vi.advanceTimersByTimeAsync(1000));
+  await click('.return-search');
+  await act(async () => vi.advanceTimersByTimeAsync(1000));
+  expect(api).toHaveBeenCalledTimes(1);
+  expect(container.querySelector('input')!.value).toBe('eggs');
+  expect(container.querySelector('.result-row strong')?.textContent).toBe('Egg');
+});
+
+it('keeps a result selectable while finding more matches and ignores a late response after selection', async () => {
+  let complete!: (value: { foods: Food[] }) => void;
+  const api = vi.fn().mockResolvedValueOnce({ foods: [egg] }).mockReturnValueOnce(new Promise(resolve => { complete = resolve; }));
+  await act(async () => root.render(createElement(FoodPicker, { api: api as FoodApi, onChoose: vi.fn(), actionLabel: 'Add food' })));
+  await input('eggs');
+  await act(async () => vi.advanceTimersByTimeAsync(1000));
+  expect(container.querySelector('[role="status"]')?.textContent).toBe('Finding more matches…');
+  await click('.result-row');
+  expect(api.mock.calls[1][1].signal.aborted).toBe(true);
+  await act(async () => complete({ foods: [{ ...egg, id: 'late', name: 'Late replacement' }] }));
+  await click('.back-link');
+  await act(async () => vi.advanceTimersByTimeAsync(1000));
+  expect(container.querySelector('.result-row strong')?.textContent).toBe('Egg');
+  expect(container.textContent).not.toContain('Late replacement');
+  expect(api).toHaveBeenCalledTimes(2);
+});
 
 it('keeps the count across portion choices, converts measures without changing the food amount, and submits the chosen portion', async () => {
   const onChoose = vi.fn();
@@ -66,7 +108,7 @@ it('restores the exact search after inspecting a result without refetching, refo
   await act(async () => vi.advanceTimersByTimeAsync(1000));
   expect(container.querySelector('input')!.value).toBe('eggs');
   expect([...container.querySelectorAll('.result-row strong')].map(node => node.textContent)).toEqual(['Egg', 'Eggs, scrambled']);
-  expect(container.textContent).toContain('Showing the first 100 matches');
+  expect(container.querySelector('.search-continuation')?.textContent).toBe('Find more matches');
   expect(container.scrollTop).toBe(480);
   expect(document.activeElement).not.toBe(container.querySelector('input'));
   expect(api).toHaveBeenCalledTimes(1);
@@ -87,6 +129,8 @@ it('refreshes an earlier empty search after a new custom food is saved', async (
   expect(container.textContent).toContain('No matches yet');
   await click('.food-actions button:last-child');
   await click('.save-custom');
+  await act(async () => vi.advanceTimersByTimeAsync(1000));
+  expect(api).toHaveBeenCalledTimes(1);
   await click('.back-link');
   await act(async () => vi.advanceTimersByTimeAsync(350));
   expect(api).toHaveBeenCalledTimes(2);

@@ -13,6 +13,9 @@ import { GET as search } from "@/app/api/foods/search/route";
 import { POST as customFood } from "@/app/api/foods/custom/route";
 import { GET as barcode } from "@/app/api/foods/barcode/route";
 import type { Food } from "@/lib/food";
+import { cacheDatabaseFoods, getFood } from '@/db/foods';
+import { referenceFoods } from '@/lib/reference-foods';
+import { foodRevision } from '@/lib/food-revision';
 import { preferredFoodServing } from '@/lib/food-servings';
 import { selectFoodServing } from '@/lib/serving-options';
 import type { EntryInput } from "@/db/store";
@@ -29,7 +32,7 @@ const database = new DatabaseSync(":memory:");
 for (const file of readdirSync(new URL("../drizzle/", import.meta.url)).filter(file => file.endsWith(".sql")).sort()) {
   database.exec(readFileSync(new URL(`../drizzle/${file}`, import.meta.url), "utf8"));
 }
-const configuration = { APP_BASE_URL: "https://gramello.test" };
+const configuration = { APP_BASE_URL: "https://gramello.test", USDA_API_KEY: "test-key", OFF_SEARCH_ENABLED: "1" };
 Object.assign(runtime.env, configuration, {
   DB: {
     prepare(sql: string) {
@@ -83,8 +86,8 @@ async function call(handler: (request: Request) => Promise<Response>, path: stri
 }
 
 beforeEach(() => {
-  database.exec("DELETE FROM entries; DELETE FROM goals; DELETE FROM foods; DELETE FROM custom_meals; DELETE FROM water_entries; DELETE FROM water_goals;");
-  Object.assign(runtime.env, configuration);
+  database.exec("DELETE FROM entries; DELETE FROM goals; DELETE FROM foods; DELETE FROM custom_meals; DELETE FROM water_entries; DELETE FROM water_goals; DELETE FROM food_provider_quota;");
+  Object.assign(runtime.env, configuration, { DB: { ...(runtime.env.DB as object) } });
 });
 afterAll(() => database.close());
 afterEach(() => vi.unstubAllGlobals());
@@ -275,13 +278,16 @@ it("prioritizes an exact restaurant brand over unrelated branded products", asyn
   expect(result.foods.map(item => item.id)).toEqual(['restaurant-viva-test', 'off-unrelated']);
 });
 
-it('finds the reference egg for a plural query and excludes unrelated online foods', async () => {
+it('finds the seeded reference egg for a plural query and excludes unrelated online foods', async () => {
+  // This suite clears foods between tests; production seeds USDA during migration.
+  await cacheDatabaseFoods(referenceFoods);
   vi.stubGlobal('fetch', async () => Response.json({ foods: [], products: [ghostProduct] }));
   const response = await call(search, '/api/foods/search?q=Eggs', { user: aliceId });
   const result = await response.json() as { foods: Food[] };
   expect(result.foods.map(food => food.id)).toEqual(['usda-171287']);
   expect(database.prepare("SELECT id FROM foods WHERE id LIKE 'off-%'").all()).toEqual([]);
   vi.stubGlobal('fetch', async () => { throw new Error('offline'); });
+  runtime.env.DB = { ...(runtime.env.DB as object) }; // Simulate a fresh worker, outside the successful query cache.
   const fallback = await (await call(search, '/api/foods/search?q=Eggs', { user: aliceId })).json();
   expect(fallback).toMatchObject({ foods: [expect.objectContaining({ id: 'usda-171287' })], partial: true });
 });
@@ -323,7 +329,10 @@ it('logs and edits the chosen egg size and rejects a portion from another food',
   const medium = egg.servingOptions!.find(option => option.label === '1 medium (44 g)')!;
   database.exec("INSERT INTO foods (id,name,source,source_kind,verified,nutrition_basis,serving_label,serving_grams,calories,protein,carbs,fat,created_at) VALUES ('usda-171287','Egg, whole, raw, fresh','USDA FoodData Central','database',1,'100g','1 cup (243 g)',243,143,12.56,0.72,9.51,'today')");
   const body = { date: '2026-09-23', meal: 'Breakfast', sourceId: egg.id, quantity: 2, unit: 'serving', servingId: medium.id, grams: 999, calories: 999 };
-  const result = await call(add, '/api/entries', { method: 'POST', user: aliceId, body });
+  const canonical = (await getFood(egg.id))!;
+  const reviewed = selectFoodServing(canonical, medium.id)!;
+  expect((await call(add, '/api/entries', { method: 'POST', user: aliceId, body: { ...body, foodRevision: foodRevision(canonical) } })).status).toBe(409);
+  const result = await call(add, '/api/entries', { method: 'POST', user: aliceId, body: { ...body, foodRevision: foodRevision(reviewed) } });
   expect(result.status).toBe(201);
   const entry = await result.json() as EntryInput & { id: string };
   expect(entry).toMatchObject({ grams: 88, servingLabel: medium.label });
@@ -434,5 +443,65 @@ describe('water intake', () => {
       expect((await call(handler, path, { method, body, user: aliceId, headers: { origin: 'https://evil.test' } })).status).toBe(403);
     }
     expect((await read()).entries).toEqual([]);
+  });
+});
+
+describe('local-first hosted search', () => {
+  it('never contacts providers or writes provider rows for online=0', async () => {
+    await call(customFood, '/api/foods/custom', { method: 'POST', user: aliceId, body: { name: 'Local rice', servingLabel: '1 bowl', calories: 200, protein: 4, carbs: 40, fat: 1 } });
+    const fetch = vi.fn(); vi.stubGlobal('fetch', fetch);
+    const response = await call(search, '/api/foods/search?q=rice&online=0&category=custom&limit=20');
+    expect(response.status).toBe(200);
+    expect(await response.json()).toMatchObject({ partial: false, foods: [expect.objectContaining({ name: 'Local rice' })] });
+    expect(fetch).not.toHaveBeenCalled();
+  });
+  it('keeps cached brandless OFF foods available in the packaged category', async () => {
+    database.exec("INSERT INTO foods (id,name,source,source_kind,verified,nutrition_basis,serving_label,calories,protein,carbs,fat,created_at) VALUES ('off-0012345678905','Oat cereal','Open Food Facts','database',1,'100g','100 g',350,10,65,4,'today')");
+    for (const category of ['all', 'packaged']) {
+      const result = await (await call(search, `/api/foods/search?q=Oat%20cereal&online=0&category=${category}`)).json();
+      expect(result).toMatchObject({ foods: [expect.objectContaining({ id: 'off-0012345678905' })], hits: [expect.objectContaining({ category: 'packaged' })] });
+    }
+  });
+  it('uses the same brand alias filtering for hosted FTS retrieval and shared ranking', async () => {
+    database.exec("INSERT INTO foods (id,name,brand,source,source_kind,verified,nutrition_basis,serving_label,calories,protein,carbs,fat,created_at) VALUES ('restaurant-chick-fil-a-test','Chicken sandwich','Chick-fil-A','Official restaurant nutrition','restaurant',1,'serving','1 sandwich',440,28,41,19,'today'),('restaurant-other-test','Chicken sandwich','Other chain','Official restaurant nutrition','restaurant',1,'serving','1 sandwich',450,28,41,19,'today')");
+    for (const brand of ['Chick-fil-A', 'chickfila']) {
+      const result = await (await call(search, `/api/foods/search?q=chicken&online=0&category=restaurant&brand=${encodeURIComponent(brand)}`)).json();
+      expect(result).toMatchObject({ foods: [expect.objectContaining({ id: 'restaurant-chick-fil-a-test' })] });
+    }
+  });
+  it('explains missing configuration while local search still works', async () => {
+    delete runtime.env.USDA_API_KEY; delete runtime.env.OFF_SEARCH_ENABLED;
+    const fetch = vi.fn(); vi.stubGlobal('fetch', fetch);
+    const result = await (await call(search, '/api/foods/search?q=rice&online=1')).json();
+    expect(result).toMatchObject({ partial: true, issues: [expect.objectContaining({ message: expect.stringContaining('Online USDA search is not available') }), expect.objectContaining({ message: expect.stringContaining('Online packaged-food search is not available') })] });
+    expect(fetch).not.toHaveBeenCalled();
+  });
+  it('keeps local matches and hides unloggable provider records when canonical cache writes fail', async () => {
+    await call(customFood, '/api/foods/custom', { method: 'POST', user: aliceId, body: { name: 'Local energy bowl', servingLabel: '1 bowl', calories: 200, protein: 4, carbs: 40, fat: 1 } });
+    database.exec("CREATE TRIGGER reject_provider BEFORE INSERT ON foods WHEN new.id LIKE 'off-%' BEGIN SELECT RAISE(FAIL,'cache full'); END");
+    vi.stubGlobal('fetch', async () => Response.json({ products: [ghostProduct], foods: [] }));
+    try {
+      const result = await (await call(search, '/api/foods/search?q=energy&online=1')).json();
+      expect(result).toMatchObject({ partial: true, foods: [expect.objectContaining({ name: 'Local energy bowl' })], issues: [expect.objectContaining({ message: expect.stringContaining('Could not save') })] });
+      expect(database.prepare("SELECT id FROM foods WHERE id LIKE 'off-%'").all()).toHaveLength(0);
+    } finally { database.exec('DROP TRIGGER reject_provider'); }
+  });
+  it('continues an unavailable-provider window without issuing another provider request', async () => {
+    for (let i = 0; i < 24; i++) await call(customFood, '/api/foods/custom', { method: 'POST', user: aliceId, body: { name: `Continuation oats ${String(i).padStart(2, '0')}`, servingLabel: '1 bowl', calories: 200, protein: 5, carbs: 30, fat: 5 } });
+    const network = vi.fn(async () => { throw new Error('offline'); }); vi.stubGlobal('fetch', network);
+    const first = await (await call(search, '/api/foods/search?q=continuation&online=1&limit=20')).json() as { foods: Food[]; nextCursor: string };
+    expect(first.foods).toHaveLength(20); expect(first.nextCursor).toBeTruthy();
+    const calls = network.mock.calls.length;
+    const next = await (await call(search, `/api/foods/search?q=continuation&online=1&limit=20&cursor=${first.nextCursor}`)).json() as { foods: Food[]; reset?: boolean };
+    expect(next.reset).not.toBe(true); expect(next.foods).toHaveLength(4);
+    expect(network).toHaveBeenCalledTimes(calls);
+  });
+  it('shares OFF quota across distinct worker cache instances', async () => {
+    const fetch = vi.fn<typeof globalThis.fetch>(async () => Response.json({ foods: [], products: [] })); vi.stubGlobal('fetch', fetch);
+    await call(search, '/api/foods/search?q=first&online=1');
+    runtime.env.DB = { ...(runtime.env.DB as object) };
+    const result = await (await call(search, '/api/foods/search?q=second&online=1')).json();
+    expect(result).toMatchObject({ partial: true, issues: [{ source: 'Open Food Facts', message: expect.stringMatching(/too many requests/i) }] });
+    expect(fetch.mock.calls.filter(([url]) => String(url).includes('openfoodfacts'))).toHaveLength(1);
   });
 });

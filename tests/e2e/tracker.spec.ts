@@ -103,7 +103,9 @@ test('search and serving dialogs scroll on a short mobile viewport', async ({ pa
   test.skip(!isMobile, 'Mobile regression');
   await page.setViewportSize({ width: 390, height: 500 });
   await seedDiary(page, Array.from({ length: 24 }, (_, i) => ({ ...foods[0], id: `food-${String(i).padStart(2, '0')}`, name: `Oats item ${String(i).padStart(2, '0')}` })));
-  await search(page, 24);
+  await search(page, 20);
+  await page.getByRole('button', { name: 'Load more', exact: true }).click();
+  await expect(page.locator('.result-row')).toHaveCount(24);
   const dialog = page.getByRole('dialog');
   async function checkScrolling() {
     const geometry = await dialog.evaluate(el => {
@@ -185,6 +187,8 @@ test('shows catalog provenance and notices, and resets the portion when choosing
   await page.context().route('https://world.openfoodfacts.org/cgi/search.pl?*', route => route.fulfill({ status: 429, headers: { 'access-control-allow-origin': '*' }, json: { error: 'rate limited' } }));
   await page.getByRole('button', { name: 'Add Lunch', exact: true }).click();
   await page.getByRole('textbox', { name: 'Search foods', exact: true }).fill('e2eprivate');
+  await expect(page.getByRole('button', { name: /Rolled oats e2eprivate/ })).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Search online', exact: true })).toHaveCount(0);
   await expect(page.getByRole('status')).toContainText('Some nutrition databases are unavailable');
   const warning = page.getByRole('button', { name: 'Some nutrition databases are unavailable.' });
   await expect(warning).toHaveAttribute('aria-expanded', 'false');

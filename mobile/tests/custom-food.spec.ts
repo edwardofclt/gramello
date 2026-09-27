@@ -47,7 +47,7 @@ for (const width of [390, 1440]) {
     await expect(page.getByText(/0.5 × 1 bowl/)).toBeVisible();
     await page.getByRole('button', { name: 'Add Dinner', exact: true }).click();
     await page.getByRole('textbox', { name: 'Search foods' }).fill('My dinner bowl');
-    await expect(page.getByRole('button', { name: /My dinner bowl/ })).toBeVisible();
+    await expect(page.getByTestId('app-dialog').getByRole('button', { name: /My dinner bowl/ })).toBeVisible();
     await expect(page.getByText(/Some nutrition databases are unavailable/)).toBeVisible();
     const warning = page.getByRole('button', { name: 'Some nutrition databases are unavailable.' });
     await expect(warning).toHaveAttribute('aria-expanded', 'false');
@@ -55,7 +55,7 @@ for (const width of [390, 1440]) {
     await warning.click();
     await expect(warning).toHaveAttribute('aria-expanded', 'true');
     await expect(page.getByText(/Open Food Facts: The database took too long/)).toBeVisible();
-    await expect(page.getByText(/Showing the first 100 matches/)).toBeVisible();
+    await expect(page.getByRole('button', { name: 'Find more matches', exact: true })).toBeVisible();
     await page.screenshot({ path: `test-results/custom-food-${width}-search.png`, fullPage: true });
     await warning.click();
     await expect(page.getByText(/The database took too long/)).toBeHidden();

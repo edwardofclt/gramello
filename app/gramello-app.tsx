@@ -7,7 +7,7 @@ import { FoodDialog, type DiaryEntry } from "@/components/food-dialog";
 import { EntryDialog } from "@/components/entry-dialog";
 import { FoodVerification } from "@/components/food-verification";
 import { entryAmountLabel } from "@/lib/meals";
-import { BrandMark as Logo } from "@/components/brand-mark";
+import { BrandMark as Logo, BrandWordmark } from "@/components/brand-mark";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
@@ -140,7 +140,7 @@ export default function GramelloApp({ diaryClient, runtime, offlineStatus = '', 
 
   return <div className="app-shell">
     <aside className="sidebar">
-      <div className="brand"><Logo/><span>Gramello</span></div>
+      <div className="brand"><Logo/><BrandWordmark/></div>
       <nav aria-label="Main navigation">
         <button className={view==="today"?"active":""} onClick={()=>setView("today")}><LayoutDashboard/>Today</button>
         <button className={view==="trends"?"active":""} onClick={()=>setView("trends")}><TrendingUp/>Trends</button>
@@ -152,7 +152,7 @@ export default function GramelloApp({ diaryClient, runtime, offlineStatus = '', 
 
     <main>
       <header className="topbar">
-        <div className="mobile-brand"><Logo/><span>Gramello</span></div>
+        <div className="mobile-brand"><Logo/><BrandWordmark/></div>
         <div><p>{view==="settings"?"MAKE IT YOURS":view==="today"?"DAILY DIARY":"NUTRITION ANALYTICS"}</p><h1>{view==="settings"?"Your preferences":view==="today"?"Today’s fuel":"Your progress"}</h1></div>
         <div className="topbar-actions">
           <Button onClick={openFood} className="add-food" aria-label="Add food"><Plus/><span>Add food</span></Button>

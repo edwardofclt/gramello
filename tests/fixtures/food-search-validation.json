@@ -1,0 +1,428 @@
+{
+  "version": 1,
+  "judgmentMethod": "Independent final blind validation, authored by a separate agent after reading only the two earlier fixtures to exclude their query/food/restaurant families, raw USDA and restaurant source JSON, and read-only canonical foods rows in mobile/assets/catalog.sqlite. No implementation, earlier benchmark reports, FTS queries or ranking output were inspected before labels were frozen. This is one fresh 40-query sample with source-grounded labels fixed before evaluation; no human ratings, random sample or user-population inference is claimed. Food families denote the same named food/item across spelling and preparation variants, not entire nutritional groups such as all vegetables or all cheese types. Known canonical alternatives with the same stated intent were included before any run. No queries, labels or engine changes may be selected from this validation outcome.",
+  "samplingPlan": {
+    "generic": 10,
+    "preparation": 8,
+    "packaged": 6,
+    "restaurant": 8,
+    "alias": 4,
+    "recovery": 4,
+    "restaurantBrowsing": 4,
+    "restaurantSpecificItem": 4
+  },
+  "sources": [
+    "data/food-catalog/usda-core.json",
+    "data/restaurant-foods/*.json",
+    "mobile/assets/catalog.sqlite (read-only foods table)"
+  ],
+  "excludedFixtures": [
+    "tests/fixtures/food-search-relevance.json",
+    "tests/fixtures/food-search-heldout.json"
+  ],
+  "freezeRule": "SHA-256 is sent to the coordinating agent before running search. Run the frozen fixture exactly once only after the coordinating agent confirms engine frozen. Report all outcomes without further tuning or label changes.",
+  "queries": [
+    {
+      "query": "honey",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-169640"
+      ],
+      "judgment": "Plain honey; honey-flavored foods and honeydew are excluded. Relevant source descriptions: Honey"
+    },
+    {
+      "query": "maple syrup",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-169661",
+        "usda-170276"
+      ],
+      "judgment": "Pure maple syrup; maple sugar and pancake syrups containing only a small maple fraction are excluded. Relevant source descriptions: Syrups, maple; Syrup, maple, Canadian"
+    },
+    {
+      "query": "tofu",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-167695",
+        "usda-172448",
+        "usda-172449",
+        "usda-172451",
+        "usda-172461",
+        "usda-172462",
+        "usda-172463",
+        "usda-172464",
+        "usda-172468",
+        "usda-172475",
+        "usda-172476",
+        "usda-173762",
+        "usda-173763",
+        "usda-173764",
+        "usda-173783",
+        "usda-173784",
+        "usda-173786",
+        "usda-173787",
+        "usda-173788",
+        "usda-174290",
+        "usda-174291",
+        "usda-174292",
+        "usda-174297",
+        "usda-174304",
+        "usda-175235",
+        "usda-175236"
+      ],
+      "judgment": "Tofu itself, any firmness, brand or coagulant; plain and fried forms are acceptable because no preparation is specified. Tofu yogurt, mayonnaise and dried or fermented products are excluded. Relevant source descriptions: Mayonnaise, made with tofu; Tofu, firm, prepared with calcium sulfate and magnesium chloride (nigari); Tofu, soft, prepared with calcium sulfate and magnesium chloride (nigari); Tofu, fried; MORI-NU, Tofu, silken, firm; MORI-NU, Tofu, silken, extra firm; MORI-NU, Tofu, silken, lite firm; MORI-NU, Tofu, silken, lite extra firm; Vitasoy USA, Nasoya Lite Firm Tofu; Tofu, raw, firm, prepared with calcium sulfate; Tofu, raw, regular, prepared with calcium sulfate; Vitasoy USA, Organic Nasoya Extra Firm Tofu; Vitasoy USA, Organic Nasoya Firm Tofu; Vitasoy USA, Organic Nasoya Silken Tofu; Vitasoy USA Organic Nasoya, Soft Tofu; Vitasoy USA Nasoya, Lite Silken Tofu; Vitasoy USA Azumaya, Silken Tofu; HOUSE FOODS Premium Soft Tofu; HOUSE FOODS Premium Firm Tofu; Tofu, extra firm, prepared with nigari; Tofu, hard, prepared with nigari; MORI-NU, Tofu, silken, soft; Vitasoy USA, Organic Nasoya Super Firm Cubed Tofu; Tofu, fried, prepared with calcium sulfate; Vitasoy USA Azumaya, Extra Firm Tofu; Vitasoy USA Azumaya, Firm Tofu"
+    },
+    {
+      "query": "cabbage",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-168514",
+        "usda-168515",
+        "usda-168516",
+        "usda-168517",
+        "usda-168572",
+        "usda-169335",
+        "usda-169336",
+        "usda-169337",
+        "usda-169975",
+        "usda-169976",
+        "usda-169977",
+        "usda-169978",
+        "usda-169979",
+        "usda-169980",
+        "usda-170388",
+        "usda-170389",
+        "usda-170390",
+        "usda-170391"
+      ],
+      "judgment": "Plain cabbage, including common, red, savoy and Chinese varieties, raw or simply cooked; preserved or dressed dishes are excluded. Relevant source descriptions: Cabbage, common, cooked, boiled, drained, with salt; Cabbage, red, cooked, boiled, drained, with salt; Cabbage, savoy, cooked, boiled, drained, with salt; Cabbage, chinese (pak-choi), cooked, boiled, drained, with salt; Cabbage, napa, cooked; Cabbage, common (danish, domestic, and pointed types), freshly harvest, raw; Cabbage, common (danish, domestic, and pointed types), stored, raw; Cabbage, chinese (pe-tsai), cooked, boiled, drained, with salt; Cabbage, raw; Cabbage, cooked, boiled, drained, without salt; Cabbage, red, raw; Cabbage, red, cooked, boiled, drained, without salt; Cabbage, chinese (pe-tsai), raw; Cabbage, chinese (pe-tsai), cooked, boiled, drained, without salt; Cabbage, savoy, raw; Cabbage, savoy, cooked, boiled, drained, without salt; Cabbage, chinese (pak-choi), raw; Cabbage, chinese (pak-choi), cooked, boiled, drained, without salt"
+    },
+    {
+      "query": "fresh radishes",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-168451",
+        "usda-169276",
+        "usda-170081"
+      ],
+      "judgment": "Fresh raw radishes, including oriental and white icicle varieties; cooked, dried and pickled forms are excluded. Relevant source descriptions: Radishes, oriental, raw; Radishes, raw; Radishes, white icicle, raw"
+    },
+    {
+      "query": "grapefruit",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-173033",
+        "usda-173034",
+        "usda-174673",
+        "usda-174674",
+        "usda-174675",
+        "usda-174676",
+        "usda-174677"
+      ],
+      "judgment": "Whole raw grapefruit of any color or origin; juice and canned sections are excluded. Relevant source descriptions: Grapefruit, raw, pink and red and white, all areas; Grapefruit, raw, white, Florida; Grapefruit, raw, pink and red, all areas; Grapefruit, raw, pink and red, California and Arizona; Grapefruit, raw, pink and red, Florida; Grapefruit, raw, white, all areas; Grapefruit, raw, white, California"
+    },
+    {
+      "query": "cantaloupe",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-169092"
+      ],
+      "judgment": "Plain raw cantaloupe. Relevant source descriptions: Melons, cantaloupe, raw"
+    },
+    {
+      "query": "fresh plums",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-169820",
+        "usda-169949"
+      ],
+      "judgment": "Fresh whole plums, including wild plums; prunes, canned fruit and baby food are excluded. Relevant source descriptions: Plums, wild (Northern Plains Indians); Plums, raw"
+    },
+    {
+      "query": "sour cream",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-171256",
+        "usda-171257",
+        "usda-172210",
+        "usda-172211",
+        "usda-173442",
+        "usda-173443",
+        "usda-173444"
+      ],
+      "judgment": "Dairy sour cream, any fat level or brand; imitation sour cream and salad dressings are excluded. Relevant source descriptions: Cream, sour, reduced fat, cultured; Cream, sour, cultured; KRAFT BREAKSTONE'S Reduced Fat Sour Cream; KRAFT BREAKSTONE'S FREE Fat Free Sour Cream; Sour cream, reduced fat; Sour cream, light; Sour cream, fat free"
+    },
+    {
+      "query": "beets",
+      "kind": "generic",
+      "relevantIds": [
+        "usda-168506",
+        "usda-168507",
+        "usda-169145",
+        "usda-169146",
+        "usda-169147",
+        "usda-169966"
+      ],
+      "judgment": "Plain beet roots, raw, boiled or canned, with or without salt; pickled, Harvard-style and baby-food products are excluded. Relevant source descriptions: Beets, cooked, boiled. drained, with salt; Beets, canned, no salt added, solids and liquids; Beets, raw; Beets, cooked, boiled, drained; Beets, canned, regular pack, solids and liquids; Beets, canned, drained solids"
+    },
+    {
+      "query": "boiled green peas",
+      "kind": "preparation",
+      "relevantIds": [
+        "usda-170017",
+        "usda-170102",
+        "usda-170105",
+        "usda-170420"
+      ],
+      "judgment": "Green peas cooked by boiling, fresh or frozen, salted or unsalted; canned-only and split-pea entries are excluded. Relevant source descriptions: Peas, green, frozen, cooked, boiled, drained, without salt; Peas, green, cooked, boiled, drained, with salt; Peas, green, frozen, cooked, boiled, drained, with salt; Peas, green, cooked, boiled, drained, without salt"
+    },
+    {
+      "query": "millet cooked",
+      "kind": "preparation",
+      "relevantIds": [
+        "usda-168871"
+      ],
+      "judgment": "Cooked millet grain; raw millet, puffed cereal and flour are excluded. Relevant source descriptions: Millet, cooked"
+    },
+    {
+      "query": "roasted duck",
+      "kind": "preparation",
+      "relevantIds": [
+        "usda-171112",
+        "usda-171510",
+        "usda-172409",
+        "usda-172411"
+      ],
+      "judgment": "Roasted duck meat, with or without skin, including breast and leg; raw, braised or broiled duck and duck sauce are excluded. Relevant source descriptions: Duck, young duckling, domesticated, White Pekin, leg, meat and skin, bone in, cooked, roasted; Duck, young duckling, domesticated, White Pekin, breast, meat and skin, boneless, cooked, roasted; Duck, domesticated, meat and skin, cooked, roasted; Duck, domesticated, meat only, cooked, roasted"
+    },
+    {
+      "query": "halibut cooked",
+      "kind": "preparation",
+      "relevantIds": [
+        "usda-169812",
+        "usda-174201",
+        "usda-174232"
+      ],
+      "judgment": "Cooked halibut of any listed species, with or without skin; raw fish is excluded. Relevant source descriptions: Fish, halibut, cooked, with skin (Alaska Native); Fish, halibut, Atlantic and Pacific, cooked, dry heat; Fish, halibut, greenland, cooked, dry heat"
+    },
+    {
+      "query": "okra boiled",
+      "kind": "preparation",
+      "relevantIds": [
+        "usda-169261",
+        "usda-169263",
+        "usda-170098",
+        "usda-170099"
+      ],
+      "judgment": "Boiled okra, fresh or frozen, salted or unsalted; raw and frozen unprepared okra are excluded. Relevant source descriptions: Okra, cooked, boiled, drained, without salt; Okra, frozen, cooked, boiled, drained, without salt; Okra, cooked, boiled, drained, with salt; Okra, frozen, cooked, boiled, drained, with salt"
+    },
+    {
+      "query": "boiled turnips",
+      "kind": "preparation",
+      "relevantIds": [
+        "usda-170058",
+        "usda-170060",
+        "usda-170547",
+        "usda-170548"
+      ],
+      "judgment": "Boiled ordinary turnip roots, fresh or frozen, salted or unsalted; greens mixtures and botanically distinct prairie turnips are excluded. Relevant source descriptions: Turnips, cooked, boiled, drained, without salt; Turnips, frozen, cooked, boiled, drained, without salt; Turnips, cooked, boiled, drained, with salt; Turnips, frozen, cooked, boiled, drained, with salt"
+    },
+    {
+      "query": "baked plantain",
+      "kind": "preparation",
+      "relevantIds": [
+        "usda-169131"
+      ],
+      "judgment": "Baked yellow plantain; raw, boiled and fried plantain are excluded. Relevant source descriptions: Plantains, yellow, baked"
+    },
+    {
+      "query": "crab cooked",
+      "kind": "preparation",
+      "relevantIds": [
+        "usda-172007",
+        "usda-172008",
+        "usda-174202",
+        "usda-174205"
+      ],
+      "judgment": "Plain cooked crab of any listed species; raw, imitation, canned-only and crab-cake entries are excluded. Relevant source descriptions: Crustaceans, crab, dungeness, cooked, moist heat; Crustaceans, crab, queen, cooked, moist heat; Crustaceans, crab, alaska king, cooked, moist heat; Crustaceans, crab, blue, cooked, moist heat"
+    },
+    {
+      "query": "Malt O Meal frosted flakes",
+      "kind": "packaged",
+      "relevantIds": [
+        "usda-172990"
+      ],
+      "judgment": "Malt-O-Meal Frosted Flakes cereal; other brands and Frosted Mini Spooners are excluded. Relevant source descriptions: Cereals ready-to-eat, MALT-O-MEAL, Frosted Flakes"
+    },
+    {
+      "query": "Clif bar",
+      "kind": "packaged",
+      "relevantIds": [
+        "usda-174799"
+      ],
+      "judgment": "The standard CLIF BAR mixed-flavor source entry; the separate Clif Z bar is excluded. Relevant source descriptions: Snacks, CLIF BAR, mixed flavors"
+    },
+    {
+      "query": "Gatorade G2",
+      "kind": "packaged",
+      "relevantIds": [
+        "usda-174178"
+      ],
+      "judgment": "Gatorade G2 low-calorie drink; regular Gatorade and powder are excluded. Relevant source descriptions: Beverages, PEPSICO QUAKER, Gatorade G2, low calorie"
+    },
+    {
+      "query": "V8 Splash berry blend",
+      "kind": "packaged",
+      "relevantIds": [
+        "usda-171928"
+      ],
+      "judgment": "Regular V8 Splash Berry Blend juice drink; diet and other flavor formulations are excluded. Relevant source descriptions: Beverages, V8 SPLASH Juice Drinks, Berry Blend"
+    },
+    {
+      "query": "Campbells chunky clam chowder",
+      "kind": "packaged",
+      "relevantIds": [
+        "usda-174556"
+      ],
+      "judgment": "Campbell's Chunky New England Clam Chowder; other Campbell's soups and generic chowders are excluded. Relevant source descriptions: CAMPBELL'S CHUNKY, New England Clam Chowder"
+    },
+    {
+      "query": "Keebler chocolate grahams",
+      "kind": "packaged",
+      "relevantIds": [
+        "usda-173255"
+      ],
+      "judgment": "Keebler Chocolate Graham SELECTS, the matching branded chocolate graham entry. Relevant source descriptions: Keebler, Keebler Chocolate Graham SELECTS"
+    },
+    {
+      "query": "papa johns",
+      "kind": "restaurant",
+      "relevantBrand": "Papa Johns",
+      "judgment": "Restaurant browsing intent. Any menu item with the exact source brand Papa Johns is acceptable."
+    },
+    {
+      "query": "jersey mikes",
+      "kind": "restaurant",
+      "relevantBrand": "Jersey Mike’s Subs",
+      "judgment": "Restaurant browsing intent. Any menu item with the exact source brand Jersey Mike’s Subs is acceptable."
+    },
+    {
+      "query": "zaxbys",
+      "kind": "restaurant",
+      "relevantBrand": "Zaxby’s",
+      "judgment": "Restaurant browsing intent. Any menu item with the exact source brand Zaxby’s is acceptable."
+    },
+    {
+      "query": "tropical smoothie cafe",
+      "kind": "restaurant",
+      "relevantBrand": "Tropical Smoothie Cafe",
+      "judgment": "Restaurant browsing intent. Any menu item with the exact source brand Tropical Smoothie Cafe is acceptable."
+    },
+    {
+      "query": "chilis oldtimer burger with cheese",
+      "kind": "restaurant",
+      "relevantIds": [
+        "restaurant-chilis-nutritionix-964980"
+      ],
+      "judgment": "The Oldtimer Burger with Cheese at Chili's. Relevant source descriptions: Oldtimer Burger with Cheese"
+    },
+    {
+      "query": "outback bloomin onion",
+      "kind": "restaurant",
+      "relevantIds": [
+        "restaurant-outback-steakhouse-bloomin-onion-1-serving"
+      ],
+      "judgment": "The Bloomin' Onion appetizer at Outback Steakhouse; similarly named burgers, chicken and beer are excluded. Relevant source descriptions: Bloomin' Onion"
+    },
+    {
+      "query": "krispy kreme original glazed doughnut",
+      "kind": "restaurant",
+      "relevantIds": [
+        "restaurant-krispy-kreme-nutritionix-721934"
+      ],
+      "judgment": "The standard Original Glazed Doughnut at Krispy Kreme; mini doughnuts, dots, cinnamon rolls and beverages are excluded. Relevant source descriptions: Original Glazed Doughnut"
+    },
+    {
+      "query": "shake shack single shackburger",
+      "kind": "restaurant",
+      "relevantIds": [
+        "restaurant-shake-shack-nutritionix-750057"
+      ],
+      "judgment": "The Single ShackBurger at Shake Shack; multiple patties and combo meals are excluded. Relevant source descriptions: Single ShackBurger"
+    },
+    {
+      "query": "green onions",
+      "kind": "alias",
+      "relevantIds": [
+        "usda-170005"
+      ],
+      "judgment": "Green onions is a common name for spring onions/scallions, including the bulb and tops; mature bulb onions are excluded. Relevant source descriptions: Onions, spring or scallions (includes tops and bulb), raw"
+    },
+    {
+      "query": "rocket leaves",
+      "kind": "alias",
+      "relevantIds": [
+        "usda-169387"
+      ],
+      "judgment": "Rocket is the regional name for arugula; fresh raw leaves are the target. Relevant source descriptions: Arugula, raw"
+    },
+    {
+      "query": "red capsicum raw",
+      "kind": "alias",
+      "relevantIds": [
+        "usda-170108"
+      ],
+      "judgment": "Red capsicum denotes raw red sweet/bell pepper; other colors and cooked preparations are excluded. Relevant source descriptions: Peppers, sweet, red, raw"
+    },
+    {
+      "query": "filberts",
+      "kind": "alias",
+      "relevantIds": [
+        "usda-169827",
+        "usda-170581",
+        "usda-170582",
+        "usda-170583"
+      ],
+      "judgment": "Filberts is a common name for hazelnuts. Plain whole nuts, raw, blanched or roasted, including the native beaked variety, are acceptable. Relevant source descriptions: Hazelnuts, beaked (Northern Plains Indians); Nuts, hazelnuts or filberts; Nuts, hazelnuts or filberts, blanched; Nuts, hazelnuts or filberts, dry roasted, without salt added"
+    },
+    {
+      "query": "fresh aprcots",
+      "kind": "recovery",
+      "relevantIds": [
+        "usda-171697"
+      ],
+      "judgment": "Single omitted letter in apricots. Fresh raw apricots are required; dried, canned and sweetened frozen forms are excluded. Relevant source descriptions: Apricots, raw"
+    },
+    {
+      "query": "fetta cheese",
+      "kind": "recovery",
+      "relevantIds": [
+        "usda-173420"
+      ],
+      "judgment": "Common extra-letter spelling of feta. Plain feta cheese is the target. Relevant source descriptions: Cheese, feta"
+    },
+    {
+      "query": "tahni",
+      "kind": "recovery",
+      "relevantIds": [
+        "usda-168604",
+        "usda-169406",
+        "usda-169410",
+        "usda-170189"
+      ],
+      "judgment": "Single omitted letter in tahini. Sesame paste labeled tahini, from raw or roasted kernels, is acceptable. Relevant source descriptions: Seeds, sesame butter, tahini, type of kernels unspecified; Seeds, sesame butter, tahini, from unroasted kernels (non-chemically removed seed coat); Seeds, sesame butter, tahini, from raw and stone ground kernels; Seeds, sesame butter, tahini, from roasted and toasted kernels (most common type)"
+    },
+    {
+      "query": "peacans",
+      "kind": "recovery",
+      "relevantIds": [
+        "usda-169424",
+        "usda-169425",
+        "usda-170182",
+        "usda-170183",
+        "usda-170589"
+      ],
+      "judgment": "Single added letter in pecans. Plain whole pecan nuts, raw or roasted and salted or unsalted, are acceptable. Relevant source descriptions: Nuts, pecans, dry roasted, with salt added; Nuts, pecans, oil roasted, with salt added; Nuts, pecans; Nuts, pecans, dry roasted, without salt added; Nuts, pecans, oil roasted, without salt added"
+    }
+  ]
+}

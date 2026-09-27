@@ -55,7 +55,9 @@ try {
     const response = await request('/');
     assert.equal(response.status, 200);
     const html = await response.text();
-    assert.match(html, /Today’s fuel/);
+    // The browser-local diary hydrates after opening its SQLite worker. Browser
+    // tests verify the populated diary; the HTTP smoke checks its initial shell.
+    assert.match(html, /Opening your local diary/);
     assert.doesNotMatch(html, /Sign in|Sign out|\/auth\/login/);
     assert.match(response.headers.get('cache-control'), /no-store/);
     assert.match(response.headers.get('set-cookie'), /HttpOnly/i);
@@ -129,6 +131,29 @@ try {
   assert.equal(vivaEntry.calories, viva.calories / 2);
   assert.equal(vivaEntry.verified, true);
   assert.equal((await readDay(alice)).entries.at(-1).verified, true);
+
+  // Exercise the actual FTS migrations and seeded staple retrieval in the Worker.
+  const eggResponse = await request('/api/foods/search?q=egg&online=0&limit=20', { headers: { Cookie: alice } });
+  assert.equal(eggResponse.status, 200);
+  const eggs = await eggResponse.json();
+  assert.ok(eggs.foods.slice(0, 3).some(item => item.id === 'usda-171287'), 'Whole raw egg must be among the first three indexed results');
+  assert.ok(eggs.sourceStatus.every(source => source.state === 'not-requested'));
+  assert.ok(eggs.nextCursor, 'Broad indexed searches must have continuation');
+  const nextEggs = await (await request(`/api/foods/search?q=egg&online=0&limit=20&cursor=${encodeURIComponent(eggs.nextCursor)}`, { headers: { Cookie: alice } })).json();
+  assert.ok(nextEggs.foods.length > 0);
+  assert.ok(nextEggs.foods.every(next => !eggs.foods.some(first => first.id === next.id)), 'Continuation must not duplicate first-page IDs');
+  const indexedTimings = [];
+  for (let repeat = 0; repeat < 5; repeat++) {
+    for (const query of ['egg', 'rice', 'chicken breast', 'banana raw', 'mcdonalds', 'chickfila']) {
+      const start = performance.now();
+      const response = await request(`/api/foods/search?online=0&limit=20&q=${encodeURIComponent(query)}`, { headers: { Cookie: alice } });
+      assert.equal(response.status, 200);
+      assert.ok((await response.json()).foods.length > 0);
+      indexedTimings.push(performance.now() - start);
+    }
+  }
+  indexedTimings.sort((a, b) => a - b);
+  console.log(`Indexed search, 30 sequential requests in local compiled Worker: median ${indexedTimings[14].toFixed(1)} ms, p95 ${indexedTimings[28].toFixed(1)} ms (includes loopback HTTP; not production or physical-device timing).`);
 
   if (process.env.SMOKE_BROWSER === "1") {
     await mkdir("work/food-catalog", { recursive: true });

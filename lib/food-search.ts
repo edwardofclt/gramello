@@ -1,7 +1,24 @@
 import type { Food } from './food';
 
 export type FoodSearchIssue = { source: string; message: string };
-export type FoodSearchResult = { foods: Food[]; partial?: boolean; hasMore?: boolean; issues?: FoodSearchIssue[] };
+export type FoodSearchCategory = 'generic' | 'packaged' | 'restaurant' | 'custom';
+export type FoodSearchOptions = {
+  category?: FoodSearchCategory | 'all'; brand?: string;
+  limit?: number; window?: number; cursor?: string;
+  online?: boolean; signal?: AbortSignal;
+};
+// Search presentation stays separate from the canonical nutrition record.
+export type FoodSearchHit = {
+  food: Food; category: FoodSearchCategory;
+  warning?: string; groupKey?: string; groupLabel?: string;
+};
+export type FoodSearchResult = {
+  foods: Food[]; hits?: FoodSearchHit[];
+  partial?: boolean; hasMore?: boolean; issues?: FoodSearchIssue[];
+  correction?: string; brands?: string[];
+  nextCursor?: string; canExpand?: boolean; reset?: boolean;
+  sourceStatus?: Array<{ source: string; state: 'ready' | 'unavailable' | 'not-requested'; message?: string }>;
+};
 
 export class FoodProviderError extends Error {
   constructor(message: string, readonly status: number) { super(message); }
