@@ -46,6 +46,7 @@ try {
       // Many checks only inspect status. Drain every network response so those
       // checks release their connection too, rather than relying on GC.
       const body = await response.arrayBuffer();
+      if (response.status >= 500) console.error(`Smoke server error: ${options.method ?? 'GET'} ${path} ${response.status}: ${new TextDecoder().decode(body).slice(0, 4096)}`);
       return new Response(body.byteLength ? body : null, {
         status: response.status, statusText: response.statusText, headers: response.headers,
       });
@@ -186,6 +187,9 @@ try {
   }
   console.log("PASS: compiled Worker without login, automatic private browser cookies, browser diary isolation, goals, trends, CSRF, deletion ownership, shared custom foods, verified restaurant imports, server-side portion calculations, water goals, date isolation, and water deletion ownership.");
 } catch (error) {
+  // Worker console events arrive asynchronously over Wrangler's inspector.
+  // Give pending diagnostics a chance to arrive before stopping the server.
+  await delay(250);
   console.error(log.split("\n").slice(-35).join("\n"));
   throw error;
 } finally {
