@@ -1,6 +1,8 @@
 import * as SQLite from 'expo-sqlite';
 import { Directory, File, Paths } from 'expo-file-system';
 import * as Crypto from 'expo-crypto';
+import { fetch } from 'expo/fetch';
+import { readPackManifestResponse } from './downloads';
 import { serialized, type SqliteConnection } from '../local/database';
 import { createCatalogReader } from './queries';
 import { packSchema, inspectFoodPack, type FoodPack, type PackStorage } from './packs';
@@ -35,8 +37,7 @@ export async function createNativePackStorage(
     async fetchManifest() {
       const response = await fetch(manifestUrl, { signal: AbortSignal.timeout(20000) });
       if (!response.ok) throw new Error('US product downloads are unavailable. Installed foods remain usable.');
-      const text = await response.text(); if (text.length > 520000) throw new Error('Pack manifest is too large.');
-      return JSON.parse(text);
+      return readPackManifestResponse(response);
     },
     async install(pack) {
       if (Paths.availableDiskSpace < pack.bytes * 2 + 10 * 1024 * 1024) throw new Error('Free some device storage to download US products.');

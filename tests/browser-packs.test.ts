@@ -32,6 +32,16 @@ function setup(fetcher?: typeof fetch) {
   return { storage, options, values, reject: () => { rejectCommit = true; }, closed: () => closed };
 }
 describe('durable browser expansion storage', () => {
+  it('cancels an oversized UTF-8 manifest before buffering its remainder', async () => {
+    let cancelled = false;
+    const body = new ReadableStream({
+      start(c) { c.enqueue(new TextEncoder().encode('é'.repeat(260001))); },
+      cancel() { cancelled = true; },
+    });
+    const fake = setup(async () => new Response(body));
+    await expect(fake.storage.fetchManifest()).rejects.toThrow(/large|exceed/);
+    expect(cancelled).toBe(true);
+  });
   it('activates bytes and descriptor together and can read them after reopening', async () => {
     const fake = setup(); await fake.storage.install(pack);
     expect(await fake.storage.list()).toEqual([pack]);

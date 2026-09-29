@@ -4,26 +4,9 @@ import { createCatalogReader } from '../../mobile/src/catalog/queries';
 import type { FoodCatalog } from '../../mobile/src/local/repository';
 import type { SqliteConnection } from '../../mobile/src/local/database';
 import type { SnapshotStore } from './persistence';
+import { readPackManifestResponse, readPackResponse } from '../../mobile/src/catalog/downloads';
 
-export async function readPackDownload(response: Response, expectedBytes: number): Promise<Uint8Array<ArrayBuffer>> {
-  if (!response.ok || !response.body) throw new Error('The food pack could not be downloaded.');
-  if (expectedBytes > 32 * 1024 * 1024 || expectedBytes < 4096) throw new Error('Invalid pack size.');
-  const reader = response.body.getReader(), chunks: Uint8Array[] = [];
-  let size = 0;
-  try {
-    while (true) {
-      const { value, done } = await reader.read(); if (done) break;
-      size += value.length;
-      if (size > expectedBytes) throw new Error('The food pack download exceeds its signed size.');
-      chunks.push(value);
-    }
-    if (size !== expectedBytes) throw new Error('The food pack download is incomplete.');
-    const bytes = new Uint8Array(size); let offset = 0;
-    for (const chunk of chunks) { bytes.set(chunk, offset); offset += chunk.length; }
-    return bytes;
-  } catch (error) { await reader.cancel().catch(() => {}); throw error; }
-  finally { reader.releaseLock(); }
-}
+export const readPackDownload = readPackResponse;
 const hash = async (bytes: Uint8Array<ArrayBuffer>) => Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256', bytes)), b => b.toString(16).padStart(2, '0')).join('');
 export function createBrowserPackStorage(options: {
   store: SnapshotStore;
@@ -50,8 +33,7 @@ export function createBrowserPackStorage(options: {
     async fetchManifest() {
       const response = await fetcher(options.manifestUrl, { signal: AbortSignal.timeout(20000) });
       if (!response.ok) throw new Error('US product downloads are unavailable. Installed foods remain usable.');
-      const text = await response.text(); if (text.length > 520000) throw new Error('Pack manifest is too large.');
-      return JSON.parse(text);
+      return readPackManifestResponse(response);
     },
     async install(pack) {
       const response = await fetcher(`/api/catalog/packs/download?${new URLSearchParams({ id: pack.id, sha256: pack.sha256 })}`, { signal: AbortSignal.timeout(120000) });

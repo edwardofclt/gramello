@@ -11,6 +11,17 @@ const payload = JSON.stringify({ schemaVersion: 2, version: 'us-v1', publishedAt
 const envelope = { payload, signature: sign(null, Buffer.from(payload), key.privateKey).toString('hex') };
 afterEach(() => vi.unstubAllGlobals());
 describe('signed pack relay', () => {
+  it('cancels an oversized UTF-8 manifest before consuming the complete response', async () => {
+    let cancelled = false;
+    const body = new ReadableStream({
+      start(c) { c.enqueue(new TextEncoder().encode('é'.repeat(260001))); },
+      cancel() { cancelled = true; },
+    });
+    vi.stubGlobal('fetch', async () => new Response(body));
+    const response = await manifest(new Request('https://app.test/api/catalog/packs/manifest'));
+    expect(response.status).toBe(503);
+    expect(cancelled).toBe(true);
+  });
   it('returns the verified publisher envelope', async () => {
     vi.stubGlobal('fetch', async () => Response.json(envelope));
     const response = await manifest(new Request('https://app.test/api/catalog/packs/manifest'));
