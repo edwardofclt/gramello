@@ -13,6 +13,7 @@ export const foodSchema = nutritionSchema.extend({
   ...foodServingFields,
   id, name: z.string().min(1).max(300), source: z.string().min(1).max(200), brand: z.string().max(300).optional(),
   sourceUrl: z.string().url().max(2000).optional(), sourceKind: z.enum(['database', 'restaurant', 'custom']).optional(), verified: z.boolean().optional(),
+  sourceDataset: z.literal('usda-branded').optional(),
   servingGrams: z.number().finite().nonnegative().max(1e6).nullable(), servingLabel: z.string().max(200),
   nutritionBasis: z.enum(['100g', '100ml', 'serving']).optional(), nutritionUnit: z.enum(['g', 'ml']).optional(), servingMl: z.number().finite().positive().max(1e6).optional(),
   image: z.string().url().max(2000).optional(), checkedAt: z.string().max(40).optional(),

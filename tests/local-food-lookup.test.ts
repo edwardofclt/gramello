@@ -34,6 +34,17 @@ async function setup(override?: FoodCatalog) {
 afterEach(() => { vi.restoreAllMocks(); vi.unstubAllGlobals(); for (const db of databases.splice(0)) db.raw.close(); });
 
 describe('native food discovery', () => {
+  it('prefers an installed USDA barcode over a previously cached OFF product', async () => {
+    let installed = false;
+    const food: Food = { id: 'usda-1892562', name: 'Chicken sausage apple maple', brand: 'Al Fresco', source: 'USDA FoodData Central', servingGrams: 50, servingLabel: '1 patty (50 g)', nutritionBasis: '100g', calories: 180, protein: 16, carbs: 8, fat: 8 };
+    const catalog: FoodCatalog = { getFood: async id => installed && id === food.id ? food : null, search: async () => installed ? [food] : [], barcode: async () => installed ? food : null };
+    vi.stubGlobal('fetch', async () => Response.json({ status: 1, product: { ...product, code: '0030771094625', product_name: 'Chicken breakfast sausage' } }));
+    const { api, reopen } = await setup(catalog);
+    await api('/api/foods/barcode?code=030771094625'); installed = true;
+    const next = await reopen();
+    expect(await next.api('/api/foods/barcode?code=030771094625')).toMatchObject({ food: { id: 'usda-1892562' } });
+    expect(await next.api('/api/foods/search?q=0030771094625&online=0')).toMatchObject({ foods: [{ id: 'usda-1892562' }] });
+  });
   it('finds Thomas’ bread by name or brand online, from saved lookups, and in private foods', async () => {
     const bread = { ...product, product_name: 'Thomas’ Cinnamon Raisin Bread', brands: 'Thomas’' };
     vi.stubGlobal('fetch', vi.fn(async () => Response.json({ products: [bread] })));

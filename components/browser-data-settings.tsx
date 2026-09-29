@@ -45,9 +45,11 @@ export function BrowserDataSettings({ runtime, offlineStatus, onReplaced, onGoal
       <p>Your diary and custom foods stay in this browser. After offline setup finishes, you can reopen the app and use downloaded foods without a connection.</p>
       <p>Clearing this site’s browser data removes its local diary. Export a backup to keep a copy or move between web, iOS, and Android. Diaries do not sync automatically.</p>
     </section>
-    <section className="settings-card"><h3>Food catalog</h3><p>The same USDA and restaurant catalog as the mobile app. Online Open Food Facts matches are saved for offline use.</p>
+    <section className="settings-card"><h3>Food catalog</h3><p>US-market USDA branded products and Open Food Facts download automatically, including cellular connections. The starter foods and restaurant menus remain available.</p>
       {status.version && <p>Installed: {status.version}</p>}{status.lastCheck && <p>Last checked: {new Date(status.lastCheck).toLocaleString()}</p>}
       <p aria-live="polite">{status.phase === 'checking' ? 'Checking for updates…' : status.phase === 'downloading' ? 'Downloading food information…' : status.phase === 'updated' ? 'Food catalog updated.' : status.phase === 'current' ? 'Your food catalog is up to date.' : 'Bundled and cached foods remain available when an update fails.'}</p>
+      {status.totalPacks !== undefined && <p>{status.completedPacks ?? 0} of {status.totalPacks} product packs ready · {Math.round((status.downloadedBytes ?? 0) / 1024 / 1024)} of {Math.round((status.totalBytes ?? 0) / 1024 / 1024)} MB</p>}
+      <p>USDA FoodData Central · CC0. <a href="https://world.openfoodfacts.org">Open Food Facts</a> · ODbL. Source records remain separate; matching product barcodes prefer USDA.</p>
       {status.error && <p role="alert" className="food-error">{status.error}</p>}
       <Button variant="outline" disabled={status.phase === 'checking' || status.phase === 'downloading'} onClick={() => void runtime.updater.check(true)}><RefreshCw />Check for updates</Button>
     </section>

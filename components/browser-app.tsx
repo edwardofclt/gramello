@@ -42,7 +42,8 @@ export function BrowserApp() {
     check();
     window.addEventListener('focus', check);
     document.addEventListener('visibilitychange', check);
-    return () => { unsubscribe(); window.removeEventListener('focus', check); document.removeEventListener('visibilitychange', check); };
+    const timer = setInterval(check, 60_000);
+    return () => { clearInterval(timer); unsubscribe(); window.removeEventListener('focus', check); document.removeEventListener('visibilitychange', check); };
   }, [runtime]);
 
   useEffect(() => {

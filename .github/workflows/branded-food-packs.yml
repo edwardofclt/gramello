@@ -1,0 +1,70 @@
+name: Publish US branded food packs
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: food-catalog
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install import dependencies
+        run: |
+          corepack enable
+          pnpm install --frozen-lockfile
+          python -m pip install -r scripts/food-packs-requirements.txt
+      - name: Test source extraction and importer
+        run: |
+          python -m unittest discover -s scripts/tests -p 'test_food_pack*.py'
+          pnpm test tests/branded-catalog.test.ts tests/catalog-packs.test.ts tests/browser-packs.test.ts tests/catalog-pack-relay.test.ts
+      - name: Extract both official datasets and build signed source packs
+        env:
+          CATALOG_SIGNING_KEY: ${{ secrets.CATALOG_SIGNING_KEY }}
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          test -n "$CATALOG_SIGNING_KEY"
+          python scripts/extract-food-packs.py .catalog-work/raw
+          node scripts/food-packs.mjs .catalog-work/raw/usda.jsonl .catalog-work/raw/off.jsonl \
+            catalog-release "https://github.com/${REPOSITORY}/releases/download/food-catalog/"
+          node scripts/verify-food-packs.mjs catalog-release
+          cp docs/food-packs.md catalog-release/PACK-SOURCES.md
+          cp .catalog-work/raw/provenance.json catalog-release/PACK-PROVENANCE.json
+          cp scripts/extract-food-packs.py scripts/food-packs.mjs scripts/food-catalog.mjs scripts/verify-food-packs.mjs \
+            scripts/food-packs-requirements.txt lib/catalog-import.ts catalog-release/
+      - name: Publish immutable pack assets before advertising the manifest
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          if ! gh release view food-catalog >/dev/null 2>&1; then
+            gh release create food-catalog --target "$GITHUB_SHA" --prerelease --latest=false \
+              --title "Food catalog data" --notes "USDA and separately licensed Open Food Facts US product packs. See PACK-SOURCES.md for attribution and source obligations."
+          fi
+          for file in catalog-release/*.sqlite; do
+            asset="$(basename "$file")"
+            if ! gh release view food-catalog --json assets --jq '.assets[].name' | rg -Fx "$asset" >/dev/null; then
+              gh release upload food-catalog "$file"
+            fi
+          done
+          gh release upload food-catalog catalog-release/PACK-SOURCES.md catalog-release/PACK-PROVENANCE.json \
+            catalog-release/import-report.json catalog-release/extract-food-packs.py catalog-release/food-packs.mjs \
+            catalog-release/food-catalog.mjs catalog-release/verify-food-packs.mjs catalog-release/verification-report.json \
+            catalog-release/food-packs-requirements.txt catalog-release/catalog-import.ts --clobber
+          gh release upload food-catalog catalog-release/pack-manifest.json --clobber

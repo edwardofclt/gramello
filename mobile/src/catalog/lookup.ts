@@ -49,6 +49,13 @@ export async function createFoodLookup(catalog: FoodCatalog, cache: SqliteConnec
     for (const food of groups.flat()) if (!foods.has(food.id)) foods.set(food.id, food);
     return [...foods.values()];
   };
+  async function offlineBarcode(code: string) {
+    const installed = await catalog.barcode(code);
+    // Preserve refreshed OFF cache values while giving USDA branded the first
+    // choice when different sources describe the same physical barcode.
+    if (installed?.id.startsWith('usda-')) return installed;
+    return await cached.barcode(code) ?? installed;
+  }
   const lookup: FoodCatalog = {
     getFood: async id => await cached.getFood(id) ?? await catalog.getFood(id),
     search: async (query, options) => (await lookup.searchWindow!(query, options)).foods,
@@ -57,7 +64,7 @@ export async function createFoodLookup(catalog: FoodCatalog, cache: SqliteConnec
       const code = normalizeBarcode(query);
       if (code) {
         const food = options?.online ? await lookup.barcode(code, options.signal)
-          : await cached.barcode(code) ?? await catalog.barcode(code);
+          : await offlineBarcode(code);
         return { foods: food ? [food] : [], canExpand: false };
       }
       const localWindows: SearchWindow[] = await Promise.all([cached, catalog].map(async source => source.searchWindow
@@ -96,7 +103,7 @@ export async function createFoodLookup(catalog: FoodCatalog, cache: SqliteConnec
       checkCancelled(signal);
       const code = normalizeBarcode(input);
       if (!code) throw new Error('Enter an 8, 12, 13, or 14 digit product barcode.');
-      const local = await cached.barcode(code) ?? await catalog.barcode(code);
+      const local = await offlineBarcode(code);
       checkCancelled(signal);
       if (local) return local;
       reserve('barcode');

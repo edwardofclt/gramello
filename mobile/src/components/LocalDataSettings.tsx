@@ -20,12 +20,13 @@ export function LocalDataSettings({ local }: { local: LocalServices }) {
   }
   return <>
     <Card><Text style={styles.heading}>Food catalog</Text>
-      <Text style={styles.muted}>Food information downloads and updates automatically. Your diary stays on this device.</Text>
+      <Text style={styles.muted}>US-market USDA and Open Food Facts products download automatically over Wi-Fi or cellular. Your diary stays on this device.</Text>
       <Text style={styles.muted}>{status.version ? `Installed: ${status.version}` : 'Bundled USDA catalog'}{status.lastCheck ? `\nLast checked: ${new Date(status.lastCheck).toLocaleString()}` : ''}</Text>
       <Text accessibilityLiveRegion="polite" style={styles.body}>{status.phase === 'checking' ? 'Checking for updates…' : status.phase === 'downloading' ? 'Downloading food information…' : status.phase === 'updated' ? 'Food catalog updated.' : status.phase === 'current' ? 'Your food catalog is up to date.' : 'Installed foods are available offline.'}</Text>
+      {status.totalPacks !== undefined && <Text style={styles.muted}>{status.completedPacks ?? 0} of {status.totalPacks} product packs ready · {Math.round((status.downloadedBytes ?? 0) / 1024 / 1024)} of {Math.round((status.totalBytes ?? 0) / 1024 / 1024)} MB</Text>}
       {status.error && <ErrorNotice message={status.error} />}
       <Action secondary busy={status.phase === 'checking' || status.phase === 'downloading'} onPress={() => void local.updater.check(true)}>Check for updates</Action>
-      <Text style={styles.muted}>USDA FoodData Central · CC0 public-domain data. The starter catalog contains SR Legacy foods. Barcode coverage depends on the installed catalog.</Text>
+      <Text style={styles.muted}>USDA FoodData Central · CC0. Open Food Facts · ODbL, https://world.openfoodfacts.org. Source records remain separate; USDA is preferred for matching product barcodes. The starter catalog contains SR Legacy foods and restaurant menus.</Text>
     </Card>
     <Card><Text style={styles.heading}>Your data</Text>
       <Text style={styles.muted}>Saved on this device. Export a backup to keep a copy or move to another device. Choose where to save it using your device’s file sharing options.</Text>

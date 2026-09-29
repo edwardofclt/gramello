@@ -1,6 +1,6 @@
 import { verifyManifest, type CatalogManifest } from './format';
 export type UpdateState = { version?: string; lastCheck?: number; nextCheck?: number; failures?: number };
-export type UpdateStatus = UpdateState & { phase: 'idle' | 'checking' | 'downloading' | 'current' | 'updated' | 'error'; error?: string };
+export type UpdateStatus = UpdateState & { phase: 'idle' | 'checking' | 'downloading' | 'current' | 'updated' | 'error'; error?: string; completedPacks?: number; totalPacks?: number; downloadedBytes?: number; totalBytes?: number };
 export interface UpdateStorage {
   load(): Promise<UpdateState>;
   save(state: UpdateState): Promise<void>;
@@ -41,3 +41,23 @@ export function createCatalogUpdater(storage: UpdateStorage, publicKey: string, 
   };
 }
 export type CatalogUpdater = ReturnType<typeof createCatalogUpdater>;
+
+// Keep both signed feeds independent; a core outage must not skip expansions.
+export function combineCatalogUpdaters(...updaters: CatalogUpdater[]): CatalogUpdater {
+  let status: UpdateStatus = { phase: 'idle' }, pending: Promise<void> | undefined;
+  const listeners = new Set<() => void>();
+  const emit = () => { for (const listener of listeners) listener(); };
+  for (const updater of updaters) updater.subscribe(() => { status = updater.getStatus(); emit(); });
+  return {
+    getStatus: () => status,
+    subscribe: listener => { listeners.add(listener); return () => { listeners.delete(listener); }; },
+    check(force = false) {
+      pending ??= (async () => {
+        for (const updater of updaters) await updater.check(force);
+        const errors = updaters.map(updater => updater.getStatus()).filter(value => value.phase === 'error');
+        if (errors.length) { status = { ...status, phase: 'error', error: errors.map(value => value.error).join(' ') }; emit(); }
+      })().finally(() => { pending = undefined; });
+      return pending;
+    },
+  };
+}
