@@ -2,7 +2,8 @@ import * as SQLite from 'expo-sqlite';
 import { Directory, File, Paths } from 'expo-file-system';
 import * as Crypto from 'expo-crypto';
 import { fetch } from 'expo/fetch';
-import { readPackManifestResponse } from './downloads';
+import { consumeBoundedResponse, readPackManifestResponse } from './downloads';
+import { createPackVerification } from './pack-verification';
 import { serialized, type SqliteConnection } from '../local/database';
 import { createCatalogReader } from './queries';
 import { packSchema, inspectFoodPack, type FoodPack, type PackStorage } from './packs';
@@ -21,6 +22,10 @@ export async function createNativePackStorage(
   const fileFor = (pack: FoodPack) => new File(directory, `pack-${pack.sha256}.sqlite`);
   const list = async () => installed.filter(pack => fileFor(pack).exists);
   const digest = async (file: File) => Array.from(new Uint8Array(await Crypto.digest(Crypto.CryptoDigestAlgorithm.SHA256, new Uint8Array(await file.bytes()))), b => b.toString(16).padStart(2, '0')).join('');
+  const verification = createPackVerification();
+  const verified = (file: File, pack: FoodPack, force = false) => file.exists
+    ? verification.verify(pack, { bytes: file.size, modifiedAt: file.lastModified }, () => digest(file), force)
+    : Promise.resolve(false);
   const open = async (file: File) => {
     const db = await SQLite.openDatabaseAsync(file.name, { useNewConnection: true, finalizeUnusedStatementsBeforeClosing: false }, directory.uri);
     try { await db.execAsync('PRAGMA query_only=ON; PRAGMA trusted_schema=OFF;'); return db; }
@@ -29,8 +34,7 @@ export async function createNativePackStorage(
   return {
     list,
     async available(pack) {
-      const file = fileFor(pack);
-      return file.exists && file.size === pack.bytes && await digest(file) === pack.sha256;
+      return serialized(queue, () => verified(fileFor(pack), pack, true));
     },
     load: async () => await metadata<UpdateState>('foodPacksUpdate') ?? {},
     save: async state => { await saveMetadata('foodPacksUpdate', state); },
@@ -42,23 +46,43 @@ export async function createNativePackStorage(
     async install(pack) {
       if (Paths.availableDiskSpace < pack.bytes * 2 + 10 * 1024 * 1024) throw new Error('Free some device storage to download US products.');
       const file = fileFor(pack);
+      let temporary: File | undefined;
       try {
-        // No network-type gate: cellular downloads are explicitly enabled.
-        if (!file.exists) await File.downloadFileAsync(pack.url, file, { signal: AbortSignal.timeout(120000) });
-        if (file.size !== pack.bytes || await digest(file) !== pack.sha256) {
-          // Remove only this corrupt content-addressed download, so retry does
-          // not keep reusing an incomplete file. The prior version is untouched.
+        const reusable = await serialized(queue, async () => {
+          if (await verified(file, pack, true)) return true;
+          verification.invalidate(pack.sha256);
           if (file.exists) file.delete();
-          throw new Error('The food pack did not pass verification.');
+          return false;
+        });
+        if (!reusable) {
+          temporary = new File(directory, `pack-${pack.sha256}-${Date.now()}-${Math.random().toString(16).slice(2)}.partial`);
+          temporary.create();
+          const handle = temporary.open();
+          try {
+            // No network-type gate: cellular downloads are explicitly enabled.
+            const response = await fetch(pack.url, { signal: AbortSignal.timeout(120000) });
+            await consumeBoundedResponse(response, { maxBytes: pack.bytes, exactBytes: pack.bytes }, chunk => handle.writeBytes(chunk));
+          } finally { handle.close(); }
+          const staged = temporary;
+          await serialized(queue, async () => {
+            if (!await verified(staged, pack, true)) throw new Error('The food pack did not pass verification.');
+            const db = await open(staged);
+            try { await inspectFoodPack(db, pack); } finally { await db.closeAsync(); }
+            await staged.move(file);
+            temporary = undefined;
+            verification.invalidate(pack.sha256);
+            if (!await verified(file, pack, true)) throw new Error('The food pack did not pass verification.');
+          });
+        } else {
+          await serialized(queue, async () => { const db = await open(file); try { await inspectFoodPack(db, pack); } finally { await db.closeAsync(); } });
         }
-        await serialized(queue, async () => { const db = await open(file); try { await inspectFoodPack(db, pack); } finally { await db.closeAsync(); } });
         const next = [...installed.filter(old => old.id !== pack.id), pack];
         const old = installed.find(old => old.id === pack.id && old.sha256 !== pack.sha256);
         const prior = old ? [...previous.filter(item => item.id !== pack.id), old] : previous;
         // Never save personal metadata while holding the catalog reader queue.
         await saveMetadata('foodPackIndex', { active: next, previous: prior }); installed = next; previous = prior;
       } catch (error) {
-        if (!installed.some(old => old.sha256 === pack.sha256) && file.exists) { try { file.delete(); } catch { /* Retry can clean an incomplete download. */ } }
+        if (temporary?.exists) { try { temporary.delete(); } catch { /* Only this failed transfer is disposable. */ } }
         throw error;
       }
     },
@@ -69,13 +93,13 @@ export async function createNativePackStorage(
       await serialized(queue, async () => {
         const keep = new Set([...installed, ...previous].map(pack => fileFor(pack).name));
         for (const entry of directory.list()) if (entry instanceof File && /^pack-[a-f0-9]{64}\.sqlite$/.test(entry.name) && !keep.has(entry.name)) {
-          try { entry.delete(); } catch { /* A later successful update can retry cleanup. */ }
+          try { entry.delete(); verification.invalidate(entry.name.slice(5, -7)); } catch { /* A later successful update can retry cleanup. */ }
         }
       });
     },
     withReader: (pack, work) => serialized(queue, async () => {
       const file = fileFor(pack);
-      if (!file.exists || file.size !== pack.bytes || await digest(file) !== pack.sha256) throw new Error('A downloaded food pack is unavailable or corrupt. Check for updates.');
+      if (!await verified(file, pack)) throw new Error('A downloaded food pack is unavailable or corrupt. Check for updates.');
       const db = await open(file);
       try { return await work(createCatalogReader(read => read(db))); }
       finally { await db.closeAsync(); }
