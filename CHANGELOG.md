@@ -1,3 +1,9 @@
+## [1.18.0](https://github.com/edwardofclt/gramello/compare/v1.17.1...v1.18.0) (2026-09-29)
+
+### Features
+
+* add US branded nutrition expansion packs ([#41](https://github.com/edwardofclt/gramello/issues/41)) ([2f6d169](https://github.com/edwardofclt/gramello/commit/2f6d1691c798fe0b63750b72b021902361d9f93e))
+
 ## [1.17.1](https://github.com/edwardofclt/gramello/compare/v1.17.0...v1.17.1) (2026-09-27)
 
 ### Bug Fixes
