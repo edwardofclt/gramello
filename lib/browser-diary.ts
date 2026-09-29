@@ -25,6 +25,13 @@ function privateResponse(response: Response) {
   return response;
 }
 
+async function rejectWrite(request: Request, error: string, status: 400 | 403) {
+  // Early rejections never read JSON. Release the incoming stream so workerd
+  // can finish the request, without draining an arbitrarily large upload.
+  try { await request.body?.cancel(); } catch { /* The client may already have disconnected. */ }
+  return privateResponse(Response.json({ error }, { status }));
+}
+
 // Establish the browser's diary before the page starts concurrent API reads.
 export function prepareBrowserDiary(request: Request, response: Response) {
   if (!readDiaryCookie(request)) setDiaryCookie(request, response, newDiaryCookie());
@@ -39,10 +46,10 @@ export async function withBrowserDiary(
   if (!['GET', 'HEAD', 'OPTIONS'].includes(request.method)) {
     const origin = env.APP_BASE_URL ? new URL(env.APP_BASE_URL).origin : new URL(request.url).origin;
     if (request.headers.get('origin') !== origin || request.headers.get('sec-fetch-site') === 'cross-site') {
-      return privateResponse(Response.json({ error: 'This request is not allowed.' }, { status: 403 }));
+      return rejectWrite(request, 'This request is not allowed.', 403);
     }
     if (!cookie) {
-      return privateResponse(Response.json({ error: 'Open your diary and enable cookies before saving.' }, { status: 400 }));
+      return rejectWrite(request, 'Open your diary and enable cookies before saving.', 400);
     }
   }
   const value = cookie ?? newDiaryCookie();
