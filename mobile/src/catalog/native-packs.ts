@@ -4,6 +4,8 @@ import * as Crypto from 'expo-crypto';
 import { fetch } from 'expo/fetch';
 import { consumeBoundedResponse, readPackManifestResponse } from './downloads';
 import { createPackVerification } from './pack-verification';
+import { readPackIds, type PackRouteLookup } from './pack-routes';
+import { createNativePackRoutes } from './native-pack-routes';
 import { serialized, type SqliteConnection } from '../local/database';
 import { createCatalogReader } from './queries';
 import { packSchema, inspectFoodPack, type FoodPack, type PackStorage } from './packs';
@@ -12,10 +14,11 @@ import type { FoodCatalog } from '../local/repository';
 
 export async function createNativePackStorage(
   metadata: <T>(key: string) => Promise<T | null>, saveMetadata: (key: string, value: unknown) => Promise<unknown>, manifestUrl: string,
-): Promise<PackStorage & { withReader<T>(pack: FoodPack, work: (reader: FoodCatalog) => Promise<T>): Promise<T> }> {
+): Promise<PackStorage & { routes: PackRouteLookup; withReader<T>(pack: FoodPack, work: (reader: FoodCatalog) => Promise<T>): Promise<T> }> {
   const directory = new Directory(Paths.document, 'gramello-food-packs');
   directory.create({ intermediates: true, idempotent: true });
   const queue = {} as SqliteConnection;
+  const routeIndex = createNativePackRoutes(directory.uri);
   const stored = await metadata<{ active: unknown[]; previous: unknown[] }>('foodPackIndex');
   const descriptors = (values: unknown[] = []) => values.flatMap(value => { const parsed = packSchema.safeParse(value); return parsed.success ? [parsed.data] : []; });
   let installed = descriptors(stored?.active), previous = descriptors(stored?.previous);
@@ -31,8 +34,24 @@ export async function createNativePackStorage(
     try { await db.execAsync('PRAGMA query_only=ON; PRAGMA trusted_schema=OFF;'); return db; }
     catch (error) { await db.closeAsync(); throw error; }
   };
+  const index = async (pack: FoodPack) => {
+    if (pack.source !== 'usda-branded' || await routeIndex.indexed(pack)) return;
+    if (!await verified(fileFor(pack), pack)) throw new Error('A downloaded food pack is unavailable or corrupt.');
+    const pages: string[][] = [], db = await open(fileFor(pack));
+    try { await inspectFoodPack(db, pack); await readPackIds(db, async ids => { pages.push(ids); }); }
+    finally { await db.closeAsync(); }
+    // Never hold an index connection and nutrition reader simultaneously.
+    await routeIndex.index(pack, pages);
+  };
   return {
     list,
+    routes: (id, _installed) => serialized(queue, async () => {
+      const current = await list();
+      const route = await routeIndex.lookup(id, current);
+      if (route.complete) return route;
+      for (const pack of current) await index(pack);
+      return routeIndex.lookup(id, current);
+    }),
     async available(pack) {
       return serialized(queue, () => verified(fileFor(pack), pack, true));
     },
@@ -76,6 +95,7 @@ export async function createNativePackStorage(
         } else {
           await serialized(queue, async () => { const db = await open(file); try { await inspectFoodPack(db, pack); } finally { await db.closeAsync(); } });
         }
+        await serialized(queue, () => index(pack));
         const next = [...installed.filter(old => old.id !== pack.id), pack];
         const old = installed.find(old => old.id === pack.id && old.sha256 !== pack.sha256);
         const prior = old ? [...previous.filter(item => item.id !== pack.id), old] : previous;
@@ -91,6 +111,7 @@ export async function createNativePackStorage(
       const prior = previous.filter(old => next.some(pack => pack.id === old.id));
       await saveMetadata('foodPackIndex', { active: next, previous: prior }); installed = next; previous = prior;
       await serialized(queue, async () => {
+        await routeIndex.retire(installed);
         const keep = new Set([...installed, ...previous].map(pack => fileFor(pack).name));
         for (const entry of directory.list()) if (entry instanceof File && /^pack-[a-f0-9]{64}\.sqlite$/.test(entry.name) && !keep.has(entry.name)) {
           try { entry.delete(); verification.invalidate(entry.name.slice(5, -7)); } catch { /* A later successful update can retry cleanup. */ }

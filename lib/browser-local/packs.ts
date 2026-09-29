@@ -5,6 +5,8 @@ import type { FoodCatalog } from '../../mobile/src/local/repository';
 import type { SqliteConnection } from '../../mobile/src/local/database';
 import type { SnapshotStore } from './persistence';
 import { readPackManifestResponse, readPackResponse } from '../../mobile/src/catalog/downloads';
+import { readPackIds, type PackRouteLookup } from '../../mobile/src/catalog/pack-routes';
+import { createBrowserPackRoutes } from './pack-routes';
 
 export const readPackDownload = readPackResponse;
 const hash = async (bytes: Uint8Array<ArrayBuffer>) => Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256', bytes)), b => b.toString(16).padStart(2, '0')).join('');
@@ -14,13 +16,25 @@ export function createBrowserPackStorage(options: {
   lock<T>(name: string, work: () => Promise<T>): Promise<T>;
   fetcher?: typeof fetch;
   manifestUrl: string;
-}): PackStorage & { withReader<T>(pack: FoodPack, work: (reader: FoodCatalog) => Promise<T>): Promise<T> } {
+}): PackStorage & { routes: PackRouteLookup; withReader<T>(pack: FoodPack, work: (reader: FoodCatalog) => Promise<T>): Promise<T> } {
   const { store, open, lock } = options, fetcher = options.fetcher ?? fetch;
+  const routeIndex = createBrowserPackRoutes(store);
   const list = async () => (await store.read<unknown[]>('packs:index') ?? []).flatMap(value => {
     const parsed = packSchema.safeParse(value); return parsed.success ? [parsed.data] : [];
   });
   return {
     list,
+    routes: (id, _installed) => lock('gramello:food-packs', async () => {
+      const current = await list();
+      for (const pack of current) if (pack.source === 'usda-branded' && !await routeIndex.indexed(pack)) {
+        const bytes = await store.read<Uint8Array<ArrayBuffer>>('packs:' + pack.id);
+        if (!bytes || bytes.length !== pack.bytes || await hash(bytes) !== pack.sha256) throw new Error('A downloaded food pack is unavailable or corrupt.');
+        const pages: string[][] = [], db = open(bytes);
+        try { await inspectFoodPack(db, pack); await readPackIds(db, async ids => { pages.push(ids); }); } finally { db.close(); }
+        await store.commit(await routeIndex.change({ pack, pages }));
+      }
+      return routeIndex.lookup(id, current);
+    }),
     // A whole update owns a separate cross-tab lease. Per-pack reader locks
     // remain short so searches can use completed packs during downloads.
     exclusive: work => lock('gramello:food-pack-update', work),
@@ -45,9 +59,12 @@ export function createBrowserPackStorage(options: {
         try {
           await db.execAsync('PRAGMA query_only=ON; PRAGMA trusted_schema=OFF;');
           await inspectFoodPack(db, pack);
+          const pages: string[][] = [];
+          if (pack.source === 'usda-branded') await readPackIds(db, async ids => { pages.push(ids); });
           const installed = await list(), previous = await store.read<Uint8Array>('packs:' + pack.id);
+          const routeChanges = await routeIndex.change({ pack, pages }, installed.filter(old => old.id === pack.id && old.sha256 !== pack.sha256));
           await store.commit([['packs:' + pack.id, bytes], ['packs:previous:' + pack.id, previous],
-            ['packs:index', [...installed.filter(old => old.id !== pack.id), pack]]]);
+            ['packs:index', [...installed.filter(old => old.id !== pack.id), pack]], ...routeChanges]);
         } finally { db.close(); }
       });
     },
@@ -55,7 +72,7 @@ export function createBrowserPackStorage(options: {
       await lock('gramello:food-packs', async () => {
         const installed = await list(), kept = installed.filter(old => wanted.some(next => next.id === old.id && next.sha256 === old.sha256));
         const removed = installed.filter(old => !kept.includes(old));
-        await store.commit([['packs:index', kept], ...removed.flatMap(pack => [['packs:' + pack.id, undefined], ['packs:previous:' + pack.id, undefined]] as Array<readonly [string, unknown]>)]);
+        await store.commit([['packs:index', kept], ...removed.flatMap(pack => [['packs:' + pack.id, undefined], ['packs:previous:' + pack.id, undefined]] as Array<readonly [string, unknown]>), ...await routeIndex.change(undefined, removed)]);
       });
     },
     withReader: (pack, work) => lock('gramello:food-packs', async () => {

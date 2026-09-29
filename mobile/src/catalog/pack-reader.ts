@@ -3,11 +3,13 @@ import { rankFoodSearch } from '../../../lib/search';
 import type { FoodSearchOptions } from '../../../lib/food-search';
 import type { FoodCatalog } from '../local/repository';
 import type { FoodPack } from './packs';
+import type { PackRouteLookup } from './pack-routes';
 
 export function createPackCatalog(
   list: () => Promise<FoodPack[]>,
   withReader: <T>(pack: FoodPack, work: (reader: FoodCatalog) => Promise<T>) => Promise<T>,
   core: FoodCatalog,
+  durableRoutes?: PackRouteLookup,
 ): FoodCatalog {
   // Search results teach us where an FDC identity lives; barcode partitioning
   // permits O(1) source pack selection without a million-entry manifest index.
@@ -55,7 +57,15 @@ export function createPackCatalog(
       const newest = installed.find(pack => pack.source === routed?.source);
       const preferredRoute = routed?.buckets === newest?.buckets ? route : undefined;
       const offCode = id.startsWith('off-') ? normalizeBarcode(id.slice(4)) : null;
-      for (const pack of [...installed].sort((a, b) => Number(b.id === preferredRoute) - Number(a.id === preferredRoute))) {
+      let candidates = [...installed].sort((a, b) => Number(b.id === preferredRoute) - Number(a.id === preferredRoute));
+      if (id.startsWith('usda-') && durableRoutes) {
+        try {
+          const route = await durableRoutes(id, installed);
+          const routed = installed.filter(pack => route.packs.some(item => item.id === pack.id && item.sha256 === pack.sha256));
+          candidates = route.complete ? routed : [...routed, ...installed.filter(pack => !routed.includes(pack))];
+        } catch { /* An incomplete local index retains legacy lookup compatibility. */ }
+      }
+      for (const pack of candidates) {
         if ((id.startsWith('off-') && pack.source !== 'off') || (id.startsWith('usda-') && pack.source !== 'usda-branded') || !/^(off|usda)-\d+$/.test(id)) continue;
         if (offCode && Number(BigInt(offCode) % BigInt(pack.buckets)) !== pack.bucket) continue;
         try {

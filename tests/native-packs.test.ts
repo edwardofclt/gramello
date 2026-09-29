@@ -6,6 +6,9 @@ import { createHash } from 'node:crypto';
 import { buildCatalog } from '../scripts/food-catalog.mjs';
 import { normalizeOffProduct } from '../lib/catalog-import';
 import off from './fixtures/al-fresco-off.json';
+import usda from './fixtures/al-fresco-usda.json';
+import { normalizeUsdaBranded } from '../lib/catalog-import';
+import { createPackCatalog } from '../mobile/src/catalog/pack-reader';
 import { platform } from './helpers/native-pack-platform';
 import type { FoodPack } from '../mobile/src/catalog/packs';
 vi.mock('../mobile/node_modules/expo-file-system/src/index.ts', async () => (await import('./helpers/native-pack-platform')).fileSystem);
@@ -33,6 +36,22 @@ async function setup() {
 }
 const installedFile = () => join(root, 'gramello-food-packs', `pack-${pack.sha256}.sqlite`);
 describe('native expansion files', () => {
+  it('persists USDA routes across restart and indexes legacy packs once', async () => {
+    const fixture = join(root, 'usda.sqlite'); buildCatalog([normalizeUsdaBranded(usda)!], fixture, 'usda-v1', 'usda-branded');
+    bytes = new Uint8Array(readFileSync(fixture));
+    pack = { ...pack, id: 'usda-branded-1-0', source: 'usda-branded', license: 'CC0-1.0', version: 'usda-v1', bytes: bytes.length, sha256: createHash('sha256').update(bytes).digest('hex') };
+    const fake = await setup(); await fake.storage.install(pack);
+    const reopened = await fake.reopen();
+    expect(typeof reopened.routes).toBe('function');
+    let opened = 0;
+    const catalog = createPackCatalog(reopened.list, (pack, work) => { opened++; return reopened.withReader(pack, work); },
+      { getFood: async () => null, search: async () => [], barcode: async () => null }, reopened.routes);
+    expect((await catalog.getFood('usda-1892562'))?.id).toBe('usda-1892562'); expect(opened).toBe(1);
+    opened = 0; expect(await catalog.getFood('usda-999')).toBeNull(); expect(opened).toBe(0);
+    const routeFile = join(root, 'gramello-food-packs', 'usda-routes.sqlite'); rmSync(routeFile);
+    const legacy = await fake.reopen();
+    expect(await legacy.routes('usda-1892562', await legacy.list())).toMatchObject({ packs: [pack], complete: true });
+  });
   it('repairs corruption in the same install attempt', async () => {
     const { storage } = await setup(); await storage.install(pack);
     writeFileSync(installedFile(), new Uint8Array(bytes.length).fill(1));

@@ -122,7 +122,7 @@ const expandedCatalog = createPackCatalog(packStorage.list, packStorage.withRead
     return core.searchWindow ? core.searchWindow(query, options) : { foods: await core.search(query, options), canExpand: false };
   },
   barcode: async (code, signal) => (await catalogs()).barcode(code, signal),
-});
+}, packStorage.routes);
 const baseCatalog = createBrowserCatalogSource(async () => expandedCatalog, catalogTask, catalogFailure);
 function catalogFailure(error: unknown) {
   emit({ event: 'catalog', status: { phase: 'error', error: error instanceof Error ? error.message : 'Offline foods are unavailable. Try updating the food catalog.' } });

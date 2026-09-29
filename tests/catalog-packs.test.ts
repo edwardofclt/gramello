@@ -107,6 +107,18 @@ describe('signed expansion packs', () => {
   });
 });
 describe('bounded expansion reader', () => {
+  it('uses durable USDA routes after recreation and opens no packs for indexed misses', async () => {
+    const target = { ...a, id: 'usda-branded-2-1', buckets: 2, bucket: 1 };
+    const unrelated = { ...a, id: 'usda-branded-2-0', buckets: 2, bucket: 0 };
+    const food = normalizeUsdaBranded(usda)!;
+    const opened: string[] = [];
+    const reader = createPackCatalog(async () => [unrelated, target], async (pack, work) => {
+      opened.push(pack.id); return work({ getFood: async id => id === food.id && pack.id === target.id ? food : null, search: async () => [], barcode: async () => null });
+    }, { getFood: async () => null, search: async () => [], barcode: async () => null },
+    async id => ({ packs: id === food.id ? [target] : [], complete: true }));
+    expect((await reader.getFood(food.id))?.id).toBe(food.id); expect(opened).toEqual([target.id]);
+    opened.length = 0; expect(await reader.getFood('usda-999999')).toBeNull(); expect(opened).toEqual([]);
+  });
   it('returns a bundled core identity without opening or hashing expansion packs', async () => {
     const food = { ...normalizeUsdaBranded(usda)!, id: 'usda-171287', brand: undefined, name: 'Egg, whole, raw' };
     let opened = 0;
