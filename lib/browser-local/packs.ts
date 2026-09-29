@@ -1,4 +1,4 @@
-import { packSchema, inspectFoodPack, type FoodPack, type PackStorage } from '../../mobile/src/catalog/packs';
+import { packSchema, inspectFoodPack, PackManifestChangedError, type FoodPack, type PackStorage } from '../../mobile/src/catalog/packs';
 import type { UpdateState } from '../../mobile/src/catalog/updater';
 import { createCatalogReader } from '../../mobile/src/catalog/queries';
 import type { FoodCatalog } from '../../mobile/src/local/repository';
@@ -37,6 +37,7 @@ export function createBrowserPackStorage(options: {
     },
     async install(pack) {
       const response = await fetcher(`/api/catalog/packs/download?${new URLSearchParams({ id: pack.id, sha256: pack.sha256 })}`, { signal: AbortSignal.timeout(120000) });
+      if (response.status === 409) { await response.body?.cancel(); throw new PackManifestChangedError(); }
       const bytes = await readPackDownload(response, pack.bytes);
       if (await hash(bytes) !== pack.sha256) throw new Error('The food pack did not pass verification.');
       await lock('gramello:food-packs', async () => {

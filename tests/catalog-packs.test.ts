@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import nacl from 'tweetnacl';
-import { createPackUpdater, verifyPackManifest, type FoodPack, type PackStorage } from '../mobile/src/catalog/packs';
+import { createPackUpdater, verifyPackManifest, PackManifestChangedError, type FoodPack, type PackStorage } from '../mobile/src/catalog/packs';
 import { createPackCatalog } from '../mobile/src/catalog/pack-reader';
 import { normalizeUsdaBranded, normalizeOffProduct } from '../lib/catalog-import';
 import usda from './fixtures/al-fresco-usda.json';
@@ -29,6 +29,37 @@ function storage() {
   return { value, installed, attempts, setFailure: (id?: string) => { fail = id; }, retirements: () => retirements };
 }
 describe('signed expansion packs', () => {
+  it('preserves partial failure and progress during backoff and restart', async () => {
+    const fake = storage(); fake.setFailure(a.id);
+    const updater = createPackUpdater(fake.value, publicKey, () => 1000, () => 0);
+    await updater.check(); await updater.check();
+    expect(updater.getStatus()).toMatchObject({ phase: 'error', error: expect.stringContaining('interrupted'), completedPacks: 1, totalPacks: 2 });
+    const restarted = createPackUpdater(fake.value, publicKey, () => 2000, () => 0);
+    await restarted.check();
+    expect(restarted.getStatus()).toMatchObject({ phase: 'error', error: expect.stringContaining('interrupted'), completedPacks: 1, totalPacks: 2 });
+  });
+  it('refreshes a changed manifest once and retains completed hashes', async () => {
+    const fake = storage(); let manifests = 0, attempts = 0;
+    const next = { ...b, version: 'off-v2', sha256: 'b'.repeat(64) };
+    fake.value.fetchManifest = async () => envelope(++manifests === 1 ? [a, b] : [a, next]);
+    const install = fake.value.install;
+    fake.value.install = async pack => { if (pack.source === 'off' && ++attempts === 1) throw new PackManifestChangedError(); await install(pack); };
+    const updater = createPackUpdater(fake.value, publicKey); await updater.check(true);
+    expect(manifests).toBe(2); expect(fake.attempts).toEqual([a.id, next.id]);
+    expect(updater.getStatus()).toMatchObject({ phase: 'updated', completedPacks: 2 }); expect(fake.retirements()).toBe(1);
+  });
+  it.each(['second transition', 'tampered refresh'])('backs off after %s without retirement', async kind => {
+    const fake = storage(); let manifests = 0;
+    fake.value.fetchManifest = async () => { manifests++; return kind === 'tampered refresh' && manifests === 2 ? { ...envelope(), signature: '0'.repeat(128) } : envelope(); };
+    fake.value.install = async () => { throw new PackManifestChangedError(); };
+    const updater = createPackUpdater(fake.value, publicKey); await updater.check(true);
+    expect(manifests).toBe(2); expect(updater.getStatus().phase).toBe('error'); expect(fake.retirements()).toBe(0);
+  });
+  it('shows retry-pending for older failure-only metadata', async () => {
+    const fake = storage(); fake.value.load = async () => ({ failures: 2, nextCheck: 9000 });
+    const updater = createPackUpdater(fake.value, publicKey, () => 1000); await updater.check();
+    expect(updater.getStatus()).toMatchObject({ phase: 'error', error: expect.stringContaining('retry') });
+  });
   it('rejects invalid signatures, duplicate partitions, wrong license and oversized packs', () => {
     expect(verifyPackManifest(envelope(), publicKey).packs).toHaveLength(2);
     expect(() => verifyPackManifest({ ...envelope(), signature: '0'.repeat(128) }, publicKey)).toThrow();

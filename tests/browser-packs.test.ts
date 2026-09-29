@@ -32,6 +32,10 @@ function setup(fetcher?: typeof fetch) {
   return { storage, options, values, reject: () => { rejectCommit = true; }, closed: () => closed };
 }
 describe('durable browser expansion storage', () => {
+  it('distinguishes publisher transitions from ordinary transfer errors', async () => {
+    const fake = setup(async () => new Response(null, { status: 409 }));
+    await expect(fake.storage.install(pack)).rejects.toMatchObject({ name: 'PackManifestChangedError' });
+  });
   it('cancels an oversized UTF-8 manifest before buffering its remainder', async () => {
     let cancelled = false;
     const body = new ReadableStream({

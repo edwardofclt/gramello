@@ -15,6 +15,9 @@ export const packSchema = z.object({
 }).refine(pack => pack.bucket < pack.buckets && pack.id === `${pack.source}-${pack.buckets}-${pack.bucket}`
   && pack.license === (pack.source === 'off' ? 'ODbL-1.0' : 'CC0-1.0'));
 export type FoodPack = z.infer<typeof packSchema>;
+export class PackManifestChangedError extends Error {
+  constructor() { super('The published food pack manifest changed.'); this.name = 'PackManifestChangedError'; }
+}
 const packSetSchema = z.object({ schemaVersion: z.literal(2), version, publishedAt: z.string().datetime(), packs: z.array(packSchema).min(1).max(512) })
   .refine(set => new Set(set.packs.map(pack => pack.id)).size === set.packs.length)
   .refine(set => set.packs.reduce((sum, pack) => sum + pack.bytes, 0) <= 4 * 1024 ** 3)
@@ -50,11 +53,17 @@ export function createPackUpdater(storage: PackStorage, publicKey: string, now =
     let state: UpdateState = {}, progress = {};
     try {
       state = await storage.load();
-      if (!force && state.nextCheck && now() < state.nextCheck) { update({ ...state, phase: 'idle' }); return; }
+      if (!force && state.nextCheck && now() < state.nextCheck) {
+        update({ ...state, phase: state.failures ? 'error' : 'idle',
+          ...(state.failures ? { error: state.error ?? 'Downloads are waiting to retry.' } : {}) }); return;
+      }
+      state = { version: state.version, lastCheck: state.lastCheck, nextCheck: state.nextCheck, failures: state.failures };
       update({ ...state, phase: 'checking' });
+      let changed = false;
+      for (let pass = 0; pass < 2; pass++) {
       const manifest = verifyPackManifest(await storage.fetchManifest(), publicKey);
       const installed = await storage.list(), errors: string[] = [];
-      let completedPacks = 0, downloadedBytes = 0, changed = false;
+      let completedPacks = 0, downloadedBytes = 0, refresh = false;
       const totalPacks = manifest.packs.length, totalBytes = manifest.packs.reduce((sum, pack) => sum + pack.bytes, 0);
       for (const pack of [...manifest.packs].sort((a, b) => Number(a.source === 'off') - Number(b.source === 'off') || a.bucket - b.bucket)) {
         progress = { completedPacks, totalPacks, downloadedBytes, totalBytes };
@@ -65,19 +74,29 @@ export function createPackUpdater(storage: PackStorage, publicKey: string, now =
             await storage.install(pack); changed = true;
           }
           completedPacks++; downloadedBytes += pack.bytes;
-        } catch (error) { errors.push(`${pack.source === 'off' ? 'Open Food Facts' : 'USDA'}: ${error instanceof Error ? error.message : 'Download failed.'}`); }
+        } catch (error) {
+          if (error instanceof PackManifestChangedError) {
+            if (pass === 1) throw error;
+            refresh = true; break;
+          }
+          errors.push(`${pack.source === 'off' ? 'Open Food Facts' : 'USDA'}: ${error instanceof Error ? error.message : 'Download failed.'}`);
+        }
       }
       progress = { completedPacks, totalPacks, downloadedBytes, totalBytes };
+      if (refresh) continue;
       if (errors.length) throw new Error(errors.slice(0, 2).join(' '));
       await storage.retire(manifest.packs);
       state = { version: manifest.version, failures: 0, lastCheck: now(), nextCheck: now() + 86400000 + Math.floor(random() * 3600000) };
       await storage.save(state);
       update({ ...state, ...progress, phase: changed ? 'updated' : 'current' });
+      return;
+      }
     } catch (error) {
       const failures = Math.min((state.failures ?? 0) + 1, 10);
-      const retry = { ...state, failures, nextCheck: now() + Math.min(3600000 * 2 ** (failures - 1), 86400000) };
+      const message = error instanceof Error ? error.message : 'Expansion downloads could not complete.';
+      const retry = { ...state, ...progress, error: message, failures, nextCheck: now() + Math.min(3600000 * 2 ** (failures - 1), 86400000) };
       try { await storage.save(retry); } catch { /* Verified installed packs remain usable. */ }
-      update({ ...retry, ...progress, phase: 'error', error: error instanceof Error ? error.message : 'Expansion downloads could not complete.' });
+      update({ ...retry, phase: 'error' });
     }
   }
   return {

@@ -1,5 +1,6 @@
 import { verifyManifest, type CatalogManifest } from './format';
-export type UpdateState = { version?: string; lastCheck?: number; nextCheck?: number; failures?: number };
+export type UpdateState = { version?: string; lastCheck?: number; nextCheck?: number; failures?: number;
+  error?: string; completedPacks?: number; totalPacks?: number; downloadedBytes?: number; totalBytes?: number };
 export type UpdateStatus = UpdateState & { phase: 'idle' | 'checking' | 'downloading' | 'current' | 'updated' | 'error'; error?: string; completedPacks?: number; totalPacks?: number; downloadedBytes?: number; totalBytes?: number };
 export interface UpdateStorage {
   load(): Promise<UpdateState>;
