@@ -17,6 +17,23 @@ import { generateKeyPairSync } from 'node:crypto';
 import { verifyPackManifest } from '../mobile/src/catalog/packs';
 
 describe('US branded imports', () => {
+  it.each([undefined, -1, 0, Infinity, NaN, 1e20, 8640000000001])('omits invalid source timestamp %s without dropping nutrition', timestamp => {
+    const food = normalizeOffProduct({ ...off, last_modified_t: timestamp });
+    expect(food).toMatchObject({ id: 'off-0030771094625', protein: 18 });
+    expect(food?.checkedAt).toBeUndefined();
+  });
+  it('retains the largest valid Date boundary', () => {
+    expect(normalizeOffProduct({ ...off, last_modified_t: 8640000000000 })?.checkedAt).toBe('+275760-09-13T00:00:00.000Z');
+  });
+  it('builds all valid foods even when one upstream date overflows', async () => {
+    const directory = mkdtempSync(join(tmpdir(), 'gramello-date-packs-'));
+    try {
+      const input = join(directory, 'off.jsonl');
+      writeFileSync(input, [JSON.stringify({ ...off, last_modified_t: 1e20 }), JSON.stringify({ ...off, code: '012345678905', last_modified_t: 1700000000 })].join('\n'));
+      const result = await buildFoodPacks({ off: input, output: join(directory, 'packs'), baseUrl: 'https://example.org/', buckets: 1 });
+      expect(result.packs[0].count).toBe(2);
+    } finally { rmSync(directory, { recursive: true, force: true }); }
+  });
   it('preserves USDA Al Fresco per-100g values and the printed 50g patty', () => {
     const food = normalizeUsdaBranded(usda)!;
     expect(food).toMatchObject({ id: 'usda-1892562', barcodes: ['00030771094625'], nutritionBasis: '100g', servingGrams: 50 });
