@@ -8,7 +8,7 @@ import type { SqliteConnection } from '../local/database';
 import { foodSchema } from '../local/records';
 import type { FoodCatalog } from '../local/repository';
 import type { CatalogManifest } from './format';
-export async function inspectCatalog(db: SqliteConnection, manifest?: CatalogManifest) {
+export async function inspectCatalog(db: SqliteConnection, manifest?: Pick<CatalogManifest, 'version' | 'count'>) {
   const version = await db.getFirstAsync<{ user_version: number }>('PRAGMA user_version');
   const integrity = await db.getFirstAsync<{ quick_check: string }>('PRAGMA quick_check');
   const info = await db.getFirstAsync<{ value: string }>("SELECT value FROM catalog_meta WHERE key='version'");
@@ -17,9 +17,12 @@ export async function inspectCatalog(db: SqliteConnection, manifest?: CatalogMan
   if (version?.user_version !== 1 || integrity?.quick_check !== 'ok' || !info?.value || !count?.count || count.count !== search?.count
     || (manifest && (info.value !== manifest.version || count.count !== manifest.count))) throw new Error('Catalog integrity or schema verification failed.');
   // Validate the exact fields consumed by the UI before activation, in bounded pages.
+  let lastId = '';
   for (let offset = 0; offset < count.count; offset += 500) {
-    const rows = await db.getAllAsync<{ id: string; food: string }>('SELECT id,food FROM foods ORDER BY id LIMIT 500 OFFSET ?', offset);
+    const rows = await db.getAllAsync<{ id: string; food: string }>('SELECT id,food FROM foods WHERE id>? ORDER BY id LIMIT 500', lastId);
     for (const row of rows) { const food = foodSchema.parse(JSON.parse(row.food)); if (row.id !== food.id) throw new Error('Catalog food identity mismatch.'); }
+    if (!rows.length) throw new Error('Catalog row count changed during inspection.');
+    lastId = rows[rows.length - 1].id;
   }
   return { version: info.value, count: count.count };
 }
@@ -95,7 +98,7 @@ export function createCatalogReader(withDatabase: <T>(work: (db: SqliteConnectio
     barcode: code => withDatabase(async db => {
       const normalized = normalizeBarcode(code);
       if (!normalized) throw new Error('Enter a valid product barcode.');
-      return decode(await db.getFirstAsync('SELECT f.food FROM barcodes b JOIN foods f ON f.id=b.food_id WHERE b.code=? ORDER BY f.id DESC LIMIT 1', normalized.padStart(14,'0'))) ?? await fallback?.barcode(normalized) ?? null;
+      return decode(await db.getFirstAsync("SELECT f.food FROM barcodes b JOIN foods f ON f.id=b.food_id WHERE b.code=? ORDER BY CAST(replace(f.id,'usda-','') AS INTEGER) DESC,f.id DESC LIMIT 1", normalized.padStart(14,'0'))) ?? await fallback?.barcode(normalized) ?? null;
     }),
   };
 }

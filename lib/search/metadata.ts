@@ -263,7 +263,7 @@ const reviewedCookOutVariants: Record<string, readonly [string, string, string]>
 export function foodSearchMetadata(food: Food): FoodSearchHit {
   const category = food.id.startsWith('restaurant-') || food.sourceKind === 'restaurant' ? 'restaurant'
     : food.sourceKind === 'custom' || food.id.startsWith('custom-') ? 'custom'
-      : food.id.startsWith('off-') || inferredFoodBrand(food) ? 'packaged' : 'generic';
+    : food.id.startsWith('off-') || food.sourceDataset === 'usda-branded' || inferredFoodBrand(food) ? 'packaged' : 'generic';
   const hit: FoodSearchHit = { food, category };
   if (category === 'restaurant') {
     const reviewed = reviewedCookOutVariants[food.id];

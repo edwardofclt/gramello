@@ -4,6 +4,7 @@ import lexicon from './lexicon.generated';
 export const phraseAliases: ReadonlyArray<readonly [RegExp, string]> = [
   [/\bmcdonalds\b/g, 'mcdonald s'], [/\bchickfila\b/g, 'chick fil a'],
   [/\bchick fil a s\b/g, 'chick fil a'],
+  [/\balfresco\b/g, 'al fresco'],
   [/\bcookout\b/g, 'cook out'], [/\bin n out\b/g, 'in n out'],
   [/\byoghurt\b/g, 'yogurt'], [/\byoghurts\b/g, 'yogurt'],
   [/\bgarbanzo beans?\b/g, 'chickpeas'], [/\bscallions?\b/g, 'green onions'],

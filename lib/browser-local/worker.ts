@@ -5,7 +5,10 @@ import { parseArchive } from '../../mobile/src/local/records';
 import type { SqliteConnection } from '../../mobile/src/local/database';
 import { createFoodLookup } from '../../mobile/src/catalog/lookup';
 import { createCatalogReader, inspectCatalog } from '../../mobile/src/catalog/queries';
-import { createCatalogUpdater, type UpdateState } from '../../mobile/src/catalog/updater';
+import { createCatalogUpdater, combineCatalogUpdaters, type UpdateState } from '../../mobile/src/catalog/updater';
+import { createPackUpdater } from '../../mobile/src/catalog/packs';
+import { createPackCatalog } from '../../mobile/src/catalog/pack-reader';
+import { createBrowserPackStorage } from './packs';
 import catalogConfig from '../../mobile/catalog-config.json';
 import { openSnapshotStore, withSnapshot, type SnapshotStore } from './persistence';
 import { openMemoryDatabase, type SqliteModule } from './sqlite';
@@ -107,7 +110,20 @@ async function catalogs(): Promise<FoodCatalog> {
   if (seed) return seed.reader;
   throw seedError ?? new Error('The offline food catalog is unavailable.');
 }
-const baseCatalog = createBrowserCatalogSource(catalogs, catalogTask, catalogFailure);
+const packStorage = createBrowserPackStorage({
+  store: { read: key => storage.read(key), commit: values => storage.commit(values) },
+  open: bytes => openMemoryDatabase(sqlite, bytes), lock, manifestUrl: '/api/catalog/packs/manifest',
+});
+const expandedCatalog = createPackCatalog(packStorage.list, packStorage.withReader, {
+  getFood: async id => (await catalogs()).getFood(id),
+  search: async (query, options) => (await catalogs()).search(query, options),
+  searchWindow: async (query, options) => {
+    const core = await catalogs();
+    return core.searchWindow ? core.searchWindow(query, options) : { foods: await core.search(query, options), canExpand: false };
+  },
+  barcode: async (code, signal) => (await catalogs()).barcode(code, signal),
+});
+const baseCatalog = createBrowserCatalogSource(async () => expandedCatalog, catalogTask, catalogFailure);
 function catalogFailure(error: unknown) {
   emit({ event: 'catalog', status: { phase: 'error', error: error instanceof Error ? error.message : 'Offline foods are unavailable. Try updating the food catalog.' } });
 }
@@ -149,7 +165,7 @@ function withRepository<T>(write: boolean, work: (repository: LocalRepository, d
   });
 }
 
-const updater = createCatalogUpdater({
+const coreUpdater = createCatalogUpdater({
   async load() {
     const state = await storage.read<UpdateState>('catalog:update') ?? {};
     const version = await storage.read<string>('catalog:version') ?? bundled?.version;
@@ -180,6 +196,7 @@ const updater = createCatalogUpdater({
     } finally { db.close(); }
   },
 }, catalogConfig.publicKey);
+const updater = combineCatalogUpdaters(coreUpdater, createPackUpdater(packStorage, catalogConfig.publicKey));
 updater.subscribe(() => emit({ event: 'catalog', status: updater.getStatus() }));
 
 const readMethods = new Set(['getDay', 'getTrends', 'searchFoods', 'lookupBarcode', 'listMeals', 'getWaterDay', 'exportArchive', 'hasRecovery']);

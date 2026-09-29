@@ -1,0 +1,7 @@
+import { packEnvelope } from '@/lib/catalog-pack-relay';
+export async function GET(request: Request) {
+  try {
+    const { envelope } = await packEnvelope(AbortSignal.any([request.signal, AbortSignal.timeout(20000)]));
+    return Response.json(envelope, { headers: { 'Cache-Control': 'public, max-age=300' } });
+  } catch (error) { return Response.json({ error: error instanceof Error ? error.message : 'Expansion downloads are unavailable.' }, { status: 503 }); }
+}

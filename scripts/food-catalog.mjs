@@ -31,7 +31,7 @@ export function loadOfflineFoods(root = process.cwd()) {
   return foods;
 }
 
-export function buildCatalog(foods, file, version) {
+export function buildCatalog(foods, file, version, source) {
   if (!/^[a-zA-Z0-9][a-zA-Z0-9._-]{0,79}$/.test(version)) throw new Error('Invalid catalog version');
   if (!Array.isArray(foods) || !foods.length) throw new Error('Empty catalog');
   const ids = new Set();
@@ -43,16 +43,19 @@ export function buildCatalog(foods, file, version) {
     } catch { /* Invalid source URLs fail validation below. */ }
     const usda = /^usda-\d+$/.test(food.id) && food.source === 'USDA FoodData Central'
       && food.sourceUrl === `https://fdc.nal.usda.gov/food-details/${food.id.slice(5)}/nutrients`
-      && food.sourceKind === 'database' && food.nutritionBasis === '100g';
+      && food.sourceKind === 'database' && (food.nutritionBasis === '100g' || (source === 'usda-branded' && food.nutritionBasis === '100ml'));
+    const off = source === 'off' && /^off-\d+$/.test(food.id) && food.source === 'Open Food Facts'
+      && sourceHost === 'world.openfoodfacts.org' && food.sourceKind === 'database'
+      && ['100g','100ml'].includes(food.nutritionBasis);
     const restaurant = /^restaurant-[a-z0-9]+(?:-[a-z0-9]+)*-.+$/.test(food.id)
       && ((food.source === 'Nutritionix' && food.sourceKind === 'database' && sourceHost === 'www.nutritionix.com')
         || (food.source === 'Official restaurant nutrition' && food.sourceKind === 'restaurant'))
       && sourceHost && food.sourceUrl.length <= 2000
       && typeof food.brand === 'string' && food.brand.length > 0 && food.nutritionBasis === 'serving';
-    if (!usda && !restaurant) throw new Error('Catalog source is not approved USDA or restaurant data');
+    if ((!usda && !restaurant && !off) || (source === 'off' && !off) || (source === 'usda-branded' && !usda)) throw new Error('Catalog source is not approved USDA or restaurant data');
     if (ids.has(food.id)) throw new Error('Duplicate food ID'); ids.add(food.id);
     if (!food.name || food.name.length > 300 || !food.servingLabel || food.servingLabel.length > 200
-      || (usda && (!Number.isFinite(food.servingGrams) || food.servingGrams <= 0))
+      || (usda && food.nutritionBasis !== '100ml' && (!Number.isFinite(food.servingGrams) || food.servingGrams <= 0))
       || (restaurant && food.servingGrams !== null && (!Number.isFinite(food.servingGrams) || food.servingGrams <= 0))) throw new Error('Invalid food serving');
     if (['calories','protein','carbs','fat'].some(key => typeof food[key] !== 'number' || !Number.isFinite(food[key]) || food[key] < 0)) throw new Error('Missing or invalid nutrients');
     if ((food.barcodes ?? []).some(code => !/^(?:\d{8}|\d{12}|\d{13}|\d{14})$/.test(code))) throw new Error('Invalid barcode');
@@ -75,10 +78,11 @@ export function buildCatalog(foods, file, version) {
     const sources = [...new Set(foods.map(food => food.source))].sort();
     meta.run('version',version);
     const hasUsda = sources.includes('USDA FoodData Central');
-    meta.run('license',sources.length === 1 && hasUsda ? 'CC0-1.0'
+    meta.run('license',source === 'off' ? 'ODbL-1.0' : sources.length === 1 && hasUsda ? 'CC0-1.0'
       : hasUsda ? 'Mixed; USDA CC0-1.0; restaurant sources retain their own terms'
         : 'Source-specific restaurant nutrition; see source URLs');
     meta.run('source',sources.join('; '));
+    if (source) { meta.run('pack_source',source); meta.run('market','US'); }
     db.exec("COMMIT; INSERT INTO food_search(food_search) VALUES('optimize'); VACUUM;");
     if (db.prepare('PRAGMA integrity_check').get().integrity_check !== 'ok') throw new Error('Catalog integrity check failed');
   } finally { db.close(); }

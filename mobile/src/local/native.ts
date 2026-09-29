@@ -10,7 +10,10 @@ import { createLocalApi } from './api';
 import { withAnalytics } from '../analytics/api';
 import { serialized, type SqliteConnection } from './database';
 import { archiveCsv, MAX_ARCHIVE_BYTES, parseArchive } from './records';
-import { createCatalogUpdater, type UpdateState } from '../catalog/updater';
+import { createCatalogUpdater, combineCatalogUpdaters, type UpdateState } from '../catalog/updater';
+import { createNativePackStorage } from '../catalog/native-packs';
+import { createPackUpdater } from '../catalog/packs';
+import { createPackCatalog } from '../catalog/pack-reader';
 import { createCatalogReader, inspectCatalog } from '../catalog/queries';
 import { createFoodLookup } from '../catalog/lookup';
 
@@ -58,9 +61,10 @@ async function openRuntime() {
   const bundledReader = createCatalogReader(work => work(bundled));
   const downloaded = createCatalogReader(work => serialized(catalogLock, () => work(active!)), bundledReader);
   const foodCache = await SQLite.openDatabaseAsync('gramello-food-cache.sqlite');
-  const catalog = await createFoodLookup(downloaded, foodCache);
+  const packStorage = await createNativePackStorage(metadata, saveMetadata, catalogConfig.packManifestUrl);
+  const catalog = await createFoodLookup(createPackCatalog(packStorage.list, packStorage.withReader, downloaded), foodCache);
   const repository = await createLocalRepository(personal, catalog, Crypto.randomUUID);
-  const updater = createCatalogUpdater({
+  const coreUpdater = createCatalogUpdater({
     async load() {
       const state = await metadata<UpdateState>('catalogUpdate') ?? {};
       return state.version === activeVersion ? state : { version:activeVersion };
@@ -102,6 +106,7 @@ async function openRuntime() {
       }
     },
   },catalogConfig.publicKey);
+  const updater = combineCatalogUpdaters(coreUpdater, createPackUpdater(packStorage, catalogConfig.publicKey));
   return {
     repository, updater, api:withAnalytics(createLocalApi(repository)),
     async exportFile(format: 'backup' | 'diary' | 'water') {

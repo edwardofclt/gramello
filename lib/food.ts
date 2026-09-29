@@ -6,6 +6,7 @@ export type Food = Nutrition & {
   id: string; name: string; brand?: string; source: string; sourceUrl?: string;
   // Older saved meal ingredients omit provenance and use a per-100g default.
   sourceKind?: 'database' | 'restaurant' | 'custom'; verified?: boolean;
+  sourceDataset?: 'usda-branded';
   nutritionBasis?: '100g' | 'serving' | '100ml'; servingGrams: number | null; servingLabel: string;
   nutritionUnit?: 'g' | 'ml'; servingMl?: number;
   servingOptions?: FoodServing[]; selectedServingId?: string;

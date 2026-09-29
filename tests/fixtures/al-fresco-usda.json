@@ -1,0 +1,20 @@
+{
+  "fdcId": 1892562,
+  "dataType": "Branded",
+  "description": "AL FRESCO, CHICKEN SAUSAGE, APPLE MAPLE, APPLE MAPLE",
+  "brandName": "AL FRESCO",
+  "brandOwner": "Kayem Foods, Inc.",
+  "gtinUpc": "030771094625",
+  "marketCountry": "United States",
+  "servingSize": 50,
+  "servingSizeUnit": "g",
+  "householdServingFullText": "1 PATTY",
+  "publicationDate": "7/29/2021",
+  "modifiedDate": "7/14/2017",
+  "foodNutrients": [
+    { "nutrient": { "id": 1008, "unitName": "kcal" }, "amount": 180 },
+    { "nutrient": { "id": 1003, "unitName": "g" }, "amount": 16 },
+    { "nutrient": { "id": 1005, "unitName": "g" }, "amount": 8 },
+    { "nutrient": { "id": 1004, "unitName": "g" }, "amount": 8 }
+  ]
+}
