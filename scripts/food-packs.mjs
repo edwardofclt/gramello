@@ -1,4 +1,4 @@
-import { createReadStream, readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
+import { createReadStream, readFileSync, writeFileSync, mkdirSync, existsSync, renameSync } from 'node:fs';
 import { createHash, createPrivateKey, createPublicKey, sign } from 'node:crypto';
 import { createInterface } from 'node:readline';
 import { join, resolve } from 'node:path';
@@ -45,12 +45,14 @@ export async function buildFoodPacks({ usda, off, output, baseUrl, buckets = 128
         const foods = stage.prepare('SELECT food FROM items WHERE bucket=? ORDER BY id').all(bucket).map(row => JSON.parse(row.food));
         if (!foods.length) continue;
         const id = `${source}-${buckets}-${bucket}`, version = `${id}-${sha256(JSON.stringify(foods)).slice(0,24)}`;
-        const filename = `${version}.sqlite`, file = join(output, filename);
+        const file = join(output, `${id}.building.sqlite`);
         buildCatalog(foods, file, version, source);
         const bytes = readFileSync(file);
         if (bytes.length > 32 * 1024 * 1024) throw new Error(`${id} exceeds 32 MiB; increase --buckets and rebuild`);
+        const contentHash = sha256(bytes), filename = `${id}-${contentHash}.sqlite`;
+        renameSync(file, join(output, filename));
         packs.push({ schemaVersion: 1, id, source, market: 'US', license: source === 'off' ? 'ODbL-1.0' : 'CC0-1.0', bucket, buckets,
-          version, url: new URL(filename, baseUrl).href, sha256: sha256(bytes), bytes: bytes.length, count: foods.length });
+          version, url: new URL(filename, baseUrl).href, sha256: contentHash, bytes: bytes.length, count: foods.length });
       }
       reports[source] = { seen, accepted, unique: Number(stage.prepare('SELECT COUNT(*) count FROM items').get().count), rejected: seen - accepted };
     } finally { stage.close(); }

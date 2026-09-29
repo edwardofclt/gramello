@@ -13,7 +13,7 @@ import { createPackCatalog } from '../mobile/src/catalog/pack-reader';
 import type { FoodPack } from '../mobile/src/catalog/packs';
 import { spawnSync } from 'node:child_process';
 import { rankFoodSearch } from '../lib/search';
-import { generateKeyPairSync } from 'node:crypto';
+import { createHash, generateKeyPairSync } from 'node:crypto';
 import { verifyPackManifest } from '../mobile/src/catalog/packs';
 
 describe('US branded imports', () => {
@@ -92,6 +92,9 @@ describe('US branded imports', () => {
       for (const pack of result.packs) {
         const file = join(directory, 'packs', new URL(pack.url).pathname.split('/').at(-1)!);
         expect(readFileSync(file).length).toBe(pack.bytes);
+        const digest = createHash('sha256').update(readFileSync(file)).digest('hex');
+        expect(new URL(pack.url).pathname.split('/').at(-1)).toBe(`${pack.id}-${digest}.sqlite`);
+        expect(pack.sha256).toBe(digest);
         const opened = testDatabase(file);
         try {
           await expect(inspectCatalog(opened.db, pack)).resolves.toMatchObject({ count: 1 });
