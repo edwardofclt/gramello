@@ -17,6 +17,7 @@ import { Toaster, toast } from "sonner";
 import { changeGoal, macroPercent } from "./goal-math";
 import { localDate as today } from "@/lib/diary-date";
 import type { BrowserRuntime } from "@/lib/browser-local/client";
+import { CatalogDownloadIndicator } from '@/components/catalog-download-progress';
 import { BrowserDataSettings } from "@/components/browser-data-settings";
 import { ConfirmFoodRemoval } from "@/components/confirm-food-removal";
 import { TrendDayInspector } from "@/components/trend-day-inspector";
@@ -140,7 +141,7 @@ export default function GramelloApp({ diaryClient, runtime, offlineStatus = '', 
 
   return <div className="app-shell">
     <aside className="sidebar">
-      <div className="brand"><Logo/><BrandWordmark/></div>
+      <div className="brand"><Logo/><BrandWordmark/>{runtime && <CatalogDownloadIndicator updater={runtime.updater} />}</div>
       <nav aria-label="Main navigation">
         <button className={view==="today"?"active":""} onClick={()=>setView("today")}><LayoutDashboard/>Today</button>
         <button className={view==="trends"?"active":""} onClick={()=>setView("trends")}><TrendingUp/>Trends</button>
@@ -152,7 +153,7 @@ export default function GramelloApp({ diaryClient, runtime, offlineStatus = '', 
 
     <main>
       <header className="topbar">
-        <div className="mobile-brand"><Logo/><BrandWordmark/></div>
+        <div className="mobile-brand"><Logo/><BrandWordmark/>{runtime && <CatalogDownloadIndicator updater={runtime.updater} />}</div>
         <div><p>{view==="settings"?"MAKE IT YOURS":view==="today"?"DAILY DIARY":"NUTRITION ANALYTICS"}</p><h1>{view==="settings"?"Your preferences":view==="today"?"Today’s fuel":"Your progress"}</h1></div>
         <div className="topbar-actions">
           <Button onClick={openFood} className="add-food" aria-label="Add food"><Plus/><span>Add food</span></Button>

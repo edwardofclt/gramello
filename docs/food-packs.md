@@ -75,12 +75,21 @@ clients installing a previously fetched manifest.
 
 Native and web automatically check on launch, foreground and once per minute
 while active (metadata skips network until due). Downloads include cellular,
-run sequentially, verify size/hash/SQLite fields before activation and checkpoint
-each pack. Retry backoff starts at one hour and caps at one day. One previous
+run with up to three packs in flight, prioritize USDA packs in the queue, verify
+size/hash/SQLite fields before activation and checkpoint each pack. Shared pack
+index writes remain serialized so concurrent completions preserve every install.
+Native candidate databases are verified on independent read-only connections,
+allowing workers to refill download slots without waiting for a shared reader queue. Retry backoff starts at one hour and caps at one day. One previous
 pack per partition is retained. iOS/Android do not guarantee continued execution
 after the OS suspends or terminates the app; checks resume when foregrounded.
 Browser storage quotas may prevent a complete install; existing packs and diaries
 remain usable, and Settings reports the failure and completed-pack progress.
+Automatic downloads show a circular percentage indicator beside the Gramello logo. Settings
+shows the same received-byte percentage and a detailed bar for manual checks,
+alongside the verified pack count. Checking uses an indeterminate indicator;
+a fully received download says “Finishing food catalog update…” until verification
+and activation complete. Indicators disappear on completion or error, with the
+result retained in Settings.
 
 ## Source rights and separation
 

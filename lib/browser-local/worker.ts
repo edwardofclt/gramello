@@ -179,10 +179,14 @@ const coreUpdater = createCatalogUpdater({
     if (text.length > 32768) throw new Error('Catalog manifest is too large.');
     return JSON.parse(text);
   },
-  async install(manifest) {
+  async install(manifest, onProgress) {
     const response = await fetch(`/api/catalog/download?${new URLSearchParams({ version: manifest.version, sha256: manifest.sha256 })}`, { signal: AbortSignal.timeout(120_000) });
     if (!response.ok) throw new Error('The food catalog could not be downloaded.');
-    const bytes = new Uint8Array(await response.arrayBuffer());
+    let received = 0;
+    const body = response.body?.pipeThrough(new TransformStream<Uint8Array, Uint8Array>({
+      transform(chunk, controller) { received += chunk.length; onProgress?.(received); controller.enqueue(chunk); },
+    }));
+    const bytes = new Uint8Array(await (body ? new Response(body) : response).arrayBuffer());
     if (bytes.length !== manifest.bytes) throw new Error('The catalog download is incomplete.');
     const hash = Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256', bytes)), b => b.toString(16).padStart(2, '0')).join('');
     if (hash !== manifest.sha256) throw new Error('The catalog download did not pass verification.');

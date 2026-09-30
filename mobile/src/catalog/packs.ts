@@ -39,7 +39,7 @@ export interface PackStorage {
   available?(pack: FoodPack): Promise<boolean>;
   fetchManifest(): Promise<unknown>;
   // Durably commit descriptor + verified database together before returning.
-  install(pack: FoodPack): Promise<void>;
+  install(pack: FoodPack, onProgress?: (receivedBytes: number) => void): Promise<void>;
   retire(wanted: FoodPack[]): Promise<void>;
 }
 export function createPackUpdater(storage: PackStorage, publicKey: string, now = Date.now, random = Math.random): CatalogUpdater {
@@ -56,17 +56,35 @@ export function createPackUpdater(storage: PackStorage, publicKey: string, now =
       const installed = await storage.list(), errors: string[] = [];
       let completedPacks = 0, downloadedBytes = 0, changed = false;
       const totalPacks = manifest.packs.length, totalBytes = manifest.packs.reduce((sum, pack) => sum + pack.bytes, 0);
-      for (const pack of [...manifest.packs].sort((a, b) => Number(a.source === 'off') - Number(b.source === 'off') || a.bucket - b.bucket)) {
+      const packs = [...manifest.packs].sort((a, b) => Number(a.source === 'off') - Number(b.source === 'off') || a.bucket - b.bucket);
+      let nextPack = 0;
+      const received = new Map<string, number>();
+      const reportProgress = () => {
         progress = { completedPacks, totalPacks, downloadedBytes, totalBytes };
         update({ ...state, ...progress, phase: 'downloading' });
-        try {
-          if (!installed.some(old => old.id === pack.id && old.sha256 === pack.sha256 && old.version === pack.version)
-            || (storage.available && !await storage.available(pack))) {
-            await storage.install(pack); changed = true;
-          }
-          completedPacks++; downloadedBytes += pack.bytes;
-        } catch (error) { errors.push(`${pack.source === 'off' ? 'Open Food Facts' : 'USDA'}: ${error instanceof Error ? error.message : 'Download failed.'}`); }
+      };
+      reportProgress();
+      // Each worker claims a pack before awaiting, keeping at most three installs in flight.
+      async function worker() {
+        while (nextPack < packs.length) {
+          const pack = packs[nextPack++];
+          try {
+            if (!installed.some(old => old.id === pack.id && old.sha256 === pack.sha256 && old.version === pack.version)
+              || (storage.available && !await storage.available(pack))) {
+              await storage.install(pack, bytes => {
+                if (!Number.isFinite(bytes)) return;
+                const before = received.get(pack.id) ?? 0;
+                const next = Math.max(before, Math.min(pack.bytes, Math.max(0, bytes)));
+                received.set(pack.id, next); downloadedBytes += next - before;
+                reportProgress();
+              }); changed = true;
+            }
+            completedPacks++; downloadedBytes += pack.bytes - (received.get(pack.id) ?? 0); received.set(pack.id, pack.bytes);
+          } catch (error) { errors.push(`${pack.source === 'off' ? 'Open Food Facts' : 'USDA'}: ${error instanceof Error ? error.message : 'Download failed.'}`); }
+          reportProgress();
+        }
       }
+      await Promise.all(Array.from({ length: Math.min(3, packs.length) }, () => worker()));
       progress = { completedPacks, totalPacks, downloadedBytes, totalBytes };
       if (errors.length) throw new Error(errors.slice(0, 2).join(' '));
       await storage.retire(manifest.packs);

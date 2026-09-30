@@ -105,3 +105,20 @@
 @media(max-width:360px){.food-picker .search-filters{gap:2px}.food-picker .search-filters button{padding-inline:2px;font-size:.6875rem}}
 
 .diary-tabs{gap:20px}.diary-tabs>[data-slot="tabs-list"]{width:100%;max-width:320px;height:44px}.diary-tabs>[data-slot="tabs-content"]{min-width:0}
+/* Shared automatic and manual food catalog download progress. */
+.catalog-download-progress{display:grid;gap:8px}
+.catalog-download-label{display:flex;justify-content:space-between;gap:12px;color:#8ca1b2;font-size:.8rem}
+.catalog-download-label>span:first-child{display:flex;align-items:center;gap:7px}
+.catalog-download-label>span:last-child:not(:first-child){color:#6ee7c7}
+.catalog-download-track{height:7px;border-radius:8px;background:#152f41;overflow:hidden}
+.catalog-download-track>span{display:block;height:100%;border-radius:8px;background:#6ee7c7;transition:width .2s ease}
+.catalog-download-indeterminate{animation:catalog-progress 1.5s ease-in-out infinite}
+@keyframes catalog-progress{0%{transform:translateX(-100%)}100%{transform:translateX(290%)}}
+@media(prefers-reduced-motion:reduce){.catalog-download-indeterminate{animation:none}.catalog-download-track>span{transition:none}}
+
+
+.catalog-download-ring{position:relative;display:grid;place-items:center;flex:none;width:40px;height:40px;margin-left:8px;color:#6ee7c7}
+.catalog-download-ring svg{position:absolute}
+.catalog-download-ring>span{font-size:10px;font-weight:700}
+.catalog-download-ring circle{transition:stroke-dashoffset .2s ease}
+@media(prefers-reduced-motion:reduce){.catalog-download-ring circle{transition:none}.catalog-download-ring .spin{animation:none}}

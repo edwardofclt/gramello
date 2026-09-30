@@ -8,6 +8,7 @@ import { MAX_ARCHIVE_BYTES, parseArchive, type Archive } from '@/mobile/src/loca
 import { useWater } from '@/lib/use-water';
 import { localDate } from '@/lib/diary-date';
 import { WaterGoalEditor } from './water-tracker';
+import { CatalogDownloadProgress } from './catalog-download-progress';
 import { Button } from './ui/button';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from './ui/dialog';
 
@@ -47,7 +48,8 @@ export function BrowserDataSettings({ runtime, offlineStatus, onReplaced, onGoal
     </section>
     <section className="settings-card"><h3>Food catalog</h3><p>US-market USDA branded products and Open Food Facts download automatically, including cellular connections. The starter foods and restaurant menus remain available.</p>
       {status.version && <p>Installed: {status.version}</p>}{status.lastCheck && <p>Last checked: {new Date(status.lastCheck).toLocaleString()}</p>}
-      <p aria-live="polite">{status.phase === 'checking' ? 'Checking for updates…' : status.phase === 'downloading' ? 'Downloading food information…' : status.phase === 'updated' ? 'Food catalog updated.' : status.phase === 'current' ? 'Your food catalog is up to date.' : 'Bundled and cached foods remain available when an update fails.'}</p>
+      {status.phase !== 'checking' && status.phase !== 'downloading' && <p aria-live="polite">{status.phase === 'updated' ? 'Food catalog updated.' : status.phase === 'current' ? 'Your food catalog is up to date.' : 'Bundled and cached foods remain available when an update fails.'}</p>}
+      <CatalogDownloadProgress status={status} />
       {status.totalPacks !== undefined && <p>{status.completedPacks ?? 0} of {status.totalPacks} product packs ready · {Math.round((status.downloadedBytes ?? 0) / 1024 / 1024)} of {Math.round((status.totalBytes ?? 0) / 1024 / 1024)} MB</p>}
       <p>USDA FoodData Central · CC0. <a href="https://world.openfoodfacts.org">Open Food Facts</a> · ODbL. Source records remain separate; matching product barcodes prefer USDA.</p>
       {status.error && <p role="alert" className="food-error">{status.error}</p>}

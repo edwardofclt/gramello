@@ -13,6 +13,8 @@ export async function createNativePackStorage(
   const directory = new Directory(Paths.document, 'gramello-food-packs');
   directory.create({ intermediates: true, idempotent: true });
   const queue = {} as SqliteConnection;
+  // Metadata has its own queue: never hold the catalog reader queue while saving it.
+  const metadataQueue = {} as SqliteConnection;
   const stored = await metadata<{ active: unknown[]; previous: unknown[] }>('foodPackIndex');
   const descriptors = (values: unknown[] = []) => values.flatMap(value => { const parsed = packSchema.safeParse(value); return parsed.success ? [parsed.data] : []; });
   let installed = descriptors(stored?.active), previous = descriptors(stored?.previous);
@@ -38,33 +40,40 @@ export async function createNativePackStorage(
       const text = await response.text(); if (text.length > 520000) throw new Error('Pack manifest is too large.');
       return JSON.parse(text);
     },
-    async install(pack) {
+    async install(pack, onProgress) {
       if (Paths.availableDiskSpace < pack.bytes * 2 + 10 * 1024 * 1024) throw new Error('Free some device storage to download US products.');
       const file = fileFor(pack);
       try {
         // No network-type gate: cellular downloads are explicitly enabled.
-        if (!file.exists) await File.downloadFileAsync(pack.url, file, { signal: AbortSignal.timeout(120000) });
+        if (!file.exists) await File.downloadFileAsync(pack.url, file, { signal: AbortSignal.timeout(120000), onProgress: progress => onProgress?.(progress.bytesWritten) });
         if (file.size !== pack.bytes || await digest(file) !== pack.sha256) {
           // Remove only this corrupt content-addressed download, so retry does
           // not keep reusing an incomplete file. The prior version is untouched.
           if (file.exists) file.delete();
           throw new Error('The food pack did not pass verification.');
         }
-        await serialized(queue, async () => { const db = await open(file); try { await inspectFoodPack(db, pack); } finally { await db.closeAsync(); } });
-        const next = [...installed.filter(old => old.id !== pack.id), pack];
-        const old = installed.find(old => old.id === pack.id && old.sha256 !== pack.sha256);
-        const prior = old ? [...previous.filter(item => item.id !== pack.id), old] : previous;
-        // Never save personal metadata while holding the catalog reader queue.
-        await saveMetadata('foodPackIndex', { active: next, previous: prior }); installed = next; previous = prior;
+        // Candidate connections are independent and read-only. Let the bounded
+        // updater workers inspect them concurrently instead of holding the reader queue.
+        const db = await open(file);
+        try { await inspectFoodPack(db, pack); } finally { await db.closeAsync(); }
+        await serialized(metadataQueue, async () => {
+          const next = [...installed.filter(old => old.id !== pack.id), pack];
+          const old = installed.find(old => old.id === pack.id && old.sha256 !== pack.sha256);
+          const prior = old ? [...previous.filter(item => item.id !== pack.id), old] : previous;
+          // Never save personal metadata while holding the catalog reader queue.
+          await saveMetadata('foodPackIndex', { active: next, previous: prior }); installed = next; previous = prior;
+        });
       } catch (error) {
         if (!installed.some(old => old.sha256 === pack.sha256) && file.exists) { try { file.delete(); } catch { /* Retry can clean an incomplete download. */ } }
         throw error;
       }
     },
     async retire(wanted) {
-      const next = installed.filter(old => wanted.some(pack => pack.id === old.id && pack.sha256 === old.sha256));
-      const prior = previous.filter(old => next.some(pack => pack.id === old.id));
-      await saveMetadata('foodPackIndex', { active: next, previous: prior }); installed = next; previous = prior;
+      await serialized(metadataQueue, async () => {
+        const next = installed.filter(old => wanted.some(pack => pack.id === old.id && pack.sha256 === old.sha256));
+        const prior = previous.filter(old => next.some(pack => pack.id === old.id));
+        await saveMetadata('foodPackIndex', { active: next, previous: prior }); installed = next; previous = prior;
+      });
       await serialized(queue, async () => {
         const keep = new Set([...installed, ...previous].map(pack => fileFor(pack).name));
         for (const entry of directory.list()) if (entry instanceof File && /^pack-[a-f0-9]{64}\.sqlite$/.test(entry.name) && !keep.has(entry.name)) {
