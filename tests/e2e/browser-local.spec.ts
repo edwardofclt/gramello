@@ -32,6 +32,7 @@ async function nativeArchive(): Promise<Archive> {
 test('native backup imports, exports losslessly, and recovers the previous browser diary', async ({ page }) => {
   await open(page);
   expect(await workerCall(page, 'hasRecovery')).toBe(false);
+  await page.getByRole('tab', { name: 'Water', exact: true }).click();
   await page.getByRole('button', { name: '+ 250 mL', exact: true }).click();
   await expect(page.locator('.water-total')).toContainText('250');
   const archive = await nativeArchive();
@@ -43,6 +44,7 @@ test('native backup imports, exports losslessly, and recovers the previous brows
   expect((await workerCall<Archive>(page, 'exportArchive')).records.some(record => record.kind === 'water')).toBe(true);
   await page.getByLabel('Choose Gramello backup').setInputFiles({ name: 'phone.gramello', mimeType: 'application/json', buffer: Buffer.from(JSON.stringify(archive)) });
   await page.getByRole('button', { name: 'Replace and import', exact: true }).click();
+  await page.getByRole('tab', { name: 'Food', exact: true }).click();
   await expect(page.locator('.food-row')).toContainText('Native soup');
   await expect(page.locator('.calorie-focus h2')).toContainText('300');
   await settings(page);
@@ -53,7 +55,9 @@ test('native backup imports, exports losslessly, and recovers the previous brows
   expect(exported.records).toEqual(archive.records);
   await page.getByRole('button', { name: 'Recover previous diary', exact: true }).click();
   await page.getByRole('button', { name: 'Recover diary', exact: true }).click();
+  await page.getByRole('tab', { name: 'Food', exact: true }).click();
   await expect(page.locator('.food-row')).toHaveCount(0);
+  await page.getByRole('tab', { name: 'Water', exact: true }).click();
   await expect(page.locator('.water-total')).toContainText('250');
 });
 

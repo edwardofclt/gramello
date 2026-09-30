@@ -2,6 +2,7 @@ import { test, expect, openDiary } from './fixtures';
 
 test('water goals, units and entries persist across reloads and diary dates', async ({ page }) => {
   await openDiary(page);
+  await page.getByRole('tab', { name: 'Water', exact: true }).click();
   const card = page.getByRole('region', { name: 'Water intake' });
   await expect(card.locator('.water-total')).toHaveText('0 mLof 2000 mL');
   await card.getByRole('button', { name: '+ 250 mL', exact: true }).click();
@@ -17,6 +18,7 @@ test('water goals, units and entries persist across reloads and diary dates', as
   await expect(dialog).not.toBeVisible();
   await expect(card.locator('.water-total')).toHaveText('20.3 US fl ozof 64 US fl oz');
   await page.reload();
+  await page.getByRole('tab', { name: 'Water', exact: true }).click();
   await expect(card.locator('.water-total')).toHaveText('20.3 US fl ozof 64 US fl oz');
   await page.getByRole('button', { name: 'Previous day' }).click();
   await expect(card.locator('.water-total')).toHaveText('0 US fl ozof 64 US fl oz');
@@ -36,6 +38,7 @@ test('water goals, units and entries persist across reloads and diary dates', as
 
 test('invalid water amounts do not change progress, and a corrected amount persists', async ({ page }) => {
   await openDiary(page);
+  await page.getByRole('tab', { name: 'Water', exact: true }).click();
   const card = page.getByRole('region', { name: 'Water intake' });
   await expect(card.locator('.water-total')).toHaveText('0 mLof 2000 mL');
   const input = card.getByLabel('Custom amount (mL)');
@@ -48,5 +51,6 @@ test('invalid water amounts do not change progress, and a corrected amount persi
   await card.getByRole('button', { name: 'Add water', exact: true }).click();
   await expect(card.locator('.water-total')).toHaveText('375 mLof 2000 mL');
   await openDiary(page);
+  await page.getByRole('tab', { name: 'Water', exact: true }).click();
   await expect(card.locator('.water-total')).toHaveText('375 mLof 2000 mL');
 });
