@@ -36,6 +36,8 @@ export async function inspectFoodPack(db: SqliteConnection, pack: FoodPack) {
 }
 export interface PackStorage {
   exclusive?<T>(work: () => Promise<T>): Promise<T>;
+  // Called at check start under exclusive(), if provided. Preserve live transfers.
+  recover?(): Promise<void>;
   load(): Promise<UpdateState>;
   save(state: UpdateState): Promise<void>;
   list(): Promise<FoodPack[]>;
@@ -53,6 +55,7 @@ export function createPackUpdater(storage: PackStorage, publicKey: string, now =
     let state: UpdateState = {}, progress = {};
     try {
       state = await storage.load();
+      await storage.recover?.();
       if (!force && state.nextCheck && now() < state.nextCheck) {
         update({ ...state, phase: state.failures ? 'error' : 'idle',
           ...(state.failures ? { error: state.error ?? 'Downloads are waiting to retry.' } : {}) }); return;

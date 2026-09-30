@@ -30,6 +30,13 @@ function filesystem() {
   return { files, backend: createBrowserPackFiles(sqlite)!, closed: () => closed, written: () => written, roots: () => roots };
 }
 describe('browser file boundary', () => {
+  it('recovers only correctly named abandoned temporary files after recreation', async () => {
+    const fake = filesystem(), orphan = `partial-${pack.sha256}-12345678-abcd.sqlite`;
+    for (const name of [orphan, packFileName(pack), 'partial-a.sqlite', 'diary.sqlite']) fake.files.set(name, new Uint8Array());
+    const reopened = createBrowserPackFiles(sqlite)!;
+    await reopened.recover?.();
+    expect([...fake.files.keys()].sort()).toEqual([packFileName(pack), 'partial-a.sqlite', 'diary.sqlite'].sort());
+  });
   it('reuses its directory capability across operations rather than reacquiring storage handles', async () => {
     const fake = filesystem(); fake.files.set(packFileName(pack), new Uint8Array(4096));
     await fake.backend.stat(pack); await fake.backend.read(pack); await fake.backend.retire([pack]);

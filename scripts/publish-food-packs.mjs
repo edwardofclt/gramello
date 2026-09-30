@@ -52,8 +52,17 @@ export async function publishFoodPacks(directory, repository, tag = 'food-catalo
   }
   for (const name of provenance) readFileSync(join(directory, name));
   const gh = args => execFileSync('gh', args, { encoding: 'utf8', maxBuffer: 1024 * 1024 });
-  const release = JSON.parse(gh(['api', `repos/${repository}/releases/tags/${tag}`]));
-  const assets = JSON.parse(gh(['api', `repos/${repository}/releases/${release.id}/assets`, '--paginate', '--slurp'])).flat();
+  // The release response itself embeds all assets. Filter inside gh before its
+  // stdout is captured, then page assets instead of buffering release history.
+  const releaseId = JSON.parse(gh(['api', `repos/${repository}/releases/tags/${tag}`, '--jq', '.id']));
+  if (!Number.isSafeInteger(releaseId) || releaseId <= 0) throw new Error('Invalid release identity.');
+  const wanted = new Set(manifest.packs.map(packFilename)), assets = [];
+  for (let page = 1; ; page++) {
+    const batch = JSON.parse(gh(['api', `repos/${repository}/releases/${releaseId}/assets?per_page=100&page=${page}`]));
+    if (!Array.isArray(batch) || batch.length > 100) throw new Error('Invalid release asset page.');
+    for (const asset of batch) if (wanted.delete(asset.name)) assets.push(asset);
+    if (batch.length < 100 || !wanted.size) break;
+  }
   const temporary = mkdtempSync(join(tmpdir(), 'gramello-publish-preflight-'));
   try {
     await publishPackAssets(manifest.packs, assets, async asset => {

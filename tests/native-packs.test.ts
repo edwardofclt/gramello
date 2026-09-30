@@ -36,6 +36,22 @@ async function setup() {
 }
 const installedFile = () => join(root, 'gramello-food-packs', `pack-${pack.sha256}.sqlite`);
 describe('native expansion files', () => {
+  it('recovers abandoned partials after recreation without removing active transfers', async () => {
+    const fake = await setup();
+    const orphan = join(root, 'gramello-food-packs', `pack-${pack.sha256}-1234-dead.partial`);
+    const unrelated = join(root, 'gramello-food-packs', 'keep.partial');
+    writeFileSync(orphan, new Uint8Array(100)); writeFileSync(unrelated, new Uint8Array(100));
+    const { readdirSync } = await import('node:fs');
+    let controller!: ReadableStreamDefaultController<Uint8Array<ArrayBuffer>>;
+    platform.fetcher = async () => new Response(new ReadableStream({ start(c) { controller = c; c.enqueue(bytes.slice(0, 4096) as Uint8Array<ArrayBuffer>); } }));
+    const pending = fake.storage.install(pack);
+    await vi.waitFor(() => expect(platform.writes).toEqual([4096]));
+    const active = readdirSync(join(root, 'gramello-food-packs')).find(name => name !== orphan.split('/').at(-1) && /^pack-.*\.partial$/.test(name))!;
+    const recreated = await fake.reopen(); await recreated.recover?.();
+    expect(readdirSync(join(root, 'gramello-food-packs')).sort()).toEqual([active, 'keep.partial'].sort());
+    controller.enqueue(bytes.slice(4096) as Uint8Array<ArrayBuffer>); controller.close(); await pending;
+    expect(await fake.storage.list()).toEqual([pack]);
+  });
   it('can isolate fixture transport without changing signed descriptors', async () => {
     const fixtureFetch = vi.fn(async () => new Response(bytes as Uint8Array<ArrayBuffer>));
     const storage = await createNativePackStorage(async () => null, async () => {}, 'https://example.org/manifest', { fetcher: fixtureFetch as any });

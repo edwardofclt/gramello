@@ -5,6 +5,7 @@ import { openSnapshotStore } from '../../lib/browser-local/persistence';
 import { openMemoryDatabase, type SqliteModule } from '../../lib/browser-local/sqlite';
 import { createPackCatalog } from '../../mobile/src/catalog/pack-reader';
 import { createPackUpdater } from '../../mobile/src/catalog/packs';
+import { verifyPackManifest } from '../../mobile/src/catalog/packs';
 const metrics = { fileReads: 0, snapshotReads: 0, open: 0, peak: 0 };
 const sqlite = await (sqlite3Init as unknown as (options: unknown) => Promise<SqliteModule>)({ locateFile: () => '/offline/sqlite3.wasm', print: () => {}, printErr: () => {} });
 const store = await openSnapshotStore();
@@ -33,6 +34,15 @@ const catalog = createPackCatalog(storage.list, storage.withReader, core, storag
 const fixture = await (await fetch('/fixture.json')).json();
 const updater = createPackUpdater(storage, fixture.publicKey);
 const methods: Record<string, (value: any) => Promise<unknown>> = {
+  locks: async () => navigator.locks.query(),
+  files: async () => {
+    const directory = await (await navigator.storage.getDirectory()).getDirectoryHandle('gramello-food-packs', { create: true });
+    const names: string[] = []; for await (const name of (directory as any).keys()) names.push(name); return names;
+  },
+  stageNever: async () => storage.exclusive!(async () => {
+    const pack = verifyPackManifest(await storage.fetchManifest(), fixture.publicKey).packs[0];
+    return realFiles!.stage(pack, new Response(new ReadableStream({ start(controller) { controller.enqueue(new Uint8Array(4096)); } })));
+  }),
   info: async () => ({ isolated: crossOriginIsolated, direct: realFiles?.direct, entries: await store.read('packs:index'), metrics }),
   configure: async value => { fileEnabled = value.files !== false; failCommit = !!value.failCommit; return true; },
   update: async () => { await updater.check(true); return updater.getStatus(); },

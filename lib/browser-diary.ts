@@ -25,10 +25,36 @@ function privateResponse(response: Response) {
   return response;
 }
 
+async function releaseRejectedBody(request: Request) {
+  if (!request.body || request.body.locked) return;
+  const reader = request.body.getReader();
+  let timer: ReturnType<typeof setTimeout> | undefined;
+  const expiresAt = Date.now() + 100;
+  const deadline = new Promise<null>(resolve => { timer = setTimeout(() => resolve(null), 100); });
+  let ended = false;
+  try {
+    // Canceling even a tiny unread body can poison the local Worker proxy's
+    // next request. Discard small bodies to EOF, never parsing or storing them.
+    // One deadline and byte budget also bound chunked/misdeclared uploads.
+    let remaining = 16 * 1024;
+    while (remaining > 0 && Date.now() < expiresAt) {
+      const chunk = await Promise.race([reader.read(), deadline]);
+      if (!chunk) break;
+      if (chunk.done) { ended = true; break; }
+      remaining -= chunk.value.byteLength;
+    }
+  } catch { /* The client may already have disconnected. */ }
+  finally {
+    clearTimeout(timer);
+    // A disconnected source's cancel promise can itself stall. Initiate it
+    // without letting it extend the rejection deadline; observe any rejection.
+    if (!ended) void reader.cancel().catch(() => {});
+    reader.releaseLock();
+  }
+}
+
 async function rejectWrite(request: Request, error: string, status: 400 | 403) {
-  // Early rejections never read JSON. Release the incoming stream so workerd
-  // can finish the request, without draining an arbitrarily large upload.
-  try { await request.body?.cancel(); } catch { /* The client may already have disconnected. */ }
+  await releaseRejectedBody(request);
   return privateResponse(Response.json({ error }, { status }));
 }
 

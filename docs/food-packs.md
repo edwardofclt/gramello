@@ -74,7 +74,9 @@ aborts before manifest replacement and never clobbers a SQLite asset. It does no
 replace the legacy `manifest.json` or bundle the expansion into the app binary.
 Run the workflow again to refresh source snapshots; clients check automatically
 about daily, downloading only changed packs. Old releases remain available for
-clients installing a previously fetched manifest.
+clients installing a previously fetched manifest. The publisher looks up the
+release ID separately and pages assets in groups of 100, retaining metadata only
+for the current pack set, so historical assets cannot overflow its CLI buffer.
 
 Native and web automatically check on launch, foreground and once per minute
 while active (metadata skips network until due). Downloads include cellular,
@@ -87,6 +89,10 @@ completed-pack progress across skipped checks and restart. Native retains one
 previous pack per partition; browser activation clears unused previous bytes.
 iOS/Android do not guarantee continued execution
 after the OS suspends or terminates the app; checks resume when foregrounded.
+The next update check reclaims abandoned staging files, even during retry
+backoff. Browser recovery owns both the update lease and reader lock; native
+recovery preserves every transfer still live in the current process. Neither
+scanner deletes unrelated files or referenced installed packs.
 Browser storage quotas may prevent a complete install; existing packs and diaries
 remain usable, and Settings reports the failure and completed-pack progress.
 
@@ -95,7 +101,9 @@ remain usable, and Settings reports the failure and completed-pack progress.
 Native repairs a corrupt content-addressed file in one install attempt. Native
 and browser readers verify files on first use and reuse verification only while
 hash, byte length and modification metadata agree. Repair checks force hashing;
-missing or changed metadata never means "trusted forever". Durable, locally
+missing or changed metadata never means "trusted forever".
+The metadata-only verification cache is bounded to 1,024 recently used entries;
+eviction only triggers a new hash check and never removes a pack. Durable, locally
 derived USDA routes select the correct installed pack after restart without a
 previous name search. Routes include the content hash, ignore retired generations,
 and do not change nutrition identities or source precedence.

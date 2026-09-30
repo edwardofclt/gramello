@@ -5,6 +5,8 @@ import type { SqliteConnection } from '../../mobile/src/local/database';
 import { openMemoryDatabase, wrapSqliteDatabase, type SqliteModule } from './sqlite';
 export interface BrowserPackFiles {
   readonly direct?: boolean;
+  // Caller owns both the update lease and reader lock: no live transfer/migration.
+  recover?(): Promise<void>;
   stat(pack: FoodPack): Promise<PackFileStamp | null>;
   read(pack: FoodPack): Promise<Uint8Array<ArrayBuffer>>;
   stage(pack: FoodPack, response: Response): Promise<string>;
@@ -45,6 +47,12 @@ export function createBrowserPackFiles(sqlite: SqliteModule): BrowserPackFiles |
   };
   const result: BrowserPackFiles = {
     direct,
+    async recover() {
+      const dir = await directory();
+      for await (const name of (dir as FileSystemDirectoryHandle & { keys(): AsyncIterable<string> }).keys()) {
+        if (/^partial-[a-f0-9]{64}-[a-f0-9-]+\.sqlite$/.test(name)) await dir.removeEntry(name);
+      }
+    },
     async stat(pack) {
       try { const file = await (await (await directory()).getFileHandle(packFileName(pack))).getFile(); return { bytes: file.size, modifiedAt: file.lastModified }; }
       catch (error) { if (error instanceof DOMException && error.name === 'NotFoundError') return null; throw error; }

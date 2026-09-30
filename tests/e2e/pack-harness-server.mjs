@@ -40,6 +40,12 @@ const server = createServer(async (request, response) => {
     }
     if (url.pathname === '/api/catalog/packs/manifest') { response.setHeader('Content-Type', 'application/json'); response.end(JSON.stringify(signPackSet(manifests[generation], pem, publicKey))); return; }
     if (url.pathname === '/fixture.json') { response.setHeader('Content-Type', 'application/json'); response.end(JSON.stringify({ publicKey })); return; }
+    if (url.pathname === '/native-interrupt') {
+      const pack = manifests[generation].packs[0];
+      const bytes = await readFile(join(temporary, `packs-${pack.buckets}`, new URL(pack.url).pathname.split('/').at(-1)));
+      response.writeHead(200, { 'Content-Type': 'application/octet-stream' }); response.write(bytes.subarray(0, 4096));
+      return; // Deliberately never EOF: the isolated simulator terminates mid-transfer.
+    }
     if (url.pathname === '/api/catalog/packs/download') {
       const pack = manifests[generation].packs.find(pack => pack.id === url.searchParams.get('id') && pack.sha256 === url.searchParams.get('sha256'));
       if (!pack) { response.writeHead(409); response.end(); return; }

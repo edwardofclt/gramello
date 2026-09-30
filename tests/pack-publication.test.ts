@@ -1,10 +1,40 @@
-import { describe, expect, it } from 'vitest';
+import { describe, expect, it, vi } from 'vitest';
 import { createHash } from 'node:crypto';
-import { publishPackAssets, verifyExistingPackAsset } from '../scripts/publish-food-packs.mjs';
+import { execFileSync } from 'node:child_process';
+import { mkdtempSync, writeFileSync, rmSync } from 'node:fs';
+import { join } from 'node:path';
+import { tmpdir } from 'node:os';
+vi.mock('node:child_process', () => ({ execFileSync: vi.fn() }));
+import { publishFoodPacks, publishPackAssets, verifyExistingPackAsset } from '../scripts/publish-food-packs.mjs';
 const bytes = new Uint8Array(4096), sha256 = createHash('sha256').update(bytes).digest('hex');
 const pack = { id: 'off-1-0', bytes: bytes.length, sha256, url: `https://example.org/off-1-0-${sha256}.sqlite` };
 const name = `off-1-0-${sha256}.sqlite`;
 describe('immutable pack publication', () => {
+  it('publishes with more than one MiB of retained historical asset metadata', async () => {
+    const root = mkdtempSync(join(tmpdir(), 'gramello-publish-history-'));
+    const manifest = { packs: [pack] }, uploads: string[] = [];
+    const history = Array.from({ length: 2048 }, (_, id) => ({ id: id + 1, name: `old-${id}.sqlite`, label: 'x'.repeat(900), size: 4096 }));
+    const assets = [...history, { id: 2049, name, size: 4096, digest: `sha256:${sha256}` }];
+    const release = { id: 17, assets };
+    expect(Buffer.byteLength(JSON.stringify(release))).toBeGreaterThan(1024 * 1024);
+    const provenance = ['PACK-SOURCES.md', 'PACK-PROVENANCE.json', 'import-report.json', 'extract-food-packs.py', 'food-packs.mjs', 'food-catalog.mjs', 'verify-food-packs.mjs', 'verification-report.json', 'food-packs-requirements.txt', 'catalog-import.ts'];
+    writeFileSync(join(root, name), bytes); writeFileSync(join(root, 'pack-set.json'), JSON.stringify(manifest));
+    writeFileSync(join(root, 'pack-manifest.json'), JSON.stringify({ payload: JSON.stringify(manifest) }));
+    for (const file of provenance) writeFileSync(join(root, file), 'fixture');
+    vi.mocked(execFileSync).mockImplementation((binary: any, args: any, options: any) => {
+      expect(binary).toBe('gh'); let output = '';
+      if (args[0] === 'release') { uploads.push(args[3].split('/').at(-1)); return ''; }
+      if (args[1].endsWith('/tags/food-catalog')) output = args.includes('--jq') ? '17' : JSON.stringify(release);
+      else {
+        const url = new URL('https://api.github.test/' + args[1]), page = Number(url.searchParams.get('page') ?? 0);
+        output = JSON.stringify(page ? assets.slice((page - 1) * 100, page * 100) : [assets]);
+      }
+      if (Buffer.byteLength(output) > options.maxBuffer) throw Object.assign(new Error('ENOBUFS'), { code: 'ENOBUFS' });
+      return output;
+    });
+    try { await publishFoodPacks(root, 'fixture/repo'); expect(uploads).toEqual([...provenance, 'pack-manifest.json']); }
+    finally { rmSync(root, { recursive: true, force: true }); vi.mocked(execFileSync).mockReset(); }
+  });
   it('aborts all uploads when an existing immutable name has different contents', async () => {
     const uploads: string[] = [];
     await expect(publishPackAssets([pack], [{ name, size: 4096, digest: 'sha256:' + 'a'.repeat(64) }], async () => bytes, async (name: string) => { uploads.push(name); }, ['PACK-SOURCES.md'])).rejects.toThrow('mismatch');

@@ -16,6 +16,18 @@ test('compiled application isolates documents and offline worker assets', async 
     expect(response.headers()['cross-origin-embedder-policy']).toBe('require-corp');
   }
 });
+test('reclaims terminated transfers while preserving a live cross-tab download', async ({ page, context }) => {
+  await call(page, 'update');
+  void call(page, 'stageNever').catch(() => {}); // Intentionally dies with this tab.
+  const other = await context.newPage(); await other.goto('/'); await call(other, 'info');
+  const partials = async () => (await call(other, 'files')).filter((name: string) => name.startsWith('partial-'));
+  await expect.poll(partials).toHaveLength(1);
+  const update = call(other, 'update');
+  await expect.poll(async () => (await call(other, 'locks')).pending.some((lock: any) => lock.name === 'gramello:food-pack-update')).toBe(true);
+  expect(await partials()).toHaveLength(1);
+  await page.close(); expect(['current', 'updated']).toContain((await update).phase);
+  expect(await partials()).toEqual([]); expect((await call(other, 'search')).foods).toHaveLength(2);
+});
 test('OPFS warms without full-file reads and persists direct USDA routes offline', async ({ page, context, browserName }) => {
   const status = await call(page, 'update');
   expect(status.phase, JSON.stringify(status)).toBe('updated');

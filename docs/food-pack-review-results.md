@@ -27,18 +27,20 @@ dependency upgraded, or personal diary migrated by this work.
 
 Executed locally on 2026-09-29/30:
 
-- `pnpm test`: 686 passing tests in 60 files before the final reviewer pass.
+- `pnpm test`: 693 passing tests in 61 files after the final fix pass.
 - Web and mobile TypeScript checks passed; compiled `pnpm build` passed.
-- `pnpm test:smoke`: passed, including the reported invalid-barcode route; no timeout increase.
+- `pnpm test:smoke`: passed, including 64 alternating 400/403 rejected-write/invalid-barcode follow-up pairs; no timeout increase. A separate stable compiled-Worker probe passed 1,000 consecutive pairs.
 - Python extraction tests: 2 passed in an isolated environment with `ijson==3.4.0.post0` and `duckdb==1.4.4`.
-- Dedicated pack integration: 18 passed across Chromium, Firefox and WebKit, using actual OPFS, SQLite, IndexedDB, signed fixture manifests and disposable persistent profiles.
+- Dedicated pack integration: 21 passed across Chromium, Firefox and WebKit, using actual OPFS, SQLite, IndexedDB, signed fixture manifests and disposable persistent profiles.
 - Existing application E2E: 51 passed; the desktop project skips one intentionally mobile-only viewport test. Its mobile execution passed.
-- iOS 26.5 / iPhone 17 Pro, isolated `Gramello Pack Review` simulator: bounded response rejection and temporary cleanup, signed Al Fresco installs, zero warm full-file hashes, one-download corruption repair, offline search/barcode reuse, and a terminated-app restart with one USDA nutrition-pack open and zero downloads all passed.
+- iOS 26.5 / iPhone 17 Pro, isolated `Gramello Pack Review Final` simulator: terminated mid-transfer after 4,096 bytes, reclaimed its abandoned partial on relaunch, then passed bounded response rejection and temporary cleanup, signed Al Fresco installs, zero warm full-file hashes, one-download corruption repair and offline search/barcode reuse. A third launch passed direct USDA lookup with one nutrition-pack open and zero downloads.
 
-The iOS fixture screen displayed "Native checks passed". Its server's initial
-`warmHashes: 2` report inadvertently counted the later repair hashes; the zero
-warm-hash assertion itself passed before repair. The harness now snapshots that
-counter at the correct point. The production mobile entry was restored to `App`.
+The iOS fixture screen displayed "Native checks passed". Final reports were
+`interrupted-transfer-ready: temporaryBytes=4096`,
+`restart-ready: abandonedTransferRecovery=true, boundedTransfer=true,
+temporaryCleanup=true, warmHashes=0, repairDownloads=1, foods=2`, and
+`complete: restartedRouteOpens=1, offlineDownloads=0, foods=2`.
+The production mobile entry was restored to `App`.
 The user's original simulator, diary and Metro 8081 were left intact; fixture
 Metro used 8082.
 
@@ -48,8 +50,49 @@ test transport preserves signed HTTPS descriptors while redirecting fixture
 downloads through real `expo/fetch`. `mobile/tests/pack-runtime.tsx` is not
 imported by the production application. To repeat, use a fresh simulator/dev
 client, start `node tests/e2e/pack-harness-server.mjs`, temporarily select that
-component from `mobile/index.ts`, start a separate Metro port, run until "Restart
-ready", terminate/relaunch the app, and restore the production entry.
+component from `mobile/index.ts`, start a separate Metro port, run until
+"Terminate ready" and terminate/relaunch. At "Restart ready", terminate/relaunch
+again; verify "Native checks passed", then restore the production entry.
+
+## Fresh final review and fix audit
+
+A fresh `gpt-6-astra` reviewer inspected base `6254dd5` through `194b0d8`
+against the approved design, implementation plan, review focus and rulings.
+It returned no Critical findings, two Important findings, no Minors, and
+"With fixes". Both Important findings were accepted by their user impact and
+resolved in one fix pass. No second reviewer was dispatched.
+
+- Abandoned partial files were not reclaimed after app/tab termination. New
+  native, updater and browser regressions first failed because the orphan
+  remained or recovery was never called. Recovery now runs inside the update
+  lease, even during backoff. Browser cleanup also owns the reader lock;
+  native cleanup preserves process-owned live transfers. The new actual
+  two-tab termination/recovery test failed first in all three browser engines,
+  then passed. The final iOS three-launch run independently passed this case.
+- Publisher release-history metadata exceeded its 1 MiB captured-output
+  buffer. A CLI-boundary fixture with 2,048 historical assets reproduced
+  `ENOBUFS` first, then passed after release-ID filtering and 100-asset paging.
+  Only current-pack metadata is retained; integrity preflight still precedes
+  manifest replacement, and existing immutable SQLite assets are not clobbered.
+- Self-audit found the promised verification-cache bound missing. A 1,025-hash
+  regression failed first, then passed with a 1,024-entry metadata-only LRU.
+- The original intermittent smoke timeout reproduced again during final
+  verification. A trace reproduced a stalled follow-up GET after 146 rejected
+  POSTs: its bytes were sent but the next route never logged. Rejections had
+  immediately canceled an unread body. Small rejected bodies now drain to EOF
+  without parsing/storing, within 16 KiB and one 100 ms deadline; larger/stalled
+  bodies cancel without waiting on a stalled cancellation promise. Four unit
+  failures were observed first, then passed. A fresh stable compiled Worker
+  passed 1,000 pairs and the strengthened 64-pair smoke check. A probe overlapping
+  a build-triggered server reload was excluded. This is behavioral evidence,
+  not proof of the exact native proxy/socket mechanism or production-runtime
+  behavior. A [related upstream cancellation report](https://github.com/cloudflare/workers-sdk/issues/15709)
+  describes a similar trigger, not a verified identical failure.
+
+Reviewer-declined judgments were explicitly ruled on: leave the pre-existing
+learned-route cache unchanged, and retain unverified Android/physical-device/
+OS-offline-WebKit limits. No minor findings were deferred. Every decision and
+its cost is preserved below; temporary plan-review artifacts are disposable.
 
 ## Platform and release limits
 
@@ -85,6 +128,16 @@ and public-image fixture tests pass under the stricter headers.
    the result does not establish OS-level offline WebKit behavior.
 6. Allow an optional native fixture fetch dependency, keeping the production Expo
    default. Cost if wrong: one extra internal dependency boundary to maintain.
+7. Bound metadata-only verification to 1,024 LRU entries. Cost if wrong: dormant
+   files rehash on access; eviction never deletes a pack.
+8. Drain rejected bodies within 16 KiB/100 ms, then cancel without awaiting a
+   stalled source. Cost if wrong: bounded extra work/up to 100 ms on hostile
+   rejections; local proxy behavior for larger/slower canceled uploads is not
+   claimed fixed.
+9. Leave the pre-existing learned search-route cache unchanged, as no introduced
+   regression was identified. Cost if wrong: existing long-session growth remains.
+10. Retain unverified Android, physical-device and OS-level cold offline WebKit
+    limits. Cost if wrong: behavior on those targets can differ until validated.
 
 ## Shipping gates and rollback
 

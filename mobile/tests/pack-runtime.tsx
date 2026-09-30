@@ -21,9 +21,9 @@ const report = async (stage: string, details: unknown) => {
 
 async function run(status: (message: string) => void) {
   if (!__DEV__) throw new Error('The pack runtime fixture requires a development client.');
-  const restart = await metadata<string>('phase') === 'restart';
+  const phase = await metadata<string>('phase'), restart = phase === 'restart';
   let fixture = await metadata<{ publicKey: string; packs: FoodPack[] }>('fixture');
-  if (!restart) {
+  if (!phase) {
     const directory = new Directory(Paths.document, 'gramello-food-packs');
     assert(!directory.exists || !directory.list().some(file => file instanceof File && file.name.endsWith('.sqlite')),
       'Use a fresh isolated simulator. Existing pack files will not be erased.');
@@ -37,12 +37,28 @@ async function run(status: (message: string) => void) {
     if (offline) throw new Error('Fixture transport is offline.');
     const url = String(input), pack = fixture!.packs.find(pack => pack.url === url);
     if (pack) downloads++;
-    return fetch(pack ? origin + '/api/catalog/packs/download?' + new URLSearchParams({ id: pack.id, sha256: pack.sha256 }) : url, init);
+    return fetch(pack ? (!phase ? origin + '/native-interrupt' : origin + '/api/catalog/packs/download?' + new URLSearchParams({ id: pack.id, sha256: pack.sha256 })) : url, init);
   };
   const originalBytes = File.prototype.bytes;
   File.prototype.bytes = async function () { if (/^pack-[a-f0-9]{64}\.sqlite$/.test(this.name)) reads++; return originalBytes.call(this); };
   try {
     const storage = await createNativePackStorage(metadata, save, origin + '/api/catalog/packs/manifest', { fetcher: fixtureFetch });
+    const directory = new Directory(Paths.document, 'gramello-food-packs');
+    if (!phase) {
+      await save('phase', 'interrupted');
+      void storage.install(fixture!.packs[0]).catch(() => {});
+      const deadline = Date.now() + 10000;
+      while (!directory.list().some(file => file instanceof File && file.name.endsWith('.partial') && file.size === 4096)) {
+        if (Date.now() > deadline) throw new Error('Interrupted fixture did not stream its first chunk.');
+        await new Promise(resolve => setTimeout(resolve, 20));
+      }
+      status('Terminate ready'); await report('interrupted-transfer-ready', { temporaryBytes: 4096 }); return;
+    }
+    if (phase === 'interrupted') {
+      assert(directory.list().some(file => file.name.endsWith('.partial')), 'Missing abandoned transfer fixture.');
+      await storage.recover!();
+      assert(!directory.list().some(file => file.name.endsWith('.partial')), 'Abandoned transfer was not recovered.');
+    }
     let opened = 0;
     const catalog = createPackCatalog(storage.list, (pack, work) => { opened++; return storage.withReader(pack, work); },
       { getFood: async () => null, search: async () => [], barcode: async () => null }, storage.routes);
@@ -62,7 +78,6 @@ async function run(status: (message: string) => void) {
     catch (error) { overflow = /exceed|size|incomplete/i.test(String(error)); }
     assert(overflow, 'An oversized response was not rejected.');
     assert((await storage.list()).length === 0, 'Failed transfer activated a pack.');
-    const directory = new Directory(Paths.document, 'gramello-food-packs');
     assert(!directory.list().some(file => file.name.endsWith('.partial')), 'Failed temporary transfer was retained.');
     status('Installing the signed Al Fresco fixtures…');
     const updater = createPackUpdater(storage, fixture!.publicKey); await updater.check(true);
@@ -79,7 +94,7 @@ async function run(status: (message: string) => void) {
     assert((await storage.withReader(pack, reader => reader.getFood('off-0030771094625')))?.id === 'off-0030771094625', 'Repaired food is unreadable.');
     offline = true; assert((await catalog.searchWindow!('al fresco apple maple sausage')).foods.length === 2, 'Installed foods need a network.');
     await save('phase', 'restart'); status('Restart ready');
-    await report('restart-ready', { boundedTransfer: true, temporaryCleanup: true, warmHashes, repairDownloads: downloads - beforeRepair, foods: 2 });
+    await report('restart-ready', { abandonedTransferRecovery: true, boundedTransfer: true, temporaryCleanup: true, warmHashes, repairDownloads: downloads - beforeRepair, foods: 2 });
   } finally { File.prototype.bytes = originalBytes; }
 }
 

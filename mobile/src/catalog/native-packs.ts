@@ -11,6 +11,8 @@ import { createCatalogReader } from './queries';
 import { packSchema, inspectFoodPack, type FoodPack, type PackStorage } from './packs';
 import type { UpdateState } from './updater';
 import type { FoodCatalog } from '../local/repository';
+// Process-local ownership survives storage recreation, but not app termination.
+const liveTransfers = new Set<string>();
 
 export async function createNativePackStorage(
   metadata: <T>(key: string) => Promise<T | null>, saveMetadata: (key: string, value: unknown) => Promise<unknown>, manifestUrl: string,
@@ -47,6 +49,10 @@ export async function createNativePackStorage(
   };
   return {
     list,
+    recover: () => serialized(queue, async () => {
+      for (const entry of directory.list()) if (entry instanceof File
+        && /^pack-[a-f0-9]{64}-\d+-[a-f0-9]*\.partial$/.test(entry.name) && !liveTransfers.has(entry.uri)) entry.delete();
+    }),
     routes: (id, _installed) => serialized(queue, async () => {
       const current = await list();
       const route = await routeIndex.lookup(id, current);
@@ -68,6 +74,7 @@ export async function createNativePackStorage(
       if (Paths.availableDiskSpace < pack.bytes * 2 + 10 * 1024 * 1024) throw new Error('Free some device storage to download US products.');
       const file = fileFor(pack);
       let temporary: File | undefined;
+      let transferPath: string | undefined;
       try {
         const reusable = await serialized(queue, async () => {
           if (await verified(file, pack, true)) return true;
@@ -77,6 +84,7 @@ export async function createNativePackStorage(
         });
         if (!reusable) {
           temporary = new File(directory, `pack-${pack.sha256}-${Date.now()}-${Math.random().toString(16).slice(2)}.partial`);
+          transferPath = temporary.uri; liveTransfers.add(transferPath);
           temporary.create();
           const handle = temporary.open();
           try {
@@ -106,7 +114,7 @@ export async function createNativePackStorage(
       } catch (error) {
         if (temporary?.exists) { try { temporary.delete(); } catch { /* Only this failed transfer is disposable. */ } }
         throw error;
-      }
+      } finally { if (transferPath) liveTransfers.delete(transferPath); }
     },
     async retire(wanted) {
       const next = installed.filter(old => wanted.some(pack => pack.id === old.id && pack.sha256 === old.sha256));

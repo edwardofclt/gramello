@@ -29,6 +29,14 @@ function storage() {
   return { value, installed, attempts, setFailure: (id?: string) => { fail = id; }, retirements: () => retirements };
 }
 describe('signed expansion packs', () => {
+  it('recovers transfers under the update lease even when a backoff check skips network', async () => {
+    const fake = storage(), events: string[] = [];
+    fake.value.load = async () => ({ nextCheck: 9000 });
+    fake.value.exclusive = async work => { events.push('lease'); try { return await work(); } finally { events.push('release'); } };
+    fake.value.recover = async () => { events.push('recover'); };
+    await createPackUpdater(fake.value, publicKey, () => 1000).check();
+    expect(events).toEqual(['lease', 'recover', 'release']); expect(fake.attempts).toEqual([]);
+  });
   it('preserves partial failure and progress during backoff and restart', async () => {
     const fake = storage(); fake.setFailure(a.id);
     const updater = createPackUpdater(fake.value, publicKey, () => 1000, () => 0);

@@ -89,6 +89,9 @@ export function createBrowserPackStorage(options: {
   return {
     list,
     exclusive: work => lock('gramello:food-pack-update', work),
+    recover: () => lock('gramello:food-packs', async () => {
+      refreshFiles(); await files?.recover?.();
+    }),
     available: pack => lock('gramello:food-packs', async () => {
       refreshFiles();
       const entry = await current(pack);
