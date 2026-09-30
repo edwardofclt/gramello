@@ -1,3 +1,9 @@
+## [1.18.1](https://github.com/edwardofclt/gramello/compare/v1.18.0...v1.18.1) (2026-09-30)
+
+### Bug Fixes
+
+* avoid remote Parquet scan during food pack publication ([#43](https://github.com/edwardofclt/gramello/issues/43)) ([f844fd6](https://github.com/edwardofclt/gramello/commit/f844fd6f101c3b1dc731cb5d0308cf0afc2675ca))
+
 ## [1.18.0](https://github.com/edwardofclt/gramello/compare/v1.17.1...v1.18.0) (2026-09-29)
 
 ### Features
