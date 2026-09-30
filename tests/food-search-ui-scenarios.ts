@@ -35,7 +35,11 @@ export async function searchWorkflow(page: Page, mobile: boolean) {
   await page.getByRole('button', { name: 'Find more matches', exact: true }).click(); await expect(rawRow).toHaveCount(0); await expect(page.getByRole('button', { name: /Chicken bowl, large/ })).toContainText('per 1 large bowl'); await expect(page.getByText('Preparation details were not provided.')).toBeVisible(); await expect(page.getByText(/Open Food Facts: Online search shows up to 200 matches/)).toBeVisible(); await expect(page.getByRole('button', { name: 'Use this spelling', exact: true })).toBeVisible(); expect(requests.at(-1)?.searchParams.get('window')).toBe('200');
   await page.getByRole('button', { name: 'Packaged', exact: true }).click(); await expect(page.getByText('No matches with these filters', { exact: true })).toBeVisible(); await page.getByRole('button', { name: 'Clear filters', exact: true }).click(); await expect(rawRow).toBeVisible();
   await page.getByRole('button', { name: 'Restaurants', exact: true }).click(); const restaurant = page.getByRole('button', { name: /Chicken bowl, large/ }); await expect(restaurant).toBeVisible();
-  if (mobile) await page.getByRole('button', { name: 'Test Kitchen', exact: true }).click(); else await page.getByLabel('Brand or restaurant', { exact: true }).selectOption('Test Kitchen');
+  if (mobile) {
+    await page.getByRole('button', { name: 'Brand or restaurant: All brands and restaurants', exact: true }).click();
+    await page.getByRole('radio', { name: 'Test Kitchen', exact: true }).click();
+    await expect(page.getByRole('button', { name: 'Brand or restaurant: Test Kitchen', exact: true })).toHaveAttribute('aria-expanded', 'false');
+  } else await page.getByLabel('Brand or restaurant', { exact: true }).selectOption('Test Kitchen');
   await expect.poll(() => requests.at(-1)?.searchParams.get('brand')).toBe('Test Kitchen'); await expect(restaurant).toBeVisible();
 }
 
