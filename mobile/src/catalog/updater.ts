@@ -6,29 +6,38 @@ export interface UpdateStorage {
   save(state: UpdateState): Promise<void>;
   fetchManifest(): Promise<unknown>;
   // Must hash/inspect the staged database and activate it atomically.
-  install(manifest: CatalogManifest): Promise<void>;
+  install(manifest: CatalogManifest, onProgress?: (receivedBytes: number) => void): Promise<void>;
 }
 export function createCatalogUpdater(storage: UpdateStorage, publicKey: string, now = Date.now, random = Math.random) {
   let status: UpdateStatus = { phase: 'idle' }, pending: Promise<void> | null = null;
   const listeners = new Set<() => void>();
   const update = (value: UpdateStatus) => { status = value; for (const listener of listeners) listener(); };
   async function perform(force: boolean) {
-    let state: UpdateState = {};
+    let state: UpdateState = {}, progress: Pick<UpdateStatus, 'downloadedBytes' | 'totalBytes'> = {};
     try {
       state = await storage.load();
       if (!force && Number.isFinite(state.nextCheck) && now() < state.nextCheck!) { update({ ...state, phase: 'idle' }); return; }
       update({ ...state, phase: 'checking' });
       const manifest = verifyManifest(await storage.fetchManifest(), publicKey);
       const changed = manifest.version !== state.version;
-      if (changed) { update({ ...state, phase: 'downloading' }); await storage.install(manifest); }
+      if (changed) {
+        progress = { downloadedBytes: 0, totalBytes: manifest.bytes };
+        update({ ...state, ...progress, phase: 'downloading' });
+        await storage.install(manifest, bytes => {
+          if (!Number.isFinite(bytes)) return;
+          progress = { downloadedBytes: Math.max(progress.downloadedBytes ?? 0, Math.min(manifest.bytes, Math.max(0, bytes))), totalBytes: manifest.bytes };
+          update({ ...state, ...progress, phase: 'downloading' });
+        });
+        progress.downloadedBytes = manifest.bytes;
+      }
       state = { version: manifest.version, lastCheck: now(), nextCheck: now() + 86400000 + Math.floor(random() * 3600000), failures: 0 };
       await storage.save(state);
-      update({ ...state, phase: changed ? 'updated' : 'current' });
+      update({ ...state, ...progress, phase: changed ? 'updated' : 'current' });
     } catch (error) {
       const failures = Math.min((state.failures ?? 0) + 1, 10);
       const retry = { ...state, failures, nextCheck: now() + Math.min(3600000 * 2 ** (failures - 1), 86400000) };
       try { await storage.save(retry); } catch { /* Local data remains usable even if metadata cannot be saved. */ }
-      update({ ...retry, phase: 'error', error: error instanceof Error ? error.message : 'Catalog update could not complete.' });
+      update({ ...retry, ...progress, phase: 'error', error: error instanceof Error ? error.message : 'Catalog update could not complete.' });
     }
   }
   return {

@@ -1,5 +1,5 @@
 import { beforeEach, expect, test, vi } from 'vitest';
-const mocks = vi.hoisted(() => ({ files: new Map<string, { bytes: Uint8Array; time: number }>(), failWrites: false, hash: vi.fn(), inspect: vi.fn(), open: vi.fn() }));
+const mocks = vi.hoisted(() => ({ files: new Map<string, { bytes: Uint8Array; time: number }>(), failWrites: false, download: vi.fn(), hash: vi.fn(), inspect: vi.fn(), open: vi.fn() }));
 vi.mock('../mobile/node_modules/expo-file-system', () => {
   class File {
     name: string; constructor(_directory: unknown, name: string) { this.name = name; }
@@ -10,7 +10,7 @@ vi.mock('../mobile/node_modules/expo-file-system', () => {
     async text() { return new TextDecoder().decode(await this.bytes()); }
     write(value: string) { if (mocks.failWrites) throw new Error('Disk full'); mocks.files.set(this.name, { bytes: new TextEncoder().encode(value), time: 1 }); }
     delete() { mocks.files.delete(this.name); }
-    static async downloadFileAsync() { throw new Error('Unexpected download'); }
+    static downloadFileAsync = mocks.download;
   }
   class Directory { uri = 'packs'; create() {} list() { return [...mocks.files.keys()].map(name => new File(this, name)); } }
   return { File, Directory, Paths: { document: 'documents', availableDiskSpace: 1e10 } };
@@ -25,6 +25,7 @@ const filename = `pack-${pack.sha256}.sqlite`;
 const create = () => createNativePackStorage(async <T>(key: string) => (key === 'foodPackIndex' ? { active: [pack], previous: [] } : null) as T | null, vi.fn(), 'https://example.com/manifest');
 beforeEach(() => {
   vi.clearAllMocks(); mocks.failWrites = false; mocks.files.clear(); mocks.files.set(filename, { bytes: new Uint8Array(pack.bytes), time: 1 });
+  mocks.download.mockRejectedValue(new Error('Unexpected download'));
   mocks.hash.mockResolvedValue(new Uint8Array(32).fill(0xab).buffer);
   mocks.inspect.mockResolvedValue(undefined);
   mocks.open.mockImplementation(async () => ({ execAsync: vi.fn(), closeAsync: vi.fn() }));
@@ -116,4 +117,56 @@ test('a truncated retained file is removed so installation can retry its downloa
   await expect(storage.install(pack)).rejects.toThrow('unavailable or corrupt');
   expect(mocks.files.has(filename)).toBe(false);
   expect(mocks.files.has(`pack-${pack.sha256}.verified.json`)).toBe(false);
+});
+
+
+test('parallel installs report progress, preserve both descriptors, and finish before retirement', async () => {
+  const packs = [
+    { ...pack, id: 'off-2-0', bucket: 0, buckets: 2 },
+    { ...pack, id: 'off-2-1', bucket: 1, buckets: 2, sha256: 'cd'.repeat(32) },
+  ];
+  mocks.files.clear();
+  const finishDownloads: (() => void)[] = [], finishInspection: (() => void)[] = [];
+  mocks.download.mockImplementation(async (_url, file, options) => {
+    options.onProgress({ bytesWritten: 2048 });
+    await new Promise<void>(resolve => finishDownloads.push(resolve));
+    mocks.files.set(file.name, { bytes: new Uint8Array(4096).fill(file.name.includes('cd'.repeat(32)) ? 0xcd : 0xab), time: 1 });
+  });
+  mocks.hash.mockImplementation(async (_algorithm, bytes: Uint8Array) => new Uint8Array(32).fill(bytes[0]).buffer);
+  mocks.inspect.mockImplementation(() => new Promise<void>(resolve => finishInspection.push(resolve)));
+  const save = vi.fn();
+  const storage = await createNativePackStorage(async () => null, save, 'https://example.com/manifest');
+  const progress = packs.map(() => vi.fn());
+  const installs = packs.map((value, index) => storage.install(value, progress[index]));
+  await vi.waitFor(() => expect(finishDownloads).toHaveLength(2));
+  progress.forEach(callback => expect(callback).toHaveBeenCalledWith(2048));
+  finishDownloads.forEach(finish => finish());
+  await vi.waitFor(() => expect(finishInspection).toHaveLength(2));
+  const retiring = storage.retire(packs);
+  finishInspection.forEach(finish => finish());
+  await Promise.all([...installs, retiring]);
+  expect(await storage.list()).toEqual(expect.arrayContaining(packs));
+  expect(save.mock.calls.at(-1)?.[1].active).toHaveLength(2);
+  for (const value of packs) expect(mocks.files.has(`pack-${value.sha256}.sqlite`)).toBe(true);
+});
+
+test('reinstalling a retired descriptor waits for readers of its preexisting file', async () => {
+  const storage = await create(); await storage.install(pack);
+  let release!: () => void, entered!: () => void;
+  const ready = new Promise<void>(resolve => { entered = resolve; });
+  const reading = storage.withReader(pack, async () => {
+    entered(); await new Promise<void>(resolve => { release = resolve; });
+    expect(mocks.files.has(filename)).toBe(true);
+  });
+  await ready;
+  const retiring = storage.retire([]);
+  await vi.waitFor(async () => expect(await storage.list()).toEqual([]));
+  mocks.hash.mockResolvedValue(new Uint8Array(32).buffer);
+  const installing = storage.install(pack);
+  const rejected = expect(installing).rejects.toThrow('verification');
+  await new Promise(resolve => setTimeout(resolve, 0));
+  expect(mocks.files.has(filename)).toBe(true);
+  expect(mocks.hash).toHaveBeenCalledTimes(1);
+  release();
+  await Promise.all([reading, retiring, rejected]);
 });

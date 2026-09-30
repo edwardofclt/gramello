@@ -5,7 +5,7 @@ import type { FoodCatalog } from '../../mobile/src/local/repository';
 import type { SqliteConnection } from '../../mobile/src/local/database';
 import type { SnapshotStore } from './persistence';
 
-export async function readPackDownload(response: Response, expectedBytes: number): Promise<Uint8Array<ArrayBuffer>> {
+export async function readPackDownload(response: Response, expectedBytes: number, onProgress?: (receivedBytes: number) => void): Promise<Uint8Array<ArrayBuffer>> {
   if (!response.ok || !response.body) throw new Error('The food pack could not be downloaded.');
   if (expectedBytes > 32 * 1024 * 1024 || expectedBytes < 4096) throw new Error('Invalid pack size.');
   const reader = response.body.getReader(), chunks: Uint8Array[] = [];
@@ -15,7 +15,7 @@ export async function readPackDownload(response: Response, expectedBytes: number
       const { value, done } = await reader.read(); if (done) break;
       size += value.length;
       if (size > expectedBytes) throw new Error('The food pack download exceeds its signed size.');
-      chunks.push(value);
+      chunks.push(value); onProgress?.(size);
     }
     if (size !== expectedBytes) throw new Error('The food pack download is incomplete.');
     const bytes = new Uint8Array(size); let offset = 0;
@@ -53,9 +53,9 @@ export function createBrowserPackStorage(options: {
       const text = await response.text(); if (text.length > 520000) throw new Error('Pack manifest is too large.');
       return JSON.parse(text);
     },
-    async install(pack) {
+    async install(pack, onProgress) {
       const response = await fetcher(`/api/catalog/packs/download?${new URLSearchParams({ id: pack.id, sha256: pack.sha256 })}`, { signal: AbortSignal.timeout(120000) });
-      const bytes = await readPackDownload(response, pack.bytes);
+      const bytes = await readPackDownload(response, pack.bytes, onProgress);
       if (await hash(bytes) !== pack.sha256) throw new Error('The food pack did not pass verification.');
       await lock('gramello:food-packs', async () => {
         const db = open(bytes);

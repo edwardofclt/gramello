@@ -16,7 +16,10 @@ export async function createNativePackStorage(
   const directory = new Directory(Paths.document, 'gramello-food-packs');
   directory.create({ intermediates: true, idempotent: true });
   const queue = {} as SqliteConnection;
-  const mutations = {} as SqliteConnection;
+  const metadataQueue = {} as SqliteConnection;
+  const pendingInstalls = new Set<Promise<void>>();
+  const installingFiles = new Map<string, number>();
+  const installQueues = new Map<string, SqliteConnection>();
   const stored = await metadata<{ active: unknown[]; previous: unknown[] }>('foodPackIndex');
   const descriptors = (values: unknown[] = []) => values.flatMap(value => { const parsed = packSchema.safeParse(value); return parsed.success ? [parsed.data] : []; });
   let installed = descriptors(stored?.active), previous = descriptors(stored?.previous);
@@ -87,52 +90,78 @@ export async function createNativePackStorage(
       const text = await response.text(); if (text.length > 520000) throw new Error('Pack manifest is too large.');
       return JSON.parse(text);
     },
-    install: pack => serialized(mutations, async () => {
-      if (Paths.availableDiskSpace < pack.bytes * 2 + 10 * 1024 * 1024) throw new Error('Free some device storage to download US products.');
-      const file = fileFor(pack);
-      try {
-        // No network-type gate: cellular downloads are explicitly enabled.
-        if (!file.exists) await File.downloadFileAsync(pack.url, file, { signal: AbortSignal.timeout(120000) });
-        await serialized(queue, async () => {
-          try { await verify(pack, file, true); }
-          catch (error) {
-            // Retry must replace corrupt downloads rather than repeatedly reuse
-            // them. Readers finish before this content-addressed file is removed.
-            const retained = [...installed, ...previous].some(old => old.sha256 === pack.sha256);
-            // A descriptor mismatch must not destroy previously activated bytes.
-            // Actual damaged bytes must be removed so retry can download afresh.
-            if (!retained || error instanceof InvalidPackFile) {
-              if (file.exists) file.delete();
-              cachedReceipts.delete(pack.sha256);
-              const receipt = receiptFor(pack); if (receipt.exists) receipt.delete();
+    async install(pack, onProgress) {
+      const name = fileFor(pack).name;
+      installingFiles.set(name, (installingFiles.get(name) ?? 0) + 1);
+      const installQueue = installQueues.get(name) ?? {} as SqliteConnection;
+      installQueues.set(name, installQueue);
+      const task = serialized(installQueue, async () => {
+        if (Paths.availableDiskSpace < pack.bytes * 2 + 10 * 1024 * 1024) throw new Error('Free some device storage to download US products.');
+        const file = fileFor(pack);
+        try {
+          // No network-type gate: cellular downloads are explicitly enabled.
+          const fresh = !file.exists;
+          if (fresh) await File.downloadFileAsync(pack.url, file, { signal: AbortSignal.timeout(120000), onProgress: progress => onProgress?.(progress.bytesWritten) });
+          const validate = async () => {
+            try { await verify(pack, file, true); }
+            catch (error) {
+              // Retry must replace corrupt downloads rather than repeatedly reuse
+              // them. Readers finish before this content-addressed file is removed.
+              const retained = [...installed, ...previous].some(old => old.sha256 === pack.sha256);
+              // A descriptor mismatch must not destroy previously activated bytes.
+              // Actual damaged bytes must be removed so retry can download afresh.
+              if (!retained || error instanceof InvalidPackFile) {
+                if (file.exists) file.delete();
+                cachedReceipts.delete(pack.sha256);
+                const receipt = receiptFor(pack); if (receipt.exists) receipt.delete();
+              }
+              throw error;
             }
-            throw error;
-          }
-        });
-        const next = [...installed.filter(old => old.id !== pack.id), pack];
-        const old = installed.find(old => old.id === pack.id && old.sha256 !== pack.sha256);
-        const prior = old ? [...previous.filter(item => item.id !== pack.id), old] : previous;
-        // Never save personal metadata while holding the catalog reader queue.
-        await saveMetadata('foodPackIndex', { active: next, previous: prior }); installed = next; previous = prior;
-      } catch (error) {
-        await serialized(queue, async () => {
-          if (![...installed, ...previous].some(old => old.sha256 === pack.sha256) && file.exists) { try { file.delete(); } catch { /* Retry can clean an incomplete download. */ } }
-        });
-        throw error;
+          };
+          // Only files downloaded by this install are private candidates. A
+          // retired descriptor may still have readers using its preexisting file.
+          if (fresh) await validate();
+          else await serialized(queue, validate);
+          await serialized(metadataQueue, async () => {
+            const next = [...installed.filter(old => old.id !== pack.id), pack];
+            const old = installed.find(old => old.id === pack.id && old.sha256 !== pack.sha256);
+            const prior = old ? [...previous.filter(item => item.id !== pack.id), old] : previous;
+            // Never save personal metadata while holding the catalog reader queue.
+            await saveMetadata('foodPackIndex', { active: next, previous: prior }); installed = next; previous = prior;
+          });
+        } catch (error) {
+          await serialized(queue, async () => {
+            if (![...installed, ...previous].some(old => old.sha256 === pack.sha256) && file.exists) { try { file.delete(); } catch { /* Retry can clean an incomplete download. */ } }
+          });
+          throw error;
+        }
+      });
+      pendingInstalls.add(task);
+      try { await task; }
+      finally {
+        pendingInstalls.delete(task);
+        const remaining = installingFiles.get(name)! - 1;
+        if (remaining) installingFiles.set(name, remaining);
+        else { installingFiles.delete(name); installQueues.delete(name); }
       }
-    }),
-    retire: wanted => serialized(mutations, async () => {
-      const next = installed.filter(old => wanted.some(pack => pack.id === old.id && pack.sha256 === old.sha256));
-      const prior = previous.filter(old => next.some(pack => pack.id === old.id));
-      await saveMetadata('foodPackIndex', { active: next, previous: prior }); installed = next; previous = prior;
+    },
+    async retire(wanted) {
+      // Finish installs already requested before computing the retirement index.
+      await Promise.allSettled([...pendingInstalls]);
+      await serialized(metadataQueue, async () => {
+        const next = installed.filter(old => wanted.some(pack => pack.id === old.id && pack.sha256 === old.sha256));
+        const prior = previous.filter(old => next.some(pack => pack.id === old.id));
+        await saveMetadata('foodPackIndex', { active: next, previous: prior }); installed = next; previous = prior;
+      });
       await serialized(queue, async () => {
         const keep = new Set([...installed, ...previous].map(pack => fileFor(pack).name));
+        for (const name of installingFiles.keys()) keep.add(name);
         for (const hash of cachedReceipts.keys()) if (!keep.has(`pack-${hash}.sqlite`)) cachedReceipts.delete(hash);
         for (const entry of directory.list()) if (entry instanceof File && /^pack-[a-f0-9]{64}\.(sqlite|verified\.json)$/.test(entry.name) && !keep.has(entry.name.replace(/\.verified\.json$/, '.sqlite'))) {
           try { entry.delete(); } catch { /* A later successful update can retry cleanup. */ }
         }
       });
-    }),
+    },
     withReader: (pack, work) => serialized(queue, async () => {
       const file = fileFor(pack);
       await verify(pack, file);

@@ -18,6 +18,21 @@ function fixture() {
   return { updater, storage, setBad: () => { rejectInstall = true; }, installed: () => installed, checks: () => checks, downloads: () => downloads };
 }
 describe('catalog updates', () => {
+  it('reports received bytes while a core download is still running', async () => {
+    const f = fixture();
+    let finish!: () => void;
+    const gate = new Promise<void>(resolve => { finish = resolve; });
+    f.storage.install = async (_manifest, onProgress?: (bytes: number) => void) => {
+      onProgress?.(1024);
+      expect(f.updater.getStatus()).toMatchObject({ phase: 'downloading', downloadedBytes: 1024, totalBytes: 4096 });
+      await gate;
+    };
+    const checking = f.updater.check(true);
+    // Let the updater reach the installation before releasing its download.
+    await new Promise(resolve => setTimeout(resolve, 0));
+    finish(); await checking;
+    expect(f.updater.getStatus()).toMatchObject({ phase: 'updated', downloadedBytes: 4096, totalBytes: 4096 });
+  });
   it('accepts a signed compatible manifest and rejects modified signatures, schemas and non-HTTPS assets', () => {
     expect(verifyManifest(signed(manifest), publicKey)).toEqual(manifest);
     expect(() => verifyManifest({ ...signed(manifest), payload: JSON.stringify({ ...manifest, count: 999 }) }, publicKey)).toThrow();

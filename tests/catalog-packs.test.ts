@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vitest';
+import { describe, expect, it, vi } from 'vitest';
 import nacl from 'tweetnacl';
 import { createPackUpdater, verifyPackManifest, type FoodPack, type PackStorage } from '../mobile/src/catalog/packs';
 import { createPackCatalog } from '../mobile/src/catalog/pack-reader';
@@ -29,6 +29,58 @@ function storage() {
   return { value, installed, attempts, setFailure: (id?: string) => { fail = id; }, retirements: () => retirements };
 }
 describe('signed expansion packs', () => {
+  it('aggregates transfer progress across workers before any pack finishes', async () => {
+    const fake = storage();
+    let finish!: () => void;
+    const gate = new Promise<void>(resolve => { finish = resolve; });
+    let started = 0;
+    fake.value.install = async (_pack, onProgress?: (bytes: number) => void) => {
+      onProgress?.(1024);
+      // Providers can repeat or regress callbacks; reported progress stays monotonic.
+      onProgress?.(512);
+      started++;
+      await gate;
+    };
+    const updater = createPackUpdater(fake.value, publicKey);
+    const checking = updater.check(true);
+    await vi.waitFor(() => expect(started).toBe(2));
+    expect(updater.getStatus()).toMatchObject({ phase: 'downloading', completedPacks: 0, downloadedBytes: 2048, totalBytes: 8192 });
+    finish(); await checking;
+    expect(updater.getStatus()).toMatchObject({ phase: 'updated', completedPacks: 2, downloadedBytes: 8192 });
+  });
+  it('bounds concurrent downloads, prioritizes USDA and reports out-of-order completions', async () => {
+    const fake = storage();
+    const packs = Array.from({ length: 5 }, (_, bucket) => ({
+      ...a, id: `usda-branded-5-${bucket}`, buckets: 5, bucket,
+    }));
+    fake.value.fetchManifest = async () => envelope([b, ...packs.slice().reverse()]);
+    const gates = new Map<string, () => void>();
+    let active = 0, peak = 0;
+    fake.value.install = async next => {
+      fake.attempts.push(next.id); active++; peak = Math.max(peak, active);
+      await new Promise<void>(resolve => { gates.set(next.id, resolve); });
+      active--; fake.installed.push(next);
+    };
+    const updater = createPackUpdater(fake.value, publicKey);
+    const checking = updater.check(true);
+    await vi.waitFor(() => expect(fake.attempts).toHaveLength(3));
+    expect(fake.attempts).toEqual(['usda-branded-5-0', 'usda-branded-5-1', 'usda-branded-5-2']);
+    expect(fake.retirements()).toBe(0);
+    gates.get('usda-branded-5-1')!();
+    await vi.waitFor(() => expect(fake.attempts).toHaveLength(4));
+    expect(updater.getStatus()).toMatchObject({ phase: 'downloading', completedPacks: 1, downloadedBytes: 4096 });
+    gates.get('usda-branded-5-2')!();
+    await vi.waitFor(() => expect(fake.attempts).toHaveLength(5));
+    gates.get('usda-branded-5-3')!();
+    await vi.waitFor(() => expect(fake.attempts).toHaveLength(6));
+    gates.get('usda-branded-5-0')!();
+    gates.get('usda-branded-5-4')!();
+    gates.get(b.id)!();
+    await checking;
+    expect(peak).toBe(3);
+    expect(fake.retirements()).toBe(1);
+    expect(updater.getStatus()).toMatchObject({ phase: 'updated', completedPacks: 6, downloadedBytes: 24576 });
+  });
   it('rejects invalid signatures, duplicate partitions, wrong license and oversized packs', () => {
     expect(verifyPackManifest(envelope(), publicKey).packs).toHaveLength(2);
     expect(() => verifyPackManifest({ ...envelope(), signature: '0'.repeat(128) }, publicKey)).toThrow();

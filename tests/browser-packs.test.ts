@@ -44,6 +44,17 @@ describe('durable browser expansion storage', () => {
     expect(await fake.storage.list()).toEqual([pack]);
     expect(fake.closed()).toBe(2);
   });
+  it('reports streamed bytes before the download completes', async () => {
+    const seen: number[] = [];
+    const source = new ReadableStream({ start(controller) {
+      controller.enqueue(new Uint8Array(1024));
+      controller.enqueue(new Uint8Array(3072));
+      controller.close();
+    } });
+    const result = await readPackDownload(new Response(source), 4096, bytes => { seen.push(bytes); });
+    expect(result.length).toBe(4096);
+    expect(seen).toEqual([1024, 4096]);
+  });
   it('rejects incomplete and oversized download streams', async () => {
     await expect(readPackDownload(new Response(new Uint8Array(3)), 4096)).rejects.toThrow('incomplete');
     const source = new ReadableStream({ start(controller) { controller.enqueue(new Uint8Array(4097)); } });
