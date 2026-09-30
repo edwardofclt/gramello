@@ -2,6 +2,7 @@
 // abort its transaction. Only transaction completion acknowledges a write.
 export interface SnapshotStore {
   read<T>(key: string): Promise<T | undefined>;
+  readMany?<T>(keys: readonly string[]): Promise<Array<T | undefined>>;
   commit(values: ReadonlyArray<readonly [string, unknown]>): Promise<void>;
 }
 
@@ -20,6 +21,17 @@ export function openSnapshotStore(factory: IDBFactory = indexedDB): Promise<Snap
             const transaction = database.transaction('snapshots', 'readonly');
             const read = transaction.objectStore('snapshots').get(key);
             transaction.oncomplete = () => done(read.result as T | undefined);
+            transaction.onabort = () => fail(transaction.error ?? new Error('Browser storage could not be read.'));
+            transaction.onerror = () => { /* onabort reports the final failure. */ };
+          });
+        },
+        readMany<T>(keys: readonly string[]) {
+          if (!keys.length) return Promise.resolve([]);
+          return new Promise<Array<T | undefined>>((done, fail) => {
+            const transaction = database.transaction('snapshots', 'readonly');
+            const snapshots = transaction.objectStore('snapshots');
+            const reads = keys.map(key => snapshots.get(key));
+            transaction.oncomplete = () => done(reads.map(read => read.result as T | undefined));
             transaction.onabort = () => fail(transaction.error ?? new Error('Browser storage could not be read.'));
             transaction.onerror = () => { /* onabort reports the final failure. */ };
           });

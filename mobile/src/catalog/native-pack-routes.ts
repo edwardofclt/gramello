@@ -14,7 +14,12 @@ export function createNativePackRoutes(directory: string) {
     index: (pack: FoodPack, pages: string[][]) => database(async db => {
       await db.execAsync('BEGIN IMMEDIATE');
       try {
-        for (const ids of pages) for (const id of ids) await db.runAsync('INSERT OR IGNORE INTO pack_routes VALUES(?,?,?)', id, pack.id, pack.sha256);
+        for (const page of pages) for (let offset = 0; offset < page.length; offset += 500) {
+          const ids = page.slice(offset, offset + 500);
+          // Reuse the pack/hash bindings: at most 502 parameters, not 1,500.
+          const rows = ids.map((_, index) => `(?${index + 3},?1,?2)`).join(',');
+          await db.runAsync(`INSERT OR IGNORE INTO pack_routes VALUES ${rows}`, pack.id, pack.sha256, ...ids);
+        }
         await db.runAsync('INSERT OR IGNORE INTO indexed_packs VALUES(?,?)', pack.id, pack.sha256);
         await db.execAsync('COMMIT');
       } catch (error) { await db.execAsync('ROLLBACK'); throw error; }

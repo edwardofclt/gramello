@@ -94,6 +94,51 @@ learned-route cache unchanged, and retain unverified Android/physical-device/
 OS-offline-WebKit limits. No minor findings were deferred. Every decision and
 its cost is preserved below; temporary plan-review artifacts are disposable.
 
+## PR #42 route-index batching follow-up
+
+Both later Copilot performance findings were verified and accepted:
+[browser reads](https://github.com/edwardofclt/gramello/pull/42#discussion_r4139849487)
+and [native inserts](https://github.com/edwardofclt/gramello/pull/42#discussion_r4139849524).
+Browser writes were already atomic; splitting them into page commits would
+weaken activation guarantees, so only reads were batched.
+
+- A 1,001-food real-IndexedDB regression first observed 1,001 read transactions
+  during activation and 1,005 during replacement/retirement. It now observes
+  3 and 7 respectively, retaining one write transaction for each operation.
+  Route changes reuse already-read identities, bound each read to 500 keys,
+  and preserve overlapping hashes and duplicate suppression. The production
+  worker forwards the batch API; older injected stores retain a read fallback.
+- Native indexing first required 1,002 SQL calls for the same 1,001 identities.
+  It now uses three bounded inserts and one completion-marker write. Numbered
+  parameters share the pack ID/hash, limiting each insert to 502 bindings.
+  Empty pages are skipped and oversized inputs are rechunked. Real file-backed
+  SQLite tests verify every persisted route, quoted IDs, idempotent duplicates,
+  and rollback of earlier pages on a later failure without losing old routes.
+- Real-browser checks abort a transaction after a read request succeeds and
+  verify that the batch still rejects; request success cannot acknowledge an
+  aborted transaction. Ordering, missing values and repeated keys are covered.
+- Fresh verification: 698 unit tests in 62 files, web/mobile TypeScript checks,
+  iOS/Android bundle exports, the compiled build, the strengthened smoke check,
+  and all 27 dedicated pack tests across Chromium, Firefox and WebKit passed.
+- The first existing-application E2E run had 50 passes, one intentional desktop
+  skip and one mobile startup timeout. Its trace showed a pending framework
+  JavaScript request and zero diary-worker requests, before route indexing
+  could execute. That same portion-scaling case passed three isolated reruns.
+  A fresh complete rerun then passed all 51 application E2E cases, retaining
+  the one intentional desktop skip; its mobile execution passed.
+  The exact cause of the asset request stall is not established; no timeout or
+  test configuration was changed to hide it.
+- A focused read-only review of this follow-up returned no Critical, Important
+  or Minor findings and Ready: Yes. Its declined scope was ruled on explicitly:
+  retain the physical/Android runtime and elapsed-time performance limits;
+  do not repeat the prior whole-branch audit; leave the unchanged handling of
+  a failure in `ROLLBACK` itself outside this bounded performance fix.
+
+These are measured operation-count reductions, not measured device speedups.
+This follow-up does not change schemas, trust keys, source filters, download
+policy or dataset publication. The prior iOS fixture result above is not a new
+runtime verification of the batching change.
+
 ## Platform and release limits
 
 Android runtime and physical-device large-dataset performance were not checked.

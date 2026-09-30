@@ -9,6 +9,15 @@ const test = base.extend({ context: async ({ browserName }, use) => {
 } });
 const call = (page: Page, method: string, value?: unknown) => page.evaluate(({ method, value }) => (window as any).call(method, value), { method, value });
 test.beforeEach(async ({ page, request }) => { await request.get('/control'); await page.goto('/'); await page.waitForFunction(() => !!(window as any).call); });
+test('route indexing uses bounded read transactions and one atomic commit on activation, replacement and retirement', async ({ page }) => {
+  expect(await call(page, 'batchRoutes')).toEqual({
+    activation: { readonly: 3, readwrite: 1 }, replacement: { readonly: 7, readwrite: 1 }, retirement: { readonly: 7, readwrite: 1 },
+    installed: 1, replaced: 1, retired: { packs: [], complete: false },
+  });
+});
+test('batch snapshot reads preserve order and missing values and reject aborted transactions', async ({ page }) => {
+  expect(await call(page, 'batchRead')).toEqual({ values: ['last', undefined, 'first', 'last'], empty: [], readSucceeded: true, aborted: true });
+});
 test('compiled application isolates documents and offline worker assets', async ({ request }) => {
   for (const path of ['/', '/offline/diary-worker.js', '/offline/sqlite3-opfs-async-proxy.js']) {
     const response = await request.get('http://127.0.0.1:5198' + path);

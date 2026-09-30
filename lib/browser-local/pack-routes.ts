@@ -9,12 +9,21 @@ export function createBrowserPackRoutes(store: SnapshotStore) {
     indexed: async (pack: FoodPack) => (await store.read<number>(marker(pack))) !== undefined,
     async change(added: { pack: FoodPack; pages: string[][] } | undefined, removed: FoodPack[] = []) {
       const changes = new Map<string, unknown>();
-      const read = async (id: string) => changes.has(routeKey(id)) ? changes.get(routeKey(id)) as Route[] : await store.read<Route[]>(routeKey(id)) ?? [];
+      const load = async (ids: string[]) => {
+        const keys = [...new Set(ids.map(routeKey))].filter(key => !changes.has(key));
+        for (let offset = 0; offset < keys.length; offset += 500) {
+          const batch = keys.slice(offset, offset + 500);
+          const routes = store.readMany ? await store.readMany<Route[]>(batch) : await Promise.all(batch.map(key => store.read<Route[]>(key)));
+          for (let index = 0; index < batch.length; index++) changes.set(batch[index], routes[index] ?? []);
+        }
+      };
       for (const pack of removed.filter(pack => pack.source === 'usda-branded')) {
         const pages = await store.read<number>(marker(pack)) ?? 0;
         for (let page = 0; page < pages; page++) {
-          for (const id of await store.read<string[]>(pageKey(pack, page)) ?? []) {
-            changes.set(routeKey(id), (await read(id)).filter(route => route.id !== pack.id || route.sha256 !== pack.sha256));
+          const ids = await store.read<string[]>(pageKey(pack, page)) ?? [];
+          await load(ids);
+          for (const id of ids) {
+            changes.set(routeKey(id), (changes.get(routeKey(id)) as Route[]).filter(route => route.id !== pack.id || route.sha256 !== pack.sha256));
           }
           changes.set(pageKey(pack, page), undefined);
         }
@@ -23,8 +32,9 @@ export function createBrowserPackRoutes(store: SnapshotStore) {
       if (added?.pack.source === 'usda-branded') {
         const { pack, pages } = added;
         for (let page = 0; page < pages.length; page++) {
+          await load(pages[page]);
           for (const id of pages[page]) {
-            const routes = await read(id);
+            const routes = changes.get(routeKey(id)) as Route[];
             if (!routes.some(route => route.id === pack.id && route.sha256 === pack.sha256)) routes.push({ id: pack.id, sha256: pack.sha256 });
             changes.set(routeKey(id), routes);
           }

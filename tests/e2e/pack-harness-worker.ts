@@ -1,6 +1,7 @@
 import sqlite3Init from '@sqlite.org/sqlite-wasm';
 import { createBrowserPackStorage } from '../../lib/browser-local/packs';
 import { createBrowserPackFiles } from '../../lib/browser-local/pack-files';
+import { createBrowserPackRoutes } from '../../lib/browser-local/pack-routes';
 import { openSnapshotStore } from '../../lib/browser-local/persistence';
 import { openMemoryDatabase, type SqliteModule } from '../../lib/browser-local/sqlite';
 import { createPackCatalog } from '../../mobile/src/catalog/pack-reader';
@@ -24,6 +25,7 @@ const files = realFiles ? { ...realFiles,
 } : undefined;
 const storage = createBrowserPackStorage({
   store: { async read<T>(key: string) { if (/^packs:(?:off|usda-branded)-\d/.test(key)) metrics.snapshotReads++; return store.read<T>(key); },
+    readMany: keys => store.readMany!(keys),
     async commit(values) { if (failCommit) throw new DOMException('Injected transaction quota failure', 'QuotaExceededError'); await store.commit(values); } },
   files: () => fileEnabled ? files : undefined,
   open: bytes => track(openMemoryDatabase(sqlite, bytes)),
@@ -34,6 +36,43 @@ const catalog = createPackCatalog(storage.list, storage.withReader, core, storag
 const fixture = await (await fetch('/fixture.json')).json();
 const updater = createPackUpdater(storage, fixture.publicKey);
 const methods: Record<string, (value: any) => Promise<unknown>> = {
+  batchRoutes: async () => {
+    const pack = { ...verifyPackManifest(await storage.fetchManifest(), fixture.publicKey).packs.find(pack => pack.source === 'usda-branded')!, id: 'usda-batch-probe', sha256: 'c'.repeat(64) };
+    const ids = Array.from({ length: 1001 }, (_, i) => `usda-probe-${i}`), pages = [ids.slice(0, 500), ids.slice(500, 1000), ids.slice(1000)];
+    const counts = { readonly: 0, readwrite: 0 }, transaction = IDBDatabase.prototype.transaction;
+    IDBDatabase.prototype.transaction = function (...args: Parameters<typeof transaction>) {
+      counts[args[1] === 'readwrite' ? 'readwrite' : 'readonly']++;
+      return transaction.apply(this, args);
+    };
+    try {
+      const routes = createBrowserPackRoutes(store);
+      await store.commit(await routes.change({ pack, pages })); const activation = { ...counts };
+      const installed = await routes.lookup(ids[1000], [pack]);
+      Object.assign(counts, { readonly: 0, readwrite: 0 });
+      const next = { ...pack, sha256: 'd'.repeat(64) };
+      await store.commit(await routes.change({ pack: next, pages }, [pack])); const replacement = { ...counts };
+      const replaced = await routes.lookup(ids[0], [next]);
+      Object.assign(counts, { readonly: 0, readwrite: 0 });
+      await store.commit(await routes.change(undefined, [next])); const retirement = { ...counts };
+      const retired = await routes.lookup(ids[0], [next]);
+      return { activation, replacement, retirement, installed: installed.packs.length, replaced: replaced.packs.length, retired };
+    } finally { IDBDatabase.prototype.transaction = transaction; }
+  },
+  batchRead: async () => {
+    await store.commit([['batch:first', 'first'], ['batch:last', 'last']]);
+    const values = await store.readMany!<string>(['batch:last', 'batch:missing', 'batch:first', 'batch:last']);
+    const empty = await store.readMany!([]);
+    const get = IDBObjectStore.prototype.get; let readSucceeded = false;
+    IDBObjectStore.prototype.get = function (...args: Parameters<typeof get>) {
+      const request = get.apply(this, args);
+      request.addEventListener('success', () => { readSucceeded = true; request.transaction!.abort(); });
+      return request;
+    };
+    let aborted = false;
+    try { await store.readMany!(['batch:first']); } catch { aborted = true; }
+    finally { IDBObjectStore.prototype.get = get; }
+    return { values, empty, readSucceeded, aborted };
+  },
   locks: async () => navigator.locks.query(),
   files: async () => {
     const directory = await (await navigator.storage.getDirectory()).getDirectoryHandle('gramello-food-packs', { create: true });

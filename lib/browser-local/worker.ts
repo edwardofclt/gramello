@@ -115,7 +115,7 @@ async function catalogs(): Promise<FoodCatalog> {
   throw seedError ?? new Error('The offline food catalog is unavailable.');
 }
 const packStorage = createBrowserPackStorage({
-  store: { read: key => storage.read(key), commit: values => storage.commit(values) },
+  store: { read: key => storage.read(key), readMany: keys => storage.readMany!(keys), commit: values => storage.commit(values) },
   open: bytes => openMemoryDatabase(sqlite, bytes), lock, manifestUrl: '/api/catalog/packs/manifest',
   files: () => packFiles,
 });
