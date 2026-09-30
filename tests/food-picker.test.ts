@@ -36,6 +36,15 @@ async function select(label: string, value: string) {
 }
 async function click(selector: string) { await act(async () => container.querySelector<HTMLElement>(selector)!.click()); }
 
+it('requests public food images with CORS in results and amount selection', async () => {
+  const api = vi.fn().mockResolvedValue({ foods: [{ ...egg, image: 'https://images.openfoodfacts.org/fixture.png' }] });
+  await act(async () => root.render(createElement(FoodPicker, { api: api as FoodApi, onChoose: vi.fn(), actionLabel: 'Add food' })));
+  await input('eggs'); await act(async () => vi.advanceTimersByTimeAsync(350));
+  expect(container.querySelector('.result-row img')?.getAttribute('crossorigin')).toBe('anonymous');
+  await click('.result-row');
+  expect(container.querySelector('.selected-food img')?.getAttribute('crossorigin')).toBe('anonymous');
+});
+
 it('uses one search field without an online action and lets Enter find more matches sooner', async () => {
   const api = vi.fn().mockResolvedValue({ foods: [egg] });
   await act(async () => root.render(createElement(FoodPicker, { api: api as FoodApi, onChoose: vi.fn(), actionLabel: 'Add food' })));

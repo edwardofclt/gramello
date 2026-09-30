@@ -1,10 +1,20 @@
 import { beforeEach, expect, test, vi } from 'vitest';
 const mocks = vi.hoisted(() => ({ files: new Map<string, { bytes: Uint8Array; time: number }>(), failWrites: false, download: vi.fn(), hash: vi.fn(), inspect: vi.fn(), open: vi.fn() }));
+vi.mock('../mobile/node_modules/expo/fetch', () => ({ fetch: mocks.download }));
+vi.mock('../mobile/src/catalog/native-pack-routes', () => ({ createNativePackRoutes: () => ({ retire: async () => {} }) }));
 vi.mock('../mobile/node_modules/expo-file-system', () => {
   class File {
     name: string; constructor(_directory: unknown, name: string) { this.name = name; }
     get exists() { return mocks.files.has(this.name); }
     get size() { return mocks.files.get(this.name)?.bytes.length ?? 0; }
+    get uri() { return `packs/${this.name}`; }
+    create() { mocks.files.set(this.name, { bytes: new Uint8Array(), time: 1 }); }
+    open() { return { writeBytes: (bytes: Uint8Array) => {
+      const old = mocks.files.get(this.name)!;
+      const next = new Uint8Array(old.bytes.length + bytes.length); next.set(old.bytes); next.set(bytes, old.bytes.length);
+      mocks.files.set(this.name, { bytes: next, time: old.time });
+    }, close() {} }; }
+    move(destination: { name: string }) { mocks.files.set(destination.name, mocks.files.get(this.name)!); mocks.files.delete(this.name); this.name = destination.name; }
     info() { return { modificationTime: mocks.files.get(this.name)?.time, size: this.size }; }
     async bytes() { return mocks.files.get(this.name)!.bytes; }
     async text() { return new TextDecoder().decode(await this.bytes()); }
@@ -111,10 +121,10 @@ test('a conflicting size descriptor cannot delete a valid retained pack', async 
   await storage.withReader(pack, async () => undefined);
 });
 
-test('a truncated retained file is removed so installation can retry its download', async () => {
+test('a truncated retained file is removed before retrying its download', async () => {
   const storage = await create(); await storage.install(pack);
   mocks.files.set(filename, { bytes: new Uint8Array(8), time: 2 });
-  await expect(storage.install(pack)).rejects.toThrow('unavailable or corrupt');
+  await expect(storage.install(pack)).rejects.toThrow('Unexpected download');
   expect(mocks.files.has(filename)).toBe(false);
   expect(mocks.files.has(`pack-${pack.sha256}.verified.json`)).toBe(false);
 });
@@ -127,10 +137,12 @@ test('parallel installs report progress, preserve both descriptors, and finish b
   ];
   mocks.files.clear();
   const finishDownloads: (() => void)[] = [], finishInspection: (() => void)[] = [];
-  mocks.download.mockImplementation(async (_url, file, options) => {
-    options.onProgress({ bytesWritten: 2048 });
-    await new Promise<void>(resolve => finishDownloads.push(resolve));
-    mocks.files.set(file.name, { bytes: new Uint8Array(4096).fill(file.name.includes('cd'.repeat(32)) ? 0xcd : 0xab), time: 1 });
+  mocks.download.mockImplementation(async () => {
+    const byte = finishDownloads.length ? 0xcd : 0xab;
+    return new Response(new ReadableStream({ start(controller) {
+      controller.enqueue(new Uint8Array(2048).fill(byte));
+      finishDownloads.push(() => { controller.enqueue(new Uint8Array(2048).fill(byte)); controller.close(); });
+    } }));
   });
   mocks.hash.mockImplementation(async (_algorithm, bytes: Uint8Array) => new Uint8Array(32).fill(bytes[0]).buffer);
   mocks.inspect.mockImplementation(() => new Promise<void>(resolve => finishInspection.push(resolve)));
@@ -163,7 +175,7 @@ test('reinstalling a retired descriptor waits for readers of its preexisting fil
   await vi.waitFor(async () => expect(await storage.list()).toEqual([]));
   mocks.hash.mockResolvedValue(new Uint8Array(32).buffer);
   const installing = storage.install(pack);
-  const rejected = expect(installing).rejects.toThrow('verification');
+  const rejected = expect(installing).rejects.toThrow('Unexpected download');
   await new Promise(resolve => setTimeout(resolve, 0));
   expect(mocks.files.has(filename)).toBe(true);
   expect(mocks.hash).toHaveBeenCalledTimes(1);

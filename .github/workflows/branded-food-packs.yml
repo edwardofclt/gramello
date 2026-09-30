@@ -83,15 +83,4 @@ jobs:
             gh release create food-catalog --target "$GITHUB_SHA" --prerelease --latest=false \
               --title "Food catalog data" --notes "USDA and separately licensed Open Food Facts US product packs. See PACK-SOURCES.md for attribution and source obligations."
           fi
-          existing_assets="$(gh release view food-catalog --json assets --jq '.assets[].name')"
-          for file in catalog-release/*.sqlite; do
-            asset="$(basename "$file")"
-            if ! grep -Fx "$asset" <<< "$existing_assets" >/dev/null; then
-              gh release upload food-catalog "$file"
-            fi
-          done
-          gh release upload food-catalog catalog-release/PACK-SOURCES.md catalog-release/PACK-PROVENANCE.json \
-            catalog-release/import-report.json catalog-release/extract-food-packs.py catalog-release/food-packs.mjs \
-            catalog-release/food-catalog.mjs catalog-release/verify-food-packs.mjs catalog-release/verification-report.json \
-            catalog-release/food-packs-requirements.txt catalog-release/catalog-import.ts --clobber
-          gh release upload food-catalog catalog-release/pack-manifest.json --clobber
+          node scripts/publish-food-packs.mjs catalog-release

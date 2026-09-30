@@ -3,6 +3,7 @@ import { mkdir, readFile, writeFile, copyFile } from 'node:fs/promises';
 import { gzipSync } from 'node:zlib';
 import { createHash } from 'node:crypto';
 import { createRequire } from 'node:module';
+import { dirname, join } from 'node:path';
 
 export async function prepareBrowserAssets() {
   const root = new URL('../', import.meta.url);
@@ -16,6 +17,7 @@ export async function prepareBrowserAssets() {
   });
   const require = createRequire(import.meta.url);
   await copyFile(require.resolve('@sqlite.org/sqlite-wasm/sqlite3.wasm'), new URL('sqlite3.wasm', output));
+  await copyFile(join(dirname(require.resolve('@sqlite.org/sqlite-wasm/sqlite3.wasm')), 'sqlite3-opfs-async-proxy.js'), new URL('sqlite3-opfs-async-proxy.js', output));
   const catalog = await readFile(new URL('mobile/assets/catalog.sqlite', root));
   await writeFile(new URL('catalog.sqlite.gz', output), gzipSync(catalog, { level: 9 }));
   await writeFile(new URL('catalog-meta.json', output), JSON.stringify({

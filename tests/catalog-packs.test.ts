@@ -1,6 +1,6 @@
 import { describe, expect, it, vi } from 'vitest';
 import nacl from 'tweetnacl';
-import { createPackUpdater, verifyPackManifest, type FoodPack, type PackStorage } from '../mobile/src/catalog/packs';
+import { createPackUpdater, verifyPackManifest, PackManifestChangedError, type FoodPack, type PackStorage } from '../mobile/src/catalog/packs';
 import { createPackCatalog } from '../mobile/src/catalog/pack-reader';
 import { normalizeUsdaBranded, normalizeOffProduct } from '../lib/catalog-import';
 import usda from './fixtures/al-fresco-usda.json';
@@ -29,6 +29,62 @@ function storage() {
   return { value, installed, attempts, setFailure: (id?: string) => { fail = id; }, retirements: () => retirements };
 }
 describe('signed expansion packs', () => {
+  it('recovers transfers under the update lease even when a backoff check skips network', async () => {
+    const fake = storage(), events: string[] = [];
+    fake.value.load = async () => ({ nextCheck: 9000 });
+    fake.value.exclusive = async work => { events.push('lease'); try { return await work(); } finally { events.push('release'); } };
+    fake.value.recover = async () => { events.push('recover'); };
+    await createPackUpdater(fake.value, publicKey, () => 1000).check();
+    expect(events).toEqual(['lease', 'recover', 'release']); expect(fake.attempts).toEqual([]);
+  });
+  it('preserves partial failure and progress during backoff and restart', async () => {
+    const fake = storage(); fake.setFailure(a.id);
+    const updater = createPackUpdater(fake.value, publicKey, () => 1000, () => 0);
+    await updater.check(); await updater.check();
+    expect(updater.getStatus()).toMatchObject({ phase: 'error', error: expect.stringContaining('interrupted'), completedPacks: 1, totalPacks: 2 });
+    const restarted = createPackUpdater(fake.value, publicKey, () => 2000, () => 0);
+    await restarted.check();
+    expect(restarted.getStatus()).toMatchObject({ phase: 'error', error: expect.stringContaining('interrupted'), completedPacks: 1, totalPacks: 2 });
+  });
+  it('refreshes a changed manifest once and retains completed hashes', async () => {
+    const fake = storage(); let manifests = 0, attempts = 0;
+    const next = { ...b, version: 'off-v2', sha256: 'b'.repeat(64) };
+    fake.value.fetchManifest = async () => envelope(++manifests === 1 ? [a, b] : [a, next]);
+    const install = fake.value.install;
+    fake.value.install = async pack => { if (pack.source === 'off' && ++attempts === 1) throw new PackManifestChangedError(); await install(pack); };
+    const updater = createPackUpdater(fake.value, publicKey); await updater.check(true);
+    expect(manifests).toBe(2); expect(fake.attempts).toEqual([a.id, next.id]);
+    expect(updater.getStatus()).toMatchObject({ phase: 'updated', completedPacks: 2 }); expect(fake.retirements()).toBe(1);
+  });
+  it('settles live installs before refreshing a changed manifest', async () => {
+    const fake = storage(); let manifests = 0, finish!: () => void;
+    const gate = new Promise<void>(resolve => { finish = resolve; });
+    fake.value.fetchManifest = async () => { manifests++; return envelope(); };
+    const install = fake.value.install;
+    fake.value.install = async pack => {
+      if (pack.source === 'off' && manifests === 1) throw new PackManifestChangedError();
+      if (pack.source === 'usda-branded') await gate;
+      await install(pack);
+    };
+    const updater = createPackUpdater(fake.value, publicKey), checking = updater.check(true);
+    await vi.waitFor(() => expect(updater.getStatus().totalPacks).toBe(2));
+    expect(manifests).toBe(1); expect(fake.retirements()).toBe(0);
+    finish(); await checking;
+    expect(manifests).toBe(2); expect(fake.attempts).toEqual([a.id, b.id]);
+    expect(updater.getStatus().phase).toBe('updated');
+  });
+  it.each(['second transition', 'tampered refresh'])('backs off after %s without retirement', async kind => {
+    const fake = storage(); let manifests = 0;
+    fake.value.fetchManifest = async () => { manifests++; return kind === 'tampered refresh' && manifests === 2 ? { ...envelope(), signature: '0'.repeat(128) } : envelope(); };
+    fake.value.install = async () => { throw new PackManifestChangedError(); };
+    const updater = createPackUpdater(fake.value, publicKey); await updater.check(true);
+    expect(manifests).toBe(2); expect(updater.getStatus().phase).toBe('error'); expect(fake.retirements()).toBe(0);
+  });
+  it('shows retry-pending for older failure-only metadata', async () => {
+    const fake = storage(); fake.value.load = async () => ({ failures: 2, nextCheck: 9000 });
+    const updater = createPackUpdater(fake.value, publicKey, () => 1000); await updater.check();
+    expect(updater.getStatus()).toMatchObject({ phase: 'error', error: expect.stringContaining('retry') });
+  });
   it('aggregates transfer progress across workers before any pack finishes', async () => {
     const fake = storage();
     let finish!: () => void;
@@ -128,6 +184,18 @@ describe('signed expansion packs', () => {
   });
 });
 describe('bounded expansion reader', () => {
+  it('uses durable USDA routes after recreation and opens no packs for indexed misses', async () => {
+    const target = { ...a, id: 'usda-branded-2-1', buckets: 2, bucket: 1 };
+    const unrelated = { ...a, id: 'usda-branded-2-0', buckets: 2, bucket: 0 };
+    const food = normalizeUsdaBranded(usda)!;
+    const opened: string[] = [];
+    const reader = createPackCatalog(async () => [unrelated, target], async (pack, work) => {
+      opened.push(pack.id); return work({ getFood: async id => id === food.id && pack.id === target.id ? food : null, search: async () => [], barcode: async () => null });
+    }, { getFood: async () => null, search: async () => [], barcode: async () => null },
+    async id => ({ packs: id === food.id ? [target] : [], complete: true }));
+    expect((await reader.getFood(food.id))?.id).toBe(food.id); expect(opened).toEqual([target.id]);
+    opened.length = 0; expect(await reader.getFood('usda-999999')).toBeNull(); expect(opened).toEqual([]);
+  });
   it('returns a bundled core identity without opening or hashing expansion packs', async () => {
     const food = { ...normalizeUsdaBranded(usda)!, id: 'usda-171287', brand: undefined, name: 'Egg, whole, raw' };
     let opened = 0;

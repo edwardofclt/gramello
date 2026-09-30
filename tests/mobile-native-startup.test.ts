@@ -9,6 +9,7 @@ const native = vi.hoisted(() => ({
   openDatabase: vi.fn(), downloadAsset: vi.fn(), copy: vi.fn(), bytes: vi.fn(),
   digest: vi.fn(), inspect: vi.fn(), existingFiles: new Set<string>(), receipts: new Map<string, string>(), modified: 100, assetHash: 'cafe', directoryEntries: [] as unknown[],
 }));
+vi.mock('../mobile/node_modules/expo/fetch', () => ({ fetch: (...args: Parameters<typeof fetch>) => globalThis.fetch(...args) }));
 vi.mock('../mobile/node_modules/expo-sqlite', () => ({ openDatabaseAsync: native.openDatabase }));
 vi.mock('../mobile/node_modules/expo-asset', () => ({ Asset: { fromModule: () => ({ hash: native.assetHash, downloadAsync: native.downloadAsset }) } }));
 vi.mock('../mobile/node_modules/expo-file-system', () => ({

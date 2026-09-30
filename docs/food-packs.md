@@ -67,21 +67,34 @@ It refuses a different key; never change the app public key to publish a test pa
 
 After merging, manually run **Publish US branded food packs** on `main`. It needs
 the repository's existing `CATALOG_SIGNING_KEY` secret. It uploads immutable
-content-versioned databases before replacing the signed manifest. It does not
+content-addressed databases named `<pack-id>-<full-final-sha256>.sqlite` before
+replacing the signed manifest. Publication checks every existing asset's size and
+SHA-256 first (downloads and hashes it when GitHub provides no digest); a mismatch
+aborts before manifest replacement and never clobbers a SQLite asset. It does not
 replace the legacy `manifest.json` or bundle the expansion into the app binary.
 Run the workflow again to refresh source snapshots; clients check automatically
 about daily, downloading only changed packs. Old releases remain available for
-clients installing a previously fetched manifest.
+clients installing a previously fetched manifest. The publisher looks up the
+release ID separately and pages assets in groups of 100, retaining metadata only
+for the current pack set, so historical assets cannot overflow its CLI buffer.
 
 Native and web automatically check on launch, foreground and once per minute
 while active (metadata skips network until due). Downloads include cellular,
-run with up to three packs in flight, prioritize USDA packs in the queue, verify
-size/hash/SQLite fields before activation and checkpoint each pack. Shared pack
-index writes remain serialized so concurrent completions preserve every install.
-Native candidate databases are verified on independent read-only connections,
-allowing workers to refill download slots without waiting for a shared reader queue. Retry backoff starts at one hour and caps at one day. One previous
-pack per partition is retained. iOS/Android do not guarantee continued execution
+run with up to three packs in flight, prioritize USDA packs, verify
+size/hash/SQLite fields before activation and checkpoint
+each pack. Shared activation and index writes remain serialized. Native candidate
+databases are inspected on independent read-only connections. Manifests stop at 520,000 actual UTF-8 bytes, and an overflowing pack
+chunk is rejected before writing it. A relay manifest transition refreshes the
+verified manifest once immediately; repeated transitions enter normal backoff.
+Retry backoff starts at one hour and caps at one day, preserving the error and
+completed-pack progress across skipped checks and restart. Native retains one
+previous pack per partition; browser activation clears unused previous bytes.
+iOS/Android do not guarantee continued execution
 after the OS suspends or terminates the app; checks resume when foregrounded.
+The next update check reclaims abandoned staging files, even during retry
+backoff. Browser recovery owns both the update lease and reader lock; native
+recovery preserves every transfer still live in the current process. Neither
+scanner deletes unrelated files or referenced installed packs.
 Browser storage quotas may prevent a complete install; existing packs and diaries
 remain usable, and Settings reports the failure and completed-pack progress.
 Automatic downloads show a circular percentage indicator beside the Gramello logo. Settings
@@ -90,6 +103,51 @@ alongside the verified pack count. Checking uses an indeterminate indicator;
 a fully received download says “Finishing food catalog update…” until verification
 and activation complete. Indicators disappear on completion or error, with the
 result retained in Settings.
+
+## Local readers and browser migration
+
+Native repairs a corrupt content-addressed file in one install attempt. Native
+and browser readers verify files on first use and reuse verification only while
+hash, byte length and modification metadata agree. Native persists verification
+receipts that also match the descriptor and validation revision, avoiding repeated
+whole-file scans after restart. Native availability checks defer legacy validation
+until a reader opens the pack; installs always force validation. Browser repair checks force hashing;
+missing or changed metadata never means "trusted forever".
+The metadata-only verification cache is bounded to 1,024 recently used entries;
+eviction only triggers a new hash check and never removes a pack. Durable, locally
+derived USDA routes select the correct installed pack after restart without a
+previous name search. Routes include the content hash, ignore retired generations,
+and do not change nutrition identities or source precedence.
+
+Browser expansion packs use the pinned SQLite WASM package's regular `opfs` VFS
+in the dedicated worker. Files live at
+`/gramello-food-packs/pack-<sha256>.sqlite`; IndexedDB holds validated activation
+pointers and route metadata, not a second catalog copy. Readers are read-only,
+use a 2 MiB SQLite page cache, and hold one expansion connection at a time. Warm
+OPFS searches do not read/hash entire files or load IndexedDB pack bytes.
+
+Documents and offline worker assets need `Cross-Origin-Opener-Policy: same-origin`
+and `Cross-Origin-Embedder-Policy: require-corp`. The compiled Worker wrapper and
+static `_headers` both enforce this; public food images request anonymous CORS.
+The offline shell caches the OPFS proxy, including both `?vfs=opfs` and
+`?vfs=opfs-wl` variants so cached Worker response URLs retain their driver argument.
+Do not use `opfs-sahpool` with the pinned dependency: its failure cleanup is not
+appropriate for authoritative installed catalog files.
+
+Legacy bare descriptors remain readable. Migration validates one pack, stages
+and verifies its file, then atomically switches its pointer while clearing old
+IndexedDB bytes and `packs:previous:*`. A failed transaction leaves the original
+bytes and pointer usable. Reader opens, activation, migration, and cleanup share
+the cross-tab reader lock; network transfers do not hold that lock. Old partition
+coverage remains until the complete replacement set has installed.
+
+Without regular OPFS support, new installs keep the IndexedDB memory-reader
+fallback. Already migrated files can use asynchronous OPFS reads if isolation is
+lost. These fallback readers still load a whole pack; they do not promise OPFS's
+page-read performance. If filesystem access itself is unavailable, report the
+source issue and preserve activation metadata/files and diary access—do not wipe
+or redownload merely because capability is missing. See
+[review verification and limits](food-pack-review-results.md).
 
 ## Source rights and separation
 

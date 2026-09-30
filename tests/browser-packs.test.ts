@@ -13,8 +13,9 @@ const databases: ReturnType<typeof testDatabase>[] = [];
 afterEach(() => { for (const db of databases.splice(0)) { if (db.raw.isOpen) db.raw.close(); } });
 function setup(fetcher?: typeof fetch) {
   const values = new Map<string, unknown>();
+  const reads: string[] = [];
   let rejectCommit = false, closed = 0;
-  const store: SnapshotStore = { read: async <T>(key: string) => values.get(key) as T | undefined,
+  const store: SnapshotStore = { read: async <T>(key: string) => { reads.push(key); return values.get(key) as T | undefined; },
     commit: async pairs => { if (rejectCommit) throw new Error('quota'); for (const [key, value] of pairs) values.set(key, value); } };
   const queues = new Map<string, Promise<unknown>>();
   const options = { store, lock: async <T>(name: string, work: () => Promise<T>) => {
@@ -29,9 +30,39 @@ function setup(fetcher?: typeof fetch) {
     return { ...db.db, close: () => { db.raw.close(); closed++; } };
   }, fetcher: fetcher ?? (async () => new Response(bytes)), manifestUrl: '/manifest' };
   const storage = createBrowserPackStorage(options);
-  return { storage, options, values, reject: () => { rejectCommit = true; }, closed: () => closed };
+  return { storage, options, values, reads, reject: () => { rejectCommit = true; }, closed: () => closed };
 }
 describe('durable browser expansion storage', () => {
+  it('clears unused previous copies without copying the replaced bytes', async () => {
+    const fake = setup(); await fake.storage.install(pack);
+    fake.values.set('packs:previous:' + pack.id, bytes);
+    const nextBytes = new Uint8Array(4096).fill(1), next = { ...pack, version: 'off-v2', sha256: createHash('sha256').update(nextBytes).digest('hex') };
+    const nextStorage = createBrowserPackStorage({ ...fake.options, fetcher: async () => new Response(nextBytes) });
+    await nextStorage.install(next);
+    expect(fake.values.get('packs:previous:' + pack.id)).toBeUndefined();
+  });
+  it('does not open a different activated hash under a stale caller descriptor', async () => {
+    const fake = setup(); await fake.storage.install(pack);
+    const nextBytes = new Uint8Array(4096).fill(1), next = { ...pack, version: 'off-v2', sha256: createHash('sha256').update(nextBytes).digest('hex') };
+    await createBrowserPackStorage({ ...fake.options, fetcher: async () => new Response(nextBytes) }).install(next);
+    fake.reads.length = 0;
+    await expect(fake.storage.withReader(pack, r => r.getFood('off-030771094625'))).rejects.toThrow();
+    expect(fake.reads).not.toContain('packs:' + pack.id);
+  });
+  it('distinguishes publisher transitions from ordinary transfer errors', async () => {
+    const fake = setup(async () => new Response(null, { status: 409 }));
+    await expect(fake.storage.install(pack)).rejects.toMatchObject({ name: 'PackManifestChangedError' });
+  });
+  it('cancels an oversized UTF-8 manifest before buffering its remainder', async () => {
+    let cancelled = false;
+    const body = new ReadableStream({
+      start(c) { c.enqueue(new TextEncoder().encode('é'.repeat(260001))); },
+      cancel() { cancelled = true; },
+    });
+    const fake = setup(async () => new Response(body));
+    await expect(fake.storage.fetchManifest()).rejects.toThrow(/large|exceed/);
+    expect(cancelled).toBe(true);
+  });
   it('activates bytes and descriptor together and can read them after reopening', async () => {
     const fake = setup(); await fake.storage.install(pack);
     expect(await fake.storage.list()).toEqual([pack]);

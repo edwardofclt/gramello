@@ -32,6 +32,7 @@ async function nativeArchive(): Promise<Archive> {
 test('native backup imports, exports losslessly, and recovers the previous browser diary', async ({ page }) => {
   await open(page);
   expect(await workerCall(page, 'hasRecovery')).toBe(false);
+  await page.getByRole('tab', { name: 'Water', exact: true }).click();
   await page.getByRole('button', { name: '+ 250 mL', exact: true }).click();
   await expect(page.locator('.water-total')).toContainText('250');
   const archive = await nativeArchive();
@@ -43,6 +44,7 @@ test('native backup imports, exports losslessly, and recovers the previous brows
   expect((await workerCall<Archive>(page, 'exportArchive')).records.some(record => record.kind === 'water')).toBe(true);
   await page.getByLabel('Choose Gramello backup').setInputFiles({ name: 'phone.gramello', mimeType: 'application/json', buffer: Buffer.from(JSON.stringify(archive)) });
   await page.getByRole('button', { name: 'Replace and import', exact: true }).click();
+  await page.getByRole('tab', { name: 'Food', exact: true }).click();
   await expect(page.locator('.food-row')).toContainText('Native soup');
   await expect(page.locator('.calorie-focus h2')).toContainText('300');
   await settings(page);
@@ -53,7 +55,9 @@ test('native backup imports, exports losslessly, and recovers the previous brows
   expect(exported.records).toEqual(archive.records);
   await page.getByRole('button', { name: 'Recover previous diary', exact: true }).click();
   await page.getByRole('button', { name: 'Recover diary', exact: true }).click();
+  await page.getByRole('tab', { name: 'Food', exact: true }).click();
   await expect(page.locator('.food-row')).toHaveCount(0);
+  await page.getByRole('tab', { name: 'Water', exact: true }).click();
   await expect(page.locator('.water-total')).toContainText('250');
 });
 
@@ -62,6 +66,8 @@ test('reloads offline, searches the bundled catalog, and persists a food without
   await open(page);
   await settings(page);
   await expect(page.getByTestId('offline-status')).toHaveText('Ready to use offline', { timeout: 60000 });
+  expect(await page.evaluate(() => crossOriginIsolated)).toBe(true);
+  expect(await page.evaluate(async () => !!await caches.match('/offline/sqlite3-opfs-async-proxy.js'))).toBe(true);
   await context.setOffline(true);
   await open(page);
   expect(await page.locator('img.logo-mark').first().evaluate((image: HTMLImageElement) => image.complete && image.naturalWidth > 0)).toBe(true);

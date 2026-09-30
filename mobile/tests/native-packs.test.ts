@@ -3,6 +3,13 @@ import type { FoodPack } from '../src/catalog/packs';
 
 const inspection = vi.hoisted(() => ({ started: 0, gate: undefined as Promise<void> | undefined }));
 const files = vi.hoisted(() => new Map<string, Uint8Array>());
+vi.mock('expo/fetch', () => ({ fetch: async (url: string) => new Response(new Uint8Array(4096).fill(Number(url.split('/').at(-1)))) }));
+vi.mock('../src/catalog/native-pack-routes', () => ({
+  createNativePackRoutes: () => ({
+    indexed: async () => true, index: async () => {}, retire: async () => {},
+    lookup: async () => ({ packs: [], complete: true }),
+  }),
+}));
 vi.mock('expo-file-system', () => ({
   Paths: { document: '/documents', availableDiskSpace: 1024 ** 3 },
   Directory: class { uri = '/packs'; create() {} list() { return []; } },
@@ -12,6 +19,13 @@ vi.mock('expo-file-system', () => ({
     get exists() { return files.has(this.name); }
     get size() { return files.get(this.name)?.length; }
     async bytes() { return files.get(this.name)!; }
+    get uri() { return `/packs/${this.name}`; }
+    create() { files.set(this.name, new Uint8Array()); }
+    open() { return { writeBytes: (bytes: Uint8Array) => {
+      const old = files.get(this.name)!;
+      const next = new Uint8Array(old.length + bytes.length); next.set(old); next.set(bytes, old.length); files.set(this.name, next);
+    }, close() {} }; }
+    move(destination: { name: string }) { files.set(destination.name, files.get(this.name)!); files.delete(this.name); this.name = destination.name; }
     info() { return { modificationTime: 1, size: this.size }; }
     async text() { return new TextDecoder().decode(await this.bytes()); }
     write(text: string) { files.set(this.name, new TextEncoder().encode(text)); }

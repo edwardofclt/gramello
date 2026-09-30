@@ -9,11 +9,11 @@ export function offlineWeb(): Plugin {
     apply: 'build',
     async generateBundle(_options, bundle) {
       if (this.environment.name !== 'client') return;
-      const fixed = ['/offline/diary-worker.js', '/offline/sqlite3.wasm', '/offline/catalog.sqlite.gz', '/offline/catalog-meta.json', '/favicon-32.png', '/favicon-64.png', '/apple-touch-icon.png', '/gramello-mark.png'];
+      const fixed = ['/offline/diary-worker.js', '/offline/sqlite3.wasm', '/offline/sqlite3-opfs-async-proxy.js', '/offline/sqlite3-opfs-async-proxy.js?vfs=opfs', '/offline/sqlite3-opfs-async-proxy.js?vfs=opfs-wl', '/offline/catalog.sqlite.gz', '/offline/catalog-meta.json', '/favicon-32.png', '/favicon-64.png', '/apple-touch-icon.png', '/gramello-mark.png'];
       const assets = Object.keys(bundle).filter(path => !path.endsWith('.map')).map(path => `/${path}`);
       const hash = createHash('sha256');
       for (const item of Object.values(bundle)) hash.update(item.type === 'chunk' ? item.code : item.source);
-      for (const path of fixed) hash.update(await readFile(`public${path}`));
+      for (const path of fixed) hash.update(await readFile(`public${path.split('?')[0]}`));
       const version = hash.digest('hex').slice(0, 20);
       const source = serviceWorkerSource(version, [...fixed, ...assets]);
       this.emitFile({ type: 'asset', fileName: 'service-worker.js', source });
@@ -46,7 +46,8 @@ self.addEventListener('fetch', event => {
     // installed worker activates when the old build's tabs have closed.
     event.respondWith((async () => (await (await caches.open(CACHE)).match('/')) || fetch(event.request))());
   } else if (ASSETS.includes(url.pathname)) {
-    event.respondWith((async () => (await (await caches.open(CACHE)).match(url.pathname)) || fetch(event.request))());
+    const key = url.pathname === '/offline/sqlite3-opfs-async-proxy.js' ? url.pathname + url.search : url.pathname;
+    event.respondWith((async () => (await (await caches.open(CACHE)).match(key)) || fetch(event.request))());
   }
 });
 `;

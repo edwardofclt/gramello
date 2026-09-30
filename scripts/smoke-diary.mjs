@@ -69,8 +69,16 @@ try {
   assert.notEqual(alice, bob);
   assert.equal((await request('/api/day')).status, 200);
   assert.equal((await request('/api/day', { headers: { Cookie: '__session=invalid', Authorization: 'Bearer obsolete' } })).status, 200);
-  assert.equal((await request('/api/entries', { method: 'POST', body: '{}' })).status, 400);
-  assert.equal((await request('/api/foods/barcode?code=invalid', { headers: { Cookie: alice } })).status, 400);
+  // Keep exercising follow-up requests on the same live server: the original
+  // proxy-stream failure was intermittent after an unread rejected POST.
+  for (let repeat = 0; repeat < 64; repeat++) {
+    const crossOrigin = repeat % 2 === 1;
+    assert.equal((await request('/api/entries', {
+      method: 'POST', body: '{}',
+      ...(crossOrigin ? { headers: { Cookie: alice, Origin: 'https://evil.test' } } : {}),
+    })).status, crossOrigin ? 403 : 400);
+    assert.equal((await request('/api/foods/barcode?code=invalid', { headers: { Cookie: alice } })).status, 400);
+  }
   for (const path of ['/auth/login', '/auth/logout', '/auth/callback', '/auth/access-token']) {
     assert.equal((await request(path)).status, 404);
   }

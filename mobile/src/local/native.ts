@@ -138,7 +138,7 @@ async function openRuntime() {
   const downloaded = createCatalogReader(work => serialized(catalogLock, async () => work(await openActive())), bundledReader);
   const foodCache = await SQLite.openDatabaseAsync('gramello-food-cache.sqlite');
   const packStorage = await createNativePackStorage(metadata, saveMetadata, catalogConfig.packManifestUrl);
-  const catalog = await createFoodLookup(createPackCatalog(packStorage.list, packStorage.withReader, downloaded), foodCache);
+  const catalog = await createFoodLookup(createPackCatalog(packStorage.list, packStorage.withReader, downloaded, packStorage.routes), foodCache);
   const repository = await createLocalRepository(personal, catalog, Crypto.randomUUID);
   const coreUpdater = createCatalogUpdater({
     async load() {

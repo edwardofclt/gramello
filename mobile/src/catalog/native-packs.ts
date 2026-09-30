@@ -1,21 +1,31 @@
 import * as SQLite from 'expo-sqlite';
 import { Directory, File, Paths } from 'expo-file-system';
 import * as Crypto from 'expo-crypto';
+import { fetch } from 'expo/fetch';
+import { consumeBoundedResponse, readPackManifestResponse } from './downloads';
+import { readPackIds, type PackRouteLookup } from './pack-routes';
+import { createNativePackRoutes } from './native-pack-routes';
 import { serialized, type SqliteConnection } from '../local/database';
 import { createCatalogReader } from './queries';
 import { packSchema, inspectFoodPack, type FoodPack, type PackStorage } from './packs';
 import type { UpdateState } from './updater';
 import type { FoodCatalog } from '../local/repository';
 
+// Process-local ownership survives storage recreation, but not app termination.
+const liveTransfers = new Set<string>();
+
 // Distinguish damaged bytes from a conflicting descriptor for a valid file.
 class InvalidPackFile extends Error {}
 
 export async function createNativePackStorage(
   metadata: <T>(key: string) => Promise<T | null>, saveMetadata: (key: string, value: unknown) => Promise<unknown>, manifestUrl: string,
-): Promise<PackStorage & { withReader<T>(pack: FoodPack, work: (reader: FoodCatalog) => Promise<T>): Promise<T> }> {
+  options: { fetcher?: typeof fetch } = {},
+): Promise<PackStorage & { routes: PackRouteLookup; withReader<T>(pack: FoodPack, work: (reader: FoodCatalog) => Promise<T>): Promise<T> }> {
+  const fetcher = options.fetcher ?? fetch;
   const directory = new Directory(Paths.document, 'gramello-food-packs');
   directory.create({ intermediates: true, idempotent: true });
   const queue = {} as SqliteConnection;
+  const routeIndex = createNativePackRoutes(directory.uri);
   const metadataQueue = {} as SqliteConnection;
   const pendingInstalls = new Set<Promise<void>>();
   const installingFiles = new Map<string, number>();
@@ -49,7 +59,14 @@ export async function createNativePackStorage(
     try { await db.execAsync('PRAGMA query_only=ON; PRAGMA trusted_schema=OFF;'); return db; }
     catch (error) { await db.closeAsync(); throw error; }
   };
-  const verify = async (pack: FoodPack, file: File, force = false) => {
+  const saveReceipt = (pack: FoodPack, stamp: ReturnType<typeof identity>) => {
+    cachedReceipts.delete(pack.sha256);
+    cachedReceipts.set(pack.sha256, stamp);
+    if (cachedReceipts.size > 1024) cachedReceipts.delete(cachedReceipts.keys().next().value!);
+    try { receiptFor(pack).write(JSON.stringify(stamp)); }
+    catch { /* Verified packs remain usable when receipt persistence fails. */ }
+  };
+  const verify = async (pack: FoodPack, file: File, force = false, receipt = true) => {
     if (!file.exists || file.size !== pack.bytes) {
       // The incoming manifest may conflict with an already activated descriptor.
       // Its claimed size alone is not evidence that those retained bytes broke.
@@ -64,12 +81,29 @@ export async function createNativePackStorage(
     if (JSON.stringify(before) !== JSON.stringify(identity(pack, file))) throw new InvalidPackFile('The food pack changed during verification.');
     // Sidecars avoid acquiring the personal database queue from a catalog read:
     // getFood may already hold that queue while resolving an installed food.
-    cachedReceipts.set(pack.sha256, before);
-    try { receiptFor(pack).write(JSON.stringify(before)); }
-    catch { /* A full disk must not make a successfully verified food pack unusable. */ }
+    if (receipt) saveReceipt(pack, before);
+  };
+  const index = async (pack: FoodPack) => {
+    if (pack.source !== 'usda-branded' || await routeIndex.indexed(pack)) return;
+    await verify(pack, fileFor(pack));
+    const pages: string[][] = [], db = await open(fileFor(pack));
+    try { await readPackIds(db, async ids => { pages.push(ids); }); }
+    finally { await db.closeAsync(); }
+    await routeIndex.index(pack, pages);
   };
   return {
     list,
+    recover: () => serialized(queue, async () => {
+      for (const entry of directory.list()) if (entry instanceof File
+        && /^pack-[a-f0-9]{64}-\d+-[a-f0-9]*\.partial$/.test(entry.name) && !liveTransfers.has(entry.uri)) entry.delete();
+    }),
+    routes: (id, _installed) => serialized(queue, async () => {
+      const current = await list();
+      const route = await routeIndex.lookup(id, current);
+      if (route.complete) return route;
+      for (const pack of current) await index(pack);
+      return routeIndex.lookup(id, current);
+    }),
     async available(pack) {
       return serialized(queue, async () => {
         const file = fileFor(pack);
@@ -85,10 +119,9 @@ export async function createNativePackStorage(
     load: async () => await metadata<UpdateState>('foodPacksUpdate') ?? {},
     save: async state => { await saveMetadata('foodPacksUpdate', state); },
     async fetchManifest() {
-      const response = await fetch(manifestUrl, { signal: AbortSignal.timeout(20000) });
+      const response = await fetcher(manifestUrl, { signal: AbortSignal.timeout(20000) });
       if (!response.ok) throw new Error('US product downloads are unavailable. Installed foods remain usable.');
-      const text = await response.text(); if (text.length > 520000) throw new Error('Pack manifest is too large.');
-      return JSON.parse(text);
+      return readPackManifestResponse(response);
     },
     async install(pack, onProgress) {
       const name = fileFor(pack).name;
@@ -98,30 +131,37 @@ export async function createNativePackStorage(
       const task = serialized(installQueue, async () => {
         if (Paths.availableDiskSpace < pack.bytes * 2 + 10 * 1024 * 1024) throw new Error('Free some device storage to download US products.');
         const file = fileFor(pack);
+        let temporary: File | undefined, transferPath: string | undefined;
         try {
-          // No network-type gate: cellular downloads are explicitly enabled.
-          const fresh = !file.exists;
-          if (fresh) await File.downloadFileAsync(pack.url, file, { signal: AbortSignal.timeout(120000), onProgress: progress => onProgress?.(progress.bytesWritten) });
-          const validate = async () => {
-            try { await verify(pack, file, true); }
+          const reusable = await serialized(queue, async () => {
+            if (!file.exists) return false;
+            try { await verify(pack, file, true); return true; }
             catch (error) {
-              // Retry must replace corrupt downloads rather than repeatedly reuse
-              // them. Readers finish before this content-addressed file is removed.
               const retained = [...installed, ...previous].some(old => old.sha256 === pack.sha256);
-              // A descriptor mismatch must not destroy previously activated bytes.
-              // Actual damaged bytes must be removed so retry can download afresh.
-              if (!retained || error instanceof InvalidPackFile) {
-                if (file.exists) file.delete();
-                cachedReceipts.delete(pack.sha256);
-                const receipt = receiptFor(pack); if (receipt.exists) receipt.delete();
-              }
-              throw error;
+              if (retained && !(error instanceof InvalidPackFile)) throw error;
+              file.delete(); cachedReceipts.delete(pack.sha256);
+              const receipt = receiptFor(pack); if (receipt.exists) receipt.delete();
+              return false;
             }
-          };
-          // Only files downloaded by this install are private candidates. A
-          // retired descriptor may still have readers using its preexisting file.
-          if (fresh) await validate();
-          else await serialized(queue, validate);
+          });
+          if (!reusable) {
+            temporary = new File(directory, `pack-${pack.sha256}-${Date.now()}-${Math.random().toString(16).slice(2)}.partial`);
+            transferPath = temporary.uri; liveTransfers.add(transferPath);
+            temporary.create();
+            const handle = temporary.open();
+            try {
+              const response = await fetcher(pack.url, { signal: AbortSignal.timeout(120000) });
+              await consumeBoundedResponse(response, { maxBytes: pack.bytes, exactBytes: pack.bytes }, chunk => handle.writeBytes(chunk), onProgress);
+            } finally { handle.close(); }
+            const staged = temporary;
+            // Candidates have independent read-only connections; activation owns the reader queue.
+            await verify(pack, staged, true, false);
+            await serialized(queue, async () => {
+              staged.move(file); temporary = undefined;
+              saveReceipt(pack, identity(pack, file));
+            });
+          }
+          await serialized(queue, () => index(pack));
           await serialized(metadataQueue, async () => {
             const next = [...installed.filter(old => old.id !== pack.id), pack];
             const old = installed.find(old => old.id === pack.id && old.sha256 !== pack.sha256);
@@ -130,11 +170,9 @@ export async function createNativePackStorage(
             await saveMetadata('foodPackIndex', { active: next, previous: prior }); installed = next; previous = prior;
           });
         } catch (error) {
-          await serialized(queue, async () => {
-            if (![...installed, ...previous].some(old => old.sha256 === pack.sha256) && file.exists) { try { file.delete(); } catch { /* Retry can clean an incomplete download. */ } }
-          });
+          if (temporary?.exists) { try { temporary.delete(); } catch { /* Retry reclaims abandoned staging files. */ } }
           throw error;
-        }
+        } finally { if (transferPath) liveTransfers.delete(transferPath); }
       });
       pendingInstalls.add(task);
       try { await task; }
@@ -154,6 +192,7 @@ export async function createNativePackStorage(
         await saveMetadata('foodPackIndex', { active: next, previous: prior }); installed = next; previous = prior;
       });
       await serialized(queue, async () => {
+        await routeIndex.retire(installed);
         const keep = new Set([...installed, ...previous].map(pack => fileFor(pack).name));
         for (const name of installingFiles.keys()) keep.add(name);
         for (const hash of cachedReceipts.keys()) if (!keep.has(`pack-${hash}.sqlite`)) cachedReceipts.delete(hash);

@@ -65,7 +65,8 @@ export function normalizeOffProduct(raw: OffProduct): ImportedFood | null {
   if (!food) return null;
   // Reproducible builds use the source timestamp, never the importer's wall clock.
   delete food.image;
+  const modified = new Date(raw.last_modified_t! * 1000);
   food.checkedAt = Number.isFinite(raw.last_modified_t) && raw.last_modified_t! > 0
-    ? new Date(raw.last_modified_t! * 1000).toISOString() : undefined;
+    && Number.isFinite(modified.getTime()) ? modified.toISOString() : undefined;
   return validated(food, barcode);
 }

@@ -12,6 +12,8 @@ import { createBrowserPackStorage } from './packs';
 import catalogConfig from '../../mobile/catalog-config.json';
 import { openSnapshotStore, withSnapshot, type SnapshotStore } from './persistence';
 import { openMemoryDatabase, type SqliteModule } from './sqlite';
+import { createBrowserPackFiles } from './pack-files';
+import type { BrowserPackFiles } from './pack-files';
 import type { WorkerRequest, WorkerResponse } from './protocol';
 import { createBrowserCatalogSource, createBrowserFoodCatalog } from './food-catalog';
 
@@ -22,6 +24,7 @@ const lock = async <T>(name: string, work: () => Promise<T>): Promise<T> => awai
 type Database = ReturnType<typeof openMemoryDatabase>;
 let storage: SnapshotStore;
 let sqlite: SqliteModule;
+let packFiles: BrowserPackFiles | undefined;
 
 async function initialize() {
   if (!globalThis.indexedDB || !navigator.locks || !globalThis.crypto?.subtle || !globalThis.DecompressionStream) {
@@ -31,6 +34,7 @@ async function initialize() {
   // The package typings omit Emscripten's supported initialization options.
   const initializeSqlite = sqlite3InitModule as unknown as (options: { locateFile: () => string; print: () => void; printErr: () => void }) => Promise<SqliteModule>;
   sqlite = await initializeSqlite({ locateFile: () => '/offline/sqlite3.wasm', print: () => {}, printErr: () => {} });
+  packFiles = createBrowserPackFiles(sqlite);
   // Opening the diary needs no network or catalog download.
   await withRepository(false, repo => repo.hasRecovery());
 }
@@ -111,8 +115,9 @@ async function catalogs(): Promise<FoodCatalog> {
   throw seedError ?? new Error('The offline food catalog is unavailable.');
 }
 const packStorage = createBrowserPackStorage({
-  store: { read: key => storage.read(key), commit: values => storage.commit(values) },
+  store: { read: key => storage.read(key), readMany: keys => storage.readMany!(keys), commit: values => storage.commit(values) },
   open: bytes => openMemoryDatabase(sqlite, bytes), lock, manifestUrl: '/api/catalog/packs/manifest',
+  files: () => packFiles,
 });
 const expandedCatalog = createPackCatalog(packStorage.list, packStorage.withReader, {
   getFood: async id => (await catalogs()).getFood(id),
@@ -122,7 +127,7 @@ const expandedCatalog = createPackCatalog(packStorage.list, packStorage.withRead
     return core.searchWindow ? core.searchWindow(query, options) : { foods: await core.search(query, options), canExpand: false };
   },
   barcode: async (code, signal) => (await catalogs()).barcode(code, signal),
-});
+}, packStorage.routes);
 const baseCatalog = createBrowserCatalogSource(async () => expandedCatalog, catalogTask, catalogFailure);
 function catalogFailure(error: unknown) {
   emit({ event: 'catalog', status: { phase: 'error', error: error instanceof Error ? error.message : 'Offline foods are unavailable. Try updating the food catalog.' } });
