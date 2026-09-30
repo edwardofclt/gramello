@@ -35,6 +35,11 @@ for (const width of [390, 1440]) {
       return route.fulfill({ json: {} });
     });
     await page.goto('/');
+    await expect(page.getByRole('tab', { name: 'Food', exact: true })).toHaveAttribute('aria-selected', 'true');
+    await expect(page.getByTestId('energy-overview')).toBeVisible();
+    await expect(page.getByTestId('water-total')).toHaveCount(0);
+    await page.getByRole('tab', { name: 'Water', exact: true }).click();
+    await expect(page.getByTestId('energy-overview')).toHaveCount(0);
     const total = page.getByTestId('water-total');
     await expect(total).toHaveText('0 mL of 2000 mL');
     await page.getByRole('textbox', { name: 'Custom water amount (mL)' }).fill('375');
@@ -64,6 +69,9 @@ for (const width of [390, 1440]) {
     await expect(total).toHaveText('21.1 US fl oz of 64 US fl oz');
     await total.scrollIntoViewIfNeeded();
     await page.screenshot({ path: `test-results/native-water-${width}.png`, fullPage: true });
+    await page.getByRole('tab', { name: 'Food', exact: true }).click();
+    await expect(page.getByTestId('energy-overview')).toBeVisible();
+    await expect(total).toHaveCount(0);
     expect(errors).toEqual([]);
   });
 }

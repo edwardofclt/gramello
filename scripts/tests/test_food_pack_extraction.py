@@ -4,6 +4,9 @@ import pathlib
 import tempfile
 import unittest
 import zipfile
+from unittest.mock import patch
+import sys
+import io
 
 import duckdb
 
@@ -14,6 +17,44 @@ spec.loader.exec_module(extractor)
 
 
 class FoodPackExtractionTests(unittest.TestCase):
+    def test_download_reuses_complete_file_and_does_not_cache_truncated_source(self):
+        with tempfile.TemporaryDirectory() as directory:
+            destination = pathlib.Path(directory) / "food.parquet"
+            response = io.BytesIO(b"short")
+            response.headers = {"Content-Length": "10"}
+            with patch.object(extractor.urllib.request, "urlopen", return_value=response):
+                with self.assertRaisesRegex(ValueError, "Incomplete source download"):
+                    extractor.download("https://example.test/food.parquet", destination)
+            self.assertFalse(destination.exists())
+            response = io.BytesIO(b"complete")
+            response.headers = {"Content-Length": "8"}
+            with patch.object(extractor.urllib.request, "urlopen", return_value=response) as request:
+                extractor.download("https://example.test/food.parquet", destination)
+                extractor.download("https://example.test/food.parquet", destination)
+                request.assert_called_once()
+            self.assertEqual(destination.read_bytes(), b"complete")
+
+    def test_main_downloads_off_before_extracting_and_can_cache_sources_only(self):
+        for download_only in [False, True]:
+            with self.subTest(download_only=download_only), tempfile.TemporaryDirectory() as directory:
+                root = pathlib.Path(directory)
+                def fake_download(url, destination):
+                    destination.write_bytes(b"source")
+                args = [str(SCRIPT), str(root), "--off-revision", "fixture-revision"]
+                if download_only:
+                    args.append("--download-only")
+                with patch.object(sys, "argv", args), patch.object(extractor, "download", side_effect=fake_download) as download, \
+                     patch.object(extractor, "extract_usda") as usda, patch.object(extractor, "extract_off") as off:
+                    extractor.main()
+                self.assertEqual(download.call_count, 2)
+                local = root / "off-fixture-revision.parquet"
+                self.assertEqual(download.call_args.args[1], local)
+                if download_only:
+                    usda.assert_not_called()
+                    off.assert_not_called()
+                else:
+                    off.assert_called_once_with(str(local), root / "off.jsonl")
+
     def test_usda_stream_filters_market_and_preserves_nutrient_units(self):
         with tempfile.TemporaryDirectory() as directory:
             root = pathlib.Path(directory)

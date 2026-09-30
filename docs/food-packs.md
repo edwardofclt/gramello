@@ -80,8 +80,10 @@ for the current pack set, so historical assets cannot overflow its CLI buffer.
 
 Native and web automatically check on launch, foreground and once per minute
 while active (metadata skips network until due). Downloads include cellular,
-run sequentially, verify size/hash/SQLite fields before activation and checkpoint
-each pack. Manifests stop at 520,000 actual UTF-8 bytes, and an overflowing pack
+run with up to three packs in flight, prioritize USDA packs, verify
+size/hash/SQLite fields before activation and checkpoint
+each pack. Shared activation and index writes remain serialized. Native candidate
+databases are inspected on independent read-only connections. Manifests stop at 520,000 actual UTF-8 bytes, and an overflowing pack
 chunk is rejected before writing it. A relay manifest transition refreshes the
 verified manifest once immediately; repeated transitions enter normal backoff.
 Retry backoff starts at one hour and caps at one day, preserving the error and
@@ -95,6 +97,12 @@ recovery preserves every transfer still live in the current process. Neither
 scanner deletes unrelated files or referenced installed packs.
 Browser storage quotas may prevent a complete install; existing packs and diaries
 remain usable, and Settings reports the failure and completed-pack progress.
+Automatic downloads show a circular percentage indicator beside the Gramello logo. Settings
+shows the same received-byte percentage and a detailed bar for manual checks,
+alongside the verified pack count. Checking uses an indeterminate indicator;
+a fully received download says “Finishing food catalog update…” until verification
+and activation complete. Indicators disappear on completion or error, with the
+result retained in Settings.
 
 ## Local readers and browser migration
 

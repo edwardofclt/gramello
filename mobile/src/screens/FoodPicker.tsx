@@ -8,6 +8,7 @@ import { CustomFoodForm } from '../components/CustomFoodForm';
 import { useDialogScroll } from '../components/AppDialog';
 import { FoodVerification } from '../components/FoodVerification';
 import { ServingPicker } from '../components/ServingPicker';
+import { BrandFilter } from '../components/BrandFilter';
 import { foodRevision } from '../../../lib/food-revision';
 import { nutritionLabel } from '../../../lib/food';
 import { groupSearchHits, searchCategories, searchHits, useFoodSearch } from '../../../hooks/use-food-search';
@@ -76,7 +77,7 @@ export function FoodPicker({ date, initialMeal, onSaved, initialFood, onIngredie
             <Action secondary label="Scan barcode" onPress={() => { leaveSearch(); setScanning(true); setError(null); }}><ScanBarcode size={20} color={colors.mint} /><Text style={styles.body}>Scan barcode</Text></Action>
             <Action secondary onPress={() => { leaveSearch(); setCustom(true); setError(null); }}>Add custom food</Action>
             <View accessibilityLabel="Food categories" style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 7 }}>{searchCategories.map(([value, label]) => <Pressable key={value} accessibilityRole="button" accessibilityState={{ selected: search.category === value }} aria-pressed={search.category === value} onPress={() => search.setCategory(value)} style={{ minHeight: 44, paddingHorizontal: 12, justifyContent: 'center', borderRadius: 20, backgroundColor: search.category === value ? '#235b57' : colors.raised }}><Text style={{ color: search.category === value ? colors.mint : colors.muted, fontSize: 12 }}>{label === 'Custom' ? local ? 'My foods' : 'Community foods' : label}</Text></Pressable>)}</View>
-            {(search.brand || !!searchResult.brands?.length) && <><Text style={styles.eyebrow}>BRAND OR RESTAURANT</Text><View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 7 }}>{['', ...Array.from(new Set([...(searchResult.brands ?? []), ...(search.brand ? [search.brand] : [])]))].map(brand => <Pressable key={brand} accessibilityRole="button" accessibilityState={{ selected: search.brand === brand }} aria-pressed={search.brand === brand} onPress={() => search.setBrand(brand)} style={{ minHeight: 44, paddingHorizontal: 12, justifyContent: 'center', borderRadius: 20, backgroundColor: search.brand === brand ? '#235b57' : colors.raised }}><Text style={{ color: search.brand === brand ? colors.mint : colors.muted, fontSize: 12 }}>{brand || 'All brands and restaurants'}</Text></Pressable>)}</View></>}
+            {(search.brand || !!searchResult.brands?.length) && <BrandFilter brands={searchResult.brands ?? []} value={search.brand} onChange={search.setBrand} />}
             {(search.category !== 'all' || search.brand) && <Action quiet secondary onPress={search.clearFilters}>Clear filters</Action>}
             {searchResult.correction && <View><Text style={styles.muted}>Also searching for “{searchResult.correction}”.</Text><Action quiet secondary onPress={() => setQuery(searchResult.correction!)}>Use this spelling</Action></View>}
             {search.error && <ErrorNotice message={search.error} retry={search.retry} />}

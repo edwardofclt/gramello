@@ -77,12 +77,12 @@ async function openRuntime() {
       if (text.length > 32768) throw new Error('Catalog manifest is too large.');
       return JSON.parse(text);
     },
-    async install(manifest) {
+    async install(manifest, onProgress) {
       if (Paths.availableDiskSpace < manifest.bytes * 2 + 10 * 1024 * 1024) throw new Error('Free some device storage to update the food catalog.');
       const file = new File(directory,`catalog-${manifest.sha256}.sqlite`);
       let candidate: SQLite.SQLiteDatabase | null = null;
       try {
-        if (!file.exists) await File.downloadFileAsync(manifest.url,file,{ signal:AbortSignal.timeout(120000) });
+        if (!file.exists) await File.downloadFileAsync(manifest.url,file,{ signal:AbortSignal.timeout(120000), onProgress: progress => onProgress?.(progress.bytesWritten) });
         if (file.size !== manifest.bytes) throw new Error('The catalog download is incomplete.');
         const hash = Array.from(new Uint8Array(await Crypto.digest(Crypto.CryptoDigestAlgorithm.SHA256,new Uint8Array(await file.bytes()))), b => b.toString(16).padStart(2,'0')).join('');
         if (hash !== manifest.sha256) throw new Error('The catalog download did not pass verification.');

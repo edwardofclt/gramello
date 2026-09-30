@@ -13,8 +13,8 @@ export function Brand() {
   </View>;
 }
 
-export function TrackerShell({ tab, onTab, onAdd, onGoals, children }: {
-  tab: Tab; onTab: (tab: Tab) => void; onAdd: () => void; onGoals: () => void; children: ReactNode;
+export function TrackerShell({ tab, onTab, onAdd, onGoals, catalogProgress, children }: {
+  tab: Tab; onTab: (tab: Tab) => void; onAdd: () => void; onGoals: () => void; children: ReactNode; catalogProgress?: ReactNode;
 }) {
   const { desktop, width } = useLayout();
   const tabs = [{ key: 'diary', label: isWeb ? 'Today' : 'Diary', Icon: isWeb ? LayoutDashboard : BookOpen },
@@ -33,7 +33,7 @@ export function TrackerShell({ tab, onTab, onAdd, onGoals, children }: {
 
   return <View style={{ flex: 1, flexDirection: 'row' }}>
     {desktop && <View style={{ width: 244, backgroundColor: '#091e2c', borderRightWidth: 1, borderColor: colors.border, padding: 20, paddingTop: 30 }}>
-      <View style={{ paddingHorizontal: 8 }}><Brand /></View>
+      <View style={[styles.row, { paddingHorizontal: 8, gap: 12 }]}><Brand />{catalogProgress}</View>
       <View role="navigation" accessibilityLabel="Main navigation" style={{ marginTop: 42, gap: 7 }}>{navigation(true)}</View>
       <View style={{ flex: 1 }} />
       <View style={{ padding: 17, gap: 8, borderRadius: 18, borderWidth: 1, borderColor: '#26495b', backgroundColor: '#102c3c', marginVertical: 20 }}>
@@ -43,8 +43,8 @@ export function TrackerShell({ tab, onTab, onAdd, onGoals, children }: {
       <View style={{ borderTopWidth: 1, borderColor: colors.border, paddingTop: 12 }}><Action quiet secondary onPress={onGoals} style={{ justifyContent: 'flex-start', paddingHorizontal: 14 }}><Settings2 size={19} color={colors.muted} /><Text style={styles.muted}>Daily goals</Text></Action></View>
     </View>}
     <View style={{ flex: 1, minWidth: 0 }}>
-      <View style={[styles.between, { height: desktop ? 104 : 88, paddingHorizontal: desktop ? Math.min(64, Math.max(28, width * .04)) : 18, borderBottomWidth: 1, borderColor: colors.border, zIndex: 3 }]}>
-        {desktop ? <View style={{ gap: 5, flex: 1, minWidth: 0 }}><Text style={styles.eyebrow}>{tab === 'diary' ? 'DAILY DIARY' : 'NUTRITION ANALYTICS'}</Text><Text accessibilityRole="header" numberOfLines={1} style={[styles.title, { fontSize: 27 }]}>{tab === 'diary' ? 'Today’s fuel' : 'Your progress'}</Text></View> : <Brand />}
+      <View style={[styles.between, { height: desktop ? 104 : isWeb ? 88 : 56, paddingHorizontal: desktop ? Math.min(64, Math.max(28, width * .04)) : 18, borderBottomWidth: 1, borderColor: colors.border, zIndex: 3 }]}>
+        {desktop ? <View style={{ gap: 5, flex: 1, minWidth: 0 }}><Text style={styles.eyebrow}>{tab === 'diary' ? 'DAILY DIARY' : 'NUTRITION ANALYTICS'}</Text><Text accessibilityRole="header" numberOfLines={1} style={[styles.title, { fontSize: 27 }]}>{tab === 'diary' ? 'Today’s fuel' : 'Your progress'}</Text></View> : <View style={[styles.row, { gap: 14 }]}><Brand />{catalogProgress}</View>}
         {isWeb && <View style={[styles.row, { gap: desktop ? 16 : 8 }]}>
           <Action compact={!desktop} label="Add food" onPress={onAdd}><Plus size={19} color="#062018" />{width > 420 && <Text style={{ color: '#062018', fontWeight: '700' }}>Add food</Text>}</Action>
           {!desktop && <Action compact secondary label="Daily goals" onPress={onGoals}><Settings2 size={19} color={colors.muted} /></Action>}

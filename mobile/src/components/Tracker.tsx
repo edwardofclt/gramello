@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useAnalyticsScreen } from '../analytics/useScreen';
 import { useSession } from '../diary/Session';
+import { CatalogDownloadIndicator } from './CatalogDownloadProgress';
 import { TrackerShell, type Tab } from './TrackerShell';
 import { isWeb } from './ui';
 import { localDate } from '../lib/nutrition';
@@ -25,7 +26,7 @@ export function Tracker() {
   const selectTab = (next: Tab) => { setAdvancedOpen(false); setTab(next); };
   const editGoals = () => isWeb ? setGoalsOpen(true) : selectTab('settings');
   return <>
-    <TrackerShell tab={tab} onTab={selectTab} onAdd={() => setMeal('Breakfast')} onGoals={editGoals}>
+    <TrackerShell tab={tab} onTab={selectTab} onAdd={() => setMeal('Breakfast')} onGoals={editGoals} catalogProgress={local && <CatalogDownloadIndicator updater={local.updater} />}>
       {tab === 'diary' ? <DiaryScreen key={revision} date={date} onDate={setDate} onAdd={setMeal} onGoals={editGoals} />
         : tab === 'trends' ? <TrendsScreen key={revision} range={range} onRange={setRange} />
         : advancedOpen && local ? <AdvancedScreen local={local} onBack={() => setAdvancedOpen(false)} />

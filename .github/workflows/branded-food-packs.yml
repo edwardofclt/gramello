@@ -15,6 +15,8 @@ jobs:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 90
+    env:
+      OFF_REVISION: 5ac8dbc2a2b1978924686e11798fe136eb13902a
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -32,6 +34,30 @@ jobs:
         run: |
           python -m unittest discover -s scripts/tests -p 'test_food_pack*.py'
           pnpm test tests/branded-catalog.test.ts tests/catalog-packs.test.ts tests/browser-packs.test.ts tests/catalog-pack-relay.test.ts
+      - name: Make room for source snapshots and cache archives
+        run: |
+          # This data job does not build Android, .NET, or Haskell applications.
+          # OFF's full Parquet snapshot is about 7.9 GB, before cache packaging.
+          sudo rm -rf /usr/local/lib/android /usr/share/dotnet /opt/ghc
+          df -h .
+      - name: Restore pinned source downloads
+        id: sources
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            .catalog-work/raw/*.zip
+            .catalog-work/raw/*.parquet
+          key: food-pack-sources-usda-2026-04-30-off-${{ env.OFF_REVISION }}
+      - name: Download source snapshots with progress
+        run: python -u scripts/extract-food-packs.py .catalog-work/raw --off-revision "$OFF_REVISION" --download-only
+      - name: Save downloads before starting extraction
+        if: steps.sources.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            .catalog-work/raw/*.zip
+            .catalog-work/raw/*.parquet
+          key: food-pack-sources-usda-2026-04-30-off-${{ env.OFF_REVISION }}
       - name: Extract both official datasets and build signed source packs
         env:
           CATALOG_SIGNING_KEY: ${{ secrets.CATALOG_SIGNING_KEY }}
@@ -39,7 +65,7 @@ jobs:
         run: |
           set -euo pipefail
           test -n "$CATALOG_SIGNING_KEY"
-          python scripts/extract-food-packs.py .catalog-work/raw
+          python -u scripts/extract-food-packs.py .catalog-work/raw --off-revision "$OFF_REVISION"
           node scripts/food-packs.mjs .catalog-work/raw/usda.jsonl .catalog-work/raw/off.jsonl \
             catalog-release "https://github.com/${REPOSITORY}/releases/download/food-catalog/"
           node scripts/verify-food-packs.mjs catalog-release

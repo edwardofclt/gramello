@@ -24,7 +24,7 @@ const deferred = <T,>() => {
 let root: Root;
 let container: HTMLDivElement;
 function fixture(recovery = false) {
-  const status: UpdateStatus = { phase: 'current', version: '2026-09-25.1' };
+  let status: UpdateStatus = { phase: 'current', version: '2026-09-25.1' };
   const api = vi.fn(async (path: string) => ({
     date: new URL(path, 'https://local.test').searchParams.get('date'), entries: [], totalMl: 0, goal: defaultWaterGoal,
   }));
@@ -32,10 +32,12 @@ function fixture(recovery = false) {
   const importFile = vi.fn<(text: string) => Promise<void>>().mockResolvedValue(undefined);
   const restorePrevious = vi.fn<() => Promise<void>>().mockResolvedValue(undefined);
   const exportFile = vi.fn<(kind: 'backup' | 'diary' | 'water') => Promise<void>>().mockResolvedValue(undefined);
-  const updater = { getStatus: () => status, subscribe: () => () => {}, check: vi.fn(async () => {}) };
+  const listeners = new Set<() => void>();
+  const updater = { getStatus: () => status, subscribe: (listener: () => void) => { listeners.add(listener); return () => { listeners.delete(listener); }; }, check: vi.fn(async () => {}) };
+  const setStatus = (next: UpdateStatus) => { status = next; for (const listener of listeners) listener(); };
   const runtime = { api, repository, updater, importFile, restorePrevious, exportFile } as unknown as Parameters<typeof BrowserDataSettings>[0]['runtime'];
   const onReplaced = vi.fn();
-  return { runtime, api, repository, importFile, restorePrevious, exportFile, onReplaced };
+  return { setStatus, runtime, api, repository, importFile, restorePrevious, exportFile, onReplaced };
 }
 async function render(value = fixture()) {
   await act(async () => root.render(createElement(BrowserDataSettings, {
@@ -220,4 +222,21 @@ describe('browser data settings', () => {
     expect(value.restorePrevious).not.toHaveBeenCalled();
     expect(value.onReplaced).not.toHaveBeenCalled();
   });
+});
+
+it('shows download progress for automatic updates and manual checks', async () => {
+  const value = await render();
+  expect(container.querySelector('[role="progressbar"]')).toBeNull();
+  await act(async () => value.setStatus({ phase: 'downloading', downloadedBytes: 500, totalBytes: 1000 }));
+  expect(container.querySelector('[role="progressbar"]')?.getAttribute('aria-valuenow')).toBe('50');
+  await act(async () => value.setStatus({ phase: 'current' }));
+  value.runtime.updater.check = async () => { value.setStatus({ phase: 'checking' }); };
+  await click('Check for updates');
+  expect(container.querySelector('[role="progressbar"]')).not.toBeNull();
+  expect(container.querySelector('[role="progressbar"]')?.hasAttribute('aria-valuenow')).toBe(false);
+  await act(async () => value.setStatus({ phase: 'downloading', downloadedBytes: 750, totalBytes: 1000 }));
+  expect(container.querySelector('[role="progressbar"]')?.getAttribute('aria-valuenow')).toBe('75');
+  await act(async () => value.setStatus({ phase: 'error', error: 'Network interrupted' }));
+  expect(container.querySelector('[role="progressbar"]')).toBeNull();
+  expect(container.textContent).toContain('Network interrupted');
 });

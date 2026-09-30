@@ -9,7 +9,7 @@ export interface BrowserPackFiles {
   recover?(): Promise<void>;
   stat(pack: FoodPack): Promise<PackFileStamp | null>;
   read(pack: FoodPack): Promise<Uint8Array<ArrayBuffer>>;
-  stage(pack: FoodPack, response: Response): Promise<string>;
+  stage(pack: FoodPack, response: Response, onProgress?: (receivedBytes: number) => void): Promise<string>;
   activate(pack: FoodPack, temporary: string): Promise<void>;
   open(pack: FoodPack): Promise<SqliteConnection & { close(): void }>;
   removeTemporary(path: string): Promise<void>;
@@ -58,7 +58,7 @@ export function createBrowserPackFiles(sqlite: SqliteModule): BrowserPackFiles |
       catch (error) { if (error instanceof DOMException && error.name === 'NotFoundError') return null; throw error; }
     },
     read: pack => read(packFileName(pack)),
-    async stage(pack, response) {
+    async stage(pack, response, onProgress) {
       packSchema.parse(pack);
       const name = `partial-${pack.sha256}-${crypto.randomUUID()}.sqlite`;
       try {
@@ -68,7 +68,7 @@ export function createBrowserPackFiles(sqlite: SqliteModule): BrowserPackFiles |
           await consumeBoundedResponse(response, { maxBytes: pack.bytes, exactBytes: pack.bytes }, bytes => {
             let cursor = 0;
             while (cursor < bytes.length) { const written = handle.write(bytes.subarray(cursor), { at: offset }); if (!written) throw new Error('Pack file write failed.'); cursor += written; offset += written; }
-          }); await handle.flush();
+          }, onProgress); await handle.flush();
         } finally { await handle.close(); }
         return name;
       } catch (error) { await remove(name).catch(() => {}); throw error; }

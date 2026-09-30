@@ -103,3 +103,22 @@
 .food-picker:has(.food-search-form){gap:8px}.food-picker .search-guidance{margin:0}.food-picker .food-actions{margin:0;gap:6px;flex-direction:row;flex-wrap:nowrap}.food-picker .food-actions>button{flex:1;min-width:0;min-height:44px;padding-inline:10px;font-size:.75rem}.food-picker .search-filters{margin:0;gap:5px;flex-wrap:nowrap;overflow-x:auto;padding-block:4px}.food-picker .search-filters button{flex:1 0 auto;white-space:nowrap;padding-inline:8px}.food-picker .search-brand{margin:0}.food-picker .search-results{margin-top:2px}
 @media(max-width:440px){.food-picker .food-search-form{flex-wrap:nowrap;gap:6px}.food-picker .food-search-form .search-box{flex-basis:auto}.food-picker .food-search-form>button{width:auto;padding-inline:10px;font-size:.75rem}.food-picker .search-brand{display:grid;grid-template-columns:minmax(0,1fr);gap:4px}.food-picker .search-brand select{width:100%;font-size:16px}.food-picker .search-filters{gap:3px}.food-picker .search-filters button{padding-inline:4px}}
 @media(max-width:360px){.food-picker .search-filters{gap:2px}.food-picker .search-filters button{padding-inline:2px;font-size:.6875rem}}
+
+.diary-tabs{gap:20px}.diary-tabs>[data-slot="tabs-list"]{width:100%;max-width:320px;height:44px}.diary-tabs>[data-slot="tabs-content"]{min-width:0}
+/* Shared automatic and manual food catalog download progress. */
+.catalog-download-progress{display:grid;gap:8px}
+.catalog-download-label{display:flex;justify-content:space-between;gap:12px;color:#8ca1b2;font-size:.8rem}
+.catalog-download-label>span:first-child{display:flex;align-items:center;gap:7px}
+.catalog-download-label>span:last-child:not(:first-child){color:#6ee7c7}
+.catalog-download-track{height:7px;border-radius:8px;background:#152f41;overflow:hidden}
+.catalog-download-track>span{display:block;height:100%;border-radius:8px;background:#6ee7c7;transition:width .2s ease}
+.catalog-download-indeterminate{animation:catalog-progress 1.5s ease-in-out infinite}
+@keyframes catalog-progress{0%{transform:translateX(-100%)}100%{transform:translateX(290%)}}
+@media(prefers-reduced-motion:reduce){.catalog-download-indeterminate{animation:none}.catalog-download-track>span{transition:none}}
+
+
+.catalog-download-ring{position:relative;display:grid;place-items:center;flex:none;width:40px;height:40px;margin-left:8px;color:#6ee7c7}
+.catalog-download-ring svg{position:absolute}
+.catalog-download-ring>span{font-size:10px;font-weight:700}
+.catalog-download-ring circle{transition:stroke-dashoffset .2s ease}
+@media(prefers-reduced-motion:reduce){.catalog-download-ring circle{transition:none}.catalog-download-ring .spin{animation:none}}

@@ -2,7 +2,7 @@ export type DownloadResponse = Pick<Response, 'ok' | 'body'>;
 export type DownloadBounds = { maxBytes: number; exactBytes?: number };
 
 export async function consumeBoundedResponse(response: DownloadResponse, bounds: DownloadBounds,
-  write: (chunk: Uint8Array<ArrayBuffer>) => void | Promise<void>): Promise<number> {
+  write: (chunk: Uint8Array<ArrayBuffer>) => void | Promise<void>, onProgress?: (receivedBytes: number) => void): Promise<number> {
   if (!Number.isSafeInteger(bounds.maxBytes) || bounds.maxBytes <= 0
     || (bounds.exactBytes !== undefined && (!Number.isSafeInteger(bounds.exactBytes)
       || bounds.exactBytes <= 0 || bounds.exactBytes > bounds.maxBytes))) throw new Error('Invalid download size.');
@@ -16,6 +16,7 @@ export async function consumeBoundedResponse(response: DownloadResponse, bounds:
       if (size + value.byteLength > bounds.maxBytes) throw new Error('Download exceeds its signed size.');
       size += value.byteLength;
       await write(value);
+      onProgress?.(size);
     }
     if (bounds.exactBytes !== undefined && size !== bounds.exactBytes) throw new Error('Download is incomplete.');
     return size;
@@ -24,9 +25,9 @@ export async function consumeBoundedResponse(response: DownloadResponse, bounds:
     throw error;
   } finally { reader.releaseLock(); }
 }
-async function readBytes(response: DownloadResponse, bounds: DownloadBounds): Promise<Uint8Array<ArrayBuffer>> {
+async function readBytes(response: DownloadResponse, bounds: DownloadBounds, onProgress?: (receivedBytes: number) => void): Promise<Uint8Array<ArrayBuffer>> {
   const chunks: Uint8Array<ArrayBuffer>[] = [];
-  const size = await consumeBoundedResponse(response, bounds, chunk => { chunks.push(chunk); });
+  const size = await consumeBoundedResponse(response, bounds, chunk => { chunks.push(chunk); }, onProgress);
   const bytes = new Uint8Array(size);
   let offset = 0;
   for (const chunk of chunks) { bytes.set(chunk, offset); offset += chunk.byteLength; }
@@ -35,7 +36,7 @@ async function readBytes(response: DownloadResponse, bounds: DownloadBounds): Pr
 export async function readPackManifestResponse(response: DownloadResponse): Promise<unknown> {
   return JSON.parse(new TextDecoder().decode(await readBytes(response, { maxBytes: 520000 })));
 }
-export async function readPackResponse(response: DownloadResponse, expectedBytes: number): Promise<Uint8Array<ArrayBuffer>> {
+export async function readPackResponse(response: DownloadResponse, expectedBytes: number, onProgress?: (receivedBytes: number) => void): Promise<Uint8Array<ArrayBuffer>> {
   if (!Number.isSafeInteger(expectedBytes) || expectedBytes < 4096 || expectedBytes > 32 * 1024 * 1024) throw new Error('Invalid pack size.');
-  return readBytes(response, { maxBytes: expectedBytes, exactBytes: expectedBytes });
+  return readBytes(response, { maxBytes: expectedBytes, exactBytes: expectedBytes }, onProgress);
 }

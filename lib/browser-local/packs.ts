@@ -117,16 +117,16 @@ export function createBrowserPackStorage(options: {
       if (!response.ok) throw new Error('US product downloads are unavailable. Installed foods remain usable.');
       return readPackManifestResponse(response);
     },
-    async install(pack) {
+    async install(pack, onProgress) {
       refreshFiles();
       const response = await fetcher(`/api/catalog/packs/download?${new URLSearchParams({ id: pack.id, sha256: pack.sha256 })}`, { signal: AbortSignal.timeout(120000) });
       if (response.status === 409) { await response.body?.cancel(); throw new PackManifestChangedError(); }
       if (files && files.direct !== false) {
-        const temporary = await files.stage(pack, response);
+        const temporary = await files.stage(pack, response, onProgress);
         try { await lock('gramello:food-packs', () => activateFile(pack, temporary)); }
         finally { await files.removeTemporary(temporary).catch(() => {}); }
       } else {
-        const bytes = await readPackResponse(response, pack.bytes);
+        const bytes = await readPackResponse(response, pack.bytes, onProgress);
         if (await hash(bytes) !== pack.sha256) throw new Error('The food pack did not pass verification.');
         await lock('gramello:food-packs', async () => {
           const pages = await inspect(open(bytes), pack);

@@ -8,6 +8,14 @@ describe('bounded pack responses', () => {
     await expect(consumeBoundedResponse(new Response(body), { maxBytes: 4096, exactBytes: 4096 }, b => { written.push(b.length); })).rejects.toThrow('exceeds');
     expect(written).toEqual([4096]); expect(cancelled).toBe(true); expect(body.locked).toBe(false);
   });
+  it('reports only bytes accepted by the bounded sink', async () => {
+    const progress: number[] = [];
+    const body = new ReadableStream({ start(c) {
+      c.enqueue(new Uint8Array(2048)); c.enqueue(new Uint8Array(2048)); c.enqueue(new Uint8Array(1));
+    } });
+    await expect(readPackResponse(new Response(body), 4096, bytes => progress.push(bytes))).rejects.toThrow('exceeds');
+    expect(progress).toEqual([2048, 4096]);
+  });
   it('rejects truncation', async () => {
     await expect(readPackResponse(new Response(new Uint8Array(4095)), 4096)).rejects.toThrow('incomplete');
   });

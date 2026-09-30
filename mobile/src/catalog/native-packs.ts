@@ -23,6 +23,8 @@ export async function createNativePackStorage(
   directory.create({ intermediates: true, idempotent: true });
   const queue = {} as SqliteConnection;
   const routeIndex = createNativePackRoutes(directory.uri);
+  // Metadata has its own queue: never hold the catalog reader queue while saving it.
+  const metadataQueue = {} as SqliteConnection;
   const stored = await metadata<{ active: unknown[]; previous: unknown[] }>('foodPackIndex');
   const descriptors = (values: unknown[] = []) => values.flatMap(value => { const parsed = packSchema.safeParse(value); return parsed.success ? [parsed.data] : []; });
   let installed = descriptors(stored?.active), previous = descriptors(stored?.previous);
@@ -70,7 +72,7 @@ export async function createNativePackStorage(
       if (!response.ok) throw new Error('US product downloads are unavailable. Installed foods remain usable.');
       return readPackManifestResponse(response);
     },
-    async install(pack) {
+    async install(pack, onProgress) {
       if (Paths.availableDiskSpace < pack.bytes * 2 + 10 * 1024 * 1024) throw new Error('Free some device storage to download US products.');
       const file = fileFor(pack);
       let temporary: File | undefined;
@@ -90,36 +92,42 @@ export async function createNativePackStorage(
           try {
             // No network-type gate: cellular downloads are explicitly enabled.
             const response = await fetcher(pack.url, { signal: AbortSignal.timeout(120000) });
-            await consumeBoundedResponse(response, { maxBytes: pack.bytes, exactBytes: pack.bytes }, chunk => handle.writeBytes(chunk));
+            await consumeBoundedResponse(response, { maxBytes: pack.bytes, exactBytes: pack.bytes }, chunk => handle.writeBytes(chunk), onProgress);
           } finally { handle.close(); }
           const staged = temporary;
+          if (!await verified(staged, pack, true)) throw new Error('The food pack did not pass verification.');
+          // Inspect the candidate without blocking unrelated catalog readers.
+          const db = await open(staged);
+          try { await inspectFoodPack(db, pack); } finally { await db.closeAsync(); }
           await serialized(queue, async () => {
-            if (!await verified(staged, pack, true)) throw new Error('The food pack did not pass verification.');
-            const db = await open(staged);
-            try { await inspectFoodPack(db, pack); } finally { await db.closeAsync(); }
             await staged.move(file);
             temporary = undefined;
             verification.invalidate(pack.sha256);
             if (!await verified(file, pack, true)) throw new Error('The food pack did not pass verification.');
           });
         } else {
-          await serialized(queue, async () => { const db = await open(file); try { await inspectFoodPack(db, pack); } finally { await db.closeAsync(); } });
+          const db = await open(file);
+          try { await inspectFoodPack(db, pack); } finally { await db.closeAsync(); }
         }
         await serialized(queue, () => index(pack));
-        const next = [...installed.filter(old => old.id !== pack.id), pack];
-        const old = installed.find(old => old.id === pack.id && old.sha256 !== pack.sha256);
-        const prior = old ? [...previous.filter(item => item.id !== pack.id), old] : previous;
-        // Never save personal metadata while holding the catalog reader queue.
-        await saveMetadata('foodPackIndex', { active: next, previous: prior }); installed = next; previous = prior;
+        await serialized(metadataQueue, async () => {
+          const next = [...installed.filter(old => old.id !== pack.id), pack];
+          const old = installed.find(old => old.id === pack.id && old.sha256 !== pack.sha256);
+          const prior = old ? [...previous.filter(item => item.id !== pack.id), old] : previous;
+          // Never save personal metadata while holding the catalog reader queue.
+          await saveMetadata('foodPackIndex', { active: next, previous: prior }); installed = next; previous = prior;
+        });
       } catch (error) {
         if (temporary?.exists) { try { temporary.delete(); } catch { /* Only this failed transfer is disposable. */ } }
         throw error;
       } finally { if (transferPath) liveTransfers.delete(transferPath); }
     },
     async retire(wanted) {
-      const next = installed.filter(old => wanted.some(pack => pack.id === old.id && pack.sha256 === old.sha256));
-      const prior = previous.filter(old => next.some(pack => pack.id === old.id));
-      await saveMetadata('foodPackIndex', { active: next, previous: prior }); installed = next; previous = prior;
+      await serialized(metadataQueue, async () => {
+        const next = installed.filter(old => wanted.some(pack => pack.id === old.id && pack.sha256 === old.sha256));
+        const prior = previous.filter(old => next.some(pack => pack.id === old.id));
+        await saveMetadata('foodPackIndex', { active: next, previous: prior }); installed = next; previous = prior;
+      });
       await serialized(queue, async () => {
         await routeIndex.retire(installed);
         const keep = new Set([...installed, ...previous].map(pack => fileFor(pack).name));
