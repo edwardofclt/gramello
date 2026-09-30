@@ -29,6 +29,10 @@ const html = `<!doctype html><title>Pack storage test harness</title><script typ
 const server = createServer(async (request, response) => {
   try {
     const url = new URL(request.url, 'http://127.0.0.1:5199');
+    if (url.pathname === '/native-report' && request.method === 'POST') {
+      let body = ''; for await (const chunk of request) { body += chunk; if (body.length > 10000) throw new Error('Report too large'); }
+      console.log('NATIVE PACK RESULT', body); response.end('ok'); return;
+    }
     if (url.pathname !== '/no-isolation') { response.setHeader('Cross-Origin-Opener-Policy', 'same-origin'); response.setHeader('Cross-Origin-Embedder-Policy', 'require-corp'); }
     if (url.pathname === '/control') {
       generation = Number(url.searchParams.get('generation') ?? 0); failed = url.searchParams.get('fail') === 'true'; delay = Number(url.searchParams.get('delay') ?? 0);

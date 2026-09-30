@@ -14,7 +14,9 @@ import type { FoodCatalog } from '../local/repository';
 
 export async function createNativePackStorage(
   metadata: <T>(key: string) => Promise<T | null>, saveMetadata: (key: string, value: unknown) => Promise<unknown>, manifestUrl: string,
+  options: { fetcher?: typeof fetch } = {},
 ): Promise<PackStorage & { routes: PackRouteLookup; withReader<T>(pack: FoodPack, work: (reader: FoodCatalog) => Promise<T>): Promise<T> }> {
+  const fetcher = options.fetcher ?? fetch;
   const directory = new Directory(Paths.document, 'gramello-food-packs');
   directory.create({ intermediates: true, idempotent: true });
   const queue = {} as SqliteConnection;
@@ -58,7 +60,7 @@ export async function createNativePackStorage(
     load: async () => await metadata<UpdateState>('foodPacksUpdate') ?? {},
     save: async state => { await saveMetadata('foodPacksUpdate', state); },
     async fetchManifest() {
-      const response = await fetch(manifestUrl, { signal: AbortSignal.timeout(20000) });
+      const response = await fetcher(manifestUrl, { signal: AbortSignal.timeout(20000) });
       if (!response.ok) throw new Error('US product downloads are unavailable. Installed foods remain usable.');
       return readPackManifestResponse(response);
     },
@@ -79,7 +81,7 @@ export async function createNativePackStorage(
           const handle = temporary.open();
           try {
             // No network-type gate: cellular downloads are explicitly enabled.
-            const response = await fetch(pack.url, { signal: AbortSignal.timeout(120000) });
+            const response = await fetcher(pack.url, { signal: AbortSignal.timeout(120000) });
             await consumeBoundedResponse(response, { maxBytes: pack.bytes, exactBytes: pack.bytes }, chunk => handle.writeBytes(chunk));
           } finally { handle.close(); }
           const staged = temporary;

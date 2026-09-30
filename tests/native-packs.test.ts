@@ -36,6 +36,13 @@ async function setup() {
 }
 const installedFile = () => join(root, 'gramello-food-packs', `pack-${pack.sha256}.sqlite`);
 describe('native expansion files', () => {
+  it('can isolate fixture transport without changing signed descriptors', async () => {
+    const fixtureFetch = vi.fn(async () => new Response(bytes as Uint8Array<ArrayBuffer>));
+    const storage = await createNativePackStorage(async () => null, async () => {}, 'https://example.org/manifest', { fetcher: fixtureFetch as any });
+    await storage.install(pack);
+    expect(fixtureFetch).toHaveBeenCalledWith(pack.url, expect.objectContaining({ signal: expect.any(AbortSignal) }));
+    expect(await storage.list()).toEqual([pack]);
+  });
   it('persists USDA routes across restart and indexes legacy packs once', async () => {
     const fixture = join(root, 'usda.sqlite'); buildCatalog([normalizeUsdaBranded(usda)!], fixture, 'usda-v1', 'usda-branded');
     bytes = new Uint8Array(readFileSync(fixture));
