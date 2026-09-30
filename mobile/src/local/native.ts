@@ -38,28 +38,104 @@ async function openRuntime() {
     catch (error) { await db.closeAsync(); throw error; }
   };
   let active: SQLite.SQLiteDatabase | null = null;
-  let activeVersion = '', activeName = '';
+  let bundled: SQLite.SQLiteDatabase | null = null;
+  let activeVersion = '', activeName = '', bundledName = '';
   const installed = await metadata<string>('catalogFile');
-  if (installed && /^[a-zA-Z0-9._-]+\.sqlite$/.test(installed) && !installed.includes('..')) {
-    const file = new File(directory,installed);
-    if (file.exists) {
-      try { active = await openCatalog(file); activeVersion = (await inspectCatalog(active)).version; activeName = installed; }
-      catch { await active?.closeAsync().catch(() => {}); active = null; }
+  const installedName = installed && /^[a-zA-Z0-9._-]+\.sqlite$/.test(installed) && !installed.includes('..') ? installed : null;
+  // Catalog files are immutable after activation. Receipts live beside them,
+  // avoiding the personal queue: logging food may already hold that queue.
+  const receiptFor = (file: File) => new File(directory, `${file.name}.verified.json`);
+  const fingerprint = (file: File) => {
+    const info = file.info();
+    return Number.isFinite(info.modificationTime) ? { bytes:file.size, modified:info.modificationTime } : null;
+  };
+  const inspectFile = async (db: SQLite.SQLiteDatabase, file: File, identity: string | null, expected?: { version: string; count: number }, force = false) => {
+    const stamp = fingerprint(file), receipt = receiptFor(file);
+    if (!force && identity && stamp && receipt.exists && receipt.size <= 1024) {
+      try {
+        const saved = JSON.parse(await receipt.text());
+        if (saved.validation === 1 && saved.identity === identity && saved.bytes === stamp.bytes && saved.modified === stamp.modified) {
+          // Probe only metadata, never counts, quick_check, or food rows.
+          const schema = await db.getFirstAsync<{ user_version: number }>('PRAGMA user_version');
+          const info = await db.getFirstAsync<{ value: string }>("SELECT value FROM catalog_meta WHERE key='version'");
+          if (schema?.user_version === 1 && info && info.value === saved.version && (!expected || expected.version === info.value)) return { version:info.value };
+        }
+      } catch { /* Missing/stale receipts require full verification. */ }
     }
-  }
-  // Keep the current app's bundled foods available even when a previously
-  // installed catalog (or older release) covers fewer restaurants/products.
-  // eslint-disable-next-line @typescript-eslint/no-require-imports
-  const asset = await Asset.fromModule(require('../../assets/catalog.sqlite')).downloadAsync();
-  const seed = new File(directory,'starter.sqlite');
-  if (seed.exists) seed.delete();
-  await new File(asset.localUri ?? asset.uri).copy(seed);
-  const bundled = await openCatalog(seed), bundledInfo = await inspectCatalog(bundled);
-  if (!active) { active = bundled; activeVersion = bundledInfo.version; activeName = seed.name; }
-  // The catalog queue keeps an old connection alive until its readers finish.
+    const sha = /^catalog-([a-f0-9]{64})\.sqlite$/.exec(file.name)?.[1];
+    if (sha && !force) {
+      const hash = Array.from(new Uint8Array(await Crypto.digest(Crypto.CryptoDigestAlgorithm.SHA256,new Uint8Array(await file.bytes()))), b => b.toString(16).padStart(2,'0')).join('');
+      if (hash !== sha) throw new Error('The installed food catalog did not pass verification.');
+    }
+    const info = await inspectCatalog(db, expected);
+    if (JSON.stringify(stamp) !== JSON.stringify(fingerprint(file))) throw new Error('The food catalog changed during verification.');
+    if (identity && stamp) {
+      try { receipt.write(JSON.stringify({ validation:1, identity, ...stamp, version:info.version })); }
+      catch { /* A read-only/full cache must not prevent using verified foods. */ }
+    }
+    return info;
+  };
+  // This queue also protects lazy opening from a concurrent catalog activation.
   const catalogLock = {} as SqliteConnection;
-  const bundledReader = createCatalogReader(work => work(bundled));
-  const downloaded = createCatalogReader(work => serialized(catalogLock, () => work(active!)), bundledReader);
+  // Fallback queries can run inside the primary reader's callback. A distinct
+  // queue avoids reacquiring catalogLock; the only nested order is core -> bundle.
+  const bundledLock = {} as SqliteConnection;
+  const openBundled = async () => {
+    if (bundled) return bundled;
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const asset = Asset.fromModule(require('../../assets/catalog.sqlite'));
+    const identity = asset.hash && /^[a-f0-9]+$/i.test(asset.hash) ? asset.hash : null;
+    const seed = new File(directory, identity ? `starter-${identity}.sqlite` : 'starter.sqlite');
+    let candidate: SQLite.SQLiteDatabase | null = null;
+    try {
+      // A content-specific name reuses this release's copy across launches.
+      // Assets without a stable hash are recopied, but only on first lookup.
+      if (!seed.exists || !identity) {
+        const downloaded = await asset.downloadAsync();
+        if (seed.exists) seed.delete();
+        await new File(downloaded.localUri ?? downloaded.uri).copy(seed);
+      }
+      candidate = await openCatalog(seed);
+      await inspectFile(candidate, seed, identity);
+      bundled = candidate; bundledName = seed.name;
+      // Only create a new copy when this release's foods are first needed, then
+      // retire prior bundle generations and their receipts under bundledLock.
+      for (const entry of directory.list()) if (entry instanceof File && /^starter(?:-[a-f0-9]+)?\.sqlite(?:\.verified\.json)?$/i.test(entry.name)) {
+        const name = entry.name.replace(/\.verified\.json$/, '');
+        if (name !== bundledName && name !== activeName && name !== installedName) {
+          try { entry.delete(); } catch { /* A later lookup can retry cache cleanup. */ }
+        }
+      }
+      return bundled;
+    } catch (error) {
+      await candidate?.closeAsync().catch(() => {});
+      try { if (seed.exists) seed.delete(); } catch { /* Retry on the next lookup. */ }
+      throw error;
+    }
+  };
+  const openActive = async () => {
+    if (active) return active;
+    if (installedName) {
+      const file = new File(directory, installedName);
+      if (file.exists) {
+        let candidate: SQLite.SQLiteDatabase | null = null;
+        try {
+          candidate = await openCatalog(file);
+          activeVersion = (await inspectFile(candidate, file, installedName)).version;
+          active = candidate; activeName = installedName;
+          return active;
+        } catch { await candidate?.closeAsync().catch(() => {}); }
+      }
+    }
+    active = await serialized(bundledLock, openBundled); activeName = bundledName;
+    const info = await active.getFirstAsync<{ value: string }>("SELECT value FROM catalog_meta WHERE key='version'");
+    activeVersion = info!.value;
+    return active;
+  };
+  // Construct readers now; opening or validating a catalog is a food operation,
+  // never a prerequisite for rendering saved diary snapshots and water.
+  const bundledReader = createCatalogReader(work => serialized(bundledLock, async () => work(await openBundled())));
+  const downloaded = createCatalogReader(work => serialized(catalogLock, async () => work(await openActive())), bundledReader);
   const foodCache = await SQLite.openDatabaseAsync('gramello-food-cache.sqlite');
   const packStorage = await createNativePackStorage(metadata, saveMetadata, catalogConfig.packManifestUrl);
   const catalog = await createFoodLookup(createPackCatalog(packStorage.list, packStorage.withReader, downloaded, packStorage.routes), foodCache);
@@ -67,7 +143,25 @@ async function openRuntime() {
   const coreUpdater = createCatalogUpdater({
     async load() {
       const state = await metadata<UpdateState>('catalogUpdate') ?? {};
-      return state.version === activeVersion ? state : { version:activeVersion };
+      if (activeVersion) return state.version === activeVersion ? state : { version:activeVersion };
+      // Read activation metadata without opening/scanning the catalog.
+      if (installedName) {
+        const file = new File(directory, installedName);
+        if (file.exists) {
+          const receipt = receiptFor(file), stamp = fingerprint(file);
+          // Legacy activations have no receipt yet. Known changed bytes should
+          // request repair even when the remote catalog version is unchanged.
+          if (receipt.exists && stamp) {
+            try {
+              const saved = receipt.size <= 1024 ? JSON.parse(await receipt.text()) : null;
+              if (!saved || saved.validation !== 1 || saved.identity !== installedName || saved.bytes !== stamp.bytes || saved.modified !== stamp.modified) return { ...state, version:undefined };
+            } catch { return { ...state, version:undefined }; }
+          }
+          return state;
+        }
+      }
+      // Keep retry scheduling even when no catalog has been opened yet.
+      return { ...state, version:undefined };
     },
     async save(state) { await saveMetadata('catalogUpdate',state); },
     async fetchManifest() {
@@ -81,28 +175,36 @@ async function openRuntime() {
       if (Paths.availableDiskSpace < manifest.bytes * 2 + 10 * 1024 * 1024) throw new Error('Free some device storage to update the food catalog.');
       const file = new File(directory,`catalog-${manifest.sha256}.sqlite`);
       let candidate: SQLite.SQLiteDatabase | null = null;
+      let verifiedBytes = false;
       try {
         if (!file.exists) await File.downloadFileAsync(manifest.url,file,{ signal:AbortSignal.timeout(120000), onProgress: progress => onProgress?.(progress.bytesWritten) });
         if (file.size !== manifest.bytes) throw new Error('The catalog download is incomplete.');
         const hash = Array.from(new Uint8Array(await Crypto.digest(Crypto.CryptoDigestAlgorithm.SHA256,new Uint8Array(await file.bytes()))), b => b.toString(16).padStart(2,'0')).join('');
         if (hash !== manifest.sha256) throw new Error('The catalog download did not pass verification.');
+        verifiedBytes = true;
         candidate = await openCatalog(file);
-        await inspectCatalog(candidate,manifest);
+        await inspectFile(candidate,file,file.name,manifest,true);
         // Never acquire the personal queue while holding the catalog queue:
         // a diary operation may already own personal while searching catalog.
         await saveMetadata('catalogFile',file.name);
         await serialized(catalogLock, async () => {
-          const previous = active!, previousName = activeName;
+          const previous = active, previousName = activeName || installedName;
           active = candidate; candidate = null; activeVersion = manifest.version; activeName = file.name;
-          if (previous !== bundled) await previous.closeAsync().catch(() => {});
+          if (previous && previous !== bundled) await previous.closeAsync().catch(() => {});
           // Keep one previous complete catalog; remove older downloads on next install.
-          for (const entry of directory.list()) if (entry instanceof File && entry.name !== activeName && entry.name !== previousName && entry.name !== 'starter.sqlite') {
+          for (const entry of directory.list()) if (entry instanceof File && /^catalog-[a-f0-9]{64}\.sqlite(?:\.verified\.json)?$/.test(entry.name)
+            && entry.name.replace(/\.verified\.json$/, '') !== activeName && entry.name.replace(/\.verified\.json$/, '') !== previousName) {
             try { entry.delete(); } catch { /* Cached files can be cleaned later. */ }
           }
         });
       } finally {
         await candidate?.closeAsync().catch(() => {});
-        if (file.name !== activeName && file.exists) { try { file.delete(); } catch { /* OS may reclaim this cache. */ } }
+        // Cold startup leaves active unopened. A descriptor/metadata failure
+        // must still preserve the previously activated, hash-valid file.
+        if (file.name !== activeName && !(file.name === installedName && verifiedBytes) && file.exists) {
+          try { file.delete(); const receipt = receiptFor(file); if (receipt.exists) receipt.delete(); }
+          catch { /* OS may reclaim this cache. */ }
+        }
       }
     },
   },catalogConfig.publicKey);

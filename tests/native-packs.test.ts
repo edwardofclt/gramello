@@ -54,7 +54,7 @@ describe('native expansion files', () => {
   });
   it('can isolate fixture transport without changing signed descriptors', async () => {
     const fixtureFetch = vi.fn(async () => new Response(bytes as Uint8Array<ArrayBuffer>));
-    const storage = await createNativePackStorage(async () => null, async () => {}, 'https://example.org/manifest', { fetcher: fixtureFetch as any });
+    const storage = await createNativePackStorage(async () => null, async () => {}, 'https://example.org/manifest', { fetcher: fixtureFetch as typeof fetch });
     await storage.install(pack);
     expect(fixtureFetch).toHaveBeenCalledWith(pack.url, expect.objectContaining({ signal: expect.any(AbortSignal) }));
     expect(await storage.list()).toEqual([pack]);
@@ -93,16 +93,16 @@ describe('native expansion files', () => {
     platform.reads = 0;
     await cold.withReader(pack, r => r.getFood('off-0030771094625'));
     await cold.withReader(pack, r => r.getFood('off-0030771094625'));
-    expect(platform.reads).toBe(1);
+    expect(platform.reads).toBe(0);
     writeFileSync(installedFile(), new Uint8Array(bytes.length).fill(1)); utimesSync(installedFile(), new Date(), new Date(Date.now() + 1000));
-    await expect(cold.withReader(pack, r => r.getFood('x'))).rejects.toThrow('corrupt');
+    await expect(cold.withReader(pack, r => r.getFood('x'))).rejects.toThrow(/corrupt|verification/);
   });
-  it('rehashes missing metadata and forced repair availability', async () => {
+  it('rehashes readers with missing metadata but keeps availability checks lazy', async () => {
     const { storage } = await setup(); await storage.install(pack); platform.reads = 0; platform.missingStamp = true;
     await storage.withReader(pack, r => r.getFood('x')); await storage.withReader(pack, r => r.getFood('x'));
     expect(platform.reads).toBe(2);
     platform.missingStamp = false; platform.reads = 0;
-    await storage.available!(pack); await storage.available!(pack); expect(platform.reads).toBe(2);
+    await storage.available!(pack); await storage.available!(pack); expect(platform.reads).toBe(0);
   });
   it('retains old activation on metadata failure', async () => {
     const fake = await setup(); await fake.storage.install(pack); fake.reject();

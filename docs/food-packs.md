@@ -108,7 +108,10 @@ result retained in Settings.
 
 Native repairs a corrupt content-addressed file in one install attempt. Native
 and browser readers verify files on first use and reuse verification only while
-hash, byte length and modification metadata agree. Repair checks force hashing;
+hash, byte length and modification metadata agree. Native persists verification
+receipts that also match the descriptor and validation revision, avoiding repeated
+whole-file scans after restart. Native availability checks defer legacy validation
+until a reader opens the pack; installs always force validation. Browser repair checks force hashing;
 missing or changed metadata never means "trusted forever".
 The metadata-only verification cache is bounded to 1,024 recently used entries;
 eviction only triggers a new hash check and never removes a pack. Durable, locally

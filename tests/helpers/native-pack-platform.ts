@@ -1,4 +1,4 @@
-import { closeSync, existsSync, mkdirSync, openSync, readFileSync, readdirSync, renameSync, statSync, unlinkSync, writeSync } from 'node:fs';
+import { closeSync, existsSync, mkdirSync, openSync, readFileSync, readdirSync, renameSync, statSync, unlinkSync, writeFileSync, writeSync } from 'node:fs';
 import { join, basename } from 'node:path';
 import { createHash } from 'node:crypto';
 import { testDatabase } from './local-sqlite';
@@ -17,6 +17,9 @@ export class File {
   get exists() { return existsSync(this.uri); }
   get size() { return statSync(this.uri).size; }
   get lastModified() { return platform.missingStamp ? null : statSync(this.uri).mtimeMs; }
+  info() { return { modificationTime: this.lastModified, size: this.size }; }
+  async text() { return readFileSync(this.uri, 'utf8'); }
+  write(text: string) { writeFileSync(this.uri, text); }
   async bytes() { platform.reads++; return new Uint8Array(readFileSync(this.uri)); }
   create() { closeSync(openSync(this.uri, 'wx')); }
   open() { const fd = openSync(this.uri, 'r+'); return { writeBytes(bytes: Uint8Array) { platform.writes.push(bytes.length); writeSync(fd, bytes); }, close() { closeSync(fd); } }; }
