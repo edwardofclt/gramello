@@ -1,3 +1,10 @@
+## [1.18.2](https://github.com/edwardofclt/gramello/compare/v1.18.1...v1.18.2) (2026-09-30)
+
+### Bug Fixes
+
+* **mobile:** use dropdown for brand or restaurant filter ([#45](https://github.com/edwardofclt/gramello/issues/45)) ([8de8cde](https://github.com/edwardofclt/gramello/commit/8de8cde607d1433ffde661fba77e8096e54b8fc9))
+* remove unavailable rg from food pack upload checks ([#44](https://github.com/edwardofclt/gramello/issues/44)) ([1c6e44e](https://github.com/edwardofclt/gramello/commit/1c6e44e3bbacfe14d2a3b88e238bf22e8801a5ea))
+
 ## [1.18.1](https://github.com/edwardofclt/gramello/compare/v1.18.0...v1.18.1) (2026-09-30)
 
 ### Bug Fixes
