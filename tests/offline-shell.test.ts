@@ -9,7 +9,7 @@ function setup() {
   const addAll = vi.fn().mockResolvedValue(undefined);
   const remove = vi.fn().mockResolvedValue(true);
   const fetch = vi.fn().mockResolvedValue(new Response('new server shell', { headers: { 'Content-Type': 'text/html' } }));
-  runInNewContext(serviceWorkerSource('test-version', ['/offline/diary-worker.js', '/offline/sqlite3.wasm']), {
+  runInNewContext(serviceWorkerSource('test-version', ['/offline/diary-worker.js', '/offline/sqlite3.wasm', '/offline/sqlite3-opfs-async-proxy.js', '/offline/sqlite3-opfs-async-proxy.js?vfs=opfs', '/offline/sqlite3-opfs-async-proxy.js?vfs=opfs-wl']), {
     URL, Request, self: { location: new URL('https://gramello.test/'), addEventListener: (type: string, handler: (event: Event) => void) => listeners.set(type, handler), clients: { claim: async () => {} } },
     caches: { open: async () => ({ match, addAll, put: vi.fn() }), delete: remove, keys: async () => [] }, fetch,
   });
@@ -22,6 +22,17 @@ it('keeps navigations on the same cached build as the fixed worker and WASM asse
   fixture.listeners.get('fetch')!({ request: { url: 'https://gramello.test/', method: 'GET', mode: 'navigate' }, respondWith: response => { pending = response; } });
   expect(await (await pending!).text()).toBe('same-build shell');
   expect(fixture.fetch).not.toHaveBeenCalled();
+});
+
+it('preserves the SQLite proxy driver query in cached worker responses', async () => {
+  const fixture = setup();
+  for (const vfs of ['opfs', 'opfs-wl']) {
+    let pending: Promise<Response> | undefined;
+    const path = '/offline/sqlite3-opfs-async-proxy.js?vfs=' + vfs;
+    fixture.listeners.get('fetch')!({ request: { url: 'https://gramello.test' + path, method: 'GET', mode: 'same-origin' }, respondWith: response => { pending = response; } });
+    await pending;
+    expect(fixture.match).toHaveBeenLastCalledWith(path);
+  }
 });
 
 it('never intercepts hosted personal API reads, writes, or external traffic', () => {

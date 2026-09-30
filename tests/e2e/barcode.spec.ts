@@ -5,14 +5,16 @@ for (const unit of ['serving', 'milliliters', 'fluid-ounces'] as const) {
   test(`logs and persists the Ghost barcode by ${unit}`, async ({ page, context }) => {
     await context.route('https://world.openfoodfacts.org/api/v2/product/*', route => {
       expect(new URL(route.request().url()).pathname).toBe('/api/v2/product/810128528191');
-      return route.fulfill({ headers: { 'access-control-allow-origin': '*' }, json: { status: 1, product: ghostProduct } });
+      return route.fulfill({ headers: { 'access-control-allow-origin': '*' }, json: { status: 1, product: { ...ghostProduct, image_front_small_url: 'https://images.openfoodfacts.org/fixture.png' } } });
     });
+    await context.route('https://images.openfoodfacts.org/fixture.png', route => route.fulfill({ contentType: 'image/png', headers: { 'access-control-allow-origin': '*' }, body: Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+jE1sAAAAASUVORK5CYII=', 'base64') }));
     await openDiary(page);
     await page.getByRole('button', { name: 'Add Lunch', exact: true }).click();
     await page.getByRole('button', { name: 'Scan barcode', exact: true }).click();
     await page.getByRole('textbox', { name: 'Barcode number' }).fill('810128528191');
     await page.getByRole('button', { name: 'Look up barcode', exact: true }).click();
     await expect(page.getByText('Choose amount', { exact: true })).toBeVisible();
+    await expect(page.locator('.selected-food img')).toHaveJSProperty('naturalWidth', 1);
     await expect(page.getByLabel('Measure', { exact: true }).locator('option')).toHaveText(['Servings (16 fl oz)', 'mL', 'US fl oz']);
     await expect(page.locator('.nutrition-preview')).toContainText('10');
     await page.getByLabel('Measure', { exact: true }).selectOption(unit);

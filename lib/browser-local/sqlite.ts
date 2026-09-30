@@ -1,6 +1,6 @@
 import type { SqliteConnection, SqlValue } from '../../mobile/src/local/database';
 
-interface MemoryDatabase {
+export interface MemoryDatabase {
   pointer: number;
   exec(sql: string | { sql: string; bind?: SqlValue[] }): unknown;
   selectObjects(sql: string, params?: SqlValue[]): object[];
@@ -9,7 +9,7 @@ interface MemoryDatabase {
   checkRc(result: number): unknown;
 }
 export interface SqliteModule {
-  oo1: { DB: new (filename?: string) => MemoryDatabase };
+  oo1: { DB: new (filename?: string) => MemoryDatabase; OpfsDb?: new (filename: string, flags: string) => MemoryDatabase };
   wasm: { heap8u(): Uint8Array };
   capi: {
     sqlite3_malloc(bytes: number): number;
@@ -36,16 +36,18 @@ export function openMemoryDatabase(sqlite: SqliteModule, bytes?: Uint8Array): Sq
       // FREEONCLOSE also makes SQLite free the buffer when this call fails.
       db.checkRc(result);
     }
-    return {
-      async execAsync(sql) { db.exec(sql); },
-      async runAsync(sql, ...params) { db.exec({ sql, bind: params }); return { changes: Number(db.changes()) }; },
-      async getAllAsync<T>(sql: string, ...params: SqlValue[]) { return db.selectObjects(sql, params) as T[]; },
-      async getFirstAsync<T>(sql: string, ...params: SqlValue[]) { return (db.selectObjects(sql, params)[0] ?? null) as T | null; },
-      export: () => sqlite.capi.sqlite3_js_db_export(db.pointer),
-      close: () => db.close(),
-    };
+    return wrapSqliteDatabase(sqlite, db);
   } catch (error) {
     db.close();
     throw error;
   }
+}
+export function wrapSqliteDatabase(sqlite: SqliteModule, db: MemoryDatabase): SqliteConnection & { export(): Uint8Array; close(): void } {
+  return {
+    async execAsync(sql) { db.exec(sql); },
+    async runAsync(sql, ...params) { db.exec({ sql, bind: params }); return { changes: Number(db.changes()) }; },
+    async getAllAsync<T>(sql: string, ...params: SqlValue[]) { return db.selectObjects(sql, params) as T[]; },
+    async getFirstAsync<T>(sql: string, ...params: SqlValue[]) { return (db.selectObjects(sql, params)[0] ?? null) as T | null; },
+    export: () => sqlite.capi.sqlite3_js_db_export(db.pointer), close: () => db.close(),
+  };
 }

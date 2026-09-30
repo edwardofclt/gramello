@@ -1,0 +1,64 @@
+import sqlite3Init from '@sqlite.org/sqlite-wasm';
+import { createBrowserPackStorage } from '../../lib/browser-local/packs';
+import { createBrowserPackFiles } from '../../lib/browser-local/pack-files';
+import { openSnapshotStore } from '../../lib/browser-local/persistence';
+import { openMemoryDatabase, type SqliteModule } from '../../lib/browser-local/sqlite';
+import { createPackCatalog } from '../../mobile/src/catalog/pack-reader';
+import { createPackUpdater } from '../../mobile/src/catalog/packs';
+const metrics = { fileReads: 0, snapshotReads: 0, open: 0, peak: 0 };
+const sqlite = await (sqlite3Init as unknown as (options: unknown) => Promise<SqliteModule>)({ locateFile: () => '/offline/sqlite3.wasm', print: () => {}, printErr: () => {} });
+const store = await openSnapshotStore();
+let failCommit = false, fileEnabled = true;
+const track = <T extends { close(): void }>(db: T): T => {
+  metrics.open++; metrics.peak = Math.max(metrics.peak, metrics.open);
+  const close = db.close.bind(db); db.close = () => { close(); metrics.open--; }; return db;
+};
+const realFiles = createBrowserPackFiles(sqlite);
+const files = realFiles ? { ...realFiles,
+  async read(pack: Parameters<typeof realFiles.read>[0]) { metrics.fileReads++; return realFiles.read(pack); },
+  async open(pack: Parameters<typeof realFiles.open>[0]) { return track(await realFiles.open(pack)); },
+  async retire(keep: Parameters<typeof realFiles.retire>[0]) {
+    try { await realFiles.retire(keep); } catch (error) { throw new Error('File retirement: ' + String(error)); }
+  },
+} : undefined;
+const storage = createBrowserPackStorage({
+  store: { async read<T>(key: string) { if (/^packs:(?:off|usda-branded)-\d/.test(key)) metrics.snapshotReads++; return store.read<T>(key); },
+    async commit(values) { if (failCommit) throw new DOMException('Injected transaction quota failure', 'QuotaExceededError'); await store.commit(values); } },
+  files: () => fileEnabled ? files : undefined,
+  open: bytes => track(openMemoryDatabase(sqlite, bytes)),
+  lock: async (name, work) => await navigator.locks.request(name, work), manifestUrl: '/api/catalog/packs/manifest',
+});
+const core = { getFood: async () => null, search: async () => [], barcode: async () => null };
+const catalog = createPackCatalog(storage.list, storage.withReader, core, storage.routes);
+const fixture = await (await fetch('/fixture.json')).json();
+const updater = createPackUpdater(storage, fixture.publicKey);
+const methods: Record<string, (value: any) => Promise<unknown>> = {
+  info: async () => ({ isolated: crossOriginIsolated, direct: realFiles?.direct, entries: await store.read('packs:index'), metrics }),
+  configure: async value => { fileEnabled = value.files !== false; failCommit = !!value.failCommit; return true; },
+  update: async () => { await updater.check(true); return updater.getStatus(); },
+  search: async () => catalog.searchWindow!('al fresco apple maple sausage'),
+  get: async id => catalog.getFood(id),
+  barcode: async () => catalog.barcode('030771094625'),
+  resetMetrics: async () => { Object.assign(metrics, { fileReads: 0, snapshotReads: 0, open: 0, peak: 0 }); return true; },
+  legacy: async () => {
+    fileEnabled = false; await updater.check(true);
+    const packs = await storage.list();
+    await store.commit([['packs:index', packs], ...packs.map(pack => ['packs:previous:' + pack.id, new Uint8Array(4096)] as const)]);
+    return packs;
+  },
+  values: async id => ({ bytes: await store.read('packs:' + id), previous: await store.read('packs:previous:' + id) }),
+  corrupt: async () => {
+    const pack = (await storage.list()).find(pack => pack.source === 'off')!;
+    const root = await navigator.storage.getDirectory(), directory = await root.getDirectoryHandle('gramello-food-packs');
+    const file = await directory.getFileHandle(`pack-${pack.sha256}.sqlite`) as FileSystemFileHandle & { createSyncAccessHandle(): Promise<any> };
+    const handle = await file.createSyncAccessHandle();
+    try { handle.write(new Uint8Array([255]), { at: 0 }); await handle.flush(); } finally { await handle.close(); }
+    return pack;
+  },
+  unavailable: async () => { fileEnabled = false; return true; },
+};
+self.onmessage = async ({ data }) => {
+  try { self.postMessage({ id: data.id, result: await methods[data.method](data.value) }); }
+  catch (error) { self.postMessage({ id: data.id, error: error instanceof Error ? error.message : String(error) }); }
+};
+self.postMessage({ ready: true });

@@ -62,6 +62,8 @@ test('reloads offline, searches the bundled catalog, and persists a food without
   await open(page);
   await settings(page);
   await expect(page.getByTestId('offline-status')).toHaveText('Ready to use offline', { timeout: 60000 });
+  expect(await page.evaluate(() => crossOriginIsolated)).toBe(true);
+  expect(await page.evaluate(async () => !!await caches.match('/offline/sqlite3-opfs-async-proxy.js'))).toBe(true);
   await context.setOffline(true);
   await open(page);
   expect(await page.locator('img.logo-mark').first().evaluate((image: HTMLImageElement) => image.complete && image.naturalWidth > 0)).toBe(true);
