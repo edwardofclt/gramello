@@ -236,3 +236,30 @@ it('preserves a failed custom food draft, disables navigation while saving, and 
   expect(container.querySelector('.food-row')?.textContent).toContain('1 bowl');
   expect(container.querySelector('.food-row')?.textContent).not.toContain('0 g');
 });
+
+
+it('defaults to food and switches between food and water for the selected day', async () => {
+  entries = [lunch];
+  await mount();
+  const food = container.querySelector<HTMLButtonElement>('[role="tab"][data-state="active"]')!;
+  const water = [...container.querySelectorAll<HTMLButtonElement>('[role="tab"]')]
+    .find(tab => tab.textContent === 'Water')!;
+  expect(food.textContent).toBe('Food');
+  expect(container.querySelector('.meal-list')).not.toBeNull();
+  expect(container.querySelector('.water-card')).toBeNull();
+
+  await act(async () => water.dispatchEvent(new MouseEvent('mousedown', { bubbles: true, button: 0 })));
+  expect(water.getAttribute('aria-selected')).toBe('true');
+  expect(container.querySelector('.meal-list')).toBeNull();
+  expect(container.querySelector('.overview-card')).toBeNull();
+  expect(container.querySelector('.water-card')).not.toBeNull();
+
+  await act(async () => container.querySelector<HTMLButtonElement>('[aria-label="Previous day"]')!.click());
+  expect(water.getAttribute('aria-selected')).toBe('true');
+  expect(container.querySelector('.water-card')).not.toBeNull();
+
+  await act(async () => food.dispatchEvent(new MouseEvent('mousedown', { bubbles: true, button: 0 })));
+  expect(food.getAttribute('aria-selected')).toBe('true');
+  expect(container.querySelector('.meal-list')).not.toBeNull();
+  expect(container.querySelector('.water-card')).toBeNull();
+});

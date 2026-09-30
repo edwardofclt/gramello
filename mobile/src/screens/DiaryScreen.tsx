@@ -27,6 +27,7 @@ export function DiaryScreen({ date, onDate, onAdd, onGoals }: {
 }) {
   const { api } = useSession();
   const { desktop, wide, pageStyle } = useLayout();
+  const [category, setCategory] = useState<'food' | 'water'>('food');
   const [removing, setRemoving] = useState<Entry | null>(null);
   const [editing, setEditing] = useState<Entry | null>(null);
   const [deleting, setDeleting] = useState(false);
@@ -48,59 +49,67 @@ export function DiaryScreen({ date, onDate, onAdd, onGoals }: {
 
   return <>
     <ScrollView contentContainerStyle={pageStyle} refreshControl={<RefreshControl refreshing={loading} onRefresh={reload} tintColor={colors.mint} />}>
-      {!isWeb && <View><Text style={styles.eyebrow}>DAILY DIARY</Text><Text style={styles.title}>Today’s fuel</Text><Text style={styles.muted}>A little awareness. A healthier every day.</Text></View>}
+      {!isWeb && <Text accessibilityRole="header" style={[styles.heading, { fontSize: 23 }]}>Today’s fuel</Text>}
       <View style={[styles.row, { gap: 11 }]}>
         <Action secondary compact label="Previous day" style={{ minHeight: 36, paddingHorizontal: 8, borderWidth: 1, borderColor: colors.border }} onPress={() => onDate(shiftDate(date, -1))}><ChevronLeft color={colors.muted} size={18} /></Action>
         <View style={[styles.row, { minWidth: 148, justifyContent: 'center', gap: 9 }]}><CalendarDays color={colors.muted} size={18} /><Text testID="selected-date" style={[styles.body, { fontWeight: '700' }]}>{date === localDate() ? 'Today' : formatDate(date)}</Text></View>
         <Action secondary compact label="Next day" style={{ minHeight: 36, paddingHorizontal: 8, borderWidth: 1, borderColor: colors.border }} disabled={date >= localDate()} onPress={() => onDate(shiftDate(date, 1))}><ChevronRight color={colors.muted} size={18} /></Action>
       </View>
-      {error && <ErrorNotice message={error} retry={reload} />}
-      {writeError && !removing && <ErrorNotice message={writeError} />}
-      {loading && <Loading />}
-      {data && <>
-        <View testID="energy-overview" style={{ backgroundColor: '#0f293a', borderWidth: 1, borderColor: '#264354', borderRadius: 24,
-          padding: desktop ? 30 : 20, gap: wide ? 40 : 28, flexDirection: wide ? 'row' : 'column', alignItems: wide ? 'center' : 'stretch',
-          ...(isWeb ? { boxShadow: '0 18px 55px #020b1144' } : {}) }}>
-          <View style={[styles.row, { gap: desktop ? 26 : 18, ...(wide ? { flex: 1.1 } : {}) }]}>
-            <CalorieRing consumed={total.calories} goal={data.goals.calories} size={desktop ? 154 : 112} />
-            <View style={{ flex: 1, gap: 7 }}><Text style={styles.eyebrow}>DAILY ENERGY</Text>
-              <Text style={[styles.heading, { fontSize: desktop ? 27 : 22 }]}>{Math.round(total.calories).toLocaleString()} <Text style={{ color: colors.muted, fontSize: 14 }}>of {Math.round(data.goals.calories).toLocaleString()} kcal</Text></Text>
-              <Text style={styles.muted}>{consumedPct > 100 ? `${Math.round(total.calories - data.goals.calories)} calories over goal` : `${Math.round(consumedPct)}% of your calorie target logged`}</Text>
+      <View accessibilityRole="tablist" accessibilityLabel="Diary category" style={[styles.row, { gap: 4, padding: 4, borderRadius: 14, backgroundColor: '#10293a', borderWidth: 1, borderColor: colors.border }]}>
+        {(['food', 'water'] as const).map(value => <Pressable key={value} accessibilityRole="tab" accessibilityLabel={value === 'food' ? 'Food' : 'Water'} accessibilityState={{ selected: category === value }} aria-selected={category === value} onPress={() => setCategory(value)}
+          style={({ pressed }) => ({ flex: 1, minHeight: 44, justifyContent: 'center', alignItems: 'center', borderRadius: 10, backgroundColor: category === value ? '#153d4c' : 'transparent', opacity: pressed ? .7 : 1 })}>
+          <Text style={{ color: category === value ? colors.mint : colors.muted, fontSize: 15, fontWeight: '700' }}>{value === 'food' ? 'Food' : 'Water'}</Text>
+        </Pressable>)}
+      </View>
+      {category === 'water' && <WaterTracker key={date} date={date} />}
+      {category === 'food' && <>
+        {error && <ErrorNotice message={error} retry={reload} />}
+        {writeError && !removing && <ErrorNotice message={writeError} />}
+        {loading && <Loading />}
+        {data && <>
+          <View testID="energy-overview" style={{ backgroundColor: '#0f293a', borderWidth: 1, borderColor: '#264354', borderRadius: 24,
+            padding: desktop ? 30 : 20, gap: wide ? 40 : 28, flexDirection: wide ? 'row' : 'column', alignItems: wide ? 'center' : 'stretch',
+            ...(isWeb ? { boxShadow: '0 18px 55px #020b1144' } : {}) }}>
+            <View style={[styles.row, { gap: desktop ? 26 : 18, ...(wide ? { flex: 1.1 } : {}) }]}>
+              <CalorieRing consumed={total.calories} goal={data.goals.calories} size={desktop ? 154 : 112} />
+              <View style={{ flex: 1, gap: 7 }}><Text style={styles.eyebrow}>DAILY ENERGY</Text>
+                <Text style={[styles.heading, { fontSize: desktop ? 27 : 22 }]}>{Math.round(total.calories).toLocaleString()} <Text style={{ color: colors.muted, fontSize: 14 }}>of {Math.round(data.goals.calories).toLocaleString()} kcal</Text></Text>
+                <Text style={styles.muted}>{consumedPct > 100 ? `${Math.round(total.calories - data.goals.calories)} calories over goal` : `${Math.round(consumedPct)}% of your calorie target logged`}</Text>
+              </View>
+            </View>
+            <View style={{ gap: 22, ...(wide ? { flex: 1 } : {}) }}>
+              {macros.map(({ key, label, color }) => <View key={key} style={{ gap: 9 }}>
+                <View style={styles.between}><View style={[styles.row, { gap: 8 }]}><View style={{ width: 8, height: 8, borderRadius: 4, backgroundColor: color }} /><Text style={[styles.body, { fontSize: 14 }]}>{label}</Text></View><Text style={[styles.body, { fontWeight: '600', fontSize: 14 }]}>{Math.round(total[key])} <Text style={styles.muted}>/ {Math.round(data.goals[key])}g</Text></Text></View>
+                <Meter value={data.goals[key] ? total[key] / data.goals[key] * 100 : 0} color={color} label={`${label}: ${Math.round(total[key])} of ${Math.round(data.goals[key])} grams`} />
+              </View>)}
             </View>
           </View>
-          <View style={{ gap: 22, ...(wide ? { flex: 1 } : {}) }}>
-            {macros.map(({ key, label, color }) => <View key={key} style={{ gap: 9 }}>
-              <View style={styles.between}><View style={[styles.row, { gap: 8 }]}><View style={{ width: 8, height: 8, borderRadius: 4, backgroundColor: color }} /><Text style={[styles.body, { fontSize: 14 }]}>{label}</Text></View><Text style={[styles.body, { fontWeight: '600', fontSize: 14 }]}>{Math.round(total[key])} <Text style={styles.muted}>/ {Math.round(data.goals[key])}g</Text></Text></View>
-              <Meter value={data.goals[key] ? total[key] / data.goals[key] * 100 : 0} color={color} label={`${label}: ${Math.round(total[key])} of ${Math.round(data.goals[key])} grams`} />
-            </View>)}
+          <View style={[styles.between, { marginTop: 12 }]}><View style={{ gap: 5 }}><Text style={styles.eyebrow}>MEALS</Text><Text accessibilityRole="header" style={[styles.heading, { fontSize: 23 }]}>Food diary</Text></View>
+            <Action quiet secondary compact label="Edit goals" onPress={onGoals}><Target size={16} color={colors.muted} /><Text style={styles.muted}>Edit goals</Text></Action>
           </View>
-        </View>
-        <WaterTracker key={date} date={date} />
-        <View style={[styles.between, { marginTop: 12 }]}><View style={{ gap: 5 }}><Text style={styles.eyebrow}>MEALS</Text><Text accessibilityRole="header" style={[styles.heading, { fontSize: 23 }]}>Food diary</Text></View>
-          <Action quiet secondary compact label="Edit goals" onPress={onGoals}><Target size={16} color={colors.muted} /><Text style={styles.muted}>Edit goals</Text></Action>
-        </View>
-        <View style={{ flexDirection: desktop ? 'row' : 'column', flexWrap: 'wrap', gap: 16 }}>
-          {meals.map(name => {
-            const items = data.entries.filter(entry => entry.meal === name);
-            const { Icon, color, background } = mealAppearance[name];
-            return <View key={name} testID={`meal-${name}`} style={{ ...(desktop ? { flexBasis: '47%', flexGrow: 1 } : { width: '100%' }), backgroundColor: '#0c2232', borderWidth: 1, borderColor: colors.border, borderRadius: 19, overflow: 'hidden' }}>
-              <View style={[styles.between, { padding: 18, gap: 8 }]}>
-                <View style={[styles.row, { flex: 1 }]}><View style={{ backgroundColor: background, padding: 11, borderRadius: 13 }}><Icon size={18} color={color} /></View><View style={{ flex: 1 }}><Text style={[styles.heading, { fontSize: 15 }]}>{name}</Text><Text style={[styles.muted, { fontSize: 12 }]}>{items.length ? `${items.length} item${items.length === 1 ? '' : 's'}` : 'Nothing logged yet'}</Text></View></View>
-                <Text style={[styles.body, { fontWeight: '700' }]}>{Math.round(sumNutrition(items).calories)}</Text><Text style={{ color: colors.muted, fontSize: 11 }}>kcal</Text>
-                <Action secondary compact label={`Add ${name}`} style={{ minHeight: 34, paddingHorizontal: 8, borderRadius: 9 }} onPress={() => onAdd(name)}><Plus size={17} color={colors.muted} /></Action>
-              </View>
-              {items.map(entry => <View key={entry.id} style={[styles.row, { paddingVertical: 13, paddingHorizontal: 14, gap: 10, borderTopWidth: 1, borderColor: colors.border }]}>
-                <Pressable accessibilityRole="button" accessibilityLabel={`Edit ${entry.name}`} onPress={() => setEditing(entry)} style={({ pressed }) => [styles.row, { flex: 1, minWidth: 0, gap: 10, minHeight: 48, opacity: pressed ? .7 : 1 }]}>
-                <View style={{ width: 36, height: 36, borderRadius: 10, backgroundColor: '#19394b', alignItems: 'center', justifyContent: 'center' }}><Text style={{ color: colors.mint, fontWeight: '800' }}>{entry.name.charAt(0)}</Text></View>
-                <View style={{ flex: 1, minWidth: 0, gap: 3 }}><Text numberOfLines={1} style={{ color: colors.text, fontWeight: '600', fontSize: 13 }}>{entry.name}</Text><Text numberOfLines={1} style={{ color: colors.muted, fontSize: 11 }}>{entry.brand ? `${entry.brand} · ` : ''}{entryAmountLabel(entry)} · {entry.source}</Text><FoodVerification verified={entry.verified}/></View>
-                {wide && <View style={[styles.row, { gap: 8 }]}>{macros.map(({ key }) => <View key={key} style={{ alignItems: 'center' }}><Text style={{ color: colors.text, fontSize: 11 }}>{Math.round(entry[key])}g</Text><Text style={{ color: colors.muted, fontSize: 9 }}>{key[0].toUpperCase()}</Text></View>)}</View>}
-                <Text style={{ color: colors.text, fontWeight: '700', fontSize: 13 }}>{Math.round(entry.calories)}</Text>
-                </Pressable>
-                <Action quiet secondary compact label={`Remove ${entry.name}`} style={{ paddingHorizontal: 4, minHeight: 34 }} onPress={() => { setWriteError(null); setRemoving(entry); }}><Trash2 color={colors.muted} size={15} /></Action>
-              </View>)}
-            </View>;
-          })}
-        </View>
+          <View style={{ flexDirection: desktop ? 'row' : 'column', flexWrap: 'wrap', gap: 16 }}>
+            {meals.map(name => {
+              const items = data.entries.filter(entry => entry.meal === name);
+              const { Icon, color, background } = mealAppearance[name];
+              return <View key={name} testID={`meal-${name}`} style={{ ...(desktop ? { flexBasis: '47%', flexGrow: 1 } : { width: '100%' }), backgroundColor: '#0c2232', borderWidth: 1, borderColor: colors.border, borderRadius: 19, overflow: 'hidden' }}>
+                <View style={[styles.between, { padding: 18, gap: 8 }]}>
+                  <View style={[styles.row, { flex: 1 }]}><View style={{ backgroundColor: background, padding: 11, borderRadius: 13 }}><Icon size={18} color={color} /></View><View style={{ flex: 1 }}><Text style={[styles.heading, { fontSize: 15 }]}>{name}</Text><Text style={[styles.muted, { fontSize: 12 }]}>{items.length ? `${items.length} item${items.length === 1 ? '' : 's'}` : 'Nothing logged yet'}</Text></View></View>
+                  <Text style={[styles.body, { fontWeight: '700' }]}>{Math.round(sumNutrition(items).calories)}</Text><Text style={{ color: colors.muted, fontSize: 11 }}>kcal</Text>
+                  <Action secondary compact label={`Add ${name}`} style={{ minHeight: 34, paddingHorizontal: 8, borderRadius: 9 }} onPress={() => onAdd(name)}><Plus size={17} color={colors.muted} /></Action>
+                </View>
+                {items.map(entry => <View key={entry.id} style={[styles.row, { paddingVertical: 13, paddingHorizontal: 14, gap: 10, borderTopWidth: 1, borderColor: colors.border }]}>
+                  <Pressable accessibilityRole="button" accessibilityLabel={`Edit ${entry.name}`} onPress={() => setEditing(entry)} style={({ pressed }) => [styles.row, { flex: 1, minWidth: 0, gap: 10, minHeight: 48, opacity: pressed ? .7 : 1 }]}>
+                  <View style={{ width: 36, height: 36, borderRadius: 10, backgroundColor: '#19394b', alignItems: 'center', justifyContent: 'center' }}><Text style={{ color: colors.mint, fontWeight: '800' }}>{entry.name.charAt(0)}</Text></View>
+                  <View style={{ flex: 1, minWidth: 0, gap: 3 }}><Text numberOfLines={1} style={{ color: colors.text, fontWeight: '600', fontSize: 13 }}>{entry.name}</Text><Text numberOfLines={1} style={{ color: colors.muted, fontSize: 11 }}>{entry.brand ? `${entry.brand} · ` : ''}{entryAmountLabel(entry)} · {entry.source}</Text><FoodVerification verified={entry.verified}/></View>
+                  {wide && <View style={[styles.row, { gap: 8 }]}>{macros.map(({ key }) => <View key={key} style={{ alignItems: 'center' }}><Text style={{ color: colors.text, fontSize: 11 }}>{Math.round(entry[key])}g</Text><Text style={{ color: colors.muted, fontSize: 9 }}>{key[0].toUpperCase()}</Text></View>)}</View>}
+                  <Text style={{ color: colors.text, fontWeight: '700', fontSize: 13 }}>{Math.round(entry.calories)}</Text>
+                  </Pressable>
+                  <Action quiet secondary compact label={`Remove ${entry.name}`} style={{ paddingHorizontal: 4, minHeight: 34 }} onPress={() => { setWriteError(null); setRemoving(entry); }}><Trash2 color={colors.muted} size={15} /></Action>
+                </View>)}
+              </View>;
+            })}
+          </View>
+        </>}
       </>}
     </ScrollView>
     {editing && <EntrySheet key={editing.id} entry={editing} onClose={() => setEditing(null)} onSaved={() => { setEditing(null); reload(); }}/>}

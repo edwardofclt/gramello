@@ -12,7 +12,7 @@ import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { WaterTracker } from "@/components/water-tracker";
-import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Toaster, toast } from "sonner";
 import { changeGoal, macroPercent } from "./goal-math";
 import { localDate as today } from "@/lib/diary-date";
@@ -164,14 +164,24 @@ export default function GramelloApp({ diaryClient, runtime, offlineStatus = '', 
       {notice}
       {view==="settings"&&runtime?<BrowserDataSettings runtime={runtime} offlineStatus={offlineStatus} onReplaced={onReplaced} onGoals={openGoals} onOfflineRetry={onOfflineRetry}/>:view==="today"?<section className="page-content">
         <div className="date-row"><button aria-label="Previous day" onClick={()=>shiftDate(-1)}><ChevronLeft/></button><div><CalendarDays/><span>{date===today()?"Today":fmtDate(date)}</span></div><button aria-label="Next day" disabled={date>=today()} onClick={()=>shiftDate(1)}><ChevronRight/></button></div>
-        <div className="overview-card">
-          <div className="calorie-focus"><div className="calorie-ring" style={{"--pct":`${clamp(consumedPct)}%`} as React.CSSProperties}><div><strong>{round(remaining).toLocaleString()}</strong><span>cal left</span></div></div><div><span className="eyebrow">DAILY ENERGY</span><h2>{round(total.calories).toLocaleString()} <small>of {goals.calories.toLocaleString()} kcal</small></h2><p>{consumedPct>100?`${round(total.calories-goals.calories)} calories over goal`:`${round(consumedPct)}% of your calorie target logged`}</p></div></div>
-          <div className="macro-grid"><MacroProgress label="Protein" current={total.protein} target={goals.protein} color="#6ee7c7"/><MacroProgress label="Carbs" current={total.carbs} target={goals.carbs} color="#78a9ff"/><MacroProgress label="Fat" current={total.fat} target={goals.fat} color="#ffbd66"/></div>
-        </div>
+        <Tabs defaultValue="food" className="diary-tabs">
+          <TabsList aria-label="Diary category">
+            <TabsTrigger value="food">Food</TabsTrigger>
+            <TabsTrigger value="water">Water</TabsTrigger>
+          </TabsList>
+          <TabsContent value="food">
+            <div className="overview-card">
+              <div className="calorie-focus"><div className="calorie-ring" style={{"--pct":`${clamp(consumedPct)}%`} as React.CSSProperties}><div><strong>{round(remaining).toLocaleString()}</strong><span>cal left</span></div></div><div><span className="eyebrow">DAILY ENERGY</span><h2>{round(total.calories).toLocaleString()} <small>of {goals.calories.toLocaleString()} kcal</small></h2><p>{consumedPct>100?`${round(total.calories-goals.calories)} calories over goal`:`${round(consumedPct)}% of your calorie target logged`}</p></div></div>
+              <div className="macro-grid"><MacroProgress label="Protein" current={total.protein} target={goals.protein} color="#6ee7c7"/><MacroProgress label="Carbs" current={total.carbs} target={goals.carbs} color="#78a9ff"/><MacroProgress label="Fat" current={total.fat} target={goals.fat} color="#ffbd66"/></div>
+            </div>
 
-        <WaterTracker key={date} date={date} diaryFetch={diaryFetch}/>
-        <div className="diary-heading"><div><span className="eyebrow">MEALS</span><h2>Food diary</h2></div><button onClick={openGoals}><Target/>Edit goals</button></div>
-        {loading?<div className="loading-card"><Loader2 className="spin"/>Loading your diary…</div>:<div className="meal-list">{meals.map(name=>{const items=entries.filter(e=>e.meal===name);const c=items.reduce((s,e)=>s+e.calories,0);return <article className="meal-card" key={name}><header><div><span className={`meal-icon ${name.toLowerCase()}`}><Utensils/></span><div><h3>{name}</h3><p>{items.length?`${items.length} item${items.length===1?"":"s"}`:"Nothing logged yet"}</p></div></div><div><strong>{round(c)}</strong><span>kcal</span><button aria-label={`Add ${name}`} onClick={()=>{setMeal(name);openFood()}}><Plus/></button></div></header>{items.length>0&&<div className="food-rows">{items.map(item=><div className="food-row" key={item.id}><button type="button" className="food-entry" aria-label={`Edit ${item.name}`} onClick={()=>setEditingEntry(item)}><span className="food-thumb">{item.name.charAt(0)}</span><span className="food-entry-details"><strong>{item.name}</strong><span>{item.brand?`${item.brand} · `:""}{entryAmountLabel(item)} · {item.source}</span><FoodVerification verified={item.verified}/></span><span className="food-macros"><span><b>{round(item.protein)}g</b>P</span><span><b>{round(item.carbs)}g</b>C</span><span><b>{round(item.fat)}g</b>F</span></span><strong className="food-cal">{round(item.calories)}</strong></button><button className="delete" aria-label={`Remove ${item.name}`} onClick={()=>{setRemoveError("");setRemoving(item)}}><Trash2/></button></div>)}</div>}</article>})}</div>}
+            <div className="diary-heading"><div><span className="eyebrow">MEALS</span><h2>Food diary</h2></div><button onClick={openGoals}><Target/>Edit goals</button></div>
+            {loading?<div className="loading-card"><Loader2 className="spin"/>Loading your diary…</div>:<div className="meal-list">{meals.map(name=>{const items=entries.filter(e=>e.meal===name);const c=items.reduce((s,e)=>s+e.calories,0);return <article className="meal-card" key={name}><header><div><span className={`meal-icon ${name.toLowerCase()}`}><Utensils/></span><div><h3>{name}</h3><p>{items.length?`${items.length} item${items.length===1?"":"s"}`:"Nothing logged yet"}</p></div></div><div><strong>{round(c)}</strong><span>kcal</span><button aria-label={`Add ${name}`} onClick={()=>{setMeal(name);openFood()}}><Plus/></button></div></header>{items.length>0&&<div className="food-rows">{items.map(item=><div className="food-row" key={item.id}><button type="button" className="food-entry" aria-label={`Edit ${item.name}`} onClick={()=>setEditingEntry(item)}><span className="food-thumb">{item.name.charAt(0)}</span><span className="food-entry-details"><strong>{item.name}</strong><span>{item.brand?`${item.brand} · `:""}{entryAmountLabel(item)} · {item.source}</span><FoodVerification verified={item.verified}/></span><span className="food-macros"><span><b>{round(item.protein)}g</b>P</span><span><b>{round(item.carbs)}g</b>C</span><span><b>{round(item.fat)}g</b>F</span></span><strong className="food-cal">{round(item.calories)}</strong></button><button className="delete" aria-label={`Remove ${item.name}`} onClick={()=>{setRemoveError("");setRemoving(item)}}><Trash2/></button></div>)}</div>}</article>})}</div>}
+          </TabsContent>
+          <TabsContent value="water">
+            <WaterTracker key={date} date={date} diaryFetch={diaryFetch}/>
+          </TabsContent>
+        </Tabs>
       </section>:<Trends range={range} setRange={setRange} trends={trends} loading={trendLoading} goals={goals}/>} 
     </main>
 
