@@ -12,6 +12,12 @@ vi.mock('expo-file-system', () => ({
     get exists() { return files.has(this.name); }
     get size() { return files.get(this.name)?.length; }
     async bytes() { return files.get(this.name)!; }
+    info() { return { modificationTime: 1, size: this.size }; }
+    async text() { return new TextDecoder().decode(await this.bytes()); }
+    write(text: string) { files.set(this.name, new TextEncoder().encode(text)); }
+    static async downloadFileAsync(url: string, file: { name: string }) {
+      files.set(file.name, new Uint8Array(4096).fill(Number(url.split('/').at(-1))));
+    }
     delete() { files.delete(this.name); }
   },
 }));
@@ -67,12 +73,12 @@ it('preserves both native pack descriptors when metadata saves overlap', async (
 });
 
 it('verifies independent candidate databases concurrently so workers can refill download slots', async () => {
-  const bytes = new Uint8Array(4096);
-  const sha256 = Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256', bytes)), byte => byte.toString(16).padStart(2, '0')).join('');
-  files.set(`pack-${sha256}.sqlite`, bytes);
-  const packs: FoodPack[] = [0, 1].map(bucket => ({
-    schemaVersion: 1, id: `usda-branded-2-${bucket}`, source: 'usda-branded', license: 'CC0-1.0',
-    market: 'US', bucket, buckets: 2, version: 'v1', count: 1, bytes: 4096, sha256, url: 'https://example.org/pack.sqlite',
+  files.clear();
+  const packs: FoodPack[] = await Promise.all([0, 1].map(async bucket => {
+    const bytes = new Uint8Array(4096).fill(bucket);
+    const sha256 = Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256', bytes)), byte => byte.toString(16).padStart(2, '0')).join('');
+    return { schemaVersion: 1, id: `usda-branded-2-${bucket}`, source: 'usda-branded', license: 'CC0-1.0',
+      market: 'US', bucket, buckets: 2, version: 'v1', count: 1, bytes: 4096, sha256, url: `https://example.org/${bucket}` };
   }));
   let release!: () => void;
   inspection.started = 0;
