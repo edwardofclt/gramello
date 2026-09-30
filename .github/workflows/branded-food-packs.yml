@@ -83,9 +83,10 @@ jobs:
             gh release create food-catalog --target "$GITHUB_SHA" --prerelease --latest=false \
               --title "Food catalog data" --notes "USDA and separately licensed Open Food Facts US product packs. See PACK-SOURCES.md for attribution and source obligations."
           fi
+          existing_assets="$(gh release view food-catalog --json assets --jq '.assets[].name')"
           for file in catalog-release/*.sqlite; do
             asset="$(basename "$file")"
-            if ! gh release view food-catalog --json assets --jq '.assets[].name' | rg -Fx "$asset" >/dev/null; then
+            if ! grep -Fx "$asset" <<< "$existing_assets" >/dev/null; then
               gh release upload food-catalog "$file"
             fi
           done
