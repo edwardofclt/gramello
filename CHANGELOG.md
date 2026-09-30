@@ -1,3 +1,15 @@
+## [1.19.0](https://github.com/edwardofclt/gramello/compare/v1.18.2...v1.19.0) (2026-09-30)
+
+### Features
+
+* parallelize catalog downloads and show progress [skip ci] ([2222f84](https://github.com/edwardofclt/gramello/commit/2222f844a0ff0e6d781d7372799fdbb188ae48fa))
+* split diary into food and water tabs [skip ci] ([4a0f6ae](https://github.com/edwardofclt/gramello/commit/4a0f6ae874dd62c023bc611b0368f18797333ee2))
+
+### Bug Fixes
+
+* **mobile:** open diary without scanning food catalogs ([#46](https://github.com/edwardofclt/gramello/issues/46)) [skip ci] ([298b4ff](https://github.com/edwardofclt/gramello/commit/298b4ffa91ff3069928244d154e41e34ca356c35))
+* resolve nutrition pack review findings ([#42](https://github.com/edwardofclt/gramello/issues/42)) ([6efb33f](https://github.com/edwardofclt/gramello/commit/6efb33f98cb662f2c90757745d9cd6114c50a37a))
+
 ## [1.18.2](https://github.com/edwardofclt/gramello/compare/v1.18.1...v1.18.2) (2026-09-30)
 
 ### Bug Fixes
