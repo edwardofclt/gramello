@@ -1,5 +1,6 @@
 import sqlite3Init from '@sqlite.org/sqlite-wasm';
 import { createBrowserPackStorage } from '../../lib/browser-local/packs';
+import { createBrowserPackSearch } from '../../lib/browser-local/pack-search';
 import { createBrowserPackFiles } from '../../lib/browser-local/pack-files';
 import { createBrowserPackRoutes } from '../../lib/browser-local/pack-routes';
 import { openSnapshotStore } from '../../lib/browser-local/persistence';
@@ -7,9 +8,12 @@ import { openMemoryDatabase, type SqliteModule } from '../../lib/browser-local/s
 import { createPackCatalog } from '../../mobile/src/catalog/pack-reader';
 import { createPackUpdater } from '../../mobile/src/catalog/packs';
 import { verifyPackManifest } from '../../mobile/src/catalog/packs';
-const metrics = { fileReads: 0, snapshotReads: 0, open: 0, peak: 0 };
+const metrics = { hashes: 0, fileReads: 0, snapshotReads: 0, open: 0, peak: 0 };
+const originalDigest = crypto.subtle.digest.bind(crypto.subtle);
+crypto.subtle.digest = (algorithm, data) => { metrics.hashes++; return originalDigest(algorithm, data); };
 const sqlite = await (sqlite3Init as unknown as (options: unknown) => Promise<SqliteModule>)({ locateFile: () => '/offline/sqlite3.wasm', print: () => {}, printErr: () => {} });
 const store = await openSnapshotStore();
+const searchIndex = createBrowserPackSearch(() => sqlite, store);
 let failCommit = false, fileEnabled = true;
 const track = <T extends { close(): void }>(db: T): T => {
   metrics.open++; metrics.peak = Math.max(metrics.peak, metrics.open);
@@ -24,6 +28,7 @@ const files = realFiles ? { ...realFiles,
   },
 } : undefined;
 const storage = createBrowserPackStorage({
+  searchIndex,
   store: { async read<T>(key: string) { if (/^packs:(?:off|usda-branded)-\d/.test(key)) metrics.snapshotReads++; return store.read<T>(key); },
     readMany: keys => store.readMany!(keys),
     async commit(values) { if (failCommit) throw new DOMException('Injected transaction quota failure', 'QuotaExceededError'); await store.commit(values); } },
@@ -32,7 +37,7 @@ const storage = createBrowserPackStorage({
   lock: async (name, work) => await navigator.locks.request(name, work), manifestUrl: '/api/catalog/packs/manifest',
 });
 const core = { getFood: async () => null, search: async () => [], barcode: async () => null };
-const catalog = createPackCatalog(storage.list, storage.withReader, core, storage.routes);
+const catalog = createPackCatalog(storage.list, storage.withReader, core, storage.routes, storage.search);
 const fixture = await (await fetch('/fixture.json')).json();
 const updater = createPackUpdater(storage, fixture.publicKey);
 const methods: Record<string, (value: any) => Promise<unknown>> = {
@@ -88,7 +93,9 @@ const methods: Record<string, (value: any) => Promise<unknown>> = {
   search: async () => catalog.searchWindow!('al fresco apple maple sausage'),
   get: async id => catalog.getFood(id),
   barcode: async () => catalog.barcode('030771094625'),
-  resetMetrics: async () => { Object.assign(metrics, { fileReads: 0, snapshotReads: 0, open: 0, peak: 0 }); return true; },
+  resetMetrics: async () => { Object.assign(metrics, { hashes: 0, fileReads: 0, snapshotReads: 0, open: 0, peak: 0 }); return true; },
+  clearSearchIndex: async () => { await navigator.locks.request('gramello:food-packs', () => searchIndex.reset()); return true; },
+  prepareSearch: async () => { await storage.prepareSearch?.(); return true; },
   legacy: async () => {
     fileEnabled = false; await updater.check(true);
     const packs = await storage.list();

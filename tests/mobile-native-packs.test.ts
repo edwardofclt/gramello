@@ -2,6 +2,11 @@ import { beforeEach, expect, test, vi } from 'vitest';
 const mocks = vi.hoisted(() => ({ files: new Map<string, { bytes: Uint8Array; time: number }>(), failWrites: false, download: vi.fn(), hash: vi.fn(), inspect: vi.fn(), open: vi.fn() }));
 vi.mock('../mobile/node_modules/expo/fetch', () => ({ fetch: mocks.download }));
 vi.mock('../mobile/src/catalog/native-pack-routes', () => ({ createNativePackRoutes: () => ({ retire: async () => {} }) }));
+// These tests isolate transport/activation. Real index persistence and queries
+// are exercised with SQLite in native-packs.test.ts and pack-search-index.test.ts.
+vi.mock('../mobile/src/catalog/native-pack-search', () => ({ createNativePackSearch: () => ({
+  index: async () => {}, missing: async () => [], retire: async () => {}, reset: async () => {},
+}) }));
 vi.mock('../mobile/node_modules/expo-file-system', () => {
   class File {
     name: string; constructor(_directory: unknown, name: string) { this.name = name; }
@@ -40,22 +45,21 @@ beforeEach(() => {
   mocks.inspect.mockResolvedValue(undefined);
   mocks.open.mockImplementation(async () => ({ execAsync: vi.fn(), closeAsync: vi.fn() }));
 });
-test('legacy packs verify lazily once and reuse receipts across restarts', async () => {
+test('activated legacy packs are readable across restarts without revalidation', async () => {
   const storage = await create(); expect(mocks.hash).not.toHaveBeenCalled(); expect(mocks.inspect).not.toHaveBeenCalled();
   await storage.withReader(pack, async () => undefined);
   await storage.withReader(pack, async () => undefined);
   expect(await storage.available!(pack)).toBe(true);
   const restarted = await create(); await restarted.withReader(pack, async () => undefined);
-  expect(mocks.hash).toHaveBeenCalledTimes(1); expect(mocks.inspect).toHaveBeenCalledTimes(1);
+  expect(mocks.hash).not.toHaveBeenCalled(); expect(mocks.inspect).not.toHaveBeenCalled();
 });
-test('changed file identities trigger full validation; corruption is rejected', async () => {
+test('changed file identities fail promptly without revalidating during reads', async () => {
   const storage = await create(); await storage.install(pack);
+  mocks.hash.mockClear(); mocks.inspect.mockClear();
   mocks.files.get(filename)!.time = 2;
-  await storage.withReader(pack, async () => undefined);
-  expect(mocks.hash).toHaveBeenCalledTimes(2); expect(mocks.inspect).toHaveBeenCalledTimes(2);
-  mocks.files.get(filename)!.time = 3; mocks.hash.mockResolvedValue(new Uint8Array(32).buffer);
   expect(await storage.available!(pack)).toBe(false);
   await expect(storage.withReader(pack, async () => undefined)).rejects.toThrow();
+  expect(mocks.hash).not.toHaveBeenCalled(); expect(mocks.inspect).not.toHaveBeenCalled();
 });
 test('retirement waits for active readers before deleting their files', async () => {
   const storage = await create(); await storage.install(pack);
@@ -65,14 +69,14 @@ test('retirement waits for active readers before deleting their files', async ()
   await ready; const retiring = storage.retire([]); await Promise.resolve(); expect(mocks.files.has(filename)).toBe(true);
   release(); await Promise.all([read, retiring]); expect(mocks.files.has(filename)).toBe(false);
 });
-test('missing files and malformed or obsolete receipts cannot bypass verification', async () => {
+test('legacy receipt formats do not revalidate activated files, and missing files fail', async () => {
   const storage = await create(); await storage.install(pack);
   const receipt = mocks.files.get(`pack-${pack.sha256}.verified.json`)!;
   const saved = JSON.parse(new TextDecoder().decode(receipt.bytes)); saved.revision = 0;
   receipt.bytes = new TextEncoder().encode(JSON.stringify(saved));
-  await (await create()).withReader(pack, async () => undefined); expect(mocks.inspect).toHaveBeenCalledTimes(2);
+  await (await create()).withReader(pack, async () => undefined); expect(mocks.inspect).toHaveBeenCalledTimes(1);
   mocks.files.get(`pack-${pack.sha256}.verified.json`)!.bytes = new TextEncoder().encode('{broken');
-  await (await create()).withReader(pack, async () => undefined); expect(mocks.inspect).toHaveBeenCalledTimes(3);
+  await (await create()).withReader(pack, async () => undefined); expect(mocks.inspect).toHaveBeenCalledTimes(1);
   mocks.files.delete(filename); expect(await storage.available!(pack)).toBe(false);
   await expect(storage.withReader(pack, async () => undefined)).rejects.toThrow();
 });
@@ -80,22 +84,22 @@ test('installation always performs complete validation and rejects invalid recor
   const storage = await create(); await storage.install(pack); await storage.install(pack);
   expect(mocks.hash).toHaveBeenCalledTimes(2); expect(mocks.inspect).toHaveBeenCalledTimes(2);
   mocks.files.get(filename)!.time = 3; mocks.inspect.mockRejectedValueOnce(new Error('Invalid food record'));
-  await expect(storage.withReader(pack, async () => undefined)).rejects.toThrow('Invalid food record');
+  await expect(storage.install(pack)).rejects.toThrow('Invalid food record');
 });
-test('concurrent legacy readers share one verification and do not touch personal metadata', async () => {
+test('concurrent legacy readers never verify or write personal metadata', async () => {
   const readMetadata = vi.fn(async <T>(key: string) => (key === 'foodPackIndex' ? { active: [pack], previous: [] } : null) as T | null);
   const saveMetadata = vi.fn(); const storage = await createNativePackStorage(async <T>(key: string) => await readMetadata(key) as T | null, saveMetadata, 'https://example.com/manifest');
   await Promise.all(Array.from({ length: 5 }, () => storage.withReader(pack, async () => undefined)));
-  expect(mocks.hash).toHaveBeenCalledTimes(1); expect(mocks.inspect).toHaveBeenCalledTimes(1);
+  expect(mocks.hash).not.toHaveBeenCalled(); expect(mocks.inspect).not.toHaveBeenCalled();
   expect(readMetadata).toHaveBeenCalledTimes(1); expect(saveMetadata).not.toHaveBeenCalled();
 });
 
-test('automatic availability checks leave legacy pack validation lazy', async () => {
+test('availability and first reads do no full validation of activated legacy packs', async () => {
   const storage = await create();
   expect(await storage.available!(pack)).toBe(true);
   expect(mocks.hash).not.toHaveBeenCalled(); expect(mocks.inspect).not.toHaveBeenCalled(); expect(mocks.open).not.toHaveBeenCalled();
   await storage.withReader(pack, async () => undefined);
-  expect(mocks.hash).toHaveBeenCalledTimes(1); expect(mocks.inspect).toHaveBeenCalledTimes(1);
+  expect(mocks.hash).not.toHaveBeenCalled(); expect(mocks.inspect).not.toHaveBeenCalled();
 });
 test('receipt write failures keep verified foods usable without repeated hashing', async () => {
   mocks.failWrites = true; const storage = await create();

@@ -3,14 +3,14 @@ import { test, expect, type Page } from '@playwright/test';
 import type { Archive } from '../../mobile/src/local/records';
 import { localDate } from '../../lib/diary-date';
 
-async function workerCall<T>(page: Page, method: string, args: unknown[] = []): Promise<T> {
-  return page.evaluate(({ method, args }) => new Promise((resolve, reject) => {
-    const worker = new Worker('/offline/diary-worker.js', { type: 'module' });
+async function workerCall<T>(page: Page, method: string, args: unknown[] = [], workerUrl = '/offline/diary-worker.js'): Promise<T> {
+  return page.evaluate(({ method, args, workerUrl }) => new Promise((resolve, reject) => {
+    const worker = new Worker(workerUrl, { type: 'module' });
     const timer = setTimeout(() => { worker.terminate(); reject(new Error('Local worker did not answer')); }, 30000);
     worker.onerror = event => { clearTimeout(timer); worker.terminate(); reject(new Error(event.message)); };
     worker.onmessage = ({ data }) => { if (data.id !== 1) return; clearTimeout(timer); worker.terminate(); if (data.error) reject(new Error(data.error)); else resolve(data.value); };
     worker.postMessage({ id: 1, method, args });
-  }), { method, args }) as Promise<T>;
+  }), { method, args, workerUrl }) as Promise<T>;
 }
 
 async function open(page: Page) {
@@ -80,6 +80,31 @@ test('reloads offline, searches the bundled catalog, and persists a food without
   await open(page);
   await expect(page.locator('.food-row')).toHaveCount(1);
   expect((await workerCall<Archive>(page, 'exportArchive')).records.filter(record => record.kind === 'entry')).toHaveLength(1);
+});
+
+test('validates the bundled catalog on download without hashing it after worker restart', async ({ page, context, request }) => {
+  const response = await request.get('/offline/diary-worker.js');
+  expect(response.ok()).toBe(true);
+  // Count hashes in the actual built worker while retaining its storage, SQLite
+  // and download behavior. Each workerCall terminates that worker after its reply.
+  const instrumentation = `
+    let hashes = 0;
+    const originalDigest = crypto.subtle.digest.bind(crypto.subtle);
+    crypto.subtle.digest = (...args) => { hashes++; return originalDigest(...args); };
+    const send = self.postMessage.bind(self);
+    self.postMessage = message => send(message.id === 1 && !message.error
+      ? { ...message, value: { result: message.value, hashes } } : message);
+  `;
+  const body = instrumentation + await response.text();
+  await context.route('**/offline/validation-worker.js', route => route.fulfill({ response, body }));
+  await open(page);
+  const search = () => workerCall<{ result: { foods: unknown[] }; hashes: number }>(page, 'searchFoods', ['banana', { online: false, category: 'generic' }], '/offline/validation-worker.js');
+  const downloaded = await search();
+  expect(downloaded.result.foods.length).toBeGreaterThan(0);
+  expect(downloaded.hashes).toBeGreaterThan(0);
+  const reopened = await search();
+  expect(reopened.result.foods.length).toBeGreaterThan(0);
+  expect(reopened.hashes).toBe(0);
 });
 
 test('concurrent tabs preserve both writes and another browser has a private diary', async ({ page, context, browser }) => {

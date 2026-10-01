@@ -4,6 +4,9 @@ import type { FoodPack } from '../src/catalog/packs';
 const inspection = vi.hoisted(() => ({ started: 0, gate: undefined as Promise<void> | undefined }));
 const files = vi.hoisted(() => new Map<string, Uint8Array>());
 vi.mock('expo/fetch', () => ({ fetch: async (url: string) => new Response(new Uint8Array(4096).fill(Number(url.split('/').at(-1)))) }));
+vi.mock('../src/catalog/native-pack-search', () => ({ createNativePackSearch: () => ({
+  index: async () => {}, missing: async () => [], retire: async () => {}, reset: async () => {},
+}) }));
 vi.mock('../src/catalog/native-pack-routes', () => ({
   createNativePackRoutes: () => ({
     indexed: async () => true, index: async () => {}, retire: async () => {},

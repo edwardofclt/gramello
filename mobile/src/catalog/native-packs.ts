@@ -5,6 +5,10 @@ import { fetch } from 'expo/fetch';
 import { consumeBoundedResponse, readPackManifestResponse } from './downloads';
 import { readPackIds, type PackRouteLookup } from './pack-routes';
 import { createNativePackRoutes } from './native-pack-routes';
+import { createNativePackSearch } from './native-pack-search';
+import type { IndexedPackSearch } from './pack-search-index';
+import { foodSchema } from '../local/records';
+import { preferredFoodServing } from '../../../lib/food-servings';
 import { serialized, type SqliteConnection } from '../local/database';
 import { createCatalogReader } from './queries';
 import { packSchema, inspectFoodPack, type FoodPack, type PackStorage } from './packs';
@@ -20,12 +24,13 @@ class InvalidPackFile extends Error {}
 export async function createNativePackStorage(
   metadata: <T>(key: string) => Promise<T | null>, saveMetadata: (key: string, value: unknown) => Promise<unknown>, manifestUrl: string,
   options: { fetcher?: typeof fetch } = {},
-): Promise<PackStorage & { routes: PackRouteLookup; withReader<T>(pack: FoodPack, work: (reader: FoodCatalog) => Promise<T>): Promise<T> }> {
+): Promise<PackStorage & { routes: PackRouteLookup; search: IndexedPackSearch; prepareSearch(): Promise<void>; withReader<T>(pack: FoodPack, work: (reader: FoodCatalog) => Promise<T>): Promise<T> }> {
   const fetcher = options.fetcher ?? fetch;
   const directory = new Directory(Paths.document, 'gramello-food-packs');
   directory.create({ intermediates: true, idempotent: true });
   const queue = {} as SqliteConnection;
   const routeIndex = createNativePackRoutes(directory.uri);
+  const searchIndex = createNativePackSearch(directory.uri);
   const metadataQueue = {} as SqliteConnection;
   const pendingInstalls = new Set<Promise<void>>();
   const installingFiles = new Map<string, number>();
@@ -52,7 +57,16 @@ export async function createNativePackStorage(
   const matches = (saved: ReturnType<typeof identity> | null, expected: ReturnType<typeof identity>) =>
     saved !== null && expected.modificationTime !== null && Number.isFinite(expected.modificationTime)
       && Object.entries(expected).every(([key, value]) => saved[key as keyof typeof saved] === value);
-  const verified = async (pack: FoodPack, file: File) => matches(await readReceipt(pack), identity(pack, file));
+  const readable = async (pack: FoodPack, file: File) => {
+    if (!file.exists || file.size !== pack.bytes) return false;
+    const saved = await readReceipt(pack), expected = identity(pack, file);
+    // The activation ledger already records a validated installation. Older
+    // installs without receipts remain readable; metadata changes request repair
+    // instead of moving whole-file verification onto a food lookup.
+    if (!saved || saved.revision !== validationRevision || expected.modificationTime === null
+      || !Number.isFinite(expected.modificationTime)) return true;
+    return matches(saved, expected);
+  };
   const digest = async (file: File) => Array.from(new Uint8Array(await Crypto.digest(Crypto.CryptoDigestAlgorithm.SHA256, new Uint8Array(await file.bytes()))), b => b.toString(16).padStart(2, '0')).join('');
   const open = async (file: File) => {
     const db = await SQLite.openDatabaseAsync(file.name, { useNewConnection: true, finalizeUnusedStatementsBeforeClosing: false }, directory.uri);
@@ -66,14 +80,13 @@ export async function createNativePackStorage(
     try { receiptFor(pack).write(JSON.stringify(stamp)); }
     catch { /* Verified packs remain usable when receipt persistence fails. */ }
   };
-  const verify = async (pack: FoodPack, file: File, force = false, receipt = true) => {
+  const validateDownload = async (pack: FoodPack, file: File, receipt = true) => {
     if (!file.exists || file.size !== pack.bytes) {
       // The incoming manifest may conflict with an already activated descriptor.
       // Its claimed size alone is not evidence that those retained bytes broke.
       if (file.exists && [...installed, ...previous].some(old => old.sha256 === pack.sha256 && old.bytes === file.size)) throw new Error('The food pack size does not match its descriptor.');
       throw new InvalidPackFile('A downloaded food pack is unavailable or corrupt. Check for updates.');
     }
-    if (!force && await verified(pack, file)) return;
     const before = identity(pack, file);
     if (await digest(file) !== pack.sha256) throw new InvalidPackFile('The food pack did not pass verification.');
     const db = await open(file);
@@ -85,14 +98,46 @@ export async function createNativePackStorage(
   };
   const index = async (pack: FoodPack) => {
     if (pack.source !== 'usda-branded' || await routeIndex.indexed(pack)) return;
-    await verify(pack, fileFor(pack));
+    if (!await readable(pack, fileFor(pack))) throw new InvalidPackFile('A downloaded food pack is unavailable or changed. Check for updates.');
     const pages: string[][] = [], db = await open(fileFor(pack));
     try { await readPackIds(db, async ids => { pages.push(ids); }); }
     finally { await db.closeAsync(); }
     await routeIndex.index(pack, pages);
   };
+  const indexSearch = async (pack: FoodPack) => {
+    if (!await readable(pack, fileFor(pack))) throw new InvalidPackFile('A downloaded food pack is unavailable or changed. Check for updates.');
+    const db = await open(fileFor(pack));
+    try { await searchIndex.index(pack, db); } finally { await db.closeAsync(); }
+  };
   return {
     list,
+    async prepareSearch(onProgress?: (completed: number, total: number) => void) {
+      const packs = await list();
+      if (!packs.length) return;
+      let missing: FoodPack[];
+      try { missing = await serialized(queue, () => searchIndex.missing(packs)); }
+      catch { await serialized(queue, () => searchIndex.reset()); missing = packs; }
+      let completed = packs.length - missing.length;
+      if (missing.length) onProgress?.(completed, packs.length);
+      for (const pack of missing) {
+        // Release the reader queue between packs so searches can use starter
+        // foods and fully prepared sources while preparation progresses.
+        try { await serialized(queue, () => indexSearch(pack)); } catch { /* Availability requests repair during the ensuing update. */ }
+        onProgress?.(++completed, packs.length);
+      }
+    },
+    search: (query, options = {}) => serialized(queue, async () => {
+      const packs = [...installed].reverse().sort((a, b) => Number(a.source === 'off') - Number(b.source === 'off'));
+      return searchIndex.search(query, options, packs, async (pack, ids) => {
+        const file = fileFor(pack);
+        if (!await readable(pack, file)) throw new InvalidPackFile('A downloaded food pack is unavailable or changed. Check for updates.');
+        const db = await open(file);
+        try {
+          const rows = await db.getAllAsync<{ food: string }>(`SELECT food FROM foods WHERE id IN (${ids.map(() => '?').join(',')})`, ...ids);
+          return rows.map(row => preferredFoodServing(foodSchema.parse(JSON.parse(row.food))));
+        } finally { await db.closeAsync(); }
+      });
+    }),
     recover: () => serialized(queue, async () => {
       for (const entry of directory.list()) if (entry instanceof File
         && /^pack-[a-f0-9]{64}-\d+-[a-f0-9]*\.partial$/.test(entry.name) && !liveTransfers.has(entry.uri)) entry.delete();
@@ -105,16 +150,7 @@ export async function createNativePackStorage(
       return routeIndex.lookup(id, current);
     }),
     async available(pack) {
-      return serialized(queue, async () => {
-        const file = fileFor(pack);
-        if (!file.exists || file.size !== pack.bytes) return false;
-        const saved = await readReceipt(pack), expected = identity(pack, file);
-        // The updater calls available for every pack. Legacy or obsolete receipts
-        // defer whole-file validation until that pack is actually queried.
-        if (!saved || saved.revision !== validationRevision || expected.modificationTime === null
-          || !Number.isFinite(expected.modificationTime)) return true;
-        return matches(saved, expected);
-      });
+      return serialized(queue, async () => await readable(pack, fileFor(pack)) && !(await searchIndex.missing([pack])).length);
     },
     load: async () => await metadata<UpdateState>('foodPacksUpdate') ?? {},
     save: async state => { await saveMetadata('foodPacksUpdate', state); },
@@ -135,7 +171,7 @@ export async function createNativePackStorage(
         try {
           const reusable = await serialized(queue, async () => {
             if (!file.exists) return false;
-            try { await verify(pack, file, true); return true; }
+            try { await validateDownload(pack, file); return true; }
             catch (error) {
               const retained = [...installed, ...previous].some(old => old.sha256 === pack.sha256);
               if (retained && !(error instanceof InvalidPackFile)) throw error;
@@ -155,13 +191,14 @@ export async function createNativePackStorage(
             } finally { handle.close(); }
             const staged = temporary;
             // Candidates have independent read-only connections; activation owns the reader queue.
-            await verify(pack, staged, true, false);
+            await validateDownload(pack, staged, false);
             await serialized(queue, async () => {
               staged.move(file); temporary = undefined;
               saveReceipt(pack, identity(pack, file));
             });
           }
           await serialized(queue, () => index(pack));
+          await serialized(queue, () => indexSearch(pack));
           await serialized(metadataQueue, async () => {
             const next = [...installed.filter(old => old.id !== pack.id), pack];
             const old = installed.find(old => old.id === pack.id && old.sha256 !== pack.sha256);
@@ -193,6 +230,7 @@ export async function createNativePackStorage(
       });
       await serialized(queue, async () => {
         await routeIndex.retire(installed);
+        await searchIndex.retire(installed);
         const keep = new Set([...installed, ...previous].map(pack => fileFor(pack).name));
         for (const name of installingFiles.keys()) keep.add(name);
         for (const hash of cachedReceipts.keys()) if (!keep.has(`pack-${hash}.sqlite`)) cachedReceipts.delete(hash);
@@ -203,7 +241,7 @@ export async function createNativePackStorage(
     },
     withReader: (pack, work) => serialized(queue, async () => {
       const file = fileFor(pack);
-      await verify(pack, file);
+      if (!await readable(pack, file)) throw new InvalidPackFile('A downloaded food pack is unavailable or corrupt. Check for updates.');
       const db = await open(file);
       try { return await work(createCatalogReader(read => read(db))); }
       finally { await db.closeAsync(); }

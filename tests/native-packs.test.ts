@@ -3,6 +3,7 @@ import { mkdtempSync, readFileSync, rmSync, writeFileSync, utimesSync } from 'no
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { createHash } from 'node:crypto';
+import { DatabaseSync } from 'node:sqlite';
 import { buildCatalog } from '../scripts/food-catalog.mjs';
 import { normalizeOffProduct } from '../lib/catalog-import';
 import off from './fixtures/al-fresco-off.json';
@@ -36,6 +37,49 @@ async function setup() {
 }
 const installedFile = () => join(root, 'gramello-food-packs', `pack-${pack.sha256}.sqlite`);
 describe('native expansion files', () => {
+  it('persists a shared search index during installation and reads only matching packs after restart', async () => {
+    const fake = await setup(); await fake.storage.install(pack);
+    const reopened = await fake.reopen(); platform.reads = 0;
+    const result = await reopened.search('al fresco apple maple sausage');
+    expect(result.foods.map(food => food.id)).toContain('off-0030771094625');
+    expect(platform.reads).toBe(0);
+    const before = platform.opened;
+    expect((await reopened.search('nonexistent product')).foods).toEqual([]);
+    // The shared index opens, but no canonical expansion file opens on a miss.
+    expect(platform.opened - before).toBe(1);
+  });
+  it('prepares legacy installed chunks outside search without hashing or downloading again', async () => {
+    const fake = await setup(); await fake.storage.install(pack);
+    rmSync(join(root, 'gramello-food-packs', 'food-search.sqlite'));
+    const legacy = await fake.reopen(); platform.reads = 0;
+    expect((await legacy.search('sausage')).issues?.length).toBeGreaterThan(0);
+    const download = vi.spyOn(platform, 'fetcher');
+    await legacy.prepareSearch();
+    expect((await legacy.search('al fresco apple maple sausage')).foods).toHaveLength(1);
+    expect(platform.reads).toBe(0); expect(download).not.toHaveBeenCalled(); download.mockRestore();
+  });
+  it('rebuilds a damaged derived index during preparation without removing or hashing installed packs', async () => {
+    const fake = await setup(); await fake.storage.install(pack);
+    writeFileSync(join(root, 'gramello-food-packs', 'food-search.sqlite'), new Uint8Array(4096).fill(255));
+    const reopened = await fake.reopen(); platform.reads = 0;
+    await reopened.prepareSearch();
+    expect((await reopened.search('al fresco apple maple sausage')).foods).toHaveLength(1);
+    expect(platform.reads).toBe(0);
+    expect(await reopened.list()).toEqual([pack]);
+  });
+  it('rebuilds failed FTS storage even when its pack markers still report ready', async () => {
+    const fake = await setup(); await fake.storage.install(pack);
+    const index = new DatabaseSync(join(root, 'gramello-food-packs', 'food-search.sqlite'));
+    index.exec('DROP TABLE pack_search_terms');
+    expect(index.prepare('SELECT count(*) AS count FROM search_packs').get()).toMatchObject({ count: 1 });
+    index.close();
+    const reopened = await fake.reopen(); platform.reads = 0;
+    await expect(reopened.search('al fresco apple maple sausage')).rejects.toThrow();
+    await reopened.prepareSearch();
+    expect((await reopened.search('al fresco apple maple sausage')).foods).toHaveLength(1);
+    expect(platform.reads).toBe(0);
+    expect(await reopened.list()).toEqual([pack]);
+  });
   it('recovers abandoned partials after recreation without removing active transfers', async () => {
     const fake = await setup();
     const orphan = join(root, 'gramello-food-packs', `pack-${pack.sha256}-1234-dead.partial`);
@@ -54,7 +98,7 @@ describe('native expansion files', () => {
   });
   it('can isolate fixture transport without changing signed descriptors', async () => {
     const fixtureFetch = vi.fn(async () => new Response(bytes as Uint8Array<ArrayBuffer>));
-    const storage = await createNativePackStorage(async () => null, async () => {}, 'https://example.org/manifest', { fetcher: fixtureFetch as typeof fetch });
+    const storage = await createNativePackStorage(async () => null, async () => {}, 'https://example.org/manifest', { fetcher: fixtureFetch as unknown as NonNullable<Parameters<typeof createNativePackStorage>[3]>['fetcher'] });
     await storage.install(pack);
     expect(fixtureFetch).toHaveBeenCalledWith(pack.url, expect.objectContaining({ signal: expect.any(AbortSignal) }));
     expect(await storage.list()).toEqual([pack]);
@@ -97,12 +141,20 @@ describe('native expansion files', () => {
     writeFileSync(installedFile(), new Uint8Array(bytes.length).fill(1)); utimesSync(installedFile(), new Date(), new Date(Date.now() + 1000));
     await expect(cold.withReader(pack, r => r.getFood('x'))).rejects.toThrow(/corrupt|verification/);
   });
-  it('rehashes readers with missing metadata but keeps availability checks lazy', async () => {
+  it('reads activated files without hashing when modification metadata is unavailable', async () => {
     const { storage } = await setup(); await storage.install(pack); platform.reads = 0; platform.missingStamp = true;
     await storage.withReader(pack, r => r.getFood('x')); await storage.withReader(pack, r => r.getFood('x'));
-    expect(platform.reads).toBe(2);
+    expect(platform.reads).toBe(0);
     platform.missingStamp = false; platform.reads = 0;
     await storage.available!(pack); await storage.available!(pack); expect(platform.reads).toBe(0);
+  });
+  it('reads a legacy activated pack after restart without a receipt or full-file validation', async () => {
+    const fake = await setup(); await fake.storage.install(pack);
+    rmSync(installedFile().replace(/\.sqlite$/, '.verified.json'));
+    const reopened = await fake.reopen(); platform.reads = 0;
+    const result = await reopened.withReader(pack, reader => reader.search('al fresco apple maple sausage'));
+    expect(result.map(food => food.id)).toContain('off-0030771094625');
+    expect(platform.reads).toBe(0);
   });
   it('retains old activation on metadata failure', async () => {
     const fake = await setup(); await fake.storage.install(pack); fake.reject();

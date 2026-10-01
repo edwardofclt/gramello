@@ -14,7 +14,7 @@ import { createCatalogUpdater, combineCatalogUpdaters, type UpdateState } from '
 import { createNativePackStorage } from '../catalog/native-packs';
 import { createPackUpdater } from '../catalog/packs';
 import { createPackCatalog } from '../catalog/pack-reader';
-import { createCatalogReader, inspectCatalog } from '../catalog/queries';
+import { createCatalogReader, inspectCatalog, readCatalogMetadata } from '../catalog/queries';
 import { createFoodLookup } from '../catalog/lookup';
 
 async function openRuntime() {
@@ -51,21 +51,15 @@ async function openRuntime() {
   };
   const inspectFile = async (db: SQLite.SQLiteDatabase, file: File, identity: string | null, expected?: { version: string; count: number }, force = false) => {
     const stamp = fingerprint(file), receipt = receiptFor(file);
-    if (!force && identity && stamp && receipt.exists && receipt.size <= 1024) {
-      try {
-        const saved = JSON.parse(await receipt.text());
-        if (saved.validation === 1 && saved.identity === identity && saved.bytes === stamp.bytes && saved.modified === stamp.modified) {
-          // Probe only metadata, never counts, quick_check, or food rows.
-          const schema = await db.getFirstAsync<{ user_version: number }>('PRAGMA user_version');
-          const info = await db.getFirstAsync<{ value: string }>("SELECT value FROM catalog_meta WHERE key='version'");
-          if (schema?.user_version === 1 && info && info.value === saved.version && (!expected || expected.version === info.value)) return { version:info.value };
-        }
-      } catch { /* Missing/stale receipts require full verification. */ }
-    }
-    const sha = /^catalog-([a-f0-9]{64})\.sqlite$/.exec(file.name)?.[1];
-    if (sha && !force) {
-      const hash = Array.from(new Uint8Array(await Crypto.digest(Crypto.CryptoDigestAlgorithm.SHA256,new Uint8Array(await file.bytes()))), b => b.toString(16).padStart(2,'0')).join('');
-      if (hash !== sha) throw new Error('The installed food catalog did not pass verification.');
+    if (!force) {
+      let saved: { validation?: number; identity?: string; bytes?: number; modified?: number; version?: string } | undefined;
+      if (identity && stamp && receipt.exists && receipt.size <= 1024) {
+        try { saved = JSON.parse(await receipt.text()); } catch { /* Legacy activation metadata still identifies an installed catalog. */ }
+      }
+      const currentReceipt = saved?.validation === 1 && saved.identity === identity ? saved : undefined;
+      if (currentReceipt && stamp
+        && (currentReceipt.bytes !== stamp.bytes || currentReceipt.modified !== stamp.modified)) throw new Error('The installed food catalog changed. Check for updates.');
+      return readCatalogMetadata(db, expected?.version ?? currentReceipt?.version);
     }
     const info = await inspectCatalog(db, expected);
     if (JSON.stringify(stamp) !== JSON.stringify(fingerprint(file))) throw new Error('The food catalog changed during verification.');
@@ -90,13 +84,14 @@ async function openRuntime() {
     try {
       // A content-specific name reuses this release's copy across launches.
       // Assets without a stable hash are recopied, but only on first lookup.
-      if (!seed.exists || !identity) {
+      const copying = !seed.exists || !identity;
+      if (copying) {
         const downloaded = await asset.downloadAsync();
         if (seed.exists) seed.delete();
         await new File(downloaded.localUri ?? downloaded.uri).copy(seed);
       }
       candidate = await openCatalog(seed);
-      await inspectFile(candidate, seed, identity);
+      await inspectFile(candidate, seed, identity, undefined, copying);
       bundled = candidate; bundledName = seed.name;
       // Only create a new copy when this release's foods are first needed, then
       // retire prior bundle generations and their receipts under bundledLock.
@@ -138,7 +133,7 @@ async function openRuntime() {
   const downloaded = createCatalogReader(work => serialized(catalogLock, async () => work(await openActive())), bundledReader);
   const foodCache = await SQLite.openDatabaseAsync('gramello-food-cache.sqlite');
   const packStorage = await createNativePackStorage(metadata, saveMetadata, catalogConfig.packManifestUrl);
-  const catalog = await createFoodLookup(createPackCatalog(packStorage.list, packStorage.withReader, downloaded, packStorage.routes), foodCache);
+  const catalog = await createFoodLookup(createPackCatalog(packStorage.list, packStorage.withReader, downloaded, packStorage.routes, packStorage.search), foodCache);
   const repository = await createLocalRepository(personal, catalog, Crypto.randomUUID);
   const coreUpdater = createCatalogUpdater({
     async load() {

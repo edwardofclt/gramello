@@ -44,8 +44,11 @@ test('OPFS warms without full-file reads and persists direct USDA routes offline
   expect((await call(page, 'search')).foods.map((food: any) => food.id).sort()).toEqual(['off-0030771094625', 'usda-1892562']);
   const info = await call(page, 'info'); expect(info.direct, JSON.stringify(info)).toBe(true);
   expect(info.entries.every((entry: any) => entry.location === 'opfs')).toBe(true);
-  expect(info.metrics).toMatchObject({ fileReads: 0, snapshotReads: 0, peak: 1, open: 0 });
+  expect(info.metrics).toMatchObject({ hashes: 0, fileReads: 0, snapshotReads: 0, peak: 1, open: 0 });
   await page.reload(); await call(page, 'info');
+  await call(page, 'resetMetrics');
+  expect((await call(page, 'search')).foods).toHaveLength(2);
+  expect((await call(page, 'info')).metrics).toMatchObject({ hashes: 0, fileReads: 0, snapshotReads: 0, peak: 1, open: 0 });
   // WebKit's protocol offline switch can make cold OPFS reads fail too. Block
   // every network request without disabling local storage in that engine.
   if (browserName === 'webkit') await context.route(/^https?:\/\//, route => route.abort('internetdisconnected'));
@@ -53,22 +56,32 @@ test('OPFS warms without full-file reads and persists direct USDA routes offline
   expect((await call(page, 'get', 'usda-1892562')).id).toBe('usda-1892562');
   expect((await call(page, 'barcode')).id).toBe('usda-1892562');
 });
-test('legacy migration is transactional and failed commits leave old bytes readable', async ({ page }) => {
+test('legacy snapshots remain readable without search-triggered storage migration', async ({ page }) => {
   const packs = await call(page, 'legacy'); await call(page, 'configure', { failCommit: true });
   expect((await call(page, 'search')).foods).toHaveLength(2);
   expect((await call(page, 'info')).entries[0].location).toBeUndefined();
   expect((await call(page, 'values', packs[0].id)).bytes).toBeTruthy();
   await call(page, 'configure', {}); await call(page, 'search');
-  const info = await call(page, 'info'); expect(info.entries.every((entry: any) => entry.location === 'opfs')).toBe(true);
-  for (const pack of packs) expect(await call(page, 'values', pack.id)).toEqual({ bytes: undefined, previous: undefined });
+  const info = await call(page, 'info'); expect(info.entries.every((entry: any) => entry.location === undefined)).toBe(true);
+  for (const pack of packs) expect((await call(page, 'values', pack.id)).bytes).toBeTruthy();
   await page.reload(); expect((await call(page, 'search')).foods).toHaveLength(2);
 });
-test('unsupported isolation keeps IndexedDB installs and reads migrated OPFS asynchronously', async ({ page }) => {
+test('prepares existing downloads offline outside search without rehashing or redownloading', async ({ page, context, browserName }) => {
+  await call(page, 'update'); await call(page, 'clearSearchIndex');
+  await page.reload(); await call(page, 'info'); await call(page, 'resetMetrics');
+  if (browserName === 'webkit') await context.route(/^https?:\/\//, route => route.abort('internetdisconnected'));
+  else await context.setOffline(true);
+  const pending = await call(page, 'search');
+  expect(pending.foods).toHaveLength(0); expect(pending.issues.length).toBeGreaterThan(0);
+  expect((await call(page, 'info')).metrics).toMatchObject({ hashes: 0, fileReads: 0, snapshotReads: 0, peak: 0 });
+  await call(page, 'prepareSearch');
+  expect((await call(page, 'search')).foods).toHaveLength(2);
+  expect((await call(page, 'info')).metrics.hashes).toBe(0);
+});
+test('unsupported isolation reads downloaded OPFS packs asynchronously', async ({ page }) => {
+  await call(page, 'update');
   await page.goto('/no-isolation'); expect((await call(page, 'info')).direct).toBe(false);
-  expect((await call(page, 'update')).phase).toBe('updated'); expect((await call(page, 'search')).foods).toHaveLength(2);
-  expect((await call(page, 'info')).entries.every((entry: any) => entry.location === 'indexeddb')).toBe(true);
-  await page.goto('/'); await call(page, 'search');
-  await page.goto('/no-isolation'); expect((await call(page, 'search')).foods).toHaveLength(2);
+  expect((await call(page, 'search')).foods).toHaveLength(2);
   expect((await call(page, 'info')).entries.every((entry: any) => entry.location === 'opfs')).toBe(true);
   await call(page, 'unavailable'); const result = await call(page, 'search');
   expect(result.issues.length).toBeGreaterThan(0); expect((await call(page, 'info')).entries).toHaveLength(2);

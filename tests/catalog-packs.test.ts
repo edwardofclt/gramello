@@ -184,6 +184,20 @@ describe('signed expansion packs', () => {
   });
 });
 describe('bounded expansion reader', () => {
+  it('uses the shared candidate index without invoking any per-pack search', async () => {
+    const food = normalizeOffProduct(off)!, opened = vi.fn(async () => { throw new Error('A name search opened a partition reader'); });
+    const indexed = vi.fn(async () => ({ foods: [food], canExpand: false }));
+    const reader = createPackCatalog(async () => [a, b], opened,
+      { getFood: async () => null, search: async () => [], barcode: async () => null }, undefined, indexed);
+    expect((await reader.search('al fresco apple maple sausage')).map(food => food.id)).toEqual([food.id]);
+    expect(indexed).toHaveBeenCalledTimes(1); expect(opened).not.toHaveBeenCalled();
+  });
+  it('prepares installed search metadata before an offline/backoff check returns', async () => {
+    const fake = storage(); fake.value.load = async () => ({ nextCheck: 9000 });
+    const prepareSearch = vi.fn(async () => {}); fake.value.prepareSearch = prepareSearch;
+    await createPackUpdater(fake.value, publicKey, () => 1000).check();
+    expect(prepareSearch).toHaveBeenCalledTimes(1); expect(fake.attempts).toEqual([]);
+  });
   it('uses durable USDA routes after recreation and opens no packs for indexed misses', async () => {
     const target = { ...a, id: 'usda-branded-2-1', buckets: 2, bucket: 1 };
     const unrelated = { ...a, id: 'usda-branded-2-0', buckets: 2, bucket: 0 };

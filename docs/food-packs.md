@@ -104,27 +104,73 @@ a fully received download says “Finishing food catalog update…” until veri
 and activation complete. Indicators disappear on completion or error, with the
 result retained in Settings.
 
-## Local readers and browser migration
+## Local readers and installation validation
 
-Native repairs a corrupt content-addressed file in one install attempt. Native
-and browser readers verify files on first use and reuse verification only while
-hash, byte length and modification metadata agree. Native persists verification
-receipts that also match the descriptor and validation revision, avoiding repeated
-whole-file scans after restart. Native availability checks defer legacy validation
-until a reader opens the pack; installs always force validation. Browser repair checks force hashing;
-missing or changed metadata never means "trusted forever".
-The metadata-only verification cache is bounded to 1,024 recently used entries;
-eviction only triggers a new hash check and never removes a pack. Durable, locally
-derived USDA routes select the correct installed pack after restart without a
-previous name search. Routes include the content hash, ignore retired generations,
-and do not change nutrition identities or source precedence.
+Download and repair installation verify size, SHA-256, SQLite integrity and food
+records before activation. Native repairs a corrupt content-addressed file in one
+install attempt. Searches, barcode lookup and opening an installed core catalog
+never repeat whole-file hashing or validation, including after restart or when a
+legacy installation has no verification receipt.
+
+The durable activation ledger records successful installation. Readers perform
+only lightweight existence, byte-length and available modification-time checks;
+a known change reports the pack unavailable so an update can repair it. Native
+receipts and browser OPFS activation stamps support those checks. Missing
+modification metadata does not put hashing back on the search path. Selected food
+records still pass the normal nutrition-record decoder.
+
+Durable, locally derived USDA routes select the correct installed pack after
+restart without a previous name search. Routes include the content hash, ignore
+retired generations, and do not change nutrition identities or source precedence.
+Rebuilding a legacy route index reads IDs without revalidating all nutrition rows.
+
+### Shared name-search index
+
+Native and browser name searches use one derived FTS5 database across all installed
+expansion chunks. It holds food identities, names, brands, normalized search terms
+and a compact pack-generation ID. Complete nutrition and serving records remain
+in their original verified pack files. The small core catalog and personal/provider
+foods retain their readers and participate in the final shared relevance ranking.
+
+Installation indexes a verified chunk before activating its descriptor. Candidate
+queries filter against the current activation ledger, so failed activations and
+retired generations cannot leak into results. Newer activated identities suppress
+older copies even when a renamed food no longer matches the query. Only packs with
+ranked candidates open for bounded food-ID reads; a search miss opens no packs.
+Index text uses the same apostrophe, accent and word normalization as relevance
+ranking, avoiding the legacy per-file apostrophe table scan.
+
+Existing downloads are indexed once by the catalog updater's preparation pass,
+including offline/backoff checks, without hashing or redownloading. Searches never
+build the index. Until preparation completes, they keep core foods available and
+report that downloaded products are being prepared. A source becomes searchable
+once all of its activated chunks are indexed, preserving identity precedence
+while preparation is incomplete. Missing or damaged derived storage can be
+rebuilt without removing canonical packs. Failed FTS queries request a rebuild
+during preparation even if the pack markers remain readable. Preparation commits
+one chunk at a time and releases the reader lock between chunks.
+
+Native stores `food-search.sqlite` beside the expansion files. Browser uses
+`/gramello-food-search.sqlite` in OPFS. When direct OPFS becomes unavailable, it can
+read that index asynchronously into a cached memory reader; subsequent fallback
+writes atomically persist an IndexedDB snapshot and backend/revision pointers.
+Cross-tab changes invalidate that cache through small metadata checks. These
+index files are local derived data, not signed downloads.
+
+A desktop SQLite comparison over 256 published chunks (1,008,785 foods) produced
+a 205,447,168-byte index in 28.9 seconds. Including canonical candidate reads,
+`chicken` improved from 3,742 ms to 216 ms, `oats` from 2,639 ms to 109 ms,
+`al fresco apple maple sausage` from 1,420 ms to 19 ms, and a miss from 1,169 ms to
+3 ms. The original path opened all 256 chunks; the shared path opened 68, 73, 9 and
+0 respectively. These are desktop measurements, not Expo bridge or phone timings.
 
 Browser expansion packs use the pinned SQLite WASM package's regular `opfs` VFS
 in the dedicated worker. Files live at
 `/gramello-food-packs/pack-<sha256>.sqlite`; IndexedDB holds validated activation
 pointers and route metadata, not a second catalog copy. Readers are read-only,
-use a 2 MiB SQLite page cache, and hold one expansion connection at a time. Warm
-OPFS searches do not read/hash entire files or load IndexedDB pack bytes.
+use a 2 MiB SQLite page cache, and hold one expansion connection at a time. OPFS
+searches, including the first search after restart, do not read/hash entire files
+or load IndexedDB pack bytes.
 
 Documents and offline worker assets need `Cross-Origin-Opener-Policy: same-origin`
 and `Cross-Origin-Embedder-Policy: require-corp`. The compiled Worker wrapper and
@@ -134,12 +180,14 @@ The offline shell caches the OPFS proxy, including both `?vfs=opfs` and
 Do not use `opfs-sahpool` with the pinned dependency: its failure cleanup is not
 appropriate for authoritative installed catalog files.
 
-Legacy bare descriptors remain readable. Migration validates one pack, stages
-and verifies its file, then atomically switches its pointer while clearing old
-IndexedDB bytes and `packs:previous:*`. A failed transaction leaves the original
-bytes and pointer usable. Reader opens, activation, migration, and cleanup share
-the cross-tab reader lock; network transfers do not hold that lock. Old partition
-coverage remains until the complete replacement set has installed.
+Legacy bare descriptors and IndexedDB snapshots remain readable in their existing
+storage. Search does not migrate files or write activation metadata. A subsequent
+download installs its verified replacement in the available backend, atomically
+switches the pointer and clears old IndexedDB bytes and `packs:previous:*`.
+A failed transaction leaves the original bytes and pointer usable. Reader opens,
+activation and cleanup share the cross-tab reader lock; network transfers do not
+hold that lock. Old partition coverage remains until the complete replacement set
+has installed.
 
 Without regular OPFS support, new installs keep the IndexedDB memory-reader
 fallback. Already migrated files can use asynchronous OPFS reads if isolation is
