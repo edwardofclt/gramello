@@ -1,5 +1,5 @@
 import { createHash } from 'node:crypto';
-import { afterEach, describe, expect, it } from 'vitest';
+import { afterEach, describe, expect, it, vi } from 'vitest';
 import { createBrowserPackStorage, readPackDownload } from '../lib/browser-local/packs';
 import type { FoodPack } from '../mobile/src/catalog/packs';
 import type { SnapshotStore } from '../lib/browser-local/persistence';
@@ -69,6 +69,50 @@ describe('durable browser expansion storage', () => {
     expect(await fake.storage.withReader(pack, reader => reader.getFood('off-030771094625'))).toMatchObject({ name: 'Sausage' });
     expect(fake.closed()).toBe(2);
   });
+  it('reads activated snapshots after restart without hashing or scanning their records', async () => {
+    const fake = setup(); await fake.storage.install(pack);
+    const digest = vi.spyOn(crypto.subtle, 'digest');
+    const restarted = createBrowserPackStorage(fake.options);
+    try {
+      expect(await restarted.withReader(pack, reader => reader.getFood('off-030771094625'))).toMatchObject({ name: 'Sausage' });
+      expect(await restarted.available!(pack)).toBe(true);
+      expect(digest).not.toHaveBeenCalled();
+    } finally { digest.mockRestore(); }
+  });
+  it('reopens verified OPFS packs without full-file reads and rejects changed stamps without hashing', async () => {
+    const fake = setup(); let modifiedAt = 1000;
+    const files = {
+      direct: true, stat: async () => ({ bytes: pack.bytes, modifiedAt }),
+      read: vi.fn(async () => bytes),
+      stage: async (_pack: FoodPack, response: Response) => { await response.arrayBuffer(); return 'temporary'; },
+      activate: async () => {}, open: async () => fake.options.open(bytes),
+      removeTemporary: async () => {}, retire: async () => {},
+    };
+    await createBrowserPackStorage({ ...fake.options, files }).install(pack);
+    const restarted = createBrowserPackStorage({ ...fake.options, files });
+    files.read.mockClear(); const digest = vi.spyOn(crypto.subtle, 'digest');
+    try {
+      expect(await restarted.withReader(pack, reader => reader.getFood('off-030771094625'))).toMatchObject({ name: 'Sausage' });
+      expect(await restarted.available!(pack)).toBe(true);
+      modifiedAt++;
+      expect(await restarted.available!(pack)).toBe(false);
+      await expect(restarted.withReader(pack, async () => undefined)).rejects.toThrow();
+      expect(files.read).not.toHaveBeenCalled(); expect(digest).not.toHaveBeenCalled();
+    } finally { digest.mockRestore(); }
+  });
+  it('keeps legacy snapshots readable without migrating or validating them during lookup', async () => {
+    const fake = setup(); await fake.storage.install(pack);
+    const stage = vi.fn(async () => { throw new Error('Search attempted a storage migration'); });
+    const files = { direct: true, stage, stat: async () => null, read: async () => bytes,
+      activate: async () => {}, open: async () => fake.options.open(bytes), removeTemporary: async () => {}, retire: async () => {} };
+    const restarted = createBrowserPackStorage({ ...fake.options, files });
+    const digest = vi.spyOn(crypto.subtle, 'digest');
+    try {
+      expect(await restarted.withReader(pack, reader => reader.getFood('off-030771094625'))).toMatchObject({ name: 'Sausage' });
+      expect(stage).not.toHaveBeenCalled(); expect(digest).not.toHaveBeenCalled();
+      expect((fake.values.get('packs:index') as Array<{ location: string }>)[0].location).toBe('indexeddb');
+    } finally { digest.mockRestore(); }
+  });
   it('preserves the previous pack when a storage commit fails', async () => {
     const fake = setup(); await fake.storage.install(pack); fake.reject();
     await expect(fake.storage.install({ ...pack, url: 'https://example.org/next.sqlite' })).rejects.toThrow('quota');
@@ -95,9 +139,9 @@ describe('durable browser expansion storage', () => {
     const fake = setup(); await expect(fake.storage.install({ ...pack, sha256: '0'.repeat(64) })).rejects.toThrow('verification');
     expect(await fake.storage.list()).toEqual([]);
   });
-  it('marks corrupt persisted bytes as unavailable so updates can repair them', async () => {
+  it('marks truncated persisted bytes as unavailable so updates can repair them', async () => {
     const fake = setup(); await fake.storage.install(pack);
-    fake.values.set('packs:off-1-0', new Uint8Array(4096).fill(1));
+    fake.values.set('packs:off-1-0', new Uint8Array(8));
     expect(await fake.storage.available!(pack)).toBe(false);
   });
   it('serializes whole updates across tabs so older retirement cannot erase newer packs', async () => {

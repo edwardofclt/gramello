@@ -8,6 +8,14 @@ import type { SqliteConnection } from '../local/database';
 import { foodSchema } from '../local/records';
 import type { FoodCatalog } from '../local/repository';
 import type { CatalogManifest } from './format';
+// Activated catalogs were fully checked when installed. Opening one only needs
+// fixed-size metadata probes, never integrity checks, counts, or food-row scans.
+export async function readCatalogMetadata(db: SqliteConnection, expectedVersion?: string) {
+  const schema = await db.getFirstAsync<{ user_version: number }>('PRAGMA user_version');
+  const info = await db.getFirstAsync<{ value: string }>("SELECT value FROM catalog_meta WHERE key='version'");
+  if (schema?.user_version !== 1 || !info?.value || (expectedVersion && info.value !== expectedVersion)) throw new Error('The installed food catalog is unavailable. Check for updates.');
+  return { version: info.value };
+}
 export async function inspectCatalog(db: SqliteConnection, manifest?: Pick<CatalogManifest, 'version' | 'count'>) {
   const version = await db.getFirstAsync<{ user_version: number }>('PRAGMA user_version');
   const integrity = await db.getFirstAsync<{ quick_check: string }>('PRAGMA quick_check');

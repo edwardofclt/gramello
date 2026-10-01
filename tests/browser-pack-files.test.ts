@@ -45,6 +45,9 @@ describe('browser file boundary', () => {
   it('decodes legacy and versioned entries without accepting invalid paths or locations', () => {
     expect(decodePackEntries([pack, { format: 1, pack, location: 'opfs' }]).map(entry => entry.location)).toEqual(['indexeddb', 'opfs']);
     expect(decodePackEntries([{ format: 1, pack, location: 'outside' }, { ...pack, sha256: '../../escape' }])).toEqual([]);
+    const entry = { format: 1, pack, location: 'opfs', stamp: { bytes: pack.bytes, modifiedAt: 1000 } };
+    expect(decodePackEntries(JSON.parse(JSON.stringify([entry])))).toEqual([entry]);
+    expect(decodePackEntries([{ ...entry, stamp: { bytes: pack.bytes - 1, modifiedAt: 1000 } }, { ...entry, stamp: { bytes: pack.bytes, modifiedAt: '1000' } }])).toEqual([]);
     expect(() => packFileName({ ...pack, sha256: '../../escape' })).toThrow();
   });
   it('stops before overflow writes, cancels, closes and removes only its temporary file', async () => {

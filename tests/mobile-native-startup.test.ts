@@ -162,15 +162,15 @@ async function installedCore(contentAddressed = false) {
   return { name, food, getRuntime, logFood, db: core.db };
 }
 
-it.each([false, true])('verifies an installed core on first use and reuses its receipt across launches (content addressed: %s)', async contentAddressed => {
+it.each([false, true])('reads activated core catalogs across launches without repeating download validation (content addressed: %s)', async contentAddressed => {
   const core = await installedCore(contentAddressed);
   let runtime = await core.getRuntime();
   expect(native.inspect).not.toHaveBeenCalled();
   expect(native.digest).not.toHaveBeenCalled();
   expect(await beforeCatalogReady(core.logFood(runtime))).toMatchObject({ name: core.food.name, calories: 200 });
-  expect(native.inspect).toHaveBeenCalledTimes(1);
-  expect(native.digest).toHaveBeenCalledTimes(contentAddressed ? 1 : 0);
-  expect(native.receipts.has(`${core.name}.verified.json`)).toBe(true);
+  expect(native.inspect).not.toHaveBeenCalled();
+  expect(native.digest).not.toHaveBeenCalled();
+  expect(native.bytes).not.toHaveBeenCalled();
 
   // Recreate the process-level runtime while retaining the native files and DBs.
   vi.resetModules();
@@ -184,19 +184,27 @@ it.each([false, true])('verifies an installed core on first use and reuses its r
   expect(native.copy).not.toHaveBeenCalled();
 });
 
-it('revalidates an installed core when its native file modification time changes', async () => {
+it.each([
+  { validation: 0, identity: 'same' },
+  { validation: 1, identity: 'different' },
+])('ignores obsolete core receipts during lookup: %j', async receipt => {
   const core = await installedCore(true);
-  await core.logFood(await core.getRuntime());
-  expect(native.inspect).toHaveBeenCalledTimes(1);
-  vi.resetModules();
-  vi.clearAllMocks();
-  native.modified++;
-  const runtime = await core.getRuntime();
+  native.existingFiles.add(`${core.name}.verified.json`);
+  native.receipts.set(`${core.name}.verified.json`, JSON.stringify({ ...receipt, identity: receipt.identity === 'same' ? core.name : receipt.identity, bytes: 4096, modified: 100, version: 'obsolete-version' }));
+  expect(await beforeCatalogReady(core.logFood(await core.getRuntime()))).toMatchObject({ name: core.food.name });
   expect(native.inspect).not.toHaveBeenCalled();
-  expect(await beforeCatalogReady(core.logFood(runtime))).toMatchObject({ name: core.food.name });
-  expect(native.inspect).toHaveBeenCalledTimes(1);
-  expect(native.digest).toHaveBeenCalledTimes(1);
-  expect(JSON.parse(native.receipts.get(`${core.name}.verified.json`)!)).toMatchObject({ modified: 101 });
+  expect(native.digest).not.toHaveBeenCalled();
+});
+
+it('rejects changed core files without revalidating them on lookup', async () => {
+  const core = await installedCore(true);
+  native.existingFiles.add(`${core.name}.verified.json`);
+  native.receipts.set(`${core.name}.verified.json`, JSON.stringify({ validation: 1, identity: core.name, bytes: 4096, modified: 100, version: 'test-v1' }));
+  native.modified++;
+  await expect(beforeCatalogReady(core.logFood(await core.getRuntime()))).rejects.toThrow();
+  expect(native.inspect).not.toHaveBeenCalled();
+  expect(native.digest).not.toHaveBeenCalled();
+  expect(native.bytes).not.toHaveBeenCalled();
 });
 
 it('opens the diary when an installed catalog has been removed by the OS cache', async () => {
@@ -252,7 +260,7 @@ it('searches a nonempty installed core and bundled fallback without deadlocking,
     expect(result.foods.map(food => food.id)).toEqual(expect.arrayContaining([fixture.food.id, fixture.bundledFood.id]));
     expect(native.downloadAsset).toHaveBeenCalledTimes(1);
     expect(native.copy).toHaveBeenCalledTimes(1);
-    expect(native.inspect).toHaveBeenCalledTimes(2);
+    expect(native.inspect).toHaveBeenCalledTimes(1);
     vi.resetModules();
     vi.clearAllMocks();
     runtime = await fixture.getRuntime();
@@ -309,6 +317,8 @@ it('preserves offline updater backoff on a fresh install without repeating reque
 
 it('clears the updater catalog version when the file fingerprint changes without expensive catalog work', async () => {
   const fixture = await installedCore(true);
+  native.existingFiles.add(`${fixture.name}.verified.json`);
+  native.receipts.set(`${fixture.name}.verified.json`, JSON.stringify({ validation: 1, identity: fixture.name, bytes: 4096, modified: 100, version: 'test-v1' }));
   await fixture.logFood(await fixture.getRuntime());
   await personal.db.runAsync('INSERT INTO app_meta VALUES(?,?)', 'catalogUpdate', JSON.stringify({
     version: 'test-v1', failures: 2, nextCheck: Date.now() + 3600000,

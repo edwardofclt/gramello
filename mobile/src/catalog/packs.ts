@@ -38,6 +38,8 @@ export interface PackStorage {
   exclusive?<T>(work: () => Promise<T>): Promise<T>;
   // Called at check start under exclusive(), if provided. Preserve live transfers.
   recover?(): Promise<void>;
+  // One-time derivation from already verified downloads, outside name search.
+  prepareSearch?(onProgress?: (completed: number, total: number) => void): Promise<void>;
   load(): Promise<UpdateState>;
   save(state: UpdateState): Promise<void>;
   list(): Promise<FoodPack[]>;
@@ -56,6 +58,7 @@ export function createPackUpdater(storage: PackStorage, publicKey: string, now =
     try {
       state = await storage.load();
       await storage.recover?.();
+      await storage.prepareSearch?.((completedPacks, totalPacks) => update({ ...state, phase: 'downloading', completedPacks, totalPacks, downloadedBytes: 0, totalBytes: 0 }));
       if (!force && state.nextCheck && now() < state.nextCheck) {
         update({ ...state, phase: state.failures ? 'error' : 'idle',
           ...(state.failures ? { error: state.error ?? 'Downloads are waiting to retry.' } : {}) }); return;

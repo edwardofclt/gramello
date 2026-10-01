@@ -4,11 +4,12 @@ import { createLocalApi } from '../../mobile/src/local/api';
 import { parseArchive } from '../../mobile/src/local/records';
 import type { SqliteConnection } from '../../mobile/src/local/database';
 import { createFoodLookup } from '../../mobile/src/catalog/lookup';
-import { createCatalogReader, inspectCatalog } from '../../mobile/src/catalog/queries';
+import { createCatalogReader, inspectCatalog, readCatalogMetadata } from '../../mobile/src/catalog/queries';
 import { createCatalogUpdater, combineCatalogUpdaters, type UpdateState } from '../../mobile/src/catalog/updater';
 import { createPackUpdater } from '../../mobile/src/catalog/packs';
 import { createPackCatalog } from '../../mobile/src/catalog/pack-reader';
 import { createBrowserPackStorage } from './packs';
+import { createBrowserPackSearch } from './pack-search';
 import catalogConfig from '../../mobile/catalog-config.json';
 import { openSnapshotStore, withSnapshot, type SnapshotStore } from './persistence';
 import { openMemoryDatabase, type SqliteModule } from './sqlite';
@@ -68,7 +69,8 @@ async function bundle() {
       }
     } catch { /* Previously verified foods remain available offline. */ }
     let bytes = cached, metadata = cachedMetadata;
-    const cachedValid = cached && cachedMetadata && cached.length === cachedMetadata.bytes && await digest(cached) === cachedMetadata.sha256;
+    // Bytes and their verified descriptor were committed atomically at download.
+    const cachedValid = cached && cachedMetadata && cached.length === cachedMetadata.bytes;
     if (!cachedValid || (expected && expected.sha256 !== cachedMetadata?.sha256)) {
       try {
         const response = await fetch('/offline/catalog.sqlite.gz', { signal: AbortSignal.timeout(120_000) });
@@ -82,7 +84,7 @@ async function bundle() {
     const db = openMemoryDatabase(sqlite, bytes);
     try {
       await db.execAsync('PRAGMA query_only=ON; PRAGMA trusted_schema=OFF;');
-      const info = await inspectCatalog(db);
+      const info = bytes === cached ? await readCatalogMetadata(db) : await inspectCatalog(db);
       if (bytes !== cached) await storage.commit([['catalog:bundled', bytes], ['catalog:bundled-meta', metadata]]);
       bundled = { db, reader: createCatalogReader(work => work(db)), version: info.version };
       return bundled;
@@ -102,7 +104,7 @@ async function catalogs(): Promise<FoodCatalog> {
       try {
         db = openMemoryDatabase(sqlite, bytes);
         await db.execAsync('PRAGMA query_only=ON; PRAGMA trusted_schema=OFF;');
-        const info = await inspectCatalog(db);
+        const info = await readCatalogMetadata(db, installed);
         const previous = active;
         const installedDatabase = db;
         active = { db, reader: createCatalogReader(work => work(installedDatabase), seed?.reader), version: info.version };
@@ -114,8 +116,9 @@ async function catalogs(): Promise<FoodCatalog> {
   if (seed) return seed.reader;
   throw seedError ?? new Error('The offline food catalog is unavailable.');
 }
+const packStore: SnapshotStore = { read: key => storage.read(key), readMany: keys => storage.readMany!(keys), commit: values => storage.commit(values) };
 const packStorage = createBrowserPackStorage({
-  store: { read: key => storage.read(key), readMany: keys => storage.readMany!(keys), commit: values => storage.commit(values) },
+  store: packStore, searchIndex: createBrowserPackSearch(() => sqlite, packStore),
   open: bytes => openMemoryDatabase(sqlite, bytes), lock, manifestUrl: '/api/catalog/packs/manifest',
   files: () => packFiles,
 });
@@ -127,7 +130,7 @@ const expandedCatalog = createPackCatalog(packStorage.list, packStorage.withRead
     return core.searchWindow ? core.searchWindow(query, options) : { foods: await core.search(query, options), canExpand: false };
   },
   barcode: async (code, signal) => (await catalogs()).barcode(code, signal),
-}, packStorage.routes);
+}, packStorage.routes, packStorage.search);
 const baseCatalog = createBrowserCatalogSource(async () => expandedCatalog, catalogTask, catalogFailure);
 function catalogFailure(error: unknown) {
   emit({ event: 'catalog', status: { phase: 'error', error: error instanceof Error ? error.message : 'Offline foods are unavailable. Try updating the food catalog.' } });

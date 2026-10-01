@@ -4,12 +4,14 @@ import type { FoodSearchOptions } from '../../../lib/food-search';
 import type { FoodCatalog } from '../local/repository';
 import type { FoodPack } from './packs';
 import type { PackRouteLookup } from './pack-routes';
+import type { IndexedPackSearch } from './pack-search-index';
 
 export function createPackCatalog(
   list: () => Promise<FoodPack[]>,
   withReader: <T>(pack: FoodPack, work: (reader: FoodCatalog) => Promise<T>) => Promise<T>,
   core: FoodCatalog,
   durableRoutes?: PackRouteLookup,
+  indexedSearch?: IndexedPackSearch,
 ): FoodCatalog {
   // Search results teach us where an FDC identity lives; barcode partitioning
   // permits O(1) source pack selection without a million-entry manifest index.
@@ -27,6 +29,17 @@ export function createPackCatalog(
     const issues = [...result.issues ?? []];
     const seen = new Set<string>();
     if (options.category === 'custom' || options.category === 'restaurant' || options.category === 'generic') return result;
+    if (indexedSearch) {
+      try {
+        const window = await indexedSearch(query, options);
+        const ranked = rankFoodSearch(query, [...foods, ...window.foods], options).foods;
+        const cap = Math.max(20, Math.min(1000, options.window ?? 100));
+        return { ...result, foods: ranked.slice(0, cap), canExpand: canExpand || window.canExpand || (ranked.length > cap && cap < 1000), issues: [...issues, ...window.issues ?? []] };
+      } catch (error) {
+        cancelled(options.signal);
+        return { ...result, issues: [...issues, { source: 'Downloaded foods', message: error instanceof Error ? error.message : 'Downloaded products are unavailable. Check food catalog updates.' }] };
+      }
+    }
     for (const pack of await packs()) {
       cancelled(options.signal);
       try {
