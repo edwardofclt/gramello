@@ -1,3 +1,9 @@
+## [1.19.1](https://github.com/edwardofclt/gramello/compare/v1.19.0...v1.19.1) (2026-10-01)
+
+### Bug Fixes
+
+* use one shared index for downloaded food search ([#47](https://github.com/edwardofclt/gramello/issues/47)) ([67183cf](https://github.com/edwardofclt/gramello/commit/67183cf418ef3e4dc3f86d1ef88f24ef70ac7fef))
+
 ## [1.19.0](https://github.com/edwardofclt/gramello/compare/v1.18.2...v1.19.0) (2026-09-30)
 
 ### Features
